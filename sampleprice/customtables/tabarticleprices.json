@@ -1,0 +1,37 @@
+{
+  "tableName": "tabArticlePrices",
+  "restrictionTypeId": "Public",
+  "columns": [
+    {
+      "name": "_id",
+      "type": "Integer",
+      "allowNull": false
+    },
+    {
+      "name": "in_ArticleId",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "Price",
+      "type": "Real",
+      "allowNull": false
+    }
+  ],
+  "rows": [
+    {
+      "data": [
+        {
+          "columnName": "in_ArticleId",
+          "value": "4711"
+        },
+        {
+          "columnName": "Price",
+          "value": "9.99"
+        }
+      ]
+    }
+  ],
+  "dataSource": "Default",
+  "changedAt": "2026-02-05T19:48:21.2780905+00:00"
+}
