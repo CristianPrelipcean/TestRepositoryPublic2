@@ -1,0 +1,63 @@
+{
+  "moduleId": "mc_PulloutHardware01",
+  "shortName": "Con PulloutHardware",
+  "configurable": false,
+  "isRoot": false,
+  "isConfigDummy": false,
+  "groupName": "Hardware",
+  "imageId": "0bace686-cfa9-4f96-b6b6-0d55c6f6c2e7:PulloutHardware.png",
+  "restrictionTypeId": "Internal",
+  "childModules": [],
+  "assignedVariants": [
+    {
+      "variantId": "mod_PulloutConnectionPosition",
+      "previewValue": "left",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_PulloutDesign",
+      "previewValue": "arenaClassic",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_PulloutElementColor",
+      "previewValue": "silver",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_PulloutType",
+      "previewValue": "No15",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_OpeningType",
+      "previewValue": "Handle",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_FrontId",
+      "default": "",
+      "previewValue": "",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_HardwareColor",
+      "previewValue": "LightColor",
+      "origin": "Derived"
+    }
+  ],
+  "assignedParts": [
+    {
+      "partCode": "part_PulloutHardware"
+    },
+    {
+      "partCode": "part_PulloutHardwareDrillings"
+    }
+  ],
+  "assignedCustomTables": [],
+  "assignedFunctions": [
+    {
+      "functionId": "process_Pullout"
+    }
+  ]
+}

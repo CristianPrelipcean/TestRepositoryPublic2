@@ -1,0 +1,82 @@
+{
+  "variantId": "mod_CarcaseFrontConstruction",
+  "shortName": "Front type",
+  "variantTypeId": "Text",
+  "description": "Type of construction of the front carcase ",
+  "restrictionTypeId": "Public",
+  "groupName": "Front | Construction",
+  "imageId": "10bdff37-b5e0-4c2e-8601-3d56a24403b3:CarcaseFrontTyp.jpg",
+  "assignedGlobalVarId": "basic_CarcaseFrontConstruction",
+  "isArray": false,
+  "isPosRelevant": true,
+  "mainAttr": false,
+  "userRight": "Master",
+  "implicitRelevant": false,
+  "posView": "Dropdown",
+  "matrix": [
+    {
+      "id": "Left",
+      "type": "Text"
+    },
+    {
+      "id": "Top",
+      "type": "Text"
+    },
+    {
+      "id": "Right",
+      "type": "Text"
+    },
+    {
+      "id": "Bottom",
+      "type": "Text"
+    }
+  ],
+  "selections": [
+    {
+      "value": "FrontInlayLBRT",
+      "description": "Front Inlayed LBRT",
+      "shortName": "FrontInlayLBRT",
+      "matrix": [
+        {
+          "id": "Left",
+          "value": "Inlayed"
+        },
+        {
+          "id": "Top",
+          "value": "Inlayed"
+        },
+        {
+          "id": "Right",
+          "value": "Inlayed"
+        },
+        {
+          "id": "Bottom",
+          "value": "Inlayed"
+        }
+      ]
+    },
+    {
+      "value": "FrontOverlayLBRT",
+      "description": "Front Overlayed LBRT",
+      "shortName": "FrontOverlayLBRT",
+      "matrix": [
+        {
+          "id": "Left",
+          "value": "Overlayed"
+        },
+        {
+          "id": "Top",
+          "value": "Overlayed"
+        },
+        {
+          "id": "Right",
+          "value": "Overlayed"
+        },
+        {
+          "id": "Bottom",
+          "value": "Overlayed"
+        }
+      ]
+    }
+  ]
+}

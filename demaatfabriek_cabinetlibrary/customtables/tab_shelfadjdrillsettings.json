@@ -1,0 +1,4164 @@
+{
+  "tableName": "tab_ShelfadjDrillSettings",
+  "description": "Describes the drill system and the position of the drills",
+  "restrictionTypeId": "Public",
+  "groupName": "Shelfadj",
+  "columns": [
+    {
+      "name": "_id",
+      "type": "Integer",
+      "allowNull": false
+    },
+    {
+      "name": "in_TypeElement",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_FrontModule",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_FrontModuleType",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_VertDividerType",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_ShelfadjType",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_ShelfadjThkMin",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "in_ShelfadjThkMax",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "in_CCSpaceWidthMin",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "in_CCSpaceWidthMax",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "in_CCSpaceDepthMin",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "in_CCSpaceDepthMax",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "ShelfadjDrillType",
+      "type": "Integer",
+      "allowNull": false
+    },
+    {
+      "name": "ShelfadjDrillDistance",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "ObjectSidesFront",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "ObjectSidesBack",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "ObjectSidesMiddle",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "ObjectBackwall",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "ObjectVertDividerType",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "ShelfadjWidthReduction",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "SidepanelDescriptor",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "BackwallDescriptor",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "ShelfadjOffsetFront",
+      "type": "Text",
+      "allowNull": true,
+      "functionDefinition": "(m: parent): number"
+    },
+    {
+      "name": "ShelfadjOffsetBack",
+      "type": "Text",
+      "allowNull": true,
+      "functionDefinition": "(m: parent): number"
+    }
+  ],
+  "rows": [
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontModule",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontModuleType",
+          "value": "All"
+        },
+        {
+          "columnName": "in_VertDividerType",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ShelfadjType",
+          "value": "Glass"
+        },
+        {
+          "columnName": "in_ShelfadjThkMin",
+          "value": "5"
+        },
+        {
+          "columnName": "in_ShelfadjThkMax",
+          "value": "5"
+        },
+        {
+          "columnName": "in_CCSpaceWidthMin",
+          "value": "150"
+        },
+        {
+          "columnName": "in_CCSpaceWidthMax",
+          "value": "862"
+        },
+        {
+          "columnName": "in_CCSpaceDepthMin",
+          "value": "120"
+        },
+        {
+          "columnName": "in_CCSpaceDepthMax",
+          "value": "350"
+        },
+        {
+          "columnName": "ShelfadjDrillType",
+          "value": "3"
+        },
+        {
+          "columnName": "ShelfadjDrillDistance",
+          "value": "32"
+        },
+        {
+          "columnName": "ObjectSidesFront",
+          "value": "ShelfadjFittingGlassDesign01"
+        },
+        {
+          "columnName": "ObjectSidesBack",
+          "value": "ShelfadjFittingGlassDesign01"
+        },
+        {
+          "columnName": "ObjectSidesMiddle",
+          "value": "N/a"
+        },
+        {
+          "columnName": "ObjectBackwall",
+          "value": "N/a"
+        },
+        {
+          "columnName": "ObjectVertDividerType",
+          "value": "N/a"
+        },
+        {
+          "columnName": "ShelfadjWidthReduction",
+          "value": "2"
+        },
+        {
+          "columnName": "SidepanelDescriptor",
+          "value": "20mm_1_20mm"
+        },
+        {
+          "columnName": "BackwallDescriptor",
+          "value": "N/a"
+        },
+        {
+          "columnName": "ShelfadjOffsetFront",
+          "value": "m.mod_ShelfadjOffsetFront"
+        },
+        {
+          "columnName": "ShelfadjOffsetBack",
+          "value": "m.mod_ShelfadjOffsetBack"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontModule",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontModuleType",
+          "value": "All"
+        },
+        {
+          "columnName": "in_VertDividerType",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ShelfadjType",
+          "value": "Glass"
+        },
+        {
+          "columnName": "in_ShelfadjThkMin",
+          "value": "5"
+        },
+        {
+          "columnName": "in_ShelfadjThkMax",
+          "value": "5"
+        },
+        {
+          "columnName": "in_CCSpaceWidthMin",
+          "value": "150"
+        },
+        {
+          "columnName": "in_CCSpaceWidthMax",
+          "value": "862"
+        },
+        {
+          "columnName": "in_CCSpaceDepthMin",
+          "value": "351"
+        },
+        {
+          "columnName": "in_CCSpaceDepthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "ShelfadjDrillType",
+          "value": "3"
+        },
+        {
+          "columnName": "ShelfadjDrillDistance",
+          "value": "32"
+        },
+        {
+          "columnName": "ObjectSidesFront",
+          "value": "ShelfadjFittingGlassDesign01"
+        },
+        {
+          "columnName": "ObjectSidesBack",
+          "value": "ShelfadjFittingGlassDesign01"
+        },
+        {
+          "columnName": "ObjectSidesMiddle",
+          "value": "ShelfadjFittingGlassDesign01"
+        },
+        {
+          "columnName": "ObjectBackwall",
+          "value": "N/a"
+        },
+        {
+          "columnName": "ObjectVertDividerType",
+          "value": "N/a"
+        },
+        {
+          "columnName": "ShelfadjWidthReduction",
+          "value": "2"
+        },
+        {
+          "columnName": "SidepanelDescriptor",
+          "value": "20mm_1_20mm"
+        },
+        {
+          "columnName": "BackwallDescriptor",
+          "value": "N/a"
+        },
+        {
+          "columnName": "ShelfadjOffsetFront",
+          "value": "m.mod_ShelfadjOffsetFront"
+        },
+        {
+          "columnName": "ShelfadjOffsetBack",
+          "value": "m.mod_ShelfadjOffsetBack"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontModule",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontModuleType",
+          "value": "All"
+        },
+        {
+          "columnName": "in_VertDividerType",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ShelfadjType",
+          "value": "Glass"
+        },
+        {
+          "columnName": "in_ShelfadjThkMin",
+          "value": "5"
+        },
+        {
+          "columnName": "in_ShelfadjThkMax",
+          "value": "5"
+        },
+        {
+          "columnName": "in_CCSpaceWidthMin",
+          "value": "863"
+        },
+        {
+          "columnName": "in_CCSpaceWidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CCSpaceDepthMin",
+          "value": "120"
+        },
+        {
+          "columnName": "in_CCSpaceDepthMax",
+          "value": "350"
+        },
+        {
+          "columnName": "ShelfadjDrillType",
+          "value": "3"
+        },
+        {
+          "columnName": "ShelfadjDrillDistance",
+          "value": "32"
+        },
+        {
+          "columnName": "ObjectSidesFront",
+          "value": "ShelfadjFittingGlassDesign01"
+        },
+        {
+          "columnName": "ObjectSidesBack",
+          "value": "ShelfadjFittingGlassDesign01"
+        },
+        {
+          "columnName": "ObjectSidesMiddle",
+          "value": "N/a"
+        },
+        {
+          "columnName": "ObjectBackwall",
+          "value": "ShelfadjFittingGlassDesign01"
+        },
+        {
+          "columnName": "ObjectVertDividerType",
+          "value": "N/a"
+        },
+        {
+          "columnName": "ShelfadjWidthReduction",
+          "value": "2"
+        },
+        {
+          "columnName": "SidepanelDescriptor",
+          "value": "20mm_1_20mm"
+        },
+        {
+          "columnName": "BackwallDescriptor",
+          "value": "1_1"
+        },
+        {
+          "columnName": "ShelfadjOffsetFront",
+          "value": "m.mod_ShelfadjOffsetFront"
+        },
+        {
+          "columnName": "ShelfadjOffsetBack",
+          "value": "m.mod_ShelfadjOffsetBack"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontModule",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontModuleType",
+          "value": "All"
+        },
+        {
+          "columnName": "in_VertDividerType",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ShelfadjType",
+          "value": "Glass"
+        },
+        {
+          "columnName": "in_ShelfadjThkMin",
+          "value": "5"
+        },
+        {
+          "columnName": "in_ShelfadjThkMax",
+          "value": "5"
+        },
+        {
+          "columnName": "in_CCSpaceWidthMin",
+          "value": "863"
+        },
+        {
+          "columnName": "in_CCSpaceWidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CCSpaceDepthMin",
+          "value": "351"
+        },
+        {
+          "columnName": "in_CCSpaceDepthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "ShelfadjDrillType",
+          "value": "3"
+        },
+        {
+          "columnName": "ShelfadjDrillDistance",
+          "value": "32"
+        },
+        {
+          "columnName": "ObjectSidesFront",
+          "value": "ShelfadjFittingGlassDesign01"
+        },
+        {
+          "columnName": "ObjectSidesBack",
+          "value": "ShelfadjFittingGlassDesign01"
+        },
+        {
+          "columnName": "ObjectSidesMiddle",
+          "value": "N/a"
+        },
+        {
+          "columnName": "ObjectBackwall",
+          "value": "ShelfadjFittingGlassDesign01"
+        },
+        {
+          "columnName": "ObjectVertDividerType",
+          "value": "N/a"
+        },
+        {
+          "columnName": "ShelfadjWidthReduction",
+          "value": "2"
+        },
+        {
+          "columnName": "SidepanelDescriptor",
+          "value": "20mm_1_20mm"
+        },
+        {
+          "columnName": "BackwallDescriptor",
+          "value": "1_1"
+        },
+        {
+          "columnName": "ShelfadjOffsetFront",
+          "value": "m.mod_ShelfadjOffsetFront"
+        },
+        {
+          "columnName": "ShelfadjOffsetBack",
+          "value": "m.mod_ShelfadjOffsetBack"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontModule",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontModuleType",
+          "value": "All"
+        },
+        {
+          "columnName": "in_VertDividerType",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ShelfadjType",
+          "value": "Wood"
+        },
+        {
+          "columnName": "in_ShelfadjThkMin",
+          "value": "16"
+        },
+        {
+          "columnName": "in_ShelfadjThkMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CCSpaceWidthMin",
+          "value": "150"
+        },
+        {
+          "columnName": "in_CCSpaceWidthMax",
+          "value": "862"
+        },
+        {
+          "columnName": "in_CCSpaceDepthMin",
+          "value": "120"
+        },
+        {
+          "columnName": "in_CCSpaceDepthMax",
+          "value": "350"
+        },
+        {
+          "columnName": "ShelfadjDrillType",
+          "value": "3"
+        },
+        {
+          "columnName": "ShelfadjDrillDistance",
+          "value": "64"
+        },
+        {
+          "columnName": "ObjectSidesFront",
+          "value": "ShelfadjFittingWoodDesign01"
+        },
+        {
+          "columnName": "ObjectSidesBack",
+          "value": "ShelfadjFittingWoodDesign01"
+        },
+        {
+          "columnName": "ObjectSidesMiddle",
+          "value": "N/a"
+        },
+        {
+          "columnName": "ObjectBackwall",
+          "value": "N/a"
+        },
+        {
+          "columnName": "ObjectVertDividerType",
+          "value": "N/a"
+        },
+        {
+          "columnName": "ShelfadjWidthReduction",
+          "value": "1"
+        },
+        {
+          "columnName": "SidepanelDescriptor",
+          "value": "20mm_1_20mm"
+        },
+        {
+          "columnName": "BackwallDescriptor",
+          "value": "N/a"
+        },
+        {
+          "columnName": "ShelfadjOffsetFront",
+          "value": "m.mod_ShelfadjOffsetFront"
+        },
+        {
+          "columnName": "ShelfadjOffsetBack",
+          "value": "m.mod_ShelfadjOffsetBack"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontModule",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontModuleType",
+          "value": "All"
+        },
+        {
+          "columnName": "in_VertDividerType",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ShelfadjType",
+          "value": "Wood"
+        },
+        {
+          "columnName": "in_ShelfadjThkMin",
+          "value": "16"
+        },
+        {
+          "columnName": "in_ShelfadjThkMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CCSpaceWidthMin",
+          "value": "150"
+        },
+        {
+          "columnName": "in_CCSpaceWidthMax",
+          "value": "862"
+        },
+        {
+          "columnName": "in_CCSpaceDepthMin",
+          "value": "351"
+        },
+        {
+          "columnName": "in_CCSpaceDepthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "ShelfadjDrillType",
+          "value": "3"
+        },
+        {
+          "columnName": "ShelfadjDrillDistance",
+          "value": "64"
+        },
+        {
+          "columnName": "ObjectSidesFront",
+          "value": "ShelfadjFittingWoodDesign01"
+        },
+        {
+          "columnName": "ObjectSidesBack",
+          "value": "ShelfadjFittingWoodDesign01"
+        },
+        {
+          "columnName": "ObjectSidesMiddle",
+          "value": "ShelfadjFittingWoodDesign01"
+        },
+        {
+          "columnName": "ObjectBackwall",
+          "value": "N/a"
+        },
+        {
+          "columnName": "ObjectVertDividerType",
+          "value": "N/a"
+        },
+        {
+          "columnName": "ShelfadjWidthReduction",
+          "value": "1"
+        },
+        {
+          "columnName": "SidepanelDescriptor",
+          "value": "20mm_1_20mm"
+        },
+        {
+          "columnName": "BackwallDescriptor",
+          "value": "N/a"
+        },
+        {
+          "columnName": "ShelfadjOffsetFront",
+          "value": "m.mod_ShelfadjOffsetFront"
+        },
+        {
+          "columnName": "ShelfadjOffsetBack",
+          "value": "m.mod_ShelfadjOffsetBack"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontModule",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontModuleType",
+          "value": "All"
+        },
+        {
+          "columnName": "in_VertDividerType",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ShelfadjType",
+          "value": "Wood"
+        },
+        {
+          "columnName": "in_ShelfadjThkMin",
+          "value": "16"
+        },
+        {
+          "columnName": "in_ShelfadjThkMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CCSpaceWidthMin",
+          "value": "863"
+        },
+        {
+          "columnName": "in_CCSpaceWidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CCSpaceDepthMin",
+          "value": "120"
+        },
+        {
+          "columnName": "in_CCSpaceDepthMax",
+          "value": "350"
+        },
+        {
+          "columnName": "ShelfadjDrillType",
+          "value": "3"
+        },
+        {
+          "columnName": "ShelfadjDrillDistance",
+          "value": "64"
+        },
+        {
+          "columnName": "ObjectSidesFront",
+          "value": "ShelfadjFittingWoodDesign01"
+        },
+        {
+          "columnName": "ObjectSidesBack",
+          "value": "ShelfadjFittingWoodDesign01"
+        },
+        {
+          "columnName": "ObjectSidesMiddle",
+          "value": "N/a"
+        },
+        {
+          "columnName": "ObjectBackwall",
+          "value": "ShelfadjFittingWoodDesign03"
+        },
+        {
+          "columnName": "ObjectVertDividerType",
+          "value": "N/a"
+        },
+        {
+          "columnName": "ShelfadjWidthReduction",
+          "value": "1"
+        },
+        {
+          "columnName": "SidepanelDescriptor",
+          "value": "20mm_1_20mm"
+        },
+        {
+          "columnName": "BackwallDescriptor",
+          "value": "1_1"
+        },
+        {
+          "columnName": "ShelfadjOffsetFront",
+          "value": "m.mod_ShelfadjOffsetFront"
+        },
+        {
+          "columnName": "ShelfadjOffsetBack",
+          "value": "1.5"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontModule",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontModuleType",
+          "value": "All"
+        },
+        {
+          "columnName": "in_VertDividerType",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ShelfadjType",
+          "value": "Wood"
+        },
+        {
+          "columnName": "in_ShelfadjThkMin",
+          "value": "16"
+        },
+        {
+          "columnName": "in_ShelfadjThkMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CCSpaceWidthMin",
+          "value": "863"
+        },
+        {
+          "columnName": "in_CCSpaceWidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CCSpaceDepthMin",
+          "value": "351"
+        },
+        {
+          "columnName": "in_CCSpaceDepthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "ShelfadjDrillType",
+          "value": "3"
+        },
+        {
+          "columnName": "ShelfadjDrillDistance",
+          "value": "64"
+        },
+        {
+          "columnName": "ObjectSidesFront",
+          "value": "ShelfadjFittingWoodDesign01"
+        },
+        {
+          "columnName": "ObjectSidesBack",
+          "value": "ShelfadjFittingWoodDesign01"
+        },
+        {
+          "columnName": "ObjectSidesMiddle",
+          "value": "N/a"
+        },
+        {
+          "columnName": "ObjectBackwall",
+          "value": "ShelfadjFittingWoodDesign03"
+        },
+        {
+          "columnName": "ObjectVertDividerType",
+          "value": "N/a"
+        },
+        {
+          "columnName": "ShelfadjWidthReduction",
+          "value": "1"
+        },
+        {
+          "columnName": "SidepanelDescriptor",
+          "value": "20mm_1_20mm"
+        },
+        {
+          "columnName": "BackwallDescriptor",
+          "value": "1_1"
+        },
+        {
+          "columnName": "ShelfadjOffsetFront",
+          "value": "m.mod_ShelfadjOffsetFront"
+        },
+        {
+          "columnName": "ShelfadjOffsetBack",
+          "value": "1.5"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontModule",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontModuleType",
+          "value": "All"
+        },
+        {
+          "columnName": "in_VertDividerType",
+          "value": "Cleat"
+        },
+        {
+          "columnName": "in_ShelfadjType",
+          "value": "Wood"
+        },
+        {
+          "columnName": "in_ShelfadjThkMin",
+          "value": "16"
+        },
+        {
+          "columnName": "in_ShelfadjThkMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CCSpaceWidthMin",
+          "value": "863"
+        },
+        {
+          "columnName": "in_CCSpaceWidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CCSpaceDepthMin",
+          "value": "351"
+        },
+        {
+          "columnName": "in_CCSpaceDepthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "ShelfadjDrillType",
+          "value": "3"
+        },
+        {
+          "columnName": "ShelfadjDrillDistance",
+          "value": "64"
+        },
+        {
+          "columnName": "ObjectSidesFront",
+          "value": "ShelfadjFittingWoodDesign01"
+        },
+        {
+          "columnName": "ObjectSidesBack",
+          "value": "ShelfadjFittingWoodDesign01"
+        },
+        {
+          "columnName": "ObjectSidesMiddle",
+          "value": "N/a"
+        },
+        {
+          "columnName": "ObjectBackwall",
+          "value": "ShelfadjFittingWoodDesign03"
+        },
+        {
+          "columnName": "ObjectVertDividerType",
+          "value": "ShelfadjFittingWoodDesign02"
+        },
+        {
+          "columnName": "ShelfadjWidthReduction",
+          "value": "1"
+        },
+        {
+          "columnName": "SidepanelDescriptor",
+          "value": "20mm_1_20mm"
+        },
+        {
+          "columnName": "BackwallDescriptor",
+          "value": "1_1"
+        },
+        {
+          "columnName": "ShelfadjOffsetFront",
+          "value": "1.5"
+        },
+        {
+          "columnName": "ShelfadjOffsetBack",
+          "value": "1.5"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontModule",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontModuleType",
+          "value": "All"
+        },
+        {
+          "columnName": "in_VertDividerType",
+          "value": "Cleat"
+        },
+        {
+          "columnName": "in_ShelfadjType",
+          "value": "Wood"
+        },
+        {
+          "columnName": "in_ShelfadjThkMin",
+          "value": "16"
+        },
+        {
+          "columnName": "in_ShelfadjThkMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CCSpaceWidthMin",
+          "value": "863"
+        },
+        {
+          "columnName": "in_CCSpaceWidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CCSpaceDepthMin",
+          "value": "120"
+        },
+        {
+          "columnName": "in_CCSpaceDepthMax",
+          "value": "350"
+        },
+        {
+          "columnName": "ShelfadjDrillType",
+          "value": "3"
+        },
+        {
+          "columnName": "ShelfadjDrillDistance",
+          "value": "64"
+        },
+        {
+          "columnName": "ObjectSidesFront",
+          "value": "ShelfadjFittingWoodDesign01"
+        },
+        {
+          "columnName": "ObjectSidesBack",
+          "value": "ShelfadjFittingWoodDesign01"
+        },
+        {
+          "columnName": "ObjectSidesMiddle",
+          "value": "N/a"
+        },
+        {
+          "columnName": "ObjectBackwall",
+          "value": "ShelfadjFittingWoodDesign03"
+        },
+        {
+          "columnName": "ObjectVertDividerType",
+          "value": "ShelfadjFittingWoodDesign02"
+        },
+        {
+          "columnName": "ShelfadjWidthReduction",
+          "value": "1"
+        },
+        {
+          "columnName": "SidepanelDescriptor",
+          "value": "20mm_1_20mm"
+        },
+        {
+          "columnName": "BackwallDescriptor",
+          "value": "1_1"
+        },
+        {
+          "columnName": "ShelfadjOffsetFront",
+          "value": "1.5"
+        },
+        {
+          "columnName": "ShelfadjOffsetBack",
+          "value": "1.5"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontModule",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontModuleType",
+          "value": "All"
+        },
+        {
+          "columnName": "in_VertDividerType",
+          "value": "Cleat"
+        },
+        {
+          "columnName": "in_ShelfadjType",
+          "value": "Wood"
+        },
+        {
+          "columnName": "in_ShelfadjThkMin",
+          "value": "16"
+        },
+        {
+          "columnName": "in_ShelfadjThkMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CCSpaceWidthMin",
+          "value": "150"
+        },
+        {
+          "columnName": "in_CCSpaceWidthMax",
+          "value": "862"
+        },
+        {
+          "columnName": "in_CCSpaceDepthMin",
+          "value": "120"
+        },
+        {
+          "columnName": "in_CCSpaceDepthMax",
+          "value": "350"
+        },
+        {
+          "columnName": "ShelfadjDrillType",
+          "value": "3"
+        },
+        {
+          "columnName": "ShelfadjDrillDistance",
+          "value": "64"
+        },
+        {
+          "columnName": "ObjectSidesFront",
+          "value": "ShelfadjFittingWoodDesign01"
+        },
+        {
+          "columnName": "ObjectSidesBack",
+          "value": "ShelfadjFittingWoodDesign01"
+        },
+        {
+          "columnName": "ObjectSidesMiddle",
+          "value": "N/a"
+        },
+        {
+          "columnName": "ObjectBackwall",
+          "value": "N/a"
+        },
+        {
+          "columnName": "ObjectVertDividerType",
+          "value": "ShelfadjFittingWoodDesign02"
+        },
+        {
+          "columnName": "ShelfadjWidthReduction",
+          "value": "1"
+        },
+        {
+          "columnName": "SidepanelDescriptor",
+          "value": "20mm_1_20mm"
+        },
+        {
+          "columnName": "BackwallDescriptor",
+          "value": "N/a"
+        },
+        {
+          "columnName": "ShelfadjOffsetFront",
+          "value": "1.5"
+        },
+        {
+          "columnName": "ShelfadjOffsetBack",
+          "value": "m.mod_ShelfadjOffsetBack"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontModule",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontModuleType",
+          "value": "All"
+        },
+        {
+          "columnName": "in_VertDividerType",
+          "value": "Cleat"
+        },
+        {
+          "columnName": "in_ShelfadjType",
+          "value": "Wood"
+        },
+        {
+          "columnName": "in_ShelfadjThkMin",
+          "value": "16"
+        },
+        {
+          "columnName": "in_ShelfadjThkMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CCSpaceWidthMin",
+          "value": "150"
+        },
+        {
+          "columnName": "in_CCSpaceWidthMax",
+          "value": "862"
+        },
+        {
+          "columnName": "in_CCSpaceDepthMin",
+          "value": "351"
+        },
+        {
+          "columnName": "in_CCSpaceDepthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "ShelfadjDrillType",
+          "value": "3"
+        },
+        {
+          "columnName": "ShelfadjDrillDistance",
+          "value": "64"
+        },
+        {
+          "columnName": "ObjectSidesFront",
+          "value": "ShelfadjFittingWoodDesign01"
+        },
+        {
+          "columnName": "ObjectSidesBack",
+          "value": "ShelfadjFittingWoodDesign01"
+        },
+        {
+          "columnName": "ObjectSidesMiddle",
+          "value": "ShelfadjFittingWoodDesign01"
+        },
+        {
+          "columnName": "ObjectBackwall",
+          "value": "N/a"
+        },
+        {
+          "columnName": "ObjectVertDividerType",
+          "value": "ShelfadjFittingWoodDesign02"
+        },
+        {
+          "columnName": "ShelfadjWidthReduction",
+          "value": "1"
+        },
+        {
+          "columnName": "SidepanelDescriptor",
+          "value": "20mm_1_20mm"
+        },
+        {
+          "columnName": "BackwallDescriptor",
+          "value": "N/a"
+        },
+        {
+          "columnName": "ShelfadjOffsetFront",
+          "value": "1.5"
+        },
+        {
+          "columnName": "ShelfadjOffsetBack",
+          "value": "m.mod_ShelfadjOffsetBack"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontModule",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontModuleType",
+          "value": "All"
+        },
+        {
+          "columnName": "in_VertDividerType",
+          "value": "MiddleSideShort"
+        },
+        {
+          "columnName": "in_ShelfadjType",
+          "value": "Wood"
+        },
+        {
+          "columnName": "in_ShelfadjThkMin",
+          "value": "16"
+        },
+        {
+          "columnName": "in_ShelfadjThkMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CCSpaceWidthMin",
+          "value": "863"
+        },
+        {
+          "columnName": "in_CCSpaceWidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CCSpaceDepthMin",
+          "value": "120"
+        },
+        {
+          "columnName": "in_CCSpaceDepthMax",
+          "value": "350"
+        },
+        {
+          "columnName": "ShelfadjDrillType",
+          "value": "3"
+        },
+        {
+          "columnName": "ShelfadjDrillDistance",
+          "value": "64"
+        },
+        {
+          "columnName": "ObjectSidesFront",
+          "value": "ShelfadjFittingWoodDesign01"
+        },
+        {
+          "columnName": "ObjectSidesBack",
+          "value": "ShelfadjFittingWoodDesign01"
+        },
+        {
+          "columnName": "ObjectSidesMiddle",
+          "value": "N/a"
+        },
+        {
+          "columnName": "ObjectBackwall",
+          "value": "ShelfadjFittingWoodDesign03"
+        },
+        {
+          "columnName": "ObjectVertDividerType",
+          "value": "ShelfadjFittingWoodDesign03"
+        },
+        {
+          "columnName": "ShelfadjWidthReduction",
+          "value": "1"
+        },
+        {
+          "columnName": "SidepanelDescriptor",
+          "value": "20mm_1_20mm"
+        },
+        {
+          "columnName": "BackwallDescriptor",
+          "value": "1_1"
+        },
+        {
+          "columnName": "ShelfadjOffsetFront",
+          "value": "1.5"
+        },
+        {
+          "columnName": "ShelfadjOffsetBack",
+          "value": "1.5"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontModule",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontModuleType",
+          "value": "All"
+        },
+        {
+          "columnName": "in_VertDividerType",
+          "value": "MiddleSideShort"
+        },
+        {
+          "columnName": "in_ShelfadjType",
+          "value": "Wood"
+        },
+        {
+          "columnName": "in_ShelfadjThkMin",
+          "value": "16"
+        },
+        {
+          "columnName": "in_ShelfadjThkMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CCSpaceWidthMin",
+          "value": "863"
+        },
+        {
+          "columnName": "in_CCSpaceWidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CCSpaceDepthMin",
+          "value": "351"
+        },
+        {
+          "columnName": "in_CCSpaceDepthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "ShelfadjDrillType",
+          "value": "3"
+        },
+        {
+          "columnName": "ShelfadjDrillDistance",
+          "value": "64"
+        },
+        {
+          "columnName": "ObjectSidesFront",
+          "value": "ShelfadjFittingWoodDesign01"
+        },
+        {
+          "columnName": "ObjectSidesBack",
+          "value": "ShelfadjFittingWoodDesign01"
+        },
+        {
+          "columnName": "ObjectSidesMiddle",
+          "value": "N/a"
+        },
+        {
+          "columnName": "ObjectBackwall",
+          "value": "ShelfadjFittingWoodDesign03"
+        },
+        {
+          "columnName": "ObjectVertDividerType",
+          "value": "ShelfadjFittingWoodDesign03"
+        },
+        {
+          "columnName": "ShelfadjWidthReduction",
+          "value": "1"
+        },
+        {
+          "columnName": "SidepanelDescriptor",
+          "value": "20mm_1_20mm"
+        },
+        {
+          "columnName": "BackwallDescriptor",
+          "value": "1_1"
+        },
+        {
+          "columnName": "ShelfadjOffsetFront",
+          "value": "1.5"
+        },
+        {
+          "columnName": "ShelfadjOffsetBack",
+          "value": "1.5"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontModule",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontModuleType",
+          "value": "All"
+        },
+        {
+          "columnName": "in_VertDividerType",
+          "value": "MiddleSideShort"
+        },
+        {
+          "columnName": "in_ShelfadjType",
+          "value": "Wood"
+        },
+        {
+          "columnName": "in_ShelfadjThkMin",
+          "value": "16"
+        },
+        {
+          "columnName": "in_ShelfadjThkMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CCSpaceWidthMin",
+          "value": "150"
+        },
+        {
+          "columnName": "in_CCSpaceWidthMax",
+          "value": "862"
+        },
+        {
+          "columnName": "in_CCSpaceDepthMin",
+          "value": "120"
+        },
+        {
+          "columnName": "in_CCSpaceDepthMax",
+          "value": "350"
+        },
+        {
+          "columnName": "ShelfadjDrillType",
+          "value": "3"
+        },
+        {
+          "columnName": "ShelfadjDrillDistance",
+          "value": "64"
+        },
+        {
+          "columnName": "ObjectSidesFront",
+          "value": "ShelfadjFittingWoodDesign01"
+        },
+        {
+          "columnName": "ObjectSidesBack",
+          "value": "ShelfadjFittingWoodDesign01"
+        },
+        {
+          "columnName": "ObjectSidesMiddle",
+          "value": "N/a"
+        },
+        {
+          "columnName": "ObjectBackwall",
+          "value": "N/a"
+        },
+        {
+          "columnName": "ObjectVertDividerType",
+          "value": "ShelfadjFittingWoodDesign03"
+        },
+        {
+          "columnName": "ShelfadjWidthReduction",
+          "value": "1"
+        },
+        {
+          "columnName": "SidepanelDescriptor",
+          "value": "20mm_1_20mm"
+        },
+        {
+          "columnName": "BackwallDescriptor",
+          "value": "N/a"
+        },
+        {
+          "columnName": "ShelfadjOffsetFront",
+          "value": "1.5"
+        },
+        {
+          "columnName": "ShelfadjOffsetBack",
+          "value": "m.mod_ShelfadjOffsetBack"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontModule",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontModuleType",
+          "value": "All"
+        },
+        {
+          "columnName": "in_VertDividerType",
+          "value": "MiddleSideShort"
+        },
+        {
+          "columnName": "in_ShelfadjType",
+          "value": "Wood"
+        },
+        {
+          "columnName": "in_ShelfadjThkMin",
+          "value": "16"
+        },
+        {
+          "columnName": "in_ShelfadjThkMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CCSpaceWidthMin",
+          "value": "150"
+        },
+        {
+          "columnName": "in_CCSpaceWidthMax",
+          "value": "862"
+        },
+        {
+          "columnName": "in_CCSpaceDepthMin",
+          "value": "351"
+        },
+        {
+          "columnName": "in_CCSpaceDepthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "ShelfadjDrillType",
+          "value": "3"
+        },
+        {
+          "columnName": "ShelfadjDrillDistance",
+          "value": "64"
+        },
+        {
+          "columnName": "ObjectSidesFront",
+          "value": "ShelfadjFittingWoodDesign01"
+        },
+        {
+          "columnName": "ObjectSidesBack",
+          "value": "ShelfadjFittingWoodDesign01"
+        },
+        {
+          "columnName": "ObjectSidesMiddle",
+          "value": "N/a"
+        },
+        {
+          "columnName": "ObjectBackwall",
+          "value": "N/a"
+        },
+        {
+          "columnName": "ObjectVertDividerType",
+          "value": "ShelfadjFittingWoodDesign03"
+        },
+        {
+          "columnName": "ShelfadjWidthReduction",
+          "value": "1"
+        },
+        {
+          "columnName": "SidepanelDescriptor",
+          "value": "20mm_1_20mm"
+        },
+        {
+          "columnName": "BackwallDescriptor",
+          "value": "N/a"
+        },
+        {
+          "columnName": "ShelfadjOffsetFront",
+          "value": "1.5"
+        },
+        {
+          "columnName": "ShelfadjOffsetBack",
+          "value": "m.mod_ShelfadjOffsetBack"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "BaseUnit"
+        },
+        {
+          "columnName": "in_FrontModule",
+          "value": "Fliplift"
+        },
+        {
+          "columnName": "in_FrontModuleType",
+          "value": "UF"
+        },
+        {
+          "columnName": "in_VertDividerType",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ShelfadjType",
+          "value": "Wood"
+        },
+        {
+          "columnName": "in_ShelfadjThkMin",
+          "value": "16"
+        },
+        {
+          "columnName": "in_ShelfadjThkMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CCSpaceWidthMin",
+          "value": "150"
+        },
+        {
+          "columnName": "in_CCSpaceWidthMax",
+          "value": "862"
+        },
+        {
+          "columnName": "in_CCSpaceDepthMin",
+          "value": "120"
+        },
+        {
+          "columnName": "in_CCSpaceDepthMax",
+          "value": "350"
+        },
+        {
+          "columnName": "ShelfadjDrillType",
+          "value": "3"
+        },
+        {
+          "columnName": "ShelfadjDrillDistance",
+          "value": "64"
+        },
+        {
+          "columnName": "ObjectSidesFront",
+          "value": "ShelfadjFittingWoodDesign01"
+        },
+        {
+          "columnName": "ObjectSidesBack",
+          "value": "ShelfadjFittingWoodDesign01"
+        },
+        {
+          "columnName": "ObjectSidesMiddle",
+          "value": "N/a"
+        },
+        {
+          "columnName": "ObjectBackwall",
+          "value": "N/a"
+        },
+        {
+          "columnName": "ObjectVertDividerType",
+          "value": "N/a"
+        },
+        {
+          "columnName": "ShelfadjWidthReduction",
+          "value": "1"
+        },
+        {
+          "columnName": "SidepanelDescriptor",
+          "value": "20mm_1_20mm"
+        },
+        {
+          "columnName": "BackwallDescriptor",
+          "value": "N/a"
+        },
+        {
+          "columnName": "ShelfadjOffsetFront",
+          "value": "50"
+        },
+        {
+          "columnName": "ShelfadjOffsetBack",
+          "value": "m.mod_ShelfadjOffsetBack"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "BaseUnit"
+        },
+        {
+          "columnName": "in_FrontModule",
+          "value": "Fliplift"
+        },
+        {
+          "columnName": "in_FrontModuleType",
+          "value": "All"
+        },
+        {
+          "columnName": "in_VertDividerType",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ShelfadjType",
+          "value": "Wood"
+        },
+        {
+          "columnName": "in_ShelfadjThkMin",
+          "value": "16"
+        },
+        {
+          "columnName": "in_ShelfadjThkMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CCSpaceWidthMin",
+          "value": "863"
+        },
+        {
+          "columnName": "in_CCSpaceWidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CCSpaceDepthMin",
+          "value": "351"
+        },
+        {
+          "columnName": "in_CCSpaceDepthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "ShelfadjDrillType",
+          "value": "3"
+        },
+        {
+          "columnName": "ShelfadjDrillDistance",
+          "value": "64"
+        },
+        {
+          "columnName": "ObjectSidesFront",
+          "value": "ShelfadjFittingWoodDesign01"
+        },
+        {
+          "columnName": "ObjectSidesBack",
+          "value": "ShelfadjFittingWoodDesign01"
+        },
+        {
+          "columnName": "ObjectSidesMiddle",
+          "value": "N/a"
+        },
+        {
+          "columnName": "ObjectBackwall",
+          "value": "ShelfadjFittingWoodDesign03"
+        },
+        {
+          "columnName": "ObjectVertDividerType",
+          "value": "N/a"
+        },
+        {
+          "columnName": "ShelfadjWidthReduction",
+          "value": "1"
+        },
+        {
+          "columnName": "SidepanelDescriptor",
+          "value": "20mm_1_20mm"
+        },
+        {
+          "columnName": "BackwallDescriptor",
+          "value": "1_1"
+        },
+        {
+          "columnName": "ShelfadjOffsetFront",
+          "value": "50"
+        },
+        {
+          "columnName": "ShelfadjOffsetBack",
+          "value": "1.5"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "TallUnit"
+        },
+        {
+          "columnName": "in_FrontModule",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontModuleType",
+          "value": "All"
+        },
+        {
+          "columnName": "in_VertDividerType",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ShelfadjType",
+          "value": "Glass"
+        },
+        {
+          "columnName": "in_ShelfadjThkMin",
+          "value": "5"
+        },
+        {
+          "columnName": "in_ShelfadjThkMax",
+          "value": "5"
+        },
+        {
+          "columnName": "in_CCSpaceWidthMin",
+          "value": "150"
+        },
+        {
+          "columnName": "in_CCSpaceWidthMax",
+          "value": "862"
+        },
+        {
+          "columnName": "in_CCSpaceDepthMin",
+          "value": "120"
+        },
+        {
+          "columnName": "in_CCSpaceDepthMax",
+          "value": "350"
+        },
+        {
+          "columnName": "ShelfadjDrillType",
+          "value": "3"
+        },
+        {
+          "columnName": "ShelfadjDrillDistance",
+          "value": "64"
+        },
+        {
+          "columnName": "ObjectSidesFront",
+          "value": "ShelfadjFittingGlassDesign01"
+        },
+        {
+          "columnName": "ObjectSidesBack",
+          "value": "ShelfadjFittingGlassDesign01"
+        },
+        {
+          "columnName": "ObjectSidesMiddle",
+          "value": "N/a"
+        },
+        {
+          "columnName": "ObjectBackwall",
+          "value": "N/a"
+        },
+        {
+          "columnName": "ObjectVertDividerType",
+          "value": "N/a"
+        },
+        {
+          "columnName": "ShelfadjWidthReduction",
+          "value": "2"
+        },
+        {
+          "columnName": "SidepanelDescriptor",
+          "value": "20mm_1_20mm"
+        },
+        {
+          "columnName": "BackwallDescriptor",
+          "value": "N/a"
+        },
+        {
+          "columnName": "ShelfadjOffsetFront",
+          "value": "m.mod_ShelfadjOffsetFront"
+        },
+        {
+          "columnName": "ShelfadjOffsetBack",
+          "value": "m.mod_ShelfadjOffsetBack"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "TallUnit"
+        },
+        {
+          "columnName": "in_FrontModule",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontModuleType",
+          "value": "All"
+        },
+        {
+          "columnName": "in_VertDividerType",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ShelfadjType",
+          "value": "Glass"
+        },
+        {
+          "columnName": "in_ShelfadjThkMin",
+          "value": "5"
+        },
+        {
+          "columnName": "in_ShelfadjThkMax",
+          "value": "5"
+        },
+        {
+          "columnName": "in_CCSpaceWidthMin",
+          "value": "150"
+        },
+        {
+          "columnName": "in_CCSpaceWidthMax",
+          "value": "862"
+        },
+        {
+          "columnName": "in_CCSpaceDepthMin",
+          "value": "351"
+        },
+        {
+          "columnName": "in_CCSpaceDepthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "ShelfadjDrillType",
+          "value": "3"
+        },
+        {
+          "columnName": "ShelfadjDrillDistance",
+          "value": "64"
+        },
+        {
+          "columnName": "ObjectSidesFront",
+          "value": "ShelfadjFittingGlassDesign01"
+        },
+        {
+          "columnName": "ObjectSidesBack",
+          "value": "ShelfadjFittingGlassDesign01"
+        },
+        {
+          "columnName": "ObjectSidesMiddle",
+          "value": "ShelfadjFittingGlassDesign01"
+        },
+        {
+          "columnName": "ObjectBackwall",
+          "value": "N/a"
+        },
+        {
+          "columnName": "ObjectVertDividerType",
+          "value": "N/a"
+        },
+        {
+          "columnName": "ShelfadjWidthReduction",
+          "value": "2"
+        },
+        {
+          "columnName": "SidepanelDescriptor",
+          "value": "20mm_1_20mm"
+        },
+        {
+          "columnName": "BackwallDescriptor",
+          "value": "N/a"
+        },
+        {
+          "columnName": "ShelfadjOffsetFront",
+          "value": "m.mod_ShelfadjOffsetFront"
+        },
+        {
+          "columnName": "ShelfadjOffsetBack",
+          "value": "m.mod_ShelfadjOffsetBack"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "TallUnit"
+        },
+        {
+          "columnName": "in_FrontModule",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontModuleType",
+          "value": "All"
+        },
+        {
+          "columnName": "in_VertDividerType",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ShelfadjType",
+          "value": "Glass"
+        },
+        {
+          "columnName": "in_ShelfadjThkMin",
+          "value": "5"
+        },
+        {
+          "columnName": "in_ShelfadjThkMax",
+          "value": "5"
+        },
+        {
+          "columnName": "in_CCSpaceWidthMin",
+          "value": "863"
+        },
+        {
+          "columnName": "in_CCSpaceWidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CCSpaceDepthMin",
+          "value": "120"
+        },
+        {
+          "columnName": "in_CCSpaceDepthMax",
+          "value": "350"
+        },
+        {
+          "columnName": "ShelfadjDrillType",
+          "value": "3"
+        },
+        {
+          "columnName": "ShelfadjDrillDistance",
+          "value": "64"
+        },
+        {
+          "columnName": "ObjectSidesFront",
+          "value": "ShelfadjFittingGlassDesign01"
+        },
+        {
+          "columnName": "ObjectSidesBack",
+          "value": "ShelfadjFittingGlassDesign01"
+        },
+        {
+          "columnName": "ObjectSidesMiddle",
+          "value": "N/a"
+        },
+        {
+          "columnName": "ObjectBackwall",
+          "value": "ShelfadjFittingGlassDesign01"
+        },
+        {
+          "columnName": "ObjectVertDividerType",
+          "value": "N/a"
+        },
+        {
+          "columnName": "ShelfadjWidthReduction",
+          "value": "2"
+        },
+        {
+          "columnName": "SidepanelDescriptor",
+          "value": "20mm_1_20mm"
+        },
+        {
+          "columnName": "BackwallDescriptor",
+          "value": "1_1"
+        },
+        {
+          "columnName": "ShelfadjOffsetFront",
+          "value": "m.mod_ShelfadjOffsetFront"
+        },
+        {
+          "columnName": "ShelfadjOffsetBack",
+          "value": "m.mod_ShelfadjOffsetBack"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "TallUnit"
+        },
+        {
+          "columnName": "in_FrontModule",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontModuleType",
+          "value": "All"
+        },
+        {
+          "columnName": "in_VertDividerType",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ShelfadjType",
+          "value": "Glass"
+        },
+        {
+          "columnName": "in_ShelfadjThkMin",
+          "value": "5"
+        },
+        {
+          "columnName": "in_ShelfadjThkMax",
+          "value": "5"
+        },
+        {
+          "columnName": "in_CCSpaceWidthMin",
+          "value": "863"
+        },
+        {
+          "columnName": "in_CCSpaceWidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CCSpaceDepthMin",
+          "value": "351"
+        },
+        {
+          "columnName": "in_CCSpaceDepthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "ShelfadjDrillType",
+          "value": "3"
+        },
+        {
+          "columnName": "ShelfadjDrillDistance",
+          "value": "64"
+        },
+        {
+          "columnName": "ObjectSidesFront",
+          "value": "ShelfadjFittingGlassDesign01"
+        },
+        {
+          "columnName": "ObjectSidesBack",
+          "value": "ShelfadjFittingGlassDesign01"
+        },
+        {
+          "columnName": "ObjectSidesMiddle",
+          "value": "N/a"
+        },
+        {
+          "columnName": "ObjectBackwall",
+          "value": "ShelfadjFittingGlassDesign01"
+        },
+        {
+          "columnName": "ObjectVertDividerType",
+          "value": "N/a"
+        },
+        {
+          "columnName": "ShelfadjWidthReduction",
+          "value": "2"
+        },
+        {
+          "columnName": "SidepanelDescriptor",
+          "value": "20mm_1_20mm"
+        },
+        {
+          "columnName": "BackwallDescriptor",
+          "value": "1_1"
+        },
+        {
+          "columnName": "ShelfadjOffsetFront",
+          "value": "m.mod_ShelfadjOffsetFront"
+        },
+        {
+          "columnName": "ShelfadjOffsetBack",
+          "value": "m.mod_ShelfadjOffsetBack"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "TallUnit"
+        },
+        {
+          "columnName": "in_FrontModule",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontModuleType",
+          "value": "All"
+        },
+        {
+          "columnName": "in_VertDividerType",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ShelfadjType",
+          "value": "Wood"
+        },
+        {
+          "columnName": "in_ShelfadjThkMin",
+          "value": "16"
+        },
+        {
+          "columnName": "in_ShelfadjThkMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CCSpaceWidthMin",
+          "value": "150"
+        },
+        {
+          "columnName": "in_CCSpaceWidthMax",
+          "value": "862"
+        },
+        {
+          "columnName": "in_CCSpaceDepthMin",
+          "value": "120"
+        },
+        {
+          "columnName": "in_CCSpaceDepthMax",
+          "value": "600"
+        },
+        {
+          "columnName": "ShelfadjDrillType",
+          "value": "3"
+        },
+        {
+          "columnName": "ShelfadjDrillDistance",
+          "value": "64"
+        },
+        {
+          "columnName": "ObjectSidesFront",
+          "value": "ShelfadjFittingWoodDesign01"
+        },
+        {
+          "columnName": "ObjectSidesBack",
+          "value": "ShelfadjFittingWoodDesign01"
+        },
+        {
+          "columnName": "ObjectSidesMiddle",
+          "value": "N/a"
+        },
+        {
+          "columnName": "ObjectBackwall",
+          "value": "N/a"
+        },
+        {
+          "columnName": "ObjectVertDividerType",
+          "value": "N/a"
+        },
+        {
+          "columnName": "ShelfadjWidthReduction",
+          "value": "1"
+        },
+        {
+          "columnName": "SidepanelDescriptor",
+          "value": "20mm_1_20mm"
+        },
+        {
+          "columnName": "BackwallDescriptor",
+          "value": "N/a"
+        },
+        {
+          "columnName": "ShelfadjOffsetFront",
+          "value": "m.mod_ShelfadjOffsetFront"
+        },
+        {
+          "columnName": "ShelfadjOffsetBack",
+          "value": "m.mod_ShelfadjOffsetBack"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "TallUnit"
+        },
+        {
+          "columnName": "in_FrontModule",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontModuleType",
+          "value": "All"
+        },
+        {
+          "columnName": "in_VertDividerType",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ShelfadjType",
+          "value": "Wood"
+        },
+        {
+          "columnName": "in_ShelfadjThkMin",
+          "value": "16"
+        },
+        {
+          "columnName": "in_ShelfadjThkMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CCSpaceWidthMin",
+          "value": "150"
+        },
+        {
+          "columnName": "in_CCSpaceWidthMax",
+          "value": "862"
+        },
+        {
+          "columnName": "in_CCSpaceDepthMin",
+          "value": "601"
+        },
+        {
+          "columnName": "in_CCSpaceDepthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "ShelfadjDrillType",
+          "value": "3"
+        },
+        {
+          "columnName": "ShelfadjDrillDistance",
+          "value": "64"
+        },
+        {
+          "columnName": "ObjectSidesFront",
+          "value": "ShelfadjFittingWoodDesign01"
+        },
+        {
+          "columnName": "ObjectSidesBack",
+          "value": "ShelfadjFittingWoodDesign01"
+        },
+        {
+          "columnName": "ObjectSidesMiddle",
+          "value": "ShelfadjFittingWoodDesign01"
+        },
+        {
+          "columnName": "ObjectBackwall",
+          "value": "N/a"
+        },
+        {
+          "columnName": "ObjectVertDividerType",
+          "value": "N/a"
+        },
+        {
+          "columnName": "ShelfadjWidthReduction",
+          "value": "1"
+        },
+        {
+          "columnName": "SidepanelDescriptor",
+          "value": "20mm_1_1_20mm"
+        },
+        {
+          "columnName": "BackwallDescriptor",
+          "value": "N/a"
+        },
+        {
+          "columnName": "ShelfadjOffsetFront",
+          "value": "m.mod_ShelfadjOffsetFront"
+        },
+        {
+          "columnName": "ShelfadjOffsetBack",
+          "value": "m.mod_ShelfadjOffsetBack"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "TallUnit"
+        },
+        {
+          "columnName": "in_FrontModule",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontModuleType",
+          "value": "All"
+        },
+        {
+          "columnName": "in_VertDividerType",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ShelfadjType",
+          "value": "Wood"
+        },
+        {
+          "columnName": "in_ShelfadjThkMin",
+          "value": "16"
+        },
+        {
+          "columnName": "in_ShelfadjThkMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CCSpaceWidthMin",
+          "value": "863"
+        },
+        {
+          "columnName": "in_CCSpaceWidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CCSpaceDepthMin",
+          "value": "120"
+        },
+        {
+          "columnName": "in_CCSpaceDepthMax",
+          "value": "600"
+        },
+        {
+          "columnName": "ShelfadjDrillType",
+          "value": "3"
+        },
+        {
+          "columnName": "ShelfadjDrillDistance",
+          "value": "64"
+        },
+        {
+          "columnName": "ObjectSidesFront",
+          "value": "ShelfadjFittingWoodDesign01"
+        },
+        {
+          "columnName": "ObjectSidesBack",
+          "value": "ShelfadjFittingWoodDesign01"
+        },
+        {
+          "columnName": "ObjectSidesMiddle",
+          "value": "N/a"
+        },
+        {
+          "columnName": "ObjectBackwall",
+          "value": "ShelfadjFittingWoodDesign03"
+        },
+        {
+          "columnName": "ObjectVertDividerType",
+          "value": "N/a"
+        },
+        {
+          "columnName": "ShelfadjWidthReduction",
+          "value": "1"
+        },
+        {
+          "columnName": "SidepanelDescriptor",
+          "value": "20mm_1_20mm"
+        },
+        {
+          "columnName": "BackwallDescriptor",
+          "value": "1_1"
+        },
+        {
+          "columnName": "ShelfadjOffsetFront",
+          "value": "m.mod_ShelfadjOffsetFront"
+        },
+        {
+          "columnName": "ShelfadjOffsetBack",
+          "value": "1.5"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "TallUnit"
+        },
+        {
+          "columnName": "in_FrontModule",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontModuleType",
+          "value": "All"
+        },
+        {
+          "columnName": "in_VertDividerType",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ShelfadjType",
+          "value": "Wood"
+        },
+        {
+          "columnName": "in_ShelfadjThkMin",
+          "value": "16"
+        },
+        {
+          "columnName": "in_ShelfadjThkMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CCSpaceWidthMin",
+          "value": "863"
+        },
+        {
+          "columnName": "in_CCSpaceWidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CCSpaceDepthMin",
+          "value": "601"
+        },
+        {
+          "columnName": "in_CCSpaceDepthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "ShelfadjDrillType",
+          "value": "3"
+        },
+        {
+          "columnName": "ShelfadjDrillDistance",
+          "value": "64"
+        },
+        {
+          "columnName": "ObjectSidesFront",
+          "value": "ShelfadjFittingWoodDesign01"
+        },
+        {
+          "columnName": "ObjectSidesBack",
+          "value": "ShelfadjFittingWoodDesign01"
+        },
+        {
+          "columnName": "ObjectSidesMiddle",
+          "value": "ShelfadjFittingWoodDesign01"
+        },
+        {
+          "columnName": "ObjectBackwall",
+          "value": "ShelfadjFittingWoodDesign03"
+        },
+        {
+          "columnName": "ObjectVertDividerType",
+          "value": "N/a"
+        },
+        {
+          "columnName": "ShelfadjWidthReduction",
+          "value": "1"
+        },
+        {
+          "columnName": "SidepanelDescriptor",
+          "value": "20mm_1_1_20mm"
+        },
+        {
+          "columnName": "BackwallDescriptor",
+          "value": "1_1"
+        },
+        {
+          "columnName": "ShelfadjOffsetFront",
+          "value": "m.mod_ShelfadjOffsetFront"
+        },
+        {
+          "columnName": "ShelfadjOffsetBack",
+          "value": "1.5"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "WallUnit"
+        },
+        {
+          "columnName": "in_FrontModule",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontModuleType",
+          "value": "All"
+        },
+        {
+          "columnName": "in_VertDividerType",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ShelfadjType",
+          "value": "Glass"
+        },
+        {
+          "columnName": "in_ShelfadjThkMin",
+          "value": "5"
+        },
+        {
+          "columnName": "in_ShelfadjThkMax",
+          "value": "5"
+        },
+        {
+          "columnName": "in_CCSpaceWidthMin",
+          "value": "150"
+        },
+        {
+          "columnName": "in_CCSpaceWidthMax",
+          "value": "862"
+        },
+        {
+          "columnName": "in_CCSpaceDepthMin",
+          "value": "120"
+        },
+        {
+          "columnName": "in_CCSpaceDepthMax",
+          "value": "350"
+        },
+        {
+          "columnName": "ShelfadjDrillType",
+          "value": "3"
+        },
+        {
+          "columnName": "ShelfadjDrillDistance",
+          "value": "32"
+        },
+        {
+          "columnName": "ObjectSidesFront",
+          "value": "ShelfadjFittingGlassDesign01"
+        },
+        {
+          "columnName": "ObjectSidesBack",
+          "value": "ShelfadjFittingGlassDesign01"
+        },
+        {
+          "columnName": "ObjectSidesMiddle",
+          "value": "N/a"
+        },
+        {
+          "columnName": "ObjectBackwall",
+          "value": "N/a"
+        },
+        {
+          "columnName": "ObjectVertDividerType",
+          "value": "N/a"
+        },
+        {
+          "columnName": "ShelfadjWidthReduction",
+          "value": "2"
+        },
+        {
+          "columnName": "SidepanelDescriptor",
+          "value": "20mm_1_20mm"
+        },
+        {
+          "columnName": "BackwallDescriptor",
+          "value": "N/a"
+        },
+        {
+          "columnName": "ShelfadjOffsetFront",
+          "value": "m.mod_ShelfadjOffsetFront"
+        },
+        {
+          "columnName": "ShelfadjOffsetBack",
+          "value": "m.mod_ShelfadjOffsetBack"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "WallUnit"
+        },
+        {
+          "columnName": "in_FrontModule",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontModuleType",
+          "value": "All"
+        },
+        {
+          "columnName": "in_VertDividerType",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ShelfadjType",
+          "value": "Glass"
+        },
+        {
+          "columnName": "in_ShelfadjThkMin",
+          "value": "5"
+        },
+        {
+          "columnName": "in_ShelfadjThkMax",
+          "value": "5"
+        },
+        {
+          "columnName": "in_CCSpaceWidthMin",
+          "value": "150"
+        },
+        {
+          "columnName": "in_CCSpaceWidthMax",
+          "value": "862"
+        },
+        {
+          "columnName": "in_CCSpaceDepthMin",
+          "value": "351"
+        },
+        {
+          "columnName": "in_CCSpaceDepthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "ShelfadjDrillType",
+          "value": "3"
+        },
+        {
+          "columnName": "ShelfadjDrillDistance",
+          "value": "32"
+        },
+        {
+          "columnName": "ObjectSidesFront",
+          "value": "ShelfadjFittingGlassDesign01"
+        },
+        {
+          "columnName": "ObjectSidesBack",
+          "value": "ShelfadjFittingGlassDesign01"
+        },
+        {
+          "columnName": "ObjectSidesMiddle",
+          "value": "ShelfadjFittingGlassDesign01"
+        },
+        {
+          "columnName": "ObjectBackwall",
+          "value": "N/a"
+        },
+        {
+          "columnName": "ObjectVertDividerType",
+          "value": "N/a"
+        },
+        {
+          "columnName": "ShelfadjWidthReduction",
+          "value": "2"
+        },
+        {
+          "columnName": "SidepanelDescriptor",
+          "value": "20mm_1_20mm"
+        },
+        {
+          "columnName": "BackwallDescriptor",
+          "value": "N/a"
+        },
+        {
+          "columnName": "ShelfadjOffsetFront",
+          "value": "m.mod_ShelfadjOffsetFront"
+        },
+        {
+          "columnName": "ShelfadjOffsetBack",
+          "value": "m.mod_ShelfadjOffsetBack"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "WallUnit"
+        },
+        {
+          "columnName": "in_FrontModule",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontModuleType",
+          "value": "All"
+        },
+        {
+          "columnName": "in_VertDividerType",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ShelfadjType",
+          "value": "Glass"
+        },
+        {
+          "columnName": "in_ShelfadjThkMin",
+          "value": "5"
+        },
+        {
+          "columnName": "in_ShelfadjThkMax",
+          "value": "5"
+        },
+        {
+          "columnName": "in_CCSpaceWidthMin",
+          "value": "863"
+        },
+        {
+          "columnName": "in_CCSpaceWidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CCSpaceDepthMin",
+          "value": "120"
+        },
+        {
+          "columnName": "in_CCSpaceDepthMax",
+          "value": "350"
+        },
+        {
+          "columnName": "ShelfadjDrillType",
+          "value": "3"
+        },
+        {
+          "columnName": "ShelfadjDrillDistance",
+          "value": "32"
+        },
+        {
+          "columnName": "ObjectSidesFront",
+          "value": "ShelfadjFittingGlassDesign01"
+        },
+        {
+          "columnName": "ObjectSidesBack",
+          "value": "ShelfadjFittingGlassDesign01"
+        },
+        {
+          "columnName": "ObjectSidesMiddle",
+          "value": "N/a"
+        },
+        {
+          "columnName": "ObjectBackwall",
+          "value": "ShelfadjFittingGlassDesign01"
+        },
+        {
+          "columnName": "ObjectVertDividerType",
+          "value": "N/a"
+        },
+        {
+          "columnName": "ShelfadjWidthReduction",
+          "value": "2"
+        },
+        {
+          "columnName": "SidepanelDescriptor",
+          "value": "20mm_1_20mm"
+        },
+        {
+          "columnName": "BackwallDescriptor",
+          "value": "1_1"
+        },
+        {
+          "columnName": "ShelfadjOffsetFront",
+          "value": "m.mod_ShelfadjOffsetFront"
+        },
+        {
+          "columnName": "ShelfadjOffsetBack",
+          "value": "m.mod_ShelfadjOffsetBack"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "WallUnit"
+        },
+        {
+          "columnName": "in_FrontModule",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontModuleType",
+          "value": "All"
+        },
+        {
+          "columnName": "in_VertDividerType",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ShelfadjType",
+          "value": "Glass"
+        },
+        {
+          "columnName": "in_ShelfadjThkMin",
+          "value": "5"
+        },
+        {
+          "columnName": "in_ShelfadjThkMax",
+          "value": "5"
+        },
+        {
+          "columnName": "in_CCSpaceWidthMin",
+          "value": "863"
+        },
+        {
+          "columnName": "in_CCSpaceWidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CCSpaceDepthMin",
+          "value": "351"
+        },
+        {
+          "columnName": "in_CCSpaceDepthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "ShelfadjDrillType",
+          "value": "3"
+        },
+        {
+          "columnName": "ShelfadjDrillDistance",
+          "value": "32"
+        },
+        {
+          "columnName": "ObjectSidesFront",
+          "value": "ShelfadjFittingGlassDesign01"
+        },
+        {
+          "columnName": "ObjectSidesBack",
+          "value": "ShelfadjFittingGlassDesign01"
+        },
+        {
+          "columnName": "ObjectSidesMiddle",
+          "value": "N/a"
+        },
+        {
+          "columnName": "ObjectBackwall",
+          "value": "ShelfadjFittingGlassDesign01"
+        },
+        {
+          "columnName": "ObjectVertDividerType",
+          "value": "N/a"
+        },
+        {
+          "columnName": "ShelfadjWidthReduction",
+          "value": "2"
+        },
+        {
+          "columnName": "SidepanelDescriptor",
+          "value": "20mm_1_20mm"
+        },
+        {
+          "columnName": "BackwallDescriptor",
+          "value": "1_1"
+        },
+        {
+          "columnName": "ShelfadjOffsetFront",
+          "value": "m.mod_ShelfadjOffsetFront"
+        },
+        {
+          "columnName": "ShelfadjOffsetBack",
+          "value": "m.mod_ShelfadjOffsetBack"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "WallUnit"
+        },
+        {
+          "columnName": "in_FrontModule",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontModuleType",
+          "value": "All"
+        },
+        {
+          "columnName": "in_VertDividerType",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ShelfadjType",
+          "value": "Wood"
+        },
+        {
+          "columnName": "in_ShelfadjThkMin",
+          "value": "16"
+        },
+        {
+          "columnName": "in_ShelfadjThkMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CCSpaceWidthMin",
+          "value": "150"
+        },
+        {
+          "columnName": "in_CCSpaceWidthMax",
+          "value": "862"
+        },
+        {
+          "columnName": "in_CCSpaceDepthMin",
+          "value": "120"
+        },
+        {
+          "columnName": "in_CCSpaceDepthMax",
+          "value": "350"
+        },
+        {
+          "columnName": "ShelfadjDrillType",
+          "value": "3"
+        },
+        {
+          "columnName": "ShelfadjDrillDistance",
+          "value": "64"
+        },
+        {
+          "columnName": "ObjectSidesFront",
+          "value": "ShelfadjFittingWoodDesign01"
+        },
+        {
+          "columnName": "ObjectSidesBack",
+          "value": "ShelfadjFittingWoodDesign01"
+        },
+        {
+          "columnName": "ObjectSidesMiddle",
+          "value": "N/a"
+        },
+        {
+          "columnName": "ObjectBackwall",
+          "value": "N/a"
+        },
+        {
+          "columnName": "ObjectVertDividerType",
+          "value": "N/a"
+        },
+        {
+          "columnName": "ShelfadjWidthReduction",
+          "value": "1"
+        },
+        {
+          "columnName": "SidepanelDescriptor",
+          "value": "20mm_1_20mm"
+        },
+        {
+          "columnName": "BackwallDescriptor",
+          "value": "N/a"
+        },
+        {
+          "columnName": "ShelfadjOffsetFront",
+          "value": "m.mod_ShelfadjOffsetFront"
+        },
+        {
+          "columnName": "ShelfadjOffsetBack",
+          "value": "m.mod_ShelfadjOffsetBack"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "WallUnit"
+        },
+        {
+          "columnName": "in_FrontModule",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontModuleType",
+          "value": "All"
+        },
+        {
+          "columnName": "in_VertDividerType",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ShelfadjType",
+          "value": "Wood"
+        },
+        {
+          "columnName": "in_ShelfadjThkMin",
+          "value": "16"
+        },
+        {
+          "columnName": "in_ShelfadjThkMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CCSpaceWidthMin",
+          "value": "150"
+        },
+        {
+          "columnName": "in_CCSpaceWidthMax",
+          "value": "862"
+        },
+        {
+          "columnName": "in_CCSpaceDepthMin",
+          "value": "351"
+        },
+        {
+          "columnName": "in_CCSpaceDepthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "ShelfadjDrillType",
+          "value": "3"
+        },
+        {
+          "columnName": "ShelfadjDrillDistance",
+          "value": "64"
+        },
+        {
+          "columnName": "ObjectSidesFront",
+          "value": "ShelfadjFittingWoodDesign01"
+        },
+        {
+          "columnName": "ObjectSidesBack",
+          "value": "ShelfadjFittingWoodDesign01"
+        },
+        {
+          "columnName": "ObjectSidesMiddle",
+          "value": "ShelfadjFittingWoodDesign01"
+        },
+        {
+          "columnName": "ObjectBackwall",
+          "value": "N/a"
+        },
+        {
+          "columnName": "ObjectVertDividerType",
+          "value": "N/a"
+        },
+        {
+          "columnName": "ShelfadjWidthReduction",
+          "value": "1"
+        },
+        {
+          "columnName": "SidepanelDescriptor",
+          "value": "20mm_1_20mm"
+        },
+        {
+          "columnName": "BackwallDescriptor",
+          "value": "N/a"
+        },
+        {
+          "columnName": "ShelfadjOffsetFront",
+          "value": "m.mod_ShelfadjOffsetFront"
+        },
+        {
+          "columnName": "ShelfadjOffsetBack",
+          "value": "m.mod_ShelfadjOffsetBack"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "WallUnit"
+        },
+        {
+          "columnName": "in_FrontModule",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontModuleType",
+          "value": "All"
+        },
+        {
+          "columnName": "in_VertDividerType",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ShelfadjType",
+          "value": "Wood"
+        },
+        {
+          "columnName": "in_ShelfadjThkMin",
+          "value": "16"
+        },
+        {
+          "columnName": "in_ShelfadjThkMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CCSpaceWidthMin",
+          "value": "863"
+        },
+        {
+          "columnName": "in_CCSpaceWidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CCSpaceDepthMin",
+          "value": "120"
+        },
+        {
+          "columnName": "in_CCSpaceDepthMax",
+          "value": "350"
+        },
+        {
+          "columnName": "ShelfadjDrillType",
+          "value": "3"
+        },
+        {
+          "columnName": "ShelfadjDrillDistance",
+          "value": "64"
+        },
+        {
+          "columnName": "ObjectSidesFront",
+          "value": "ShelfadjFittingWoodDesign01"
+        },
+        {
+          "columnName": "ObjectSidesBack",
+          "value": "ShelfadjFittingWoodDesign01"
+        },
+        {
+          "columnName": "ObjectSidesMiddle",
+          "value": "N/a"
+        },
+        {
+          "columnName": "ObjectBackwall",
+          "value": "ShelfadjFittingWoodDesign03"
+        },
+        {
+          "columnName": "ObjectVertDividerType",
+          "value": "N/a"
+        },
+        {
+          "columnName": "ShelfadjWidthReduction",
+          "value": "1"
+        },
+        {
+          "columnName": "SidepanelDescriptor",
+          "value": "20mm_1_20mm"
+        },
+        {
+          "columnName": "BackwallDescriptor",
+          "value": "1_1"
+        },
+        {
+          "columnName": "ShelfadjOffsetFront",
+          "value": "m.mod_ShelfadjOffsetFront"
+        },
+        {
+          "columnName": "ShelfadjOffsetBack",
+          "value": "1.5"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "WallUnit"
+        },
+        {
+          "columnName": "in_FrontModule",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontModuleType",
+          "value": "All"
+        },
+        {
+          "columnName": "in_VertDividerType",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ShelfadjType",
+          "value": "Wood"
+        },
+        {
+          "columnName": "in_ShelfadjThkMin",
+          "value": "16"
+        },
+        {
+          "columnName": "in_ShelfadjThkMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CCSpaceWidthMin",
+          "value": "863"
+        },
+        {
+          "columnName": "in_CCSpaceWidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CCSpaceDepthMin",
+          "value": "351"
+        },
+        {
+          "columnName": "in_CCSpaceDepthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "ShelfadjDrillType",
+          "value": "3"
+        },
+        {
+          "columnName": "ShelfadjDrillDistance",
+          "value": "64"
+        },
+        {
+          "columnName": "ObjectSidesFront",
+          "value": "ShelfadjFittingWoodDesign01"
+        },
+        {
+          "columnName": "ObjectSidesBack",
+          "value": "ShelfadjFittingWoodDesign01"
+        },
+        {
+          "columnName": "ObjectSidesMiddle",
+          "value": "N/a"
+        },
+        {
+          "columnName": "ObjectBackwall",
+          "value": "ShelfadjFittingWoodDesign03"
+        },
+        {
+          "columnName": "ObjectVertDividerType",
+          "value": "N/a"
+        },
+        {
+          "columnName": "ShelfadjWidthReduction",
+          "value": "1"
+        },
+        {
+          "columnName": "SidepanelDescriptor",
+          "value": "20mm_1_20mm"
+        },
+        {
+          "columnName": "BackwallDescriptor",
+          "value": "1_1"
+        },
+        {
+          "columnName": "ShelfadjOffsetFront",
+          "value": "m.mod_ShelfadjOffsetFront"
+        },
+        {
+          "columnName": "ShelfadjOffsetBack",
+          "value": "1.5"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "WallUnit"
+        },
+        {
+          "columnName": "in_FrontModule",
+          "value": "Fliplift"
+        },
+        {
+          "columnName": "in_FrontModuleType",
+          "value": "FHF"
+        },
+        {
+          "columnName": "in_VertDividerType",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ShelfadjType",
+          "value": "Wood"
+        },
+        {
+          "columnName": "in_ShelfadjThkMin",
+          "value": "16"
+        },
+        {
+          "columnName": "in_ShelfadjThkMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CCSpaceWidthMin",
+          "value": "150"
+        },
+        {
+          "columnName": "in_CCSpaceWidthMax",
+          "value": "862"
+        },
+        {
+          "columnName": "in_CCSpaceDepthMin",
+          "value": "120"
+        },
+        {
+          "columnName": "in_CCSpaceDepthMax",
+          "value": "350"
+        },
+        {
+          "columnName": "ShelfadjDrillType",
+          "value": "3"
+        },
+        {
+          "columnName": "ShelfadjDrillDistance",
+          "value": "64"
+        },
+        {
+          "columnName": "ObjectSidesFront",
+          "value": "ShelfadjFittingWoodDesign01"
+        },
+        {
+          "columnName": "ObjectSidesBack",
+          "value": "ShelfadjFittingWoodDesign01"
+        },
+        {
+          "columnName": "ObjectSidesMiddle",
+          "value": "N/a"
+        },
+        {
+          "columnName": "ObjectBackwall",
+          "value": "N/a"
+        },
+        {
+          "columnName": "ObjectVertDividerType",
+          "value": "N/a"
+        },
+        {
+          "columnName": "ShelfadjWidthReduction",
+          "value": "1"
+        },
+        {
+          "columnName": "SidepanelDescriptor",
+          "value": "20mm_1_20mm"
+        },
+        {
+          "columnName": "BackwallDescriptor",
+          "value": "N/a"
+        },
+        {
+          "columnName": "ShelfadjOffsetFront",
+          "value": "50"
+        },
+        {
+          "columnName": "ShelfadjOffsetBack",
+          "value": "m.mod_ShelfadjOffsetBack"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "WallUnit"
+        },
+        {
+          "columnName": "in_FrontModule",
+          "value": "Fliplift"
+        },
+        {
+          "columnName": "in_FrontModuleType",
+          "value": "FHF"
+        },
+        {
+          "columnName": "in_VertDividerType",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ShelfadjType",
+          "value": "Wood"
+        },
+        {
+          "columnName": "in_ShelfadjThkMin",
+          "value": "16"
+        },
+        {
+          "columnName": "in_ShelfadjThkMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CCSpaceWidthMin",
+          "value": "150"
+        },
+        {
+          "columnName": "in_CCSpaceWidthMax",
+          "value": "862"
+        },
+        {
+          "columnName": "in_CCSpaceDepthMin",
+          "value": "351"
+        },
+        {
+          "columnName": "in_CCSpaceDepthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "ShelfadjDrillType",
+          "value": "3"
+        },
+        {
+          "columnName": "ShelfadjDrillDistance",
+          "value": "64"
+        },
+        {
+          "columnName": "ObjectSidesFront",
+          "value": "ShelfadjFittingWoodDesign01"
+        },
+        {
+          "columnName": "ObjectSidesBack",
+          "value": "ShelfadjFittingWoodDesign01"
+        },
+        {
+          "columnName": "ObjectSidesMiddle",
+          "value": "ShelfadjFittingWoodDesign01"
+        },
+        {
+          "columnName": "ObjectBackwall",
+          "value": "N/a"
+        },
+        {
+          "columnName": "ObjectVertDividerType",
+          "value": "N/a"
+        },
+        {
+          "columnName": "ShelfadjWidthReduction",
+          "value": "1"
+        },
+        {
+          "columnName": "SidepanelDescriptor",
+          "value": "20mm_1_20mm"
+        },
+        {
+          "columnName": "BackwallDescriptor",
+          "value": "N/a"
+        },
+        {
+          "columnName": "ShelfadjOffsetFront",
+          "value": "50"
+        },
+        {
+          "columnName": "ShelfadjOffsetBack",
+          "value": "m.mod_ShelfadjOffsetBack"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "WallUnit"
+        },
+        {
+          "columnName": "in_FrontModule",
+          "value": "Fliplift"
+        },
+        {
+          "columnName": "in_FrontModuleType",
+          "value": "FHF"
+        },
+        {
+          "columnName": "in_VertDividerType",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ShelfadjType",
+          "value": "Wood"
+        },
+        {
+          "columnName": "in_ShelfadjThkMin",
+          "value": "16"
+        },
+        {
+          "columnName": "in_ShelfadjThkMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CCSpaceWidthMin",
+          "value": "863"
+        },
+        {
+          "columnName": "in_CCSpaceWidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CCSpaceDepthMin",
+          "value": "120"
+        },
+        {
+          "columnName": "in_CCSpaceDepthMax",
+          "value": "350"
+        },
+        {
+          "columnName": "ShelfadjDrillType",
+          "value": "3"
+        },
+        {
+          "columnName": "ShelfadjDrillDistance",
+          "value": "64"
+        },
+        {
+          "columnName": "ObjectSidesFront",
+          "value": "ShelfadjFittingWoodDesign01"
+        },
+        {
+          "columnName": "ObjectSidesBack",
+          "value": "ShelfadjFittingWoodDesign01"
+        },
+        {
+          "columnName": "ObjectSidesMiddle",
+          "value": "N/a"
+        },
+        {
+          "columnName": "ObjectBackwall",
+          "value": "ShelfadjFittingWoodDesign03"
+        },
+        {
+          "columnName": "ObjectVertDividerType",
+          "value": "N/a"
+        },
+        {
+          "columnName": "ShelfadjWidthReduction",
+          "value": "1"
+        },
+        {
+          "columnName": "SidepanelDescriptor",
+          "value": "20mm_1_20mm"
+        },
+        {
+          "columnName": "BackwallDescriptor",
+          "value": "1_1"
+        },
+        {
+          "columnName": "ShelfadjOffsetFront",
+          "value": "50"
+        },
+        {
+          "columnName": "ShelfadjOffsetBack",
+          "value": "1.5"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "WallUnit"
+        },
+        {
+          "columnName": "in_FrontModule",
+          "value": "Fliplift"
+        },
+        {
+          "columnName": "in_FrontModuleType",
+          "value": "FHF"
+        },
+        {
+          "columnName": "in_VertDividerType",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ShelfadjType",
+          "value": "Wood"
+        },
+        {
+          "columnName": "in_ShelfadjThkMin",
+          "value": "16"
+        },
+        {
+          "columnName": "in_ShelfadjThkMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CCSpaceWidthMin",
+          "value": "863"
+        },
+        {
+          "columnName": "in_CCSpaceWidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CCSpaceDepthMin",
+          "value": "351"
+        },
+        {
+          "columnName": "in_CCSpaceDepthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "ShelfadjDrillType",
+          "value": "3"
+        },
+        {
+          "columnName": "ShelfadjDrillDistance",
+          "value": "64"
+        },
+        {
+          "columnName": "ObjectSidesFront",
+          "value": "ShelfadjFittingWoodDesign01"
+        },
+        {
+          "columnName": "ObjectSidesBack",
+          "value": "ShelfadjFittingWoodDesign01"
+        },
+        {
+          "columnName": "ObjectSidesMiddle",
+          "value": "N/a"
+        },
+        {
+          "columnName": "ObjectBackwall",
+          "value": "ShelfadjFittingWoodDesign03"
+        },
+        {
+          "columnName": "ObjectVertDividerType",
+          "value": "N/a"
+        },
+        {
+          "columnName": "ShelfadjWidthReduction",
+          "value": "1"
+        },
+        {
+          "columnName": "SidepanelDescriptor",
+          "value": "20mm_1_20mm"
+        },
+        {
+          "columnName": "BackwallDescriptor",
+          "value": "1_1"
+        },
+        {
+          "columnName": "ShelfadjOffsetFront",
+          "value": "50"
+        },
+        {
+          "columnName": "ShelfadjOffsetBack",
+          "value": "1.5"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "WallUnit"
+        },
+        {
+          "columnName": "in_FrontModule",
+          "value": "Fliplift"
+        },
+        {
+          "columnName": "in_FrontModuleType",
+          "value": "UF"
+        },
+        {
+          "columnName": "in_VertDividerType",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ShelfadjType",
+          "value": "Wood"
+        },
+        {
+          "columnName": "in_ShelfadjThkMin",
+          "value": "16"
+        },
+        {
+          "columnName": "in_ShelfadjThkMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CCSpaceWidthMin",
+          "value": "863"
+        },
+        {
+          "columnName": "in_CCSpaceWidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CCSpaceDepthMin",
+          "value": "120"
+        },
+        {
+          "columnName": "in_CCSpaceDepthMax",
+          "value": "350"
+        },
+        {
+          "columnName": "ShelfadjDrillType",
+          "value": "3"
+        },
+        {
+          "columnName": "ShelfadjDrillDistance",
+          "value": "64"
+        },
+        {
+          "columnName": "ObjectSidesFront",
+          "value": "ShelfadjFittingWoodDesign01"
+        },
+        {
+          "columnName": "ObjectSidesBack",
+          "value": "ShelfadjFittingWoodDesign01"
+        },
+        {
+          "columnName": "ObjectSidesMiddle",
+          "value": "N/a"
+        },
+        {
+          "columnName": "ObjectBackwall",
+          "value": "ShelfadjFittingWoodDesign03"
+        },
+        {
+          "columnName": "ObjectVertDividerType",
+          "value": "N/a"
+        },
+        {
+          "columnName": "ShelfadjWidthReduction",
+          "value": "1"
+        },
+        {
+          "columnName": "SidepanelDescriptor",
+          "value": "20mm_1_20mm"
+        },
+        {
+          "columnName": "BackwallDescriptor",
+          "value": "1_1"
+        },
+        {
+          "columnName": "ShelfadjOffsetFront",
+          "value": "50"
+        },
+        {
+          "columnName": "ShelfadjOffsetBack",
+          "value": "1.5"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "WallUnit"
+        },
+        {
+          "columnName": "in_FrontModule",
+          "value": "Fliplift"
+        },
+        {
+          "columnName": "in_FrontModuleType",
+          "value": "UF"
+        },
+        {
+          "columnName": "in_VertDividerType",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ShelfadjType",
+          "value": "Wood"
+        },
+        {
+          "columnName": "in_ShelfadjThkMin",
+          "value": "16"
+        },
+        {
+          "columnName": "in_ShelfadjThkMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CCSpaceWidthMin",
+          "value": "150"
+        },
+        {
+          "columnName": "in_CCSpaceWidthMax",
+          "value": "862"
+        },
+        {
+          "columnName": "in_CCSpaceDepthMin",
+          "value": "351"
+        },
+        {
+          "columnName": "in_CCSpaceDepthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "ShelfadjDrillType",
+          "value": "3"
+        },
+        {
+          "columnName": "ShelfadjDrillDistance",
+          "value": "64"
+        },
+        {
+          "columnName": "ObjectSidesFront",
+          "value": "ShelfadjFittingWoodDesign01"
+        },
+        {
+          "columnName": "ObjectSidesBack",
+          "value": "ShelfadjFittingWoodDesign01"
+        },
+        {
+          "columnName": "ObjectSidesMiddle",
+          "value": "ShelfadjFittingWoodDesign01"
+        },
+        {
+          "columnName": "ObjectBackwall",
+          "value": "N/a"
+        },
+        {
+          "columnName": "ObjectVertDividerType",
+          "value": "N/a"
+        },
+        {
+          "columnName": "ShelfadjWidthReduction",
+          "value": "1"
+        },
+        {
+          "columnName": "SidepanelDescriptor",
+          "value": "20mm_1_20mm"
+        },
+        {
+          "columnName": "BackwallDescriptor",
+          "value": "N/a"
+        },
+        {
+          "columnName": "ShelfadjOffsetFront",
+          "value": "50"
+        },
+        {
+          "columnName": "ShelfadjOffsetBack",
+          "value": "m.mod_ShelfadjOffsetBack"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "WallUnit"
+        },
+        {
+          "columnName": "in_FrontModule",
+          "value": "Fliplift"
+        },
+        {
+          "columnName": "in_FrontModuleType",
+          "value": "UF"
+        },
+        {
+          "columnName": "in_VertDividerType",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ShelfadjType",
+          "value": "Wood"
+        },
+        {
+          "columnName": "in_ShelfadjThkMin",
+          "value": "16"
+        },
+        {
+          "columnName": "in_ShelfadjThkMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CCSpaceWidthMin",
+          "value": "150"
+        },
+        {
+          "columnName": "in_CCSpaceWidthMax",
+          "value": "862"
+        },
+        {
+          "columnName": "in_CCSpaceDepthMin",
+          "value": "120"
+        },
+        {
+          "columnName": "in_CCSpaceDepthMax",
+          "value": "350"
+        },
+        {
+          "columnName": "ShelfadjDrillType",
+          "value": "3"
+        },
+        {
+          "columnName": "ShelfadjDrillDistance",
+          "value": "64"
+        },
+        {
+          "columnName": "ObjectSidesFront",
+          "value": "ShelfadjFittingWoodDesign01"
+        },
+        {
+          "columnName": "ObjectSidesBack",
+          "value": "ShelfadjFittingWoodDesign01"
+        },
+        {
+          "columnName": "ObjectSidesMiddle",
+          "value": "N/a"
+        },
+        {
+          "columnName": "ObjectBackwall",
+          "value": "N/a"
+        },
+        {
+          "columnName": "ObjectVertDividerType",
+          "value": "N/a"
+        },
+        {
+          "columnName": "ShelfadjWidthReduction",
+          "value": "1"
+        },
+        {
+          "columnName": "SidepanelDescriptor",
+          "value": "20mm_1_20mm"
+        },
+        {
+          "columnName": "BackwallDescriptor",
+          "value": "N/a"
+        },
+        {
+          "columnName": "ShelfadjOffsetFront",
+          "value": "50"
+        },
+        {
+          "columnName": "ShelfadjOffsetBack",
+          "value": "m.mod_ShelfadjOffsetBack"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "WallUnit"
+        },
+        {
+          "columnName": "in_FrontModule",
+          "value": "Fliplift"
+        },
+        {
+          "columnName": "in_FrontModuleType",
+          "value": "All"
+        },
+        {
+          "columnName": "in_VertDividerType",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ShelfadjType",
+          "value": "Wood"
+        },
+        {
+          "columnName": "in_ShelfadjThkMin",
+          "value": "16"
+        },
+        {
+          "columnName": "in_ShelfadjThkMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CCSpaceWidthMin",
+          "value": "863"
+        },
+        {
+          "columnName": "in_CCSpaceWidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CCSpaceDepthMin",
+          "value": "351"
+        },
+        {
+          "columnName": "in_CCSpaceDepthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "ShelfadjDrillType",
+          "value": "3"
+        },
+        {
+          "columnName": "ShelfadjDrillDistance",
+          "value": "64"
+        },
+        {
+          "columnName": "ObjectSidesFront",
+          "value": "ShelfadjFittingWoodDesign01"
+        },
+        {
+          "columnName": "ObjectSidesBack",
+          "value": "ShelfadjFittingWoodDesign01"
+        },
+        {
+          "columnName": "ObjectSidesMiddle",
+          "value": "N/a"
+        },
+        {
+          "columnName": "ObjectBackwall",
+          "value": "ShelfadjFittingWoodDesign03"
+        },
+        {
+          "columnName": "ObjectVertDividerType",
+          "value": "N/a"
+        },
+        {
+          "columnName": "ShelfadjWidthReduction",
+          "value": "1"
+        },
+        {
+          "columnName": "SidepanelDescriptor",
+          "value": "20mm_1_20mm"
+        },
+        {
+          "columnName": "BackwallDescriptor",
+          "value": "1_1"
+        },
+        {
+          "columnName": "ShelfadjOffsetFront",
+          "value": "50"
+        },
+        {
+          "columnName": "ShelfadjOffsetBack",
+          "value": "1.5"
+        }
+      ]
+    }
+  ]
+}

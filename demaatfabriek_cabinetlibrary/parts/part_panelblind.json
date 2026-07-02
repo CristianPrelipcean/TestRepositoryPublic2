@@ -1,0 +1,253 @@
+{
+  "partCode": "part_Panelblind",
+  "shortName": "Blind Panel",
+  "description": "Blind Panel",
+  "wdt": "XYZ",
+  "groupName": "Panels",
+  "imageId": "",
+  "model3dImageId": "",
+  "invisible": false,
+  "restrictionTypeId": "Public",
+  "partVariants": [
+    {
+      "partVarId": "pa_CarcasePartConnectionBtmVert",
+      "valueScript": "this.parent.mod_CarcasePartConnectionBtmVert",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_CarcasePartConnectionTopVert",
+      "valueScript": "this.parent.mod_CarcasePartConnectionTopVert",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_CarcasePartConnectionLeftHor",
+      "valueScript": "this.parent.mod_CarcasePartConnectionLeftHor",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_CarcasePartConnectionRightHor",
+      "valueScript": "this.parent.mod_CarcasePartConnectionRightHor",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_FittingConnectionBtmVert",
+      "valueScript": "this.parent.mod_FittingConnectionBtmVert",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_FittingConnectionTopVert",
+      "valueScript": "this.parent.mod_FittingConnectionTopVert",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_FittingConnectionLeftHor",
+      "valueScript": "this.parent.mod_FittingConnectionLeftHor",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_FittingConnectionRightHor",
+      "valueScript": "this.parent.mod_FittingConnectionRightHor",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_AdditionalInfo1",
+      "valueScript": "'All'",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_BomId",
+      "valueScript": "this.parent.mod_CarcaseId",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_BtmColor",
+      "valueScript": "this.parent.mod_CarcaseOutsideColor",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeBackColor",
+      "valueScript": "this.parent.mod_CarcaseEdgeColor",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeLeftColor",
+      "valueScript": "this.parent.mod_CarcaseEdgeColor",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeFrontColor",
+      "valueScript": "this.parent.mod_CarcaseEdgeColor",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeRightColor",
+      "valueScript": "this.parent.mod_CarcaseEdgeColor",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeLeftType",
+      "valueScript": "this.parent.mod_EdgeLeftType",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeRightType",
+      "valueScript": "this.parent.mod_EdgeRightType",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeFrontType",
+      "valueScript": "this.parent.mod_EdgeFrontType",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeBackType",
+      "valueScript": "this.parent.mod_EdgeBackType",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeJointType",
+      "valueScript": "this.parent.mod_EdgeJointType",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_GrainDirection",
+      "valueScript": "'Neutral'",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_Program",
+      "valueScript": "this.parent.mod_CarcaseProgram",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_TopColor",
+      "valueScript": "this.parent.mod_CarcaseColor",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_TypeElement",
+      "valueScript": "this.parent.mod_TypeElement",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_ParentName",
+      "valueScript": "this.parent.mod_ParentName",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_ColorGrainGroup",
+      "valueScript": "this.parent.mod_CarcaseColor_matrix.GrainGroupId",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_ProgramGrainGroup",
+      "valueScript": "this.parent.mod_CarcaseProgram_matrix.GrainGroupId",
+      "isWritable": false
+    }
+  ],
+  "bomData": [
+    {
+      "bomElementTypeId": "bomout_Board",
+      "conditionScript": "partSelf._g?.basic_CreateBom == 'Library'",
+      "valueScript": "// Type of the Bom-Element (will be checked in order output)\n  let elementType='Board';\n\n  // ProductionSite Category (to split the orders for different production sites)\n  let elementCategory='';\n\n  // Id of the parent to create the hierarchy\n  let parentBomId=part.pa_BomId;\n\n  // Call the function to process the Bom-Element\n  GlobalFunc.process_BoardBom(this, part, elementType, elementCategory, parentBomId)"
+    }
+  ],
+  "ncData": [
+    {
+      "part2": "part_Sidepanelleft",
+      "touchName": "FromLeft",
+      "bomElementTypeId": "ncout_Group",
+      "description": "Connection between panel blind and sidepanel left",
+      "valueScript": "// Schuler Consulting\n// Create: January 2025\n// By Ludwig Weber\n// Purpose: CabinetLibrary\n//\n// Description:\n// Connection between Panel blind and Sidepanelleft\n// Touch FromLeft\n//\n// Revisions:\n// \n//===================================================\n\n// Initialize variables\nlet Area = \"LeftHor\";\nlet PartType = 'PanelVertical';\nlet DrillingPartType = 'PartShort';\nlet DrillingPosition = 'Left';\nlet TouchDirectionGraphic = 'Left';\nlet FallingDirection = 'Front';\nlet ConnectionOrientation = 'TopBottom';\nlet ConnectionType = partSelf.pa_CarcasePartConnectionLeftHor;\nlet FittingType = partSelf.pa_FittingConnectionLeftHor;\nlet InsideDirection = 'Back';\n\n// Call the process function\nGlobalFunc.process_CarcasePartConnection(this, partSelf, part2, posRel, Area, PartType, DrillingPosition, TouchDirectionGraphic, FallingDirection, ConnectionOrientation, ConnectionType, FittingType, InsideDirection, DrillingPartType)",
+      "bomExecuteType": "Touch"
+    },
+    {
+      "part2": "part_Sidepanelright",
+      "touchName": "FromRight",
+      "bomElementTypeId": "ncout_Group",
+      "description": "Connection between panel blind and sidepanel right",
+      "valueScript": "// Schuler Consulting\n// Create: January 2025\n// By Ludwig Weber\n// Purpose: CabinetLibrary\n//\n// Description:\n// Connection between Panel blind and Sidepanelright\n// Touch FromRight\n//\n// Revisions:\n// \n//===================================================\n\n// Initialize variables\nlet Area = \"RightHor\";\nlet PartType = 'PanelVertical';\nlet DrillingPartType = 'PartShort';\nlet DrillingPosition = 'Right';\nlet TouchDirectionGraphic = 'Right';\nlet FallingDirection = 'Front';\nlet ConnectionOrientation = 'TopBottom';\nlet ConnectionType = partSelf.pa_CarcasePartConnectionRightHor;\nlet FittingType = partSelf.pa_FittingConnectionRightHor;\nlet InsideDirection = 'Back';\n\n// Call the process function\nGlobalFunc.process_CarcasePartConnection(this, partSelf, part2, posRel, Area, PartType, DrillingPosition, TouchDirectionGraphic, FallingDirection, ConnectionOrientation, ConnectionType, FittingType, InsideDirection, DrillingPartType)",
+      "bomExecuteType": "Touch"
+    },
+    {
+      "part2": "part_Sidepanelmiddle",
+      "touchName": "FromLeft",
+      "bomElementTypeId": "ncout_Group",
+      "description": "Connection between panel blind and sidepanel middle",
+      "valueScript": "// Schuler Consulting\n// Create: January 2025\n// By Ludwig Weber\n// Purpose: CabinetLibrary\n//\n// Description:\n// Connection between Panel blind and Sidepanelmiddle\n// Touch FromLeft\n//\n// Revisions:\n// \n//===================================================\n\n// Initialize variables\nlet Area = \"LeftHor\";\nlet PartType = 'PanelVertical';\nlet DrillingPartType = 'PartShort';\nlet DrillingPosition = 'Left';\nlet TouchDirectionGraphic = 'Left';\nlet FallingDirection = 'Front';\nlet ConnectionOrientation = 'TopBottom';\nlet ConnectionType = partSelf.pa_CarcasePartConnectionLeftHor;\nlet FittingType = partSelf.pa_FittingConnectionLeftHor;\nlet InsideDirection = 'Back';\n\n// Call the process function\nGlobalFunc.process_CarcasePartConnection(this, partSelf, part2, posRel, Area, PartType, DrillingPosition, TouchDirectionGraphic, FallingDirection, ConnectionOrientation, ConnectionType, FittingType, InsideDirection, DrillingPartType)",
+      "bomExecuteType": "Touch"
+    },
+    {
+      "part2": "part_Sidepanelmiddle",
+      "touchName": "FromRight",
+      "bomElementTypeId": "ncout_Group",
+      "description": "Connection between panel blind and sidepanel middle",
+      "valueScript": "// Schuler Consulting\n// Create: January 2025\n// By Ludwig Weber\n// Purpose: CabinetLibrary\n//\n// Description:\n// Connection between Panel blind and Sidepanelmiddle\n// Touch FromRight\n//\n// Revisions:\n// \n//===================================================\n\n// Initialize variables\nlet Area = \"RightHor\";\nlet PartType = 'PanelVertical';\nlet DrillingPartType = 'PartShort';\nlet DrillingPosition = 'Right';\nlet TouchDirectionGraphic = 'Right';\nlet FallingDirection = 'Front';\nlet ConnectionOrientation = 'TopBottom';\nlet ConnectionType = partSelf.pa_CarcasePartConnectionRightHor;\nlet FittingType = partSelf.pa_FittingConnectionRightHor;\nlet InsideDirection = 'Back';\n\n// Call the process function\nGlobalFunc.process_CarcasePartConnection(this, partSelf, part2, posRel, Area, PartType, DrillingPosition, TouchDirectionGraphic, FallingDirection, ConnectionOrientation, ConnectionType, FittingType, InsideDirection, DrillingPartType)",
+      "bomExecuteType": "Touch"
+    },
+    {
+      "part2": "part_CleatVert",
+      "touchName": "FromLeft",
+      "bomElementTypeId": "ncout_Group",
+      "description": "Connection between panel blind and cleat vertical",
+      "valueScript": "// Schuler Consulting\n// Create: January 2025\n// By Ludwig Weber\n// Purpose: CabinetLibrary\n//\n// Description:\n// Connection between Panel blind and Cleat vertical\n// Touch FromLeft\n//\n// Revisions:\n// \n//===================================================\n\n// Initialize variables\nlet Area = \"LeftHor\";\nlet PartType = 'PanelVertical';\nlet DrillingPartType = 'PartShort';\nlet DrillingPosition = 'Left';\nlet TouchDirectionGraphic = 'Left';\nlet FallingDirection = 'Front';\nlet ConnectionOrientation = 'TopBottom';\nlet ConnectionType = partSelf.pa_CarcasePartConnectionLeftHor;\nlet FittingType = partSelf.pa_FittingConnectionLeftHor;\nlet InsideDirection = 'Back';\n\n// Call the process function\nGlobalFunc.process_CarcasePartConnection(this, partSelf, part2, posRel, Area, PartType, DrillingPosition, TouchDirectionGraphic, FallingDirection, ConnectionOrientation, ConnectionType, FittingType, InsideDirection, DrillingPartType)",
+      "bomExecuteType": "Touch"
+    },
+    {
+      "part2": "part_CleatVert",
+      "touchName": "FromRight",
+      "bomElementTypeId": "ncout_Group",
+      "description": "Connection between panel blind and cleat vertical",
+      "valueScript": "// Schuler Consulting\n// Create: January 2025\n// By Ludwig Weber\n// Purpose: CabinetLibrary\n//\n// Description:\n// Connection between Panel blind and Cleat vertical\n// Touch FromRight\n//\n// Revisions:\n// \n//===================================================\n\n// Initialize variables\nlet Area = \"RightHor\";\nlet PartType = 'PanelVertical';\nlet DrillingPartType = 'PartShort';\nlet DrillingPosition = 'Right';\nlet TouchDirectionGraphic = 'Right';\nlet FallingDirection = 'Front';\nlet ConnectionOrientation = 'TopBottom';\nlet ConnectionType = partSelf.pa_CarcasePartConnectionRightHor;\nlet FittingType = partSelf.pa_FittingConnectionRightHor;\nlet InsideDirection = 'Back';\n\n// Call the process function\nGlobalFunc.process_CarcasePartConnection(this, partSelf, part2, posRel, Area, PartType, DrillingPosition, TouchDirectionGraphic, FallingDirection, ConnectionOrientation, ConnectionType, FittingType, InsideDirection, DrillingPartType)",
+      "bomExecuteType": "Touch"
+    },
+    {
+      "part2": "part_Shelfbtm",
+      "touchName": "FromBottom",
+      "bomElementTypeId": "ncout_Group",
+      "description": "Connection between panel blind and shelf bottom",
+      "valueScript": "// Schuler Consulting\n// Create: January 2025\n// By Ludwig Weber\n// Purpose: CabinetLibrary\n//\n// Description:\n// Connection between Panel blind and Shelfbtm\n// Touch FromBottom\n//\n// Revisions:\n// \n//===================================================\n\n// Initialize variables\nlet Area = \"BtmVert\";\nlet PartType = 'PanelVertical';\nlet DrillingPartType = 'PartShort';\nlet DrillingPosition = 'Bottom';\nlet TouchDirectionGraphic = 'Bottom';\nlet FallingDirection = 'Front';\nlet ConnectionOrientation = 'LeftRight';\nlet ConnectionType = partSelf.pa_CarcasePartConnectionBtmVert;\nlet FittingType = partSelf.pa_FittingConnectionBtmVert;\nlet InsideDirection = 'Back';\n\n// Call the process function\nGlobalFunc.process_CarcasePartConnection(this, partSelf, part2, posRel, Area, PartType, DrillingPosition, TouchDirectionGraphic, FallingDirection, ConnectionOrientation, ConnectionType, FittingType, InsideDirection, DrillingPartType)",
+      "bomExecuteType": "Touch"
+    },
+    {
+      "part2": "part_Shelftop",
+      "touchName": "FromTop",
+      "bomElementTypeId": "ncout_Group",
+      "description": "Connection between panel blind and shelf top",
+      "valueScript": "// Schuler Consulting\n// Create: January 2025\n// By Ludwig Weber\n// Purpose: CabinetLibrary\n//\n// Description:\n// Connection between Panel blind and Shelftop\n// Touch FromTop\n//\n// Revisions:\n// \n//===================================================\n\n// Initialize variables\nlet Area = \"TopVert\";\nlet PartType = 'PanelVertical';\nlet DrillingPartType = 'PartShort';\nlet DrillingPosition = 'Top';\nlet TouchDirectionGraphic = 'Top';\nlet FallingDirection = 'Front';\nlet ConnectionOrientation = 'LeftRight';\nlet ConnectionType = partSelf.pa_CarcasePartConnectionTopVert;\nlet FittingType = partSelf.pa_FittingConnectionTopVert;\nlet InsideDirection = 'Back';\n\n// Call the process function\nGlobalFunc.process_CarcasePartConnection(this, partSelf, part2, posRel, Area, PartType, DrillingPosition, TouchDirectionGraphic, FallingDirection, ConnectionOrientation, ConnectionType, FittingType, InsideDirection, DrillingPartType)",
+      "bomExecuteType": "Touch"
+    },
+    {
+      "part2": "part_Shelffixed",
+      "touchName": "FromTop",
+      "bomElementTypeId": "ncout_Group",
+      "description": "Connection between panel blind and shelf fixed",
+      "valueScript": "// Schuler Consulting\n// Create: January 2025\n// By Ludwig Weber\n// Purpose: CabinetLibrary\n//\n// Description:\n// Connection between Panel blind and Shelffixed\n// Touch FromTop\n//\n// Revisions:\n// \n//===================================================\n\n// Initialize variables\nlet Area = \"TopVert\";\nlet PartType = 'PanelVertical';\nlet DrillingPartType = 'PartShort';\nlet DrillingPosition = 'Top';\nlet TouchDirectionGraphic = 'Top';\nlet FallingDirection = 'Front';\nlet ConnectionOrientation = 'LeftRight';\nlet ConnectionType = partSelf.pa_CarcasePartConnectionTopVert;\nlet FittingType = partSelf.pa_FittingConnectionTopVert;\nlet InsideDirection = 'Back';\n\n// Call the process function\nGlobalFunc.process_CarcasePartConnection(this, partSelf, part2, posRel, Area, PartType, DrillingPosition, TouchDirectionGraphic, FallingDirection, ConnectionOrientation, ConnectionType, FittingType, InsideDirection, DrillingPartType)",
+      "bomExecuteType": "Touch"
+    },
+    {
+      "part2": "part_Shelffixed",
+      "touchName": "FromBottom",
+      "bomElementTypeId": "ncout_Group",
+      "description": "Connection between panel blind and shelf fixed",
+      "valueScript": "// Schuler Consulting\n// Create: January 2025\n// By Ludwig Weber\n// Purpose: CabinetLibrary\n//\n// Description:\n// Connection between Panel blind and Shelffixed\n// Touch FromBottom\n//\n// Revisions:\n// \n//===================================================\n\n// Initialize variables\nlet Area = \"BtmVert\";\nlet PartType = 'PanelVertical';\nlet DrillingPartType = 'PartShort';\nlet DrillingPosition = 'Bottom';\nlet TouchDirectionGraphic = 'Bottom';\nlet FallingDirection = 'Front';\nlet ConnectionOrientation = 'LeftRight';\nlet ConnectionType = partSelf.pa_CarcasePartConnectionBtmVert;\nlet FittingType = partSelf.pa_FittingConnectionBtmVert;\nlet InsideDirection = 'Back';\n\n// Call the process function\nGlobalFunc.process_CarcasePartConnection(this, partSelf, part2, posRel, Area, PartType, DrillingPosition, TouchDirectionGraphic, FallingDirection, ConnectionOrientation, ConnectionType, FittingType, InsideDirection, DrillingPartType)",
+      "bomExecuteType": "Touch"
+    },
+    {
+      "part2": "part_Railhortopfront",
+      "touchName": "FromTop",
+      "bomElementTypeId": "ncout_Group",
+      "description": "Connection between panel blind and rail horizontal top front",
+      "valueScript": "// Schuler Consulting\n// Create: January 2025\n// By Ludwig Weber\n// Purpose: CabinetLibrary\n//\n// Description:\n// Connection between Panel blind and Rail horizontal front top\n// Touch FromTop\n//\n// Revisions:\n// \n//===================================================\n\n// Initialize variables\nlet Area = \"TopVert\";\nlet PartType = 'PanelVertical';\nlet DrillingPartType = 'PartShort';\nlet DrillingPosition = 'Top';\nlet TouchDirectionGraphic = 'Top';\nlet FallingDirection = 'Front';\nlet ConnectionOrientation = 'LeftRight';\nlet ConnectionType = partSelf.pa_CarcasePartConnectionTopVert;\nlet FittingType = partSelf.pa_FittingConnectionTopVert;\nlet InsideDirection = 'Back';\n\n// Call the process function\nGlobalFunc.process_CarcasePartConnection(this, partSelf, part2, posRel, Area, PartType, DrillingPosition, TouchDirectionGraphic, FallingDirection, ConnectionOrientation, ConnectionType, FittingType, InsideDirection, DrillingPartType)",
+      "bomExecuteType": "Touch"
+    },
+    {
+      "part2": "part_SlopedCeilingShelftopHor",
+      "touchName": "FromTop",
+      "bomElementTypeId": "ncout_Group",
+      "description": "Connection between panel blind and sloped ceiling shelf top horizontal",
+      "valueScript": "// Schuler Consulting\n// Create: January 2025\n// By Ludwig Weber\n// Purpose: CabinetLibrary\n//\n// Description:\n// Connection between Panel blind and Shelftop\n// Touch FromTop\n//\n// Revisions:\n// \n//===================================================\n\n// Initialize variables\nlet Area = \"TopVert\";\nlet PartType = 'PanelVertical';\nlet DrillingPartType = 'PartShort';\nlet DrillingPosition = 'Top';\nlet TouchDirectionGraphic = 'Top';\nlet FallingDirection = 'Front';\nlet ConnectionOrientation = 'LeftRight';\nlet ConnectionType = partSelf.pa_CarcasePartConnectionTopVert;\nlet FittingType = partSelf.pa_FittingConnectionTopVert;\nlet InsideDirection = 'Back';\n\n// Call the process function\nGlobalFunc.process_CarcasePartConnection(this, partSelf, part2, posRel, Area, PartType, DrillingPosition, TouchDirectionGraphic, FallingDirection, ConnectionOrientation, ConnectionType, FittingType, InsideDirection, DrillingPartType)",
+      "bomExecuteType": "Touch"
+    }
+  ]
+}

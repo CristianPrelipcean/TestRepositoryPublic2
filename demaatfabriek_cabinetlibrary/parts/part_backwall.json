@@ -1,0 +1,158 @@
+{
+  "partCode": "part_Backwall",
+  "shortName": "Backwall",
+  "description": "Backwall",
+  "wdt": "XYZ",
+  "groupName": "Panels",
+  "imageId": "82657240-6ef9-4aad-b330-a467a9908eab:Backwall.png",
+  "invisible": false,
+  "restrictionTypeId": "Public",
+  "noNcData": false,
+  "partVariants": [
+    {
+      "partVarId": "pa_TopColor",
+      "valueScript": "this.parent.mod_CarcaseBackwallColor"
+    },
+    {
+      "partVarId": "pa_BtmColor",
+      "valueScript": "this.parent.mod_CarcaseOutsideColor"
+    },
+    {
+      "partVarId": "pa_EdgeFrontColor",
+      "valueScript": "this.parent.mod_CarcaseEdgeColor"
+    },
+    {
+      "partVarId": "pa_EdgeLeftColor",
+      "valueScript": "this.parent.mod_CarcaseEdgeColor"
+    },
+    {
+      "partVarId": "pa_EdgeBackColor",
+      "valueScript": "this.parent.mod_CarcaseEdgeColor"
+    },
+    {
+      "partVarId": "pa_EdgeRightColor",
+      "valueScript": "this.parent.mod_CarcaseEdgeColor"
+    },
+    {
+      "partVarId": "pa_EdgeFrontType",
+      "valueScript": "this.parent.mod_EdgeFrontType"
+    },
+    {
+      "partVarId": "pa_EdgeLeftType",
+      "valueScript": "this.parent.mod_EdgeLeftType"
+    },
+    {
+      "partVarId": "pa_EdgeBackType",
+      "valueScript": "this.parent.mod_EdgeBackType"
+    },
+    {
+      "partVarId": "pa_EdgeRightType",
+      "valueScript": "this.parent.mod_EdgeRightType"
+    },
+    {
+      "partVarId": "pa_EdgeJointType",
+      "valueScript": "this.parent.mod_EdgeJointType"
+    },
+    {
+      "partVarId": "pa_GrainDirection",
+      "valueScript": "'Neutral'",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_Program",
+      "valueScript": "this.parent.mod_CarcaseProgram"
+    },
+    {
+      "partVarId": "pa_BomId",
+      "valueScript": "this.parent.mod_CarcaseId",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_AdditionalInfo1",
+      "valueScript": "'None'",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_AngleBack",
+      "valueScript": "0",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_AngleFront",
+      "valueScript": "0",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_AngleLeft",
+      "valueScript": "0",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_AngleRight",
+      "valueScript": "0",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_ColorGrainGroup",
+      "valueScript": "this.parent.mod_CarcaseBackwallColor_matrix.GrainGroupId",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_GrainLogic",
+      "valueScript": "this.parent.mod_GrainLogic",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_ProgramGrainGroup",
+      "valueScript": "this.parent.mod_CarcaseBackwallProgram_matrix.GrainGroupId",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_TypeElement",
+      "valueScript": "this.parent.mod_TypeElement",
+      "isWritable": false
+    }
+  ],
+  "bomData": [
+    {
+      "bomElementTypeId": "bomout_Board",
+      "description": "Output Parts / Boards",
+      "conditionScript": "partSelf._g?.basic_CreateBom == 'Library'",
+      "valueScript": "// Type of the Bom-Element (will be checked in order output)\nlet elementType='Board';\n\n// ProductionSite Category (to split the orders for different production sites)\nlet elementCategory='';\n\n// Id of the parent to create the hierarchy\nlet parentBomId=part.pa_BomId;\n\n// Call the function to process the Bom-Element\nGlobalFunc.process_BoardBom(this, part, elementType, elementCategory, parentBomId)"
+    }
+  ],
+  "ncData": [
+    {
+      "part2": "part_ShelfadjDrill",
+      "touchName": "FromFront",
+      "bomElementTypeId": "ncout_Group",
+      "description": "Add the drilling line for adjustable shelves",
+      "valueScript": "//====================================================================\n// Get data for drillings\n//====================================================================\n\n// Call the process function to retrieve drill data\nlet Info = GlobalFunc.process_ShelfadjDrills(part2.pa_ShelfadjBackwallProcessingId)\nlet DrillInfo = Info.drill;\nlet InsertionPoint = Info.insertionPoint.Y;\n\n// Calculate quantity for the drills\nlet QtyDrills = Math.floor(part2._dimy / part2.pa_ShelfadjDrillDistance) + 1;\n\n//====================================================================\n// For each drilling (insert the drillings)\n//====================================================================\n\n// Variables\nlet StartPos = posRel.y;\nlet DrillingLines = GlobalFunc.process_Descriptor(part2.pa_ShelfadjBackwallDrillDescriptor, part2._dimx);\n\nfor(let i = 1; i <= QtyDrills; i++){\n\n  // Insert the drillings in depth (drilling lines)\n  let k = 0;\n  DrillingLines.forEach(DrillingLine => {\n\n    // Calculate y-position\n    let posY = StartPos + DrillInfo.YA + InsertionPoint;\n\n    // Calculate x-position\n    let posX = DrillingLine;\n\n    // Add Vertical Drill\n    let DrillVert = this.addncout_DrillVert();\n    DrillVert.nc_TOOL = \"102\";\n    DrillVert.nc_XA = posX;\n    DrillVert.nc_YA = posY;\n    DrillVert.nc_TI = DrillInfo.TI;\n    DrillVert.nc_DU = DrillInfo.DU;\n    DrillVert.nc_BM = DrillInfo.matrix_BM || \"LS\";\n    DrillVert.nc_WI = DrillInfo.matrix_WI ?? 0;\n    DrillVert.nc_AB = DrillInfo.matrix_AB ?? 1;\n    DrillVert.nc_LA = DrillInfo.matrix_LA ?? 0;\n    DrillVert.nc_MI = DrillInfo.matrix_MI ?? 0;\n    DrillVert.nc_KO = DrillInfo.matrix_KO || \"00\";\n\t  DrillVert.nc_Side = \"Top\";\n\n    // Add drawing\n    let drilling01 = partSelf.add3DElement('Drilling01', DrillVert, posRel.x + posX, posY, posRel.z - DrillInfo.TI, DrillInfo.DU, DrillInfo.DU, DrillInfo.TI);\n    drilling01.extrude('<svg><circle cx=\"' + 0 + '\" cy=\"' + 0 + '\" r=\"' + DrillInfo.DU / 2 + '\" /></svg>', 'z');\n\n    // Next drilling line\n    k++;\n  });\n\n  // Set starting position for the next drills\n  StartPos += part2.pa_ShelfadjDrillDistance;\n}",
+      "bomExecuteType": "Touch"
+    },
+    {
+      "part2": "part_HangerDrill",
+      "touchName": "FromBack",
+      "bomElementTypeId": "ncout_Group",
+      "description": "Drillings for Hangers",
+      "valueScript": "//====================================================================\n// Get side of Hanger\n//====================================================================\nlet hangerSide = GlobalFunc.find_GraphicLibrary(part2.pa_Model3DGroupName).Identifier!;\n              \n//====================================================================\n// Get data for drillings and rotation\n//====================================================================\n\nlet drillings: any[] = [];\nlet drills: any[] = [];\nlet processings = GlobalFunc.find_ProcessingMapping(part2.pa_ProcessingId);\nlet insertPoint = GlobalFunc.process_MachiningInsertionHelper('000',part2.pa_Model3DGroupName)\n\nprocessings.forEach((processing) => {\n  drills = GlobalFunc.find_HardwareDrillVertLibrary(processing.ProcessingId!, 'Backwall');\n  //====================================================================\n  // For each drilling (insert the drillings)\n  //====================================================================\n  drills.forEach((drill) => {\n\t\t\n\t\t// Calculate X position\n\t\tlet posX = 0;\n\t\tif(hangerSide == 'HangerLeftVisible' || hangerSide == 'HangerLeftInvisible')\n\t\t{\n\t\t\tposX = posRel.x + drill.XA;\n\t\t}\n\t\telse if (hangerSide == 'HangerRightVisible' || hangerSide == 'HangerRightInvisible')\n\t\t{\n\t\t\tposX = posRel.x + part2._dimx - drill.XA;\n\t\t}\n\t\t\n\t\t// Add Vertical Drill\n\t\tlet DrillVert = this.addncout_DrillVert();\n\t\tDrillVert.nc_TOOL=\"102\";\n\t\tDrillVert.nc_XA= posX;\n\t\t//DrillVert.nc_YA= partSelf._dimy - posRel.y - insertPoint.InsertionPointY - drill.YA;\n\t\tDrillVert.nc_YA= partSelf._dimy - (partSelf._dimy - posRel.y - insertPoint.InsertionPointY - drill.YA);\n\t\tDrillVert.nc_TI=drill.TI;\n\t\tDrillVert.nc_DU=drill.DU;\n\n\t\tDrillVert.nc_BM = drill.matrix_BM || \"LS\"\n\t\tDrillVert.nc_WI = drill.matrix_WI ?? 0;\n\t\tDrillVert.nc_AB = drill.matrix_AB ?? 1;\n\t\tDrillVert.nc_LA = drill.matrix_LA ?? 0;\n\t\tDrillVert.nc_MI = drill.matrix_MI ?? 0;\n\t\tDrillVert.nc_KO = drill.matrix_KO || \"00\";\n\t\tDrillVert.nc_Side = \"Top\";  \n\n\t\t// Add drawing\n\t\tlet drilling01 = partSelf.add3DElement('Drilling01', DrillVert, posX, posRel.y + insertPoint.InsertionPointY + drill.YA, 0, drill.TI, drill.DU, drill.DU );\n\t\tdrilling01.extrude('<svg><circle cx=\"' + 0 + '\" cy=\"' + 0 + '\" r=\"' + drill.DU/2 + '\" /></svg>', 'z');\n  });\n});\n",
+      "bomExecuteType": "Touch"
+    },
+    {
+      "part2": "part_HangerDrill",
+      "touchName": "Collision",
+      "bomElementTypeId": "ncout_Group",
+      "description": "Millings for Hangers",
+      "valueScript": "//====================================================================\n  // Get side of Hanger\n  //====================================================================\n  let hangerSide = GlobalFunc.find_GraphicLibrary(part2.pa_Model3DGroupName).Identifier!;\n\n  //====================================================================\n  // Get data for millings\n  //====================================================================\n\n  // Find all processings  (to each part)\n  let processings = GlobalFunc.find_ProcessingMapping(part2.pa_ProcessingId);\n\n  // Find the millings\n  processings.forEach((processing) => {\n    if(processing.ProcessingLibrary == 'Milling')\n    {\n      let foundMillings = GlobalFunc.find_HardwareMilingLibrary(processing.ProcessingId!, 'Backwall');\n      //====================================================================\n      // For each milling (insert the millings)\n      //====================================================================\n\n      foundMillings.forEach(x => \n        {  \n          // Position of the milling in graphics\n          // Calculate X position\n          let PosX = 0;\n          if(hangerSide == 'HangerLeftVisible' || hangerSide == 'HangerLeftInvisible')\n          {\n            PosX = posRel.x + x.XA(partSelf._dimx, partSelf, part2, posRel);\n          }\n          else if (hangerSide == 'HangerRightVisible' || hangerSide == 'HangerRightInvisible')\n          {\n            PosX = posRel.x + part2._dimx - x.LA(0, partSelf, part2, posRel) + x.XA(partSelf._dimx, partSelf, part2, posRel);\n          }\n        let PosY = posRel.y + part2._dimy - x.BR(0, partSelf, part2, posRel) + x.YA(partSelf._dimx, partSelf, part2, posRel);\n          let PosZ=0;\n\n          // Calculate Depth\n          let tmpDimZ: number = x.TI(0, partSelf, part2, posRel);\n          if (tmpDimZ == 0)\n          {\n            tmpDimZ = partSelf._dimz;\n          }\n        \n          // Add Milling\n          let Milling = this.addncout_Pocket();\n          Milling.nc_TOOL=\"112\";\n          Milling.nc_Side=x.Side;\n          Milling.nc_XA = PosX + x.LA(0, partSelf, part2, posRel)/2;\n          Milling.nc_YA = PosY + x.BR(0, partSelf, part2, posRel)/2;\n          Milling.nc_LA = x.LA(0, partSelf, part2, posRel);\n          Milling.nc_BR = x.BR(0, partSelf, part2, posRel);\n          Milling.nc_TI=tmpDimZ;\n          Milling.nc_RD=x.matrix_RD || 0;\n          Milling.nc_KO=x.matrix_KO || \"00\";\n          Milling.nc_T_='101';\n        \n        \n          // Add drawing\n          //let drilling01 = partSelf.add3DElement('Milling01', Milling, PosX, PosY, PosZ, x.LA(0), x.BR(0), partSelf._dimz);\n        let drilling01 = partSelf.add3DElement('Milling01', Milling, PosX, PosY, PosZ, x.LA(0, partSelf, part2, posRel), x.BR(0, partSelf, part2, posRel), tmpDimZ);\n        drilling01.extrude('<svg><rect x=\"' + 0 + '\" y=\"' + 0 + '\" width=\"' + x.LA(0, partSelf, part2, posRel) + '\" height=\"' + x.BR(0, partSelf, part2, posRel) + '\" /></svg>', 'z');\n        \n      });\n    }\n  });",
+      "bomExecuteType": "Touch"
+    },
+    {
+      "touchName": "",
+      "bomElementTypeId": "ncout_Group",
+      "description": "Sawing Angle in the Back",
+      "conditionScript": "partSelf.pa_AngleBack != 0",
+      "valueScript": "GlobalFunc.ops_SawingAngle(this, 'AngledCutInLengthPositiveAngle', 0, partSelf._dimy, partSelf._dimx, partSelf._dimy, partSelf.pa_AngleBack);",
+      "bomExecuteType": "End"
+    }
+  ]
+}

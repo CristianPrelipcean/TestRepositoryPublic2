@@ -1,0 +1,133 @@
+{
+  "variantId": "mod_CornerunitStraightConstruction",
+  "shortName": "Construction type",
+  "variantTypeId": "Text",
+  "description": "Type of construction of the corner unit straight",
+  "restrictionTypeId": "Internal",
+  "groupName": "Cornerunit | Construction",
+  "imageId": "06ab1e68-b80f-4fc6-a5e7-6f91d24efe02:mr_CornerunitStraight.jpg",
+  "assignedGlobalVarId": "basic_CornerunitStraightConstruction",
+  "isArray": false,
+  "isPosRelevant": true,
+  "mainAttr": true,
+  "userRight": "Advanced",
+  "implicitRelevant": false,
+  "posView": "Dropdown",
+  "matrix": [
+    {
+      "id": "ContructionType",
+      "type": "Text"
+    },
+    {
+      "id": "IncludePanelblind",
+      "type": "Bool",
+      "default": true
+    },
+    {
+      "id": "IncludeMiddleSideShort",
+      "type": "Bool",
+      "default": false
+    }
+  ],
+  "selections": [
+    {
+      "value": "Construction01",
+      "description": "Door overlay middle side short",
+      "shortName": "Construction 01",
+      "imageId": "d5d44cd0-5a7a-4c0f-9ccd-2480d0bd5fb8:01 - Door Overlay Cleat.jpg",
+      "matrix": [
+        {
+          "id": "ContructionType",
+          "value": "Construction01"
+        },
+        {
+          "id": "IncludePanelblind",
+          "value": true
+        },
+        {
+          "id": "IncludeMiddleSideShort",
+          "value": true
+        }
+      ]
+    },
+    {
+      "value": "Construction02",
+      "description": "Door overlay middle side short and blind panel groove",
+      "shortName": "Construction 02",
+      "imageId": "9b0bc8f5-97a4-40a7-8f3a-a357b14851eb:02 - Door Overlay Cleat and BlindPanel Groved.jpg",
+      "matrix": [
+        {
+          "id": "ContructionType",
+          "value": "Construction02"
+        },
+        {
+          "id": "IncludePanelblind",
+          "value": true
+        },
+        {
+          "id": "IncludeMiddleSideShort",
+          "value": true
+        }
+      ]
+    },
+    {
+      "value": "Construction03",
+      "description": "Door at level of filler and 180º hinges",
+      "shortName": "Construction 03",
+      "matrix": [
+        {
+          "id": "ContructionType",
+          "value": "Construction03"
+        },
+        {
+          "id": "IncludePanelblind",
+          "value": true
+        },
+        {
+          "id": "IncludeMiddleSideShort",
+          "value": false
+        }
+      ]
+    },
+    {
+      "value": "Construction04",
+      "description": "Door half overlay middle side short",
+      "shortName": "Construction 04",
+      "imageId": "169b83e0-897e-4337-a301-656700b80708:04 - Door HalfOverlay Cleat.jpg",
+      "matrix": [
+        {
+          "id": "ContructionType",
+          "value": "Construction04"
+        },
+        {
+          "id": "IncludePanelblind",
+          "value": true
+        },
+        {
+          "id": "IncludeMiddleSideShort",
+          "value": true
+        }
+      ]
+    },
+    {
+      "value": "Construction05",
+      "description": "Door half overlay middle side short and blind panel grooved",
+      "shortName": "Construction 05",
+      "imageId": "4814cafa-d229-4bcf-bda7-cae0d33a84a8:05 - Door HalfOverlay Cleat and BlindPanel Grooved.jpg",
+      "matrix": [
+        {
+          "id": "ContructionType",
+          "value": "Construction05"
+        },
+        {
+          "id": "IncludePanelblind",
+          "value": true
+        },
+        {
+          "id": "IncludeMiddleSideShort",
+          "value": true
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,548 @@
+{
+  "tableName": "tab_HardwareMillingLibrary",
+  "description": "Settings for Millings vertical",
+  "restrictionTypeId": "Public",
+  "groupName": "Processings",
+  "columns": [
+    {
+      "name": "_id",
+      "type": "Integer",
+      "allowNull": false
+    },
+    {
+      "name": "in_ProcessingId",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_Part",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "Side",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "XA",
+      "type": "Text",
+      "allowNull": true,
+      "functionDefinition": "(varPos:number, partSelf: any, part2: any, posRel: any):number"
+    },
+    {
+      "name": "YA",
+      "type": "Text",
+      "allowNull": true,
+      "functionDefinition": "(varPos:number, partSelf: any, part2: any, posRel: any):number"
+    },
+    {
+      "name": "LA",
+      "type": "Text",
+      "allowNull": true,
+      "functionDefinition": "(varLength: number, partSelf: any, part2: any, posRel: any):number"
+    },
+    {
+      "name": "BR",
+      "type": "Text",
+      "allowNull": true,
+      "functionDefinition": "(varWidth: number, partSelf: any, part2: any, posRel: any):number"
+    },
+    {
+      "name": "TI",
+      "type": "Text",
+      "allowNull": true,
+      "functionDefinition": "(varDepth: number, partSelf: any, part2: any, posRel: any):number"
+    },
+    {
+      "name": "matrix_RD",
+      "type": "Dim",
+      "allowNull": true
+    },
+    {
+      "name": "matrix_WI",
+      "type": "Dim",
+      "allowNull": true
+    },
+    {
+      "name": "matrix_KO",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "matrix_T_",
+      "type": "Text",
+      "allowNull": true
+    }
+  ],
+  "rows": [
+    {
+      "data": [
+        {
+          "columnName": "in_ProcessingId",
+          "value": "Processing_LegraboxBtm"
+        },
+        {
+          "columnName": "in_Part",
+          "value": "BoxBtm"
+        },
+        {
+          "columnName": "Side",
+          "value": "Btm"
+        },
+        {
+          "columnName": "XA",
+          "value": "19"
+        },
+        {
+          "columnName": "YA",
+          "value": "varPos"
+        },
+        {
+          "columnName": "LA",
+          "value": "varLength"
+        },
+        {
+          "columnName": "BR",
+          "value": "38"
+        },
+        {
+          "columnName": "TI",
+          "value": "8"
+        },
+        {
+          "columnName": "matrix_RD",
+          "value": "0"
+        },
+        {
+          "columnName": "matrix_WI",
+          "value": "0"
+        },
+        {
+          "columnName": "matrix_KO",
+          "value": ""
+        },
+        {
+          "columnName": "matrix_T_",
+          "value": "101"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ProcessingId",
+          "value": "Processing_LegraboxBtm"
+        },
+        {
+          "columnName": "in_Part",
+          "value": "BoxBtm"
+        },
+        {
+          "columnName": "Side",
+          "value": "Btm"
+        },
+        {
+          "columnName": "XA",
+          "value": "varPos-19"
+        },
+        {
+          "columnName": "YA",
+          "value": "varPos"
+        },
+        {
+          "columnName": "LA",
+          "value": "varLength"
+        },
+        {
+          "columnName": "BR",
+          "value": "38"
+        },
+        {
+          "columnName": "TI",
+          "value": "8"
+        },
+        {
+          "columnName": "matrix_RD",
+          "value": "0"
+        },
+        {
+          "columnName": "matrix_WI",
+          "value": "0"
+        },
+        {
+          "columnName": "matrix_KO",
+          "value": ""
+        },
+        {
+          "columnName": "matrix_T_",
+          "value": "101"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ProcessingId",
+          "value": "ProcessingHanger290.40.980_1"
+        },
+        {
+          "columnName": "in_Part",
+          "value": "Backwall"
+        },
+        {
+          "columnName": "Side",
+          "value": "Top"
+        },
+        {
+          "columnName": "XA",
+          "value": "0"
+        },
+        {
+          "columnName": "YA",
+          "value": "0"
+        },
+        {
+          "columnName": "LA",
+          "value": "22"
+        },
+        {
+          "columnName": "BR",
+          "value": "35"
+        },
+        {
+          "columnName": "TI",
+          "value": "0"
+        },
+        {
+          "columnName": "matrix_RD",
+          "value": "4"
+        },
+        {
+          "columnName": "matrix_WI",
+          "value": "0"
+        },
+        {
+          "columnName": "matrix_KO",
+          "value": ""
+        },
+        {
+          "columnName": "matrix_T_",
+          "value": "101"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ProcessingId",
+          "value": "ProcessingHanger290.02.702_3"
+        },
+        {
+          "columnName": "in_Part",
+          "value": "Backwall"
+        },
+        {
+          "columnName": "Side",
+          "value": "Top"
+        },
+        {
+          "columnName": "XA",
+          "value": "0"
+        },
+        {
+          "columnName": "YA",
+          "value": "0"
+        },
+        {
+          "columnName": "LA",
+          "value": "15.5"
+        },
+        {
+          "columnName": "BR",
+          "value": "30"
+        },
+        {
+          "columnName": "TI",
+          "value": "0"
+        },
+        {
+          "columnName": "matrix_RD",
+          "value": "0"
+        },
+        {
+          "columnName": "matrix_WI",
+          "value": "0"
+        },
+        {
+          "columnName": "matrix_KO",
+          "value": ""
+        },
+        {
+          "columnName": "matrix_T_",
+          "value": "101"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ProcessingId",
+          "value": "ProcessingHanger290.40.901_2"
+        },
+        {
+          "columnName": "in_Part",
+          "value": "Backwall"
+        },
+        {
+          "columnName": "Side",
+          "value": "Top"
+        },
+        {
+          "columnName": "XA",
+          "value": "0"
+        },
+        {
+          "columnName": "YA",
+          "value": "-20"
+        },
+        {
+          "columnName": "LA",
+          "value": "20"
+        },
+        {
+          "columnName": "BR",
+          "value": "30"
+        },
+        {
+          "columnName": "TI",
+          "value": "0"
+        },
+        {
+          "columnName": "matrix_RD",
+          "value": "0"
+        },
+        {
+          "columnName": "matrix_WI",
+          "value": "0"
+        },
+        {
+          "columnName": "matrix_KO",
+          "value": ""
+        },
+        {
+          "columnName": "matrix_T_",
+          "value": "101"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ProcessingId",
+          "value": "ProcessingHanger290.02.710_1"
+        },
+        {
+          "columnName": "in_Part",
+          "value": "Backwall"
+        },
+        {
+          "columnName": "Side",
+          "value": "Top"
+        },
+        {
+          "columnName": "XA",
+          "value": "0"
+        },
+        {
+          "columnName": "YA",
+          "value": "0"
+        },
+        {
+          "columnName": "LA",
+          "value": "13.5"
+        },
+        {
+          "columnName": "BR",
+          "value": "30"
+        },
+        {
+          "columnName": "TI",
+          "value": "0"
+        },
+        {
+          "columnName": "matrix_RD",
+          "value": "0"
+        },
+        {
+          "columnName": "matrix_WI",
+          "value": "0"
+        },
+        {
+          "columnName": "matrix_KO",
+          "value": ""
+        },
+        {
+          "columnName": "matrix_T_",
+          "value": "101"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ProcessingId",
+          "value": "Fingergrip"
+        },
+        {
+          "columnName": "in_Part",
+          "value": "Sidepanelleft"
+        },
+        {
+          "columnName": "Side",
+          "value": "Top"
+        },
+        {
+          "columnName": "XA",
+          "value": "partSelf._dimy - varPos"
+        },
+        {
+          "columnName": "YA",
+          "value": "0"
+        },
+        {
+          "columnName": "LA",
+          "value": "varLength"
+        },
+        {
+          "columnName": "BR",
+          "value": "varWidth * 2"
+        },
+        {
+          "columnName": "TI",
+          "value": "partSelf._dimx"
+        },
+        {
+          "columnName": "matrix_RD",
+          "value": "0"
+        },
+        {
+          "columnName": "matrix_WI",
+          "value": "0"
+        },
+        {
+          "columnName": "matrix_KO",
+          "value": ""
+        },
+        {
+          "columnName": "matrix_T_",
+          "value": "102"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ProcessingId",
+          "value": "Fingergrip"
+        },
+        {
+          "columnName": "in_Part",
+          "value": "Sidepanelright"
+        },
+        {
+          "columnName": "Side",
+          "value": "Top"
+        },
+        {
+          "columnName": "XA",
+          "value": "varPos"
+        },
+        {
+          "columnName": "YA",
+          "value": "0"
+        },
+        {
+          "columnName": "LA",
+          "value": "varLength"
+        },
+        {
+          "columnName": "BR",
+          "value": "varWidth * 2"
+        },
+        {
+          "columnName": "TI",
+          "value": "partSelf._dimx"
+        },
+        {
+          "columnName": "matrix_RD",
+          "value": "0"
+        },
+        {
+          "columnName": "matrix_WI",
+          "value": "0"
+        },
+        {
+          "columnName": "matrix_KO",
+          "value": ""
+        },
+        {
+          "columnName": "matrix_T_",
+          "value": "102"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ProcessingId",
+          "value": "Fingergrip"
+        },
+        {
+          "columnName": "in_Part",
+          "value": "Sidepanelmiddle"
+        },
+        {
+          "columnName": "Side",
+          "value": "Top"
+        },
+        {
+          "columnName": "XA",
+          "value": "varPos"
+        },
+        {
+          "columnName": "YA",
+          "value": "0"
+        },
+        {
+          "columnName": "LA",
+          "value": "varLength"
+        },
+        {
+          "columnName": "BR",
+          "value": "varWidth * 2"
+        },
+        {
+          "columnName": "TI",
+          "value": "partSelf._dimx"
+        },
+        {
+          "columnName": "matrix_RD",
+          "value": "0"
+        },
+        {
+          "columnName": "matrix_WI",
+          "value": "0"
+        },
+        {
+          "columnName": "matrix_KO",
+          "value": ""
+        },
+        {
+          "columnName": "matrix_T_",
+          "value": "102"
+        }
+      ]
+    }
+  ]
+}

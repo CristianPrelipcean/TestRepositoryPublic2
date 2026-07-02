@@ -1,0 +1,1491 @@
+{
+  "tableName": "tab_EdgeJointMapping",
+  "description": "Egde joint mapping",
+  "restrictionTypeId": "Internal",
+  "isInputUnique": true,
+  "groupName": "Edges",
+  "columns": [
+    {
+      "name": "_id",
+      "type": "Integer",
+      "allowNull": false
+    },
+    {
+      "name": "in_EdgeJointType",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "EdgeJointFrontLeft",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "EdgeJointLeftBack",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "EdgeJointBackRight",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "EdgeJointRightFront",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "EdgeShape",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "EdgeCode",
+      "type": "Text",
+      "allowNull": true
+    }
+  ],
+  "rows": [
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeJointType",
+          "value": "NoEdges"
+        },
+        {
+          "columnName": "EdgeJointFrontLeft",
+          "value": "NoEdge"
+        },
+        {
+          "columnName": "EdgeJointLeftBack",
+          "value": "NoEdge"
+        },
+        {
+          "columnName": "EdgeJointBackRight",
+          "value": "NoEdge"
+        },
+        {
+          "columnName": "EdgeJointRightFront",
+          "value": "NoEdge"
+        },
+        {
+          "columnName": "EdgeShape",
+          "value": "No Shape"
+        },
+        {
+          "columnName": "EdgeCode",
+          "value": "::::"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeJointType",
+          "value": "SLSE"
+        },
+        {
+          "columnName": "EdgeJointFrontLeft",
+          "value": "S"
+        },
+        {
+          "columnName": "EdgeJointLeftBack",
+          "value": "L"
+        },
+        {
+          "columnName": "EdgeJointBackRight",
+          "value": "S"
+        },
+        {
+          "columnName": "EdgeJointRightFront",
+          "value": "E"
+        },
+        {
+          "columnName": "EdgeShape",
+          "value": "N0_W1_S0"
+        },
+        {
+          "columnName": "EdgeCode",
+          "value": "000:000:011:"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeJointType",
+          "value": "LSSE"
+        },
+        {
+          "columnName": "EdgeJointFrontLeft",
+          "value": "L"
+        },
+        {
+          "columnName": "EdgeJointLeftBack",
+          "value": "S"
+        },
+        {
+          "columnName": "EdgeJointBackRight",
+          "value": "S"
+        },
+        {
+          "columnName": "EdgeJointRightFront",
+          "value": "E"
+        },
+        {
+          "columnName": "EdgeShape",
+          "value": "N1_W0_S0"
+        },
+        {
+          "columnName": "EdgeCode",
+          "value": "010:001:000:"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeJointType",
+          "value": "SSSE"
+        },
+        {
+          "columnName": "EdgeJointFrontLeft",
+          "value": "S"
+        },
+        {
+          "columnName": "EdgeJointLeftBack",
+          "value": "S"
+        },
+        {
+          "columnName": "EdgeJointBackRight",
+          "value": "S"
+        },
+        {
+          "columnName": "EdgeJointRightFront",
+          "value": "E"
+        },
+        {
+          "columnName": "EdgeShape",
+          "value": "N1_W1_S0"
+        },
+        {
+          "columnName": "EdgeCode",
+          "value": "000:001:001:"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeJointType",
+          "value": "LSEL"
+        },
+        {
+          "columnName": "EdgeJointFrontLeft",
+          "value": "L"
+        },
+        {
+          "columnName": "EdgeJointLeftBack",
+          "value": "S"
+        },
+        {
+          "columnName": "EdgeJointBackRight",
+          "value": "E"
+        },
+        {
+          "columnName": "EdgeJointRightFront",
+          "value": "L"
+        },
+        {
+          "columnName": "EdgeShape",
+          "value": "W0_S0_E0"
+        },
+        {
+          "columnName": "EdgeCode",
+          "value": "010::000:010"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeJointType",
+          "value": "LSES"
+        },
+        {
+          "columnName": "EdgeJointFrontLeft",
+          "value": "L"
+        },
+        {
+          "columnName": "EdgeJointLeftBack",
+          "value": "S"
+        },
+        {
+          "columnName": "EdgeJointBackRight",
+          "value": "E"
+        },
+        {
+          "columnName": "EdgeJointRightFront",
+          "value": "S"
+        },
+        {
+          "columnName": "EdgeShape",
+          "value": "W0_S1_E0"
+        },
+        {
+          "columnName": "EdgeCode",
+          "value": "011::000:000"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeJointType",
+          "value": "SSEL"
+        },
+        {
+          "columnName": "EdgeJointFrontLeft",
+          "value": "S"
+        },
+        {
+          "columnName": "EdgeJointLeftBack",
+          "value": "S"
+        },
+        {
+          "columnName": "EdgeJointBackRight",
+          "value": "E"
+        },
+        {
+          "columnName": "EdgeJointRightFront",
+          "value": "L"
+        },
+        {
+          "columnName": "EdgeShape",
+          "value": "W1_S0_E0"
+        },
+        {
+          "columnName": "EdgeCode",
+          "value": "000::001:010"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeJointType",
+          "value": "SSES"
+        },
+        {
+          "columnName": "EdgeJointFrontLeft",
+          "value": "S"
+        },
+        {
+          "columnName": "EdgeJointLeftBack",
+          "value": "S"
+        },
+        {
+          "columnName": "EdgeJointBackRight",
+          "value": "E"
+        },
+        {
+          "columnName": "EdgeJointRightFront",
+          "value": "S"
+        },
+        {
+          "columnName": "EdgeShape",
+          "value": "W1_S1_E0"
+        },
+        {
+          "columnName": "EdgeCode",
+          "value": "001::001:000"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeJointType",
+          "value": "EELS"
+        },
+        {
+          "columnName": "EdgeJointFrontLeft",
+          "value": "E"
+        },
+        {
+          "columnName": "EdgeJointLeftBack",
+          "value": "E"
+        },
+        {
+          "columnName": "EdgeJointBackRight",
+          "value": "L"
+        },
+        {
+          "columnName": "EdgeJointRightFront",
+          "value": "S"
+        },
+        {
+          "columnName": "EdgeShape",
+          "value": "N0_E0"
+        },
+        {
+          "columnName": "EdgeCode",
+          "value": ":010::000"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeJointType",
+          "value": "EESS"
+        },
+        {
+          "columnName": "EdgeJointFrontLeft",
+          "value": "E"
+        },
+        {
+          "columnName": "EdgeJointLeftBack",
+          "value": "E"
+        },
+        {
+          "columnName": "EdgeJointBackRight",
+          "value": "S"
+        },
+        {
+          "columnName": "EdgeJointRightFront",
+          "value": "S"
+        },
+        {
+          "columnName": "EdgeShape",
+          "value": "N0_E1"
+        },
+        {
+          "columnName": "EdgeCode",
+          "value": ":000::001"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeJointType",
+          "value": "SESE"
+        },
+        {
+          "columnName": "EdgeJointFrontLeft",
+          "value": "S"
+        },
+        {
+          "columnName": "EdgeJointLeftBack",
+          "value": "E"
+        },
+        {
+          "columnName": "EdgeJointBackRight",
+          "value": "S"
+        },
+        {
+          "columnName": "EdgeJointRightFront",
+          "value": "E"
+        },
+        {
+          "columnName": "EdgeShape",
+          "value": "N0_S0"
+        },
+        {
+          "columnName": "EdgeCode",
+          "value": "000:000::"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeJointType",
+          "value": "ELSE"
+        },
+        {
+          "columnName": "EdgeJointFrontLeft",
+          "value": "E"
+        },
+        {
+          "columnName": "EdgeJointLeftBack",
+          "value": "L"
+        },
+        {
+          "columnName": "EdgeJointBackRight",
+          "value": "S"
+        },
+        {
+          "columnName": "EdgeJointRightFront",
+          "value": "E"
+        },
+        {
+          "columnName": "EdgeShape",
+          "value": "N0_W0"
+        },
+        {
+          "columnName": "EdgeCode",
+          "value": ":000:010:"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeJointType",
+          "value": "ESSE"
+        },
+        {
+          "columnName": "EdgeJointFrontLeft",
+          "value": "E"
+        },
+        {
+          "columnName": "EdgeJointLeftBack",
+          "value": "S"
+        },
+        {
+          "columnName": "EdgeJointBackRight",
+          "value": "S"
+        },
+        {
+          "columnName": "EdgeJointRightFront",
+          "value": "E"
+        },
+        {
+          "columnName": "EdgeShape",
+          "value": "N1_W0"
+        },
+        {
+          "columnName": "EdgeCode",
+          "value": ":001:000:"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeJointType",
+          "value": "SEEL"
+        },
+        {
+          "columnName": "EdgeJointFrontLeft",
+          "value": "S"
+        },
+        {
+          "columnName": "EdgeJointLeftBack",
+          "value": "E"
+        },
+        {
+          "columnName": "EdgeJointBackRight",
+          "value": "E"
+        },
+        {
+          "columnName": "EdgeJointRightFront",
+          "value": "L"
+        },
+        {
+          "columnName": "EdgeShape",
+          "value": "S0_E0"
+        },
+        {
+          "columnName": "EdgeCode",
+          "value": "000:::010"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeJointType",
+          "value": "SEES"
+        },
+        {
+          "columnName": "EdgeJointFrontLeft",
+          "value": "S"
+        },
+        {
+          "columnName": "EdgeJointLeftBack",
+          "value": "E"
+        },
+        {
+          "columnName": "EdgeJointBackRight",
+          "value": "E"
+        },
+        {
+          "columnName": "EdgeJointRightFront",
+          "value": "S"
+        },
+        {
+          "columnName": "EdgeShape",
+          "value": "S1_E0"
+        },
+        {
+          "columnName": "EdgeCode",
+          "value": "001:::000"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeJointType",
+          "value": "ESES"
+        },
+        {
+          "columnName": "EdgeJointFrontLeft",
+          "value": "E"
+        },
+        {
+          "columnName": "EdgeJointLeftBack",
+          "value": "S"
+        },
+        {
+          "columnName": "EdgeJointBackRight",
+          "value": "E"
+        },
+        {
+          "columnName": "EdgeJointRightFront",
+          "value": "S"
+        },
+        {
+          "columnName": "EdgeShape",
+          "value": "W0_E0"
+        },
+        {
+          "columnName": "EdgeCode",
+          "value": "::000:000"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeJointType",
+          "value": "LSEE"
+        },
+        {
+          "columnName": "EdgeJointFrontLeft",
+          "value": "L"
+        },
+        {
+          "columnName": "EdgeJointLeftBack",
+          "value": "S"
+        },
+        {
+          "columnName": "EdgeJointBackRight",
+          "value": "E"
+        },
+        {
+          "columnName": "EdgeJointRightFront",
+          "value": "E"
+        },
+        {
+          "columnName": "EdgeShape",
+          "value": "W0_S0"
+        },
+        {
+          "columnName": "EdgeCode",
+          "value": "010::000:"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeJointType",
+          "value": "SSEE"
+        },
+        {
+          "columnName": "EdgeJointFrontLeft",
+          "value": "S"
+        },
+        {
+          "columnName": "EdgeJointLeftBack",
+          "value": "S"
+        },
+        {
+          "columnName": "EdgeJointBackRight",
+          "value": "E"
+        },
+        {
+          "columnName": "EdgeJointRightFront",
+          "value": "E"
+        },
+        {
+          "columnName": "EdgeShape",
+          "value": "W1_S0"
+        },
+        {
+          "columnName": "EdgeCode",
+          "value": "000::001:"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeJointType",
+          "value": "EEES"
+        },
+        {
+          "columnName": "EdgeJointFrontLeft",
+          "value": "E"
+        },
+        {
+          "columnName": "EdgeJointLeftBack",
+          "value": "E"
+        },
+        {
+          "columnName": "EdgeJointBackRight",
+          "value": "E"
+        },
+        {
+          "columnName": "EdgeJointRightFront",
+          "value": "S"
+        },
+        {
+          "columnName": "EdgeShape",
+          "value": "E0"
+        },
+        {
+          "columnName": "EdgeCode",
+          "value": ":::000"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeJointType",
+          "value": "EESE"
+        },
+        {
+          "columnName": "EdgeJointFrontLeft",
+          "value": "E"
+        },
+        {
+          "columnName": "EdgeJointLeftBack",
+          "value": "E"
+        },
+        {
+          "columnName": "EdgeJointBackRight",
+          "value": "S"
+        },
+        {
+          "columnName": "EdgeJointRightFront",
+          "value": "E"
+        },
+        {
+          "columnName": "EdgeShape",
+          "value": "N0"
+        },
+        {
+          "columnName": "EdgeCode",
+          "value": ":000::"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeJointType",
+          "value": "LLSE"
+        },
+        {
+          "columnName": "EdgeJointFrontLeft",
+          "value": "L"
+        },
+        {
+          "columnName": "EdgeJointLeftBack",
+          "value": "L"
+        },
+        {
+          "columnName": "EdgeJointBackRight",
+          "value": "S"
+        },
+        {
+          "columnName": "EdgeJointRightFront",
+          "value": "E"
+        },
+        {
+          "columnName": "EdgeShape",
+          "value": "N0_W0_S0"
+        },
+        {
+          "columnName": "EdgeCode",
+          "value": "010:000:010:"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeJointType",
+          "value": "SEEE"
+        },
+        {
+          "columnName": "EdgeJointFrontLeft",
+          "value": "S"
+        },
+        {
+          "columnName": "EdgeJointLeftBack",
+          "value": "E"
+        },
+        {
+          "columnName": "EdgeJointBackRight",
+          "value": "E"
+        },
+        {
+          "columnName": "EdgeJointRightFront",
+          "value": "E"
+        },
+        {
+          "columnName": "EdgeShape",
+          "value": "S0"
+        },
+        {
+          "columnName": "EdgeCode",
+          "value": "000:::"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeJointType",
+          "value": "ESSS"
+        },
+        {
+          "columnName": "EdgeJointFrontLeft",
+          "value": "E"
+        },
+        {
+          "columnName": "EdgeJointLeftBack",
+          "value": "S"
+        },
+        {
+          "columnName": "EdgeJointBackRight",
+          "value": "S"
+        },
+        {
+          "columnName": "EdgeJointRightFront",
+          "value": "S"
+        },
+        {
+          "columnName": "EdgeShape",
+          "value": "N1_W0_E1"
+        },
+        {
+          "columnName": "EdgeCode",
+          "value": ":001:000:001"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeJointType",
+          "value": "ELSS"
+        },
+        {
+          "columnName": "EdgeJointFrontLeft",
+          "value": "E"
+        },
+        {
+          "columnName": "EdgeJointLeftBack",
+          "value": "L"
+        },
+        {
+          "columnName": "EdgeJointBackRight",
+          "value": "S"
+        },
+        {
+          "columnName": "EdgeJointRightFront",
+          "value": "S"
+        },
+        {
+          "columnName": "EdgeShape",
+          "value": "N0_W0_E1"
+        },
+        {
+          "columnName": "EdgeCode",
+          "value": ":000:010:001"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeJointType",
+          "value": "LSLS"
+        },
+        {
+          "columnName": "EdgeJointFrontLeft",
+          "value": "L"
+        },
+        {
+          "columnName": "EdgeJointLeftBack",
+          "value": "S"
+        },
+        {
+          "columnName": "EdgeJointBackRight",
+          "value": "L"
+        },
+        {
+          "columnName": "EdgeJointRightFront",
+          "value": "S"
+        },
+        {
+          "columnName": "EdgeShape",
+          "value": "N1_W0_S1_E0"
+        },
+        {
+          "columnName": "EdgeCode",
+          "value": "011:011:000:000"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeJointType",
+          "value": "SLSL"
+        },
+        {
+          "columnName": "EdgeJointFrontLeft",
+          "value": "S"
+        },
+        {
+          "columnName": "EdgeJointLeftBack",
+          "value": "L"
+        },
+        {
+          "columnName": "EdgeJointBackRight",
+          "value": "S"
+        },
+        {
+          "columnName": "EdgeJointRightFront",
+          "value": "L"
+        },
+        {
+          "columnName": "EdgeShape",
+          "value": "N0_W1_S0_E1"
+        },
+        {
+          "columnName": "EdgeCode",
+          "value": "000:000:011:011"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeJointType",
+          "value": "LLSL"
+        },
+        {
+          "columnName": "EdgeJointFrontLeft",
+          "value": "L"
+        },
+        {
+          "columnName": "EdgeJointLeftBack",
+          "value": "L"
+        },
+        {
+          "columnName": "EdgeJointBackRight",
+          "value": "S"
+        },
+        {
+          "columnName": "EdgeJointRightFront",
+          "value": "L"
+        },
+        {
+          "columnName": "EdgeShape",
+          "value": "N0_W0_S0_E1"
+        },
+        {
+          "columnName": "EdgeCode",
+          "value": "010:000:010:011"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeJointType",
+          "value": "LLLS"
+        },
+        {
+          "columnName": "EdgeJointFrontLeft",
+          "value": "L"
+        },
+        {
+          "columnName": "EdgeJointLeftBack",
+          "value": "L"
+        },
+        {
+          "columnName": "EdgeJointBackRight",
+          "value": "L"
+        },
+        {
+          "columnName": "EdgeJointRightFront",
+          "value": "S"
+        },
+        {
+          "columnName": "EdgeShape",
+          "value": "N0_W0_S1_E0"
+        },
+        {
+          "columnName": "EdgeCode",
+          "value": "011:010:010:000"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeJointType",
+          "value": "LLSS"
+        },
+        {
+          "columnName": "EdgeJointFrontLeft",
+          "value": "L"
+        },
+        {
+          "columnName": "EdgeJointLeftBack",
+          "value": "L"
+        },
+        {
+          "columnName": "EdgeJointBackRight",
+          "value": "S"
+        },
+        {
+          "columnName": "EdgeJointRightFront",
+          "value": "S"
+        },
+        {
+          "columnName": "EdgeShape",
+          "value": "N0_W0_S1_E1"
+        },
+        {
+          "columnName": "EdgeCode",
+          "value": "011:000:010:001"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeJointType",
+          "value": "SLLL"
+        },
+        {
+          "columnName": "EdgeJointFrontLeft",
+          "value": "S"
+        },
+        {
+          "columnName": "EdgeJointLeftBack",
+          "value": "L"
+        },
+        {
+          "columnName": "EdgeJointBackRight",
+          "value": "L"
+        },
+        {
+          "columnName": "EdgeJointRightFront",
+          "value": "L"
+        },
+        {
+          "columnName": "EdgeShape",
+          "value": "N0_W1_S0_E0"
+        },
+        {
+          "columnName": "EdgeCode",
+          "value": "000:010:011:010"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeJointType",
+          "value": "SLLS"
+        },
+        {
+          "columnName": "EdgeJointFrontLeft",
+          "value": "S"
+        },
+        {
+          "columnName": "EdgeJointLeftBack",
+          "value": "L"
+        },
+        {
+          "columnName": "EdgeJointBackRight",
+          "value": "L"
+        },
+        {
+          "columnName": "EdgeJointRightFront",
+          "value": "S"
+        },
+        {
+          "columnName": "EdgeShape",
+          "value": "N0_W1_S1_E0"
+        },
+        {
+          "columnName": "EdgeCode",
+          "value": "001:010:011:000"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeJointType",
+          "value": "SLSS"
+        },
+        {
+          "columnName": "EdgeJointFrontLeft",
+          "value": "S"
+        },
+        {
+          "columnName": "EdgeJointLeftBack",
+          "value": "L"
+        },
+        {
+          "columnName": "EdgeJointBackRight",
+          "value": "S"
+        },
+        {
+          "columnName": "EdgeJointRightFront",
+          "value": "S"
+        },
+        {
+          "columnName": "EdgeShape",
+          "value": "N0_W1_S1_E1"
+        },
+        {
+          "columnName": "EdgeCode",
+          "value": "001:000:011:001"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeJointType",
+          "value": "LSLL"
+        },
+        {
+          "columnName": "EdgeJointFrontLeft",
+          "value": "L"
+        },
+        {
+          "columnName": "EdgeJointLeftBack",
+          "value": "S"
+        },
+        {
+          "columnName": "EdgeJointBackRight",
+          "value": "L"
+        },
+        {
+          "columnName": "EdgeJointRightFront",
+          "value": "L"
+        },
+        {
+          "columnName": "EdgeShape",
+          "value": "N1_W0_S0_E0"
+        },
+        {
+          "columnName": "EdgeCode",
+          "value": "010:011:000:010"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeJointType",
+          "value": "LSSL"
+        },
+        {
+          "columnName": "EdgeJointFrontLeft",
+          "value": "L"
+        },
+        {
+          "columnName": "EdgeJointLeftBack",
+          "value": "S"
+        },
+        {
+          "columnName": "EdgeJointBackRight",
+          "value": "S"
+        },
+        {
+          "columnName": "EdgeJointRightFront",
+          "value": "L"
+        },
+        {
+          "columnName": "EdgeShape",
+          "value": "N1_W0_S0_E1"
+        },
+        {
+          "columnName": "EdgeCode",
+          "value": "010:011:000:000"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeJointType",
+          "value": "LSSS"
+        },
+        {
+          "columnName": "EdgeJointFrontLeft",
+          "value": "L"
+        },
+        {
+          "columnName": "EdgeJointLeftBack",
+          "value": "S"
+        },
+        {
+          "columnName": "EdgeJointBackRight",
+          "value": "S"
+        },
+        {
+          "columnName": "EdgeJointRightFront",
+          "value": "S"
+        },
+        {
+          "columnName": "EdgeShape",
+          "value": "N1_W0_S1_E1"
+        },
+        {
+          "columnName": "EdgeCode",
+          "value": "011:001:000:001"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeJointType",
+          "value": "SSLL"
+        },
+        {
+          "columnName": "EdgeJointFrontLeft",
+          "value": "S"
+        },
+        {
+          "columnName": "EdgeJointLeftBack",
+          "value": "S"
+        },
+        {
+          "columnName": "EdgeJointBackRight",
+          "value": "L"
+        },
+        {
+          "columnName": "EdgeJointRightFront",
+          "value": "L"
+        },
+        {
+          "columnName": "EdgeShape",
+          "value": "N1_W1_S0_E0"
+        },
+        {
+          "columnName": "EdgeCode",
+          "value": "000:011:001:010"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeJointType",
+          "value": "SSSL"
+        },
+        {
+          "columnName": "EdgeJointFrontLeft",
+          "value": "S"
+        },
+        {
+          "columnName": "EdgeJointLeftBack",
+          "value": "S"
+        },
+        {
+          "columnName": "EdgeJointBackRight",
+          "value": "S"
+        },
+        {
+          "columnName": "EdgeJointRightFront",
+          "value": "L"
+        },
+        {
+          "columnName": "EdgeShape",
+          "value": "N1_W1_S0_E1"
+        },
+        {
+          "columnName": "EdgeCode",
+          "value": "000:001:001:011"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeJointType",
+          "value": "SSLS"
+        },
+        {
+          "columnName": "EdgeJointFrontLeft",
+          "value": "S"
+        },
+        {
+          "columnName": "EdgeJointLeftBack",
+          "value": "S"
+        },
+        {
+          "columnName": "EdgeJointBackRight",
+          "value": "L"
+        },
+        {
+          "columnName": "EdgeJointRightFront",
+          "value": "S"
+        },
+        {
+          "columnName": "EdgeShape",
+          "value": "N1_W1_S1_E0"
+        },
+        {
+          "columnName": "EdgeCode",
+          "value": "001:011:001:000"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeJointType",
+          "value": "SELL"
+        },
+        {
+          "columnName": "EdgeJointFrontLeft",
+          "value": "S"
+        },
+        {
+          "columnName": "EdgeJointLeftBack",
+          "value": "E"
+        },
+        {
+          "columnName": "EdgeJointBackRight",
+          "value": "L"
+        },
+        {
+          "columnName": "EdgeJointRightFront",
+          "value": "L"
+        },
+        {
+          "columnName": "EdgeShape",
+          "value": "N0_S0_E0"
+        },
+        {
+          "columnName": "EdgeCode",
+          "value": "000:010::010"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeJointType",
+          "value": "SESL"
+        },
+        {
+          "columnName": "EdgeJointFrontLeft",
+          "value": "S"
+        },
+        {
+          "columnName": "EdgeJointLeftBack",
+          "value": "E"
+        },
+        {
+          "columnName": "EdgeJointBackRight",
+          "value": "S"
+        },
+        {
+          "columnName": "EdgeJointRightFront",
+          "value": "L"
+        },
+        {
+          "columnName": "EdgeShape",
+          "value": "N0_S0_E1"
+        },
+        {
+          "columnName": "EdgeCode",
+          "value": "000:000::011"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeJointType",
+          "value": "SELS"
+        },
+        {
+          "columnName": "EdgeJointFrontLeft",
+          "value": "S"
+        },
+        {
+          "columnName": "EdgeJointLeftBack",
+          "value": "E"
+        },
+        {
+          "columnName": "EdgeJointBackRight",
+          "value": "L"
+        },
+        {
+          "columnName": "EdgeJointRightFront",
+          "value": "S"
+        },
+        {
+          "columnName": "EdgeShape",
+          "value": "N0_S1_E0"
+        },
+        {
+          "columnName": "EdgeCode",
+          "value": "001:010::000"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeJointType",
+          "value": "SESS"
+        },
+        {
+          "columnName": "EdgeJointFrontLeft",
+          "value": "S"
+        },
+        {
+          "columnName": "EdgeJointLeftBack",
+          "value": "E"
+        },
+        {
+          "columnName": "EdgeJointBackRight",
+          "value": "S"
+        },
+        {
+          "columnName": "EdgeJointRightFront",
+          "value": "S"
+        },
+        {
+          "columnName": "EdgeShape",
+          "value": "N0_S1_E1"
+        },
+        {
+          "columnName": "EdgeCode",
+          "value": "001:000::001"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeJointType",
+          "value": "ELLS"
+        },
+        {
+          "columnName": "EdgeJointFrontLeft",
+          "value": "E"
+        },
+        {
+          "columnName": "EdgeJointLeftBack",
+          "value": "L"
+        },
+        {
+          "columnName": "EdgeJointBackRight",
+          "value": "L"
+        },
+        {
+          "columnName": "EdgeJointRightFront",
+          "value": "S"
+        },
+        {
+          "columnName": "EdgeShape",
+          "value": "N0_W0_E0"
+        },
+        {
+          "columnName": "EdgeCode",
+          "value": ":010:010:000"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeJointType",
+          "value": "ESLS"
+        },
+        {
+          "columnName": "EdgeJointFrontLeft",
+          "value": "E"
+        },
+        {
+          "columnName": "EdgeJointLeftBack",
+          "value": "S"
+        },
+        {
+          "columnName": "EdgeJointBackRight",
+          "value": "L"
+        },
+        {
+          "columnName": "EdgeJointRightFront",
+          "value": "S"
+        },
+        {
+          "columnName": "EdgeShape",
+          "value": "N1_W0_E0"
+        },
+        {
+          "columnName": "EdgeCode",
+          "value": ":011:000:000"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeJointType",
+          "value": "ESEE"
+        },
+        {
+          "columnName": "EdgeJointFrontLeft",
+          "value": "E"
+        },
+        {
+          "columnName": "EdgeJointLeftBack",
+          "value": "S"
+        },
+        {
+          "columnName": "EdgeJointBackRight",
+          "value": "E"
+        },
+        {
+          "columnName": "EdgeJointRightFront",
+          "value": "E"
+        },
+        {
+          "columnName": "EdgeShape",
+          "value": "W0"
+        },
+        {
+          "columnName": "EdgeCode",
+          "value": "::000:"
+        }
+      ]
+    }
+  ]
+}

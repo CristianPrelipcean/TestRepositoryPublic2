@@ -1,0 +1,24 @@
+{
+  "partCode": "part_PantryPulloutUnit",
+  "shortName": "Pantry pullout unit",
+  "description": "Partgroup for the pantry pullout",
+  "wdt": "XYZ",
+  "groupName": "Pullout",
+  "imageId": "22716045-13c6-42db-bc2e-0733dc24fd37:PantryPullout.png",
+  "model3dImageId": "",
+  "invisible": true,
+  "restrictionTypeId": "Public",
+  "noNcData": true,
+  "partVariants": [
+    {
+      "partVarId": "pa_BomId",
+      "valueScript": "this.parent.mod_FrontId"
+    },
+    {
+      "partVarId": "pa_PartgroupBomId",
+      "valueScript": "this.parent.mod_CarcaseId"
+    }
+  ],
+  "bomData": [],
+  "ncData": []
+}

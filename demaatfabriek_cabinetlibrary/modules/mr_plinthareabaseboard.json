@@ -1,0 +1,218 @@
+{
+  "moduleId": "mr_PlinthAreaBaseboard",
+  "shortName": "Plinth Area Baseboard",
+  "configurable": false,
+  "isRoot": false,
+  "isConfigDummy": false,
+  "description": "Plinth Area Baseboard",
+  "groupName": "Root",
+  "imageId": "77dc6f75-6369-4953-a2a7-0201b0f22f81:PlinthAreaFront.jpg",
+  "restrictionTypeId": "Public",
+  "generateMethod": "PlinthAreaBaseboard",
+  "childModules": [
+    {
+      "moduleId": "mc_Toekick"
+    },
+    {
+      "moduleId": "mc_Leg01"
+    },
+    {
+      "moduleId": "mc_Baseboard01"
+    }
+  ],
+  "assignedVariants": [
+    {
+      "variantId": "mod_PlinthAreaDesign",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_PlinthAreaHeight",
+      "default": "100",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_PlinthAreaVisLeft",
+      "default": "true",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_PlinthAreaVisRight",
+      "default": "true",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_PlinthAreaPosLogic",
+      "default": "Library",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_PlinthAreaPosLeftMatrix",
+      "default": "LCF",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_PlinthAreaPosRightMatrix",
+      "default": "RCF",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_PlinthAreaPosFrontMatrix",
+      "default": "FCF",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_PlinthAreaPosBackMatrix",
+      "default": "BCF",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_PlinthAreaElementColor",
+      "default": "StainlessSteel",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_PlinthAreaExtraItem",
+      "default": "None",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_BaseboardDepthLogic",
+      "default": "FollowsMinDepth",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_BaseboardOverdimensionBack",
+      "default": "0",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_BaseboardOverdimensionLeft",
+      "default": "0",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_BaseboardOverdimensionRight",
+      "default": "0",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_BaseboardSplitLogic",
+      "default": "BetweenCabinets",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_CarcaseColor",
+      "default": "1019_mn",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_CarcaseEdgeColor",
+      "defaultScript": "this.mod_CarcaseColor",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_CarcaseEdgeFrontColor",
+      "defaultScript": "this.mod_CarcaseColor",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_CarcaseEdgeBackColor",
+      "defaultScript": "this.mod_CarcaseColor",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_GrainLogic",
+      "default": "Library",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_LengthList",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_ToekickColor",
+      "default": "1045_mn",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_ToekickConnectionOverhang",
+      "default": "0",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_ToekickConnectionSequence",
+      "default": "0",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_ToekickId",
+      "default": "0",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_ToekickProgram",
+      "default": "MatteNatur",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_ToekickReductionTop",
+      "default": "10",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_ToekickSidepanelOverdimensionBtm",
+      "default": "0",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_ToekickSidepanelTransitionType",
+      "default": "FrontLong",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_ToekickThk",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_BaseboardThk",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_BaseboardColor",
+      "defaultScript": "this.mod_CarcaseColor",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_BaseboardEdgeColor",
+      "defaultScript": "this.mod_CarcaseColor",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_BaseboardEdgeBackColor",
+      "defaultScript": "this.mod_CarcaseColor",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_BaseboardEdgeFrontColor",
+      "defaultScript": "this.mod_CarcaseColor",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_BaseboardProgram",
+      "defaultScript": "this.mod_CarcaseProgram",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_CarcaseProgram",
+      "default": "MatteNatur",
+      "origin": "Default"
+    }
+  ],
+  "assignedParts": [
+    {
+      "partCode": "part_BaseboardGroup"
+    }
+  ],
+  "assignedCustomTables": [],
+  "assignedFunctions": []
+}

@@ -1,0 +1,178 @@
+{
+  "tableName": "tab_HingeDrillingDistance",
+  "description": "Hinge Drilling Distance\n",
+  "restrictionTypeId": "Public",
+  "groupName": "Hinge",
+  "columns": [
+    {
+      "name": "_id",
+      "type": "Integer",
+      "allowNull": false
+    },
+    {
+      "name": "in_HingeType",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_FrontOverlayMin",
+      "type": "Dim",
+      "allowNull": true
+    },
+    {
+      "name": "in_FrontOverlayMax",
+      "type": "Dim",
+      "allowNull": true
+    },
+    {
+      "name": "in_DrillingDistanceType",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "MountingPlateHeight",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "DrillingDistance",
+      "type": "Dim",
+      "allowNull": true
+    },
+    {
+      "name": "Application",
+      "type": "Text",
+      "allowNull": true
+    }
+  ],
+  "rows": [
+    {
+      "data": [
+        {
+          "columnName": "in_HingeType",
+          "value": "110º"
+        },
+        {
+          "columnName": "in_FrontOverlayMin",
+          "value": "14"
+        },
+        {
+          "columnName": "in_FrontOverlayMax",
+          "value": "18"
+        },
+        {
+          "columnName": "in_DrillingDistanceType",
+          "value": "CalculationBasedMin"
+        },
+        {
+          "columnName": "MountingPlateHeight",
+          "value": "0"
+        },
+        {
+          "columnName": "DrillingDistance",
+          "value": "3"
+        },
+        {
+          "columnName": "Application",
+          "value": "Overlay"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_HingeType",
+          "value": "110º"
+        },
+        {
+          "columnName": "in_FrontOverlayMin",
+          "value": "4.5"
+        },
+        {
+          "columnName": "in_FrontOverlayMax",
+          "value": "8.5"
+        },
+        {
+          "columnName": "in_DrillingDistanceType",
+          "value": "CalculationBasedMin"
+        },
+        {
+          "columnName": "MountingPlateHeight",
+          "value": "0"
+        },
+        {
+          "columnName": "DrillingDistance",
+          "value": "3"
+        },
+        {
+          "columnName": "Application",
+          "value": "HalfOverlay"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_HingeType",
+          "value": "110º"
+        },
+        {
+          "columnName": "in_FrontOverlayMin",
+          "value": "-4"
+        },
+        {
+          "columnName": "in_FrontOverlayMax",
+          "value": "0"
+        },
+        {
+          "columnName": "in_DrillingDistanceType",
+          "value": "CalculationBasedMin"
+        },
+        {
+          "columnName": "MountingPlateHeight",
+          "value": "0"
+        },
+        {
+          "columnName": "DrillingDistance",
+          "value": "3"
+        },
+        {
+          "columnName": "Application",
+          "value": "Inset"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_HingeType",
+          "value": "155º"
+        },
+        {
+          "columnName": "in_FrontOverlayMin",
+          "value": "14"
+        },
+        {
+          "columnName": "in_FrontOverlayMax",
+          "value": "19"
+        },
+        {
+          "columnName": "in_DrillingDistanceType",
+          "value": "CalculationBasedMin"
+        },
+        {
+          "columnName": "MountingPlateHeight",
+          "value": "0"
+        },
+        {
+          "columnName": "DrillingDistance",
+          "value": "3"
+        },
+        {
+          "columnName": "Application",
+          "value": "Overlay"
+        }
+      ]
+    }
+  ]
+}

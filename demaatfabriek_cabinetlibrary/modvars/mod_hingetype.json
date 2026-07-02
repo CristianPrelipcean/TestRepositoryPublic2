@@ -1,0 +1,57 @@
+{
+  "variantId": "mod_HingeType",
+  "shortName": "Type",
+  "variantTypeId": "Text",
+  "description": "Type of the hinge",
+  "restrictionTypeId": "Public",
+  "groupName": "Hardware | Hinge",
+  "imageId": "c66c039f-b3ce-41b0-90c9-8cc64872dba9:HingeType.jpg",
+  "isArray": false,
+  "isPosRelevant": true,
+  "mainAttr": false,
+  "userRight": "Master",
+  "implicitRelevant": false,
+  "posView": "Dropdown",
+  "matrix": [
+    {
+      "id": "DrillingDistanceType",
+      "type": "Text",
+      "default": "Fixed"
+    }
+  ],
+  "selections": [
+    {
+      "value": "110º",
+      "description": "Standard Hinge 110º",
+      "shortName": "110º",
+      "matrix": [
+        {
+          "id": "DrillingDistanceType",
+          "value": "CalculationBasedMin"
+        }
+      ]
+    },
+    {
+      "value": "155º",
+      "description": "Wide Angle Hinge 155º",
+      "shortName": "155º",
+      "matrix": [
+        {
+          "id": "DrillingDistanceType",
+          "value": "CalculationBasedMin"
+        }
+      ]
+    },
+    {
+      "value": "NoHinges",
+      "description": "No Hinges",
+      "shortName": "NoHinges",
+      "matrix": [
+        {
+          "id": "DrillingDistanceType",
+          "value": "Fixed"
+        }
+      ]
+    }
+  ]
+}

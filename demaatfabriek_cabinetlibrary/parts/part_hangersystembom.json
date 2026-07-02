@@ -1,0 +1,48 @@
+{
+  "partCode": "part_HangerSystemBom",
+  "shortName": "Hanger System BOM",
+  "description": "Hanger System BOM",
+  "wdt": "XYZ",
+  "groupName": "Hardware",
+  "imageId": "8f7d9ba3-346f-4d4b-9e9d-8563b284d17e:BOM.png",
+  "model3dImageId": "",
+  "invisible": true,
+  "restrictionTypeId": "Public",
+  "noNcData": false,
+  "partVariants": [
+    {
+      "partVarId": "pa_HardwareId",
+      "valueScript": "''",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_WallPlateLengthLeft",
+      "valueScript": "0",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_WallPlateLengthRight",
+      "valueScript": "0",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_WallPlateQtyLeft",
+      "valueScript": "0",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_WallPlateQtyRight",
+      "valueScript": "0",
+      "isWritable": false
+    }
+  ],
+  "bomData": [
+    {
+      "bomElementTypeId": "bomout_Group",
+      "description": "BOM Hangers",
+      "conditionScript": "partSelf._g?.basic_CreateBom == 'Library'",
+      "valueScript": "// Filter function to get all the hardware elements\nlet HardwareElements = GlobalFunc.find_HardwareLibraryMapping(part.pa_HardwareId);\n\n// Cycle to add all hardware elements to the BOM\nHardwareElements.forEach(info => {\n\n\t  let BOMInfo = GlobalFunc.find_HardwareLibrary(info.SupplierArticleNumber!,info.Supplier!);\n\t  let BOMName = GlobalFunc.find_PartSettings(\"part_HangerSystem\");\n\t  let tmpLength = BOMInfo.Length;\n\t  let tmpQty = info.BomQty;\n\t  if(BOMInfo.Category != 'WallPlate' || BOMInfo.Category == 'WallPlate' && part.pa_WallPlateLengthLeft == 0 && part.pa_WallPlateLengthRight == 0 )\n\t  {\n\t\t  let elem = this.addbomout_Hardware();\n\t\t  elem.bom_Supplier=info.Supplier;\n\t\t  elem.bom_SupplierArticle=info.SupplierArticleNumber;\n\t\t  elem.bom_Description1=BOMInfo.Description;\n\t\t  elem.bom_Description2=BOMInfo.Description2;\n\t\t  elem.bom_Length=BOMInfo.Length;\n\t\t  elem.bom_Width=BOMInfo.Width;\n\t\t  elem.bom_Thk=BOMInfo.Thickness;\n\t\t  elem.bom_Color=BOMInfo.Color;\n\t\t  elem.bom_Weight=BOMInfo.Weight;\n\t\t  elem.bom_Name=BOMName.BomPartDescription;\n\t\t  elem.bom_Type=part._partId;\n\t\t  elem.bom_PartId=part._id;\n\t\t  elem.bom_ParentId=parentId;\n\t\t  elem.bom_Qty=info.BomQty;\t\t\n\t  }\n\t  else\n\t  {\n\t\tif(part.pa_WallPlateLengthLeft > 0)\n\t\t  {\n\t\t\t  let elem = this.addbomout_Hardware();\n\t\t\t  elem.bom_Supplier=info.Supplier;\n\t\t\t  elem.bom_SupplierArticle=info.SupplierArticleNumber;\n\t\t\t  elem.bom_Description1=BOMInfo.Description;\n\t\t\t  elem.bom_Description2=BOMInfo.Description2;\n\t\t\t  elem.bom_Length=part.pa_WallPlateLengthLeft;\n\t\t\t  elem.bom_Width=BOMInfo.Width;\n\t\t\t  elem.bom_Thk=BOMInfo.Thickness;\n\t\t\t  elem.bom_Color=BOMInfo.Color;\n\t\t\t  elem.bom_Weight=BOMInfo.Weight;\n\t\t\t  elem.bom_Name=BOMName.BomPartDescription;\n\t\t\t  elem.bom_Type=part._partId;\n\t\t\t  elem.bom_PartId=part._id;\n\t\t\t  elem.bom_ParentId=parentId;\n\t\t\t  elem.bom_Qty=1;\t\t\n\t\t  }\n\t\tif(part.pa_WallPlateLengthRight > 0)\n\t\t  {\n\t\t\t  let elem = this.addbomout_Hardware();\n\t\t\t  elem.bom_Supplier=info.Supplier;\n\t\t\t  elem.bom_SupplierArticle=info.SupplierArticleNumber;\n\t\t\t  elem.bom_Description1=BOMInfo.Description;\n\t\t\t  elem.bom_Description2=BOMInfo.Description2;\n\t\t\t  elem.bom_Length=part.pa_WallPlateLengthRight;\n\t\t\t  elem.bom_Width=BOMInfo.Width;\n\t\t\t  elem.bom_Thk=BOMInfo.Thickness;\n\t\t\t  elem.bom_Color=BOMInfo.Color;\n\t\t\t  elem.bom_Weight=BOMInfo.Weight;\n\t\t\t  elem.bom_Name=BOMName.BomPartDescription;\n\t\t\t  elem.bom_Type=part._partId;\n\t\t\t  elem.bom_PartId=part._id;\n\t\t\t  elem.bom_ParentId=parentId;\n\t\t\t  elem.bom_Qty=1;\t\t\n\t\t  }\n\t\t\n\t  \n\t  \n\t  }\n  \n\t  \n\t  \n})"
+    }
+  ],
+  "ncData": []
+}

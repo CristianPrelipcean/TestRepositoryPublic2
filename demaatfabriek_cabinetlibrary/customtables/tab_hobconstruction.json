@@ -1,0 +1,160 @@
+{
+  "tableName": "tab_HobConstruction",
+  "description": "Hob data and cut out dimensions",
+  "restrictionTypeId": "Public",
+  "groupName": "Appliance",
+  "columns": [
+    {
+      "name": "_id",
+      "type": "Integer",
+      "allowNull": false
+    },
+    {
+      "name": "in_ConstructionId",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "CutWidth",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "CutDepth",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "CutRadius",
+      "type": "Real",
+      "allowNull": false
+    },
+    {
+      "name": "HobBlockedHgt",
+      "type": "Dim",
+      "allowNull": false
+    }
+  ],
+  "rows": [
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionId",
+          "value": "PUXU"
+        },
+        {
+          "columnName": "CutWidth",
+          "value": "810"
+        },
+        {
+          "columnName": "CutDepth",
+          "value": "495"
+        },
+        {
+          "columnName": "CutRadius",
+          "value": "5"
+        },
+        {
+          "columnName": "HobBlockedHgt",
+          "value": "220"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionId",
+          "value": "ER6A6PB70D"
+        },
+        {
+          "columnName": "CutWidth",
+          "value": "560"
+        },
+        {
+          "columnName": "CutDepth",
+          "value": "490"
+        },
+        {
+          "columnName": "CutRadius",
+          "value": "5"
+        },
+        {
+          "columnName": "HobBlockedHgt",
+          "value": "70"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionId",
+          "value": "ET601FNP1E"
+        },
+        {
+          "columnName": "CutWidth",
+          "value": "560"
+        },
+        {
+          "columnName": "CutDepth",
+          "value": "500"
+        },
+        {
+          "columnName": "CutRadius",
+          "value": "5"
+        },
+        {
+          "columnName": "HobBlockedHgt",
+          "value": "51"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionId",
+          "value": "EX975LXC1E"
+        },
+        {
+          "columnName": "CutWidth",
+          "value": "880"
+        },
+        {
+          "columnName": "CutDepth",
+          "value": "500"
+        },
+        {
+          "columnName": "CutRadius",
+          "value": "5"
+        },
+        {
+          "columnName": "HobBlockedHgt",
+          "value": "51"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionId",
+          "value": "DefaultHob"
+        },
+        {
+          "columnName": "CutWidth",
+          "value": "560"
+        },
+        {
+          "columnName": "CutDepth",
+          "value": "500"
+        },
+        {
+          "columnName": "CutRadius",
+          "value": "5"
+        },
+        {
+          "columnName": "HobBlockedHgt",
+          "value": "51"
+        }
+      ]
+    }
+  ]
+}

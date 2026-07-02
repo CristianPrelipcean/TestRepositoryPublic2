@@ -1,0 +1,36 @@
+{
+  "partCode": "part_Handlestrip",
+  "shortName": "Handle strip",
+  "description": "Handle strip",
+  "wdt": "XYZ",
+  "groupName": "Hardware",
+  "imageId": "52337a0c-3872-4aee-986b-d33932761c7f:handlestripe.jpg",
+  "invisible": false,
+  "restrictionTypeId": "Public",
+  "partVariants": [
+    {
+      "partVarId": "pa_Supplier",
+      "valueScript": "",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_SupplierArticle",
+      "valueScript": "",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_HardwareId",
+      "valueScript": "this.parent.mod_HardwareId",
+      "isWritable": false
+    }
+  ],
+  "bomData": [
+    {
+      "bomElementTypeId": "bomout_Group",
+      "description": "Add the handlestrip to BOM",
+      "conditionScript": "partSelf._g?.basic_CreateBom == 'Library'",
+      "valueScript": "// Filter function to get all the hardware elements for the handle\nlet HardwareElements = GlobalFunc.find_HardwareLibraryMapping(part.pa_HardwareId);\n\n// Cycle to add all hardware elements to the BOM\nHardwareElements.forEach(info => {\n  let elem = this.addbomout_Hardware();\n  let HandleBOMInfo = GlobalFunc.find_HardwareLibrary(info.SupplierArticleNumber!,info.Supplier!);\n  let HandleBOMName = GlobalFunc.find_PartSettings(\"part_Handle\");\n\n  elem.bom_Supplier=info.Supplier;\n  elem.bom_SupplierArticle=info.SupplierArticleNumber;\n  elem.bom_Description1=HandleBOMInfo.Description;\n  elem.bom_Description2=HandleBOMInfo.Description2;\n  elem.bom_Length=HandleBOMInfo.Length;\n  elem.bom_Width=HandleBOMInfo.Width;\n  elem.bom_Thk=HandleBOMInfo.Thickness;\n  elem.bom_Color=HandleBOMInfo.Color;\n  elem.bom_Weight=HandleBOMInfo.Weight;\n  elem.bom_Name=HandleBOMName.BomPartDescription;\n  elem.bom_Type=part._partId;\n  elem.bom_PartId=part._id;\n  elem.bom_ParentId=parentId;\n  elem.bom_Qty=info.BomQty;\n})"
+    }
+  ],
+  "ncData": []
+}

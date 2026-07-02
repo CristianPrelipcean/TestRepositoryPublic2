@@ -1,0 +1,58 @@
+{
+  "variantId": "mod_BoardShelfProgram",
+  "shortName": "Board shelf program",
+  "variantTypeId": "Text",
+  "description": "Program of the board shelf",
+  "restrictionTypeId": "Public",
+  "groupName": "BoardShelf",
+  "isArray": false,
+  "isPosRelevant": true,
+  "userRight": "Master",
+  "implicitRelevant": false,
+  "posView": "Dropdown",
+  "matrix": [
+    {
+      "id": "GrainGroupId",
+      "type": "Text",
+      "default": "Neutral"
+    }
+  ],
+  "selections": [
+    {
+      "value": "Classic",
+      "description": "Classic carcase in single colors",
+      "shortName": "Classic",
+      "imageId": "33dfab7f-98f9-4423-910f-8e2bb7907679:Classic.jpg",
+      "matrix": [
+        {
+          "id": "GrainGroupId",
+          "value": "Neutral"
+        }
+      ]
+    },
+    {
+      "value": "ModernNature",
+      "description": "Carcase in wooden colors horizontal",
+      "shortName": "ModernNature",
+      "imageId": "c1976d2f-6462-4311-aede-7c166e80c042:ModernNature.jpg",
+      "matrix": [
+        {
+          "id": "GrainGroupId",
+          "value": "Horizontal"
+        }
+      ]
+    },
+    {
+      "value": "Nature",
+      "description": "Carcase in wooden colors vertical",
+      "shortName": "Nature",
+      "imageId": "cd71d9b9-a7b6-46c3-b6ff-5edb2f3a27ed:Nature.jpg",
+      "matrix": [
+        {
+          "id": "GrainGroupId",
+          "value": "Vertical"
+        }
+      ]
+    }
+  ]
+}

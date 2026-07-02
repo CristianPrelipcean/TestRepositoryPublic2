@@ -1,0 +1,133 @@
+{
+  "variantId": "mod_LightSystem",
+  "shortName": "System",
+  "variantTypeId": "Text",
+  "description": "Light System",
+  "restrictionTypeId": "Public",
+  "groupName": "Hardware | Light",
+  "imageId": "811bd22e-a49d-4d91-ab7a-fe10ef7b57c0:lightsystem.jpg",
+  "isArray": false,
+  "isPosRelevant": true,
+  "mainAttr": false,
+  "userRight": "Master",
+  "posView": "Dropdown",
+  "matrix": [
+    {
+      "id": "Length",
+      "type": "Dim",
+      "default": 0.0
+    },
+    {
+      "id": "Width",
+      "type": "Dim",
+      "default": 0.0
+    },
+    {
+      "id": "Radius",
+      "type": "Dim",
+      "default": 0.0
+    },
+    {
+      "id": "Depth",
+      "type": "Dim",
+      "default": 0.0
+    },
+    {
+      "id": "EscapeDrill_Offset",
+      "type": "Dim",
+      "default": 0.0
+    },
+    {
+      "id": "EscapeDrill_Diameter",
+      "type": "Dim",
+      "default": 0.0
+    }
+  ],
+  "selections": [
+    {
+      "value": "LedStrip",
+      "description": "Led Strip Light",
+      "shortName": "LedStrip",
+      "matrix": [
+        {
+          "id": "Length",
+          "value": 0.0
+        },
+        {
+          "id": "Width",
+          "value": 30.0
+        },
+        {
+          "id": "Radius",
+          "value": 9.0
+        },
+        {
+          "id": "Depth",
+          "value": 13.0
+        },
+        {
+          "id": "EscapeDrill_Offset",
+          "value": 0.0
+        },
+        {
+          "id": "EscapeDrill_Diameter",
+          "value": 8.0
+        }
+      ]
+    },
+    {
+      "value": "NoLight",
+      "description": "No Light",
+      "shortName": "NoLight",
+      "matrix": [
+        {
+          "id": "Length",
+          "value": 0.0
+        },
+        {
+          "id": "Width",
+          "value": 0.0
+        },
+        {
+          "id": "Radius",
+          "value": 0.0
+        },
+        {
+          "id": "Depth",
+          "value": 0.0
+        }
+      ]
+    },
+    {
+      "value": "Spot",
+      "description": "Spot Light",
+      "shortName": "Spot",
+      "matrix": [
+        {
+          "id": "Length",
+          "value": 68.0
+        },
+        {
+          "id": "Width",
+          "value": 68.0
+        },
+        {
+          "id": "Radius",
+          "value": 34.0
+        },
+        {
+          "id": "Depth",
+          "value": 12.0
+        },
+        {
+          "id": "EscapeDrill_Offset",
+          "value": 0.0
+        },
+        {
+          "id": "EscapeDrill_Diameter",
+          "value": 8.0
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,135 @@
+{
+  "partCode": "part_Filler",
+  "shortName": "Filler front",
+  "description": "Frontpanel of the fillers",
+  "wdt": "XYZ",
+  "groupName": "Fronts",
+  "imageId": "50608ebf-1493-4995-a48b-0c8758abe0f9:FillerFront.jpg",
+  "model3dImageId": "",
+  "invisible": false,
+  "restrictionTypeId": "Public",
+  "noNcData": false,
+  "partVariants": [
+    {
+      "partVarId": "pa_Weight",
+      "valueScript": "0",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_AdditionalInfo1",
+      "valueScript": "'None'",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_BomId",
+      "valueScript": "this.parent.mod_FrontId",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_BtmColor",
+      "valueScript": "this.parent.mod_FrontColor",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeBackColor",
+      "valueScript": "this.parent.mod_FrontEdgeColor",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeBackType",
+      "valueScript": "'FRE'",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeFrontColor",
+      "valueScript": "this.parent.mod_FrontEdgeColor",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeFrontType",
+      "valueScript": "'FRE'",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeJointType",
+      "valueScript": "'VVVV'",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeLeftColor",
+      "valueScript": "this.parent.mod_FrontEdgeColor",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeLeftType",
+      "valueScript": "'FRE'",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeRightColor",
+      "valueScript": "this.parent.mod_FrontEdgeColor",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeRightType",
+      "valueScript": "'FRE'",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_FrontConstructionInfo",
+      "valueScript": "",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_GrainDirection",
+      "valueScript": "'Neutral'",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_Program",
+      "valueScript": "this.parent.mod_FrontProgram",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_TopColor",
+      "valueScript": "this.parent.mod_FrontColor",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_HardwareInfo",
+      "valueScript": "''",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_ProcessingComponent",
+      "valueScript": "''",
+      "isWritable": false
+    }
+  ],
+  "bomData": [
+    {
+      "bomElementTypeId": "bomout_Board",
+      "description": "Output Parts / Boards",
+      "conditionScript": "partSelf._g?.basic_CreateBom == 'Library'",
+      "valueScript": "// Type of the Bom-Element (will be checked in order output)\n  let elementType='Board';\n\n  // ProductionSite Category (to split the orders for different production sites)\n  let elementCategory='';\n\n  // Id of the parent to create the hierarchy\n  let parentBomId=part.pa_BomId;\n\n  // Call the function to process the Bom-Element\n  GlobalFunc.process_BoardBom(this, part, elementType, elementCategory, parentBomId);"
+    }
+  ],
+  "ncData": [
+    {
+      "part2": "part_FillerHardwareProcessing",
+      "touchName": "FromBack",
+      "bomElementTypeId": "ncout_Group",
+      "description": "Drillings for filler hardware",
+      "valueScript": "//====================================================================\n  // Get data for drillings and rotation\n  //====================================================================\n\n  let drillings: any[] = [];\n  let drills: any[] = [];\n  let processings = GlobalFunc.find_ProcessingMapping(part2.pa_ProcessingId);\n  let insertPoint = GlobalFunc.process_MachiningInsertionHelper('012',part2.pa_Model3DGroupName)\n  if (part2.pa_HardwareIdentifier == 'FrontConnector' || part2.pa_HardwareIdentifier == 'FrontAndCarcaseConnector') {\n    processings.forEach((processing) => {\n      drills = GlobalFunc.find_HardwareDrillVertLibrary(processing.ProcessingId!, 'Front');\n      drills.forEach((drill) => {\n        drillings.push(drill);\n      });\n    });\n\n    //====================================================================\n    // For each drilling (insert the drillings)\n    //====================================================================\n\n    drillings.forEach(x => {\n      // Add Vertical Drill\n      let DrillVert = this.addncout_DrillVert();\n      DrillVert.nc_TOOL = \"102\";\n\n      if (part2.pa_Rotation == 0) {\n        DrillVert.nc_XA = posRel.x + insertPoint.InsertionPointX + x.XA;\n        DrillVert.nc_YA = partSelf._dimy - (posRel.y + insertPoint.InsertionPointY + x.YA);\n      }\n      else if (part2.pa_Rotation == 90) {\n        DrillVert.nc_XA = posRel.x - insertPoint.InsertionPointY - x.YA;\n        DrillVert.nc_YA = partSelf._dimy - (posRel.y + insertPoint.InsertionPointX + x.XA);\n      }\n      else if (part2.pa_Rotation == 180) {\n        DrillVert.nc_XA = posRel.x + part2._dimx - insertPoint.InsertionPointX - x.XA;\n        DrillVert.nc_YA = partSelf._dimy - (posRel.y - insertPoint.InsertionPointY - x.YA);\n      }\n      else if (part2.pa_Rotation == 270) {\n        DrillVert.nc_XA = posRel.x + insertPoint.InsertionPointY + x.YA;\n        DrillVert.nc_YA = partSelf._dimy - (posRel.y + part2._dimy - insertPoint.InsertionPointX - x.XA);\n      }\n\n\n      DrillVert.nc_TI = x.TI;\n      DrillVert.nc_DU = x.DU;\n\n      DrillVert.nc_BM = x.matrix_BM || \"LS\"\n      DrillVert.nc_WI = x.matrix_WI ?? 0;\n      DrillVert.nc_AB = x.matrix_AB ?? 1;\n      DrillVert.nc_LA = x.matrix_LA ?? 0;\n      DrillVert.nc_MI = x.matrix_MI ?? 0;\n      DrillVert.nc_KO = x.matrix_KO || \"00\";\n      DrillVert.nc_Side = \"Top\";\n\n      // Add drawing\n      if (part2.pa_Rotation == 0) {\n        let drilling01 = partSelf.add3DElement('Drilling01', DrillVert, posRel.x + insertPoint.InsertionPointX + x.XA, posRel.y + insertPoint.InsertionPointY + x.YA, 0, x.DU, x.DU, x.TI);\n        drilling01.extrude('<svg><circle cx=\"' + 0 + '\" cy=\"' + 0 + '\" r=\"' + x.DU / 2 + '\" /></svg>', 'z');\n      }\n      else if (part2.pa_Rotation == 90) {\n        let drilling01 = partSelf.add3DElement('Drilling01', DrillVert, posRel.x - insertPoint.InsertionPointY - x.YA, posRel.y + insertPoint.InsertionPointX + x.XA, 0, x.DU, x.DU, x.TI);\n        drilling01.extrude('<svg><circle cx=\"' + 0 + '\" cy=\"' + 0 + '\" r=\"' + x.DU / 2 + '\" /></svg>', 'z');\n      }\n      else if (part2.pa_Rotation == 180) {\n        let drilling01 = partSelf.add3DElement('Drilling01', DrillVert, posRel.x + part2._dimx - insertPoint.InsertionPointX - x.XA, posRel.y - insertPoint.InsertionPointY - x.YA, 0, x.DU, x.DU, x.TI);\n        drilling01.extrude('<svg><circle cx=\"' + 0 + '\" cy=\"' + 0 + '\" r=\"' + x.DU / 2 + '\" /></svg>', 'z');\n      }\n      else if (part2.pa_Rotation == 270) {\n        let drilling01 = partSelf.add3DElement('Drilling01', DrillVert, posRel.x + insertPoint.InsertionPointY + x.YA, posRel.y + part2._dimy - insertPoint.InsertionPointX - x.XA, 0, x.DU, x.DU, x.TI);\n        drilling01.extrude('<svg><circle cx=\"' + 0 + '\" cy=\"' + 0 + '\" r=\"' + x.DU / 2 + '\" /></svg>', 'z');\n      }\n\n    });\n  }",
+      "bomExecuteType": "Touch"
+    },
+    {
+      "touchName": "",
+      "bomElementTypeId": "ncout_Group",
+      "description": "Drillings for Corner filler left hardware",
+      "conditionScript": "partSelf.parent.mod_FrontType == 'CornerFillerLeft'",
+      "valueScript": "//====================================================================\n  // Get fillerHardwareInfo\n  //====================================================================\n  interface iFillerLeftHardwareInfo {\n    Model3D: string[];\n    ProcessingItem: string[];\n    PosX: number[];\n    PosY: number[];\n  }\n  let fillerHardwareInfo: iFillerLeftHardwareInfo = JSON.parse(partSelf.pa_HardwareInfo);\n\n  let i: number = 0;\n  fillerHardwareInfo.ProcessingItem.forEach(fillerHardware => {\n    //====================================================================\n    // Get data for drillings and rotation\n    //====================================================================\n\n    let drillings: any[] = [];\n    let drills: any[] = [];\n    let processings = GlobalFunc.find_ProcessingMapping(fillerHardware);\n    processings.forEach((processing) => {\n      drills = GlobalFunc.find_HardwareDrillVertLibrary(processing.ProcessingId!, 'Front');\n      drills.forEach((drill) => {\n        drillings.push(drill);\n      });\n    });\n    //====================================================================\n    // For each drilling (insert the drillings)\n    //====================================================================\n    drillings.forEach(x => {\n      // Add Vertical Drill\n      let DrillVert = this.addncout_DrillVert();\n      DrillVert.nc_TOOL = \"102\";\n      DrillVert.nc_XA = fillerHardwareInfo.PosX[i] + x.XA;\n      DrillVert.nc_YA = fillerHardwareInfo.PosY[i] + x.YA;\n      DrillVert.nc_TI = x.TI;\n      DrillVert.nc_DU = x.DU;\n      DrillVert.nc_BM = x.matrix_BM || \"LS\"\n      DrillVert.nc_WI = x.matrix_WI ?? 0;\n      DrillVert.nc_AB = x.matrix_AB ?? 1;\n      DrillVert.nc_LA = x.matrix_LA ?? 0;\n      DrillVert.nc_MI = x.matrix_MI ?? 0;\n      DrillVert.nc_KO = x.matrix_KO || \"00\";\n      DrillVert.nc_Side = \"Top\";\n\n      // Add drawing\n      let drilling01 = partSelf.add3DElement('Drilling01', DrillVert, fillerHardwareInfo.PosX[i] + x.XA, fillerHardwareInfo.PosY[i] + x.YA, 0, x.DU, x.DU, x.TI);\n      drilling01.extrude('<svg><circle cx=\"' + 0 + '\" cy=\"' + 0 + '\" r=\"' + x.DU / 2 + '\" /></svg>', 'z');\n\n    });\n    i++\n  });",
+      "bomExecuteType": "End"
+    }
+  ]
+}

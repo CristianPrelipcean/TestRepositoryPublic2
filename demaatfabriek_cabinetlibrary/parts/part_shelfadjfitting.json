@@ -1,0 +1,28 @@
+{
+  "partCode": "part_ShelfadjFitting",
+  "shortName": "Partshelfadj fitting",
+  "description": "Describes the fitting of the adjustable shelf",
+  "wdt": "XYZ",
+  "groupName": "Hardware",
+  "imageId": "",
+  "model3dImageId": "",
+  "invisible": false,
+  "restrictionTypeId": "Public",
+  "noNcData": false,
+  "partVariants": [
+    {
+      "partVarId": "pa_HardwareId",
+      "valueScript": "",
+      "isWritable": false
+    }
+  ],
+  "bomData": [
+    {
+      "bomElementTypeId": "bomout_Group",
+      "description": "Add all the elements for the adjustable shelf to BOM",
+      "conditionScript": "partSelf._g?.basic_CreateBom == 'Library'",
+      "valueScript": "// Filter function to get all the hardware elements for the adjustable shelf\nlet HardwareElements = GlobalFunc.find_HardwareLibraryMapping(part.pa_HardwareId);\n\n// Cycle to add all hardware elements to the BOM\nHardwareElements.forEach(info => {\n  let elem = this.addbomout_Hardware();\n  let ShelfadjFittingBOMInfo = GlobalFunc.find_HardwareLibrary(info.SupplierArticleNumber!,info.Supplier!);\n  let ShelfadjFittingBOMName = GlobalFunc.find_PartSettings(\"part_ShelfadjFitting\");\n\n  elem.bom_Supplier=info.Supplier;\n  elem.bom_SupplierArticle=info.SupplierArticleNumber;\n  elem.bom_Description1=ShelfadjFittingBOMInfo.Description;\n  elem.bom_Description2=ShelfadjFittingBOMInfo.Description2;\n  elem.bom_Length=ShelfadjFittingBOMInfo.Length;\n  elem.bom_Width=ShelfadjFittingBOMInfo.Width;\n  elem.bom_Thk=ShelfadjFittingBOMInfo.Thickness;\n  elem.bom_Color=ShelfadjFittingBOMInfo.Color;\n  elem.bom_Weight=ShelfadjFittingBOMInfo.Weight;\n  elem.bom_Name=ShelfadjFittingBOMName.BomPartDescription;\n  elem.bom_Type=part._partId;\n  elem.bom_PartId=part._id;\n  elem.bom_ParentId=parentId;\n  elem.bom_Qty=info.BomQty;\n})"
+    }
+  ],
+  "ncData": []
+}

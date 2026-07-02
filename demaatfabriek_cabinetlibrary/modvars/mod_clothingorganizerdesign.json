@@ -1,0 +1,90 @@
+{
+  "variantId": "mod_ClothingOrganizerDesign",
+  "shortName": "Clothing organizer design",
+  "variantTypeId": "Text",
+  "description": "Define the design of the clothing organizer type",
+  "restrictionTypeId": "Public",
+  "groupName": "Shelfadj",
+  "imageId": "",
+  "isArray": false,
+  "isPosRelevant": true,
+  "mainAttr": false,
+  "userRight": "Simple",
+  "implicitRelevant": false,
+  "matrix": [
+    {
+      "id": "Board",
+      "type": "Bool",
+      "shortName": "Board",
+      "default": false
+    }
+  ],
+  "selections": [
+    {
+      "value": "CONERO",
+      "description": "CONERO",
+      "shortName": "CONERO",
+      "matrix": [
+        {
+          "id": "Board",
+          "value": false
+        }
+      ]
+    },
+    {
+      "value": "CONERO BASIC TROUSERS",
+      "description": "CONERO BASIC TROUSERS",
+      "shortName": "CONERO BASIC TROUSERS",
+      "matrix": [
+        {
+          "id": "Board",
+          "value": false
+        }
+      ]
+    },
+    {
+      "value": "CONERO BASIC TROUSERS SMALL",
+      "description": "CONERO BASIC TROUSERS",
+      "shortName": "CONERO BASIC TROUSERS",
+      "matrix": [
+        {
+          "id": "Board",
+          "value": false
+        }
+      ]
+    },
+    {
+      "value": "CONEROTOP",
+      "description": "CONEROTOP",
+      "shortName": "CONEROTOP",
+      "matrix": [
+        {
+          "id": "Board",
+          "value": true
+        }
+      ]
+    },
+    {
+      "value": "ShelfRail",
+      "description": "ShelfRail",
+      "shortName": "ShelfRail",
+      "matrix": [
+        {
+          "id": "Board",
+          "value": false
+        }
+      ]
+    },
+    {
+      "value": "SideRail",
+      "description": "SideRail",
+      "shortName": "SideRail",
+      "matrix": [
+        {
+          "id": "Board",
+          "value": false
+        }
+      ]
+    }
+  ]
+}

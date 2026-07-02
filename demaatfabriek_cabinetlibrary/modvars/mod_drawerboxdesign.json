@@ -1,0 +1,47 @@
+{
+  "variantId": "mod_DrawerBoxDesign",
+  "shortName": "Drawer box design",
+  "variantTypeId": "Text",
+  "description": "Design of the drawer box",
+  "restrictionTypeId": "Public",
+  "groupName": "Hardware | DrawerBox",
+  "imageId": "f7d39061-ceb4-49a4-98e6-cbd822df0ac9:DrawerBoxType.jpg",
+  "assignedGlobalVarId": "basic_DrawerBoxDesign",
+  "isArray": false,
+  "isPosRelevant": true,
+  "mainAttr": false,
+  "userRight": "Master",
+  "implicitRelevant": false,
+  "posView": "Dropdown",
+  "matrix": [
+    {
+      "id": "DrawerBoxType",
+      "type": "Text",
+      "default": "DrawerBox"
+    }
+  ],
+  "selections": [
+    {
+      "value": "Actros",
+      "description": "Hettich Actros",
+      "shortName": "Actros",
+      "matrix": [
+        {
+          "id": "DrawerBoxType",
+          "value": "DrawerBox"
+        }
+      ]
+    },
+    {
+      "value": "Legrabox",
+      "description": "Blum Legrabox",
+      "shortName": "Legrabox",
+      "matrix": [
+        {
+          "id": "DrawerBoxType",
+          "value": "DrawerBox"
+        }
+      ]
+    }
+  ]
+}

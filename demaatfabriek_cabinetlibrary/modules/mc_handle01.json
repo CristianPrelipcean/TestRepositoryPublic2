@@ -1,0 +1,192 @@
+{
+  "moduleId": "mc_Handle01",
+  "shortName": "Handle",
+  "configurable": false,
+  "isRoot": false,
+  "description": "Management of the handle",
+  "groupName": "Handle",
+  "imageId": "ee7530a9-8cd9-4cb5-8a55-fe73da05bda4:Handle_200.jpg",
+  "restrictionTypeId": "Internal",
+  "childModules": [],
+  "assignedVariants": [
+    {
+      "variantId": "mod_Depth",
+      "default": "500",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_FrontHeight",
+      "previewValue": "720",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_FrontId",
+      "previewValue": "None",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_HandleDrill",
+      "previewValue": "True",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_HandleLine",
+      "previewValue": "1050",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_HandlePosLogic",
+      "previewValue": "HandleLine",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_Height",
+      "default": "720",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_FrontPosStart",
+      "previewValue": "0",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_Width",
+      "default": "600",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_FrontProgram",
+      "previewValue": "Demoprogram1",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_HandleColor",
+      "previewValue": "Demoblue",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_HandleLength",
+      "previewValue": "128",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_HandleOffsetX",
+      "previewValue": "0",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_HandleOffsetY",
+      "previewValue": "0",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_HandlePosMatrix",
+      "previewValue": "11",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_HandlePosType",
+      "previewValue": "01",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_HeightPosInsertion",
+      "previewValue": "0",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_PlinthAreaHeight",
+      "previewValue": "100",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_HandleDesign",
+      "previewValue": "10",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_PartInfo",
+      "default": "part_DoorLeft",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_ModuleName",
+      "default": "mc_Handle01",
+      "origin": "Fixed"
+    },
+    {
+      "variantId": "mod_ProcessingId",
+      "default": "None",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_ProcessingLibrary",
+      "default": "None",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_HardwareId",
+      "default": "None",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_Model3DGroupName",
+      "default": "None",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_Rotation",
+      "default": "0",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_FrontThk",
+      "previewValue": "19",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_FrontWidth",
+      "previewValue": "594",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_HandleWeightCalculations",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_FrontType",
+      "default": "None",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_HardwareTypeList",
+      "default": "",
+      "previewValue": "",
+      "origin": "Default"
+    }
+  ],
+  "assignedParts": [
+    {
+      "partCode": "part_Handle"
+    },
+    {
+      "partCode": "part_HandleDrill"
+    }
+  ],
+  "assignedCustomTables": [
+    {
+      "customTableId": "tab_HandleSettings"
+    },
+    {
+      "customTableId": "tab_HandleConstruction"
+    }
+  ],
+  "assignedFunctions": [
+    {
+      "functionId": "process_Handle"
+    },
+    {
+      "functionId": "ue_Handle"
+    }
+  ]
+}
