@@ -1,0 +1,80 @@
+{
+  "variantId": "mod_CarcaseBackwallProgram",
+  "shortName": "Backwall program",
+  "variantTypeId": "Text",
+  "description": "Program of the backwall",
+  "restrictionTypeId": "Public",
+  "groupName": "Carcase | Design",
+  "imageId": "54e00a9b-78b1-4e0f-9e86-837596cc3021:BackwGrooveVertDepthOutSide_Uebersicht.jpg",
+  "isArray": false,
+  "isPosRelevant": true,
+  "mainAttr": false,
+  "userRight": "Master",
+  "implicitRelevant": false,
+  "posView": "Dropdown",
+  "sorting": 105,
+  "matrix": [
+    {
+      "id": "GrainGroupId",
+      "type": "Text",
+      "default": "Neutral"
+    }
+  ],
+  "selections": [
+    {
+      "value": "Basic",
+      "description": "Basic colors",
+      "shortName": "Basic",
+      "matrix": [
+        {
+          "id": "GrainGroupId",
+          "value": "Neutral"
+        }
+      ]
+    },
+    {
+      "value": "MatteNatur",
+      "description": "Matte fiinished colors",
+      "shortName": "Matte Natur",
+      "matrix": [
+        {
+          "id": "GrainGroupId",
+          "value": "Neutral"
+        }
+      ]
+    },
+    {
+      "value": "SpecialDecor",
+      "description": "Special Decor",
+      "shortName": "Special Decor",
+      "matrix": [
+        {
+          "id": "GrainGroupId",
+          "value": "Vertical"
+        }
+      ]
+    },
+    {
+      "value": "UniColor",
+      "description": "Uni colors",
+      "shortName": "Uni Color",
+      "matrix": [
+        {
+          "id": "GrainGroupId",
+          "value": "Neutral"
+        }
+      ]
+    },
+    {
+      "value": "WoodDecor",
+      "description": "Wood Decor",
+      "shortName": "Wood Decor",
+      "matrix": [
+        {
+          "id": "GrainGroupId",
+          "value": "Vertical"
+        }
+      ]
+    }
+  ]
+}

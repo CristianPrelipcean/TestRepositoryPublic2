@@ -1,0 +1,24 @@
+{
+  "partCode": "part_PulloutUnit",
+  "shortName": "Pullout Unit",
+  "description": "Part group for the pullout unit",
+  "wdt": "XYZ",
+  "groupName": "Pullout",
+  "imageId": "e732a637-ec0c-457d-b4a7-4e2567a993a3:Pullout.png",
+  "model3dImageId": "",
+  "invisible": true,
+  "restrictionTypeId": "Internal",
+  "noNcData": true,
+  "partVariants": [
+    {
+      "partVarId": "pa_BomId",
+      "valueScript": "this.parent.mod_FrontId"
+    },
+    {
+      "partVarId": "pa_PartgroupBomId",
+      "valueScript": "this.parent.mod_CarcaseId"
+    }
+  ],
+  "bomData": [],
+  "ncData": []
+}

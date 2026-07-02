@@ -1,0 +1,108 @@
+{
+  "moduleId": "mr_Upright",
+  "shortName": "Upright",
+  "configurable": true,
+  "isRoot": true,
+  "description": "Module for upright",
+  "groupName": "Root",
+  "imageId": "e6014dff-2bf0-475a-9d98-51bfc519586a:upright.jpg",
+  "restrictionTypeId": "Public",
+  "childModules": [
+    {
+      "moduleId": "mc_Upright01"
+    }
+  ],
+  "assignedVariants": [
+    {
+      "variantId": "mod_UprightColor",
+      "default": "1045_mn",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_UprightFloorProfileColor",
+      "default": "DemoStainlessSteel",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_UprightDepth",
+      "previewValue": "600",
+      "origin": "Required"
+    },
+    {
+      "variantId": "mod_UprightHeight",
+      "defaultScript": "this.cmod_FullHeight! - this.mod_PlinthAreaHeight!",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_PlinthAreaHeight",
+      "default": "0",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_UprightThk",
+      "default": "18",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_UprightOverhang",
+      "default": "20",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_CreateCountertop",
+      "default": "false",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_UprightConstruction",
+      "default": "ToFloor",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_HeightPosInsertion",
+      "default": "0",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_TypeElement",
+      "default": "Upright",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_GrainLogic",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_UprightProgram",
+      "default": "MatteNatur",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_CreateBacksplash",
+      "default": "false",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_CountertopThk",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_UprightOverdimensionBtm",
+      "default": "0",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_UprightOverdimensionTop",
+      "default": "0",
+      "origin": "Default"
+    },
+    {
+      "variantId": "cmod_FullHeight",
+      "previewValue": "720",
+      "origin": "Required"
+    }
+  ],
+  "assignedParts": [],
+  "assignedCustomTables": [],
+  "assignedFunctions": []
+}

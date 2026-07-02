@@ -1,0 +1,4870 @@
+{
+  "tableName": "tab_ApplianceGraphicLibrary",
+  "description": "Appliance graphic library",
+  "restrictionTypeId": "Public",
+  "groupName": "Appliance",
+  "columns": [
+    {
+      "name": "_id",
+      "type": "Integer",
+      "allowNull": false
+    },
+    {
+      "name": "in_GraphicId",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "Description",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "Width",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "Height",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "Depth",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "WidthPos",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "HeightPos",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "DepthPos",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "Model3D",
+      "type": "Model3D",
+      "allowNull": true
+    },
+    {
+      "name": "StretchParams",
+      "type": "Model3DParameters",
+      "allowNull": true
+    },
+    {
+      "name": "MaterialId",
+      "type": "Text",
+      "allowNull": true
+    }
+  ],
+  "rows": [
+    {
+      "data": [
+        {
+          "columnName": "in_GraphicId",
+          "value": "OvenDefault"
+        },
+        {
+          "columnName": "Description",
+          "value": "Oven front"
+        },
+        {
+          "columnName": "Width",
+          "value": "595"
+        },
+        {
+          "columnName": "Height",
+          "value": "587.5"
+        },
+        {
+          "columnName": "Depth",
+          "value": "19.5"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "-297.5"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "7.5"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "0"
+        },
+        {
+          "columnName": "Model3D",
+          "value": ""
+        },
+        {
+          "columnName": "StretchParams",
+          "value": ""
+        },
+        {
+          "columnName": "MaterialId",
+          "value": "cabinetlibrary:oven"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GraphicId",
+          "value": "OvenDefault"
+        },
+        {
+          "columnName": "Description",
+          "value": "Oven carcase"
+        },
+        {
+          "columnName": "Width",
+          "value": "550"
+        },
+        {
+          "columnName": "Height",
+          "value": "580"
+        },
+        {
+          "columnName": "Depth",
+          "value": "550"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "-275"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "0"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "-550"
+        },
+        {
+          "columnName": "Model3D",
+          "value": ""
+        },
+        {
+          "columnName": "StretchParams",
+          "value": ""
+        },
+        {
+          "columnName": "MaterialId",
+          "value": "egger:f765_st20"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GraphicId",
+          "value": "BI510CNR0"
+        },
+        {
+          "columnName": "Description",
+          "value": "Oven front"
+        },
+        {
+          "columnName": "Width",
+          "value": "594"
+        },
+        {
+          "columnName": "Height",
+          "value": "124"
+        },
+        {
+          "columnName": "Depth",
+          "value": "19.5"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "-297.5"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "7.5"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "0"
+        },
+        {
+          "columnName": "Model3D",
+          "value": ""
+        },
+        {
+          "columnName": "StretchParams",
+          "value": ""
+        },
+        {
+          "columnName": "MaterialId",
+          "value": "cabinetlibrary:bi510cnr0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GraphicId",
+          "value": "BI510CNR0"
+        },
+        {
+          "columnName": "Description",
+          "value": "Oven carcase"
+        },
+        {
+          "columnName": "Width",
+          "value": "560"
+        },
+        {
+          "columnName": "Height",
+          "value": "140"
+        },
+        {
+          "columnName": "Depth",
+          "value": "549"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "-280"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "0"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "-550"
+        },
+        {
+          "columnName": "Model3D",
+          "value": ""
+        },
+        {
+          "columnName": "StretchParams",
+          "value": ""
+        },
+        {
+          "columnName": "MaterialId",
+          "value": "egger:f765_st20"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GraphicId",
+          "value": "CM776GKB1"
+        },
+        {
+          "columnName": "Description",
+          "value": "Oven front"
+        },
+        {
+          "columnName": "Width",
+          "value": "595"
+        },
+        {
+          "columnName": "Height",
+          "value": "447.5"
+        },
+        {
+          "columnName": "Depth",
+          "value": "19.5"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "-297.5"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "7.5"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "0"
+        },
+        {
+          "columnName": "Model3D",
+          "value": ""
+        },
+        {
+          "columnName": "StretchParams",
+          "value": ""
+        },
+        {
+          "columnName": "MaterialId",
+          "value": "cabinetlibrary:cm776gkb1"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GraphicId",
+          "value": "CM776GKB1"
+        },
+        {
+          "columnName": "Description",
+          "value": "Oven Handle"
+        },
+        {
+          "columnName": "Width",
+          "value": "507"
+        },
+        {
+          "columnName": "Height",
+          "value": "14"
+        },
+        {
+          "columnName": "Depth",
+          "value": "45"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "-253.5"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "304"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "19.5"
+        },
+        {
+          "columnName": "Model3D",
+          "value": "b949b148-7c41-4ff2-b21f-2f2026322dfa:CM776GKB1_G.obj"
+        },
+        {
+          "columnName": "StretchParams",
+          "value": ""
+        },
+        {
+          "columnName": "MaterialId",
+          "value": "cabinetlibrary:metallic_black"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GraphicId",
+          "value": "CM776GKB1"
+        },
+        {
+          "columnName": "Description",
+          "value": "Oven carcase"
+        },
+        {
+          "columnName": "Width",
+          "value": "560"
+        },
+        {
+          "columnName": "Height",
+          "value": "444"
+        },
+        {
+          "columnName": "Depth",
+          "value": "526"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "-280"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "0"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "-527"
+        },
+        {
+          "columnName": "Model3D",
+          "value": "4325442d-fe8b-4298-9888-f47484a65e87:CM776GKB1_C.obj"
+        },
+        {
+          "columnName": "StretchParams",
+          "value": ""
+        },
+        {
+          "columnName": "MaterialId",
+          "value": "egger:f765_st20"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GraphicId",
+          "value": "CS736G1B1"
+        },
+        {
+          "columnName": "Description",
+          "value": "Oven carcase"
+        },
+        {
+          "columnName": "Width",
+          "value": "560"
+        },
+        {
+          "columnName": "Height",
+          "value": "444"
+        },
+        {
+          "columnName": "Depth",
+          "value": "548"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "-280"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "0"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "-549"
+        },
+        {
+          "columnName": "Model3D",
+          "value": ""
+        },
+        {
+          "columnName": "StretchParams",
+          "value": ""
+        },
+        {
+          "columnName": "MaterialId",
+          "value": "egger:f765_st20"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GraphicId",
+          "value": "CS736G1B1"
+        },
+        {
+          "columnName": "Description",
+          "value": "Oven front"
+        },
+        {
+          "columnName": "Width",
+          "value": "594"
+        },
+        {
+          "columnName": "Height",
+          "value": "447.5"
+        },
+        {
+          "columnName": "Depth",
+          "value": "19.5"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "-297"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "7.5"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "0"
+        },
+        {
+          "columnName": "Model3D",
+          "value": ""
+        },
+        {
+          "columnName": "StretchParams",
+          "value": ""
+        },
+        {
+          "columnName": "MaterialId",
+          "value": "cabinetlibrary:cs736g1b1"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GraphicId",
+          "value": "FridgeDefault"
+        },
+        {
+          "columnName": "Description",
+          "value": "Complete Fridge"
+        },
+        {
+          "columnName": "Width",
+          "value": "558"
+        },
+        {
+          "columnName": "Height",
+          "value": "1221"
+        },
+        {
+          "columnName": "Depth",
+          "value": "546"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "-279"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "0"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "-546"
+        },
+        {
+          "columnName": "Model3D",
+          "value": "c2db0af2-ad93-4d24-92cd-74dd9ccad84c:KI41FADD0.obj"
+        },
+        {
+          "columnName": "StretchParams",
+          "value": ""
+        },
+        {
+          "columnName": "MaterialId",
+          "value": "egger:w980_st7"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GraphicId",
+          "value": "KI86SHDD0"
+        },
+        {
+          "columnName": "Description",
+          "value": "Complete Fridge"
+        },
+        {
+          "columnName": "Width",
+          "value": "558"
+        },
+        {
+          "columnName": "Height",
+          "value": "1772"
+        },
+        {
+          "columnName": "Depth",
+          "value": "554"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "-279"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "0"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "-554"
+        },
+        {
+          "columnName": "Model3D",
+          "value": "838370a5-7ef8-413c-8796-7c9ce8be799d:KI86SHDD0.obj"
+        },
+        {
+          "columnName": "StretchParams",
+          "value": ""
+        },
+        {
+          "columnName": "MaterialId",
+          "value": "egger:w980_st7"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GraphicId",
+          "value": "KI82LADD0"
+        },
+        {
+          "columnName": "Description",
+          "value": "Complete Fridge"
+        },
+        {
+          "columnName": "Width",
+          "value": "558"
+        },
+        {
+          "columnName": "Height",
+          "value": "1776"
+        },
+        {
+          "columnName": "Depth",
+          "value": "546"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "-279"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "0"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "-546"
+        },
+        {
+          "columnName": "Model3D",
+          "value": "876e0bd7-0306-488f-9270-b77a5accdbdc:KI82LADD0.obj"
+        },
+        {
+          "columnName": "StretchParams",
+          "value": ""
+        },
+        {
+          "columnName": "MaterialId",
+          "value": "egger:w980_st7"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GraphicId",
+          "value": "KI41FADD0"
+        },
+        {
+          "columnName": "Description",
+          "value": "Complete Fridge"
+        },
+        {
+          "columnName": "Width",
+          "value": "558"
+        },
+        {
+          "columnName": "Height",
+          "value": "1221"
+        },
+        {
+          "columnName": "Depth",
+          "value": "546"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "-279"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "0"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "-546"
+        },
+        {
+          "columnName": "Model3D",
+          "value": "c2db0af2-ad93-4d24-92cd-74dd9ccad84c:KI41FADD0.obj"
+        },
+        {
+          "columnName": "StretchParams",
+          "value": ""
+        },
+        {
+          "columnName": "MaterialId",
+          "value": "egger:w980_st7"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GraphicId",
+          "value": "HoodDefault"
+        },
+        {
+          "columnName": "Description",
+          "value": "Hood Base"
+        },
+        {
+          "columnName": "Width",
+          "value": "598"
+        },
+        {
+          "columnName": "Height",
+          "value": "41"
+        },
+        {
+          "columnName": "Depth",
+          "value": "500"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "-299"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "0"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "0"
+        },
+        {
+          "columnName": "Model3D",
+          "value": "1be6522b-54f7-4650-bcd4-17103c79895f:Carc_LC66BBM50.obj"
+        },
+        {
+          "columnName": "StretchParams",
+          "value": ""
+        },
+        {
+          "columnName": "MaterialId",
+          "value": "egger:f765_st20"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GraphicId",
+          "value": "HoodDefault"
+        },
+        {
+          "columnName": "Description",
+          "value": "Hood Tower"
+        },
+        {
+          "columnName": "Width",
+          "value": "260"
+        },
+        {
+          "columnName": "Height",
+          "value": "700"
+        },
+        {
+          "columnName": "Depth",
+          "value": "250"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "-130"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "41"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "0"
+        },
+        {
+          "columnName": "Model3D",
+          "value": "9b546a3a-1b16-4af2-b24f-afb4b7a07f4f:Tower_LC66BBM50.obj"
+        },
+        {
+          "columnName": "StretchParams",
+          "value": ""
+        },
+        {
+          "columnName": "MaterialId",
+          "value": "egger:f765_st20"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GraphicId",
+          "value": "HoodDefault"
+        },
+        {
+          "columnName": "Description",
+          "value": "Hood Label"
+        },
+        {
+          "columnName": "Width",
+          "value": "150"
+        },
+        {
+          "columnName": "Height",
+          "value": "15"
+        },
+        {
+          "columnName": "Depth",
+          "value": "1"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "-75"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "13"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "500"
+        },
+        {
+          "columnName": "Model3D",
+          "value": ""
+        },
+        {
+          "columnName": "StretchParams",
+          "value": ""
+        },
+        {
+          "columnName": "MaterialId",
+          "value": "cabinetlibrary:metallic_black"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GraphicId",
+          "value": "HoodDefault"
+        },
+        {
+          "columnName": "Description",
+          "value": "Logo"
+        },
+        {
+          "columnName": "Width",
+          "value": "50"
+        },
+        {
+          "columnName": "Height",
+          "value": "8.8"
+        },
+        {
+          "columnName": "Depth",
+          "value": "1"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "-25"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "150"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "250"
+        },
+        {
+          "columnName": "Model3D",
+          "value": "7697c155-0950-4e98-9b44-97146ecc41d0:Siemens.obj"
+        },
+        {
+          "columnName": "StretchParams",
+          "value": ""
+        },
+        {
+          "columnName": "MaterialId",
+          "value": "cabinetlibrary:metallic_black"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GraphicId",
+          "value": "LC66BBM50"
+        },
+        {
+          "columnName": "Description",
+          "value": "Hood Tower"
+        },
+        {
+          "columnName": "Width",
+          "value": "260"
+        },
+        {
+          "columnName": "Height",
+          "value": "700"
+        },
+        {
+          "columnName": "Depth",
+          "value": "250"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "-130"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "41"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "0"
+        },
+        {
+          "columnName": "Model3D",
+          "value": "9b546a3a-1b16-4af2-b24f-afb4b7a07f4f:Tower_LC66BBM50.obj"
+        },
+        {
+          "columnName": "StretchParams",
+          "value": ""
+        },
+        {
+          "columnName": "MaterialId",
+          "value": "egger:f765_st20"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GraphicId",
+          "value": "LC66BBM50"
+        },
+        {
+          "columnName": "Description",
+          "value": "Hood Base"
+        },
+        {
+          "columnName": "Width",
+          "value": "598"
+        },
+        {
+          "columnName": "Height",
+          "value": "41"
+        },
+        {
+          "columnName": "Depth",
+          "value": "500"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "-299"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "0"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "0"
+        },
+        {
+          "columnName": "Model3D",
+          "value": "1be6522b-54f7-4650-bcd4-17103c79895f:Carc_LC66BBM50.obj"
+        },
+        {
+          "columnName": "StretchParams",
+          "value": ""
+        },
+        {
+          "columnName": "MaterialId",
+          "value": "egger:f765_st20"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GraphicId",
+          "value": "LC66BBM50"
+        },
+        {
+          "columnName": "Description",
+          "value": "Logo"
+        },
+        {
+          "columnName": "Width",
+          "value": "50"
+        },
+        {
+          "columnName": "Height",
+          "value": "8.8"
+        },
+        {
+          "columnName": "Depth",
+          "value": "1"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "-25"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "150"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "250"
+        },
+        {
+          "columnName": "Model3D",
+          "value": "7697c155-0950-4e98-9b44-97146ecc41d0:Siemens.obj"
+        },
+        {
+          "columnName": "StretchParams",
+          "value": ""
+        },
+        {
+          "columnName": "MaterialId",
+          "value": "cabinetlibrary:metallic_black"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GraphicId",
+          "value": "LC66BBM50"
+        },
+        {
+          "columnName": "Description",
+          "value": "Hood Label"
+        },
+        {
+          "columnName": "Width",
+          "value": "150"
+        },
+        {
+          "columnName": "Height",
+          "value": "15"
+        },
+        {
+          "columnName": "Depth",
+          "value": "1"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "-75"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "13"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "500"
+        },
+        {
+          "columnName": "Model3D",
+          "value": ""
+        },
+        {
+          "columnName": "StretchParams",
+          "value": ""
+        },
+        {
+          "columnName": "MaterialId",
+          "value": "cabinetlibrary:metallic_black"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GraphicId",
+          "value": "LC96BBM50"
+        },
+        {
+          "columnName": "Description",
+          "value": "Hood Tower"
+        },
+        {
+          "columnName": "Width",
+          "value": "260"
+        },
+        {
+          "columnName": "Height",
+          "value": "700"
+        },
+        {
+          "columnName": "Depth",
+          "value": "250"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "-130"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "51"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "0"
+        },
+        {
+          "columnName": "Model3D",
+          "value": "9b546a3a-1b16-4af2-b24f-afb4b7a07f4f:Tower_LC66BBM50.obj"
+        },
+        {
+          "columnName": "StretchParams",
+          "value": ""
+        },
+        {
+          "columnName": "MaterialId",
+          "value": "egger:f765_st20"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GraphicId",
+          "value": "LC96BBM50"
+        },
+        {
+          "columnName": "Description",
+          "value": "Hood Base"
+        },
+        {
+          "columnName": "Width",
+          "value": "898"
+        },
+        {
+          "columnName": "Height",
+          "value": "51"
+        },
+        {
+          "columnName": "Depth",
+          "value": "500"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "-449"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "0"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "0"
+        },
+        {
+          "columnName": "Model3D",
+          "value": "df4f9436-ee35-4848-bd48-ccc9750e96b7:Carc_LC96BBM50.obj"
+        },
+        {
+          "columnName": "StretchParams",
+          "value": ""
+        },
+        {
+          "columnName": "MaterialId",
+          "value": "egger:f765_st20"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GraphicId",
+          "value": "LC96BBM50"
+        },
+        {
+          "columnName": "Description",
+          "value": "Logo"
+        },
+        {
+          "columnName": "Width",
+          "value": "50"
+        },
+        {
+          "columnName": "Height",
+          "value": "8.8"
+        },
+        {
+          "columnName": "Depth",
+          "value": "1"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "-25"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "150"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "250"
+        },
+        {
+          "columnName": "Model3D",
+          "value": "7697c155-0950-4e98-9b44-97146ecc41d0:Siemens.obj"
+        },
+        {
+          "columnName": "StretchParams",
+          "value": ""
+        },
+        {
+          "columnName": "MaterialId",
+          "value": "cabinetlibrary:metallic_black"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GraphicId",
+          "value": "LC96BBM50"
+        },
+        {
+          "columnName": "Description",
+          "value": "Hood Label"
+        },
+        {
+          "columnName": "Width",
+          "value": "150"
+        },
+        {
+          "columnName": "Height",
+          "value": "15"
+        },
+        {
+          "columnName": "Depth",
+          "value": "1"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "-75"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "18"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "500"
+        },
+        {
+          "columnName": "Model3D",
+          "value": ""
+        },
+        {
+          "columnName": "StretchParams",
+          "value": ""
+        },
+        {
+          "columnName": "MaterialId",
+          "value": "cabinetlibrary:metallic_black"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GraphicId",
+          "value": "LC65KDK60"
+        },
+        {
+          "columnName": "Description",
+          "value": "Hood Base"
+        },
+        {
+          "columnName": "Width",
+          "value": "456"
+        },
+        {
+          "columnName": "Height",
+          "value": "1090"
+        },
+        {
+          "columnName": "Depth",
+          "value": "318.5"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "-228"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "38"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "0"
+        },
+        {
+          "columnName": "Model3D",
+          "value": "89caf22a-6c43-41cc-a270-50538f3ed117:Carc_LC65KDK60.obj"
+        },
+        {
+          "columnName": "StretchParams",
+          "value": ""
+        },
+        {
+          "columnName": "MaterialId",
+          "value": "egger:f765_st20"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GraphicId",
+          "value": "LC65KDK60"
+        },
+        {
+          "columnName": "Description",
+          "value": "Hood Front"
+        },
+        {
+          "columnName": "Width",
+          "value": "600"
+        },
+        {
+          "columnName": "Height",
+          "value": "440"
+        },
+        {
+          "columnName": "Depth",
+          "value": "241"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "-300"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "0"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "151"
+        },
+        {
+          "columnName": "Model3D",
+          "value": ""
+        },
+        {
+          "columnName": "StretchParams",
+          "value": ""
+        },
+        {
+          "columnName": "MaterialId",
+          "value": "cabinetlibrary:lc65kdk60"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GraphicId",
+          "value": "LC85KDK60"
+        },
+        {
+          "columnName": "Description",
+          "value": "Hood Base"
+        },
+        {
+          "columnName": "Width",
+          "value": "456"
+        },
+        {
+          "columnName": "Height",
+          "value": "1090"
+        },
+        {
+          "columnName": "Depth",
+          "value": "318.5"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "-228"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "38"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "0"
+        },
+        {
+          "columnName": "Model3D",
+          "value": "89caf22a-6c43-41cc-a270-50538f3ed117:Carc_LC65KDK60.obj"
+        },
+        {
+          "columnName": "StretchParams",
+          "value": ""
+        },
+        {
+          "columnName": "MaterialId",
+          "value": "egger:f765_st20"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GraphicId",
+          "value": "LC85KDK60"
+        },
+        {
+          "columnName": "Description",
+          "value": "Hood Front"
+        },
+        {
+          "columnName": "Width",
+          "value": "794"
+        },
+        {
+          "columnName": "Height",
+          "value": "440"
+        },
+        {
+          "columnName": "Depth",
+          "value": "241"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "-397"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "0"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "151"
+        },
+        {
+          "columnName": "Model3D",
+          "value": "5addc3f3-cc80-4807-bad4-2e0257812fae:Front_LC85KDK60.obj"
+        },
+        {
+          "columnName": "StretchParams",
+          "value": ""
+        },
+        {
+          "columnName": "MaterialId",
+          "value": "cabinetlibrary:lc85kdk60"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GraphicId",
+          "value": "CS736G1B1"
+        },
+        {
+          "columnName": "Description",
+          "value": "Oven Handle"
+        },
+        {
+          "columnName": "Width",
+          "value": "507"
+        },
+        {
+          "columnName": "Height",
+          "value": "14"
+        },
+        {
+          "columnName": "Depth",
+          "value": "45"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "-253.5"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "304"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "19.5"
+        },
+        {
+          "columnName": "Model3D",
+          "value": "b949b148-7c41-4ff2-b21f-2f2026322dfa:CM776GKB1_G.obj"
+        },
+        {
+          "columnName": "StretchParams",
+          "value": ""
+        },
+        {
+          "columnName": "MaterialId",
+          "value": "cabinetlibrary:metallic_black"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GraphicId",
+          "value": "BE732R1B1"
+        },
+        {
+          "columnName": "Description",
+          "value": "Oven Front"
+        },
+        {
+          "columnName": "Width",
+          "value": "594"
+        },
+        {
+          "columnName": "Height",
+          "value": "382"
+        },
+        {
+          "columnName": "Depth",
+          "value": "19.5"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "-297.5"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "7.5"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "0"
+        },
+        {
+          "columnName": "Model3D",
+          "value": ""
+        },
+        {
+          "columnName": "StretchParams",
+          "value": ""
+        },
+        {
+          "columnName": "MaterialId",
+          "value": "cabinetlibrary:be732l1b1"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GraphicId",
+          "value": "BE732R1B1"
+        },
+        {
+          "columnName": "Description",
+          "value": "Oven carcase"
+        },
+        {
+          "columnName": "Width",
+          "value": "560"
+        },
+        {
+          "columnName": "Height",
+          "value": "362"
+        },
+        {
+          "columnName": "Depth",
+          "value": "300"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "-280"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "14"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "-300"
+        },
+        {
+          "columnName": "Model3D",
+          "value": ""
+        },
+        {
+          "columnName": "StretchParams",
+          "value": ""
+        },
+        {
+          "columnName": "MaterialId",
+          "value": "egger:f765_st20"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GraphicId",
+          "value": "DefaultHob"
+        },
+        {
+          "columnName": "Description",
+          "value": "Hob carcase"
+        },
+        {
+          "columnName": "Width",
+          "value": "539"
+        },
+        {
+          "columnName": "Height",
+          "value": "49"
+        },
+        {
+          "columnName": "Depth",
+          "value": "470"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "-269.5"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "-49"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "-480"
+        },
+        {
+          "columnName": "Model3D",
+          "value": ""
+        },
+        {
+          "columnName": "StretchParams",
+          "value": ""
+        },
+        {
+          "columnName": "MaterialId",
+          "value": "egger:f765_st20"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GraphicId",
+          "value": "DefaultHob"
+        },
+        {
+          "columnName": "Description",
+          "value": "Hob frame"
+        },
+        {
+          "columnName": "Width",
+          "value": "570"
+        },
+        {
+          "columnName": "Height",
+          "value": "1"
+        },
+        {
+          "columnName": "Depth",
+          "value": "511"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "-285"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "0"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "-500.5"
+        },
+        {
+          "columnName": "Model3D",
+          "value": "9835d241-a47d-4897-8296-d186ae63746f:ET601FNP1E_frame.obj"
+        },
+        {
+          "columnName": "StretchParams",
+          "value": ""
+        },
+        {
+          "columnName": "MaterialId",
+          "value": "egger:f765_st20"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GraphicId",
+          "value": "DefaultHob"
+        },
+        {
+          "columnName": "Description",
+          "value": "Hob glass"
+        },
+        {
+          "columnName": "Width",
+          "value": "532"
+        },
+        {
+          "columnName": "Height",
+          "value": "0.5"
+        },
+        {
+          "columnName": "Depth",
+          "value": "471.5"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "-266"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "0"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "-480.75"
+        },
+        {
+          "columnName": "Model3D",
+          "value": ""
+        },
+        {
+          "columnName": "StretchParams",
+          "value": ""
+        },
+        {
+          "columnName": "MaterialId",
+          "value": "cabinetlibrary:metallic_black"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GraphicId",
+          "value": "PUXU"
+        },
+        {
+          "columnName": "Description",
+          "value": "Hob carcase"
+        },
+        {
+          "columnName": "Width",
+          "value": "809"
+        },
+        {
+          "columnName": "Height",
+          "value": "199"
+        },
+        {
+          "columnName": "Depth",
+          "value": "579"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "-404.5"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "-199"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "-579"
+        },
+        {
+          "columnName": "Model3D",
+          "value": "6a3309c1-ff0e-473f-ab2f-a6281cf69c41:PUXU_Carc.obj"
+        },
+        {
+          "columnName": "StretchParams",
+          "value": ""
+        },
+        {
+          "columnName": "MaterialId",
+          "value": "cabinetlibrary:metallic_black"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GraphicId",
+          "value": "PUXU"
+        },
+        {
+          "columnName": "Description",
+          "value": "Hob glass"
+        },
+        {
+          "columnName": "Width",
+          "value": "830"
+        },
+        {
+          "columnName": "Height",
+          "value": "4"
+        },
+        {
+          "columnName": "Depth",
+          "value": "515"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "-415"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "0"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "-505"
+        },
+        {
+          "columnName": "Model3D",
+          "value": ""
+        },
+        {
+          "columnName": "StretchParams",
+          "value": ""
+        },
+        {
+          "columnName": "MaterialId",
+          "value": "cabinetlibrary:puxu"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GraphicId",
+          "value": "ET601FNP1E"
+        },
+        {
+          "columnName": "Description",
+          "value": "Hob carcase"
+        },
+        {
+          "columnName": "Width",
+          "value": "539"
+        },
+        {
+          "columnName": "Height",
+          "value": "49"
+        },
+        {
+          "columnName": "Depth",
+          "value": "470"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "-269.5"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "-49"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "-480"
+        },
+        {
+          "columnName": "Model3D",
+          "value": ""
+        },
+        {
+          "columnName": "StretchParams",
+          "value": ""
+        },
+        {
+          "columnName": "MaterialId",
+          "value": "egger:f765_st20"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GraphicId",
+          "value": "ET601FNP1E"
+        },
+        {
+          "columnName": "Description",
+          "value": "Hob frame"
+        },
+        {
+          "columnName": "Width",
+          "value": "570"
+        },
+        {
+          "columnName": "Height",
+          "value": "1"
+        },
+        {
+          "columnName": "Depth",
+          "value": "511"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "-285"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "0"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "-500.5"
+        },
+        {
+          "columnName": "Model3D",
+          "value": "9835d241-a47d-4897-8296-d186ae63746f:ET601FNP1E_frame.obj"
+        },
+        {
+          "columnName": "StretchParams",
+          "value": ""
+        },
+        {
+          "columnName": "MaterialId",
+          "value": "egger:f765_st20"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GraphicId",
+          "value": "ET601FNP1E"
+        },
+        {
+          "columnName": "Description",
+          "value": "Hob glass"
+        },
+        {
+          "columnName": "Width",
+          "value": "532"
+        },
+        {
+          "columnName": "Height",
+          "value": "0.5"
+        },
+        {
+          "columnName": "Depth",
+          "value": "471.5"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "-266"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "0"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "-480.75"
+        },
+        {
+          "columnName": "Model3D",
+          "value": ""
+        },
+        {
+          "columnName": "StretchParams",
+          "value": ""
+        },
+        {
+          "columnName": "MaterialId",
+          "value": "cabinetlibrary:et601fnp1e"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GraphicId",
+          "value": "EX975LXC1E"
+        },
+        {
+          "columnName": "Description",
+          "value": "Hob carcase"
+        },
+        {
+          "columnName": "Width",
+          "value": "864"
+        },
+        {
+          "columnName": "Height",
+          "value": "37"
+        },
+        {
+          "columnName": "Depth",
+          "value": "495"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "-432"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "-37"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "-497.5"
+        },
+        {
+          "columnName": "Model3D",
+          "value": ""
+        },
+        {
+          "columnName": "StretchParams",
+          "value": ""
+        },
+        {
+          "columnName": "MaterialId",
+          "value": "egger:f765_st20"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GraphicId",
+          "value": "EX975LXC1E"
+        },
+        {
+          "columnName": "Description",
+          "value": "Hob frame"
+        },
+        {
+          "columnName": "Width",
+          "value": "910"
+        },
+        {
+          "columnName": "Height",
+          "value": "6"
+        },
+        {
+          "columnName": "Depth",
+          "value": "519"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "-455"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "0"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "-509.5"
+        },
+        {
+          "columnName": "Model3D",
+          "value": "ab3da823-cf6a-4cdc-88d9-03a895473ae5:EX975LXC1E_Frame.obj"
+        },
+        {
+          "columnName": "StretchParams",
+          "value": ""
+        },
+        {
+          "columnName": "MaterialId",
+          "value": "egger:f765_st20"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GraphicId",
+          "value": "EX975LXC1E"
+        },
+        {
+          "columnName": "Description",
+          "value": "Hob glass"
+        },
+        {
+          "columnName": "Width",
+          "value": "905"
+        },
+        {
+          "columnName": "Height",
+          "value": "5"
+        },
+        {
+          "columnName": "Depth",
+          "value": "520"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "-452.5"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "1"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "-510"
+        },
+        {
+          "columnName": "Model3D",
+          "value": ""
+        },
+        {
+          "columnName": "StretchParams",
+          "value": ""
+        },
+        {
+          "columnName": "MaterialId",
+          "value": "cabinetlibrary:ex975lxc1e"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GraphicId",
+          "value": "ER6A6PB70D"
+        },
+        {
+          "columnName": "Description",
+          "value": "Hob glass"
+        },
+        {
+          "columnName": "Width",
+          "value": "602"
+        },
+        {
+          "columnName": "Height",
+          "value": "5"
+        },
+        {
+          "columnName": "Depth",
+          "value": "520"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "-301"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "0"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "-505"
+        },
+        {
+          "columnName": "Model3D",
+          "value": ""
+        },
+        {
+          "columnName": "StretchParams",
+          "value": ""
+        },
+        {
+          "columnName": "MaterialId",
+          "value": "cabinetlibrary:er6a6pb70d"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GraphicId",
+          "value": "ER6A6PB70D"
+        },
+        {
+          "columnName": "Description",
+          "value": "Hob carcase"
+        },
+        {
+          "columnName": "Width",
+          "value": "550"
+        },
+        {
+          "columnName": "Height",
+          "value": "50"
+        },
+        {
+          "columnName": "Depth",
+          "value": "470"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "-275"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "-50"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "-480"
+        },
+        {
+          "columnName": "Model3D",
+          "value": ""
+        },
+        {
+          "columnName": "StretchParams",
+          "value": ""
+        },
+        {
+          "columnName": "MaterialId",
+          "value": "egger:f765_st20"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GraphicId",
+          "value": "ER6A6PB70D"
+        },
+        {
+          "columnName": "Description",
+          "value": "Hob handle"
+        },
+        {
+          "columnName": "Width",
+          "value": "209"
+        },
+        {
+          "columnName": "Height",
+          "value": "21"
+        },
+        {
+          "columnName": "Depth",
+          "value": "40"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "-103.5"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "5"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "-47"
+        },
+        {
+          "columnName": "Model3D",
+          "value": "4141d147-58a1-42ae-889a-efe5685467a7:ER6A6PB70D_handle.obj"
+        },
+        {
+          "columnName": "StretchParams",
+          "value": ""
+        },
+        {
+          "columnName": "MaterialId",
+          "value": "cabinetlibrary:chrome"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GraphicId",
+          "value": "ER6A6PB70D"
+        },
+        {
+          "columnName": "Description",
+          "value": "Hob grill"
+        },
+        {
+          "columnName": "Width",
+          "value": "590"
+        },
+        {
+          "columnName": "Height",
+          "value": "30"
+        },
+        {
+          "columnName": "Depth",
+          "value": "427"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "-294"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "5"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "-488"
+        },
+        {
+          "columnName": "Model3D",
+          "value": "dda06325-5bb6-4faa-9691-2a3f07a1739e:ER6A6PB70D_grill.obj"
+        },
+        {
+          "columnName": "StretchParams",
+          "value": ""
+        },
+        {
+          "columnName": "MaterialId",
+          "value": "cabinetlibrary:metallic_black"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GraphicId",
+          "value": "SinkDefault"
+        },
+        {
+          "columnName": "Description",
+          "value": "Sink top"
+        },
+        {
+          "columnName": "Width",
+          "value": "990"
+        },
+        {
+          "columnName": "Height",
+          "value": "5"
+        },
+        {
+          "columnName": "Depth",
+          "value": "490"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "-495"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "0"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "-490"
+        },
+        {
+          "columnName": "Model3D",
+          "value": ""
+        },
+        {
+          "columnName": "StretchParams",
+          "value": ""
+        },
+        {
+          "columnName": "MaterialId",
+          "value": "cabinetlibrary:axis_l"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GraphicId",
+          "value": "SinkDefault"
+        },
+        {
+          "columnName": "Description",
+          "value": "Sink base"
+        },
+        {
+          "columnName": "Width",
+          "value": "548.5"
+        },
+        {
+          "columnName": "Height",
+          "value": "190"
+        },
+        {
+          "columnName": "Depth",
+          "value": "470"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "-480"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "-195"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "-480"
+        },
+        {
+          "columnName": "Model3D",
+          "value": ""
+        },
+        {
+          "columnName": "StretchParams",
+          "value": ""
+        },
+        {
+          "columnName": "MaterialId",
+          "value": "egger:f765_st20"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GraphicId",
+          "value": "Dinas_L"
+        },
+        {
+          "columnName": "Description",
+          "value": "Sink top"
+        },
+        {
+          "columnName": "Width",
+          "value": "860"
+        },
+        {
+          "columnName": "Height",
+          "value": "5"
+        },
+        {
+          "columnName": "Depth",
+          "value": "500"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "-430"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "0"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "-490"
+        },
+        {
+          "columnName": "Model3D",
+          "value": ""
+        },
+        {
+          "columnName": "StretchParams",
+          "value": ""
+        },
+        {
+          "columnName": "MaterialId",
+          "value": "cabinetlibrary:dinas_l"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GraphicId",
+          "value": "Dinas_L"
+        },
+        {
+          "columnName": "Description",
+          "value": "Sink base"
+        },
+        {
+          "columnName": "Width",
+          "value": "340"
+        },
+        {
+          "columnName": "Height",
+          "value": "195"
+        },
+        {
+          "columnName": "Depth",
+          "value": "400"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "-380"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "-195"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "-440"
+        },
+        {
+          "columnName": "Model3D",
+          "value": ""
+        },
+        {
+          "columnName": "StretchParams",
+          "value": ""
+        },
+        {
+          "columnName": "MaterialId",
+          "value": "egger:f765_st20"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GraphicId",
+          "value": "Dinas_R"
+        },
+        {
+          "columnName": "Description",
+          "value": "Sink top"
+        },
+        {
+          "columnName": "Width",
+          "value": "860"
+        },
+        {
+          "columnName": "Height",
+          "value": "5"
+        },
+        {
+          "columnName": "Depth",
+          "value": "500"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "-430"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "0"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "-490"
+        },
+        {
+          "columnName": "Model3D",
+          "value": ""
+        },
+        {
+          "columnName": "StretchParams",
+          "value": ""
+        },
+        {
+          "columnName": "MaterialId",
+          "value": "cabinetlibrary:dinas_r"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GraphicId",
+          "value": "Dinas_R"
+        },
+        {
+          "columnName": "Description",
+          "value": "Sink base"
+        },
+        {
+          "columnName": "Width",
+          "value": "340"
+        },
+        {
+          "columnName": "Height",
+          "value": "195"
+        },
+        {
+          "columnName": "Depth",
+          "value": "400"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "40"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "-195"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "-440"
+        },
+        {
+          "columnName": "Model3D",
+          "value": ""
+        },
+        {
+          "columnName": "StretchParams",
+          "value": ""
+        },
+        {
+          "columnName": "MaterialId",
+          "value": "egger:f765_st20"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GraphicId",
+          "value": "HB774G1B1"
+        },
+        {
+          "columnName": "Description",
+          "value": "Oven Front"
+        },
+        {
+          "columnName": "Width",
+          "value": "594"
+        },
+        {
+          "columnName": "Height",
+          "value": "587.5"
+        },
+        {
+          "columnName": "Depth",
+          "value": "19.5"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "-297.5"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "7.5"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "0"
+        },
+        {
+          "columnName": "Model3D",
+          "value": ""
+        },
+        {
+          "columnName": "StretchParams",
+          "value": ""
+        },
+        {
+          "columnName": "MaterialId",
+          "value": "cabinetlibrary:hb774g1b1"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GraphicId",
+          "value": "BI510CNR0"
+        },
+        {
+          "columnName": "Description",
+          "value": "Oven carcase front"
+        },
+        {
+          "columnName": "Width",
+          "value": "560"
+        },
+        {
+          "columnName": "Height",
+          "value": "140"
+        },
+        {
+          "columnName": "Depth",
+          "value": "1"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "-280"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "0"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "-1"
+        },
+        {
+          "columnName": "Model3D",
+          "value": ""
+        },
+        {
+          "columnName": "StretchParams",
+          "value": ""
+        },
+        {
+          "columnName": "MaterialId",
+          "value": "cabinetlibrary:metallic_black"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GraphicId",
+          "value": "CM776GKB1"
+        },
+        {
+          "columnName": "Description",
+          "value": "Oven carcase front"
+        },
+        {
+          "columnName": "Width",
+          "value": "560"
+        },
+        {
+          "columnName": "Height",
+          "value": "444"
+        },
+        {
+          "columnName": "Depth",
+          "value": "1"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "-280"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "0"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "-1"
+        },
+        {
+          "columnName": "Model3D",
+          "value": ""
+        },
+        {
+          "columnName": "StretchParams",
+          "value": ""
+        },
+        {
+          "columnName": "MaterialId",
+          "value": "cabinetlibrary:metallic_black"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GraphicId",
+          "value": "HB774G1B1"
+        },
+        {
+          "columnName": "Description",
+          "value": "Oven carcase"
+        },
+        {
+          "columnName": "Width",
+          "value": "560"
+        },
+        {
+          "columnName": "Height",
+          "value": "577"
+        },
+        {
+          "columnName": "Depth",
+          "value": "525"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "-280"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "0"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "-526"
+        },
+        {
+          "columnName": "Model3D",
+          "value": "651af9e9-b9bb-4cb0-8447-49e654ab9b0c:HB774G1B1.obj"
+        },
+        {
+          "columnName": "StretchParams",
+          "value": ""
+        },
+        {
+          "columnName": "MaterialId",
+          "value": "egger:f765_st20"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GraphicId",
+          "value": "CS736G1B1"
+        },
+        {
+          "columnName": "Description",
+          "value": "Oven carcase front"
+        },
+        {
+          "columnName": "Width",
+          "value": "560"
+        },
+        {
+          "columnName": "Height",
+          "value": "444"
+        },
+        {
+          "columnName": "Depth",
+          "value": "1"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "-280"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "0"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "-1"
+        },
+        {
+          "columnName": "Model3D",
+          "value": ""
+        },
+        {
+          "columnName": "StretchParams",
+          "value": ""
+        },
+        {
+          "columnName": "MaterialId",
+          "value": "cabinetlibrary:metallic_black"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GraphicId",
+          "value": "HB774G1B1"
+        },
+        {
+          "columnName": "Description",
+          "value": "Oven Handle"
+        },
+        {
+          "columnName": "Width",
+          "value": "507"
+        },
+        {
+          "columnName": "Height",
+          "value": "14"
+        },
+        {
+          "columnName": "Depth",
+          "value": "45"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "-253.5"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "440"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "19.5"
+        },
+        {
+          "columnName": "Model3D",
+          "value": "b949b148-7c41-4ff2-b21f-2f2026322dfa:CM776GKB1_G.obj"
+        },
+        {
+          "columnName": "StretchParams",
+          "value": ""
+        },
+        {
+          "columnName": "MaterialId",
+          "value": "cabinetlibrary:metallic_black"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GraphicId",
+          "value": "HE510ABS2"
+        },
+        {
+          "columnName": "Description",
+          "value": "Oven Handle"
+        },
+        {
+          "columnName": "Width",
+          "value": "469"
+        },
+        {
+          "columnName": "Height",
+          "value": "16.7"
+        },
+        {
+          "columnName": "Depth",
+          "value": "12.3"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "-234.5"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "440"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "49"
+        },
+        {
+          "columnName": "Model3D",
+          "value": "c14009dd-a1f0-41f0-88a6-b371e63ec9dd:HE510ABS2_HandleBar.obj"
+        },
+        {
+          "columnName": "StretchParams",
+          "value": ""
+        },
+        {
+          "columnName": "MaterialId",
+          "value": "egger:f765_st20"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GraphicId",
+          "value": "HB774G1B1"
+        },
+        {
+          "columnName": "Description",
+          "value": "Oven carcase front"
+        },
+        {
+          "columnName": "Width",
+          "value": "560"
+        },
+        {
+          "columnName": "Height",
+          "value": "577"
+        },
+        {
+          "columnName": "Depth",
+          "value": "1"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "-280"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "0"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "-1"
+        },
+        {
+          "columnName": "Model3D",
+          "value": ""
+        },
+        {
+          "columnName": "StretchParams",
+          "value": ""
+        },
+        {
+          "columnName": "MaterialId",
+          "value": "cabinetlibrary:metallic_black"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GraphicId",
+          "value": "HE510ABS2"
+        },
+        {
+          "columnName": "Description",
+          "value": "Oven Front"
+        },
+        {
+          "columnName": "Width",
+          "value": "594"
+        },
+        {
+          "columnName": "Height",
+          "value": "587.5"
+        },
+        {
+          "columnName": "Depth",
+          "value": "19.5"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "-297"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "7.5"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "0"
+        },
+        {
+          "columnName": "Model3D",
+          "value": ""
+        },
+        {
+          "columnName": "StretchParams",
+          "value": ""
+        },
+        {
+          "columnName": "MaterialId",
+          "value": "cabinetlibrary:he510abs2"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GraphicId",
+          "value": "HE510ABS2"
+        },
+        {
+          "columnName": "Description",
+          "value": "Oven carcase"
+        },
+        {
+          "columnName": "Width",
+          "value": "560"
+        },
+        {
+          "columnName": "Height",
+          "value": "574"
+        },
+        {
+          "columnName": "Depth",
+          "value": "525"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "-280"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "0"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "-526"
+        },
+        {
+          "columnName": "Model3D",
+          "value": "b54e0f8d-349f-4070-97a4-1ba132807852:HE510ABS2_carc.obj"
+        },
+        {
+          "columnName": "StretchParams",
+          "value": ""
+        },
+        {
+          "columnName": "MaterialId",
+          "value": "egger:f765_st20"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GraphicId",
+          "value": "HE510ABS2"
+        },
+        {
+          "columnName": "Description",
+          "value": "Oven Handle"
+        },
+        {
+          "columnName": "Width",
+          "value": "469"
+        },
+        {
+          "columnName": "Height",
+          "value": "16.9"
+        },
+        {
+          "columnName": "Depth",
+          "value": "41"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "-234.5"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "439.9"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "19.5"
+        },
+        {
+          "columnName": "Model3D",
+          "value": "d893ce09-443f-47dd-ad91-5cfec328f46c:HE510ABS2_HandleBlock.obj"
+        },
+        {
+          "columnName": "StretchParams",
+          "value": ""
+        },
+        {
+          "columnName": "MaterialId",
+          "value": "cabinetlibrary:metallic_black"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GraphicId",
+          "value": "HE510ABS2"
+        },
+        {
+          "columnName": "Description",
+          "value": "OvenKnob"
+        },
+        {
+          "columnName": "Width",
+          "value": "486"
+        },
+        {
+          "columnName": "Height",
+          "value": "42"
+        },
+        {
+          "columnName": "Depth",
+          "value": "15"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "-244"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "516"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "20"
+        },
+        {
+          "columnName": "Model3D",
+          "value": "c01d4a42-9294-426a-a4e5-1ab0a3253227:HE510ABS2_Knob.obj"
+        },
+        {
+          "columnName": "StretchParams",
+          "value": ""
+        },
+        {
+          "columnName": "MaterialId",
+          "value": "cabinetlibrary:metallic_black"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GraphicId",
+          "value": "HE510ABS2"
+        },
+        {
+          "columnName": "Description",
+          "value": "Oven carcase front"
+        },
+        {
+          "columnName": "Width",
+          "value": "560"
+        },
+        {
+          "columnName": "Height",
+          "value": "574"
+        },
+        {
+          "columnName": "Depth",
+          "value": "1"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "-280"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "0"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "-1"
+        },
+        {
+          "columnName": "Model3D",
+          "value": ""
+        },
+        {
+          "columnName": "StretchParams",
+          "value": ""
+        },
+        {
+          "columnName": "MaterialId",
+          "value": "cabinetlibrary:metallic_black"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GraphicId",
+          "value": "Metra_R"
+        },
+        {
+          "columnName": "Description",
+          "value": "Sink top"
+        },
+        {
+          "columnName": "Width",
+          "value": "1000"
+        },
+        {
+          "columnName": "Height",
+          "value": "10"
+        },
+        {
+          "columnName": "Depth",
+          "value": "500"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "-500"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "0"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "-490"
+        },
+        {
+          "columnName": "Model3D",
+          "value": "c880d61b-9e4b-4f70-98dd-6387af915226:Metra_Frame.obj"
+        },
+        {
+          "columnName": "StretchParams",
+          "value": ""
+        },
+        {
+          "columnName": "MaterialId",
+          "value": "egger:u960_st9"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GraphicId",
+          "value": "Metra_R"
+        },
+        {
+          "columnName": "Description",
+          "value": "Sink top"
+        },
+        {
+          "columnName": "Width",
+          "value": "495"
+        },
+        {
+          "columnName": "Height",
+          "value": "3"
+        },
+        {
+          "columnName": "Depth",
+          "value": "430"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "-15"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "0"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "-455"
+        },
+        {
+          "columnName": "Model3D",
+          "value": "6b8da113-f189-4500-801e-ae7ad8feed1e:Metra_R_Base.obj"
+        },
+        {
+          "columnName": "StretchParams",
+          "value": ""
+        },
+        {
+          "columnName": "MaterialId",
+          "value": "egger:u960_st9"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GraphicId",
+          "value": "Metra_R"
+        },
+        {
+          "columnName": "Description",
+          "value": "Sink base"
+        },
+        {
+          "columnName": "Width",
+          "value": "495"
+        },
+        {
+          "columnName": "Height",
+          "value": "175"
+        },
+        {
+          "columnName": "Depth",
+          "value": "430"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "-15"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "-190"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "-455"
+        },
+        {
+          "columnName": "Model3D",
+          "value": "6b8da113-f189-4500-801e-ae7ad8feed1e:Metra_R_Base.obj"
+        },
+        {
+          "columnName": "StretchParams",
+          "value": ""
+        },
+        {
+          "columnName": "MaterialId",
+          "value": "egger:u960_st9"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GraphicId",
+          "value": "Metra_R"
+        },
+        {
+          "columnName": "Description",
+          "value": "Sink top"
+        },
+        {
+          "columnName": "Width",
+          "value": "950"
+        },
+        {
+          "columnName": "Height",
+          "value": "7"
+        },
+        {
+          "columnName": "Depth",
+          "value": "430"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "-475"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "1.5"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "-455"
+        },
+        {
+          "columnName": "Model3D",
+          "value": "4d905aef-72cb-4ac4-9349-bdf8e5e0fc65:Metra_R_Inlay.obj"
+        },
+        {
+          "columnName": "StretchParams",
+          "value": ""
+        },
+        {
+          "columnName": "MaterialId",
+          "value": "egger:u960_st9"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GraphicId",
+          "value": "Metra_R"
+        },
+        {
+          "columnName": "Description",
+          "value": "Sink bottom"
+        },
+        {
+          "columnName": "Width",
+          "value": "100"
+        },
+        {
+          "columnName": "Height",
+          "value": "1"
+        },
+        {
+          "columnName": "Depth",
+          "value": "100"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "60"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "1"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "-290"
+        },
+        {
+          "columnName": "Model3D",
+          "value": "7f4a5f0f-1bc5-441c-a5dd-2045f214f498:Metra_Bottom.obj"
+        },
+        {
+          "columnName": "StretchParams",
+          "value": ""
+        },
+        {
+          "columnName": "MaterialId",
+          "value": "egger:f765_st20"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GraphicId",
+          "value": "Cosmopolitan"
+        },
+        {
+          "columnName": "Description",
+          "value": "Mixer tab"
+        },
+        {
+          "columnName": "Width",
+          "value": "105"
+        },
+        {
+          "columnName": "Height",
+          "value": "306"
+        },
+        {
+          "columnName": "Depth",
+          "value": "259"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "-25.5"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "0"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "-25.5"
+        },
+        {
+          "columnName": "Model3D",
+          "value": "6ea0739f-b19e-4d93-b6bb-4d9a5bcc6452:Grohe_Cosmopolitan.obj"
+        },
+        {
+          "columnName": "StretchParams",
+          "value": ""
+        },
+        {
+          "columnName": "MaterialId",
+          "value": "cabinetlibrary:chrome"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GraphicId",
+          "value": "HGR7764B1"
+        },
+        {
+          "columnName": "Description",
+          "value": "Oven Front"
+        },
+        {
+          "columnName": "Width",
+          "value": "594"
+        },
+        {
+          "columnName": "Height",
+          "value": "595"
+        },
+        {
+          "columnName": "Depth",
+          "value": "19.5"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "-297.5"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "7.5"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "0"
+        },
+        {
+          "columnName": "Model3D",
+          "value": ""
+        },
+        {
+          "columnName": "StretchParams",
+          "value": ""
+        },
+        {
+          "columnName": "MaterialId",
+          "value": "cabinetlibrary:hrg7764b1"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GraphicId",
+          "value": "HGR7764B1"
+        },
+        {
+          "columnName": "Description",
+          "value": "Oven carcase"
+        },
+        {
+          "columnName": "Width",
+          "value": "560"
+        },
+        {
+          "columnName": "Height",
+          "value": "584.5"
+        },
+        {
+          "columnName": "Depth",
+          "value": "548"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "-280"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "0"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "-548.5"
+        },
+        {
+          "columnName": "Model3D",
+          "value": ""
+        },
+        {
+          "columnName": "StretchParams",
+          "value": ""
+        },
+        {
+          "columnName": "MaterialId",
+          "value": "egger:f765_st20"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GraphicId",
+          "value": "Minta"
+        },
+        {
+          "columnName": "Description",
+          "value": "Mixer tab"
+        },
+        {
+          "columnName": "Width",
+          "value": "132"
+        },
+        {
+          "columnName": "Height",
+          "value": "333"
+        },
+        {
+          "columnName": "Depth",
+          "value": "274"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "-27.5"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "0"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "-28"
+        },
+        {
+          "columnName": "Model3D",
+          "value": "67d69735-ff57-4271-a576-3005dc2312d7:Grohe_Minta.obj"
+        },
+        {
+          "columnName": "StretchParams",
+          "value": ""
+        },
+        {
+          "columnName": "MaterialId",
+          "value": "cabinetlibrary:chrome"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GraphicId",
+          "value": "Axis_L"
+        },
+        {
+          "columnName": "Description",
+          "value": "Sink top"
+        },
+        {
+          "columnName": "Width",
+          "value": "990"
+        },
+        {
+          "columnName": "Height",
+          "value": "5"
+        },
+        {
+          "columnName": "Depth",
+          "value": "490"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "-495"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "0"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "-490"
+        },
+        {
+          "columnName": "Model3D",
+          "value": ""
+        },
+        {
+          "columnName": "StretchParams",
+          "value": ""
+        },
+        {
+          "columnName": "MaterialId",
+          "value": "cabinetlibrary:axis_l"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GraphicId",
+          "value": "Axis_L"
+        },
+        {
+          "columnName": "Description",
+          "value": "Sink base"
+        },
+        {
+          "columnName": "Width",
+          "value": "548.5"
+        },
+        {
+          "columnName": "Height",
+          "value": "190"
+        },
+        {
+          "columnName": "Depth",
+          "value": "470"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "-480"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "-195"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "-480"
+        },
+        {
+          "columnName": "Model3D",
+          "value": ""
+        },
+        {
+          "columnName": "StretchParams",
+          "value": ""
+        },
+        {
+          "columnName": "MaterialId",
+          "value": "egger:f765_st20"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GraphicId",
+          "value": "Axis_R"
+        },
+        {
+          "columnName": "Description",
+          "value": "Sink top"
+        },
+        {
+          "columnName": "Width",
+          "value": "990"
+        },
+        {
+          "columnName": "Height",
+          "value": "5"
+        },
+        {
+          "columnName": "Depth",
+          "value": "490"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "-495"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "0"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "-490"
+        },
+        {
+          "columnName": "Model3D",
+          "value": ""
+        },
+        {
+          "columnName": "StretchParams",
+          "value": ""
+        },
+        {
+          "columnName": "MaterialId",
+          "value": "cabinetlibrary:axis_r"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GraphicId",
+          "value": "Axis_R"
+        },
+        {
+          "columnName": "Description",
+          "value": "Sink base"
+        },
+        {
+          "columnName": "Width",
+          "value": "548.5"
+        },
+        {
+          "columnName": "Height",
+          "value": "190"
+        },
+        {
+          "columnName": "Depth",
+          "value": "470"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "-68.5"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "-195"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "-480"
+        },
+        {
+          "columnName": "Model3D",
+          "value": ""
+        },
+        {
+          "columnName": "StretchParams",
+          "value": ""
+        },
+        {
+          "columnName": "MaterialId",
+          "value": "egger:f765_st20"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GraphicId",
+          "value": "Axia_White_L"
+        },
+        {
+          "columnName": "Description",
+          "value": "Sink top"
+        },
+        {
+          "columnName": "Width",
+          "value": "980"
+        },
+        {
+          "columnName": "Height",
+          "value": "5"
+        },
+        {
+          "columnName": "Depth",
+          "value": "490"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "-490"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "0"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "-490"
+        },
+        {
+          "columnName": "Model3D",
+          "value": ""
+        },
+        {
+          "columnName": "StretchParams",
+          "value": ""
+        },
+        {
+          "columnName": "MaterialId",
+          "value": "cabinetlibrary:axia_white_l"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GraphicId",
+          "value": "Axia_White_L"
+        },
+        {
+          "columnName": "Description",
+          "value": "Sink base"
+        },
+        {
+          "columnName": "Width",
+          "value": "548.5"
+        },
+        {
+          "columnName": "Height",
+          "value": "190"
+        },
+        {
+          "columnName": "Depth",
+          "value": "470"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "-480"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "-195"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "-480"
+        },
+        {
+          "columnName": "Model3D",
+          "value": ""
+        },
+        {
+          "columnName": "StretchParams",
+          "value": ""
+        },
+        {
+          "columnName": "MaterialId",
+          "value": "egger:f765_st20"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GraphicId",
+          "value": "Axia_White_R"
+        },
+        {
+          "columnName": "Description",
+          "value": "Sink top"
+        },
+        {
+          "columnName": "Width",
+          "value": "980"
+        },
+        {
+          "columnName": "Height",
+          "value": "5"
+        },
+        {
+          "columnName": "Depth",
+          "value": "490"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "-490"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "0"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "-490"
+        },
+        {
+          "columnName": "Model3D",
+          "value": ""
+        },
+        {
+          "columnName": "StretchParams",
+          "value": ""
+        },
+        {
+          "columnName": "MaterialId",
+          "value": "cabinetlibrary:axia_white_r"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GraphicId",
+          "value": "Axia_White_R"
+        },
+        {
+          "columnName": "Description",
+          "value": "Sink base"
+        },
+        {
+          "columnName": "Width",
+          "value": "548.5"
+        },
+        {
+          "columnName": "Height",
+          "value": "190"
+        },
+        {
+          "columnName": "Depth",
+          "value": "470"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "-68.5"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "-195"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "-480"
+        },
+        {
+          "columnName": "Model3D",
+          "value": ""
+        },
+        {
+          "columnName": "StretchParams",
+          "value": ""
+        },
+        {
+          "columnName": "MaterialId",
+          "value": "egger:f765_st20"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GraphicId",
+          "value": "Axia_Grey_L"
+        },
+        {
+          "columnName": "Description",
+          "value": "Sink top"
+        },
+        {
+          "columnName": "Width",
+          "value": "980"
+        },
+        {
+          "columnName": "Height",
+          "value": "5"
+        },
+        {
+          "columnName": "Depth",
+          "value": "490"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "-490"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "0"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "-490"
+        },
+        {
+          "columnName": "Model3D",
+          "value": ""
+        },
+        {
+          "columnName": "StretchParams",
+          "value": ""
+        },
+        {
+          "columnName": "MaterialId",
+          "value": "cabinetlibrary:axia_grey_l"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GraphicId",
+          "value": "Axia_Grey_L"
+        },
+        {
+          "columnName": "Description",
+          "value": "Sink base"
+        },
+        {
+          "columnName": "Width",
+          "value": "548.5"
+        },
+        {
+          "columnName": "Height",
+          "value": "190"
+        },
+        {
+          "columnName": "Depth",
+          "value": "470"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "-480"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "-195"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "-480"
+        },
+        {
+          "columnName": "Model3D",
+          "value": ""
+        },
+        {
+          "columnName": "StretchParams",
+          "value": ""
+        },
+        {
+          "columnName": "MaterialId",
+          "value": "egger:f765_st20"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GraphicId",
+          "value": "Axia_Grey_R"
+        },
+        {
+          "columnName": "Description",
+          "value": "Sink top"
+        },
+        {
+          "columnName": "Width",
+          "value": "980"
+        },
+        {
+          "columnName": "Height",
+          "value": "5"
+        },
+        {
+          "columnName": "Depth",
+          "value": "490"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "-490"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "0"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "-490"
+        },
+        {
+          "columnName": "Model3D",
+          "value": ""
+        },
+        {
+          "columnName": "StretchParams",
+          "value": ""
+        },
+        {
+          "columnName": "MaterialId",
+          "value": "cabinetlibrary:axia_grey_r"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GraphicId",
+          "value": "Axia_Grey_R"
+        },
+        {
+          "columnName": "Description",
+          "value": "Sink base"
+        },
+        {
+          "columnName": "Width",
+          "value": "548.5"
+        },
+        {
+          "columnName": "Height",
+          "value": "190"
+        },
+        {
+          "columnName": "Depth",
+          "value": "470"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "-68.5"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "-195"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "-480"
+        },
+        {
+          "columnName": "Model3D",
+          "value": ""
+        },
+        {
+          "columnName": "StretchParams",
+          "value": ""
+        },
+        {
+          "columnName": "MaterialId",
+          "value": "egger:f765_st20"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GraphicId",
+          "value": "Axia_Anthrazit_L"
+        },
+        {
+          "columnName": "Description",
+          "value": "Sink top"
+        },
+        {
+          "columnName": "Width",
+          "value": "980"
+        },
+        {
+          "columnName": "Height",
+          "value": "5"
+        },
+        {
+          "columnName": "Depth",
+          "value": "490"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "-490"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "0"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "-490"
+        },
+        {
+          "columnName": "Model3D",
+          "value": ""
+        },
+        {
+          "columnName": "StretchParams",
+          "value": ""
+        },
+        {
+          "columnName": "MaterialId",
+          "value": "cabinetlibrary:axia_anthrazit_l"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GraphicId",
+          "value": "Axia_Anthrazit_L"
+        },
+        {
+          "columnName": "Description",
+          "value": "Sink base"
+        },
+        {
+          "columnName": "Width",
+          "value": "548.5"
+        },
+        {
+          "columnName": "Height",
+          "value": "190"
+        },
+        {
+          "columnName": "Depth",
+          "value": "470"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "-480"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "-195"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "-480"
+        },
+        {
+          "columnName": "Model3D",
+          "value": ""
+        },
+        {
+          "columnName": "StretchParams",
+          "value": ""
+        },
+        {
+          "columnName": "MaterialId",
+          "value": "egger:f765_st20"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GraphicId",
+          "value": "Axia_Anthrazit_R"
+        },
+        {
+          "columnName": "Description",
+          "value": "Sink top"
+        },
+        {
+          "columnName": "Width",
+          "value": "980"
+        },
+        {
+          "columnName": "Height",
+          "value": "5"
+        },
+        {
+          "columnName": "Depth",
+          "value": "490"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "-490"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "0"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "-490"
+        },
+        {
+          "columnName": "Model3D",
+          "value": ""
+        },
+        {
+          "columnName": "StretchParams",
+          "value": ""
+        },
+        {
+          "columnName": "MaterialId",
+          "value": "cabinetlibrary:axia_anthrazit_r"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GraphicId",
+          "value": "Axia_Anthrazit_R"
+        },
+        {
+          "columnName": "Description",
+          "value": "Sink base"
+        },
+        {
+          "columnName": "Width",
+          "value": "548.5"
+        },
+        {
+          "columnName": "Height",
+          "value": "190"
+        },
+        {
+          "columnName": "Depth",
+          "value": "470"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "-68.5"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "-195"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "-480"
+        },
+        {
+          "columnName": "Model3D",
+          "value": ""
+        },
+        {
+          "columnName": "StretchParams",
+          "value": ""
+        },
+        {
+          "columnName": "MaterialId",
+          "value": "egger:f765_st20"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GraphicId",
+          "value": "SN87TX02CE"
+        },
+        {
+          "columnName": "Description",
+          "value": "Complete Dishwasher"
+        },
+        {
+          "columnName": "Width",
+          "value": "598"
+        },
+        {
+          "columnName": "Height",
+          "value": "813.5"
+        },
+        {
+          "columnName": "Depth",
+          "value": "550"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "-299"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "-813.5"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "-550"
+        },
+        {
+          "columnName": "Model3D",
+          "value": "055b1e97-8793-42e6-9510-24af7a3b0e29:SN87TX02CE.obj"
+        },
+        {
+          "columnName": "StretchParams",
+          "value": ""
+        },
+        {
+          "columnName": "MaterialId",
+          "value": "egger:f765_st20"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GraphicId",
+          "value": "SR65YX08ME"
+        },
+        {
+          "columnName": "Description",
+          "value": "Complete Dishwasher"
+        },
+        {
+          "columnName": "Width",
+          "value": "448"
+        },
+        {
+          "columnName": "Height",
+          "value": "813.5"
+        },
+        {
+          "columnName": "Depth",
+          "value": "550"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "-224"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "-813.5"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "-550"
+        },
+        {
+          "columnName": "Model3D",
+          "value": "0bc43aa5-fa8f-4b17-aa57-514cea1c9ae7:SR65YX08ME.obj"
+        },
+        {
+          "columnName": "StretchParams",
+          "value": ""
+        },
+        {
+          "columnName": "MaterialId",
+          "value": "egger:f765_st20"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GraphicId",
+          "value": "SN55ZS07CE"
+        },
+        {
+          "columnName": "Description",
+          "value": "Dishwasher Carcase"
+        },
+        {
+          "columnName": "Width",
+          "value": "598"
+        },
+        {
+          "columnName": "Height",
+          "value": "813.5"
+        },
+        {
+          "columnName": "Depth",
+          "value": "515"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "-299"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "-813.5"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "-548"
+        },
+        {
+          "columnName": "Model3D",
+          "value": "deb112d9-3362-4374-8e4c-66fea30c0b9e:CarcaseDw.obj"
+        },
+        {
+          "columnName": "StretchParams",
+          "value": ""
+        },
+        {
+          "columnName": "MaterialId",
+          "value": "egger:f765_st20"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GraphicId",
+          "value": "SN55ZS07CE"
+        },
+        {
+          "columnName": "Description",
+          "value": "Dishwasher Frontpanel"
+        },
+        {
+          "columnName": "Width",
+          "value": "594"
+        },
+        {
+          "columnName": "Height",
+          "value": "530"
+        },
+        {
+          "columnName": "Depth",
+          "value": "30"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "-297"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "-650"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "-30"
+        },
+        {
+          "columnName": "Model3D",
+          "value": ""
+        },
+        {
+          "columnName": "StretchParams",
+          "value": ""
+        },
+        {
+          "columnName": "MaterialId",
+          "value": "cabinetlibrary:chrome"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GraphicId",
+          "value": "SN55ZS07CE"
+        },
+        {
+          "columnName": "Description",
+          "value": "Dishwasher Controlpanel"
+        },
+        {
+          "columnName": "Width",
+          "value": "598"
+        },
+        {
+          "columnName": "Height",
+          "value": "115"
+        },
+        {
+          "columnName": "Depth",
+          "value": "53"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "-299"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "-120"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "-30"
+        },
+        {
+          "columnName": "Model3D",
+          "value": ""
+        },
+        {
+          "columnName": "StretchParams",
+          "value": ""
+        },
+        {
+          "columnName": "MaterialId",
+          "value": "cabinetlibrary:sn55zs07ce"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GraphicId",
+          "value": "SR55ZS10ME"
+        },
+        {
+          "columnName": "Description",
+          "value": "Dishwasher Carcase"
+        },
+        {
+          "columnName": "Width",
+          "value": "448"
+        },
+        {
+          "columnName": "Height",
+          "value": "813.5"
+        },
+        {
+          "columnName": "Depth",
+          "value": "515"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "-224"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "-813.5"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "-548"
+        },
+        {
+          "columnName": "Model3D",
+          "value": "822ac7b9-95f4-4ad0-a942-5c71a1c3faa0:CarcaseDw_Small.obj"
+        },
+        {
+          "columnName": "StretchParams",
+          "value": ""
+        },
+        {
+          "columnName": "MaterialId",
+          "value": "egger:f765_st20"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GraphicId",
+          "value": "SR55ZS10ME"
+        },
+        {
+          "columnName": "Description",
+          "value": "Dishwasher Frontpanel"
+        },
+        {
+          "columnName": "Width",
+          "value": "444"
+        },
+        {
+          "columnName": "Height",
+          "value": "530"
+        },
+        {
+          "columnName": "Depth",
+          "value": "30"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "-222"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "-650"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "-30"
+        },
+        {
+          "columnName": "Model3D",
+          "value": ""
+        },
+        {
+          "columnName": "StretchParams",
+          "value": ""
+        },
+        {
+          "columnName": "MaterialId",
+          "value": "cabinetlibrary:chrome"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GraphicId",
+          "value": "SR55ZS10ME"
+        },
+        {
+          "columnName": "Description",
+          "value": "Dishwasher Controlpanel"
+        },
+        {
+          "columnName": "Width",
+          "value": "448"
+        },
+        {
+          "columnName": "Height",
+          "value": "115"
+        },
+        {
+          "columnName": "Depth",
+          "value": "53"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "-224"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "-120"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "-30"
+        },
+        {
+          "columnName": "Model3D",
+          "value": ""
+        },
+        {
+          "columnName": "StretchParams",
+          "value": ""
+        },
+        {
+          "columnName": "MaterialId",
+          "value": "cabinetlibrary:sr55zs10me"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GraphicId",
+          "value": "GenericLaundryMachine"
+        },
+        {
+          "columnName": "Description",
+          "value": "Generic Laundry Machine"
+        },
+        {
+          "columnName": "Width",
+          "value": "600"
+        },
+        {
+          "columnName": "Height",
+          "value": "850"
+        },
+        {
+          "columnName": "Depth",
+          "value": "654"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "-300"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "0"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "-654"
+        },
+        {
+          "columnName": "Model3D",
+          "value": "0bd0c32a-9739-4eae-99e6-38790506529f:Washingmachine_Rot.obj"
+        },
+        {
+          "columnName": "StretchParams",
+          "value": ""
+        },
+        {
+          "columnName": "MaterialId",
+          "value": ""
+        }
+      ]
+    }
+  ]
+}

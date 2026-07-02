@@ -1,0 +1,80 @@
+{
+  "variantId": "mod_CarcaseProgram",
+  "shortName": "Carcase program",
+  "variantTypeId": "Text",
+  "description": "Program of the carcase",
+  "restrictionTypeId": "Public",
+  "groupName": "Carcase | Design",
+  "imageId": "3f4dafc8-e8e4-4ef7-9c65-27d167b477ea:CarcaseProgram.jpg",
+  "isArray": false,
+  "isPosRelevant": true,
+  "mainAttr": false,
+  "userRight": "Simple",
+  "implicitRelevant": true,
+  "posView": "Dropdown",
+  "sorting": 101,
+  "matrix": [
+    {
+      "id": "GrainGroupId",
+      "type": "Text",
+      "default": "Neutral"
+    }
+  ],
+  "selections": [
+    {
+      "value": "Basic",
+      "description": "Basic colors",
+      "shortName": "Basic",
+      "matrix": [
+        {
+          "id": "GrainGroupId",
+          "value": "Neutral"
+        }
+      ]
+    },
+    {
+      "value": "MatteNatur",
+      "description": "Matte fiinished colors",
+      "shortName": "Matte Natur",
+      "matrix": [
+        {
+          "id": "GrainGroupId",
+          "value": "Neutral"
+        }
+      ]
+    },
+    {
+      "value": "SpecialDecor",
+      "description": "Special Decor",
+      "shortName": "Special Decor",
+      "matrix": [
+        {
+          "id": "GrainGroupId",
+          "value": "Vertical"
+        }
+      ]
+    },
+    {
+      "value": "UniColor",
+      "description": "Uni colors",
+      "shortName": "Uni Color",
+      "matrix": [
+        {
+          "id": "GrainGroupId",
+          "value": "Neutral"
+        }
+      ]
+    },
+    {
+      "value": "WoodDecor",
+      "description": "Wood Decor",
+      "shortName": "Wood Decor",
+      "matrix": [
+        {
+          "id": "GrainGroupId",
+          "value": "Vertical"
+        }
+      ]
+    }
+  ]
+}

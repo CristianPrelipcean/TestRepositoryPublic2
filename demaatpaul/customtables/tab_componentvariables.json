@@ -1,0 +1,113 @@
+{
+  "tableName": "tab_ComponentVariables",
+  "description": "Component variables",
+  "restrictionTypeId": "Public",
+  "groupName": "Processings",
+  "columns": [
+    {
+      "name": "_id",
+      "type": "Integer",
+      "allowNull": false
+    },
+    {
+      "name": "in_ComponentId",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "Variable",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "VariableValue",
+      "type": "Text",
+      "allowNull": true,
+      "functionDefinition": "(partSelf:parent, part2:parent):number"
+    }
+  ],
+  "rows": [
+    {
+      "data": [
+        {
+          "columnName": "in_ComponentId",
+          "value": "FrontTuscanMilling"
+        },
+        {
+          "columnName": "Variable",
+          "value": "L"
+        },
+        {
+          "columnName": "VariableValue",
+          "value": "partSelf._dimx"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ComponentId",
+          "value": "FrontTuscanMilling"
+        },
+        {
+          "columnName": "Variable",
+          "value": "B"
+        },
+        {
+          "columnName": "VariableValue",
+          "value": "partSelf._dimy"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ComponentId",
+          "value": "FrontTuscanMilling"
+        },
+        {
+          "columnName": "Variable",
+          "value": "D"
+        },
+        {
+          "columnName": "VariableValue",
+          "value": "partSelf._dimz"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ComponentId",
+          "value": "FrontTuscanMilling"
+        },
+        {
+          "columnName": "Variable",
+          "value": "DistX"
+        },
+        {
+          "columnName": "VariableValue",
+          "value": "55"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ComponentId",
+          "value": "FrontTuscanMilling"
+        },
+        {
+          "columnName": "Variable",
+          "value": "DistY"
+        },
+        {
+          "columnName": "VariableValue",
+          "value": "55"
+        }
+      ]
+    }
+  ],
+  "dataSource": "Default",
+  "changedAt": "2026-01-09T20:03:33.3715066+00:00"
+}

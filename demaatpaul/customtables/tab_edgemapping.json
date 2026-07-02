@@ -1,0 +1,5169 @@
+{
+  "tableName": "tab_EdgeMapping",
+  "description": "Mapping for edges",
+  "restrictionTypeId": "Public",
+  "groupName": "Edges",
+  "columns": [
+    {
+      "name": "_id",
+      "type": "Integer",
+      "allowNull": false
+    },
+    {
+      "name": "in_Program",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_EdgeClass",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_NeutralColor",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_BoardThkMin",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "in_BoardThkMax",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "EdgeObject",
+      "type": "Text",
+      "allowNull": true
+    }
+  ],
+  "rows": [
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "W980_ST7"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "18"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "W980_ST7_23_2"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "U999_ST7"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "18"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "U999ST7_23x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "U502_ST9"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "18"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "U502_ST9_23_1"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "F800_ST9"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "18"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "F800_ST9_23_1"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "H1715_ST12"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "18"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "H1715_ST12_23_1"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "W980_ST7"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "18"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "W980_ST7_23_1"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "U999_ST7"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "18"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "U999_ST7_23_1"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "U502_ST9"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "18"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "U502_ST9_23_1"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "F800_ST9"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "18"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "F800_ST9_23_1"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "H1715_ST12"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "18"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "H1715_ST12_23_1"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "NoEdgeClass"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "All"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "NoEdge"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "W980_st7"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "18"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "W980_st7_23x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "1019_parel"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "18"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "1019_parel_23x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "1030_parel"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "18"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "1030_parel_23x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "1019_mn"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "18"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "1019_mn_23x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "1018_mn"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "18"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "1018_mn_23x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "1024_mn"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "18"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "1024_mn_23x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "1035_mn"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "18"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "1035_mn_23x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "1030_mn"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "18"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "1030_mn_23x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "1033_mn"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "18"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "1033_mn_23x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "1049_mn"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "18"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "1049_mn_23x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "1045_mn"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "18"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "1045_mn_23x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "1060_mn"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "18"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "1060_mn_23x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "u18029_sd"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "18"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "u18029_sd_23x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "u540_st9"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "18"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "u540_st9_23x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "u502_st9"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "18"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "u502_st9_23x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "u599_st9"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "18"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "u599_st9_23x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "u19503_sd"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "18"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "u19503_sd_23x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "u19014_sd"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "18"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "u19014_sd_23x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "u604_st9"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "18"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "u604_st9_23x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "u665_st9"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "18"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "u665_st9_23x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "u16179_sd"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "18"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "u16179_sd_23x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "u17505_sd"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "18"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "u17505_sd_23x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "u325_st9"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "18"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "u325_st9_23x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "u16166_sd"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "18"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "u16166_sd_23x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "u125_st9"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "18"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "u125_st9_23x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "u12211_sd"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "18"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "u12211_sd_23x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "u16058_sd"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "18"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "u16058_sd_23x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "44375_dp"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "18"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "44375_dp_23x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "f637_st10"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "18"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "f637_st10_23x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "f244_st76"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "18"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "f244_st76_23x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "f800_st9"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "18"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "f800_st9_23x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "f235_st76"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "18"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "f235_st76_23x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "f685_st10"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "18"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "f685_st10_23x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "f422_st10"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "18"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "f422_st10_23x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "f416_st10"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "18"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "f416_st10_23x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "f424_st10"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "18"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "f424_st10_23x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "f528_st20"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "18"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "f528_st20_23x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "r30135_nw"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "18"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "r30135_nw_23x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "h1715_st12"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "18"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "h1715_st12_23x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "r20021_nw"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "18"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "r20021_nw_23x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "r37017_nw"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "18"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "r37017_nw_23x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "r20033_nw"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "18"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "r20033_nw_23x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "u12190_ir"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "18"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "u12190_ir_23x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "W980_st7"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "18"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "W980_st7_23x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "1019_parel"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "18"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "1019_parel_23x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "1030_parel"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "18"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "1030_parel_23x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "1019_mn"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "18"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "1019_mn_23x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "1018_mn"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "18"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "1018_mn_23x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "1024_mn"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "18"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "1024_mn_23x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "1035_mn"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "18"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "1035_mn_23x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "1030_mn"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "18"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "1030_mn_23x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "1033_mn"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "18"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "1033_mn_23x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "1049_mn"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "18"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "1049_mn_23x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "1045_mn"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "18"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "1045_mn_23x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "1060_mn"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "18"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "1060_mn_23x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "u18029_sd"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "18"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "u18029_sd_23x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "u540_st9"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "18"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "u540_st9_23x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "u502_st9"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "18"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "u502_st9_23x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "u599_st9"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "18"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "u599_st9_23x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "u19503_sd"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "18"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "u19503_sd_23x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "u19014_sd"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "18"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "u19014_sd_23x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "u604_st9"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "18"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "u604_st9_23x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "u665_st9"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "18"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "u665_st9_23x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "u16179_sd"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "18"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "u16179_sd_23x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "u17505_sd"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "18"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "u17505_sd_23x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "u325_st9"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "18"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "u325_st9_23x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "u16166_sd"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "18"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "u16166_sd_23x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "u125_st9"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "18"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "u125_st9_23x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "u12211_sd"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "18"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "u12211_sd_23x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "u16058_sd"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "18"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "u16058_sd_23x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "44375_dp"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "18"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "44375_dp_23x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "f637_st10"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "18"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "f637_st10_23x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "f244_st76"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "18"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "f244_st76_23x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "f800_st9"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "18"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "f800_st9_23x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "f235_st76"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "18"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "f235_st76_23x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "f685_st10"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "18"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "f685_st10_23x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "f422_st10"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "18"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "f422_st10_23x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "f416_st10"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "18"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "f416_st10_23x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "f424_st10"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "18"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "f424_st10_23x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "f528_st20"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "18"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "f528_st20_23x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "r30135_nw"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "18"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "r30135_nw_23x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "h1715_st12"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "18"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "h1715_st12_23x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "r20021_nw"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "18"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "r20021_nw_23x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "r37017_nw"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "18"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "r37017_nw_23x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "r20033_nw"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "18"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "r20033_nw_23x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "u12190_ir"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "18"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "u12190_ir_23x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "W980_st7"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "36"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "36"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "W980_st7_43x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "1019_parel"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "36"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "36"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "1019_parel_43x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "1030_parel"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "36"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "36"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "1030_parel_43x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "1019_mn"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "36"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "36"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "1019_mn_43x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "1018_mn"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "36"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "36"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "1018_mn_43x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "1024_mn"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "36"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "36"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "1024_mn_43x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "1035_mn"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "36"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "36"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "1035_mn_43x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "1030_mn"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "36"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "36"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "1030_mn_43x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "1033_mn"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "36"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "36"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "1033_mn_43x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "1049_mn"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "36"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "36"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "1049_mn_43x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "1045_mn"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "36"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "36"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "1045_mn_43x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "1060_mn"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "36"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "36"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "1060_mn_43x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "u18029_sd"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "36"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "36"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "u18029_sd_43x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "u540_st9"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "36"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "36"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "u540_st9_43x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "u502_st9"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "36"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "36"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "u502_st9_43x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "u599_st9"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "36"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "36"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "u599_st9_43x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "u19503_sd"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "36"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "36"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "u19503_sd_43x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "u19014_sd"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "36"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "36"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "u19014_sd_43x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "u604_st9"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "36"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "36"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "u604_st9_43x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "u665_st9"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "36"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "36"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "u665_st9_43x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "u16179_sd"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "36"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "36"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "u16179_sd_43x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "u17505_sd"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "36"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "36"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "u17505_sd_43x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "u325_st9"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "36"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "36"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "u325_st9_43x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "u16166_sd"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "36"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "36"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "u16166_sd_43x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "u125_st9"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "36"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "36"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "u125_st9_43x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "u12211_sd"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "36"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "36"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "u12211_sd_43x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "u16058_sd"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "36"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "36"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "u16058_sd_43x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "44375_dp"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "36"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "36"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "44375_dp_43x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "f637_st10"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "36"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "36"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "f637_st10_43x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "f244_st76"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "36"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "36"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "f244_st76_43x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "f800_st9"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "36"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "36"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "f800_st9_43x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "f235_st76"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "36"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "36"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "f235_st76_43x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "f685_st10"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "36"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "36"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "f685_st10_43x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "f422_st10"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "36"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "36"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "f422_st10_43x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "f416_st10"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "36"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "36"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "f416_st10_43x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "f424_st10"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "36"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "36"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "f424_st10_43x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "f528_st20"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "36"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "36"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "f528_st20_43x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "r30135_nw"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "36"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "36"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "r30135_nw_43x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "h1715_st12"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "36"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "36"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "h1715_st12_43x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "r20021_nw"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "36"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "36"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "r20021_nw_43x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "r37017_nw"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "36"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "36"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "r37017_nw_43x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "r20033_nw"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "36"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "36"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "r20033_nw_43x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "u12190_ir"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "36"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "36"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "u12190_ir_43x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "W980_st7"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "36"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "36"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "W980_st7_43x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "1019_parel"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "36"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "36"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "1019_parel_43x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "1030_parel"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "36"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "36"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "1030_parel_43x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "1019_mn"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "36"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "36"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "1019_mn_43x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "1018_mn"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "36"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "36"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "1018_mn_43x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "1024_mn"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "36"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "36"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "1024_mn_43x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "1035_mn"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "36"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "36"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "1035_mn_43x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "1030_mn"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "36"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "36"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "1030_mn_43x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "1033_mn"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "36"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "36"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "1033_mn_43x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "1049_mn"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "36"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "36"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "1049_mn_43x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "1045_mn"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "36"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "36"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "1045_mn_43x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "1060_mn"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "36"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "36"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "1060_mn_43x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "u18029_sd"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "36"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "36"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "u18029_sd_43x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "u540_st9"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "36"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "36"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "u540_st9_43x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "u502_st9"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "36"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "36"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "u502_st9_43x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "u599_st9"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "36"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "36"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "u599_st9_43x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "u19503_sd"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "36"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "36"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "u19503_sd_43x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "u19014_sd"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "36"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "36"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "u19014_sd_43x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "u604_st9"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "36"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "36"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "u604_st9_43x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "u665_st9"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "36"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "36"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "u665_st9_43x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "u16179_sd"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "36"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "36"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "u16179_sd_43x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "u17505_sd"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "36"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "36"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "u17505_sd_43x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "u325_st9"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "36"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "36"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "u325_st9_43x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "u16166_sd"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "36"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "36"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "u16166_sd_43x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "u125_st9"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "36"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "36"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "u125_st9_43x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "u12211_sd"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "36"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "36"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "u12211_sd_43x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "u16058_sd"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "36"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "36"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "u16058_sd_43x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "44375_dp"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "36"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "36"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "44375_dp_43x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "f637_st10"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "36"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "36"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "f637_st10_43x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "f244_st76"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "36"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "36"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "f244_st76_43x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "f800_st9"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "36"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "36"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "f800_st9_43x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "f235_st76"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "36"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "36"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "f235_st76_43x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "f685_st10"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "36"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "36"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "f685_st10_43x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "f422_st10"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "36"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "36"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "f422_st10_43x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "f416_st10"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "36"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "36"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "f416_st10_43x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "f424_st10"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "36"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "36"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "f424_st10_43x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "f528_st20"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "36"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "36"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "f528_st20_43x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "r30135_nw"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "36"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "36"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "r30135_nw_43x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "h1715_st12"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "36"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "36"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "h1715_st12_43x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "r20021_nw"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "36"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "36"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "r20021_nw_43x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "r37017_nw"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "36"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "36"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "r37017_nw_43x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "r20033_nw"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "36"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "36"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "r20033_nw_43x1.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "u12190_ir"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "36"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "36"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "u12190_ir_43x1.0"
+        }
+      ]
+    }
+  ]
+}

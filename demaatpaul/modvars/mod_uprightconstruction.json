@@ -1,0 +1,47 @@
+{
+  "variantId": "mod_UprightConstruction",
+  "shortName": "Construction",
+  "variantTypeId": "Text",
+  "description": "Construction of the upright",
+  "restrictionTypeId": "Internal",
+  "groupName": "Upright",
+  "imageId": "75f98a79-db32-4167-94a6-6c58e5592671:upright.jpg",
+  "isArray": false,
+  "isPosRelevant": true,
+  "mainAttr": false,
+  "userRight": "Advanced",
+  "implicitRelevant": false,
+  "posView": "Dropdown",
+  "matrix": [
+    {
+      "id": "IncludeFloorProfile",
+      "type": "Bool",
+      "shortName": "IncludeFloorProfile",
+      "default": true
+    }
+  ],
+  "selections": [
+    {
+      "value": "ToFloor",
+      "description": "End panel to the floor including plinth area height",
+      "shortName": "ToFloor",
+      "matrix": [
+        {
+          "id": "IncludeFloorProfile",
+          "value": false
+        }
+      ]
+    },
+    {
+      "value": "CarcaseHeight",
+      "description": "End panel in height of the carcase",
+      "shortName": "CarcaseHeight",
+      "matrix": [
+        {
+          "id": "IncludeFloorProfile",
+          "value": false
+        }
+      ]
+    }
+  ]
+}

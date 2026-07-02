@@ -1,0 +1,55 @@
+{
+  "partCode": "part_ShelfadjGlass",
+  "shortName": "Glass shelf",
+  "description": "Adjustable shelf in glass",
+  "wdt": "XZY",
+  "groupName": "Panels",
+  "imageId": "27b2c26e-0cd5-416b-9081-95cdda77e031:Shelf.png",
+  "invisible": false,
+  "restrictionTypeId": "Public",
+  "noNcData": false,
+  "partVariants": [
+    {
+      "partVarId": "pa_BtmColor",
+      "valueScript": "this.parent.mod_ShelfadjColor",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_TopColor",
+      "valueScript": "this.parent.mod_ShelfadjColor",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_ColorGrainGroup",
+      "valueScript": "this.parent.mod_ShelfadjColor_matrix.GrainGroupId",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_GrainLogic",
+      "valueScript": "this.parent.mod_GrainLogic",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_Program",
+      "valueScript": "this.parent.mod_CarcaseProgram",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_ProgramGrainGroup",
+      "valueScript": "this.parent.mod_CarcaseProgram_matrix.GrainGroupId",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_AdditionalInfo1",
+      "valueScript": "'None'",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_BomId",
+      "valueScript": "this.parent.mod_CarcaseId",
+      "isWritable": false
+    }
+  ],
+  "bomData": [],
+  "ncData": []
+}

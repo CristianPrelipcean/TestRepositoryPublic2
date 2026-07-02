@@ -1,0 +1,104 @@
+{
+  "variantId": "mod_PaneltopProgram",
+  "shortName": "Program",
+  "variantTypeId": "Text",
+  "description": "Program of the panel top",
+  "restrictionTypeId": "Public",
+  "groupName": "Paneltop",
+  "imageId": "25603d27-f5fb-4f13-bea6-dfe2bd243b6b:Paneltop.jpg",
+  "isArray": false,
+  "isPosRelevant": true,
+  "mainAttr": true,
+  "userRight": "Simple",
+  "implicitRelevant": true,
+  "posView": "Dropdown",
+  "sorting": 1,
+  "matrix": [
+    {
+      "id": "GrainGroupId",
+      "type": "Text",
+      "default": "Neutral"
+    }
+  ],
+  "selections": [
+    {
+      "value": "Basic",
+      "description": "Basic colors",
+      "shortName": "Basic",
+      "matrix": [
+        {
+          "id": "GrainGroupId",
+          "value": "Neutral"
+        }
+      ]
+    },
+    {
+      "value": "Cube",
+      "description": "Thickness 38",
+      "shortName": "Cube",
+      "imageId": "6efd0c07-fea5-4c08-9263-3ae3aa1bf549:Cube.jpg",
+      "matrix": [
+        {
+          "id": "GrainGroupId",
+          "value": "Neutral"
+        }
+      ]
+    },
+    {
+      "value": "MatteNatur",
+      "description": "Matte fiinished colors",
+      "shortName": "Matte Natur",
+      "matrix": [
+        {
+          "id": "GrainGroupId",
+          "value": "Neutral"
+        }
+      ]
+    },
+    {
+      "value": "SpecialDecor",
+      "description": "Special Decor",
+      "shortName": "Special Decor",
+      "matrix": [
+        {
+          "id": "GrainGroupId",
+          "value": "Vertical"
+        }
+      ]
+    },
+    {
+      "value": "Style",
+      "description": "Thickness 25",
+      "shortName": "Style",
+      "imageId": "f1d4c4de-70ed-40be-95a9-86d65cf0fd7d:Style.jpg",
+      "matrix": [
+        {
+          "id": "GrainGroupId",
+          "value": "Horizontal"
+        }
+      ]
+    },
+    {
+      "value": "UniColor",
+      "description": "Uni colors",
+      "shortName": "Uni Color",
+      "matrix": [
+        {
+          "id": "GrainGroupId",
+          "value": "Neutral"
+        }
+      ]
+    },
+    {
+      "value": "WoodDecor",
+      "description": "Wood Decor",
+      "shortName": "Wood Decor",
+      "matrix": [
+        {
+          "id": "GrainGroupId",
+          "value": "Vertical"
+        }
+      ]
+    }
+  ]
+}

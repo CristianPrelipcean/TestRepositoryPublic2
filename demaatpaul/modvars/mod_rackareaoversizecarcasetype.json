@@ -1,0 +1,40 @@
+{
+  "variantId": "mod_RackAreaOversizeCarcaseType",
+  "shortName": "Rack area oversize type",
+  "variantTypeId": "Text",
+  "description": "Oversize type for the carcase depth for the front module RackArea",
+  "restrictionTypeId": "Internal",
+  "groupName": "Front | Oversize",
+  "imageId": "",
+  "assignedGlobalVarId": "basic_RackAreaOversizeCarcaseType",
+  "isArray": false,
+  "isPosRelevant": true,
+  "mainAttr": false,
+  "userRight": "Master",
+  "implicitRelevant": false,
+  "posView": "Dropdown",
+  "matrix": [],
+  "selections": [
+    {
+      "value": "NoOversize",
+      "description": "No oversize for carcase depth",
+      "shortName": "NoOversize",
+      "imageId": "0e494d68-1eb1-4c67-a9ea-2971e1abafc6:NoOversize.jpg",
+      "matrix": []
+    },
+    {
+      "value": "FixedOversize",
+      "description": "Oversize fixed value for carcase depth",
+      "shortName": "FixedOversize",
+      "imageId": "82f83be1-ccf9-4083-b4c7-b2abc147d421:FixedOversize.jpg",
+      "matrix": []
+    },
+    {
+      "value": "FlexibleOversize",
+      "description": "Oversize based on front thickness",
+      "shortName": "FlexibleOversize",
+      "imageId": "462906ca-d73f-486b-b00a-a26b3886b37c:FlexibleOversize.jpg",
+      "matrix": []
+    }
+  ]
+}

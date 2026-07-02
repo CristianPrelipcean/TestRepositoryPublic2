@@ -1,0 +1,373 @@
+{
+  "variantId": "mod_HandleDesign",
+  "shortName": "Handle design",
+  "variantTypeId": "Text",
+  "description": "Design of a handle",
+  "restrictionTypeId": "Public",
+  "groupName": "FrontOpening | Handle",
+  "imageId": "6b510bd7-7f1a-4c38-b94e-2706d649625c:e97287ce-f993-4694-8634-66b4478faf45_handleprogram.jpg",
+  "isArray": false,
+  "isPosRelevant": true,
+  "mainAttr": true,
+  "userRight": "Simple",
+  "implicitRelevant": true,
+  "posView": "Dropdown",
+  "sorting": 21,
+  "matrix": [
+    {
+      "id": "HandleDesignGroup",
+      "type": "Text"
+    },
+    {
+      "id": "HandleType",
+      "type": "Text"
+    },
+    {
+      "id": "HandleLength",
+      "type": "Text"
+    },
+    {
+      "id": "HandleColor",
+      "type": "Text"
+    },
+    {
+      "id": "HandlePosTypeRelevant",
+      "type": "Bool",
+      "default": false
+    },
+    {
+      "id": "Cutable",
+      "type": "Bool"
+    },
+    {
+      "id": "FrontDimRelevant",
+      "type": "Bool",
+      "default": false
+    },
+    {
+      "id": "FillerRelevant",
+      "type": "Bool",
+      "default": false
+    }
+  ],
+  "selections": [
+    {
+      "value": "10",
+      "description": "No handle",
+      "shortName": "No handle",
+      "matrix": [
+        {
+          "id": "HandleDesignGroup",
+          "value": "None"
+        },
+        {
+          "id": "HandleType",
+          "value": "None"
+        },
+        {
+          "id": "HandleLength",
+          "value": "Fixed"
+        },
+        {
+          "id": "HandleColor",
+          "value": "Attribute"
+        },
+        {
+          "id": "HandlePosTypeRelevant",
+          "value": false
+        },
+        {
+          "id": "Cutable",
+          "value": false
+        },
+        {
+          "id": "FrontDimRelevant",
+          "value": false
+        },
+        {
+          "id": "FillerRelevant",
+          "value": false
+        }
+      ]
+    },
+    {
+      "value": "ElanHandle",
+      "description": "Elan Handle",
+      "shortName": "Elan Handle",
+      "imageId": "a054faa3-94af-4fbf-9b94-8da3201d53e6:W7988 Elan.jpg",
+      "matrix": [
+        {
+          "id": "HandleDesignGroup",
+          "value": "HandleGroup1"
+        },
+        {
+          "id": "HandleType",
+          "value": "Handle"
+        },
+        {
+          "id": "HandleLength",
+          "value": "Attribute"
+        },
+        {
+          "id": "HandleColor",
+          "value": "Attribute"
+        },
+        {
+          "id": "HandlePosTypeRelevant",
+          "value": false
+        },
+        {
+          "id": "Cutable",
+          "value": false
+        },
+        {
+          "id": "FrontDimRelevant",
+          "value": false
+        },
+        {
+          "id": "FillerRelevant",
+          "value": false
+        }
+      ]
+    },
+    {
+      "value": "FaccioHandle",
+      "description": "Faccio Handle",
+      "shortName": "Faccio Handle",
+      "imageId": "a74465de-6e00-48aa-8024-14297b9270f9:Faccio W7985 (1).jpg",
+      "matrix": [
+        {
+          "id": "HandleDesignGroup",
+          "value": "HandleGroup1"
+        },
+        {
+          "id": "HandleType",
+          "value": "Handle"
+        },
+        {
+          "id": "HandleLength",
+          "value": "Attribute"
+        },
+        {
+          "id": "HandleColor",
+          "value": "Attribute"
+        },
+        {
+          "id": "HandlePosTypeRelevant",
+          "value": false
+        },
+        {
+          "id": "Cutable",
+          "value": false
+        },
+        {
+          "id": "FrontDimRelevant",
+          "value": false
+        },
+        {
+          "id": "FillerRelevant",
+          "value": false
+        }
+      ]
+    },
+    {
+      "value": "NormaHandle",
+      "description": "Norma Handle",
+      "shortName": "Norma Handle",
+      "imageId": "47ab5e66-18b6-47dd-b7ce-a36172160962:Norma I0331.png",
+      "matrix": [
+        {
+          "id": "HandleDesignGroup",
+          "value": "HandleGroup1"
+        },
+        {
+          "id": "HandleType",
+          "value": "Handle"
+        },
+        {
+          "id": "HandleLength",
+          "value": "Attribute"
+        },
+        {
+          "id": "HandleColor",
+          "value": "Attribute"
+        },
+        {
+          "id": "HandlePosTypeRelevant",
+          "value": false
+        },
+        {
+          "id": "Cutable",
+          "value": false
+        },
+        {
+          "id": "FrontDimRelevant",
+          "value": false
+        },
+        {
+          "id": "FillerRelevant",
+          "value": false
+        }
+      ]
+    },
+    {
+      "value": "PintaHandle",
+      "description": "Pinta Handle",
+      "shortName": "Pinta Handle",
+      "imageId": "e991e8f7-0090-4636-8ce4-ab4ed2889e50:Pinta M7924.jpg",
+      "matrix": [
+        {
+          "id": "HandleDesignGroup",
+          "value": "HandleGroup1"
+        },
+        {
+          "id": "HandleType",
+          "value": "Handle"
+        },
+        {
+          "id": "HandleLength",
+          "value": "Attribute"
+        },
+        {
+          "id": "HandleColor",
+          "value": "Attribute"
+        },
+        {
+          "id": "HandlePosTypeRelevant",
+          "value": false
+        },
+        {
+          "id": "Cutable",
+          "value": false
+        },
+        {
+          "id": "FrontDimRelevant",
+          "value": false
+        },
+        {
+          "id": "FillerRelevant",
+          "value": false
+        }
+      ]
+    },
+    {
+      "value": "PushToOpen",
+      "description": "No handle",
+      "shortName": "No handle",
+      "matrix": [
+        {
+          "id": "HandleDesignGroup",
+          "value": "None"
+        },
+        {
+          "id": "HandleType",
+          "value": "None"
+        },
+        {
+          "id": "HandleLength",
+          "value": "Fixed"
+        },
+        {
+          "id": "HandleColor",
+          "value": "Attribute"
+        },
+        {
+          "id": "HandlePosTypeRelevant",
+          "value": false
+        },
+        {
+          "id": "Cutable",
+          "value": false
+        },
+        {
+          "id": "FrontDimRelevant",
+          "value": false
+        },
+        {
+          "id": "FillerRelevant",
+          "value": false
+        }
+      ]
+    },
+    {
+      "value": "StraightHandle",
+      "description": "Straight Handle",
+      "shortName": "Straight Handle",
+      "imageId": "7e87e3a2-0dcd-4a9b-ad8a-88ce69a32430:Z0056 Rechte greep.jpg",
+      "matrix": [
+        {
+          "id": "HandleDesignGroup",
+          "value": "HandleGroup1"
+        },
+        {
+          "id": "HandleType",
+          "value": "Handle"
+        },
+        {
+          "id": "HandleLength",
+          "value": "Attribute"
+        },
+        {
+          "id": "HandleColor",
+          "value": "Attribute"
+        },
+        {
+          "id": "HandlePosTypeRelevant",
+          "value": false
+        },
+        {
+          "id": "Cutable",
+          "value": false
+        },
+        {
+          "id": "FrontDimRelevant",
+          "value": false
+        },
+        {
+          "id": "FillerRelevant",
+          "value": false
+        }
+      ]
+    },
+    {
+      "value": "VedoHandle",
+      "description": "Vedo Handle",
+      "shortName": "Vedo Handle",
+      "imageId": "5af3d998-7b3f-4521-8d8a-ee5db5941c36:Z7904 Vedo.jpg",
+      "matrix": [
+        {
+          "id": "HandleDesignGroup",
+          "value": "HandleGroup1"
+        },
+        {
+          "id": "HandleType",
+          "value": "Handle"
+        },
+        {
+          "id": "HandleLength",
+          "value": "Attribute"
+        },
+        {
+          "id": "HandleColor",
+          "value": "Attribute"
+        },
+        {
+          "id": "HandlePosTypeRelevant",
+          "value": false
+        },
+        {
+          "id": "Cutable",
+          "value": false
+        },
+        {
+          "id": "FrontDimRelevant",
+          "value": false
+        },
+        {
+          "id": "FillerRelevant",
+          "value": false
+        }
+      ]
+    }
+  ]
+}

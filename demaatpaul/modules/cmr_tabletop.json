@@ -1,0 +1,95 @@
+{
+  "moduleId": "cmr_TableTop",
+  "shortName": "Table Top",
+  "configurable": true,
+  "isRoot": true,
+  "description": "Table Top (Module adopted from a previous library version)",
+  "groupName": "Root",
+  "imageId": "fa4dfb28-150b-4103-b4fb-28e585a7d268:Paneltop.jpg",
+  "restrictionTypeId": "Custom",
+  "childModules": [
+    {
+      "moduleId": "mc_Paneltop01"
+    }
+  ],
+  "assignedVariants": [
+    {
+      "variantId": "cmod_ForceHeightPosition",
+      "default": "false",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_Depth",
+      "default": "600",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_HeightPosInsertion",
+      "default": "0",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_ModuleName",
+      "default": "cmr_TableTop",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_PaneltopColor",
+      "default": "1030_mn",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_PaneltopConstruction",
+      "default": "Construction1",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_PaneltopEdgeBackColor",
+      "defaultScript": "this.mod_PaneltopColor",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_PaneltopEdgeFrontColor",
+      "defaultScript": "this.mod_PaneltopColor",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_PaneltopEdgeLeftColor",
+      "defaultScript": "this.mod_PaneltopColor",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_PaneltopEdgeRightColor",
+      "defaultScript": "this.mod_PaneltopColor",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_PaneltopProgram",
+      "default": "MatteNatur",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_PaneltopThk",
+      "default": "36",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_ParentName",
+      "default": "cmr_TableTop",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_TypeElement",
+      "default": "BaseUnit",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_Width",
+      "default": "2000",
+      "origin": "Default"
+    }
+  ],
+  "assignedParts": [],
+  "assignedCustomTables": [],
+  "assignedFunctions": []
+}

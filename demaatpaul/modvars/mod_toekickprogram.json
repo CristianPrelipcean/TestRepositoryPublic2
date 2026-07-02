@@ -1,0 +1,80 @@
+{
+  "variantId": "mod_ToekickProgram",
+  "shortName": "Toekick program",
+  "variantTypeId": "Text",
+  "description": "Program of the toekick",
+  "restrictionTypeId": "Public",
+  "groupName": "Toekick",
+  "imageId": "638c1e5f-abb4-402e-a9f3-febdde03f242:Toekick.png",
+  "isArray": false,
+  "isPosRelevant": true,
+  "mainAttr": true,
+  "userRight": "Simple",
+  "implicitRelevant": true,
+  "posView": "Dropdown",
+  "matrix": [
+    {
+      "id": "GrainGroupId",
+      "type": "Text",
+      "shortName": "Grain Group Id",
+      "default": "Neutral"
+    }
+  ],
+  "selections": [
+    {
+      "value": "Basic",
+      "description": "Basic colors",
+      "shortName": "Basic",
+      "matrix": [
+        {
+          "id": "GrainGroupId",
+          "value": "Neutral"
+        }
+      ]
+    },
+    {
+      "value": "MatteNatur",
+      "description": "Matte fiinished colors",
+      "shortName": "Matte Natur",
+      "matrix": [
+        {
+          "id": "GrainGroupId",
+          "value": "Neutral"
+        }
+      ]
+    },
+    {
+      "value": "SpecialDecor",
+      "description": "Special Decor",
+      "shortName": "Special Decor",
+      "matrix": [
+        {
+          "id": "GrainGroupId",
+          "value": "Vertical"
+        }
+      ]
+    },
+    {
+      "value": "UniColor",
+      "description": "Uni colors",
+      "shortName": "Uni Color",
+      "matrix": [
+        {
+          "id": "GrainGroupId",
+          "value": "Neutral"
+        }
+      ]
+    },
+    {
+      "value": "WoodDecor",
+      "description": "Wood Decor",
+      "shortName": "Wood Decor",
+      "matrix": [
+        {
+          "id": "GrainGroupId",
+          "value": "Vertical"
+        }
+      ]
+    }
+  ]
+}

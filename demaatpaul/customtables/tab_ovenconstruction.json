@@ -1,0 +1,374 @@
+{
+  "tableName": "tab_OvenConstruction",
+  "description": "Table for the construction of the oven",
+  "restrictionTypeId": "Public",
+  "isInputUnique": true,
+  "groupName": "Appliance",
+  "columns": [
+    {
+      "name": "_id",
+      "type": "Integer",
+      "allowNull": false
+    },
+    {
+      "name": "in_ConstructionId",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "SpaceWdtMin",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "SpaceHgtMin",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "SpaceDptMin",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "LowerGapMin",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "UpperGapMin",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "FrontDistanceHgt",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "OverhangBotMax",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "OverhangTopMax",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "ShelftopStacking",
+      "type": "Bool",
+      "allowNull": true
+    }
+  ],
+  "rows": [
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionId",
+          "value": "BI510CNR0"
+        },
+        {
+          "columnName": "SpaceWdtMin",
+          "value": "562"
+        },
+        {
+          "columnName": "SpaceHgtMin",
+          "value": "140"
+        },
+        {
+          "columnName": "SpaceDptMin",
+          "value": "500"
+        },
+        {
+          "columnName": "LowerGapMin",
+          "value": "0"
+        },
+        {
+          "columnName": "UpperGapMin",
+          "value": "0"
+        },
+        {
+          "columnName": "FrontDistanceHgt",
+          "value": "140"
+        },
+        {
+          "columnName": "OverhangBotMax",
+          "value": "0"
+        },
+        {
+          "columnName": "OverhangTopMax",
+          "value": "0"
+        },
+        {
+          "columnName": "ShelftopStacking",
+          "value": "false"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionId",
+          "value": "CM776GKB1"
+        },
+        {
+          "columnName": "SpaceWdtMin",
+          "value": "562"
+        },
+        {
+          "columnName": "SpaceHgtMin",
+          "value": "442"
+        },
+        {
+          "columnName": "SpaceDptMin",
+          "value": "550"
+        },
+        {
+          "columnName": "LowerGapMin",
+          "value": "0"
+        },
+        {
+          "columnName": "UpperGapMin",
+          "value": "4"
+        },
+        {
+          "columnName": "FrontDistanceHgt",
+          "value": "455"
+        },
+        {
+          "columnName": "OverhangBotMax",
+          "value": "0"
+        },
+        {
+          "columnName": "OverhangTopMax",
+          "value": "13"
+        },
+        {
+          "columnName": "ShelftopStacking",
+          "value": "true"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionId",
+          "value": "BE732R1B1"
+        },
+        {
+          "columnName": "SpaceWdtMin",
+          "value": "600"
+        },
+        {
+          "columnName": "SpaceHgtMin",
+          "value": "362"
+        },
+        {
+          "columnName": "SpaceDptMin",
+          "value": "300"
+        },
+        {
+          "columnName": "LowerGapMin",
+          "value": "4"
+        },
+        {
+          "columnName": "UpperGapMin",
+          "value": "4"
+        },
+        {
+          "columnName": "FrontDistanceHgt",
+          "value": "382"
+        },
+        {
+          "columnName": "OverhangBotMax",
+          "value": "14"
+        },
+        {
+          "columnName": "OverhangTopMax",
+          "value": "6"
+        },
+        {
+          "columnName": "ShelftopStacking",
+          "value": "true"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionId",
+          "value": "CS736G1B1"
+        },
+        {
+          "columnName": "SpaceWdtMin",
+          "value": "562"
+        },
+        {
+          "columnName": "SpaceHgtMin",
+          "value": "442"
+        },
+        {
+          "columnName": "SpaceDptMin",
+          "value": "550"
+        },
+        {
+          "columnName": "LowerGapMin",
+          "value": "0"
+        },
+        {
+          "columnName": "UpperGapMin",
+          "value": "4"
+        },
+        {
+          "columnName": "FrontDistanceHgt",
+          "value": "455"
+        },
+        {
+          "columnName": "OverhangBotMax",
+          "value": "0"
+        },
+        {
+          "columnName": "OverhangTopMax",
+          "value": "13"
+        },
+        {
+          "columnName": "ShelftopStacking",
+          "value": "true"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionId",
+          "value": "HB774G1B1"
+        },
+        {
+          "columnName": "SpaceWdtMin",
+          "value": "562"
+        },
+        {
+          "columnName": "SpaceHgtMin",
+          "value": "577"
+        },
+        {
+          "columnName": "SpaceDptMin",
+          "value": "550"
+        },
+        {
+          "columnName": "LowerGapMin",
+          "value": "0"
+        },
+        {
+          "columnName": "UpperGapMin",
+          "value": "4"
+        },
+        {
+          "columnName": "FrontDistanceHgt",
+          "value": "595"
+        },
+        {
+          "columnName": "OverhangBotMax",
+          "value": "0"
+        },
+        {
+          "columnName": "OverhangTopMax",
+          "value": "18"
+        },
+        {
+          "columnName": "ShelftopStacking",
+          "value": "true"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionId",
+          "value": "HE510ABS2"
+        },
+        {
+          "columnName": "SpaceWdtMin",
+          "value": "562"
+        },
+        {
+          "columnName": "SpaceHgtMin",
+          "value": "600"
+        },
+        {
+          "columnName": "SpaceDptMin",
+          "value": "550"
+        },
+        {
+          "columnName": "LowerGapMin",
+          "value": "0"
+        },
+        {
+          "columnName": "UpperGapMin",
+          "value": "4"
+        },
+        {
+          "columnName": "FrontDistanceHgt",
+          "value": "595"
+        },
+        {
+          "columnName": "OverhangBotMax",
+          "value": "0"
+        },
+        {
+          "columnName": "OverhangTopMax",
+          "value": "25"
+        },
+        {
+          "columnName": "ShelftopStacking",
+          "value": "true"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionId",
+          "value": "OvenDefault"
+        },
+        {
+          "columnName": "SpaceWdtMin",
+          "value": "562"
+        },
+        {
+          "columnName": "SpaceHgtMin",
+          "value": "577"
+        },
+        {
+          "columnName": "SpaceDptMin",
+          "value": "550"
+        },
+        {
+          "columnName": "LowerGapMin",
+          "value": "0"
+        },
+        {
+          "columnName": "UpperGapMin",
+          "value": "4"
+        },
+        {
+          "columnName": "FrontDistanceHgt",
+          "value": "595"
+        },
+        {
+          "columnName": "OverhangBotMax",
+          "value": "0"
+        },
+        {
+          "columnName": "OverhangTopMax",
+          "value": "5"
+        },
+        {
+          "columnName": "ShelftopStacking",
+          "value": "true"
+        }
+      ]
+    }
+  ]
+}

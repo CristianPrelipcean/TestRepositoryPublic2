@@ -1,0 +1,500 @@
+{
+  "tableName": "tab_SinkConstruction",
+  "description": "Sink data and cut out dimensions",
+  "restrictionTypeId": "Public",
+  "groupName": "Appliance",
+  "columns": [
+    {
+      "name": "_id",
+      "type": "Integer",
+      "allowNull": false
+    },
+    {
+      "name": "in_ConstructionId",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "CutWidth",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "CutDepth",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "CutRadius",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "BlockWdt",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "OffsetBlock",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "PosTabWdt",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "PosTabDpt",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "PosTabHgt",
+      "type": "Dim",
+      "allowNull": false
+    }
+  ],
+  "rows": [
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionId",
+          "value": "Axis_R"
+        },
+        {
+          "columnName": "CutWidth",
+          "value": "980"
+        },
+        {
+          "columnName": "CutDepth",
+          "value": "490"
+        },
+        {
+          "columnName": "CutRadius",
+          "value": "15"
+        },
+        {
+          "columnName": "BlockWdt",
+          "value": "548.5"
+        },
+        {
+          "columnName": "OffsetBlock",
+          "value": "-205.75"
+        },
+        {
+          "columnName": "PosTabWdt",
+          "value": "325"
+        },
+        {
+          "columnName": "PosTabDpt",
+          "value": "-440"
+        },
+        {
+          "columnName": "PosTabHgt",
+          "value": "5"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionId",
+          "value": "Axis_L"
+        },
+        {
+          "columnName": "CutWidth",
+          "value": "980"
+        },
+        {
+          "columnName": "CutDepth",
+          "value": "490"
+        },
+        {
+          "columnName": "CutRadius",
+          "value": "15"
+        },
+        {
+          "columnName": "BlockWdt",
+          "value": "548.5"
+        },
+        {
+          "columnName": "OffsetBlock",
+          "value": "205.75"
+        },
+        {
+          "columnName": "PosTabWdt",
+          "value": "-305"
+        },
+        {
+          "columnName": "PosTabDpt",
+          "value": "-440"
+        },
+        {
+          "columnName": "PosTabHgt",
+          "value": "5"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionId",
+          "value": "Axia_White_R"
+        },
+        {
+          "columnName": "CutWidth",
+          "value": "980"
+        },
+        {
+          "columnName": "CutDepth",
+          "value": "490"
+        },
+        {
+          "columnName": "CutRadius",
+          "value": "15"
+        },
+        {
+          "columnName": "BlockWdt",
+          "value": "548.5"
+        },
+        {
+          "columnName": "OffsetBlock",
+          "value": "-205.75"
+        },
+        {
+          "columnName": "PosTabWdt",
+          "value": "325"
+        },
+        {
+          "columnName": "PosTabDpt",
+          "value": "-420"
+        },
+        {
+          "columnName": "PosTabHgt",
+          "value": "5"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionId",
+          "value": "Axia_White_L"
+        },
+        {
+          "columnName": "CutWidth",
+          "value": "980"
+        },
+        {
+          "columnName": "CutDepth",
+          "value": "490"
+        },
+        {
+          "columnName": "CutRadius",
+          "value": "15"
+        },
+        {
+          "columnName": "BlockWdt",
+          "value": "548.5"
+        },
+        {
+          "columnName": "OffsetBlock",
+          "value": "205.75"
+        },
+        {
+          "columnName": "PosTabWdt",
+          "value": "-325"
+        },
+        {
+          "columnName": "PosTabDpt",
+          "value": "-420"
+        },
+        {
+          "columnName": "PosTabHgt",
+          "value": "5"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionId",
+          "value": "Axia_Grey_R"
+        },
+        {
+          "columnName": "CutWidth",
+          "value": "980"
+        },
+        {
+          "columnName": "CutDepth",
+          "value": "490"
+        },
+        {
+          "columnName": "CutRadius",
+          "value": "15"
+        },
+        {
+          "columnName": "BlockWdt",
+          "value": "548.5"
+        },
+        {
+          "columnName": "OffsetBlock",
+          "value": "-205.75"
+        },
+        {
+          "columnName": "PosTabWdt",
+          "value": "325"
+        },
+        {
+          "columnName": "PosTabDpt",
+          "value": "-420"
+        },
+        {
+          "columnName": "PosTabHgt",
+          "value": "5"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionId",
+          "value": "Axia_Grey_L"
+        },
+        {
+          "columnName": "CutWidth",
+          "value": "980"
+        },
+        {
+          "columnName": "CutDepth",
+          "value": "490"
+        },
+        {
+          "columnName": "CutRadius",
+          "value": "15"
+        },
+        {
+          "columnName": "BlockWdt",
+          "value": "548.5"
+        },
+        {
+          "columnName": "OffsetBlock",
+          "value": "205.75"
+        },
+        {
+          "columnName": "PosTabWdt",
+          "value": "-325"
+        },
+        {
+          "columnName": "PosTabDpt",
+          "value": "-420"
+        },
+        {
+          "columnName": "PosTabHgt",
+          "value": "5"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionId",
+          "value": "Axia_Anthrazit_R"
+        },
+        {
+          "columnName": "CutWidth",
+          "value": "980"
+        },
+        {
+          "columnName": "CutDepth",
+          "value": "490"
+        },
+        {
+          "columnName": "CutRadius",
+          "value": "15"
+        },
+        {
+          "columnName": "BlockWdt",
+          "value": "548.5"
+        },
+        {
+          "columnName": "OffsetBlock",
+          "value": "-205.75"
+        },
+        {
+          "columnName": "PosTabWdt",
+          "value": "325"
+        },
+        {
+          "columnName": "PosTabDpt",
+          "value": "-420"
+        },
+        {
+          "columnName": "PosTabHgt",
+          "value": "5"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionId",
+          "value": "Axia_Anthrazit_L"
+        },
+        {
+          "columnName": "CutWidth",
+          "value": "980"
+        },
+        {
+          "columnName": "CutDepth",
+          "value": "490"
+        },
+        {
+          "columnName": "CutRadius",
+          "value": "15"
+        },
+        {
+          "columnName": "BlockWdt",
+          "value": "548.5"
+        },
+        {
+          "columnName": "OffsetBlock",
+          "value": "205.75"
+        },
+        {
+          "columnName": "PosTabWdt",
+          "value": "-325"
+        },
+        {
+          "columnName": "PosTabDpt",
+          "value": "-420"
+        },
+        {
+          "columnName": "PosTabHgt",
+          "value": "5"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionId",
+          "value": "SinkDefault"
+        },
+        {
+          "columnName": "CutWidth",
+          "value": "980"
+        },
+        {
+          "columnName": "CutDepth",
+          "value": "490"
+        },
+        {
+          "columnName": "CutRadius",
+          "value": "15"
+        },
+        {
+          "columnName": "BlockWdt",
+          "value": "548.5"
+        },
+        {
+          "columnName": "OffsetBlock",
+          "value": "205.75"
+        },
+        {
+          "columnName": "PosTabWdt",
+          "value": "-305"
+        },
+        {
+          "columnName": "PosTabDpt",
+          "value": "-440"
+        },
+        {
+          "columnName": "PosTabHgt",
+          "value": "5"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionId",
+          "value": "Dinas_L"
+        },
+        {
+          "columnName": "CutWidth",
+          "value": "840"
+        },
+        {
+          "columnName": "CutDepth",
+          "value": "480"
+        },
+        {
+          "columnName": "CutRadius",
+          "value": "15"
+        },
+        {
+          "columnName": "BlockWdt",
+          "value": "340"
+        },
+        {
+          "columnName": "OffsetBlock",
+          "value": "210"
+        },
+        {
+          "columnName": "PosTabWdt",
+          "value": "-10"
+        },
+        {
+          "columnName": "PosTabDpt",
+          "value": "-410"
+        },
+        {
+          "columnName": "PosTabHgt",
+          "value": "5"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionId",
+          "value": "Dinas_R"
+        },
+        {
+          "columnName": "CutWidth",
+          "value": "840"
+        },
+        {
+          "columnName": "CutDepth",
+          "value": "480"
+        },
+        {
+          "columnName": "CutRadius",
+          "value": "15"
+        },
+        {
+          "columnName": "BlockWdt",
+          "value": "340"
+        },
+        {
+          "columnName": "OffsetBlock",
+          "value": "-210"
+        },
+        {
+          "columnName": "PosTabWdt",
+          "value": "10"
+        },
+        {
+          "columnName": "PosTabDpt",
+          "value": "-410"
+        },
+        {
+          "columnName": "PosTabHgt",
+          "value": "5"
+        }
+      ]
+    }
+  ]
+}

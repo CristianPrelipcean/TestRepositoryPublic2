@@ -1,0 +1,58 @@
+{
+  "variantId": "mod_CoatBoardProgram",
+  "shortName": "Coat board program",
+  "variantTypeId": "Text",
+  "description": "Program of the coat board",
+  "restrictionTypeId": "Public",
+  "groupName": "CoatBoard",
+  "isArray": false,
+  "isPosRelevant": true,
+  "userRight": "Master",
+  "implicitRelevant": false,
+  "posView": "Dropdown",
+  "matrix": [
+    {
+      "id": "GrainGroupId",
+      "type": "Text",
+      "default": "Neutral"
+    }
+  ],
+  "selections": [
+    {
+      "value": "Classic",
+      "description": "Classic carcase in single colors",
+      "shortName": "Classic",
+      "imageId": "96e001c3-0c6a-4e02-b557-57b49fb202e5:Classic.jpg",
+      "matrix": [
+        {
+          "id": "GrainGroupId",
+          "value": "Neutral"
+        }
+      ]
+    },
+    {
+      "value": "ModernNature",
+      "description": "Carcase in wooden colors horizontal",
+      "shortName": "ModernNature",
+      "imageId": "9c9c7076-dea6-490d-853f-2a9ffc186c6e:ModernNature.jpg",
+      "matrix": [
+        {
+          "id": "GrainGroupId",
+          "value": "Horizontal"
+        }
+      ]
+    },
+    {
+      "value": "Nature",
+      "description": "Carcase in wooden colors vertical",
+      "shortName": "Nature",
+      "imageId": "deb3fb4f-456c-42a1-9f44-2dc49f4b46d7:Nature.jpg",
+      "matrix": [
+        {
+          "id": "GrainGroupId",
+          "value": "Vertical"
+        }
+      ]
+    }
+  ]
+}

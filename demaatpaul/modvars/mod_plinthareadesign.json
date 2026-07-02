@@ -1,0 +1,95 @@
+{
+  "variantId": "mod_PlinthAreaDesign",
+  "shortName": "Design",
+  "variantTypeId": "Text",
+  "description": "Plinth area design",
+  "restrictionTypeId": "Public",
+  "groupName": "PlinthArea",
+  "imageId": "0c551b4a-1357-45ec-b585-73be4e6a2bb5:PlinthArea.png",
+  "assignedGlobalVarId": "basic_PlinthAreaDesign",
+  "isArray": false,
+  "isPosRelevant": true,
+  "mainAttr": false,
+  "userRight": "Advanced",
+  "implicitRelevant": false,
+  "posView": "Dropdown",
+  "matrix": [
+    {
+      "id": "PlinthAreaElementColor",
+      "type": "Text",
+      "default": "Fixed"
+    },
+    {
+      "id": "PlinthAreaType",
+      "type": "Text",
+      "default": "Leg"
+    },
+    {
+      "id": "PlinthAreaExtraItem",
+      "type": "Text",
+      "default": "None"
+    }
+  ],
+  "selections": [
+    {
+      "value": "10",
+      "description": "No plinth area",
+      "shortName": "No plinth area",
+      "imageId": "fc26dcaf-7a3a-4f7b-8207-c3352daa54cd:None.png",
+      "matrix": [
+        {
+          "id": "PlinthAreaElementColor",
+          "value": "Fixed"
+        },
+        {
+          "id": "PlinthAreaType",
+          "value": "None"
+        },
+        {
+          "id": "PlinthAreaExtraItem",
+          "value": "None"
+        }
+      ]
+    },
+    {
+      "value": "AdjustableLeg",
+      "description": "Adjustable Leg",
+      "shortName": "Adjustable Leg",
+      "imageId": "ec985c1b-d6c6-408b-af92-26235c541cfc:Leg.jpg",
+      "matrix": [
+        {
+          "id": "PlinthAreaElementColor",
+          "value": "Fixed"
+        },
+        {
+          "id": "PlinthAreaType",
+          "value": "Leg"
+        },
+        {
+          "id": "PlinthAreaExtraItem",
+          "value": "None"
+        }
+      ]
+    },
+    {
+      "value": "BaseboardWithAdjustableLegs",
+      "description": "Baseboard with adjustable legs",
+      "shortName": "Baseboard with adjustable legs",
+      "imageId": "808a10a5-4b78-4ea9-853d-f151057416ff:PlinthAreaFront.jpg",
+      "matrix": [
+        {
+          "id": "PlinthAreaElementColor",
+          "value": "Fixed"
+        },
+        {
+          "id": "PlinthAreaType",
+          "value": "Baseboard+Legs"
+        },
+        {
+          "id": "PlinthAreaExtraItem",
+          "value": "None"
+        }
+      ]
+    }
+  ]
+}

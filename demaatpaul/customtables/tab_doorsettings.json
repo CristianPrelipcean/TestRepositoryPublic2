@@ -1,0 +1,538 @@
+{
+  "tableName": "tab_DoorSettings",
+  "description": "Door setting",
+  "restrictionTypeId": "Public",
+  "groupName": "FrontConstruction",
+  "columns": [
+    {
+      "name": "_id",
+      "type": "Integer",
+      "allowNull": false
+    },
+    {
+      "name": "in_CabinetType",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_TypeElement",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_CarcaseDirection",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_FrontDesign",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_FrontColor",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_WidthMin",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "in_WidthMax",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "in_DoorType",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_DoorDirection",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_VertDivider",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "DoorQty",
+      "type": "Integer",
+      "allowNull": false
+    },
+    {
+      "name": "FirstDoorDirection",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "SecondDoorDirection",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "VertDividerType",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "FrontDescriptor",
+      "type": "Text",
+      "allowNull": true
+    }
+  ],
+  "rows": [
+    {
+      "data": [
+        {
+          "columnName": "in_CabinetType",
+          "value": "mr_StorageunitSingle"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_CarcaseDirection",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontColor",
+          "value": "All"
+        },
+        {
+          "columnName": "in_WidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WidthMax",
+          "value": "650"
+        },
+        {
+          "columnName": "in_DoorType",
+          "value": "Automatic"
+        },
+        {
+          "columnName": "in_DoorDirection",
+          "value": "Automatic"
+        },
+        {
+          "columnName": "in_VertDivider",
+          "value": "NoVertDivider"
+        },
+        {
+          "columnName": "DoorQty",
+          "value": "1"
+        },
+        {
+          "columnName": "FirstDoorDirection",
+          "value": "Left"
+        },
+        {
+          "columnName": "SecondDoorDirection",
+          "value": "NotNecessary"
+        },
+        {
+          "columnName": "VertDividerType",
+          "value": "NoVertDivider"
+        },
+        {
+          "columnName": "FrontDescriptor",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_CabinetType",
+          "value": "mr_StorageunitSingle"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_CarcaseDirection",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontColor",
+          "value": "All"
+        },
+        {
+          "columnName": "in_WidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WidthMax",
+          "value": "700"
+        },
+        {
+          "columnName": "in_DoorType",
+          "value": "Automatic"
+        },
+        {
+          "columnName": "in_DoorDirection",
+          "value": "Left"
+        },
+        {
+          "columnName": "in_VertDivider",
+          "value": "NoVertDivider"
+        },
+        {
+          "columnName": "DoorQty",
+          "value": "1"
+        },
+        {
+          "columnName": "FirstDoorDirection",
+          "value": "Left"
+        },
+        {
+          "columnName": "SecondDoorDirection",
+          "value": "NotNecessary"
+        },
+        {
+          "columnName": "VertDividerType",
+          "value": "NoVertDivider"
+        },
+        {
+          "columnName": "FrontDescriptor",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_CabinetType",
+          "value": "mr_StorageunitSingle"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_CarcaseDirection",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontColor",
+          "value": "All"
+        },
+        {
+          "columnName": "in_WidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WidthMax",
+          "value": "700"
+        },
+        {
+          "columnName": "in_DoorType",
+          "value": "Automatic"
+        },
+        {
+          "columnName": "in_DoorDirection",
+          "value": "Right"
+        },
+        {
+          "columnName": "in_VertDivider",
+          "value": "NoVertDivider"
+        },
+        {
+          "columnName": "DoorQty",
+          "value": "1"
+        },
+        {
+          "columnName": "FirstDoorDirection",
+          "value": "Right"
+        },
+        {
+          "columnName": "SecondDoorDirection",
+          "value": "NotNecessary"
+        },
+        {
+          "columnName": "VertDividerType",
+          "value": "NoVertDivider"
+        },
+        {
+          "columnName": "FrontDescriptor",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_CabinetType",
+          "value": "mr_StorageunitSingle"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_CarcaseDirection",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontColor",
+          "value": "All"
+        },
+        {
+          "columnName": "in_WidthMin",
+          "value": "650.01"
+        },
+        {
+          "columnName": "in_WidthMax",
+          "value": "1000"
+        },
+        {
+          "columnName": "in_DoorType",
+          "value": "Automatic"
+        },
+        {
+          "columnName": "in_DoorDirection",
+          "value": "Automatic"
+        },
+        {
+          "columnName": "in_VertDivider",
+          "value": "NoVertDivider"
+        },
+        {
+          "columnName": "DoorQty",
+          "value": "2"
+        },
+        {
+          "columnName": "FirstDoorDirection",
+          "value": "Left"
+        },
+        {
+          "columnName": "SecondDoorDirection",
+          "value": "Right"
+        },
+        {
+          "columnName": "VertDividerType",
+          "value": "NoVertDivider"
+        },
+        {
+          "columnName": "FrontDescriptor",
+          "value": "1_1"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_CabinetType",
+          "value": "mr_StorageunitSingle"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_CarcaseDirection",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontColor",
+          "value": "All"
+        },
+        {
+          "columnName": "in_WidthMin",
+          "value": "500.01"
+        },
+        {
+          "columnName": "in_WidthMax",
+          "value": "1000"
+        },
+        {
+          "columnName": "in_DoorType",
+          "value": "Automatic"
+        },
+        {
+          "columnName": "in_DoorDirection",
+          "value": "LeftRight"
+        },
+        {
+          "columnName": "in_VertDivider",
+          "value": "NoVertDivider"
+        },
+        {
+          "columnName": "DoorQty",
+          "value": "2"
+        },
+        {
+          "columnName": "FirstDoorDirection",
+          "value": "Left"
+        },
+        {
+          "columnName": "SecondDoorDirection",
+          "value": "Right"
+        },
+        {
+          "columnName": "VertDividerType",
+          "value": "NoVertDivider"
+        },
+        {
+          "columnName": "FrontDescriptor",
+          "value": "1_1"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_CabinetType",
+          "value": "mr_Filler01"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "Filler"
+        },
+        {
+          "columnName": "in_CarcaseDirection",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontColor",
+          "value": "All"
+        },
+        {
+          "columnName": "in_WidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WidthMax",
+          "value": "600"
+        },
+        {
+          "columnName": "in_DoorType",
+          "value": "Automatic"
+        },
+        {
+          "columnName": "in_DoorDirection",
+          "value": "Left"
+        },
+        {
+          "columnName": "in_VertDivider",
+          "value": "Automatic"
+        },
+        {
+          "columnName": "DoorQty",
+          "value": "1"
+        },
+        {
+          "columnName": "FirstDoorDirection",
+          "value": "Left"
+        },
+        {
+          "columnName": "SecondDoorDirection",
+          "value": "NotNecessary"
+        },
+        {
+          "columnName": "VertDividerType",
+          "value": "NoVertDivider"
+        },
+        {
+          "columnName": "FrontDescriptor",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_CabinetType",
+          "value": "mr_Filler01"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "Filler"
+        },
+        {
+          "columnName": "in_CarcaseDirection",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontColor",
+          "value": "All"
+        },
+        {
+          "columnName": "in_WidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WidthMax",
+          "value": "600"
+        },
+        {
+          "columnName": "in_DoorType",
+          "value": "Automatic"
+        },
+        {
+          "columnName": "in_DoorDirection",
+          "value": "Right"
+        },
+        {
+          "columnName": "in_VertDivider",
+          "value": "Automatic"
+        },
+        {
+          "columnName": "DoorQty",
+          "value": "1"
+        },
+        {
+          "columnName": "FirstDoorDirection",
+          "value": "Right"
+        },
+        {
+          "columnName": "SecondDoorDirection",
+          "value": "NotNecessary"
+        },
+        {
+          "columnName": "VertDividerType",
+          "value": "NoVertDivider"
+        },
+        {
+          "columnName": "FrontDescriptor",
+          "value": "1"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,129 @@
+{
+  "moduleId": "mr_Paneltop",
+  "shortName": "Top panel",
+  "configurable": false,
+  "isRoot": false,
+  "description": "Module for top panel",
+  "groupName": "Root",
+  "imageId": "9425150e-65e9-47bc-91c6-26d19c1ffbb0:TopPanel.jpg",
+  "restrictionTypeId": "Public",
+  "generateMethod": "Paneltop",
+  "childModules": [
+    {
+      "moduleId": "mc_Paneltop01"
+    }
+  ],
+  "assignedVariants": [
+    {
+      "variantId": "mod_PaneltopEdgeBackColor",
+      "defaultScript": "this.mod_PaneltopColor",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_PaneltopEdgeFrontColor",
+      "defaultScript": "this.mod_PaneltopColor",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_PaneltopEdgeLeftColor",
+      "defaultScript": "this.mod_PaneltopColor",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_PaneltopEdgeRightColor",
+      "defaultScript": "this.mod_PaneltopColor",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_PaneltopEdgeVisBack",
+      "default": "false",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_PaneltopEdgeVisFront",
+      "default": "false",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_PaneltopEdgeVisLeft",
+      "default": "false",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_PaneltopEdgeVisRight",
+      "default": "false",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_ModuleName",
+      "default": "mr_Paneltop",
+      "origin": "Fixed"
+    },
+    {
+      "variantId": "mod_CeilingFillerFittingPanelDepth",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_CeilingFillerFittingPanelThk",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_CeilingFillerHeight",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_CeilingFillerThk",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_PaneltopColor",
+      "default": "1045_mn",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_PaneltopThk",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_PaneltopConstruction",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_PaneltopOverhangFront",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_PaneltopProgram",
+      "default": "MatteNatur",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_PaneltopOversizeBack",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_FrontGapHor",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_FrontGapCarcase",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_LengthList",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_GrainLogic",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_CeilingFillerRecess",
+      "default": "40",
+      "origin": "Default"
+    }
+  ],
+  "assignedParts": [],
+  "assignedCustomTables": [],
+  "assignedFunctions": []
+}

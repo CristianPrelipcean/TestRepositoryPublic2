@@ -1,0 +1,28 @@
+{
+  "partCode": "part_Duststrip",
+  "shortName": "Dust strip",
+  "description": "Dust strip",
+  "wdt": "XYZ",
+  "groupName": "Hardware",
+  "imageId": "8dc3bb2b-23dc-4167-9fc4-cc4c9c0a13f9:Duststrip_1.jpg",
+  "model3dImageId": "",
+  "invisible": false,
+  "restrictionTypeId": "Public",
+  "noNcData": false,
+  "partVariants": [
+    {
+      "partVarId": "pa_HardwareId",
+      "valueScript": "this.parent.mod_HardwareId",
+      "isWritable": false
+    }
+  ],
+  "bomData": [
+    {
+      "bomElementTypeId": "bomout_Group",
+      "description": "Add the duststrip to BOM",
+      "conditionScript": "partSelf._g?.basic_CreateBom == 'Library'",
+      "valueScript": "// Filter function to get all the hardware elements for the Duststrip\nlet HardwareElements = GlobalFunc.find_HardwareLibraryMapping(part.pa_HardwareId);\n\n// Cycle to add all hardware elements to the BOM\nHardwareElements.forEach(info => {\n  let elem = this.addbomout_Hardware();\n  let DuststripBOMInfo = GlobalFunc.find_HardwareLibrary(info.SupplierArticleNumber!,info.Supplier!);\n  let DuststripBOMName = GlobalFunc.find_PartSettings(\"part_Duststrip\");\n\n  elem.bom_Supplier=info.Supplier;\n  elem.bom_SupplierArticle=info.SupplierArticleNumber;\n  elem.bom_Description1=DuststripBOMInfo.Description;\n  elem.bom_Description2=DuststripBOMInfo.Description2;\n  elem.bom_Length=DuststripBOMInfo.Length;\n  elem.bom_Width=DuststripBOMInfo.Width;\n  elem.bom_Thk=DuststripBOMInfo.Thickness;\n  elem.bom_Color=DuststripBOMInfo.Color;\n  elem.bom_Weight=DuststripBOMInfo.Weight;\n  elem.bom_Name=DuststripBOMName.BomPartDescription;\n  elem.bom_Type=part._partId;\n  elem.bom_PartId=part._id;\n  elem.bom_ParentId=parentId;\n  elem.bom_Qty=info.BomQty;\n})"
+    }
+  ],
+  "ncData": []
+}

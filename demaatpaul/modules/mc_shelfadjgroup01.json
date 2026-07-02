@@ -1,0 +1,171 @@
+{
+  "moduleId": "mc_ShelfadjGroup01",
+  "shortName": "Shelf adj group",
+  "configurable": false,
+  "isRoot": false,
+  "description": "Management of the adjustable shelf",
+  "groupName": "Equipment",
+  "imageId": "93a0bbb4-9700-4312-bd1c-99ef125c61f6:AdjGroup.jpg",
+  "restrictionTypeId": "Internal",
+  "childModules": [
+    {
+      "moduleId": "mc_ShelfadjWood01"
+    },
+    {
+      "moduleId": "mc_ShelfadjGlass01"
+    },
+    {
+      "moduleId": "mc_ShelfadjDrill01"
+    },
+    {
+      "moduleId": "mc_ShelfadjFitting01"
+    }
+  ],
+  "assignedVariants": [
+    {
+      "variantId": "mod_ShelfadjDesign",
+      "previewValue": "10",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_Height",
+      "default": "720",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_Depth",
+      "default": "522",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_Width",
+      "default": "600",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_TypeElement",
+      "previewValue": "WallUnit",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_CarcaseColor",
+      "previewValue": "Demoblue",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_CarcaseId",
+      "previewValue": "None",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_CarcaseProgram",
+      "previewValue": "Demoprogram1",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_FrontDesign",
+      "previewValue": "FlatPanel",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_ShelfadjOffsetFront",
+      "previewValue": "10",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_ShelfadjOffsetBack",
+      "previewValue": "0",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_ShelfadjDrillType",
+      "previewValue": "SingleDrill",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_ShelfadjDrillDistance",
+      "previewValue": "48",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_ShelfadjThk",
+      "previewValue": "0",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_ShelfadjDrillinglineOffsetTop",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_ShelfadjDrillinglineOffsetBtm",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_ModuleName",
+      "default": "mc_ShelfadjGroup01",
+      "origin": "Fixed"
+    },
+    {
+      "variantId": "mod_ShelfadjPartParentName",
+      "default": "None",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_ShelfadjPartParentType",
+      "default": "None",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_FrontProgram",
+      "previewValue": "Demoprogram1",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_HardwareId",
+      "default": "None",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_CarcaseSpaceDimension",
+      "default": "",
+      "previewValue": "",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_VertDividerType",
+      "default": "NoVertDivider",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_VertDividerPosition",
+      "default": "0",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_GrainLogic",
+      "previewValue": "Library",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_ShelfadjColor",
+      "previewValue": "240",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_ShelfadjDescriptor",
+      "previewValue": "1_1",
+      "origin": "Derived"
+    }
+  ],
+  "assignedParts": [
+    {
+      "partCode": "part_ShelfadjFitting"
+    }
+  ],
+  "assignedCustomTables": [],
+  "assignedFunctions": [
+    {
+      "functionId": "process_ShelfadjPos"
+    }
+  ]
+}

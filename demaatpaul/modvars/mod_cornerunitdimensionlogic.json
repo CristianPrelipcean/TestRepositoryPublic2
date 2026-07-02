@@ -1,0 +1,32 @@
+{
+  "variantId": "mod_CornerunitDimensionLogic",
+  "shortName": "Corner Unit Dimension Logic",
+  "variantTypeId": "Text",
+  "description": "Corner Unit Dimension Logic",
+  "restrictionTypeId": "Public",
+  "groupName": "Carcase | Dimensions",
+  "imageId": "8577cd98-6e7f-4bbf-9dae-b971d64360ae:Logic.png",
+  "isArray": false,
+  "isPosRelevant": true,
+  "mainAttr": false,
+  "userRight": "Master",
+  "implicitRelevant": false,
+  "posView": "Dropdown",
+  "matrix": [],
+  "selections": [
+    {
+      "value": "BasedInFrontDimension",
+      "description": "Input front dimension and calculate total depth",
+      "shortName": "Input Front Dimension",
+      "imageId": "02b85898-ded3-461d-be5d-6baebef8d937:BasedinFrontDistance.jpg",
+      "matrix": []
+    },
+    {
+      "value": "BasedInWallDistance",
+      "description": "Use distance to wall and calculate front dimension",
+      "shortName": "Use Distance to Wall",
+      "imageId": "f3b29b26-317c-42b4-b9ca-504dc5a26235:BasedinWallDistance.jpg",
+      "matrix": []
+    }
+  ]
+}

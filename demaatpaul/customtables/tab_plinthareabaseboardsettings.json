@@ -1,0 +1,7847 @@
+{
+  "tableName": "tab_PlinthAreaBaseboardSettings",
+  "description": "Settings for baseboard leg positioning",
+  "restrictionTypeId": "Public",
+  "groupName": "PlinthArea",
+  "columns": [
+    {
+      "name": "_id",
+      "type": "Integer",
+      "allowNull": false
+    },
+    {
+      "name": "in_TypeElement",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_BaseboardCutLogic",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_ModulePosition",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_PlinthAreaDesign",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_PositionLeftMatrix",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_PositionRightMatrix",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_PositionBackMatrix",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_PositionFrontMatrix",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_CarcaseWidthMin",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "in_CarcaseWidthMax",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "in_CarcaseDepthMin",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "in_CarcaseDepthMax",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "in_WeightMin",
+      "type": "Real",
+      "allowNull": false
+    },
+    {
+      "name": "in_WeightMax",
+      "type": "Real",
+      "allowNull": false
+    },
+    {
+      "name": "SettingsLogic",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "MatrixPositionType",
+      "type": "Integer",
+      "allowNull": false
+    },
+    {
+      "name": "BasePoint",
+      "type": "Integer",
+      "allowNull": false
+    },
+    {
+      "name": "HardwareRotation",
+      "type": "Real",
+      "allowNull": false
+    },
+    {
+      "name": "PosXOffset",
+      "type": "Text",
+      "allowNull": true,
+      "functionDefinition": "(contourData: any):number"
+    },
+    {
+      "name": "PosYOffset",
+      "type": "Text",
+      "allowNull": true,
+      "functionDefinition": "(contourData: any):number"
+    }
+  ],
+  "rows": [
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_BaseboardCutLogic",
+          "value": "BetweenCabinets"
+        },
+        {
+          "columnName": "in_ModulePosition",
+          "value": "MiddleSectionAfterCut"
+        },
+        {
+          "columnName": "in_PlinthAreaDesign",
+          "value": "BaseboardWithAdjustableLegs"
+        },
+        {
+          "columnName": "in_PositionLeftMatrix",
+          "value": "LCF"
+        },
+        {
+          "columnName": "in_PositionRightMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionBackMatrix",
+          "value": "BCF"
+        },
+        {
+          "columnName": "in_PositionFrontMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_CarcaseWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseWidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CarcaseDepthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseDepthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "SettingsLogic",
+          "value": "Library"
+        },
+        {
+          "columnName": "MatrixPositionType",
+          "value": "11"
+        },
+        {
+          "columnName": "BasePoint",
+          "value": "1"
+        },
+        {
+          "columnName": "HardwareRotation",
+          "value": "0"
+        },
+        {
+          "columnName": "PosXOffset",
+          "value": "2"
+        },
+        {
+          "columnName": "PosYOffset",
+          "value": "20"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_BaseboardCutLogic",
+          "value": "BetweenCabinets"
+        },
+        {
+          "columnName": "in_ModulePosition",
+          "value": "MiddleSectionAfterCut"
+        },
+        {
+          "columnName": "in_PlinthAreaDesign",
+          "value": "BaseboardWithAdjustableLegs"
+        },
+        {
+          "columnName": "in_PositionLeftMatrix",
+          "value": "LCF"
+        },
+        {
+          "columnName": "in_PositionRightMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionBackMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionFrontMatrix",
+          "value": "FCF"
+        },
+        {
+          "columnName": "in_CarcaseWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseWidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CarcaseDepthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseDepthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "SettingsLogic",
+          "value": "Library"
+        },
+        {
+          "columnName": "MatrixPositionType",
+          "value": "31"
+        },
+        {
+          "columnName": "BasePoint",
+          "value": "7"
+        },
+        {
+          "columnName": "HardwareRotation",
+          "value": "0"
+        },
+        {
+          "columnName": "PosXOffset",
+          "value": "2"
+        },
+        {
+          "columnName": "PosYOffset",
+          "value": "20"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_BaseboardCutLogic",
+          "value": "BetweenCabinets"
+        },
+        {
+          "columnName": "in_ModulePosition",
+          "value": "MiddleSectionAfterCut"
+        },
+        {
+          "columnName": "in_PlinthAreaDesign",
+          "value": "BaseboardWithAdjustableLegs"
+        },
+        {
+          "columnName": "in_PositionLeftMatrix",
+          "value": "LCF"
+        },
+        {
+          "columnName": "in_PositionRightMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionBackMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionFrontMatrix",
+          "value": "FCR"
+        },
+        {
+          "columnName": "in_CarcaseWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseWidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CarcaseDepthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseDepthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "SettingsLogic",
+          "value": "Library"
+        },
+        {
+          "columnName": "MatrixPositionType",
+          "value": "31"
+        },
+        {
+          "columnName": "BasePoint",
+          "value": "7"
+        },
+        {
+          "columnName": "HardwareRotation",
+          "value": "0"
+        },
+        {
+          "columnName": "PosXOffset",
+          "value": "2"
+        },
+        {
+          "columnName": "PosYOffset",
+          "value": "50"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_BaseboardCutLogic",
+          "value": "BetweenCabinets"
+        },
+        {
+          "columnName": "in_ModulePosition",
+          "value": "MiddleSectionAfterCut"
+        },
+        {
+          "columnName": "in_PlinthAreaDesign",
+          "value": "BaseboardWithAdjustableLegs"
+        },
+        {
+          "columnName": "in_PositionLeftMatrix",
+          "value": "LCF"
+        },
+        {
+          "columnName": "in_PositionRightMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionBackMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionFrontMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_CarcaseWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseWidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CarcaseDepthMin",
+          "value": "600"
+        },
+        {
+          "columnName": "in_CarcaseDepthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "SettingsLogic",
+          "value": "Library"
+        },
+        {
+          "columnName": "MatrixPositionType",
+          "value": "21"
+        },
+        {
+          "columnName": "BasePoint",
+          "value": "4"
+        },
+        {
+          "columnName": "HardwareRotation",
+          "value": "0"
+        },
+        {
+          "columnName": "PosXOffset",
+          "value": "2"
+        },
+        {
+          "columnName": "PosYOffset",
+          "value": "contourData.mod_CarcaseDepth/2"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_BaseboardCutLogic",
+          "value": "BetweenCabinets"
+        },
+        {
+          "columnName": "in_ModulePosition",
+          "value": "MiddleSectionAfterCut"
+        },
+        {
+          "columnName": "in_PlinthAreaDesign",
+          "value": "BaseboardWithAdjustableLegs"
+        },
+        {
+          "columnName": "in_PositionLeftMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionRightMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionBackMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionFrontMatrix",
+          "value": "FCF"
+        },
+        {
+          "columnName": "in_CarcaseWidthMin",
+          "value": "600"
+        },
+        {
+          "columnName": "in_CarcaseWidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CarcaseDepthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseDepthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "SettingsLogic",
+          "value": "Library"
+        },
+        {
+          "columnName": "MatrixPositionType",
+          "value": "32"
+        },
+        {
+          "columnName": "BasePoint",
+          "value": "8"
+        },
+        {
+          "columnName": "HardwareRotation",
+          "value": "0"
+        },
+        {
+          "columnName": "PosXOffset",
+          "value": "contourData.mod_CarcaseWidth/2"
+        },
+        {
+          "columnName": "PosYOffset",
+          "value": "20"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_BaseboardCutLogic",
+          "value": "BetweenCabinets"
+        },
+        {
+          "columnName": "in_ModulePosition",
+          "value": "MiddleSectionAfterCut"
+        },
+        {
+          "columnName": "in_PlinthAreaDesign",
+          "value": "BaseboardWithAdjustableLegs"
+        },
+        {
+          "columnName": "in_PositionLeftMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionRightMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionBackMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionFrontMatrix",
+          "value": "FCR"
+        },
+        {
+          "columnName": "in_CarcaseWidthMin",
+          "value": "600"
+        },
+        {
+          "columnName": "in_CarcaseWidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CarcaseDepthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseDepthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "SettingsLogic",
+          "value": "Library"
+        },
+        {
+          "columnName": "MatrixPositionType",
+          "value": "32"
+        },
+        {
+          "columnName": "BasePoint",
+          "value": "8"
+        },
+        {
+          "columnName": "HardwareRotation",
+          "value": "0"
+        },
+        {
+          "columnName": "PosXOffset",
+          "value": "contourData.mod_CarcaseWidth/2"
+        },
+        {
+          "columnName": "PosYOffset",
+          "value": "50"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_BaseboardCutLogic",
+          "value": "BetweenCabinets"
+        },
+        {
+          "columnName": "in_ModulePosition",
+          "value": "MiddleSectionBeforeCut"
+        },
+        {
+          "columnName": "in_PlinthAreaDesign",
+          "value": "BaseboardWithAdjustableLegs"
+        },
+        {
+          "columnName": "in_PositionLeftMatrix",
+          "value": "LCF"
+        },
+        {
+          "columnName": "in_PositionRightMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionBackMatrix",
+          "value": "BCF"
+        },
+        {
+          "columnName": "in_PositionFrontMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_CarcaseWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseWidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CarcaseDepthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseDepthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "SettingsLogic",
+          "value": "Library"
+        },
+        {
+          "columnName": "MatrixPositionType",
+          "value": "11"
+        },
+        {
+          "columnName": "BasePoint",
+          "value": "2"
+        },
+        {
+          "columnName": "HardwareRotation",
+          "value": "0"
+        },
+        {
+          "columnName": "PosXOffset",
+          "value": "0"
+        },
+        {
+          "columnName": "PosYOffset",
+          "value": "20"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_BaseboardCutLogic",
+          "value": "BetweenCabinets"
+        },
+        {
+          "columnName": "in_ModulePosition",
+          "value": "MiddleSectionBeforeCut"
+        },
+        {
+          "columnName": "in_PlinthAreaDesign",
+          "value": "BaseboardWithAdjustableLegs"
+        },
+        {
+          "columnName": "in_PositionLeftMatrix",
+          "value": "LCF"
+        },
+        {
+          "columnName": "in_PositionRightMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionBackMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionFrontMatrix",
+          "value": "FCF"
+        },
+        {
+          "columnName": "in_CarcaseWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseWidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CarcaseDepthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseDepthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "SettingsLogic",
+          "value": "Library"
+        },
+        {
+          "columnName": "MatrixPositionType",
+          "value": "31"
+        },
+        {
+          "columnName": "BasePoint",
+          "value": "8"
+        },
+        {
+          "columnName": "HardwareRotation",
+          "value": "0"
+        },
+        {
+          "columnName": "PosXOffset",
+          "value": "0"
+        },
+        {
+          "columnName": "PosYOffset",
+          "value": "20"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_BaseboardCutLogic",
+          "value": "BetweenCabinets"
+        },
+        {
+          "columnName": "in_ModulePosition",
+          "value": "MiddleSectionBeforeCut"
+        },
+        {
+          "columnName": "in_PlinthAreaDesign",
+          "value": "BaseboardWithAdjustableLegs"
+        },
+        {
+          "columnName": "in_PositionLeftMatrix",
+          "value": "LCF"
+        },
+        {
+          "columnName": "in_PositionRightMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionBackMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionFrontMatrix",
+          "value": "FCR"
+        },
+        {
+          "columnName": "in_CarcaseWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseWidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CarcaseDepthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseDepthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "SettingsLogic",
+          "value": "Library"
+        },
+        {
+          "columnName": "MatrixPositionType",
+          "value": "31"
+        },
+        {
+          "columnName": "BasePoint",
+          "value": "8"
+        },
+        {
+          "columnName": "HardwareRotation",
+          "value": "0"
+        },
+        {
+          "columnName": "PosXOffset",
+          "value": "0"
+        },
+        {
+          "columnName": "PosYOffset",
+          "value": "50"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_BaseboardCutLogic",
+          "value": "BetweenCabinets"
+        },
+        {
+          "columnName": "in_ModulePosition",
+          "value": "MiddleSectionBeforeCut"
+        },
+        {
+          "columnName": "in_PlinthAreaDesign",
+          "value": "BaseboardWithAdjustableLegs"
+        },
+        {
+          "columnName": "in_PositionLeftMatrix",
+          "value": "LCF"
+        },
+        {
+          "columnName": "in_PositionRightMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionBackMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionFrontMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_CarcaseWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseWidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CarcaseDepthMin",
+          "value": "600"
+        },
+        {
+          "columnName": "in_CarcaseDepthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "SettingsLogic",
+          "value": "Library"
+        },
+        {
+          "columnName": "MatrixPositionType",
+          "value": "21"
+        },
+        {
+          "columnName": "BasePoint",
+          "value": "5"
+        },
+        {
+          "columnName": "HardwareRotation",
+          "value": "0"
+        },
+        {
+          "columnName": "PosXOffset",
+          "value": "0"
+        },
+        {
+          "columnName": "PosYOffset",
+          "value": "contourData.mod_CarcaseDepth/2"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_BaseboardCutLogic",
+          "value": "BetweenCabinets"
+        },
+        {
+          "columnName": "in_ModulePosition",
+          "value": "MiddleSectionBeforeCut"
+        },
+        {
+          "columnName": "in_PlinthAreaDesign",
+          "value": "BaseboardWithAdjustableLegs"
+        },
+        {
+          "columnName": "in_PositionLeftMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionRightMatrix",
+          "value": "RCF"
+        },
+        {
+          "columnName": "in_PositionBackMatrix",
+          "value": "BCF"
+        },
+        {
+          "columnName": "in_PositionFrontMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_CarcaseWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseWidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CarcaseDepthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseDepthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "SettingsLogic",
+          "value": "Library"
+        },
+        {
+          "columnName": "MatrixPositionType",
+          "value": "13"
+        },
+        {
+          "columnName": "BasePoint",
+          "value": "3"
+        },
+        {
+          "columnName": "HardwareRotation",
+          "value": "180"
+        },
+        {
+          "columnName": "PosXOffset",
+          "value": "2"
+        },
+        {
+          "columnName": "PosYOffset",
+          "value": "20"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_BaseboardCutLogic",
+          "value": "BetweenCabinets"
+        },
+        {
+          "columnName": "in_ModulePosition",
+          "value": "MiddleSectionBeforeCut"
+        },
+        {
+          "columnName": "in_PlinthAreaDesign",
+          "value": "BaseboardWithAdjustableLegs"
+        },
+        {
+          "columnName": "in_PositionLeftMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionRightMatrix",
+          "value": "RCF"
+        },
+        {
+          "columnName": "in_PositionBackMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionFrontMatrix",
+          "value": "FCF"
+        },
+        {
+          "columnName": "in_CarcaseWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseWidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CarcaseDepthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseDepthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "SettingsLogic",
+          "value": "Library"
+        },
+        {
+          "columnName": "MatrixPositionType",
+          "value": "33"
+        },
+        {
+          "columnName": "BasePoint",
+          "value": "9"
+        },
+        {
+          "columnName": "HardwareRotation",
+          "value": "0"
+        },
+        {
+          "columnName": "PosXOffset",
+          "value": "2"
+        },
+        {
+          "columnName": "PosYOffset",
+          "value": "20"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_BaseboardCutLogic",
+          "value": "BetweenCabinets"
+        },
+        {
+          "columnName": "in_ModulePosition",
+          "value": "MiddleSectionBeforeCut"
+        },
+        {
+          "columnName": "in_PlinthAreaDesign",
+          "value": "BaseboardWithAdjustableLegs"
+        },
+        {
+          "columnName": "in_PositionLeftMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionRightMatrix",
+          "value": "RCF"
+        },
+        {
+          "columnName": "in_PositionBackMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionFrontMatrix",
+          "value": "FCR"
+        },
+        {
+          "columnName": "in_CarcaseWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseWidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CarcaseDepthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseDepthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "SettingsLogic",
+          "value": "Library"
+        },
+        {
+          "columnName": "MatrixPositionType",
+          "value": "33"
+        },
+        {
+          "columnName": "BasePoint",
+          "value": "9"
+        },
+        {
+          "columnName": "HardwareRotation",
+          "value": "0"
+        },
+        {
+          "columnName": "PosXOffset",
+          "value": "2"
+        },
+        {
+          "columnName": "PosYOffset",
+          "value": "50"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_BaseboardCutLogic",
+          "value": "BetweenCabinets"
+        },
+        {
+          "columnName": "in_ModulePosition",
+          "value": "MiddleSectionBeforeCut"
+        },
+        {
+          "columnName": "in_PlinthAreaDesign",
+          "value": "BaseboardWithAdjustableLegs"
+        },
+        {
+          "columnName": "in_PositionLeftMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionRightMatrix",
+          "value": "RCF"
+        },
+        {
+          "columnName": "in_PositionBackMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionFrontMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_CarcaseWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseWidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CarcaseDepthMin",
+          "value": "600"
+        },
+        {
+          "columnName": "in_CarcaseDepthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "SettingsLogic",
+          "value": "Library"
+        },
+        {
+          "columnName": "MatrixPositionType",
+          "value": "23"
+        },
+        {
+          "columnName": "BasePoint",
+          "value": "6"
+        },
+        {
+          "columnName": "HardwareRotation",
+          "value": "180"
+        },
+        {
+          "columnName": "PosXOffset",
+          "value": "2"
+        },
+        {
+          "columnName": "PosYOffset",
+          "value": "contourData.mod_CarcaseDepth/2"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_BaseboardCutLogic",
+          "value": "BetweenCabinets"
+        },
+        {
+          "columnName": "in_ModulePosition",
+          "value": "MiddleSectionBeforeCut"
+        },
+        {
+          "columnName": "in_PlinthAreaDesign",
+          "value": "BaseboardWithAdjustableLegs"
+        },
+        {
+          "columnName": "in_PositionLeftMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionRightMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionBackMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionFrontMatrix",
+          "value": "FCF"
+        },
+        {
+          "columnName": "in_CarcaseWidthMin",
+          "value": "600"
+        },
+        {
+          "columnName": "in_CarcaseWidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CarcaseDepthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseDepthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "SettingsLogic",
+          "value": "Library"
+        },
+        {
+          "columnName": "MatrixPositionType",
+          "value": "32"
+        },
+        {
+          "columnName": "BasePoint",
+          "value": "8"
+        },
+        {
+          "columnName": "HardwareRotation",
+          "value": "0"
+        },
+        {
+          "columnName": "PosXOffset",
+          "value": "contourData.mod_CarcaseWidth/2"
+        },
+        {
+          "columnName": "PosYOffset",
+          "value": "20"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_BaseboardCutLogic",
+          "value": "BetweenCabinets"
+        },
+        {
+          "columnName": "in_ModulePosition",
+          "value": "MiddleSectionBeforeCut"
+        },
+        {
+          "columnName": "in_PlinthAreaDesign",
+          "value": "BaseboardWithAdjustableLegs"
+        },
+        {
+          "columnName": "in_PositionLeftMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionRightMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionBackMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionFrontMatrix",
+          "value": "FCR"
+        },
+        {
+          "columnName": "in_CarcaseWidthMin",
+          "value": "600"
+        },
+        {
+          "columnName": "in_CarcaseWidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CarcaseDepthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseDepthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "SettingsLogic",
+          "value": "Library"
+        },
+        {
+          "columnName": "MatrixPositionType",
+          "value": "32"
+        },
+        {
+          "columnName": "BasePoint",
+          "value": "8"
+        },
+        {
+          "columnName": "HardwareRotation",
+          "value": "0"
+        },
+        {
+          "columnName": "PosXOffset",
+          "value": "contourData.mod_CarcaseWidth/2"
+        },
+        {
+          "columnName": "PosYOffset",
+          "value": "50"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_BaseboardCutLogic",
+          "value": "BetweenCabinets"
+        },
+        {
+          "columnName": "in_ModulePosition",
+          "value": "SingleSection"
+        },
+        {
+          "columnName": "in_PlinthAreaDesign",
+          "value": "BaseboardWithAdjustableLegs"
+        },
+        {
+          "columnName": "in_PositionLeftMatrix",
+          "value": "LCF"
+        },
+        {
+          "columnName": "in_PositionRightMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionBackMatrix",
+          "value": "BCF"
+        },
+        {
+          "columnName": "in_PositionFrontMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_CarcaseWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseWidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CarcaseDepthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseDepthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "SettingsLogic",
+          "value": "Library"
+        },
+        {
+          "columnName": "MatrixPositionType",
+          "value": "11"
+        },
+        {
+          "columnName": "BasePoint",
+          "value": "1"
+        },
+        {
+          "columnName": "HardwareRotation",
+          "value": "0"
+        },
+        {
+          "columnName": "PosXOffset",
+          "value": "20"
+        },
+        {
+          "columnName": "PosYOffset",
+          "value": "20"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_BaseboardCutLogic",
+          "value": "BetweenCabinets"
+        },
+        {
+          "columnName": "in_ModulePosition",
+          "value": "SingleSection"
+        },
+        {
+          "columnName": "in_PlinthAreaDesign",
+          "value": "BaseboardWithAdjustableLegs"
+        },
+        {
+          "columnName": "in_PositionLeftMatrix",
+          "value": "LCR"
+        },
+        {
+          "columnName": "in_PositionRightMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionBackMatrix",
+          "value": "BCF"
+        },
+        {
+          "columnName": "in_PositionFrontMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_CarcaseWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseWidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CarcaseDepthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseDepthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "SettingsLogic",
+          "value": "Library"
+        },
+        {
+          "columnName": "MatrixPositionType",
+          "value": "11"
+        },
+        {
+          "columnName": "BasePoint",
+          "value": "1"
+        },
+        {
+          "columnName": "HardwareRotation",
+          "value": "0"
+        },
+        {
+          "columnName": "PosXOffset",
+          "value": "50"
+        },
+        {
+          "columnName": "PosYOffset",
+          "value": "20"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_BaseboardCutLogic",
+          "value": "BetweenCabinets"
+        },
+        {
+          "columnName": "in_ModulePosition",
+          "value": "SingleSection"
+        },
+        {
+          "columnName": "in_PlinthAreaDesign",
+          "value": "BaseboardWithAdjustableLegs"
+        },
+        {
+          "columnName": "in_PositionLeftMatrix",
+          "value": "LCF"
+        },
+        {
+          "columnName": "in_PositionRightMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionBackMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionFrontMatrix",
+          "value": "FCF"
+        },
+        {
+          "columnName": "in_CarcaseWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseWidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CarcaseDepthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseDepthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "SettingsLogic",
+          "value": "Library"
+        },
+        {
+          "columnName": "MatrixPositionType",
+          "value": "31"
+        },
+        {
+          "columnName": "BasePoint",
+          "value": "7"
+        },
+        {
+          "columnName": "HardwareRotation",
+          "value": "0"
+        },
+        {
+          "columnName": "PosXOffset",
+          "value": "20"
+        },
+        {
+          "columnName": "PosYOffset",
+          "value": "20"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_BaseboardCutLogic",
+          "value": "BetweenCabinets"
+        },
+        {
+          "columnName": "in_ModulePosition",
+          "value": "SingleSection"
+        },
+        {
+          "columnName": "in_PlinthAreaDesign",
+          "value": "BaseboardWithAdjustableLegs"
+        },
+        {
+          "columnName": "in_PositionLeftMatrix",
+          "value": "LCF"
+        },
+        {
+          "columnName": "in_PositionRightMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionBackMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionFrontMatrix",
+          "value": "FCR"
+        },
+        {
+          "columnName": "in_CarcaseWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseWidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CarcaseDepthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseDepthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "SettingsLogic",
+          "value": "Library"
+        },
+        {
+          "columnName": "MatrixPositionType",
+          "value": "31"
+        },
+        {
+          "columnName": "BasePoint",
+          "value": "7"
+        },
+        {
+          "columnName": "HardwareRotation",
+          "value": "0"
+        },
+        {
+          "columnName": "PosXOffset",
+          "value": "20"
+        },
+        {
+          "columnName": "PosYOffset",
+          "value": "50"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_BaseboardCutLogic",
+          "value": "BetweenCabinets"
+        },
+        {
+          "columnName": "in_ModulePosition",
+          "value": "SingleSection"
+        },
+        {
+          "columnName": "in_PlinthAreaDesign",
+          "value": "BaseboardWithAdjustableLegs"
+        },
+        {
+          "columnName": "in_PositionLeftMatrix",
+          "value": "LCR"
+        },
+        {
+          "columnName": "in_PositionRightMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionBackMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionFrontMatrix",
+          "value": "FCF"
+        },
+        {
+          "columnName": "in_CarcaseWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseWidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CarcaseDepthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseDepthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "SettingsLogic",
+          "value": "Library"
+        },
+        {
+          "columnName": "MatrixPositionType",
+          "value": "31"
+        },
+        {
+          "columnName": "BasePoint",
+          "value": "7"
+        },
+        {
+          "columnName": "HardwareRotation",
+          "value": "0"
+        },
+        {
+          "columnName": "PosXOffset",
+          "value": "50"
+        },
+        {
+          "columnName": "PosYOffset",
+          "value": "20"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_BaseboardCutLogic",
+          "value": "BetweenCabinets"
+        },
+        {
+          "columnName": "in_ModulePosition",
+          "value": "SingleSection"
+        },
+        {
+          "columnName": "in_PlinthAreaDesign",
+          "value": "BaseboardWithAdjustableLegs"
+        },
+        {
+          "columnName": "in_PositionLeftMatrix",
+          "value": "LCR"
+        },
+        {
+          "columnName": "in_PositionRightMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionBackMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionFrontMatrix",
+          "value": "FCR"
+        },
+        {
+          "columnName": "in_CarcaseWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseWidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CarcaseDepthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseDepthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "SettingsLogic",
+          "value": "Library"
+        },
+        {
+          "columnName": "MatrixPositionType",
+          "value": "31"
+        },
+        {
+          "columnName": "BasePoint",
+          "value": "7"
+        },
+        {
+          "columnName": "HardwareRotation",
+          "value": "0"
+        },
+        {
+          "columnName": "PosXOffset",
+          "value": "50"
+        },
+        {
+          "columnName": "PosYOffset",
+          "value": "50"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_BaseboardCutLogic",
+          "value": "BetweenCabinets"
+        },
+        {
+          "columnName": "in_ModulePosition",
+          "value": "SingleSection"
+        },
+        {
+          "columnName": "in_PlinthAreaDesign",
+          "value": "BaseboardWithAdjustableLegs"
+        },
+        {
+          "columnName": "in_PositionLeftMatrix",
+          "value": "LCF"
+        },
+        {
+          "columnName": "in_PositionRightMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionBackMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionFrontMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_CarcaseWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseWidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CarcaseDepthMin",
+          "value": "600"
+        },
+        {
+          "columnName": "in_CarcaseDepthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "SettingsLogic",
+          "value": "Library"
+        },
+        {
+          "columnName": "MatrixPositionType",
+          "value": "21"
+        },
+        {
+          "columnName": "BasePoint",
+          "value": "4"
+        },
+        {
+          "columnName": "HardwareRotation",
+          "value": "0"
+        },
+        {
+          "columnName": "PosXOffset",
+          "value": "20"
+        },
+        {
+          "columnName": "PosYOffset",
+          "value": "contourData.mod_CarcaseDepth/2"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_BaseboardCutLogic",
+          "value": "BetweenCabinets"
+        },
+        {
+          "columnName": "in_ModulePosition",
+          "value": "SingleSection"
+        },
+        {
+          "columnName": "in_PlinthAreaDesign",
+          "value": "BaseboardWithAdjustableLegs"
+        },
+        {
+          "columnName": "in_PositionLeftMatrix",
+          "value": "LCR"
+        },
+        {
+          "columnName": "in_PositionRightMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionBackMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionFrontMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_CarcaseWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseWidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CarcaseDepthMin",
+          "value": "600"
+        },
+        {
+          "columnName": "in_CarcaseDepthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "SettingsLogic",
+          "value": "Library"
+        },
+        {
+          "columnName": "MatrixPositionType",
+          "value": "21"
+        },
+        {
+          "columnName": "BasePoint",
+          "value": "4"
+        },
+        {
+          "columnName": "HardwareRotation",
+          "value": "0"
+        },
+        {
+          "columnName": "PosXOffset",
+          "value": "50"
+        },
+        {
+          "columnName": "PosYOffset",
+          "value": "contourData.mod_CarcaseDepth/2"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_BaseboardCutLogic",
+          "value": "BetweenCabinets"
+        },
+        {
+          "columnName": "in_ModulePosition",
+          "value": "SingleSection"
+        },
+        {
+          "columnName": "in_PlinthAreaDesign",
+          "value": "BaseboardWithAdjustableLegs"
+        },
+        {
+          "columnName": "in_PositionLeftMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionRightMatrix",
+          "value": "RCF"
+        },
+        {
+          "columnName": "in_PositionBackMatrix",
+          "value": "BCF"
+        },
+        {
+          "columnName": "in_PositionFrontMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_CarcaseWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseWidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CarcaseDepthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseDepthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "SettingsLogic",
+          "value": "Library"
+        },
+        {
+          "columnName": "MatrixPositionType",
+          "value": "13"
+        },
+        {
+          "columnName": "BasePoint",
+          "value": "3"
+        },
+        {
+          "columnName": "HardwareRotation",
+          "value": "180"
+        },
+        {
+          "columnName": "PosXOffset",
+          "value": "20"
+        },
+        {
+          "columnName": "PosYOffset",
+          "value": "20"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_BaseboardCutLogic",
+          "value": "BetweenCabinets"
+        },
+        {
+          "columnName": "in_ModulePosition",
+          "value": "SingleSection"
+        },
+        {
+          "columnName": "in_PlinthAreaDesign",
+          "value": "BaseboardWithAdjustableLegs"
+        },
+        {
+          "columnName": "in_PositionLeftMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionRightMatrix",
+          "value": "RCR"
+        },
+        {
+          "columnName": "in_PositionBackMatrix",
+          "value": "BCF"
+        },
+        {
+          "columnName": "in_PositionFrontMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_CarcaseWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseWidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CarcaseDepthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseDepthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "SettingsLogic",
+          "value": "Library"
+        },
+        {
+          "columnName": "MatrixPositionType",
+          "value": "13"
+        },
+        {
+          "columnName": "BasePoint",
+          "value": "3"
+        },
+        {
+          "columnName": "HardwareRotation",
+          "value": "180"
+        },
+        {
+          "columnName": "PosXOffset",
+          "value": "50"
+        },
+        {
+          "columnName": "PosYOffset",
+          "value": "20"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_BaseboardCutLogic",
+          "value": "BetweenCabinets"
+        },
+        {
+          "columnName": "in_ModulePosition",
+          "value": "SingleSection"
+        },
+        {
+          "columnName": "in_PlinthAreaDesign",
+          "value": "BaseboardWithAdjustableLegs"
+        },
+        {
+          "columnName": "in_PositionLeftMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionRightMatrix",
+          "value": "RCF"
+        },
+        {
+          "columnName": "in_PositionBackMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionFrontMatrix",
+          "value": "FCF"
+        },
+        {
+          "columnName": "in_CarcaseWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseWidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CarcaseDepthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseDepthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "SettingsLogic",
+          "value": "Library"
+        },
+        {
+          "columnName": "MatrixPositionType",
+          "value": "33"
+        },
+        {
+          "columnName": "BasePoint",
+          "value": "9"
+        },
+        {
+          "columnName": "HardwareRotation",
+          "value": "0"
+        },
+        {
+          "columnName": "PosXOffset",
+          "value": "20"
+        },
+        {
+          "columnName": "PosYOffset",
+          "value": "20"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_BaseboardCutLogic",
+          "value": "BetweenCabinets"
+        },
+        {
+          "columnName": "in_ModulePosition",
+          "value": "SingleSection"
+        },
+        {
+          "columnName": "in_PlinthAreaDesign",
+          "value": "BaseboardWithAdjustableLegs"
+        },
+        {
+          "columnName": "in_PositionLeftMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionRightMatrix",
+          "value": "RCF"
+        },
+        {
+          "columnName": "in_PositionBackMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionFrontMatrix",
+          "value": "FCR"
+        },
+        {
+          "columnName": "in_CarcaseWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseWidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CarcaseDepthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseDepthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "SettingsLogic",
+          "value": "Library"
+        },
+        {
+          "columnName": "MatrixPositionType",
+          "value": "33"
+        },
+        {
+          "columnName": "BasePoint",
+          "value": "9"
+        },
+        {
+          "columnName": "HardwareRotation",
+          "value": "0"
+        },
+        {
+          "columnName": "PosXOffset",
+          "value": "20"
+        },
+        {
+          "columnName": "PosYOffset",
+          "value": "50"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_BaseboardCutLogic",
+          "value": "BetweenCabinets"
+        },
+        {
+          "columnName": "in_ModulePosition",
+          "value": "SingleSection"
+        },
+        {
+          "columnName": "in_PlinthAreaDesign",
+          "value": "BaseboardWithAdjustableLegs"
+        },
+        {
+          "columnName": "in_PositionLeftMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionRightMatrix",
+          "value": "RCR"
+        },
+        {
+          "columnName": "in_PositionBackMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionFrontMatrix",
+          "value": "FCF"
+        },
+        {
+          "columnName": "in_CarcaseWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseWidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CarcaseDepthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseDepthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "SettingsLogic",
+          "value": "Library"
+        },
+        {
+          "columnName": "MatrixPositionType",
+          "value": "33"
+        },
+        {
+          "columnName": "BasePoint",
+          "value": "9"
+        },
+        {
+          "columnName": "HardwareRotation",
+          "value": "0"
+        },
+        {
+          "columnName": "PosXOffset",
+          "value": "50"
+        },
+        {
+          "columnName": "PosYOffset",
+          "value": "20"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_BaseboardCutLogic",
+          "value": "BetweenCabinets"
+        },
+        {
+          "columnName": "in_ModulePosition",
+          "value": "SingleSection"
+        },
+        {
+          "columnName": "in_PlinthAreaDesign",
+          "value": "BaseboardWithAdjustableLegs"
+        },
+        {
+          "columnName": "in_PositionLeftMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionRightMatrix",
+          "value": "RCR"
+        },
+        {
+          "columnName": "in_PositionBackMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionFrontMatrix",
+          "value": "FCR"
+        },
+        {
+          "columnName": "in_CarcaseWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseWidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CarcaseDepthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseDepthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "SettingsLogic",
+          "value": "Library"
+        },
+        {
+          "columnName": "MatrixPositionType",
+          "value": "33"
+        },
+        {
+          "columnName": "BasePoint",
+          "value": "9"
+        },
+        {
+          "columnName": "HardwareRotation",
+          "value": "0"
+        },
+        {
+          "columnName": "PosXOffset",
+          "value": "50"
+        },
+        {
+          "columnName": "PosYOffset",
+          "value": "50"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_BaseboardCutLogic",
+          "value": "BetweenCabinets"
+        },
+        {
+          "columnName": "in_ModulePosition",
+          "value": "SingleSection"
+        },
+        {
+          "columnName": "in_PlinthAreaDesign",
+          "value": "BaseboardWithAdjustableLegs"
+        },
+        {
+          "columnName": "in_PositionLeftMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionRightMatrix",
+          "value": "RCF"
+        },
+        {
+          "columnName": "in_PositionBackMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionFrontMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_CarcaseWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseWidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CarcaseDepthMin",
+          "value": "600"
+        },
+        {
+          "columnName": "in_CarcaseDepthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "SettingsLogic",
+          "value": "Library"
+        },
+        {
+          "columnName": "MatrixPositionType",
+          "value": "23"
+        },
+        {
+          "columnName": "BasePoint",
+          "value": "6"
+        },
+        {
+          "columnName": "HardwareRotation",
+          "value": "180"
+        },
+        {
+          "columnName": "PosXOffset",
+          "value": "20"
+        },
+        {
+          "columnName": "PosYOffset",
+          "value": "contourData.mod_CarcaseDepth/2"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_BaseboardCutLogic",
+          "value": "BetweenCabinets"
+        },
+        {
+          "columnName": "in_ModulePosition",
+          "value": "SingleSection"
+        },
+        {
+          "columnName": "in_PlinthAreaDesign",
+          "value": "BaseboardWithAdjustableLegs"
+        },
+        {
+          "columnName": "in_PositionLeftMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionRightMatrix",
+          "value": "RCR"
+        },
+        {
+          "columnName": "in_PositionBackMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionFrontMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_CarcaseWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseWidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CarcaseDepthMin",
+          "value": "600"
+        },
+        {
+          "columnName": "in_CarcaseDepthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "SettingsLogic",
+          "value": "Library"
+        },
+        {
+          "columnName": "MatrixPositionType",
+          "value": "23"
+        },
+        {
+          "columnName": "BasePoint",
+          "value": "6"
+        },
+        {
+          "columnName": "HardwareRotation",
+          "value": "180"
+        },
+        {
+          "columnName": "PosXOffset",
+          "value": "50"
+        },
+        {
+          "columnName": "PosYOffset",
+          "value": "contourData.mod_CarcaseDepth/2"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_BaseboardCutLogic",
+          "value": "BetweenCabinets"
+        },
+        {
+          "columnName": "in_ModulePosition",
+          "value": "SingleSection"
+        },
+        {
+          "columnName": "in_PlinthAreaDesign",
+          "value": "BaseboardWithAdjustableLegs"
+        },
+        {
+          "columnName": "in_PositionLeftMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionRightMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionBackMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionFrontMatrix",
+          "value": "FCF"
+        },
+        {
+          "columnName": "in_CarcaseWidthMin",
+          "value": "600"
+        },
+        {
+          "columnName": "in_CarcaseWidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CarcaseDepthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseDepthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "SettingsLogic",
+          "value": "Library"
+        },
+        {
+          "columnName": "MatrixPositionType",
+          "value": "32"
+        },
+        {
+          "columnName": "BasePoint",
+          "value": "8"
+        },
+        {
+          "columnName": "HardwareRotation",
+          "value": "0"
+        },
+        {
+          "columnName": "PosXOffset",
+          "value": "contourData.mod_CarcaseWidth/2"
+        },
+        {
+          "columnName": "PosYOffset",
+          "value": "20"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_BaseboardCutLogic",
+          "value": "BetweenCabinets"
+        },
+        {
+          "columnName": "in_ModulePosition",
+          "value": "SingleSection"
+        },
+        {
+          "columnName": "in_PlinthAreaDesign",
+          "value": "BaseboardWithAdjustableLegs"
+        },
+        {
+          "columnName": "in_PositionLeftMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionRightMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionBackMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionFrontMatrix",
+          "value": "FCR"
+        },
+        {
+          "columnName": "in_CarcaseWidthMin",
+          "value": "600"
+        },
+        {
+          "columnName": "in_CarcaseWidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CarcaseDepthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseDepthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "SettingsLogic",
+          "value": "Library"
+        },
+        {
+          "columnName": "MatrixPositionType",
+          "value": "32"
+        },
+        {
+          "columnName": "BasePoint",
+          "value": "8"
+        },
+        {
+          "columnName": "HardwareRotation",
+          "value": "0"
+        },
+        {
+          "columnName": "PosXOffset",
+          "value": "contourData.mod_CarcaseWidth/2"
+        },
+        {
+          "columnName": "PosYOffset",
+          "value": "50"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_BaseboardCutLogic",
+          "value": "BetweenCabinets"
+        },
+        {
+          "columnName": "in_ModulePosition",
+          "value": "LastSectionAfterCut"
+        },
+        {
+          "columnName": "in_PlinthAreaDesign",
+          "value": "BaseboardWithAdjustableLegs"
+        },
+        {
+          "columnName": "in_PositionLeftMatrix",
+          "value": "LCF"
+        },
+        {
+          "columnName": "in_PositionRightMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionBackMatrix",
+          "value": "BCF"
+        },
+        {
+          "columnName": "in_PositionFrontMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_CarcaseWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseWidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CarcaseDepthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseDepthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "SettingsLogic",
+          "value": "Library"
+        },
+        {
+          "columnName": "MatrixPositionType",
+          "value": "11"
+        },
+        {
+          "columnName": "BasePoint",
+          "value": "1"
+        },
+        {
+          "columnName": "HardwareRotation",
+          "value": "0"
+        },
+        {
+          "columnName": "PosXOffset",
+          "value": "2"
+        },
+        {
+          "columnName": "PosYOffset",
+          "value": "20"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_BaseboardCutLogic",
+          "value": "BetweenCabinets"
+        },
+        {
+          "columnName": "in_ModulePosition",
+          "value": "LastSectionAfterCut"
+        },
+        {
+          "columnName": "in_PlinthAreaDesign",
+          "value": "BaseboardWithAdjustableLegs"
+        },
+        {
+          "columnName": "in_PositionLeftMatrix",
+          "value": "LCF"
+        },
+        {
+          "columnName": "in_PositionRightMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionBackMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionFrontMatrix",
+          "value": "FCF"
+        },
+        {
+          "columnName": "in_CarcaseWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseWidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CarcaseDepthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseDepthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "SettingsLogic",
+          "value": "Library"
+        },
+        {
+          "columnName": "MatrixPositionType",
+          "value": "31"
+        },
+        {
+          "columnName": "BasePoint",
+          "value": "7"
+        },
+        {
+          "columnName": "HardwareRotation",
+          "value": "0"
+        },
+        {
+          "columnName": "PosXOffset",
+          "value": "2"
+        },
+        {
+          "columnName": "PosYOffset",
+          "value": "20"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_BaseboardCutLogic",
+          "value": "BetweenCabinets"
+        },
+        {
+          "columnName": "in_ModulePosition",
+          "value": "LastSectionAfterCut"
+        },
+        {
+          "columnName": "in_PlinthAreaDesign",
+          "value": "BaseboardWithAdjustableLegs"
+        },
+        {
+          "columnName": "in_PositionLeftMatrix",
+          "value": "LCF"
+        },
+        {
+          "columnName": "in_PositionRightMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionBackMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionFrontMatrix",
+          "value": "FCR"
+        },
+        {
+          "columnName": "in_CarcaseWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseWidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CarcaseDepthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseDepthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "SettingsLogic",
+          "value": "Library"
+        },
+        {
+          "columnName": "MatrixPositionType",
+          "value": "31"
+        },
+        {
+          "columnName": "BasePoint",
+          "value": "7"
+        },
+        {
+          "columnName": "HardwareRotation",
+          "value": "0"
+        },
+        {
+          "columnName": "PosXOffset",
+          "value": "2"
+        },
+        {
+          "columnName": "PosYOffset",
+          "value": "50"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_BaseboardCutLogic",
+          "value": "BetweenCabinets"
+        },
+        {
+          "columnName": "in_ModulePosition",
+          "value": "LastSectionAfterCut"
+        },
+        {
+          "columnName": "in_PlinthAreaDesign",
+          "value": "BaseboardWithAdjustableLegs"
+        },
+        {
+          "columnName": "in_PositionLeftMatrix",
+          "value": "LCF"
+        },
+        {
+          "columnName": "in_PositionRightMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionBackMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionFrontMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_CarcaseWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseWidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CarcaseDepthMin",
+          "value": "600"
+        },
+        {
+          "columnName": "in_CarcaseDepthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "SettingsLogic",
+          "value": "Library"
+        },
+        {
+          "columnName": "MatrixPositionType",
+          "value": "21"
+        },
+        {
+          "columnName": "BasePoint",
+          "value": "4"
+        },
+        {
+          "columnName": "HardwareRotation",
+          "value": "0"
+        },
+        {
+          "columnName": "PosXOffset",
+          "value": "2"
+        },
+        {
+          "columnName": "PosYOffset",
+          "value": "contourData.mod_CarcaseDepth/2"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_BaseboardCutLogic",
+          "value": "BetweenCabinets"
+        },
+        {
+          "columnName": "in_ModulePosition",
+          "value": "LastSectionAfterCut"
+        },
+        {
+          "columnName": "in_PlinthAreaDesign",
+          "value": "BaseboardWithAdjustableLegs"
+        },
+        {
+          "columnName": "in_PositionLeftMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionRightMatrix",
+          "value": "RCF"
+        },
+        {
+          "columnName": "in_PositionBackMatrix",
+          "value": "BCF"
+        },
+        {
+          "columnName": "in_PositionFrontMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_CarcaseWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseWidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CarcaseDepthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseDepthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "SettingsLogic",
+          "value": "Library"
+        },
+        {
+          "columnName": "MatrixPositionType",
+          "value": "13"
+        },
+        {
+          "columnName": "BasePoint",
+          "value": "3"
+        },
+        {
+          "columnName": "HardwareRotation",
+          "value": "180"
+        },
+        {
+          "columnName": "PosXOffset",
+          "value": "20"
+        },
+        {
+          "columnName": "PosYOffset",
+          "value": "20"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_BaseboardCutLogic",
+          "value": "BetweenCabinets"
+        },
+        {
+          "columnName": "in_ModulePosition",
+          "value": "LastSectionAfterCut"
+        },
+        {
+          "columnName": "in_PlinthAreaDesign",
+          "value": "BaseboardWithAdjustableLegs"
+        },
+        {
+          "columnName": "in_PositionLeftMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionRightMatrix",
+          "value": "RCR"
+        },
+        {
+          "columnName": "in_PositionBackMatrix",
+          "value": "BCF"
+        },
+        {
+          "columnName": "in_PositionFrontMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_CarcaseWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseWidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CarcaseDepthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseDepthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "SettingsLogic",
+          "value": "Library"
+        },
+        {
+          "columnName": "MatrixPositionType",
+          "value": "13"
+        },
+        {
+          "columnName": "BasePoint",
+          "value": "3"
+        },
+        {
+          "columnName": "HardwareRotation",
+          "value": "180"
+        },
+        {
+          "columnName": "PosXOffset",
+          "value": "50"
+        },
+        {
+          "columnName": "PosYOffset",
+          "value": "20"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_BaseboardCutLogic",
+          "value": "BetweenCabinets"
+        },
+        {
+          "columnName": "in_ModulePosition",
+          "value": "LastSectionAfterCut"
+        },
+        {
+          "columnName": "in_PlinthAreaDesign",
+          "value": "BaseboardWithAdjustableLegs"
+        },
+        {
+          "columnName": "in_PositionLeftMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionRightMatrix",
+          "value": "RCF"
+        },
+        {
+          "columnName": "in_PositionBackMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionFrontMatrix",
+          "value": "FCF"
+        },
+        {
+          "columnName": "in_CarcaseWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseWidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CarcaseDepthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseDepthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "SettingsLogic",
+          "value": "Library"
+        },
+        {
+          "columnName": "MatrixPositionType",
+          "value": "33"
+        },
+        {
+          "columnName": "BasePoint",
+          "value": "9"
+        },
+        {
+          "columnName": "HardwareRotation",
+          "value": "0"
+        },
+        {
+          "columnName": "PosXOffset",
+          "value": "20"
+        },
+        {
+          "columnName": "PosYOffset",
+          "value": "20"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_BaseboardCutLogic",
+          "value": "BetweenCabinets"
+        },
+        {
+          "columnName": "in_ModulePosition",
+          "value": "LastSectionAfterCut"
+        },
+        {
+          "columnName": "in_PlinthAreaDesign",
+          "value": "BaseboardWithAdjustableLegs"
+        },
+        {
+          "columnName": "in_PositionLeftMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionRightMatrix",
+          "value": "RCF"
+        },
+        {
+          "columnName": "in_PositionBackMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionFrontMatrix",
+          "value": "FCR"
+        },
+        {
+          "columnName": "in_CarcaseWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseWidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CarcaseDepthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseDepthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "SettingsLogic",
+          "value": "Library"
+        },
+        {
+          "columnName": "MatrixPositionType",
+          "value": "33"
+        },
+        {
+          "columnName": "BasePoint",
+          "value": "9"
+        },
+        {
+          "columnName": "HardwareRotation",
+          "value": "0"
+        },
+        {
+          "columnName": "PosXOffset",
+          "value": "20"
+        },
+        {
+          "columnName": "PosYOffset",
+          "value": "50"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_BaseboardCutLogic",
+          "value": "BetweenCabinets"
+        },
+        {
+          "columnName": "in_ModulePosition",
+          "value": "LastSectionAfterCut"
+        },
+        {
+          "columnName": "in_PlinthAreaDesign",
+          "value": "BaseboardWithAdjustableLegs"
+        },
+        {
+          "columnName": "in_PositionLeftMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionRightMatrix",
+          "value": "RCR"
+        },
+        {
+          "columnName": "in_PositionBackMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionFrontMatrix",
+          "value": "FCF"
+        },
+        {
+          "columnName": "in_CarcaseWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseWidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CarcaseDepthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseDepthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "SettingsLogic",
+          "value": "Library"
+        },
+        {
+          "columnName": "MatrixPositionType",
+          "value": "33"
+        },
+        {
+          "columnName": "BasePoint",
+          "value": "9"
+        },
+        {
+          "columnName": "HardwareRotation",
+          "value": "0"
+        },
+        {
+          "columnName": "PosXOffset",
+          "value": "50"
+        },
+        {
+          "columnName": "PosYOffset",
+          "value": "20"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_BaseboardCutLogic",
+          "value": "BetweenCabinets"
+        },
+        {
+          "columnName": "in_ModulePosition",
+          "value": "LastSectionAfterCut"
+        },
+        {
+          "columnName": "in_PlinthAreaDesign",
+          "value": "BaseboardWithAdjustableLegs"
+        },
+        {
+          "columnName": "in_PositionLeftMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionRightMatrix",
+          "value": "RCR"
+        },
+        {
+          "columnName": "in_PositionBackMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionFrontMatrix",
+          "value": "FCR"
+        },
+        {
+          "columnName": "in_CarcaseWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseWidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CarcaseDepthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseDepthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "SettingsLogic",
+          "value": "Library"
+        },
+        {
+          "columnName": "MatrixPositionType",
+          "value": "33"
+        },
+        {
+          "columnName": "BasePoint",
+          "value": "9"
+        },
+        {
+          "columnName": "HardwareRotation",
+          "value": "0"
+        },
+        {
+          "columnName": "PosXOffset",
+          "value": "50"
+        },
+        {
+          "columnName": "PosYOffset",
+          "value": "50"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_BaseboardCutLogic",
+          "value": "BetweenCabinets"
+        },
+        {
+          "columnName": "in_ModulePosition",
+          "value": "LastSectionAfterCut"
+        },
+        {
+          "columnName": "in_PlinthAreaDesign",
+          "value": "BaseboardWithAdjustableLegs"
+        },
+        {
+          "columnName": "in_PositionLeftMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionRightMatrix",
+          "value": "RCF"
+        },
+        {
+          "columnName": "in_PositionBackMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionFrontMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_CarcaseWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseWidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CarcaseDepthMin",
+          "value": "600"
+        },
+        {
+          "columnName": "in_CarcaseDepthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "SettingsLogic",
+          "value": "Library"
+        },
+        {
+          "columnName": "MatrixPositionType",
+          "value": "23"
+        },
+        {
+          "columnName": "BasePoint",
+          "value": "6"
+        },
+        {
+          "columnName": "HardwareRotation",
+          "value": "180"
+        },
+        {
+          "columnName": "PosXOffset",
+          "value": "20"
+        },
+        {
+          "columnName": "PosYOffset",
+          "value": "contourData.mod_CarcaseDepth/2"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_BaseboardCutLogic",
+          "value": "BetweenCabinets"
+        },
+        {
+          "columnName": "in_ModulePosition",
+          "value": "LastSectionAfterCut"
+        },
+        {
+          "columnName": "in_PlinthAreaDesign",
+          "value": "BaseboardWithAdjustableLegs"
+        },
+        {
+          "columnName": "in_PositionLeftMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionRightMatrix",
+          "value": "RCR"
+        },
+        {
+          "columnName": "in_PositionBackMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionFrontMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_CarcaseWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseWidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CarcaseDepthMin",
+          "value": "600"
+        },
+        {
+          "columnName": "in_CarcaseDepthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "SettingsLogic",
+          "value": "Library"
+        },
+        {
+          "columnName": "MatrixPositionType",
+          "value": "23"
+        },
+        {
+          "columnName": "BasePoint",
+          "value": "6"
+        },
+        {
+          "columnName": "HardwareRotation",
+          "value": "180"
+        },
+        {
+          "columnName": "PosXOffset",
+          "value": "50"
+        },
+        {
+          "columnName": "PosYOffset",
+          "value": "contourData.mod_CarcaseDepth/2"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_BaseboardCutLogic",
+          "value": "BetweenCabinets"
+        },
+        {
+          "columnName": "in_ModulePosition",
+          "value": "LastSectionAfterCut"
+        },
+        {
+          "columnName": "in_PlinthAreaDesign",
+          "value": "BaseboardWithAdjustableLegs"
+        },
+        {
+          "columnName": "in_PositionLeftMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionRightMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionBackMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionFrontMatrix",
+          "value": "FCF"
+        },
+        {
+          "columnName": "in_CarcaseWidthMin",
+          "value": "600"
+        },
+        {
+          "columnName": "in_CarcaseWidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CarcaseDepthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseDepthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "SettingsLogic",
+          "value": "Library"
+        },
+        {
+          "columnName": "MatrixPositionType",
+          "value": "32"
+        },
+        {
+          "columnName": "BasePoint",
+          "value": "8"
+        },
+        {
+          "columnName": "HardwareRotation",
+          "value": "0"
+        },
+        {
+          "columnName": "PosXOffset",
+          "value": "contourData.mod_CarcaseWidth/2"
+        },
+        {
+          "columnName": "PosYOffset",
+          "value": "20"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_BaseboardCutLogic",
+          "value": "BetweenCabinets"
+        },
+        {
+          "columnName": "in_ModulePosition",
+          "value": "LastSectionAfterCut"
+        },
+        {
+          "columnName": "in_PlinthAreaDesign",
+          "value": "BaseboardWithAdjustableLegs"
+        },
+        {
+          "columnName": "in_PositionLeftMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionRightMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionBackMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionFrontMatrix",
+          "value": "FCR"
+        },
+        {
+          "columnName": "in_CarcaseWidthMin",
+          "value": "600"
+        },
+        {
+          "columnName": "in_CarcaseWidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CarcaseDepthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseDepthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "SettingsLogic",
+          "value": "Library"
+        },
+        {
+          "columnName": "MatrixPositionType",
+          "value": "32"
+        },
+        {
+          "columnName": "BasePoint",
+          "value": "8"
+        },
+        {
+          "columnName": "HardwareRotation",
+          "value": "0"
+        },
+        {
+          "columnName": "PosXOffset",
+          "value": "contourData.mod_CarcaseWidth/2"
+        },
+        {
+          "columnName": "PosYOffset",
+          "value": "50"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_BaseboardCutLogic",
+          "value": "BetweenCabinets"
+        },
+        {
+          "columnName": "in_ModulePosition",
+          "value": "FirstSection"
+        },
+        {
+          "columnName": "in_PlinthAreaDesign",
+          "value": "BaseboardWithAdjustableLegs"
+        },
+        {
+          "columnName": "in_PositionLeftMatrix",
+          "value": "LCF"
+        },
+        {
+          "columnName": "in_PositionRightMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionBackMatrix",
+          "value": "BCF"
+        },
+        {
+          "columnName": "in_PositionFrontMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_CarcaseWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseWidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CarcaseDepthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseDepthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "SettingsLogic",
+          "value": "Library"
+        },
+        {
+          "columnName": "MatrixPositionType",
+          "value": "11"
+        },
+        {
+          "columnName": "BasePoint",
+          "value": "1"
+        },
+        {
+          "columnName": "HardwareRotation",
+          "value": "0"
+        },
+        {
+          "columnName": "PosXOffset",
+          "value": "20"
+        },
+        {
+          "columnName": "PosYOffset",
+          "value": "20"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_BaseboardCutLogic",
+          "value": "BetweenCabinets"
+        },
+        {
+          "columnName": "in_ModulePosition",
+          "value": "FirstSection"
+        },
+        {
+          "columnName": "in_PlinthAreaDesign",
+          "value": "BaseboardWithAdjustableLegs"
+        },
+        {
+          "columnName": "in_PositionLeftMatrix",
+          "value": "LCR"
+        },
+        {
+          "columnName": "in_PositionRightMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionBackMatrix",
+          "value": "BCF"
+        },
+        {
+          "columnName": "in_PositionFrontMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_CarcaseWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseWidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CarcaseDepthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseDepthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "SettingsLogic",
+          "value": "Library"
+        },
+        {
+          "columnName": "MatrixPositionType",
+          "value": "11"
+        },
+        {
+          "columnName": "BasePoint",
+          "value": "1"
+        },
+        {
+          "columnName": "HardwareRotation",
+          "value": "0"
+        },
+        {
+          "columnName": "PosXOffset",
+          "value": "50"
+        },
+        {
+          "columnName": "PosYOffset",
+          "value": "20"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_BaseboardCutLogic",
+          "value": "BetweenCabinets"
+        },
+        {
+          "columnName": "in_ModulePosition",
+          "value": "FirstSection"
+        },
+        {
+          "columnName": "in_PlinthAreaDesign",
+          "value": "BaseboardWithAdjustableLegs"
+        },
+        {
+          "columnName": "in_PositionLeftMatrix",
+          "value": "LCF"
+        },
+        {
+          "columnName": "in_PositionRightMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionBackMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionFrontMatrix",
+          "value": "FCF"
+        },
+        {
+          "columnName": "in_CarcaseWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseWidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CarcaseDepthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseDepthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "SettingsLogic",
+          "value": "Library"
+        },
+        {
+          "columnName": "MatrixPositionType",
+          "value": "31"
+        },
+        {
+          "columnName": "BasePoint",
+          "value": "7"
+        },
+        {
+          "columnName": "HardwareRotation",
+          "value": "0"
+        },
+        {
+          "columnName": "PosXOffset",
+          "value": "20"
+        },
+        {
+          "columnName": "PosYOffset",
+          "value": "20"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_BaseboardCutLogic",
+          "value": "BetweenCabinets"
+        },
+        {
+          "columnName": "in_ModulePosition",
+          "value": "FirstSection"
+        },
+        {
+          "columnName": "in_PlinthAreaDesign",
+          "value": "BaseboardWithAdjustableLegs"
+        },
+        {
+          "columnName": "in_PositionLeftMatrix",
+          "value": "LCF"
+        },
+        {
+          "columnName": "in_PositionRightMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionBackMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionFrontMatrix",
+          "value": "FCR"
+        },
+        {
+          "columnName": "in_CarcaseWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseWidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CarcaseDepthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseDepthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "SettingsLogic",
+          "value": "Library"
+        },
+        {
+          "columnName": "MatrixPositionType",
+          "value": "31"
+        },
+        {
+          "columnName": "BasePoint",
+          "value": "7"
+        },
+        {
+          "columnName": "HardwareRotation",
+          "value": "0"
+        },
+        {
+          "columnName": "PosXOffset",
+          "value": "20"
+        },
+        {
+          "columnName": "PosYOffset",
+          "value": "50"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_BaseboardCutLogic",
+          "value": "BetweenCabinets"
+        },
+        {
+          "columnName": "in_ModulePosition",
+          "value": "FirstSection"
+        },
+        {
+          "columnName": "in_PlinthAreaDesign",
+          "value": "BaseboardWithAdjustableLegs"
+        },
+        {
+          "columnName": "in_PositionLeftMatrix",
+          "value": "LCR"
+        },
+        {
+          "columnName": "in_PositionRightMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionBackMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionFrontMatrix",
+          "value": "FCF"
+        },
+        {
+          "columnName": "in_CarcaseWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseWidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CarcaseDepthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseDepthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "SettingsLogic",
+          "value": "Library"
+        },
+        {
+          "columnName": "MatrixPositionType",
+          "value": "31"
+        },
+        {
+          "columnName": "BasePoint",
+          "value": "7"
+        },
+        {
+          "columnName": "HardwareRotation",
+          "value": "0"
+        },
+        {
+          "columnName": "PosXOffset",
+          "value": "50"
+        },
+        {
+          "columnName": "PosYOffset",
+          "value": "20"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_BaseboardCutLogic",
+          "value": "BetweenCabinets"
+        },
+        {
+          "columnName": "in_ModulePosition",
+          "value": "FirstSection"
+        },
+        {
+          "columnName": "in_PlinthAreaDesign",
+          "value": "BaseboardWithAdjustableLegs"
+        },
+        {
+          "columnName": "in_PositionLeftMatrix",
+          "value": "LCR"
+        },
+        {
+          "columnName": "in_PositionRightMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionBackMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionFrontMatrix",
+          "value": "FCR"
+        },
+        {
+          "columnName": "in_CarcaseWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseWidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CarcaseDepthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseDepthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "SettingsLogic",
+          "value": "Library"
+        },
+        {
+          "columnName": "MatrixPositionType",
+          "value": "31"
+        },
+        {
+          "columnName": "BasePoint",
+          "value": "7"
+        },
+        {
+          "columnName": "HardwareRotation",
+          "value": "0"
+        },
+        {
+          "columnName": "PosXOffset",
+          "value": "50"
+        },
+        {
+          "columnName": "PosYOffset",
+          "value": "50"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_BaseboardCutLogic",
+          "value": "BetweenCabinets"
+        },
+        {
+          "columnName": "in_ModulePosition",
+          "value": "FirstSection"
+        },
+        {
+          "columnName": "in_PlinthAreaDesign",
+          "value": "BaseboardWithAdjustableLegs"
+        },
+        {
+          "columnName": "in_PositionLeftMatrix",
+          "value": "LCF"
+        },
+        {
+          "columnName": "in_PositionRightMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionBackMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionFrontMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_CarcaseWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseWidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CarcaseDepthMin",
+          "value": "600"
+        },
+        {
+          "columnName": "in_CarcaseDepthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "SettingsLogic",
+          "value": "Library"
+        },
+        {
+          "columnName": "MatrixPositionType",
+          "value": "21"
+        },
+        {
+          "columnName": "BasePoint",
+          "value": "4"
+        },
+        {
+          "columnName": "HardwareRotation",
+          "value": "0"
+        },
+        {
+          "columnName": "PosXOffset",
+          "value": "20"
+        },
+        {
+          "columnName": "PosYOffset",
+          "value": "contourData.mod_CarcaseDepth/2"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_BaseboardCutLogic",
+          "value": "BetweenCabinets"
+        },
+        {
+          "columnName": "in_ModulePosition",
+          "value": "FirstSection"
+        },
+        {
+          "columnName": "in_PlinthAreaDesign",
+          "value": "BaseboardWithAdjustableLegs"
+        },
+        {
+          "columnName": "in_PositionLeftMatrix",
+          "value": "LCR"
+        },
+        {
+          "columnName": "in_PositionRightMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionBackMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionFrontMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_CarcaseWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseWidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CarcaseDepthMin",
+          "value": "600"
+        },
+        {
+          "columnName": "in_CarcaseDepthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "SettingsLogic",
+          "value": "Library"
+        },
+        {
+          "columnName": "MatrixPositionType",
+          "value": "21"
+        },
+        {
+          "columnName": "BasePoint",
+          "value": "4"
+        },
+        {
+          "columnName": "HardwareRotation",
+          "value": "0"
+        },
+        {
+          "columnName": "PosXOffset",
+          "value": "50"
+        },
+        {
+          "columnName": "PosYOffset",
+          "value": "contourData.mod_CarcaseDepth/2"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_BaseboardCutLogic",
+          "value": "BetweenCabinets"
+        },
+        {
+          "columnName": "in_ModulePosition",
+          "value": "FirstSection"
+        },
+        {
+          "columnName": "in_PlinthAreaDesign",
+          "value": "BaseboardWithAdjustableLegs"
+        },
+        {
+          "columnName": "in_PositionLeftMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionRightMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionBackMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionFrontMatrix",
+          "value": "FCF"
+        },
+        {
+          "columnName": "in_CarcaseWidthMin",
+          "value": "600"
+        },
+        {
+          "columnName": "in_CarcaseWidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CarcaseDepthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseDepthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "SettingsLogic",
+          "value": "Library"
+        },
+        {
+          "columnName": "MatrixPositionType",
+          "value": "32"
+        },
+        {
+          "columnName": "BasePoint",
+          "value": "8"
+        },
+        {
+          "columnName": "HardwareRotation",
+          "value": "0"
+        },
+        {
+          "columnName": "PosXOffset",
+          "value": "contourData.mod_CarcaseWidth/2"
+        },
+        {
+          "columnName": "PosYOffset",
+          "value": "20"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_BaseboardCutLogic",
+          "value": "BetweenCabinets"
+        },
+        {
+          "columnName": "in_ModulePosition",
+          "value": "FirstSection"
+        },
+        {
+          "columnName": "in_PlinthAreaDesign",
+          "value": "BaseboardWithAdjustableLegs"
+        },
+        {
+          "columnName": "in_PositionLeftMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionRightMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionBackMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionFrontMatrix",
+          "value": "FCR"
+        },
+        {
+          "columnName": "in_CarcaseWidthMin",
+          "value": "600"
+        },
+        {
+          "columnName": "in_CarcaseWidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CarcaseDepthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseDepthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "SettingsLogic",
+          "value": "Library"
+        },
+        {
+          "columnName": "MatrixPositionType",
+          "value": "32"
+        },
+        {
+          "columnName": "BasePoint",
+          "value": "8"
+        },
+        {
+          "columnName": "HardwareRotation",
+          "value": "0"
+        },
+        {
+          "columnName": "PosXOffset",
+          "value": "contourData.mod_CarcaseWidth/2"
+        },
+        {
+          "columnName": "PosYOffset",
+          "value": "50"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_BaseboardCutLogic",
+          "value": "BetweenCabinets"
+        },
+        {
+          "columnName": "in_ModulePosition",
+          "value": "FirstSectionBeforeCut"
+        },
+        {
+          "columnName": "in_PlinthAreaDesign",
+          "value": "BaseboardWithAdjustableLegs"
+        },
+        {
+          "columnName": "in_PositionLeftMatrix",
+          "value": "LCF"
+        },
+        {
+          "columnName": "in_PositionRightMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionBackMatrix",
+          "value": "BCF"
+        },
+        {
+          "columnName": "in_PositionFrontMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_CarcaseWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseWidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CarcaseDepthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseDepthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "SettingsLogic",
+          "value": "Library"
+        },
+        {
+          "columnName": "MatrixPositionType",
+          "value": "11"
+        },
+        {
+          "columnName": "BasePoint",
+          "value": "1"
+        },
+        {
+          "columnName": "HardwareRotation",
+          "value": "0"
+        },
+        {
+          "columnName": "PosXOffset",
+          "value": "20"
+        },
+        {
+          "columnName": "PosYOffset",
+          "value": "20"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_BaseboardCutLogic",
+          "value": "BetweenCabinets"
+        },
+        {
+          "columnName": "in_ModulePosition",
+          "value": "FirstSectionBeforeCut"
+        },
+        {
+          "columnName": "in_PlinthAreaDesign",
+          "value": "BaseboardWithAdjustableLegs"
+        },
+        {
+          "columnName": "in_PositionLeftMatrix",
+          "value": "LCR"
+        },
+        {
+          "columnName": "in_PositionRightMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionBackMatrix",
+          "value": "BCF"
+        },
+        {
+          "columnName": "in_PositionFrontMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_CarcaseWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseWidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CarcaseDepthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseDepthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "SettingsLogic",
+          "value": "Library"
+        },
+        {
+          "columnName": "MatrixPositionType",
+          "value": "11"
+        },
+        {
+          "columnName": "BasePoint",
+          "value": "1"
+        },
+        {
+          "columnName": "HardwareRotation",
+          "value": "0"
+        },
+        {
+          "columnName": "PosXOffset",
+          "value": "50"
+        },
+        {
+          "columnName": "PosYOffset",
+          "value": "20"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_BaseboardCutLogic",
+          "value": "BetweenCabinets"
+        },
+        {
+          "columnName": "in_ModulePosition",
+          "value": "FirstSectionBeforeCut"
+        },
+        {
+          "columnName": "in_PlinthAreaDesign",
+          "value": "BaseboardWithAdjustableLegs"
+        },
+        {
+          "columnName": "in_PositionLeftMatrix",
+          "value": "LCF"
+        },
+        {
+          "columnName": "in_PositionRightMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionBackMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionFrontMatrix",
+          "value": "FCF"
+        },
+        {
+          "columnName": "in_CarcaseWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseWidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CarcaseDepthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseDepthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "SettingsLogic",
+          "value": "Library"
+        },
+        {
+          "columnName": "MatrixPositionType",
+          "value": "31"
+        },
+        {
+          "columnName": "BasePoint",
+          "value": "7"
+        },
+        {
+          "columnName": "HardwareRotation",
+          "value": "0"
+        },
+        {
+          "columnName": "PosXOffset",
+          "value": "20"
+        },
+        {
+          "columnName": "PosYOffset",
+          "value": "20"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_BaseboardCutLogic",
+          "value": "BetweenCabinets"
+        },
+        {
+          "columnName": "in_ModulePosition",
+          "value": "FirstSectionBeforeCut"
+        },
+        {
+          "columnName": "in_PlinthAreaDesign",
+          "value": "BaseboardWithAdjustableLegs"
+        },
+        {
+          "columnName": "in_PositionLeftMatrix",
+          "value": "LCF"
+        },
+        {
+          "columnName": "in_PositionRightMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionBackMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionFrontMatrix",
+          "value": "FCR"
+        },
+        {
+          "columnName": "in_CarcaseWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseWidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CarcaseDepthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseDepthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "SettingsLogic",
+          "value": "Library"
+        },
+        {
+          "columnName": "MatrixPositionType",
+          "value": "31"
+        },
+        {
+          "columnName": "BasePoint",
+          "value": "7"
+        },
+        {
+          "columnName": "HardwareRotation",
+          "value": "0"
+        },
+        {
+          "columnName": "PosXOffset",
+          "value": "20"
+        },
+        {
+          "columnName": "PosYOffset",
+          "value": "50"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_BaseboardCutLogic",
+          "value": "BetweenCabinets"
+        },
+        {
+          "columnName": "in_ModulePosition",
+          "value": "FirstSectionBeforeCut"
+        },
+        {
+          "columnName": "in_PlinthAreaDesign",
+          "value": "BaseboardWithAdjustableLegs"
+        },
+        {
+          "columnName": "in_PositionLeftMatrix",
+          "value": "LCR"
+        },
+        {
+          "columnName": "in_PositionRightMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionBackMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionFrontMatrix",
+          "value": "FCF"
+        },
+        {
+          "columnName": "in_CarcaseWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseWidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CarcaseDepthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseDepthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "SettingsLogic",
+          "value": "Library"
+        },
+        {
+          "columnName": "MatrixPositionType",
+          "value": "31"
+        },
+        {
+          "columnName": "BasePoint",
+          "value": "7"
+        },
+        {
+          "columnName": "HardwareRotation",
+          "value": "0"
+        },
+        {
+          "columnName": "PosXOffset",
+          "value": "50"
+        },
+        {
+          "columnName": "PosYOffset",
+          "value": "20"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_BaseboardCutLogic",
+          "value": "BetweenCabinets"
+        },
+        {
+          "columnName": "in_ModulePosition",
+          "value": "FirstSectionBeforeCut"
+        },
+        {
+          "columnName": "in_PlinthAreaDesign",
+          "value": "BaseboardWithAdjustableLegs"
+        },
+        {
+          "columnName": "in_PositionLeftMatrix",
+          "value": "LCR"
+        },
+        {
+          "columnName": "in_PositionRightMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionBackMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionFrontMatrix",
+          "value": "FCR"
+        },
+        {
+          "columnName": "in_CarcaseWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseWidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CarcaseDepthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseDepthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "SettingsLogic",
+          "value": "Library"
+        },
+        {
+          "columnName": "MatrixPositionType",
+          "value": "31"
+        },
+        {
+          "columnName": "BasePoint",
+          "value": "7"
+        },
+        {
+          "columnName": "HardwareRotation",
+          "value": "0"
+        },
+        {
+          "columnName": "PosXOffset",
+          "value": "50"
+        },
+        {
+          "columnName": "PosYOffset",
+          "value": "50"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_BaseboardCutLogic",
+          "value": "BetweenCabinets"
+        },
+        {
+          "columnName": "in_ModulePosition",
+          "value": "FirstSectionBeforeCut"
+        },
+        {
+          "columnName": "in_PlinthAreaDesign",
+          "value": "BaseboardWithAdjustableLegs"
+        },
+        {
+          "columnName": "in_PositionLeftMatrix",
+          "value": "LCF"
+        },
+        {
+          "columnName": "in_PositionRightMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionBackMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionFrontMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_CarcaseWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseWidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CarcaseDepthMin",
+          "value": "600"
+        },
+        {
+          "columnName": "in_CarcaseDepthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "SettingsLogic",
+          "value": "Library"
+        },
+        {
+          "columnName": "MatrixPositionType",
+          "value": "21"
+        },
+        {
+          "columnName": "BasePoint",
+          "value": "4"
+        },
+        {
+          "columnName": "HardwareRotation",
+          "value": "0"
+        },
+        {
+          "columnName": "PosXOffset",
+          "value": "20"
+        },
+        {
+          "columnName": "PosYOffset",
+          "value": "contourData.mod_CarcaseDepth/2"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_BaseboardCutLogic",
+          "value": "BetweenCabinets"
+        },
+        {
+          "columnName": "in_ModulePosition",
+          "value": "FirstSectionBeforeCut"
+        },
+        {
+          "columnName": "in_PlinthAreaDesign",
+          "value": "BaseboardWithAdjustableLegs"
+        },
+        {
+          "columnName": "in_PositionLeftMatrix",
+          "value": "LCR"
+        },
+        {
+          "columnName": "in_PositionRightMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionBackMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionFrontMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_CarcaseWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseWidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CarcaseDepthMin",
+          "value": "600"
+        },
+        {
+          "columnName": "in_CarcaseDepthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "SettingsLogic",
+          "value": "Library"
+        },
+        {
+          "columnName": "MatrixPositionType",
+          "value": "21"
+        },
+        {
+          "columnName": "BasePoint",
+          "value": "4"
+        },
+        {
+          "columnName": "HardwareRotation",
+          "value": "0"
+        },
+        {
+          "columnName": "PosXOffset",
+          "value": "50"
+        },
+        {
+          "columnName": "PosYOffset",
+          "value": "contourData.mod_CarcaseDepth/2"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_BaseboardCutLogic",
+          "value": "BetweenCabinets"
+        },
+        {
+          "columnName": "in_ModulePosition",
+          "value": "FirstSectionBeforeCut"
+        },
+        {
+          "columnName": "in_PlinthAreaDesign",
+          "value": "BaseboardWithAdjustableLegs"
+        },
+        {
+          "columnName": "in_PositionLeftMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionRightMatrix",
+          "value": "RCF"
+        },
+        {
+          "columnName": "in_PositionBackMatrix",
+          "value": "BCF"
+        },
+        {
+          "columnName": "in_PositionFrontMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_CarcaseWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseWidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CarcaseDepthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseDepthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "SettingsLogic",
+          "value": "Library"
+        },
+        {
+          "columnName": "MatrixPositionType",
+          "value": "13"
+        },
+        {
+          "columnName": "BasePoint",
+          "value": "3"
+        },
+        {
+          "columnName": "HardwareRotation",
+          "value": "180"
+        },
+        {
+          "columnName": "PosXOffset",
+          "value": "2"
+        },
+        {
+          "columnName": "PosYOffset",
+          "value": "20"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_BaseboardCutLogic",
+          "value": "BetweenCabinets"
+        },
+        {
+          "columnName": "in_ModulePosition",
+          "value": "FirstSectionBeforeCut"
+        },
+        {
+          "columnName": "in_PlinthAreaDesign",
+          "value": "BaseboardWithAdjustableLegs"
+        },
+        {
+          "columnName": "in_PositionLeftMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionRightMatrix",
+          "value": "RCF"
+        },
+        {
+          "columnName": "in_PositionBackMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionFrontMatrix",
+          "value": "FCF"
+        },
+        {
+          "columnName": "in_CarcaseWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseWidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CarcaseDepthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseDepthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "SettingsLogic",
+          "value": "Library"
+        },
+        {
+          "columnName": "MatrixPositionType",
+          "value": "33"
+        },
+        {
+          "columnName": "BasePoint",
+          "value": "9"
+        },
+        {
+          "columnName": "HardwareRotation",
+          "value": "0"
+        },
+        {
+          "columnName": "PosXOffset",
+          "value": "2"
+        },
+        {
+          "columnName": "PosYOffset",
+          "value": "20"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_BaseboardCutLogic",
+          "value": "BetweenCabinets"
+        },
+        {
+          "columnName": "in_ModulePosition",
+          "value": "FirstSectionBeforeCut"
+        },
+        {
+          "columnName": "in_PlinthAreaDesign",
+          "value": "BaseboardWithAdjustableLegs"
+        },
+        {
+          "columnName": "in_PositionLeftMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionRightMatrix",
+          "value": "RCF"
+        },
+        {
+          "columnName": "in_PositionBackMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionFrontMatrix",
+          "value": "FCR"
+        },
+        {
+          "columnName": "in_CarcaseWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseWidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CarcaseDepthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseDepthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "SettingsLogic",
+          "value": "Library"
+        },
+        {
+          "columnName": "MatrixPositionType",
+          "value": "33"
+        },
+        {
+          "columnName": "BasePoint",
+          "value": "9"
+        },
+        {
+          "columnName": "HardwareRotation",
+          "value": "0"
+        },
+        {
+          "columnName": "PosXOffset",
+          "value": "2"
+        },
+        {
+          "columnName": "PosYOffset",
+          "value": "50"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_BaseboardCutLogic",
+          "value": "BetweenCabinets"
+        },
+        {
+          "columnName": "in_ModulePosition",
+          "value": "FirstSectionBeforeCut"
+        },
+        {
+          "columnName": "in_PlinthAreaDesign",
+          "value": "BaseboardWithAdjustableLegs"
+        },
+        {
+          "columnName": "in_PositionLeftMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionRightMatrix",
+          "value": "RCF"
+        },
+        {
+          "columnName": "in_PositionBackMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionFrontMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_CarcaseWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseWidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CarcaseDepthMin",
+          "value": "600"
+        },
+        {
+          "columnName": "in_CarcaseDepthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "SettingsLogic",
+          "value": "Library"
+        },
+        {
+          "columnName": "MatrixPositionType",
+          "value": "23"
+        },
+        {
+          "columnName": "BasePoint",
+          "value": "6"
+        },
+        {
+          "columnName": "HardwareRotation",
+          "value": "180"
+        },
+        {
+          "columnName": "PosXOffset",
+          "value": "2"
+        },
+        {
+          "columnName": "PosYOffset",
+          "value": "contourData.mod_CarcaseDepth/2"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_BaseboardCutLogic",
+          "value": "BetweenCabinets"
+        },
+        {
+          "columnName": "in_ModulePosition",
+          "value": "FirstSectionBeforeCut"
+        },
+        {
+          "columnName": "in_PlinthAreaDesign",
+          "value": "BaseboardWithAdjustableLegs"
+        },
+        {
+          "columnName": "in_PositionLeftMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionRightMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionBackMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionFrontMatrix",
+          "value": "FCF"
+        },
+        {
+          "columnName": "in_CarcaseWidthMin",
+          "value": "600"
+        },
+        {
+          "columnName": "in_CarcaseWidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CarcaseDepthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseDepthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "SettingsLogic",
+          "value": "Library"
+        },
+        {
+          "columnName": "MatrixPositionType",
+          "value": "32"
+        },
+        {
+          "columnName": "BasePoint",
+          "value": "8"
+        },
+        {
+          "columnName": "HardwareRotation",
+          "value": "0"
+        },
+        {
+          "columnName": "PosXOffset",
+          "value": "contourData.mod_CarcaseWidth/2"
+        },
+        {
+          "columnName": "PosYOffset",
+          "value": "20"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_BaseboardCutLogic",
+          "value": "BetweenCabinets"
+        },
+        {
+          "columnName": "in_ModulePosition",
+          "value": "FirstSectionBeforeCut"
+        },
+        {
+          "columnName": "in_PlinthAreaDesign",
+          "value": "BaseboardWithAdjustableLegs"
+        },
+        {
+          "columnName": "in_PositionLeftMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionRightMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionBackMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionFrontMatrix",
+          "value": "FCR"
+        },
+        {
+          "columnName": "in_CarcaseWidthMin",
+          "value": "600"
+        },
+        {
+          "columnName": "in_CarcaseWidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CarcaseDepthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseDepthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "SettingsLogic",
+          "value": "Library"
+        },
+        {
+          "columnName": "MatrixPositionType",
+          "value": "32"
+        },
+        {
+          "columnName": "BasePoint",
+          "value": "8"
+        },
+        {
+          "columnName": "HardwareRotation",
+          "value": "0"
+        },
+        {
+          "columnName": "PosXOffset",
+          "value": "contourData.mod_CarcaseWidth/2"
+        },
+        {
+          "columnName": "PosYOffset",
+          "value": "50"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_BaseboardCutLogic",
+          "value": "BetweenCabinets"
+        },
+        {
+          "columnName": "in_ModulePosition",
+          "value": "LastSection"
+        },
+        {
+          "columnName": "in_PlinthAreaDesign",
+          "value": "BaseboardWithAdjustableLegs"
+        },
+        {
+          "columnName": "in_PositionLeftMatrix",
+          "value": "LCF"
+        },
+        {
+          "columnName": "in_PositionRightMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionBackMatrix",
+          "value": "BCF"
+        },
+        {
+          "columnName": "in_PositionFrontMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_CarcaseWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseWidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CarcaseDepthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseDepthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "SettingsLogic",
+          "value": "Library"
+        },
+        {
+          "columnName": "MatrixPositionType",
+          "value": "11"
+        },
+        {
+          "columnName": "BasePoint",
+          "value": "2"
+        },
+        {
+          "columnName": "HardwareRotation",
+          "value": "0"
+        },
+        {
+          "columnName": "PosXOffset",
+          "value": "0"
+        },
+        {
+          "columnName": "PosYOffset",
+          "value": "20"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_BaseboardCutLogic",
+          "value": "BetweenCabinets"
+        },
+        {
+          "columnName": "in_ModulePosition",
+          "value": "LastSection"
+        },
+        {
+          "columnName": "in_PlinthAreaDesign",
+          "value": "BaseboardWithAdjustableLegs"
+        },
+        {
+          "columnName": "in_PositionLeftMatrix",
+          "value": "LCF"
+        },
+        {
+          "columnName": "in_PositionRightMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionBackMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionFrontMatrix",
+          "value": "FCF"
+        },
+        {
+          "columnName": "in_CarcaseWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseWidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CarcaseDepthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseDepthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "SettingsLogic",
+          "value": "Library"
+        },
+        {
+          "columnName": "MatrixPositionType",
+          "value": "31"
+        },
+        {
+          "columnName": "BasePoint",
+          "value": "8"
+        },
+        {
+          "columnName": "HardwareRotation",
+          "value": "0"
+        },
+        {
+          "columnName": "PosXOffset",
+          "value": "0"
+        },
+        {
+          "columnName": "PosYOffset",
+          "value": "20"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_BaseboardCutLogic",
+          "value": "BetweenCabinets"
+        },
+        {
+          "columnName": "in_ModulePosition",
+          "value": "LastSection"
+        },
+        {
+          "columnName": "in_PlinthAreaDesign",
+          "value": "BaseboardWithAdjustableLegs"
+        },
+        {
+          "columnName": "in_PositionLeftMatrix",
+          "value": "LCF"
+        },
+        {
+          "columnName": "in_PositionRightMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionBackMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionFrontMatrix",
+          "value": "FCR"
+        },
+        {
+          "columnName": "in_CarcaseWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseWidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CarcaseDepthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseDepthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "SettingsLogic",
+          "value": "Library"
+        },
+        {
+          "columnName": "MatrixPositionType",
+          "value": "31"
+        },
+        {
+          "columnName": "BasePoint",
+          "value": "8"
+        },
+        {
+          "columnName": "HardwareRotation",
+          "value": "0"
+        },
+        {
+          "columnName": "PosXOffset",
+          "value": "0"
+        },
+        {
+          "columnName": "PosYOffset",
+          "value": "50"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_BaseboardCutLogic",
+          "value": "BetweenCabinets"
+        },
+        {
+          "columnName": "in_ModulePosition",
+          "value": "LastSection"
+        },
+        {
+          "columnName": "in_PlinthAreaDesign",
+          "value": "BaseboardWithAdjustableLegs"
+        },
+        {
+          "columnName": "in_PositionLeftMatrix",
+          "value": "LCF"
+        },
+        {
+          "columnName": "in_PositionRightMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionBackMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionFrontMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_CarcaseWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseWidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CarcaseDepthMin",
+          "value": "600"
+        },
+        {
+          "columnName": "in_CarcaseDepthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "SettingsLogic",
+          "value": "Library"
+        },
+        {
+          "columnName": "MatrixPositionType",
+          "value": "21"
+        },
+        {
+          "columnName": "BasePoint",
+          "value": "5"
+        },
+        {
+          "columnName": "HardwareRotation",
+          "value": "0"
+        },
+        {
+          "columnName": "PosXOffset",
+          "value": "0"
+        },
+        {
+          "columnName": "PosYOffset",
+          "value": "contourData.mod_CarcaseDepth/2"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_BaseboardCutLogic",
+          "value": "BetweenCabinets"
+        },
+        {
+          "columnName": "in_ModulePosition",
+          "value": "LastSection"
+        },
+        {
+          "columnName": "in_PlinthAreaDesign",
+          "value": "BaseboardWithAdjustableLegs"
+        },
+        {
+          "columnName": "in_PositionLeftMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionRightMatrix",
+          "value": "RCF"
+        },
+        {
+          "columnName": "in_PositionBackMatrix",
+          "value": "BCF"
+        },
+        {
+          "columnName": "in_PositionFrontMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_CarcaseWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseWidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CarcaseDepthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseDepthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "SettingsLogic",
+          "value": "Library"
+        },
+        {
+          "columnName": "MatrixPositionType",
+          "value": "13"
+        },
+        {
+          "columnName": "BasePoint",
+          "value": "3"
+        },
+        {
+          "columnName": "HardwareRotation",
+          "value": "180"
+        },
+        {
+          "columnName": "PosXOffset",
+          "value": "20"
+        },
+        {
+          "columnName": "PosYOffset",
+          "value": "20"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_BaseboardCutLogic",
+          "value": "BetweenCabinets"
+        },
+        {
+          "columnName": "in_ModulePosition",
+          "value": "LastSection"
+        },
+        {
+          "columnName": "in_PlinthAreaDesign",
+          "value": "BaseboardWithAdjustableLegs"
+        },
+        {
+          "columnName": "in_PositionLeftMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionRightMatrix",
+          "value": "RCR"
+        },
+        {
+          "columnName": "in_PositionBackMatrix",
+          "value": "BCF"
+        },
+        {
+          "columnName": "in_PositionFrontMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_CarcaseWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseWidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CarcaseDepthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseDepthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "SettingsLogic",
+          "value": "Library"
+        },
+        {
+          "columnName": "MatrixPositionType",
+          "value": "13"
+        },
+        {
+          "columnName": "BasePoint",
+          "value": "3"
+        },
+        {
+          "columnName": "HardwareRotation",
+          "value": "180"
+        },
+        {
+          "columnName": "PosXOffset",
+          "value": "50"
+        },
+        {
+          "columnName": "PosYOffset",
+          "value": "20"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_BaseboardCutLogic",
+          "value": "BetweenCabinets"
+        },
+        {
+          "columnName": "in_ModulePosition",
+          "value": "LastSection"
+        },
+        {
+          "columnName": "in_PlinthAreaDesign",
+          "value": "BaseboardWithAdjustableLegs"
+        },
+        {
+          "columnName": "in_PositionLeftMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionRightMatrix",
+          "value": "RCF"
+        },
+        {
+          "columnName": "in_PositionBackMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionFrontMatrix",
+          "value": "FCF"
+        },
+        {
+          "columnName": "in_CarcaseWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseWidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CarcaseDepthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseDepthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "SettingsLogic",
+          "value": "Library"
+        },
+        {
+          "columnName": "MatrixPositionType",
+          "value": "33"
+        },
+        {
+          "columnName": "BasePoint",
+          "value": "9"
+        },
+        {
+          "columnName": "HardwareRotation",
+          "value": "0"
+        },
+        {
+          "columnName": "PosXOffset",
+          "value": "20"
+        },
+        {
+          "columnName": "PosYOffset",
+          "value": "20"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_BaseboardCutLogic",
+          "value": "BetweenCabinets"
+        },
+        {
+          "columnName": "in_ModulePosition",
+          "value": "LastSection"
+        },
+        {
+          "columnName": "in_PlinthAreaDesign",
+          "value": "BaseboardWithAdjustableLegs"
+        },
+        {
+          "columnName": "in_PositionLeftMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionRightMatrix",
+          "value": "RCF"
+        },
+        {
+          "columnName": "in_PositionBackMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionFrontMatrix",
+          "value": "FCR"
+        },
+        {
+          "columnName": "in_CarcaseWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseWidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CarcaseDepthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseDepthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "SettingsLogic",
+          "value": "Library"
+        },
+        {
+          "columnName": "MatrixPositionType",
+          "value": "33"
+        },
+        {
+          "columnName": "BasePoint",
+          "value": "9"
+        },
+        {
+          "columnName": "HardwareRotation",
+          "value": "0"
+        },
+        {
+          "columnName": "PosXOffset",
+          "value": "20"
+        },
+        {
+          "columnName": "PosYOffset",
+          "value": "50"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_BaseboardCutLogic",
+          "value": "BetweenCabinets"
+        },
+        {
+          "columnName": "in_ModulePosition",
+          "value": "LastSection"
+        },
+        {
+          "columnName": "in_PlinthAreaDesign",
+          "value": "BaseboardWithAdjustableLegs"
+        },
+        {
+          "columnName": "in_PositionLeftMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionRightMatrix",
+          "value": "RCR"
+        },
+        {
+          "columnName": "in_PositionBackMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionFrontMatrix",
+          "value": "FCF"
+        },
+        {
+          "columnName": "in_CarcaseWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseWidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CarcaseDepthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseDepthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "SettingsLogic",
+          "value": "Library"
+        },
+        {
+          "columnName": "MatrixPositionType",
+          "value": "33"
+        },
+        {
+          "columnName": "BasePoint",
+          "value": "9"
+        },
+        {
+          "columnName": "HardwareRotation",
+          "value": "0"
+        },
+        {
+          "columnName": "PosXOffset",
+          "value": "50"
+        },
+        {
+          "columnName": "PosYOffset",
+          "value": "20"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_BaseboardCutLogic",
+          "value": "BetweenCabinets"
+        },
+        {
+          "columnName": "in_ModulePosition",
+          "value": "LastSection"
+        },
+        {
+          "columnName": "in_PlinthAreaDesign",
+          "value": "BaseboardWithAdjustableLegs"
+        },
+        {
+          "columnName": "in_PositionLeftMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionRightMatrix",
+          "value": "RCR"
+        },
+        {
+          "columnName": "in_PositionBackMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionFrontMatrix",
+          "value": "FCR"
+        },
+        {
+          "columnName": "in_CarcaseWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseWidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CarcaseDepthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseDepthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "SettingsLogic",
+          "value": "Library"
+        },
+        {
+          "columnName": "MatrixPositionType",
+          "value": "33"
+        },
+        {
+          "columnName": "BasePoint",
+          "value": "9"
+        },
+        {
+          "columnName": "HardwareRotation",
+          "value": "0"
+        },
+        {
+          "columnName": "PosXOffset",
+          "value": "50"
+        },
+        {
+          "columnName": "PosYOffset",
+          "value": "50"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_BaseboardCutLogic",
+          "value": "BetweenCabinets"
+        },
+        {
+          "columnName": "in_ModulePosition",
+          "value": "LastSection"
+        },
+        {
+          "columnName": "in_PlinthAreaDesign",
+          "value": "BaseboardWithAdjustableLegs"
+        },
+        {
+          "columnName": "in_PositionLeftMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionRightMatrix",
+          "value": "RCF"
+        },
+        {
+          "columnName": "in_PositionBackMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionFrontMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_CarcaseWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseWidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CarcaseDepthMin",
+          "value": "600"
+        },
+        {
+          "columnName": "in_CarcaseDepthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "SettingsLogic",
+          "value": "Library"
+        },
+        {
+          "columnName": "MatrixPositionType",
+          "value": "23"
+        },
+        {
+          "columnName": "BasePoint",
+          "value": "6"
+        },
+        {
+          "columnName": "HardwareRotation",
+          "value": "180"
+        },
+        {
+          "columnName": "PosXOffset",
+          "value": "20"
+        },
+        {
+          "columnName": "PosYOffset",
+          "value": "contourData.mod_CarcaseDepth/2"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_BaseboardCutLogic",
+          "value": "BetweenCabinets"
+        },
+        {
+          "columnName": "in_ModulePosition",
+          "value": "LastSection"
+        },
+        {
+          "columnName": "in_PlinthAreaDesign",
+          "value": "BaseboardWithAdjustableLegs"
+        },
+        {
+          "columnName": "in_PositionLeftMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionRightMatrix",
+          "value": "RCR"
+        },
+        {
+          "columnName": "in_PositionBackMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionFrontMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_CarcaseWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseWidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CarcaseDepthMin",
+          "value": "600"
+        },
+        {
+          "columnName": "in_CarcaseDepthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "SettingsLogic",
+          "value": "Library"
+        },
+        {
+          "columnName": "MatrixPositionType",
+          "value": "23"
+        },
+        {
+          "columnName": "BasePoint",
+          "value": "6"
+        },
+        {
+          "columnName": "HardwareRotation",
+          "value": "180"
+        },
+        {
+          "columnName": "PosXOffset",
+          "value": "50"
+        },
+        {
+          "columnName": "PosYOffset",
+          "value": "contourData.mod_CarcaseDepth/2"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_BaseboardCutLogic",
+          "value": "BetweenCabinets"
+        },
+        {
+          "columnName": "in_ModulePosition",
+          "value": "LastSection"
+        },
+        {
+          "columnName": "in_PlinthAreaDesign",
+          "value": "BaseboardWithAdjustableLegs"
+        },
+        {
+          "columnName": "in_PositionLeftMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionRightMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionBackMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionFrontMatrix",
+          "value": "FCF"
+        },
+        {
+          "columnName": "in_CarcaseWidthMin",
+          "value": "600"
+        },
+        {
+          "columnName": "in_CarcaseWidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CarcaseDepthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseDepthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "SettingsLogic",
+          "value": "Library"
+        },
+        {
+          "columnName": "MatrixPositionType",
+          "value": "32"
+        },
+        {
+          "columnName": "BasePoint",
+          "value": "8"
+        },
+        {
+          "columnName": "HardwareRotation",
+          "value": "0"
+        },
+        {
+          "columnName": "PosXOffset",
+          "value": "contourData.mod_CarcaseWidth/2"
+        },
+        {
+          "columnName": "PosYOffset",
+          "value": "20"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_BaseboardCutLogic",
+          "value": "BetweenCabinets"
+        },
+        {
+          "columnName": "in_ModulePosition",
+          "value": "LastSection"
+        },
+        {
+          "columnName": "in_PlinthAreaDesign",
+          "value": "BaseboardWithAdjustableLegs"
+        },
+        {
+          "columnName": "in_PositionLeftMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionRightMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionBackMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionFrontMatrix",
+          "value": "FCR"
+        },
+        {
+          "columnName": "in_CarcaseWidthMin",
+          "value": "600"
+        },
+        {
+          "columnName": "in_CarcaseWidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CarcaseDepthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseDepthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "SettingsLogic",
+          "value": "Library"
+        },
+        {
+          "columnName": "MatrixPositionType",
+          "value": "32"
+        },
+        {
+          "columnName": "BasePoint",
+          "value": "8"
+        },
+        {
+          "columnName": "HardwareRotation",
+          "value": "0"
+        },
+        {
+          "columnName": "PosXOffset",
+          "value": "contourData.mod_CarcaseWidth/2"
+        },
+        {
+          "columnName": "PosYOffset",
+          "value": "50"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_BaseboardCutLogic",
+          "value": "BetweenCabinets"
+        },
+        {
+          "columnName": "in_ModulePosition",
+          "value": "MiddleSection"
+        },
+        {
+          "columnName": "in_PlinthAreaDesign",
+          "value": "BaseboardWithAdjustableLegs"
+        },
+        {
+          "columnName": "in_PositionLeftMatrix",
+          "value": "LCF"
+        },
+        {
+          "columnName": "in_PositionRightMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionBackMatrix",
+          "value": "BCF"
+        },
+        {
+          "columnName": "in_PositionFrontMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_CarcaseWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseWidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CarcaseDepthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseDepthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "SettingsLogic",
+          "value": "Library"
+        },
+        {
+          "columnName": "MatrixPositionType",
+          "value": "11"
+        },
+        {
+          "columnName": "BasePoint",
+          "value": "2"
+        },
+        {
+          "columnName": "HardwareRotation",
+          "value": "0"
+        },
+        {
+          "columnName": "PosXOffset",
+          "value": "0"
+        },
+        {
+          "columnName": "PosYOffset",
+          "value": "20"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_BaseboardCutLogic",
+          "value": "BetweenCabinets"
+        },
+        {
+          "columnName": "in_ModulePosition",
+          "value": "MiddleSection"
+        },
+        {
+          "columnName": "in_PlinthAreaDesign",
+          "value": "BaseboardWithAdjustableLegs"
+        },
+        {
+          "columnName": "in_PositionLeftMatrix",
+          "value": "LCF"
+        },
+        {
+          "columnName": "in_PositionRightMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionBackMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionFrontMatrix",
+          "value": "FCF"
+        },
+        {
+          "columnName": "in_CarcaseWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseWidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CarcaseDepthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseDepthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "SettingsLogic",
+          "value": "Library"
+        },
+        {
+          "columnName": "MatrixPositionType",
+          "value": "31"
+        },
+        {
+          "columnName": "BasePoint",
+          "value": "8"
+        },
+        {
+          "columnName": "HardwareRotation",
+          "value": "0"
+        },
+        {
+          "columnName": "PosXOffset",
+          "value": "0"
+        },
+        {
+          "columnName": "PosYOffset",
+          "value": "20"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_BaseboardCutLogic",
+          "value": "BetweenCabinets"
+        },
+        {
+          "columnName": "in_ModulePosition",
+          "value": "MiddleSection"
+        },
+        {
+          "columnName": "in_PlinthAreaDesign",
+          "value": "BaseboardWithAdjustableLegs"
+        },
+        {
+          "columnName": "in_PositionLeftMatrix",
+          "value": "LCF"
+        },
+        {
+          "columnName": "in_PositionRightMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionBackMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionFrontMatrix",
+          "value": "FCR"
+        },
+        {
+          "columnName": "in_CarcaseWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseWidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CarcaseDepthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseDepthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "SettingsLogic",
+          "value": "Library"
+        },
+        {
+          "columnName": "MatrixPositionType",
+          "value": "31"
+        },
+        {
+          "columnName": "BasePoint",
+          "value": "8"
+        },
+        {
+          "columnName": "HardwareRotation",
+          "value": "0"
+        },
+        {
+          "columnName": "PosXOffset",
+          "value": "0"
+        },
+        {
+          "columnName": "PosYOffset",
+          "value": "50"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_BaseboardCutLogic",
+          "value": "BetweenCabinets"
+        },
+        {
+          "columnName": "in_ModulePosition",
+          "value": "MiddleSection"
+        },
+        {
+          "columnName": "in_PlinthAreaDesign",
+          "value": "BaseboardWithAdjustableLegs"
+        },
+        {
+          "columnName": "in_PositionLeftMatrix",
+          "value": "LCF"
+        },
+        {
+          "columnName": "in_PositionRightMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionBackMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionFrontMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_CarcaseWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseWidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CarcaseDepthMin",
+          "value": "600"
+        },
+        {
+          "columnName": "in_CarcaseDepthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "SettingsLogic",
+          "value": "Library"
+        },
+        {
+          "columnName": "MatrixPositionType",
+          "value": "21"
+        },
+        {
+          "columnName": "BasePoint",
+          "value": "5"
+        },
+        {
+          "columnName": "HardwareRotation",
+          "value": "0"
+        },
+        {
+          "columnName": "PosXOffset",
+          "value": "0"
+        },
+        {
+          "columnName": "PosYOffset",
+          "value": "contourData.mod_CarcaseDepth/2"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_BaseboardCutLogic",
+          "value": "BetweenCabinets"
+        },
+        {
+          "columnName": "in_ModulePosition",
+          "value": "MiddleSection"
+        },
+        {
+          "columnName": "in_PlinthAreaDesign",
+          "value": "BaseboardWithAdjustableLegs"
+        },
+        {
+          "columnName": "in_PositionLeftMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionRightMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionBackMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionFrontMatrix",
+          "value": "FCF"
+        },
+        {
+          "columnName": "in_CarcaseWidthMin",
+          "value": "600"
+        },
+        {
+          "columnName": "in_CarcaseWidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CarcaseDepthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseDepthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "SettingsLogic",
+          "value": "Library"
+        },
+        {
+          "columnName": "MatrixPositionType",
+          "value": "32"
+        },
+        {
+          "columnName": "BasePoint",
+          "value": "8"
+        },
+        {
+          "columnName": "HardwareRotation",
+          "value": "0"
+        },
+        {
+          "columnName": "PosXOffset",
+          "value": "contourData.mod_CarcaseWidth/2"
+        },
+        {
+          "columnName": "PosYOffset",
+          "value": "20"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_BaseboardCutLogic",
+          "value": "BetweenCabinets"
+        },
+        {
+          "columnName": "in_ModulePosition",
+          "value": "MiddleSection"
+        },
+        {
+          "columnName": "in_PlinthAreaDesign",
+          "value": "BaseboardWithAdjustableLegs"
+        },
+        {
+          "columnName": "in_PositionLeftMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionRightMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionBackMatrix",
+          "value": ""
+        },
+        {
+          "columnName": "in_PositionFrontMatrix",
+          "value": "FCR"
+        },
+        {
+          "columnName": "in_CarcaseWidthMin",
+          "value": "600"
+        },
+        {
+          "columnName": "in_CarcaseWidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CarcaseDepthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseDepthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "SettingsLogic",
+          "value": "Library"
+        },
+        {
+          "columnName": "MatrixPositionType",
+          "value": "32"
+        },
+        {
+          "columnName": "BasePoint",
+          "value": "8"
+        },
+        {
+          "columnName": "HardwareRotation",
+          "value": "0"
+        },
+        {
+          "columnName": "PosXOffset",
+          "value": "contourData.mod_CarcaseWidth/2"
+        },
+        {
+          "columnName": "PosYOffset",
+          "value": "50"
+        }
+      ]
+    }
+  ],
+  "dataSource": "Default",
+  "changedAt": "2025-10-27T14:51:33.9486692+00:00"
+}

@@ -1,0 +1,158 @@
+{
+  "variantId": "mod_FlipliftType",
+  "shortName": "Fliplift type",
+  "variantTypeId": "Text",
+  "description": "Type of the flip lift",
+  "restrictionTypeId": "Public",
+  "groupName": "Hardware | Fliplift",
+  "imageId": "b50d06d9-cabc-4471-b8df-563472004c80:FlipliftType.JPG",
+  "assignedGlobalVarId": "basic_FlipliftType",
+  "isArray": false,
+  "isPosRelevant": true,
+  "mainAttr": true,
+  "userRight": "Advanced",
+  "implicitRelevant": false,
+  "posView": "Dropdown",
+  "matrix": [
+    {
+      "id": "FrontDividingNecessary",
+      "type": "Bool"
+    },
+    {
+      "id": "PartQty",
+      "type": "Integer",
+      "default": 1
+    },
+    {
+      "id": "DirectionType",
+      "type": "Text"
+    },
+    {
+      "id": "NeedsHinges",
+      "type": "Bool",
+      "default": false
+    }
+  ],
+  "selections": [
+    {
+      "value": "DF",
+      "description": "Downwards opening flap",
+      "shortName": "DF",
+      "imageId": "055e43da-348d-46c3-9bcb-2a268545ca02:DF.jpg",
+      "matrix": [
+        {
+          "id": "FrontDividingNecessary",
+          "value": false
+        },
+        {
+          "id": "PartQty",
+          "value": 1
+        },
+        {
+          "id": "DirectionType",
+          "value": "TopBtm"
+        },
+        {
+          "id": "NeedsHinges",
+          "value": true
+        }
+      ]
+    },
+    {
+      "value": "FHF",
+      "description": "Folding high flip lift",
+      "shortName": "FHF",
+      "imageId": "8a3a0142-e21a-4d41-91ac-7f152830cd18:FHF.jpg",
+      "matrix": [
+        {
+          "id": "FrontDividingNecessary",
+          "value": true
+        },
+        {
+          "id": "PartQty",
+          "value": 2
+        },
+        {
+          "id": "DirectionType",
+          "value": "BtmTop"
+        },
+        {
+          "id": "NeedsHinges",
+          "value": false
+        }
+      ]
+    },
+    {
+      "value": "LHF",
+      "description": "High flip lift",
+      "shortName": "LHF",
+      "imageId": "10c8808f-c87e-42b4-853f-2e69e6a9015f:LHF.jpg",
+      "matrix": [
+        {
+          "id": "FrontDividingNecessary",
+          "value": false
+        },
+        {
+          "id": "PartQty",
+          "value": 1
+        },
+        {
+          "id": "DirectionType",
+          "value": "BtmTop"
+        },
+        {
+          "id": "NeedsHinges",
+          "value": false
+        }
+      ]
+    },
+    {
+      "value": "SHF",
+      "description": "Swing high flip lift",
+      "shortName": "SHF",
+      "imageId": "08433d26-10a4-4676-8f02-7357a183279d:SHF.jpg",
+      "matrix": [
+        {
+          "id": "FrontDividingNecessary",
+          "value": false
+        },
+        {
+          "id": "PartQty",
+          "value": 1
+        },
+        {
+          "id": "DirectionType",
+          "value": "BtmTop"
+        },
+        {
+          "id": "NeedsHinges",
+          "value": false
+        }
+      ]
+    },
+    {
+      "value": "UF",
+      "description": "Upwards opening flap",
+      "shortName": "UF",
+      "imageId": "6609de35-d0e3-4dd5-a1a7-9a9db0897937:UF.jpg",
+      "matrix": [
+        {
+          "id": "FrontDividingNecessary",
+          "value": false
+        },
+        {
+          "id": "PartQty",
+          "value": 1
+        },
+        {
+          "id": "DirectionType",
+          "value": "BtmTop"
+        },
+        {
+          "id": "NeedsHinges",
+          "value": true
+        }
+      ]
+    }
+  ]
+}

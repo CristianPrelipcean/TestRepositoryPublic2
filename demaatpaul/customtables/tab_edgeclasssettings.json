@@ -1,0 +1,239 @@
+{
+  "tableName": "tab_EdgeClassSettings",
+  "description": "Setting class for edges",
+  "restrictionTypeId": "Public",
+  "isInputUnique": true,
+  "groupName": "Edges",
+  "columns": [
+    {
+      "name": "_id",
+      "type": "Integer",
+      "allowNull": false
+    },
+    {
+      "name": "in_EdgeType",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "Description",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "EdgeClass",
+      "type": "Text",
+      "allowNull": true
+    }
+  ],
+  "rows": [
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeType",
+          "value": "CBE"
+        },
+        {
+          "columnName": "Description",
+          "value": "Carcase Back Edge"
+        },
+        {
+          "columnName": "EdgeClass",
+          "value": "CarcaseClass1"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeType",
+          "value": "CFE"
+        },
+        {
+          "columnName": "Description",
+          "value": "Carcase Front Edge"
+        },
+        {
+          "columnName": "EdgeClass",
+          "value": "CarcaseClass1"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeType",
+          "value": "CLR"
+        },
+        {
+          "columnName": "Description",
+          "value": "Carcase Edges (not Front or Back)"
+        },
+        {
+          "columnName": "EdgeClass",
+          "value": "CarcaseClass1"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeType",
+          "value": "DOW"
+        },
+        {
+          "columnName": "Description",
+          "value": "Cutting in EdgeBander (for doweling)"
+        },
+        {
+          "columnName": "EdgeClass",
+          "value": "NoEdgeClass"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeType",
+          "value": "FHS"
+        },
+        {
+          "columnName": "Description",
+          "value": "Front handle strip "
+        },
+        {
+          "columnName": "EdgeClass",
+          "value": "FrontClass1"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeType",
+          "value": "FRE"
+        },
+        {
+          "columnName": "Description",
+          "value": "Front Edge"
+        },
+        {
+          "columnName": "EdgeClass",
+          "value": "FrontClass1"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeType",
+          "value": "ICN"
+        },
+        {
+          "columnName": "Description",
+          "value": "Carcase Interior Not Visible Edge"
+        },
+        {
+          "columnName": "EdgeClass",
+          "value": "CarcaseClass1"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeType",
+          "value": "ICV"
+        },
+        {
+          "columnName": "Description",
+          "value": "Carcase Interior Visible Edge"
+        },
+        {
+          "columnName": "EdgeClass",
+          "value": "CarcaseClass1"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeType",
+          "value": "MIT"
+        },
+        {
+          "columnName": "Description",
+          "value": "Mitre Cut Edge"
+        },
+        {
+          "columnName": "EdgeClass",
+          "value": "NoEdgeClass"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeType",
+          "value": "NOE"
+        },
+        {
+          "columnName": "Description",
+          "value": "No Edge"
+        },
+        {
+          "columnName": "EdgeClass",
+          "value": "NoEdgeClass"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeType",
+          "value": "SPB"
+        },
+        {
+          "columnName": "Description",
+          "value": "SidePanel Bottom"
+        },
+        {
+          "columnName": "EdgeClass",
+          "value": "CarcaseClass1"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeType",
+          "value": "SPT"
+        },
+        {
+          "columnName": "Description",
+          "value": "SidePanel Top"
+        },
+        {
+          "columnName": "EdgeClass",
+          "value": "CarcaseClass1"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeType",
+          "value": "VBE"
+        },
+        {
+          "columnName": "Description",
+          "value": "Visible Edge in a Back Panel"
+        },
+        {
+          "columnName": "EdgeClass",
+          "value": "CarcaseClass1"
+        }
+      ]
+    }
+  ]
+}

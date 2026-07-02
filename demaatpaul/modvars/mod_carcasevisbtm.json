@@ -1,0 +1,44 @@
+{
+  "variantId": "mod_CarcaseVisBtm",
+  "shortName": "Carcase visible bottom",
+  "variantTypeId": "Bool",
+  "description": "Carcase is visible on the bottom",
+  "restrictionTypeId": "Internal",
+  "groupName": "Additional",
+  "imageId": "a784d67e-0307-44e9-b991-3be3cacbc543:CarcaseVisBtm.jpg",
+  "isArray": false,
+  "isPosRelevant": false,
+  "userRight": "Master",
+  "sorting": 6,
+  "matrix": [
+    {
+      "id": "outside",
+      "type": "Text",
+      "default": "NotVisible"
+    }
+  ],
+  "selections": [
+    {
+      "value": "false",
+      "description": "Not visible",
+      "shortName": "false",
+      "matrix": [
+        {
+          "id": "outside",
+          "value": "NotVisible"
+        }
+      ]
+    },
+    {
+      "value": "true",
+      "description": "Visible",
+      "shortName": "true",
+      "matrix": [
+        {
+          "id": "outside",
+          "value": "Visible"
+        }
+      ]
+    }
+  ]
+}

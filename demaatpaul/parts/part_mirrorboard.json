@@ -1,0 +1,90 @@
+{
+  "partCode": "part_MirrorBoard",
+  "shortName": "Mirror board",
+  "description": "Panel for the mirror board",
+  "wdt": "XYZ",
+  "groupName": "Panels",
+  "invisible": false,
+  "restrictionTypeId": "Public",
+  "noNcData": true,
+  "partVariants": [
+    {
+      "partVarId": "pa_BomId",
+      "valueScript": "'None'"
+    },
+    {
+      "partVarId": "pa_EdgeBackColor",
+      "valueScript": "this.parent.mod_MirrorBoardColor"
+    },
+    {
+      "partVarId": "pa_EdgeBackType",
+      "valueScript": "'NOE'"
+    },
+    {
+      "partVarId": "pa_EdgeFrontColor",
+      "valueScript": "this.parent.mod_MirrorBoardColor"
+    },
+    {
+      "partVarId": "pa_EdgeFrontType",
+      "valueScript": "'FRE'"
+    },
+    {
+      "partVarId": "pa_EdgeJointType",
+      "valueScript": "'VVVV'"
+    },
+    {
+      "partVarId": "pa_EdgeLeftColor",
+      "valueScript": "this.parent.mod_MirrorBoardColor"
+    },
+    {
+      "partVarId": "pa_EdgeLeftType",
+      "valueScript": "'FRE'"
+    },
+    {
+      "partVarId": "pa_EdgeRightColor",
+      "valueScript": "this.parent.mod_MirrorBoardColor"
+    },
+    {
+      "partVarId": "pa_GrainDirection",
+      "valueScript": "'Neutral'"
+    },
+    {
+      "partVarId": "pa_TopColor",
+      "valueScript": "this.parent.mod_MirrorBoardColor"
+    },
+    {
+      "partVarId": "pa_BtmColor",
+      "valueScript": "this.parent.mod_MirrorBoardColor"
+    },
+    {
+      "partVarId": "pa_Program",
+      "valueScript": "this.parent.mod_MirrorBoardProgram"
+    },
+    {
+      "partVarId": "pa_EdgeRightType",
+      "valueScript": "'FRE'"
+    },
+    {
+      "partVarId": "pa_AdditionalInfo1",
+      "valueScript": "'None'"
+    },
+    {
+      "partVarId": "pa_ColorGrainGroup",
+      "valueScript": "this.parent.mod_MirrorBoardColor_matrix.GrainGroupId"
+    },
+    {
+      "partVarId": "pa_GrainLogic",
+      "valueScript": "'None'"
+    },
+    {
+      "partVarId": "pa_ProgramGrainGroup",
+      "valueScript": "this.parent.mod_MirrorBoardProgram_matrix.GrainGroupId"
+    },
+    {
+      "partVarId": "pa_TypeElement",
+      "valueScript": "'All'"
+    }
+  ],
+  "bomData": [],
+  "ncData": []
+}

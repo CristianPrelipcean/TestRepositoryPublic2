@@ -1,0 +1,173 @@
+{
+  "variantId": "mod_HingeLogic",
+  "shortName": "Logic",
+  "variantTypeId": "Text",
+  "description": "Logic for the hinge selection",
+  "restrictionTypeId": "Internal",
+  "groupName": "Hardware | Hinge",
+  "imageId": "8577cd98-6e7f-4bbf-9dae-b971d64360ae:Logic.png",
+  "isArray": false,
+  "isPosRelevant": true,
+  "mainAttr": false,
+  "userRight": "Master",
+  "implicitRelevant": false,
+  "posView": "Dropdown",
+  "matrix": [
+    {
+      "id": "HingeSelection",
+      "type": "Text",
+      "default": "Automatic"
+    },
+    {
+      "id": "HingePositioning",
+      "type": "Text",
+      "default": "Manual"
+    }
+  ],
+  "selections": [
+    {
+      "value": "AutoSel_AutoPos",
+      "description": "AutomaticSelectionAutomaticPositioning",
+      "shortName": "AutoSel_AutoPos",
+      "imageId": "c1c057e9-73ac-4829-8f5d-9edbc80d7a54:AA.jpg",
+      "matrix": [
+        {
+          "id": "HingeSelection",
+          "value": "Automatic"
+        },
+        {
+          "id": "HingePositioning",
+          "value": "Automatic"
+        }
+      ]
+    },
+    {
+      "value": "AutoSel_CustPos",
+      "description": "AutomaticSelectionCustomPositioning",
+      "shortName": "AutoSel_CustPos",
+      "imageId": "194f2154-9b0b-4a43-8f87-16e278cf8c3d:AC.jpg",
+      "matrix": [
+        {
+          "id": "HingeSelection",
+          "value": "Automatic"
+        },
+        {
+          "id": "HingePositioning",
+          "value": "Custom"
+        }
+      ]
+    },
+    {
+      "value": "AutoSel_ManPos",
+      "description": "AutomaticSelectionManualPositioning",
+      "shortName": "AutoSel_ManPos",
+      "imageId": "bac594d8-9a59-4b7d-b6ca-010f027313f6:AM.jpg",
+      "matrix": [
+        {
+          "id": "HingeSelection",
+          "value": "Automatic"
+        },
+        {
+          "id": "HingePositioning",
+          "value": "Manual"
+        }
+      ]
+    },
+    {
+      "value": "CustSel_AutoPos",
+      "description": "CustomSelectionAutomaticPositioning",
+      "shortName": "CustSel_AutoPos",
+      "imageId": "efdfbfa5-d232-447c-8b41-f8c2fd3c7a1d:CA.jpg",
+      "matrix": [
+        {
+          "id": "HingeSelection",
+          "value": "Custom"
+        },
+        {
+          "id": "HingePositioning",
+          "value": "Automatic"
+        }
+      ]
+    },
+    {
+      "value": "CustSel_CustPos",
+      "description": "CustomSelectionCustomPositioning",
+      "shortName": "CustSel_CustPos",
+      "imageId": "22b44d71-4f49-4be3-bcb3-a81fd5966260:CC.jpg",
+      "matrix": [
+        {
+          "id": "HingeSelection",
+          "value": "Custom"
+        },
+        {
+          "id": "HingePositioning",
+          "value": "Custom"
+        }
+      ]
+    },
+    {
+      "value": "CustSel_ManPos",
+      "description": "CustomSelectionManualPositioning",
+      "shortName": "CustSel_ManPos",
+      "imageId": "4f979486-e40d-4d08-9f4f-9356d451e09b:CM.jpg",
+      "matrix": [
+        {
+          "id": "HingeSelection",
+          "value": "Custom"
+        },
+        {
+          "id": "HingePositioning",
+          "value": "Manual"
+        }
+      ]
+    },
+    {
+      "value": "ManSel_AutoPos",
+      "description": "ManualSelectionAutomaticPositioning",
+      "shortName": "ManSel_AutoPos",
+      "imageId": "f3924abd-c97d-41d2-834e-8775b5719e6c:MA.jpg",
+      "matrix": [
+        {
+          "id": "HingeSelection",
+          "value": "Manual"
+        },
+        {
+          "id": "HingePositioning",
+          "value": "Automatic"
+        }
+      ]
+    },
+    {
+      "value": "ManSel_CustPos",
+      "description": "ManualSelectionCustomPositioning",
+      "shortName": "ManSel_CustPos",
+      "imageId": "b8aa3aa2-eea5-43ff-a71e-504b4d602c2f:MC.jpg",
+      "matrix": [
+        {
+          "id": "HingeSelection",
+          "value": "Manual"
+        },
+        {
+          "id": "HingePositioning",
+          "value": "Custom"
+        }
+      ]
+    },
+    {
+      "value": "ManSel_ManPos",
+      "description": "ManualSelectionManualPositioning",
+      "shortName": "ManSel_ManPos",
+      "imageId": "6c51e8f5-eb2a-4f7e-8bf8-259867fb3d7f:MM_1.jpg",
+      "matrix": [
+        {
+          "id": "HingeSelection",
+          "value": "Manual"
+        },
+        {
+          "id": "HingePositioning",
+          "value": "Manual"
+        }
+      ]
+    }
+  ]
+}
