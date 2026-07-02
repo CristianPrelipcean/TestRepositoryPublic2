@@ -1,0 +1,142 @@
+{
+  "moduleId": "mr_Part",
+  "shortName": "Part",
+  "configurable": true,
+  "isRoot": true,
+  "isConfigDummy": false,
+  "description": "Simple flat panel part",
+  "groupName": "Root",
+  "imageId": "15843d36-0a29-4f27-b429-c2d040e74a28:mr_Part.jpg",
+  "restrictionTypeId": "Public",
+  "childModules": [
+    {
+      "moduleId": "mc_FrontPanel01"
+    },
+    {
+      "moduleId": "mc_ShelfPanel01"
+    },
+    {
+      "moduleId": "mc_SidePanel01"
+    },
+    {
+      "moduleId": "me_Drill"
+    },
+    {
+      "moduleId": "mrp_Part"
+    },
+    {
+      "moduleId": "me_Hinge"
+    },
+    {
+      "moduleId": "me_Handle"
+    },
+    {
+      "moduleId": "me_DrillingLine"
+    }
+  ],
+  "assignedVariants": [
+    {
+      "variantId": "mod_Color",
+      "default": "U502ST9",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_BtmColor",
+      "defaultScript": "this.mod_Color",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_EdgeBackClass",
+      "defaultScript": "GlobalFunc.cfind_EdgeBandingTypeMapping(this.cmod_EdgebandingType!,this.cmod_EdgeBandingClass!).EdgeBackClass! ",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_EdgeFrontColor",
+      "defaultScript": "GlobalFunc.cfind_EdgeBandingTypeMapping(this.cmod_EdgebandingType!,this.cmod_EdgeBandingClass!).EdgeFront! == true ? this.mod_Color! : \"NoEdge\"",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_EdgeFrontClass",
+      "defaultScript": "GlobalFunc.cfind_EdgeBandingTypeMapping(this.cmod_EdgebandingType!,this.cmod_EdgeBandingClass!).EdgeFrontClass! ",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_EdgeBackColor",
+      "defaultScript": "GlobalFunc.cfind_EdgeBandingTypeMapping(this.cmod_EdgebandingType!,this.cmod_EdgeBandingClass!).EdgeBack! == true ? this.mod_Color! : \"NoEdge\"",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_EdgeLeftClass",
+      "defaultScript": "GlobalFunc.cfind_EdgeBandingTypeMapping(this.cmod_EdgebandingType!,this.cmod_EdgeBandingClass!).EdgeLeftClass! ",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_EdgeLeftColor",
+      "defaultScript": "GlobalFunc.cfind_EdgeBandingTypeMapping(this.cmod_EdgebandingType!,this.cmod_EdgeBandingClass!).EdgeLeft! == true ? this.mod_Color! : \"NoEdge\"",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_EdgeRightColor",
+      "defaultScript": "GlobalFunc.cfind_EdgeBandingTypeMapping(this.cmod_EdgebandingType!,this.cmod_EdgeBandingClass!).EdgeRight! == true ? this.mod_Color! : \"NoEdge\"",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_EdgeRightClass",
+      "defaultScript": "GlobalFunc.cfind_EdgeBandingTypeMapping(this.cmod_EdgebandingType!,this.cmod_EdgeBandingClass!).EdgeRightClass! ",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_EdgeJointType",
+      "default": "LSLS",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_Length",
+      "default": "500",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_PartGrain",
+      "default": "Lengthwise",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_Program",
+      "default": "Classic",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_Thickness",
+      "default": "18",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_TypeElement",
+      "default": "Fronts",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_Width",
+      "default": "500",
+      "origin": "Default"
+    },
+    {
+      "variantId": "cmod_EdgeBandingClass",
+      "default": "2mm Match ABS",
+      "origin": "Default"
+    },
+    {
+      "variantId": "cmod_EdgebandingProfile",
+      "default": "Radius",
+      "origin": "Default"
+    },
+    {
+      "variantId": "cmod_EdgebandingType",
+      "default": "LLWW",
+      "origin": "Default"
+    }
+  ],
+  "assignedParts": [],
+  "assignedCustomTables": [],
+  "assignedFunctions": []
+}

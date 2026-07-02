@@ -1,0 +1,93 @@
+[
+  {
+    "tableName": "tab_ProcessingDrillingsCalculation",
+    "columnId": "DrillDirection",
+    "enumsJson": [
+      {
+        "value": "XM"
+      },
+      {
+        "value": "XP"
+      },
+      {
+        "value": "YM"
+      },
+      {
+        "value": "YP"
+      },
+      {
+        "value": "Ignore"
+      }
+    ]
+  },
+  {
+    "tableName": "tab_ProcessingDrillingsCalculation",
+    "columnId": "GraphicExtrusion",
+    "enumsJson": [
+      {
+        "value": "x"
+      },
+      {
+        "value": "y"
+      },
+      {
+        "value": "z"
+      }
+    ]
+  },
+  {
+    "tableName": "tab_ProcessingDrillingsCalculation",
+    "columnId": "NcSide",
+    "enumsJson": [
+      {
+        "value": "Top",
+        "description": "Drill side from top"
+      },
+      {
+        "value": "Btm",
+        "description": "Drill side from bottom"
+      },
+      {
+        "value": "Left",
+        "description": "Drill side from left"
+      },
+      {
+        "value": "Right",
+        "description": "Drill side from right"
+      },
+      {
+        "value": "Front",
+        "description": "Drill side from front"
+      },
+      {
+        "value": "Back",
+        "description": "Drill side from back"
+      }
+    ]
+  },
+  {
+    "tableName": "tab_ProcessingDrillingsCalculation",
+    "columnId": "in_DrillLogic",
+    "refColumnId": "Value"
+  },
+  {
+    "tableName": "tab_ProcessingDrillingsCalculation",
+    "columnId": "in_DrillSide",
+    "refColumnId": "Value"
+  },
+  {
+    "tableName": "tab_ProcessingDrillingsCalculation",
+    "columnId": "in_PartView",
+    "refColumnId": "PartView"
+  },
+  {
+    "tableName": "tab_ProcessingDrillingsCalculation",
+    "columnId": "in_ProcessingBasePoint",
+    "refColumnId": "Value"
+  },
+  {
+    "tableName": "tab_ProcessingDrillingsCalculation",
+    "columnId": "in_ProcessingOrientation",
+    "refColumnId": "Value"
+  }
+]

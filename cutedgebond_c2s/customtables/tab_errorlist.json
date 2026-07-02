@@ -1,0 +1,512 @@
+{
+  "tableName": "tab_ErrorList",
+  "description": "List of error codes and where it is coming from",
+  "restrictionTypeId": "Internal",
+  "isInputUnique": true,
+  "groupName": "Errors",
+  "columns": [
+    {
+      "name": "_id",
+      "type": "Integer",
+      "allowNull": false
+    },
+    {
+      "name": "in_ErrorId",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "Message",
+      "type": "Text",
+      "allowNull": true,
+      "functionDefinition": "(Text:string):string"
+    },
+    {
+      "name": "ScriptSource",
+      "type": "Text",
+      "allowNull": true
+    }
+  ],
+  "rows": [
+    {
+      "data": [
+        {
+          "columnName": "in_ErrorId",
+          "value": "Error 12001"
+        },
+        {
+          "columnName": "Message",
+          "value": "'Error 12001: Could not find entry in tab_BoardLibrary for input value: ' + Text"
+        },
+        {
+          "columnName": "ScriptSource",
+          "value": "find_BoardLibrary"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ErrorId",
+          "value": "Error 12002"
+        },
+        {
+          "columnName": "Message",
+          "value": "'Error 12002: Could not find entry in tab_EdgeLibrary for input value: ' + Text"
+        },
+        {
+          "columnName": "ScriptSource",
+          "value": "find_EdgeLibrary"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ErrorId",
+          "value": "Error 12003"
+        },
+        {
+          "columnName": "Message",
+          "value": "'Error 12003: Could not find entry in tab_HardwareDrillVertLibrary for input values: ' + Text"
+        },
+        {
+          "columnName": "ScriptSource",
+          "value": "find_HardwareDrillVertLibrary"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ErrorId",
+          "value": "Error 13001"
+        },
+        {
+          "columnName": "Message",
+          "value": "'Error 13001: Could not find entry in tab_BoardMapping for input values: ' + Text"
+        },
+        {
+          "columnName": "ScriptSource",
+          "value": "find_BoardMapping"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ErrorId",
+          "value": "Error 13002"
+        },
+        {
+          "columnName": "Message",
+          "value": "'Error 13002: Could not find entry in tab_EdgeMapping for input values: ' + Text"
+        },
+        {
+          "columnName": "ScriptSource",
+          "value": "find_EdgeMapping"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ErrorId",
+          "value": "Error 13003"
+        },
+        {
+          "columnName": "Message",
+          "value": "'Error 13003: Could not find entry in tab_HingeMapping for input values: ' + Text"
+        },
+        {
+          "columnName": "ScriptSource",
+          "value": "find_HingeMapping"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ErrorId",
+          "value": "Error 11001"
+        },
+        {
+          "columnName": "Message",
+          "value": "'Error 11001: Could not find entry in tab_EdgeJointTypeConstruction for input values: ' + Text"
+        },
+        {
+          "columnName": "ScriptSource",
+          "value": "find_EdgeJointTypeConstruction"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ErrorId",
+          "value": "Error 13005"
+        },
+        {
+          "columnName": "Message",
+          "value": "'Error 13005: Could not find entry in tab_ObjectMapping for input value: ' + Text"
+        },
+        {
+          "columnName": "ScriptSource",
+          "value": "find_ObjectMapping"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ErrorId",
+          "value": "Error 13006"
+        },
+        {
+          "columnName": "Message",
+          "value": "'Error 13006: Could not find entry in tab_ProcessingMapping for input value: ' + Text"
+        },
+        {
+          "columnName": "ScriptSource",
+          "value": "find_ProcessingMapping"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ErrorId",
+          "value": "Error 14001"
+        },
+        {
+          "columnName": "Message",
+          "value": "'Error 14001: Could not find entry in tab_EdgeNumberSettings for input value: ' + Text"
+        },
+        {
+          "columnName": "ScriptSource",
+          "value": "find_EdgeNumberSettings"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ErrorId",
+          "value": "Error 14002"
+        },
+        {
+          "columnName": "Message",
+          "value": "'Error 14002: Could not find entry in tab_EdgeSettings for input value: ' + Text"
+        },
+        {
+          "columnName": "ScriptSource",
+          "value": "find_EdgeSettings"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ErrorId",
+          "value": "Error 14003"
+        },
+        {
+          "columnName": "Message",
+          "value": "'Error 14003: Could not find entry in tab_PartSettings for input values: ' + Text"
+        },
+        {
+          "columnName": "ScriptSource",
+          "value": "find_PartSettings"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ErrorId",
+          "value": "Error 15001"
+        },
+        {
+          "columnName": "Message",
+          "value": "'Error 15001: Could not find entry in tab_ErrorList for ErrorId 15001'"
+        },
+        {
+          "columnName": "ScriptSource",
+          "value": "find_ErrorList"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ErrorId",
+          "value": "Error 15002"
+        },
+        {
+          "columnName": "Message",
+          "value": "'Error 15002: Could not find entry in tab_GrainDirection for input values: ' + Text"
+        },
+        {
+          "columnName": "ScriptSource",
+          "value": "find_GrainDirection"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ErrorId",
+          "value": "Error 15003"
+        },
+        {
+          "columnName": "Message",
+          "value": "'Error 15003: Could not find entry in tab_HingePosition for input values: ' + Text"
+        },
+        {
+          "columnName": "ScriptSource",
+          "value": "find_HingePosition"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ErrorId",
+          "value": "Error 15004"
+        },
+        {
+          "columnName": "Message",
+          "value": "'Error 15004: Could not find entry in tab_PartOverdimension for input value: ' + Text"
+        },
+        {
+          "columnName": "ScriptSource",
+          "value": "find_PartOverdimension"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ErrorId",
+          "value": "Error 30001"
+        },
+        {
+          "columnName": "Message",
+          "value": "'Error 30001: The ColorTop and ColorBottom are not the same. Please check function ue_bomout_Board for input value:' + Text"
+        },
+        {
+          "columnName": "ScriptSource",
+          "value": "ue_BoardInfo"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ErrorId",
+          "value": "Error 13004"
+        },
+        {
+          "columnName": "Message",
+          "value": "'Error 13004: Could not find entry in tab_EdgeJointTypeMapping for input values: ' + Text"
+        },
+        {
+          "columnName": "ScriptSource",
+          "value": "find_EdgeJointTypeMapping"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ErrorId",
+          "value": "Error 11002"
+        },
+        {
+          "columnName": "Message",
+          "value": "'Error 11002: Could not find entry in tab_HandlePosConstruction for input values: ' + Text"
+        },
+        {
+          "columnName": "ScriptSource",
+          "value": "find_HandlePosConstruction"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ErrorId",
+          "value": "Error 21004"
+        },
+        {
+          "columnName": "Message",
+          "value": "'Error 21004: Drills for handle are blocked, minimum one drill is outside of the board!:' + Text"
+        },
+        {
+          "columnName": "ScriptSource",
+          "value": "mc_Handle [Construction plan script]"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ErrorId",
+          "value": "Error 13007"
+        },
+        {
+          "columnName": "Message",
+          "value": "'Error 13007: Could not find entry in tab_MaterialMapping for input value: ' + Text"
+        },
+        {
+          "columnName": "ScriptSource",
+          "value": "find_MaterialMapping"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ErrorId",
+          "value": "Error 40001"
+        },
+        {
+          "columnName": "Message",
+          "value": "'Error 40001: The provided descriptor does not match the dimension. '  + Text"
+        },
+        {
+          "columnName": "ScriptSource",
+          "value": "process_Descriptor"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ErrorId",
+          "value": "Error 40002"
+        },
+        {
+          "columnName": "Message",
+          "value": "'Error 40002: The required front data could not be calculated. ' + Text"
+        },
+        {
+          "columnName": "ScriptSource",
+          "value": "process_FrontpanelWeightCalculations"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ErrorId",
+          "value": "Error 40003"
+        },
+        {
+          "columnName": "Message",
+          "value": "'Error 40003: Could not insert the data for the board: ' + Text"
+        },
+        {
+          "columnName": "ScriptSource",
+          "value": "process_BoardBom"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ErrorId",
+          "value": "Error 14004"
+        },
+        {
+          "columnName": "Message",
+          "value": "'Error 14004: Could not find entry in tab_EdgeProcessingSettings for input values: ' + Text"
+        },
+        {
+          "columnName": "ScriptSource",
+          "value": "find_EdgeProcessingSettings"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ErrorId",
+          "value": "Error 21001"
+        },
+        {
+          "columnName": "Message",
+          "value": "'Error 21001: Front panel can not be inserted. ' + Text"
+        },
+        {
+          "columnName": "ScriptSource",
+          "value": "mc_FrontPanel01 [Construction plan script]"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ErrorId",
+          "value": "Error 21002"
+        },
+        {
+          "columnName": "Message",
+          "value": "'Error 21002: Shelf panel can not be inserted. ' + Text"
+        },
+        {
+          "columnName": "ScriptSource",
+          "value": "mc_ShelfPanel01 [Construction plan script]"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ErrorId",
+          "value": "Error 21003"
+        },
+        {
+          "columnName": "Message",
+          "value": "'Error 21003: Side panel can not be inserted. ' + Text"
+        },
+        {
+          "columnName": "ScriptSource",
+          "value": "mc_SidePanel01 [Construction plan script]"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ErrorId",
+          "value": "Error 22001"
+        },
+        {
+          "columnName": "Message",
+          "value": "'Error 22001: Part can not be inserted.' + Text"
+        },
+        {
+          "columnName": "ScriptSource",
+          "value": "mr_Part [Module data script]"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ErrorId",
+          "value": "Error 13008"
+        },
+        {
+          "columnName": "Message",
+          "value": "'Error 13008: Could not find entry in tab_ProcessingDrillingsCalculation for input value: ' + Text"
+        },
+        {
+          "columnName": "ScriptSource",
+          "value": "find_ProcessingDrillingsCalculation"
+        }
+      ]
+    }
+  ]
+}

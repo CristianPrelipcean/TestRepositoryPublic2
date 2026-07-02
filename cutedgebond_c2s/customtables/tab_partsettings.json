@@ -1,0 +1,115 @@
+{
+  "tableName": "tab_PartSettings",
+  "description": "Settings for parts",
+  "restrictionTypeId": "Public",
+  "groupName": "Bom",
+  "columns": [
+    {
+      "name": "_id",
+      "type": "Integer",
+      "allowNull": false
+    },
+    {
+      "name": "in_Part",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_TypeElement",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "BomPartDescription",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "PartGroup",
+      "type": "Text",
+      "allowNull": true
+    }
+  ],
+  "rows": [
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_Side"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "Sides"
+        },
+        {
+          "columnName": "BomPartDescription",
+          "value": "Side"
+        },
+        {
+          "columnName": "PartGroup",
+          "value": "Sides"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_Shelf"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "Shelves"
+        },
+        {
+          "columnName": "BomPartDescription",
+          "value": "Shelf"
+        },
+        {
+          "columnName": "PartGroup",
+          "value": "Shelves"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_Front"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "Backwalls"
+        },
+        {
+          "columnName": "BomPartDescription",
+          "value": "Backwall"
+        },
+        {
+          "columnName": "PartGroup",
+          "value": "Fronts"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_Front"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "Fronts"
+        },
+        {
+          "columnName": "BomPartDescription",
+          "value": "Fronts"
+        },
+        {
+          "columnName": "PartGroup",
+          "value": "Fronts"
+        }
+      ]
+    }
+  ]
+}
