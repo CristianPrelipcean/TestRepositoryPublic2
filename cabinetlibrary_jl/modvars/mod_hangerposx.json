@@ -1,0 +1,94 @@
+{
+  "variantId": "mod_HangerPosX",
+  "shortName": "Hanger position x",
+  "variantTypeId": "Text",
+  "description": "Position in width of the hanger",
+  "restrictionTypeId": "Internal",
+  "groupName": "Hardware | Hanger",
+  "imageId": "d600e840-f172-4f08-8671-b7cd3758078c:Hanger_POSXjpg.jpg",
+  "isArray": false,
+  "isPosRelevant": true,
+  "mainAttr": false,
+  "userRight": "Master",
+  "implicitRelevant": false,
+  "posView": "InputField",
+  "matrix": [
+    {
+      "id": "Left",
+      "type": "Bool",
+      "default": false
+    },
+    {
+      "id": "Right",
+      "type": "Bool",
+      "default": false
+    },
+    {
+      "id": "Middle",
+      "type": "Bool",
+      "default": false
+    }
+  ],
+  "selections": [
+    {
+      "value": "Left",
+      "description": "On Left",
+      "shortName": "Left",
+      "imageId": "2c4be270-f81e-4bc6-812a-0e00f1ae0521:L.jpg",
+      "matrix": [
+        {
+          "id": "Left",
+          "value": true
+        },
+        {
+          "id": "Right",
+          "value": false
+        },
+        {
+          "id": "Middle",
+          "value": false
+        }
+      ]
+    },
+    {
+      "value": "Right",
+      "description": "On Right",
+      "shortName": "Right",
+      "imageId": "5089ff2d-1338-4464-9f47-771915902b5e:R.jpg",
+      "matrix": [
+        {
+          "id": "Left",
+          "value": false
+        },
+        {
+          "id": "Right",
+          "value": true
+        },
+        {
+          "id": "Middle",
+          "value": false
+        }
+      ]
+    },
+    {
+      "value": "Left_Right",
+      "description": "On Left and Right",
+      "shortName": "Left_Right",
+      "imageId": "59cd5c41-5677-4818-9463-b2b59ee6050f:L+R.jpg",
+      "matrix": [
+        {
+          "id": "Left",
+          "value": true
+        },
+        {
+          "id": "Right",
+          "value": true
+        },
+        {
+          "id": "Middle",
+          "value": false
+        }
+      ]
+    }
+  ]
+}

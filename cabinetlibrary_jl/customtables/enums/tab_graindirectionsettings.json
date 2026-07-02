@@ -1,0 +1,66 @@
+[
+  {
+    "tableName": "tab_GrainDirectionSettings",
+    "columnId": "GrainDirection",
+    "enumsJson": [
+      {
+        "value": "None",
+        "description": "No grain",
+        "imageId": "545480be-1f52-4714-b6ce-111bedba6c72:None_1.png"
+      },
+      {
+        "value": "Lengthwise",
+        "description": "The grain lengthwise follows the length",
+        "imageId": "4ccd028f-b485-4702-8487-8a84799478fe:Lenthwise.png"
+      },
+      {
+        "value": "Crosswise",
+        "description": "The grain crosswise follows the width",
+        "imageId": "54f44be4-1adb-47aa-b673-e8f4accda54d:Crosswise.png"
+      }
+    ]
+  },
+  {
+    "tableName": "tab_GrainDirectionSettings",
+    "columnId": "in_ColorGroupId",
+    "enumsJson": [
+      {
+        "value": "NoGrain",
+        "description": "Color without a grain",
+        "imageId": "611a0f0b-4311-4005-bee3-986515c0d0a2:NoGrain.png"
+      },
+      {
+        "value": "Grain",
+        "description": "Color with a grain",
+        "imageId": "baefed38-a662-4067-bc65-76a7ad41f86c:Grain.png"
+      }
+    ]
+  },
+  {
+    "tableName": "tab_GrainDirectionSettings",
+    "columnId": "in_PartId",
+    "refCustomTableName": "tab_PartSettings",
+    "refColumnId": "in_Part"
+  },
+  {
+    "tableName": "tab_GrainDirectionSettings",
+    "columnId": "in_ProgramGroupId",
+    "enumsJson": [
+      {
+        "value": "Neutral",
+        "description": "No Grain",
+        "imageId": "fe625a2e-2967-4930-b5a0-523d3d3c2fe9:None.jpg"
+      },
+      {
+        "value": "Horizontal",
+        "description": "The grain horizontal follows the length",
+        "imageId": "a608cb1a-f4aa-4794-9216-15d22f66fc5f:Lenghtwise.jpg"
+      },
+      {
+        "value": "Vertical",
+        "description": "The grain vertical follows the width",
+        "imageId": "2c40b410-7114-4871-85b2-ef3a09e0a4b9:Crosswise.jpg"
+      }
+    ]
+  }
+]

@@ -1,0 +1,33 @@
+{
+  "partCode": "part_HingeCarcase",
+  "shortName": "Hinge carcase",
+  "description": "Hinge part on carcase",
+  "wdt": "XYZ",
+  "groupName": "Hardware",
+  "imageId": "4d28dc90-9ed8-4a86-aed9-8256b8ca3479:HingeDoor.jpg",
+  "model3dImageId": "",
+  "invisible": false,
+  "restrictionTypeId": "Public",
+  "noNcData": false,
+  "partVariants": [
+    {
+      "partVarId": "pa_HardwareId",
+      "valueScript": "''",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_TopColor",
+      "valueScript": "'DemoNickelPlated'",
+      "isWritable": false
+    }
+  ],
+  "bomData": [
+    {
+      "bomElementTypeId": "bomout_Group",
+      "description": "Hinge Carcase BOM",
+      "conditionScript": "partSelf._g?.basic_CreateBom == 'Library'",
+      "valueScript": "// Filter function to get all the hardware elements\nlet HardwareElements = GlobalFunc.find_HardwareLibraryMapping(part.pa_HardwareId);\n\n// Cycle to add all hardware elements to the BOM\nHardwareElements.forEach(info => {\n  let elem = this.addbomout_Hardware();\n  let BOMInfo = GlobalFunc.find_HardwareLibrary(info.SupplierArticleNumber!,info.Supplier!);\n  let BOMName = GlobalFunc.find_PartSettings(\"part_HingeCarcase\");\n\n  elem.bom_Supplier=info.Supplier;\n  elem.bom_SupplierArticle=info.SupplierArticleNumber;\n  elem.bom_Description1=BOMInfo.Description;\n  elem.bom_Description2=BOMInfo.Description2;\n  elem.bom_Length=BOMInfo.Length;\n  elem.bom_Width=BOMInfo.Width;\n  elem.bom_Thk=BOMInfo.Thickness;\n  elem.bom_Color=BOMInfo.Color;\n  elem.bom_Weight=BOMInfo.Weight;\n  elem.bom_Name=BOMName.BomPartDescription;\n  elem.bom_Type=part._partId;\n  elem.bom_PartId=part._id;\n  elem.bom_ParentId=parentId;\n  elem.bom_Qty=info.BomQty;\n})"
+    }
+  ],
+  "ncData": []
+}

@@ -1,0 +1,169 @@
+[
+  {
+    "tableName": "tab_PlinthAreaSettings",
+    "columnId": "BasePoint",
+    "enumsJson": [
+      {
+        "value": "1",
+        "description": "Base Point 1 based on library zero Point for PosX and PosY",
+        "imageId": "80ca9c63-35b5-4bc5-be7a-f5733ef644ba:BasePoint1.jpg"
+      },
+      {
+        "value": "2",
+        "description": "Base Point 2 based on library zero Point for PosX and PosY",
+        "imageId": "4a629280-fc4d-44f9-9c89-e1e3f2026e84:BasePoint2.jpg"
+      },
+      {
+        "value": "3",
+        "description": "Base Point 3 based on library zero Point for PosY and for PosX the width",
+        "imageId": "5e611fe0-f17d-4935-a18f-4c03d80ce095:BasePoint3.jpg"
+      },
+      {
+        "value": "4",
+        "description": "Base Point 4 based on library zero Point for PosX and PosY",
+        "imageId": "a3676e95-6e65-4e6a-a580-445c0547d601:BasePoint4.jpg"
+      },
+      {
+        "value": "5",
+        "description": "Base Point 5 based on library zero Point for PosX and PosY",
+        "imageId": "22ffc596-4d92-4201-9135-20a67211c270:BasePoint5.jpg"
+      },
+      {
+        "value": "6",
+        "description": "Base Point 6 based on library zero Point for PosY and for PosX the width",
+        "imageId": "ba1b0e04-aca0-40e7-a7ce-71b36005d1f9:BasePoint6.jpg"
+      },
+      {
+        "value": "7",
+        "description": "Base Point 7 based on library zero Point for PosX and for PosY the depth",
+        "imageId": "0352c396-2bcd-4556-9599-1fe5bfa27394:BasePoint7.jpg"
+      },
+      {
+        "value": "8",
+        "description": "Base Point 8 based on library zero Point for PosX and for PosY the depth",
+        "imageId": "1981af29-8a7d-471d-a207-f96d77f7b084:BasePoint8.jpg"
+      },
+      {
+        "value": "9",
+        "description": "Base Point 9 based on width for PosX and for PosY the depth",
+        "imageId": "b2a2bd53-7177-402e-aa53-dfdcabceea2b:BasePoint9.jpg"
+      }
+    ]
+  },
+  {
+    "tableName": "tab_PlinthAreaSettings",
+    "columnId": "HardwareRotation",
+    "enumsJson": [
+      {
+        "value": "0",
+        "description": "No rotation",
+        "imageId": "357e540c-3710-4e4c-bb2f-4e410ec5b122:0_Grad.png"
+      },
+      {
+        "value": "90",
+        "description": "Rotation by 90 degrees clockwise",
+        "imageId": "db698a01-b6a4-484b-bd10-67b1949f9677:90_Grad.png"
+      },
+      {
+        "value": "180",
+        "description": "Rotation by 180 degrees clockwise",
+        "imageId": "bee0dd02-01e8-405a-98c1-6fb58286c1d8:180_Grad.png"
+      },
+      {
+        "value": "270",
+        "description": "Rotation by 270 degrees clockwise",
+        "imageId": "1cd1bbd0-f800-4201-bc0a-338716450834:270_Grad.png"
+      }
+    ]
+  },
+  {
+    "tableName": "tab_PlinthAreaSettings",
+    "columnId": "MatrixPositionType",
+    "enumsJson": [
+      {
+        "value": "11",
+        "description": "Left top",
+        "imageId": "ae522ce9-2797-480e-b916-2cc148f4a347:LeftTop_1.jpg"
+      },
+      {
+        "value": "12",
+        "description": "Center top",
+        "imageId": "4e5d38aa-114f-47b1-9db9-24abc103d519:CenterTop.jpg"
+      },
+      {
+        "value": "13",
+        "description": "Right top",
+        "imageId": "339d2f8c-c7bc-460d-899c-546a449079fd:RightTop_1.jpg"
+      },
+      {
+        "value": "21",
+        "description": "Left center",
+        "imageId": "1cd87be7-e4fe-4572-b1c5-4ef003770800:LeftCenter.jpg"
+      },
+      {
+        "value": "22",
+        "description": "Center center",
+        "imageId": "c78fe414-0921-4765-9860-1a9e52ed6295:CenterCenter.jpg"
+      },
+      {
+        "value": "23",
+        "description": "Right center",
+        "imageId": "4ac16e2c-d271-4d22-b39a-6739e147c882:RightCenter.jpg"
+      },
+      {
+        "value": "31",
+        "description": "Left bottom",
+        "imageId": "76e83a49-cfdb-4b65-bb99-b9ed2e8a1a7d:LeftBottom.jpg"
+      },
+      {
+        "value": "32",
+        "description": "Center bottom",
+        "imageId": "235f968a-e73f-4df2-b2f4-8dd471cee9ea:CenterBottom.jpg"
+      },
+      {
+        "value": "33",
+        "description": "Right bottom",
+        "imageId": "d04afe25-7937-437c-a7fa-6e637961b3c1:RightBottom.jpg"
+      }
+    ]
+  },
+  {
+    "tableName": "tab_PlinthAreaSettings",
+    "columnId": "SettingsLogic",
+    "enumsJson": [
+      {
+        "value": "Library",
+        "imageId": "8aee954f-6d88-4e3e-be3f-1accf2af5365:Library.png"
+      },
+      {
+        "value": "Custom",
+        "imageId": "5adde12c-ada9-47ee-9585-f098f553facf:Custom.png"
+      }
+    ]
+  },
+  {
+    "tableName": "tab_PlinthAreaSettings",
+    "columnId": "in_PlinthAreaDesign",
+    "refColumnId": "Value"
+  },
+  {
+    "tableName": "tab_PlinthAreaSettings",
+    "columnId": "in_PositionBackMatrix",
+    "refColumnId": "Value"
+  },
+  {
+    "tableName": "tab_PlinthAreaSettings",
+    "columnId": "in_PositionFrontMatrix",
+    "refColumnId": "Value"
+  },
+  {
+    "tableName": "tab_PlinthAreaSettings",
+    "columnId": "in_PositionLeftMatrix",
+    "refColumnId": "Value"
+  },
+  {
+    "tableName": "tab_PlinthAreaSettings",
+    "columnId": "in_PositionRightMatrix",
+    "refColumnId": "Value"
+  }
+]

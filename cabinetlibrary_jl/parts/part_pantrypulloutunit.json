@@ -1,0 +1,31 @@
+{
+  "partCode": "part_PantryPulloutUnit",
+  "shortName": "Pantry pullout unit",
+  "description": "Partgroup for the pantry pullout",
+  "wdt": "XYZ",
+  "groupName": "Pullout",
+  "imageId": "eb4c8721-d043-40bd-8cfa-1709a107095f:PantryPullout.png",
+  "model3dImageId": "",
+  "invisible": true,
+  "restrictionTypeId": "Public",
+  "noNcData": true,
+  "partVariants": [
+    {
+      "partVarId": "pa_BomId",
+      "valueScript": "this.parent.mod_FrontId"
+    },
+    {
+      "partVarId": "pa_PartgroupBomId",
+      "valueScript": "this.parent.mod_CarcaseId"
+    }
+  ],
+  "bomData": [
+    {
+      "bomElementTypeId": "bomout_PartGroup",
+      "description": "Partgroup for pantry pullout",
+      "conditionScript": "partSelf._g?.basic_CreateBom == 'Library'",
+      "valueScript": "// Type of the Bom-Element (will be checked in order output)\nlet elementType='Partgroup';\n\n// ProductionSite Category (to split the orders for different production sites)\nlet elementCategory='';\n\n// Id of the parent to create the hierarchy\nlet parentId=part.pa_PartgroupBomId;\n\n// Id of this element to identify the childs of this element\nlet elementId=part.pa_BomId;\n\n// Name of the PartGroup\nlet name='Partgroup pantry pullout'\n\nthis.bom_ElementId=elementId\nthis.bom_ElementType=elementType;\nthis.bom_ParentId=parentId;\nthis.bom_Length=part._width;\nthis.bom_Width=part._depth;\nthis.bom_Thk = part._thickness;\nthis.bom_Name=name;\nthis.bom_PartId=part._id;\nthis.bom_ElementCategory=elementCategory"
+    }
+  ],
+  "ncData": []
+}

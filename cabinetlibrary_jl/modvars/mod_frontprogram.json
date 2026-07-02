@@ -1,0 +1,84 @@
+{
+  "variantId": "mod_FrontProgram",
+  "shortName": "Front program",
+  "variantTypeId": "Text",
+  "description": "Program of the front",
+  "restrictionTypeId": "Public",
+  "groupName": "Front | Design",
+  "imageId": "bc107639-4782-4782-9c84-154e76eaa815:FrontProgram.jpg",
+  "isArray": false,
+  "isPosRelevant": true,
+  "mainAttr": true,
+  "userRight": "Simple",
+  "implicitRelevant": true,
+  "posView": "Dropdown",
+  "sorting": 4,
+  "matrix": [
+    {
+      "id": "GrainGroupId",
+      "type": "Text",
+      "default": "Neutral"
+    }
+  ],
+  "selections": [
+    {
+      "value": "Classic",
+      "description": "Simple fronts in plain decors",
+      "shortName": "Classic",
+      "imageId": "2ffe6c96-e001-4124-ad23-49ee4e2f82d5:Classic.jpg",
+      "matrix": [
+        {
+          "id": "GrainGroupId",
+          "value": "Neutral"
+        }
+      ]
+    },
+    {
+      "value": "Nature",
+      "description": "Simple fronts in wood decors",
+      "shortName": "Nature",
+      "imageId": "cea678d0-3cbd-4064-8dc2-aa9b38c31a56:Nature.jpg",
+      "matrix": [
+        {
+          "id": "GrainGroupId",
+          "value": "Horizontal"
+        }
+      ]
+    },
+    {
+      "value": "Tradition",
+      "description": "Traditional frame fronts with wooden filling",
+      "shortName": "Tradition",
+      "imageId": "b75ca310-6ea0-46ae-8c07-f409ed6c160e:Tradition.jpg",
+      "matrix": [
+        {
+          "id": "GrainGroupId",
+          "value": "Vertical"
+        }
+      ]
+    },
+    {
+      "value": "Modern",
+      "description": "Mitred frame fronts with glass filling",
+      "shortName": "Modern",
+      "imageId": "59beea7d-b48e-4110-a0dc-845b75756f85:Modern.jpg",
+      "matrix": [
+        {
+          "id": "GrainGroupId",
+          "value": "Vertical"
+        }
+      ]
+    },
+    {
+      "value": "Milling",
+      "description": "Milling",
+      "shortName": "Milling",
+      "matrix": [
+        {
+          "id": "GrainGroupId",
+          "value": "Vertical"
+        }
+      ]
+    }
+  ]
+}

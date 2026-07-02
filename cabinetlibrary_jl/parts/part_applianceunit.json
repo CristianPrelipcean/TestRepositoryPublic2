@@ -1,0 +1,20 @@
+{
+  "partCode": "part_ApplianceUnit",
+  "shortName": "Appliance group",
+  "description": "Part group for appliance front",
+  "wdt": "XYZ",
+  "groupName": "PartGroup",
+  "imageId": "c891a3b1-acbc-4e86-9326-378569cd61cb:Partgroup.png",
+  "invisible": true,
+  "restrictionTypeId": "Public",
+  "noNcData": false,
+  "partVariants": [
+    {
+      "partVarId": "pa_BomId",
+      "valueScript": "this.parent.mod_FrontId",
+      "isWritable": false
+    }
+  ],
+  "bomData": [],
+  "ncData": []
+}

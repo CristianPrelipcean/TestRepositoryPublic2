@@ -1,0 +1,124 @@
+{
+  "variantId": "mod_VertDividerType",
+  "shortName": "Vertical divider type",
+  "variantTypeId": "Text",
+  "description": "Type of the vertical divider",
+  "restrictionTypeId": "Internal",
+  "groupName": "Carcase | Construction",
+  "imageId": "c03ae11d-144d-4d17-8eb0-5e7c00d0753d:VertDivider.jpg",
+  "assignedGlobalVarId": "basic_VertDividerType",
+  "isArray": false,
+  "isPosRelevant": true,
+  "mainAttr": false,
+  "userRight": "Master",
+  "implicitRelevant": false,
+  "posView": "Dropdown",
+  "matrix": [
+    {
+      "id": "IncludeDivider",
+      "type": "Bool",
+      "default": false
+    },
+    {
+      "id": "IncludeDustStrip",
+      "type": "Bool",
+      "default": false
+    }
+  ],
+  "selections": [
+    {
+      "value": "NoVertDivider",
+      "description": "No vertical divider needed",
+      "shortName": "NoVertDivider",
+      "imageId": "8d92c6dc-3142-4a14-bead-248cb7bc771e:NoVertDivider.jpg",
+      "matrix": []
+    },
+    {
+      "value": "MiddleSide",
+      "description": "Side panel middle as a vertical divider (Touch the backwall)",
+      "shortName": "MiddleSide",
+      "imageId": "763c60e5-fa76-4223-ac48-7cb53cc5f56f:MiddleSide.jpg",
+      "matrix": [
+        {
+          "id": "IncludeDivider",
+          "value": true
+        },
+        {
+          "id": "IncludeDustStrip",
+          "value": false
+        }
+      ]
+    },
+    {
+      "value": "Cleat",
+      "description": "Cleat as a vertical divider",
+      "shortName": "Cleat",
+      "imageId": "29b70d98-f7d5-473f-8c4e-4bb1150b4809:Cleat_1.jpg",
+      "matrix": [
+        {
+          "id": "IncludeDivider",
+          "value": true
+        },
+        {
+          "id": "IncludeDustStrip",
+          "value": false
+        }
+      ]
+    },
+    {
+      "value": "DustStripRight",
+      "description": "Dust strip on the right door as a vertical divider",
+      "shortName": "DustStripRight",
+      "imageId": "01017589-b861-4288-8a40-93064f3cc13b:DuststripRightDoor.jpg",
+      "matrix": [
+        {
+          "id": "IncludeDivider",
+          "value": false
+        },
+        {
+          "id": "IncludeDustStrip",
+          "value": true
+        }
+      ]
+    },
+    {
+      "value": "DustStripLeft",
+      "description": "Dust strip on the left door as a vertical divider",
+      "shortName": "DustStripLeft",
+      "imageId": "27fa6c9e-08b1-41c8-8eba-5dc0ca96f195:DuststripLeftDoor.jpg",
+      "matrix": [
+        {
+          "id": "IncludeDivider",
+          "value": false
+        },
+        {
+          "id": "IncludeDustStrip",
+          "value": true
+        }
+      ]
+    },
+    {
+      "value": "MiddleSideShort",
+      "description": "Side panel middle as a vertical divider (Does not touch the backwall)",
+      "shortName": "MiddleSideShort",
+      "imageId": "75b7f1d6-ba68-4f65-b701-d3b8cacf3b1c:MiddleSideShort.jpg",
+      "matrix": [
+        {
+          "id": "IncludeDivider",
+          "value": true
+        },
+        {
+          "id": "IncludeDustStrip",
+          "value": false
+        }
+      ]
+    },
+    {
+      "value": "Automatic",
+      "description": "The value of the VertDividerType is set automatically by the table entry.",
+      "shortName": "Automatic",
+      "imageId": "d8ef4410-500f-40c5-bcda-d13c84218cfe:Automatic.png",
+      "matrix": []
+    }
+  ]
+}

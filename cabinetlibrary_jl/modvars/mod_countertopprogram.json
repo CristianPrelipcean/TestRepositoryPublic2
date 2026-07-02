@@ -1,0 +1,49 @@
+{
+  "variantId": "mod_CountertopProgram",
+  "shortName": "Countertop program",
+  "variantTypeId": "Text",
+  "description": "Program of the countertop",
+  "restrictionTypeId": "Public",
+  "groupName": "Countertop | Design",
+  "imageId": "",
+  "isArray": false,
+  "isPosRelevant": true,
+  "mainAttr": true,
+  "userRight": "Simple",
+  "implicitRelevant": false,
+  "posView": "Dropdown",
+  "sorting": 91,
+  "matrix": [
+    {
+      "id": "GrainGroupId",
+      "type": "Text",
+      "default": "Horizontal"
+    }
+  ],
+  "selections": [
+    {
+      "value": "Style",
+      "description": "Thickness 25",
+      "shortName": "Style",
+      "imageId": "7c744ed1-e23b-4071-a58a-5f49b6f08d33:Style.jpg",
+      "matrix": [
+        {
+          "id": "GrainGroupId",
+          "value": "Horizontal"
+        }
+      ]
+    },
+    {
+      "value": "Cube",
+      "description": "Thickness 38",
+      "shortName": "Cube",
+      "imageId": "9e70f7f4-f5ed-461b-a239-8111e2763035:Cube.jpg",
+      "matrix": [
+        {
+          "id": "GrainGroupId",
+          "value": "Neutral"
+        }
+      ]
+    }
+  ]
+}

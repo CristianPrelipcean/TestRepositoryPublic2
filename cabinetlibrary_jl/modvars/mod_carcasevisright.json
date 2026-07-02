@@ -1,0 +1,47 @@
+{
+  "variantId": "mod_CarcaseVisRight",
+  "shortName": "Carcase visible right",
+  "variantTypeId": "Bool",
+  "description": "Carcase is visible on the right side",
+  "restrictionTypeId": "Internal",
+  "groupName": "Additional",
+  "imageId": "90b5c143-ac9a-492e-902c-61b2e4f53eaf:CarcaseVisRight.jpg",
+  "isArray": false,
+  "isPosRelevant": true,
+  "mainAttr": false,
+  "userRight": "Simple",
+  "implicitRelevant": false,
+  "posView": "Toggle",
+  "sorting": 2,
+  "matrix": [
+    {
+      "id": "outside",
+      "type": "Text",
+      "default": "NotVisible"
+    }
+  ],
+  "selections": [
+    {
+      "value": "false",
+      "description": "Not visible",
+      "shortName": "false",
+      "matrix": [
+        {
+          "id": "outside",
+          "value": "NotVisible"
+        }
+      ]
+    },
+    {
+      "value": "true",
+      "description": "Visible",
+      "shortName": "true",
+      "matrix": [
+        {
+          "id": "outside",
+          "value": "Visible"
+        }
+      ]
+    }
+  ]
+}

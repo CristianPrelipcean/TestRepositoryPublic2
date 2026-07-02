@@ -1,0 +1,105 @@
+{
+  "variantId": "mod_LightPosX",
+  "shortName": "Position x",
+  "variantTypeId": "Text",
+  "description": "Light Position (relative to Carcase Width)",
+  "restrictionTypeId": "Public",
+  "groupName": "Hardware | Light",
+  "imageId": "",
+  "isArray": false,
+  "isPosRelevant": true,
+  "mainAttr": false,
+  "userRight": "Master",
+  "posView": "InputField",
+  "matrix": [
+    {
+      "id": "Descriptor",
+      "type": "Text"
+    }
+  ],
+  "selections": [
+    {
+      "value": "100mm_x_100mm",
+      "description": "2 Lights at 100mm from Left and from Right",
+      "shortName": "100mm_x_100mm",
+      "matrix": [
+        {
+          "id": "Descriptor",
+          "value": "100mm_1_100mm"
+        }
+      ]
+    },
+    {
+      "value": "100mm_x_x_100mm",
+      "description": "3 Lights at 100mm from Left and from Right and another at the Center",
+      "shortName": "100mm_x_x_100mm",
+      "matrix": [
+        {
+          "id": "Descriptor",
+          "value": "100mm_1_1_100mm"
+        }
+      ]
+    },
+    {
+      "value": "Central",
+      "description": "CentralPosition",
+      "shortName": "Central",
+      "matrix": [
+        {
+          "id": "Descriptor",
+          "value": "1_1"
+        }
+      ]
+    },
+    {
+      "value": "FreePosition",
+      "description": "FreePosition",
+      "shortName": "FreePosition",
+      "matrix": [
+        {
+          "id": "Descriptor",
+          "value": "FreePosition"
+        }
+      ]
+    },
+    {
+      "value": "CompleteLedStrip",
+      "description": "Complete Led Strip",
+      "shortName": "CompleteLedStrip",
+      "matrix": [
+        {
+          "id": "Descriptor",
+          "value": "0mm_1_0mm"
+        }
+      ]
+    },
+    {
+      "value": "342mm",
+      "description": "Led Strip with 342mm",
+      "shortName": "342mm",
+      "matrix": [
+        {
+          "id": "Descriptor",
+          "value": "1_342mm_1"
+        }
+      ]
+    },
+    {
+      "value": "442mm",
+      "description": "Led Strip with 442mm",
+      "shortName": "442mm",
+      "matrix": [
+        {
+          "id": "Descriptor",
+          "value": "1_442mm_1"
+        }
+      ]
+    },
+    {
+      "value": "DescriptorBased",
+      "description": "DescriptorBased Values - IN DEVELOPMENT",
+      "shortName": "DescriptorBased",
+      "matrix": []
+    }
+  ]
+}

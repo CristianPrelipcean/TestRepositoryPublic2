@@ -1,0 +1,211 @@
+{
+  "variantId": "mod_FingergripType",
+  "shortName": "Fingergrip type",
+  "variantTypeId": "Text",
+  "description": "Fingergrip type",
+  "restrictionTypeId": "Public",
+  "groupName": "FrontOpening | Fingergrip",
+  "imageId": "37d23bf4-8330-4104-a910-8b4ac0eab337:FingergripProgram.jpg",
+  "isArray": false,
+  "isPosRelevant": true,
+  "mainAttr": false,
+  "userRight": "Advanced",
+  "implicitRelevant": false,
+  "posView": "Dropdown",
+  "matrix": [
+    {
+      "id": "LShapeHeight",
+      "type": "Real"
+    },
+    {
+      "id": "LShapeDepth",
+      "type": "Real"
+    },
+    {
+      "id": "LShapeGapAbove",
+      "type": "Real"
+    },
+    {
+      "id": "LShapeSVG",
+      "type": "Text"
+    },
+    {
+      "id": "CShapeHeight",
+      "type": "Real"
+    },
+    {
+      "id": "CShapeDepth",
+      "type": "Real"
+    },
+    {
+      "id": "CShapeOverlapBelow",
+      "type": "Real"
+    },
+    {
+      "id": "CShapeOverlapAbove",
+      "type": "Real"
+    },
+    {
+      "id": "CShapeSVG",
+      "type": "Text"
+    },
+    {
+      "id": "MprProfileStyle",
+      "type": "Integer"
+    },
+    {
+      "id": "CutSide",
+      "type": "Bool"
+    }
+  ],
+  "selections": [
+    {
+      "value": "None",
+      "description": "No fingergrip",
+      "shortName": "None",
+      "imageId": "245deff5-fb41-4179-b0b5-ce2c5dd1fc1a:None.png",
+      "matrix": [
+        {
+          "id": "LShapeHeight",
+          "value": 0.0
+        },
+        {
+          "id": "LShapeDepth",
+          "value": 0.0
+        },
+        {
+          "id": "LShapeGapAbove",
+          "value": 0.0
+        },
+        {
+          "id": "CShapeHeight",
+          "value": 0.0
+        },
+        {
+          "id": "CShapeDepth",
+          "value": 0.0
+        },
+        {
+          "id": "CShapeOverlapBelow",
+          "value": 0.0
+        },
+        {
+          "id": "CShapeOverlapAbove",
+          "value": 0.0
+        },
+        {
+          "id": "MprProfileStyle",
+          "value": 0
+        },
+        {
+          "id": "CutSide",
+          "value": false
+        }
+      ]
+    },
+    {
+      "value": "Metal",
+      "description": "Metal fingergrip",
+      "shortName": "Metal",
+      "imageId": "436b26a7-7c4d-4bb9-9fd9-8878f9e1065a:Stainless steel.jpg",
+      "matrix": [
+        {
+          "id": "LShapeHeight",
+          "value": 49.0
+        },
+        {
+          "id": "LShapeDepth",
+          "value": 23.5
+        },
+        {
+          "id": "LShapeGapAbove",
+          "value": 30.0
+        },
+        {
+          "id": "LShapeSVG",
+          "value": "<svg><path d=\" M 0 0 L 0 1 A 2 2 0 0 1 -2 3 L -12.5 3 A 10 10 0 0 0 -22.5 11 L -22.5 49 L -23.5 49 L -23.5 0 Z \"/></svg>"
+        },
+        {
+          "id": "CShapeHeight",
+          "value": 64.0
+        },
+        {
+          "id": "CShapeDepth",
+          "value": 23.5
+        },
+        {
+          "id": "CShapeOverlapBelow",
+          "value": 17.0
+        },
+        {
+          "id": "CShapeOverlapAbove",
+          "value": 17.0
+        },
+        {
+          "id": "CShapeSVG",
+          "value": "<svg><path d=\" M 0 -32 L 0 -31 A 2 2 0 0 1 -2 -29 L -12.5 -29 A 10 10 0 0 0 -22.5 -21 L -22.5 19 A 10 10 0 0 0 -12.5 29 L -2 29 A 2 2 0 0 1 0 31 L 0 32 L -23.5 32 L -23.5 -32 Z \"/></svg>"
+        },
+        {
+          "id": "MprProfileStyle",
+          "value": 2
+        },
+        {
+          "id": "CutSide",
+          "value": true
+        }
+      ]
+    },
+    {
+      "value": "Wood",
+      "description": "Wooden fingergrip",
+      "shortName": "Wood",
+      "imageId": "51f7172c-c333-4577-8f9b-e1067faa804a:215_Walnut.jpg",
+      "matrix": [
+        {
+          "id": "LShapeHeight",
+          "value": 50.0
+        },
+        {
+          "id": "LShapeDepth",
+          "value": 26.0
+        },
+        {
+          "id": "LShapeGapAbove",
+          "value": 30.0
+        },
+        {
+          "id": "LShapeSVG",
+          "value": "<svg><path d=\" M 0 0  L -26 0  L -26 50  L -16 50  L -16 10  L 0 10  Z\"/></svg>"
+        },
+        {
+          "id": "CShapeHeight",
+          "value": 70.0
+        },
+        {
+          "id": "CShapeDepth",
+          "value": 26.0
+        },
+        {
+          "id": "CShapeOverlapBelow",
+          "value": 20.0
+        },
+        {
+          "id": "CShapeOverlapAbove",
+          "value": 20.0
+        },
+        {
+          "id": "CShapeSVG",
+          "value": "<svg><path d=\" M 0 -35  L -26 -35  L -26 35  L 0 35  L 0 25  L -16 25  L -16 -25  L 0 -25  Z\"/></svg>"
+        },
+        {
+          "id": "MprProfileStyle",
+          "value": 2
+        },
+        {
+          "id": "CutSide",
+          "value": true
+        }
+      ]
+    }
+  ]
+}

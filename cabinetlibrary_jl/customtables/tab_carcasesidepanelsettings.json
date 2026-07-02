@@ -1,0 +1,681 @@
+{
+  "tableName": "tab_CarcaseSidepanelSettings",
+  "description": "Carcase side panel settings",
+  "restrictionTypeId": "Public",
+  "groupName": "CarcaseConstruction",
+  "columns": [
+    {
+      "name": "_id",
+      "type": "Integer",
+      "allowNull": false
+    },
+    {
+      "name": "in_ModuleName",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_SidepanelType",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_Side",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_AdditionalInfo01",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "LibrarySolution",
+      "type": "Bool",
+      "allowNull": true
+    },
+    {
+      "name": "UsedModule",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "ConstructionTablePartName",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "InsertModule",
+      "type": "Bool",
+      "allowNull": true
+    },
+    {
+      "name": "PartType",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "Backwall",
+      "type": "Text",
+      "allowNull": true
+    }
+  ],
+  "rows": [
+    {
+      "data": [
+        {
+          "columnName": "in_ModuleName",
+          "value": "mc_Storageunit01"
+        },
+        {
+          "columnName": "in_SidepanelType",
+          "value": "NoSpAtOutSp"
+        },
+        {
+          "columnName": "in_Side",
+          "value": "Left"
+        },
+        {
+          "columnName": "in_AdditionalInfo01",
+          "value": "All"
+        },
+        {
+          "columnName": "LibrarySolution",
+          "value": "true"
+        },
+        {
+          "columnName": "UsedModule",
+          "value": "mc_StorageunitSidepanel01"
+        },
+        {
+          "columnName": "ConstructionTablePartName",
+          "value": "part_Sidepanelleft"
+        },
+        {
+          "columnName": "InsertModule",
+          "value": "false"
+        },
+        {
+          "columnName": "PartType",
+          "value": "NoSp"
+        },
+        {
+          "columnName": "Backwall",
+          "value": "NoSp"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ModuleName",
+          "value": "mc_Storageunit01"
+        },
+        {
+          "columnName": "in_SidepanelType",
+          "value": "NoSpAtOutSp"
+        },
+        {
+          "columnName": "in_Side",
+          "value": "Right"
+        },
+        {
+          "columnName": "in_AdditionalInfo01",
+          "value": "All"
+        },
+        {
+          "columnName": "LibrarySolution",
+          "value": "true"
+        },
+        {
+          "columnName": "UsedModule",
+          "value": "mc_StorageunitSidepanel01"
+        },
+        {
+          "columnName": "ConstructionTablePartName",
+          "value": "part_Sidepanelright"
+        },
+        {
+          "columnName": "InsertModule",
+          "value": "false"
+        },
+        {
+          "columnName": "PartType",
+          "value": "NoSp"
+        },
+        {
+          "columnName": "Backwall",
+          "value": "NoSp"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ModuleName",
+          "value": "mc_Storageunit01"
+        },
+        {
+          "columnName": "in_SidepanelType",
+          "value": "NoSpAtMiSp"
+        },
+        {
+          "columnName": "in_Side",
+          "value": "Left"
+        },
+        {
+          "columnName": "in_AdditionalInfo01",
+          "value": "All"
+        },
+        {
+          "columnName": "LibrarySolution",
+          "value": "true"
+        },
+        {
+          "columnName": "UsedModule",
+          "value": "mc_StorageunitSidepanel01"
+        },
+        {
+          "columnName": "ConstructionTablePartName",
+          "value": "part_Sidepanelleft"
+        },
+        {
+          "columnName": "InsertModule",
+          "value": "false"
+        },
+        {
+          "columnName": "PartType",
+          "value": "NoSp"
+        },
+        {
+          "columnName": "Backwall",
+          "value": "NoSp"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ModuleName",
+          "value": "mc_Storageunit01"
+        },
+        {
+          "columnName": "in_SidepanelType",
+          "value": "NoSpAtMiSp"
+        },
+        {
+          "columnName": "in_Side",
+          "value": "Right"
+        },
+        {
+          "columnName": "in_AdditionalInfo01",
+          "value": "All"
+        },
+        {
+          "columnName": "LibrarySolution",
+          "value": "true"
+        },
+        {
+          "columnName": "UsedModule",
+          "value": "mc_StorageunitSidepanel01"
+        },
+        {
+          "columnName": "ConstructionTablePartName",
+          "value": "part_Sidepanelright"
+        },
+        {
+          "columnName": "InsertModule",
+          "value": "false"
+        },
+        {
+          "columnName": "PartType",
+          "value": "NoSp"
+        },
+        {
+          "columnName": "Backwall",
+          "value": "NoSp"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ModuleName",
+          "value": "mc_Storageunit01"
+        },
+        {
+          "columnName": "in_SidepanelType",
+          "value": "NoSpAtOutSpOversized"
+        },
+        {
+          "columnName": "in_Side",
+          "value": "Left"
+        },
+        {
+          "columnName": "in_AdditionalInfo01",
+          "value": "All"
+        },
+        {
+          "columnName": "LibrarySolution",
+          "value": "true"
+        },
+        {
+          "columnName": "UsedModule",
+          "value": "mc_StorageunitSidepanel01"
+        },
+        {
+          "columnName": "ConstructionTablePartName",
+          "value": "part_Sidepanelleft"
+        },
+        {
+          "columnName": "InsertModule",
+          "value": "false"
+        },
+        {
+          "columnName": "PartType",
+          "value": "NoSp"
+        },
+        {
+          "columnName": "Backwall",
+          "value": "NoSp"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ModuleName",
+          "value": "mc_Storageunit01"
+        },
+        {
+          "columnName": "in_SidepanelType",
+          "value": "NoSpAtOutSpOversized"
+        },
+        {
+          "columnName": "in_Side",
+          "value": "Right"
+        },
+        {
+          "columnName": "in_AdditionalInfo01",
+          "value": "All"
+        },
+        {
+          "columnName": "LibrarySolution",
+          "value": "true"
+        },
+        {
+          "columnName": "UsedModule",
+          "value": "mc_StorageunitSidepanel01"
+        },
+        {
+          "columnName": "ConstructionTablePartName",
+          "value": "part_Sidepanelright"
+        },
+        {
+          "columnName": "InsertModule",
+          "value": "false"
+        },
+        {
+          "columnName": "PartType",
+          "value": "NoSp"
+        },
+        {
+          "columnName": "Backwall",
+          "value": "NoSp"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ModuleName",
+          "value": "mc_Storageunit01"
+        },
+        {
+          "columnName": "in_SidepanelType",
+          "value": "MiSp"
+        },
+        {
+          "columnName": "in_Side",
+          "value": "Left"
+        },
+        {
+          "columnName": "in_AdditionalInfo01",
+          "value": "All"
+        },
+        {
+          "columnName": "LibrarySolution",
+          "value": "true"
+        },
+        {
+          "columnName": "UsedModule",
+          "value": "mc_StorageunitSidepanel01"
+        },
+        {
+          "columnName": "ConstructionTablePartName",
+          "value": "part_Sidepanelleft"
+        },
+        {
+          "columnName": "InsertModule",
+          "value": "true"
+        },
+        {
+          "columnName": "PartType",
+          "value": "Middle"
+        },
+        {
+          "columnName": "Backwall",
+          "value": "MiSp"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ModuleName",
+          "value": "mc_Storageunit01"
+        },
+        {
+          "columnName": "in_SidepanelType",
+          "value": "MiSp"
+        },
+        {
+          "columnName": "in_Side",
+          "value": "Right"
+        },
+        {
+          "columnName": "in_AdditionalInfo01",
+          "value": "All"
+        },
+        {
+          "columnName": "LibrarySolution",
+          "value": "true"
+        },
+        {
+          "columnName": "UsedModule",
+          "value": "mc_StorageunitSidepanel01"
+        },
+        {
+          "columnName": "ConstructionTablePartName",
+          "value": "part_Sidepanelright"
+        },
+        {
+          "columnName": "InsertModule",
+          "value": "true"
+        },
+        {
+          "columnName": "PartType",
+          "value": "Middle"
+        },
+        {
+          "columnName": "Backwall",
+          "value": "MiSp"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ModuleName",
+          "value": "mc_Storageunit01"
+        },
+        {
+          "columnName": "in_SidepanelType",
+          "value": "OutSp"
+        },
+        {
+          "columnName": "in_Side",
+          "value": "Left"
+        },
+        {
+          "columnName": "in_AdditionalInfo01",
+          "value": "All"
+        },
+        {
+          "columnName": "LibrarySolution",
+          "value": "true"
+        },
+        {
+          "columnName": "UsedModule",
+          "value": "mc_StorageunitSidepanel01"
+        },
+        {
+          "columnName": "ConstructionTablePartName",
+          "value": "part_Sidepanelleft"
+        },
+        {
+          "columnName": "InsertModule",
+          "value": "true"
+        },
+        {
+          "columnName": "PartType",
+          "value": "Left"
+        },
+        {
+          "columnName": "Backwall",
+          "value": "OutSp"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ModuleName",
+          "value": "mc_Storageunit01"
+        },
+        {
+          "columnName": "in_SidepanelType",
+          "value": "OutSp"
+        },
+        {
+          "columnName": "in_Side",
+          "value": "Right"
+        },
+        {
+          "columnName": "in_AdditionalInfo01",
+          "value": "All"
+        },
+        {
+          "columnName": "LibrarySolution",
+          "value": "true"
+        },
+        {
+          "columnName": "UsedModule",
+          "value": "mc_StorageunitSidepanel01"
+        },
+        {
+          "columnName": "ConstructionTablePartName",
+          "value": "part_Sidepanelright"
+        },
+        {
+          "columnName": "InsertModule",
+          "value": "true"
+        },
+        {
+          "columnName": "PartType",
+          "value": "Right"
+        },
+        {
+          "columnName": "Backwall",
+          "value": "OutSp"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ModuleName",
+          "value": "mc_Storageunit01"
+        },
+        {
+          "columnName": "in_SidepanelType",
+          "value": "NoSp"
+        },
+        {
+          "columnName": "in_Side",
+          "value": "Left"
+        },
+        {
+          "columnName": "in_AdditionalInfo01",
+          "value": "All"
+        },
+        {
+          "columnName": "LibrarySolution",
+          "value": "true"
+        },
+        {
+          "columnName": "UsedModule",
+          "value": "mc_StorageunitSidepanel01"
+        },
+        {
+          "columnName": "ConstructionTablePartName",
+          "value": "part_Sidepanelright"
+        },
+        {
+          "columnName": "InsertModule",
+          "value": "false"
+        },
+        {
+          "columnName": "PartType",
+          "value": "NoSp"
+        },
+        {
+          "columnName": "Backwall",
+          "value": "NoSp"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ModuleName",
+          "value": "mc_Storageunit01"
+        },
+        {
+          "columnName": "in_SidepanelType",
+          "value": "NoSp"
+        },
+        {
+          "columnName": "in_Side",
+          "value": "Right"
+        },
+        {
+          "columnName": "in_AdditionalInfo01",
+          "value": "All"
+        },
+        {
+          "columnName": "LibrarySolution",
+          "value": "true"
+        },
+        {
+          "columnName": "UsedModule",
+          "value": "mc_StorageunitSidepanel01"
+        },
+        {
+          "columnName": "ConstructionTablePartName",
+          "value": "part_Sidepanelright"
+        },
+        {
+          "columnName": "InsertModule",
+          "value": "false"
+        },
+        {
+          "columnName": "PartType",
+          "value": "NoSp"
+        },
+        {
+          "columnName": "Backwall",
+          "value": "NoSp"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ModuleName",
+          "value": "mc_Cornerunit01"
+        },
+        {
+          "columnName": "in_SidepanelType",
+          "value": "OutSp"
+        },
+        {
+          "columnName": "in_Side",
+          "value": "Left"
+        },
+        {
+          "columnName": "in_AdditionalInfo01",
+          "value": "All"
+        },
+        {
+          "columnName": "LibrarySolution",
+          "value": "true"
+        },
+        {
+          "columnName": "UsedModule",
+          "value": "mc_StorageunitSidepanel01"
+        },
+        {
+          "columnName": "ConstructionTablePartName",
+          "value": "part_Sidepanelleft"
+        },
+        {
+          "columnName": "InsertModule",
+          "value": "true"
+        },
+        {
+          "columnName": "PartType",
+          "value": "Left"
+        },
+        {
+          "columnName": "Backwall",
+          "value": "OutSp"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ModuleName",
+          "value": "mc_Cornerunit01"
+        },
+        {
+          "columnName": "in_SidepanelType",
+          "value": "OutSp"
+        },
+        {
+          "columnName": "in_Side",
+          "value": "Right"
+        },
+        {
+          "columnName": "in_AdditionalInfo01",
+          "value": "All"
+        },
+        {
+          "columnName": "LibrarySolution",
+          "value": "true"
+        },
+        {
+          "columnName": "UsedModule",
+          "value": "mc_StorageunitSidepanel01"
+        },
+        {
+          "columnName": "ConstructionTablePartName",
+          "value": "part_Sidepanelright"
+        },
+        {
+          "columnName": "InsertModule",
+          "value": "true"
+        },
+        {
+          "columnName": "PartType",
+          "value": "Right"
+        },
+        {
+          "columnName": "Backwall",
+          "value": "OutSp"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,801 @@
+{
+  "tableName": "tab_ShelfadjQtyPosSettings",
+  "description": "Describes the logic to define the quantity of the adjustable shelves",
+  "restrictionTypeId": "Public",
+  "groupName": "Shelfadj",
+  "columns": [
+    {
+      "name": "_id",
+      "type": "Integer",
+      "allowNull": false
+    },
+    {
+      "name": "in_TypeElement",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_FrontModule",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_FrontModuleType",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_CarcaseSpaceHeightMin",
+      "type": "Dim",
+      "allowNull": true
+    },
+    {
+      "name": "in_CarcaseSpaceHeightMax",
+      "type": "Dim",
+      "allowNull": true
+    },
+    {
+      "name": "DescriptorPosY",
+      "type": "Text",
+      "allowNull": true
+    }
+  ],
+  "rows": [
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "BaseUnit"
+        },
+        {
+          "columnName": "in_FrontModule",
+          "value": "Door"
+        },
+        {
+          "columnName": "in_FrontModuleType",
+          "value": "All"
+        },
+        {
+          "columnName": "in_CarcaseSpaceHeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseSpaceHeightMax",
+          "value": "400"
+        },
+        {
+          "columnName": "DescriptorPosY",
+          "value": "N/A"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "BaseUnit"
+        },
+        {
+          "columnName": "in_FrontModule",
+          "value": "Door"
+        },
+        {
+          "columnName": "in_FrontModuleType",
+          "value": "All"
+        },
+        {
+          "columnName": "in_CarcaseSpaceHeightMin",
+          "value": "400.01"
+        },
+        {
+          "columnName": "in_CarcaseSpaceHeightMax",
+          "value": "600"
+        },
+        {
+          "columnName": "DescriptorPosY",
+          "value": "1_1"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "BaseUnit"
+        },
+        {
+          "columnName": "in_FrontModule",
+          "value": "Door"
+        },
+        {
+          "columnName": "in_FrontModuleType",
+          "value": "All"
+        },
+        {
+          "columnName": "in_CarcaseSpaceHeightMin",
+          "value": "600.01"
+        },
+        {
+          "columnName": "in_CarcaseSpaceHeightMax",
+          "value": "800"
+        },
+        {
+          "columnName": "DescriptorPosY",
+          "value": "1_1_1"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "BaseUnit"
+        },
+        {
+          "columnName": "in_FrontModule",
+          "value": "Door"
+        },
+        {
+          "columnName": "in_FrontModuleType",
+          "value": "All"
+        },
+        {
+          "columnName": "in_CarcaseSpaceHeightMin",
+          "value": "800.01"
+        },
+        {
+          "columnName": "in_CarcaseSpaceHeightMax",
+          "value": "900"
+        },
+        {
+          "columnName": "DescriptorPosY",
+          "value": "1_1_1_1"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "BaseUnit"
+        },
+        {
+          "columnName": "in_FrontModule",
+          "value": "Door"
+        },
+        {
+          "columnName": "in_FrontModuleType",
+          "value": "All"
+        },
+        {
+          "columnName": "in_CarcaseSpaceHeightMin",
+          "value": "900.01"
+        },
+        {
+          "columnName": "in_CarcaseSpaceHeightMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "DescriptorPosY",
+          "value": "1_1_1_1_1"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "TallUnit"
+        },
+        {
+          "columnName": "in_FrontModule",
+          "value": "Door"
+        },
+        {
+          "columnName": "in_FrontModuleType",
+          "value": "All"
+        },
+        {
+          "columnName": "in_CarcaseSpaceHeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseSpaceHeightMax",
+          "value": "400"
+        },
+        {
+          "columnName": "DescriptorPosY",
+          "value": "N/A"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "TallUnit"
+        },
+        {
+          "columnName": "in_FrontModule",
+          "value": "Door"
+        },
+        {
+          "columnName": "in_FrontModuleType",
+          "value": "All"
+        },
+        {
+          "columnName": "in_CarcaseSpaceHeightMin",
+          "value": "400.01"
+        },
+        {
+          "columnName": "in_CarcaseSpaceHeightMax",
+          "value": "600"
+        },
+        {
+          "columnName": "DescriptorPosY",
+          "value": "1_1"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "TallUnit"
+        },
+        {
+          "columnName": "in_FrontModule",
+          "value": "Door"
+        },
+        {
+          "columnName": "in_FrontModuleType",
+          "value": "All"
+        },
+        {
+          "columnName": "in_CarcaseSpaceHeightMin",
+          "value": "600.01"
+        },
+        {
+          "columnName": "in_CarcaseSpaceHeightMax",
+          "value": "800"
+        },
+        {
+          "columnName": "DescriptorPosY",
+          "value": "1_1_1"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "TallUnit"
+        },
+        {
+          "columnName": "in_FrontModule",
+          "value": "Door"
+        },
+        {
+          "columnName": "in_FrontModuleType",
+          "value": "All"
+        },
+        {
+          "columnName": "in_CarcaseSpaceHeightMin",
+          "value": "800.01"
+        },
+        {
+          "columnName": "in_CarcaseSpaceHeightMax",
+          "value": "900"
+        },
+        {
+          "columnName": "DescriptorPosY",
+          "value": "1_1_1_1"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "TallUnit"
+        },
+        {
+          "columnName": "in_FrontModule",
+          "value": "Door"
+        },
+        {
+          "columnName": "in_FrontModuleType",
+          "value": "All"
+        },
+        {
+          "columnName": "in_CarcaseSpaceHeightMin",
+          "value": "900.01"
+        },
+        {
+          "columnName": "in_CarcaseSpaceHeightMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "DescriptorPosY",
+          "value": "1_1_1_1_1"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontModule",
+          "value": "Door"
+        },
+        {
+          "columnName": "in_FrontModuleType",
+          "value": "All"
+        },
+        {
+          "columnName": "in_CarcaseSpaceHeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseSpaceHeightMax",
+          "value": "400"
+        },
+        {
+          "columnName": "DescriptorPosY",
+          "value": "N/A"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontModule",
+          "value": "Door"
+        },
+        {
+          "columnName": "in_FrontModuleType",
+          "value": "All"
+        },
+        {
+          "columnName": "in_CarcaseSpaceHeightMin",
+          "value": "400.01"
+        },
+        {
+          "columnName": "in_CarcaseSpaceHeightMax",
+          "value": "600"
+        },
+        {
+          "columnName": "DescriptorPosY",
+          "value": "1_1"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontModule",
+          "value": "Door"
+        },
+        {
+          "columnName": "in_FrontModuleType",
+          "value": "All"
+        },
+        {
+          "columnName": "in_CarcaseSpaceHeightMin",
+          "value": "600.01"
+        },
+        {
+          "columnName": "in_CarcaseSpaceHeightMax",
+          "value": "800"
+        },
+        {
+          "columnName": "DescriptorPosY",
+          "value": "1_1_1"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontModule",
+          "value": "Door"
+        },
+        {
+          "columnName": "in_FrontModuleType",
+          "value": "All"
+        },
+        {
+          "columnName": "in_CarcaseSpaceHeightMin",
+          "value": "800.01"
+        },
+        {
+          "columnName": "in_CarcaseSpaceHeightMax",
+          "value": "900"
+        },
+        {
+          "columnName": "DescriptorPosY",
+          "value": "1_1_1_1"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontModule",
+          "value": "Door"
+        },
+        {
+          "columnName": "in_FrontModuleType",
+          "value": "All"
+        },
+        {
+          "columnName": "in_CarcaseSpaceHeightMin",
+          "value": "900.01"
+        },
+        {
+          "columnName": "in_CarcaseSpaceHeightMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "DescriptorPosY",
+          "value": "1_1_1_1_1"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontModule",
+          "value": "RackArea"
+        },
+        {
+          "columnName": "in_FrontModuleType",
+          "value": "All"
+        },
+        {
+          "columnName": "in_CarcaseSpaceHeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseSpaceHeightMax",
+          "value": "400"
+        },
+        {
+          "columnName": "DescriptorPosY",
+          "value": "N/A"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontModule",
+          "value": "RackArea"
+        },
+        {
+          "columnName": "in_FrontModuleType",
+          "value": "All"
+        },
+        {
+          "columnName": "in_CarcaseSpaceHeightMin",
+          "value": "400.01"
+        },
+        {
+          "columnName": "in_CarcaseSpaceHeightMax",
+          "value": "600"
+        },
+        {
+          "columnName": "DescriptorPosY",
+          "value": "1_1"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontModule",
+          "value": "RackArea"
+        },
+        {
+          "columnName": "in_FrontModuleType",
+          "value": "All"
+        },
+        {
+          "columnName": "in_CarcaseSpaceHeightMin",
+          "value": "600.01"
+        },
+        {
+          "columnName": "in_CarcaseSpaceHeightMax",
+          "value": "800"
+        },
+        {
+          "columnName": "DescriptorPosY",
+          "value": "1_1_1"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontModule",
+          "value": "RackArea"
+        },
+        {
+          "columnName": "in_FrontModuleType",
+          "value": "All"
+        },
+        {
+          "columnName": "in_CarcaseSpaceHeightMin",
+          "value": "800.01"
+        },
+        {
+          "columnName": "in_CarcaseSpaceHeightMax",
+          "value": "900"
+        },
+        {
+          "columnName": "DescriptorPosY",
+          "value": "1_1_1_1"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontModule",
+          "value": "RackArea"
+        },
+        {
+          "columnName": "in_FrontModuleType",
+          "value": "All"
+        },
+        {
+          "columnName": "in_CarcaseSpaceHeightMin",
+          "value": "900.01"
+        },
+        {
+          "columnName": "in_CarcaseSpaceHeightMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "DescriptorPosY",
+          "value": "1_1_1_1_1"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "BaseUnitSink"
+        },
+        {
+          "columnName": "in_FrontModule",
+          "value": "Door"
+        },
+        {
+          "columnName": "in_FrontModuleType",
+          "value": "All"
+        },
+        {
+          "columnName": "in_CarcaseSpaceHeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseSpaceHeightMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "DescriptorPosY",
+          "value": "N/A"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontModule",
+          "value": "Fliplift"
+        },
+        {
+          "columnName": "in_FrontModuleType",
+          "value": "All"
+        },
+        {
+          "columnName": "in_CarcaseSpaceHeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseSpaceHeightMax",
+          "value": "400"
+        },
+        {
+          "columnName": "DescriptorPosY",
+          "value": "N/A"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontModule",
+          "value": "Fliplift"
+        },
+        {
+          "columnName": "in_FrontModuleType",
+          "value": "All"
+        },
+        {
+          "columnName": "in_CarcaseSpaceHeightMin",
+          "value": "400.01"
+        },
+        {
+          "columnName": "in_CarcaseSpaceHeightMax",
+          "value": "800"
+        },
+        {
+          "columnName": "DescriptorPosY",
+          "value": "1_1"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontModule",
+          "value": "Fliplift"
+        },
+        {
+          "columnName": "in_FrontModuleType",
+          "value": "All"
+        },
+        {
+          "columnName": "in_CarcaseSpaceHeightMin",
+          "value": "800.01"
+        },
+        {
+          "columnName": "in_CarcaseSpaceHeightMax",
+          "value": "1200"
+        },
+        {
+          "columnName": "DescriptorPosY",
+          "value": "1_1_1"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontModule",
+          "value": "Fliplift"
+        },
+        {
+          "columnName": "in_FrontModuleType",
+          "value": "All"
+        },
+        {
+          "columnName": "in_CarcaseSpaceHeightMin",
+          "value": "1200.01"
+        },
+        {
+          "columnName": "in_CarcaseSpaceHeightMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "DescriptorPosY",
+          "value": "1_1_1_1"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "EasyMode"
+        },
+        {
+          "columnName": "in_FrontModule",
+          "value": "RackArea"
+        },
+        {
+          "columnName": "in_FrontModuleType",
+          "value": "All"
+        },
+        {
+          "columnName": "in_CarcaseSpaceHeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseSpaceHeightMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "DescriptorPosY",
+          "value": "1_1"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "EasyMode"
+        },
+        {
+          "columnName": "in_FrontModule",
+          "value": "Door"
+        },
+        {
+          "columnName": "in_FrontModuleType",
+          "value": "All"
+        },
+        {
+          "columnName": "in_CarcaseSpaceHeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseSpaceHeightMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "DescriptorPosY",
+          "value": "1_1"
+        }
+      ]
+    }
+  ]
+}

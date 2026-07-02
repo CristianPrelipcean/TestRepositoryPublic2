@@ -1,0 +1,38 @@
+{
+  "partCode": "part_PulloutHardware",
+  "shortName": "PulloutHardware",
+  "description": "Hardware for the pullout",
+  "wdt": "XYZ",
+  "groupName": "Pullout",
+  "imageId": "720c48b5-1ef2-4717-b0fc-4e413bbdacc7:PulloutHardware.png",
+  "model3dImageId": "",
+  "invisible": false,
+  "restrictionTypeId": "Internal",
+  "noNcData": true,
+  "partVariants": [
+    {
+      "partVarId": "pa_HardwareId",
+      "valueScript": ""
+    },
+    {
+      "partVarId": "pa_HardwareId2",
+      "valueScript": ""
+    },
+    {
+      "partVarId": "pa_HardwareId3",
+      "valueScript": ""
+    },
+    {
+      "partVarId": "pa_HardwareId4",
+      "valueScript": ""
+    }
+  ],
+  "bomData": [
+    {
+      "bomElementTypeId": "bomout_Group",
+      "conditionScript": "partSelf._g?.basic_CreateBom == 'Library'",
+      "valueScript": "//====================================================================\n  // Get data for bomElements\n  //====================================================================\n\n  // Variables\n  let bomElements: ICT_tab_HardwareLibraryMapping[] = [];\n\n  // Find all hardware ID's\n  let hardwareID = GlobalFunc.find_HardwareLibraryMapping(partSelf.pa_HardwareId);\n  let hardwareID2 = GlobalFunc.find_HardwareLibraryMapping(partSelf.pa_HardwareId2);\n  let hardwareID3 = GlobalFunc.find_HardwareLibraryMapping(partSelf.pa_HardwareId3);\n  let hardwareID4 = GlobalFunc.find_HardwareLibraryMapping(partSelf.pa_HardwareId4);\n\n  // Add the hardware items\n  hardwareID.forEach((elem) => {\n    bomElements = bomElements.concat(elem);\n  });\n\n  hardwareID2.forEach((elem) => {\n    bomElements = bomElements.concat(elem);\n  });\n\n  hardwareID3.forEach((elem) => {\n    bomElements = bomElements.concat(elem);\n  });\n\n  hardwareID4.forEach((elem) => {\n    bomElements = bomElements.concat(elem);\n  });\n\n  //====================================================================\n  // Insert the hardware items\n  //====================================================================\n\n  bomElements.forEach(x => {\n    let HardwareElem = this.addbomout_Hardware();\n    let HardwareInfo = GlobalFunc.find_HardwareLibrary(x.SupplierArticleNumber!, x.Supplier!)\n\n    HardwareElem.bom_Supplier = HardwareInfo.in_Supplier;\n    HardwareElem.bom_SupplierArticle = HardwareInfo.in_SupplierArticleNumber;\n    HardwareElem.bom_Description1 = HardwareInfo.Description;\n    HardwareElem.bom_Description2 = HardwareInfo.Description2;\n    HardwareElem.bom_Color = HardwareInfo.Color;\n    HardwareElem.bom_ElementCategory = HardwareInfo.Category;\n    HardwareElem.bom_Length = HardwareInfo.Length;\n    HardwareElem.bom_Width = HardwareInfo.Width;\n    HardwareElem.bom_Thk = HardwareInfo.Thickness;\n  })"
+    }
+  ],
+  "ncData": []
+}

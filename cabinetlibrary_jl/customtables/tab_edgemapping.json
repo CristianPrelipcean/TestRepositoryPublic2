@@ -1,0 +1,5813 @@
+{
+  "tableName": "tab_EdgeMapping",
+  "description": "Mapping for edges",
+  "restrictionTypeId": "Public",
+  "groupName": "Edges",
+  "columns": [
+    {
+      "name": "_id",
+      "type": "Integer",
+      "allowNull": false
+    },
+    {
+      "name": "in_Program",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_EdgeClass",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_NeutralColor",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_BoardThkMin",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "in_BoardThkMax",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "EdgeObject",
+      "type": "Text",
+      "allowNull": true
+    }
+  ],
+  "rows": [
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "NoEdgeClass"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "All"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "999"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "U708ST9_28x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass3"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "All"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "999"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "U708ST9_28x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "190"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "4"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "21"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "W980ST7_23x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "190"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "4"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "21"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "W980ST7_23x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass2"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "190"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "4"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "21"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "W980ST7_23x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass2"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "190"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "4"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "21"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "W980ST7_23x0.8"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass2"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "190"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "21"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "26"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "W980ST7_28x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "190"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "21"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "26"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "W980ST7_28x0.8"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "190"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "21"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "26"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "W980ST7_28x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass2"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "190"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "21"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "26"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "W980ST7_28x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass2"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "190"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "26"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "38"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "W980ST7_43x0.8"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "190"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "26"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "38"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "W980ST7_43x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass2"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "190"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "26"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "38"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "W980ST7_43x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "190"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "26"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "38"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "W980ST7_43x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass2"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "230"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "4"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "21"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "H3860ST9_23x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "230"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "4"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "21"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "H3860ST9_23x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass2"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "230"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "4"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "21"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "H3860ST9_23x0.8"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "230"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "4"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "21"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "H3860ST9_23x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass2"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "230"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "21"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "26"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "H3860ST9_28x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "230"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "21"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "26"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "H3860ST9_28x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "230"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "21"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "26"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "H3860ST9_28x0.8"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass2"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "230"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "21"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "26"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "H3860ST9_28x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass2"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "230"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "26"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "38"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "H3860ST9_43x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "230"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "26"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "38"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "H3860ST9_43x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass2"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "230"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "26"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "38"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "H3860ST9_43x0.8"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "230"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "26"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "38"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "H3860ST9_43x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass2"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "160"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "4"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "21"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "U640ST9_23x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "160"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "4"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "21"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "U640ST9_23x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "160"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "4"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "21"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "U640ST9_23x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass2"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "160"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "4"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "21"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "U640ST9_23x0.8"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass2"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "160"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "21"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "26"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "U640ST9_28x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "160"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "21"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "26"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "U640ST9_28x0.8"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass2"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "160"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "21"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "26"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "U640ST9_28x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "160"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "21"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "26"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "U640ST9_28x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "160"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "26"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "38"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "U640ST9_43x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass2"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "160"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "26"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "38"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "U640ST9_43x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "160"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "26"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "38"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "U640ST9_43x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass2"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "160"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "26"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "38"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "U640ST9_43x0.8"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass2"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "165"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "4"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "21"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "U645ST9_23x0.8"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "165"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "4"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "21"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "U645ST9_23x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "165"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "4"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "21"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "U645ST9_23x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass2"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "165"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "4"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "21"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "U645ST9_23x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "165"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "21"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "26"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "U640ST9_28x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass2"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "165"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "21"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "26"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "U645ST9_28x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "165"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "21"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "26"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "U645ST9_28x0.8"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass2"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "165"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "21"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "26"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "U645ST9_28x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass2"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "165"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "26"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "38"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "U645ST9_43x0.8"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass2"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "165"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "26"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "38"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "U645ST9_43x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "165"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "26"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "38"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "U645ST9_43x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "165"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "26"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "38"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "U645ST9_43x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass2"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "199"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "4"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "21"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "U999ST7_23x0.8"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass2"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "199"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "4"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "21"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "U999ST7_23x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "199"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "4"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "21"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "U999ST7_23x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "199"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "4"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "21"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "U999ST7_23x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "199"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "21"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "26"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "U999ST7_28x0.8"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass2"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "199"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "21"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "26"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "U999ST7_28x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass2"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "199"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "21"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "26"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "U999ST7_28x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "199"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "21"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "26"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "U999ST7_28x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass2"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "199"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "26"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "38"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "U999ST7_43x0.8"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "199"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "26"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "38"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "U999ST7_43x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass2"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "199"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "26"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "38"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "U999ST7_43x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "199"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "26"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "38"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "U999ST7_43x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass2"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "152"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "4"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "21"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "U502ST9_23x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "152"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "4"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "21"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "U502ST9_23x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "152"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "4"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "21"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "U502ST9_23x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass2"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "152"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "4"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "21"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "U502ST9_23x0.8"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass2"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "152"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "21"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "26"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "U502ST9_28x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "152"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "21"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "26"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "U502ST9_28x0.8"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass2"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "152"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "21"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "26"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "U502ST9_28x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "152"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "21"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "26"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "U502ST9_28x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass2"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "152"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "26"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "38"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "U502ST9_43x0.8"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass2"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "152"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "26"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "38"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "U502ST9_43x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "152"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "26"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "38"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "U502ST9_43x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "152"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "26"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "38"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "U502ST9_43x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass2"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "155"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "4"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "21"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "U575ST9_23x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "155"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "4"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "21"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "U575ST9_23x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass2"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "155"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "4"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "21"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "U575ST9_23x0.8"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "155"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "4"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "21"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "U575ST9_23x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "155"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "21"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "26"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "U575ST9_28x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass2"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "155"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "21"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "26"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "U575ST9_28x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "155"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "21"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "26"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "U575ST9_28x0.8"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass2"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "155"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "21"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "26"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "U575ST9_28x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "155"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "26"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "38"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "U575ST9_43x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "155"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "26"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "38"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "U575ST9_43x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass2"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "155"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "26"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "38"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "U502ST9_43x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass2"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "155"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "26"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "38"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "U575ST9_43x0.8"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "215"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "4"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "21"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "H1715ST12_23x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass2"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "215"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "4"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "21"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "H1715ST12_23x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "215"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "4"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "21"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "H1715ST12_23x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass2"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "215"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "4"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "21"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "H1715ST12_23x0.8"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass2"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "215"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "21"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "26"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "H1715ST12_28x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "215"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "21"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "26"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "H1715ST12_28x0.8"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "215"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "21"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "26"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "H1715ST12_28x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass2"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "215"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "21"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "26"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "H1715ST12_28x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass2"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "215"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "26"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "38"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "H1715ST12_43x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "215"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "26"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "38"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "H1715ST12_43x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass2"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "215"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "26"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "38"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "H1715ST12_43x0.8"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "215"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "26"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "38"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "H1715ST12_43x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass2"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "214"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "4"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "21"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "H3734ST9_23x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass2"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "214"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "4"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "21"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "H3734ST9_23x0.8"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "214"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "4"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "21"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "H3734ST9_23x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "214"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "4"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "21"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "H3734ST9_23x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass2"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "214"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "21"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "26"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "H3734ST9_28x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "214"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "21"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "26"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "H3734ST9_28x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "214"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "21"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "26"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "H3734ST9_28x0.8"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass2"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "214"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "21"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "26"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "H3734ST9_28x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "214"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "26"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "38"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "H3734ST9_43x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass2"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "214"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "26"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "38"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "H3734ST9_43x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "214"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "26"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "38"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "H3734ST9_43x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass2"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "214"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "26"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "38"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "H3734ST9_43x0.8"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass2"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "222"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "4"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "21"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "H2033ST10_23x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "222"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "4"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "21"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "H2033ST10_23x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass2"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "222"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "4"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "21"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "H2033ST10_23x0.8"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "222"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "4"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "21"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "H2033ST10_23x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass2"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "222"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "21"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "26"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "H2033ST10_28x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "222"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "21"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "26"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "H2033ST10_28x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "222"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "21"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "26"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "H2033ST10_28x0.8"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass2"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "222"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "21"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "26"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "H2033ST10_28x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass2"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "222"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "26"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "38"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "H2033ST10_43x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass2"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "222"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "26"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "38"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "H2033ST10_43x0.8"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "222"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "26"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "38"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "H2033ST10_43x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "222"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "26"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "38"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "H2033ST10_43x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass2"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "229"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "4"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "21"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "H1199ST12_23x0.8"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass2"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "229"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "4"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "21"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "H1199ST12_23x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "229"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "4"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "21"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "H1199ST12_23x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "229"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "4"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "21"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "H1199ST12_23x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass2"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "229"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "21"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "26"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "H1199ST12_28x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "229"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "21"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "26"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "H1199ST12_28x0.8"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass2"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "229"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "21"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "26"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "H1199ST12_28x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "229"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "21"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "26"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "H1199ST12_28x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass2"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "229"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "26"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "38"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "H1199ST12_43x0.8"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "229"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "26"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "38"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "H1199ST12_43x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass2"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "229"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "26"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "38"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "H1199ST12_43x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "229"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "26"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "38"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "H1199ST12_43x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass2"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "240"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "4"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "21"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "H3190ST19_23x0.8"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "240"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "4"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "21"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "H3190ST19_23x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "240"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "4"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "21"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "H3190ST19_23x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass2"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "240"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "4"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "21"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "H3190ST19_23x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "240"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "21"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "26"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "H3190ST19_28x0.8"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass2"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "240"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "21"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "26"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "H3190ST19_28x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "240"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "21"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "26"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "H3190ST19_28x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass2"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "240"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "21"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "26"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "H3190ST19_28x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass2"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "240"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "26"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "38"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "H3190ST19_43x0.8"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "240"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "26"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "38"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "H3190ST19_43x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "240"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "26"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "38"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "H3190ST19_43x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass2"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "240"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "26"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "38"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "H3190ST19_43x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass2"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "326"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "4"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "21"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "F235ST76_23x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "326"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "4"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "21"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "F235ST76_23x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "326"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "4"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "21"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "F235ST76_23x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass2"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "326"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "4"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "21"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "F235ST76_23x0.8"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "326"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "21"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "26"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "F235ST76_28x0.8"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass2"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "326"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "21"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "26"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "F235ST76_28x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass2"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "326"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "21"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "26"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "F235ST76_28x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "326"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "21"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "26"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "F235ST76_28x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass2"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "326"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "26"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "38"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "F235ST76_43x0.8"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass2"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "326"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "26"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "38"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "F235ST76_43x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "326"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "26"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "38"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "F235ST76_43x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "326"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "26"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "38"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "F235ST76_43x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass2"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "316"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "4"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "21"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "F186ST9_23x0.8"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "316"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "4"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "21"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "F186ST9_23x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "316"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "4"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "21"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "F186ST9_23x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass2"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "316"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "4"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "21"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "F186ST9_23x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass2"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "316"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "21"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "26"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "F186ST9_28x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass2"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "316"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "21"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "26"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "F186ST9_28x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "316"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "21"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "26"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "F186ST9_28x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass2"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "316"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "26"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "38"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "F186ST9_43x0.8"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass2"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "316"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "26"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "38"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "F186ST9_43x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "316"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "21"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "26"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "F186ST9_28x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "316"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "26"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "38"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "F186ST9_43x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "324"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "4"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "21"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "F244ST76_23x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass2"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "324"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "4"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "21"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "F244ST76_23x0.8"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass2"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "324"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "4"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "21"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "F244ST76_23x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "324"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "4"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "21"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "F244ST76_23x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass2"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "324"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "21"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "26"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "F244ST76_28x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "324"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "21"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "26"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "F244ST76_28x0.8"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass2"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "324"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "21"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "26"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "F244ST76_28x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "324"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "21"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "26"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "F244ST76_28x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass2"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "324"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "26"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "38"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "F244ST76_43x0.8"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass2"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "324"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "26"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "38"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "F244ST76_43x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "324"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "26"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "38"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "F244ST76_43x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "324"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "26"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "38"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "F244ST76_43x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass2"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "380"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "4"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "21"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "F800ST9_23x0.8"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass2"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "380"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "4"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "21"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "F800ST9_23x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "380"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "4"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "21"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "F800ST9_23x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "380"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "4"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "21"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "F800ST9_23x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass2"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "380"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "21"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "26"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "F800ST9_28x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "380"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "21"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "26"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "F800ST9_28x0.8"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass2"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "380"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "21"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "26"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "F800ST9_28x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "380"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "21"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "26"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "F800ST9_28x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass2"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "380"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "26"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "38"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "F800ST9_43x0.8"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "380"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "26"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "38"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "F800ST9_43x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "380"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "26"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "38"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "F800ST9_43x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass2"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "380"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "26"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "38"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "F800ST9_43x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "178"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "4"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "21"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "U708ST9_23x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "178"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "21"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "26"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "U708ST9_28x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "178"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "26"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "38"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "U708ST9_43x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass2"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "178"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "21"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "26"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "U708ST9_28x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass2"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "178"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "26"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "38"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "U708ST9_43x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "CarcaseClass2"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "178"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "4"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "21"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "U708ST9_23x0.8"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "178"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "21"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "26"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "U708ST9_28x0.8"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "178"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "26"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "38"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "U708ST9_43x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "178"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "4"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "21"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "U708ST9_23x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass2"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "178"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "26"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "38"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "U708ST9_43x0.8"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass2"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "178"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "21"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "26"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "U708ST9_28x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass2"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "178"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "4"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "21"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "U708ST9_23x2.0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeClass",
+          "value": "FrontClass1"
+        },
+        {
+          "columnName": "in_NeutralColor",
+          "value": "316"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "26"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "38"
+        },
+        {
+          "columnName": "EdgeObject",
+          "value": "F186ST9_43x2.0"
+        }
+      ]
+    }
+  ]
+}

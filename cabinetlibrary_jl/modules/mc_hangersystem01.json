@@ -1,0 +1,61 @@
+{
+  "moduleId": "mc_HangerSystem01",
+  "shortName": "Hanger system",
+  "configurable": false,
+  "isRoot": false,
+  "description": "Management of the hanger system ",
+  "groupName": "Hardware",
+  "imageId": "e8b61f4e-5ac4-4d88-bb05-6c5b4c48a9f2:hangersystem.jpg",
+  "restrictionTypeId": "Internal",
+  "childModules": [],
+  "assignedVariants": [
+    {
+      "variantId": "mod_HangerPosX",
+      "previewValue": "Left_Right",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_HangerPosY",
+      "previewValue": "Top",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_HangerType",
+      "previewValue": "NoHanger",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_ModuleName",
+      "default": "mc_HangerSystem01",
+      "origin": "Fixed"
+    },
+    {
+      "variantId": "mod_HangerInfo",
+      "default": "",
+      "previewValue": "",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_BackwallThk",
+      "previewValue": "15",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_Originpos",
+      "origin": "Default"
+    }
+  ],
+  "assignedParts": [
+    {
+      "partCode": "part_HangerSystem"
+    },
+    {
+      "partCode": "part_HangerSystemBom"
+    },
+    {
+      "partCode": "part_HangerDrill"
+    }
+  ],
+  "assignedCustomTables": [],
+  "assignedFunctions": []
+}

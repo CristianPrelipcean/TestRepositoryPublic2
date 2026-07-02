@@ -1,0 +1,370 @@
+{
+  "tableName": "tab_CarcaseCornerunitConstruction",
+  "description": "Construction of carcase corner unit",
+  "restrictionTypeId": "Internal",
+  "isInputUnique": true,
+  "groupName": "CarcaseConstruction",
+  "columns": [
+    {
+      "name": "_id",
+      "type": "Integer",
+      "allowNull": false
+    },
+    {
+      "name": "in_Part",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_LeftTop",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_LeftBtm",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_RightBtm",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_RightTop",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_PartBackLeft",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_PartFrontLeft",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_PartBackRight",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_PartFrontRight",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_Visible",
+      "type": "Bool",
+      "allowNull": true
+    },
+    {
+      "name": "in_AdditionalInfo01",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "Width",
+      "type": "Text",
+      "allowNull": true,
+      "functionDefinition": "(m: parent):number"
+    },
+    {
+      "name": "Height",
+      "type": "Text",
+      "allowNull": true,
+      "functionDefinition": "(m: parent):number"
+    },
+    {
+      "name": "Depth",
+      "type": "Text",
+      "allowNull": true,
+      "functionDefinition": "(m: parent):number"
+    },
+    {
+      "name": "ReductionLeft",
+      "type": "Text",
+      "allowNull": true,
+      "functionDefinition": "(m: parent):number"
+    },
+    {
+      "name": "ReductionRight",
+      "type": "Text",
+      "allowNull": true,
+      "functionDefinition": "(m: parent):number"
+    },
+    {
+      "name": "WidthPos",
+      "type": "Text",
+      "allowNull": true,
+      "functionDefinition": "(m: parent):number"
+    },
+    {
+      "name": "HeightPos",
+      "type": "Text",
+      "allowNull": true,
+      "functionDefinition": "(m: parent):number"
+    },
+    {
+      "name": "DepthPos",
+      "type": "Text",
+      "allowNull": true,
+      "functionDefinition": "(m: parent):number"
+    },
+    {
+      "name": "EdgeTypeFront",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "EdgeTypeLeft",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "EdgeTypeBack",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "EdgeTypeRight",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "EdgeTypeFrontRight",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "EdgeTypeFrontLeft",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "EdgeJointType",
+      "type": "Text",
+      "allowNull": true
+    }
+  ],
+  "rows": [
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_Sidepanelleft"
+        },
+        {
+          "columnName": "in_LeftTop",
+          "value": "SideCShelf"
+        },
+        {
+          "columnName": "in_LeftBtm",
+          "value": "SideCShelf"
+        },
+        {
+          "columnName": "in_RightBtm",
+          "value": "SideCShelf"
+        },
+        {
+          "columnName": "in_RightTop",
+          "value": "SideCShelf"
+        },
+        {
+          "columnName": "in_PartBackLeft",
+          "value": "n.a."
+        },
+        {
+          "columnName": "in_PartFrontLeft",
+          "value": "Overlayed"
+        },
+        {
+          "columnName": "in_PartBackRight",
+          "value": "n.a."
+        },
+        {
+          "columnName": "in_PartFrontRight",
+          "value": "n.a."
+        },
+        {
+          "columnName": "in_Visible",
+          "value": "false"
+        },
+        {
+          "columnName": "in_AdditionalInfo01",
+          "value": "All"
+        },
+        {
+          "columnName": "Width",
+          "value": "m.mod_SidepanelleftThk"
+        },
+        {
+          "columnName": "Height",
+          "value": "m.mod_Height"
+        },
+        {
+          "columnName": "Depth",
+          "value": "m.mod_DepthLeft"
+        },
+        {
+          "columnName": "ReductionLeft",
+          "value": "0"
+        },
+        {
+          "columnName": "ReductionRight",
+          "value": "0"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "0"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "0"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "m.mod_TotalDimLeft - m.mod_SidepanelleftThk"
+        },
+        {
+          "columnName": "EdgeTypeFront",
+          "value": "CFE"
+        },
+        {
+          "columnName": "EdgeTypeLeft",
+          "value": "CBE"
+        },
+        {
+          "columnName": "EdgeTypeBack",
+          "value": "CBE"
+        },
+        {
+          "columnName": "EdgeTypeRight",
+          "value": "CBE"
+        },
+        {
+          "columnName": "EdgeTypeFrontRight",
+          "value": ""
+        },
+        {
+          "columnName": "EdgeTypeFrontLeft",
+          "value": ""
+        },
+        {
+          "columnName": "EdgeJointType",
+          "value": "II"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_Sidepanelright"
+        },
+        {
+          "columnName": "in_LeftTop",
+          "value": "SideCShelf"
+        },
+        {
+          "columnName": "in_LeftBtm",
+          "value": "SideCShelf"
+        },
+        {
+          "columnName": "in_RightBtm",
+          "value": "SideCShelf"
+        },
+        {
+          "columnName": "in_RightTop",
+          "value": "SideCShelf"
+        },
+        {
+          "columnName": "in_PartBackLeft",
+          "value": "n.a."
+        },
+        {
+          "columnName": "in_PartFrontLeft",
+          "value": "n.a."
+        },
+        {
+          "columnName": "in_PartBackRight",
+          "value": "n.a."
+        },
+        {
+          "columnName": "in_PartFrontRight",
+          "value": "Overlayed"
+        },
+        {
+          "columnName": "in_Visible",
+          "value": "false"
+        },
+        {
+          "columnName": "in_AdditionalInfo01",
+          "value": "All"
+        },
+        {
+          "columnName": "Width",
+          "value": "m.mod_SidepanelrightThk"
+        },
+        {
+          "columnName": "Height",
+          "value": "m.mod_Height"
+        },
+        {
+          "columnName": "Depth",
+          "value": "m.mod_DepthRight"
+        },
+        {
+          "columnName": "ReductionLeft",
+          "value": "0"
+        },
+        {
+          "columnName": "ReductionRight",
+          "value": "0"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "m.mod_TotalDimRight - m.mod_SidepanelrightThk"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "0"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "0"
+        },
+        {
+          "columnName": "EdgeTypeFront",
+          "value": "CFE"
+        },
+        {
+          "columnName": "EdgeTypeLeft",
+          "value": "CBE"
+        },
+        {
+          "columnName": "EdgeTypeBack",
+          "value": "CBE"
+        },
+        {
+          "columnName": "EdgeTypeRight",
+          "value": "CBE"
+        },
+        {
+          "columnName": "EdgeTypeFrontRight",
+          "value": ""
+        },
+        {
+          "columnName": "EdgeTypeFrontLeft",
+          "value": ""
+        },
+        {
+          "columnName": "EdgeJointType",
+          "value": "II"
+        }
+      ]
+    }
+  ]
+}

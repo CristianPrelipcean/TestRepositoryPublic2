@@ -1,0 +1,61 @@
+{
+  "variantId": "mod_DoorType",
+  "shortName": "Door type",
+  "variantTypeId": "Text",
+  "description": "Type of the door (single/double)",
+  "restrictionTypeId": "Internal",
+  "groupName": "Front | Construction",
+  "imageId": "275ac430-50cb-410d-8f49-e40a32472a92:DoubleDoor2.jpg",
+  "assignedGlobalVarId": "basic_DoorType",
+  "isArray": false,
+  "isPosRelevant": true,
+  "mainAttr": true,
+  "userRight": "Master",
+  "implicitRelevant": false,
+  "posView": "Dropdown",
+  "matrix": [
+    {
+      "id": "PartQty",
+      "type": "Integer",
+      "default": 1
+    }
+  ],
+  "selections": [
+    {
+      "value": "Single",
+      "description": "Single door",
+      "shortName": "Single",
+      "imageId": "362150a1-6fe8-4f09-ae8f-380eaf2d4e17:SingleDoor.jpg",
+      "matrix": [
+        {
+          "id": "PartQty",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "value": "Double",
+      "description": "Double door",
+      "shortName": "Double",
+      "imageId": "1d35e8a7-0a79-45c9-8781-6220cd60539a:DoubleDoor.jpg",
+      "matrix": [
+        {
+          "id": "PartQty",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "value": "Automatic",
+      "description": "Setting via tab_DoorSettings",
+      "shortName": "Automatic",
+      "imageId": "d8ef4410-500f-40c5-bcda-d13c84218cfe:Automatic.png",
+      "matrix": [
+        {
+          "id": "PartQty",
+          "value": 0
+        }
+      ]
+    }
+  ]
+}
