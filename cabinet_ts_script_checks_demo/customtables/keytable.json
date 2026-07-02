@@ -1,0 +1,113 @@
+{
+  "tableName": "KeyTable",
+  "description": "Custom table with unique column",
+  "columns": [
+    {
+      "name": "_id",
+      "type": "Integer",
+      "allowNull": false
+    },
+    {
+      "name": "in_UniqueKey",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "Text01",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "Model3d",
+      "type": "Model3D",
+      "allowNull": true
+    },
+    {
+      "name": "Model3dParameters",
+      "type": "Model3DParameters",
+      "allowNull": true
+    }
+  ],
+  "rows": [
+    {
+      "data": [
+        {
+          "columnName": "in_UniqueKey",
+          "value": "unique key 1"
+        },
+        {
+          "columnName": "Text01",
+          "value": "text value 1"
+        },
+        {
+          "columnName": "Model3d",
+          "value": "87fe1742-c11c-4114-8c51-c1caafc7ff71:model3d.obj"
+        },
+        {
+          "columnName": "Model3dParameters",
+          "value": "{\n  \"regions\": {\n    \"y\": [\n      {\n        \"pos\": 38,\n        \"scalable\": false\n      },\n      {\n        \"pos\": 42,\n        \"scalable\": true\n      }\n    ]\n  },\n  \"attachmentId\": \"eb894d3a-5912-4c21-a633-326d1fb33767:data.bin\"\n}"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_UniqueKey",
+          "value": "unique key 2"
+        },
+        {
+          "columnName": "Text01",
+          "value": "text value 2"
+        },
+        {
+          "columnName": "Model3d",
+          "value": "87fe1742-c11c-4114-8c51-c1caafc7ff71:model3d.obj"
+        },
+        {
+          "columnName": "Model3dParameters",
+          "value": "{\n  \"regions\": {\n    \"y\": [\n      {\n        \"pos\": 38,\n        \"scalable\": false\n      },\n      {\n        \"pos\": 42,\n        \"scalable\": true\n      }\n    ]\n  },\n  \"attachmentId\": \"eb894d3a-5912-4c21-a633-326d1fb33767:data.bin\"\n}"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_UniqueKey",
+          "value": "unique key 3"
+        },
+        {
+          "columnName": "Text01",
+          "value": "text value 3"
+        },
+        {
+          "columnName": "Model3d",
+          "value": "87fe1742-c11c-4114-8c51-c1caafc7ff71:model3d.obj"
+        },
+        {
+          "columnName": "Model3dParameters",
+          "value": "{\n  \"regions\": {\n    \"y\": [\n      {\n        \"pos\": 11,\n        \"scalable\": false\n      },\n      {\n        \"pos\": 22,\n        \"scalable\": true\n      }\n    ]\n  },\n  \"attachmentId\": \"43f554eb-8fb5-4e26-b390-e7c3489651f5:data_1.bin\"\n}"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_UniqueKey",
+          "value": "unique key 4"
+        },
+        {
+          "columnName": "Text01",
+          "value": "text value 4"
+        },
+        {
+          "columnName": "Model3d",
+          "value": "87fe1742-c11c-4114-8c51-c1caafc7ff71:model3d.obj"
+        },
+        {
+          "columnName": "Model3dParameters",
+          "value": "{\n  \"regions\": {\n    \"y\": [\n      {\n        \"pos\": 4,\n        \"scalable\": false\n      },\n      {\n        \"pos\": 44,\n        \"scalable\": true\n      }\n    ]\n  },\n  \"attachmentId\": \"df97aed8-21a8-4430-86e0-de4ede22fcc5:data_2.bin\"\n}"
+        }
+      ]
+    }
+  ]
+}

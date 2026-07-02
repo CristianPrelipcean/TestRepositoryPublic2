@@ -1,0 +1,71 @@
+{
+  "variantId": "doorMaterial",
+  "shortName": "doorMaterial",
+  "variantTypeId": "Text",
+  "restrictionTypeId": "Public",
+  "imageId": "",
+  "isArray": false,
+  "isPosRelevant": true,
+  "mainAttr": false,
+  "userRight": "Master",
+  "implicitRelevant": false,
+  "matrix": [
+    {
+      "id": "WindowSupport",
+      "type": "Bool",
+      "shortName": "WindowSupport",
+      "default": false,
+      "isCustom": true
+    }
+  ],
+  "selections": [
+    {
+      "value": "wood",
+      "description": "",
+      "shortName": "Wood",
+      "imageId": "5d573233-a225-4c3d-95a4-ef41dd861bb8:wood.png",
+      "matrix": [
+        {
+          "id": "Custom_WindowSupport",
+          "value": true
+        }
+      ]
+    },
+    {
+      "value": "steel",
+      "description": "",
+      "shortName": "Steel",
+      "imageId": "2af3fae8-e61f-4690-8ea9-6d5834bf0668:steel.png",
+      "matrix": [
+        {
+          "id": "Custom_WindowSupport",
+          "value": true
+        }
+      ]
+    },
+    {
+      "value": "aluminium",
+      "description": "",
+      "shortName": "Aluminium",
+      "imageId": "88fed7f1-ee42-4010-a45c-4d27cf754067:aluminium.png",
+      "matrix": [
+        {
+          "id": "Custom_WindowSupport",
+          "value": false
+        }
+      ]
+    },
+    {
+      "value": "glass",
+      "description": "",
+      "shortName": "Glass",
+      "imageId": "bd24d877-a283-4fb3-b9f7-f3f6a9a28659:glass.png",
+      "matrix": [
+        {
+          "id": "Custom_WindowSupport",
+          "value": false
+        }
+      ]
+    }
+  ]
+}
