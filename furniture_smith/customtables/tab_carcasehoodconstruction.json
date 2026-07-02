@@ -1,0 +1,81 @@
+{
+  "tableName": "tab_CarcaseHoodConstruction",
+  "description": "Delivers Parts for Carcase construction for internal Hoods",
+  "restrictionTypeId": "Public",
+  "groupName": "CarcaseConstruction",
+  "columns": [
+    {
+      "name": "_id",
+      "type": "Integer",
+      "allowNull": false
+    },
+    {
+      "name": "in_CarcaseConstructionID",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_PartID",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "Width",
+      "type": "Integer",
+      "allowNull": true
+    },
+    {
+      "name": "Height",
+      "type": "Integer",
+      "allowNull": true
+    },
+    {
+      "name": "Depth",
+      "type": "Integer",
+      "allowNull": true
+    },
+    {
+      "name": "PosX",
+      "type": "Integer",
+      "allowNull": true
+    },
+    {
+      "name": "PosY",
+      "type": "Integer",
+      "allowNull": true
+    },
+    {
+      "name": "PosZ",
+      "type": "Integer",
+      "allowNull": true
+    },
+    {
+      "name": "EdgeTypeFront",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "EdgeTypeLeft",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "EdgeTypeBack",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "EdgeTypeRight",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "EdgeJointType",
+      "type": "Text",
+      "allowNull": true
+    }
+  ],
+  "rows": [],
+  "dataSource": "Default",
+  "changedAt": "2026-03-16T14:48:46.7215129+00:00"
+}

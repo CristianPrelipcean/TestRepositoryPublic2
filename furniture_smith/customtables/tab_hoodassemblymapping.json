@@ -1,0 +1,60 @@
+{
+  "tableName": "tab_HoodAssemblyMapping",
+  "description": "Mapping of Internal Hoods that returns CarcaseConstructionID",
+  "restrictionTypeId": "Public",
+  "columns": [
+    {
+      "name": "_id",
+      "type": "Integer",
+      "allowNull": false
+    },
+    {
+      "name": "in_HoodConstructionID",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_MountingType",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_MinCorpusWidth",
+      "type": "Integer",
+      "allowNull": true
+    },
+    {
+      "name": "in_MaxCorpusWidth",
+      "type": "Integer",
+      "allowNull": true
+    },
+    {
+      "name": "in_MinCorpusHeight",
+      "type": "Integer",
+      "allowNull": true
+    },
+    {
+      "name": "in_MaxCorpusHeight",
+      "type": "Integer",
+      "allowNull": true
+    },
+    {
+      "name": "in_MinCorpusDepth",
+      "type": "Integer",
+      "allowNull": true
+    },
+    {
+      "name": "in_MaxCorpusDepth",
+      "type": "Integer",
+      "allowNull": true
+    },
+    {
+      "name": "CarcaseConstructionID",
+      "type": "Text",
+      "allowNull": true
+    }
+  ],
+  "rows": [],
+  "dataSource": "Default",
+  "changedAt": "2026-03-16T14:44:41.1485806+00:00"
+}

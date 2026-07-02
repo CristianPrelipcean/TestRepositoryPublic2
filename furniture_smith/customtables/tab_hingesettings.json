@@ -1,0 +1,543 @@
+{
+  "tableName": "tab_HingeSettings",
+  "description": "Hinge Settings",
+  "restrictionTypeId": "Public",
+  "groupName": "Hinge",
+  "columns": [
+    {
+      "name": "_id",
+      "type": "Integer",
+      "allowNull": false
+    },
+    {
+      "name": "in_TypeElement",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_FrontType",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_AdditionalInfo1",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_AdditionalInfo2",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_FrontConstructionId",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_DoorThicknessMin",
+      "type": "Dim",
+      "allowNull": true
+    },
+    {
+      "name": "in_DoorThicknessMax",
+      "type": "Dim",
+      "allowNull": true
+    },
+    {
+      "name": "in_Angle",
+      "type": "Real",
+      "allowNull": true
+    },
+    {
+      "name": "in_InteriorCabinet",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "HingeType",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "MountingPlateType",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "HingeDrillingsType",
+      "type": "Text",
+      "allowNull": true
+    }
+  ],
+  "rows": [
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontType",
+          "value": "Doors"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo2",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "All"
+        },
+        {
+          "columnName": "in_DoorThicknessMin",
+          "value": "15"
+        },
+        {
+          "columnName": "in_DoorThicknessMax",
+          "value": "15"
+        },
+        {
+          "columnName": "in_Angle",
+          "value": "90"
+        },
+        {
+          "columnName": "in_InteriorCabinet",
+          "value": "All"
+        },
+        {
+          "columnName": "HingeType",
+          "value": "110º"
+        },
+        {
+          "columnName": "MountingPlateType",
+          "value": "CruciformA"
+        },
+        {
+          "columnName": "HingeDrillingsType",
+          "value": "Fixed"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontType",
+          "value": "Doors"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo2",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "All"
+        },
+        {
+          "columnName": "in_DoorThicknessMin",
+          "value": "15"
+        },
+        {
+          "columnName": "in_DoorThicknessMax",
+          "value": "15"
+        },
+        {
+          "columnName": "in_Angle",
+          "value": "90"
+        },
+        {
+          "columnName": "in_InteriorCabinet",
+          "value": "InteriorDrawers"
+        },
+        {
+          "columnName": "HingeType",
+          "value": "165º"
+        },
+        {
+          "columnName": "MountingPlateType",
+          "value": "CruciformA"
+        },
+        {
+          "columnName": "HingeDrillingsType",
+          "value": "Fixed"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontType",
+          "value": "Doors"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo2",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "All"
+        },
+        {
+          "columnName": "in_DoorThicknessMin",
+          "value": "16"
+        },
+        {
+          "columnName": "in_DoorThicknessMax",
+          "value": "19"
+        },
+        {
+          "columnName": "in_Angle",
+          "value": "90"
+        },
+        {
+          "columnName": "in_InteriorCabinet",
+          "value": "All"
+        },
+        {
+          "columnName": "HingeType",
+          "value": "110ºSoftClose"
+        },
+        {
+          "columnName": "MountingPlateType",
+          "value": "Horizontal"
+        },
+        {
+          "columnName": "HingeDrillingsType",
+          "value": "CalculationBasedMin"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontType",
+          "value": "Doors"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo2",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "All"
+        },
+        {
+          "columnName": "in_DoorThicknessMin",
+          "value": "16"
+        },
+        {
+          "columnName": "in_DoorThicknessMax",
+          "value": "19"
+        },
+        {
+          "columnName": "in_Angle",
+          "value": "90"
+        },
+        {
+          "columnName": "in_InteriorCabinet",
+          "value": "InteriorDrawers"
+        },
+        {
+          "columnName": "HingeType",
+          "value": "155ºSoftClose"
+        },
+        {
+          "columnName": "MountingPlateType",
+          "value": "CruciformSM"
+        },
+        {
+          "columnName": "HingeDrillingsType",
+          "value": "CalculationBasedMax"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontType",
+          "value": "Doors"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo2",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "All"
+        },
+        {
+          "columnName": "in_DoorThicknessMin",
+          "value": "16"
+        },
+        {
+          "columnName": "in_DoorThicknessMax",
+          "value": "19"
+        },
+        {
+          "columnName": "in_Angle",
+          "value": "180"
+        },
+        {
+          "columnName": "in_InteriorCabinet",
+          "value": "All"
+        },
+        {
+          "columnName": "HingeType",
+          "value": "BlindCornerInset110ºSoftClose"
+        },
+        {
+          "columnName": "MountingPlateType",
+          "value": "CruciformSM"
+        },
+        {
+          "columnName": "HingeDrillingsType",
+          "value": "Fixed"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontType",
+          "value": "FlipliftDown"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "DF"
+        },
+        {
+          "columnName": "in_AdditionalInfo2",
+          "value": "DropDownHinge"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "All"
+        },
+        {
+          "columnName": "in_DoorThicknessMin",
+          "value": "16"
+        },
+        {
+          "columnName": "in_DoorThicknessMax",
+          "value": "19"
+        },
+        {
+          "columnName": "in_Angle",
+          "value": "90"
+        },
+        {
+          "columnName": "in_InteriorCabinet",
+          "value": "All"
+        },
+        {
+          "columnName": "HingeType",
+          "value": "DropDownHinge"
+        },
+        {
+          "columnName": "MountingPlateType",
+          "value": "Horizontal"
+        },
+        {
+          "columnName": "HingeDrillingsType",
+          "value": "Fixed"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontType",
+          "value": "FlipliftUp"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "UF"
+        },
+        {
+          "columnName": "in_AdditionalInfo2",
+          "value": "Gasspring"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "All"
+        },
+        {
+          "columnName": "in_DoorThicknessMin",
+          "value": "16"
+        },
+        {
+          "columnName": "in_DoorThicknessMax",
+          "value": "19"
+        },
+        {
+          "columnName": "in_Angle",
+          "value": "90"
+        },
+        {
+          "columnName": "in_InteriorCabinet",
+          "value": "All"
+        },
+        {
+          "columnName": "HingeType",
+          "value": "110ºSoftClose"
+        },
+        {
+          "columnName": "MountingPlateType",
+          "value": "Horizontal"
+        },
+        {
+          "columnName": "HingeDrillingsType",
+          "value": "CalculationBasedMin"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontType",
+          "value": "FlipliftUp"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "FHF"
+        },
+        {
+          "columnName": "in_AdditionalInfo2",
+          "value": "Powerstorage"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "All"
+        },
+        {
+          "columnName": "in_DoorThicknessMin",
+          "value": "16"
+        },
+        {
+          "columnName": "in_DoorThicknessMax",
+          "value": "19"
+        },
+        {
+          "columnName": "in_Angle",
+          "value": "90"
+        },
+        {
+          "columnName": "in_InteriorCabinet",
+          "value": "All"
+        },
+        {
+          "columnName": "HingeType",
+          "value": "120ºForFHF"
+        },
+        {
+          "columnName": "MountingPlateType",
+          "value": "HorizontalForFHF"
+        },
+        {
+          "columnName": "HingeDrillingsType",
+          "value": "CalculationBasedMin"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontType",
+          "value": "FlipliftUp"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "FHF"
+        },
+        {
+          "columnName": "in_AdditionalInfo2",
+          "value": "Powerstorage"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "All"
+        },
+        {
+          "columnName": "in_DoorThicknessMin",
+          "value": "16"
+        },
+        {
+          "columnName": "in_DoorThicknessMax",
+          "value": "19"
+        },
+        {
+          "columnName": "in_Angle",
+          "value": "180"
+        },
+        {
+          "columnName": "in_InteriorCabinet",
+          "value": "All"
+        },
+        {
+          "columnName": "HingeType",
+          "value": "CenterHingeForFHF"
+        },
+        {
+          "columnName": "MountingPlateType",
+          "value": "HorizontalForFHF"
+        },
+        {
+          "columnName": "HingeDrillingsType",
+          "value": "CalculationBasedMin"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "tableName": "tab_HoodAssemblyParts",
+  "description": "Lists Parts that fit the Carcase with internal Hood",
+  "restrictionTypeId": "Public",
+  "groupName": "CarcaseConstruction",
+  "columns": [
+    {
+      "name": "_id",
+      "type": "Integer",
+      "allowNull": false
+    },
+    {
+      "name": "in_CarcaseConstructionID",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "PartID",
+      "type": "Text",
+      "allowNull": true
+    }
+  ],
+  "rows": [],
+  "dataSource": "Default",
+  "changedAt": "2026-03-16T14:46:46.7557101+00:00"
+}

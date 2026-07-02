@@ -1,0 +1,112 @@
+{
+  "partCode": "part_ClothingOrganizerBoard",
+  "shortName": "Clothing organizer board",
+  "description": "Part to show the extra board for the clothing organizer including BOM and processings",
+  "wdt": "XYZ",
+  "groupName": "ClothingOrganizer",
+  "imageId": "df757973-c1fa-4e91-8a19-efa72d7ee9b1:ClothingOrganizer.png",
+  "model3dImageId": "",
+  "invisible": false,
+  "restrictionTypeId": "Public",
+  "noNcData": false,
+  "partVariants": [
+    {
+      "partVarId": "pa_AdditionalInfo1",
+      "valueScript": "",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_BomId",
+      "valueScript": "",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_BtmColor",
+      "valueScript": "",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_ColorGrainGroup",
+      "valueScript": "",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeBackColor",
+      "valueScript": "",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeBackType",
+      "valueScript": "",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeFrontColor",
+      "valueScript": "",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeFrontType",
+      "valueScript": "",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeJointType",
+      "valueScript": "",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeLeftColor",
+      "valueScript": "",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeLeftType",
+      "valueScript": "",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeRightColor",
+      "valueScript": "",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeRightType",
+      "valueScript": "",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_GrainDirection",
+      "valueScript": "",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_GrainLogic",
+      "valueScript": "",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_Program",
+      "valueScript": "",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_ProgramGrainGroup",
+      "valueScript": "",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_TopColor",
+      "valueScript": "",
+      "isWritable": false
+    }
+  ],
+  "bomData": [
+    {
+      "bomElementTypeId": "bomout_Board",
+      "conditionScript": "partSelf._g?.basic_CreateBom == 'Library'",
+      "valueScript": "// Type of the Bom-Element (will be checked in order output)\nlet elementType='Board';\n\n// ProductionSite Category (to split the orders for different production sites)\nlet elementCategory='';\n\n// Id of the parent to create the hierarchy\nlet parentBomId=part.pa_BomId;\n\n// Call the function to process the Bom-Element\nGlobalFunc.process_BoardBom(this, part, elementType, elementCategory, parentBomId)"
+    }
+  ],
+  "ncData": []
+}

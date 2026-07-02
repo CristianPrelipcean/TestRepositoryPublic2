@@ -1,0 +1,2400 @@
+{
+  "tableName": "tab_CornerunitStraightConstruction",
+  "description": "Construction of Corner Unit Straight",
+  "restrictionTypeId": "Internal",
+  "groupName": "CarcaseConstruction",
+  "columns": [
+    {
+      "name": "_id",
+      "type": "Integer",
+      "allowNull": false
+    },
+    {
+      "name": "in_ConstructionType",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_Direction",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_Part",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_FingergripTop",
+      "type": "Bool",
+      "allowNull": true
+    },
+    {
+      "name": "Width",
+      "type": "Text",
+      "allowNull": true,
+      "functionDefinition": "(m: parent,HorizontalFreeSpace: number,VerticalFreeSpace: number,DepthFreeSpace: number,HorizontalStartPosition: number,VerticalStartPosition: number, DepthStartPosition: number):number"
+    },
+    {
+      "name": "Height",
+      "type": "Text",
+      "allowNull": true,
+      "functionDefinition": "(m: parent,HorizontalFreeSpace: number,VerticalFreeSpace: number,DepthFreeSpace: number,HorizontalStartPosition: number,VerticalStartPosition: number, DepthStartPosition: number):number"
+    },
+    {
+      "name": "Depth",
+      "type": "Text",
+      "allowNull": true,
+      "functionDefinition": "(m: parent,HorizontalFreeSpace: number,VerticalFreeSpace: number,DepthFreeSpace: number,HorizontalStartPosition: number,VerticalStartPosition: number, DepthStartPosition: number):number"
+    },
+    {
+      "name": "WidthPos",
+      "type": "Text",
+      "allowNull": true,
+      "functionDefinition": "(m: parent,HorizontalFreeSpace: number,VerticalFreeSpace: number,DepthFreeSpace: number,HorizontalStartPosition: number,VerticalStartPosition: number, DepthStartPosition: number):number"
+    },
+    {
+      "name": "HeightPos",
+      "type": "Text",
+      "allowNull": true,
+      "functionDefinition": "(m: parent,HorizontalFreeSpace: number,VerticalFreeSpace: number,DepthFreeSpace: number,HorizontalStartPosition: number,VerticalStartPosition: number, DepthStartPosition: number):number"
+    },
+    {
+      "name": "DepthPos",
+      "type": "Text",
+      "allowNull": true,
+      "functionDefinition": "(m: parent,HorizontalFreeSpace: number,VerticalFreeSpace: number,DepthFreeSpace: number,HorizontalStartPosition: number,VerticalStartPosition: number, DepthStartPosition: number):number"
+    },
+    {
+      "name": "matrix_EdgeTypeFront",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "matrix_EdgeTypeLeft",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "matrix_EdgeTypeBack",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "matrix_EdgeTypeRight",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "matrix_EdgeJointType",
+      "type": "Text",
+      "allowNull": true
+    }
+  ],
+  "rows": [
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionType",
+          "value": "Construction01"
+        },
+        {
+          "columnName": "in_Direction",
+          "value": "Left"
+        },
+        {
+          "columnName": "in_Part",
+          "value": "part_Panelblind"
+        },
+        {
+          "columnName": "in_FingergripTop",
+          "value": "false"
+        },
+        {
+          "columnName": "Width",
+          "value": "m.mod_CarcaseWidth - m.mod_CornerunitFrontWidth - HorizontalStartPosition"
+        },
+        {
+          "columnName": "Height",
+          "value": "VerticalFreeSpace"
+        },
+        {
+          "columnName": "Depth",
+          "value": "m.mod_PanelblindThk"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "HorizontalStartPosition"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "VerticalStartPosition"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "DepthStartPosition + DepthFreeSpace - m.g.basic_OffsetFrontVertDivider- m.mod_PanelblindThk"
+        },
+        {
+          "columnName": "matrix_EdgeTypeFront",
+          "value": "NOE"
+        },
+        {
+          "columnName": "matrix_EdgeTypeLeft",
+          "value": "NOE"
+        },
+        {
+          "columnName": "matrix_EdgeTypeBack",
+          "value": "NOE"
+        },
+        {
+          "columnName": "matrix_EdgeTypeRight",
+          "value": "NOE"
+        },
+        {
+          "columnName": "matrix_EdgeJointType",
+          "value": "II"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionType",
+          "value": "Construction01"
+        },
+        {
+          "columnName": "in_Direction",
+          "value": "Left"
+        },
+        {
+          "columnName": "in_Part",
+          "value": "part_Sidepanelmiddle"
+        },
+        {
+          "columnName": "in_FingergripTop",
+          "value": "false"
+        },
+        {
+          "columnName": "Width",
+          "value": "m.mod_SidepanelmiddleThk"
+        },
+        {
+          "columnName": "Height",
+          "value": "VerticalFreeSpace"
+        },
+        {
+          "columnName": "Depth",
+          "value": "m.mod_SidepanelmiddleShortWidth"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "m.mod_CarcaseWidth - m.mod_CornerunitFrontWidth"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "VerticalStartPosition"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "DepthStartPosition + DepthFreeSpace - m.g.basic_OffsetFrontVertDivider- m.mod_SidepanelmiddleShortWidth"
+        },
+        {
+          "columnName": "matrix_EdgeTypeFront",
+          "value": "CFE"
+        },
+        {
+          "columnName": "matrix_EdgeTypeLeft",
+          "value": "DOW"
+        },
+        {
+          "columnName": "matrix_EdgeTypeBack",
+          "value": "ICN"
+        },
+        {
+          "columnName": "matrix_EdgeTypeRight",
+          "value": "DOW"
+        },
+        {
+          "columnName": "matrix_EdgeJointType",
+          "value": "II"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionType",
+          "value": "Construction01"
+        },
+        {
+          "columnName": "in_Direction",
+          "value": "Right"
+        },
+        {
+          "columnName": "in_Part",
+          "value": "part_Panelblind"
+        },
+        {
+          "columnName": "in_FingergripTop",
+          "value": "false"
+        },
+        {
+          "columnName": "Width",
+          "value": "HorizontalFreeSpace + HorizontalStartPosition - m.mod_CornerunitFrontWidth"
+        },
+        {
+          "columnName": "Height",
+          "value": "VerticalFreeSpace"
+        },
+        {
+          "columnName": "Depth",
+          "value": "m.mod_PanelblindThk"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "m.mod_CornerunitFrontWidth"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "VerticalStartPosition"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "DepthStartPosition + DepthFreeSpace - m.g.basic_OffsetFrontVertDivider- m.mod_PanelblindThk"
+        },
+        {
+          "columnName": "matrix_EdgeTypeFront",
+          "value": "NOE"
+        },
+        {
+          "columnName": "matrix_EdgeTypeLeft",
+          "value": "NOE"
+        },
+        {
+          "columnName": "matrix_EdgeTypeBack",
+          "value": "NOE"
+        },
+        {
+          "columnName": "matrix_EdgeTypeRight",
+          "value": "NOE"
+        },
+        {
+          "columnName": "matrix_EdgeJointType",
+          "value": "II"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionType",
+          "value": "Construction01"
+        },
+        {
+          "columnName": "in_Direction",
+          "value": "Right"
+        },
+        {
+          "columnName": "in_Part",
+          "value": "part_Sidepanelmiddle"
+        },
+        {
+          "columnName": "in_FingergripTop",
+          "value": "false"
+        },
+        {
+          "columnName": "Width",
+          "value": "m.mod_SidepanelmiddleThk"
+        },
+        {
+          "columnName": "Height",
+          "value": "VerticalFreeSpace"
+        },
+        {
+          "columnName": "Depth",
+          "value": "m.mod_SidepanelmiddleShortWidth"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "m.mod_CornerunitFrontWidth - m.mod_SidepanelmiddleThk"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "VerticalStartPosition"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "DepthStartPosition + DepthFreeSpace - m.g.basic_OffsetFrontVertDivider- m.mod_SidepanelmiddleShortWidth"
+        },
+        {
+          "columnName": "matrix_EdgeTypeFront",
+          "value": "CFE"
+        },
+        {
+          "columnName": "matrix_EdgeTypeLeft",
+          "value": "DOW"
+        },
+        {
+          "columnName": "matrix_EdgeTypeBack",
+          "value": "ICN"
+        },
+        {
+          "columnName": "matrix_EdgeTypeRight",
+          "value": "DOW"
+        },
+        {
+          "columnName": "matrix_EdgeJointType",
+          "value": "II"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionType",
+          "value": "Construction02"
+        },
+        {
+          "columnName": "in_Direction",
+          "value": "Left"
+        },
+        {
+          "columnName": "in_Part",
+          "value": "part_Panelblind"
+        },
+        {
+          "columnName": "in_FingergripTop",
+          "value": "false"
+        },
+        {
+          "columnName": "Width",
+          "value": "m.mod_CarcaseWidth - m.mod_CornerunitFrontWidth - HorizontalStartPosition + m.g.basic_BackwallGrooveDepthVertOutside + m.g.basic_BackwallGrooveDepthVertOutside"
+        },
+        {
+          "columnName": "Height",
+          "value": "VerticalFreeSpace + m.g.basic_BackwallGrooveDepthHorOutside + m.g.basic_BackwallGrooveDepthHorOutside"
+        },
+        {
+          "columnName": "Depth",
+          "value": "m.mod_PanelblindThk"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "HorizontalStartPosition - m.g.basic_BackwallGrooveDepthVertOutside"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "VerticalStartPosition - m.g.basic_BackwallGrooveDepthHorOutside"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "DepthStartPosition + DepthFreeSpace - m.g.basic_PanelblindPos - m.mod_PanelblindThk"
+        },
+        {
+          "columnName": "matrix_EdgeTypeFront",
+          "value": "NOE"
+        },
+        {
+          "columnName": "matrix_EdgeTypeLeft",
+          "value": "NOE"
+        },
+        {
+          "columnName": "matrix_EdgeTypeBack",
+          "value": "NOE"
+        },
+        {
+          "columnName": "matrix_EdgeTypeRight",
+          "value": "NOE"
+        },
+        {
+          "columnName": "matrix_EdgeJointType",
+          "value": "II"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionType",
+          "value": "Construction02"
+        },
+        {
+          "columnName": "in_Direction",
+          "value": "Left"
+        },
+        {
+          "columnName": "in_Part",
+          "value": "part_Sidepanelmiddle"
+        },
+        {
+          "columnName": "in_FingergripTop",
+          "value": "false"
+        },
+        {
+          "columnName": "Width",
+          "value": "m.mod_SidepanelmiddleThk"
+        },
+        {
+          "columnName": "Height",
+          "value": "VerticalFreeSpace"
+        },
+        {
+          "columnName": "Depth",
+          "value": "m.mod_SidepanelmiddleShortWidth"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "m.mod_CarcaseWidth - m.mod_CornerunitFrontWidth"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "VerticalStartPosition"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "DepthStartPosition + DepthFreeSpace - m.g.basic_OffsetFrontVertDivider- m.mod_SidepanelmiddleShortWidth"
+        },
+        {
+          "columnName": "matrix_EdgeTypeFront",
+          "value": "CFE"
+        },
+        {
+          "columnName": "matrix_EdgeTypeLeft",
+          "value": "DOW"
+        },
+        {
+          "columnName": "matrix_EdgeTypeBack",
+          "value": "ICN"
+        },
+        {
+          "columnName": "matrix_EdgeTypeRight",
+          "value": "DOW"
+        },
+        {
+          "columnName": "matrix_EdgeJointType",
+          "value": "II"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionType",
+          "value": "Construction02"
+        },
+        {
+          "columnName": "in_Direction",
+          "value": "Right"
+        },
+        {
+          "columnName": "in_Part",
+          "value": "part_Panelblind"
+        },
+        {
+          "columnName": "in_FingergripTop",
+          "value": "false"
+        },
+        {
+          "columnName": "Width",
+          "value": "HorizontalFreeSpace + HorizontalStartPosition - m.mod_CornerunitFrontWidth + m.g.basic_BackwallGrooveDepthVertOutside + m.g.basic_BackwallGrooveDepthVertOutside"
+        },
+        {
+          "columnName": "Height",
+          "value": "VerticalFreeSpace + m.g.basic_BackwallGrooveDepthHorOutside + m.g.basic_BackwallGrooveDepthHorOutside"
+        },
+        {
+          "columnName": "Depth",
+          "value": "m.mod_PanelblindThk"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "m.mod_CornerunitFrontWidth - m.g.basic_BackwallGrooveDepthVertOutside"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "VerticalStartPosition - m.g.basic_BackwallGrooveDepthHorOutside"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "DepthStartPosition + DepthFreeSpace - m.g.basic_PanelblindPos - m.mod_PanelblindThk"
+        },
+        {
+          "columnName": "matrix_EdgeTypeFront",
+          "value": "NOE"
+        },
+        {
+          "columnName": "matrix_EdgeTypeLeft",
+          "value": "NOE"
+        },
+        {
+          "columnName": "matrix_EdgeTypeBack",
+          "value": "NOE"
+        },
+        {
+          "columnName": "matrix_EdgeTypeRight",
+          "value": "NOE"
+        },
+        {
+          "columnName": "matrix_EdgeJointType",
+          "value": "II"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionType",
+          "value": "Construction02"
+        },
+        {
+          "columnName": "in_Direction",
+          "value": "Right"
+        },
+        {
+          "columnName": "in_Part",
+          "value": "part_Sidepanelmiddle"
+        },
+        {
+          "columnName": "in_FingergripTop",
+          "value": "false"
+        },
+        {
+          "columnName": "Width",
+          "value": "m.mod_SidepanelmiddleThk"
+        },
+        {
+          "columnName": "Height",
+          "value": "VerticalFreeSpace"
+        },
+        {
+          "columnName": "Depth",
+          "value": "m.mod_SidepanelmiddleShortWidth"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "m.mod_CornerunitFrontWidth - m.mod_SidepanelmiddleThk"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "VerticalStartPosition"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "DepthStartPosition + DepthFreeSpace - m.g.basic_OffsetFrontVertDivider- m.mod_SidepanelmiddleShortWidth"
+        },
+        {
+          "columnName": "matrix_EdgeTypeFront",
+          "value": "CFE"
+        },
+        {
+          "columnName": "matrix_EdgeTypeLeft",
+          "value": "DOW"
+        },
+        {
+          "columnName": "matrix_EdgeTypeBack",
+          "value": "ICN"
+        },
+        {
+          "columnName": "matrix_EdgeTypeRight",
+          "value": "DOW"
+        },
+        {
+          "columnName": "matrix_EdgeJointType",
+          "value": "II"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionType",
+          "value": "Construction03"
+        },
+        {
+          "columnName": "in_Direction",
+          "value": "Left"
+        },
+        {
+          "columnName": "in_Part",
+          "value": "part_Panelblind"
+        },
+        {
+          "columnName": "in_FingergripTop",
+          "value": "false"
+        },
+        {
+          "columnName": "Width",
+          "value": "m.mod_CarcaseWidth - m.mod_CornerunitFrontWidth - HorizontalStartPosition - m.g.basic_BlindCornerHingeSpace"
+        },
+        {
+          "columnName": "Height",
+          "value": "VerticalFreeSpace"
+        },
+        {
+          "columnName": "Depth",
+          "value": "m.mod_PanelblindThk"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "HorizontalStartPosition"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "VerticalStartPosition"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "DepthStartPosition + DepthFreeSpace - m.g.basic_OffsetFrontVertDivider- m.mod_PanelblindThk"
+        },
+        {
+          "columnName": "matrix_EdgeTypeFront",
+          "value": "NOE"
+        },
+        {
+          "columnName": "matrix_EdgeTypeLeft",
+          "value": "NOE"
+        },
+        {
+          "columnName": "matrix_EdgeTypeBack",
+          "value": "NOE"
+        },
+        {
+          "columnName": "matrix_EdgeTypeRight",
+          "value": "NOE"
+        },
+        {
+          "columnName": "matrix_EdgeJointType",
+          "value": "II"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionType",
+          "value": "Construction03"
+        },
+        {
+          "columnName": "in_Direction",
+          "value": "Right"
+        },
+        {
+          "columnName": "in_Part",
+          "value": "part_Panelblind"
+        },
+        {
+          "columnName": "in_FingergripTop",
+          "value": "false"
+        },
+        {
+          "columnName": "Width",
+          "value": "HorizontalFreeSpace + HorizontalStartPosition - m.mod_CornerunitFrontWidth - m.g.basic_BlindCornerHingeSpace"
+        },
+        {
+          "columnName": "Height",
+          "value": "VerticalFreeSpace"
+        },
+        {
+          "columnName": "Depth",
+          "value": "m.mod_PanelblindThk"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "m.mod_CornerunitFrontWidth + m.g.basic_BlindCornerHingeSpace"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "VerticalStartPosition"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "DepthStartPosition + DepthFreeSpace - m.g.basic_OffsetFrontVertDivider- m.mod_PanelblindThk"
+        },
+        {
+          "columnName": "matrix_EdgeTypeFront",
+          "value": "NOE"
+        },
+        {
+          "columnName": "matrix_EdgeTypeLeft",
+          "value": "NOE"
+        },
+        {
+          "columnName": "matrix_EdgeTypeBack",
+          "value": "NOE"
+        },
+        {
+          "columnName": "matrix_EdgeTypeRight",
+          "value": "NOE"
+        },
+        {
+          "columnName": "matrix_EdgeJointType",
+          "value": "II"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionType",
+          "value": "Construction04"
+        },
+        {
+          "columnName": "in_Direction",
+          "value": "Left"
+        },
+        {
+          "columnName": "in_Part",
+          "value": "part_Panelblind"
+        },
+        {
+          "columnName": "in_FingergripTop",
+          "value": "false"
+        },
+        {
+          "columnName": "Width",
+          "value": "m.mod_CarcaseWidth - m.mod_CornerunitFrontWidth - HorizontalStartPosition - m.mod_SidepanelmiddleThk/2"
+        },
+        {
+          "columnName": "Height",
+          "value": "VerticalFreeSpace"
+        },
+        {
+          "columnName": "Depth",
+          "value": "m.mod_PanelblindThk"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "HorizontalStartPosition"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "VerticalStartPosition"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "DepthStartPosition + DepthFreeSpace - m.g.basic_OffsetFrontVertDivider- m.mod_PanelblindThk"
+        },
+        {
+          "columnName": "matrix_EdgeTypeFront",
+          "value": "NOE"
+        },
+        {
+          "columnName": "matrix_EdgeTypeLeft",
+          "value": "NOE"
+        },
+        {
+          "columnName": "matrix_EdgeTypeBack",
+          "value": "NOE"
+        },
+        {
+          "columnName": "matrix_EdgeTypeRight",
+          "value": "NOE"
+        },
+        {
+          "columnName": "matrix_EdgeJointType",
+          "value": "II"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionType",
+          "value": "Construction04"
+        },
+        {
+          "columnName": "in_Direction",
+          "value": "Left"
+        },
+        {
+          "columnName": "in_Part",
+          "value": "part_Sidepanelmiddle"
+        },
+        {
+          "columnName": "in_FingergripTop",
+          "value": "false"
+        },
+        {
+          "columnName": "Width",
+          "value": "m.mod_SidepanelmiddleThk"
+        },
+        {
+          "columnName": "Height",
+          "value": "VerticalFreeSpace"
+        },
+        {
+          "columnName": "Depth",
+          "value": "m.mod_SidepanelmiddleShortWidth"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "m.mod_CarcaseWidth - m.mod_CornerunitFrontWidth - m.mod_SidepanelmiddleThk/2"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "VerticalStartPosition"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "DepthStartPosition + DepthFreeSpace - m.g.basic_OffsetFrontVertDivider- m.mod_SidepanelmiddleShortWidth"
+        },
+        {
+          "columnName": "matrix_EdgeTypeFront",
+          "value": "CFE"
+        },
+        {
+          "columnName": "matrix_EdgeTypeLeft",
+          "value": "DOW"
+        },
+        {
+          "columnName": "matrix_EdgeTypeBack",
+          "value": "ICN"
+        },
+        {
+          "columnName": "matrix_EdgeTypeRight",
+          "value": "DOW"
+        },
+        {
+          "columnName": "matrix_EdgeJointType",
+          "value": "II"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionType",
+          "value": "Construction04"
+        },
+        {
+          "columnName": "in_Direction",
+          "value": "Right"
+        },
+        {
+          "columnName": "in_Part",
+          "value": "part_Panelblind"
+        },
+        {
+          "columnName": "in_FingergripTop",
+          "value": "false"
+        },
+        {
+          "columnName": "Width",
+          "value": "HorizontalFreeSpace + HorizontalStartPosition - m.mod_CornerunitFrontWidth - m.mod_SidepanelmiddleThk/2"
+        },
+        {
+          "columnName": "Height",
+          "value": "VerticalFreeSpace"
+        },
+        {
+          "columnName": "Depth",
+          "value": "m.mod_PanelblindThk"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "m.mod_CornerunitFrontWidth + m.mod_SidepanelmiddleThk/2"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "VerticalStartPosition"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "DepthStartPosition + DepthFreeSpace - m.g.basic_OffsetFrontVertDivider- m.mod_PanelblindThk"
+        },
+        {
+          "columnName": "matrix_EdgeTypeFront",
+          "value": "NOE"
+        },
+        {
+          "columnName": "matrix_EdgeTypeLeft",
+          "value": "NOE"
+        },
+        {
+          "columnName": "matrix_EdgeTypeBack",
+          "value": "NOE"
+        },
+        {
+          "columnName": "matrix_EdgeTypeRight",
+          "value": "NOE"
+        },
+        {
+          "columnName": "matrix_EdgeJointType",
+          "value": "II"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionType",
+          "value": "Construction04"
+        },
+        {
+          "columnName": "in_Direction",
+          "value": "Right"
+        },
+        {
+          "columnName": "in_Part",
+          "value": "part_Sidepanelmiddle"
+        },
+        {
+          "columnName": "in_FingergripTop",
+          "value": "false"
+        },
+        {
+          "columnName": "Width",
+          "value": "m.mod_SidepanelmiddleThk"
+        },
+        {
+          "columnName": "Height",
+          "value": "VerticalFreeSpace"
+        },
+        {
+          "columnName": "Depth",
+          "value": "m.mod_SidepanelmiddleShortWidth"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "m.mod_CornerunitFrontWidth - m.mod_SidepanelmiddleThk/2"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "VerticalStartPosition"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "DepthStartPosition + DepthFreeSpace - m.g.basic_OffsetFrontVertDivider- m.mod_SidepanelmiddleShortWidth"
+        },
+        {
+          "columnName": "matrix_EdgeTypeFront",
+          "value": "CFE"
+        },
+        {
+          "columnName": "matrix_EdgeTypeLeft",
+          "value": "DOW"
+        },
+        {
+          "columnName": "matrix_EdgeTypeBack",
+          "value": "ICN"
+        },
+        {
+          "columnName": "matrix_EdgeTypeRight",
+          "value": "DOW"
+        },
+        {
+          "columnName": "matrix_EdgeJointType",
+          "value": "II"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionType",
+          "value": "Construction05"
+        },
+        {
+          "columnName": "in_Direction",
+          "value": "Left"
+        },
+        {
+          "columnName": "in_Part",
+          "value": "part_Panelblind"
+        },
+        {
+          "columnName": "in_FingergripTop",
+          "value": "false"
+        },
+        {
+          "columnName": "Width",
+          "value": "m.mod_CarcaseWidth - m.mod_CornerunitFrontWidth - HorizontalStartPosition - m.mod_SidepanelmiddleThk/2 + m.g.basic_BackwallGrooveDepthVertOutside + m.g.basic_BackwallGrooveDepthVertOutside"
+        },
+        {
+          "columnName": "Height",
+          "value": "VerticalFreeSpace + m.g.basic_BackwallGrooveDepthHorOutside + m.g.basic_BackwallGrooveDepthHorOutside"
+        },
+        {
+          "columnName": "Depth",
+          "value": "m.mod_PanelblindThk"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "HorizontalStartPosition - m.g.basic_BackwallGrooveDepthVertOutside"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "VerticalStartPosition - m.g.basic_BackwallGrooveDepthHorOutside"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "DepthStartPosition + DepthFreeSpace - m.g.basic_PanelblindPos - m.mod_PanelblindThk"
+        },
+        {
+          "columnName": "matrix_EdgeTypeFront",
+          "value": "NOE"
+        },
+        {
+          "columnName": "matrix_EdgeTypeLeft",
+          "value": "NOE"
+        },
+        {
+          "columnName": "matrix_EdgeTypeBack",
+          "value": "NOE"
+        },
+        {
+          "columnName": "matrix_EdgeTypeRight",
+          "value": "NOE"
+        },
+        {
+          "columnName": "matrix_EdgeJointType",
+          "value": "II"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionType",
+          "value": "Construction05"
+        },
+        {
+          "columnName": "in_Direction",
+          "value": "Left"
+        },
+        {
+          "columnName": "in_Part",
+          "value": "part_Sidepanelmiddle"
+        },
+        {
+          "columnName": "in_FingergripTop",
+          "value": "false"
+        },
+        {
+          "columnName": "Width",
+          "value": "m.mod_SidepanelmiddleThk"
+        },
+        {
+          "columnName": "Height",
+          "value": "VerticalFreeSpace"
+        },
+        {
+          "columnName": "Depth",
+          "value": "m.mod_SidepanelmiddleShortWidth"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "m.mod_CarcaseWidth - m.mod_CornerunitFrontWidth - m.mod_SidepanelmiddleThk/2"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "VerticalStartPosition"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "DepthStartPosition + DepthFreeSpace - m.g.basic_OffsetFrontVertDivider- m.mod_SidepanelmiddleShortWidth"
+        },
+        {
+          "columnName": "matrix_EdgeTypeFront",
+          "value": "CFE"
+        },
+        {
+          "columnName": "matrix_EdgeTypeLeft",
+          "value": "DOW"
+        },
+        {
+          "columnName": "matrix_EdgeTypeBack",
+          "value": "ICN"
+        },
+        {
+          "columnName": "matrix_EdgeTypeRight",
+          "value": "DOW"
+        },
+        {
+          "columnName": "matrix_EdgeJointType",
+          "value": "II"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionType",
+          "value": "Construction05"
+        },
+        {
+          "columnName": "in_Direction",
+          "value": "Right"
+        },
+        {
+          "columnName": "in_Part",
+          "value": "part_Panelblind"
+        },
+        {
+          "columnName": "in_FingergripTop",
+          "value": "false"
+        },
+        {
+          "columnName": "Width",
+          "value": "HorizontalFreeSpace + HorizontalStartPosition - m.mod_CornerunitFrontWidth - m.mod_SidepanelmiddleThk/2 + m.g.basic_BackwallGrooveDepthVertOutside + m.g.basic_BackwallGrooveDepthVertOutside"
+        },
+        {
+          "columnName": "Height",
+          "value": "VerticalFreeSpace + m.g.basic_BackwallGrooveDepthHorOutside + m.g.basic_BackwallGrooveDepthHorOutside"
+        },
+        {
+          "columnName": "Depth",
+          "value": "m.mod_PanelblindThk"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "m.mod_CornerunitFrontWidth + m.mod_SidepanelmiddleThk/2 - m.g.basic_BackwallGrooveDepthVertOutside"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "VerticalStartPosition - m.g.basic_BackwallGrooveDepthHorOutside"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "DepthStartPosition + DepthFreeSpace - m.g.basic_PanelblindPos - m.mod_PanelblindThk"
+        },
+        {
+          "columnName": "matrix_EdgeTypeFront",
+          "value": "NOE"
+        },
+        {
+          "columnName": "matrix_EdgeTypeLeft",
+          "value": "NOE"
+        },
+        {
+          "columnName": "matrix_EdgeTypeBack",
+          "value": "NOE"
+        },
+        {
+          "columnName": "matrix_EdgeTypeRight",
+          "value": "NOE"
+        },
+        {
+          "columnName": "matrix_EdgeJointType",
+          "value": "II"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionType",
+          "value": "Construction05"
+        },
+        {
+          "columnName": "in_Direction",
+          "value": "Right"
+        },
+        {
+          "columnName": "in_Part",
+          "value": "part_Sidepanelmiddle"
+        },
+        {
+          "columnName": "in_FingergripTop",
+          "value": "false"
+        },
+        {
+          "columnName": "Width",
+          "value": "m.mod_SidepanelmiddleThk"
+        },
+        {
+          "columnName": "Height",
+          "value": "VerticalFreeSpace"
+        },
+        {
+          "columnName": "Depth",
+          "value": "m.mod_SidepanelmiddleShortWidth"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "m.mod_CornerunitFrontWidth - m.mod_SidepanelmiddleThk/2"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "VerticalStartPosition"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "DepthStartPosition + DepthFreeSpace - m.g.basic_OffsetFrontVertDivider- m.mod_SidepanelmiddleShortWidth"
+        },
+        {
+          "columnName": "matrix_EdgeTypeFront",
+          "value": "CFE"
+        },
+        {
+          "columnName": "matrix_EdgeTypeLeft",
+          "value": "DOW"
+        },
+        {
+          "columnName": "matrix_EdgeTypeBack",
+          "value": "ICN"
+        },
+        {
+          "columnName": "matrix_EdgeTypeRight",
+          "value": "DOW"
+        },
+        {
+          "columnName": "matrix_EdgeJointType",
+          "value": "II"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionType",
+          "value": "Construction01"
+        },
+        {
+          "columnName": "in_Direction",
+          "value": "Left"
+        },
+        {
+          "columnName": "in_Part",
+          "value": "part_Panelblind"
+        },
+        {
+          "columnName": "in_FingergripTop",
+          "value": "true"
+        },
+        {
+          "columnName": "Width",
+          "value": "m.mod_CarcaseWidth - m.mod_CornerunitFrontWidth - HorizontalStartPosition"
+        },
+        {
+          "columnName": "Height",
+          "value": "VerticalFreeSpace - m.mod_FingergripType_matrix.LShapeHeight!"
+        },
+        {
+          "columnName": "Depth",
+          "value": "m.mod_PanelblindThk"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "HorizontalStartPosition"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "VerticalStartPosition"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "DepthStartPosition + DepthFreeSpace - m.g.basic_OffsetFrontVertDivider- m.mod_PanelblindThk"
+        },
+        {
+          "columnName": "matrix_EdgeTypeFront",
+          "value": "NOE"
+        },
+        {
+          "columnName": "matrix_EdgeTypeLeft",
+          "value": "NOE"
+        },
+        {
+          "columnName": "matrix_EdgeTypeBack",
+          "value": "NOE"
+        },
+        {
+          "columnName": "matrix_EdgeTypeRight",
+          "value": "NOE"
+        },
+        {
+          "columnName": "matrix_EdgeJointType",
+          "value": "II"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionType",
+          "value": "Construction01"
+        },
+        {
+          "columnName": "in_Direction",
+          "value": "Left"
+        },
+        {
+          "columnName": "in_Part",
+          "value": "part_Sidepanelmiddle"
+        },
+        {
+          "columnName": "in_FingergripTop",
+          "value": "true"
+        },
+        {
+          "columnName": "Width",
+          "value": "m.mod_SidepanelmiddleThk"
+        },
+        {
+          "columnName": "Height",
+          "value": "VerticalFreeSpace - m.mod_FingergripType_matrix.LShapeHeight!"
+        },
+        {
+          "columnName": "Depth",
+          "value": "m.mod_SidepanelmiddleShortWidth"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "m.mod_CarcaseWidth - m.mod_CornerunitFrontWidth"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "VerticalStartPosition"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "DepthStartPosition + DepthFreeSpace - m.g.basic_OffsetFrontVertDivider- m.mod_SidepanelmiddleShortWidth"
+        },
+        {
+          "columnName": "matrix_EdgeTypeFront",
+          "value": "CFE"
+        },
+        {
+          "columnName": "matrix_EdgeTypeLeft",
+          "value": "DOW"
+        },
+        {
+          "columnName": "matrix_EdgeTypeBack",
+          "value": "ICN"
+        },
+        {
+          "columnName": "matrix_EdgeTypeRight",
+          "value": "DOW"
+        },
+        {
+          "columnName": "matrix_EdgeJointType",
+          "value": "II"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionType",
+          "value": "Construction01"
+        },
+        {
+          "columnName": "in_Direction",
+          "value": "Right"
+        },
+        {
+          "columnName": "in_Part",
+          "value": "part_Panelblind"
+        },
+        {
+          "columnName": "in_FingergripTop",
+          "value": "true"
+        },
+        {
+          "columnName": "Width",
+          "value": "HorizontalFreeSpace + HorizontalStartPosition - m.mod_CornerunitFrontWidth"
+        },
+        {
+          "columnName": "Height",
+          "value": "VerticalFreeSpace - m.mod_FingergripType_matrix.LShapeHeight!"
+        },
+        {
+          "columnName": "Depth",
+          "value": "m.mod_PanelblindThk"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "m.mod_CornerunitFrontWidth"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "VerticalStartPosition"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "DepthStartPosition + DepthFreeSpace - m.g.basic_OffsetFrontVertDivider- m.mod_PanelblindThk"
+        },
+        {
+          "columnName": "matrix_EdgeTypeFront",
+          "value": "NOE"
+        },
+        {
+          "columnName": "matrix_EdgeTypeLeft",
+          "value": "NOE"
+        },
+        {
+          "columnName": "matrix_EdgeTypeBack",
+          "value": "NOE"
+        },
+        {
+          "columnName": "matrix_EdgeTypeRight",
+          "value": "NOE"
+        },
+        {
+          "columnName": "matrix_EdgeJointType",
+          "value": "II"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionType",
+          "value": "Construction01"
+        },
+        {
+          "columnName": "in_Direction",
+          "value": "Right"
+        },
+        {
+          "columnName": "in_Part",
+          "value": "part_Sidepanelmiddle"
+        },
+        {
+          "columnName": "in_FingergripTop",
+          "value": "true"
+        },
+        {
+          "columnName": "Width",
+          "value": "m.mod_SidepanelmiddleThk"
+        },
+        {
+          "columnName": "Height",
+          "value": "VerticalFreeSpace - m.mod_FingergripType_matrix.LShapeHeight!"
+        },
+        {
+          "columnName": "Depth",
+          "value": "m.mod_SidepanelmiddleShortWidth"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "m.mod_CornerunitFrontWidth - m.mod_SidepanelmiddleThk"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "VerticalStartPosition"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "DepthStartPosition + DepthFreeSpace - m.g.basic_OffsetFrontVertDivider- m.mod_SidepanelmiddleShortWidth"
+        },
+        {
+          "columnName": "matrix_EdgeTypeFront",
+          "value": "CFE"
+        },
+        {
+          "columnName": "matrix_EdgeTypeLeft",
+          "value": "DOW"
+        },
+        {
+          "columnName": "matrix_EdgeTypeBack",
+          "value": "ICN"
+        },
+        {
+          "columnName": "matrix_EdgeTypeRight",
+          "value": "DOW"
+        },
+        {
+          "columnName": "matrix_EdgeJointType",
+          "value": "II"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionType",
+          "value": "Construction02"
+        },
+        {
+          "columnName": "in_Direction",
+          "value": "Left"
+        },
+        {
+          "columnName": "in_Part",
+          "value": "part_Panelblind"
+        },
+        {
+          "columnName": "in_FingergripTop",
+          "value": "true"
+        },
+        {
+          "columnName": "Width",
+          "value": "m.mod_CarcaseWidth - m.mod_CornerunitFrontWidth - HorizontalStartPosition + m.g.basic_BackwallGrooveDepthVertOutside + m.g.basic_BackwallGrooveDepthVertOutside"
+        },
+        {
+          "columnName": "Height",
+          "value": "VerticalFreeSpace + m.g.basic_BackwallGrooveDepthHorOutside - m.mod_FingergripType_matrix.LShapeHeight!"
+        },
+        {
+          "columnName": "Depth",
+          "value": "m.mod_PanelblindThk"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "HorizontalStartPosition - m.g.basic_BackwallGrooveDepthVertOutside"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "VerticalStartPosition - m.g.basic_BackwallGrooveDepthHorOutside"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "DepthStartPosition + DepthFreeSpace - m.g.basic_PanelblindPos - m.mod_PanelblindThk"
+        },
+        {
+          "columnName": "matrix_EdgeTypeFront",
+          "value": "NOE"
+        },
+        {
+          "columnName": "matrix_EdgeTypeLeft",
+          "value": "NOE"
+        },
+        {
+          "columnName": "matrix_EdgeTypeBack",
+          "value": "NOE"
+        },
+        {
+          "columnName": "matrix_EdgeTypeRight",
+          "value": "NOE"
+        },
+        {
+          "columnName": "matrix_EdgeJointType",
+          "value": "II"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionType",
+          "value": "Construction02"
+        },
+        {
+          "columnName": "in_Direction",
+          "value": "Left"
+        },
+        {
+          "columnName": "in_Part",
+          "value": "part_Sidepanelmiddle"
+        },
+        {
+          "columnName": "in_FingergripTop",
+          "value": "true"
+        },
+        {
+          "columnName": "Width",
+          "value": "m.mod_SidepanelmiddleThk"
+        },
+        {
+          "columnName": "Height",
+          "value": "VerticalFreeSpace - m.mod_FingergripType_matrix.LShapeHeight!"
+        },
+        {
+          "columnName": "Depth",
+          "value": "m.mod_SidepanelmiddleShortWidth"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "m.mod_CarcaseWidth - m.mod_CornerunitFrontWidth"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "VerticalStartPosition"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "DepthStartPosition + DepthFreeSpace - m.g.basic_OffsetFrontVertDivider- m.mod_SidepanelmiddleShortWidth"
+        },
+        {
+          "columnName": "matrix_EdgeTypeFront",
+          "value": "CFE"
+        },
+        {
+          "columnName": "matrix_EdgeTypeLeft",
+          "value": "DOW"
+        },
+        {
+          "columnName": "matrix_EdgeTypeBack",
+          "value": "ICN"
+        },
+        {
+          "columnName": "matrix_EdgeTypeRight",
+          "value": "DOW"
+        },
+        {
+          "columnName": "matrix_EdgeJointType",
+          "value": "II"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionType",
+          "value": "Construction02"
+        },
+        {
+          "columnName": "in_Direction",
+          "value": "Right"
+        },
+        {
+          "columnName": "in_Part",
+          "value": "part_Panelblind"
+        },
+        {
+          "columnName": "in_FingergripTop",
+          "value": "true"
+        },
+        {
+          "columnName": "Width",
+          "value": "HorizontalFreeSpace + HorizontalStartPosition - m.mod_CornerunitFrontWidth + m.g.basic_BackwallGrooveDepthVertOutside + m.g.basic_BackwallGrooveDepthVertOutside"
+        },
+        {
+          "columnName": "Height",
+          "value": "VerticalFreeSpace + m.g.basic_BackwallGrooveDepthHorOutside - m.mod_FingergripType_matrix.LShapeHeight!"
+        },
+        {
+          "columnName": "Depth",
+          "value": "m.mod_PanelblindThk"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "m.mod_CornerunitFrontWidth - m.g.basic_BackwallGrooveDepthVertOutside"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "VerticalStartPosition - m.g.basic_BackwallGrooveDepthHorOutside"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "DepthStartPosition + DepthFreeSpace - m.g.basic_PanelblindPos - m.mod_PanelblindThk"
+        },
+        {
+          "columnName": "matrix_EdgeTypeFront",
+          "value": "NOE"
+        },
+        {
+          "columnName": "matrix_EdgeTypeLeft",
+          "value": "NOE"
+        },
+        {
+          "columnName": "matrix_EdgeTypeBack",
+          "value": "NOE"
+        },
+        {
+          "columnName": "matrix_EdgeTypeRight",
+          "value": "NOE"
+        },
+        {
+          "columnName": "matrix_EdgeJointType",
+          "value": "II"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionType",
+          "value": "Construction02"
+        },
+        {
+          "columnName": "in_Direction",
+          "value": "Right"
+        },
+        {
+          "columnName": "in_Part",
+          "value": "part_Sidepanelmiddle"
+        },
+        {
+          "columnName": "in_FingergripTop",
+          "value": "true"
+        },
+        {
+          "columnName": "Width",
+          "value": "m.mod_SidepanelmiddleThk"
+        },
+        {
+          "columnName": "Height",
+          "value": "VerticalFreeSpace - m.mod_FingergripType_matrix.LShapeHeight!"
+        },
+        {
+          "columnName": "Depth",
+          "value": "m.mod_SidepanelmiddleShortWidth"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "m.mod_CornerunitFrontWidth - m.mod_SidepanelmiddleThk"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "VerticalStartPosition"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "DepthStartPosition + DepthFreeSpace - m.g.basic_OffsetFrontVertDivider- m.mod_SidepanelmiddleShortWidth"
+        },
+        {
+          "columnName": "matrix_EdgeTypeFront",
+          "value": "CFE"
+        },
+        {
+          "columnName": "matrix_EdgeTypeLeft",
+          "value": "DOW"
+        },
+        {
+          "columnName": "matrix_EdgeTypeBack",
+          "value": "ICN"
+        },
+        {
+          "columnName": "matrix_EdgeTypeRight",
+          "value": "DOW"
+        },
+        {
+          "columnName": "matrix_EdgeJointType",
+          "value": "II"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionType",
+          "value": "Construction03"
+        },
+        {
+          "columnName": "in_Direction",
+          "value": "Left"
+        },
+        {
+          "columnName": "in_Part",
+          "value": "part_Panelblind"
+        },
+        {
+          "columnName": "in_FingergripTop",
+          "value": "true"
+        },
+        {
+          "columnName": "Width",
+          "value": "m.mod_CarcaseWidth - m.mod_CornerunitFrontWidth - HorizontalStartPosition - m.g.basic_BlindCornerHingeSpace"
+        },
+        {
+          "columnName": "Height",
+          "value": "VerticalFreeSpace - m.mod_FingergripType_matrix.LShapeHeight!"
+        },
+        {
+          "columnName": "Depth",
+          "value": "m.mod_PanelblindThk"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "HorizontalStartPosition"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "VerticalStartPosition"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "DepthStartPosition + DepthFreeSpace - m.g.basic_OffsetFrontVertDivider- m.mod_PanelblindThk"
+        },
+        {
+          "columnName": "matrix_EdgeTypeFront",
+          "value": "NOE"
+        },
+        {
+          "columnName": "matrix_EdgeTypeLeft",
+          "value": "NOE"
+        },
+        {
+          "columnName": "matrix_EdgeTypeBack",
+          "value": "NOE"
+        },
+        {
+          "columnName": "matrix_EdgeTypeRight",
+          "value": "NOE"
+        },
+        {
+          "columnName": "matrix_EdgeJointType",
+          "value": "II"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionType",
+          "value": "Construction03"
+        },
+        {
+          "columnName": "in_Direction",
+          "value": "Right"
+        },
+        {
+          "columnName": "in_Part",
+          "value": "part_Panelblind"
+        },
+        {
+          "columnName": "in_FingergripTop",
+          "value": "true"
+        },
+        {
+          "columnName": "Width",
+          "value": "HorizontalFreeSpace + HorizontalStartPosition - m.mod_CornerunitFrontWidth - m.g.basic_BlindCornerHingeSpace"
+        },
+        {
+          "columnName": "Height",
+          "value": "VerticalFreeSpace - m.mod_FingergripType_matrix.LShapeHeight!"
+        },
+        {
+          "columnName": "Depth",
+          "value": "m.mod_PanelblindThk"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "m.mod_CornerunitFrontWidth + m.g.basic_BlindCornerHingeSpace"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "VerticalStartPosition"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "DepthStartPosition + DepthFreeSpace - m.g.basic_OffsetFrontVertDivider- m.mod_PanelblindThk"
+        },
+        {
+          "columnName": "matrix_EdgeTypeFront",
+          "value": "NOE"
+        },
+        {
+          "columnName": "matrix_EdgeTypeLeft",
+          "value": "NOE"
+        },
+        {
+          "columnName": "matrix_EdgeTypeBack",
+          "value": "NOE"
+        },
+        {
+          "columnName": "matrix_EdgeTypeRight",
+          "value": "NOE"
+        },
+        {
+          "columnName": "matrix_EdgeJointType",
+          "value": "II"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionType",
+          "value": "Construction04"
+        },
+        {
+          "columnName": "in_Direction",
+          "value": "Left"
+        },
+        {
+          "columnName": "in_Part",
+          "value": "part_Panelblind"
+        },
+        {
+          "columnName": "in_FingergripTop",
+          "value": "true"
+        },
+        {
+          "columnName": "Width",
+          "value": "m.mod_CarcaseWidth - m.mod_CornerunitFrontWidth - HorizontalStartPosition - m.mod_SidepanelmiddleThk/2"
+        },
+        {
+          "columnName": "Height",
+          "value": "VerticalFreeSpace - m.mod_FingergripType_matrix.LShapeHeight!"
+        },
+        {
+          "columnName": "Depth",
+          "value": "m.mod_PanelblindThk"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "HorizontalStartPosition"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "VerticalStartPosition"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "DepthStartPosition + DepthFreeSpace - m.g.basic_OffsetFrontVertDivider- m.mod_PanelblindThk"
+        },
+        {
+          "columnName": "matrix_EdgeTypeFront",
+          "value": "NOE"
+        },
+        {
+          "columnName": "matrix_EdgeTypeLeft",
+          "value": "NOE"
+        },
+        {
+          "columnName": "matrix_EdgeTypeBack",
+          "value": "NOE"
+        },
+        {
+          "columnName": "matrix_EdgeTypeRight",
+          "value": "NOE"
+        },
+        {
+          "columnName": "matrix_EdgeJointType",
+          "value": "II"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionType",
+          "value": "Construction04"
+        },
+        {
+          "columnName": "in_Direction",
+          "value": "Left"
+        },
+        {
+          "columnName": "in_Part",
+          "value": "part_Sidepanelmiddle"
+        },
+        {
+          "columnName": "in_FingergripTop",
+          "value": "true"
+        },
+        {
+          "columnName": "Width",
+          "value": "m.mod_SidepanelmiddleThk"
+        },
+        {
+          "columnName": "Height",
+          "value": "VerticalFreeSpace - m.mod_FingergripType_matrix.LShapeHeight!"
+        },
+        {
+          "columnName": "Depth",
+          "value": "m.mod_SidepanelmiddleShortWidth"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "m.mod_CarcaseWidth - m.mod_CornerunitFrontWidth - m.mod_SidepanelmiddleThk/2"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "VerticalStartPosition"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "DepthStartPosition + DepthFreeSpace - m.g.basic_OffsetFrontVertDivider- m.mod_SidepanelmiddleShortWidth"
+        },
+        {
+          "columnName": "matrix_EdgeTypeFront",
+          "value": "CFE"
+        },
+        {
+          "columnName": "matrix_EdgeTypeLeft",
+          "value": "DOW"
+        },
+        {
+          "columnName": "matrix_EdgeTypeBack",
+          "value": "ICN"
+        },
+        {
+          "columnName": "matrix_EdgeTypeRight",
+          "value": "DOW"
+        },
+        {
+          "columnName": "matrix_EdgeJointType",
+          "value": "II"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionType",
+          "value": "Construction04"
+        },
+        {
+          "columnName": "in_Direction",
+          "value": "Right"
+        },
+        {
+          "columnName": "in_Part",
+          "value": "part_Panelblind"
+        },
+        {
+          "columnName": "in_FingergripTop",
+          "value": "true"
+        },
+        {
+          "columnName": "Width",
+          "value": "HorizontalFreeSpace + HorizontalStartPosition - m.mod_CornerunitFrontWidth - m.mod_SidepanelmiddleThk/2"
+        },
+        {
+          "columnName": "Height",
+          "value": "VerticalFreeSpace - m.mod_FingergripType_matrix.LShapeHeight!"
+        },
+        {
+          "columnName": "Depth",
+          "value": "m.mod_PanelblindThk"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "m.mod_CornerunitFrontWidth + m.mod_SidepanelmiddleThk/2"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "VerticalStartPosition"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "DepthStartPosition + DepthFreeSpace - m.g.basic_OffsetFrontVertDivider- m.mod_PanelblindThk"
+        },
+        {
+          "columnName": "matrix_EdgeTypeFront",
+          "value": "NOE"
+        },
+        {
+          "columnName": "matrix_EdgeTypeLeft",
+          "value": "NOE"
+        },
+        {
+          "columnName": "matrix_EdgeTypeBack",
+          "value": "NOE"
+        },
+        {
+          "columnName": "matrix_EdgeTypeRight",
+          "value": "NOE"
+        },
+        {
+          "columnName": "matrix_EdgeJointType",
+          "value": "II"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionType",
+          "value": "Construction04"
+        },
+        {
+          "columnName": "in_Direction",
+          "value": "Right"
+        },
+        {
+          "columnName": "in_Part",
+          "value": "part_Sidepanelmiddle"
+        },
+        {
+          "columnName": "in_FingergripTop",
+          "value": "true"
+        },
+        {
+          "columnName": "Width",
+          "value": "m.mod_SidepanelmiddleThk"
+        },
+        {
+          "columnName": "Height",
+          "value": "VerticalFreeSpace - m.mod_FingergripType_matrix.LShapeHeight!"
+        },
+        {
+          "columnName": "Depth",
+          "value": "m.mod_SidepanelmiddleShortWidth"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "m.mod_CornerunitFrontWidth - m.mod_SidepanelmiddleThk/2"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "VerticalStartPosition"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "DepthStartPosition + DepthFreeSpace - m.g.basic_OffsetFrontVertDivider- m.mod_SidepanelmiddleShortWidth"
+        },
+        {
+          "columnName": "matrix_EdgeTypeFront",
+          "value": "CFE"
+        },
+        {
+          "columnName": "matrix_EdgeTypeLeft",
+          "value": "DOW"
+        },
+        {
+          "columnName": "matrix_EdgeTypeBack",
+          "value": "ICN"
+        },
+        {
+          "columnName": "matrix_EdgeTypeRight",
+          "value": "DOW"
+        },
+        {
+          "columnName": "matrix_EdgeJointType",
+          "value": "II"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionType",
+          "value": "Construction05"
+        },
+        {
+          "columnName": "in_Direction",
+          "value": "Left"
+        },
+        {
+          "columnName": "in_Part",
+          "value": "part_Panelblind"
+        },
+        {
+          "columnName": "in_FingergripTop",
+          "value": "true"
+        },
+        {
+          "columnName": "Width",
+          "value": "m.mod_CarcaseWidth - m.mod_CornerunitFrontWidth - HorizontalStartPosition - m.mod_SidepanelmiddleThk/2 + m.g.basic_BackwallGrooveDepthVertOutside + m.g.basic_BackwallGrooveDepthVertOutside"
+        },
+        {
+          "columnName": "Height",
+          "value": "VerticalFreeSpace + m.g.basic_BackwallGrooveDepthHorOutside - m.mod_FingergripType_matrix.LShapeHeight!"
+        },
+        {
+          "columnName": "Depth",
+          "value": "m.mod_PanelblindThk"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "HorizontalStartPosition - m.g.basic_BackwallGrooveDepthVertOutside"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "VerticalStartPosition - m.g.basic_BackwallGrooveDepthHorOutside"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "DepthStartPosition + DepthFreeSpace - m.g.basic_PanelblindPos - m.mod_PanelblindThk"
+        },
+        {
+          "columnName": "matrix_EdgeTypeFront",
+          "value": "NOE"
+        },
+        {
+          "columnName": "matrix_EdgeTypeLeft",
+          "value": "NOE"
+        },
+        {
+          "columnName": "matrix_EdgeTypeBack",
+          "value": "NOE"
+        },
+        {
+          "columnName": "matrix_EdgeTypeRight",
+          "value": "NOE"
+        },
+        {
+          "columnName": "matrix_EdgeJointType",
+          "value": "II"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionType",
+          "value": "Construction05"
+        },
+        {
+          "columnName": "in_Direction",
+          "value": "Left"
+        },
+        {
+          "columnName": "in_Part",
+          "value": "part_Sidepanelmiddle"
+        },
+        {
+          "columnName": "in_FingergripTop",
+          "value": "true"
+        },
+        {
+          "columnName": "Width",
+          "value": "m.mod_SidepanelmiddleThk"
+        },
+        {
+          "columnName": "Height",
+          "value": "VerticalFreeSpace - m.mod_FingergripType_matrix.LShapeHeight!"
+        },
+        {
+          "columnName": "Depth",
+          "value": "m.mod_SidepanelmiddleShortWidth"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "m.mod_CarcaseWidth - m.mod_CornerunitFrontWidth - m.mod_SidepanelmiddleThk/2"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "VerticalStartPosition"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "DepthStartPosition + DepthFreeSpace - m.g.basic_OffsetFrontVertDivider- m.mod_SidepanelmiddleShortWidth"
+        },
+        {
+          "columnName": "matrix_EdgeTypeFront",
+          "value": "CFE"
+        },
+        {
+          "columnName": "matrix_EdgeTypeLeft",
+          "value": "DOW"
+        },
+        {
+          "columnName": "matrix_EdgeTypeBack",
+          "value": "ICN"
+        },
+        {
+          "columnName": "matrix_EdgeTypeRight",
+          "value": "DOW"
+        },
+        {
+          "columnName": "matrix_EdgeJointType",
+          "value": "II"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionType",
+          "value": "Construction05"
+        },
+        {
+          "columnName": "in_Direction",
+          "value": "Right"
+        },
+        {
+          "columnName": "in_Part",
+          "value": "part_Panelblind"
+        },
+        {
+          "columnName": "in_FingergripTop",
+          "value": "true"
+        },
+        {
+          "columnName": "Width",
+          "value": "HorizontalFreeSpace + HorizontalStartPosition - m.mod_CornerunitFrontWidth - m.mod_SidepanelmiddleThk/2 + m.g.basic_BackwallGrooveDepthVertOutside + m.g.basic_BackwallGrooveDepthVertOutside"
+        },
+        {
+          "columnName": "Height",
+          "value": "VerticalFreeSpace + m.g.basic_BackwallGrooveDepthHorOutside - m.mod_FingergripType_matrix.LShapeHeight!"
+        },
+        {
+          "columnName": "Depth",
+          "value": "m.mod_PanelblindThk"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "m.mod_CornerunitFrontWidth + m.mod_SidepanelmiddleThk/2 - m.g.basic_BackwallGrooveDepthVertOutside"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "VerticalStartPosition - m.g.basic_BackwallGrooveDepthHorOutside"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "DepthStartPosition + DepthFreeSpace - m.g.basic_PanelblindPos - m.mod_PanelblindThk"
+        },
+        {
+          "columnName": "matrix_EdgeTypeFront",
+          "value": "NOE"
+        },
+        {
+          "columnName": "matrix_EdgeTypeLeft",
+          "value": "NOE"
+        },
+        {
+          "columnName": "matrix_EdgeTypeBack",
+          "value": "NOE"
+        },
+        {
+          "columnName": "matrix_EdgeTypeRight",
+          "value": "NOE"
+        },
+        {
+          "columnName": "matrix_EdgeJointType",
+          "value": "II"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionType",
+          "value": "Construction05"
+        },
+        {
+          "columnName": "in_Direction",
+          "value": "Right"
+        },
+        {
+          "columnName": "in_Part",
+          "value": "part_Sidepanelmiddle"
+        },
+        {
+          "columnName": "in_FingergripTop",
+          "value": "true"
+        },
+        {
+          "columnName": "Width",
+          "value": "m.mod_SidepanelmiddleThk"
+        },
+        {
+          "columnName": "Height",
+          "value": "VerticalFreeSpace - m.mod_FingergripType_matrix.LShapeHeight!"
+        },
+        {
+          "columnName": "Depth",
+          "value": "m.mod_SidepanelmiddleShortWidth"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "m.mod_CornerunitFrontWidth - m.mod_SidepanelmiddleThk/2"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "VerticalStartPosition"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "DepthStartPosition + DepthFreeSpace - m.g.basic_OffsetFrontVertDivider- m.mod_SidepanelmiddleShortWidth"
+        },
+        {
+          "columnName": "matrix_EdgeTypeFront",
+          "value": "CFE"
+        },
+        {
+          "columnName": "matrix_EdgeTypeLeft",
+          "value": "DOW"
+        },
+        {
+          "columnName": "matrix_EdgeTypeBack",
+          "value": "ICN"
+        },
+        {
+          "columnName": "matrix_EdgeTypeRight",
+          "value": "DOW"
+        },
+        {
+          "columnName": "matrix_EdgeJointType",
+          "value": "II"
+        }
+      ]
+    }
+  ]
+}

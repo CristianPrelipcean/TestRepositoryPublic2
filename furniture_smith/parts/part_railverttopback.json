@@ -1,0 +1,173 @@
+{
+  "partCode": "part_Railverttopback",
+  "shortName": "Vertical rail back",
+  "description": "Vertical rail back",
+  "wdt": "XYZ",
+  "groupName": "Panels",
+  "imageId": "7884a5d1-c9b4-41cf-9dc2-c91c69cdccd6:RailTopBackVert.jpg",
+  "invisible": false,
+  "restrictionTypeId": "Public",
+  "partVariants": [
+    {
+      "partVarId": "pa_CarcaseConnectionLeftTop",
+      "valueScript": "this.parent.mod_CarcaseConnectionLeftTop",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_CarcaseConnectionRightTop",
+      "valueScript": "this.parent.mod_CarcaseConnectionRightTop",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_FittingConnectionRightTop",
+      "valueScript": "this.parent.mod_FittingConnectionRightTop",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_FittingConnectionLeftTop",
+      "valueScript": "this.parent.mod_FittingConnectionLeftTop",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_HardwareColor",
+      "valueScript": "this.parent.mod_HardwareColor",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_ParentName",
+      "valueScript": "this.parent.mod_ParentName",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_TypeElement",
+      "valueScript": "this.parent.mod_TypeElement",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_TopColor",
+      "valueScript": "this.parent.mod_CarcaseColor"
+    },
+    {
+      "partVarId": "pa_BtmColor",
+      "valueScript": "this.parent.mod_CarcaseOutsideColor"
+    },
+    {
+      "partVarId": "pa_EdgeFrontColor",
+      "valueScript": "this.parent.mod_CarcaseEdgeColor",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeLeftColor",
+      "valueScript": "this.parent.mod_CarcaseEdgeColor"
+    },
+    {
+      "partVarId": "pa_EdgeBackColor",
+      "valueScript": "this.parent.mod_CarcaseEdgeBackColor"
+    },
+    {
+      "partVarId": "pa_EdgeRightColor",
+      "valueScript": "this.parent.mod_CarcaseEdgeColor"
+    },
+    {
+      "partVarId": "pa_EdgeFrontType",
+      "valueScript": "this.parent.mod_EdgeFrontType"
+    },
+    {
+      "partVarId": "pa_EdgeLeftType",
+      "valueScript": "this.parent.mod_EdgeLeftType"
+    },
+    {
+      "partVarId": "pa_EdgeBackType",
+      "valueScript": "this.parent.mod_EdgeBackType"
+    },
+    {
+      "partVarId": "pa_EdgeRightType",
+      "valueScript": "this.parent.mod_EdgeRightType"
+    },
+    {
+      "partVarId": "pa_EdgeJointType",
+      "valueScript": "this.parent.mod_EdgeJointType"
+    },
+    {
+      "partVarId": "pa_GrainDirection",
+      "valueScript": "'Neutral'",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_Program",
+      "valueScript": "this.parent.mod_CarcaseProgram"
+    },
+    {
+      "partVarId": "pa_BomId",
+      "valueScript": "this.parent.mod_CarcaseId",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_AdditionalInfo1",
+      "valueScript": "'None'",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_ColorGrainGroup",
+      "valueScript": "this.parent.mod_CarcaseColor_matrix.GrainGroupId",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_ColorOutsideGrainGroup",
+      "valueScript": "this.parent.mod_CarcaseOutsideColor_matrix.GrainGroupId",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_ProgramGrainGroup",
+      "valueScript": "this.parent.mod_CarcaseProgram_matrix.GrainGroupId",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_ProgramOutsideGrainGroup",
+      "valueScript": "this.parent.mod_CarcaseOutsideProgram_matrix.GrainGroupId",
+      "isWritable": false
+    }
+  ],
+  "bomData": [
+    {
+      "bomElementTypeId": "bomout_Board",
+      "description": "Output Parts / Boards",
+      "conditionScript": "partSelf._g?.basic_CreateBom == 'Library'",
+      "valueScript": "// Type of the Bom-Element (will be checked in order output)\nlet elementType='Board';\n\n// ProductionSite Category (to split the orders for different production sites)\nlet elementCategory='';\n\n// Id of the parent to create the hierarchy\nlet parentBomId=part.pa_BomId;\n\n// Call the function to process the Bom-Element\nGlobalFunc.process_BoardBom(this, part, elementType, elementCategory, parentBomId)"
+    }
+  ],
+  "ncData": [
+    {
+      "part2": "part_Sidepanelleft",
+      "touchName": "FromLeft",
+      "bomElementTypeId": "ncout_Group",
+      "description": "Connection with side panel left",
+      "valueScript": "// Schuler Consulting\n// Create: January 2025\n// By Ludwig Weber\n// Purpose: CabinetLibrary\n//\n// Description:\n// Connection between Rail vertical top back and Sidepanelleft\n// Touch FromLeft\n//\n// Revisions:\n// \n//===================================================\n\n// Initialize variables\nlet Area = \"LeftTop\";\nlet PartType = 'PanelVertical';\nlet DrillingPartType = 'PartShort';\nlet DrillingPosition = 'Left';\nlet TouchDirectionGraphic = 'Left';\nlet FallingDirection = 'Back';\nlet ConnectionOrientation = 'TopBottom';\nlet ConnectionType = partSelf.pa_CarcaseConnectionLeftTop;\nlet FittingType = partSelf.pa_FittingConnectionLeftTop;\nlet InsideDirection = 'Front';\n\n// Call the process function\nGlobalFunc.process_CarcasePartConnection(this, partSelf, part2, posRel, Area, PartType, DrillingPosition, TouchDirectionGraphic, FallingDirection, ConnectionOrientation, ConnectionType, FittingType, InsideDirection, DrillingPartType)",
+      "bomExecuteType": "Touch"
+    },
+    {
+      "part2": "part_Sidepanelright",
+      "touchName": "FromRight",
+      "bomElementTypeId": "ncout_Group",
+      "description": "Connection with side panel right",
+      "valueScript": "// Schuler Consulting\n// Create: January 2025\n// By Ludwig Weber\n// Purpose: CabinetLibrary\n//\n// Description:\n// Connection between Rail vertical top back and Sidepanelright\n// Touch FromRight\n//\n// Revisions:\n// \n//===================================================\n\n// Initialize variables\nlet Area = \"RightTop\";\nlet PartType = 'PanelVertical';\nlet DrillingPartType = 'PartShort';\nlet DrillingPosition = 'Right';\nlet TouchDirectionGraphic = 'Right';\nlet FallingDirection = 'Back';\nlet ConnectionOrientation = 'TopBottom';\nlet ConnectionType = partSelf.pa_CarcaseConnectionRightTop;\nlet FittingType = partSelf.pa_FittingConnectionRightTop;\nlet InsideDirection = 'Front';\n\n// Call the process function\nGlobalFunc.process_CarcasePartConnection(this, partSelf, part2, posRel, Area, PartType, DrillingPosition, TouchDirectionGraphic, FallingDirection, ConnectionOrientation, ConnectionType, FittingType, InsideDirection, DrillingPartType)",
+      "bomExecuteType": "Touch"
+    },
+    {
+      "part2": "part_Sidepanelmiddle",
+      "touchName": "FromLeft",
+      "bomElementTypeId": "ncout_Group",
+      "description": "Connection with side panel middle from left",
+      "valueScript": "// Schuler Consulting\n  // Create: January 2025\n  // By Ludwig Weber\n  // Purpose: CabinetLibrary\n  //\n  // Description:\n  // Connection between Rail vertical top back and Sidepanelleft\n  // Touch FromLeft\n  //\n  // Revisions:\n  // \n  //===================================================\n\n  // Initialize variables\n  let Area = \"LeftTop\";\n  let PartType = 'PanelVertical';\n  let DrillingPartType = 'PartShort';\n  let DrillingPosition = 'Left';\n  let TouchDirectionGraphic = 'Left';\n  let FallingDirection = 'Back';\n  let ConnectionOrientation = 'TopBottom';\n  let ConnectionType = partSelf.pa_CarcaseConnectionLeftTop;\n  let FittingType = partSelf.pa_FittingConnectionLeftTop;\n  let InsideDirection = 'Front';\n\n  // Call the process function\n  GlobalFunc.process_CarcasePartConnection(this, partSelf, part2, posRel, Area, PartType, DrillingPosition, TouchDirectionGraphic, FallingDirection, ConnectionOrientation, ConnectionType, FittingType, InsideDirection, DrillingPartType)",
+      "bomExecuteType": "Touch"
+    },
+    {
+      "part2": "part_Sidepanelmiddle",
+      "touchName": "FromRight",
+      "bomElementTypeId": "ncout_Group",
+      "description": "Connection with side panel middle from right",
+      "valueScript": "// Schuler Consulting\n  // Create: January 2025\n  // By Ludwig Weber\n  // Purpose: CabinetLibrary\n  //\n  // Description:\n  // Connection between Rail vertical top back and Sidepanelright\n  // Touch FromRight\n  //\n  // Revisions:\n  // \n  //===================================================\n\n  // Initialize variables\n  let Area = \"RightTop\";\n  let PartType = 'PanelVertical';\n  let DrillingPartType = 'PartShort';\n  let DrillingPosition = 'Right';\n  let TouchDirectionGraphic = 'Right';\n  let FallingDirection = 'Back';\n  let ConnectionOrientation = 'TopBottom';\n  let ConnectionType = partSelf.pa_CarcaseConnectionRightTop;\n  let FittingType = partSelf.pa_FittingConnectionRightTop;\n  let InsideDirection = 'Front';\n\n  // Call the process function\n  GlobalFunc.process_CarcasePartConnection(this, partSelf, part2, posRel, Area, PartType, DrillingPosition, TouchDirectionGraphic, FallingDirection, ConnectionOrientation, ConnectionType, FittingType, InsideDirection, DrillingPartType)",
+      "bomExecuteType": "Touch"
+    }
+  ]
+}

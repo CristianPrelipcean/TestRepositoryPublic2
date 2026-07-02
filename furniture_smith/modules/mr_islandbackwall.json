@@ -1,0 +1,69 @@
+{
+  "moduleId": "mr_IslandBackwall",
+  "shortName": "Island backwall",
+  "configurable": true,
+  "isRoot": true,
+  "description": "Module for island backwall",
+  "groupName": "Root",
+  "imageId": "2c756ec5-057d-4d79-a884-b9dee59c5a16:IslandBackwall.jpg",
+  "restrictionTypeId": "Public",
+  "childModules": [
+    {
+      "moduleId": "mc_Panel01"
+    }
+  ],
+  "assignedVariants": [
+    {
+      "variantId": "mod_Color",
+      "default": "240",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_Program",
+      "default": "Demoprogram1",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_Depth",
+      "previewValue": "350",
+      "origin": "Required"
+    },
+    {
+      "variantId": "mod_Height",
+      "previewValue": "920",
+      "origin": "Required"
+    },
+    {
+      "variantId": "mod_Thk",
+      "default": "19",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_PaneltopColor",
+      "default": "380",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_PaneltopThk",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_IslandBackwallOverhangFront",
+      "default": "30",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_IslandBackwallOverdimension",
+      "default": "10",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_IslandBackwallWidth",
+      "default": "1000",
+      "origin": "Default"
+    }
+  ],
+  "assignedParts": [],
+  "assignedCustomTables": [],
+  "assignedFunctions": []
+}

@@ -1,0 +1,4540 @@
+{
+  "tableName": "tab_GrainDirectionSettings",
+  "description": "Settings of the grain direction for each part",
+  "restrictionTypeId": "Public",
+  "groupName": "Boards",
+  "columns": [
+    {
+      "name": "_id",
+      "type": "Integer",
+      "allowNull": false
+    },
+    {
+      "name": "in_PartId",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_TypeElement",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_ProgramGroupId",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_ColorGroupId",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_LengthMin",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "in_LengthMax",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "in_WidthMin",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "in_WidthMax",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "GrainDirection",
+      "type": "Text",
+      "allowNull": true
+    }
+  ],
+  "rows": [
+    {
+      "data": [
+        {
+          "columnName": "in_PartId",
+          "value": "part_Heatshelf"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ProgramGroupId",
+          "value": "Neutral"
+        },
+        {
+          "columnName": "in_ColorGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_LengthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_LengthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "GrainDirection",
+          "value": "Lengthwise"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartId",
+          "value": "part_Backwall"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ProgramGroupId",
+          "value": "Neutral"
+        },
+        {
+          "columnName": "in_ColorGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_LengthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_LengthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "GrainDirection",
+          "value": "None"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartId",
+          "value": "part_Backwall"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ProgramGroupId",
+          "value": "Neutral"
+        },
+        {
+          "columnName": "in_ColorGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_LengthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_LengthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "GrainDirection",
+          "value": "Lengthwise"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartId",
+          "value": "part_Railhortopfront"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ProgramGroupId",
+          "value": "Horizontal"
+        },
+        {
+          "columnName": "in_ColorGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_LengthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_LengthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "GrainDirection",
+          "value": "Crosswise"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartId",
+          "value": "part_Railhortopfront"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ProgramGroupId",
+          "value": "Vertical"
+        },
+        {
+          "columnName": "in_ColorGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_LengthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_LengthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "GrainDirection",
+          "value": "Lengthwise"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartId",
+          "value": "part_Railhortopfront"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ProgramGroupId",
+          "value": "Neutral"
+        },
+        {
+          "columnName": "in_ColorGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_LengthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_LengthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "GrainDirection",
+          "value": "Lengthwise"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartId",
+          "value": "part_Shelftop"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ProgramGroupId",
+          "value": "Neutral"
+        },
+        {
+          "columnName": "in_ColorGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_LengthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_LengthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "GrainDirection",
+          "value": "Lengthwise"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartId",
+          "value": "part_Shelftop"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ProgramGroupId",
+          "value": "Neutral"
+        },
+        {
+          "columnName": "in_ColorGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_LengthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_LengthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "GrainDirection",
+          "value": "None"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartId",
+          "value": "part_Shelftop"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ProgramGroupId",
+          "value": "Vertical"
+        },
+        {
+          "columnName": "in_ColorGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_LengthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_LengthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "GrainDirection",
+          "value": "Lengthwise"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartId",
+          "value": "part_Toekick"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ProgramGroupId",
+          "value": "Neutral"
+        },
+        {
+          "columnName": "in_ColorGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_LengthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_LengthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "GrainDirection",
+          "value": "Lengthwise"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartId",
+          "value": "part_Toekick"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ProgramGroupId",
+          "value": "Neutral"
+        },
+        {
+          "columnName": "in_ColorGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_LengthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_LengthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "GrainDirection",
+          "value": "None"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartId",
+          "value": "part_Railverttopback"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ProgramGroupId",
+          "value": "Vertical"
+        },
+        {
+          "columnName": "in_ColorGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_LengthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_LengthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "GrainDirection",
+          "value": "Lengthwise"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartId",
+          "value": "part_Railverttopback"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ProgramGroupId",
+          "value": "Neutral"
+        },
+        {
+          "columnName": "in_ColorGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_LengthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_LengthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "GrainDirection",
+          "value": "None"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartId",
+          "value": "part_Railverttopback"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ProgramGroupId",
+          "value": "Neutral"
+        },
+        {
+          "columnName": "in_ColorGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_LengthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_LengthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "GrainDirection",
+          "value": "Lengthwise"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartId",
+          "value": "part_Railverttopback"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ProgramGroupId",
+          "value": "Horizontal"
+        },
+        {
+          "columnName": "in_ColorGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_LengthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_LengthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "GrainDirection",
+          "value": "Crosswise"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartId",
+          "value": "part_Railverttopfront"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ProgramGroupId",
+          "value": "Neutral"
+        },
+        {
+          "columnName": "in_ColorGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_LengthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_LengthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "GrainDirection",
+          "value": "Lengthwise"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartId",
+          "value": "part_Railverttopfront"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ProgramGroupId",
+          "value": "Neutral"
+        },
+        {
+          "columnName": "in_ColorGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_LengthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_LengthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "GrainDirection",
+          "value": "None"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartId",
+          "value": "part_Railverttopfront"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ProgramGroupId",
+          "value": "Vertical"
+        },
+        {
+          "columnName": "in_ColorGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_LengthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_LengthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "GrainDirection",
+          "value": "Lengthwise"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartId",
+          "value": "part_Sidepanelleft"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ProgramGroupId",
+          "value": "Horizontal"
+        },
+        {
+          "columnName": "in_ColorGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_LengthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_LengthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "GrainDirection",
+          "value": "Crosswise"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartId",
+          "value": "part_Sidepanelleft"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ProgramGroupId",
+          "value": "Vertical"
+        },
+        {
+          "columnName": "in_ColorGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_LengthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_LengthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "GrainDirection",
+          "value": "Lengthwise"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartId",
+          "value": "part_Sidepanelmiddle"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ProgramGroupId",
+          "value": "Neutral"
+        },
+        {
+          "columnName": "in_ColorGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_LengthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_LengthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "GrainDirection",
+          "value": "None"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartId",
+          "value": "part_Shelfbtm"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ProgramGroupId",
+          "value": "Vertical"
+        },
+        {
+          "columnName": "in_ColorGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_LengthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_LengthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "GrainDirection",
+          "value": "Lengthwise"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartId",
+          "value": "part_Shelfbtm"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ProgramGroupId",
+          "value": "Neutral"
+        },
+        {
+          "columnName": "in_ColorGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_LengthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_LengthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "GrainDirection",
+          "value": "Lengthwise"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartId",
+          "value": "part_Shelfbtm"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ProgramGroupId",
+          "value": "Horizontal"
+        },
+        {
+          "columnName": "in_ColorGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_LengthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_LengthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "GrainDirection",
+          "value": "Crosswise"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartId",
+          "value": "part_Sidepanelleft"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ProgramGroupId",
+          "value": "Neutral"
+        },
+        {
+          "columnName": "in_ColorGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_LengthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_LengthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "GrainDirection",
+          "value": "None"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartId",
+          "value": "part_Shelftop"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ProgramGroupId",
+          "value": "Horizontal"
+        },
+        {
+          "columnName": "in_ColorGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_LengthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_LengthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "GrainDirection",
+          "value": "Crosswise"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartId",
+          "value": "part_Sidepanelleft"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ProgramGroupId",
+          "value": "Neutral"
+        },
+        {
+          "columnName": "in_ColorGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_LengthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_LengthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "GrainDirection",
+          "value": "Lengthwise"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartId",
+          "value": "part_Sidepanelmiddle"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ProgramGroupId",
+          "value": "Vertical"
+        },
+        {
+          "columnName": "in_ColorGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_LengthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_LengthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "GrainDirection",
+          "value": "Lengthwise"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartId",
+          "value": "part_Sidepanelmiddle"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ProgramGroupId",
+          "value": "Neutral"
+        },
+        {
+          "columnName": "in_ColorGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_LengthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_LengthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "GrainDirection",
+          "value": "Lengthwise"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartId",
+          "value": "part_Sidepanelmiddle"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ProgramGroupId",
+          "value": "Horizontal"
+        },
+        {
+          "columnName": "in_ColorGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_LengthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_LengthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "GrainDirection",
+          "value": "Crosswise"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartId",
+          "value": "part_Sidepanelright"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ProgramGroupId",
+          "value": "Vertical"
+        },
+        {
+          "columnName": "in_ColorGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_LengthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_LengthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "GrainDirection",
+          "value": "Lengthwise"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartId",
+          "value": "part_Sidepanelright"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ProgramGroupId",
+          "value": "Neutral"
+        },
+        {
+          "columnName": "in_ColorGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_LengthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_LengthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "GrainDirection",
+          "value": "None"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartId",
+          "value": "part_Sidepanelright"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ProgramGroupId",
+          "value": "Neutral"
+        },
+        {
+          "columnName": "in_ColorGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_LengthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_LengthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "GrainDirection",
+          "value": "Lengthwise"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartId",
+          "value": "part_Sidepanelright"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ProgramGroupId",
+          "value": "Horizontal"
+        },
+        {
+          "columnName": "in_ColorGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_LengthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_LengthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "GrainDirection",
+          "value": "Crosswise"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartId",
+          "value": "part_Railhortopback"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ProgramGroupId",
+          "value": "Horizontal"
+        },
+        {
+          "columnName": "in_ColorGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_LengthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_LengthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "GrainDirection",
+          "value": "Crosswise"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartId",
+          "value": "part_Railhortopback"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ProgramGroupId",
+          "value": "Neutral"
+        },
+        {
+          "columnName": "in_ColorGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_LengthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_LengthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "GrainDirection",
+          "value": "Lengthwise"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartId",
+          "value": "part_Railhortopback"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ProgramGroupId",
+          "value": "Vertical"
+        },
+        {
+          "columnName": "in_ColorGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_LengthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_LengthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "GrainDirection",
+          "value": "Lengthwise"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartId",
+          "value": "part_Railhortopfront"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ProgramGroupId",
+          "value": "Neutral"
+        },
+        {
+          "columnName": "in_ColorGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_LengthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_LengthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "GrainDirection",
+          "value": "None"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartId",
+          "value": "part_SlopedCeilingShelftopAngle"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ProgramGroupId",
+          "value": "Horizontal"
+        },
+        {
+          "columnName": "in_ColorGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_LengthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_LengthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "GrainDirection",
+          "value": "Crosswise"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartId",
+          "value": "part_SlopedCeilingShelftopAngle"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ProgramGroupId",
+          "value": "Vertical"
+        },
+        {
+          "columnName": "in_ColorGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_LengthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_LengthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "GrainDirection",
+          "value": "Lengthwise"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartId",
+          "value": "part_SlopedCeilingShelftopHor"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ProgramGroupId",
+          "value": "Neutral"
+        },
+        {
+          "columnName": "in_ColorGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_LengthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_LengthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "GrainDirection",
+          "value": "None"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartId",
+          "value": "part_SlopedCeilingShelftopHor"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ProgramGroupId",
+          "value": "Vertical"
+        },
+        {
+          "columnName": "in_ColorGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_LengthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_LengthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "GrainDirection",
+          "value": "Lengthwise"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartId",
+          "value": "part_SlopedCeilingShelftopHor"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ProgramGroupId",
+          "value": "Neutral"
+        },
+        {
+          "columnName": "in_ColorGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_LengthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_LengthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "GrainDirection",
+          "value": "Lengthwise"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartId",
+          "value": "part_SlopedCeilingShelftopHor"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ProgramGroupId",
+          "value": "Horizontal"
+        },
+        {
+          "columnName": "in_ColorGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_LengthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_LengthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "GrainDirection",
+          "value": "Crosswise"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartId",
+          "value": "part_SlopedCeilingShelftopAngle"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ProgramGroupId",
+          "value": "Neutral"
+        },
+        {
+          "columnName": "in_ColorGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_LengthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_LengthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "GrainDirection",
+          "value": "None"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartId",
+          "value": "part_SlopedCeilingShelftopAngle"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ProgramGroupId",
+          "value": "Neutral"
+        },
+        {
+          "columnName": "in_ColorGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_LengthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_LengthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "GrainDirection",
+          "value": "Lengthwise"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartId",
+          "value": "part_Railverttopfront"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ProgramGroupId",
+          "value": "Horizontal"
+        },
+        {
+          "columnName": "in_ColorGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_LengthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_LengthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "GrainDirection",
+          "value": "Crosswise"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartId",
+          "value": "part_ShelfadjWood"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ProgramGroupId",
+          "value": "Horizontal"
+        },
+        {
+          "columnName": "in_ColorGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_LengthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_LengthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "GrainDirection",
+          "value": "Crosswise"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartId",
+          "value": "part_ShelfadjWood"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ProgramGroupId",
+          "value": "Neutral"
+        },
+        {
+          "columnName": "in_ColorGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_LengthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_LengthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "GrainDirection",
+          "value": "None"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartId",
+          "value": "part_Shelfbtm"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ProgramGroupId",
+          "value": "Neutral"
+        },
+        {
+          "columnName": "in_ColorGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_LengthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_LengthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "GrainDirection",
+          "value": "None"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartId",
+          "value": "part_Railhortopback"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ProgramGroupId",
+          "value": "Neutral"
+        },
+        {
+          "columnName": "in_ColorGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_LengthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_LengthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "GrainDirection",
+          "value": "None"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartId",
+          "value": "part_Backwall"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ProgramGroupId",
+          "value": "Vertical"
+        },
+        {
+          "columnName": "in_ColorGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_LengthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_LengthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "GrainDirection",
+          "value": "Lengthwise"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartId",
+          "value": "part_Backwall"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ProgramGroupId",
+          "value": "Horizontal"
+        },
+        {
+          "columnName": "in_ColorGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_LengthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_LengthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "GrainDirection",
+          "value": "Crosswise"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartId",
+          "value": "part_ShelfadjWood"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ProgramGroupId",
+          "value": "Neutral"
+        },
+        {
+          "columnName": "in_ColorGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_LengthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_LengthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "GrainDirection",
+          "value": "Lengthwise"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartId",
+          "value": "part_ShelfadjWood"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ProgramGroupId",
+          "value": "Vertical"
+        },
+        {
+          "columnName": "in_ColorGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_LengthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_LengthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "GrainDirection",
+          "value": "Lengthwise"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartId",
+          "value": "part_Toekick"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ProgramGroupId",
+          "value": "Vertical"
+        },
+        {
+          "columnName": "in_ColorGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_LengthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_LengthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "GrainDirection",
+          "value": "Crosswise"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartId",
+          "value": "part_Toekick"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ProgramGroupId",
+          "value": "Horizontal"
+        },
+        {
+          "columnName": "in_ColorGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_LengthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_LengthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "GrainDirection",
+          "value": "Lengthwise"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartId",
+          "value": "part_CleatVert"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ProgramGroupId",
+          "value": "Neutral"
+        },
+        {
+          "columnName": "in_ColorGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_LengthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_LengthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "GrainDirection",
+          "value": "None"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartId",
+          "value": "part_CleatVert"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ProgramGroupId",
+          "value": "Neutral"
+        },
+        {
+          "columnName": "in_ColorGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_LengthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_LengthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "GrainDirection",
+          "value": "Lengthwise"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartId",
+          "value": "part_CleatVert"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ProgramGroupId",
+          "value": "Vertical"
+        },
+        {
+          "columnName": "in_ColorGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_LengthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_LengthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "GrainDirection",
+          "value": "Lengthwise"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartId",
+          "value": "part_CleatVert"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ProgramGroupId",
+          "value": "Horizontal"
+        },
+        {
+          "columnName": "in_ColorGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_LengthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_LengthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "GrainDirection",
+          "value": "Crosswise"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartId",
+          "value": "part_Countertop"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ProgramGroupId",
+          "value": "Neutral"
+        },
+        {
+          "columnName": "in_ColorGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_LengthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_LengthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "GrainDirection",
+          "value": "None"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartId",
+          "value": "part_Countertop"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ProgramGroupId",
+          "value": "Neutral"
+        },
+        {
+          "columnName": "in_ColorGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_LengthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_LengthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "GrainDirection",
+          "value": "Lengthwise"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartId",
+          "value": "part_Countertop"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ProgramGroupId",
+          "value": "Vertical"
+        },
+        {
+          "columnName": "in_ColorGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_LengthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_LengthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "GrainDirection",
+          "value": "Crosswise"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartId",
+          "value": "part_Countertop"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ProgramGroupId",
+          "value": "Horizontal"
+        },
+        {
+          "columnName": "in_ColorGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_LengthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_LengthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "GrainDirection",
+          "value": "Lengthwise"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartId",
+          "value": "part_Heatshelf"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ProgramGroupId",
+          "value": "Neutral"
+        },
+        {
+          "columnName": "in_ColorGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_LengthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_LengthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "GrainDirection",
+          "value": "None"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartId",
+          "value": "part_Heatshelf"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ProgramGroupId",
+          "value": "Vertical"
+        },
+        {
+          "columnName": "in_ColorGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_LengthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_LengthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "GrainDirection",
+          "value": "Lengthwise"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartId",
+          "value": "part_Heatshelf"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ProgramGroupId",
+          "value": "Horizontal"
+        },
+        {
+          "columnName": "in_ColorGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_LengthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_LengthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "GrainDirection",
+          "value": "Crosswise"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartId",
+          "value": "part_Paneltop"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ProgramGroupId",
+          "value": "Horizontal"
+        },
+        {
+          "columnName": "in_ColorGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_LengthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_LengthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "GrainDirection",
+          "value": "Lengthwise"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartId",
+          "value": "part_Paneltop"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ProgramGroupId",
+          "value": "Neutral"
+        },
+        {
+          "columnName": "in_ColorGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_LengthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_LengthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "GrainDirection",
+          "value": "Lengthwise"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartId",
+          "value": "part_Paneltop"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ProgramGroupId",
+          "value": "Neutral"
+        },
+        {
+          "columnName": "in_ColorGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_LengthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_LengthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "GrainDirection",
+          "value": "None"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartId",
+          "value": "part_Paneltop"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ProgramGroupId",
+          "value": "Vertical"
+        },
+        {
+          "columnName": "in_ColorGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_LengthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_LengthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "GrainDirection",
+          "value": "Crosswise"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartId",
+          "value": "part_ShelfadjGlass"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ProgramGroupId",
+          "value": "Horizontal"
+        },
+        {
+          "columnName": "in_ColorGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_LengthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_LengthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "GrainDirection",
+          "value": "Crosswise"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartId",
+          "value": "part_ShelfadjGlass"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ProgramGroupId",
+          "value": "Neutral"
+        },
+        {
+          "columnName": "in_ColorGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_LengthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_LengthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "GrainDirection",
+          "value": "Lengthwise"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartId",
+          "value": "part_ShelfadjGlass"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ProgramGroupId",
+          "value": "Neutral"
+        },
+        {
+          "columnName": "in_ColorGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_LengthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_LengthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "GrainDirection",
+          "value": "None"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartId",
+          "value": "part_ShelfadjGlass"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ProgramGroupId",
+          "value": "Vertical"
+        },
+        {
+          "columnName": "in_ColorGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_LengthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_LengthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "GrainDirection",
+          "value": "Lengthwise"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartId",
+          "value": "part_Shelffixed"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ProgramGroupId",
+          "value": "Horizontal"
+        },
+        {
+          "columnName": "in_ColorGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_LengthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_LengthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "GrainDirection",
+          "value": "Crosswise"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartId",
+          "value": "part_Shelffixed"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ProgramGroupId",
+          "value": "Neutral"
+        },
+        {
+          "columnName": "in_ColorGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_LengthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_LengthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "GrainDirection",
+          "value": "Lengthwise"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartId",
+          "value": "part_Shelffixed"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ProgramGroupId",
+          "value": "Neutral"
+        },
+        {
+          "columnName": "in_ColorGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_LengthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_LengthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "GrainDirection",
+          "value": "None"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartId",
+          "value": "part_Shelffixed"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ProgramGroupId",
+          "value": "Vertical"
+        },
+        {
+          "columnName": "in_ColorGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_LengthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_LengthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "GrainDirection",
+          "value": "Lengthwise"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartId",
+          "value": "part_DrawerShelfbtm"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ProgramGroupId",
+          "value": "Horizontal"
+        },
+        {
+          "columnName": "in_ColorGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_LengthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_LengthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "GrainDirection",
+          "value": "Crosswise"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartId",
+          "value": "part_DrawerShelfbtm"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ProgramGroupId",
+          "value": "Neutral"
+        },
+        {
+          "columnName": "in_ColorGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_LengthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_LengthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "GrainDirection",
+          "value": "Lengthwise"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartId",
+          "value": "part_DrawerShelfbtm"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ProgramGroupId",
+          "value": "Neutral"
+        },
+        {
+          "columnName": "in_ColorGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_LengthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_LengthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "GrainDirection",
+          "value": "None"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartId",
+          "value": "part_DrawerShelfbtm"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ProgramGroupId",
+          "value": "Vertical"
+        },
+        {
+          "columnName": "in_ColorGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_LengthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_LengthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "GrainDirection",
+          "value": "Lengthwise"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartId",
+          "value": "part_DrawerBackwallWood"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ProgramGroupId",
+          "value": "Horizontal"
+        },
+        {
+          "columnName": "in_ColorGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_LengthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_LengthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "GrainDirection",
+          "value": "Lengthwise"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartId",
+          "value": "part_DrawerBackwallWood"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ProgramGroupId",
+          "value": "Neutral"
+        },
+        {
+          "columnName": "in_ColorGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_LengthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_LengthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "GrainDirection",
+          "value": "Crosswise"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartId",
+          "value": "part_DrawerBackwallWood"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ProgramGroupId",
+          "value": "Neutral"
+        },
+        {
+          "columnName": "in_ColorGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_LengthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_LengthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "GrainDirection",
+          "value": "None"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartId",
+          "value": "part_DrawerBackwallWood"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ProgramGroupId",
+          "value": "Vertical"
+        },
+        {
+          "columnName": "in_ColorGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_LengthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_LengthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "GrainDirection",
+          "value": "Crosswise"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartId",
+          "value": "part_DrawerShelfbtm"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ProgramGroupId",
+          "value": "Horizontal"
+        },
+        {
+          "columnName": "in_ColorGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_LengthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_LengthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "GrainDirection",
+          "value": "None"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartId",
+          "value": "part_DrawerShelfbtm"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ProgramGroupId",
+          "value": "Vertical"
+        },
+        {
+          "columnName": "in_ColorGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_LengthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_LengthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "GrainDirection",
+          "value": "None"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartId",
+          "value": "part_DrawerBackwallWood"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ProgramGroupId",
+          "value": "Horizontal"
+        },
+        {
+          "columnName": "in_ColorGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_LengthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_LengthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "GrainDirection",
+          "value": "None"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartId",
+          "value": "part_DrawerBackwallWood"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ProgramGroupId",
+          "value": "Vertical"
+        },
+        {
+          "columnName": "in_ColorGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_LengthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_LengthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "GrainDirection",
+          "value": "None"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartId",
+          "value": "part_Panelblind"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ProgramGroupId",
+          "value": "Neutral"
+        },
+        {
+          "columnName": "in_ColorGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_LengthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_LengthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "GrainDirection",
+          "value": "None"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartId",
+          "value": "part_Panelblind"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ProgramGroupId",
+          "value": "Neutral"
+        },
+        {
+          "columnName": "in_ColorGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_LengthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_LengthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "GrainDirection",
+          "value": "Lengthwise"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartId",
+          "value": "part_Panelblind"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ProgramGroupId",
+          "value": "Vertical"
+        },
+        {
+          "columnName": "in_ColorGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_LengthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_LengthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "GrainDirection",
+          "value": "Lengthwise"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartId",
+          "value": "part_Panelblind"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ProgramGroupId",
+          "value": "Horizontal"
+        },
+        {
+          "columnName": "in_ColorGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_LengthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_LengthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "GrainDirection",
+          "value": "Crosswise"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartId",
+          "value": "part_FinishPanel"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ProgramGroupId",
+          "value": "Neutral"
+        },
+        {
+          "columnName": "in_ColorGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_LengthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_LengthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "GrainDirection",
+          "value": "None"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartId",
+          "value": "part_FinishPanel"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ProgramGroupId",
+          "value": "Neutral"
+        },
+        {
+          "columnName": "in_ColorGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_LengthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_LengthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "GrainDirection",
+          "value": "Lengthwise"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartId",
+          "value": "part_FinishPanel"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ProgramGroupId",
+          "value": "Vertical"
+        },
+        {
+          "columnName": "in_ColorGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_LengthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_LengthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "GrainDirection",
+          "value": "Lengthwise"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartId",
+          "value": "part_FinishPanel"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ProgramGroupId",
+          "value": "Horizontal"
+        },
+        {
+          "columnName": "in_ColorGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_LengthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_LengthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "GrainDirection",
+          "value": "Crosswise"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartId",
+          "value": "part_Baseboard"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ProgramGroupId",
+          "value": "Horizontal"
+        },
+        {
+          "columnName": "in_ColorGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_LengthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_LengthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "GrainDirection",
+          "value": "Lengthwise"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartId",
+          "value": "part_Baseboard"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ProgramGroupId",
+          "value": "Neutral"
+        },
+        {
+          "columnName": "in_ColorGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_LengthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_LengthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "GrainDirection",
+          "value": "Lengthwise"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartId",
+          "value": "part_Baseboard"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ProgramGroupId",
+          "value": "Neutral"
+        },
+        {
+          "columnName": "in_ColorGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_LengthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_LengthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "GrainDirection",
+          "value": "None"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartId",
+          "value": "part_Baseboard"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ProgramGroupId",
+          "value": "Vertical"
+        },
+        {
+          "columnName": "in_ColorGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_LengthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_LengthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "GrainDirection",
+          "value": "Crosswise"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartId",
+          "value": "part_HeatshelfFront"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ProgramGroupId",
+          "value": "Neutral"
+        },
+        {
+          "columnName": "in_ColorGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_LengthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_LengthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "GrainDirection",
+          "value": "Lengthwise"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartId",
+          "value": "part_HeatshelfFront"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ProgramGroupId",
+          "value": "Neutral"
+        },
+        {
+          "columnName": "in_ColorGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_LengthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_LengthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "GrainDirection",
+          "value": "None"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartId",
+          "value": "part_HeatshelfFront"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ProgramGroupId",
+          "value": "Vertical"
+        },
+        {
+          "columnName": "in_ColorGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_LengthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_LengthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "GrainDirection",
+          "value": "Lengthwise"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartId",
+          "value": "part_HeatshelfFront"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ProgramGroupId",
+          "value": "Horizontal"
+        },
+        {
+          "columnName": "in_ColorGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_LengthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_LengthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "GrainDirection",
+          "value": "Crosswise"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartId",
+          "value": "part_ClothingOrganizerBoard"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ProgramGroupId",
+          "value": "Neutral"
+        },
+        {
+          "columnName": "in_ColorGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_LengthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_LengthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "GrainDirection",
+          "value": "Lengthwise"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartId",
+          "value": "part_ClothingOrganizerBoard"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ProgramGroupId",
+          "value": "Neutral"
+        },
+        {
+          "columnName": "in_ColorGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_LengthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_LengthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "GrainDirection",
+          "value": "None"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartId",
+          "value": "part_ClothingOrganizerBoard"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ProgramGroupId",
+          "value": "Vertical"
+        },
+        {
+          "columnName": "in_ColorGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_LengthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_LengthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "GrainDirection",
+          "value": "Lengthwise"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartId",
+          "value": "part_ClothingOrganizerBoard"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ProgramGroupId",
+          "value": "Horizontal"
+        },
+        {
+          "columnName": "in_ColorGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_LengthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_LengthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "GrainDirection",
+          "value": "Crosswise"
+        }
+      ]
+    }
+  ]
+}

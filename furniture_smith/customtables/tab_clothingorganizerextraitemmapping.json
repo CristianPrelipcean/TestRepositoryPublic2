@@ -1,0 +1,106 @@
+{
+  "tableName": "tab_ClothingOrganizerExtraItemMapping",
+  "description": "",
+  "restrictionTypeId": "Public",
+  "groupName": "ClothingOrganizer",
+  "columns": [
+    {
+      "name": "_id",
+      "type": "Integer",
+      "allowNull": false
+    },
+    {
+      "name": "in_ClothesOrganizerType",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_ClothesOrganizerDesign",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_ClothesOrganizerExtraItemColor",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_CarcaseProgram",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_HardwareColor",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "PartWidth",
+      "type": "Text",
+      "allowNull": true,
+      "functionDefinition": "(freeSpaceWidth:number):number"
+    },
+    {
+      "name": "PartDepth",
+      "type": "Text",
+      "allowNull": true,
+      "functionDefinition": "(freeSpaceDepth:number):number"
+    },
+    {
+      "name": "PartThickness",
+      "type": "Text",
+      "allowNull": true,
+      "functionDefinition": "():number"
+    },
+    {
+      "name": "PartInsertionPointX",
+      "type": "Text",
+      "allowNull": true,
+      "functionDefinition": "():number"
+    }
+  ],
+  "rows": [
+    {
+      "data": [
+        {
+          "columnName": "in_ClothesOrganizerType",
+          "value": "LiftRailShelf"
+        },
+        {
+          "columnName": "in_ClothesOrganizerDesign",
+          "value": "CONEROTOP"
+        },
+        {
+          "columnName": "in_ClothesOrganizerExtraItemColor",
+          "value": "LikeCarcaseColor"
+        },
+        {
+          "columnName": "in_CarcaseProgram",
+          "value": "All"
+        },
+        {
+          "columnName": "in_HardwareColor",
+          "value": "All"
+        },
+        {
+          "columnName": "PartWidth",
+          "value": "freeSpaceWidth - 100"
+        },
+        {
+          "columnName": "PartDepth",
+          "value": "freeSpaceDepth - 50"
+        },
+        {
+          "columnName": "PartThickness",
+          "value": "19"
+        },
+        {
+          "columnName": "PartInsertionPointX",
+          "value": "0"
+        }
+      ]
+    }
+  ],
+  "dataSource": "Default",
+  "changedAt": "2025-12-04T10:49:00.3624569+00:00"
+}

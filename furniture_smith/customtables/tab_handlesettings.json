@@ -1,0 +1,2898 @@
+{
+  "tableName": "tab_HandleSettings",
+  "description": "Settings for handles",
+  "restrictionTypeId": "Public",
+  "groupName": "Handles",
+  "columns": [
+    {
+      "name": "_id",
+      "type": "Integer",
+      "allowNull": false
+    },
+    {
+      "name": "in_PartGroup",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_HandlePosType",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "ReferencePointX",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "ReferencePointY",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "DistanceX",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "DistanceY",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "HandleOrientation",
+      "type": "Text",
+      "allowNull": true
+    }
+  ],
+  "rows": [
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Door"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "01"
+        },
+        {
+          "columnName": "ReferencePointX",
+          "value": "Border"
+        },
+        {
+          "columnName": "ReferencePointY",
+          "value": "Border"
+        },
+        {
+          "columnName": "DistanceX",
+          "value": "30"
+        },
+        {
+          "columnName": "DistanceY",
+          "value": "30"
+        },
+        {
+          "columnName": "HandleOrientation",
+          "value": "HandleHorSide"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Door"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "02"
+        },
+        {
+          "columnName": "ReferencePointX",
+          "value": "Center"
+        },
+        {
+          "columnName": "ReferencePointY",
+          "value": "Border"
+        },
+        {
+          "columnName": "DistanceX",
+          "value": "0"
+        },
+        {
+          "columnName": "DistanceY",
+          "value": "30"
+        },
+        {
+          "columnName": "HandleOrientation",
+          "value": "HandleHorMiddle"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Door"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "03"
+        },
+        {
+          "columnName": "ReferencePointX",
+          "value": "Border"
+        },
+        {
+          "columnName": "ReferencePointY",
+          "value": "Border"
+        },
+        {
+          "columnName": "DistanceX",
+          "value": "30"
+        },
+        {
+          "columnName": "DistanceY",
+          "value": "30"
+        },
+        {
+          "columnName": "HandleOrientation",
+          "value": "HandleVertSide"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Door"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "04"
+        },
+        {
+          "columnName": "ReferencePointX",
+          "value": "Border"
+        },
+        {
+          "columnName": "ReferencePointY",
+          "value": "Border"
+        },
+        {
+          "columnName": "DistanceX",
+          "value": "30"
+        },
+        {
+          "columnName": "DistanceY",
+          "value": "30"
+        },
+        {
+          "columnName": "HandleOrientation",
+          "value": "HandleVertSideInverse"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Door"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "05"
+        },
+        {
+          "columnName": "ReferencePointX",
+          "value": "Center"
+        },
+        {
+          "columnName": "ReferencePointY",
+          "value": "Center"
+        },
+        {
+          "columnName": "DistanceX",
+          "value": "0"
+        },
+        {
+          "columnName": "DistanceY",
+          "value": "30"
+        },
+        {
+          "columnName": "HandleOrientation",
+          "value": "HandleVertMiddle"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Door"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "06"
+        },
+        {
+          "columnName": "ReferencePointX",
+          "value": "Center"
+        },
+        {
+          "columnName": "ReferencePointY",
+          "value": "Center"
+        },
+        {
+          "columnName": "DistanceX",
+          "value": "0"
+        },
+        {
+          "columnName": "DistanceY",
+          "value": "30"
+        },
+        {
+          "columnName": "HandleOrientation",
+          "value": "HandleVertMiddleInverse"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Door"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "07"
+        },
+        {
+          "columnName": "ReferencePointX",
+          "value": "Center"
+        },
+        {
+          "columnName": "ReferencePointY",
+          "value": "Border"
+        },
+        {
+          "columnName": "DistanceX",
+          "value": "0"
+        },
+        {
+          "columnName": "DistanceY",
+          "value": "30"
+        },
+        {
+          "columnName": "HandleOrientation",
+          "value": "HandleHorMiddleInverse"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Door"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "08"
+        },
+        {
+          "columnName": "ReferencePointX",
+          "value": "Border"
+        },
+        {
+          "columnName": "ReferencePointY",
+          "value": "Border"
+        },
+        {
+          "columnName": "DistanceX",
+          "value": "30"
+        },
+        {
+          "columnName": "DistanceY",
+          "value": "30"
+        },
+        {
+          "columnName": "HandleOrientation",
+          "value": "HandleHorSideInverse"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Door"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "11"
+        },
+        {
+          "columnName": "ReferencePointX",
+          "value": "Border"
+        },
+        {
+          "columnName": "ReferencePointY",
+          "value": "Border"
+        },
+        {
+          "columnName": "DistanceX",
+          "value": "30"
+        },
+        {
+          "columnName": "DistanceY",
+          "value": "37.5"
+        },
+        {
+          "columnName": "HandleOrientation",
+          "value": "HandleHorSide"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Door"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "12"
+        },
+        {
+          "columnName": "ReferencePointX",
+          "value": "Border"
+        },
+        {
+          "columnName": "ReferencePointY",
+          "value": "Border"
+        },
+        {
+          "columnName": "DistanceX",
+          "value": "30"
+        },
+        {
+          "columnName": "DistanceY",
+          "value": "37.5"
+        },
+        {
+          "columnName": "HandleOrientation",
+          "value": "HandleHorMiddle"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Door"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "13"
+        },
+        {
+          "columnName": "ReferencePointX",
+          "value": "Center"
+        },
+        {
+          "columnName": "ReferencePointY",
+          "value": "Center"
+        },
+        {
+          "columnName": "DistanceX",
+          "value": "37.5"
+        },
+        {
+          "columnName": "DistanceY",
+          "value": "100"
+        },
+        {
+          "columnName": "HandleOrientation",
+          "value": "HandleVertSide"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Door"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "14"
+        },
+        {
+          "columnName": "ReferencePointX",
+          "value": "Center"
+        },
+        {
+          "columnName": "ReferencePointY",
+          "value": "Center"
+        },
+        {
+          "columnName": "DistanceX",
+          "value": "37.5"
+        },
+        {
+          "columnName": "DistanceY",
+          "value": "100"
+        },
+        {
+          "columnName": "HandleOrientation",
+          "value": "HandleVertSideInverse"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Door"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "50"
+        },
+        {
+          "columnName": "ReferencePointX",
+          "value": "Border"
+        },
+        {
+          "columnName": "ReferencePointY",
+          "value": "Center"
+        },
+        {
+          "columnName": "DistanceX",
+          "value": "0"
+        },
+        {
+          "columnName": "DistanceY",
+          "value": "0"
+        },
+        {
+          "columnName": "HandleOrientation",
+          "value": "StripeTop"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Door"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "51"
+        },
+        {
+          "columnName": "ReferencePointX",
+          "value": "Border"
+        },
+        {
+          "columnName": "ReferencePointY",
+          "value": "Center"
+        },
+        {
+          "columnName": "DistanceX",
+          "value": "0"
+        },
+        {
+          "columnName": "DistanceY",
+          "value": "0"
+        },
+        {
+          "columnName": "HandleOrientation",
+          "value": "StripeBtm"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Door"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "52"
+        },
+        {
+          "columnName": "ReferencePointX",
+          "value": "Border"
+        },
+        {
+          "columnName": "ReferencePointY",
+          "value": "Center"
+        },
+        {
+          "columnName": "DistanceX",
+          "value": "0"
+        },
+        {
+          "columnName": "DistanceY",
+          "value": "0"
+        },
+        {
+          "columnName": "HandleOrientation",
+          "value": "StripeBtmTop"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Door"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "53"
+        },
+        {
+          "columnName": "ReferencePointX",
+          "value": "Border"
+        },
+        {
+          "columnName": "ReferencePointY",
+          "value": "Center"
+        },
+        {
+          "columnName": "DistanceX",
+          "value": "0"
+        },
+        {
+          "columnName": "DistanceY",
+          "value": "0"
+        },
+        {
+          "columnName": "HandleOrientation",
+          "value": "StripeLeft"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Door"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "54"
+        },
+        {
+          "columnName": "ReferencePointX",
+          "value": "Border"
+        },
+        {
+          "columnName": "ReferencePointY",
+          "value": "Center"
+        },
+        {
+          "columnName": "DistanceX",
+          "value": "0"
+        },
+        {
+          "columnName": "DistanceY",
+          "value": "0"
+        },
+        {
+          "columnName": "HandleOrientation",
+          "value": "StripeRight"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Door"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "55"
+        },
+        {
+          "columnName": "ReferencePointX",
+          "value": "Border"
+        },
+        {
+          "columnName": "ReferencePointY",
+          "value": "Center"
+        },
+        {
+          "columnName": "DistanceX",
+          "value": "0"
+        },
+        {
+          "columnName": "DistanceY",
+          "value": "0"
+        },
+        {
+          "columnName": "HandleOrientation",
+          "value": "StripeLeftRight"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Drawer"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "01"
+        },
+        {
+          "columnName": "ReferencePointX",
+          "value": "Center"
+        },
+        {
+          "columnName": "ReferencePointY",
+          "value": "Border"
+        },
+        {
+          "columnName": "DistanceX",
+          "value": "0"
+        },
+        {
+          "columnName": "DistanceY",
+          "value": "30"
+        },
+        {
+          "columnName": "HandleOrientation",
+          "value": "HandleHorMiddle"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Drawer"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "02"
+        },
+        {
+          "columnName": "ReferencePointX",
+          "value": "Center"
+        },
+        {
+          "columnName": "ReferencePointY",
+          "value": "Border"
+        },
+        {
+          "columnName": "DistanceX",
+          "value": "0"
+        },
+        {
+          "columnName": "DistanceY",
+          "value": "30"
+        },
+        {
+          "columnName": "HandleOrientation",
+          "value": "HandleHorMiddle"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Drawer"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "03"
+        },
+        {
+          "columnName": "ReferencePointX",
+          "value": "Center"
+        },
+        {
+          "columnName": "ReferencePointY",
+          "value": "Border"
+        },
+        {
+          "columnName": "DistanceX",
+          "value": "0"
+        },
+        {
+          "columnName": "DistanceY",
+          "value": "30"
+        },
+        {
+          "columnName": "HandleOrientation",
+          "value": "HandleHorMiddle"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Drawer"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "04"
+        },
+        {
+          "columnName": "ReferencePointX",
+          "value": "Center"
+        },
+        {
+          "columnName": "ReferencePointY",
+          "value": "Border"
+        },
+        {
+          "columnName": "DistanceX",
+          "value": "0"
+        },
+        {
+          "columnName": "DistanceY",
+          "value": "30"
+        },
+        {
+          "columnName": "HandleOrientation",
+          "value": "HandleHorMiddleInverse"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Drawer"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "05"
+        },
+        {
+          "columnName": "ReferencePointX",
+          "value": "Center"
+        },
+        {
+          "columnName": "ReferencePointY",
+          "value": "Border"
+        },
+        {
+          "columnName": "DistanceX",
+          "value": "0"
+        },
+        {
+          "columnName": "DistanceY",
+          "value": "30"
+        },
+        {
+          "columnName": "HandleOrientation",
+          "value": "HandleHorMiddle"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Drawer"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "06"
+        },
+        {
+          "columnName": "ReferencePointX",
+          "value": "Center"
+        },
+        {
+          "columnName": "ReferencePointY",
+          "value": "Border"
+        },
+        {
+          "columnName": "DistanceX",
+          "value": "0"
+        },
+        {
+          "columnName": "DistanceY",
+          "value": "30"
+        },
+        {
+          "columnName": "HandleOrientation",
+          "value": "HandleHorMiddleInverse"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Drawer"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "07"
+        },
+        {
+          "columnName": "ReferencePointX",
+          "value": "Center"
+        },
+        {
+          "columnName": "ReferencePointY",
+          "value": "Border"
+        },
+        {
+          "columnName": "DistanceX",
+          "value": "0"
+        },
+        {
+          "columnName": "DistanceY",
+          "value": "30"
+        },
+        {
+          "columnName": "HandleOrientation",
+          "value": "HandleHorMiddleInverse"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Drawer"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "08"
+        },
+        {
+          "columnName": "ReferencePointX",
+          "value": "Center"
+        },
+        {
+          "columnName": "ReferencePointY",
+          "value": "Border"
+        },
+        {
+          "columnName": "DistanceX",
+          "value": "0"
+        },
+        {
+          "columnName": "DistanceY",
+          "value": "30"
+        },
+        {
+          "columnName": "HandleOrientation",
+          "value": "HandleHorMiddleInverse"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Drawer"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "11"
+        },
+        {
+          "columnName": "ReferencePointX",
+          "value": "Center"
+        },
+        {
+          "columnName": "ReferencePointY",
+          "value": "Border"
+        },
+        {
+          "columnName": "DistanceX",
+          "value": "0"
+        },
+        {
+          "columnName": "DistanceY",
+          "value": "37.5"
+        },
+        {
+          "columnName": "HandleOrientation",
+          "value": "HandleHorMiddle"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Drawer"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "12"
+        },
+        {
+          "columnName": "ReferencePointX",
+          "value": "Center"
+        },
+        {
+          "columnName": "ReferencePointY",
+          "value": "Border"
+        },
+        {
+          "columnName": "DistanceX",
+          "value": "0"
+        },
+        {
+          "columnName": "DistanceY",
+          "value": "37.5"
+        },
+        {
+          "columnName": "HandleOrientation",
+          "value": "HandleHorMiddle"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Drawer"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "13"
+        },
+        {
+          "columnName": "ReferencePointX",
+          "value": "Center"
+        },
+        {
+          "columnName": "ReferencePointY",
+          "value": "Center"
+        },
+        {
+          "columnName": "DistanceX",
+          "value": "0"
+        },
+        {
+          "columnName": "DistanceY",
+          "value": "37.5"
+        },
+        {
+          "columnName": "HandleOrientation",
+          "value": "HandleHorMiddle"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Drawer"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "14"
+        },
+        {
+          "columnName": "ReferencePointX",
+          "value": "Center"
+        },
+        {
+          "columnName": "ReferencePointY",
+          "value": "Center"
+        },
+        {
+          "columnName": "DistanceX",
+          "value": "0"
+        },
+        {
+          "columnName": "DistanceY",
+          "value": "37.5"
+        },
+        {
+          "columnName": "HandleOrientation",
+          "value": "HandleHorMiddleInverse"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Drawer"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "50"
+        },
+        {
+          "columnName": "ReferencePointX",
+          "value": "Border"
+        },
+        {
+          "columnName": "ReferencePointY",
+          "value": "Center"
+        },
+        {
+          "columnName": "DistanceX",
+          "value": "0"
+        },
+        {
+          "columnName": "DistanceY",
+          "value": "0"
+        },
+        {
+          "columnName": "HandleOrientation",
+          "value": "StripeTop"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Drawer"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "51"
+        },
+        {
+          "columnName": "ReferencePointX",
+          "value": "Border"
+        },
+        {
+          "columnName": "ReferencePointY",
+          "value": "Center"
+        },
+        {
+          "columnName": "DistanceX",
+          "value": "0"
+        },
+        {
+          "columnName": "DistanceY",
+          "value": "0"
+        },
+        {
+          "columnName": "HandleOrientation",
+          "value": "StripeBtm"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Drawer"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "52"
+        },
+        {
+          "columnName": "ReferencePointX",
+          "value": "Border"
+        },
+        {
+          "columnName": "ReferencePointY",
+          "value": "Center"
+        },
+        {
+          "columnName": "DistanceX",
+          "value": "0"
+        },
+        {
+          "columnName": "DistanceY",
+          "value": "0"
+        },
+        {
+          "columnName": "HandleOrientation",
+          "value": "StripeBtmTop"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Drawer"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "53"
+        },
+        {
+          "columnName": "ReferencePointX",
+          "value": "Border"
+        },
+        {
+          "columnName": "ReferencePointY",
+          "value": "Center"
+        },
+        {
+          "columnName": "DistanceX",
+          "value": "0"
+        },
+        {
+          "columnName": "DistanceY",
+          "value": "0"
+        },
+        {
+          "columnName": "HandleOrientation",
+          "value": "StripeLeft"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Drawer"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "54"
+        },
+        {
+          "columnName": "ReferencePointX",
+          "value": "Border"
+        },
+        {
+          "columnName": "ReferencePointY",
+          "value": "Center"
+        },
+        {
+          "columnName": "DistanceX",
+          "value": "0"
+        },
+        {
+          "columnName": "DistanceY",
+          "value": "0"
+        },
+        {
+          "columnName": "HandleOrientation",
+          "value": "StripeRight"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Drawer"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "55"
+        },
+        {
+          "columnName": "ReferencePointX",
+          "value": "Border"
+        },
+        {
+          "columnName": "ReferencePointY",
+          "value": "Center"
+        },
+        {
+          "columnName": "DistanceX",
+          "value": "0"
+        },
+        {
+          "columnName": "DistanceY",
+          "value": "0"
+        },
+        {
+          "columnName": "HandleOrientation",
+          "value": "StripeLeftRight"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Fliplift"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "01"
+        },
+        {
+          "columnName": "ReferencePointX",
+          "value": "Center"
+        },
+        {
+          "columnName": "ReferencePointY",
+          "value": "Border"
+        },
+        {
+          "columnName": "DistanceX",
+          "value": "0"
+        },
+        {
+          "columnName": "DistanceY",
+          "value": "30"
+        },
+        {
+          "columnName": "HandleOrientation",
+          "value": "HandleHorMiddle"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Fliplift"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "02"
+        },
+        {
+          "columnName": "ReferencePointX",
+          "value": "Center"
+        },
+        {
+          "columnName": "ReferencePointY",
+          "value": "Border"
+        },
+        {
+          "columnName": "DistanceX",
+          "value": "0"
+        },
+        {
+          "columnName": "DistanceY",
+          "value": "30"
+        },
+        {
+          "columnName": "HandleOrientation",
+          "value": "HandleHorMiddle"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Fliplift"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "03"
+        },
+        {
+          "columnName": "ReferencePointX",
+          "value": "Center"
+        },
+        {
+          "columnName": "ReferencePointY",
+          "value": "Border"
+        },
+        {
+          "columnName": "DistanceX",
+          "value": "0"
+        },
+        {
+          "columnName": "DistanceY",
+          "value": "30"
+        },
+        {
+          "columnName": "HandleOrientation",
+          "value": "HandleHorMiddle"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Fliplift"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "04"
+        },
+        {
+          "columnName": "ReferencePointX",
+          "value": "Center"
+        },
+        {
+          "columnName": "ReferencePointY",
+          "value": "Border"
+        },
+        {
+          "columnName": "DistanceX",
+          "value": "0"
+        },
+        {
+          "columnName": "DistanceY",
+          "value": "30"
+        },
+        {
+          "columnName": "HandleOrientation",
+          "value": "HandleHorMiddleInverse"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Fliplift"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "05"
+        },
+        {
+          "columnName": "ReferencePointX",
+          "value": "Center"
+        },
+        {
+          "columnName": "ReferencePointY",
+          "value": "Border"
+        },
+        {
+          "columnName": "DistanceX",
+          "value": "0"
+        },
+        {
+          "columnName": "DistanceY",
+          "value": "30"
+        },
+        {
+          "columnName": "HandleOrientation",
+          "value": "HandleHorMiddleInverse"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Fliplift"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "06"
+        },
+        {
+          "columnName": "ReferencePointX",
+          "value": "Center"
+        },
+        {
+          "columnName": "ReferencePointY",
+          "value": "Border"
+        },
+        {
+          "columnName": "DistanceX",
+          "value": "0"
+        },
+        {
+          "columnName": "DistanceY",
+          "value": "30"
+        },
+        {
+          "columnName": "HandleOrientation",
+          "value": "HandleHorMiddleInverse"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Fliplift"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "07"
+        },
+        {
+          "columnName": "ReferencePointX",
+          "value": "Center"
+        },
+        {
+          "columnName": "ReferencePointY",
+          "value": "Border"
+        },
+        {
+          "columnName": "DistanceX",
+          "value": "0"
+        },
+        {
+          "columnName": "DistanceY",
+          "value": "30"
+        },
+        {
+          "columnName": "HandleOrientation",
+          "value": "HandleHorMiddleInverse"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Fliplift"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "11"
+        },
+        {
+          "columnName": "ReferencePointX",
+          "value": "Center"
+        },
+        {
+          "columnName": "ReferencePointY",
+          "value": "Border"
+        },
+        {
+          "columnName": "DistanceX",
+          "value": "0"
+        },
+        {
+          "columnName": "DistanceY",
+          "value": "37.5"
+        },
+        {
+          "columnName": "HandleOrientation",
+          "value": "HandleHorMiddle"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Fliplift"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "12"
+        },
+        {
+          "columnName": "ReferencePointX",
+          "value": "Center"
+        },
+        {
+          "columnName": "ReferencePointY",
+          "value": "Border"
+        },
+        {
+          "columnName": "DistanceX",
+          "value": "0"
+        },
+        {
+          "columnName": "DistanceY",
+          "value": "37.5"
+        },
+        {
+          "columnName": "HandleOrientation",
+          "value": "HandleHorMiddle"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Fliplift"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "13"
+        },
+        {
+          "columnName": "ReferencePointX",
+          "value": "Center"
+        },
+        {
+          "columnName": "ReferencePointY",
+          "value": "Center"
+        },
+        {
+          "columnName": "DistanceX",
+          "value": "0"
+        },
+        {
+          "columnName": "DistanceY",
+          "value": "37.5"
+        },
+        {
+          "columnName": "HandleOrientation",
+          "value": "HandleHorMiddle"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Fliplift"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "14"
+        },
+        {
+          "columnName": "ReferencePointX",
+          "value": "Center"
+        },
+        {
+          "columnName": "ReferencePointY",
+          "value": "Center"
+        },
+        {
+          "columnName": "DistanceX",
+          "value": "0"
+        },
+        {
+          "columnName": "DistanceY",
+          "value": "37.5"
+        },
+        {
+          "columnName": "HandleOrientation",
+          "value": "HandleHorMiddleInverse"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Fliplift"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "50"
+        },
+        {
+          "columnName": "ReferencePointX",
+          "value": "Border"
+        },
+        {
+          "columnName": "ReferencePointY",
+          "value": "Center"
+        },
+        {
+          "columnName": "DistanceX",
+          "value": "0"
+        },
+        {
+          "columnName": "DistanceY",
+          "value": "0"
+        },
+        {
+          "columnName": "HandleOrientation",
+          "value": "StripeTop"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Fliplift"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "51"
+        },
+        {
+          "columnName": "ReferencePointX",
+          "value": "Border"
+        },
+        {
+          "columnName": "ReferencePointY",
+          "value": "Center"
+        },
+        {
+          "columnName": "DistanceX",
+          "value": "0"
+        },
+        {
+          "columnName": "DistanceY",
+          "value": "0"
+        },
+        {
+          "columnName": "HandleOrientation",
+          "value": "StripeBtm"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Fliplift"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "52"
+        },
+        {
+          "columnName": "ReferencePointX",
+          "value": "Border"
+        },
+        {
+          "columnName": "ReferencePointY",
+          "value": "Center"
+        },
+        {
+          "columnName": "DistanceX",
+          "value": "0"
+        },
+        {
+          "columnName": "DistanceY",
+          "value": "0"
+        },
+        {
+          "columnName": "HandleOrientation",
+          "value": "StripeBtmTop"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Fliplift"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "53"
+        },
+        {
+          "columnName": "ReferencePointX",
+          "value": "Border"
+        },
+        {
+          "columnName": "ReferencePointY",
+          "value": "Center"
+        },
+        {
+          "columnName": "DistanceX",
+          "value": "0"
+        },
+        {
+          "columnName": "DistanceY",
+          "value": "0"
+        },
+        {
+          "columnName": "HandleOrientation",
+          "value": "StripeLeft"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Fliplift"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "54"
+        },
+        {
+          "columnName": "ReferencePointX",
+          "value": "Border"
+        },
+        {
+          "columnName": "ReferencePointY",
+          "value": "Center"
+        },
+        {
+          "columnName": "DistanceX",
+          "value": "0"
+        },
+        {
+          "columnName": "DistanceY",
+          "value": "0"
+        },
+        {
+          "columnName": "HandleOrientation",
+          "value": "StripeRight"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Fliplift"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "55"
+        },
+        {
+          "columnName": "ReferencePointX",
+          "value": "Border"
+        },
+        {
+          "columnName": "ReferencePointY",
+          "value": "Center"
+        },
+        {
+          "columnName": "DistanceX",
+          "value": "0"
+        },
+        {
+          "columnName": "DistanceY",
+          "value": "0"
+        },
+        {
+          "columnName": "HandleOrientation",
+          "value": "StripeLeftRight"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Dishwasher"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "01"
+        },
+        {
+          "columnName": "ReferencePointX",
+          "value": "Center"
+        },
+        {
+          "columnName": "ReferencePointY",
+          "value": "Border"
+        },
+        {
+          "columnName": "DistanceX",
+          "value": "0"
+        },
+        {
+          "columnName": "DistanceY",
+          "value": "30"
+        },
+        {
+          "columnName": "HandleOrientation",
+          "value": "HandleHorMiddle"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Dishwasher"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "02"
+        },
+        {
+          "columnName": "ReferencePointX",
+          "value": "Center"
+        },
+        {
+          "columnName": "ReferencePointY",
+          "value": "Border"
+        },
+        {
+          "columnName": "DistanceX",
+          "value": "0"
+        },
+        {
+          "columnName": "DistanceY",
+          "value": "30"
+        },
+        {
+          "columnName": "HandleOrientation",
+          "value": "HandleHorMiddle"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Dishwasher"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "03"
+        },
+        {
+          "columnName": "ReferencePointX",
+          "value": "Center"
+        },
+        {
+          "columnName": "ReferencePointY",
+          "value": "Border"
+        },
+        {
+          "columnName": "DistanceX",
+          "value": "0"
+        },
+        {
+          "columnName": "DistanceY",
+          "value": "30"
+        },
+        {
+          "columnName": "HandleOrientation",
+          "value": "HandleHorMiddle"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Dishwasher"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "04"
+        },
+        {
+          "columnName": "ReferencePointX",
+          "value": "Center"
+        },
+        {
+          "columnName": "ReferencePointY",
+          "value": "Border"
+        },
+        {
+          "columnName": "DistanceX",
+          "value": "0"
+        },
+        {
+          "columnName": "DistanceY",
+          "value": "30"
+        },
+        {
+          "columnName": "HandleOrientation",
+          "value": "HandleHorMiddleInverse"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Dishwasher"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "05"
+        },
+        {
+          "columnName": "ReferencePointX",
+          "value": "Center"
+        },
+        {
+          "columnName": "ReferencePointY",
+          "value": "Border"
+        },
+        {
+          "columnName": "DistanceX",
+          "value": "0"
+        },
+        {
+          "columnName": "DistanceY",
+          "value": "30"
+        },
+        {
+          "columnName": "HandleOrientation",
+          "value": "HandleHorMiddleInverse"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Dishwasher"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "06"
+        },
+        {
+          "columnName": "ReferencePointX",
+          "value": "Center"
+        },
+        {
+          "columnName": "ReferencePointY",
+          "value": "Border"
+        },
+        {
+          "columnName": "DistanceX",
+          "value": "0"
+        },
+        {
+          "columnName": "DistanceY",
+          "value": "30"
+        },
+        {
+          "columnName": "HandleOrientation",
+          "value": "HandleHorMiddleInverse"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Dishwasher"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "07"
+        },
+        {
+          "columnName": "ReferencePointX",
+          "value": "Center"
+        },
+        {
+          "columnName": "ReferencePointY",
+          "value": "Border"
+        },
+        {
+          "columnName": "DistanceX",
+          "value": "0"
+        },
+        {
+          "columnName": "DistanceY",
+          "value": "30"
+        },
+        {
+          "columnName": "HandleOrientation",
+          "value": "HandleHorMiddleInverse"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Dishwasher"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "08"
+        },
+        {
+          "columnName": "ReferencePointX",
+          "value": "Center"
+        },
+        {
+          "columnName": "ReferencePointY",
+          "value": "Border"
+        },
+        {
+          "columnName": "DistanceX",
+          "value": "0"
+        },
+        {
+          "columnName": "DistanceY",
+          "value": "30"
+        },
+        {
+          "columnName": "HandleOrientation",
+          "value": "HandleHorMiddleInverse"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Dishwasher"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "11"
+        },
+        {
+          "columnName": "ReferencePointX",
+          "value": "Center"
+        },
+        {
+          "columnName": "ReferencePointY",
+          "value": "Border"
+        },
+        {
+          "columnName": "DistanceX",
+          "value": "0"
+        },
+        {
+          "columnName": "DistanceY",
+          "value": "37.5"
+        },
+        {
+          "columnName": "HandleOrientation",
+          "value": "HandleHorMiddle"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Dishwasher"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "12"
+        },
+        {
+          "columnName": "ReferencePointX",
+          "value": "Center"
+        },
+        {
+          "columnName": "ReferencePointY",
+          "value": "Border"
+        },
+        {
+          "columnName": "DistanceX",
+          "value": "0"
+        },
+        {
+          "columnName": "DistanceY",
+          "value": "37.5"
+        },
+        {
+          "columnName": "HandleOrientation",
+          "value": "HandleHorMiddle"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Dishwasher"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "13"
+        },
+        {
+          "columnName": "ReferencePointX",
+          "value": "Center"
+        },
+        {
+          "columnName": "ReferencePointY",
+          "value": "Center"
+        },
+        {
+          "columnName": "DistanceX",
+          "value": "0"
+        },
+        {
+          "columnName": "DistanceY",
+          "value": "37.5"
+        },
+        {
+          "columnName": "HandleOrientation",
+          "value": "HandleHorMiddle"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Dishwasher"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "14"
+        },
+        {
+          "columnName": "ReferencePointX",
+          "value": "Center"
+        },
+        {
+          "columnName": "ReferencePointY",
+          "value": "Center"
+        },
+        {
+          "columnName": "DistanceX",
+          "value": "0"
+        },
+        {
+          "columnName": "DistanceY",
+          "value": "37.5"
+        },
+        {
+          "columnName": "HandleOrientation",
+          "value": "HandleHorMiddleInverse"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Dishwasher"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "50"
+        },
+        {
+          "columnName": "ReferencePointX",
+          "value": "Border"
+        },
+        {
+          "columnName": "ReferencePointY",
+          "value": "Center"
+        },
+        {
+          "columnName": "DistanceX",
+          "value": "0"
+        },
+        {
+          "columnName": "DistanceY",
+          "value": "0"
+        },
+        {
+          "columnName": "HandleOrientation",
+          "value": "StripeTop"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Dishwasher"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "51"
+        },
+        {
+          "columnName": "ReferencePointX",
+          "value": "Border"
+        },
+        {
+          "columnName": "ReferencePointY",
+          "value": "Center"
+        },
+        {
+          "columnName": "DistanceX",
+          "value": "0"
+        },
+        {
+          "columnName": "DistanceY",
+          "value": "0"
+        },
+        {
+          "columnName": "HandleOrientation",
+          "value": "StripeBtm"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Dishwasher"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "52"
+        },
+        {
+          "columnName": "ReferencePointX",
+          "value": "Border"
+        },
+        {
+          "columnName": "ReferencePointY",
+          "value": "Center"
+        },
+        {
+          "columnName": "DistanceX",
+          "value": "0"
+        },
+        {
+          "columnName": "DistanceY",
+          "value": "0"
+        },
+        {
+          "columnName": "HandleOrientation",
+          "value": "StripeBtmTop"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Dishwasher"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "53"
+        },
+        {
+          "columnName": "ReferencePointX",
+          "value": "Border"
+        },
+        {
+          "columnName": "ReferencePointY",
+          "value": "Center"
+        },
+        {
+          "columnName": "DistanceX",
+          "value": "0"
+        },
+        {
+          "columnName": "DistanceY",
+          "value": "0"
+        },
+        {
+          "columnName": "HandleOrientation",
+          "value": "StripeLeft"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Dishwasher"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "54"
+        },
+        {
+          "columnName": "ReferencePointX",
+          "value": "Border"
+        },
+        {
+          "columnName": "ReferencePointY",
+          "value": "Center"
+        },
+        {
+          "columnName": "DistanceX",
+          "value": "0"
+        },
+        {
+          "columnName": "DistanceY",
+          "value": "0"
+        },
+        {
+          "columnName": "HandleOrientation",
+          "value": "StripeRight"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Dishwasher"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "55"
+        },
+        {
+          "columnName": "ReferencePointX",
+          "value": "Border"
+        },
+        {
+          "columnName": "ReferencePointY",
+          "value": "Center"
+        },
+        {
+          "columnName": "DistanceX",
+          "value": "0"
+        },
+        {
+          "columnName": "DistanceY",
+          "value": "0"
+        },
+        {
+          "columnName": "HandleOrientation",
+          "value": "StripeLeftRight"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Pullout"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "02"
+        },
+        {
+          "columnName": "ReferencePointX",
+          "value": "Center"
+        },
+        {
+          "columnName": "ReferencePointY",
+          "value": "Border"
+        },
+        {
+          "columnName": "DistanceX",
+          "value": "0"
+        },
+        {
+          "columnName": "DistanceY",
+          "value": "30"
+        },
+        {
+          "columnName": "HandleOrientation",
+          "value": "HandleHorMiddle"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Pullout"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "03"
+        },
+        {
+          "columnName": "ReferencePointX",
+          "value": "Center"
+        },
+        {
+          "columnName": "ReferencePointY",
+          "value": "Border"
+        },
+        {
+          "columnName": "DistanceX",
+          "value": "0"
+        },
+        {
+          "columnName": "DistanceY",
+          "value": "30"
+        },
+        {
+          "columnName": "HandleOrientation",
+          "value": "HandleHorMiddle"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Pullout"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "04"
+        },
+        {
+          "columnName": "ReferencePointX",
+          "value": "Center"
+        },
+        {
+          "columnName": "ReferencePointY",
+          "value": "Border"
+        },
+        {
+          "columnName": "DistanceX",
+          "value": "0"
+        },
+        {
+          "columnName": "DistanceY",
+          "value": "30"
+        },
+        {
+          "columnName": "HandleOrientation",
+          "value": "HandleHorMiddle"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Pullout"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "05"
+        },
+        {
+          "columnName": "ReferencePointX",
+          "value": "Center"
+        },
+        {
+          "columnName": "ReferencePointY",
+          "value": "Border"
+        },
+        {
+          "columnName": "DistanceX",
+          "value": "0"
+        },
+        {
+          "columnName": "DistanceY",
+          "value": "30"
+        },
+        {
+          "columnName": "HandleOrientation",
+          "value": "HandleHorMiddleInverse"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Pullout"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "06"
+        },
+        {
+          "columnName": "ReferencePointX",
+          "value": "Center"
+        },
+        {
+          "columnName": "ReferencePointY",
+          "value": "Border"
+        },
+        {
+          "columnName": "DistanceX",
+          "value": "0"
+        },
+        {
+          "columnName": "DistanceY",
+          "value": "30"
+        },
+        {
+          "columnName": "HandleOrientation",
+          "value": "HandleHorMiddle"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Pullout"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "07"
+        },
+        {
+          "columnName": "ReferencePointX",
+          "value": "Center"
+        },
+        {
+          "columnName": "ReferencePointY",
+          "value": "Border"
+        },
+        {
+          "columnName": "DistanceX",
+          "value": "0"
+        },
+        {
+          "columnName": "DistanceY",
+          "value": "30"
+        },
+        {
+          "columnName": "HandleOrientation",
+          "value": "HandleHorMiddleInverse"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Pullout"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "08"
+        },
+        {
+          "columnName": "ReferencePointX",
+          "value": "Center"
+        },
+        {
+          "columnName": "ReferencePointY",
+          "value": "Border"
+        },
+        {
+          "columnName": "DistanceX",
+          "value": "0"
+        },
+        {
+          "columnName": "DistanceY",
+          "value": "30"
+        },
+        {
+          "columnName": "HandleOrientation",
+          "value": "HandleHorMiddleInverse"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Pullout"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "50"
+        },
+        {
+          "columnName": "ReferencePointX",
+          "value": "Center"
+        },
+        {
+          "columnName": "ReferencePointY",
+          "value": "Border"
+        },
+        {
+          "columnName": "DistanceX",
+          "value": "0"
+        },
+        {
+          "columnName": "DistanceY",
+          "value": "30"
+        },
+        {
+          "columnName": "HandleOrientation",
+          "value": "HandleHorMiddleInverse"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Pullout"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "11"
+        },
+        {
+          "columnName": "ReferencePointX",
+          "value": "Center"
+        },
+        {
+          "columnName": "ReferencePointY",
+          "value": "Border"
+        },
+        {
+          "columnName": "DistanceX",
+          "value": "0"
+        },
+        {
+          "columnName": "DistanceY",
+          "value": "37.5"
+        },
+        {
+          "columnName": "HandleOrientation",
+          "value": "HandleHorMiddle"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Pullout"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "12"
+        },
+        {
+          "columnName": "ReferencePointX",
+          "value": "Center"
+        },
+        {
+          "columnName": "ReferencePointY",
+          "value": "Border"
+        },
+        {
+          "columnName": "DistanceX",
+          "value": "0"
+        },
+        {
+          "columnName": "DistanceY",
+          "value": "37.5"
+        },
+        {
+          "columnName": "HandleOrientation",
+          "value": "HandleHorMiddle"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Pullout"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "13"
+        },
+        {
+          "columnName": "ReferencePointX",
+          "value": "Center"
+        },
+        {
+          "columnName": "ReferencePointY",
+          "value": "Center"
+        },
+        {
+          "columnName": "DistanceX",
+          "value": "0"
+        },
+        {
+          "columnName": "DistanceY",
+          "value": "37.5"
+        },
+        {
+          "columnName": "HandleOrientation",
+          "value": "HandleHorMiddle"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Pullout"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "14"
+        },
+        {
+          "columnName": "ReferencePointX",
+          "value": "Center"
+        },
+        {
+          "columnName": "ReferencePointY",
+          "value": "Center"
+        },
+        {
+          "columnName": "DistanceX",
+          "value": "0"
+        },
+        {
+          "columnName": "DistanceY",
+          "value": "37.5"
+        },
+        {
+          "columnName": "HandleOrientation",
+          "value": "HandleHorMiddleInverse"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Pullout"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "50"
+        },
+        {
+          "columnName": "ReferencePointX",
+          "value": "Border"
+        },
+        {
+          "columnName": "ReferencePointY",
+          "value": "Center"
+        },
+        {
+          "columnName": "DistanceX",
+          "value": "0"
+        },
+        {
+          "columnName": "DistanceY",
+          "value": "0"
+        },
+        {
+          "columnName": "HandleOrientation",
+          "value": "StripeTop"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Pullout"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "51"
+        },
+        {
+          "columnName": "ReferencePointX",
+          "value": "Border"
+        },
+        {
+          "columnName": "ReferencePointY",
+          "value": "Center"
+        },
+        {
+          "columnName": "DistanceX",
+          "value": "0"
+        },
+        {
+          "columnName": "DistanceY",
+          "value": "0"
+        },
+        {
+          "columnName": "HandleOrientation",
+          "value": "StripeBtm"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Pullout"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "52"
+        },
+        {
+          "columnName": "ReferencePointX",
+          "value": "Border"
+        },
+        {
+          "columnName": "ReferencePointY",
+          "value": "Center"
+        },
+        {
+          "columnName": "DistanceX",
+          "value": "0"
+        },
+        {
+          "columnName": "DistanceY",
+          "value": "0"
+        },
+        {
+          "columnName": "HandleOrientation",
+          "value": "StripeBtmTop"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Pullout"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "53"
+        },
+        {
+          "columnName": "ReferencePointX",
+          "value": "Border"
+        },
+        {
+          "columnName": "ReferencePointY",
+          "value": "Center"
+        },
+        {
+          "columnName": "DistanceX",
+          "value": "0"
+        },
+        {
+          "columnName": "DistanceY",
+          "value": "0"
+        },
+        {
+          "columnName": "HandleOrientation",
+          "value": "StripeLeft"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Pullout"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "54"
+        },
+        {
+          "columnName": "ReferencePointX",
+          "value": "Border"
+        },
+        {
+          "columnName": "ReferencePointY",
+          "value": "Center"
+        },
+        {
+          "columnName": "DistanceX",
+          "value": "0"
+        },
+        {
+          "columnName": "DistanceY",
+          "value": "0"
+        },
+        {
+          "columnName": "HandleOrientation",
+          "value": "StripeRight"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Pullout"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "55"
+        },
+        {
+          "columnName": "ReferencePointX",
+          "value": "Border"
+        },
+        {
+          "columnName": "ReferencePointY",
+          "value": "Center"
+        },
+        {
+          "columnName": "DistanceX",
+          "value": "0"
+        },
+        {
+          "columnName": "DistanceY",
+          "value": "0"
+        },
+        {
+          "columnName": "HandleOrientation",
+          "value": "StripeLeftRight"
+        }
+      ]
+    }
+  ]
+}

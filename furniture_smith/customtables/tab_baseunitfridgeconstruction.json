@@ -1,0 +1,132 @@
+{
+  "tableName": "tab_BaseunitFridgeConstruction",
+  "description": "Table for the construction of the baseunit fridge\n",
+  "restrictionTypeId": "Public",
+  "isInputUnique": true,
+  "groupName": "Fridge",
+  "columns": [
+    {
+      "name": "_id",
+      "type": "Integer",
+      "allowNull": false
+    },
+    {
+      "name": "in_ConstructionId",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "NominalWidth",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "MinHeight",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "MaxHeight",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "MinDepth",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "Integration",
+      "type": "Text",
+      "allowNull": true
+    }
+  ],
+  "rows": [
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionId",
+          "value": "KU21WAHG0"
+        },
+        {
+          "columnName": "NominalWidth",
+          "value": "600"
+        },
+        {
+          "columnName": "MinHeight",
+          "value": "820"
+        },
+        {
+          "columnName": "MaxHeight",
+          "value": "820"
+        },
+        {
+          "columnName": "MinDepth",
+          "value": "560"
+        },
+        {
+          "columnName": "Integration",
+          "value": "NoPanel"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionId",
+          "value": "KU20WVHF0"
+        },
+        {
+          "columnName": "NominalWidth",
+          "value": "300"
+        },
+        {
+          "columnName": "MinHeight",
+          "value": "820"
+        },
+        {
+          "columnName": "MaxHeight",
+          "value": "820"
+        },
+        {
+          "columnName": "MinDepth",
+          "value": "550"
+        },
+        {
+          "columnName": "Integration",
+          "value": "NoPanel"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionId",
+          "value": "KU21RADE0"
+        },
+        {
+          "columnName": "NominalWidth",
+          "value": "600"
+        },
+        {
+          "columnName": "MinHeight",
+          "value": "820"
+        },
+        {
+          "columnName": "MaxHeight",
+          "value": "820"
+        },
+        {
+          "columnName": "MinDepth",
+          "value": "550"
+        },
+        {
+          "columnName": "Integration",
+          "value": "FullPanel"
+        }
+      ]
+    }
+  ],
+  "dataSource": "Default",
+  "changedAt": "2025-10-28T11:31:32.3345271+00:00"
+}

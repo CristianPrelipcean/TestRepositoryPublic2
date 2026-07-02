@@ -1,0 +1,55 @@
+{
+  "moduleId": "md_FrontArticleBuilder",
+  "shortName": "Front article builder",
+  "configurable": true,
+  "isRoot": true,
+  "isConfigDummy": true,
+  "description": "Root module to build sub articles",
+  "groupName": "Root",
+  "imageId": "",
+  "restrictionTypeId": "Public",
+  "childModules": [
+    {
+      "moduleId": "mf_Drawer"
+    },
+    {
+      "moduleId": "mf_Door"
+    },
+    {
+      "moduleId": "mf_Fliplift"
+    },
+    {
+      "moduleId": "mf_Fridge"
+    },
+    {
+      "moduleId": "mf_Oven"
+    },
+    {
+      "moduleId": "mf_RackArea"
+    }
+  ],
+  "assignedVariants": [
+    {
+      "variantId": "mod_Width",
+      "default": "600",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_Depth",
+      "default": "600",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_Height",
+      "default": "600",
+      "origin": "Default"
+    }
+  ],
+  "assignedParts": [
+    {
+      "partCode": "part_Placeholder"
+    }
+  ],
+  "assignedCustomTables": [],
+  "assignedFunctions": []
+}

@@ -1,0 +1,3783 @@
+{
+  "tableName": "tab_FrontConstruction",
+  "description": "Construction of front",
+  "restrictionTypeId": "Public",
+  "groupName": "FrontConstruction",
+  "columns": [
+    {
+      "name": "_id",
+      "type": "Integer",
+      "allowNull": false
+    },
+    {
+      "name": "in_PartGroup",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_FrontProgram",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_FrontColor",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_FrontDesign",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_MinWidth",
+      "type": "Integer",
+      "allowNull": false
+    },
+    {
+      "name": "in_MaxWidth",
+      "type": "Integer",
+      "allowNull": false
+    },
+    {
+      "name": "in_MinHeight",
+      "type": "Integer",
+      "allowNull": false
+    },
+    {
+      "name": "in_MaxHeight",
+      "type": "Integer",
+      "allowNull": false
+    },
+    {
+      "name": "in_HandleStrip",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_HandlePosType",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "FrontModuleId",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "FrontConstructionId",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "Width",
+      "type": "Text",
+      "allowNull": true,
+      "functionDefinition": "(m: parent):number"
+    },
+    {
+      "name": "Height",
+      "type": "Text",
+      "allowNull": true,
+      "functionDefinition": "(m: parent):number"
+    },
+    {
+      "name": "Thickness",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "WidthPos",
+      "type": "Text",
+      "allowNull": true,
+      "functionDefinition": "(m: parent):number"
+    },
+    {
+      "name": "HeightPos",
+      "type": "Text",
+      "allowNull": true,
+      "functionDefinition": "(m: parent):number"
+    },
+    {
+      "name": "DepthPos",
+      "type": "Text",
+      "allowNull": true,
+      "functionDefinition": "(m: parent):number"
+    },
+    {
+      "name": "EdgeTypeTop",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "EdgeTypeLeft",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "EdgeTypeBtm",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "EdgeTypeRight",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "EdgeJointType",
+      "type": "Text",
+      "allowNull": true
+    }
+  ],
+  "rows": [
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Door"
+        },
+        {
+          "columnName": "in_FrontProgram",
+          "value": "Classic"
+        },
+        {
+          "columnName": "in_FrontColor",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_MinWidth",
+          "value": "0"
+        },
+        {
+          "columnName": "in_MaxWidth",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_MinHeight",
+          "value": "0"
+        },
+        {
+          "columnName": "in_MaxHeight",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_HandleStrip",
+          "value": "All"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "All"
+        },
+        {
+          "columnName": "FrontModuleId",
+          "value": "FrontPanel01"
+        },
+        {
+          "columnName": "FrontConstructionId",
+          "value": "StandardPanel01"
+        },
+        {
+          "columnName": "Width",
+          "value": "m.mod_FrontWidth - m.mod_FrontGapVert"
+        },
+        {
+          "columnName": "Height",
+          "value": "m.mod_FrontHeight"
+        },
+        {
+          "columnName": "Thickness",
+          "value": "19"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "m.mod_FrontGapVert / 2"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "0"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "0"
+        },
+        {
+          "columnName": "EdgeTypeTop",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeTypeLeft",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeTypeBtm",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeTypeRight",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeJointType",
+          "value": "VVVV"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Drawer"
+        },
+        {
+          "columnName": "in_FrontProgram",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontColor",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_MinWidth",
+          "value": "0"
+        },
+        {
+          "columnName": "in_MaxWidth",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_MinHeight",
+          "value": "0"
+        },
+        {
+          "columnName": "in_MaxHeight",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_HandleStrip",
+          "value": "All"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "All"
+        },
+        {
+          "columnName": "FrontModuleId",
+          "value": "FrontPanel01"
+        },
+        {
+          "columnName": "FrontConstructionId",
+          "value": "StandardPanel01"
+        },
+        {
+          "columnName": "Width",
+          "value": "m.mod_FrontWidth - m.mod_FrontGapVert"
+        },
+        {
+          "columnName": "Height",
+          "value": "m.mod_FrontHeight"
+        },
+        {
+          "columnName": "Thickness",
+          "value": "19"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "m.mod_FrontGapVert / 2"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "0"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "0"
+        },
+        {
+          "columnName": "EdgeTypeTop",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeTypeLeft",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeTypeBtm",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeTypeRight",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeJointType",
+          "value": "VVVV"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Door"
+        },
+        {
+          "columnName": "in_FrontProgram",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontColor",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_MinWidth",
+          "value": "0"
+        },
+        {
+          "columnName": "in_MaxWidth",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_MinHeight",
+          "value": "0"
+        },
+        {
+          "columnName": "in_MaxHeight",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_HandleStrip",
+          "value": "StripGroup1"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "StripTop"
+        },
+        {
+          "columnName": "FrontModuleId",
+          "value": "FrontPanel01"
+        },
+        {
+          "columnName": "FrontConstructionId",
+          "value": "StripTop01"
+        },
+        {
+          "columnName": "Width",
+          "value": "m.mod_FrontWidth - m.mod_FrontGapVert"
+        },
+        {
+          "columnName": "Height",
+          "value": "0"
+        },
+        {
+          "columnName": "Thickness",
+          "value": "19"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "m.mod_FrontGapVert / 2"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "0"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "0"
+        },
+        {
+          "columnName": "EdgeTypeTop",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeTypeLeft",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeTypeBtm",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeTypeRight",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeJointType",
+          "value": "VVVV"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Drawer"
+        },
+        {
+          "columnName": "in_FrontProgram",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontColor",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_MinWidth",
+          "value": "0"
+        },
+        {
+          "columnName": "in_MaxWidth",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_MinHeight",
+          "value": "0"
+        },
+        {
+          "columnName": "in_MaxHeight",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_HandleStrip",
+          "value": "StripGroup1"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "StripTop"
+        },
+        {
+          "columnName": "FrontModuleId",
+          "value": "FrontPanel01"
+        },
+        {
+          "columnName": "FrontConstructionId",
+          "value": "StripTop01"
+        },
+        {
+          "columnName": "Width",
+          "value": "m.mod_FrontWidth - m.mod_FrontGapVert"
+        },
+        {
+          "columnName": "Height",
+          "value": "0"
+        },
+        {
+          "columnName": "Thickness",
+          "value": "19"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "m.mod_FrontGapVert / 2"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "0"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "0"
+        },
+        {
+          "columnName": "EdgeTypeTop",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeTypeLeft",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeTypeBtm",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeTypeRight",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeJointType",
+          "value": "VVVV"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Door"
+        },
+        {
+          "columnName": "in_FrontProgram",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontColor",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_MinWidth",
+          "value": "0"
+        },
+        {
+          "columnName": "in_MaxWidth",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_MinHeight",
+          "value": "0"
+        },
+        {
+          "columnName": "in_MaxHeight",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_HandleStrip",
+          "value": "StripGroup1"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "StripBtm"
+        },
+        {
+          "columnName": "FrontModuleId",
+          "value": "FrontPanel01"
+        },
+        {
+          "columnName": "FrontConstructionId",
+          "value": "StripBtm01"
+        },
+        {
+          "columnName": "Width",
+          "value": "m.mod_FrontWidth - m.mod_FrontGapVert"
+        },
+        {
+          "columnName": "Height",
+          "value": "0"
+        },
+        {
+          "columnName": "Thickness",
+          "value": "19"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "m.mod_FrontGapVert / 2"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "0"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "0"
+        },
+        {
+          "columnName": "EdgeTypeTop",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeTypeLeft",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeTypeBtm",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeTypeRight",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeJointType",
+          "value": "VVVV"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Drawer"
+        },
+        {
+          "columnName": "in_FrontProgram",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontColor",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_MinWidth",
+          "value": "0"
+        },
+        {
+          "columnName": "in_MaxWidth",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_MinHeight",
+          "value": "0"
+        },
+        {
+          "columnName": "in_MaxHeight",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_HandleStrip",
+          "value": "StripGroup1"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "StripBtm"
+        },
+        {
+          "columnName": "FrontModuleId",
+          "value": "FrontPanel01"
+        },
+        {
+          "columnName": "FrontConstructionId",
+          "value": "StripBtm01"
+        },
+        {
+          "columnName": "Width",
+          "value": "m.mod_FrontWidth - m.mod_FrontGapVert"
+        },
+        {
+          "columnName": "Height",
+          "value": "0"
+        },
+        {
+          "columnName": "Thickness",
+          "value": "19"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "m.mod_FrontGapVert / 2"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "0"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "0"
+        },
+        {
+          "columnName": "EdgeTypeTop",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeTypeLeft",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeTypeBtm",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeTypeRight",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeJointType",
+          "value": "VVVV"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Door"
+        },
+        {
+          "columnName": "in_FrontProgram",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontColor",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_MinWidth",
+          "value": "0"
+        },
+        {
+          "columnName": "in_MaxWidth",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_MinHeight",
+          "value": "0"
+        },
+        {
+          "columnName": "in_MaxHeight",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_HandleStrip",
+          "value": "StripGroup1"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "StripLeft"
+        },
+        {
+          "columnName": "FrontModuleId",
+          "value": "FrontPanel01"
+        },
+        {
+          "columnName": "FrontConstructionId",
+          "value": "StripLeft01"
+        },
+        {
+          "columnName": "Width",
+          "value": "0"
+        },
+        {
+          "columnName": "Height",
+          "value": "m.mod_FrontHeight"
+        },
+        {
+          "columnName": "Thickness",
+          "value": "19"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "0"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "0"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "0"
+        },
+        {
+          "columnName": "EdgeTypeTop",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeTypeLeft",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeTypeBtm",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeTypeRight",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeJointType",
+          "value": "VVVV"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Drawer"
+        },
+        {
+          "columnName": "in_FrontProgram",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontColor",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_MinWidth",
+          "value": "0"
+        },
+        {
+          "columnName": "in_MaxWidth",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_MinHeight",
+          "value": "0"
+        },
+        {
+          "columnName": "in_MaxHeight",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_HandleStrip",
+          "value": "StripGroup1"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "StripLeft"
+        },
+        {
+          "columnName": "FrontModuleId",
+          "value": "FrontPanel01"
+        },
+        {
+          "columnName": "FrontConstructionId",
+          "value": "StripLeft01"
+        },
+        {
+          "columnName": "Width",
+          "value": "0"
+        },
+        {
+          "columnName": "Height",
+          "value": "m.mod_FrontHeight"
+        },
+        {
+          "columnName": "Thickness",
+          "value": "19"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "0"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "0"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "0"
+        },
+        {
+          "columnName": "EdgeTypeTop",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeTypeLeft",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeTypeBtm",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeTypeRight",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeJointType",
+          "value": "VVVV"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Door"
+        },
+        {
+          "columnName": "in_FrontProgram",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontColor",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_MinWidth",
+          "value": "0"
+        },
+        {
+          "columnName": "in_MaxWidth",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_MinHeight",
+          "value": "0"
+        },
+        {
+          "columnName": "in_MaxHeight",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_HandleStrip",
+          "value": "StripGroup1"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "StripRight"
+        },
+        {
+          "columnName": "FrontModuleId",
+          "value": "FrontPanel01"
+        },
+        {
+          "columnName": "FrontConstructionId",
+          "value": "StripRight01"
+        },
+        {
+          "columnName": "Width",
+          "value": "0"
+        },
+        {
+          "columnName": "Height",
+          "value": "m.mod_FrontHeight"
+        },
+        {
+          "columnName": "Thickness",
+          "value": "19"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "0"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "0"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "0"
+        },
+        {
+          "columnName": "EdgeTypeTop",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeTypeLeft",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeTypeBtm",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeTypeRight",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeJointType",
+          "value": "VVVV"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Drawer"
+        },
+        {
+          "columnName": "in_FrontProgram",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontColor",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_MinWidth",
+          "value": "0"
+        },
+        {
+          "columnName": "in_MaxWidth",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_MinHeight",
+          "value": "0"
+        },
+        {
+          "columnName": "in_MaxHeight",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_HandleStrip",
+          "value": "StripGroup1"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "StripRight"
+        },
+        {
+          "columnName": "FrontModuleId",
+          "value": "FrontPanel01"
+        },
+        {
+          "columnName": "FrontConstructionId",
+          "value": "StripRight01"
+        },
+        {
+          "columnName": "Width",
+          "value": "0"
+        },
+        {
+          "columnName": "Height",
+          "value": "m.mod_FrontHeight"
+        },
+        {
+          "columnName": "Thickness",
+          "value": "19"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "0"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "0"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "0"
+        },
+        {
+          "columnName": "EdgeTypeTop",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeTypeLeft",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeTypeBtm",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeTypeRight",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeJointType",
+          "value": "VVVV"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Filler"
+        },
+        {
+          "columnName": "in_FrontProgram",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontColor",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_MinWidth",
+          "value": "0"
+        },
+        {
+          "columnName": "in_MaxWidth",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_MinHeight",
+          "value": "0"
+        },
+        {
+          "columnName": "in_MaxHeight",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_HandleStrip",
+          "value": "All"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "All"
+        },
+        {
+          "columnName": "FrontModuleId",
+          "value": "FrontPanel01"
+        },
+        {
+          "columnName": "FrontConstructionId",
+          "value": "StandardPanel01"
+        },
+        {
+          "columnName": "Width",
+          "value": "m.mod_FrontWidth - m.mod_FrontGapVert"
+        },
+        {
+          "columnName": "Height",
+          "value": "m.mod_FrontHeight"
+        },
+        {
+          "columnName": "Thickness",
+          "value": "19"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "0"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "0"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "0"
+        },
+        {
+          "columnName": "EdgeTypeTop",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeTypeLeft",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeTypeBtm",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeTypeRight",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeJointType",
+          "value": "VVVV"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Fliplift"
+        },
+        {
+          "columnName": "in_FrontProgram",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontColor",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_MinWidth",
+          "value": "0"
+        },
+        {
+          "columnName": "in_MaxWidth",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_MinHeight",
+          "value": "0"
+        },
+        {
+          "columnName": "in_MaxHeight",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_HandleStrip",
+          "value": "All"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "All"
+        },
+        {
+          "columnName": "FrontModuleId",
+          "value": "FrontPanel01"
+        },
+        {
+          "columnName": "FrontConstructionId",
+          "value": "StandardPanel01"
+        },
+        {
+          "columnName": "Width",
+          "value": "m.mod_FrontWidth - m.mod_FrontGapVert"
+        },
+        {
+          "columnName": "Height",
+          "value": "m.mod_FrontHeight"
+        },
+        {
+          "columnName": "Thickness",
+          "value": "19"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "m.mod_FrontGapVert / 2"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "0"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "0"
+        },
+        {
+          "columnName": "EdgeTypeTop",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeTypeLeft",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeTypeBtm",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeTypeRight",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeJointType",
+          "value": "VVVV"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Door"
+        },
+        {
+          "columnName": "in_FrontProgram",
+          "value": "Nature"
+        },
+        {
+          "columnName": "in_FrontColor",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_MinWidth",
+          "value": "0"
+        },
+        {
+          "columnName": "in_MaxWidth",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_MinHeight",
+          "value": "0"
+        },
+        {
+          "columnName": "in_MaxHeight",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_HandleStrip",
+          "value": "All"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "All"
+        },
+        {
+          "columnName": "FrontModuleId",
+          "value": "FrontPanel01"
+        },
+        {
+          "columnName": "FrontConstructionId",
+          "value": "StandardPanel01"
+        },
+        {
+          "columnName": "Width",
+          "value": "m.mod_FrontWidth - m.mod_FrontGapVert"
+        },
+        {
+          "columnName": "Height",
+          "value": "m.mod_FrontHeight"
+        },
+        {
+          "columnName": "Thickness",
+          "value": "19"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "m.mod_FrontGapVert / 2"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "0"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "0"
+        },
+        {
+          "columnName": "EdgeTypeTop",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeTypeLeft",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeTypeBtm",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeTypeRight",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeJointType",
+          "value": "VVVV"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Drawer"
+        },
+        {
+          "columnName": "in_FrontProgram",
+          "value": "Tradition"
+        },
+        {
+          "columnName": "in_FrontColor",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_MinWidth",
+          "value": "0"
+        },
+        {
+          "columnName": "in_MaxWidth",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_MinHeight",
+          "value": "0"
+        },
+        {
+          "columnName": "in_MaxHeight",
+          "value": "220"
+        },
+        {
+          "columnName": "in_HandleStrip",
+          "value": "All"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "All"
+        },
+        {
+          "columnName": "FrontModuleId",
+          "value": "FrontPanel01"
+        },
+        {
+          "columnName": "FrontConstructionId",
+          "value": "StandardPanel01"
+        },
+        {
+          "columnName": "Width",
+          "value": "m.mod_FrontWidth - m.mod_FrontGapVert"
+        },
+        {
+          "columnName": "Height",
+          "value": "m.mod_FrontHeight"
+        },
+        {
+          "columnName": "Thickness",
+          "value": "19"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "m.mod_FrontGapVert / 2"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "0"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "0"
+        },
+        {
+          "columnName": "EdgeTypeTop",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeTypeLeft",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeTypeBtm",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeTypeRight",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeJointType",
+          "value": "VVVV"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Door"
+        },
+        {
+          "columnName": "in_FrontProgram",
+          "value": "Tradition"
+        },
+        {
+          "columnName": "in_FrontColor",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_MinWidth",
+          "value": "0"
+        },
+        {
+          "columnName": "in_MaxWidth",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_MinHeight",
+          "value": "0"
+        },
+        {
+          "columnName": "in_MaxHeight",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_HandleStrip",
+          "value": "All"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "All"
+        },
+        {
+          "columnName": "FrontModuleId",
+          "value": "WoodFrame01"
+        },
+        {
+          "columnName": "FrontConstructionId",
+          "value": "TraditionFrame01"
+        },
+        {
+          "columnName": "Width",
+          "value": "m.mod_FrontWidth - m.mod_FrontGapVert"
+        },
+        {
+          "columnName": "Height",
+          "value": "m.mod_FrontHeight"
+        },
+        {
+          "columnName": "Thickness",
+          "value": "19"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "m.mod_FrontGapVert / 2"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "0"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "0"
+        },
+        {
+          "columnName": "EdgeTypeTop",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeTypeLeft",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeTypeBtm",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeTypeRight",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeJointType",
+          "value": "VVVV"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Drawer"
+        },
+        {
+          "columnName": "in_FrontProgram",
+          "value": "Modern"
+        },
+        {
+          "columnName": "in_FrontColor",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_MinWidth",
+          "value": "0"
+        },
+        {
+          "columnName": "in_MaxWidth",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_MinHeight",
+          "value": "0"
+        },
+        {
+          "columnName": "in_MaxHeight",
+          "value": "220"
+        },
+        {
+          "columnName": "in_HandleStrip",
+          "value": "All"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "All"
+        },
+        {
+          "columnName": "FrontModuleId",
+          "value": "FrontPanel01"
+        },
+        {
+          "columnName": "FrontConstructionId",
+          "value": "StandardPanel01"
+        },
+        {
+          "columnName": "Width",
+          "value": "m.mod_FrontWidth - m.mod_FrontGapVert"
+        },
+        {
+          "columnName": "Height",
+          "value": "m.mod_FrontHeight"
+        },
+        {
+          "columnName": "Thickness",
+          "value": "19"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "m.mod_FrontGapVert / 2"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "0"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "0"
+        },
+        {
+          "columnName": "EdgeTypeTop",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeTypeLeft",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeTypeBtm",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeTypeRight",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeJointType",
+          "value": "VVVV"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Door"
+        },
+        {
+          "columnName": "in_FrontProgram",
+          "value": "Modern"
+        },
+        {
+          "columnName": "in_FrontColor",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_MinWidth",
+          "value": "0"
+        },
+        {
+          "columnName": "in_MaxWidth",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_MinHeight",
+          "value": "0"
+        },
+        {
+          "columnName": "in_MaxHeight",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_HandleStrip",
+          "value": "All"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "All"
+        },
+        {
+          "columnName": "FrontModuleId",
+          "value": "WoodFrame01"
+        },
+        {
+          "columnName": "FrontConstructionId",
+          "value": "ModernFrame01"
+        },
+        {
+          "columnName": "Width",
+          "value": "m.mod_FrontWidth - m.mod_FrontGapVert"
+        },
+        {
+          "columnName": "Height",
+          "value": "m.mod_FrontHeight"
+        },
+        {
+          "columnName": "Thickness",
+          "value": "19"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "m.mod_FrontGapVert / 2"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "0"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "0"
+        },
+        {
+          "columnName": "EdgeTypeTop",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeTypeLeft",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeTypeBtm",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeTypeRight",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeJointType",
+          "value": "VVVV"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Drawer"
+        },
+        {
+          "columnName": "in_FrontProgram",
+          "value": "Tradition"
+        },
+        {
+          "columnName": "in_FrontColor",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_MinWidth",
+          "value": "0"
+        },
+        {
+          "columnName": "in_MaxWidth",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_MinHeight",
+          "value": "220"
+        },
+        {
+          "columnName": "in_MaxHeight",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_HandleStrip",
+          "value": "All"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "All"
+        },
+        {
+          "columnName": "FrontModuleId",
+          "value": "WoodFrame01"
+        },
+        {
+          "columnName": "FrontConstructionId",
+          "value": "TraditionFrame01"
+        },
+        {
+          "columnName": "Width",
+          "value": "m.mod_FrontWidth - m.mod_FrontGapVert"
+        },
+        {
+          "columnName": "Height",
+          "value": "m.mod_FrontHeight"
+        },
+        {
+          "columnName": "Thickness",
+          "value": "19"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "m.mod_FrontGapVert / 2"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "0"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "0"
+        },
+        {
+          "columnName": "EdgeTypeTop",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeTypeLeft",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeTypeBtm",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeTypeRight",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeJointType",
+          "value": "VVVV"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Drawer"
+        },
+        {
+          "columnName": "in_FrontProgram",
+          "value": "Modern"
+        },
+        {
+          "columnName": "in_FrontColor",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_MinWidth",
+          "value": "0"
+        },
+        {
+          "columnName": "in_MaxWidth",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_MinHeight",
+          "value": "220"
+        },
+        {
+          "columnName": "in_MaxHeight",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_HandleStrip",
+          "value": "All"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "All"
+        },
+        {
+          "columnName": "FrontModuleId",
+          "value": "WoodFrame01"
+        },
+        {
+          "columnName": "FrontConstructionId",
+          "value": "ModernFrame01"
+        },
+        {
+          "columnName": "Width",
+          "value": "m.mod_FrontWidth - m.mod_FrontGapVert"
+        },
+        {
+          "columnName": "Height",
+          "value": "m.mod_FrontHeight"
+        },
+        {
+          "columnName": "Thickness",
+          "value": "19"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "m.mod_FrontGapVert / 2"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "0"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "0"
+        },
+        {
+          "columnName": "EdgeTypeTop",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeTypeLeft",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeTypeBtm",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeTypeRight",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeJointType",
+          "value": "VVVV"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Fliplift"
+        },
+        {
+          "columnName": "in_FrontProgram",
+          "value": "Tradition"
+        },
+        {
+          "columnName": "in_FrontColor",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_MinWidth",
+          "value": "0"
+        },
+        {
+          "columnName": "in_MaxWidth",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_MinHeight",
+          "value": "0"
+        },
+        {
+          "columnName": "in_MaxHeight",
+          "value": "299"
+        },
+        {
+          "columnName": "in_HandleStrip",
+          "value": "All"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "All"
+        },
+        {
+          "columnName": "FrontModuleId",
+          "value": "FrontPanel01"
+        },
+        {
+          "columnName": "FrontConstructionId",
+          "value": "StandardPanel01"
+        },
+        {
+          "columnName": "Width",
+          "value": "m.mod_FrontWidth - m.mod_FrontGapVert"
+        },
+        {
+          "columnName": "Height",
+          "value": "m.mod_FrontHeight"
+        },
+        {
+          "columnName": "Thickness",
+          "value": "19"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "m.mod_FrontGapVert / 2"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "0"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "0"
+        },
+        {
+          "columnName": "EdgeTypeTop",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeTypeLeft",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeTypeBtm",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeTypeRight",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeJointType",
+          "value": "VVVV"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Fliplift"
+        },
+        {
+          "columnName": "in_FrontProgram",
+          "value": "Tradition"
+        },
+        {
+          "columnName": "in_FrontColor",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_MinWidth",
+          "value": "0"
+        },
+        {
+          "columnName": "in_MaxWidth",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_MinHeight",
+          "value": "300"
+        },
+        {
+          "columnName": "in_MaxHeight",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_HandleStrip",
+          "value": "All"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "All"
+        },
+        {
+          "columnName": "FrontModuleId",
+          "value": "WoodFrame01"
+        },
+        {
+          "columnName": "FrontConstructionId",
+          "value": "TraditionFrame01"
+        },
+        {
+          "columnName": "Width",
+          "value": "m.mod_FrontWidth - m.mod_FrontGapVert"
+        },
+        {
+          "columnName": "Height",
+          "value": "m.mod_FrontHeight"
+        },
+        {
+          "columnName": "Thickness",
+          "value": "19"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "m.mod_FrontGapVert / 2"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "0"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "0"
+        },
+        {
+          "columnName": "EdgeTypeTop",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeTypeLeft",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeTypeBtm",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeTypeRight",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeJointType",
+          "value": "VVVV"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Fliplift"
+        },
+        {
+          "columnName": "in_FrontProgram",
+          "value": "Modern"
+        },
+        {
+          "columnName": "in_FrontColor",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_MinWidth",
+          "value": "0"
+        },
+        {
+          "columnName": "in_MaxWidth",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_MinHeight",
+          "value": "300"
+        },
+        {
+          "columnName": "in_MaxHeight",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_HandleStrip",
+          "value": "All"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "All"
+        },
+        {
+          "columnName": "FrontModuleId",
+          "value": "WoodFrame01"
+        },
+        {
+          "columnName": "FrontConstructionId",
+          "value": "ModernFrame01"
+        },
+        {
+          "columnName": "Width",
+          "value": "m.mod_FrontWidth - m.mod_FrontGapVert"
+        },
+        {
+          "columnName": "Height",
+          "value": "m.mod_FrontHeight"
+        },
+        {
+          "columnName": "Thickness",
+          "value": "19"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "m.mod_FrontGapVert / 2"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "0"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "0"
+        },
+        {
+          "columnName": "EdgeTypeTop",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeTypeLeft",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeTypeBtm",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeTypeRight",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeJointType",
+          "value": "VVVV"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Fliplift"
+        },
+        {
+          "columnName": "in_FrontProgram",
+          "value": "Modern"
+        },
+        {
+          "columnName": "in_FrontColor",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_MinWidth",
+          "value": "0"
+        },
+        {
+          "columnName": "in_MaxWidth",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_MinHeight",
+          "value": "0"
+        },
+        {
+          "columnName": "in_MaxHeight",
+          "value": "299"
+        },
+        {
+          "columnName": "in_HandleStrip",
+          "value": "All"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "All"
+        },
+        {
+          "columnName": "FrontModuleId",
+          "value": "FrontPanel01"
+        },
+        {
+          "columnName": "FrontConstructionId",
+          "value": "StandardPanel01"
+        },
+        {
+          "columnName": "Width",
+          "value": "m.mod_FrontWidth - m.mod_FrontGapVert"
+        },
+        {
+          "columnName": "Height",
+          "value": "m.mod_FrontHeight"
+        },
+        {
+          "columnName": "Thickness",
+          "value": "19"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "m.mod_FrontGapVert / 2"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "0"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "0"
+        },
+        {
+          "columnName": "EdgeTypeTop",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeTypeLeft",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeTypeBtm",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeTypeRight",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeJointType",
+          "value": "VVVV"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Dishwasher"
+        },
+        {
+          "columnName": "in_FrontProgram",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontColor",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_MinWidth",
+          "value": "0"
+        },
+        {
+          "columnName": "in_MaxWidth",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_MinHeight",
+          "value": "0"
+        },
+        {
+          "columnName": "in_MaxHeight",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_HandleStrip",
+          "value": "All"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "All"
+        },
+        {
+          "columnName": "FrontModuleId",
+          "value": "FrontPanel01"
+        },
+        {
+          "columnName": "FrontConstructionId",
+          "value": "StandardPanel01"
+        },
+        {
+          "columnName": "Width",
+          "value": "m.mod_FrontWidth - m.mod_FrontGapVert"
+        },
+        {
+          "columnName": "Height",
+          "value": "m.mod_FrontHeight"
+        },
+        {
+          "columnName": "Thickness",
+          "value": "19"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "m.mod_FrontGapVert / 2"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "0"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "0"
+        },
+        {
+          "columnName": "EdgeTypeTop",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeTypeLeft",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeTypeBtm",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeTypeRight",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeJointType",
+          "value": "VVVV"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Dishwasher"
+        },
+        {
+          "columnName": "in_FrontProgram",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontColor",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_MinWidth",
+          "value": "0"
+        },
+        {
+          "columnName": "in_MaxWidth",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_MinHeight",
+          "value": "0"
+        },
+        {
+          "columnName": "in_MaxHeight",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_HandleStrip",
+          "value": "StripGroup1"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "StripBtm"
+        },
+        {
+          "columnName": "FrontModuleId",
+          "value": "FrontPanel01"
+        },
+        {
+          "columnName": "FrontConstructionId",
+          "value": "StripBtm01"
+        },
+        {
+          "columnName": "Width",
+          "value": "m.mod_FrontWidth - m.mod_FrontGapVert"
+        },
+        {
+          "columnName": "Height",
+          "value": "0"
+        },
+        {
+          "columnName": "Thickness",
+          "value": "19"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "m.mod_FrontGapVert / 2"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "0"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "0"
+        },
+        {
+          "columnName": "EdgeTypeTop",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeTypeLeft",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeTypeBtm",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeTypeRight",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeJointType",
+          "value": "VVVV"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Dishwasher"
+        },
+        {
+          "columnName": "in_FrontProgram",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontColor",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_MinWidth",
+          "value": "0"
+        },
+        {
+          "columnName": "in_MaxWidth",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_MinHeight",
+          "value": "0"
+        },
+        {
+          "columnName": "in_MaxHeight",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_HandleStrip",
+          "value": "StripGroup1"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "StripLeft"
+        },
+        {
+          "columnName": "FrontModuleId",
+          "value": "FrontPanel01"
+        },
+        {
+          "columnName": "FrontConstructionId",
+          "value": "StripLeft01"
+        },
+        {
+          "columnName": "Width",
+          "value": "0"
+        },
+        {
+          "columnName": "Height",
+          "value": "m.mod_FrontHeight"
+        },
+        {
+          "columnName": "Thickness",
+          "value": "19"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "0"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "0"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "0"
+        },
+        {
+          "columnName": "EdgeTypeTop",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeTypeLeft",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeTypeBtm",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeTypeRight",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeJointType",
+          "value": "VVVV"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Dishwasher"
+        },
+        {
+          "columnName": "in_FrontProgram",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontColor",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_MinWidth",
+          "value": "0"
+        },
+        {
+          "columnName": "in_MaxWidth",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_MinHeight",
+          "value": "0"
+        },
+        {
+          "columnName": "in_MaxHeight",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_HandleStrip",
+          "value": "StripGroup1"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "StripRight"
+        },
+        {
+          "columnName": "FrontModuleId",
+          "value": "FrontPanel01"
+        },
+        {
+          "columnName": "FrontConstructionId",
+          "value": "StripRight01"
+        },
+        {
+          "columnName": "Width",
+          "value": "0"
+        },
+        {
+          "columnName": "Height",
+          "value": "m.mod_FrontHeight"
+        },
+        {
+          "columnName": "Thickness",
+          "value": "19"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "0"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "0"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "0"
+        },
+        {
+          "columnName": "EdgeTypeTop",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeTypeLeft",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeTypeBtm",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeTypeRight",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeJointType",
+          "value": "VVVV"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Dishwasher"
+        },
+        {
+          "columnName": "in_FrontProgram",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontColor",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_MinWidth",
+          "value": "0"
+        },
+        {
+          "columnName": "in_MaxWidth",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_MinHeight",
+          "value": "0"
+        },
+        {
+          "columnName": "in_MaxHeight",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_HandleStrip",
+          "value": "StripGroup1"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "StripTop"
+        },
+        {
+          "columnName": "FrontModuleId",
+          "value": "FrontPanel01"
+        },
+        {
+          "columnName": "FrontConstructionId",
+          "value": "StripTop01"
+        },
+        {
+          "columnName": "Width",
+          "value": "m.mod_FrontWidth - m.mod_FrontGapVert"
+        },
+        {
+          "columnName": "Height",
+          "value": "0"
+        },
+        {
+          "columnName": "Thickness",
+          "value": "19"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "m.mod_FrontGapVert / 2"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "0"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "0"
+        },
+        {
+          "columnName": "EdgeTypeTop",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeTypeLeft",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeTypeBtm",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeTypeRight",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeJointType",
+          "value": "VVVV"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Dishwasher"
+        },
+        {
+          "columnName": "in_FrontProgram",
+          "value": "Modern"
+        },
+        {
+          "columnName": "in_FrontColor",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_MinWidth",
+          "value": "0"
+        },
+        {
+          "columnName": "in_MaxWidth",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_MinHeight",
+          "value": "0"
+        },
+        {
+          "columnName": "in_MaxHeight",
+          "value": "220"
+        },
+        {
+          "columnName": "in_HandleStrip",
+          "value": "All"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "All"
+        },
+        {
+          "columnName": "FrontModuleId",
+          "value": "FrontPanel01"
+        },
+        {
+          "columnName": "FrontConstructionId",
+          "value": "StandardPanel01"
+        },
+        {
+          "columnName": "Width",
+          "value": "m.mod_FrontWidth - m.mod_FrontGapVert"
+        },
+        {
+          "columnName": "Height",
+          "value": "m.mod_FrontHeight"
+        },
+        {
+          "columnName": "Thickness",
+          "value": "19"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "m.mod_FrontGapVert / 2"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "0"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "0"
+        },
+        {
+          "columnName": "EdgeTypeTop",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeTypeLeft",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeTypeBtm",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeTypeRight",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeJointType",
+          "value": "VVVV"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Dishwasher"
+        },
+        {
+          "columnName": "in_FrontProgram",
+          "value": "Modern"
+        },
+        {
+          "columnName": "in_FrontColor",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_MinWidth",
+          "value": "0"
+        },
+        {
+          "columnName": "in_MaxWidth",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_MinHeight",
+          "value": "220"
+        },
+        {
+          "columnName": "in_MaxHeight",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_HandleStrip",
+          "value": "All"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "All"
+        },
+        {
+          "columnName": "FrontModuleId",
+          "value": "WoodFrame01"
+        },
+        {
+          "columnName": "FrontConstructionId",
+          "value": "ModernFrame01"
+        },
+        {
+          "columnName": "Width",
+          "value": "m.mod_FrontWidth - m.mod_FrontGapVert"
+        },
+        {
+          "columnName": "Height",
+          "value": "m.mod_FrontHeight"
+        },
+        {
+          "columnName": "Thickness",
+          "value": "19"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "m.mod_FrontGapVert / 2"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "0"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "0"
+        },
+        {
+          "columnName": "EdgeTypeTop",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeTypeLeft",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeTypeBtm",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeTypeRight",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeJointType",
+          "value": "VVVV"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Dishwasher"
+        },
+        {
+          "columnName": "in_FrontProgram",
+          "value": "Tradition"
+        },
+        {
+          "columnName": "in_FrontColor",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_MinWidth",
+          "value": "0"
+        },
+        {
+          "columnName": "in_MaxWidth",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_MinHeight",
+          "value": "0"
+        },
+        {
+          "columnName": "in_MaxHeight",
+          "value": "220"
+        },
+        {
+          "columnName": "in_HandleStrip",
+          "value": "All"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "All"
+        },
+        {
+          "columnName": "FrontModuleId",
+          "value": "FrontPanel01"
+        },
+        {
+          "columnName": "FrontConstructionId",
+          "value": "StandardPanel01"
+        },
+        {
+          "columnName": "Width",
+          "value": "m.mod_FrontWidth - m.mod_FrontGapVert"
+        },
+        {
+          "columnName": "Height",
+          "value": "m.mod_FrontHeight"
+        },
+        {
+          "columnName": "Thickness",
+          "value": "19"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "m.mod_FrontGapVert / 2"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "0"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "0"
+        },
+        {
+          "columnName": "EdgeTypeTop",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeTypeLeft",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeTypeBtm",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeTypeRight",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeJointType",
+          "value": "VVVV"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Dishwasher"
+        },
+        {
+          "columnName": "in_FrontProgram",
+          "value": "Tradition"
+        },
+        {
+          "columnName": "in_FrontColor",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_MinWidth",
+          "value": "0"
+        },
+        {
+          "columnName": "in_MaxWidth",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_MinHeight",
+          "value": "220"
+        },
+        {
+          "columnName": "in_MaxHeight",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_HandleStrip",
+          "value": "All"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "All"
+        },
+        {
+          "columnName": "FrontModuleId",
+          "value": "WoodFrame01"
+        },
+        {
+          "columnName": "FrontConstructionId",
+          "value": "TraditionFrame01"
+        },
+        {
+          "columnName": "Width",
+          "value": "m.mod_FrontWidth - m.mod_FrontGapVert"
+        },
+        {
+          "columnName": "Height",
+          "value": "m.mod_FrontHeight"
+        },
+        {
+          "columnName": "Thickness",
+          "value": "19"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "m.mod_FrontGapVert / 2"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "0"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "0"
+        },
+        {
+          "columnName": "EdgeTypeTop",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeTypeLeft",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeTypeBtm",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeTypeRight",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeJointType",
+          "value": "VVVV"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "CornerFiller"
+        },
+        {
+          "columnName": "in_FrontProgram",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontColor",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_MinWidth",
+          "value": "0"
+        },
+        {
+          "columnName": "in_MaxWidth",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_MinHeight",
+          "value": "0"
+        },
+        {
+          "columnName": "in_MaxHeight",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_HandleStrip",
+          "value": "All"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "All"
+        },
+        {
+          "columnName": "FrontModuleId",
+          "value": "FrontPanel01"
+        },
+        {
+          "columnName": "FrontConstructionId",
+          "value": "StandardPanel01"
+        },
+        {
+          "columnName": "Width",
+          "value": "m.mod_FrontWidth"
+        },
+        {
+          "columnName": "Height",
+          "value": "m.mod_FrontHeight"
+        },
+        {
+          "columnName": "Thickness",
+          "value": "19"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "0"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "0"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "0"
+        },
+        {
+          "columnName": "EdgeTypeTop",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeTypeLeft",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeTypeBtm",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeTypeRight",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeJointType",
+          "value": "VVVV"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "CornerStraightFiller"
+        },
+        {
+          "columnName": "in_FrontProgram",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontColor",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_MinWidth",
+          "value": "0"
+        },
+        {
+          "columnName": "in_MaxWidth",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_MinHeight",
+          "value": "0"
+        },
+        {
+          "columnName": "in_MaxHeight",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_HandleStrip",
+          "value": "All"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "All"
+        },
+        {
+          "columnName": "FrontModuleId",
+          "value": "FrontPanel01"
+        },
+        {
+          "columnName": "FrontConstructionId",
+          "value": "StandardPanel01"
+        },
+        {
+          "columnName": "Width",
+          "value": "m.mod_FrontWidth"
+        },
+        {
+          "columnName": "Height",
+          "value": "m.mod_FrontHeight"
+        },
+        {
+          "columnName": "Thickness",
+          "value": "19"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "0"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "0"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "0"
+        },
+        {
+          "columnName": "EdgeTypeTop",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeTypeLeft",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeTypeBtm",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeTypeRight",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeJointType",
+          "value": "VVVV"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Door"
+        },
+        {
+          "columnName": "in_FrontProgram",
+          "value": "Tuscan"
+        },
+        {
+          "columnName": "in_FrontColor",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_MinWidth",
+          "value": "0"
+        },
+        {
+          "columnName": "in_MaxWidth",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_MinHeight",
+          "value": "0"
+        },
+        {
+          "columnName": "in_MaxHeight",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_HandleStrip",
+          "value": "All"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "All"
+        },
+        {
+          "columnName": "FrontModuleId",
+          "value": "FrontPanel01"
+        },
+        {
+          "columnName": "FrontConstructionId",
+          "value": "TuscanPanel01"
+        },
+        {
+          "columnName": "Width",
+          "value": "m.mod_FrontWidth - m.mod_FrontGapVert"
+        },
+        {
+          "columnName": "Height",
+          "value": "m.mod_FrontHeight"
+        },
+        {
+          "columnName": "Thickness",
+          "value": "19"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "m.mod_FrontGapVert / 2"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "0"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "0"
+        },
+        {
+          "columnName": "EdgeTypeTop",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeTypeLeft",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeTypeBtm",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeTypeRight",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeJointType",
+          "value": "VVVV"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Fliplift"
+        },
+        {
+          "columnName": "in_FrontProgram",
+          "value": "Tuscan"
+        },
+        {
+          "columnName": "in_FrontColor",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_MinWidth",
+          "value": "0"
+        },
+        {
+          "columnName": "in_MaxWidth",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_MinHeight",
+          "value": "0"
+        },
+        {
+          "columnName": "in_MaxHeight",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_HandleStrip",
+          "value": "All"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "All"
+        },
+        {
+          "columnName": "FrontModuleId",
+          "value": "FrontPanel01"
+        },
+        {
+          "columnName": "FrontConstructionId",
+          "value": "TuscanPanel01"
+        },
+        {
+          "columnName": "Width",
+          "value": "m.mod_FrontWidth - m.mod_FrontGapVert"
+        },
+        {
+          "columnName": "Height",
+          "value": "m.mod_FrontHeight"
+        },
+        {
+          "columnName": "Thickness",
+          "value": "19"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "m.mod_FrontGapVert / 2"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "0"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "0"
+        },
+        {
+          "columnName": "EdgeTypeTop",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeTypeLeft",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeTypeBtm",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeTypeRight",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeJointType",
+          "value": "VVVV"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Door"
+        },
+        {
+          "columnName": "in_FrontProgram",
+          "value": "Classic"
+        },
+        {
+          "columnName": "in_FrontColor",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontDesign",
+          "value": "SegmentGlassClassic"
+        },
+        {
+          "columnName": "in_MinWidth",
+          "value": "0"
+        },
+        {
+          "columnName": "in_MaxWidth",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_MinHeight",
+          "value": "0"
+        },
+        {
+          "columnName": "in_MaxHeight",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_HandleStrip",
+          "value": "All"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "All"
+        },
+        {
+          "columnName": "FrontModuleId",
+          "value": "SegmentFront01"
+        },
+        {
+          "columnName": "FrontConstructionId",
+          "value": "SegmentFront01"
+        },
+        {
+          "columnName": "Width",
+          "value": "m.mod_FrontWidth - m.mod_FrontGapVert"
+        },
+        {
+          "columnName": "Height",
+          "value": "m.mod_FrontHeight"
+        },
+        {
+          "columnName": "Thickness",
+          "value": "19"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "m.mod_FrontGapVert / 2"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "0"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "0"
+        },
+        {
+          "columnName": "EdgeTypeTop",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeTypeLeft",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeTypeBtm",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeTypeRight",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeJointType",
+          "value": "VVVV"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Door"
+        },
+        {
+          "columnName": "in_FrontProgram",
+          "value": "Nature"
+        },
+        {
+          "columnName": "in_FrontColor",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontDesign",
+          "value": "SegmentGlassClassic"
+        },
+        {
+          "columnName": "in_MinWidth",
+          "value": "0"
+        },
+        {
+          "columnName": "in_MaxWidth",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_MinHeight",
+          "value": "0"
+        },
+        {
+          "columnName": "in_MaxHeight",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_HandleStrip",
+          "value": "All"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "All"
+        },
+        {
+          "columnName": "FrontModuleId",
+          "value": "SegmentFront01"
+        },
+        {
+          "columnName": "FrontConstructionId",
+          "value": "SegmentFront01"
+        },
+        {
+          "columnName": "Width",
+          "value": "m.mod_FrontWidth - m.mod_FrontGapVert"
+        },
+        {
+          "columnName": "Height",
+          "value": "m.mod_FrontHeight"
+        },
+        {
+          "columnName": "Thickness",
+          "value": "19"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "m.mod_FrontGapVert / 2"
+        },
+        {
+          "columnName": "HeightPos",
+          "value": "0"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "0"
+        },
+        {
+          "columnName": "EdgeTypeTop",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeTypeLeft",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeTypeBtm",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeTypeRight",
+          "value": "FRE"
+        },
+        {
+          "columnName": "EdgeJointType",
+          "value": "VVVV"
+        }
+      ]
+    }
+  ]
+}

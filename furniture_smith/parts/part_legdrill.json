@@ -1,0 +1,30 @@
+{
+  "partCode": "part_LegDrill",
+  "shortName": "Drill leg",
+  "description": "Leg drill for the bottom shelf",
+  "wdt": "XYZ",
+  "groupName": "Processings",
+  "imageId": "4e27cec8-3693-4298-b6ac-220ed7d7464f:Drillpart.png",
+  "invisible": true,
+  "restrictionTypeId": "Public",
+  "noNcData": false,
+  "partVariants": [
+    {
+      "partVarId": "pa_Model3DGroupName",
+      "valueScript": "this.parent.mod_Model3DGroupName",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_Rotation",
+      "valueScript": "this.parent.mod_Rotation",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_ProcessingId",
+      "valueScript": "this.parent.mod_ProcessingId",
+      "isWritable": false
+    }
+  ],
+  "bomData": [],
+  "ncData": []
+}

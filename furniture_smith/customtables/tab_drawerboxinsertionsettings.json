@@ -1,0 +1,164 @@
+{
+  "tableName": "tab_DrawerBoxInsertionSettings",
+  "description": "Settings for the insertion position of drawer boxes",
+  "restrictionTypeId": "Public",
+  "groupName": "DrawerBox",
+  "columns": [
+    {
+      "name": "_id",
+      "type": "Integer",
+      "allowNull": false
+    },
+    {
+      "name": "in_TypeElement",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_FrontProgram",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_HandleDesign",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_HandlePosType",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_ShelffixedBtm",
+      "type": "Bool",
+      "allowNull": true
+    },
+    {
+      "name": "in_FrontStartPosMin",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "in_FrontStartPosMax",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "DrawerBoxPos",
+      "type": "Text",
+      "allowNull": true,
+      "functionDefinition": "(m: parent, CarcaseFreeSpaceHeightStartPosition: number):number"
+    }
+  ],
+  "rows": [
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontProgram",
+          "value": "All"
+        },
+        {
+          "columnName": "in_HandleDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ShelffixedBtm",
+          "value": "false"
+        },
+        {
+          "columnName": "in_FrontStartPosMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontStartPosMax",
+          "value": "20"
+        },
+        {
+          "columnName": "DrawerBoxPos",
+          "value": "CarcaseFreeSpaceHeightStartPosition +  3 - m.mod_Originpos[1]"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontProgram",
+          "value": "All"
+        },
+        {
+          "columnName": "in_HandleDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ShelffixedBtm",
+          "value": "true"
+        },
+        {
+          "columnName": "in_FrontStartPosMin",
+          "value": "20.1"
+        },
+        {
+          "columnName": "in_FrontStartPosMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "DrawerBoxPos",
+          "value": "CarcaseFreeSpaceHeightStartPosition +  3 - m.mod_Originpos[1]"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontProgram",
+          "value": "All"
+        },
+        {
+          "columnName": "in_HandleDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ShelffixedBtm",
+          "value": "false"
+        },
+        {
+          "columnName": "in_FrontStartPosMin",
+          "value": "20.1"
+        },
+        {
+          "columnName": "in_FrontStartPosMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "DrawerBoxPos",
+          "value": "CarcaseFreeSpaceHeightStartPosition +  3 - m.mod_Originpos[1]"
+        }
+      ]
+    }
+  ]
+}

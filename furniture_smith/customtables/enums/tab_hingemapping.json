@@ -1,0 +1,60 @@
+[
+  {
+    "tableName": "tab_HingeMapping",
+    "columnId": "ObjectCarcase",
+    "refCustomTableName": "tab_ObjectMapping",
+    "refColumnId": "in_Object"
+  },
+  {
+    "tableName": "tab_HingeMapping",
+    "columnId": "ObjectFront",
+    "refCustomTableName": "tab_ObjectMapping",
+    "refColumnId": "in_Object"
+  },
+  {
+    "tableName": "tab_HingeMapping",
+    "columnId": "in_Application",
+    "enumsJson": [
+      {
+        "value": "HalfOverlay",
+        "description": "HalfOverlay"
+      },
+      {
+        "value": "Inset",
+        "description": "Inset"
+      },
+      {
+        "value": "Overlay",
+        "description": "Overlay"
+      }
+    ]
+  },
+  {
+    "tableName": "tab_HingeMapping",
+    "columnId": "in_MountingPlateHeight",
+    "refCustomTableName": "tab_HingeDrillingDistance",
+    "refColumnId": "MountingPlateHeight"
+  },
+  {
+    "tableName": "tab_HingeMapping",
+    "columnId": "in_OpeningType",
+    "enumsJson": [
+      {
+        "value": "Handle",
+        "description": "Opening with handle"
+      },
+      {
+        "value": "PushToOpenElectric",
+        "description": "Opening without handle electric"
+      },
+      {
+        "value": "PushToOpenManual",
+        "description": "Opening without handle manual"
+      },
+      {
+        "value": "All",
+        "description": "Ignored"
+      }
+    ]
+  }
+]

@@ -1,0 +1,48 @@
+{
+  "moduleId": "mc_HoodInsert01",
+  "shortName": "Hood Insert01",
+  "configurable": false,
+  "isRoot": false,
+  "isConfigDummy": false,
+  "groupName": "Appliance",
+  "imageId": "",
+  "restrictionTypeId": "Public",
+  "childModules": [
+    {
+      "moduleId": "mc_ApplianceGraphic"
+    }
+  ],
+  "assignedVariants": [
+    {
+      "variantId": "mod_CarcaseDepth",
+      "previewValue": "500",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_CarcaseHeight",
+      "previewValue": "720",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_CarcaseWidth",
+      "previewValue": "600",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_Originpos",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_HoodId",
+      "default": "None",
+      "origin": "Default"
+    }
+  ],
+  "assignedParts": [],
+  "assignedCustomTables": [
+    {
+      "customTableId": "tab_ApplianceGraphicLibrary"
+    }
+  ],
+  "assignedFunctions": []
+}

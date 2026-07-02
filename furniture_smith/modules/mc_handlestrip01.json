@@ -1,0 +1,198 @@
+{
+  "moduleId": "mc_Handlestrip01",
+  "shortName": "Handle strip",
+  "configurable": false,
+  "isRoot": false,
+  "description": "Management of the handle strip",
+  "groupName": "Handle",
+  "imageId": "6fea902e-fdea-4c05-a071-5dac5c476c4f:HandleStrip.jpg",
+  "restrictionTypeId": "Internal",
+  "childModules": [],
+  "assignedVariants": [
+    {
+      "variantId": "mod_Depth",
+      "default": "500",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_DoorDirection",
+      "previewValue": "Left",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_FrontHeight",
+      "previewValue": "720",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_FrontId",
+      "previewValue": "None",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_FrontType",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_HandleDrill",
+      "previewValue": "True",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_HandleLine",
+      "previewValue": "1050",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_HandlePosLogic",
+      "previewValue": "HandleLine",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_Height",
+      "default": "720",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_FrontPosStart",
+      "previewValue": "0",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_Width",
+      "default": "600",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_FrontProgram",
+      "previewValue": "Demoprogram1",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_HandleColor",
+      "previewValue": "Demoblue",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_HandleLength",
+      "previewValue": "128",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_HandleOffsetX",
+      "previewValue": "0",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_HandleOffsetY",
+      "previewValue": "0",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_HandlePosMatrix",
+      "previewValue": "11",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_HandlePosType",
+      "previewValue": "01",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_HeightPosInsertion",
+      "previewValue": "0",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_PlinthAreaHeight",
+      "previewValue": "100",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_PartInfo",
+      "default": "part_DoorLeft",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_HandleDesign",
+      "previewValue": "90",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_CarcaseWidth",
+      "previewValue": "600",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_ModuleName",
+      "default": "mc_Handlestrip01",
+      "origin": "Fixed"
+    },
+    {
+      "variantId": "mod_Information",
+      "default": "None",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_FrontWidth",
+      "previewValue": "0",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_FrontGapVert",
+      "previewValue": "5",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_ProcessingId",
+      "default": "None",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_ProcessingLibrary",
+      "default": "None",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_Rotation",
+      "default": "0",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_HardwareId",
+      "default": "None",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_Model3DGroupName",
+      "default": "None",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_FrontThk",
+      "previewValue": "19",
+      "origin": "Derived"
+    }
+  ],
+  "assignedParts": [
+    {
+      "partCode": "part_Handlestrip"
+    },
+    {
+      "partCode": "part_HandlestripDrill"
+    }
+  ],
+  "assignedCustomTables": [
+    {
+      "customTableId": "tab_HandleSettings"
+    },
+    {
+      "customTableId": "tab_HandleConstruction"
+    }
+  ],
+  "assignedFunctions": [
+    {
+      "functionId": "process_HandlestripPos"
+    }
+  ]
+}

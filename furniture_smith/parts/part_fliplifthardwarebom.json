@@ -1,0 +1,33 @@
+{
+  "partCode": "part_FlipliftHardwareBom",
+  "shortName": "Fliplift hardware BOM",
+  "description": "Ghost part to add the BOM for the fliplift fittings",
+  "wdt": "XYZ",
+  "groupName": "Hardware",
+  "imageId": "fe086119-3c8b-4955-8959-cf003129db35:BOM.png",
+  "model3dImageId": "",
+  "invisible": true,
+  "restrictionTypeId": "Internal",
+  "noNcData": true,
+  "partVariants": [
+    {
+      "partVarId": "pa_ParentName",
+      "valueScript": "this.parent.mod_FrontId",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_HardwareId",
+      "valueScript": "''",
+      "isWritable": false
+    }
+  ],
+  "bomData": [
+    {
+      "bomElementTypeId": "bomout_Group",
+      "description": "Hardware for fliplifts",
+      "conditionScript": "partSelf._g?.basic_CreateBom == 'Library'",
+      "valueScript": "try {\n    \n    // Type of the Bom-Element (will be checked in order output)\n    let elementType='Hardware';\n\n    // ProductionSite Category (to split the orders for different production sites)\n    let elementCategory='';\n\n    // Id of the parent to create the hierarchy\n    let parentBomId=part.pa_ParentName;\n\n    // Parse the json string\n    const hardwareIdElements = JSON.parse(part.pa_HardwareId) as { values: string[] };\n\n    // Check if the json got a valid format\n    if (!Array.isArray(hardwareIdElements.values)) {\n      throw new Error(\"Could not create the BOM for the fliplift fittings\");\n    }\n\n    // Iterate throug the hardware elements\n    for (const hardwareId of hardwareIdElements.values) {\n\n      // Check if we should add an entry\n      if (hardwareId !== \"None\") {\n          // Call the function to process the Bom-Element\n        GlobalFunc.process_HardwareBom(this, part, elementType, elementCategory, parentBomId, hardwareId)\n      }\n    }\n  }\n\n  // Catch the errors\n  catch (error: any) {\n    logError(error.Message);\n    return\n  }"
+    }
+  ],
+  "ncData": []
+}

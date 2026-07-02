@@ -1,0 +1,71 @@
+{
+  "moduleId": "mr_CoatBoard",
+  "shortName": "Coat board",
+  "configurable": true,
+  "isRoot": true,
+  "description": "Module for coat board",
+  "groupName": "Root",
+  "restrictionTypeId": "Public",
+  "childModules": [
+    {
+      "moduleId": "mc_CoatBoard"
+    },
+    {
+      "moduleId": "mf_BoardShelf"
+    }
+  ],
+  "assignedVariants": [
+    {
+      "variantId": "mod_CoatBoardColor",
+      "default": "199",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_CoatBoardProgram",
+      "default": "Classic",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_CoatBoardId",
+      "default": "Coatboard01",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_Width",
+      "previewValue": "600",
+      "origin": "Required"
+    },
+    {
+      "variantId": "mod_Height",
+      "previewValue": "1000",
+      "origin": "Required"
+    },
+    {
+      "variantId": "mod_CoatBoardThickness",
+      "default": "19",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_HeightPosInsertion",
+      "default": "0",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_BoardShelfColor",
+      "default": "199",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_BoardShelfProgram",
+      "default": "Classic",
+      "origin": "Default"
+    }
+  ],
+  "assignedParts": [
+    {
+      "partCode": "part_CoatBoardGroup"
+    }
+  ],
+  "assignedCustomTables": [],
+  "assignedFunctions": []
+}

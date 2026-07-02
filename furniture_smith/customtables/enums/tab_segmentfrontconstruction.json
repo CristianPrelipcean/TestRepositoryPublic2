@@ -1,0 +1,76 @@
+[
+  {
+    "tableName": "tab_SegmentFrontConstruction",
+    "columnId": "FrontGrainDirection",
+    "enumsJson": [
+      {
+        "value": "None",
+        "description": "No grain",
+        "imageId": "15082c95-8070-419c-bad3-f5018c394edf:None_5.png"
+      },
+      {
+        "value": "Lengthwise",
+        "description": "The grain lengthwise follows the length",
+        "imageId": "3a235bec-aa1c-48ff-b3ae-fcc016aad4ed:Lenthwise.png"
+      },
+      {
+        "value": "Crosswise",
+        "description": "The grain crosswise follows the width",
+        "imageId": "d19948eb-5681-478f-a69f-8b64cb5a20f3:Crosswise.png"
+      }
+    ]
+  },
+  {
+    "tableName": "tab_SegmentFrontConstruction",
+    "columnId": "SegmentGrainDirection",
+    "enumsJson": [
+      {
+        "value": "None",
+        "description": "No grain",
+        "imageId": "15082c95-8070-419c-bad3-f5018c394edf:None_5.png"
+      },
+      {
+        "value": "Lengthwise",
+        "description": "The grain lengthwise follows the length",
+        "imageId": "3a235bec-aa1c-48ff-b3ae-fcc016aad4ed:Lenthwise.png"
+      },
+      {
+        "value": "Crosswise",
+        "description": "The grain crosswise follows the width",
+        "imageId": "d19948eb-5681-478f-a69f-8b64cb5a20f3:Crosswise.png"
+      }
+    ]
+  },
+  {
+    "tableName": "tab_SegmentFrontConstruction",
+    "columnId": "in_FrontColorGrainGroupId",
+    "refColumnId": "GrainGroupId"
+  },
+  {
+    "tableName": "tab_SegmentFrontConstruction",
+    "columnId": "in_FrontConstructionId",
+    "refCustomTableName": "tab_FrontConstruction",
+    "refColumnId": "FrontConstructionId"
+  },
+  {
+    "tableName": "tab_SegmentFrontConstruction",
+    "columnId": "in_PartGroup",
+    "refCustomTableName": "tab_PartSettings",
+    "refColumnId": "PartGroup"
+  },
+  {
+    "tableName": "tab_SegmentFrontConstruction",
+    "columnId": "in_SegmentColor",
+    "refColumnId": "Value"
+  },
+  {
+    "tableName": "tab_SegmentFrontConstruction",
+    "columnId": "in_SegmentColorGrainGroupId",
+    "refColumnId": "GrainGroupId"
+  },
+  {
+    "tableName": "tab_SegmentFrontConstruction",
+    "columnId": "in_SegmentType",
+    "refColumnId": "Value"
+  }
+]

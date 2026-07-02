@@ -1,0 +1,95 @@
+{
+  "tableName": "tab_BracketMapping",
+  "description": "Shelf Bracket Mapping",
+  "restrictionTypeId": "Public",
+  "groupName": "Brackets",
+  "columns": [
+    {
+      "name": "_id",
+      "type": "Integer",
+      "allowNull": false
+    },
+    {
+      "name": "in_Supplier",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_BracketId",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "ConstructionId",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "GraphicId",
+      "type": "Text",
+      "allowNull": true
+    }
+  ],
+  "rows": [
+    {
+      "data": [
+        {
+          "columnName": "in_Supplier",
+          "value": "Homag"
+        },
+        {
+          "columnName": "in_BracketId",
+          "value": "Floating"
+        },
+        {
+          "columnName": "ConstructionId",
+          "value": "brFloating"
+        },
+        {
+          "columnName": "GraphicId",
+          "value": "Model3DbrFloating"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Supplier",
+          "value": "Homag"
+        },
+        {
+          "columnName": "in_BracketId",
+          "value": "ARRAS5"
+        },
+        {
+          "columnName": "ConstructionId",
+          "value": "brARRAS5"
+        },
+        {
+          "columnName": "GraphicId",
+          "value": "Model3DbrARRAS5"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Supplier",
+          "value": "Homag"
+        },
+        {
+          "columnName": "in_BracketId",
+          "value": "Tucano"
+        },
+        {
+          "columnName": "ConstructionId",
+          "value": "brTucano"
+        },
+        {
+          "columnName": "GraphicId",
+          "value": "Model3DbrTucano"
+        }
+      ]
+    }
+  ]
+}

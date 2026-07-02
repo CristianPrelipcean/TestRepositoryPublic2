@@ -1,0 +1,221 @@
+{
+  "tableName": "tab_FridgeConstruction",
+  "description": "Table to define the Fridge specs",
+  "restrictionTypeId": "Public",
+  "isInputUnique": true,
+  "groupName": "Fridge",
+  "columns": [
+    {
+      "name": "_id",
+      "type": "Integer",
+      "allowNull": false
+    },
+    {
+      "name": "in_ConstructionId",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "DefaultHeight",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "MinHeight",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "MaxHeight",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "SplitDoor",
+      "type": "Bool",
+      "allowNull": true
+    },
+    {
+      "name": "Hinges",
+      "type": "Bool",
+      "allowNull": true
+    },
+    {
+      "name": "BottomFrontDrawer",
+      "type": "Bool",
+      "allowNull": true
+    },
+    {
+      "name": "MinHeightDoorBtm",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "MaxHeightDoorBtm",
+      "type": "Dim",
+      "allowNull": false
+    }
+  ],
+  "rows": [
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionId",
+          "value": "KI86SHDD0"
+        },
+        {
+          "columnName": "DefaultHeight",
+          "value": "1775"
+        },
+        {
+          "columnName": "MinHeight",
+          "value": "1772"
+        },
+        {
+          "columnName": "MaxHeight",
+          "value": "1780"
+        },
+        {
+          "columnName": "SplitDoor",
+          "value": "true"
+        },
+        {
+          "columnName": "Hinges",
+          "value": "false"
+        },
+        {
+          "columnName": "BottomFrontDrawer",
+          "value": "false"
+        },
+        {
+          "columnName": "MinHeightDoorBtm",
+          "value": "630"
+        },
+        {
+          "columnName": "MaxHeightDoorBtm",
+          "value": "690"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionId",
+          "value": "KI82LADD0"
+        },
+        {
+          "columnName": "DefaultHeight",
+          "value": "1776"
+        },
+        {
+          "columnName": "MinHeight",
+          "value": "1776"
+        },
+        {
+          "columnName": "MaxHeight",
+          "value": "1780"
+        },
+        {
+          "columnName": "SplitDoor",
+          "value": "false"
+        },
+        {
+          "columnName": "Hinges",
+          "value": "false"
+        },
+        {
+          "columnName": "BottomFrontDrawer",
+          "value": "false"
+        },
+        {
+          "columnName": "MinHeightDoorBtm",
+          "value": "0"
+        },
+        {
+          "columnName": "MaxHeightDoorBtm",
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionId",
+          "value": "KI41FADD0"
+        },
+        {
+          "columnName": "DefaultHeight",
+          "value": "1225"
+        },
+        {
+          "columnName": "MinHeight",
+          "value": "1221"
+        },
+        {
+          "columnName": "MaxHeight",
+          "value": "1228"
+        },
+        {
+          "columnName": "SplitDoor",
+          "value": "false"
+        },
+        {
+          "columnName": "Hinges",
+          "value": "false"
+        },
+        {
+          "columnName": "BottomFrontDrawer",
+          "value": "false"
+        },
+        {
+          "columnName": "MinHeightDoorBtm",
+          "value": "0"
+        },
+        {
+          "columnName": "MaxHeightDoorBtm",
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionId",
+          "value": "FridgeDefault"
+        },
+        {
+          "columnName": "DefaultHeight",
+          "value": "1225"
+        },
+        {
+          "columnName": "MinHeight",
+          "value": "1221"
+        },
+        {
+          "columnName": "MaxHeight",
+          "value": "1228"
+        },
+        {
+          "columnName": "SplitDoor",
+          "value": "false"
+        },
+        {
+          "columnName": "Hinges",
+          "value": "false"
+        },
+        {
+          "columnName": "BottomFrontDrawer",
+          "value": "false"
+        },
+        {
+          "columnName": "MinHeightDoorBtm",
+          "value": "0"
+        },
+        {
+          "columnName": "MaxHeightDoorBtm",
+          "value": "0"
+        }
+      ]
+    }
+  ]
+}

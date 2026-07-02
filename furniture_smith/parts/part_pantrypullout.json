@@ -1,0 +1,132 @@
+{
+  "partCode": "part_PantryPullout",
+  "shortName": "Pantry pullout",
+  "description": "Frontpanel for the pantry pullout",
+  "wdt": "XYZ",
+  "groupName": "Pullout",
+  "imageId": "29d5a6d8-a795-4079-b234-c50756e95ea3:PantryPullout.png",
+  "model3dImageId": "",
+  "invisible": false,
+  "restrictionTypeId": "Public",
+  "noNcData": false,
+  "partVariants": [
+    {
+      "partVarId": "pa_AdditionalInfo1",
+      "valueScript": "",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_BomId",
+      "valueScript": "this.parent.mod_FrontId",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_BtmColor",
+      "valueScript": "this.parent.mod_FrontColor",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeBackColor",
+      "valueScript": "this.parent.mod_FrontEdgeColor",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeBackType",
+      "valueScript": "'FRE'",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeFrontColor",
+      "valueScript": "this.parent.mod_FrontEdgeColor",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeFrontType",
+      "valueScript": "'FRE'",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeJointType",
+      "valueScript": "'VVVV'",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeLeftColor",
+      "valueScript": "this.parent.mod_FrontEdgeColor",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeLeftType",
+      "valueScript": "'FRE'",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeRightColor",
+      "valueScript": "this.parent.mod_FrontEdgeColor",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeRightType",
+      "valueScript": "'FRE'",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_FrontConstructionInfo",
+      "valueScript": "",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_FrontPanelConstruction",
+      "valueScript": "",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_GrainDirection",
+      "valueScript": "'Neutral'",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_HardwareInfo",
+      "valueScript": "''",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_Program",
+      "valueScript": "this.parent.mod_FrontProgram",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_TopColor",
+      "valueScript": "this.parent.mod_FrontColor",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_Weight",
+      "valueScript": "",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_ProcessingId",
+      "valueScript": "''",
+      "isWritable": false
+    }
+  ],
+  "bomData": [
+    {
+      "bomElementTypeId": "bomout_Board",
+      "description": "Board for the pantry pullout",
+      "conditionScript": "partSelf._g?.basic_CreateBom == 'Library'",
+      "valueScript": "// Type of the Bom-Element (will be checked in order output)\n  let elementType='Board';\n\n  // ProductionSite Category (to split the orders for different production sites)\n  let elementCategory='';\n\n  // Id of the parent to create the hierarchy\n  let parentBomId=part.pa_BomId;\n\n  // Call the function to process the Bom-Element\n  GlobalFunc.process_BoardBom(this, part, elementType, elementCategory, parentBomId);"
+    }
+  ],
+  "ncData": [
+    {
+      "touchName": "",
+      "bomElementTypeId": "ncout_Group",
+      "description": "Multiple Processings",
+      "conditionScript": "partSelf.pa_ProcessingId != ''",
+      "valueScript": "// Get Processing Mapping\n  let processingItems = GlobalFunc.find_ProcessingMapping(partSelf.pa_ProcessingId);\n\n  processingItems.forEach((processingItem) => {\n    // Components\n    if (processingItem.ProcessingLibrary == \"Component\") { \n\n      let componentLibrary = GlobalFunc.find_ComponentLibrary(processingItem.ProcessingId!);\n      // Add Component\n      let component = this.addncout_Component();\n      component.nc_TOOL = \"139\";\n      component.nc_IN = componentLibrary.ComponentMPR!;\n      component.nc_XA = componentLibrary.XA(partSelf,partSelf)!;\n      component.nc_YA = componentLibrary.YA(partSelf,partSelf)!;\n      component.nc_ZA = componentLibrary.ZA(partSelf,partSelf)!;\n      component.nc_WI = 0;\n      component.nc_EM = componentLibrary.EM!;\n      component.nc_KAT = componentLibrary.KAT!;\n      component.nc_KO = componentLibrary.KO!;\n      component.nc_Side = componentLibrary.Side!;\n      \n      let variables = GlobalFunc.find_ComponentVariables(componentLibrary.ComponentId!);\n      component.nc_VA = \"\";\n      variables.forEach((variable) => {\n        let variableValue = variable.VariableValue(partSelf,partSelf)!;\n        component.nc_VA += 'VA=\"' +variable.Variable + ' ' + parseFloat(variableValue.toFixed(2)) + '\"' + \"\\r\\n\";\n      });    \n    }\n\n    //else if (processingItem.ProcessingLibrary == \"DrillingVertical\") {}\n\n    //else if (processingItem.ProcessingLibrary == \"DrillingHorizontal\") {}\n\n    \n\n\n    \n  });",
+      "bomExecuteType": "Start"
+    }
+  ]
+}

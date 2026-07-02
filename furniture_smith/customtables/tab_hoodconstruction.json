@@ -1,0 +1,66 @@
+{
+  "tableName": "tab_HoodConstruction",
+  "description": "Holds Dimensions of Internal Hood Appliances",
+  "restrictionTypeId": "Public",
+  "isInputUnique": true,
+  "columns": [
+    {
+      "name": "_id",
+      "type": "Integer",
+      "allowNull": false
+    },
+    {
+      "name": "in_HoodConstructionID",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "TotalWidth",
+      "type": "Integer",
+      "allowNull": true
+    },
+    {
+      "name": "TotalHeight",
+      "type": "Integer",
+      "allowNull": true
+    },
+    {
+      "name": "TotalDepth",
+      "type": "Integer",
+      "allowNull": true
+    },
+    {
+      "name": "ExhaustDiameter",
+      "type": "Integer",
+      "allowNull": true
+    },
+    {
+      "name": "ExhaustHeight",
+      "type": "Integer",
+      "allowNull": false
+    },
+    {
+      "name": "FunctionPanelHeight",
+      "type": "Integer",
+      "allowNull": true
+    },
+    {
+      "name": "ApronWidth",
+      "type": "Integer",
+      "allowNull": true
+    },
+    {
+      "name": "ApronHeight",
+      "type": "Integer",
+      "allowNull": true
+    },
+    {
+      "name": "ApronDepth",
+      "type": "Integer",
+      "allowNull": true
+    }
+  ],
+  "rows": [],
+  "dataSource": "Default",
+  "changedAt": "2026-03-16T14:42:06.9378604+00:00"
+}

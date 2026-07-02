@@ -1,0 +1,102 @@
+{
+  "partCode": "part_ShelfadjWood",
+  "shortName": "Adj shelf wood",
+  "description": "Adjustable shelf wood",
+  "wdt": "XZY",
+  "groupName": "Panels",
+  "imageId": "d8d83bcd-8796-4370-a296-a1ad9b0fdd81:Shelfadj_Wood.png",
+  "model3dImageId": "",
+  "invisible": false,
+  "restrictionTypeId": "Public",
+  "noNcData": false,
+  "partVariants": [
+    {
+      "partVarId": "pa_TopColor",
+      "valueScript": "this.parent.mod_ShelfadjColor",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_BtmColor",
+      "valueScript": "this.parent.mod_ShelfadjColor",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeFrontColor",
+      "valueScript": "this.parent.mod_ShelfadjColor",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeLeftColor",
+      "valueScript": "this.parent.mod_ShelfadjColor",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeBackColor",
+      "valueScript": "this.parent.mod_ShelfadjColor",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeRightColor",
+      "valueScript": "this.parent.mod_ShelfadjColor",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeFrontType",
+      "valueScript": "'CFE'"
+    },
+    {
+      "partVarId": "pa_EdgeLeftType",
+      "valueScript": "'CBE'"
+    },
+    {
+      "partVarId": "pa_EdgeBackType",
+      "valueScript": "'CBE'"
+    },
+    {
+      "partVarId": "pa_EdgeRightType",
+      "valueScript": "'CBE'"
+    },
+    {
+      "partVarId": "pa_EdgeJointType",
+      "valueScript": "'VVVV'"
+    },
+    {
+      "partVarId": "pa_GrainDirection",
+      "valueScript": "'Neutral'",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_Program",
+      "valueScript": "this.parent.mod_CarcaseProgram"
+    },
+    {
+      "partVarId": "pa_BomId",
+      "valueScript": "this.parent.mod_CarcaseId",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_AdditionalInfo1",
+      "valueScript": "'None'",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_ColorGrainGroup",
+      "valueScript": "this.parent.mod_ShelfadjColor_matrix.GrainGroupId",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_ProgramGrainGroup",
+      "valueScript": "this.parent.mod_CarcaseProgram_matrix.GrainGroupId",
+      "isWritable": false
+    }
+  ],
+  "bomData": [
+    {
+      "bomElementTypeId": "bomout_Board",
+      "description": "Output Parts / Boards",
+      "conditionScript": "partSelf._g?.basic_CreateBom == 'Library'",
+      "valueScript": "// Type of the Bom-Element (will be checked in order output)\nlet elementType='Board';\n\n// ProductionSite Category (to split the orders for different production sites)\nlet elementCategory='';\n\n// Id of the parent to create the hierarchy\nlet parentBomId=part.pa_BomId;\n\n// Call the function to process the Bom-Element\nGlobalFunc.process_BoardBom(this, part, elementType, elementCategory, parentBomId)"
+    }
+  ],
+  "ncData": []
+}

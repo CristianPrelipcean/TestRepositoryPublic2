@@ -1,0 +1,247 @@
+{
+  "partCode": "part_CleatVert",
+  "shortName": "Cleat Vertical",
+  "description": "Cleat Vertical",
+  "wdt": "XYZ",
+  "groupName": "Panels",
+  "imageId": "49ec2082-77af-4c10-a015-c453c40bf63e:Cleat.jpg",
+  "model3dImageId": "",
+  "invisible": false,
+  "restrictionTypeId": "Public",
+  "noNcData": false,
+  "partVariants": [
+    {
+      "partVarId": "pa_TypeElement",
+      "valueScript": "this.parent.mod_TypeElement",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_TopColor",
+      "valueScript": "this.parent.mod_CarcaseColor",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_CarcasePartConnectionBtmVert",
+      "valueScript": "this.parent.mod_CarcasePartConnectionBtmVert",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_CarcasePartConnectionTopVert",
+      "valueScript": "this.parent.mod_CarcasePartConnectionTopVert",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_FittingConnectionBtmVert",
+      "valueScript": "this.parent.mod_FittingConnectionBtmVert",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_FittingConnectionTopVert",
+      "valueScript": "this.parent.mod_FittingConnectionTopVert",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_BomId",
+      "valueScript": "this.parent.mod_CarcaseId",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_ParentName",
+      "valueScript": "this.parent.mod_ParentName",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_BtmColor",
+      "valueScript": "this.parent.mod_CarcaseOutsideColor",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeBackColor",
+      "valueScript": "this.parent.mod_CarcaseEdgeColor",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeBackType",
+      "valueScript": "this.parent.mod_EdgeBackType",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeFrontColor",
+      "valueScript": "this.parent.mod_CarcaseEdgeColor",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeFrontType",
+      "valueScript": "this.parent.mod_EdgeFrontType",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeJointType",
+      "valueScript": "this.parent.mod_EdgeJointType",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeLeftColor",
+      "valueScript": "this.parent.mod_CarcaseEdgeColor",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeLeftType",
+      "valueScript": "this.parent.mod_EdgeLeftType",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeRightColor",
+      "valueScript": "this.parent.mod_CarcaseEdgeColor",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeRightType",
+      "valueScript": "this.parent.mod_EdgeRightType",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_GrainDirection",
+      "valueScript": "'Neutral'",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_Program",
+      "valueScript": "this.parent.mod_CarcaseProgram",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_CarcasePartConnectionLeftHor",
+      "valueScript": "this.parent.mod_CarcasePartConnectionLeftHor",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_CarcasePartConnectionRightHor",
+      "valueScript": "this.parent.mod_CarcasePartConnectionRightHor",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_FittingConnectionLeftHor",
+      "valueScript": "this.parent.mod_FittingConnectionLeftHor",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_FittingConnectionRightHor",
+      "valueScript": "this.parent.mod_FittingConnectionRightHor",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_AdditionalInfo1",
+      "valueScript": "'None'",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_ProgramGrainGroup",
+      "valueScript": "this.parent.mod_CarcaseProgram_matrix.GrainGroupId",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_ColorGrainGroup",
+      "valueScript": "this.parent.mod_CarcaseColor_matrix.GrainGroupId",
+      "isWritable": false
+    }
+  ],
+  "bomData": [
+    {
+      "bomElementTypeId": "bomout_Board",
+      "description": "Output Parts / Boards",
+      "conditionScript": "partSelf._g?.basic_CreateBom == 'Library'",
+      "valueScript": "// Type of the Bom-Element (will be checked in order output)\nlet elementType='Board';\n\n// ProductionSite Category (to split the orders for different production sites)\nlet elementCategory='';\n\n// Id of the parent to create the hierarchy\nlet parentBomId=part.pa_BomId;\n\n// Call the function to process the Bom-Element\nGlobalFunc.process_BoardBom(this, part, elementType, elementCategory, parentBomId)"
+    }
+  ],
+  "ncData": [
+    {
+      "part2": "part_HingeDrill",
+      "touchName": "FromRight",
+      "bomElementTypeId": "ncout_Group",
+      "description": "Drilling for MountingPlate for a LeftDoor",
+      "valueScript": "              \n//====================================================================\n// Get data for drillings and rotation\n//====================================================================\n\nlet drillings: any[] = [];\nlet drills: any[] = [];\nlet processings = GlobalFunc.find_ProcessingMapping(part2.pa_ProcessingId2);\nlet insertPoint = GlobalFunc.process_MachiningInsertionHelper('012',part2.pa_Model3DGroupName2)\nlet dimz=99; // DimZ of part_hingeDrill (Fixed in mc_Hinge)\n\nprocessings.forEach((processing) => {\n  drills = GlobalFunc.find_HardwareDrillVertLibrary(processing.ProcessingId!, 'Carcase');\n  drills.forEach((drill) => {\n    drillings.push(drill);\n  });\n});\n\n//====================================================================\n// For each drilling (insert the drillings)\n//====================================================================\n\ndrillings.forEach(x => \n{  \n  // Add Vertical Drill\n  let DrillVert = this.addncout_DrillVert();\n  DrillVert.nc_TOOL=\"102\";\n  DrillVert.nc_XA=partSelf._dimy - posRel.y - insertPoint.InsertionPointY - x.YA;\n  //DrillVert.nc_YA=insertPoint.InsertionPointX + x.XA - frontGapCarcase;\n  DrillVert.nc_YA=insertPoint.InsertionPointX + x.XA - (part2.pa_FrontGapCarcase - part2.pa_HingeGapCarcase);\n  DrillVert.nc_TI=x.TI;\n  DrillVert.nc_DU=x.DU;\n\n  DrillVert.nc_BM = x.matrix_BM || \"LS\"\n  DrillVert.nc_WI = x.matrix_WI ?? 0;\n  DrillVert.nc_AB = x.matrix_AB ?? 1;\n  DrillVert.nc_LA = x.matrix_LA ?? 0;\n  DrillVert.nc_MI = x.matrix_MI ?? 0;\n  DrillVert.nc_KO = x.matrix_KO || \"00\";\n  DrillVert.nc_Side = \"Btm\";\n  \n\n  // Add drawing\n  //let drilling01 = partSelf.add3DElement('Drilling01', DrillVert, posRel.x, posRel.y + insertPoint.InsertionPointY + x.YA, partSelf._dimz + frontGapCarcase - insertPoint.InsertionPointX - x.XA, -x.TI, x.DU, x.DU );\n  let drilling01 = partSelf.add3DElement('Drilling01', DrillVert, posRel.x, posRel.y + insertPoint.InsertionPointY + x.YA, partSelf._dimz - insertPoint.InsertionPointX - x.XA + (part2.pa_FrontGapCarcase - part2.pa_HingeGapCarcase), -x.TI, x.DU, x.DU );\n  drilling01.extrude('<svg><circle cx=\"' + 0 + '\" cy=\"' + 0 + '\" r=\"' + x.DU/2 + '\" /></svg>', 'x');\n});",
+      "bomExecuteType": "Touch"
+    },
+    {
+      "part2": "part_HingeDrill",
+      "touchName": "FromLeft",
+      "bomElementTypeId": "ncout_Group",
+      "description": "Drilling for MountingPlate for a RightDoor",
+      "valueScript": "              \n//====================================================================\n// Get data for drillings and rotation\n//====================================================================\n\nlet drillings: any[] = [];\nlet drills: any[] = [];\nlet processings = GlobalFunc.find_ProcessingMapping(part2.pa_ProcessingId2);\nlet insertPoint = GlobalFunc.process_MachiningInsertionHelper('012',part2.pa_Model3DGroupName2)\n\n\nprocessings.forEach((processing) => {\n  drills = GlobalFunc.find_HardwareDrillVertLibrary(processing.ProcessingId!, 'Carcase');\n  drills.forEach((drill) => {\n    drillings.push(drill);\n  });\n});\n\n//====================================================================\n// For each drilling (insert the drillings)\n//====================================================================\n\ndrillings.forEach(x => \n{  \n  // Add Vertical Drill\n  let DrillVert = this.addncout_DrillVert();\n  DrillVert.nc_TOOL=\"102\";\n  DrillVert.nc_XA=posRel.y + insertPoint.InsertionPointY + x.YA;\n  DrillVert.nc_YA=insertPoint.InsertionPointX + x.XA - (part2.pa_FrontGapCarcase - part2.pa_HingeGapCarcase);\n  DrillVert.nc_TI=x.TI;\n  DrillVert.nc_DU=x.DU;\n\n  DrillVert.nc_BM = x.matrix_BM || \"LS\"\n  DrillVert.nc_WI = x.matrix_WI ?? 0;\n  DrillVert.nc_AB = x.matrix_AB ?? 1;\n  DrillVert.nc_LA = x.matrix_LA ?? 0;\n  DrillVert.nc_MI = x.matrix_MI ?? 0;\n  DrillVert.nc_KO = x.matrix_KO || \"00\";\n  DrillVert.nc_Side = \"Top\";\n\n  // Add drawing\n  let drilling01 = partSelf.add3DElement('Drilling01', DrillVert, partSelf._x!, posRel.y + insertPoint.InsertionPointY + x.YA, partSelf._dimz - insertPoint.InsertionPointX - x.XA + (part2.pa_FrontGapCarcase - part2.pa_HingeGapCarcase), x.TI, x.DU, x.DU );\n  drilling01.extrude('<svg><circle cx=\"' + 0 + '\" cy=\"' + 0 + '\" r=\"' + x.DU/2 + '\" /></svg>', 'x');\n});",
+      "bomExecuteType": "Touch"
+    },
+    {
+      "part2": "part_Shelftop",
+      "touchName": "FromTop",
+      "bomElementTypeId": "ncout_Group",
+      "description": "Connection with top shelf",
+      "valueScript": "// Schuler Consulting\n// Create: January 2025\n// By Ludwig Weber\n// Purpose: CabinetLibrary\n//\n// Description:\n// Connection between CleatVert and Shelftop\n// Touch FromTop\n//\n// Revisions:\n// \n//===================================================\n\n// Initialize variables\nlet Area = \"TopVert\";\nlet PartType = 'PanelVertical';\nlet DrillingPartType = 'PartShort';\nlet DrillingPosition = 'Top';\nlet TouchDirectionGraphic = 'Top';\nlet FallingDirection = 'Front';\nlet ConnectionOrientation = 'LeftRight';\nlet ConnectionType = partSelf.pa_CarcasePartConnectionTopVert;\nlet FittingType = partSelf.pa_FittingConnectionTopVert;\nlet InsideDirection = 'Back';\n\n// Call the process function\nGlobalFunc.process_CarcasePartConnection(this, partSelf, part2, posRel, Area, PartType, DrillingPosition, TouchDirectionGraphic, FallingDirection, ConnectionOrientation, ConnectionType, FittingType, InsideDirection, DrillingPartType)",
+      "bomExecuteType": "Touch"
+    },
+    {
+      "part2": "part_Railhortopfront",
+      "touchName": "FromTop",
+      "bomElementTypeId": "ncout_Group",
+      "description": "Connection with rail horizontal top front",
+      "valueScript": "// Schuler Consulting\n// Create: January 2025\n// By Ludwig Weber\n// Purpose: CabinetLibrary\n//\n// Description:\n// Connection between CleatVert and Rail horizontal front top\n// Touch FromTop\n//\n// Revisions:\n// \n//===================================================\n\n// Initialize variables\nlet Area = \"TopVert\";\nlet PartType = 'PanelVertical';\nlet DrillingPartType = 'PartShort';\nlet DrillingPosition = 'Top';\nlet TouchDirectionGraphic = 'Top';\nlet FallingDirection = 'Front';\nlet ConnectionOrientation = 'LeftRight';\nlet ConnectionType = partSelf.pa_CarcasePartConnectionTopVert;\nlet FittingType = partSelf.pa_FittingConnectionTopVert;\nlet InsideDirection = 'Back';\n\n// Call the process function\nGlobalFunc.process_CarcasePartConnection(this, partSelf, part2, posRel, Area, PartType, DrillingPosition, TouchDirectionGraphic, FallingDirection, ConnectionOrientation, ConnectionType, FittingType, InsideDirection, DrillingPartType)",
+      "bomExecuteType": "Touch"
+    },
+    {
+      "part2": "part_Shelfbtm",
+      "touchName": "FromBottom",
+      "bomElementTypeId": "ncout_Group",
+      "description": "Connection with bottom shelf",
+      "valueScript": "// Schuler Consulting\n// Create: January 2025\n// By Ludwig Weber\n// Purpose: CabinetLibrary\n//\n// Description:\n// Connection between CleatVert and Shelfbottom\n// Touch FromBottom\n//\n// Revisions:\n// \n//===================================================\n\n// Initialize variables\nlet Area = \"BtmVert\";\nlet PartType = 'PanelVertical';\nlet DrillingPartType = 'PartShort';\nlet DrillingPosition = 'Bottom';\nlet TouchDirectionGraphic = 'Bottom';\nlet FallingDirection = 'Front';\nlet ConnectionOrientation = 'LeftRight';\nlet ConnectionType = partSelf.pa_CarcasePartConnectionBtmVert;\nlet FittingType = partSelf.pa_FittingConnectionBtmVert;\nlet InsideDirection = 'Back';\n\n// Call the process function\nGlobalFunc.process_CarcasePartConnection(this, partSelf, part2, posRel, Area, PartType, DrillingPosition, TouchDirectionGraphic, FallingDirection, ConnectionOrientation, ConnectionType, FittingType, InsideDirection, DrillingPartType)",
+      "bomExecuteType": "Touch"
+    },
+    {
+      "part2": "part_ShelfadjDrill",
+      "touchName": "FromBack",
+      "bomElementTypeId": "ncout_Group",
+      "description": "Add the drilling line for adjustable shelves",
+      "valueScript": "//====================================================================\n// Get data for drillings\n//====================================================================\n\n// Call the process function to retrieve drill data\nlet Info = GlobalFunc.process_ShelfadjDrills(part2.pa_ShelfadjVertDividerProcessingId)\nlet DrillInfo = Info.drill;\nlet InsertionPoint = Info.insertionPoint.Y;\n\n// Calculate quantity for the drills\nlet QtyDrills = Math.floor(part2._dimy / part2.pa_ShelfadjDrillDistance) + 1;\n\n//====================================================================\n// For each drilling (insert the drillings)\n//====================================================================\n\n// Variables\nlet StartPos = posRel.y;\nlet DrillingLines = GlobalFunc.process_Descriptor('1_1', partSelf._dimx);\n\nfor(let i = 1; i <= QtyDrills; i++){\n\n  // Insert the drillings in depth (drilling lines)\n  let k = 0;\n  DrillingLines.forEach(DrillingLine => {\n\n    // Calculate y-position\n    let posY = StartPos + DrillInfo.YA + InsertionPoint;\n\n    // Calculate x-position\n    let posX = DrillingLine;\n\n    // Add Vertical Drill\n    let DrillVert = this.addncout_DrillVert();\n    DrillVert.nc_TOOL = \"102\";\n    DrillVert.nc_XA = posX;\n    DrillVert.nc_YA = partSelf._dimy-posY;\n    DrillVert.nc_TI = DrillInfo.TI;\n    DrillVert.nc_DU = DrillInfo.DU;\n    DrillVert.nc_BM = DrillInfo.matrix_BM || \"LS\";\n    DrillVert.nc_WI = DrillInfo.matrix_WI ?? 0;\n    DrillVert.nc_AB = DrillInfo.matrix_AB ?? 1;\n    DrillVert.nc_LA = DrillInfo.matrix_LA ?? 0;\n    DrillVert.nc_MI = DrillInfo.matrix_MI ?? 0;\n    DrillVert.nc_KO = DrillInfo.matrix_KO || \"00\";\n\t  DrillVert.nc_Side = \"Top\";\n\n    // Add drawing\n    let drilling01 = partSelf.add3DElement('Drilling01', DrillVert, posX, posY, 0, DrillInfo.DU, DrillInfo.DU, DrillInfo.TI);\n    drilling01.extrude('<svg><circle cx=\"' + 0 + '\" cy=\"' + 0 + '\" r=\"' + DrillInfo.DU / 2 + '\" /></svg>', 'z');\n\n    // Next drilling line\n    k++;\n  });\n\n  // Set starting position for the next drills\n  StartPos += part2.pa_ShelfadjDrillDistance;\n}",
+      "bomExecuteType": "Touch"
+    },
+    {
+      "part2": "part_Shelffixed",
+      "touchName": "FromTop",
+      "bomElementTypeId": "ncout_Group",
+      "description": "Connection with fixed shelf",
+      "valueScript": "// Schuler Consulting\n// Create: January 2025\n// By Ludwig Weber\n// Purpose: CabinetLibrary\n//\n// Description:\n// Connection between CleatVert and Shelffixed\n// Touch FromTop\n//\n// Revisions:\n// \n//===================================================\n\n// Initialize variables\nlet Area = \"TopVert\";\nlet PartType = 'PanelVertical';\nlet DrillingPartType = 'PartShort';\nlet DrillingPosition = 'Top';\nlet TouchDirectionGraphic = 'Top';\nlet FallingDirection = 'Front';\nlet ConnectionOrientation = 'LeftRight';\nlet ConnectionType = partSelf.pa_CarcasePartConnectionTopVert;\nlet FittingType = partSelf.pa_FittingConnectionTopVert;\nlet InsideDirection = 'Back';\n\n// Call the process function\nGlobalFunc.process_CarcasePartConnection(this, partSelf, part2, posRel, Area, PartType, DrillingPosition, TouchDirectionGraphic, FallingDirection, ConnectionOrientation, ConnectionType, FittingType, InsideDirection, DrillingPartType)",
+      "bomExecuteType": "Touch"
+    },
+    {
+      "part2": "part_Shelffixed",
+      "touchName": "FromBottom",
+      "bomElementTypeId": "ncout_Group",
+      "description": "Connection with fixed shelf",
+      "valueScript": "// Schuler Consulting\n// Create: January 2025\n// By Ludwig Weber\n// Purpose: CabinetLibrary\n//\n// Description:\n// Connection between CleatVert and Shelffixed\n// Touch FromBottom\n//\n// Revisions:\n// \n//===================================================\n\n// Initialize variables\nlet Area = \"BtmVert\";\nlet PartType = 'PanelVertical';\nlet DrillingPartType = 'PartShort';\nlet DrillingPosition = 'Bottom';\nlet TouchDirectionGraphic = 'Bottom';\nlet FallingDirection = 'Front';\nlet ConnectionOrientation = 'LeftRight';\nlet ConnectionType = partSelf.pa_CarcasePartConnectionBtmVert;\nlet FittingType = partSelf.pa_FittingConnectionBtmVert;\nlet InsideDirection = 'Back';\n\n// Call the process function\nGlobalFunc.process_CarcasePartConnection(this, partSelf, part2, posRel, Area, PartType, DrillingPosition, TouchDirectionGraphic, FallingDirection, ConnectionOrientation, ConnectionType, FittingType, InsideDirection, DrillingPartType)",
+      "bomExecuteType": "Touch"
+    },
+    {
+      "part2": "part_Panelblind",
+      "touchName": "FromRight",
+      "bomElementTypeId": "ncout_Group",
+      "description": "Connection with panel blind",
+      "valueScript": "// Schuler Consulting\n// Create: January 2025\n// By Ludwig Weber\n// Purpose: CabinetLibrary\n//\n// Description:\n// Connection between Cleat vertical and panel blind\n// Touch FromRight\n//\n// Revisions:\n// \n//===================================================\n\n// Initialize variables\nlet Area = \"LeftHor\";\nlet PartType = 'Sidepanel';\nlet DrillingPartType = 'PartLong';\nlet DrillingPosition = 'Right';\nlet TouchDirectionGraphic = 'Right';\nlet FallingDirection = 'Front';\nlet ConnectionOrientation = 'TopBottom';\nlet ConnectionType = partSelf.pa_CarcasePartConnectionLeftHor;\nlet FittingType = partSelf.pa_FittingConnectionLeftHor;\nlet InsideDirection = 'Back';\n\n// Call the process function\nGlobalFunc.process_CarcasePartConnection(this, partSelf, part2, posRel, Area, PartType, DrillingPosition, TouchDirectionGraphic, FallingDirection, ConnectionOrientation, ConnectionType, FittingType, InsideDirection, DrillingPartType)",
+      "bomExecuteType": "Touch"
+    },
+    {
+      "part2": "part_Panelblind",
+      "touchName": "FromLeft",
+      "bomElementTypeId": "ncout_Group",
+      "description": "Connection with panel blind",
+      "valueScript": "// Schuler Consulting\n// Create: January 2025\n// By Ludwig Weber\n// Purpose: CabinetLibrary\n//\n// Description:\n// Connection between Cleat vertical and panel blind\n// Touch FromLeft\n//\n// Revisions:\n// \n//===================================================\n\n// Initialize variables\nlet Area = \"RightHor\";\nlet PartType = 'Sidepanel';\nlet DrillingPartType = 'PartLong';\nlet DrillingPosition = 'Left';\nlet TouchDirectionGraphic = 'Left';\nlet FallingDirection = 'Front';\nlet ConnectionOrientation = 'TopBottom';\nlet ConnectionType = partSelf.pa_CarcasePartConnectionRightHor;\nlet FittingType = partSelf.pa_FittingConnectionRightHor;\nlet InsideDirection = 'Back';\n\n// Call the process function\nGlobalFunc.process_CarcasePartConnection(this, partSelf, part2, posRel, Area, PartType, DrillingPosition, TouchDirectionGraphic, FallingDirection, ConnectionOrientation, ConnectionType, FittingType, InsideDirection, DrillingPartType)",
+      "bomExecuteType": "Touch"
+    },
+    {
+      "part2": "part_SlopedCeilingShelftopHor",
+      "touchName": "FromTop",
+      "bomElementTypeId": "ncout_Group",
+      "description": "Connection with sloped ceiling top shelf horizontal",
+      "valueScript": "// Schuler Consulting\n// Create: January 2025\n// By Ludwig Weber\n// Purpose: CabinetLibrary\n//\n// Description:\n// Connection between CleatVert and Shelftop\n// Touch FromTop\n//\n// Revisions:\n// \n//===================================================\n\n// Initialize variables\nlet Area = \"TopVert\";\nlet PartType = 'PanelVertical';\nlet DrillingPartType = 'PartShort';\nlet DrillingPosition = 'Top';\nlet TouchDirectionGraphic = 'Top';\nlet FallingDirection = 'Front';\nlet ConnectionOrientation = 'LeftRight';\nlet ConnectionType = partSelf.pa_CarcasePartConnectionTopVert;\nlet FittingType = partSelf.pa_FittingConnectionTopVert;\nlet InsideDirection = 'Back';\n\n// Call the process function\nGlobalFunc.process_CarcasePartConnection(this, partSelf, part2, posRel, Area, PartType, DrillingPosition, TouchDirectionGraphic, FallingDirection, ConnectionOrientation, ConnectionType, FittingType, InsideDirection, DrillingPartType)",
+      "bomExecuteType": "Touch"
+    }
+  ]
+}

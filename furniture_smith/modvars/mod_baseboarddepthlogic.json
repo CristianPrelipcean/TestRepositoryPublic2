@@ -1,0 +1,30 @@
+{
+  "variantId": "mod_BaseboardDepthLogic",
+  "shortName": "Baseboard Depth Logic",
+  "variantTypeId": "Text",
+  "description": "How the baseboard depth dimension is evaluated based on its carcases properties.",
+  "restrictionTypeId": "Public",
+  "groupName": "Baseboard",
+  "imageId": "a64998dc-a1fc-465b-b23e-b0f8812dccf9:Logic.png",
+  "assignedGlobalVarId": "basic_BaseboardDepthLogic",
+  "isArray": false,
+  "isPosRelevant": true,
+  "mainAttr": false,
+  "userRight": "Master",
+  "implicitRelevant": false,
+  "matrix": [],
+  "selections": [
+    {
+      "value": "FollowsMaxDepth",
+      "description": "Baseboard reference depth is the biggest carcase's depth",
+      "shortName": "FollowsMaxDepth ",
+      "matrix": []
+    },
+    {
+      "value": "FollowsMinDepth",
+      "description": "Baseboard reference depth is the smallest carcase's depth",
+      "shortName": "FollowsMinDepth",
+      "matrix": []
+    }
+  ]
+}

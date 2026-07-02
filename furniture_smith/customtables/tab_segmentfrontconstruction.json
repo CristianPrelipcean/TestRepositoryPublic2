@@ -1,0 +1,1542 @@
+{
+  "tableName": "tab_SegmentFrontConstruction",
+  "description": "Front construction for the segmented fronts",
+  "restrictionTypeId": "Public",
+  "groupName": "FrontConstruction",
+  "columns": [
+    {
+      "name": "_id",
+      "type": "Integer",
+      "allowNull": false
+    },
+    {
+      "name": "in_PartGroup",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_FrontConstructionId",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_FrontColorGrainGroupId",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_SegmentColorGrainGroupId",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_SegmentType",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_SegmentColor",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_FrontStartPos",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "in_FrontOverlapBtm",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "InHouseProduction",
+      "type": "Bool",
+      "allowNull": true
+    },
+    {
+      "name": "DescriptorHeight",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "DescriptorDepth",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "FrontThk",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "SegmentThk",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "Weight",
+      "type": "Real",
+      "allowNull": false
+    },
+    {
+      "name": "SegmentWeight",
+      "type": "Real",
+      "allowNull": false
+    },
+    {
+      "name": "FrontGrainDirection",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "SegmentGrainDirection",
+      "type": "Text",
+      "allowNull": true
+    }
+  ],
+  "rows": [
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Door"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "SegmentFront01"
+        },
+        {
+          "columnName": "in_FrontColorGrainGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_SegmentColorGrainGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_SegmentType",
+          "value": "Glass"
+        },
+        {
+          "columnName": "in_SegmentColor",
+          "value": "FloatGlass"
+        },
+        {
+          "columnName": "in_FrontStartPos",
+          "value": "700"
+        },
+        {
+          "columnName": "in_FrontOverlapBtm",
+          "value": "0"
+        },
+        {
+          "columnName": "InHouseProduction",
+          "value": "true"
+        },
+        {
+          "columnName": "DescriptorHeight",
+          "value": "200mm_300mm_1"
+        },
+        {
+          "columnName": "DescriptorDepth",
+          "value": "1_5mm_1"
+        },
+        {
+          "columnName": "FrontThk",
+          "value": "19"
+        },
+        {
+          "columnName": "SegmentThk",
+          "value": "5"
+        },
+        {
+          "columnName": "Weight",
+          "value": "25"
+        },
+        {
+          "columnName": "SegmentWeight",
+          "value": "12"
+        },
+        {
+          "columnName": "FrontGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "SegmentGrainDirection",
+          "value": "None"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Door"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "SegmentFront01"
+        },
+        {
+          "columnName": "in_FrontColorGrainGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_SegmentColorGrainGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_SegmentType",
+          "value": "Glass"
+        },
+        {
+          "columnName": "in_SegmentColor",
+          "value": "FloatGlass"
+        },
+        {
+          "columnName": "in_FrontStartPos",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontOverlapBtm",
+          "value": "0"
+        },
+        {
+          "columnName": "InHouseProduction",
+          "value": "true"
+        },
+        {
+          "columnName": "DescriptorHeight",
+          "value": "1_300mm_200mm"
+        },
+        {
+          "columnName": "DescriptorDepth",
+          "value": "1_5mm_1"
+        },
+        {
+          "columnName": "FrontThk",
+          "value": "19"
+        },
+        {
+          "columnName": "SegmentThk",
+          "value": "5"
+        },
+        {
+          "columnName": "Weight",
+          "value": "25"
+        },
+        {
+          "columnName": "SegmentWeight",
+          "value": "12"
+        },
+        {
+          "columnName": "FrontGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "SegmentGrainDirection",
+          "value": "None"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Door"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "SegmentFront01"
+        },
+        {
+          "columnName": "in_FrontColorGrainGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_SegmentColorGrainGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_SegmentType",
+          "value": "Glass"
+        },
+        {
+          "columnName": "in_SegmentColor",
+          "value": "FloatGlass"
+        },
+        {
+          "columnName": "in_FrontStartPos",
+          "value": "700"
+        },
+        {
+          "columnName": "in_FrontOverlapBtm",
+          "value": "0"
+        },
+        {
+          "columnName": "InHouseProduction",
+          "value": "true"
+        },
+        {
+          "columnName": "DescriptorHeight",
+          "value": "200mm_300mm_1"
+        },
+        {
+          "columnName": "DescriptorDepth",
+          "value": "1_5mm_1"
+        },
+        {
+          "columnName": "FrontThk",
+          "value": "19"
+        },
+        {
+          "columnName": "SegmentThk",
+          "value": "5"
+        },
+        {
+          "columnName": "Weight",
+          "value": "25"
+        },
+        {
+          "columnName": "SegmentWeight",
+          "value": "12"
+        },
+        {
+          "columnName": "FrontGrainDirection",
+          "value": "Crosswise"
+        },
+        {
+          "columnName": "SegmentGrainDirection",
+          "value": "None"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Door"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "SegmentFront01"
+        },
+        {
+          "columnName": "in_FrontColorGrainGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_SegmentColorGrainGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_SegmentType",
+          "value": "Glass"
+        },
+        {
+          "columnName": "in_SegmentColor",
+          "value": "FloatGlass"
+        },
+        {
+          "columnName": "in_FrontStartPos",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontOverlapBtm",
+          "value": "0"
+        },
+        {
+          "columnName": "InHouseProduction",
+          "value": "true"
+        },
+        {
+          "columnName": "DescriptorHeight",
+          "value": "1_300mm_200mm"
+        },
+        {
+          "columnName": "DescriptorDepth",
+          "value": "1_5mm_1"
+        },
+        {
+          "columnName": "FrontThk",
+          "value": "19"
+        },
+        {
+          "columnName": "SegmentThk",
+          "value": "5"
+        },
+        {
+          "columnName": "Weight",
+          "value": "25"
+        },
+        {
+          "columnName": "SegmentWeight",
+          "value": "12"
+        },
+        {
+          "columnName": "FrontGrainDirection",
+          "value": "Crosswise"
+        },
+        {
+          "columnName": "SegmentGrainDirection",
+          "value": "None"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Door"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "SegmentFront01"
+        },
+        {
+          "columnName": "in_FrontColorGrainGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_SegmentColorGrainGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_SegmentType",
+          "value": "Glass"
+        },
+        {
+          "columnName": "in_SegmentColor",
+          "value": "SatinGlass"
+        },
+        {
+          "columnName": "in_FrontStartPos",
+          "value": "700"
+        },
+        {
+          "columnName": "in_FrontOverlapBtm",
+          "value": "0"
+        },
+        {
+          "columnName": "InHouseProduction",
+          "value": "true"
+        },
+        {
+          "columnName": "DescriptorHeight",
+          "value": "200mm_300mm_1"
+        },
+        {
+          "columnName": "DescriptorDepth",
+          "value": "1_5mm_1"
+        },
+        {
+          "columnName": "FrontThk",
+          "value": "19"
+        },
+        {
+          "columnName": "SegmentThk",
+          "value": "5"
+        },
+        {
+          "columnName": "Weight",
+          "value": "25"
+        },
+        {
+          "columnName": "SegmentWeight",
+          "value": "12"
+        },
+        {
+          "columnName": "FrontGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "SegmentGrainDirection",
+          "value": "None"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Door"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "SegmentFront01"
+        },
+        {
+          "columnName": "in_FrontColorGrainGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_SegmentColorGrainGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_SegmentType",
+          "value": "Glass"
+        },
+        {
+          "columnName": "in_SegmentColor",
+          "value": "SatinGlass"
+        },
+        {
+          "columnName": "in_FrontStartPos",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontOverlapBtm",
+          "value": "0"
+        },
+        {
+          "columnName": "InHouseProduction",
+          "value": "true"
+        },
+        {
+          "columnName": "DescriptorHeight",
+          "value": "1_300mm_200mm"
+        },
+        {
+          "columnName": "DescriptorDepth",
+          "value": "1_5mm_1"
+        },
+        {
+          "columnName": "FrontThk",
+          "value": "19"
+        },
+        {
+          "columnName": "SegmentThk",
+          "value": "5"
+        },
+        {
+          "columnName": "Weight",
+          "value": "25"
+        },
+        {
+          "columnName": "SegmentWeight",
+          "value": "12"
+        },
+        {
+          "columnName": "FrontGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "SegmentGrainDirection",
+          "value": "None"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Door"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "SegmentFront01"
+        },
+        {
+          "columnName": "in_FrontColorGrainGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_SegmentColorGrainGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_SegmentType",
+          "value": "Glass"
+        },
+        {
+          "columnName": "in_SegmentColor",
+          "value": "SatinGlass"
+        },
+        {
+          "columnName": "in_FrontStartPos",
+          "value": "700"
+        },
+        {
+          "columnName": "in_FrontOverlapBtm",
+          "value": "0"
+        },
+        {
+          "columnName": "InHouseProduction",
+          "value": "true"
+        },
+        {
+          "columnName": "DescriptorHeight",
+          "value": "200mm_300mm_1"
+        },
+        {
+          "columnName": "DescriptorDepth",
+          "value": "1_5mm_1"
+        },
+        {
+          "columnName": "FrontThk",
+          "value": "19"
+        },
+        {
+          "columnName": "SegmentThk",
+          "value": "5"
+        },
+        {
+          "columnName": "Weight",
+          "value": "25"
+        },
+        {
+          "columnName": "SegmentWeight",
+          "value": "12"
+        },
+        {
+          "columnName": "FrontGrainDirection",
+          "value": "Crosswise"
+        },
+        {
+          "columnName": "SegmentGrainDirection",
+          "value": "None"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Door"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "SegmentFront01"
+        },
+        {
+          "columnName": "in_FrontColorGrainGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_SegmentColorGrainGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_SegmentType",
+          "value": "Glass"
+        },
+        {
+          "columnName": "in_SegmentColor",
+          "value": "SatinGlass"
+        },
+        {
+          "columnName": "in_FrontStartPos",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontOverlapBtm",
+          "value": "0"
+        },
+        {
+          "columnName": "InHouseProduction",
+          "value": "true"
+        },
+        {
+          "columnName": "DescriptorHeight",
+          "value": "1_300mm_200mm"
+        },
+        {
+          "columnName": "DescriptorDepth",
+          "value": "1_5mm_1"
+        },
+        {
+          "columnName": "FrontThk",
+          "value": "19"
+        },
+        {
+          "columnName": "SegmentThk",
+          "value": "5"
+        },
+        {
+          "columnName": "Weight",
+          "value": "25"
+        },
+        {
+          "columnName": "SegmentWeight",
+          "value": "12"
+        },
+        {
+          "columnName": "FrontGrainDirection",
+          "value": "Crosswise"
+        },
+        {
+          "columnName": "SegmentGrainDirection",
+          "value": "None"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Door"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "SegmentFront01"
+        },
+        {
+          "columnName": "in_FrontColorGrainGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_SegmentColorGrainGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_SegmentType",
+          "value": "Glass"
+        },
+        {
+          "columnName": "in_SegmentColor",
+          "value": "GreyGlass"
+        },
+        {
+          "columnName": "in_FrontStartPos",
+          "value": "700"
+        },
+        {
+          "columnName": "in_FrontOverlapBtm",
+          "value": "0"
+        },
+        {
+          "columnName": "InHouseProduction",
+          "value": "true"
+        },
+        {
+          "columnName": "DescriptorHeight",
+          "value": "200mm_300mm_1"
+        },
+        {
+          "columnName": "DescriptorDepth",
+          "value": "1_5mm_1"
+        },
+        {
+          "columnName": "FrontThk",
+          "value": "19"
+        },
+        {
+          "columnName": "SegmentThk",
+          "value": "5"
+        },
+        {
+          "columnName": "Weight",
+          "value": "25"
+        },
+        {
+          "columnName": "SegmentWeight",
+          "value": "12"
+        },
+        {
+          "columnName": "FrontGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "SegmentGrainDirection",
+          "value": "None"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Door"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "SegmentFront01"
+        },
+        {
+          "columnName": "in_FrontColorGrainGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_SegmentColorGrainGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_SegmentType",
+          "value": "Glass"
+        },
+        {
+          "columnName": "in_SegmentColor",
+          "value": "GreyGlass"
+        },
+        {
+          "columnName": "in_FrontStartPos",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontOverlapBtm",
+          "value": "0"
+        },
+        {
+          "columnName": "InHouseProduction",
+          "value": "true"
+        },
+        {
+          "columnName": "DescriptorHeight",
+          "value": "1_300mm_200mm"
+        },
+        {
+          "columnName": "DescriptorDepth",
+          "value": "1_5mm_1"
+        },
+        {
+          "columnName": "FrontThk",
+          "value": "19"
+        },
+        {
+          "columnName": "SegmentThk",
+          "value": "5"
+        },
+        {
+          "columnName": "Weight",
+          "value": "25"
+        },
+        {
+          "columnName": "SegmentWeight",
+          "value": "12"
+        },
+        {
+          "columnName": "FrontGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "SegmentGrainDirection",
+          "value": "None"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Door"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "SegmentFront01"
+        },
+        {
+          "columnName": "in_FrontColorGrainGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_SegmentColorGrainGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_SegmentType",
+          "value": "Glass"
+        },
+        {
+          "columnName": "in_SegmentColor",
+          "value": "GreyGlass"
+        },
+        {
+          "columnName": "in_FrontStartPos",
+          "value": "700"
+        },
+        {
+          "columnName": "in_FrontOverlapBtm",
+          "value": "0"
+        },
+        {
+          "columnName": "InHouseProduction",
+          "value": "true"
+        },
+        {
+          "columnName": "DescriptorHeight",
+          "value": "200mm_300mm_1"
+        },
+        {
+          "columnName": "DescriptorDepth",
+          "value": "1_5mm_1"
+        },
+        {
+          "columnName": "FrontThk",
+          "value": "19"
+        },
+        {
+          "columnName": "SegmentThk",
+          "value": "5"
+        },
+        {
+          "columnName": "Weight",
+          "value": "25"
+        },
+        {
+          "columnName": "SegmentWeight",
+          "value": "12"
+        },
+        {
+          "columnName": "FrontGrainDirection",
+          "value": "Crosswise"
+        },
+        {
+          "columnName": "SegmentGrainDirection",
+          "value": "None"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Door"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "SegmentFront01"
+        },
+        {
+          "columnName": "in_FrontColorGrainGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_SegmentColorGrainGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_SegmentType",
+          "value": "Glass"
+        },
+        {
+          "columnName": "in_SegmentColor",
+          "value": "GreyGlass"
+        },
+        {
+          "columnName": "in_FrontStartPos",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontOverlapBtm",
+          "value": "0"
+        },
+        {
+          "columnName": "InHouseProduction",
+          "value": "true"
+        },
+        {
+          "columnName": "DescriptorHeight",
+          "value": "1_300mm_200mm"
+        },
+        {
+          "columnName": "DescriptorDepth",
+          "value": "1_5mm_1"
+        },
+        {
+          "columnName": "FrontThk",
+          "value": "19"
+        },
+        {
+          "columnName": "SegmentThk",
+          "value": "5"
+        },
+        {
+          "columnName": "Weight",
+          "value": "25"
+        },
+        {
+          "columnName": "SegmentWeight",
+          "value": "12"
+        },
+        {
+          "columnName": "FrontGrainDirection",
+          "value": "Crosswise"
+        },
+        {
+          "columnName": "SegmentGrainDirection",
+          "value": "None"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Door"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "SegmentFront01"
+        },
+        {
+          "columnName": "in_FrontColorGrainGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_SegmentColorGrainGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_SegmentType",
+          "value": "Glass"
+        },
+        {
+          "columnName": "in_SegmentColor",
+          "value": "Mirror"
+        },
+        {
+          "columnName": "in_FrontStartPos",
+          "value": "700"
+        },
+        {
+          "columnName": "in_FrontOverlapBtm",
+          "value": "0"
+        },
+        {
+          "columnName": "InHouseProduction",
+          "value": "true"
+        },
+        {
+          "columnName": "DescriptorHeight",
+          "value": "200mm_300mm_1"
+        },
+        {
+          "columnName": "DescriptorDepth",
+          "value": "1_5mm_1"
+        },
+        {
+          "columnName": "FrontThk",
+          "value": "19"
+        },
+        {
+          "columnName": "SegmentThk",
+          "value": "5"
+        },
+        {
+          "columnName": "Weight",
+          "value": "25"
+        },
+        {
+          "columnName": "SegmentWeight",
+          "value": "12"
+        },
+        {
+          "columnName": "FrontGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "SegmentGrainDirection",
+          "value": "None"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Door"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "SegmentFront01"
+        },
+        {
+          "columnName": "in_FrontColorGrainGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_SegmentColorGrainGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_SegmentType",
+          "value": "Glass"
+        },
+        {
+          "columnName": "in_SegmentColor",
+          "value": "Mirror"
+        },
+        {
+          "columnName": "in_FrontStartPos",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontOverlapBtm",
+          "value": "0"
+        },
+        {
+          "columnName": "InHouseProduction",
+          "value": "true"
+        },
+        {
+          "columnName": "DescriptorHeight",
+          "value": "1_300mm_200mm"
+        },
+        {
+          "columnName": "DescriptorDepth",
+          "value": "1_5mm_1"
+        },
+        {
+          "columnName": "FrontThk",
+          "value": "19"
+        },
+        {
+          "columnName": "SegmentThk",
+          "value": "5"
+        },
+        {
+          "columnName": "Weight",
+          "value": "25"
+        },
+        {
+          "columnName": "SegmentWeight",
+          "value": "12"
+        },
+        {
+          "columnName": "FrontGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "SegmentGrainDirection",
+          "value": "None"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Door"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "SegmentFront01"
+        },
+        {
+          "columnName": "in_FrontColorGrainGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_SegmentColorGrainGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_SegmentType",
+          "value": "Glass"
+        },
+        {
+          "columnName": "in_SegmentColor",
+          "value": "Mirror"
+        },
+        {
+          "columnName": "in_FrontStartPos",
+          "value": "700"
+        },
+        {
+          "columnName": "in_FrontOverlapBtm",
+          "value": "0"
+        },
+        {
+          "columnName": "InHouseProduction",
+          "value": "true"
+        },
+        {
+          "columnName": "DescriptorHeight",
+          "value": "200mm_300mm_1"
+        },
+        {
+          "columnName": "DescriptorDepth",
+          "value": "1_5mm_1"
+        },
+        {
+          "columnName": "FrontThk",
+          "value": "19"
+        },
+        {
+          "columnName": "SegmentThk",
+          "value": "5"
+        },
+        {
+          "columnName": "Weight",
+          "value": "25"
+        },
+        {
+          "columnName": "SegmentWeight",
+          "value": "12"
+        },
+        {
+          "columnName": "FrontGrainDirection",
+          "value": "Crosswise"
+        },
+        {
+          "columnName": "SegmentGrainDirection",
+          "value": "None"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Door"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "SegmentFront01"
+        },
+        {
+          "columnName": "in_FrontColorGrainGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_SegmentColorGrainGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_SegmentType",
+          "value": "Glass"
+        },
+        {
+          "columnName": "in_SegmentColor",
+          "value": "Mirror"
+        },
+        {
+          "columnName": "in_FrontStartPos",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontOverlapBtm",
+          "value": "0"
+        },
+        {
+          "columnName": "InHouseProduction",
+          "value": "true"
+        },
+        {
+          "columnName": "DescriptorHeight",
+          "value": "1_300mm_200mm"
+        },
+        {
+          "columnName": "DescriptorDepth",
+          "value": "1_5mm_1"
+        },
+        {
+          "columnName": "FrontThk",
+          "value": "19"
+        },
+        {
+          "columnName": "SegmentThk",
+          "value": "5"
+        },
+        {
+          "columnName": "Weight",
+          "value": "25"
+        },
+        {
+          "columnName": "SegmentWeight",
+          "value": "12"
+        },
+        {
+          "columnName": "FrontGrainDirection",
+          "value": "Crosswise"
+        },
+        {
+          "columnName": "SegmentGrainDirection",
+          "value": "None"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Door"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "SegmentFront01"
+        },
+        {
+          "columnName": "in_FrontColorGrainGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_SegmentColorGrainGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_SegmentType",
+          "value": "Glass"
+        },
+        {
+          "columnName": "in_SegmentColor",
+          "value": "FloatGlass"
+        },
+        {
+          "columnName": "in_FrontStartPos",
+          "value": "700"
+        },
+        {
+          "columnName": "in_FrontOverlapBtm",
+          "value": "17"
+        },
+        {
+          "columnName": "InHouseProduction",
+          "value": "true"
+        },
+        {
+          "columnName": "DescriptorHeight",
+          "value": "250mm_300mm_1"
+        },
+        {
+          "columnName": "DescriptorDepth",
+          "value": "1_5mm_1"
+        },
+        {
+          "columnName": "FrontThk",
+          "value": "19"
+        },
+        {
+          "columnName": "SegmentThk",
+          "value": "5"
+        },
+        {
+          "columnName": "Weight",
+          "value": "25"
+        },
+        {
+          "columnName": "SegmentWeight",
+          "value": "12"
+        },
+        {
+          "columnName": "FrontGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "SegmentGrainDirection",
+          "value": "None"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Door"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "SegmentFront01"
+        },
+        {
+          "columnName": "in_FrontColorGrainGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_SegmentColorGrainGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_SegmentType",
+          "value": "Glass"
+        },
+        {
+          "columnName": "in_SegmentColor",
+          "value": "FloatGlass"
+        },
+        {
+          "columnName": "in_FrontStartPos",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontOverlapBtm",
+          "value": "17"
+        },
+        {
+          "columnName": "InHouseProduction",
+          "value": "true"
+        },
+        {
+          "columnName": "DescriptorHeight",
+          "value": "1_300mm_250mm"
+        },
+        {
+          "columnName": "DescriptorDepth",
+          "value": "1_5mm_1"
+        },
+        {
+          "columnName": "FrontThk",
+          "value": "19"
+        },
+        {
+          "columnName": "SegmentThk",
+          "value": "5"
+        },
+        {
+          "columnName": "Weight",
+          "value": "25"
+        },
+        {
+          "columnName": "SegmentWeight",
+          "value": "12"
+        },
+        {
+          "columnName": "FrontGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "SegmentGrainDirection",
+          "value": "None"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Door"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "SegmentFront01"
+        },
+        {
+          "columnName": "in_FrontColorGrainGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_SegmentColorGrainGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_SegmentType",
+          "value": "Glass"
+        },
+        {
+          "columnName": "in_SegmentColor",
+          "value": "FloatGlass"
+        },
+        {
+          "columnName": "in_FrontStartPos",
+          "value": "700"
+        },
+        {
+          "columnName": "in_FrontOverlapBtm",
+          "value": "17"
+        },
+        {
+          "columnName": "InHouseProduction",
+          "value": "true"
+        },
+        {
+          "columnName": "DescriptorHeight",
+          "value": "250mm_300mm_1"
+        },
+        {
+          "columnName": "DescriptorDepth",
+          "value": "1_5mm_1"
+        },
+        {
+          "columnName": "FrontThk",
+          "value": "19"
+        },
+        {
+          "columnName": "SegmentThk",
+          "value": "5"
+        },
+        {
+          "columnName": "Weight",
+          "value": "25"
+        },
+        {
+          "columnName": "SegmentWeight",
+          "value": "12"
+        },
+        {
+          "columnName": "FrontGrainDirection",
+          "value": "Crosswise"
+        },
+        {
+          "columnName": "SegmentGrainDirection",
+          "value": "None"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Door"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "SegmentFront01"
+        },
+        {
+          "columnName": "in_FrontColorGrainGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_SegmentColorGrainGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_SegmentType",
+          "value": "Glass"
+        },
+        {
+          "columnName": "in_SegmentColor",
+          "value": "FloatGlass"
+        },
+        {
+          "columnName": "in_FrontStartPos",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontOverlapBtm",
+          "value": "17"
+        },
+        {
+          "columnName": "InHouseProduction",
+          "value": "true"
+        },
+        {
+          "columnName": "DescriptorHeight",
+          "value": "1_300mm_250mm"
+        },
+        {
+          "columnName": "DescriptorDepth",
+          "value": "1_5mm_1"
+        },
+        {
+          "columnName": "FrontThk",
+          "value": "19"
+        },
+        {
+          "columnName": "SegmentThk",
+          "value": "5"
+        },
+        {
+          "columnName": "Weight",
+          "value": "25"
+        },
+        {
+          "columnName": "SegmentWeight",
+          "value": "12"
+        },
+        {
+          "columnName": "FrontGrainDirection",
+          "value": "Crosswise"
+        },
+        {
+          "columnName": "SegmentGrainDirection",
+          "value": "None"
+        }
+      ]
+    }
+  ],
+  "dataSource": "Default",
+  "changedAt": "2026-02-24T07:23:00.2077368+00:00"
+}
