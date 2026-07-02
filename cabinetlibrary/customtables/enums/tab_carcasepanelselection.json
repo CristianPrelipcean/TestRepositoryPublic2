@@ -1,0 +1,41 @@
+[
+  {
+    "tableName": "tab_CarcasePanelSelection",
+    "columnId": "Recut",
+    "enumsJson": [
+      {
+        "value": "None"
+      },
+      {
+        "value": "Length"
+      },
+      {
+        "value": "Width"
+      },
+      {
+        "value": "Length_Width"
+      }
+    ]
+  },
+  {
+    "tableName": "tab_CarcasePanelSelection",
+    "columnId": "Rework",
+    "enumsJson": [
+      {
+        "value": "None"
+      },
+      {
+        "value": "Cutting_Edging"
+      },
+      {
+        "value": "Cutting_Edging_Doweling"
+      }
+    ]
+  },
+  {
+    "tableName": "tab_CarcasePanelSelection",
+    "columnId": "in_BoardId",
+    "refCustomTableName": "tab_BoardLibrary",
+    "refColumnId": "MaterialCode"
+  }
+]

@@ -1,0 +1,6489 @@
+{
+  "tableName": "tab_PanelWoodFrameConstruction",
+  "description": "Front construction for the panel wood frame",
+  "restrictionTypeId": "Public",
+  "groupName": "FrontConstruction",
+  "columns": [
+    {
+      "name": "_id",
+      "type": "Integer",
+      "allowNull": false
+    },
+    {
+      "name": "in_PartGroup",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_FrontConstructionId",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_FrontColorGrainGroupId",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_FillingColorGrainGroupId",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_FillingType",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "InHouseProduction",
+      "type": "Bool",
+      "allowNull": true
+    },
+    {
+      "name": "ConstructionType",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "FrameType",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "FramePartsWidthHor",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "FramePartsWidthVert",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "FramePartsThk",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "FrameFillingThk",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "Weight",
+      "type": "Real",
+      "allowNull": false
+    },
+    {
+      "name": "FrameHorGrainDirection",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "FrameVertGrainDirection",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "FillingGrainDirection",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "GraphicFileId",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "ProcessingItem",
+      "type": "Text",
+      "allowNull": true
+    }
+  ],
+  "rows": [
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Door"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "ModernFrame01"
+        },
+        {
+          "columnName": "in_FrontColorGrainGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_FillingColorGrainGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_FillingType",
+          "value": "Glass"
+        },
+        {
+          "columnName": "InHouseProduction",
+          "value": "true"
+        },
+        {
+          "columnName": "ConstructionType",
+          "value": "Standard"
+        },
+        {
+          "columnName": "FrameType",
+          "value": "Mitre"
+        },
+        {
+          "columnName": "FramePartsWidthHor",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsWidthVert",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsThk",
+          "value": "19"
+        },
+        {
+          "columnName": "FrameFillingThk",
+          "value": "4"
+        },
+        {
+          "columnName": "Weight",
+          "value": "25"
+        },
+        {
+          "columnName": "FrameHorGrainDirection",
+          "value": "Crosswise"
+        },
+        {
+          "columnName": "FrameVertGrainDirection",
+          "value": "Crosswise"
+        },
+        {
+          "columnName": "FillingGrainDirection",
+          "value": "Crosswise"
+        },
+        {
+          "columnName": "GraphicFileId",
+          "value": "None"
+        },
+        {
+          "columnName": "ProcessingItem",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Door"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "ModernFrame01"
+        },
+        {
+          "columnName": "in_FrontColorGrainGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_FillingColorGrainGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_FillingType",
+          "value": "Glass"
+        },
+        {
+          "columnName": "InHouseProduction",
+          "value": "true"
+        },
+        {
+          "columnName": "ConstructionType",
+          "value": "Standard"
+        },
+        {
+          "columnName": "FrameType",
+          "value": "Mitre"
+        },
+        {
+          "columnName": "FramePartsWidthHor",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsWidthVert",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsThk",
+          "value": "19"
+        },
+        {
+          "columnName": "FrameFillingThk",
+          "value": "4"
+        },
+        {
+          "columnName": "Weight",
+          "value": "25"
+        },
+        {
+          "columnName": "FrameHorGrainDirection",
+          "value": "Crosswise"
+        },
+        {
+          "columnName": "FrameVertGrainDirection",
+          "value": "Crosswise"
+        },
+        {
+          "columnName": "FillingGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "GraphicFileId",
+          "value": "None"
+        },
+        {
+          "columnName": "ProcessingItem",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Door"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "ModernFrame01"
+        },
+        {
+          "columnName": "in_FrontColorGrainGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_FillingColorGrainGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_FillingType",
+          "value": "Glass"
+        },
+        {
+          "columnName": "InHouseProduction",
+          "value": "true"
+        },
+        {
+          "columnName": "ConstructionType",
+          "value": "Standard"
+        },
+        {
+          "columnName": "FrameType",
+          "value": "Mitre"
+        },
+        {
+          "columnName": "FramePartsWidthHor",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsWidthVert",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsThk",
+          "value": "19"
+        },
+        {
+          "columnName": "FrameFillingThk",
+          "value": "4"
+        },
+        {
+          "columnName": "Weight",
+          "value": "25"
+        },
+        {
+          "columnName": "FrameHorGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "FrameVertGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "FillingGrainDirection",
+          "value": "Crosswise"
+        },
+        {
+          "columnName": "GraphicFileId",
+          "value": "None"
+        },
+        {
+          "columnName": "ProcessingItem",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Door"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "ModernFrame01"
+        },
+        {
+          "columnName": "in_FrontColorGrainGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_FillingColorGrainGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_FillingType",
+          "value": "Glass"
+        },
+        {
+          "columnName": "InHouseProduction",
+          "value": "true"
+        },
+        {
+          "columnName": "ConstructionType",
+          "value": "Standard"
+        },
+        {
+          "columnName": "FrameType",
+          "value": "Mitre"
+        },
+        {
+          "columnName": "FramePartsWidthHor",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsWidthVert",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsThk",
+          "value": "19"
+        },
+        {
+          "columnName": "FrameFillingThk",
+          "value": "4"
+        },
+        {
+          "columnName": "Weight",
+          "value": "25"
+        },
+        {
+          "columnName": "FrameHorGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "FrameVertGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "FillingGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "GraphicFileId",
+          "value": "None"
+        },
+        {
+          "columnName": "ProcessingItem",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Door"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "TraditionFrame01"
+        },
+        {
+          "columnName": "in_FrontColorGrainGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_FillingColorGrainGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_FillingType",
+          "value": "WoodVertical"
+        },
+        {
+          "columnName": "InHouseProduction",
+          "value": "true"
+        },
+        {
+          "columnName": "ConstructionType",
+          "value": "Standard"
+        },
+        {
+          "columnName": "FrameType",
+          "value": "WidthCoveredHeight"
+        },
+        {
+          "columnName": "FramePartsWidthHor",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsWidthVert",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsThk",
+          "value": "19"
+        },
+        {
+          "columnName": "FrameFillingThk",
+          "value": "8"
+        },
+        {
+          "columnName": "Weight",
+          "value": "18.25"
+        },
+        {
+          "columnName": "FrameHorGrainDirection",
+          "value": "Lengthwise"
+        },
+        {
+          "columnName": "FrameVertGrainDirection",
+          "value": "Lengthwise"
+        },
+        {
+          "columnName": "FillingGrainDirection",
+          "value": "Lengthwise"
+        },
+        {
+          "columnName": "GraphicFileId",
+          "value": "None"
+        },
+        {
+          "columnName": "ProcessingItem",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Door"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "TraditionFrame01"
+        },
+        {
+          "columnName": "in_FrontColorGrainGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_FillingColorGrainGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_FillingType",
+          "value": "WoodNeutral"
+        },
+        {
+          "columnName": "InHouseProduction",
+          "value": "true"
+        },
+        {
+          "columnName": "ConstructionType",
+          "value": "Standard"
+        },
+        {
+          "columnName": "FrameType",
+          "value": "WidthCoveredHeight"
+        },
+        {
+          "columnName": "FramePartsWidthHor",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsWidthVert",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsThk",
+          "value": "19"
+        },
+        {
+          "columnName": "FrameFillingThk",
+          "value": "8"
+        },
+        {
+          "columnName": "Weight",
+          "value": "18.25"
+        },
+        {
+          "columnName": "FrameHorGrainDirection",
+          "value": "Lengthwise"
+        },
+        {
+          "columnName": "FrameVertGrainDirection",
+          "value": "Lengthwise"
+        },
+        {
+          "columnName": "FillingGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "GraphicFileId",
+          "value": "None"
+        },
+        {
+          "columnName": "ProcessingItem",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Door"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "TraditionFrame01"
+        },
+        {
+          "columnName": "in_FrontColorGrainGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_FillingColorGrainGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_FillingType",
+          "value": "WoodVertical"
+        },
+        {
+          "columnName": "InHouseProduction",
+          "value": "true"
+        },
+        {
+          "columnName": "ConstructionType",
+          "value": "Standard"
+        },
+        {
+          "columnName": "FrameType",
+          "value": "WidthCoveredHeight"
+        },
+        {
+          "columnName": "FramePartsWidthHor",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsWidthVert",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsThk",
+          "value": "19"
+        },
+        {
+          "columnName": "FrameFillingThk",
+          "value": "8"
+        },
+        {
+          "columnName": "Weight",
+          "value": "18.25"
+        },
+        {
+          "columnName": "FrameHorGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "FrameVertGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "FillingGrainDirection",
+          "value": "Lengthwise"
+        },
+        {
+          "columnName": "GraphicFileId",
+          "value": "None"
+        },
+        {
+          "columnName": "ProcessingItem",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Door"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "TraditionFrame01"
+        },
+        {
+          "columnName": "in_FrontColorGrainGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_FillingColorGrainGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_FillingType",
+          "value": "WoodNeutral"
+        },
+        {
+          "columnName": "InHouseProduction",
+          "value": "true"
+        },
+        {
+          "columnName": "ConstructionType",
+          "value": "Standard"
+        },
+        {
+          "columnName": "FrameType",
+          "value": "WidthCoveredHeight"
+        },
+        {
+          "columnName": "FramePartsWidthHor",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsWidthVert",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsThk",
+          "value": "19"
+        },
+        {
+          "columnName": "FrameFillingThk",
+          "value": "8"
+        },
+        {
+          "columnName": "Weight",
+          "value": "18.25"
+        },
+        {
+          "columnName": "FrameHorGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "FrameVertGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "FillingGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "GraphicFileId",
+          "value": "None"
+        },
+        {
+          "columnName": "ProcessingItem",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Drawer"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "ModernFrame01"
+        },
+        {
+          "columnName": "in_FrontColorGrainGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_FillingColorGrainGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_FillingType",
+          "value": "Glass"
+        },
+        {
+          "columnName": "InHouseProduction",
+          "value": "true"
+        },
+        {
+          "columnName": "ConstructionType",
+          "value": "Standard"
+        },
+        {
+          "columnName": "FrameType",
+          "value": "Mitre"
+        },
+        {
+          "columnName": "FramePartsWidthHor",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsWidthVert",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsThk",
+          "value": "19"
+        },
+        {
+          "columnName": "FrameFillingThk",
+          "value": "4"
+        },
+        {
+          "columnName": "Weight",
+          "value": "25"
+        },
+        {
+          "columnName": "FrameHorGrainDirection",
+          "value": "Crosswise"
+        },
+        {
+          "columnName": "FrameVertGrainDirection",
+          "value": "Crosswise"
+        },
+        {
+          "columnName": "FillingGrainDirection",
+          "value": "Crosswise"
+        },
+        {
+          "columnName": "GraphicFileId",
+          "value": "None"
+        },
+        {
+          "columnName": "ProcessingItem",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Drawer"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "ModernFrame01"
+        },
+        {
+          "columnName": "in_FrontColorGrainGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_FillingColorGrainGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_FillingType",
+          "value": "Glass"
+        },
+        {
+          "columnName": "InHouseProduction",
+          "value": "true"
+        },
+        {
+          "columnName": "ConstructionType",
+          "value": "Standard"
+        },
+        {
+          "columnName": "FrameType",
+          "value": "Mitre"
+        },
+        {
+          "columnName": "FramePartsWidthHor",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsWidthVert",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsThk",
+          "value": "19"
+        },
+        {
+          "columnName": "FrameFillingThk",
+          "value": "4"
+        },
+        {
+          "columnName": "Weight",
+          "value": "25"
+        },
+        {
+          "columnName": "FrameHorGrainDirection",
+          "value": "Crosswise"
+        },
+        {
+          "columnName": "FrameVertGrainDirection",
+          "value": "Crosswise"
+        },
+        {
+          "columnName": "FillingGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "GraphicFileId",
+          "value": "None"
+        },
+        {
+          "columnName": "ProcessingItem",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Drawer"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "ModernFrame01"
+        },
+        {
+          "columnName": "in_FrontColorGrainGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_FillingColorGrainGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_FillingType",
+          "value": "Glass"
+        },
+        {
+          "columnName": "InHouseProduction",
+          "value": "true"
+        },
+        {
+          "columnName": "ConstructionType",
+          "value": "Standard"
+        },
+        {
+          "columnName": "FrameType",
+          "value": "Mitre"
+        },
+        {
+          "columnName": "FramePartsWidthHor",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsWidthVert",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsThk",
+          "value": "19"
+        },
+        {
+          "columnName": "FrameFillingThk",
+          "value": "4"
+        },
+        {
+          "columnName": "Weight",
+          "value": "25"
+        },
+        {
+          "columnName": "FrameHorGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "FrameVertGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "FillingGrainDirection",
+          "value": "Crosswise"
+        },
+        {
+          "columnName": "GraphicFileId",
+          "value": "None"
+        },
+        {
+          "columnName": "ProcessingItem",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Drawer"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "ModernFrame01"
+        },
+        {
+          "columnName": "in_FrontColorGrainGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_FillingColorGrainGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_FillingType",
+          "value": "Glass"
+        },
+        {
+          "columnName": "InHouseProduction",
+          "value": "true"
+        },
+        {
+          "columnName": "ConstructionType",
+          "value": "Standard"
+        },
+        {
+          "columnName": "FrameType",
+          "value": "Mitre"
+        },
+        {
+          "columnName": "FramePartsWidthHor",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsWidthVert",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsThk",
+          "value": "19"
+        },
+        {
+          "columnName": "FrameFillingThk",
+          "value": "4"
+        },
+        {
+          "columnName": "Weight",
+          "value": "25"
+        },
+        {
+          "columnName": "FrameHorGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "FrameVertGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "FillingGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "GraphicFileId",
+          "value": "None"
+        },
+        {
+          "columnName": "ProcessingItem",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Drawer"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "TraditionFrame01"
+        },
+        {
+          "columnName": "in_FrontColorGrainGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_FillingColorGrainGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_FillingType",
+          "value": "WoodVertical"
+        },
+        {
+          "columnName": "InHouseProduction",
+          "value": "true"
+        },
+        {
+          "columnName": "ConstructionType",
+          "value": "Standard"
+        },
+        {
+          "columnName": "FrameType",
+          "value": "WidthCoveredHeight"
+        },
+        {
+          "columnName": "FramePartsWidthHor",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsWidthVert",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsThk",
+          "value": "19"
+        },
+        {
+          "columnName": "FrameFillingThk",
+          "value": "8"
+        },
+        {
+          "columnName": "Weight",
+          "value": "18.25"
+        },
+        {
+          "columnName": "FrameHorGrainDirection",
+          "value": "Lengthwise"
+        },
+        {
+          "columnName": "FrameVertGrainDirection",
+          "value": "Lengthwise"
+        },
+        {
+          "columnName": "FillingGrainDirection",
+          "value": "Lengthwise"
+        },
+        {
+          "columnName": "GraphicFileId",
+          "value": "None"
+        },
+        {
+          "columnName": "ProcessingItem",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Drawer"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "TraditionFrame01"
+        },
+        {
+          "columnName": "in_FrontColorGrainGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_FillingColorGrainGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_FillingType",
+          "value": "WoodNeutral"
+        },
+        {
+          "columnName": "InHouseProduction",
+          "value": "true"
+        },
+        {
+          "columnName": "ConstructionType",
+          "value": "Standard"
+        },
+        {
+          "columnName": "FrameType",
+          "value": "WidthCoveredHeight"
+        },
+        {
+          "columnName": "FramePartsWidthHor",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsWidthVert",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsThk",
+          "value": "19"
+        },
+        {
+          "columnName": "FrameFillingThk",
+          "value": "8"
+        },
+        {
+          "columnName": "Weight",
+          "value": "18.25"
+        },
+        {
+          "columnName": "FrameHorGrainDirection",
+          "value": "Lengthwise"
+        },
+        {
+          "columnName": "FrameVertGrainDirection",
+          "value": "Lengthwise"
+        },
+        {
+          "columnName": "FillingGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "GraphicFileId",
+          "value": "None"
+        },
+        {
+          "columnName": "ProcessingItem",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Drawer"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "TraditionFrame01"
+        },
+        {
+          "columnName": "in_FrontColorGrainGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_FillingColorGrainGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_FillingType",
+          "value": "WoodVertical"
+        },
+        {
+          "columnName": "InHouseProduction",
+          "value": "true"
+        },
+        {
+          "columnName": "ConstructionType",
+          "value": "Standard"
+        },
+        {
+          "columnName": "FrameType",
+          "value": "WidthCoveredHeight"
+        },
+        {
+          "columnName": "FramePartsWidthHor",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsWidthVert",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsThk",
+          "value": "19"
+        },
+        {
+          "columnName": "FrameFillingThk",
+          "value": "8"
+        },
+        {
+          "columnName": "Weight",
+          "value": "18.25"
+        },
+        {
+          "columnName": "FrameHorGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "FrameVertGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "FillingGrainDirection",
+          "value": "Lengthwise"
+        },
+        {
+          "columnName": "GraphicFileId",
+          "value": "None"
+        },
+        {
+          "columnName": "ProcessingItem",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Drawer"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "TraditionFrame01"
+        },
+        {
+          "columnName": "in_FrontColorGrainGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_FillingColorGrainGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_FillingType",
+          "value": "WoodNeutral"
+        },
+        {
+          "columnName": "InHouseProduction",
+          "value": "true"
+        },
+        {
+          "columnName": "ConstructionType",
+          "value": "Standard"
+        },
+        {
+          "columnName": "FrameType",
+          "value": "WidthCoveredHeight"
+        },
+        {
+          "columnName": "FramePartsWidthHor",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsWidthVert",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsThk",
+          "value": "19"
+        },
+        {
+          "columnName": "FrameFillingThk",
+          "value": "8"
+        },
+        {
+          "columnName": "Weight",
+          "value": "18.25"
+        },
+        {
+          "columnName": "FrameHorGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "FrameVertGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "FillingGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "GraphicFileId",
+          "value": "None"
+        },
+        {
+          "columnName": "ProcessingItem",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Fliplift"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "ModernFrame01"
+        },
+        {
+          "columnName": "in_FrontColorGrainGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_FillingColorGrainGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_FillingType",
+          "value": "Glass"
+        },
+        {
+          "columnName": "InHouseProduction",
+          "value": "true"
+        },
+        {
+          "columnName": "ConstructionType",
+          "value": "Standard"
+        },
+        {
+          "columnName": "FrameType",
+          "value": "Mitre"
+        },
+        {
+          "columnName": "FramePartsWidthHor",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsWidthVert",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsThk",
+          "value": "19"
+        },
+        {
+          "columnName": "FrameFillingThk",
+          "value": "4"
+        },
+        {
+          "columnName": "Weight",
+          "value": "25"
+        },
+        {
+          "columnName": "FrameHorGrainDirection",
+          "value": "Crosswise"
+        },
+        {
+          "columnName": "FrameVertGrainDirection",
+          "value": "Crosswise"
+        },
+        {
+          "columnName": "FillingGrainDirection",
+          "value": "Crosswise"
+        },
+        {
+          "columnName": "GraphicFileId",
+          "value": "None"
+        },
+        {
+          "columnName": "ProcessingItem",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Fliplift"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "ModernFrame01"
+        },
+        {
+          "columnName": "in_FrontColorGrainGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_FillingColorGrainGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_FillingType",
+          "value": "Glass"
+        },
+        {
+          "columnName": "InHouseProduction",
+          "value": "true"
+        },
+        {
+          "columnName": "ConstructionType",
+          "value": "Standard"
+        },
+        {
+          "columnName": "FrameType",
+          "value": "Mitre"
+        },
+        {
+          "columnName": "FramePartsWidthHor",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsWidthVert",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsThk",
+          "value": "19"
+        },
+        {
+          "columnName": "FrameFillingThk",
+          "value": "4"
+        },
+        {
+          "columnName": "Weight",
+          "value": "25"
+        },
+        {
+          "columnName": "FrameHorGrainDirection",
+          "value": "Crosswise"
+        },
+        {
+          "columnName": "FrameVertGrainDirection",
+          "value": "Crosswise"
+        },
+        {
+          "columnName": "FillingGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "GraphicFileId",
+          "value": "None"
+        },
+        {
+          "columnName": "ProcessingItem",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Fliplift"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "ModernFrame01"
+        },
+        {
+          "columnName": "in_FrontColorGrainGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_FillingColorGrainGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_FillingType",
+          "value": "Glass"
+        },
+        {
+          "columnName": "InHouseProduction",
+          "value": "true"
+        },
+        {
+          "columnName": "ConstructionType",
+          "value": "Standard"
+        },
+        {
+          "columnName": "FrameType",
+          "value": "Mitre"
+        },
+        {
+          "columnName": "FramePartsWidthHor",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsWidthVert",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsThk",
+          "value": "19"
+        },
+        {
+          "columnName": "FrameFillingThk",
+          "value": "4"
+        },
+        {
+          "columnName": "Weight",
+          "value": "25"
+        },
+        {
+          "columnName": "FrameHorGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "FrameVertGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "FillingGrainDirection",
+          "value": "Crosswise"
+        },
+        {
+          "columnName": "GraphicFileId",
+          "value": "None"
+        },
+        {
+          "columnName": "ProcessingItem",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Fliplift"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "ModernFrame01"
+        },
+        {
+          "columnName": "in_FrontColorGrainGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_FillingColorGrainGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_FillingType",
+          "value": "Glass"
+        },
+        {
+          "columnName": "InHouseProduction",
+          "value": "true"
+        },
+        {
+          "columnName": "ConstructionType",
+          "value": "Standard"
+        },
+        {
+          "columnName": "FrameType",
+          "value": "Mitre"
+        },
+        {
+          "columnName": "FramePartsWidthHor",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsWidthVert",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsThk",
+          "value": "19"
+        },
+        {
+          "columnName": "FrameFillingThk",
+          "value": "4"
+        },
+        {
+          "columnName": "Weight",
+          "value": "25"
+        },
+        {
+          "columnName": "FrameHorGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "FrameVertGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "FillingGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "GraphicFileId",
+          "value": "None"
+        },
+        {
+          "columnName": "ProcessingItem",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Fliplift"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "TraditionFrame01"
+        },
+        {
+          "columnName": "in_FrontColorGrainGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_FillingColorGrainGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_FillingType",
+          "value": "WoodVertical"
+        },
+        {
+          "columnName": "InHouseProduction",
+          "value": "true"
+        },
+        {
+          "columnName": "ConstructionType",
+          "value": "Standard"
+        },
+        {
+          "columnName": "FrameType",
+          "value": "WidthCoveredHeight"
+        },
+        {
+          "columnName": "FramePartsWidthHor",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsWidthVert",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsThk",
+          "value": "19"
+        },
+        {
+          "columnName": "FrameFillingThk",
+          "value": "8"
+        },
+        {
+          "columnName": "Weight",
+          "value": "18.25"
+        },
+        {
+          "columnName": "FrameHorGrainDirection",
+          "value": "Lengthwise"
+        },
+        {
+          "columnName": "FrameVertGrainDirection",
+          "value": "Lengthwise"
+        },
+        {
+          "columnName": "FillingGrainDirection",
+          "value": "Lengthwise"
+        },
+        {
+          "columnName": "GraphicFileId",
+          "value": "None"
+        },
+        {
+          "columnName": "ProcessingItem",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Fliplift"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "TraditionFrame01"
+        },
+        {
+          "columnName": "in_FrontColorGrainGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_FillingColorGrainGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_FillingType",
+          "value": "WoodNeutral"
+        },
+        {
+          "columnName": "InHouseProduction",
+          "value": "true"
+        },
+        {
+          "columnName": "ConstructionType",
+          "value": "Standard"
+        },
+        {
+          "columnName": "FrameType",
+          "value": "WidthCoveredHeight"
+        },
+        {
+          "columnName": "FramePartsWidthHor",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsWidthVert",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsThk",
+          "value": "19"
+        },
+        {
+          "columnName": "FrameFillingThk",
+          "value": "8"
+        },
+        {
+          "columnName": "Weight",
+          "value": "18.25"
+        },
+        {
+          "columnName": "FrameHorGrainDirection",
+          "value": "Lengthwise"
+        },
+        {
+          "columnName": "FrameVertGrainDirection",
+          "value": "Lengthwise"
+        },
+        {
+          "columnName": "FillingGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "GraphicFileId",
+          "value": "None"
+        },
+        {
+          "columnName": "ProcessingItem",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Fliplift"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "TraditionFrame01"
+        },
+        {
+          "columnName": "in_FrontColorGrainGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_FillingColorGrainGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_FillingType",
+          "value": "WoodVertical"
+        },
+        {
+          "columnName": "InHouseProduction",
+          "value": "true"
+        },
+        {
+          "columnName": "ConstructionType",
+          "value": "Standard"
+        },
+        {
+          "columnName": "FrameType",
+          "value": "WidthCoveredHeight"
+        },
+        {
+          "columnName": "FramePartsWidthHor",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsWidthVert",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsThk",
+          "value": "19"
+        },
+        {
+          "columnName": "FrameFillingThk",
+          "value": "8"
+        },
+        {
+          "columnName": "Weight",
+          "value": "18.25"
+        },
+        {
+          "columnName": "FrameHorGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "FrameVertGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "FillingGrainDirection",
+          "value": "Lengthwise"
+        },
+        {
+          "columnName": "GraphicFileId",
+          "value": "None"
+        },
+        {
+          "columnName": "ProcessingItem",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Fliplift"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "TraditionFrame01"
+        },
+        {
+          "columnName": "in_FrontColorGrainGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_FillingColorGrainGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_FillingType",
+          "value": "WoodNeutral"
+        },
+        {
+          "columnName": "InHouseProduction",
+          "value": "true"
+        },
+        {
+          "columnName": "ConstructionType",
+          "value": "Standard"
+        },
+        {
+          "columnName": "FrameType",
+          "value": "WidthCoveredHeight"
+        },
+        {
+          "columnName": "FramePartsWidthHor",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsWidthVert",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsThk",
+          "value": "19"
+        },
+        {
+          "columnName": "FrameFillingThk",
+          "value": "8"
+        },
+        {
+          "columnName": "Weight",
+          "value": "18.25"
+        },
+        {
+          "columnName": "FrameHorGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "FrameVertGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "FillingGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "GraphicFileId",
+          "value": "None"
+        },
+        {
+          "columnName": "ProcessingItem",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Door"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "TraditionFrame01"
+        },
+        {
+          "columnName": "in_FrontColorGrainGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_FillingColorGrainGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_FillingType",
+          "value": "Glass"
+        },
+        {
+          "columnName": "InHouseProduction",
+          "value": "true"
+        },
+        {
+          "columnName": "ConstructionType",
+          "value": "Standard"
+        },
+        {
+          "columnName": "FrameType",
+          "value": "WidthCoveredHeight"
+        },
+        {
+          "columnName": "FramePartsWidthHor",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsWidthVert",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsThk",
+          "value": "19"
+        },
+        {
+          "columnName": "FrameFillingThk",
+          "value": "4"
+        },
+        {
+          "columnName": "Weight",
+          "value": "25"
+        },
+        {
+          "columnName": "FrameHorGrainDirection",
+          "value": "Lengthwise"
+        },
+        {
+          "columnName": "FrameVertGrainDirection",
+          "value": "Lengthwise"
+        },
+        {
+          "columnName": "FillingGrainDirection",
+          "value": "Lengthwise"
+        },
+        {
+          "columnName": "GraphicFileId",
+          "value": "None"
+        },
+        {
+          "columnName": "ProcessingItem",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Door"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "TraditionFrame01"
+        },
+        {
+          "columnName": "in_FrontColorGrainGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_FillingColorGrainGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_FillingType",
+          "value": "Glass"
+        },
+        {
+          "columnName": "InHouseProduction",
+          "value": "true"
+        },
+        {
+          "columnName": "ConstructionType",
+          "value": "Standard"
+        },
+        {
+          "columnName": "FrameType",
+          "value": "WidthCoveredHeight"
+        },
+        {
+          "columnName": "FramePartsWidthHor",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsWidthVert",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsThk",
+          "value": "19"
+        },
+        {
+          "columnName": "FrameFillingThk",
+          "value": "4"
+        },
+        {
+          "columnName": "Weight",
+          "value": "25"
+        },
+        {
+          "columnName": "FrameHorGrainDirection",
+          "value": "Lengthwise"
+        },
+        {
+          "columnName": "FrameVertGrainDirection",
+          "value": "Lengthwise"
+        },
+        {
+          "columnName": "FillingGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "GraphicFileId",
+          "value": "None"
+        },
+        {
+          "columnName": "ProcessingItem",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Door"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "TraditionFrame01"
+        },
+        {
+          "columnName": "in_FrontColorGrainGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_FillingColorGrainGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_FillingType",
+          "value": "Glass"
+        },
+        {
+          "columnName": "InHouseProduction",
+          "value": "true"
+        },
+        {
+          "columnName": "ConstructionType",
+          "value": "Standard"
+        },
+        {
+          "columnName": "FrameType",
+          "value": "WidthCoveredHeight"
+        },
+        {
+          "columnName": "FramePartsWidthHor",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsWidthVert",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsThk",
+          "value": "19"
+        },
+        {
+          "columnName": "FrameFillingThk",
+          "value": "4"
+        },
+        {
+          "columnName": "Weight",
+          "value": "25"
+        },
+        {
+          "columnName": "FrameHorGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "FrameVertGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "FillingGrainDirection",
+          "value": "Lengthwise"
+        },
+        {
+          "columnName": "GraphicFileId",
+          "value": "None"
+        },
+        {
+          "columnName": "ProcessingItem",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Door"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "TraditionFrame01"
+        },
+        {
+          "columnName": "in_FrontColorGrainGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_FillingColorGrainGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_FillingType",
+          "value": "Glass"
+        },
+        {
+          "columnName": "InHouseProduction",
+          "value": "true"
+        },
+        {
+          "columnName": "ConstructionType",
+          "value": "Standard"
+        },
+        {
+          "columnName": "FrameType",
+          "value": "WidthCoveredHeight"
+        },
+        {
+          "columnName": "FramePartsWidthHor",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsWidthVert",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsThk",
+          "value": "19"
+        },
+        {
+          "columnName": "FrameFillingThk",
+          "value": "4"
+        },
+        {
+          "columnName": "Weight",
+          "value": "25"
+        },
+        {
+          "columnName": "FrameHorGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "FrameVertGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "FillingGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "GraphicFileId",
+          "value": "None"
+        },
+        {
+          "columnName": "ProcessingItem",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Drawer"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "TraditionFrame01"
+        },
+        {
+          "columnName": "in_FrontColorGrainGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_FillingColorGrainGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_FillingType",
+          "value": "Glass"
+        },
+        {
+          "columnName": "InHouseProduction",
+          "value": "true"
+        },
+        {
+          "columnName": "ConstructionType",
+          "value": "Standard"
+        },
+        {
+          "columnName": "FrameType",
+          "value": "WidthCoveredHeight"
+        },
+        {
+          "columnName": "FramePartsWidthHor",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsWidthVert",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsThk",
+          "value": "19"
+        },
+        {
+          "columnName": "FrameFillingThk",
+          "value": "4"
+        },
+        {
+          "columnName": "Weight",
+          "value": "25"
+        },
+        {
+          "columnName": "FrameHorGrainDirection",
+          "value": "Lengthwise"
+        },
+        {
+          "columnName": "FrameVertGrainDirection",
+          "value": "Lengthwise"
+        },
+        {
+          "columnName": "FillingGrainDirection",
+          "value": "Lengthwise"
+        },
+        {
+          "columnName": "GraphicFileId",
+          "value": "None"
+        },
+        {
+          "columnName": "ProcessingItem",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Drawer"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "TraditionFrame01"
+        },
+        {
+          "columnName": "in_FrontColorGrainGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_FillingColorGrainGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_FillingType",
+          "value": "Glass"
+        },
+        {
+          "columnName": "InHouseProduction",
+          "value": "true"
+        },
+        {
+          "columnName": "ConstructionType",
+          "value": "Standard"
+        },
+        {
+          "columnName": "FrameType",
+          "value": "WidthCoveredHeight"
+        },
+        {
+          "columnName": "FramePartsWidthHor",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsWidthVert",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsThk",
+          "value": "19"
+        },
+        {
+          "columnName": "FrameFillingThk",
+          "value": "4"
+        },
+        {
+          "columnName": "Weight",
+          "value": "25"
+        },
+        {
+          "columnName": "FrameHorGrainDirection",
+          "value": "Lengthwise"
+        },
+        {
+          "columnName": "FrameVertGrainDirection",
+          "value": "Lengthwise"
+        },
+        {
+          "columnName": "FillingGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "GraphicFileId",
+          "value": "None"
+        },
+        {
+          "columnName": "ProcessingItem",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Drawer"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "TraditionFrame01"
+        },
+        {
+          "columnName": "in_FrontColorGrainGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_FillingColorGrainGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_FillingType",
+          "value": "Glass"
+        },
+        {
+          "columnName": "InHouseProduction",
+          "value": "true"
+        },
+        {
+          "columnName": "ConstructionType",
+          "value": "Standard"
+        },
+        {
+          "columnName": "FrameType",
+          "value": "WidthCoveredHeight"
+        },
+        {
+          "columnName": "FramePartsWidthHor",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsWidthVert",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsThk",
+          "value": "19"
+        },
+        {
+          "columnName": "FrameFillingThk",
+          "value": "4"
+        },
+        {
+          "columnName": "Weight",
+          "value": "25"
+        },
+        {
+          "columnName": "FrameHorGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "FrameVertGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "FillingGrainDirection",
+          "value": "Lengthwise"
+        },
+        {
+          "columnName": "GraphicFileId",
+          "value": "None"
+        },
+        {
+          "columnName": "ProcessingItem",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Drawer"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "TraditionFrame01"
+        },
+        {
+          "columnName": "in_FrontColorGrainGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_FillingColorGrainGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_FillingType",
+          "value": "Glass"
+        },
+        {
+          "columnName": "InHouseProduction",
+          "value": "true"
+        },
+        {
+          "columnName": "ConstructionType",
+          "value": "Standard"
+        },
+        {
+          "columnName": "FrameType",
+          "value": "WidthCoveredHeight"
+        },
+        {
+          "columnName": "FramePartsWidthHor",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsWidthVert",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsThk",
+          "value": "19"
+        },
+        {
+          "columnName": "FrameFillingThk",
+          "value": "4"
+        },
+        {
+          "columnName": "Weight",
+          "value": "25"
+        },
+        {
+          "columnName": "FrameHorGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "FrameVertGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "FillingGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "GraphicFileId",
+          "value": "None"
+        },
+        {
+          "columnName": "ProcessingItem",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Fliplift"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "TraditionFrame01"
+        },
+        {
+          "columnName": "in_FrontColorGrainGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_FillingColorGrainGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_FillingType",
+          "value": "Glass"
+        },
+        {
+          "columnName": "InHouseProduction",
+          "value": "true"
+        },
+        {
+          "columnName": "ConstructionType",
+          "value": "Standard"
+        },
+        {
+          "columnName": "FrameType",
+          "value": "WidthCoveredHeight"
+        },
+        {
+          "columnName": "FramePartsWidthHor",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsWidthVert",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsThk",
+          "value": "19"
+        },
+        {
+          "columnName": "FrameFillingThk",
+          "value": "4"
+        },
+        {
+          "columnName": "Weight",
+          "value": "25"
+        },
+        {
+          "columnName": "FrameHorGrainDirection",
+          "value": "Lengthwise"
+        },
+        {
+          "columnName": "FrameVertGrainDirection",
+          "value": "Lengthwise"
+        },
+        {
+          "columnName": "FillingGrainDirection",
+          "value": "Lengthwise"
+        },
+        {
+          "columnName": "GraphicFileId",
+          "value": "None"
+        },
+        {
+          "columnName": "ProcessingItem",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Fliplift"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "TraditionFrame01"
+        },
+        {
+          "columnName": "in_FrontColorGrainGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_FillingColorGrainGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_FillingType",
+          "value": "Glass"
+        },
+        {
+          "columnName": "InHouseProduction",
+          "value": "true"
+        },
+        {
+          "columnName": "ConstructionType",
+          "value": "Standard"
+        },
+        {
+          "columnName": "FrameType",
+          "value": "WidthCoveredHeight"
+        },
+        {
+          "columnName": "FramePartsWidthHor",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsWidthVert",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsThk",
+          "value": "19"
+        },
+        {
+          "columnName": "FrameFillingThk",
+          "value": "4"
+        },
+        {
+          "columnName": "Weight",
+          "value": "25"
+        },
+        {
+          "columnName": "FrameHorGrainDirection",
+          "value": "Lengthwise"
+        },
+        {
+          "columnName": "FrameVertGrainDirection",
+          "value": "Lengthwise"
+        },
+        {
+          "columnName": "FillingGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "GraphicFileId",
+          "value": "None"
+        },
+        {
+          "columnName": "ProcessingItem",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Fliplift"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "TraditionFrame01"
+        },
+        {
+          "columnName": "in_FrontColorGrainGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_FillingColorGrainGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_FillingType",
+          "value": "Glass"
+        },
+        {
+          "columnName": "InHouseProduction",
+          "value": "true"
+        },
+        {
+          "columnName": "ConstructionType",
+          "value": "Standard"
+        },
+        {
+          "columnName": "FrameType",
+          "value": "WidthCoveredHeight"
+        },
+        {
+          "columnName": "FramePartsWidthHor",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsWidthVert",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsThk",
+          "value": "19"
+        },
+        {
+          "columnName": "FrameFillingThk",
+          "value": "4"
+        },
+        {
+          "columnName": "Weight",
+          "value": "25"
+        },
+        {
+          "columnName": "FrameHorGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "FrameVertGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "FillingGrainDirection",
+          "value": "Lengthwise"
+        },
+        {
+          "columnName": "GraphicFileId",
+          "value": "None"
+        },
+        {
+          "columnName": "ProcessingItem",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Fliplift"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "TraditionFrame01"
+        },
+        {
+          "columnName": "in_FrontColorGrainGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_FillingColorGrainGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_FillingType",
+          "value": "Glass"
+        },
+        {
+          "columnName": "InHouseProduction",
+          "value": "true"
+        },
+        {
+          "columnName": "ConstructionType",
+          "value": "Standard"
+        },
+        {
+          "columnName": "FrameType",
+          "value": "WidthCoveredHeight"
+        },
+        {
+          "columnName": "FramePartsWidthHor",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsWidthVert",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsThk",
+          "value": "19"
+        },
+        {
+          "columnName": "FrameFillingThk",
+          "value": "4"
+        },
+        {
+          "columnName": "Weight",
+          "value": "25"
+        },
+        {
+          "columnName": "FrameHorGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "FrameVertGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "FillingGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "GraphicFileId",
+          "value": "None"
+        },
+        {
+          "columnName": "ProcessingItem",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Door"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "TraditionFrame01"
+        },
+        {
+          "columnName": "in_FrontColorGrainGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_FillingColorGrainGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_FillingType",
+          "value": "WoodHorizontal"
+        },
+        {
+          "columnName": "InHouseProduction",
+          "value": "true"
+        },
+        {
+          "columnName": "ConstructionType",
+          "value": "Standard"
+        },
+        {
+          "columnName": "FrameType",
+          "value": "WidthCoveredHeight"
+        },
+        {
+          "columnName": "FramePartsWidthHor",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsWidthVert",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsThk",
+          "value": "19"
+        },
+        {
+          "columnName": "FrameFillingThk",
+          "value": "8"
+        },
+        {
+          "columnName": "Weight",
+          "value": "18.25"
+        },
+        {
+          "columnName": "FrameHorGrainDirection",
+          "value": "Lengthwise"
+        },
+        {
+          "columnName": "FrameVertGrainDirection",
+          "value": "Lengthwise"
+        },
+        {
+          "columnName": "FillingGrainDirection",
+          "value": "Crosswise"
+        },
+        {
+          "columnName": "GraphicFileId",
+          "value": "None"
+        },
+        {
+          "columnName": "ProcessingItem",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Door"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "TraditionFrame01"
+        },
+        {
+          "columnName": "in_FrontColorGrainGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_FillingColorGrainGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_FillingType",
+          "value": "WoodHorizontal"
+        },
+        {
+          "columnName": "InHouseProduction",
+          "value": "true"
+        },
+        {
+          "columnName": "ConstructionType",
+          "value": "Standard"
+        },
+        {
+          "columnName": "FrameType",
+          "value": "WidthCoveredHeight"
+        },
+        {
+          "columnName": "FramePartsWidthHor",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsWidthVert",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsThk",
+          "value": "19"
+        },
+        {
+          "columnName": "FrameFillingThk",
+          "value": "8"
+        },
+        {
+          "columnName": "Weight",
+          "value": "18.25"
+        },
+        {
+          "columnName": "FrameHorGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "FrameVertGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "FillingGrainDirection",
+          "value": "Crosswise"
+        },
+        {
+          "columnName": "GraphicFileId",
+          "value": "None"
+        },
+        {
+          "columnName": "ProcessingItem",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Drawer"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "TraditionFrame01"
+        },
+        {
+          "columnName": "in_FrontColorGrainGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_FillingColorGrainGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_FillingType",
+          "value": "WoodHorizontal"
+        },
+        {
+          "columnName": "InHouseProduction",
+          "value": "true"
+        },
+        {
+          "columnName": "ConstructionType",
+          "value": "Standard"
+        },
+        {
+          "columnName": "FrameType",
+          "value": "WidthCoveredHeight"
+        },
+        {
+          "columnName": "FramePartsWidthHor",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsWidthVert",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsThk",
+          "value": "19"
+        },
+        {
+          "columnName": "FrameFillingThk",
+          "value": "8"
+        },
+        {
+          "columnName": "Weight",
+          "value": "18.25"
+        },
+        {
+          "columnName": "FrameHorGrainDirection",
+          "value": "Lengthwise"
+        },
+        {
+          "columnName": "FrameVertGrainDirection",
+          "value": "Lengthwise"
+        },
+        {
+          "columnName": "FillingGrainDirection",
+          "value": "Crosswise"
+        },
+        {
+          "columnName": "GraphicFileId",
+          "value": "None"
+        },
+        {
+          "columnName": "ProcessingItem",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Drawer"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "TraditionFrame01"
+        },
+        {
+          "columnName": "in_FrontColorGrainGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_FillingColorGrainGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_FillingType",
+          "value": "WoodHorizontal"
+        },
+        {
+          "columnName": "InHouseProduction",
+          "value": "true"
+        },
+        {
+          "columnName": "ConstructionType",
+          "value": "Standard"
+        },
+        {
+          "columnName": "FrameType",
+          "value": "WidthCoveredHeight"
+        },
+        {
+          "columnName": "FramePartsWidthHor",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsWidthVert",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsThk",
+          "value": "19"
+        },
+        {
+          "columnName": "FrameFillingThk",
+          "value": "8"
+        },
+        {
+          "columnName": "Weight",
+          "value": "18.25"
+        },
+        {
+          "columnName": "FrameHorGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "FrameVertGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "FillingGrainDirection",
+          "value": "Crosswise"
+        },
+        {
+          "columnName": "GraphicFileId",
+          "value": "None"
+        },
+        {
+          "columnName": "ProcessingItem",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Fliplift"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "TraditionFrame01"
+        },
+        {
+          "columnName": "in_FrontColorGrainGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_FillingColorGrainGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_FillingType",
+          "value": "WoodHorizontal"
+        },
+        {
+          "columnName": "InHouseProduction",
+          "value": "true"
+        },
+        {
+          "columnName": "ConstructionType",
+          "value": "Standard"
+        },
+        {
+          "columnName": "FrameType",
+          "value": "WidthCoveredHeight"
+        },
+        {
+          "columnName": "FramePartsWidthHor",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsWidthVert",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsThk",
+          "value": "19"
+        },
+        {
+          "columnName": "FrameFillingThk",
+          "value": "8"
+        },
+        {
+          "columnName": "Weight",
+          "value": "18.25"
+        },
+        {
+          "columnName": "FrameHorGrainDirection",
+          "value": "Lengthwise"
+        },
+        {
+          "columnName": "FrameVertGrainDirection",
+          "value": "Lengthwise"
+        },
+        {
+          "columnName": "FillingGrainDirection",
+          "value": "Crosswise"
+        },
+        {
+          "columnName": "GraphicFileId",
+          "value": "None"
+        },
+        {
+          "columnName": "ProcessingItem",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Fliplift"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "TraditionFrame01"
+        },
+        {
+          "columnName": "in_FrontColorGrainGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_FillingColorGrainGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_FillingType",
+          "value": "WoodHorizontal"
+        },
+        {
+          "columnName": "InHouseProduction",
+          "value": "true"
+        },
+        {
+          "columnName": "ConstructionType",
+          "value": "Standard"
+        },
+        {
+          "columnName": "FrameType",
+          "value": "WidthCoveredHeight"
+        },
+        {
+          "columnName": "FramePartsWidthHor",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsWidthVert",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsThk",
+          "value": "19"
+        },
+        {
+          "columnName": "FrameFillingThk",
+          "value": "8"
+        },
+        {
+          "columnName": "Weight",
+          "value": "18.25"
+        },
+        {
+          "columnName": "FrameHorGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "FrameVertGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "FillingGrainDirection",
+          "value": "Crosswise"
+        },
+        {
+          "columnName": "GraphicFileId",
+          "value": "None"
+        },
+        {
+          "columnName": "ProcessingItem",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Door"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "ModernFrame02"
+        },
+        {
+          "columnName": "in_FrontColorGrainGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_FillingColorGrainGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_FillingType",
+          "value": "Glass"
+        },
+        {
+          "columnName": "InHouseProduction",
+          "value": "true"
+        },
+        {
+          "columnName": "ConstructionType",
+          "value": "InsetHandle"
+        },
+        {
+          "columnName": "FrameType",
+          "value": "Mitre"
+        },
+        {
+          "columnName": "FramePartsWidthHor",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsWidthVert",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsThk",
+          "value": "19"
+        },
+        {
+          "columnName": "FrameFillingThk",
+          "value": "4"
+        },
+        {
+          "columnName": "Weight",
+          "value": "25"
+        },
+        {
+          "columnName": "FrameHorGrainDirection",
+          "value": "Crosswise"
+        },
+        {
+          "columnName": "FrameVertGrainDirection",
+          "value": "Crosswise"
+        },
+        {
+          "columnName": "FillingGrainDirection",
+          "value": "Crosswise"
+        },
+        {
+          "columnName": "GraphicFileId",
+          "value": "None"
+        },
+        {
+          "columnName": "ProcessingItem",
+          "value": "Handle_140"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Door"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "ModernFrame02"
+        },
+        {
+          "columnName": "in_FrontColorGrainGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_FillingColorGrainGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_FillingType",
+          "value": "Glass"
+        },
+        {
+          "columnName": "InHouseProduction",
+          "value": "true"
+        },
+        {
+          "columnName": "ConstructionType",
+          "value": "InsetHandle"
+        },
+        {
+          "columnName": "FrameType",
+          "value": "Mitre"
+        },
+        {
+          "columnName": "FramePartsWidthHor",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsWidthVert",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsThk",
+          "value": "19"
+        },
+        {
+          "columnName": "FrameFillingThk",
+          "value": "4"
+        },
+        {
+          "columnName": "Weight",
+          "value": "25"
+        },
+        {
+          "columnName": "FrameHorGrainDirection",
+          "value": "Crosswise"
+        },
+        {
+          "columnName": "FrameVertGrainDirection",
+          "value": "Crosswise"
+        },
+        {
+          "columnName": "FillingGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "GraphicFileId",
+          "value": "None"
+        },
+        {
+          "columnName": "ProcessingItem",
+          "value": "Handle_140"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Door"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "ModernFrame02"
+        },
+        {
+          "columnName": "in_FrontColorGrainGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_FillingColorGrainGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_FillingType",
+          "value": "Glass"
+        },
+        {
+          "columnName": "InHouseProduction",
+          "value": "true"
+        },
+        {
+          "columnName": "ConstructionType",
+          "value": "InsetHandle"
+        },
+        {
+          "columnName": "FrameType",
+          "value": "Mitre"
+        },
+        {
+          "columnName": "FramePartsWidthHor",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsWidthVert",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsThk",
+          "value": "19"
+        },
+        {
+          "columnName": "FrameFillingThk",
+          "value": "4"
+        },
+        {
+          "columnName": "Weight",
+          "value": "25"
+        },
+        {
+          "columnName": "FrameHorGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "FrameVertGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "FillingGrainDirection",
+          "value": "Crosswise"
+        },
+        {
+          "columnName": "GraphicFileId",
+          "value": "None"
+        },
+        {
+          "columnName": "ProcessingItem",
+          "value": "Handle_140"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Door"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "ModernFrame02"
+        },
+        {
+          "columnName": "in_FrontColorGrainGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_FillingColorGrainGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_FillingType",
+          "value": "Glass"
+        },
+        {
+          "columnName": "InHouseProduction",
+          "value": "true"
+        },
+        {
+          "columnName": "ConstructionType",
+          "value": "InsetHandle"
+        },
+        {
+          "columnName": "FrameType",
+          "value": "Mitre"
+        },
+        {
+          "columnName": "FramePartsWidthHor",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsWidthVert",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsThk",
+          "value": "19"
+        },
+        {
+          "columnName": "FrameFillingThk",
+          "value": "4"
+        },
+        {
+          "columnName": "Weight",
+          "value": "25"
+        },
+        {
+          "columnName": "FrameHorGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "FrameVertGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "FillingGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "GraphicFileId",
+          "value": "None"
+        },
+        {
+          "columnName": "ProcessingItem",
+          "value": "Handle_140"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Door"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "TraditionFrame02"
+        },
+        {
+          "columnName": "in_FrontColorGrainGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_FillingColorGrainGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_FillingType",
+          "value": "WoodVertical"
+        },
+        {
+          "columnName": "InHouseProduction",
+          "value": "true"
+        },
+        {
+          "columnName": "ConstructionType",
+          "value": "InsetHandle"
+        },
+        {
+          "columnName": "FrameType",
+          "value": "WidthCoveredHeight"
+        },
+        {
+          "columnName": "FramePartsWidthHor",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsWidthVert",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsThk",
+          "value": "19"
+        },
+        {
+          "columnName": "FrameFillingThk",
+          "value": "8"
+        },
+        {
+          "columnName": "Weight",
+          "value": "18.25"
+        },
+        {
+          "columnName": "FrameHorGrainDirection",
+          "value": "Lengthwise"
+        },
+        {
+          "columnName": "FrameVertGrainDirection",
+          "value": "Lengthwise"
+        },
+        {
+          "columnName": "FillingGrainDirection",
+          "value": "Lengthwise"
+        },
+        {
+          "columnName": "GraphicFileId",
+          "value": "None"
+        },
+        {
+          "columnName": "ProcessingItem",
+          "value": "Handle_140"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Door"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "TraditionFrame02"
+        },
+        {
+          "columnName": "in_FrontColorGrainGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_FillingColorGrainGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_FillingType",
+          "value": "WoodNeutral"
+        },
+        {
+          "columnName": "InHouseProduction",
+          "value": "true"
+        },
+        {
+          "columnName": "ConstructionType",
+          "value": "InsetHandle"
+        },
+        {
+          "columnName": "FrameType",
+          "value": "WidthCoveredHeight"
+        },
+        {
+          "columnName": "FramePartsWidthHor",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsWidthVert",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsThk",
+          "value": "19"
+        },
+        {
+          "columnName": "FrameFillingThk",
+          "value": "8"
+        },
+        {
+          "columnName": "Weight",
+          "value": "18.25"
+        },
+        {
+          "columnName": "FrameHorGrainDirection",
+          "value": "Lengthwise"
+        },
+        {
+          "columnName": "FrameVertGrainDirection",
+          "value": "Lengthwise"
+        },
+        {
+          "columnName": "FillingGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "GraphicFileId",
+          "value": "None"
+        },
+        {
+          "columnName": "ProcessingItem",
+          "value": "Handle_140"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Door"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "TraditionFrame02"
+        },
+        {
+          "columnName": "in_FrontColorGrainGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_FillingColorGrainGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_FillingType",
+          "value": "WoodVertical"
+        },
+        {
+          "columnName": "InHouseProduction",
+          "value": "true"
+        },
+        {
+          "columnName": "ConstructionType",
+          "value": "InsetHandle"
+        },
+        {
+          "columnName": "FrameType",
+          "value": "WidthCoveredHeight"
+        },
+        {
+          "columnName": "FramePartsWidthHor",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsWidthVert",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsThk",
+          "value": "19"
+        },
+        {
+          "columnName": "FrameFillingThk",
+          "value": "8"
+        },
+        {
+          "columnName": "Weight",
+          "value": "18.25"
+        },
+        {
+          "columnName": "FrameHorGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "FrameVertGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "FillingGrainDirection",
+          "value": "Lengthwise"
+        },
+        {
+          "columnName": "GraphicFileId",
+          "value": "None"
+        },
+        {
+          "columnName": "ProcessingItem",
+          "value": "Handle_140"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Door"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "TraditionFrame02"
+        },
+        {
+          "columnName": "in_FrontColorGrainGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_FillingColorGrainGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_FillingType",
+          "value": "WoodNeutral"
+        },
+        {
+          "columnName": "InHouseProduction",
+          "value": "true"
+        },
+        {
+          "columnName": "ConstructionType",
+          "value": "InsetHandle"
+        },
+        {
+          "columnName": "FrameType",
+          "value": "WidthCoveredHeight"
+        },
+        {
+          "columnName": "FramePartsWidthHor",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsWidthVert",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsThk",
+          "value": "19"
+        },
+        {
+          "columnName": "FrameFillingThk",
+          "value": "8"
+        },
+        {
+          "columnName": "Weight",
+          "value": "18.25"
+        },
+        {
+          "columnName": "FrameHorGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "FrameVertGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "FillingGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "GraphicFileId",
+          "value": "None"
+        },
+        {
+          "columnName": "ProcessingItem",
+          "value": "Handle_140"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Drawer"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "ModernFrame02"
+        },
+        {
+          "columnName": "in_FrontColorGrainGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_FillingColorGrainGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_FillingType",
+          "value": "Glass"
+        },
+        {
+          "columnName": "InHouseProduction",
+          "value": "true"
+        },
+        {
+          "columnName": "ConstructionType",
+          "value": "InsetHandle"
+        },
+        {
+          "columnName": "FrameType",
+          "value": "Mitre"
+        },
+        {
+          "columnName": "FramePartsWidthHor",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsWidthVert",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsThk",
+          "value": "19"
+        },
+        {
+          "columnName": "FrameFillingThk",
+          "value": "4"
+        },
+        {
+          "columnName": "Weight",
+          "value": "25"
+        },
+        {
+          "columnName": "FrameHorGrainDirection",
+          "value": "Crosswise"
+        },
+        {
+          "columnName": "FrameVertGrainDirection",
+          "value": "Crosswise"
+        },
+        {
+          "columnName": "FillingGrainDirection",
+          "value": "Crosswise"
+        },
+        {
+          "columnName": "GraphicFileId",
+          "value": "None"
+        },
+        {
+          "columnName": "ProcessingItem",
+          "value": "Handle_140"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Drawer"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "ModernFrame02"
+        },
+        {
+          "columnName": "in_FrontColorGrainGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_FillingColorGrainGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_FillingType",
+          "value": "Glass"
+        },
+        {
+          "columnName": "InHouseProduction",
+          "value": "true"
+        },
+        {
+          "columnName": "ConstructionType",
+          "value": "InsetHandle"
+        },
+        {
+          "columnName": "FrameType",
+          "value": "Mitre"
+        },
+        {
+          "columnName": "FramePartsWidthHor",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsWidthVert",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsThk",
+          "value": "19"
+        },
+        {
+          "columnName": "FrameFillingThk",
+          "value": "4"
+        },
+        {
+          "columnName": "Weight",
+          "value": "25"
+        },
+        {
+          "columnName": "FrameHorGrainDirection",
+          "value": "Crosswise"
+        },
+        {
+          "columnName": "FrameVertGrainDirection",
+          "value": "Crosswise"
+        },
+        {
+          "columnName": "FillingGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "GraphicFileId",
+          "value": "None"
+        },
+        {
+          "columnName": "ProcessingItem",
+          "value": "Handle_140"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Drawer"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "ModernFrame02"
+        },
+        {
+          "columnName": "in_FrontColorGrainGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_FillingColorGrainGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_FillingType",
+          "value": "Glass"
+        },
+        {
+          "columnName": "InHouseProduction",
+          "value": "true"
+        },
+        {
+          "columnName": "ConstructionType",
+          "value": "InsetHandle"
+        },
+        {
+          "columnName": "FrameType",
+          "value": "Mitre"
+        },
+        {
+          "columnName": "FramePartsWidthHor",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsWidthVert",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsThk",
+          "value": "19"
+        },
+        {
+          "columnName": "FrameFillingThk",
+          "value": "4"
+        },
+        {
+          "columnName": "Weight",
+          "value": "25"
+        },
+        {
+          "columnName": "FrameHorGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "FrameVertGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "FillingGrainDirection",
+          "value": "Crosswise"
+        },
+        {
+          "columnName": "GraphicFileId",
+          "value": "None"
+        },
+        {
+          "columnName": "ProcessingItem",
+          "value": "Handle_140"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Drawer"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "ModernFrame02"
+        },
+        {
+          "columnName": "in_FrontColorGrainGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_FillingColorGrainGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_FillingType",
+          "value": "Glass"
+        },
+        {
+          "columnName": "InHouseProduction",
+          "value": "true"
+        },
+        {
+          "columnName": "ConstructionType",
+          "value": "InsetHandle"
+        },
+        {
+          "columnName": "FrameType",
+          "value": "Mitre"
+        },
+        {
+          "columnName": "FramePartsWidthHor",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsWidthVert",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsThk",
+          "value": "19"
+        },
+        {
+          "columnName": "FrameFillingThk",
+          "value": "4"
+        },
+        {
+          "columnName": "Weight",
+          "value": "25"
+        },
+        {
+          "columnName": "FrameHorGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "FrameVertGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "FillingGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "GraphicFileId",
+          "value": "None"
+        },
+        {
+          "columnName": "ProcessingItem",
+          "value": "Handle_140"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Drawer"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "TraditionFrame02"
+        },
+        {
+          "columnName": "in_FrontColorGrainGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_FillingColorGrainGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_FillingType",
+          "value": "WoodVertical"
+        },
+        {
+          "columnName": "InHouseProduction",
+          "value": "true"
+        },
+        {
+          "columnName": "ConstructionType",
+          "value": "InsetHandle"
+        },
+        {
+          "columnName": "FrameType",
+          "value": "WidthCoveredHeight"
+        },
+        {
+          "columnName": "FramePartsWidthHor",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsWidthVert",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsThk",
+          "value": "19"
+        },
+        {
+          "columnName": "FrameFillingThk",
+          "value": "8"
+        },
+        {
+          "columnName": "Weight",
+          "value": "18.25"
+        },
+        {
+          "columnName": "FrameHorGrainDirection",
+          "value": "Lengthwise"
+        },
+        {
+          "columnName": "FrameVertGrainDirection",
+          "value": "Lengthwise"
+        },
+        {
+          "columnName": "FillingGrainDirection",
+          "value": "Lengthwise"
+        },
+        {
+          "columnName": "GraphicFileId",
+          "value": "None"
+        },
+        {
+          "columnName": "ProcessingItem",
+          "value": "Handle_140"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Drawer"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "TraditionFrame02"
+        },
+        {
+          "columnName": "in_FrontColorGrainGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_FillingColorGrainGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_FillingType",
+          "value": "WoodNeutral"
+        },
+        {
+          "columnName": "InHouseProduction",
+          "value": "true"
+        },
+        {
+          "columnName": "ConstructionType",
+          "value": "InsetHandle"
+        },
+        {
+          "columnName": "FrameType",
+          "value": "WidthCoveredHeight"
+        },
+        {
+          "columnName": "FramePartsWidthHor",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsWidthVert",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsThk",
+          "value": "19"
+        },
+        {
+          "columnName": "FrameFillingThk",
+          "value": "8"
+        },
+        {
+          "columnName": "Weight",
+          "value": "18.25"
+        },
+        {
+          "columnName": "FrameHorGrainDirection",
+          "value": "Lengthwise"
+        },
+        {
+          "columnName": "FrameVertGrainDirection",
+          "value": "Lengthwise"
+        },
+        {
+          "columnName": "FillingGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "GraphicFileId",
+          "value": "None"
+        },
+        {
+          "columnName": "ProcessingItem",
+          "value": "Handle_140"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Drawer"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "TraditionFrame02"
+        },
+        {
+          "columnName": "in_FrontColorGrainGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_FillingColorGrainGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_FillingType",
+          "value": "WoodVertical"
+        },
+        {
+          "columnName": "InHouseProduction",
+          "value": "true"
+        },
+        {
+          "columnName": "ConstructionType",
+          "value": "InsetHandle"
+        },
+        {
+          "columnName": "FrameType",
+          "value": "WidthCoveredHeight"
+        },
+        {
+          "columnName": "FramePartsWidthHor",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsWidthVert",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsThk",
+          "value": "19"
+        },
+        {
+          "columnName": "FrameFillingThk",
+          "value": "8"
+        },
+        {
+          "columnName": "Weight",
+          "value": "18.25"
+        },
+        {
+          "columnName": "FrameHorGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "FrameVertGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "FillingGrainDirection",
+          "value": "Lengthwise"
+        },
+        {
+          "columnName": "GraphicFileId",
+          "value": "None"
+        },
+        {
+          "columnName": "ProcessingItem",
+          "value": "Handle_140"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Drawer"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "TraditionFrame02"
+        },
+        {
+          "columnName": "in_FrontColorGrainGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_FillingColorGrainGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_FillingType",
+          "value": "WoodNeutral"
+        },
+        {
+          "columnName": "InHouseProduction",
+          "value": "true"
+        },
+        {
+          "columnName": "ConstructionType",
+          "value": "InsetHandle"
+        },
+        {
+          "columnName": "FrameType",
+          "value": "WidthCoveredHeight"
+        },
+        {
+          "columnName": "FramePartsWidthHor",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsWidthVert",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsThk",
+          "value": "19"
+        },
+        {
+          "columnName": "FrameFillingThk",
+          "value": "8"
+        },
+        {
+          "columnName": "Weight",
+          "value": "18.25"
+        },
+        {
+          "columnName": "FrameHorGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "FrameVertGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "FillingGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "GraphicFileId",
+          "value": "None"
+        },
+        {
+          "columnName": "ProcessingItem",
+          "value": "Handle_140"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Fliplift"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "ModernFrame02"
+        },
+        {
+          "columnName": "in_FrontColorGrainGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_FillingColorGrainGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_FillingType",
+          "value": "Glass"
+        },
+        {
+          "columnName": "InHouseProduction",
+          "value": "true"
+        },
+        {
+          "columnName": "ConstructionType",
+          "value": "InsetHandle"
+        },
+        {
+          "columnName": "FrameType",
+          "value": "Mitre"
+        },
+        {
+          "columnName": "FramePartsWidthHor",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsWidthVert",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsThk",
+          "value": "19"
+        },
+        {
+          "columnName": "FrameFillingThk",
+          "value": "4"
+        },
+        {
+          "columnName": "Weight",
+          "value": "25"
+        },
+        {
+          "columnName": "FrameHorGrainDirection",
+          "value": "Crosswise"
+        },
+        {
+          "columnName": "FrameVertGrainDirection",
+          "value": "Crosswise"
+        },
+        {
+          "columnName": "FillingGrainDirection",
+          "value": "Crosswise"
+        },
+        {
+          "columnName": "GraphicFileId",
+          "value": "None"
+        },
+        {
+          "columnName": "ProcessingItem",
+          "value": "Handle_140"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Fliplift"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "ModernFrame02"
+        },
+        {
+          "columnName": "in_FrontColorGrainGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_FillingColorGrainGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_FillingType",
+          "value": "Glass"
+        },
+        {
+          "columnName": "InHouseProduction",
+          "value": "true"
+        },
+        {
+          "columnName": "ConstructionType",
+          "value": "InsetHandle"
+        },
+        {
+          "columnName": "FrameType",
+          "value": "Mitre"
+        },
+        {
+          "columnName": "FramePartsWidthHor",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsWidthVert",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsThk",
+          "value": "19"
+        },
+        {
+          "columnName": "FrameFillingThk",
+          "value": "4"
+        },
+        {
+          "columnName": "Weight",
+          "value": "25"
+        },
+        {
+          "columnName": "FrameHorGrainDirection",
+          "value": "Crosswise"
+        },
+        {
+          "columnName": "FrameVertGrainDirection",
+          "value": "Crosswise"
+        },
+        {
+          "columnName": "FillingGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "GraphicFileId",
+          "value": "None"
+        },
+        {
+          "columnName": "ProcessingItem",
+          "value": "Handle_140"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Fliplift"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "ModernFrame02"
+        },
+        {
+          "columnName": "in_FrontColorGrainGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_FillingColorGrainGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_FillingType",
+          "value": "Glass"
+        },
+        {
+          "columnName": "InHouseProduction",
+          "value": "true"
+        },
+        {
+          "columnName": "ConstructionType",
+          "value": "InsetHandle"
+        },
+        {
+          "columnName": "FrameType",
+          "value": "Mitre"
+        },
+        {
+          "columnName": "FramePartsWidthHor",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsWidthVert",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsThk",
+          "value": "19"
+        },
+        {
+          "columnName": "FrameFillingThk",
+          "value": "4"
+        },
+        {
+          "columnName": "Weight",
+          "value": "25"
+        },
+        {
+          "columnName": "FrameHorGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "FrameVertGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "FillingGrainDirection",
+          "value": "Crosswise"
+        },
+        {
+          "columnName": "GraphicFileId",
+          "value": "None"
+        },
+        {
+          "columnName": "ProcessingItem",
+          "value": "Handle_140"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Fliplift"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "ModernFrame02"
+        },
+        {
+          "columnName": "in_FrontColorGrainGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_FillingColorGrainGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_FillingType",
+          "value": "Glass"
+        },
+        {
+          "columnName": "InHouseProduction",
+          "value": "true"
+        },
+        {
+          "columnName": "ConstructionType",
+          "value": "InsetHandle"
+        },
+        {
+          "columnName": "FrameType",
+          "value": "Mitre"
+        },
+        {
+          "columnName": "FramePartsWidthHor",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsWidthVert",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsThk",
+          "value": "19"
+        },
+        {
+          "columnName": "FrameFillingThk",
+          "value": "4"
+        },
+        {
+          "columnName": "Weight",
+          "value": "25"
+        },
+        {
+          "columnName": "FrameHorGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "FrameVertGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "FillingGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "GraphicFileId",
+          "value": "None"
+        },
+        {
+          "columnName": "ProcessingItem",
+          "value": "Handle_140"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Fliplift"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "TraditionFrame02"
+        },
+        {
+          "columnName": "in_FrontColorGrainGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_FillingColorGrainGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_FillingType",
+          "value": "WoodVertical"
+        },
+        {
+          "columnName": "InHouseProduction",
+          "value": "true"
+        },
+        {
+          "columnName": "ConstructionType",
+          "value": "InsetHandle"
+        },
+        {
+          "columnName": "FrameType",
+          "value": "WidthCoveredHeight"
+        },
+        {
+          "columnName": "FramePartsWidthHor",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsWidthVert",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsThk",
+          "value": "19"
+        },
+        {
+          "columnName": "FrameFillingThk",
+          "value": "8"
+        },
+        {
+          "columnName": "Weight",
+          "value": "18.25"
+        },
+        {
+          "columnName": "FrameHorGrainDirection",
+          "value": "Lengthwise"
+        },
+        {
+          "columnName": "FrameVertGrainDirection",
+          "value": "Lengthwise"
+        },
+        {
+          "columnName": "FillingGrainDirection",
+          "value": "Lengthwise"
+        },
+        {
+          "columnName": "GraphicFileId",
+          "value": "None"
+        },
+        {
+          "columnName": "ProcessingItem",
+          "value": "Handle_140"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Fliplift"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "TraditionFrame02"
+        },
+        {
+          "columnName": "in_FrontColorGrainGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_FillingColorGrainGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_FillingType",
+          "value": "WoodNeutral"
+        },
+        {
+          "columnName": "InHouseProduction",
+          "value": "true"
+        },
+        {
+          "columnName": "ConstructionType",
+          "value": "InsetHandle"
+        },
+        {
+          "columnName": "FrameType",
+          "value": "WidthCoveredHeight"
+        },
+        {
+          "columnName": "FramePartsWidthHor",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsWidthVert",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsThk",
+          "value": "19"
+        },
+        {
+          "columnName": "FrameFillingThk",
+          "value": "8"
+        },
+        {
+          "columnName": "Weight",
+          "value": "18.25"
+        },
+        {
+          "columnName": "FrameHorGrainDirection",
+          "value": "Lengthwise"
+        },
+        {
+          "columnName": "FrameVertGrainDirection",
+          "value": "Lengthwise"
+        },
+        {
+          "columnName": "FillingGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "GraphicFileId",
+          "value": "None"
+        },
+        {
+          "columnName": "ProcessingItem",
+          "value": "Handle_140"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Fliplift"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "TraditionFrame02"
+        },
+        {
+          "columnName": "in_FrontColorGrainGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_FillingColorGrainGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_FillingType",
+          "value": "WoodVertical"
+        },
+        {
+          "columnName": "InHouseProduction",
+          "value": "true"
+        },
+        {
+          "columnName": "ConstructionType",
+          "value": "InsetHandle"
+        },
+        {
+          "columnName": "FrameType",
+          "value": "WidthCoveredHeight"
+        },
+        {
+          "columnName": "FramePartsWidthHor",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsWidthVert",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsThk",
+          "value": "19"
+        },
+        {
+          "columnName": "FrameFillingThk",
+          "value": "8"
+        },
+        {
+          "columnName": "Weight",
+          "value": "18.25"
+        },
+        {
+          "columnName": "FrameHorGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "FrameVertGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "FillingGrainDirection",
+          "value": "Lengthwise"
+        },
+        {
+          "columnName": "GraphicFileId",
+          "value": "None"
+        },
+        {
+          "columnName": "ProcessingItem",
+          "value": "Handle_140"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Fliplift"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "TraditionFrame02"
+        },
+        {
+          "columnName": "in_FrontColorGrainGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_FillingColorGrainGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_FillingType",
+          "value": "WoodNeutral"
+        },
+        {
+          "columnName": "InHouseProduction",
+          "value": "true"
+        },
+        {
+          "columnName": "ConstructionType",
+          "value": "InsetHandle"
+        },
+        {
+          "columnName": "FrameType",
+          "value": "WidthCoveredHeight"
+        },
+        {
+          "columnName": "FramePartsWidthHor",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsWidthVert",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsThk",
+          "value": "19"
+        },
+        {
+          "columnName": "FrameFillingThk",
+          "value": "8"
+        },
+        {
+          "columnName": "Weight",
+          "value": "18.25"
+        },
+        {
+          "columnName": "FrameHorGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "FrameVertGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "FillingGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "GraphicFileId",
+          "value": "None"
+        },
+        {
+          "columnName": "ProcessingItem",
+          "value": "Handle_140"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Door"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "TraditionFrame02"
+        },
+        {
+          "columnName": "in_FrontColorGrainGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_FillingColorGrainGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_FillingType",
+          "value": "Glass"
+        },
+        {
+          "columnName": "InHouseProduction",
+          "value": "true"
+        },
+        {
+          "columnName": "ConstructionType",
+          "value": "InsetHandle"
+        },
+        {
+          "columnName": "FrameType",
+          "value": "WidthCoveredHeight"
+        },
+        {
+          "columnName": "FramePartsWidthHor",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsWidthVert",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsThk",
+          "value": "19"
+        },
+        {
+          "columnName": "FrameFillingThk",
+          "value": "4"
+        },
+        {
+          "columnName": "Weight",
+          "value": "25"
+        },
+        {
+          "columnName": "FrameHorGrainDirection",
+          "value": "Lengthwise"
+        },
+        {
+          "columnName": "FrameVertGrainDirection",
+          "value": "Lengthwise"
+        },
+        {
+          "columnName": "FillingGrainDirection",
+          "value": "Lengthwise"
+        },
+        {
+          "columnName": "GraphicFileId",
+          "value": "None"
+        },
+        {
+          "columnName": "ProcessingItem",
+          "value": "Handle_140"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Door"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "TraditionFrame02"
+        },
+        {
+          "columnName": "in_FrontColorGrainGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_FillingColorGrainGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_FillingType",
+          "value": "Glass"
+        },
+        {
+          "columnName": "InHouseProduction",
+          "value": "true"
+        },
+        {
+          "columnName": "ConstructionType",
+          "value": "InsetHandle"
+        },
+        {
+          "columnName": "FrameType",
+          "value": "WidthCoveredHeight"
+        },
+        {
+          "columnName": "FramePartsWidthHor",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsWidthVert",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsThk",
+          "value": "19"
+        },
+        {
+          "columnName": "FrameFillingThk",
+          "value": "4"
+        },
+        {
+          "columnName": "Weight",
+          "value": "25"
+        },
+        {
+          "columnName": "FrameHorGrainDirection",
+          "value": "Lengthwise"
+        },
+        {
+          "columnName": "FrameVertGrainDirection",
+          "value": "Lengthwise"
+        },
+        {
+          "columnName": "FillingGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "GraphicFileId",
+          "value": "None"
+        },
+        {
+          "columnName": "ProcessingItem",
+          "value": "Handle_140"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Door"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "TraditionFrame02"
+        },
+        {
+          "columnName": "in_FrontColorGrainGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_FillingColorGrainGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_FillingType",
+          "value": "Glass"
+        },
+        {
+          "columnName": "InHouseProduction",
+          "value": "true"
+        },
+        {
+          "columnName": "ConstructionType",
+          "value": "InsetHandle"
+        },
+        {
+          "columnName": "FrameType",
+          "value": "WidthCoveredHeight"
+        },
+        {
+          "columnName": "FramePartsWidthHor",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsWidthVert",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsThk",
+          "value": "19"
+        },
+        {
+          "columnName": "FrameFillingThk",
+          "value": "4"
+        },
+        {
+          "columnName": "Weight",
+          "value": "25"
+        },
+        {
+          "columnName": "FrameHorGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "FrameVertGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "FillingGrainDirection",
+          "value": "Lengthwise"
+        },
+        {
+          "columnName": "GraphicFileId",
+          "value": "None"
+        },
+        {
+          "columnName": "ProcessingItem",
+          "value": "Handle_140"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Door"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "TraditionFrame02"
+        },
+        {
+          "columnName": "in_FrontColorGrainGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_FillingColorGrainGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_FillingType",
+          "value": "Glass"
+        },
+        {
+          "columnName": "InHouseProduction",
+          "value": "true"
+        },
+        {
+          "columnName": "ConstructionType",
+          "value": "InsetHandle"
+        },
+        {
+          "columnName": "FrameType",
+          "value": "WidthCoveredHeight"
+        },
+        {
+          "columnName": "FramePartsWidthHor",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsWidthVert",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsThk",
+          "value": "19"
+        },
+        {
+          "columnName": "FrameFillingThk",
+          "value": "4"
+        },
+        {
+          "columnName": "Weight",
+          "value": "25"
+        },
+        {
+          "columnName": "FrameHorGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "FrameVertGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "FillingGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "GraphicFileId",
+          "value": "None"
+        },
+        {
+          "columnName": "ProcessingItem",
+          "value": "Handle_140"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Drawer"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "TraditionFrame02"
+        },
+        {
+          "columnName": "in_FrontColorGrainGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_FillingColorGrainGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_FillingType",
+          "value": "Glass"
+        },
+        {
+          "columnName": "InHouseProduction",
+          "value": "true"
+        },
+        {
+          "columnName": "ConstructionType",
+          "value": "InsetHandle"
+        },
+        {
+          "columnName": "FrameType",
+          "value": "WidthCoveredHeight"
+        },
+        {
+          "columnName": "FramePartsWidthHor",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsWidthVert",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsThk",
+          "value": "19"
+        },
+        {
+          "columnName": "FrameFillingThk",
+          "value": "4"
+        },
+        {
+          "columnName": "Weight",
+          "value": "25"
+        },
+        {
+          "columnName": "FrameHorGrainDirection",
+          "value": "Lengthwise"
+        },
+        {
+          "columnName": "FrameVertGrainDirection",
+          "value": "Lengthwise"
+        },
+        {
+          "columnName": "FillingGrainDirection",
+          "value": "Lengthwise"
+        },
+        {
+          "columnName": "GraphicFileId",
+          "value": "None"
+        },
+        {
+          "columnName": "ProcessingItem",
+          "value": "Handle_140"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Drawer"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "TraditionFrame02"
+        },
+        {
+          "columnName": "in_FrontColorGrainGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_FillingColorGrainGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_FillingType",
+          "value": "Glass"
+        },
+        {
+          "columnName": "InHouseProduction",
+          "value": "true"
+        },
+        {
+          "columnName": "ConstructionType",
+          "value": "InsetHandle"
+        },
+        {
+          "columnName": "FrameType",
+          "value": "WidthCoveredHeight"
+        },
+        {
+          "columnName": "FramePartsWidthHor",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsWidthVert",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsThk",
+          "value": "19"
+        },
+        {
+          "columnName": "FrameFillingThk",
+          "value": "4"
+        },
+        {
+          "columnName": "Weight",
+          "value": "25"
+        },
+        {
+          "columnName": "FrameHorGrainDirection",
+          "value": "Lengthwise"
+        },
+        {
+          "columnName": "FrameVertGrainDirection",
+          "value": "Lengthwise"
+        },
+        {
+          "columnName": "FillingGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "GraphicFileId",
+          "value": "None"
+        },
+        {
+          "columnName": "ProcessingItem",
+          "value": "Handle_140"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Drawer"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "TraditionFrame02"
+        },
+        {
+          "columnName": "in_FrontColorGrainGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_FillingColorGrainGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_FillingType",
+          "value": "Glass"
+        },
+        {
+          "columnName": "InHouseProduction",
+          "value": "true"
+        },
+        {
+          "columnName": "ConstructionType",
+          "value": "InsetHandle"
+        },
+        {
+          "columnName": "FrameType",
+          "value": "WidthCoveredHeight"
+        },
+        {
+          "columnName": "FramePartsWidthHor",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsWidthVert",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsThk",
+          "value": "19"
+        },
+        {
+          "columnName": "FrameFillingThk",
+          "value": "4"
+        },
+        {
+          "columnName": "Weight",
+          "value": "25"
+        },
+        {
+          "columnName": "FrameHorGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "FrameVertGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "FillingGrainDirection",
+          "value": "Lengthwise"
+        },
+        {
+          "columnName": "GraphicFileId",
+          "value": "None"
+        },
+        {
+          "columnName": "ProcessingItem",
+          "value": "Handle_140"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Drawer"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "TraditionFrame02"
+        },
+        {
+          "columnName": "in_FrontColorGrainGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_FillingColorGrainGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_FillingType",
+          "value": "Glass"
+        },
+        {
+          "columnName": "InHouseProduction",
+          "value": "true"
+        },
+        {
+          "columnName": "ConstructionType",
+          "value": "InsetHandle"
+        },
+        {
+          "columnName": "FrameType",
+          "value": "WidthCoveredHeight"
+        },
+        {
+          "columnName": "FramePartsWidthHor",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsWidthVert",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsThk",
+          "value": "19"
+        },
+        {
+          "columnName": "FrameFillingThk",
+          "value": "4"
+        },
+        {
+          "columnName": "Weight",
+          "value": "25"
+        },
+        {
+          "columnName": "FrameHorGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "FrameVertGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "FillingGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "GraphicFileId",
+          "value": "None"
+        },
+        {
+          "columnName": "ProcessingItem",
+          "value": "Handle_140"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Fliplift"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "TraditionFrame02"
+        },
+        {
+          "columnName": "in_FrontColorGrainGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_FillingColorGrainGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_FillingType",
+          "value": "Glass"
+        },
+        {
+          "columnName": "InHouseProduction",
+          "value": "true"
+        },
+        {
+          "columnName": "ConstructionType",
+          "value": "InsetHandle"
+        },
+        {
+          "columnName": "FrameType",
+          "value": "WidthCoveredHeight"
+        },
+        {
+          "columnName": "FramePartsWidthHor",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsWidthVert",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsThk",
+          "value": "19"
+        },
+        {
+          "columnName": "FrameFillingThk",
+          "value": "4"
+        },
+        {
+          "columnName": "Weight",
+          "value": "25"
+        },
+        {
+          "columnName": "FrameHorGrainDirection",
+          "value": "Lengthwise"
+        },
+        {
+          "columnName": "FrameVertGrainDirection",
+          "value": "Lengthwise"
+        },
+        {
+          "columnName": "FillingGrainDirection",
+          "value": "Lengthwise"
+        },
+        {
+          "columnName": "GraphicFileId",
+          "value": "None"
+        },
+        {
+          "columnName": "ProcessingItem",
+          "value": "Handle_140"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Fliplift"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "TraditionFrame02"
+        },
+        {
+          "columnName": "in_FrontColorGrainGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_FillingColorGrainGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_FillingType",
+          "value": "Glass"
+        },
+        {
+          "columnName": "InHouseProduction",
+          "value": "true"
+        },
+        {
+          "columnName": "ConstructionType",
+          "value": "InsetHandle"
+        },
+        {
+          "columnName": "FrameType",
+          "value": "WidthCoveredHeight"
+        },
+        {
+          "columnName": "FramePartsWidthHor",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsWidthVert",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsThk",
+          "value": "19"
+        },
+        {
+          "columnName": "FrameFillingThk",
+          "value": "4"
+        },
+        {
+          "columnName": "Weight",
+          "value": "25"
+        },
+        {
+          "columnName": "FrameHorGrainDirection",
+          "value": "Lengthwise"
+        },
+        {
+          "columnName": "FrameVertGrainDirection",
+          "value": "Lengthwise"
+        },
+        {
+          "columnName": "FillingGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "GraphicFileId",
+          "value": "None"
+        },
+        {
+          "columnName": "ProcessingItem",
+          "value": "Handle_140"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Fliplift"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "TraditionFrame02"
+        },
+        {
+          "columnName": "in_FrontColorGrainGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_FillingColorGrainGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_FillingType",
+          "value": "Glass"
+        },
+        {
+          "columnName": "InHouseProduction",
+          "value": "true"
+        },
+        {
+          "columnName": "ConstructionType",
+          "value": "InsetHandle"
+        },
+        {
+          "columnName": "FrameType",
+          "value": "WidthCoveredHeight"
+        },
+        {
+          "columnName": "FramePartsWidthHor",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsWidthVert",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsThk",
+          "value": "19"
+        },
+        {
+          "columnName": "FrameFillingThk",
+          "value": "4"
+        },
+        {
+          "columnName": "Weight",
+          "value": "25"
+        },
+        {
+          "columnName": "FrameHorGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "FrameVertGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "FillingGrainDirection",
+          "value": "Lengthwise"
+        },
+        {
+          "columnName": "GraphicFileId",
+          "value": "None"
+        },
+        {
+          "columnName": "ProcessingItem",
+          "value": "Handle_140"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Fliplift"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "TraditionFrame02"
+        },
+        {
+          "columnName": "in_FrontColorGrainGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_FillingColorGrainGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_FillingType",
+          "value": "Glass"
+        },
+        {
+          "columnName": "InHouseProduction",
+          "value": "true"
+        },
+        {
+          "columnName": "ConstructionType",
+          "value": "InsetHandle"
+        },
+        {
+          "columnName": "FrameType",
+          "value": "WidthCoveredHeight"
+        },
+        {
+          "columnName": "FramePartsWidthHor",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsWidthVert",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsThk",
+          "value": "19"
+        },
+        {
+          "columnName": "FrameFillingThk",
+          "value": "4"
+        },
+        {
+          "columnName": "Weight",
+          "value": "25"
+        },
+        {
+          "columnName": "FrameHorGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "FrameVertGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "FillingGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "GraphicFileId",
+          "value": "None"
+        },
+        {
+          "columnName": "ProcessingItem",
+          "value": "Handle_140"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Door"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "TraditionFrame02"
+        },
+        {
+          "columnName": "in_FrontColorGrainGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_FillingColorGrainGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_FillingType",
+          "value": "WoodHorizontal"
+        },
+        {
+          "columnName": "InHouseProduction",
+          "value": "true"
+        },
+        {
+          "columnName": "ConstructionType",
+          "value": "InsetHandle"
+        },
+        {
+          "columnName": "FrameType",
+          "value": "WidthCoveredHeight"
+        },
+        {
+          "columnName": "FramePartsWidthHor",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsWidthVert",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsThk",
+          "value": "19"
+        },
+        {
+          "columnName": "FrameFillingThk",
+          "value": "8"
+        },
+        {
+          "columnName": "Weight",
+          "value": "18.25"
+        },
+        {
+          "columnName": "FrameHorGrainDirection",
+          "value": "Lengthwise"
+        },
+        {
+          "columnName": "FrameVertGrainDirection",
+          "value": "Lengthwise"
+        },
+        {
+          "columnName": "FillingGrainDirection",
+          "value": "Crosswise"
+        },
+        {
+          "columnName": "GraphicFileId",
+          "value": "None"
+        },
+        {
+          "columnName": "ProcessingItem",
+          "value": "Handle_140"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Door"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "TraditionFrame02"
+        },
+        {
+          "columnName": "in_FrontColorGrainGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_FillingColorGrainGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_FillingType",
+          "value": "WoodHorizontal"
+        },
+        {
+          "columnName": "InHouseProduction",
+          "value": "true"
+        },
+        {
+          "columnName": "ConstructionType",
+          "value": "InsetHandle"
+        },
+        {
+          "columnName": "FrameType",
+          "value": "WidthCoveredHeight"
+        },
+        {
+          "columnName": "FramePartsWidthHor",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsWidthVert",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsThk",
+          "value": "19"
+        },
+        {
+          "columnName": "FrameFillingThk",
+          "value": "8"
+        },
+        {
+          "columnName": "Weight",
+          "value": "18.25"
+        },
+        {
+          "columnName": "FrameHorGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "FrameVertGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "FillingGrainDirection",
+          "value": "Crosswise"
+        },
+        {
+          "columnName": "GraphicFileId",
+          "value": "None"
+        },
+        {
+          "columnName": "ProcessingItem",
+          "value": "Handle_140"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Drawer"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "TraditionFrame02"
+        },
+        {
+          "columnName": "in_FrontColorGrainGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_FillingColorGrainGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_FillingType",
+          "value": "WoodHorizontal"
+        },
+        {
+          "columnName": "InHouseProduction",
+          "value": "true"
+        },
+        {
+          "columnName": "ConstructionType",
+          "value": "InsetHandle"
+        },
+        {
+          "columnName": "FrameType",
+          "value": "WidthCoveredHeight"
+        },
+        {
+          "columnName": "FramePartsWidthHor",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsWidthVert",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsThk",
+          "value": "19"
+        },
+        {
+          "columnName": "FrameFillingThk",
+          "value": "8"
+        },
+        {
+          "columnName": "Weight",
+          "value": "18.25"
+        },
+        {
+          "columnName": "FrameHorGrainDirection",
+          "value": "Lengthwise"
+        },
+        {
+          "columnName": "FrameVertGrainDirection",
+          "value": "Lengthwise"
+        },
+        {
+          "columnName": "FillingGrainDirection",
+          "value": "Crosswise"
+        },
+        {
+          "columnName": "GraphicFileId",
+          "value": "None"
+        },
+        {
+          "columnName": "ProcessingItem",
+          "value": "Handle_140"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Drawer"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "TraditionFrame02"
+        },
+        {
+          "columnName": "in_FrontColorGrainGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_FillingColorGrainGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_FillingType",
+          "value": "WoodHorizontal"
+        },
+        {
+          "columnName": "InHouseProduction",
+          "value": "true"
+        },
+        {
+          "columnName": "ConstructionType",
+          "value": "InsetHandle"
+        },
+        {
+          "columnName": "FrameType",
+          "value": "WidthCoveredHeight"
+        },
+        {
+          "columnName": "FramePartsWidthHor",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsWidthVert",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsThk",
+          "value": "19"
+        },
+        {
+          "columnName": "FrameFillingThk",
+          "value": "8"
+        },
+        {
+          "columnName": "Weight",
+          "value": "18.25"
+        },
+        {
+          "columnName": "FrameHorGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "FrameVertGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "FillingGrainDirection",
+          "value": "Crosswise"
+        },
+        {
+          "columnName": "GraphicFileId",
+          "value": "None"
+        },
+        {
+          "columnName": "ProcessingItem",
+          "value": "Handle_140"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Fliplift"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "TraditionFrame02"
+        },
+        {
+          "columnName": "in_FrontColorGrainGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_FillingColorGrainGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_FillingType",
+          "value": "WoodHorizontal"
+        },
+        {
+          "columnName": "InHouseProduction",
+          "value": "true"
+        },
+        {
+          "columnName": "ConstructionType",
+          "value": "InsetHandle"
+        },
+        {
+          "columnName": "FrameType",
+          "value": "WidthCoveredHeight"
+        },
+        {
+          "columnName": "FramePartsWidthHor",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsWidthVert",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsThk",
+          "value": "19"
+        },
+        {
+          "columnName": "FrameFillingThk",
+          "value": "8"
+        },
+        {
+          "columnName": "Weight",
+          "value": "18.25"
+        },
+        {
+          "columnName": "FrameHorGrainDirection",
+          "value": "Lengthwise"
+        },
+        {
+          "columnName": "FrameVertGrainDirection",
+          "value": "Lengthwise"
+        },
+        {
+          "columnName": "FillingGrainDirection",
+          "value": "Crosswise"
+        },
+        {
+          "columnName": "GraphicFileId",
+          "value": "None"
+        },
+        {
+          "columnName": "ProcessingItem",
+          "value": "Handle_140"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "Fliplift"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "TraditionFrame02"
+        },
+        {
+          "columnName": "in_FrontColorGrainGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_FillingColorGrainGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_FillingType",
+          "value": "WoodHorizontal"
+        },
+        {
+          "columnName": "InHouseProduction",
+          "value": "true"
+        },
+        {
+          "columnName": "ConstructionType",
+          "value": "InsetHandle"
+        },
+        {
+          "columnName": "FrameType",
+          "value": "WidthCoveredHeight"
+        },
+        {
+          "columnName": "FramePartsWidthHor",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsWidthVert",
+          "value": "75"
+        },
+        {
+          "columnName": "FramePartsThk",
+          "value": "19"
+        },
+        {
+          "columnName": "FrameFillingThk",
+          "value": "8"
+        },
+        {
+          "columnName": "Weight",
+          "value": "18.25"
+        },
+        {
+          "columnName": "FrameHorGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "FrameVertGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "FillingGrainDirection",
+          "value": "Crosswise"
+        },
+        {
+          "columnName": "GraphicFileId",
+          "value": "None"
+        },
+        {
+          "columnName": "ProcessingItem",
+          "value": "Handle_140"
+        }
+      ]
+    }
+  ]
+}

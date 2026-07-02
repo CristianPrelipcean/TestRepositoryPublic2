@@ -1,0 +1,54 @@
+{
+  "moduleId": "mc_Bracket01",
+  "shortName": "Shelf Bracket",
+  "configurable": false,
+  "isRoot": false,
+  "description": "Bracket For shelf",
+  "groupName": "Shelves",
+  "imageId": "96c2d5e9-8220-4e4c-ac97-f3f2536be875:WallShelfBracket.jpg",
+  "restrictionTypeId": "Internal",
+  "childModules": [],
+  "assignedVariants": [
+    {
+      "variantId": "mod_Width",
+      "previewValue": "1000",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_Depth",
+      "previewValue": "120",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_Height",
+      "default": "120",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_ShelvesBrackets",
+      "previewValue": "ARRAS5",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_ShelvesThk",
+      "previewValue": "19",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_ShelvesColor",
+      "previewValue": "222",
+      "origin": "Derived"
+    }
+  ],
+  "assignedParts": [
+    {
+      "partCode": "part_ShelvesBrackets"
+    }
+  ],
+  "assignedCustomTables": [],
+  "assignedFunctions": [
+    {
+      "functionId": "process_Bracket"
+    }
+  ]
+}

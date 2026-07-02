@@ -1,0 +1,387 @@
+{
+  "tableName": "tab_FlipliftSettings",
+  "description": "Settings for flip lift",
+  "restrictionTypeId": "Public",
+  "groupName": "FlipLift",
+  "columns": [
+    {
+      "name": "_id",
+      "type": "Integer",
+      "allowNull": false
+    },
+    {
+      "name": "in_FlipliftType",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_HeightMin",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "in_HeightMax",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "in_WidthMin",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "in_WidthMax",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "in_DepthMin",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "in_OpeningType",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "Priority",
+      "type": "Integer",
+      "allowNull": false
+    },
+    {
+      "name": "FlipliftHardwareType",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "Hinges",
+      "type": "Bool",
+      "allowNull": true
+    },
+    {
+      "name": "PushToOpen",
+      "type": "Bool",
+      "allowNull": true
+    },
+    {
+      "name": "Sequence",
+      "type": "Text",
+      "allowNull": true
+    }
+  ],
+  "rows": [
+    {
+      "data": [
+        {
+          "columnName": "in_FlipliftType",
+          "value": "FHF"
+        },
+        {
+          "columnName": "in_HeightMin",
+          "value": "480"
+        },
+        {
+          "columnName": "in_HeightMax",
+          "value": "1200"
+        },
+        {
+          "columnName": "in_WidthMin",
+          "value": "300"
+        },
+        {
+          "columnName": "in_WidthMax",
+          "value": "1800"
+        },
+        {
+          "columnName": "in_DepthMin",
+          "value": "270"
+        },
+        {
+          "columnName": "in_OpeningType",
+          "value": "Handle"
+        },
+        {
+          "columnName": "Priority",
+          "value": "1"
+        },
+        {
+          "columnName": "FlipliftHardwareType",
+          "value": "Powerstorage"
+        },
+        {
+          "columnName": "Hinges",
+          "value": "true"
+        },
+        {
+          "columnName": "PushToOpen",
+          "value": "false"
+        },
+        {
+          "columnName": "Sequence",
+          "value": "L_R"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_FlipliftType",
+          "value": "SHF"
+        },
+        {
+          "columnName": "in_HeightMin",
+          "value": "350"
+        },
+        {
+          "columnName": "in_HeightMax",
+          "value": "800"
+        },
+        {
+          "columnName": "in_WidthMin",
+          "value": "300"
+        },
+        {
+          "columnName": "in_WidthMax",
+          "value": "1800"
+        },
+        {
+          "columnName": "in_DepthMin",
+          "value": "270"
+        },
+        {
+          "columnName": "in_OpeningType",
+          "value": "Handle"
+        },
+        {
+          "columnName": "Priority",
+          "value": "1"
+        },
+        {
+          "columnName": "FlipliftHardwareType",
+          "value": "Powerstorage"
+        },
+        {
+          "columnName": "Hinges",
+          "value": "false"
+        },
+        {
+          "columnName": "PushToOpen",
+          "value": "false"
+        },
+        {
+          "columnName": "Sequence",
+          "value": "L_R"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_FlipliftType",
+          "value": "LHF"
+        },
+        {
+          "columnName": "in_HeightMin",
+          "value": "300"
+        },
+        {
+          "columnName": "in_HeightMax",
+          "value": "580"
+        },
+        {
+          "columnName": "in_WidthMin",
+          "value": "300"
+        },
+        {
+          "columnName": "in_WidthMax",
+          "value": "1800"
+        },
+        {
+          "columnName": "in_DepthMin",
+          "value": "270"
+        },
+        {
+          "columnName": "in_OpeningType",
+          "value": "Handle"
+        },
+        {
+          "columnName": "Priority",
+          "value": "1"
+        },
+        {
+          "columnName": "FlipliftHardwareType",
+          "value": "Powerstorage"
+        },
+        {
+          "columnName": "Hinges",
+          "value": "false"
+        },
+        {
+          "columnName": "PushToOpen",
+          "value": "false"
+        },
+        {
+          "columnName": "Sequence",
+          "value": "L_R"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_FlipliftType",
+          "value": "UF"
+        },
+        {
+          "columnName": "in_HeightMin",
+          "value": "200"
+        },
+        {
+          "columnName": "in_HeightMax",
+          "value": "600"
+        },
+        {
+          "columnName": "in_WidthMin",
+          "value": "200"
+        },
+        {
+          "columnName": "in_WidthMax",
+          "value": "1200"
+        },
+        {
+          "columnName": "in_DepthMin",
+          "value": "125"
+        },
+        {
+          "columnName": "in_OpeningType",
+          "value": "Handle"
+        },
+        {
+          "columnName": "Priority",
+          "value": "2"
+        },
+        {
+          "columnName": "FlipliftHardwareType",
+          "value": "Gasspring"
+        },
+        {
+          "columnName": "Hinges",
+          "value": "true"
+        },
+        {
+          "columnName": "PushToOpen",
+          "value": "false"
+        },
+        {
+          "columnName": "Sequence",
+          "value": "L_R"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_FlipliftType",
+          "value": "UF"
+        },
+        {
+          "columnName": "in_HeightMin",
+          "value": "180"
+        },
+        {
+          "columnName": "in_HeightMax",
+          "value": "600"
+        },
+        {
+          "columnName": "in_WidthMin",
+          "value": "300"
+        },
+        {
+          "columnName": "in_WidthMax",
+          "value": "1800"
+        },
+        {
+          "columnName": "in_DepthMin",
+          "value": "190"
+        },
+        {
+          "columnName": "in_OpeningType",
+          "value": "Handle"
+        },
+        {
+          "columnName": "Priority",
+          "value": "1"
+        },
+        {
+          "columnName": "FlipliftHardwareType",
+          "value": "Powerstorage"
+        },
+        {
+          "columnName": "Hinges",
+          "value": "false"
+        },
+        {
+          "columnName": "PushToOpen",
+          "value": "false"
+        },
+        {
+          "columnName": "Sequence",
+          "value": "L_R"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_FlipliftType",
+          "value": "DF"
+        },
+        {
+          "columnName": "in_HeightMin",
+          "value": "300"
+        },
+        {
+          "columnName": "in_HeightMax",
+          "value": "600"
+        },
+        {
+          "columnName": "in_WidthMin",
+          "value": "300"
+        },
+        {
+          "columnName": "in_WidthMax",
+          "value": "1200"
+        },
+        {
+          "columnName": "in_DepthMin",
+          "value": "300"
+        },
+        {
+          "columnName": "in_OpeningType",
+          "value": "Handle"
+        },
+        {
+          "columnName": "Priority",
+          "value": "1"
+        },
+        {
+          "columnName": "FlipliftHardwareType",
+          "value": "DropDownHinge"
+        },
+        {
+          "columnName": "Hinges",
+          "value": "true"
+        },
+        {
+          "columnName": "PushToOpen",
+          "value": "false"
+        },
+        {
+          "columnName": "Sequence",
+          "value": "L_R"
+        }
+      ]
+    }
+  ]
+}

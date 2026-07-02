@@ -1,0 +1,115 @@
+{
+  "variantId": "mod_SlopedCeilingDimensionLogic",
+  "shortName": "Sloped ceiling dimension logic",
+  "variantTypeId": "Text",
+  "description": "Dimension logic of the sloped ceiling",
+  "restrictionTypeId": "Public",
+  "groupName": "Carcase | Dimensions",
+  "imageId": "e361aa05-c315-4b9a-82ee-3b393dada591:Logic.png",
+  "assignedGlobalVarId": "basic_SlopedCeilingDimensionLogic",
+  "isArray": false,
+  "isPosRelevant": true,
+  "mainAttr": false,
+  "userRight": "Master",
+  "implicitRelevant": false,
+  "posView": "Dropdown",
+  "matrix": [
+    {
+      "id": "UseWallData",
+      "type": "Bool",
+      "default": true
+    },
+    {
+      "id": "Height",
+      "type": "Text",
+      "default": "Max"
+    },
+    {
+      "id": "DimensionLogic",
+      "type": "Text",
+      "default": "BasedInTopDepth"
+    }
+  ],
+  "selections": [
+    {
+      "value": "FollowWallMaxHeight",
+      "description": "Use wall data get maximum height based in top depth",
+      "shortName": "Use wall data based in top depth",
+      "imageId": "d94b7fee-c3ec-4253-a128-b195756be4c4:FollowWallMaxHeight.jpg",
+      "matrix": [
+        {
+          "id": "UseWallData",
+          "value": true
+        },
+        {
+          "id": "Height",
+          "value": "Max"
+        },
+        {
+          "id": "DimensionLogic",
+          "value": "BasedInTopDepth"
+        }
+      ]
+    },
+    {
+      "value": "FollowWallUserHeight",
+      "description": "Use wall data height defined by user",
+      "shortName": "Use wall data based in height",
+      "imageId": "10695de4-2165-4c70-9015-a581c643a2cb:FollowWallUserHeight.jpg",
+      "matrix": [
+        {
+          "id": "UseWallData",
+          "value": true
+        },
+        {
+          "id": "Height",
+          "value": "User"
+        },
+        {
+          "id": "DimensionLogic",
+          "value": "BasedInHeight"
+        }
+      ]
+    },
+    {
+      "value": "IgnoreWallMaxHeight",
+      "description": "Ignore wall data get maximum height based in top depth",
+      "shortName": "Ignore wall data based in top depth",
+      "imageId": "e4bb72da-bc6c-4a0c-88eb-b2c64363c5f5:IgnoreWallMaxHeight.jpg",
+      "matrix": [
+        {
+          "id": "UseWallData",
+          "value": false
+        },
+        {
+          "id": "Height",
+          "value": "Max"
+        },
+        {
+          "id": "DimensionLogic",
+          "value": "BasedInTopDepth"
+        }
+      ]
+    },
+    {
+      "value": "IgnoreWallUserHeight",
+      "description": "Ignore wall data height defined by user",
+      "shortName": "Ignore wall data based in height",
+      "imageId": "9af2bc4b-3abe-4117-9d0f-0af252d68e3e:IgnoreWallUserHeight.jpg",
+      "matrix": [
+        {
+          "id": "UseWallData",
+          "value": false
+        },
+        {
+          "id": "Height",
+          "value": "User"
+        },
+        {
+          "id": "DimensionLogic",
+          "value": "BasedInHeight"
+        }
+      ]
+    }
+  ]
+}

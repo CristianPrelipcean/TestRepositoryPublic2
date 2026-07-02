@@ -1,0 +1,83 @@
+{
+  "variantId": "mod_CeilingFillerProgram",
+  "shortName": "Filler program",
+  "variantTypeId": "Text",
+  "description": "Filler program",
+  "restrictionTypeId": "Public",
+  "groupName": "CeilingFiller",
+  "imageId": "76c52219-e973-4723-b2f0-9888a4b9da32:CeilingFiller.png",
+  "isArray": false,
+  "isPosRelevant": true,
+  "mainAttr": false,
+  "userRight": "Simple",
+  "implicitRelevant": false,
+  "matrix": [
+    {
+      "id": "GrainGroupId",
+      "type": "Text",
+      "default": "Neutral"
+    }
+  ],
+  "selections": [
+    {
+      "value": "Classic",
+      "description": "Simple fronts in plain decors",
+      "shortName": "Classic",
+      "imageId": "07d9aaa5-0ae9-46ee-8a89-f4ffc5c8e9c0:Classic.jpg",
+      "matrix": [
+        {
+          "id": "GrainGroupId",
+          "value": "Neutral"
+        }
+      ]
+    },
+    {
+      "value": "Nature",
+      "description": "Simple fronts in wood decors",
+      "shortName": "Nature",
+      "imageId": "3f8341dd-c929-48d2-8b07-8834fca2d03d:Nature.jpg",
+      "matrix": [
+        {
+          "id": "GrainGroupId",
+          "value": "Horizontal"
+        }
+      ]
+    },
+    {
+      "value": "Tradition",
+      "description": "Traditional frame fronts with wooden filling",
+      "shortName": "Tradition",
+      "imageId": "e5e8f7e9-fe5b-4423-a535-9d6b3b158bba:Tradition.jpg",
+      "matrix": [
+        {
+          "id": "GrainGroupId",
+          "value": "Vertical"
+        }
+      ]
+    },
+    {
+      "value": "Modern",
+      "description": "Mitred frame fronts with glass filling",
+      "shortName": "Modern",
+      "imageId": "822fb931-8477-4144-b64c-99ac8b47a800:Modern.jpg",
+      "matrix": [
+        {
+          "id": "GrainGroupId",
+          "value": "Vertical"
+        }
+      ]
+    },
+    {
+      "value": "Tuscan",
+      "description": "Milled fronts in plain decors",
+      "shortName": "Tuscan",
+      "imageId": "350d1bf1-49db-4857-a83e-11a95cf016fc:Tuscan.jpg",
+      "matrix": [
+        {
+          "id": "GrainGroupId",
+          "value": "Neutral"
+        }
+      ]
+    }
+  ]
+}

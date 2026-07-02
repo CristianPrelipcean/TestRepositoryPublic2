@@ -1,0 +1,451 @@
+{
+  "variantId": "mod_HandleDesign",
+  "shortName": "Handle design",
+  "variantTypeId": "Text",
+  "description": "Design of a handle",
+  "restrictionTypeId": "Public",
+  "groupName": "FrontOpening | Handle",
+  "imageId": "aa7c2f80-315f-4d58-aae0-3c03225592a7:e97287ce-f993-4694-8634-66b4478faf45_handleprogram.jpg",
+  "isArray": false,
+  "isPosRelevant": true,
+  "mainAttr": true,
+  "userRight": "Simple",
+  "implicitRelevant": true,
+  "posView": "Dropdown",
+  "sorting": 21,
+  "matrix": [
+    {
+      "id": "HandleDesignGroup",
+      "type": "Text"
+    },
+    {
+      "id": "HandleType",
+      "type": "Text",
+      "shortName": "Type",
+      "default": "Handle"
+    },
+    {
+      "id": "HandleLength",
+      "type": "Text",
+      "shortName": "Length",
+      "default": "Attribute"
+    },
+    {
+      "id": "HandleColor",
+      "type": "Text",
+      "shortName": "Color",
+      "default": "Attribute"
+    },
+    {
+      "id": "HandlePosTypeRelevant",
+      "type": "Bool",
+      "default": false
+    },
+    {
+      "id": "Cutable",
+      "type": "Bool"
+    },
+    {
+      "id": "FillerRelevant",
+      "type": "Bool",
+      "default": false
+    }
+  ],
+  "selections": [
+    {
+      "value": "10",
+      "description": "No handle",
+      "shortName": "No handle",
+      "matrix": [
+        {
+          "id": "HandleDesignGroup",
+          "value": "None"
+        },
+        {
+          "id": "HandleType",
+          "value": "None"
+        },
+        {
+          "id": "HandleLength",
+          "value": "Fixed"
+        },
+        {
+          "id": "HandleColor",
+          "value": "Attribute"
+        },
+        {
+          "id": "HandlePosTypeRelevant",
+          "value": false
+        },
+        {
+          "id": "Cutable",
+          "value": false
+        },
+        {
+          "id": "FillerRelevant",
+          "value": false
+        }
+      ]
+    },
+    {
+      "value": "20",
+      "description": "Classic rail handle",
+      "shortName": "Classic rail handle",
+      "imageId": "ac93eb7b-1fcc-497a-9037-69b81c75b4ae:Design20.jpg",
+      "matrix": [
+        {
+          "id": "HandleDesignGroup",
+          "value": "HandleGroup1"
+        },
+        {
+          "id": "HandleType",
+          "value": "Handle"
+        },
+        {
+          "id": "HandleLength",
+          "value": "Attribute"
+        },
+        {
+          "id": "HandleColor",
+          "value": "Attribute"
+        },
+        {
+          "id": "HandlePosTypeRelevant",
+          "value": false
+        },
+        {
+          "id": "Cutable",
+          "value": false
+        },
+        {
+          "id": "FillerRelevant",
+          "value": false
+        }
+      ]
+    },
+    {
+      "value": "30",
+      "description": "Size adaptive bow handle",
+      "shortName": "Size adaptive bow handle",
+      "imageId": "db564a24-e610-4e25-8c2e-36a5c93269de:Design30.jpg",
+      "matrix": [
+        {
+          "id": "HandleDesignGroup",
+          "value": "HandleGroup1"
+        },
+        {
+          "id": "HandleType",
+          "value": "Handle"
+        },
+        {
+          "id": "HandleLength",
+          "value": "FrontDimension"
+        },
+        {
+          "id": "HandleColor",
+          "value": "Attribute"
+        },
+        {
+          "id": "HandlePosTypeRelevant",
+          "value": false
+        },
+        {
+          "id": "Cutable",
+          "value": false
+        },
+        {
+          "id": "FillerRelevant",
+          "value": false
+        }
+      ]
+    },
+    {
+      "value": "40",
+      "description": "Handle strip form B",
+      "shortName": "Handle strip form B",
+      "imageId": "57eeccd6-d2b5-4b2f-bea6-058f2e5fb705:HandlestripFormB.png",
+      "matrix": [
+        {
+          "id": "HandleDesignGroup",
+          "value": "StripeGroup1"
+        },
+        {
+          "id": "HandleType",
+          "value": "Handlestrip"
+        },
+        {
+          "id": "HandleLength",
+          "value": "Fixed"
+        },
+        {
+          "id": "HandleColor",
+          "value": "Attribute"
+        },
+        {
+          "id": "HandlePosTypeRelevant",
+          "value": false
+        },
+        {
+          "id": "Cutable",
+          "value": false
+        },
+        {
+          "id": "FillerRelevant",
+          "value": false
+        }
+      ]
+    },
+    {
+      "value": "50",
+      "description": "Handle strip form C",
+      "shortName": "Handle strip form C",
+      "imageId": "f246e448-d5ea-438c-ba96-6a29cc8d221c:handle strip c-profil.JPG",
+      "matrix": [
+        {
+          "id": "HandleDesignGroup",
+          "value": "StripeGroup3"
+        },
+        {
+          "id": "HandleType",
+          "value": "Handlestrip"
+        },
+        {
+          "id": "HandleLength",
+          "value": "Fixed"
+        },
+        {
+          "id": "HandleColor",
+          "value": "Attribute"
+        },
+        {
+          "id": "HandlePosTypeRelevant",
+          "value": false
+        },
+        {
+          "id": "Cutable",
+          "value": true
+        },
+        {
+          "id": "FillerRelevant",
+          "value": false
+        }
+      ]
+    },
+    {
+      "value": "100",
+      "description": "Curved bow handle",
+      "shortName": "Curved bow handle",
+      "imageId": "12aec261-a59e-4144-a115-388aa80f9a39:Design100.jpg",
+      "matrix": [
+        {
+          "id": "HandleDesignGroup",
+          "value": "HandleGroup1"
+        },
+        {
+          "id": "HandleType",
+          "value": "Handle"
+        },
+        {
+          "id": "HandleLength",
+          "value": "Attribute"
+        },
+        {
+          "id": "HandleColor",
+          "value": "Attribute"
+        },
+        {
+          "id": "HandlePosTypeRelevant",
+          "value": false
+        },
+        {
+          "id": "Cutable",
+          "value": false
+        },
+        {
+          "id": "FillerRelevant",
+          "value": false
+        }
+      ]
+    },
+    {
+      "value": "110",
+      "description": "Size adaptive rail handle",
+      "shortName": "Size adaptive rail handle",
+      "imageId": "456277e0-2103-4acc-8934-12443953690f:Design110.jpg",
+      "matrix": [
+        {
+          "id": "HandleDesignGroup",
+          "value": "HandleGroup1"
+        },
+        {
+          "id": "HandleType",
+          "value": "Handle"
+        },
+        {
+          "id": "HandleLength",
+          "value": "FrontDimension"
+        },
+        {
+          "id": "HandleColor",
+          "value": "Attribute"
+        },
+        {
+          "id": "HandlePosTypeRelevant",
+          "value": false
+        },
+        {
+          "id": "Cutable",
+          "value": false
+        },
+        {
+          "id": "FillerRelevant",
+          "value": false
+        }
+      ]
+    },
+    {
+      "value": "120",
+      "description": "Modern knob",
+      "shortName": "Modern knob",
+      "imageId": "969c5055-74f9-44af-b2f8-c7f94e59a3c1:Design120.jpg",
+      "matrix": [
+        {
+          "id": "HandleDesignGroup",
+          "value": "HandleGroup1"
+        },
+        {
+          "id": "HandleType",
+          "value": "Handle"
+        },
+        {
+          "id": "HandleLength",
+          "value": "Fixed"
+        },
+        {
+          "id": "HandleColor",
+          "value": "Attribute"
+        },
+        {
+          "id": "HandlePosTypeRelevant",
+          "value": false
+        },
+        {
+          "id": "Cutable",
+          "value": false
+        },
+        {
+          "id": "FillerRelevant",
+          "value": false
+        }
+      ]
+    },
+    {
+      "value": "60",
+      "description": "Rectangular handle",
+      "shortName": "Rectangular handle",
+      "imageId": "0dfb81db-2052-4154-ae79-937567436791:Design60.jpg",
+      "matrix": [
+        {
+          "id": "HandleDesignGroup",
+          "value": "HandleGroup1"
+        },
+        {
+          "id": "HandleType",
+          "value": "Handle"
+        },
+        {
+          "id": "HandleLength",
+          "value": "Attribute"
+        },
+        {
+          "id": "HandleColor",
+          "value": "Attribute"
+        },
+        {
+          "id": "HandlePosTypeRelevant",
+          "value": false
+        },
+        {
+          "id": "Cutable",
+          "value": false
+        },
+        {
+          "id": "FillerRelevant",
+          "value": false
+        }
+      ]
+    },
+    {
+      "value": "130",
+      "description": "Tradition knob",
+      "shortName": "Tradition knob",
+      "imageId": "d3aae276-d4d0-4f01-b7d0-bb9cfd6c8b22:Design130.jpg",
+      "matrix": [
+        {
+          "id": "HandleDesignGroup",
+          "value": "HandleGroup1"
+        },
+        {
+          "id": "HandleType",
+          "value": "Handle"
+        },
+        {
+          "id": "HandleLength",
+          "value": "Fixed"
+        },
+        {
+          "id": "HandleColor",
+          "value": "Attribute"
+        },
+        {
+          "id": "HandlePosTypeRelevant",
+          "value": false
+        },
+        {
+          "id": "Cutable",
+          "value": false
+        },
+        {
+          "id": "FillerRelevant",
+          "value": false
+        }
+      ]
+    },
+    {
+      "value": "140",
+      "description": "Shell handle",
+      "shortName": "Shell handle",
+      "imageId": "5fb921d0-f07d-46de-9e79-7ef9c04f4617:151_38_111.png",
+      "matrix": [
+        {
+          "id": "HandleDesignGroup",
+          "value": "InsetHandle"
+        },
+        {
+          "id": "HandleType",
+          "value": "InsetHandle"
+        },
+        {
+          "id": "HandleLength",
+          "value": "Fixed"
+        },
+        {
+          "id": "HandleColor",
+          "value": "Attribute"
+        },
+        {
+          "id": "HandlePosTypeRelevant",
+          "value": false
+        },
+        {
+          "id": "Cutable",
+          "value": false
+        },
+        {
+          "id": "FillerRelevant",
+          "value": false
+        }
+      ]
+    }
+  ]
+}

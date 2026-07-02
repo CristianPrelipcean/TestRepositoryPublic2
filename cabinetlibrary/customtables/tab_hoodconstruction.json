@@ -1,0 +1,272 @@
+{
+  "tableName": "tab_HoodConstruction",
+  "description": "Hood Construction",
+  "restrictionTypeId": "Public",
+  "groupName": "Hood",
+  "columns": [
+    {
+      "name": "_id",
+      "type": "Integer",
+      "allowNull": false
+    },
+    {
+      "name": "in_HoodId",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "Height",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "Width",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "Depth",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "TowerHeightTotal",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "Tower1Height",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "Tower1Width",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "Tower1Depth",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "Tower1XOffset",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "Tower1YOffset",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "Tower2Height",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "Tower2Width",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "Tower2Depth",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "Tower2XOffset",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "Tower2YOffset",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "CutOutWidthMin",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "CutOutWidthMax",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "CutOutDepthMin",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "CutOutDepthMax",
+      "type": "Dim",
+      "allowNull": false
+    }
+  ],
+  "rows": [
+    {
+      "data": [
+        {
+          "columnName": "in_HoodId",
+          "value": "D46ED52X1"
+        },
+        {
+          "columnName": "Height",
+          "value": "388"
+        },
+        {
+          "columnName": "Width",
+          "value": "898"
+        },
+        {
+          "columnName": "Depth",
+          "value": "290"
+        },
+        {
+          "columnName": "TowerHeightTotal",
+          "value": "347"
+        },
+        {
+          "columnName": "Tower1Height",
+          "value": "82"
+        },
+        {
+          "columnName": "Tower1Width",
+          "value": "524"
+        },
+        {
+          "columnName": "Tower1Depth",
+          "value": "266"
+        },
+        {
+          "columnName": "Tower1XOffset",
+          "value": "187"
+        },
+        {
+          "columnName": "Tower1YOffset",
+          "value": "10"
+        },
+        {
+          "columnName": "Tower2Height",
+          "value": "265"
+        },
+        {
+          "columnName": "Tower2Width",
+          "value": "524"
+        },
+        {
+          "columnName": "Tower2Depth",
+          "value": "182"
+        },
+        {
+          "columnName": "Tower2XOffset",
+          "value": "0"
+        },
+        {
+          "columnName": "Tower2YOffset",
+          "value": "84"
+        },
+        {
+          "columnName": "CutOutWidthMin",
+          "value": "600"
+        },
+        {
+          "columnName": "CutOutWidthMax",
+          "value": "900"
+        },
+        {
+          "columnName": "CutOutDepthMin",
+          "value": "300"
+        },
+        {
+          "columnName": "CutOutDepthMax",
+          "value": "320"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_HoodId",
+          "value": "LI99SA684"
+        },
+        {
+          "columnName": "Height",
+          "value": "179"
+        },
+        {
+          "columnName": "Width",
+          "value": "598"
+        },
+        {
+          "columnName": "Depth",
+          "value": "290"
+        },
+        {
+          "columnName": "TowerHeightTotal",
+          "value": "138"
+        },
+        {
+          "columnName": "Tower1Height",
+          "value": "138"
+        },
+        {
+          "columnName": "Tower1Width",
+          "value": "526"
+        },
+        {
+          "columnName": "Tower1Depth",
+          "value": "266"
+        },
+        {
+          "columnName": "Tower1XOffset",
+          "value": "36"
+        },
+        {
+          "columnName": "Tower1YOffset",
+          "value": "10"
+        },
+        {
+          "columnName": "Tower2Height",
+          "value": "0"
+        },
+        {
+          "columnName": "Tower2Width",
+          "value": "526"
+        },
+        {
+          "columnName": "Tower2Depth",
+          "value": "0"
+        },
+        {
+          "columnName": "Tower2XOffset",
+          "value": "0"
+        },
+        {
+          "columnName": "Tower2YOffset",
+          "value": "0"
+        },
+        {
+          "columnName": "CutOutWidthMin",
+          "value": "600"
+        },
+        {
+          "columnName": "CutOutWidthMax",
+          "value": "600"
+        },
+        {
+          "columnName": "CutOutDepthMin",
+          "value": "300"
+        },
+        {
+          "columnName": "CutOutDepthMax",
+          "value": "320"
+        }
+      ]
+    }
+  ],
+  "dataSource": "Default",
+  "changedAt": "2026-05-27T07:22:57.161712+00:00"
+}

@@ -1,0 +1,94 @@
+{
+  "tableName": "tab_PartOverdimensionSettings",
+  "description": "Overdimensioning of Parts",
+  "restrictionTypeId": "Public",
+  "groupName": "Edges",
+  "columns": [
+    {
+      "name": "_id",
+      "type": "Integer",
+      "allowNull": false
+    },
+    {
+      "name": "in_EdgeThkMin",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "in_EdgeThkMax",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "Overdimension",
+      "type": "Dim",
+      "allowNull": false
+    }
+  ],
+  "rows": [
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeThkMin",
+          "value": "0.8"
+        },
+        {
+          "columnName": "in_EdgeThkMax",
+          "value": "0.8"
+        },
+        {
+          "columnName": "Overdimension",
+          "value": "2"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeThkMin",
+          "value": "1"
+        },
+        {
+          "columnName": "in_EdgeThkMax",
+          "value": "1"
+        },
+        {
+          "columnName": "Overdimension",
+          "value": "2"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeThkMin",
+          "value": "2"
+        },
+        {
+          "columnName": "in_EdgeThkMax",
+          "value": "2"
+        },
+        {
+          "columnName": "Overdimension",
+          "value": "2"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeThkMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_EdgeThkMax",
+          "value": "0"
+        },
+        {
+          "columnName": "Overdimension",
+          "value": "0.5"
+        }
+      ]
+    }
+  ]
+}

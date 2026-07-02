@@ -1,0 +1,58 @@
+{
+  "variantId": "mod_ToekickProgram",
+  "shortName": "Toekick program",
+  "variantTypeId": "Text",
+  "description": "Program of the toekick",
+  "restrictionTypeId": "Public",
+  "groupName": "Toekick",
+  "imageId": "badc4bfa-4bb2-484f-aa2f-1e05bf10d9f8:Toekick.png",
+  "isArray": false,
+  "isPosRelevant": true,
+  "mainAttr": false,
+  "userRight": "Master",
+  "implicitRelevant": false,
+  "posView": "Dropdown",
+  "matrix": [
+    {
+      "id": "GrainGroupId",
+      "type": "Text",
+      "shortName": "Grain Group Id",
+      "default": "Neutral"
+    }
+  ],
+  "selections": [
+    {
+      "value": "Classic",
+      "description": "Classic carcase in single colors",
+      "shortName": "Classic",
+      "matrix": [
+        {
+          "id": "GrainGroupId",
+          "value": "Neutral"
+        }
+      ]
+    },
+    {
+      "value": "Nature",
+      "description": "Carcase in wooden colors vertical",
+      "shortName": "Nautre",
+      "matrix": [
+        {
+          "id": "GrainGroupId",
+          "value": "Vertical"
+        }
+      ]
+    },
+    {
+      "value": "ModernNature",
+      "description": "Carcase in wooden colors horizontal",
+      "shortName": "NatureVert",
+      "matrix": [
+        {
+          "id": "GrainGroupId",
+          "value": "Horizontal"
+        }
+      ]
+    }
+  ]
+}

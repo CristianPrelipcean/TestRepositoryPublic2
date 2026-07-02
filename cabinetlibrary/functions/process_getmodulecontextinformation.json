@@ -1,0 +1,7 @@
+{
+  "functionId": "process_GetModuleContextInformation",
+  "description": "Read the dockings and room contours, provide the needed data to the module context information list",
+  "funcType": "Function",
+  "restrictionTypeId": "Internal",
+  "funcDef": "process_GetModuleContextInformation(module: any): {\r\n\tNeedsVisibleSideLeft: boolean;\r\n\tNeedsVisibleSideRight: boolean;\r\n\tReturnPlinthLeft: boolean;\r\n\tReturnPlinthRight: boolean;\r\n\tReturnCeilingFillerLeft: boolean;\r\n\tReturnCeilingFillerRight: boolean;\r\n\r\n\tDistanceWallLeft: number;\r\n\tDistanceWallRight: number;\r\n\tDistanceWallBack: number;\r\n\tDistanceCeiling: number;\r\n\r\n\tFirstElement: boolean;\r\n\tLastElement: boolean;\r\n\tHasDockingLeft: boolean;\r\n\tHasDockingRight: boolean;\r\n\tHeightPosition: number;\r\n\r\n\tSlopedCeiling: boolean;\r\n\tSlopedCeilingDirection: \"toLeft\" | \"toRight\" | \"toBack\" | null;\r\n\tSlopedCeilingAngle: number;\r\n\tSlopedCeilingLevel: number;\r\n\r\n\tDataComplete: boolean;\r\n}"
+}

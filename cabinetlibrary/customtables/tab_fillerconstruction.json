@@ -1,0 +1,201 @@
+{
+  "tableName": "tab_FillerConstruction",
+  "description": "Table to store all the construction information",
+  "restrictionTypeId": "Public",
+  "groupName": "Filler",
+  "columns": [
+    {
+      "name": "_id",
+      "type": "Integer",
+      "allowNull": false
+    },
+    {
+      "name": "in_Module",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_Type",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_Direction",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "CarcaseId1",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "CarcaseId2",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "FrontId",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "CarcaseFitting",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "FrontFitting",
+      "type": "Text",
+      "allowNull": true
+    }
+  ],
+  "rows": [
+    {
+      "data": [
+        {
+          "columnName": "in_Module",
+          "value": "mc_FillerStraight01"
+        },
+        {
+          "columnName": "in_Type",
+          "value": "LShape"
+        },
+        {
+          "columnName": "in_Direction",
+          "value": "Left"
+        },
+        {
+          "columnName": "CarcaseId1",
+          "value": "SpShortLeft"
+        },
+        {
+          "columnName": "CarcaseId2",
+          "value": "None"
+        },
+        {
+          "columnName": "FrontId",
+          "value": "Panel"
+        },
+        {
+          "columnName": "CarcaseFitting",
+          "value": "None"
+        },
+        {
+          "columnName": "FrontFitting",
+          "value": "Pacofix"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Module",
+          "value": "mc_FillerStraight01"
+        },
+        {
+          "columnName": "in_Type",
+          "value": "LShape"
+        },
+        {
+          "columnName": "in_Direction",
+          "value": "Right"
+        },
+        {
+          "columnName": "CarcaseId1",
+          "value": "SpShortRight"
+        },
+        {
+          "columnName": "CarcaseId2",
+          "value": "None"
+        },
+        {
+          "columnName": "FrontId",
+          "value": "Panel"
+        },
+        {
+          "columnName": "CarcaseFitting",
+          "value": "None"
+        },
+        {
+          "columnName": "FrontFitting",
+          "value": "Pacofix"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Module",
+          "value": "mc_FillerStraight01"
+        },
+        {
+          "columnName": "in_Type",
+          "value": "CoverCarcase"
+        },
+        {
+          "columnName": "in_Direction",
+          "value": "Left"
+        },
+        {
+          "columnName": "CarcaseId1",
+          "value": "CoverCarcaseLeft"
+        },
+        {
+          "columnName": "CarcaseId2",
+          "value": "None"
+        },
+        {
+          "columnName": "FrontId",
+          "value": "Panel"
+        },
+        {
+          "columnName": "CarcaseFitting",
+          "value": "Dowel"
+        },
+        {
+          "columnName": "FrontFitting",
+          "value": "Pacofix"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Module",
+          "value": "mc_FillerStraight01"
+        },
+        {
+          "columnName": "in_Type",
+          "value": "CoverCarcase"
+        },
+        {
+          "columnName": "in_Direction",
+          "value": "Right"
+        },
+        {
+          "columnName": "CarcaseId1",
+          "value": "CoverCarcaseRight"
+        },
+        {
+          "columnName": "CarcaseId2",
+          "value": "None"
+        },
+        {
+          "columnName": "FrontId",
+          "value": "Panel"
+        },
+        {
+          "columnName": "CarcaseFitting",
+          "value": "Dowel"
+        },
+        {
+          "columnName": "FrontFitting",
+          "value": "Pacofix"
+        }
+      ]
+    }
+  ],
+  "dataSource": "Default",
+  "changedAt": "2026-04-24T11:08:23.7016363+00:00"
+}

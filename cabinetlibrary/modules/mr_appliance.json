@@ -1,0 +1,283 @@
+{
+  "moduleId": "mr_Appliance",
+  "shortName": "Appliance",
+  "configurable": true,
+  "isRoot": true,
+  "description": "Module for appliances",
+  "groupName": "Root",
+  "imageId": "1151ceef-432b-4452-a464-ffa14b3a8760:DishwasherModule.jpg",
+  "restrictionTypeId": "Public",
+  "childModules": [
+    {
+      "moduleId": "mf_Dishwasher"
+    },
+    {
+      "moduleId": "mf_BaseunitFridge"
+    }
+  ],
+  "assignedVariants": [
+    {
+      "variantId": "mod_FrontColor",
+      "default": "240",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_CountertopInfo",
+      "default": "",
+      "previewValue": "",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_CountertopThk",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_CreateCountertop",
+      "default": "true",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_CreatePaneltop",
+      "default": "false",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_CreateFingergrip",
+      "default": "false",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_CreateToekick",
+      "default": "true",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_Depth",
+      "previewValue": "548",
+      "origin": "Required"
+    },
+    {
+      "variantId": "mod_FingergripType",
+      "default": "None",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_FrontDesign",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_FrontEdgeColor",
+      "default": "Automatic",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_FrontEdgeThk",
+      "default": "0",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_FrontGapCarcase",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_FrontGapHor",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_FrontGapHorTop",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_FrontGapVert",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_FrontPosStart",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_FrontProgram",
+      "default": "Classic",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_Height",
+      "previewValue": "720",
+      "origin": "Required"
+    },
+    {
+      "variantId": "mod_HeightPosInsertion",
+      "default": "0",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_Model",
+      "default": "Classic",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_ModuleName",
+      "default": "mr_Appliance",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_ParentName",
+      "default": "mr_Appliance",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_PlinthAreaDesign",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_PlinthAreaElementColor",
+      "default": "Black",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_PlinthAreaExtraItem",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_PlinthAreaHeight",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_PlinthAreaPosBackMatrix",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_PlinthAreaPosFrontMatrix",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_PlinthAreaPositionInfo",
+      "default": "",
+      "previewValue": "",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_PlinthAreaPosLeftMatrix",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_PlinthAreaPosRightMatrix",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_PlinthAreaVisLeft",
+      "default": "false",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_PlinthAreaVisRight",
+      "default": "false",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_TypeElement",
+      "default": "BaseUnit",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_Width",
+      "previewValue": "600",
+      "origin": "Required"
+    },
+    {
+      "variantId": "mod_CarcaseDistanceWall",
+      "default": "0",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_HardwareColor",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_HandleLine",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_HandlePosType",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_HandlePosLogic",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_HandleDrill",
+      "default": "true",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_HandleColor",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_HandleLength",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_HandleDesign",
+      "default": "20",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_FrameFillingType",
+      "default": "Automatic",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_DropZoneVisible",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_PlinthAreaPosLogic",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_ShelfbtmThk",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_InformationList",
+      "default": "",
+      "previewValue": "",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_FrameFillingColor",
+      "default": "LikeFrameColor",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_CreateBacksplash",
+      "default": "false",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_CreateCeilingFiller",
+      "default": "false",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_CeilingFillerHeight",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_CeilingFillerConstruction",
+      "origin": "GlobalVar"
+    }
+  ],
+  "assignedParts": [
+    {
+      "partCode": "part_DropZone"
+    },
+    {
+      "partCode": "part_PlinthAreaUnit"
+    }
+  ],
+  "assignedCustomTables": [],
+  "assignedFunctions": []
+}

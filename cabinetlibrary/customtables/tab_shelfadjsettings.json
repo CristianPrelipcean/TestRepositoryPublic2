@@ -1,0 +1,855 @@
+{
+  "tableName": "tab_ShelfadjSettings",
+  "description": "Setting for the adjustable shelves",
+  "restrictionTypeId": "Public",
+  "groupName": "Shelfadj",
+  "columns": [
+    {
+      "name": "_id",
+      "type": "Integer",
+      "allowNull": false
+    },
+    {
+      "name": "in_CarcaseColor",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_FrontDesign",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_FrontProgram",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_ShelfadjType",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_CarcaseSpaceWidthMin",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "in_CarcaseSpaceWidthMax",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "in_CarcaseSpaceDepthMin",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "in_CarcaseSpaceDepthMax",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "ModuleType",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "ShelfadjThk",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "ShelfadjColor",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "GrainGroupId",
+      "type": "Text",
+      "allowNull": true
+    }
+  ],
+  "rows": [
+    {
+      "data": [
+        {
+          "columnName": "in_CarcaseColor",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontProgram",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ShelfadjType",
+          "value": "Automatic"
+        },
+        {
+          "columnName": "in_CarcaseSpaceWidthMin",
+          "value": "150"
+        },
+        {
+          "columnName": "in_CarcaseSpaceWidthMax",
+          "value": "1200"
+        },
+        {
+          "columnName": "in_CarcaseSpaceDepthMin",
+          "value": "100"
+        },
+        {
+          "columnName": "in_CarcaseSpaceDepthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "ModuleType",
+          "value": "Wood"
+        },
+        {
+          "columnName": "ShelfadjThk",
+          "value": "16"
+        },
+        {
+          "columnName": "ShelfadjColor",
+          "value": "LikeCarcaseColor"
+        },
+        {
+          "columnName": "GrainGroupId",
+          "value": "NoGrain"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_CarcaseColor",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontProgram",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ShelfadjType",
+          "value": "Automatic"
+        },
+        {
+          "columnName": "in_CarcaseSpaceWidthMin",
+          "value": "150"
+        },
+        {
+          "columnName": "in_CarcaseSpaceWidthMax",
+          "value": "1200"
+        },
+        {
+          "columnName": "in_CarcaseSpaceDepthMin",
+          "value": "100"
+        },
+        {
+          "columnName": "in_CarcaseSpaceDepthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "ModuleType",
+          "value": "Wood"
+        },
+        {
+          "columnName": "ShelfadjThk",
+          "value": "16"
+        },
+        {
+          "columnName": "ShelfadjColor",
+          "value": "LikeCarcaseColor"
+        },
+        {
+          "columnName": "GrainGroupId",
+          "value": "Grain"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_CarcaseColor",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontProgram",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ShelfadjType",
+          "value": "Automatic"
+        },
+        {
+          "columnName": "in_CarcaseSpaceWidthMin",
+          "value": "150"
+        },
+        {
+          "columnName": "in_CarcaseSpaceWidthMax",
+          "value": "600"
+        },
+        {
+          "columnName": "in_CarcaseSpaceDepthMin",
+          "value": "100"
+        },
+        {
+          "columnName": "in_CarcaseSpaceDepthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "ModuleType",
+          "value": "Wood"
+        },
+        {
+          "columnName": "ShelfadjThk",
+          "value": "16"
+        },
+        {
+          "columnName": "ShelfadjColor",
+          "value": "LikeCarcaseColor"
+        },
+        {
+          "columnName": "GrainGroupId",
+          "value": "NoGrain"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_CarcaseColor",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontProgram",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ShelfadjType",
+          "value": "Automatic"
+        },
+        {
+          "columnName": "in_CarcaseSpaceWidthMin",
+          "value": "150"
+        },
+        {
+          "columnName": "in_CarcaseSpaceWidthMax",
+          "value": "600"
+        },
+        {
+          "columnName": "in_CarcaseSpaceDepthMin",
+          "value": "100"
+        },
+        {
+          "columnName": "in_CarcaseSpaceDepthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "ModuleType",
+          "value": "Wood"
+        },
+        {
+          "columnName": "ShelfadjThk",
+          "value": "16"
+        },
+        {
+          "columnName": "ShelfadjColor",
+          "value": "LikeCarcaseColor"
+        },
+        {
+          "columnName": "GrainGroupId",
+          "value": "Grain"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_CarcaseColor",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontProgram",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ShelfadjType",
+          "value": "Automatic"
+        },
+        {
+          "columnName": "in_CarcaseSpaceWidthMin",
+          "value": "601"
+        },
+        {
+          "columnName": "in_CarcaseSpaceWidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CarcaseSpaceDepthMin",
+          "value": "100"
+        },
+        {
+          "columnName": "in_CarcaseSpaceDepthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "ModuleType",
+          "value": "Wood"
+        },
+        {
+          "columnName": "ShelfadjThk",
+          "value": "19"
+        },
+        {
+          "columnName": "ShelfadjColor",
+          "value": "LikeCarcaseColor"
+        },
+        {
+          "columnName": "GrainGroupId",
+          "value": "NoGrain"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_CarcaseColor",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontProgram",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ShelfadjType",
+          "value": "Automatic"
+        },
+        {
+          "columnName": "in_CarcaseSpaceWidthMin",
+          "value": "601"
+        },
+        {
+          "columnName": "in_CarcaseSpaceWidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CarcaseSpaceDepthMin",
+          "value": "100"
+        },
+        {
+          "columnName": "in_CarcaseSpaceDepthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "ModuleType",
+          "value": "Wood"
+        },
+        {
+          "columnName": "ShelfadjThk",
+          "value": "19"
+        },
+        {
+          "columnName": "ShelfadjColor",
+          "value": "LikeCarcaseColor"
+        },
+        {
+          "columnName": "GrainGroupId",
+          "value": "Grain"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_CarcaseColor",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontDesign",
+          "value": "FillingGlass"
+        },
+        {
+          "columnName": "in_FrontProgram",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ShelfadjType",
+          "value": "Automatic"
+        },
+        {
+          "columnName": "in_CarcaseSpaceWidthMin",
+          "value": "562"
+        },
+        {
+          "columnName": "in_CarcaseSpaceWidthMax",
+          "value": "562"
+        },
+        {
+          "columnName": "in_CarcaseSpaceDepthMin",
+          "value": "325"
+        },
+        {
+          "columnName": "in_CarcaseSpaceDepthMax",
+          "value": "325"
+        },
+        {
+          "columnName": "ModuleType",
+          "value": "Glass"
+        },
+        {
+          "columnName": "ShelfadjThk",
+          "value": "5"
+        },
+        {
+          "columnName": "ShelfadjColor",
+          "value": "FloatGlass"
+        },
+        {
+          "columnName": "GrainGroupId",
+          "value": "NoGrain"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_CarcaseColor",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontDesign",
+          "value": "FillingWoodClassic"
+        },
+        {
+          "columnName": "in_FrontProgram",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ShelfadjType",
+          "value": "Automatic"
+        },
+        {
+          "columnName": "in_CarcaseSpaceWidthMin",
+          "value": "150"
+        },
+        {
+          "columnName": "in_CarcaseSpaceWidthMax",
+          "value": "561.99"
+        },
+        {
+          "columnName": "in_CarcaseSpaceDepthMin",
+          "value": "100"
+        },
+        {
+          "columnName": "in_CarcaseSpaceDepthMax",
+          "value": "324.99"
+        },
+        {
+          "columnName": "ModuleType",
+          "value": "Wood"
+        },
+        {
+          "columnName": "ShelfadjThk",
+          "value": "16"
+        },
+        {
+          "columnName": "ShelfadjColor",
+          "value": "LikeCarcaseColor"
+        },
+        {
+          "columnName": "GrainGroupId",
+          "value": "NoGrain"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_CarcaseColor",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontDesign",
+          "value": "FillingWoodClassic"
+        },
+        {
+          "columnName": "in_FrontProgram",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ShelfadjType",
+          "value": "Automatic"
+        },
+        {
+          "columnName": "in_CarcaseSpaceWidthMin",
+          "value": "150"
+        },
+        {
+          "columnName": "in_CarcaseSpaceWidthMax",
+          "value": "561.99"
+        },
+        {
+          "columnName": "in_CarcaseSpaceDepthMin",
+          "value": "100"
+        },
+        {
+          "columnName": "in_CarcaseSpaceDepthMax",
+          "value": "324.99"
+        },
+        {
+          "columnName": "ModuleType",
+          "value": "Wood"
+        },
+        {
+          "columnName": "ShelfadjThk",
+          "value": "16"
+        },
+        {
+          "columnName": "ShelfadjColor",
+          "value": "LikeCarcaseColor"
+        },
+        {
+          "columnName": "GrainGroupId",
+          "value": "Grain"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_CarcaseColor",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontDesign",
+          "value": "FillingWoodClassic"
+        },
+        {
+          "columnName": "in_FrontProgram",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ShelfadjType",
+          "value": "Automatic"
+        },
+        {
+          "columnName": "in_CarcaseSpaceWidthMin",
+          "value": "562.01"
+        },
+        {
+          "columnName": "in_CarcaseSpaceWidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CarcaseSpaceDepthMin",
+          "value": "325.01"
+        },
+        {
+          "columnName": "in_CarcaseSpaceDepthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "ModuleType",
+          "value": "Wood"
+        },
+        {
+          "columnName": "ShelfadjThk",
+          "value": "19"
+        },
+        {
+          "columnName": "ShelfadjColor",
+          "value": "LikeCarcaseColor"
+        },
+        {
+          "columnName": "GrainGroupId",
+          "value": "NoGrain"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_CarcaseColor",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontDesign",
+          "value": "FillingWoodClassic"
+        },
+        {
+          "columnName": "in_FrontProgram",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ShelfadjType",
+          "value": "Automatic"
+        },
+        {
+          "columnName": "in_CarcaseSpaceWidthMin",
+          "value": "562.01"
+        },
+        {
+          "columnName": "in_CarcaseSpaceWidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CarcaseSpaceDepthMin",
+          "value": "325.01"
+        },
+        {
+          "columnName": "in_CarcaseSpaceDepthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "ModuleType",
+          "value": "Wood"
+        },
+        {
+          "columnName": "ShelfadjThk",
+          "value": "19"
+        },
+        {
+          "columnName": "ShelfadjColor",
+          "value": "LikeCarcaseColor"
+        },
+        {
+          "columnName": "GrainGroupId",
+          "value": "Grain"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_CarcaseColor",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontProgram",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ShelfadjType",
+          "value": "Glass"
+        },
+        {
+          "columnName": "in_CarcaseSpaceWidthMin",
+          "value": "150"
+        },
+        {
+          "columnName": "in_CarcaseSpaceWidthMax",
+          "value": "1200"
+        },
+        {
+          "columnName": "in_CarcaseSpaceDepthMin",
+          "value": "100"
+        },
+        {
+          "columnName": "in_CarcaseSpaceDepthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "ModuleType",
+          "value": "Glass"
+        },
+        {
+          "columnName": "ShelfadjThk",
+          "value": "5"
+        },
+        {
+          "columnName": "ShelfadjColor",
+          "value": "FloatGlass"
+        },
+        {
+          "columnName": "GrainGroupId",
+          "value": "NoGrain"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_CarcaseColor",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontProgram",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ShelfadjType",
+          "value": "Wood"
+        },
+        {
+          "columnName": "in_CarcaseSpaceWidthMin",
+          "value": "150"
+        },
+        {
+          "columnName": "in_CarcaseSpaceWidthMax",
+          "value": "1200"
+        },
+        {
+          "columnName": "in_CarcaseSpaceDepthMin",
+          "value": "100"
+        },
+        {
+          "columnName": "in_CarcaseSpaceDepthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "ModuleType",
+          "value": "Wood"
+        },
+        {
+          "columnName": "ShelfadjThk",
+          "value": "16"
+        },
+        {
+          "columnName": "ShelfadjColor",
+          "value": "LikeCarcaseColor"
+        },
+        {
+          "columnName": "GrainGroupId",
+          "value": "NoGrain"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_CarcaseColor",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontProgram",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ShelfadjType",
+          "value": "Wood"
+        },
+        {
+          "columnName": "in_CarcaseSpaceWidthMin",
+          "value": "150"
+        },
+        {
+          "columnName": "in_CarcaseSpaceWidthMax",
+          "value": "1200"
+        },
+        {
+          "columnName": "in_CarcaseSpaceDepthMin",
+          "value": "100"
+        },
+        {
+          "columnName": "in_CarcaseSpaceDepthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "ModuleType",
+          "value": "Wood"
+        },
+        {
+          "columnName": "ShelfadjThk",
+          "value": "16"
+        },
+        {
+          "columnName": "ShelfadjColor",
+          "value": "LikeCarcaseColor"
+        },
+        {
+          "columnName": "GrainGroupId",
+          "value": "Grain"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_CarcaseColor",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontDesign",
+          "value": "SegmentGlassClassic"
+        },
+        {
+          "columnName": "in_FrontProgram",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ShelfadjType",
+          "value": "Automatic"
+        },
+        {
+          "columnName": "in_CarcaseSpaceWidthMin",
+          "value": "150"
+        },
+        {
+          "columnName": "in_CarcaseSpaceWidthMax",
+          "value": "1200"
+        },
+        {
+          "columnName": "in_CarcaseSpaceDepthMin",
+          "value": "100"
+        },
+        {
+          "columnName": "in_CarcaseSpaceDepthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "ModuleType",
+          "value": "Glass"
+        },
+        {
+          "columnName": "ShelfadjThk",
+          "value": "5"
+        },
+        {
+          "columnName": "ShelfadjColor",
+          "value": "FloatGlass"
+        },
+        {
+          "columnName": "GrainGroupId",
+          "value": "NoGrain"
+        }
+      ]
+    }
+  ]
+}

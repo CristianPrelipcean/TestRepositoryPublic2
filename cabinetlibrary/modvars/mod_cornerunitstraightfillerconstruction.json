@@ -1,0 +1,61 @@
+{
+  "variantId": "mod_CornerunitStraightFillerConstruction",
+  "shortName": "Corner filler construction",
+  "variantTypeId": "Text",
+  "description": "Construction of the corner filler",
+  "restrictionTypeId": "Internal",
+  "groupName": "Cornerunit | Construction",
+  "imageId": "6434e647-c86a-46c1-a226-b2adc2017161:CornerFillerConstruction.jpg",
+  "assignedGlobalVarId": "basic_CornerunitStraightFillerConstruction",
+  "isArray": false,
+  "isPosRelevant": true,
+  "mainAttr": true,
+  "userRight": "Advanced",
+  "implicitRelevant": false,
+  "posView": "Dropdown",
+  "matrix": [
+    {
+      "id": "PartInCornerCabinet",
+      "type": "Text",
+      "default": "0"
+    }
+  ],
+  "selections": [
+    {
+      "value": "Construction01",
+      "description": "Construction01",
+      "shortName": "Construction01",
+      "imageId": "7cf88ca2-17cb-4f28-9ffe-f93e6d487c94:Construction01.jpg",
+      "matrix": [
+        {
+          "id": "PartInCornerCabinet",
+          "value": "Mitre"
+        }
+      ]
+    },
+    {
+      "value": "Construction02",
+      "description": "Construction02",
+      "shortName": "Construction02",
+      "imageId": "ad36c8be-61e9-4373-b0c6-119aca2dbe34:Construction02.jpg",
+      "matrix": [
+        {
+          "id": "PartInCornerCabinet",
+          "value": "Short"
+        }
+      ]
+    },
+    {
+      "value": "Construction03",
+      "description": "Construction03",
+      "shortName": "Construction03",
+      "imageId": "cd3e6343-3e28-4681-a73d-0dc551b327ee:Construction03.jpg",
+      "matrix": [
+        {
+          "id": "PartInCornerCabinet",
+          "value": "Long"
+        }
+      ]
+    }
+  ]
+}

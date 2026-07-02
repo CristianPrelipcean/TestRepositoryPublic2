@@ -1,0 +1,61 @@
+{
+  "variantId": "mod_PlinthAreaExtraItem",
+  "shortName": "Extra items",
+  "variantTypeId": "Text",
+  "description": "Extra items for the leg in the plinth area",
+  "restrictionTypeId": "Public",
+  "groupName": "PlinthArea",
+  "imageId": "cfd2e425-33b4-4c53-9700-3befe70be0b8:Leg_ExtraItem.png",
+  "assignedGlobalVarId": "basic_PlinthAreaExtraItem",
+  "isArray": false,
+  "isPosRelevant": true,
+  "mainAttr": false,
+  "userRight": "Advanced",
+  "implicitRelevant": false,
+  "posView": "Dropdown",
+  "matrix": [
+    {
+      "id": "HeightExtension",
+      "type": "Dim",
+      "default": 0.0
+    }
+  ],
+  "selections": [
+    {
+      "value": "None",
+      "description": "No extra items",
+      "shortName": "None",
+      "imageId": "b0bc22c2-a7e4-4f3b-bd44-046eb87d32f4:None.png",
+      "matrix": [
+        {
+          "id": "HeightExtension",
+          "value": 0.0
+        }
+      ]
+    },
+    {
+      "value": "NoiseReduction",
+      "description": "Noise reduction",
+      "shortName": "NoiseReduction",
+      "imageId": "e5d8e5d2-9052-4b8b-b16c-2313aa32af5b:637_76_424_3.png",
+      "matrix": [
+        {
+          "id": "HeightExtension",
+          "value": 6.5
+        }
+      ]
+    },
+    {
+      "value": "SensitiveFloors",
+      "description": "Sensitive floors",
+      "shortName": "SensitiveFloors",
+      "imageId": "d8633fac-16b8-4cc2-a6e2-edd0331d330f:637_76_423_2.png",
+      "matrix": [
+        {
+          "id": "HeightExtension",
+          "value": 2.0
+        }
+      ]
+    }
+  ]
+}

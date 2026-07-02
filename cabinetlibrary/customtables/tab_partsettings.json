@@ -1,0 +1,2791 @@
+{
+  "tableName": "tab_PartSettings",
+  "description": "Settings for parts",
+  "restrictionTypeId": "Public",
+  "groupName": "Bom",
+  "columns": [
+    {
+      "name": "_id",
+      "type": "Integer",
+      "allowNull": false
+    },
+    {
+      "name": "in_Part",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_AdditionalInfo1",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "BomPartDescription",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "PartGroup",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "OpeningDirection",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "EdgeTypeNecessary",
+      "type": "Bool",
+      "allowNull": true
+    },
+    {
+      "name": "BomArticleGroup",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "ColorIdParent",
+      "type": "Text",
+      "allowNull": true
+    }
+  ],
+  "rows": [
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_Backwall"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "BomPartDescription",
+          "value": "Back Panel"
+        },
+        {
+          "columnName": "PartGroup",
+          "value": "Backwall"
+        },
+        {
+          "columnName": "OpeningDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "EdgeTypeNecessary",
+          "value": "true"
+        },
+        {
+          "columnName": "BomArticleGroup",
+          "value": "Carcase"
+        },
+        {
+          "columnName": "ColorIdParent",
+          "value": "All"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_Railhortopback"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "BomPartDescription",
+          "value": "Rail Horizontal in Top/Back"
+        },
+        {
+          "columnName": "PartGroup",
+          "value": "Shelves"
+        },
+        {
+          "columnName": "OpeningDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "EdgeTypeNecessary",
+          "value": "true"
+        },
+        {
+          "columnName": "BomArticleGroup",
+          "value": "Carcase"
+        },
+        {
+          "columnName": "ColorIdParent",
+          "value": "All"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_Railverttopback"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "BomPartDescription",
+          "value": "Rail Vertical in Top/Back"
+        },
+        {
+          "columnName": "PartGroup",
+          "value": "RailVertical"
+        },
+        {
+          "columnName": "OpeningDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "EdgeTypeNecessary",
+          "value": "true"
+        },
+        {
+          "columnName": "BomArticleGroup",
+          "value": "Carcase"
+        },
+        {
+          "columnName": "ColorIdParent",
+          "value": "All"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_Railhortopfront"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "BomPartDescription",
+          "value": "Rail Horizontal in Top/Front"
+        },
+        {
+          "columnName": "PartGroup",
+          "value": "Shelves"
+        },
+        {
+          "columnName": "OpeningDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "EdgeTypeNecessary",
+          "value": "true"
+        },
+        {
+          "columnName": "BomArticleGroup",
+          "value": "Carcase"
+        },
+        {
+          "columnName": "ColorIdParent",
+          "value": "All"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_Railverttopfront"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "BomPartDescription",
+          "value": "Rail Vertical in Top/Front"
+        },
+        {
+          "columnName": "PartGroup",
+          "value": "RailVertical"
+        },
+        {
+          "columnName": "OpeningDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "EdgeTypeNecessary",
+          "value": "true"
+        },
+        {
+          "columnName": "BomArticleGroup",
+          "value": "Carcase"
+        },
+        {
+          "columnName": "ColorIdParent",
+          "value": "All"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_ShelfadjGlass"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "BomPartDescription",
+          "value": "Adjustable Shelf"
+        },
+        {
+          "columnName": "PartGroup",
+          "value": "Shelves"
+        },
+        {
+          "columnName": "OpeningDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "EdgeTypeNecessary",
+          "value": "true"
+        },
+        {
+          "columnName": "BomArticleGroup",
+          "value": "Carcase"
+        },
+        {
+          "columnName": "ColorIdParent",
+          "value": "All"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_Shelftop"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "BomPartDescription",
+          "value": "Top Shelf"
+        },
+        {
+          "columnName": "PartGroup",
+          "value": "Shelves"
+        },
+        {
+          "columnName": "OpeningDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "EdgeTypeNecessary",
+          "value": "true"
+        },
+        {
+          "columnName": "BomArticleGroup",
+          "value": "Carcase"
+        },
+        {
+          "columnName": "ColorIdParent",
+          "value": "All"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_Shelfbtm"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "BomPartDescription",
+          "value": "Bottom Shelf"
+        },
+        {
+          "columnName": "PartGroup",
+          "value": "Shelves"
+        },
+        {
+          "columnName": "OpeningDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "EdgeTypeNecessary",
+          "value": "true"
+        },
+        {
+          "columnName": "BomArticleGroup",
+          "value": "Carcase"
+        },
+        {
+          "columnName": "ColorIdParent",
+          "value": "All"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_Shelffixed"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "BomPartDescription",
+          "value": "Fixed Shelf"
+        },
+        {
+          "columnName": "PartGroup",
+          "value": "Shelves"
+        },
+        {
+          "columnName": "OpeningDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "EdgeTypeNecessary",
+          "value": "true"
+        },
+        {
+          "columnName": "BomArticleGroup",
+          "value": "Carcase"
+        },
+        {
+          "columnName": "ColorIdParent",
+          "value": "All"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_Sidepanelleft"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "BomPartDescription",
+          "value": "Left Side Panel"
+        },
+        {
+          "columnName": "PartGroup",
+          "value": "Sides"
+        },
+        {
+          "columnName": "OpeningDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "EdgeTypeNecessary",
+          "value": "true"
+        },
+        {
+          "columnName": "BomArticleGroup",
+          "value": "Carcase"
+        },
+        {
+          "columnName": "ColorIdParent",
+          "value": "All"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_Sidepanelright"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "BomPartDescription",
+          "value": "Right Side Panel"
+        },
+        {
+          "columnName": "PartGroup",
+          "value": "Sides"
+        },
+        {
+          "columnName": "OpeningDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "EdgeTypeNecessary",
+          "value": "true"
+        },
+        {
+          "columnName": "BomArticleGroup",
+          "value": "Carcase"
+        },
+        {
+          "columnName": "ColorIdParent",
+          "value": "All"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_Sidepanelmiddle"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "BomPartDescription",
+          "value": "Middle Side Panel"
+        },
+        {
+          "columnName": "PartGroup",
+          "value": "Sides"
+        },
+        {
+          "columnName": "OpeningDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "EdgeTypeNecessary",
+          "value": "true"
+        },
+        {
+          "columnName": "BomArticleGroup",
+          "value": "Carcase"
+        },
+        {
+          "columnName": "ColorIdParent",
+          "value": "All"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_Drawer"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "BomPartDescription",
+          "value": "Drawer"
+        },
+        {
+          "columnName": "PartGroup",
+          "value": "Drawer"
+        },
+        {
+          "columnName": "OpeningDirection",
+          "value": "Front"
+        },
+        {
+          "columnName": "EdgeTypeNecessary",
+          "value": "false"
+        },
+        {
+          "columnName": "BomArticleGroup",
+          "value": "Front"
+        },
+        {
+          "columnName": "ColorIdParent",
+          "value": "All"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_Leg"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "BomPartDescription",
+          "value": "Leg"
+        },
+        {
+          "columnName": "PartGroup",
+          "value": "Legs"
+        },
+        {
+          "columnName": "OpeningDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "EdgeTypeNecessary",
+          "value": ""
+        },
+        {
+          "columnName": "BomArticleGroup",
+          "value": "Fitting"
+        },
+        {
+          "columnName": "ColorIdParent",
+          "value": "All"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_Handle"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "BomPartDescription",
+          "value": "Handle"
+        },
+        {
+          "columnName": "PartGroup",
+          "value": "Handle"
+        },
+        {
+          "columnName": "OpeningDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "EdgeTypeNecessary",
+          "value": ""
+        },
+        {
+          "columnName": "BomArticleGroup",
+          "value": "Fitting"
+        },
+        {
+          "columnName": "ColorIdParent",
+          "value": "All"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_Handlestrip"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "BomPartDescription",
+          "value": "Handlestrip"
+        },
+        {
+          "columnName": "PartGroup",
+          "value": "Handle"
+        },
+        {
+          "columnName": "OpeningDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "EdgeTypeNecessary",
+          "value": ""
+        },
+        {
+          "columnName": "BomArticleGroup",
+          "value": "Fitting"
+        },
+        {
+          "columnName": "ColorIdParent",
+          "value": "All"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_ShelfadjFitting"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "BomPartDescription",
+          "value": "Fittings adjustable shelf"
+        },
+        {
+          "columnName": "PartGroup",
+          "value": "Adjustable shelf fittings"
+        },
+        {
+          "columnName": "OpeningDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "EdgeTypeNecessary",
+          "value": ""
+        },
+        {
+          "columnName": "BomArticleGroup",
+          "value": "Fitting"
+        },
+        {
+          "columnName": "ColorIdParent",
+          "value": "All"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_HingeDoor"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "BomPartDescription",
+          "value": "Hinge"
+        },
+        {
+          "columnName": "PartGroup",
+          "value": "Hinge"
+        },
+        {
+          "columnName": "OpeningDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "EdgeTypeNecessary",
+          "value": ""
+        },
+        {
+          "columnName": "BomArticleGroup",
+          "value": "Fitting"
+        },
+        {
+          "columnName": "ColorIdParent",
+          "value": "All"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_HingeCarcase"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "BomPartDescription",
+          "value": "Mounting Plate"
+        },
+        {
+          "columnName": "PartGroup",
+          "value": "Hinge"
+        },
+        {
+          "columnName": "OpeningDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "EdgeTypeNecessary",
+          "value": ""
+        },
+        {
+          "columnName": "BomArticleGroup",
+          "value": "Fitting"
+        },
+        {
+          "columnName": "ColorIdParent",
+          "value": "All"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_ShelfadjWood"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "BomPartDescription",
+          "value": "Adjustable shelf"
+        },
+        {
+          "columnName": "PartGroup",
+          "value": "Shelves"
+        },
+        {
+          "columnName": "OpeningDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "EdgeTypeNecessary",
+          "value": "true"
+        },
+        {
+          "columnName": "BomArticleGroup",
+          "value": "Carcase"
+        },
+        {
+          "columnName": "ColorIdParent",
+          "value": "All"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_HangerSystem"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "BomPartDescription",
+          "value": "Hanger System"
+        },
+        {
+          "columnName": "PartGroup",
+          "value": "Hangers"
+        },
+        {
+          "columnName": "OpeningDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "EdgeTypeNecessary",
+          "value": ""
+        },
+        {
+          "columnName": "BomArticleGroup",
+          "value": "Fitting"
+        },
+        {
+          "columnName": "ColorIdParent",
+          "value": "All"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_RackAreaUnit"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "BomPartDescription",
+          "value": "Rack Area Unit"
+        },
+        {
+          "columnName": "PartGroup",
+          "value": "RackArea"
+        },
+        {
+          "columnName": "OpeningDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "EdgeTypeNecessary",
+          "value": ""
+        },
+        {
+          "columnName": "BomArticleGroup",
+          "value": "Carcase"
+        },
+        {
+          "columnName": "ColorIdParent",
+          "value": "All"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_DrawerShelfbtm"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "BomPartDescription",
+          "value": "Bottom shelf of drawer box"
+        },
+        {
+          "columnName": "PartGroup",
+          "value": "Shelves"
+        },
+        {
+          "columnName": "OpeningDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "EdgeTypeNecessary",
+          "value": "true"
+        },
+        {
+          "columnName": "BomArticleGroup",
+          "value": "Carcase"
+        },
+        {
+          "columnName": "ColorIdParent",
+          "value": "All"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_DrawerBackwallWood"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "BomPartDescription",
+          "value": "Wooden backwall of drawer box"
+        },
+        {
+          "columnName": "PartGroup",
+          "value": "Shelves"
+        },
+        {
+          "columnName": "OpeningDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "EdgeTypeNecessary",
+          "value": "true"
+        },
+        {
+          "columnName": "BomArticleGroup",
+          "value": "Carcase"
+        },
+        {
+          "columnName": "ColorIdParent",
+          "value": "All"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_Duststrip"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "BomPartDescription",
+          "value": "Dust strip"
+        },
+        {
+          "columnName": "PartGroup",
+          "value": "Dust strip"
+        },
+        {
+          "columnName": "OpeningDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "EdgeTypeNecessary",
+          "value": ""
+        },
+        {
+          "columnName": "BomArticleGroup",
+          "value": "Fitting"
+        },
+        {
+          "columnName": "ColorIdParent",
+          "value": "All"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_Backsplash"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "BomPartDescription",
+          "value": "Backsplash"
+        },
+        {
+          "columnName": "PartGroup",
+          "value": "Backsplash"
+        },
+        {
+          "columnName": "OpeningDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "EdgeTypeNecessary",
+          "value": "false"
+        },
+        {
+          "columnName": "BomArticleGroup",
+          "value": "AdditionalParts"
+        },
+        {
+          "columnName": "ColorIdParent",
+          "value": "All"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_Countertop"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "BomPartDescription",
+          "value": "Countertop"
+        },
+        {
+          "columnName": "PartGroup",
+          "value": "Countertop"
+        },
+        {
+          "columnName": "OpeningDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "EdgeTypeNecessary",
+          "value": "false"
+        },
+        {
+          "columnName": "BomArticleGroup",
+          "value": "Countertop"
+        },
+        {
+          "columnName": "ColorIdParent",
+          "value": "All"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_FinishPanel"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "BomPartDescription",
+          "value": "Finishpanel"
+        },
+        {
+          "columnName": "PartGroup",
+          "value": "Finishpanel"
+        },
+        {
+          "columnName": "OpeningDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "EdgeTypeNecessary",
+          "value": "false"
+        },
+        {
+          "columnName": "BomArticleGroup",
+          "value": "AdditionalParts"
+        },
+        {
+          "columnName": "ColorIdParent",
+          "value": "All"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_Toekick"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "BomPartDescription",
+          "value": "Toekick"
+        },
+        {
+          "columnName": "PartGroup",
+          "value": "Toekick"
+        },
+        {
+          "columnName": "OpeningDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "EdgeTypeNecessary",
+          "value": "false"
+        },
+        {
+          "columnName": "BomArticleGroup",
+          "value": "Toekick"
+        },
+        {
+          "columnName": "ColorIdParent",
+          "value": "All"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_CleatVert"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "BomPartDescription",
+          "value": "CleatVert"
+        },
+        {
+          "columnName": "PartGroup",
+          "value": "Vertical Divider"
+        },
+        {
+          "columnName": "OpeningDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "EdgeTypeNecessary",
+          "value": "true"
+        },
+        {
+          "columnName": "BomArticleGroup",
+          "value": "Carcase"
+        },
+        {
+          "columnName": "ColorIdParent",
+          "value": "All"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_PushtoopenBom"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "BomPartDescription",
+          "value": "PushToOpen"
+        },
+        {
+          "columnName": "PartGroup",
+          "value": "PushToOpen"
+        },
+        {
+          "columnName": "OpeningDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "EdgeTypeNecessary",
+          "value": "false"
+        },
+        {
+          "columnName": "BomArticleGroup",
+          "value": "Fitting"
+        },
+        {
+          "columnName": "ColorIdParent",
+          "value": "All"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_DrawerPanelWoodFrame"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "BomPartDescription",
+          "value": "Drawer"
+        },
+        {
+          "columnName": "PartGroup",
+          "value": "Drawer"
+        },
+        {
+          "columnName": "OpeningDirection",
+          "value": "Front"
+        },
+        {
+          "columnName": "EdgeTypeNecessary",
+          "value": "false"
+        },
+        {
+          "columnName": "BomArticleGroup",
+          "value": "Front"
+        },
+        {
+          "columnName": "ColorIdParent",
+          "value": "All"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_PanelWoodFrameBtm"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "BomPartDescription",
+          "value": "Horizontal panels for wood frame"
+        },
+        {
+          "columnName": "PartGroup",
+          "value": "PanelWoodFrameHor"
+        },
+        {
+          "columnName": "OpeningDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "EdgeTypeNecessary",
+          "value": "false"
+        },
+        {
+          "columnName": "BomArticleGroup",
+          "value": "Front"
+        },
+        {
+          "columnName": "ColorIdParent",
+          "value": "All"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_PanelWoodFrameTop"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "BomPartDescription",
+          "value": "Horizontal panels for wood frame"
+        },
+        {
+          "columnName": "PartGroup",
+          "value": "PanelWoodFrameHor"
+        },
+        {
+          "columnName": "OpeningDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "EdgeTypeNecessary",
+          "value": "false"
+        },
+        {
+          "columnName": "BomArticleGroup",
+          "value": "Front"
+        },
+        {
+          "columnName": "ColorIdParent",
+          "value": "All"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_PanelWoodFrameLeft"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "BomPartDescription",
+          "value": "Vertical panels for wood frame"
+        },
+        {
+          "columnName": "PartGroup",
+          "value": "PanelWoodFrameVert"
+        },
+        {
+          "columnName": "OpeningDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "EdgeTypeNecessary",
+          "value": "false"
+        },
+        {
+          "columnName": "BomArticleGroup",
+          "value": "Front"
+        },
+        {
+          "columnName": "ColorIdParent",
+          "value": "All"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_PanelWoodFrameRight"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "BomPartDescription",
+          "value": "Vertical panels for wood frame"
+        },
+        {
+          "columnName": "PartGroup",
+          "value": "PanelWoodFrameVert"
+        },
+        {
+          "columnName": "OpeningDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "EdgeTypeNecessary",
+          "value": "false"
+        },
+        {
+          "columnName": "BomArticleGroup",
+          "value": "Front"
+        },
+        {
+          "columnName": "ColorIdParent",
+          "value": "All"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_PanelWoodFrameFilling"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "BomPartDescription",
+          "value": "Filling for panel wood frames"
+        },
+        {
+          "columnName": "PartGroup",
+          "value": "PanelWoodFrameFilling"
+        },
+        {
+          "columnName": "OpeningDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "EdgeTypeNecessary",
+          "value": "false"
+        },
+        {
+          "columnName": "BomArticleGroup",
+          "value": "Front"
+        },
+        {
+          "columnName": "ColorIdParent",
+          "value": "All"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_Door"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "Left"
+        },
+        {
+          "columnName": "BomPartDescription",
+          "value": "Left Door"
+        },
+        {
+          "columnName": "PartGroup",
+          "value": "Door"
+        },
+        {
+          "columnName": "OpeningDirection",
+          "value": "Left"
+        },
+        {
+          "columnName": "EdgeTypeNecessary",
+          "value": "false"
+        },
+        {
+          "columnName": "BomArticleGroup",
+          "value": "Front"
+        },
+        {
+          "columnName": "ColorIdParent",
+          "value": "All"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_Door"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "Right"
+        },
+        {
+          "columnName": "BomPartDescription",
+          "value": "Right Door"
+        },
+        {
+          "columnName": "PartGroup",
+          "value": "Door"
+        },
+        {
+          "columnName": "OpeningDirection",
+          "value": "Right"
+        },
+        {
+          "columnName": "EdgeTypeNecessary",
+          "value": "false"
+        },
+        {
+          "columnName": "BomArticleGroup",
+          "value": "Front"
+        },
+        {
+          "columnName": "ColorIdParent",
+          "value": "All"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_DoorPanelWoodFrame"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "Left"
+        },
+        {
+          "columnName": "BomPartDescription",
+          "value": "Left Door Panel Wood Frame"
+        },
+        {
+          "columnName": "PartGroup",
+          "value": "Door"
+        },
+        {
+          "columnName": "OpeningDirection",
+          "value": "Left"
+        },
+        {
+          "columnName": "EdgeTypeNecessary",
+          "value": "false"
+        },
+        {
+          "columnName": "BomArticleGroup",
+          "value": "Front"
+        },
+        {
+          "columnName": "ColorIdParent",
+          "value": "All"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_DoorPanelWoodFrame"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "Right"
+        },
+        {
+          "columnName": "BomPartDescription",
+          "value": "Right Door Panel Wood Frame"
+        },
+        {
+          "columnName": "PartGroup",
+          "value": "Door"
+        },
+        {
+          "columnName": "OpeningDirection",
+          "value": "Right"
+        },
+        {
+          "columnName": "EdgeTypeNecessary",
+          "value": "false"
+        },
+        {
+          "columnName": "BomArticleGroup",
+          "value": "Front"
+        },
+        {
+          "columnName": "ColorIdParent",
+          "value": "All"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_Fliplift"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "SHF"
+        },
+        {
+          "columnName": "BomPartDescription",
+          "value": "Swing high flip lift"
+        },
+        {
+          "columnName": "PartGroup",
+          "value": "Fliplift"
+        },
+        {
+          "columnName": "OpeningDirection",
+          "value": "Up"
+        },
+        {
+          "columnName": "EdgeTypeNecessary",
+          "value": "false"
+        },
+        {
+          "columnName": "BomArticleGroup",
+          "value": "Front"
+        },
+        {
+          "columnName": "ColorIdParent",
+          "value": "All"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_Fliplift"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "FHF"
+        },
+        {
+          "columnName": "BomPartDescription",
+          "value": "Folding high flip lift"
+        },
+        {
+          "columnName": "PartGroup",
+          "value": "Fliplift"
+        },
+        {
+          "columnName": "OpeningDirection",
+          "value": "Up"
+        },
+        {
+          "columnName": "EdgeTypeNecessary",
+          "value": "false"
+        },
+        {
+          "columnName": "BomArticleGroup",
+          "value": "Front"
+        },
+        {
+          "columnName": "ColorIdParent",
+          "value": "All"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_Fliplift"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "LHF"
+        },
+        {
+          "columnName": "BomPartDescription",
+          "value": "High flip lift"
+        },
+        {
+          "columnName": "PartGroup",
+          "value": "Fliplift"
+        },
+        {
+          "columnName": "OpeningDirection",
+          "value": "Up"
+        },
+        {
+          "columnName": "EdgeTypeNecessary",
+          "value": "false"
+        },
+        {
+          "columnName": "BomArticleGroup",
+          "value": "Front"
+        },
+        {
+          "columnName": "ColorIdParent",
+          "value": "All"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_Fliplift"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "UF"
+        },
+        {
+          "columnName": "BomPartDescription",
+          "value": "Upwards opening flap"
+        },
+        {
+          "columnName": "PartGroup",
+          "value": "Fliplift"
+        },
+        {
+          "columnName": "OpeningDirection",
+          "value": "Up"
+        },
+        {
+          "columnName": "EdgeTypeNecessary",
+          "value": "false"
+        },
+        {
+          "columnName": "BomArticleGroup",
+          "value": "Front"
+        },
+        {
+          "columnName": "ColorIdParent",
+          "value": "All"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_Fliplift"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "DF"
+        },
+        {
+          "columnName": "BomPartDescription",
+          "value": "Downwards opening flap"
+        },
+        {
+          "columnName": "PartGroup",
+          "value": "Fliplift"
+        },
+        {
+          "columnName": "OpeningDirection",
+          "value": "Down"
+        },
+        {
+          "columnName": "EdgeTypeNecessary",
+          "value": "false"
+        },
+        {
+          "columnName": "BomArticleGroup",
+          "value": "Front"
+        },
+        {
+          "columnName": "ColorIdParent",
+          "value": "All"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_FlipliftPanelWoodFrame"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "SHF"
+        },
+        {
+          "columnName": "BomPartDescription",
+          "value": "Swing high flip lift wood frame"
+        },
+        {
+          "columnName": "PartGroup",
+          "value": "Fliplift"
+        },
+        {
+          "columnName": "OpeningDirection",
+          "value": "Up"
+        },
+        {
+          "columnName": "EdgeTypeNecessary",
+          "value": "false"
+        },
+        {
+          "columnName": "BomArticleGroup",
+          "value": "Front"
+        },
+        {
+          "columnName": "ColorIdParent",
+          "value": "All"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_FlipliftPanelWoodFrame"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "FHF"
+        },
+        {
+          "columnName": "BomPartDescription",
+          "value": "Folding high flip lift wood frame"
+        },
+        {
+          "columnName": "PartGroup",
+          "value": "Fliplift"
+        },
+        {
+          "columnName": "OpeningDirection",
+          "value": "Up"
+        },
+        {
+          "columnName": "EdgeTypeNecessary",
+          "value": "false"
+        },
+        {
+          "columnName": "BomArticleGroup",
+          "value": "Front"
+        },
+        {
+          "columnName": "ColorIdParent",
+          "value": "All"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_FlipliftPanelWoodFrame"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "LHF"
+        },
+        {
+          "columnName": "BomPartDescription",
+          "value": "High flip lift wood frame"
+        },
+        {
+          "columnName": "PartGroup",
+          "value": "Fliplift"
+        },
+        {
+          "columnName": "OpeningDirection",
+          "value": "Up"
+        },
+        {
+          "columnName": "EdgeTypeNecessary",
+          "value": "false"
+        },
+        {
+          "columnName": "BomArticleGroup",
+          "value": "Front"
+        },
+        {
+          "columnName": "ColorIdParent",
+          "value": "All"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_FlipliftPanelWoodFrame"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "UF"
+        },
+        {
+          "columnName": "BomPartDescription",
+          "value": "Upwards opening flap wood frame"
+        },
+        {
+          "columnName": "PartGroup",
+          "value": "Fliplift"
+        },
+        {
+          "columnName": "OpeningDirection",
+          "value": "Up"
+        },
+        {
+          "columnName": "EdgeTypeNecessary",
+          "value": "false"
+        },
+        {
+          "columnName": "BomArticleGroup",
+          "value": "Front"
+        },
+        {
+          "columnName": "ColorIdParent",
+          "value": "All"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_FlipliftPanelWoodFrame"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "DF"
+        },
+        {
+          "columnName": "BomPartDescription",
+          "value": "Downwards opening flap wood frame"
+        },
+        {
+          "columnName": "PartGroup",
+          "value": "Fliplift"
+        },
+        {
+          "columnName": "OpeningDirection",
+          "value": "Down"
+        },
+        {
+          "columnName": "EdgeTypeNecessary",
+          "value": "false"
+        },
+        {
+          "columnName": "BomArticleGroup",
+          "value": "Front"
+        },
+        {
+          "columnName": "ColorIdParent",
+          "value": "All"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_Fixedfront"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "BomPartDescription",
+          "value": "Fixedfront"
+        },
+        {
+          "columnName": "PartGroup",
+          "value": "Fixedfront"
+        },
+        {
+          "columnName": "OpeningDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "EdgeTypeNecessary",
+          "value": "false"
+        },
+        {
+          "columnName": "BomArticleGroup",
+          "value": "Front"
+        },
+        {
+          "columnName": "ColorIdParent",
+          "value": "All"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_FixedfrontPanelWoodFrame"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "BomPartDescription",
+          "value": "Fixedfront"
+        },
+        {
+          "columnName": "PartGroup",
+          "value": "Fixedfront"
+        },
+        {
+          "columnName": "OpeningDirection",
+          "value": "Front"
+        },
+        {
+          "columnName": "EdgeTypeNecessary",
+          "value": "false"
+        },
+        {
+          "columnName": "BomArticleGroup",
+          "value": "Front"
+        },
+        {
+          "columnName": "ColorIdParent",
+          "value": "All"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_Heatshelf"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "BomPartDescription",
+          "value": "Heatshelf"
+        },
+        {
+          "columnName": "PartGroup",
+          "value": "Shelves"
+        },
+        {
+          "columnName": "OpeningDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "EdgeTypeNecessary",
+          "value": "true"
+        },
+        {
+          "columnName": "BomArticleGroup",
+          "value": "Carcase"
+        },
+        {
+          "columnName": "ColorIdParent",
+          "value": "All"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_HeatshelfFront"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "BomPartDescription",
+          "value": "Heatshelf front"
+        },
+        {
+          "columnName": "PartGroup",
+          "value": "RailVertical"
+        },
+        {
+          "columnName": "OpeningDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "EdgeTypeNecessary",
+          "value": "true"
+        },
+        {
+          "columnName": "BomArticleGroup",
+          "value": "Carcase"
+        },
+        {
+          "columnName": "ColorIdParent",
+          "value": "All"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_Panelblind"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "BomPartDescription",
+          "value": "Blind panel"
+        },
+        {
+          "columnName": "PartGroup",
+          "value": "RailVertical"
+        },
+        {
+          "columnName": "OpeningDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "EdgeTypeNecessary",
+          "value": "true"
+        },
+        {
+          "columnName": "BomArticleGroup",
+          "value": "Carcase"
+        },
+        {
+          "columnName": "ColorIdParent",
+          "value": "All"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_SlopedCeilingShelftopHor"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "BomPartDescription",
+          "value": "Sloped Ceiling Top Shelf Horizontal"
+        },
+        {
+          "columnName": "PartGroup",
+          "value": "Shelves"
+        },
+        {
+          "columnName": "OpeningDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "EdgeTypeNecessary",
+          "value": "true"
+        },
+        {
+          "columnName": "BomArticleGroup",
+          "value": "Carcase"
+        },
+        {
+          "columnName": "ColorIdParent",
+          "value": "All"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_SlopedCeilingShelftopAngle"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "BomPartDescription",
+          "value": "Sloped Ceiling Top Shelf Angled"
+        },
+        {
+          "columnName": "PartGroup",
+          "value": "Shelves"
+        },
+        {
+          "columnName": "OpeningDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "EdgeTypeNecessary",
+          "value": "true"
+        },
+        {
+          "columnName": "BomArticleGroup",
+          "value": "Carcase"
+        },
+        {
+          "columnName": "ColorIdParent",
+          "value": "All"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_Filler"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "BomPartDescription",
+          "value": "Filler front"
+        },
+        {
+          "columnName": "PartGroup",
+          "value": "Filler"
+        },
+        {
+          "columnName": "OpeningDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "EdgeTypeNecessary",
+          "value": "false"
+        },
+        {
+          "columnName": "BomArticleGroup",
+          "value": "Front"
+        },
+        {
+          "columnName": "ColorIdParent",
+          "value": "All"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_DishwasherPanel"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "BomPartDescription",
+          "value": "Dish washer panel"
+        },
+        {
+          "columnName": "PartGroup",
+          "value": "Dishwasher"
+        },
+        {
+          "columnName": "OpeningDirection",
+          "value": "Down"
+        },
+        {
+          "columnName": "EdgeTypeNecessary",
+          "value": "false"
+        },
+        {
+          "columnName": "BomArticleGroup",
+          "value": "Front"
+        },
+        {
+          "columnName": "ColorIdParent",
+          "value": "All"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_DishwasherPanelWoodFrame"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "BomPartDescription",
+          "value": "Dish washer panel wood frame"
+        },
+        {
+          "columnName": "PartGroup",
+          "value": "Dishwasher"
+        },
+        {
+          "columnName": "OpeningDirection",
+          "value": "Down"
+        },
+        {
+          "columnName": "EdgeTypeNecessary",
+          "value": "false"
+        },
+        {
+          "columnName": "BomArticleGroup",
+          "value": "Front"
+        },
+        {
+          "columnName": "ColorIdParent",
+          "value": "All"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_Paneltop"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "BomPartDescription",
+          "value": "Paneltop"
+        },
+        {
+          "columnName": "PartGroup",
+          "value": "Paneltop"
+        },
+        {
+          "columnName": "OpeningDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "EdgeTypeNecessary",
+          "value": "false"
+        },
+        {
+          "columnName": "BomArticleGroup",
+          "value": "Countertop"
+        },
+        {
+          "columnName": "ColorIdParent",
+          "value": "All"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_Pullout"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "BomPartDescription",
+          "value": "Pullout"
+        },
+        {
+          "columnName": "PartGroup",
+          "value": "Pullout"
+        },
+        {
+          "columnName": "OpeningDirection",
+          "value": "Front"
+        },
+        {
+          "columnName": "EdgeTypeNecessary",
+          "value": "false"
+        },
+        {
+          "columnName": "BomArticleGroup",
+          "value": "Front"
+        },
+        {
+          "columnName": "ColorIdParent",
+          "value": "All"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_BaseunitFridgePanel"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "Left"
+        },
+        {
+          "columnName": "BomPartDescription",
+          "value": "Left door baseunit fridge panel"
+        },
+        {
+          "columnName": "PartGroup",
+          "value": "Door"
+        },
+        {
+          "columnName": "OpeningDirection",
+          "value": "Left"
+        },
+        {
+          "columnName": "EdgeTypeNecessary",
+          "value": "false"
+        },
+        {
+          "columnName": "BomArticleGroup",
+          "value": "Front"
+        },
+        {
+          "columnName": "ColorIdParent",
+          "value": "All"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_BaseunitFridgePanel"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "Right"
+        },
+        {
+          "columnName": "BomPartDescription",
+          "value": "Right door baseunit fridge panel"
+        },
+        {
+          "columnName": "PartGroup",
+          "value": "Door"
+        },
+        {
+          "columnName": "OpeningDirection",
+          "value": "Right"
+        },
+        {
+          "columnName": "EdgeTypeNecessary",
+          "value": "false"
+        },
+        {
+          "columnName": "BomArticleGroup",
+          "value": "Front"
+        },
+        {
+          "columnName": "ColorIdParent",
+          "value": "All"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_BaseunitFridgePanelWoodFrame"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "Left"
+        },
+        {
+          "columnName": "BomPartDescription",
+          "value": "Left door baseunit fridge wood panel"
+        },
+        {
+          "columnName": "PartGroup",
+          "value": "Door"
+        },
+        {
+          "columnName": "OpeningDirection",
+          "value": "Left"
+        },
+        {
+          "columnName": "EdgeTypeNecessary",
+          "value": "false"
+        },
+        {
+          "columnName": "BomArticleGroup",
+          "value": "Front"
+        },
+        {
+          "columnName": "ColorIdParent",
+          "value": "All"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_BaseunitFridgePanelWoodFrame"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "Right"
+        },
+        {
+          "columnName": "BomPartDescription",
+          "value": "Right door baseunit fridge wood panel"
+        },
+        {
+          "columnName": "PartGroup",
+          "value": "Door"
+        },
+        {
+          "columnName": "OpeningDirection",
+          "value": "Right"
+        },
+        {
+          "columnName": "EdgeTypeNecessary",
+          "value": "false"
+        },
+        {
+          "columnName": "BomArticleGroup",
+          "value": "Front"
+        },
+        {
+          "columnName": "ColorIdParent",
+          "value": "All"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_Baseboard"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "BomPartDescription",
+          "value": "Baseboard"
+        },
+        {
+          "columnName": "PartGroup",
+          "value": "Shelves"
+        },
+        {
+          "columnName": "OpeningDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "EdgeTypeNecessary",
+          "value": "false"
+        },
+        {
+          "columnName": "BomArticleGroup",
+          "value": "Toekick"
+        },
+        {
+          "columnName": "ColorIdParent",
+          "value": "All"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_PantryPullout"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "BomPartDescription",
+          "value": "Pantry pullout"
+        },
+        {
+          "columnName": "PartGroup",
+          "value": "Pullout"
+        },
+        {
+          "columnName": "OpeningDirection",
+          "value": "Front"
+        },
+        {
+          "columnName": "EdgeTypeNecessary",
+          "value": "false"
+        },
+        {
+          "columnName": "BomArticleGroup",
+          "value": "Front"
+        },
+        {
+          "columnName": "ColorIdParent",
+          "value": "All"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_ClothingOrganizerBoard"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "BomPartDescription",
+          "value": "Clothing storage board"
+        },
+        {
+          "columnName": "PartGroup",
+          "value": "ClothingShelf"
+        },
+        {
+          "columnName": "OpeningDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "EdgeTypeNecessary",
+          "value": "false"
+        },
+        {
+          "columnName": "BomArticleGroup",
+          "value": "Carcase"
+        },
+        {
+          "columnName": "ColorIdParent",
+          "value": "All"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_FillerHardware"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "BomPartDescription",
+          "value": "Filler Hardware"
+        },
+        {
+          "columnName": "PartGroup",
+          "value": "Filler"
+        },
+        {
+          "columnName": "OpeningDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "EdgeTypeNecessary",
+          "value": "false"
+        },
+        {
+          "columnName": "BomArticleGroup",
+          "value": "Fitting"
+        },
+        {
+          "columnName": "ColorIdParent",
+          "value": "All"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_DrawerBoxBom"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "BomPartDescription",
+          "value": "DrawerBox"
+        },
+        {
+          "columnName": "PartGroup",
+          "value": "Drawer"
+        },
+        {
+          "columnName": "OpeningDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "EdgeTypeNecessary",
+          "value": "false"
+        },
+        {
+          "columnName": "BomArticleGroup",
+          "value": "Fitting"
+        },
+        {
+          "columnName": "ColorIdParent",
+          "value": "All"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_FlipliftHardwareBom"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "BomPartDescription",
+          "value": "Fliplift"
+        },
+        {
+          "columnName": "PartGroup",
+          "value": "Fliplift"
+        },
+        {
+          "columnName": "OpeningDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "EdgeTypeNecessary",
+          "value": "false"
+        },
+        {
+          "columnName": "BomArticleGroup",
+          "value": "Fitting"
+        },
+        {
+          "columnName": "ColorIdParent",
+          "value": "All"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_PantryPulloutBom"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "BomPartDescription",
+          "value": "Pantry pullout"
+        },
+        {
+          "columnName": "PartGroup",
+          "value": "Pullout"
+        },
+        {
+          "columnName": "OpeningDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "EdgeTypeNecessary",
+          "value": "false"
+        },
+        {
+          "columnName": "BomArticleGroup",
+          "value": "Fitting"
+        },
+        {
+          "columnName": "ColorIdParent",
+          "value": "All"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_PulloutHardware"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "BomPartDescription",
+          "value": "Pullout"
+        },
+        {
+          "columnName": "PartGroup",
+          "value": "Pullout"
+        },
+        {
+          "columnName": "OpeningDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "EdgeTypeNecessary",
+          "value": "false"
+        },
+        {
+          "columnName": "BomArticleGroup",
+          "value": "Fitting"
+        },
+        {
+          "columnName": "ColorIdParent",
+          "value": "All"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_ClothingOrganizerBOM"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "BomPartDescription",
+          "value": "Clothing organizer"
+        },
+        {
+          "columnName": "PartGroup",
+          "value": "Clothing organizer"
+        },
+        {
+          "columnName": "OpeningDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "EdgeTypeNecessary",
+          "value": "false"
+        },
+        {
+          "columnName": "BomArticleGroup",
+          "value": "Fitting"
+        },
+        {
+          "columnName": "ColorIdParent",
+          "value": "All"
+        }
+      ]
+    }
+  ]
+}
