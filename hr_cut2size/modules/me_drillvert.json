@@ -1,0 +1,107 @@
+{
+  "moduleId": "me_DrillVert",
+  "shortName": "Vertical drills",
+  "configurable": true,
+  "isRoot": false,
+  "isConfigDummy": false,
+  "description": "Module for the vertical drills",
+  "groupName": "Processing",
+  "imageId": "67ea71e6-ac32-485b-92f6-41d53f37dce2:DrillVert.jpg",
+  "restrictionTypeId": "Public",
+  "childModules": [
+    {
+      "moduleId": "mc_DrillVert"
+    }
+  ],
+  "assignedVariants": [
+    {
+      "variantId": "mod_Diameter",
+      "previewValue": "5",
+      "origin": "Required"
+    },
+    {
+      "variantId": "mod_DrillDepth",
+      "previewValue": "11",
+      "origin": "Required"
+    },
+    {
+      "variantId": "mod_DrillingDistance",
+      "previewValue": "32",
+      "origin": "Required"
+    },
+    {
+      "variantId": "mod_DrillinglineLength",
+      "previewValue": "320",
+      "origin": "Required"
+    },
+    {
+      "variantId": "mod_DrillinglineLogic",
+      "default": "DrillingLength",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_DrillQty",
+      "previewValue": "0",
+      "origin": "Required"
+    },
+    {
+      "variantId": "mod_DrillSide",
+      "default": "Top",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_Length",
+      "previewValue": "1000",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_PositionX",
+      "previewValue": "10",
+      "origin": "Required"
+    },
+    {
+      "variantId": "mod_PositionY",
+      "previewValue": "10",
+      "origin": "Required"
+    },
+    {
+      "variantId": "mod_ProcessingBasePoint",
+      "default": "LeftBtm",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_ProcessingOrientation",
+      "previewValue": "Along",
+      "origin": "Required"
+    },
+    {
+      "variantId": "mod_Thickness",
+      "previewValue": "19",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_TypeElement",
+      "previewValue": "Shelves",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_Width",
+      "previewValue": "500",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_DrillEntireThk",
+      "default": "false",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_DrillVertDescriptor",
+      "default": "",
+      "previewValue": "",
+      "origin": "Default"
+    }
+  ],
+  "assignedParts": [],
+  "assignedCustomTables": [],
+  "assignedFunctions": []
+}
