@@ -1,0 +1,72 @@
+{
+  "variantId": "mod_TypeElement",
+  "shortName": "Type element",
+  "variantTypeId": "Text",
+  "description": "Defines the element type of the part",
+  "restrictionTypeId": "Public",
+  "groupName": "Global",
+  "imageId": "40de93e2-3943-45ba-8a98-964a0803b045:TypeElement.jpg",
+  "isArray": false,
+  "isPosRelevant": true,
+  "mainAttr": false,
+  "userRight": "Master",
+  "implicitRelevant": false,
+  "matrix": [
+    {
+      "id": "PartView",
+      "type": "Text",
+      "shortName": "View of the part",
+      "default": "FrontView"
+    }
+  ],
+  "selections": [
+    {
+      "value": "Sides",
+      "description": "Sides",
+      "shortName": "Sides",
+      "imageId": "25e0651f-ad02-4351-a1c6-dbe9977336c6:Sides.jpg",
+      "matrix": [
+        {
+          "id": "PartView",
+          "value": "SideView"
+        }
+      ]
+    },
+    {
+      "value": "Shelves",
+      "description": "Shelves",
+      "shortName": "Shelves",
+      "imageId": "85d67a57-c1fb-4ea1-9af4-da4c4af28473:Shelves.jpg",
+      "matrix": [
+        {
+          "id": "PartView",
+          "value": "ShelfView"
+        }
+      ]
+    },
+    {
+      "value": "Backwalls",
+      "description": "Backwalls",
+      "shortName": "Backwalls",
+      "imageId": "ab0a511d-d483-4d60-aa09-a3adccd5beef:Backwalls.jpg",
+      "matrix": [
+        {
+          "id": "PartView",
+          "value": "FrontView"
+        }
+      ]
+    },
+    {
+      "value": "Fronts",
+      "description": "Fronts",
+      "shortName": "Fronts",
+      "imageId": "cbf56637-0eba-4a7a-bd3e-e42c790f2cfc:Fronts.jpg",
+      "matrix": [
+        {
+          "id": "PartView",
+          "value": "FrontView"
+        }
+      ]
+    }
+  ]
+}

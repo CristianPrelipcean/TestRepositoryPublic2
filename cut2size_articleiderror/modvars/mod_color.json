@@ -1,0 +1,853 @@
+{
+  "variantId": "mod_Color",
+  "shortName": "Decor",
+  "variantTypeId": "Text",
+  "description": "Color of the panels",
+  "restrictionTypeId": "Public",
+  "groupName": "Global",
+  "imageId": "b20c79f3-c7e0-41d3-98b2-953a3548b472:mod_Color.jpg",
+  "isArray": false,
+  "isPosRelevant": true,
+  "mainAttr": true,
+  "userRight": "Simple",
+  "implicitRelevant": false,
+  "posView": "ImageList",
+  "matrix": [
+    {
+      "id": "GrainGroupId",
+      "type": "Text",
+      "shortName": "Grain",
+      "default": "NoGrain"
+    }
+  ],
+  "selections": [
+    {
+      "value": "MDF",
+      "description": "MDF board",
+      "shortName": "MDF board",
+      "imageId": "9d93c0d9-a6e2-4eee-aa04-ac8a3372bbf4:MDF_P.png",
+      "matrix": [
+        {
+          "id": "GrainGroupId",
+          "value": "NoGrain"
+        }
+      ]
+    },
+    {
+      "value": "FPY",
+      "description": "Chip board",
+      "shortName": "Chip board",
+      "imageId": "79334dbe-94e3-4a05-bf18-a4a920dab69a:CB.png",
+      "matrix": [
+        {
+          "id": "GrainGroupId",
+          "value": "NoGrain"
+        }
+      ]
+    },
+    {
+      "value": "Acryl",
+      "description": "Acryl glass",
+      "shortName": "Acryl glass",
+      "imageId": "588c0cf8-cc71-42e6-b3ad-043be215fde6:SatinGlass.jpg",
+      "matrix": [
+        {
+          "id": "GrainGroupId",
+          "value": "NoGrain"
+        }
+      ]
+    },
+    {
+      "value": "egger_f186_st9",
+      "description": "Egger: Light Grey Chicago Concrete (F186 ST9)",
+      "shortName": "Light Grey Chicago Concrete (F186 ST9)",
+      "imageId": "502d849f-355f-4f3d-b7c5-5a09b446bebf:egger_f186_st9.png",
+      "matrix": [
+        {
+          "id": "GrainGroupId",
+          "value": "Grain"
+        }
+      ]
+    },
+    {
+      "value": "egger_f235_st76",
+      "description": "Egger: Scivaro Slate (F235 ST76)",
+      "shortName": "Scivaro Slate (F235 ST76)",
+      "imageId": "c87f8b31-0702-444e-9633-f8d45be3747a:egger_f235_st76.png",
+      "matrix": [
+        {
+          "id": "GrainGroupId",
+          "value": "Grain"
+        }
+      ]
+    },
+    {
+      "value": "egger_f244_st76",
+      "description": "Egger: Anthracite Candela Marble (F244 ST76)",
+      "shortName": "Anthracite Candela Marble (F244 ST76)",
+      "imageId": "11682201-bbfb-4171-b83b-6b87b7f2994b:egger_f244_st76.png",
+      "matrix": [
+        {
+          "id": "GrainGroupId",
+          "value": "Grain"
+        }
+      ]
+    },
+    {
+      "value": "egger_f800_st9",
+      "description": "Egger: Crystal Marble (F800 ST9)",
+      "shortName": "Crystal Marble (F800 ST9)",
+      "imageId": "b9ba1dd8-cc9c-47ed-9fa3-e3b180ab6f4e:egger_f800_st9.png",
+      "matrix": [
+        {
+          "id": "GrainGroupId",
+          "value": "Grain"
+        }
+      ]
+    },
+    {
+      "value": "egger_h1199_st12",
+      "description": "Egger: Black-Brown Thermo Oak (H1199 ST12)",
+      "shortName": "Black-Brown Thermo Oak (H1199 ST12)",
+      "imageId": "a164899c-73f6-4469-8245-11ed7a14a9c7:egger_h1199_st12.png",
+      "matrix": [
+        {
+          "id": "GrainGroupId",
+          "value": "Grain"
+        }
+      ]
+    },
+    {
+      "value": "egger_h1715_st12",
+      "description": "Egger: Parona Walnut (H1715 ST12)",
+      "shortName": "Parona Walnut (H1715 ST12)",
+      "imageId": "1cebb5a3-fe9e-48b9-9dd9-24899beb8e58:egger_h1715_st12.png",
+      "matrix": [
+        {
+          "id": "GrainGroupId",
+          "value": "Grain"
+        }
+      ]
+    },
+    {
+      "value": "egger_h2033_st10",
+      "description": "Egger: Dark Hunton Oak (H2033 ST10)",
+      "shortName": "Dark Hunton Oak (H2033 ST10)",
+      "imageId": "9d27b657-f5a1-4e2e-a8cd-3d2955932af6:egger_h2033_st10.png",
+      "matrix": [
+        {
+          "id": "GrainGroupId",
+          "value": "Grain"
+        }
+      ]
+    },
+    {
+      "value": "egger_h3190_st19",
+      "description": "Egger: Anthracite Fineline Metallic (H3190 ST19)",
+      "shortName": "Anthracite Fineline Metallic (H3190 ST19)",
+      "imageId": "9e6432c1-1ac0-450d-be63-44b0c1733000:egger_h3190_st19.png",
+      "matrix": [
+        {
+          "id": "GrainGroupId",
+          "value": "Grain"
+        }
+      ]
+    },
+    {
+      "value": "egger_h3734_st9",
+      "description": "Egger: Natural Dijon Walnut (H3734 ST9)",
+      "shortName": "Natural Dijon Walnut (H3734 ST9)",
+      "imageId": "fa44688b-0dea-430a-b6c9-660f370d3b05:egger_h3734_st9.png",
+      "matrix": [
+        {
+          "id": "GrainGroupId",
+          "value": "Grain"
+        }
+      ]
+    },
+    {
+      "value": "egger_h3860_st9",
+      "description": "Egger: Champagne Hard Maple (H3860 ST9)",
+      "shortName": "Champagne Hard Maple (H3860 ST9)",
+      "imageId": "9b5fac0f-274f-49ae-b0c8-6b71dfc77ea3:egger_h3860_st9.png",
+      "matrix": [
+        {
+          "id": "GrainGroupId",
+          "value": "Grain"
+        }
+      ]
+    },
+    {
+      "value": "egger_u502_st9",
+      "description": "Egger: Misty Blue (U502 ST9)",
+      "shortName": "Misty Blue (U502 ST9)",
+      "imageId": "3c9569b9-6cea-4740-b8ed-55f27fa3f363:egger_u502_st9.png",
+      "matrix": [
+        {
+          "id": "GrainGroupId",
+          "value": "NoGrain"
+        }
+      ]
+    },
+    {
+      "value": "egger_u575_st9",
+      "description": "Egger: Cosmos Blue (U575 ST9)",
+      "shortName": "Cosmos Blue (U575 ST9)",
+      "imageId": "04badfbe-cb8b-402f-b09f-3266b23992a8:egger_u575_st9.png",
+      "matrix": [
+        {
+          "id": "GrainGroupId",
+          "value": "NoGrain"
+        }
+      ]
+    },
+    {
+      "value": "egger_u640_st9",
+      "description": "Egger: Olive Green (U640 ST9)",
+      "shortName": "Olive Green (U640 ST9)",
+      "imageId": "ee10cdd6-bcd5-4f44-a0c7-76f2b6cdda89:egger_u640_st9.png",
+      "matrix": [
+        {
+          "id": "GrainGroupId",
+          "value": "NoGrain"
+        }
+      ]
+    },
+    {
+      "value": "egger_u645_st9",
+      "description": "Egger: Agave Green (U645 ST9)",
+      "shortName": "Agave Green (U645 ST9)",
+      "imageId": "720c3b21-0223-42fb-a9b9-94ace28cf8fe:egger_u645_st9.png",
+      "matrix": [
+        {
+          "id": "GrainGroupId",
+          "value": "NoGrain"
+        }
+      ]
+    },
+    {
+      "value": "egger_u708_pg",
+      "description": "Egger: Light Grey (U708 PG)",
+      "shortName": "Light Grey (U708 PG)",
+      "imageId": "0e7265db-2f4f-47f6-9b73-286b09582fac:egger_u708_pg.png",
+      "matrix": [
+        {
+          "id": "GrainGroupId",
+          "value": "NoGrain"
+        }
+      ]
+    },
+    {
+      "value": "egger_u708_pm",
+      "description": "Egger: Light Grey (U708 PM)",
+      "shortName": "Light Grey (U708 PM)",
+      "imageId": "123aae89-d5d6-467e-bbf1-8c278c192cdc:egger_u708_pm.png",
+      "matrix": [
+        {
+          "id": "GrainGroupId",
+          "value": "NoGrain"
+        }
+      ]
+    },
+    {
+      "value": "egger_u708_st9",
+      "description": "Egger: Light Grey (U708 ST9)",
+      "shortName": "Light Grey (U708 ST9)",
+      "imageId": "07c2f3a9-99ac-4f57-903a-0258c00751d3:egger_u708_st9.png",
+      "matrix": [
+        {
+          "id": "GrainGroupId",
+          "value": "NoGrain"
+        }
+      ]
+    },
+    {
+      "value": "egger_u999_st12",
+      "description": "Egger: Black (U999 ST12)",
+      "shortName": "Black (U999 ST12)",
+      "imageId": "11c2bd94-2c33-4570-b4c0-6ad13fdcd4eb:egger_u999_st12.png",
+      "matrix": [
+        {
+          "id": "GrainGroupId",
+          "value": "NoGrain"
+        }
+      ]
+    },
+    {
+      "value": "egger_u999_st19",
+      "description": "Egger: Black (U999 ST19)",
+      "shortName": "Black (U999 ST19)",
+      "imageId": "0a64706a-2d7f-4d01-8748-3c457634ee7c:egger_u999_st19.png",
+      "matrix": [
+        {
+          "id": "GrainGroupId",
+          "value": "NoGrain"
+        }
+      ]
+    },
+    {
+      "value": "egger_u999_st20",
+      "description": "Egger: Black (U999 ST20)",
+      "shortName": "Black (U999 ST20)",
+      "imageId": "bc1962de-60c7-4902-b83c-e2a2f1056501:egger_u999_st20.png",
+      "matrix": [
+        {
+          "id": "GrainGroupId",
+          "value": "NoGrain"
+        }
+      ]
+    },
+    {
+      "value": "egger_u999_st7",
+      "description": "Egger: Black (U999 ST7)",
+      "shortName": "Black (U999 ST7)",
+      "imageId": "8624fc5a-890c-4d59-9224-ef5fd8e1db2e:egger_u999_st7.png",
+      "matrix": [
+        {
+          "id": "GrainGroupId",
+          "value": "NoGrain"
+        }
+      ]
+    },
+    {
+      "value": "egger_w1000_pm",
+      "description": "Egger: Premium White (W1000 PM)",
+      "shortName": "Premium White (W1000 PM)",
+      "imageId": "c6415594-77ff-4895-b256-645a162188c4:egger_w1000_pm.png",
+      "matrix": [
+        {
+          "id": "GrainGroupId",
+          "value": "NoGrain"
+        }
+      ]
+    },
+    {
+      "value": "egger_w1000_st19",
+      "description": "Egger: Premium White (W1000 ST19)",
+      "shortName": "Premium White (W1000 ST19)",
+      "imageId": "ef5a5a63-f4e1-40b9-82fb-df6e0555ccab:egger_w1000_st19.png",
+      "matrix": [
+        {
+          "id": "GrainGroupId",
+          "value": "NoGrain"
+        }
+      ]
+    },
+    {
+      "value": "egger_w1000_st38",
+      "description": "Egger: Premium White (W1000 ST38)",
+      "shortName": "Premium White (W1000 ST38)",
+      "imageId": "f66e15b6-19d7-4f88-a82c-174b1b36a0a0:egger_w1000_st38.png",
+      "matrix": [
+        {
+          "id": "GrainGroupId",
+          "value": "NoGrain"
+        }
+      ]
+    },
+    {
+      "value": "egger_w1000_st9",
+      "description": "Egger: Premium White (W1000 ST9)",
+      "shortName": "Premium White (W1000 ST9)",
+      "imageId": "46750be4-a276-460a-9655-8e5c7cd6f1fc:egger_w1000_st9.png",
+      "matrix": [
+        {
+          "id": "GrainGroupId",
+          "value": "NoGrain"
+        }
+      ]
+    },
+    {
+      "value": "egger_w980_sm",
+      "description": "Egger: Platinum White (W980 SM)",
+      "shortName": "Platinum White (W980 SM)",
+      "imageId": "a4178218-626b-4720-8f2d-8239683bfbc0:egger_w980_sm.png",
+      "matrix": [
+        {
+          "id": "GrainGroupId",
+          "value": "NoGrain"
+        }
+      ]
+    },
+    {
+      "value": "egger_w980_st7",
+      "description": "Egger: Platinum White (W980 ST7)",
+      "shortName": "Platinum White (W980 ST7)",
+      "imageId": "be0e6b63-11a6-4110-a77a-e9cd287b8653:egger_w980_st7.png",
+      "matrix": [
+        {
+          "id": "GrainGroupId",
+          "value": "NoGrain"
+        }
+      ]
+    },
+    {
+      "value": "kronospan_0112_pe",
+      "description": "Kronospan: Stone Grey (0112 PE)",
+      "shortName": "Stone Grey (0112 PE)",
+      "imageId": "ee748b17-aff7-41d5-a53a-ad7c4f5dff25:kronospan_0112_pe.png",
+      "matrix": [
+        {
+          "id": "GrainGroupId",
+          "value": "NoGrain"
+        }
+      ]
+    },
+    {
+      "value": "kronospan_0125_bs",
+      "description": "Kronospan: Royal Blue (0125 BS)",
+      "shortName": "Royal Blue (0125 BS)",
+      "imageId": "5e75e020-af64-42dc-a083-c9bb2de360b9:kronospan_0125_bs.png",
+      "matrix": [
+        {
+          "id": "GrainGroupId",
+          "value": "NoGrain"
+        }
+      ]
+    },
+    {
+      "value": "kronospan_0164_pd",
+      "description": "Kronospan: Anthracite (0164 PD)",
+      "shortName": "Anthracite (0164 PD)",
+      "imageId": "85a63658-17eb-41ac-a415-ee61f10fb6e4:kronospan_0164_pd.png",
+      "matrix": [
+        {
+          "id": "GrainGroupId",
+          "value": "NoGrain"
+        }
+      ]
+    },
+    {
+      "value": "kronospan_0164_pe",
+      "description": "Kronospan: Anthracite (0164 PE)",
+      "shortName": "Anthracite (0164 PE)",
+      "imageId": "3da41fb6-ec25-4905-8bf1-7f5580fd38a4:kronospan_0164_pe.png",
+      "matrix": [
+        {
+          "id": "GrainGroupId",
+          "value": "NoGrain"
+        }
+      ]
+    },
+    {
+      "value": "kronospan_0244_su",
+      "description": "Kronospan: Petrol (0244 SU)",
+      "shortName": "Petrol (0244 SU)",
+      "imageId": "4afd9684-5be2-4ee6-b653-d90609baa311:kronospan_0244_su.png",
+      "matrix": [
+        {
+          "id": "GrainGroupId",
+          "value": "NoGrain"
+        }
+      ]
+    },
+    {
+      "value": "kronospan_0375_bs",
+      "description": "Kronospan: Maple (0375 BS)",
+      "shortName": "Maple (0375 BS)",
+      "imageId": "ff7c9bd6-a4ce-4f0a-aadb-aa0245f1599c:kronospan_0375_bs.png",
+      "matrix": [
+        {
+          "id": "GrainGroupId",
+          "value": "Grain"
+        }
+      ]
+    },
+    {
+      "value": "kronospan_0854_bs",
+      "description": "Kronospan: Wenge (0854 BS)",
+      "shortName": "Wenge (0854 BS)",
+      "imageId": "3fc0ab4e-aa5c-46c0-9766-16c3098b6db2:kronospan_0854_bs.png",
+      "matrix": [
+        {
+          "id": "GrainGroupId",
+          "value": "Grain"
+        }
+      ]
+    },
+    {
+      "value": "kronospan_4299_su",
+      "description": "Kronospan: Dark Atelier (4299 SU)",
+      "shortName": "Dark Atelier (4299 SU)",
+      "imageId": "4829299d-9cc4-447e-b78f-ff59cd7141e2:kronospan_4299_su.png",
+      "matrix": [
+        {
+          "id": "GrainGroupId",
+          "value": "Grain"
+        }
+      ]
+    },
+    {
+      "value": "kronospan_8685_pd",
+      "description": "Kronospan: Snow White (8685 PD)",
+      "shortName": "Snow White (8685 PD)",
+      "imageId": "86eecf8e-260b-40d1-b8ac-128a6b6a1072:kronospan_8685_pd.png",
+      "matrix": [
+        {
+          "id": "GrainGroupId",
+          "value": "NoGrain"
+        }
+      ]
+    },
+    {
+      "value": "kronospan_8953_su",
+      "description": "Kronospan: Tiepolo Walnut (8953 SU)",
+      "shortName": "Tiepolo Walnut (8953 SU)",
+      "imageId": "9b8b619e-25ab-4ab8-b695-6f6980a22c00:kronospan_8953_su.png",
+      "matrix": [
+        {
+          "id": "GrainGroupId",
+          "value": "Grain"
+        }
+      ]
+    },
+    {
+      "value": "kronospan_k016_su",
+      "description": "Kronospan: Carbon Marine Wood (K016 SU)",
+      "shortName": "Carbon Marine Wood (K016 SU)",
+      "imageId": "5d55026b-c2e5-4175-8771-e4060b794ed2:kronospan_k016_su.png",
+      "matrix": [
+        {
+          "id": "GrainGroupId",
+          "value": "Grain"
+        }
+      ]
+    },
+    {
+      "value": "kronospan_k023_bs",
+      "description": "Kronospan: Venato (K023 BS)",
+      "shortName": "Venato (K023 BS)",
+      "imageId": "8669b97f-1bea-4092-ba77-c6fcee285947:kronospan_k023_bs.png",
+      "matrix": [
+        {
+          "id": "GrainGroupId",
+          "value": "Grain"
+        }
+      ]
+    },
+    {
+      "value": "kronospan_k098_su",
+      "description": "Kronospan: Ceramic Red (K098 SU)",
+      "shortName": "Ceramic Red (K098 SU)",
+      "imageId": "4cfbca13-784f-4402-9254-71034d8af944:kronospan_k098_su.png",
+      "matrix": [
+        {
+          "id": "GrainGroupId",
+          "value": "NoGrain"
+        }
+      ]
+    },
+    {
+      "value": "kronospan_k350_rt",
+      "description": "Kronospan: Concrete Flow (K350 RT)",
+      "shortName": "Concrete Flow (K350 RT)",
+      "imageId": "aeb88f41-c85d-4c63-8b84-111be245abe0:kronospan_k350_rt.png",
+      "matrix": [
+        {
+          "id": "GrainGroupId",
+          "value": "Grain"
+        }
+      ]
+    },
+    {
+      "value": "kronospan_k351_rt",
+      "description": "Kronospan: Rusty Flow (K351 RT)",
+      "shortName": "Rusty Flow (K351 RT)",
+      "imageId": "5862d74e-22f4-4377-90a7-87007396b450:kronospan_k351_rt.png",
+      "matrix": [
+        {
+          "id": "GrainGroupId",
+          "value": "Grain"
+        }
+      ]
+    },
+    {
+      "value": "kronospan_k353_bs",
+      "description": "Kronospan: Charcoal Flow (K353 BS)",
+      "shortName": "Charcoal Flow (K353 BS)",
+      "imageId": "da88dbcf-24f2-4cb2-a63e-e3e50cb77be1:kronospan_k353_bs.png",
+      "matrix": [
+        {
+          "id": "GrainGroupId",
+          "value": "Grain"
+        }
+      ]
+    },
+    {
+      "value": "kronospan_k366_pw",
+      "description": "Kronospan: Fossil Evoke Oak (K366 PW)",
+      "shortName": "Fossil Evoke Oak (K366 PW)",
+      "imageId": "a8234dec-424b-4bdd-bc8f-04783fa22dfd:kronospan_k366_pw.png",
+      "matrix": [
+        {
+          "id": "GrainGroupId",
+          "value": "Grain"
+        }
+      ]
+    },
+    {
+      "value": "kronospan_k409_bs",
+      "description": "Kronospan: Black Pietra Marble (K409 BS)",
+      "shortName": "Black Pietra Marble (K409 BS)",
+      "imageId": "92b1228b-e782-439e-bcd8-2ddb424ecd34:kronospan_k409_bs.png",
+      "matrix": [
+        {
+          "id": "GrainGroupId",
+          "value": "Grain"
+        }
+      ]
+    },
+    {
+      "value": "kronospan_k517_su",
+      "description": "Kronospan: Azure Blue (K517 SU)",
+      "shortName": "Azure Blue (K517 SU)",
+      "imageId": "baff416a-05d4-495b-8701-3d82b015a33e:kronospan_k517_su.png",
+      "matrix": [
+        {
+          "id": "GrainGroupId",
+          "value": "NoGrain"
+        }
+      ]
+    },
+    {
+      "value": "kronospan_k530_hu",
+      "description": "Kronospan: Amaretto Hudson Oak (K530 HU)",
+      "shortName": "Amaretto Hudson Oak (K530 HU)",
+      "imageId": "8bc77a59-2525-48c6-97fd-30864b5aff36:kronospan_k530_hu.png",
+      "matrix": [
+        {
+          "id": "GrainGroupId",
+          "value": "Grain"
+        }
+      ]
+    },
+    {
+      "value": "kronospan_k532_ad",
+      "description": "Kronospan: Flamed Arvadonna Chestnut (K532 AD)",
+      "shortName": "Flamed Arvadonna Chestnut (K532 AD)",
+      "imageId": "455afd8f-cd70-4f71-9a85-287ff2326e36:kronospan_k532_ad.png",
+      "matrix": [
+        {
+          "id": "GrainGroupId",
+          "value": "Grain"
+        }
+      ]
+    },
+    {
+      "value": "kronospan_k534_ad",
+      "description": "Kronospan: Charcoal Arvadonna Chestnut (K534 AD)",
+      "shortName": "Charcoal Arvadonna Chestnut (K534 AD)",
+      "imageId": "580b887e-ce04-4a55-a8d8-e1580b4774b1:kronospan_k534_ad.png",
+      "matrix": [
+        {
+          "id": "GrainGroupId",
+          "value": "Grain"
+        }
+      ]
+    },
+    {
+      "value": "kronospan_k682_pd",
+      "description": "Kronospan: Alpaca (K682 PD)",
+      "shortName": "Alpaca (K682 PD)",
+      "imageId": "5e1b2582-b881-46e3-9370-16f8e86a5cff:kronospan_k682_pd.png",
+      "matrix": [
+        {
+          "id": "GrainGroupId",
+          "value": "NoGrain"
+        }
+      ]
+    },
+    {
+      "value": "pfleiderer_f76028_fg",
+      "description": "Pfleiderer: Rabac (F76028 FG)",
+      "shortName": "Rabac (F76028 FG)",
+      "imageId": "77d2a587-375e-4679-b744-a99516201cc8:pfleiderer_f76028_fg.png",
+      "matrix": [
+        {
+          "id": "GrainGroupId",
+          "value": "Grain"
+        }
+      ]
+    },
+    {
+      "value": "pfleiderer_f76110_pa",
+      "description": "Pfleiderer: Kito Bronze (F76110 PA)",
+      "shortName": "Kito Bronze (F76110 PA)",
+      "imageId": "2b8d52e0-b387-474d-b173-cdf1add2e815:pfleiderer_F76110_PA.png",
+      "matrix": [
+        {
+          "id": "GrainGroupId",
+          "value": "Grain"
+        }
+      ]
+    },
+    {
+      "value": "pfleiderer_f76110_sd",
+      "description": "Pfleiderer: Kito Bronze (F76110 SD)",
+      "shortName": "Kito Bronze (F76110 SD)",
+      "imageId": "fba85c8f-ab1d-48c4-b9e4-4cd83931691c:pfleiderer_f76110_sd.png",
+      "matrix": [
+        {
+          "id": "GrainGroupId",
+          "value": "Grain"
+        }
+      ]
+    },
+    {
+      "value": "pfleiderer_r20391_nw",
+      "description": "Pfleiderer: Nutmeg Bijoux Oak (R20391 NW)",
+      "shortName": "Nutmeg Bijoux Oak (R20391 NW)",
+      "imageId": "137b0b81-6c04-4274-b86b-8a1ea2fc4bca:pfleiderer_r20391_nw.png",
+      "matrix": [
+        {
+          "id": "GrainGroupId",
+          "value": "Grain"
+        }
+      ]
+    },
+    {
+      "value": "pfleiderer_r27001_vv",
+      "description": "Pfleiderer: Royal Maple (R27001 VV)",
+      "shortName": "Royal Maple (R27001 VV)",
+      "imageId": "68698509-c6e7-4d76-a238-54d68c94c3ae:pfleiderer_r27001_vv.png",
+      "matrix": [
+        {
+          "id": "GrainGroupId",
+          "value": "Grain"
+        }
+      ]
+    },
+    {
+      "value": "pfleiderer_r50030_fl",
+      "description": "Pfleiderer: Spain Olive Light (R50030 FL)",
+      "shortName": "Spain Olive Light (R50030 FL)",
+      "imageId": "8bc77a59-2525-48c6-97fd-30864b5aff36:kronospan_k530_hu.png",
+      "matrix": [
+        {
+          "id": "GrainGroupId",
+          "value": "Grain"
+        }
+      ]
+    },
+    {
+      "value": "pfleiderer_r55004_du",
+      "description": "Pfleiderer: Ponderosa Pine (R55004 DU)",
+      "shortName": "Ponderosa Pine (R55004 DU)",
+      "imageId": "5722bd5a-2f9a-400d-be5e-1417afd9ab56:pfleiderer_r55004_du.png",
+      "matrix": [
+        {
+          "id": "GrainGroupId",
+          "value": "Grain"
+        }
+      ]
+    },
+    {
+      "value": "pfleiderer_s61045_ca",
+      "description": "Pfleiderer: Elba (S61045 CA)",
+      "shortName": "Elba (S61045 CA)",
+      "imageId": "253147d8-2f9b-47df-b943-13dd603537ac:pfleiderer_S61045_CA.png",
+      "matrix": [
+        {
+          "id": "GrainGroupId",
+          "value": "Grain"
+        }
+      ]
+    },
+    {
+      "value": "pfleiderer_s63068_sm",
+      "description": "Pfleiderer: Caviar Green (S63068 SM)",
+      "shortName": "Caviar Green (S63068 SM)",
+      "imageId": "2d569790-0479-465b-bf5b-1f801c3dd327:pfleiderer_s63068_sm.png",
+      "matrix": [
+        {
+          "id": "GrainGroupId",
+          "value": "Grain"
+        }
+      ]
+    },
+    {
+      "value": "pfleiderer_s63088_ms",
+      "description": "Pfleiderer: Marquina Grey (S63088 MS)",
+      "shortName": "Marquina Grey (S63088 MS)",
+      "imageId": "a0c5f5d5-5d65-4ca3-b737-1fe4fca3ab32:pfleiderer_S63088_MS.png",
+      "matrix": [
+        {
+          "id": "GrainGroupId",
+          "value": "Grain"
+        }
+      ]
+    },
+    {
+      "value": "pfleiderer_u11027_sd",
+      "description": "Pfleiderer: Icy White (U11027 SD)",
+      "shortName": "Icy White (U11027 SD)",
+      "imageId": "1999f684-8e86-462f-90db-5b92a82f946b:pfleiderer_u11027_sd.png",
+      "matrix": [
+        {
+          "id": "GrainGroupId",
+          "value": "NoGrain"
+        }
+      ]
+    },
+    {
+      "value": "pfleiderer_u11509_sd",
+      "description": "Pfleiderer: Magnolia (U11509 SD)",
+      "shortName": "Magnolia (U11509 SD)",
+      "imageId": "c4a48663-50e6-4de2-bf28-44ac4f44ebea:pfleiderer_u11509_sd.png",
+      "matrix": [
+        {
+          "id": "GrainGroupId",
+          "value": "NoGrain"
+        }
+      ]
+    },
+    {
+      "value": "pfleiderer_u16009_sd",
+      "description": "Pfleiderer: Golden Orange (U16009 SD)",
+      "shortName": "Golden Orange (U16009 SD)",
+      "imageId": "fe4d3d6c-9987-4990-8188-29237710f8f4:pfleiderer_u16009_sd.png",
+      "matrix": [
+        {
+          "id": "GrainGroupId",
+          "value": "NoGrain"
+        }
+      ]
+    },
+    {
+      "value": "pfleiderer_u17141_sd",
+      "description": "Pfleiderer: Orchidea (U17141 SD)",
+      "shortName": "Orchidea (U17141 SD)",
+      "imageId": "daf78111-3be4-44e5-b2d6-070a9a251671:pfleiderer_u17141_sd.png",
+      "matrix": [
+        {
+          "id": "GrainGroupId",
+          "value": "NoGrain"
+        }
+      ]
+    },
+    {
+      "value": "pfleiderer_u18576_sd",
+      "description": "Pfleiderer: Ocean (U18576 SD)",
+      "shortName": "Ocean (U18576 SD)",
+      "imageId": "3f73378f-f62a-4b36-9dc4-c9d8b8e18b33:pfleiderer_u18576_sd.png",
+      "matrix": [
+        {
+          "id": "GrainGroupId",
+          "value": "NoGrain"
+        }
+      ]
+    },
+    {
+      "value": "pfleiderer_u19502_sd",
+      "description": "Pfleiderer: Lime (U19502 SD)",
+      "shortName": "Lime (U19502 SD)",
+      "imageId": "b78b716d-0aa1-43f7-8f7c-2849d1ae154e:pfleiderer_u19502_sd.png",
+      "matrix": [
+        {
+          "id": "GrainGroupId",
+          "value": "NoGrain"
+        }
+      ]
+    }
+  ]
+}
