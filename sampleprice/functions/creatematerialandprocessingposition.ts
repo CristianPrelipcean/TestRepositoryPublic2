@@ -21,8 +21,8 @@ createMaterialAndProcessingPosition(idPos: OM.Position, orderData: OM.OrderDetai
         pos.positionType = OM.PositionTypeEnum.PriceGenerated;
         pos.name = board.material;
         pos.width = board.length;
-        pos.height = board.width;
-        pos.depth = board.thickness;
+        pos.depth = board.width;
+        pos.height = board.thickness;
         pos.quantity = board.quantity;
         // Add the price item
         let price = new OM.Price();
@@ -75,7 +75,6 @@ createMaterialAndProcessingPosition(idPos: OM.Position, orderData: OM.OrderDetai
         pos.positionType = OM.PositionTypeEnum.PriceGenerated;
         pos.name = offcut.material;
         pos.width = offcut.length;
-        pos.height = offcut.width;
         pos.depth = offcut.thickness;
         pos.quantity = offcut.quantity;
       }
