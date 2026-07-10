@@ -2,16 +2,6 @@ calculateFinalPrices(orderData: OM.OrderDetails, g: IGlobalVars): void {
   // Calculate the group prices
   let orderTotalPrice: number = 0;
   const groups = GlobalFunc.getAllGroups(orderData);
-  let error: OM.ErrorInfo = {
-    text: "Bogdan error test",
-    category: "Error",
-    items: [],
-    type: OM.TypeEnum.ErrorInfoType
-  }
-
-  // orderData.items.push(error)
-
-
   for (const grp of groups) {
     const totalPrice = GlobalFunc.getAllTotalPrice(grp);
     if (totalPrice) {

@@ -34,6 +34,12 @@
             allPartsToOptimize = allPartsToOptimize.concat(parts);
           }
         }
+
+        if (this.g.basicAddPriceGeneratedPosition) {
+          // Optionally add a price generated position after this configuration position 
+          // (for testing purposes, controlled by the basic setting basicAddPriceGeneratedPosition)
+          GlobalFunc.addPriceGeneratedPosition(grp, pos, this.g);
+        }
       }
     }
 
