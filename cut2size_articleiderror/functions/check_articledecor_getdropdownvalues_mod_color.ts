@@ -9,7 +9,7 @@ check_ArticleDecor_getDropDownValues_mod_Color(attr: Checks.IArticleDecor_Attrib
 
     let boardLibraryRows = ct_tab_BoardLibrary.filter((board) => !!board.in_MaterialCode);
 
-    if (articleId === 'AcC2S') {
+    if (articleId === 'articleidtets') {
         boardLibraryRows = boardLibraryRows.filter(
             (board) => board.Category === 'AcrylicGlass_PMMA'
         );
