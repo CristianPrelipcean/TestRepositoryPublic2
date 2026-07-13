@@ -1,0 +1,102 @@
+{
+  "variantId": "width",
+  "shortName": "width",
+  "variantTypeId": "Dim",
+  "restrictionTypeId": "Public",
+  "isArray": false,
+  "isPosRelevant": true,
+  "matrix": [
+    {
+      "id": "ABC",
+      "type": "Real",
+      "default": 12.0
+    },
+    {
+      "id": "DEF",
+      "type": "Text"
+    },
+    {
+      "id": "GHI",
+      "type": "Dim",
+      "default": 34.2
+    },
+    {
+      "id": "JKL",
+      "type": "Bool"
+    },
+    {
+      "id": "MNO",
+      "type": "Text",
+      "isCustom": true
+    }
+  ],
+  "selections": [
+    {
+      "value": "120",
+      "matrix": [
+        {
+          "id": "ABC",
+          "value": 13.0
+        },
+        {
+          "id": "GHI",
+          "value": 22.12
+        }
+      ]
+    },
+    {
+      "min": 150.0,
+      "max": 180.0,
+      "matrix": [
+        {
+          "id": "JKL",
+          "value": true
+        }
+      ]
+    },
+    {
+      "min": 200.0,
+      "max": 250.0,
+      "step": 10.0,
+      "matrix": [
+        {
+          "id": "ABC",
+          "value": 123456.7
+        },
+        {
+          "id": "JKL",
+          "value": false
+        }
+      ]
+    },
+    {
+      "value": "300",
+      "matrix": []
+    },
+    {
+      "value": "600",
+      "matrix": [
+        {
+          "id": "ABC",
+          "value": 1234.0
+        },
+        {
+          "id": "DEF",
+          "value": "Dies ist ein Text"
+        },
+        {
+          "id": "GHI",
+          "value": 23243.3
+        },
+        {
+          "id": "JKL",
+          "value": true
+        },
+        {
+          "id": "Custom_MNO",
+          "value": "This is a Text"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,192 @@
+{
+  "moduleId": "shape01",
+  "shortName": "shape01",
+  "configurable": true,
+  "isRoot": true,
+  "isConfigDummy": false,
+  "isGroupOrchestrator": false,
+  "description": "root module",
+  "restrictionTypeId": "Public",
+  "childModules": [
+    {
+      "moduleId": "singleDoor"
+    },
+    {
+      "moduleId": "singleDrawer"
+    }
+  ],
+  "assignedVariants": [
+    {
+      "variantId": "sidePanelThickness",
+      "default": "16",
+      "previewValue": "16",
+      "origin": "Default"
+    },
+    {
+      "variantId": "frontEdgeColor",
+      "defaultScript": "this.corpusColor",
+      "previewValue": "Red",
+      "origin": "Default"
+    },
+    {
+      "variantId": "corpusColor",
+      "previewValue": "Blue",
+      "origin": "Required"
+    },
+    {
+      "variantId": "frontColor",
+      "previewValue": "White",
+      "origin": "Required"
+    },
+    {
+      "variantId": "width",
+      "previewValue": "600",
+      "origin": "Required"
+    },
+    {
+      "variantId": "height",
+      "previewValue": "720",
+      "origin": "Required"
+    },
+    {
+      "variantId": "depth",
+      "previewValue": "550",
+      "origin": "Required"
+    },
+    {
+      "variantId": "handle",
+      "default": "knopf01",
+      "previewValue": "knopf01",
+      "origin": "Default"
+    },
+    {
+      "variantId": "testDim",
+      "default": "1",
+      "origin": "Default"
+    },
+    {
+      "variantId": "testReal",
+      "default": "2",
+      "origin": "Default"
+    },
+    {
+      "variantId": "testBool",
+      "default": "true",
+      "origin": "Default"
+    },
+    {
+      "variantId": "testText",
+      "default": "text1",
+      "origin": "Default"
+    },
+    {
+      "variantId": "testInteger",
+      "default": "3",
+      "origin": "Default"
+    },
+    {
+      "variantId": "testDimSelOnly",
+      "default": "10",
+      "origin": "Default"
+    },
+    {
+      "variantId": "testDumSel",
+      "default": "100",
+      "origin": "Default"
+    },
+    {
+      "variantId": "testTextSel",
+      "default": "Sel01",
+      "origin": "Default"
+    },
+    {
+      "variantId": "testIntegerSel",
+      "default": "30",
+      "origin": "Default"
+    },
+    {
+      "variantId": "testBoolSel",
+      "default": "false",
+      "origin": "Default"
+    },
+    {
+      "variantId": "dimArray",
+      "default": "0",
+      "origin": "Default"
+    },
+    {
+      "variantId": "exceptionVariant01",
+      "default": "test",
+      "origin": "Default"
+    },
+    {
+      "variantId": "globVarExceptionVariant01",
+      "default": "4711",
+      "origin": "Default"
+    },
+    {
+      "variantId": "globVarExceptionVariant02",
+      "default": "false",
+      "origin": "Default"
+    },
+    {
+      "variantId": "model",
+      "default": "AAA",
+      "origin": "Default"
+    },
+    {
+      "variantId": "schrankTyp",
+      "default": "AAA",
+      "origin": "Default"
+    },
+    {
+      "variantId": "spl",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "generateWorktop",
+      "default": "true",
+      "origin": "Default"
+    },
+    {
+      "variantId": "showRoomContours",
+      "default": "false",
+      "origin": "Default"
+    }
+  ],
+  "assignedParts": [
+    {
+      "partCode": "101_SidePanelLeft"
+    },
+    {
+      "partCode": "102_SidePanelRight"
+    },
+    {
+      "partCode": "120_BottomShelf"
+    },
+    {
+      "partCode": "124_RailHorizontalFront"
+    },
+    {
+      "partCode": "125_RailHorizontalBack"
+    },
+    {
+      "partCode": "140_Backwall"
+    },
+    {
+      "partCode": "463_Toe"
+    },
+    {
+      "partCode": "000_Corpus"
+    }
+  ],
+  "assignedCustomTables": [
+    {
+      "customTableId": "Custom_Table_03"
+    },
+    {
+      "customTableId": "RefTable"
+    }
+  ],
+  "assignedFunctions": []
+}

@@ -1,0 +1,142 @@
+{
+  "moduleId": "singleDoor",
+  "shortName": "singleDoor",
+  "configurable": true,
+  "isRoot": false,
+  "description": "door module",
+  "restrictionTypeId": "Public",
+  "childModules": [
+    {
+      "moduleId": "internalDrawer"
+    }
+  ],
+  "assignedVariants": [
+    {
+      "variantId": "frontHeight",
+      "previewValue": "600",
+      "origin": "Required"
+    },
+    {
+      "variantId": "handle",
+      "previewValue": "knopf01",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "frontColor",
+      "previewValue": "White",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "innerDrawerCount",
+      "default": "0",
+      "origin": "Default"
+    },
+    {
+      "variantId": "innerDrawer1Pos",
+      "default": "0",
+      "origin": "Default"
+    },
+    {
+      "variantId": "innerDrawer2Pos",
+      "default": "400",
+      "origin": "Default"
+    },
+    {
+      "variantId": "innerDrawer1Height",
+      "default": "240",
+      "origin": "Default"
+    },
+    {
+      "variantId": "innerDrawer1Depth",
+      "default": "500",
+      "origin": "Default"
+    },
+    {
+      "variantId": "innerDrawer2Height",
+      "default": "120",
+      "origin": "Default"
+    },
+    {
+      "variantId": "innerDrawer2Depth",
+      "default": "500",
+      "origin": "Default"
+    },
+    {
+      "variantId": "width",
+      "previewValue": "600",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "sidePanelThickness",
+      "previewValue": "16",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "startPos",
+      "default": "0",
+      "origin": "Default"
+    },
+    {
+      "variantId": "handleOrientation",
+      "default": "Hor",
+      "origin": "Default"
+    },
+    {
+      "variantId": "handleOffset",
+      "default": "100",
+      "origin": "Default"
+    },
+    {
+      "variantId": "hinge",
+      "default": "left",
+      "origin": "Default"
+    },
+    {
+      "variantId": "hide3DModelIfOpened",
+      "default": "false",
+      "origin": "Default"
+    },
+    {
+      "variantId": "use3DModelForDoorLeft",
+      "default": "false",
+      "origin": "Default"
+    },
+    {
+      "variantId": "use3DModelOpenForDoorLeft",
+      "default": "false",
+      "origin": "Default"
+    }
+  ],
+  "assignedParts": [
+    {
+      "partCode": "160_DoorLeft"
+    },
+    {
+      "partCode": "807_DrillingHinge"
+    },
+    {
+      "partCode": "999_GrundplatteL"
+    },
+    {
+      "partCode": "999_GrundplatteR"
+    },
+    {
+      "partCode": "999_ScharnierL"
+    },
+    {
+      "partCode": "999_ScharnierR"
+    },
+    {
+      "partCode": "999_InvisiblePart"
+    },
+    {
+      "partCode": "handle_01"
+    }
+  ],
+  "assignedCustomTables": [],
+  "assignedFunctions": [
+    {
+      "functionId": "UserExit01"
+    }
+  ]
+}
