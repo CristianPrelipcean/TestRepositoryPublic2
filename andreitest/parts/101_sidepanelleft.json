@@ -1,0 +1,91 @@
+{
+  "partCode": "101_SidePanelLeft",
+  "shortName": "101_SidePanelLeftName",
+  "description": "descripotion of side panel left",
+  "wdt": "YZX",
+  "imageId": "b9cf665b-6eaf-4df0-9c97-69cfe5f1666d:blue.jpg",
+  "model3dImageId": "69e017cb-25b0-462a-bb76-ed9dbe03b70e:3dmodell.obj",
+  "invisible": false,
+  "restrictionTypeId": "",
+  "noNcData": false,
+  "partVariants": [
+    {
+      "partVarId": "pa_height",
+      "valueScript": "this._dimx"
+    },
+    {
+      "partVarId": "color1",
+      "valueScript": "this.parent.frontColor"
+    },
+    {
+      "partVarId": "m_ABC",
+      "valueScript": "this.parent.width_matrix.ABC ?? -1"
+    },
+    {
+      "partVarId": "m_DEF",
+      "valueScript": "this.parent.width_matrix.DEF ?? \"(not set)\""
+    },
+    {
+      "partVarId": "m_GHI",
+      "valueScript": "this.parent.width_matrix.GHI ?? -1"
+    },
+    {
+      "partVarId": "m_JKL",
+      "valueScript": "this.parent.width_matrix.JKL ?? false"
+    },
+    {
+      "partVarId": "m_FarbeNo",
+      "valueScript": "this.parent.corpusColor_matrix.BestellNo ?? \"(not set)\""
+    },
+    {
+      "partVarId": "ctpv",
+      "valueScript": "(new ct2_Custom_Table_02()).findExactly(\"in_text1\", 23, 45.54, \"in_textFunctionField\", \"12333\")!"
+    },
+    {
+      "partVarId": "attributePartVariant",
+      "valueScript": ""
+    }
+  ],
+  "bomData": [
+    {
+      "bomElementTypeId": "Platte",
+      "description": "Platte für Seite links",
+      "valueScript": "this.length = partSelf._dimz;\r\nthis.bom_width = partSelf._dimy;\r\nthis.thickness = partSelf._dimx;\r\nlogInfo(\"INSIDE BOM: Adding Platte\");"
+    },
+    {
+      "bomElementTypeId": "Kante",
+      "description": "Kante rot",
+      "conditionScript": "partSelf.color1 == \"red\"",
+      "valueScript": "this.length = partSelf._dimy*2 + partSelf._dimz*2;\r\nthis.bom_height = partSelf._dimx;\r\nthis.thickness = 3;"
+    },
+    {
+      "bomElementTypeId": "Kante",
+      "description": "Kante blau",
+      "conditionScript": "partSelf.color1 == \"lightblue\"",
+      "valueScript": "this.length = partSelf._dimy*2 + partSelf._dimz*2;\r\nthis.bom_height = partSelf._dimx;\r\nthis.thickness = 3;"
+    }
+  ],
+  "ncData": [
+    {
+      "part2": "124_RailHorizontalFront",
+      "touchName": "FromRight",
+      "bomElementTypeId": "Bohrung",
+      "valueScript": "this.PosX = posRel.x;\r\nthis.MacroName = partSelf._id;\r\n\r\nlet drillingDiameter = partSelf._thickness / 4;\r\nlet halfPartThickness = partSelf._thickness / 2;\r\nlet drillCnt = 3;\r\nlet diff = part2._dimz / drillCnt;\r\nfor(let i=0; i<drillCnt; i++) {\r\n  let drilling01 = partSelf.add3DElement('drilling01', this, posRel.x - halfPartThickness, posRel.y, posRel.z  + diff*i, halfPartThickness * 3, drillingDiameter, drillingDiameter);\r\n  drilling01.extrude('<svg><circle cx=\"' + halfPartThickness + '\" cy=\"' + halfPartThickness + '\" r=\"' + drillingDiameter + '\" /></svg>', 'x');\r\n  }\r\n",
+      "bomExecuteType": "Touch"
+    },
+    {
+      "touchName": "",
+      "bomElementTypeId": "Bohrung",
+      "description": "touch-start",
+      "valueScript": "const y = 4;",
+      "bomExecuteType": "Start"
+    },
+    {
+      "touchName": "",
+      "bomElementTypeId": "Bohrung",
+      "description": "touch-end",
+      "valueScript": "const x = 3;",
+      "bomExecuteType": "End"
+    }
+  ]
+}

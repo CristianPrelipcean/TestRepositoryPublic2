@@ -1,0 +1,43 @@
+{
+  "tableName": "CustomTableWithSelectiveList",
+  "columns": [
+    {
+      "name": "_id",
+      "type": "Integer",
+      "allowNull": false
+    },
+    {
+      "name": "TextFeld",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "Model3D",
+      "type": "Model3D",
+      "allowNull": true
+    },
+    {
+      "name": "Parameter3D",
+      "type": "Model3DParameters",
+      "allowNull": true
+    }
+  ],
+  "rows": [
+    {
+      "data": [
+        {
+          "columnName": "TextFeld",
+          "value": "hinge"
+        },
+        {
+          "columnName": "Model3D",
+          "value": "ec7d3cdc-7e5c-4ff0-82d5-d8cd2f313995:3dmodell.obj"
+        },
+        {
+          "columnName": "Parameter3D",
+          "value": "{\n  \"regions\": {\n    \"x\": [\n      {\n        \"pos\": 0,\n        \"scalable\": false\n      }\n    ],\n    \"y\": [\n      {\n        \"pos\": 0,\n        \"scalable\": false\n      }\n    ],\n    \"z\": [\n      {\n        \"pos\": 0,\n        \"scalable\": false\n      }\n    ]\n  },\n  \"attachmentId\": \"4da0568b-e022-42e3-99c0-74833053c953:data_1.bin\"\n}"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "tableName": "Custom_Table_Empty",
+  "description": "Empty custom table to be modified in unit tests",
+  "columns": [
+    {
+      "name": "_id",
+      "type": "Integer",
+      "allowNull": false
+    },
+    {
+      "name": "a",
+      "type": "Model3D",
+      "allowNull": true
+    },
+    {
+      "name": "d",
+      "type": "Model3DParameters",
+      "allowNull": true
+    }
+  ],
+  "rows": [
+    {
+      "data": [
+        {
+          "columnName": "a",
+          "value": "143a1178-d656-457d-af2d-b404a44335f3:hinge.obj"
+        },
+        {
+          "columnName": "d",
+          "value": "{\n  \"regions\": {\n    \"x\": [\n      {\n        \"pos\": 0,\n        \"scalable\": false\n      }\n    ],\n    \"y\": [\n      {\n        \"pos\": 0,\n        \"scalable\": false\n      }\n    ],\n    \"z\": [\n      {\n        \"pos\": 0,\n        \"scalable\": false\n      }\n    ]\n  },\n  \"attachmentId\": \"e39a83ea-44f7-46a9-aecb-9589981aa64c:data_3.bin\"\n}"
+        }
+      ]
+    }
+  ]
+}
