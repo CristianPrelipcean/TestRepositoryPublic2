@@ -7,9 +7,9 @@
           if (target.has(fileName)) {
             throw "File '" + fileName + "' is already placed in the output(duplicate)!";
           }
-          target.set(fileName, value);
+            target.set(fileName, value);
         });
-      };
+        };
 
       ol.forEach(p => {
         this.createFileEntry(result, "order-line" + p.orderLineNo + ".txt", JSON.stringify(p, (key: string, value: any) => {
