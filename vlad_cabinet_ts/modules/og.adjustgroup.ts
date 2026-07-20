@@ -9,7 +9,7 @@
     }
 
     // this.addDocking(this.roots[0].root, Dock.LeftBottom, r1, Dock.RightBottom);
-    this.addDocking(this.roots[0].root, Dock.LeftBottom, r1, Dock.RightBottom, DockMode.StartEnd, [0, 0, 0], 0);
+    this.addDocking(this.roots[0].root, Dock.LeftBottom, r1, Dock.RightBottom, DockMode.StartEnd, [0, 500, 0], 0);
   }
   else {
     logError("article not found");
