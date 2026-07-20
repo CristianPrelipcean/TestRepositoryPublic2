@@ -10,7 +10,7 @@
       posGroup: [articlePos.x, articlePos.y, articlePos.z],
       posRotation: articlePos.rotationY,
       rootId: this.roots[0].root._id,
-      rootRelPos: [0,0,0],
+      rootRelPos: [100,100,100],
       rootRelRotation: 45
     };
     this.setRepositioningData(positioningData);
