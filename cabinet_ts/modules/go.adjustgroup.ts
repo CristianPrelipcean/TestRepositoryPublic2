@@ -11,7 +11,7 @@
       posRotation: articlePos.rotationY,
       rootId: this.roots[0].root._id,
       rootRelPos: [0,0,0],
-      rootRelRotation: 0
+      rootRelRotation: 45
     };
     this.setRepositioningData(positioningData);
   }
