@@ -8,10 +8,10 @@
     const articlePos = this.getArticlePos();
     const positioningData = {
       posGroup: [articlePos.x, articlePos.y, articlePos.z],
-      posRotation: articlePos.rotationY,
+      posRotationY: articlePos.rotationY,
       rootId: this.roots[0].root._id,
       rootRelPos: [100,100,100],
-      rootRelRotation: 45
+      rootRelRotationY: 45
     };
     this.setRepositioningData(positioningData);
   }
