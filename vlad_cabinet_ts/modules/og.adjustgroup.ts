@@ -15,14 +15,14 @@
       //this.addDocking(this.roots[0].root, Dock.LeftBottom, r1, Dock.RightBottom);
       if (i % 2 === 0) {
         // dock on the floor
-        this.addDocking(lastDockedRoot, Dock.LeftBottom, r1, Dock.RightBottom, DockMode.StartStart, [60 * i, 0, 0], 0);
+        this.addDocking(lastDockedRoot, Dock.LeftBottom, r1, Dock.RightBottom, DockMode.StartStart, [600 * i, 0, 0], 0);
       }
       else {
         // dock on the wall
-        this.addDocking(lastDockedRoot, Dock.LeftTop, r1, Dock.RightTop, DockMode.StartStart, [ 60 * i, 1800, 0], 0);
+        this.addDocking(lastDockedRoot, Dock.LeftTop, r1, Dock.RightTop, DockMode.StartStart, [ 600 * i, 1800, 0], 0);
+        lastDockedRoot = r1;
       }
       
-      lastDockedRoot = r1;
     }
     else {
       logError("article not found");
