@@ -8,9 +8,10 @@
       this.addRoots(newArticle);
 
       let r1 = newArticle[0].root;
-      // if (r1 instanceof OD_M_shape01) {
-      //   r1.height = 640;
-      // }
+      if (r1 instanceof OD_M_shape01) {
+        r1.generateWorktop = false;
+        r1.height = 640;
+      }
 
       //this.addDocking(this.roots[0].root, Dock.LeftBottom, r1, Dock.RightBottom);
       if (i % 2 === 0) {
