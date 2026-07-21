@@ -22,7 +22,6 @@
         this.addDocking(lastDockedRoot, Dock.LeftTop, r1, Dock.RightTop, DockMode.StartStart, [0, 1800, 0], 0);
       }
       
-
       lastDockedRoot = r1;
     }
     else {
