@@ -30,6 +30,6 @@
       }
 
       // dock on the wall
-      this.addDocking(lastDockedRoot, Dock.RightTop, r2, Dock.LeftTop, DockMode.StartStart, [0, 1800, 0], 0);
+      this.addDocking(lastDockedRoot, Dock.RightTop, r2, Dock.LeftTop, DockMode.StartStart, [0, 0, 0], 0);
     }
   // }
