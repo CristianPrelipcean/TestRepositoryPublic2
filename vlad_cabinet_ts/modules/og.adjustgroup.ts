@@ -2,8 +2,6 @@
 
   let lastDockedRoot = this.roots[0].root;
 
-  let lastXPos = lastDockedRoot.getOriginPos()._x;
-
   for (let i = 0; i < 4; i++){
     const newArticle = this.createArticle('lilcab');
     if (newArticle) {
@@ -21,11 +19,11 @@
       }
       else {
         // dock on the wall
-        this.addDocking(lastDockedRoot, Dock.LeftBottom, r1, Dock.RightBottom, DockMode.StartStart, [0, 1800, 0], 0);
+        this.addDocking(lastDockedRoot, Dock.LeftTop, r1, Dock.RightTop, DockMode.StartStart, [0, 1800, 0], 0);
       }
       
 
-      // lastDockedRoot = r1;
+      lastDockedRoot = r1;
     }
     else {
       logError("article not found");
