@@ -14,9 +14,9 @@
       }
 
       // dock on the floor
-      this.addDocking(lastDockedRoot, Dock.LeftBottom, r1, Dock.RightBottom, DockMode.StartStart, [600, 0, 0], 0);
+      this.addDocking(lastDockedRoot, Dock.RightBottom, r1, Dock.LeftBottom, DockMode.StartStart, [600, 0, 0], 0);
 
-      lastDockedRoot = r1;
+      // lastDockedRoot = r1;
     }
 
     const newArticle2 = this.createArticle('lilcab');
