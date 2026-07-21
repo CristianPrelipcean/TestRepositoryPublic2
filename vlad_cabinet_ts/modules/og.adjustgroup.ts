@@ -14,7 +14,7 @@
       }
 
       // dock on the floor
-      this.addDocking(lastDockedRoot, Dock.RightTop, r1, Dock.LeftTop, DockMode.StartStart, [0, 2500, 0], 0);
+      this.addDocking(lastDockedRoot, Dock.RightTop, r1, Dock.LeftTop, DockMode.StartStart, [0, 0, 0], 0);
 
       // lastDockedRoot = r1;
     }
