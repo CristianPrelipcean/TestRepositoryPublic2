@@ -10,6 +10,10 @@
 
   const docking = this.addDockingInfo(Dock.LeftBottom, new Vector3(0, 0, 0), new Vector3(0, 0, this.depth));
   this.addDockingInfo(Dock.RightBottom, new Vector3(this.width, 0, 0), new Vector3(this.width, 0, this.depth));
+
+  this.addDockingInfo(Dock.LeftTop, new Vector3(this.width, this.height, 0), new Vector3(this.width, this.height, this.depth));
+  this.addDockingInfo(Dock.RightTop, new Vector3(this.width, this.height, 0), new Vector3(this.width, this.height, this.depth));
+
   this.addDockingInfo(Dock.CollisionBox, new Vector3(0, 0, 0), new Vector3(this.width, this.height, this.depth));
 
   this.m.forEach(cm => {
