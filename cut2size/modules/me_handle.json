@@ -1,0 +1,86 @@
+{
+  "moduleId": "me_Handle",
+  "shortName": "Handle",
+  "configurable": true,
+  "isRoot": false,
+  "isConfigDummy": false,
+  "description": "Equipment module for handles",
+  "groupName": "Processing",
+  "imageId": "f0accc3d-9fcc-4ef7-8e9b-076584954c4d:mc_Handle.jpg",
+  "restrictionTypeId": "Public",
+  "childModules": [
+    {
+      "moduleId": "mc_Handle"
+    }
+  ],
+  "assignedVariants": [
+    {
+      "variantId": "mod_Width",
+      "previewValue": "500",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_Thickness",
+      "previewValue": "19",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_Diameter",
+      "default": "5",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_DrillDepth",
+      "default": "0.1",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_DrillingDistance",
+      "previewValue": "128",
+      "origin": "Required"
+    },
+    {
+      "variantId": "mod_DrillQty",
+      "default": "2",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_PositionX",
+      "previewValue": "20",
+      "origin": "Required"
+    },
+    {
+      "variantId": "mod_PositionY",
+      "previewValue": "20",
+      "origin": "Required"
+    },
+    {
+      "variantId": "mod_HandleOrientation",
+      "default": "Hor",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_HandlePosMatrix",
+      "defaultScript": "this.g.basic_HandlePosMatrix",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_TypeElement",
+      "previewValue": "Fronts",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_DrillEntireThk",
+      "default": "true",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_Length",
+      "previewValue": "1000",
+      "origin": "Derived"
+    }
+  ],
+  "assignedParts": [],
+  "assignedCustomTables": [],
+  "assignedFunctions": []
+}
