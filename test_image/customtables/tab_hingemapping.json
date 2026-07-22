@@ -1,0 +1,739 @@
+{
+  "tableName": "tab_HingeMapping",
+  "description": "Hinge mapping",
+  "restrictionTypeId": "Public",
+  "groupName": "Hinge",
+  "columns": [
+    {
+      "name": "_id",
+      "type": "Integer",
+      "allowNull": false
+    },
+    {
+      "name": "in_Supplier",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_HingeProgram",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_MountingType",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "HingeObject",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "HingeDrillingDistanceMin",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "HingeDrillingDistanceMax",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "FrontThkMin",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "FrontThkMax",
+      "type": "Dim",
+      "allowNull": false
+    }
+  ],
+  "rows": [
+    {
+      "data": [
+        {
+          "columnName": "in_Supplier",
+          "value": "Häfele"
+        },
+        {
+          "columnName": "in_HingeProgram",
+          "value": "Screw 45/9.5_Ø35↓13.5_Ø5↓1"
+        },
+        {
+          "columnName": "in_MountingType",
+          "value": "Screw"
+        },
+        {
+          "columnName": "HingeObject",
+          "value": "Screw 45/9.5_Ø35↓13.5_Ø5↓1"
+        },
+        {
+          "columnName": "HingeDrillingDistanceMin",
+          "value": "3"
+        },
+        {
+          "columnName": "HingeDrillingDistanceMax",
+          "value": "6"
+        },
+        {
+          "columnName": "FrontThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "FrontThkMax",
+          "value": "26"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Supplier",
+          "value": "Häfele"
+        },
+        {
+          "columnName": "in_HingeProgram",
+          "value": "Screw 48/6_Ø35↓13.5_Ø5↓1"
+        },
+        {
+          "columnName": "in_MountingType",
+          "value": "Screw"
+        },
+        {
+          "columnName": "HingeObject",
+          "value": "Screw 48/6_Ø35↓13.5_Ø5↓1"
+        },
+        {
+          "columnName": "HingeDrillingDistanceMin",
+          "value": "3"
+        },
+        {
+          "columnName": "HingeDrillingDistanceMax",
+          "value": "6"
+        },
+        {
+          "columnName": "FrontThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "FrontThkMax",
+          "value": "26"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Supplier",
+          "value": "Häfele"
+        },
+        {
+          "columnName": "in_HingeProgram",
+          "value": "Screw 52/5.5_Ø35↓13.5_Ø5↓1"
+        },
+        {
+          "columnName": "in_MountingType",
+          "value": "Screw"
+        },
+        {
+          "columnName": "HingeObject",
+          "value": "Screw 52/5.5_Ø35↓13.5_Ø5↓1"
+        },
+        {
+          "columnName": "HingeDrillingDistanceMin",
+          "value": "3"
+        },
+        {
+          "columnName": "HingeDrillingDistanceMax",
+          "value": "6"
+        },
+        {
+          "columnName": "FrontThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "FrontThkMax",
+          "value": "26"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Supplier",
+          "value": "Häfele"
+        },
+        {
+          "columnName": "in_HingeProgram",
+          "value": "Toolless 45/9.5_Ø35↓13.5_Ø8↓13.5"
+        },
+        {
+          "columnName": "in_MountingType",
+          "value": "Toolless"
+        },
+        {
+          "columnName": "HingeObject",
+          "value": "Toolless 45/9.5_Ø35↓13.5_Ø8↓13.5"
+        },
+        {
+          "columnName": "HingeDrillingDistanceMin",
+          "value": "3"
+        },
+        {
+          "columnName": "HingeDrillingDistanceMax",
+          "value": "6"
+        },
+        {
+          "columnName": "FrontThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "FrontThkMax",
+          "value": "26"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Supplier",
+          "value": "Häfele"
+        },
+        {
+          "columnName": "in_HingeProgram",
+          "value": "Toolless 48/6_Ø35↓13.5_Ø10↓13.5"
+        },
+        {
+          "columnName": "in_MountingType",
+          "value": "Toolless"
+        },
+        {
+          "columnName": "HingeObject",
+          "value": "Toolless 48/6_Ø35↓13.5_Ø10↓13.5"
+        },
+        {
+          "columnName": "HingeDrillingDistanceMin",
+          "value": "3"
+        },
+        {
+          "columnName": "HingeDrillingDistanceMax",
+          "value": "6"
+        },
+        {
+          "columnName": "FrontThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "FrontThkMax",
+          "value": "26"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Supplier",
+          "value": "Häfele"
+        },
+        {
+          "columnName": "in_HingeProgram",
+          "value": "Toolless 52/5.5_Ø35↓13.5_Ø10↓13.5"
+        },
+        {
+          "columnName": "in_MountingType",
+          "value": "Toolless"
+        },
+        {
+          "columnName": "HingeObject",
+          "value": "Toolless 52/5.5_Ø35↓13.5_Ø10↓13.5"
+        },
+        {
+          "columnName": "HingeDrillingDistanceMin",
+          "value": "3"
+        },
+        {
+          "columnName": "HingeDrillingDistanceMax",
+          "value": "6"
+        },
+        {
+          "columnName": "FrontThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "FrontThkMax",
+          "value": "26"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Supplier",
+          "value": "Häfele"
+        },
+        {
+          "columnName": "in_HingeProgram",
+          "value": "Screw 48/6_Ø35↓11_Ø5↓1"
+        },
+        {
+          "columnName": "in_MountingType",
+          "value": "Screw"
+        },
+        {
+          "columnName": "HingeObject",
+          "value": "Screw 48/6_Ø35↓11_Ø5↓1"
+        },
+        {
+          "columnName": "HingeDrillingDistanceMin",
+          "value": "3"
+        },
+        {
+          "columnName": "HingeDrillingDistanceMax",
+          "value": "6"
+        },
+        {
+          "columnName": "FrontThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "FrontThkMax",
+          "value": "26"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Supplier",
+          "value": "Häfele"
+        },
+        {
+          "columnName": "in_HingeProgram",
+          "value": "Press 48/6_Ø35↓11_Ø10↓11"
+        },
+        {
+          "columnName": "in_MountingType",
+          "value": "Press"
+        },
+        {
+          "columnName": "HingeObject",
+          "value": "Press 48/6_Ø35↓11_Ø10↓11"
+        },
+        {
+          "columnName": "HingeDrillingDistanceMin",
+          "value": "3"
+        },
+        {
+          "columnName": "HingeDrillingDistanceMax",
+          "value": "6"
+        },
+        {
+          "columnName": "FrontThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "FrontThkMax",
+          "value": "26"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Supplier",
+          "value": "Häfele"
+        },
+        {
+          "columnName": "in_HingeProgram",
+          "value": "Impress 48/6_Ø35↓11_Ø10↓11"
+        },
+        {
+          "columnName": "in_MountingType",
+          "value": "Impress"
+        },
+        {
+          "columnName": "HingeObject",
+          "value": "Impress 48/6_Ø35↓11_Ø10↓11"
+        },
+        {
+          "columnName": "HingeDrillingDistanceMin",
+          "value": "3"
+        },
+        {
+          "columnName": "HingeDrillingDistanceMax",
+          "value": "6"
+        },
+        {
+          "columnName": "FrontThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "FrontThkMax",
+          "value": "26"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Supplier",
+          "value": "Häfele"
+        },
+        {
+          "columnName": "in_HingeProgram",
+          "value": "Toolless 48/6_Ø35↓11_Ø10↓11"
+        },
+        {
+          "columnName": "in_MountingType",
+          "value": "Toolless"
+        },
+        {
+          "columnName": "HingeObject",
+          "value": "Toolless 48/6_Ø35↓11_Ø10↓11"
+        },
+        {
+          "columnName": "HingeDrillingDistanceMin",
+          "value": "3"
+        },
+        {
+          "columnName": "HingeDrillingDistanceMax",
+          "value": "6"
+        },
+        {
+          "columnName": "FrontThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "FrontThkMax",
+          "value": "26"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Supplier",
+          "value": "Häfele"
+        },
+        {
+          "columnName": "in_HingeProgram",
+          "value": "Screw 52/5.5_Ø35↓11_Ø5↓1"
+        },
+        {
+          "columnName": "in_MountingType",
+          "value": "Screw"
+        },
+        {
+          "columnName": "HingeObject",
+          "value": "Screw 52/5.5_Ø35↓11_Ø5↓1"
+        },
+        {
+          "columnName": "HingeDrillingDistanceMin",
+          "value": "3"
+        },
+        {
+          "columnName": "HingeDrillingDistanceMax",
+          "value": "6"
+        },
+        {
+          "columnName": "FrontThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "FrontThkMax",
+          "value": "26"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Supplier",
+          "value": "Häfele"
+        },
+        {
+          "columnName": "in_HingeProgram",
+          "value": "Press 52/5.5_Ø35↓11_Ø10↓11"
+        },
+        {
+          "columnName": "in_MountingType",
+          "value": "Press"
+        },
+        {
+          "columnName": "HingeObject",
+          "value": "Press 52/5.5_Ø35↓11_Ø10↓11"
+        },
+        {
+          "columnName": "HingeDrillingDistanceMin",
+          "value": "3"
+        },
+        {
+          "columnName": "HingeDrillingDistanceMax",
+          "value": "6"
+        },
+        {
+          "columnName": "FrontThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "FrontThkMax",
+          "value": "26"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Supplier",
+          "value": "Häfele"
+        },
+        {
+          "columnName": "in_HingeProgram",
+          "value": "Impress 52/5.5_Ø35↓11_Ø10↓11"
+        },
+        {
+          "columnName": "in_MountingType",
+          "value": "Impress"
+        },
+        {
+          "columnName": "HingeObject",
+          "value": "Impress 52/5.5_Ø35↓11_Ø10↓11"
+        },
+        {
+          "columnName": "HingeDrillingDistanceMin",
+          "value": "3"
+        },
+        {
+          "columnName": "HingeDrillingDistanceMax",
+          "value": "6"
+        },
+        {
+          "columnName": "FrontThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "FrontThkMax",
+          "value": "26"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Supplier",
+          "value": "Häfele"
+        },
+        {
+          "columnName": "in_HingeProgram",
+          "value": "Toolless 52/5.5_Ø35↓13.5_Ø10↓13.5"
+        },
+        {
+          "columnName": "in_MountingType",
+          "value": "Toolless"
+        },
+        {
+          "columnName": "HingeObject",
+          "value": "Toolless 52/5.5_Ø35↓13.5_Ø10↓13.5"
+        },
+        {
+          "columnName": "HingeDrillingDistanceMin",
+          "value": "3"
+        },
+        {
+          "columnName": "HingeDrillingDistanceMax",
+          "value": "6"
+        },
+        {
+          "columnName": "FrontThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "FrontThkMax",
+          "value": "26"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Supplier",
+          "value": "Häfele"
+        },
+        {
+          "columnName": "in_HingeProgram",
+          "value": "Screw 48/6_Ø35↓8_Ø5↓1"
+        },
+        {
+          "columnName": "in_MountingType",
+          "value": "Screw"
+        },
+        {
+          "columnName": "HingeObject",
+          "value": "Screw 48/6_Ø35↓8_Ø5↓1"
+        },
+        {
+          "columnName": "HingeDrillingDistanceMin",
+          "value": "3"
+        },
+        {
+          "columnName": "HingeDrillingDistanceMax",
+          "value": "6"
+        },
+        {
+          "columnName": "FrontThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "FrontThkMax",
+          "value": "26"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Supplier",
+          "value": "Häfele"
+        },
+        {
+          "columnName": "in_HingeProgram",
+          "value": "Screw 38/7.5_Ø26↓11.5_Ø5↓1"
+        },
+        {
+          "columnName": "in_MountingType",
+          "value": "Screw"
+        },
+        {
+          "columnName": "HingeObject",
+          "value": "Screw 38/7.5_Ø26↓11.5_Ø5↓1"
+        },
+        {
+          "columnName": "HingeDrillingDistanceMin",
+          "value": "3"
+        },
+        {
+          "columnName": "HingeDrillingDistanceMax",
+          "value": "6"
+        },
+        {
+          "columnName": "FrontThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "FrontThkMax",
+          "value": "26"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Supplier",
+          "value": "Häfele"
+        },
+        {
+          "columnName": "in_HingeProgram",
+          "value": "Screw 52/7.5_Ø40↓13_Ø5↓1"
+        },
+        {
+          "columnName": "in_MountingType",
+          "value": "Screw"
+        },
+        {
+          "columnName": "HingeObject",
+          "value": "Screw 52/7.5_Ø40↓13_Ø5↓1"
+        },
+        {
+          "columnName": "HingeDrillingDistanceMin",
+          "value": "3"
+        },
+        {
+          "columnName": "HingeDrillingDistanceMax",
+          "value": "6"
+        },
+        {
+          "columnName": "FrontThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "FrontThkMax",
+          "value": "26"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Supplier",
+          "value": "Häfele"
+        },
+        {
+          "columnName": "in_HingeProgram",
+          "value": "Screw 48/6_Ø35↓9_Ø5↓1"
+        },
+        {
+          "columnName": "in_MountingType",
+          "value": "Screw"
+        },
+        {
+          "columnName": "HingeObject",
+          "value": "Screw 48/6_Ø35↓9_Ø5↓1"
+        },
+        {
+          "columnName": "HingeDrillingDistanceMin",
+          "value": "3"
+        },
+        {
+          "columnName": "HingeDrillingDistanceMax",
+          "value": "6"
+        },
+        {
+          "columnName": "FrontThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "FrontThkMax",
+          "value": "26"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Supplier",
+          "value": "Häfele"
+        },
+        {
+          "columnName": "in_HingeProgram",
+          "value": "Press 48/6_Ø35↓9_Ø10↓9"
+        },
+        {
+          "columnName": "in_MountingType",
+          "value": "Screw"
+        },
+        {
+          "columnName": "HingeObject",
+          "value": "Press 48/6_Ø35↓9_Ø10↓9"
+        },
+        {
+          "columnName": "HingeDrillingDistanceMin",
+          "value": "3"
+        },
+        {
+          "columnName": "HingeDrillingDistanceMax",
+          "value": "6"
+        },
+        {
+          "columnName": "FrontThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "FrontThkMax",
+          "value": "26"
+        }
+      ]
+    }
+  ]
+}
