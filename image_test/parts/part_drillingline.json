@@ -1,0 +1,46 @@
+{
+  "partCode": "part_DrillingLine",
+  "shortName": "Drilling line",
+  "description": "Drilling line",
+  "wdt": "XYZ",
+  "groupName": "Processings",
+  "imageId": "cb422d06-f593-40c1-ab15-fe81de0c9576:DrillingLine.jpg",
+  "model3dImageId": "",
+  "invisible": true,
+  "restrictionTypeId": "Public",
+  "noNcData": false,
+  "partVariants": [
+    {
+      "partVarId": "pa_Diameter",
+      "valueScript": "this.parent.mod_Diameter",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_DrillDepth",
+      "valueScript": "this.parent.mod_DrillDepth",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_DrillQty",
+      "valueScript": "0",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_ProcessingOrientation",
+      "valueScript": "this.parent.mod_ProcessingOrientation",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_DrillingDistance",
+      "valueScript": "this.parent.mod_DrillingDistance",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_ProcessingBasePoint",
+      "valueScript": "this.parent.mod_ProcessingBasePoint",
+      "isWritable": false
+    }
+  ],
+  "bomData": [],
+  "ncData": []
+}
