@@ -1,0 +1,83 @@
+{
+  "moduleId": "me_DrillingLine",
+  "shortName": "DrillingLine",
+  "configurable": true,
+  "isRoot": false,
+  "description": "Equipment module for drilling lines",
+  "groupName": "Equipment",
+  "imageId": "9fe23659-9c96-4d43-962a-455a00998c53:me_DrilingLine.jpg",
+  "restrictionTypeId": "Public",
+  "childModules": [
+    {
+      "moduleId": "mc_DrillingLine"
+    }
+  ],
+  "assignedVariants": [
+    {
+      "variantId": "mod_Diameter",
+      "previewValue": "5",
+      "origin": "Required"
+    },
+    {
+      "variantId": "mod_DrillDepth",
+      "previewValue": "11",
+      "origin": "Required"
+    },
+    {
+      "variantId": "mod_Length",
+      "previewValue": "1500",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_PositionX",
+      "previewValue": "0",
+      "origin": "Required"
+    },
+    {
+      "variantId": "mod_PositionY",
+      "previewValue": "0",
+      "origin": "Required"
+    },
+    {
+      "variantId": "mod_Thickness",
+      "previewValue": "19",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_Width",
+      "previewValue": "500",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_DrillQty",
+      "previewValue": "0",
+      "origin": "Required"
+    },
+    {
+      "variantId": "mod_DrillinglineLength",
+      "previewValue": "320",
+      "origin": "Required"
+    },
+    {
+      "variantId": "mod_ProcessingOrientation",
+      "previewValue": "Along",
+      "origin": "Required"
+    },
+    {
+      "variantId": "mod_DrillinglineLogic",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_ProcessingBasePoint",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_DrillingDistance",
+      "previewValue": "32",
+      "origin": "Required"
+    }
+  ],
+  "assignedParts": [],
+  "assignedCustomTables": [],
+  "assignedFunctions": []
+}

@@ -15,6 +15,11 @@
       "allowNull": true
     },
     {
+      "name": "in_PartDesign",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
       "name": "in_FrontHeightMin",
       "type": "Dim",
       "allowNull": false
@@ -48,6 +53,10 @@
           "value": "All"
         },
         {
+          "columnName": "in_PartDesign",
+          "value": "FlatPanel"
+        },
+        {
           "columnName": "in_FrontHeightMin",
           "value": "200"
         },
@@ -74,6 +83,10 @@
         {
           "columnName": "in_Program",
           "value": "All"
+        },
+        {
+          "columnName": "in_PartDesign",
+          "value": "FlatPanel"
         },
         {
           "columnName": "in_FrontHeightMin",
@@ -104,12 +117,16 @@
           "value": "All"
         },
         {
+          "columnName": "in_PartDesign",
+          "value": "FlatPanel"
+        },
+        {
           "columnName": "in_FrontHeightMin",
           "value": "1500"
         },
         {
           "columnName": "in_FrontHeightMax",
-          "value": "2380"
+          "value": "2750"
         },
         {
           "columnName": "in_FrontWidthMin",

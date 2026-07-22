@@ -1,0 +1,140 @@
+{
+  "moduleId": "mr_Sidepanel",
+  "shortName": "Sidepanel",
+  "configurable": true,
+  "isRoot": true,
+  "description": "Root module for sidepanels",
+  "groupName": "Root",
+  "imageId": "e822715b-586f-467f-b6b3-937f3f5eba0b:mr_Sidepanel.jpg",
+  "restrictionTypeId": "Public",
+  "childModules": [
+    {
+      "moduleId": "me_Cut"
+    },
+    {
+      "moduleId": "me_Drill"
+    },
+    {
+      "moduleId": "me_DrillingLine"
+    },
+    {
+      "moduleId": "me_Hinge"
+    },
+    {
+      "moduleId": "me_Groove"
+    },
+    {
+      "moduleId": "me_Pocket"
+    },
+    {
+      "moduleId": "me_PartConnection"
+    },
+    {
+      "moduleId": "mc_Panel"
+    }
+  ],
+  "assignedVariants": [
+    {
+      "variantId": "mod_Width",
+      "previewValue": "1000",
+      "origin": "Required"
+    },
+    {
+      "variantId": "mod_Length",
+      "previewValue": "500",
+      "origin": "Required"
+    },
+    {
+      "variantId": "mod_Thickness",
+      "previewValue": "16",
+      "origin": "Required"
+    },
+    {
+      "variantId": "mod_Program",
+      "default": "Demoprogram1",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_Color",
+      "default": "Demoblue",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_PartGrain",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_BtmColor",
+      "defaultScript": "this.mod_Color",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_EdgeBackColor",
+      "defaultScript": "this.mod_Color",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_EdgeFrontColor",
+      "defaultScript": "this.mod_Color",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_EdgeLeftColor",
+      "defaultScript": "this.mod_Color",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_EdgeRightColor",
+      "defaultScript": "this.mod_Color",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_EdgeBackClass",
+      "default": "Thick",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_EdgeFrontClass",
+      "default": "Thick",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_EdgeLeftClass",
+      "default": "Thick",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_EdgeRightClass",
+      "default": "Thick",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_EdgeTechnology",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_EdgeJointType",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_EdgePosType",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_EdgesPartLibraryVis",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_TypeElement",
+      "default": "Sides",
+      "origin": "Fixed"
+    },
+    {
+      "variantId": "mod_PartDesign",
+      "origin": "GlobalVar"
+    }
+  ],
+  "assignedParts": [],
+  "assignedCustomTables": [],
+  "assignedFunctions": []
+}

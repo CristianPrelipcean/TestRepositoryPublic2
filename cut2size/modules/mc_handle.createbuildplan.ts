@@ -23,7 +23,7 @@ let DrillQty = this.mod_DrillQty;
 // Calculate HandleDrillDepth
 let HandleDrillDepth = this.mod_DrillEntireThk ? this.mod_Thickness : this.mod_DrillDepth;
 
-// Calculate the HandleLength
+// Calculate HandleLength
 let HandleLength = (this.mod_DrillQty - 1) * this.mod_DrillingDistance;
 
 //Find information in tab_HandlePosConstruction
@@ -47,12 +47,12 @@ for (let i = 0; i < DrillQty; i++){
   let yCoord = this.mod_HandleOrientation == 'Vert' ? BasePosY - (HandleLength/2) + this.mod_DrillingDistance * i : BasePosY
 
   // Check if the drill in x-direction is on the board, if not block the drilling
-  if(xCoord <= 0 || xCoord >= this.mod_Length){
+  if(xCoord <= 0 || xCoord >= this.mod_Width){
     drill = false;
   }
 
   // Check if the drill in y-direction is on the board, if not block the drilling
-  if(yCoord <= 0 || yCoord >= this.mod_Width){
+  if(yCoord <= 0 || yCoord >= this.mod_Height){
     drill = false;
   }
 
@@ -81,6 +81,6 @@ if(drill){
 else{
   //logError('Drills for handle are blocked, minimum one drill is outside of the board!')
   let Text = '';
-  let ErrorMessage = GlobalFunc.find_ErrorList('Error 21004', 1);
+  let ErrorMessage = GlobalFunc.find_ErrorList('Info 22001', 1);
 	logInfo(ErrorMessage.Message(Text));
 }

@@ -16,6 +16,11 @@
       "allowNull": true
     },
     {
+      "name": "in_EdgePosType",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
       "name": "EdgeJointFrontLeft",
       "type": "Text",
       "allowNull": true
@@ -41,7 +46,7 @@
       "allowNull": true
     },
     {
-      "name": "EdgeTransition",
+      "name": "EdgeCode",
       "type": "Text",
       "allowNull": true
     }
@@ -51,30 +56,34 @@
       "data": [
         {
           "columnName": "in_EdgeJointType",
-          "value": "EEEE"
+          "value": "NoEdges"
+        },
+        {
+          "columnName": "in_EdgePosType",
+          "value": "EdgeOverSurface"
         },
         {
           "columnName": "EdgeJointFrontLeft",
-          "value": "E"
+          "value": "NoEdge"
         },
         {
           "columnName": "EdgeJointLeftBack",
-          "value": "E"
+          "value": "NoEdge"
         },
         {
           "columnName": "EdgeJointBackRight",
-          "value": "E"
+          "value": "NoEdge"
         },
         {
           "columnName": "EdgeJointRightFront",
-          "value": "E"
+          "value": "NoEdge"
         },
         {
           "columnName": "EdgeShape",
           "value": "No Shape"
         },
         {
-          "columnName": "EdgeTransition",
+          "columnName": "EdgeCode",
           "value": "::::"
         }
       ]
@@ -84,6 +93,10 @@
         {
           "columnName": "in_EdgeJointType",
           "value": "SLSE"
+        },
+        {
+          "columnName": "in_EdgePosType",
+          "value": "EdgeOverSurface"
         },
         {
           "columnName": "EdgeJointFrontLeft",
@@ -106,7 +119,7 @@
           "value": "N0_W1_S0"
         },
         {
-          "columnName": "EdgeTransition",
+          "columnName": "EdgeCode",
           "value": "000:000:011:"
         }
       ]
@@ -116,6 +129,10 @@
         {
           "columnName": "in_EdgeJointType",
           "value": "LSSE"
+        },
+        {
+          "columnName": "in_EdgePosType",
+          "value": "EdgeOverSurface"
         },
         {
           "columnName": "EdgeJointFrontLeft",
@@ -138,7 +155,7 @@
           "value": "N1_W0_S0"
         },
         {
-          "columnName": "EdgeTransition",
+          "columnName": "EdgeCode",
           "value": "010:001:000:"
         }
       ]
@@ -148,6 +165,10 @@
         {
           "columnName": "in_EdgeJointType",
           "value": "SSSE"
+        },
+        {
+          "columnName": "in_EdgePosType",
+          "value": "EdgeOverSurface"
         },
         {
           "columnName": "EdgeJointFrontLeft",
@@ -170,7 +191,7 @@
           "value": "N1_W1_S0"
         },
         {
-          "columnName": "EdgeTransition",
+          "columnName": "EdgeCode",
           "value": "000:001:001:"
         }
       ]
@@ -180,6 +201,10 @@
         {
           "columnName": "in_EdgeJointType",
           "value": "LSEL"
+        },
+        {
+          "columnName": "in_EdgePosType",
+          "value": "EdgeOverSurface"
         },
         {
           "columnName": "EdgeJointFrontLeft",
@@ -202,7 +227,7 @@
           "value": "W0_S0_E0"
         },
         {
-          "columnName": "EdgeTransition",
+          "columnName": "EdgeCode",
           "value": "010::000:010"
         }
       ]
@@ -212,6 +237,10 @@
         {
           "columnName": "in_EdgeJointType",
           "value": "LSES"
+        },
+        {
+          "columnName": "in_EdgePosType",
+          "value": "EdgeOverSurface"
         },
         {
           "columnName": "EdgeJointFrontLeft",
@@ -234,7 +263,7 @@
           "value": "W0_S1_E0"
         },
         {
-          "columnName": "EdgeTransition",
+          "columnName": "EdgeCode",
           "value": "011::000:000"
         }
       ]
@@ -244,6 +273,10 @@
         {
           "columnName": "in_EdgeJointType",
           "value": "SSEL"
+        },
+        {
+          "columnName": "in_EdgePosType",
+          "value": "EdgeOverSurface"
         },
         {
           "columnName": "EdgeJointFrontLeft",
@@ -266,7 +299,7 @@
           "value": "W1_S0_E0"
         },
         {
-          "columnName": "EdgeTransition",
+          "columnName": "EdgeCode",
           "value": "000::001:010"
         }
       ]
@@ -276,6 +309,10 @@
         {
           "columnName": "in_EdgeJointType",
           "value": "SSES"
+        },
+        {
+          "columnName": "in_EdgePosType",
+          "value": "EdgeOverSurface"
         },
         {
           "columnName": "EdgeJointFrontLeft",
@@ -298,7 +335,7 @@
           "value": "W1_S1_E0"
         },
         {
-          "columnName": "EdgeTransition",
+          "columnName": "EdgeCode",
           "value": "001::001:000"
         }
       ]
@@ -308,6 +345,10 @@
         {
           "columnName": "in_EdgeJointType",
           "value": "EELS"
+        },
+        {
+          "columnName": "in_EdgePosType",
+          "value": "EdgeOverSurface"
         },
         {
           "columnName": "EdgeJointFrontLeft",
@@ -330,7 +371,7 @@
           "value": "N0_E0"
         },
         {
-          "columnName": "EdgeTransition",
+          "columnName": "EdgeCode",
           "value": ":010::000"
         }
       ]
@@ -340,6 +381,10 @@
         {
           "columnName": "in_EdgeJointType",
           "value": "EESS"
+        },
+        {
+          "columnName": "in_EdgePosType",
+          "value": "EdgeOverSurface"
         },
         {
           "columnName": "EdgeJointFrontLeft",
@@ -362,7 +407,7 @@
           "value": "N0_E1"
         },
         {
-          "columnName": "EdgeTransition",
+          "columnName": "EdgeCode",
           "value": ":000::001"
         }
       ]
@@ -372,6 +417,10 @@
         {
           "columnName": "in_EdgeJointType",
           "value": "SESE"
+        },
+        {
+          "columnName": "in_EdgePosType",
+          "value": "EdgeOverSurface"
         },
         {
           "columnName": "EdgeJointFrontLeft",
@@ -394,7 +443,7 @@
           "value": "N0_S0"
         },
         {
-          "columnName": "EdgeTransition",
+          "columnName": "EdgeCode",
           "value": "000:000::"
         }
       ]
@@ -404,6 +453,10 @@
         {
           "columnName": "in_EdgeJointType",
           "value": "ELSE"
+        },
+        {
+          "columnName": "in_EdgePosType",
+          "value": "EdgeOverSurface"
         },
         {
           "columnName": "EdgeJointFrontLeft",
@@ -426,7 +479,7 @@
           "value": "N0_W0"
         },
         {
-          "columnName": "EdgeTransition",
+          "columnName": "EdgeCode",
           "value": ":000:010:"
         }
       ]
@@ -436,6 +489,10 @@
         {
           "columnName": "in_EdgeJointType",
           "value": "ESSE"
+        },
+        {
+          "columnName": "in_EdgePosType",
+          "value": "EdgeOverSurface"
         },
         {
           "columnName": "EdgeJointFrontLeft",
@@ -458,7 +515,7 @@
           "value": "N1_W0"
         },
         {
-          "columnName": "EdgeTransition",
+          "columnName": "EdgeCode",
           "value": ":001:000:"
         }
       ]
@@ -468,6 +525,10 @@
         {
           "columnName": "in_EdgeJointType",
           "value": "SEEL"
+        },
+        {
+          "columnName": "in_EdgePosType",
+          "value": "EdgeOverSurface"
         },
         {
           "columnName": "EdgeJointFrontLeft",
@@ -490,7 +551,7 @@
           "value": "S0_E0"
         },
         {
-          "columnName": "EdgeTransition",
+          "columnName": "EdgeCode",
           "value": "000:::010"
         }
       ]
@@ -500,6 +561,10 @@
         {
           "columnName": "in_EdgeJointType",
           "value": "SEES"
+        },
+        {
+          "columnName": "in_EdgePosType",
+          "value": "EdgeOverSurface"
         },
         {
           "columnName": "EdgeJointFrontLeft",
@@ -522,7 +587,7 @@
           "value": "S1_E0"
         },
         {
-          "columnName": "EdgeTransition",
+          "columnName": "EdgeCode",
           "value": "001:::000"
         }
       ]
@@ -532,6 +597,10 @@
         {
           "columnName": "in_EdgeJointType",
           "value": "ESES"
+        },
+        {
+          "columnName": "in_EdgePosType",
+          "value": "EdgeOverSurface"
         },
         {
           "columnName": "EdgeJointFrontLeft",
@@ -554,7 +623,7 @@
           "value": "W0_E0"
         },
         {
-          "columnName": "EdgeTransition",
+          "columnName": "EdgeCode",
           "value": "::000:000"
         }
       ]
@@ -564,6 +633,10 @@
         {
           "columnName": "in_EdgeJointType",
           "value": "LSEE"
+        },
+        {
+          "columnName": "in_EdgePosType",
+          "value": "EdgeOverSurface"
         },
         {
           "columnName": "EdgeJointFrontLeft",
@@ -586,7 +659,7 @@
           "value": "W0_S0"
         },
         {
-          "columnName": "EdgeTransition",
+          "columnName": "EdgeCode",
           "value": "010::000:"
         }
       ]
@@ -596,6 +669,10 @@
         {
           "columnName": "in_EdgeJointType",
           "value": "SSEE"
+        },
+        {
+          "columnName": "in_EdgePosType",
+          "value": "EdgeOverSurface"
         },
         {
           "columnName": "EdgeJointFrontLeft",
@@ -618,7 +695,7 @@
           "value": "W1_S0"
         },
         {
-          "columnName": "EdgeTransition",
+          "columnName": "EdgeCode",
           "value": "000::001:"
         }
       ]
@@ -628,6 +705,10 @@
         {
           "columnName": "in_EdgeJointType",
           "value": "EEES"
+        },
+        {
+          "columnName": "in_EdgePosType",
+          "value": "EdgeOverSurface"
         },
         {
           "columnName": "EdgeJointFrontLeft",
@@ -650,7 +731,7 @@
           "value": "E0"
         },
         {
-          "columnName": "EdgeTransition",
+          "columnName": "EdgeCode",
           "value": ":::000"
         }
       ]
@@ -660,6 +741,10 @@
         {
           "columnName": "in_EdgeJointType",
           "value": "EESE"
+        },
+        {
+          "columnName": "in_EdgePosType",
+          "value": "EdgeOverSurface"
         },
         {
           "columnName": "EdgeJointFrontLeft",
@@ -682,7 +767,7 @@
           "value": "N0"
         },
         {
-          "columnName": "EdgeTransition",
+          "columnName": "EdgeCode",
           "value": ":000::"
         }
       ]
@@ -692,6 +777,10 @@
         {
           "columnName": "in_EdgeJointType",
           "value": "LLSE"
+        },
+        {
+          "columnName": "in_EdgePosType",
+          "value": "EdgeOverSurface"
         },
         {
           "columnName": "EdgeJointFrontLeft",
@@ -714,7 +803,7 @@
           "value": "N0_W0_S0"
         },
         {
-          "columnName": "EdgeTransition",
+          "columnName": "EdgeCode",
           "value": "010:000:010:"
         }
       ]
@@ -724,6 +813,10 @@
         {
           "columnName": "in_EdgeJointType",
           "value": "SEEE"
+        },
+        {
+          "columnName": "in_EdgePosType",
+          "value": "EdgeOverSurface"
         },
         {
           "columnName": "EdgeJointFrontLeft",
@@ -746,7 +839,7 @@
           "value": "S0"
         },
         {
-          "columnName": "EdgeTransition",
+          "columnName": "EdgeCode",
           "value": "000:::"
         }
       ]
@@ -756,6 +849,10 @@
         {
           "columnName": "in_EdgeJointType",
           "value": "ESSS"
+        },
+        {
+          "columnName": "in_EdgePosType",
+          "value": "EdgeOverSurface"
         },
         {
           "columnName": "EdgeJointFrontLeft",
@@ -778,7 +875,7 @@
           "value": "N1_W0_E1"
         },
         {
-          "columnName": "EdgeTransition",
+          "columnName": "EdgeCode",
           "value": ":001:000:001"
         }
       ]
@@ -788,6 +885,10 @@
         {
           "columnName": "in_EdgeJointType",
           "value": "ELSS"
+        },
+        {
+          "columnName": "in_EdgePosType",
+          "value": "EdgeOverSurface"
         },
         {
           "columnName": "EdgeJointFrontLeft",
@@ -810,7 +911,7 @@
           "value": "N0_W0_E1"
         },
         {
-          "columnName": "EdgeTransition",
+          "columnName": "EdgeCode",
           "value": ":000:010:001"
         }
       ]
@@ -820,6 +921,10 @@
         {
           "columnName": "in_EdgeJointType",
           "value": "LSLS"
+        },
+        {
+          "columnName": "in_EdgePosType",
+          "value": "EdgeOverSurface"
         },
         {
           "columnName": "EdgeJointFrontLeft",
@@ -842,7 +947,7 @@
           "value": "N1_W0_S1_E0"
         },
         {
-          "columnName": "EdgeTransition",
+          "columnName": "EdgeCode",
           "value": "011:011:000:000"
         }
       ]
@@ -852,6 +957,10 @@
         {
           "columnName": "in_EdgeJointType",
           "value": "SLSL"
+        },
+        {
+          "columnName": "in_EdgePosType",
+          "value": "EdgeOverSurface"
         },
         {
           "columnName": "EdgeJointFrontLeft",
@@ -874,7 +983,7 @@
           "value": "N0_W1_S0_E1"
         },
         {
-          "columnName": "EdgeTransition",
+          "columnName": "EdgeCode",
           "value": "000:000:011:011"
         }
       ]
@@ -884,6 +993,10 @@
         {
           "columnName": "in_EdgeJointType",
           "value": "LLSL"
+        },
+        {
+          "columnName": "in_EdgePosType",
+          "value": "EdgeOverSurface"
         },
         {
           "columnName": "EdgeJointFrontLeft",
@@ -906,7 +1019,7 @@
           "value": "N0_W0_S0_E1"
         },
         {
-          "columnName": "EdgeTransition",
+          "columnName": "EdgeCode",
           "value": "010:000:010:011"
         }
       ]
@@ -916,6 +1029,10 @@
         {
           "columnName": "in_EdgeJointType",
           "value": "LLLS"
+        },
+        {
+          "columnName": "in_EdgePosType",
+          "value": "EdgeOverSurface"
         },
         {
           "columnName": "EdgeJointFrontLeft",
@@ -938,7 +1055,7 @@
           "value": "N0_W0_S1_E0"
         },
         {
-          "columnName": "EdgeTransition",
+          "columnName": "EdgeCode",
           "value": "011:010:010:000"
         }
       ]
@@ -948,6 +1065,10 @@
         {
           "columnName": "in_EdgeJointType",
           "value": "LLSS"
+        },
+        {
+          "columnName": "in_EdgePosType",
+          "value": "EdgeOverSurface"
         },
         {
           "columnName": "EdgeJointFrontLeft",
@@ -970,7 +1091,7 @@
           "value": "N0_W0_S1_E1"
         },
         {
-          "columnName": "EdgeTransition",
+          "columnName": "EdgeCode",
           "value": "011:000:010:001"
         }
       ]
@@ -980,6 +1101,10 @@
         {
           "columnName": "in_EdgeJointType",
           "value": "SLLL"
+        },
+        {
+          "columnName": "in_EdgePosType",
+          "value": "EdgeOverSurface"
         },
         {
           "columnName": "EdgeJointFrontLeft",
@@ -1002,7 +1127,7 @@
           "value": "N0_W1_S0_E0"
         },
         {
-          "columnName": "EdgeTransition",
+          "columnName": "EdgeCode",
           "value": "000:010:011:010"
         }
       ]
@@ -1012,6 +1137,10 @@
         {
           "columnName": "in_EdgeJointType",
           "value": "SLLS"
+        },
+        {
+          "columnName": "in_EdgePosType",
+          "value": "EdgeOverSurface"
         },
         {
           "columnName": "EdgeJointFrontLeft",
@@ -1034,7 +1163,7 @@
           "value": "N0_W1_S1_E0"
         },
         {
-          "columnName": "EdgeTransition",
+          "columnName": "EdgeCode",
           "value": "001:010:011:000"
         }
       ]
@@ -1044,6 +1173,10 @@
         {
           "columnName": "in_EdgeJointType",
           "value": "SLSS"
+        },
+        {
+          "columnName": "in_EdgePosType",
+          "value": "EdgeOverSurface"
         },
         {
           "columnName": "EdgeJointFrontLeft",
@@ -1066,7 +1199,7 @@
           "value": "N0_W1_S1_E1"
         },
         {
-          "columnName": "EdgeTransition",
+          "columnName": "EdgeCode",
           "value": "001:000:011:001"
         }
       ]
@@ -1076,6 +1209,10 @@
         {
           "columnName": "in_EdgeJointType",
           "value": "LSLL"
+        },
+        {
+          "columnName": "in_EdgePosType",
+          "value": "EdgeOverSurface"
         },
         {
           "columnName": "EdgeJointFrontLeft",
@@ -1098,7 +1235,7 @@
           "value": "N1_W0_S0_E0"
         },
         {
-          "columnName": "EdgeTransition",
+          "columnName": "EdgeCode",
           "value": "010:011:000:010"
         }
       ]
@@ -1108,6 +1245,10 @@
         {
           "columnName": "in_EdgeJointType",
           "value": "LSSL"
+        },
+        {
+          "columnName": "in_EdgePosType",
+          "value": "EdgeOverSurface"
         },
         {
           "columnName": "EdgeJointFrontLeft",
@@ -1130,7 +1271,7 @@
           "value": "N1_W0_S0_E1"
         },
         {
-          "columnName": "EdgeTransition",
+          "columnName": "EdgeCode",
           "value": "010:011:000:000"
         }
       ]
@@ -1140,6 +1281,10 @@
         {
           "columnName": "in_EdgeJointType",
           "value": "LSSS"
+        },
+        {
+          "columnName": "in_EdgePosType",
+          "value": "EdgeOverSurface"
         },
         {
           "columnName": "EdgeJointFrontLeft",
@@ -1162,7 +1307,7 @@
           "value": "N1_W0_S1_E1"
         },
         {
-          "columnName": "EdgeTransition",
+          "columnName": "EdgeCode",
           "value": "011:001:000:001"
         }
       ]
@@ -1172,6 +1317,10 @@
         {
           "columnName": "in_EdgeJointType",
           "value": "SSLL"
+        },
+        {
+          "columnName": "in_EdgePosType",
+          "value": "EdgeOverSurface"
         },
         {
           "columnName": "EdgeJointFrontLeft",
@@ -1194,7 +1343,7 @@
           "value": "N1_W1_S0_E0"
         },
         {
-          "columnName": "EdgeTransition",
+          "columnName": "EdgeCode",
           "value": "000:011:001:010"
         }
       ]
@@ -1204,6 +1353,10 @@
         {
           "columnName": "in_EdgeJointType",
           "value": "SSSL"
+        },
+        {
+          "columnName": "in_EdgePosType",
+          "value": "EdgeOverSurface"
         },
         {
           "columnName": "EdgeJointFrontLeft",
@@ -1226,7 +1379,7 @@
           "value": "N1_W1_S0_E1"
         },
         {
-          "columnName": "EdgeTransition",
+          "columnName": "EdgeCode",
           "value": "000:001:001:011"
         }
       ]
@@ -1236,6 +1389,10 @@
         {
           "columnName": "in_EdgeJointType",
           "value": "SSLS"
+        },
+        {
+          "columnName": "in_EdgePosType",
+          "value": "EdgeOverSurface"
         },
         {
           "columnName": "EdgeJointFrontLeft",
@@ -1258,7 +1415,7 @@
           "value": "N1_W1_S1_E0"
         },
         {
-          "columnName": "EdgeTransition",
+          "columnName": "EdgeCode",
           "value": "001:011:001:000"
         }
       ]
@@ -1268,6 +1425,10 @@
         {
           "columnName": "in_EdgeJointType",
           "value": "SELL"
+        },
+        {
+          "columnName": "in_EdgePosType",
+          "value": "EdgeOverSurface"
         },
         {
           "columnName": "EdgeJointFrontLeft",
@@ -1290,7 +1451,7 @@
           "value": "N0_S0_E0"
         },
         {
-          "columnName": "EdgeTransition",
+          "columnName": "EdgeCode",
           "value": "000:010::010"
         }
       ]
@@ -1300,6 +1461,10 @@
         {
           "columnName": "in_EdgeJointType",
           "value": "SESL"
+        },
+        {
+          "columnName": "in_EdgePosType",
+          "value": "EdgeOverSurface"
         },
         {
           "columnName": "EdgeJointFrontLeft",
@@ -1322,7 +1487,7 @@
           "value": "N0_S0_E1"
         },
         {
-          "columnName": "EdgeTransition",
+          "columnName": "EdgeCode",
           "value": "000:000::011"
         }
       ]
@@ -1332,6 +1497,10 @@
         {
           "columnName": "in_EdgeJointType",
           "value": "SELS"
+        },
+        {
+          "columnName": "in_EdgePosType",
+          "value": "EdgeOverSurface"
         },
         {
           "columnName": "EdgeJointFrontLeft",
@@ -1354,7 +1523,7 @@
           "value": "N0_S1_E0"
         },
         {
-          "columnName": "EdgeTransition",
+          "columnName": "EdgeCode",
           "value": "001:010::000"
         }
       ]
@@ -1364,6 +1533,10 @@
         {
           "columnName": "in_EdgeJointType",
           "value": "SESS"
+        },
+        {
+          "columnName": "in_EdgePosType",
+          "value": "EdgeOverSurface"
         },
         {
           "columnName": "EdgeJointFrontLeft",
@@ -1386,7 +1559,7 @@
           "value": "N0_S1_E1"
         },
         {
-          "columnName": "EdgeTransition",
+          "columnName": "EdgeCode",
           "value": "001:000::001"
         }
       ]
@@ -1396,6 +1569,10 @@
         {
           "columnName": "in_EdgeJointType",
           "value": "ELLS"
+        },
+        {
+          "columnName": "in_EdgePosType",
+          "value": "EdgeOverSurface"
         },
         {
           "columnName": "EdgeJointFrontLeft",
@@ -1418,7 +1595,7 @@
           "value": "N0_W0_E0"
         },
         {
-          "columnName": "EdgeTransition",
+          "columnName": "EdgeCode",
           "value": ":010:010:000"
         }
       ]
@@ -1428,6 +1605,10 @@
         {
           "columnName": "in_EdgeJointType",
           "value": "ESLS"
+        },
+        {
+          "columnName": "in_EdgePosType",
+          "value": "EdgeOverSurface"
         },
         {
           "columnName": "EdgeJointFrontLeft",
@@ -1450,7 +1631,7 @@
           "value": "N1_W0_E0"
         },
         {
-          "columnName": "EdgeTransition",
+          "columnName": "EdgeCode",
           "value": ":011:000:000"
         }
       ]
@@ -1460,6 +1641,10 @@
         {
           "columnName": "in_EdgeJointType",
           "value": "ESEE"
+        },
+        {
+          "columnName": "in_EdgePosType",
+          "value": "EdgeOverSurface"
         },
         {
           "columnName": "EdgeJointFrontLeft",
@@ -1482,7 +1667,7 @@
           "value": "W0"
         },
         {
-          "columnName": "EdgeTransition",
+          "columnName": "EdgeCode",
           "value": "::000:"
         }
       ]

@@ -1,4 +1,4 @@
-/// Schuler Consulting
+// Schuler Consulting
 // Create: Juli 2023
 // By Ludwig Weber
 // Purpose: HOMAG Converter for bom-elements

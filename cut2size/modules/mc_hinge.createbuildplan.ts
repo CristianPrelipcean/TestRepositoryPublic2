@@ -42,7 +42,7 @@ let Positions: number []=[];
 
 // Call table tab_HingeObjectMapping
 if(HingePosLogic == 'Table') {
-  let tablevalue = GlobalFunc.find_HingePosition(this.mod_Program, this.mod_Width, this.mod_Length);
+  let tablevalue = GlobalFunc.find_HingePosition(this.mod_Program, this.mod_PartDesign, this.mod_Height, this.mod_Width);
   HingeDescriptor = tablevalue.HingeDescriptor!;
   }
 
@@ -73,7 +73,7 @@ if (HingeDescriptor == 'None'){
   }
 }
 else{
-  Positions = GlobalFunc.process_Descriptor(HingeDescriptor,this.mod_Width);
+  Positions = GlobalFunc.process_Descriptor(HingeDescriptor,this.mod_Height);
 }
 
 //===================================================
@@ -99,20 +99,19 @@ Positions.forEach(Position=> {
         let hingedrills = GlobalFunc.find_HardwareDrillVertLibrary(drilltype.ProcessingId!,'Fronts')
         hingedrills.forEach(drill=> {
 
-          //XCoord = this.mod_FrontType == 'DoorLeft' ? drill.XA! + this.mod_HingeDrillingDistance : this.mod_Length - drill.XA! - this.mod_HingeDrillingDistance;
-          XCoord = drill.XA <= this.mod_Length/2 ? drill.XA! + this.mod_HingeDrillingDistance : this.mod_Length - drill.XA! - this.mod_HingeDrillingDistance;
+          XCoord = this.mod_FrontType == 'DoorLeft' ? drill.XA! + this.mod_HingeDrillingDistance : this.mod_Width - drill.XA! - this.mod_HingeDrillingDistance;
           YCoord = Position + drill.YA;
 
           // Initialize drill
           let Drill = true;
 
           // Check if the drill in x-direction is on the board, if not block the drilling
-          if(XCoord - drill.DU/2 <= 0 || XCoord + drill.DU/2 >= this.mod_Length){
+          if(XCoord - drill.DU/2 <= 0 || XCoord + drill.DU/2 >= this.mod_Width){
             Drill = false;
           }
 
           // Check if the drill in y-direction is on the board, if not block the drilling
-          if(YCoord - drill.DU/2 <= 0 || YCoord + drill.DU/2 >= this.mod_Width){
+          if(YCoord - drill.DU/2 <= 0 || YCoord + drill.DU/2 >= this.mod_Height){
             Drill = false;
           }
        

@@ -1,0 +1,111 @@
+{
+  "partCode": "part_Drawer",
+  "shortName": "Drawer",
+  "description": "Drawer frontpanel",
+  "wdt": "XYZ",
+  "groupName": "Fronts",
+  "imageId": "61c28503-3d7a-4980-8d5b-8406321db51a:Drawer.jpg",
+  "model3dImageId": "",
+  "invisible": false,
+  "restrictionTypeId": "Public",
+  "partVariants": [
+    {
+      "partVarId": "pa_EdgeJointType",
+      "valueScript": "this.parent.mod_EdgeJointType",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgePosType",
+      "valueScript": "this.parent.mod_EdgePosType",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_PartGrain",
+      "valueScript": "this.parent.mod_PartGrain",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeTopMapping",
+      "valueScript": "",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_BoardObjectMapping",
+      "valueScript": "",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeBtmMapping",
+      "valueScript": "",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeLeftMapping",
+      "valueScript": "",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeRightMapping",
+      "valueScript": "",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeBtmColor",
+      "valueScript": "this.parent.mod_EdgeBtmColor",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeLeftColor",
+      "valueScript": "this.parent.mod_EdgeLeftColor",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeRightColor",
+      "valueScript": "this.parent.mod_EdgeRightColor",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeTopColor",
+      "valueScript": "this.parent.mod_EdgeTopColor",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_ProgramQuery",
+      "valueScript": "this.parent.mod_Program_matrix",
+      "isWritable": false
+    }
+  ],
+  "bomData": [
+    {
+      "bomElementTypeId": "bomout_Board",
+      "description": "Output boards and edges",
+      "valueScript": "// Call the function to process the Bom-Element\nGlobalFunc.process_BoardBomInfo(this, part)"
+    }
+  ],
+  "ncData": [
+    {
+      "part2": "part_DrillVert",
+      "touchName": "FromFront",
+      "bomElementTypeId": "ncout_Group",
+      "description": "Drill vertical in front with processing Drill or Pocket",
+      "valueScript": "let DU = part2.pa_ProcessingTableData != undefined ? part2.pa_ProcessingTableData.DU : part2.pa_Diameter;\n\n  if (DU == 2.5 || DU == 3 || DU == 4 || DU == 5 || DU == 6 || DU == 8 || DU == 8 || DU == 10 || DU == 15 || DU == 35) {\n\n    let Drill = this.addncout_DrillVert();\n\n    // StandardValue\n    Drill.nc_TOOL = \"102\";\n    Drill.nc_XA = posRel.x;\n    Drill.nc_YA = partSelf._dimy - posRel.y;\n    Drill.nc_AN = 1;\n    Drill.nc_Side = \"Btm\";\n    Drill.nc_MprRelevant = partSelf.pa_ProgramQuery.Custom_ProductGroup == 'Wood' ? true : false;\n    Drill.nc_DrawingRelevant = true;\n\n    // TableValues\n    if (part2.pa_ProcessingTableData != undefined) {\n      Drill.nc_TI = part2.pa_ProcessingTableData.TI;\n      Drill.nc_DU = part2.pa_ProcessingTableData.DU;\n      Drill.nc_BM = part2.pa_ProcessingTableData.matrix_BM;\n      Drill.nc_WI = part2.pa_ProcessingTableData.matrix_WI;\n      Drill.nc_AB = part2.pa_ProcessingTableData.matrix_AB;\n      Drill.nc_LA = part2.pa_ProcessingTableData.matrix_LA;\n      Drill.nc_MI = part2.pa_ProcessingTableData.matrix_MI;\n      Drill.nc_KO = part2.pa_ProcessingTableData.matrix_KO;\n    }\n    // AttributeValues\n    else {\n      Drill.nc_TI = part2.pa_DrillDepth;\n      Drill.nc_DU = part2.pa_Diameter;\n      Drill.nc_BM = part2.pa_DrillDepth >= partSelf._dimz && part2.pa_Diameter == 5 || part2.pa_Diameter == 6 || part2.pa_Diameter == 10 ? \"LSL\" : \"LS\";\n      Drill.nc_WI = 0;\n      Drill.nc_AB = 1;\n      Drill.nc_LA = 0;\n      Drill.nc_MI = 0;\n      Drill.nc_KO = \"00\";\n    }\n  }\n  else {\n    let Pocket = this.addncout_Pocket();\n\n    //StandardValue\n\n    Pocket.nc_TOOL = \"112\";\n    Pocket.nc_XA = posRel.x;\n    Pocket.nc_YA = partSelf._dimy - posRel.y;\n    Pocket.nc_Side = \"Btm\";\n    Pocket.nc_MprRelevant = partSelf.pa_ProgramQuery.Custom_ProductGroup == 'Wood' ? true : false;\n    Pocket.nc_DrawingRelevant = true;\n\n    Pocket.nc_BR = DU;\n    Pocket.nc_KO = \"00\";\n    Pocket.nc_LA = DU;\n    Pocket.nc_RD = DU / 2;\n    Pocket.nc_TI = part2.pa_DrillDepth;\n\n  }",
+      "bomExecuteType": "Touch"
+    },
+    {
+      "part2": "part_DrillVert",
+      "touchName": "FromBack",
+      "bomElementTypeId": "ncout_Group",
+      "description": "Drill vertical from behind with processing Drill or Pocket",
+      "valueScript": "let DU = part2.pa_ProcessingTableData != undefined ? part2.pa_ProcessingTableData.DU : part2.pa_Diameter;\n\n  if (DU == 2.5 || DU == 3 || DU == 4 || DU == 5 || DU == 6 || DU == 8 || DU == 8 || DU == 10 || DU == 15 || DU == 35) {\n\n    let Drill = this.addncout_DrillVert();\n\n    // StandardValue\n    Drill.nc_TOOL=\"102\";\n    Drill.nc_XA=posRel.x;\n    Drill.nc_YA=partSelf._dimy - posRel.y;\n    Drill.nc_AN = 1;\n    Drill.nc_Side = \"Top\";\n    Drill.nc_MprRelevant = partSelf.pa_ProgramQuery.Custom_ProductGroup == 'Wood' || partSelf.pa_ProgramQuery.Custom_ProductGroup == 'Glass' && part2.pa_DrillDepth+2<partSelf._thickness ||  partSelf.pa_ProgramQuery.Custom_ProductGroup == 'Ceramics' && part2.pa_DrillDepth+1<partSelf._thickness ? true : false;\n    Drill.nc_DrawingRelevant = true;\n\n    // TableValues\n    if(part2.pa_ProcessingTableData != undefined){\n    Drill.nc_TI=part2.pa_ProcessingTableData.TI;\n    Drill.nc_DU=part2.pa_ProcessingTableData.DU;\n    Drill.nc_BM = part2.pa_ProcessingTableData.matrix_BM;\n    Drill.nc_WI = part2.pa_ProcessingTableData.matrix_WI;\n    Drill.nc_AB = part2.pa_ProcessingTableData.matrix_AB;\n    Drill.nc_LA = part2.pa_ProcessingTableData.matrix_LA;\n    Drill.nc_MI = part2.pa_ProcessingTableData.matrix_MI;\n    Drill.nc_KO = part2.pa_ProcessingTableData.matrix_KO;\n    }\n    // AttributeValues\n    else{\n    Drill.nc_TI=part2.pa_DrillDepth;\n    Drill.nc_DU=part2.pa_Diameter;\n    Drill.nc_BM = part2.pa_DrillDepth >= partSelf._dimz && part2.pa_Diameter == 5 || part2.pa_Diameter == 6 || part2.pa_Diameter == 10 ? \"LSL\" : \"LS\"; \n    Drill.nc_WI = 0;\n    Drill.nc_AB = 1;\n    Drill.nc_LA = 0;\n    Drill.nc_MI = 0;\n    Drill.nc_KO = \"00\";\n    }\n  }\n  else {\n    let Pocket = this.addncout_Pocket();\n\n    //StandardValue\n\n    Pocket.nc_TOOL = \"112\";\n    Pocket.nc_XA = posRel.x;\n    Pocket.nc_YA = partSelf._dimy - posRel.y;\n    Pocket.nc_Side = \"Top\";\n    Pocket.nc_MprRelevant = partSelf.pa_ProgramQuery.Custom_ProductGroup == 'Wood' || partSelf.pa_ProgramQuery.Custom_ProductGroup == 'Glass' && part2.pa_DrillDepth+2<partSelf._thickness ||  partSelf.pa_ProgramQuery.Custom_ProductGroup == 'Ceramics' && part2.pa_DrillDepth+1<partSelf._thickness ? true : false;\n    Pocket.nc_DrawingRelevant = true;\n\n    Pocket.nc_BR = DU;\n    Pocket.nc_KO = \"00\";\n    Pocket.nc_LA = DU;\n    Pocket.nc_RD = DU / 2;\n    Pocket.nc_TI = part2.pa_DrillDepth;\n  }",
+      "bomExecuteType": "Touch"
+    },
+    {
+      "part2": "part_HandleDrill",
+      "touchName": "FromFront",
+      "bomElementTypeId": "ncout_Group",
+      "description": "Handle drillings",
+      "valueScript": "// Orientation of the drilling line and Handle length\n  let Orientation = part2.pa_HandleOrientation == 'Vert' ? 90 : 0;\n  let HandleLength = (part2.pa_DrillQty - 1) * part2.pa_DrillingDistance;\n\n  // Calculate the position\n  let PosX = part2.pa_HandleOrientation == 'Vert' ? posRel.x : posRel.x - HandleLength / 2;\n  let PosY = part2.pa_HandleOrientation == 'Vert' ? partSelf._dimy - posRel.y - HandleLength / 2 : partSelf._dimy - posRel.y;\n\n  // Add Vertical Drill\n  for (let i = 1; i <= part2.pa_DrillQty; i++) {\n    let DrillVert = this.addncout_DrillVert();\n    DrillVert.nc_TOOL = \"102\";\n    DrillVert.nc_XA = PosX;\n    DrillVert.nc_YA = PosY;\n    DrillVert.nc_TI = part2.pa_DrillDepth;\n    DrillVert.nc_DU = part2.pa_Diameter;\n    DrillVert.nc_BM = \"LS\"\n    DrillVert.nc_WI = Orientation;\n    DrillVert.nc_AB = 1;\n    //DrillVert.nc_LA =  0;\n    DrillVert.nc_MI = 0;\n    DrillVert.nc_KO = \"00\";\n    DrillVert.nc_AN = 1;\n    DrillVert.nc_Side = part2.pa_DrillDepth >= partSelf._dimz ? \"Btm\" : \"Top\";\n\n    DrillVert.nc_MprRelevant = partSelf.pa_ProgramQuery.Custom_ProductGroup == 'Wood' ? true : false;\n    DrillVert.nc_DrawingRelevant = true\n\n    PosY = part2.pa_HandleOrientation == 'Vert' ? PosY + part2.pa_DrillingDistance : PosY;\n    PosX = part2.pa_HandleOrientation == 'Vert' ? PosX : PosX + part2.pa_DrillingDistance;\n  }",
+      "bomExecuteType": "Touch"
+    }
+  ]
+}

@@ -3,21 +3,20 @@
   "shortName": "Front panel",
   "configurable": false,
   "isRoot": false,
-  "isConfigDummy": false,
   "description": "Front panel for different front elements",
-  "groupName": "Panels",
-  "imageId": "29424f9e-f073-41ab-9a3a-cf06ecbb9e96:mc_FrontPanel.jpg",
+  "groupName": "Fronts",
+  "imageId": "c129ea58-c365-4aaf-b771-09b1e316431b:Frontpanel.jpg",
   "restrictionTypeId": "Internal",
   "childModules": [],
   "assignedVariants": [
     {
       "variantId": "mod_BtmColor",
-      "previewValue": "240",
+      "previewValue": "Demoblue",
       "origin": "Derived"
     },
     {
       "variantId": "mod_Color",
-      "previewValue": "240",
+      "previewValue": "Demoblue",
       "origin": "Derived"
     },
     {
@@ -26,13 +25,18 @@
       "origin": "Derived"
     },
     {
+      "variantId": "mod_Height",
+      "previewValue": "1000",
+      "origin": "Derived"
+    },
+    {
       "variantId": "mod_Thickness",
-      "previewValue": "19",
+      "previewValue": "500",
       "origin": "Derived"
     },
     {
       "variantId": "mod_Program",
-      "previewValue": "Nature",
+      "previewValue": "19",
       "origin": "Derived"
     },
     {
@@ -42,7 +46,7 @@
     },
     {
       "variantId": "mod_PartGrain",
-      "previewValue": "Lengthwise",
+      "previewValue": "GrainHor",
       "origin": "Derived"
     },
     {
@@ -52,7 +56,7 @@
     },
     {
       "variantId": "mod_EdgeLeftColor",
-      "previewValue": "240",
+      "previewValue": "Demoblue",
       "origin": "Derived"
     },
     {
@@ -62,7 +66,12 @@
     },
     {
       "variantId": "mod_EdgeRightColor",
-      "previewValue": "240",
+      "previewValue": "Demoblue",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_EdgeTechnology",
+      "previewValue": "Automatic",
       "origin": "Derived"
     },
     {
@@ -71,37 +80,66 @@
       "origin": "Derived"
     },
     {
-      "variantId": "mod_EdgeBackClass",
+      "variantId": "mod_EdgePosType",
+      "previewValue": "EdgeOverSurface",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_EdgesPartLibraryVis",
+      "previewValue": "EdgeOverSurface",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_PartDesign",
+      "previewValue": "FlatPanel",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_FrontType",
+      "previewValue": "DoorLeft",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_EdgeBtmClass",
       "previewValue": "Thick",
       "origin": "Derived"
     },
     {
-      "variantId": "mod_EdgeBackColor",
-      "previewValue": "240",
+      "variantId": "mod_EdgeBtmColor",
+      "previewValue": "Demoblue",
       "origin": "Derived"
     },
     {
-      "variantId": "mod_EdgeFrontClass",
+      "variantId": "mod_EdgeTopClass",
       "previewValue": "Thick",
       "origin": "Derived"
     },
     {
-      "variantId": "mod_EdgeFrontColor",
-      "previewValue": "240",
+      "variantId": "mod_EdgeTopColor",
+      "previewValue": "Demoblue",
       "origin": "Derived"
     },
     {
-      "variantId": "mod_Length",
-      "previewValue": "1000",
+      "variantId": "mod_PartType",
+      "previewValue": "Front",
       "origin": "Derived"
     }
   ],
   "assignedParts": [
     {
-      "partCode": "part_PanelGroup"
+      "partCode": "part_DoorLeft"
     },
     {
-      "partCode": "part_Front"
+      "partCode": "part_DoorRight"
+    },
+    {
+      "partCode": "part_Drawer"
+    },
+    {
+      "partCode": "part_Edge"
+    },
+    {
+      "partCode": "part_PanelGroup"
     }
   ],
   "assignedCustomTables": [],

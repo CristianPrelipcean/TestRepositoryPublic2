@@ -1,15 +1,14 @@
-find_EdgeMapping(Program:string, EdgeClass:string, Color:string, BoardThk:number):any{
+find_EdgeMapping(EdgeClass:string, EdgeTechnology:string, Color:string, BoardThk:number):any{
 
 		// Wildcard parameters
 		let WildcardParams: any = {	
-			in_Program: Program,
-
+			in_EdgeTechnology: EdgeTechnology,
+			in_Color: Color
 		};
 		
 		// Fixed parameters
 		let FixedParams: any = {
-			in_Color: Color,
-			in_EdgeClass: EdgeClass
+			in_EdgeClass: EdgeClass,
 		};
 		
 		// Range parameters
@@ -27,7 +26,7 @@ find_EdgeMapping(Program:string, EdgeClass:string, Color:string, BoardThk:number
 		// Call the function and return the value
 		let retVal = GlobalFunc.process_BasicTableQuery(ct_tab_EdgeMapping, WildcardParams, FixedParams, RangeParams, UniqueOutput);
 		if (retVal == undefined) {
-			let Text = 'Program: ' + Program + 'Edge Class: ' + EdgeClass +  'Color: ' + Color + 'Board Thickness: ' + BoardThk;
+			let Text = 'Edge Class: ' + EdgeClass + 'Edge Technology: ' + EdgeTechnology + 'Color: ' + Color + 'Board Thickness: ' + BoardThk;
 			let ErrorMessage = GlobalFunc.find_ErrorList('Error 13002',1);
 			logError(ErrorMessage.Message(Text));
 		}

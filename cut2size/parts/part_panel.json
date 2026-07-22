@@ -1,0 +1,131 @@
+{
+  "partCode": "part_Panel",
+  "shortName": "Panel",
+  "description": "Simple panel",
+  "wdt": "XZY",
+  "groupName": "Panel",
+  "imageId": "3df41ea2-2b40-4fa8-8416-9dac512de6a9:part_Panel.jpg",
+  "model3dImageId": "",
+  "invisible": false,
+  "restrictionTypeId": "Public",
+  "partVariants": [
+    {
+      "partVarId": "pa_BtmColor",
+      "valueScript": "this.parent.mod_BtmColor",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_TopColor",
+      "valueScript": "this.parent.mod_Color",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_Program",
+      "valueScript": "this.parent.mod_Program",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_PartGrain",
+      "valueScript": "this.parent.mod_PartGrain",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeTechnology",
+      "valueScript": "this.parent.mod_EdgeTechnology",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeFrontColor",
+      "valueScript": "this.parent.mod_EdgeFrontColor",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeLeftColor",
+      "valueScript": "this.parent.mod_EdgeLeftColor",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeBackColor",
+      "valueScript": "this.parent.mod_EdgeBackColor",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeRightColor",
+      "valueScript": "this.parent.mod_EdgeRightColor",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeFrontClass",
+      "valueScript": "this.parent.mod_EdgeFrontClass",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeRightClass",
+      "valueScript": "this.parent.mod_EdgeRightClass",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeBackClass",
+      "valueScript": "this.parent.mod_EdgeBackClass",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeLeftClass",
+      "valueScript": "this.parent.mod_EdgeLeftClass",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgePosType",
+      "valueScript": "this.parent.mod_EdgePosType",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeJointType",
+      "valueScript": "this.parent.mod_EdgeJointType",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_TypeElement",
+      "valueScript": "this.parent.mod_TypeElement",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_PartDesign",
+      "valueScript": "this.parent.mod_PartDesign",
+      "isWritable": false
+    }
+  ],
+  "bomData": [
+    {
+      "bomElementTypeId": "bomout_Board",
+      "description": "Output boards and edges",
+      "valueScript": "                                 \n             // Variables\n            let EdgeFront: any;\n            let EdgeLeft: any;\n            let EdgeBack: any;  \n            let EdgeRight: any;\n            let EdgeJointValue: any;\n            \n             //---------------Get data from table BoardObjectMapping-----------------\n            \n            let BoardObjectMapping = GlobalFunc.find_BoardObjectMapping(part.pa_Program, part.pa_TypeElement, part.pa_PartDesign, part._thickness, part.pa_TopColor, part.pa_BtmColor);\n            \n\n              // Attribute values for EdgeColor and EdgeClass\n              EdgeFront = GlobalFunc.find_EdgeMapping(part.pa_EdgeFrontClass, part.pa_EdgeTechnology,part.pa_EdgeFrontColor, part._thickness)\n              EdgeLeft = GlobalFunc.find_EdgeMapping(part.pa_EdgeLeftClass, part.pa_EdgeTechnology,part.pa_EdgeLeftColor, part._thickness)\n              EdgeBack = GlobalFunc.find_EdgeMapping(part.pa_EdgeBackClass, part.pa_EdgeTechnology,part.pa_EdgeBackColor, part._thickness)\n              EdgeRight = GlobalFunc.find_EdgeMapping(part.pa_EdgeRightClass, part.pa_EdgeTechnology,part.pa_EdgeRightColor, part._thickness)\n \n\n            let BoardLibrary = GlobalFunc.find_BoardLibrary(BoardObjectMapping.BoardId);           \n            //let GrainDirection = GlobalFunc.find_GrainDirection(BoardLibrary.Grain!,part.pa_PartGrain);\n            \n            /*\n            let EdgeFrontLibrary = GlobalFunc.find_EdgeLibrary(EdgeFront.EdgeId!)\n            let EdgeLeftLibrary = GlobalFunc.find_EdgeLibrary(EdgeLeft.EdgeId!)\n            let EdgeBackLibrary = GlobalFunc.find_EdgeLibrary(EdgeBack.EdgeId!)\n            let EdgeRightLibrary = GlobalFunc.find_EdgeLibrary(EdgeRight.EdgeId!)\n            */\n            \n\n             EdgeJointValue = part.pa_EdgeJointType\n\n\n            let EdgeJoint = GlobalFunc.find_EdgeJointTypeConstruction(EdgeJointValue,part.pa_EdgePosType)\n            \n              \n            //---------------Set attributes of the board----------------------------\n            \n            this.bom_Material = BoardLibrary.MaterialCode;\n            this.bom_Width = part._depth;\n            this.bom_Length = part._width;\n            this.bom_Finalthk = part._thickness;\n            this.bom_BoardType =  BoardLibrary.BoardType!;\n            //this.bom_GrainOrientation = GrainDirection.GrainDirection;\n            this.bom_Route = 'DemoRoute';\n            this.bom_EdgeLeft = EdgeLeft.EdgeId!;\n            this.bom_EdgeRight = EdgeRight.EdgeId!;\n            this.bom_EdgeBack = EdgeBack.EdgeId!;\n            this.bom_EdgeFront = EdgeFront.EdgeId!;\n            this.bom_EdgeJointFrontLeft = EdgeJoint.EdgeJointFrontLeft;\n            this.bom_EdgeJointLeftBack = EdgeJoint.EdgeJointLeftBack;\n            this.bom_EdgeJointBackRight = EdgeJoint.EdgeJointBackRight;\n            this.bom_EdgeJointRightFront = EdgeJoint.EdgeJointRightFront;\n            this.bom_EdgeShape = EdgeJoint.EdgeShape;\n            this.bom_EdgeTransition = EdgeJoint.EdgeCode"
+    }
+  ],
+  "ncData": [
+    {
+      "part2": "part_DrillVert",
+      "touchName": "FromTop",
+      "bomElementTypeId": "ncout_DrillVert",
+      "description": "Drill vertical from top",
+      "valueScript": "               /*              // Variables\n               let BasePointX: number = 0;\n               let BasePointY: number = 0;\n               let ProcBasePoint: string = part2.pa_ProcessingBasePoint;\n              \n               // Translate BasePoint and Orientation to mpr\n               if (ProcBasePoint == 'PartZeroPoint') {\n                 BasePointX = posRel.x + part2.pa_Diameter/2;\n                 BasePointY = partSelf._dimz-posRel.z - part2.pa_Diameter/2;\n               }\n \n               else if (ProcBasePoint == 'PartWidth') {\n                BasePointX = posRel.x + part2.pa_Diameter/2;\n                BasePointY = partSelf._dimz-posRel.z - part2.pa_Diameter/2;\n               }\n \n               else if (ProcBasePoint == 'PartWidthPartLength') {\n                BasePointX = posRel.x + part2.pa_Diameter/2;\n                BasePointY = partSelf._dimz-posRel.z - part2.pa_Diameter/2;\n               }\n \n               else if (ProcBasePoint == 'PartLength') {\n                 BasePointX = posRel.x + part2.pa_Diameter/2;\n                 BasePointY = partSelf._dimz-posRel.z - part2.pa_Diameter/2;\n               }\n              */\n               this.nc_TOOL=\"102\";\n               this.nc_XA = posRel.x + part2.pa_Diameter/2;\n               this.nc_YA = partSelf._dimz-posRel.z - part2.pa_Diameter/2;\n               this.nc_TI = part2.pa_DrillDepth\n               this.nc_DU = part2.pa_Diameter;\n               this.nc_BM =  \"LS\";\n               //this.nc_WI = 90;\n               //this.nc_AB =  32;\n               //this.nc_LA =  0;\n               //this.nc_MI =  0;\n               //this.nc_KO = \"00\";\n               //this.nc_AN = 10;;\n               ",
+      "bomExecuteType": "Touch"
+    },
+    {
+      "part2": "part_DrillingLine",
+      "touchName": "FromTop",
+      "bomElementTypeId": "ncout_DrillVert",
+      "description": "Drilling line",
+      "valueScript": "                           \n              let Orientation: number = 0;\n              let BasePointX: number = 0;\n              let BasePointY: number = 0;\n              let ProcBasePoint: string = part2.pa_ProcessingBasePoint;\n              let ProcOri: string = part2.pa_ProcessingOrientation;\n\n              // Translate BasePoint and Orientation to mpr\n              if (ProcBasePoint == 'PartZeroPoint' && ProcOri == 'Across' ) {\n                BasePointX = posRel.x;\n                BasePointY = partSelf._dimz-posRel.z;\n                Orientation = 270;\n              }\n\n              else if (ProcBasePoint == 'PartZeroPoint' && ProcOri == 'Along' ) {\n                BasePointX = posRel.x;\n                BasePointY = partSelf._dimz-posRel.z;\n                Orientation = 0;\n              }\n\n              else if (ProcBasePoint == 'PartWidth' && ProcOri == 'Across' ) {\n                BasePointX = posRel.x;\n                BasePointY = partSelf._dimz-posRel.z;\n                Orientation = 90;\n              }\n\n              else if (ProcBasePoint == 'PartWidth' && ProcOri == 'Along' ) {\n                BasePointX = posRel.x;\n                BasePointY = partSelf._dimz-posRel.z;\n                Orientation = 0;\n              }\n\n              else if (ProcBasePoint == 'PartWidthPartLength' && ProcOri == 'Across' ) {\n                BasePointX = posRel.x;\n                BasePointY = partSelf._dimz-posRel.z;\n                Orientation = 90;\n              }\n\n              else if (ProcBasePoint == 'PartWidthPartLength' && ProcOri == 'Along' ) {\n                BasePointX = posRel.x;\n                BasePointY = partSelf._dimz-posRel.z;\n                Orientation = 180;\n              }\n\n              else if (ProcBasePoint == 'PartLength' && ProcOri == 'Across' ) {\n                BasePointX = posRel.x;\n                BasePointY = partSelf._dimz-posRel.z;\n                Orientation = 270;\n              }\n\n              else if (ProcBasePoint == 'PartLength' && ProcOri == 'Along' ) {\n                BasePointX = posRel.x;\n                BasePointY = partSelf._dimz-posRel.z;\n                Orientation = 180;\n              }\n\n               this.nc_TOOL=\"102\";\n               //this.nc_XA = posRel.x;\n               //this.nc_YA = partSelf._dimz - posRel.z;\n               this.nc_XA = BasePointX;\n               this.nc_YA = BasePointY;\n               this.nc_TI = part2.pa_DrillDepth;\n               this.nc_DU = part2.pa_Diameter;\n               this.nc_BM =  \"LS\"\n               this.nc_WI = Orientation;\n               this.nc_AB = part2.pa_DrillingDistance;\n               //this.nc_LA =  0;\n               this.nc_MI =  0;\n               this.nc_KO = \"00\";\n               this.nc_AN = part2.pa_DrillQty;",
+      "bomExecuteType": "Touch"
+    },
+    {
+      "part2": "part_HandleDrill",
+      "touchName": "FromTop",
+      "bomElementTypeId": "ncout_DrillVert",
+      "description": "Drillings for handles",
+      "valueScript": "                                                                                                 \n               let Orientation: number = 0;\n               let BasePointX: number = 0;\n               let BasePointY: number = 0;\n               let HandleOrientation: string = part2.pa_HandleOrientation;\n               let HandleDrillDepth: number = partSelf._dimy;\n               let HandlePositionMatrix: string = part2.pa_HandlePosMatrix;\n\n               // Calculate HandleDrillDepth\n               if (part2.pa_DrillDepth == 0) {\n                HandleDrillDepth = partSelf._dimy\n               }\n\n              else {\n                HandleDrillDepth = part2.pa_DrillDepth\n              }\n \n               // Translate HandlePositionMatrix and Orientation to mpr\n               if (HandlePositionMatrix == '11' && HandleOrientation == 'Vert' ) {\n                 BasePointX = posRel.x;\n                 BasePointY = partSelf._dimz-posRel.z;\n                 Orientation = 90;\n               }\n \n               else if (HandlePositionMatrix == '11' && HandleOrientation == 'Hor' ) {\n                 BasePointX = posRel.x;\n                 BasePointY = partSelf._dimz-posRel.z;\n                 Orientation = 0;\n               }\n \n               else if (HandlePositionMatrix == '12' && HandleOrientation == 'Vert' ) {\n                 BasePointX = posRel.x;\n                 BasePointY = partSelf._dimz-posRel.z;\n                 Orientation = 90;\n               }\n \n               else if (HandlePositionMatrix == '12' && HandleOrientation == 'Hor' ) {\n                 BasePointX = posRel.x;\n                 BasePointY = partSelf._dimz-posRel.z;\n                 Orientation = 0;\n               }\n \n               else if (HandlePositionMatrix == '13' && HandleOrientation == 'Vert' ) {\n                 BasePointX = posRel.x;\n                 BasePointY = partSelf._dimz-posRel.z;\n                 Orientation = 90;\n               }\n \n               else if (HandlePositionMatrix == '13' && HandleOrientation == 'Hor' ) {\n                 BasePointX = posRel.x;\n                 BasePointY = partSelf._dimz-posRel.z;\n                 Orientation = 180;\n               }\n \n               if (HandlePositionMatrix == '21' && HandleOrientation == 'Vert' ) {\n                BasePointX = posRel.x;\n                BasePointY = partSelf._dimz-posRel.z;\n                Orientation = 270;\n              }\n\n              else if (HandlePositionMatrix == '21' && HandleOrientation == 'Hor' ) {\n                BasePointX = posRel.x;\n                BasePointY = partSelf._dimz-posRel.z;\n                Orientation = 0;\n              }\n\n              else if (HandlePositionMatrix == '22' && HandleOrientation == 'Vert' ) {\n                BasePointX = posRel.x;\n                BasePointY = partSelf._dimz-posRel.z;\n                Orientation = 270;\n              }\n\n              else if (HandlePositionMatrix == '22' && HandleOrientation == 'Hor' ) {\n                BasePointX = posRel.x;\n                BasePointY = partSelf._dimz-posRel.z;\n                Orientation = 0;\n              }\n\n              else if (HandlePositionMatrix == '23' && HandleOrientation == 'Vert' ) {\n                BasePointX = posRel.x;\n                BasePointY = partSelf._dimz-posRel.z;\n                Orientation = 90;\n              }\n\n              else if (HandlePositionMatrix == '23' && HandleOrientation == 'Hor' ) {\n                BasePointX = posRel.x;\n                BasePointY = partSelf._dimz-posRel.z;\n                Orientation = 180;\n              }\n              if (HandlePositionMatrix == '31' && HandleOrientation == 'Vert' ) {\n                BasePointX = posRel.x;\n                BasePointY = partSelf._dimz-posRel.z;\n                Orientation = 270;\n              }\n\n              else if (HandlePositionMatrix == '31' && HandleOrientation == 'Hor' ) {\n                BasePointX = posRel.x;\n                BasePointY = partSelf._dimz-posRel.z;\n                Orientation = 0;\n              }\n\n              else if (HandlePositionMatrix == '32' && HandleOrientation == 'Vert' ) {\n                BasePointX = posRel.x;\n                BasePointY = partSelf._dimz-posRel.z;\n                Orientation = 270;\n              }\n\n              else if (HandlePositionMatrix == '32' && HandleOrientation == 'Hor' ) {\n                BasePointX = posRel.x;\n                BasePointY = partSelf._dimz-posRel.z;\n                Orientation = 180;\n              }\n\n              else if (HandlePositionMatrix == '33' && HandleOrientation == 'Vert' ) {\n                BasePointX = posRel.x;\n                BasePointY = partSelf._dimz-posRel.z;\n                Orientation = 270;\n              }\n\n              else if (HandlePositionMatrix == '33' && HandleOrientation == 'Hor' ) {\n                BasePointX = posRel.x;\n                BasePointY = partSelf._dimz-posRel.z;\n                Orientation = 180;\n              }\n \n                this.nc_TOOL=\"102\";\n                //this.nc_XA = posRel.x;\n                //this.nc_YA = partSelf._dimz - posRel.z;\n                this.nc_XA = BasePointX;\n                this.nc_YA = BasePointY;\n                this.nc_TI = HandleDrillDepth;\n                this.nc_DU = part2.pa_Diameter;\n                this.nc_BM =  \"LS\"\n                this.nc_WI = Orientation;\n                this.nc_AB = part2.pa_DrillingDistance;\n                //this.nc_LA =  0;\n                this.nc_MI =  0;\n                this.nc_KO = \"00\";\n                this.nc_AN = part2.pa_DrillQty",
+      "bomExecuteType": "Touch"
+    }
+  ]
+}

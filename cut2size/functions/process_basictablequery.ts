@@ -1,108 +1,120 @@
-process_BasicTableQuery(
-    table: any[],
-    WildcardParams: any,
-    FixedParams: any,
-    RangeParams: any,
-    UniqueOutput: boolean
-): any | undefined {
+process_BasicTableQuery(table: any[], WildcardParams: any, FixedParams: any, RangeParams: any, UniqueOutput: boolean): any | undefined {
 
-    /*
-      ######################################################################################################################
+    //--------------------Main functionality for query to the table------------------------
 
-      Single-pass table query with:
-      - Fixed params: exact match OR row may contain "All"
-      - Wildcard params: exact match OR row may contain "All"
-      - Range params: MinAttr <= Value <= MaxAttr
-      - Scoring: prefer rows with the fewest "All" values across relevant columns (rowScore)
+	let matches: any = undefined;
 
-      Returns:
-      - undefined if no match
-      - first best row if UniqueOutput
-      - list of best rows otherwise
+	// Range parameters
+	let rangeParams = Object.keys(RangeParams).map(rangeParam => {
+		let { MinAttr, MaxAttr, Value } = RangeParams[rangeParam];
+		return { min: MinAttr, max: MaxAttr, value: Value };
+	});
+  
+	// Define the search columns in the table
+	let columns = Object.keys(WildcardParams).concat(Object.keys(FixedParams));
 
-      ######################################################################################################################
-    */
+	// Create an array with the values and wildcards
+	let valueList = generateSearchParamsCombinations(WildcardParams);
+  
+	// Query the table (check if there are ranges or not)
+	if(Object.keys(RangeParams).length > 0){
+		for (let i = 0; i < valueList.length; i++) {
+			let search = valueList[i];
+			let matchingRows = table.filter(row =>
+				columns.every(col => row[col] === search[col]) &&
+				rangeParams.every(range => {
+					let { min, max, value } = range;
+					return row[min] <= value && row[max] >= value;
+				})
+			);
+			if (matchingRows.length > 0) {
+				matches = matchingRows;
+				break;
+			}
+		}
+	}
+	else{		
+		for (let i = 0; i < valueList.length; i++) {
+			let search = valueList[i];
+			let matchingRows = table.filter(row =>
+				columns.every(col => row[col] === search[col])
+			);
+			if (matchingRows.length > 0) {
+				matches = matchingRows;
+				break;
+			}
+		}
+	}
 
-    // Defines the structure of a numeric range filter.
-    // A table row matches if: MinAttr <= Value <= MaxAttr
-    type RangeParam = {
-        MinAttr: string;
-        MaxAttr: string;
-        Value: number;
-    };
+	// Get unique matches
+	let uniqueMatches = [...new Set(matches)];
 
-    // Columns relevant for matching & scoring (both wildcard + fixed params)
-    const columns = Object.keys(WildcardParams).concat(Object.keys(FixedParams));
+	// Return first match or undefined
+	if(UniqueOutput == true){
+		return uniqueMatches.length > 0 ? uniqueMatches[0] : undefined;
+	}
 
-    // Convert RangeParams object into a normalized array structure
-    // so we can iterate it efficiently during filtering
-    const rangeParams = Object.values(RangeParams as { [key: string]: RangeParam }).map(r => ({
-        min: r.MinAttr,
-        max: r.MaxAttr,
-        value: r.Value
-    }));
+	// Return full list of matches
+	else{
+		return matches;
+	}
 
-    // Stores currently best matching rows
-    let bestRows: any[] = [];
+    //--------------------Create Array with the values and wildcards------------------------
 
-    // Best score found so far (lower = better).
-    // Infinity ensures the first real row always wins.
-    let bestScore = Infinity;
+    function generateSearchParamsCombinations(searchParams: any): any[] {
+        let combinations = [];
+        let keys = Object.keys(searchParams);
 
-    // Iterate through the table once (single-pass)
-    for (const row of table) {
+        // Generate combination with all values retained
+        combinations.push(Object.assign({}, searchParams, FixedParams));
 
-        // 1) Check all column conditions:
-        // A row matches a column if:
-        const matchesColumns = columns.every(col => {
+        // Generate combinations for each key set to 'All' individually
+        for (let key of keys) {
+            let combination = Object.assign({}, searchParams, FixedParams);
+            combination[key] = 'All';
+            combinations.push(combination);
+        }
 
-            // Fixed params → must match exactly
-            if (col in FixedParams) {
-                return row[col] === FixedParams[col];
-            }
-
-            // Wildcard params → match exact OR row allows wildcard
-            return row[col] === WildcardParams[col] || row[col] === "All";
-        });
-
-        if (!matchesColumns) continue;
-
-        // 2) Check numeric ranges:
-        // Row matches only if value lies within all defined ranges
-        const matchesRanges = rangeParams.every(range =>
-            row[range.min] <= range.value && row[range.max] >= range.value
-        );
-
-        if (!matchesRanges) continue;
-
-        // 3) Score the row:
-        // rowScore = number of wildcard values ("All") in this row across the relevant columns.
-        // Best possible score is 0 (fully specific row).
-        const rowScore = columns.reduce((score, col) => score + (row[col] === "All" ? 1 : 0), 0);
-
-        // Found a better (more specific) row than before -> reset the result list to only this row.
-        if (rowScore < bestScore) {
-            bestScore = rowScore;
-            bestRows = [row];
-
-            // Early exit: cannot get better than 0, and we only need one result
-            if (UniqueOutput && bestScore === 0) {
-                return bestRows[0];
+        // Generate combinations for each pair of keys set to 'All'
+        for (let i = 0; i < keys.length - 1; i++) {
+            let key1 = keys[i];
+            for (let j = i + 1; j < keys.length; j++) {
+                let key2 = keys[j];
+                let combination = Object.assign({}, searchParams, FixedParams);
+                combination[key1] = 'All';
+                combination[key2] = 'All';
+                combinations.push(combination);
+                for (let x = j + 1; x < keys.length; x++) {
+                    let key3 = keys[x];
+                    let combination2 = Object.assign({}, searchParams, FixedParams);
+                    combination2[key1] = 'All';
+                    combination2[key2] = 'All';
+                    combination2[key3] = 'All';
+                    combinations.push(combination2);
+                    for (let y = x + 1; y < keys.length; y++) {
+                        let key4 = keys[y];
+                        let combination3 = Object.assign({}, searchParams, FixedParams);
+                        combination3[key1] = 'All';
+                        combination3[key2] = 'All';
+                        combination3[key3] = 'All';
+                        combination3[key4] = 'All';
+                        combinations.push(combination3);
+						for (let z = y + 1; z < keys.length; z++) {
+							let key5 = keys[z];
+							let combination4 = Object.assign({}, searchParams, FixedParams);
+							combination4[key1] = 'All';
+							combination4[key2] = 'All';
+							combination4[key3] = 'All';
+							combination4[key4] = 'All';
+							combination4[key5] = 'All';
+							combinations.push(combination4);
+						}
+                    }
+                }
             }
         }
-        // Found an equally good row -> add it (no duplicates expected in single-pass,
-        // but includes() is a safe guard in case the same object reference appears twice in table).
-        else if (rowScore === bestScore) {
-            if (!bestRows.includes(row)) {
-                bestRows.push(row);
-            }
-        }
-    }
 
-    // Return result
-    if (bestRows.length > 0) {
-        return UniqueOutput ? bestRows[0] : bestRows;
+        // Return the combinations
+        return combinations;
     }
-
-    return undefined;
 }

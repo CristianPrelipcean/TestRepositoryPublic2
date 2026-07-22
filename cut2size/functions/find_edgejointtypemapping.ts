@@ -1,17 +1,17 @@
-find_EdgeJointTypeMapping(TypeElement: string, EdgeFront: boolean, EdgeLeft: boolean, EdgeBack: boolean, EdgeRight: boolean, DimensionType: string):ICT_tab_EdgeJointTypeMapping{
+find_EdgeJointTypeMapping(TypeElement:string, EdgeTechnology:string, EdgeFrontClass:string, EdgeLeftClass:string, EdgeBackClass:string, EdgeRightClass:string):any{
 
 	// Wildcard parameters
 	let WildcardParams: any = {	
 		in_TypeElement: TypeElement,
-		in_IsLengthGreaterEqualWidth: DimensionType
+		in_EdgeTechnology: EdgeTechnology
 	};
 	
 	// Fixed parameters
 	let FixedParams: any = {
-		in_EdgeFront: EdgeFront,
-		in_EdgeLeft: EdgeLeft,
-		in_EdgeBack: EdgeBack,
-		in_EdgeRight: EdgeRight
+		in_EdgeFrontClass: EdgeFrontClass,
+		in_EdgeLeftClass: EdgeLeftClass,
+		in_EdgeBackClass: EdgeBackClass,
+		in_EdgeRightClass: EdgeRightClass
 	};
 	
 	// Range parameters
@@ -24,7 +24,7 @@ find_EdgeJointTypeMapping(TypeElement: string, EdgeFront: boolean, EdgeLeft: boo
 	// Call the function and return the value
 	let retVal = GlobalFunc.process_BasicTableQuery(ct_tab_EdgeJointTypeMapping, WildcardParams, FixedParams, RangeParams, UniqueOutput);
 	if (retVal == undefined) {
-		let Text = 'Type Element: ' + TypeElement +  'Edge Front:  ' + EdgeFront + 'Edge Left: ' + EdgeLeft + 'Edge Back: ' + EdgeBack + 'Edge Right: ' + EdgeRight + 'IsLengthGreaterEqualWidth: ' + DimensionType;
+		let Text = 'Type Element: ' + TypeElement + 'Edge Technology: ' + EdgeTechnology + 'Edge Front Class:  ' + EdgeFrontClass + 'Edge Left Class: ' + EdgeLeftClass + 'Edge Back Class: ' + EdgeBackClass + 'Edge Right Class: ' + EdgeRightClass;
 		let ErrorMessage = GlobalFunc.find_ErrorList('Error 13004',1);
 		logError(ErrorMessage.Message(Text));
 	}

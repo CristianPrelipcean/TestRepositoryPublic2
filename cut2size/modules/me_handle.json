@@ -3,10 +3,9 @@
   "shortName": "Handle",
   "configurable": true,
   "isRoot": false,
-  "isConfigDummy": false,
   "description": "Equipment module for handles",
-  "groupName": "Processing",
-  "imageId": "f0accc3d-9fcc-4ef7-8e9b-076584954c4d:mc_Handle.jpg",
+  "groupName": "Equipment",
+  "imageId": "11e3bf9d-e276-4521-817e-15c6a896477b:mc_Handle.jpg",
   "restrictionTypeId": "Public",
   "childModules": [
     {
@@ -65,6 +64,16 @@
       "origin": "Default"
     },
     {
+      "variantId": "mod_Height",
+      "previewValue": "1500",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_FrontType",
+      "previewValue": "DoorLeft",
+      "origin": "Derived"
+    },
+    {
       "variantId": "mod_TypeElement",
       "previewValue": "Fronts",
       "origin": "Derived"
@@ -73,11 +82,6 @@
       "variantId": "mod_DrillEntireThk",
       "default": "true",
       "origin": "Default"
-    },
-    {
-      "variantId": "mod_Length",
-      "previewValue": "1000",
-      "origin": "Derived"
     }
   ],
   "assignedParts": [],

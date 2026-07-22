@@ -3,10 +3,9 @@
   "shortName": "Drill",
   "configurable": true,
   "isRoot": false,
-  "isConfigDummy": false,
   "description": "Equipment module for drillings",
-  "groupName": "Processing",
-  "imageId": "cc954f0d-8e0a-4d27-b781-32e0528c656f:me_Drill.jpg",
+  "groupName": "Equipment",
+  "imageId": "dd4eaa54-e493-4668-8e33-9d0b1eead2c1:me_Drill.jpg",
   "restrictionTypeId": "Public",
   "childModules": [
     {
@@ -31,7 +30,7 @@
     },
     {
       "variantId": "mod_DrillDepth",
-      "previewValue": "10",
+      "previewValue": "6",
       "origin": "Required"
     },
     {
@@ -49,19 +48,24 @@
       "origin": "GlobalVar"
     },
     {
+      "variantId": "mod_Height",
+      "previewValue": "1500",
+      "origin": "Derived"
+    },
+    {
       "variantId": "mod_DrillSide",
       "default": "Front",
       "origin": "Default"
     },
     {
+      "variantId": "mod_PartType",
+      "previewValue": "Front",
+      "origin": "Derived"
+    },
+    {
       "variantId": "mod_DrillEntireThk",
       "default": "false",
       "origin": "Default"
-    },
-    {
-      "variantId": "mod_Length",
-      "previewValue": "1000",
-      "origin": "Derived"
     }
   ],
   "assignedParts": [],

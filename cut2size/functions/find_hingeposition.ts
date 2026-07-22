@@ -1,8 +1,9 @@
-find_HingePosition(Program:string, FrontHeight:number, FrontWidth:number):ICT_tab_HingePosition{
+find_HingePosition(Program:string, PartDesign:string, FrontHeight:number, FrontWidth:number):ICT_tab_HingePosition{
 
 	// Wildcard parameters
 	let WildcardParams: any = {	
-		in_Program: Program
+		in_Program: Program,
+		in_PartDesign: PartDesign
 	};
 	
 	// Fixed parameters
@@ -29,7 +30,7 @@ find_HingePosition(Program:string, FrontHeight:number, FrontWidth:number):ICT_ta
 	// Call the function and return the value
 	let retVal = GlobalFunc.process_BasicTableQuery(ct_tab_HingePosition, WildcardParams, FixedParams, RangeParams, UniqueOutput);
 	if (retVal == undefined) {
-		let Text = 'Program Name: ' + Program + 'Front Height: ' +  FrontHeight + 'Front Width: ' + FrontWidth;
+		let Text = 'Program Name: ' + Program + 'Part Design Name: ' +  PartDesign + 'Front Height: ' +  FrontHeight + 'Front Width: ' + FrontWidth;
 		let ErrorMessage = GlobalFunc.find_ErrorList('Error 15003',1);
 		logError(ErrorMessage.Message(Text));
 	}

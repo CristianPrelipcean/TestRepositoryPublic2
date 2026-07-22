@@ -70,21 +70,91 @@ str += "D=\"" + this.thickness + "\"" + "\r\n";
 str += "KM=\"Bauteildicke\"" + "\r\n";
 
 // New coordinate system in case we have to turn the part
-if(this.width! < this.depth! * ratioLengthWidth){
-  str += "[K" + "\r\n";
-  str += "<00 /Koordinatensystem/" + "\r\n";
-  str += "NR=\"04\"" + "\r\n";
-  str += "XP=\"0\"" + "\r\n";
-  str += "XF=\"1.0\"" + "\r\n";
-  str += "YP=\"L\"" + "\r\n";
-  str += "YF=\"1.0\"" + "\r\n";
-  str += "ZP=\"0\"" + "\r\n";
-  str += "ZF=\"1.0\"" + "\r\n";
-  str += "D1=\"-90\"" + "\r\n";
-  str += "KI=\"0\"" + "\r\n";
-  str += "D2=\"0\"" + "\r\n";
-  str += "MI=\"0\"" + "\r\n";
-  tmpKO = "04"
+if (this.width! < this.depth! * ratioLengthWidth) {
+    // Das Bauteil wird gedreht
+    str += "[K" + "\r\n";
+    str += "<00 /Koordinatensystem/" + "\r\n";
+    str += "NR=\"04\"" + "\r\n";
+    str += "XP=\"0\"" + "\r\n";
+    str += "XF=\"1.0\"" + "\r\n";
+    str += "YP=\"L\"" + "\r\n";
+    str += "YF=\"1.0\"" + "\r\n";
+    str += "ZP=\"0\"" + "\r\n";
+    str += "ZF=\"1.0\"" + "\r\n";
+    str += "D1=\"-90\"" + "\r\n"; 
+    str += "KI=\"0\"" + "\r\n";
+    str += "D2=\"0\"" + "\r\n";
+    str += "MI=\"0\"" + "\r\n";
+    tmpKO = "04";
+
+    // Add Contour for Nesting with part rotation
+    str += "]1" + "\r\n";
+    str += "$E0" + "\r\n";
+    str += "KP" + "\r\n";
+    str += "X=0.0" + "\r\n";  
+    str += "Y=0.0" + "\r\n";  
+    str += "Z=0.0" + "\r\n";
+
+    // Point 1 -> (0, 0)
+    str += "$E1" + "\r\n";
+    str += "KL" + "\r\n";
+    str += "X=@B" + "\r\n";       
+    str += "Y=0" + "\r\n";      
+
+    // Point 2 -> (0, B)
+    str += "$E2" + "\r\n";
+    str += "KL" + "\r\n";
+    str += "X=@0" + "\r\n";      
+    str += "Y=@L" + "\r\n";      
+
+    // Point 3 -> (L, B)
+    str += "$E3" + "\r\n";
+    str += "KL" + "\r\n";
+    str += "X=@-B" + "\r\n";      
+    str += "Y=@0" + "\r\n";       
+
+    // Point 4 -> (L, 0)
+    str += "$E4" + "\r\n";
+    str += "KL" + "\r\n";
+    str += "X=@0" + "\r\n";       
+    str += "Y=@-L" + "\r\n";       
+} 
+// Add Conour for nesting without part rotation
+else {
+
+    tmpKO = "00";
+
+    // Standard
+    str += "]1" + "\r\n";
+    str += "$E0" + "\r\n";
+    str += "KP" + "\r\n";
+    str += "X=0.0" + "\r\n";
+    str += "Y=0.0" + "\r\n";
+    str += "Z=0.0" + "\r\n";
+
+    // Point 1 -> (0, 0)
+    str += "$E1" + "\r\n";
+    str += "KL " + "\r\n";
+    str += "X=@L" + "\r\n";      
+    str += "Y=0" + "\r\n";       
+
+    // Point 2 -> (L, 0)
+    str += "$E2" + "\r\n";
+    str += "KL" + "\r\n";
+    str += "X=@0" + "\r\n";      
+    str += "Y=@B" + "\r\n";      
+
+    // Point 3 -> (L, B)
+    str += "$E3" + "\r\n";
+    str += "KL" + "\r\n";
+    str += "X=@-L" + "\r\n";       
+    str += "Y=@0" + "\r\n";      
+
+    // Point 4 -> (0, B)
+    str += "$E4" + "\r\n";
+    str += "KL" + "\r\n";
+    str += "X=@0" + "\r\n";       
+    str += "Y=@-B" + "\r\n";       
 }
 
 // Cycle for the Makros
@@ -244,4 +314,4 @@ this.createFileEntry(result, part._partId + "_" + part._id + ".mpr", str);
 
 // Reminder
 // str += "  " + b._bomElementTypeId + " (" + b._bomType + ") - " + JSON.stringify(b.a) + "\r\n"
-// this.createFileEntry(result, this.name + "_" + this.bomType + "_" + part._id + ".txt", str);
+// this.createFileEntry(result, this.name + "_" + this.bomType + "_" + part._id + ".txt", str)

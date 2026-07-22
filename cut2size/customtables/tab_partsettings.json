@@ -15,11 +15,6 @@
       "allowNull": true
     },
     {
-      "name": "in_TypeElement",
-      "type": "Text",
-      "allowNull": true
-    },
-    {
       "name": "BomPartDescription",
       "type": "Text",
       "allowNull": true
@@ -35,19 +30,15 @@
       "data": [
         {
           "columnName": "in_Part",
-          "value": "part_Side"
-        },
-        {
-          "columnName": "in_TypeElement",
-          "value": "Sides"
+          "value": "part_Backwall"
         },
         {
           "columnName": "BomPartDescription",
-          "value": "Side"
+          "value": "Rückwand"
         },
         {
           "columnName": "PartGroup",
-          "value": "Sides"
+          "value": "Backs"
         }
       ]
     },
@@ -55,19 +46,15 @@
       "data": [
         {
           "columnName": "in_Part",
-          "value": "part_Shelf"
-        },
-        {
-          "columnName": "in_TypeElement",
-          "value": "Shelves"
+          "value": "part_DoorLeft"
         },
         {
           "columnName": "BomPartDescription",
-          "value": "Shelf"
+          "value": "Linke Tür"
         },
         {
           "columnName": "PartGroup",
-          "value": "Shelves"
+          "value": "Doors"
         }
       ]
     },
@@ -75,19 +62,15 @@
       "data": [
         {
           "columnName": "in_Part",
-          "value": "part_Front"
-        },
-        {
-          "columnName": "in_TypeElement",
-          "value": "Backwalls"
+          "value": "part_DoorRight"
         },
         {
           "columnName": "BomPartDescription",
-          "value": "Backwall"
+          "value": "Rechte Tür"
         },
         {
           "columnName": "PartGroup",
-          "value": "Fronts"
+          "value": "Doors"
         }
       ]
     },
@@ -95,19 +78,15 @@
       "data": [
         {
           "columnName": "in_Part",
-          "value": "part_Front"
-        },
-        {
-          "columnName": "in_TypeElement",
-          "value": "Fronts"
+          "value": "part_Drawer"
         },
         {
           "columnName": "BomPartDescription",
-          "value": "Front"
+          "value": "Schubkastenfront"
         },
         {
           "columnName": "PartGroup",
-          "value": "Fronts"
+          "value": "Drawers"
         }
       ]
     }

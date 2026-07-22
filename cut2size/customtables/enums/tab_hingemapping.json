@@ -1,17 +1,24 @@
 [
   {
     "tableName": "tab_HingeMapping",
-    "columnId": "in_HingeProgram",
-    "refColumnId": "Value"
-  },
-  {
-    "tableName": "tab_HingeMapping",
     "columnId": "in_MountingType",
-    "refColumnId": "Value"
-  },
-  {
-    "tableName": "tab_HingeMapping",
-    "columnId": "in_Supplier",
-    "refColumnId": "Value"
+    "enumsJson": [
+      {
+        "value": "Schrauben",
+        "description": "Topfscharniere zum Schrauben"
+      },
+      {
+        "value": "Einpressen",
+        "description": "Topfscharniere zum Einpressen"
+      },
+      {
+        "value": "Eindrücken",
+        "description": "Topfscharniere zum Eindrücken"
+      },
+      {
+        "value": "Werkzeuglos",
+        "description": "Topfscharniere mit werkzeugloser Montage"
+      }
+    ]
   }
 ]

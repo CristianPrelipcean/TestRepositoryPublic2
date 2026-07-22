@@ -3,10 +3,9 @@
   "shortName": "Hinge",
   "configurable": true,
   "isRoot": false,
-  "isConfigDummy": false,
   "description": "Equipment module for hinges",
-  "groupName": "Processing",
-  "imageId": "61876858-ac90-425c-998a-67b8473ed8b1:me_Hinge.jpg",
+  "groupName": "Equipment",
+  "imageId": "b1c36c17-0876-4c9c-b324-2fb185ec3de2:me_Hinge.jpg",
   "restrictionTypeId": "Public",
   "childModules": [
     {
@@ -31,28 +30,43 @@
       "origin": "Default"
     },
     {
+      "variantId": "mod_Height",
+      "previewValue": "1500",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_FrontType",
+      "previewValue": "DoorLeft",
+      "origin": "Derived"
+    },
+    {
       "variantId": "mod_HingeProgram",
-      "default": "Metalla510_45/9.5",
+      "default": "52/5.5_Ø35↓11_Ø10↓11",
       "origin": "Default"
     },
     {
       "variantId": "mod_HingeDrillingDistance",
-      "default": "3",
+      "default": "5",
       "origin": "Default"
     },
     {
       "variantId": "mod_Supplier",
-      "default": "Häfele",
+      "default": "DemoSupplier",
       "origin": "Default"
     },
     {
       "variantId": "mod_MountingType",
-      "default": "Press",
+      "default": "Einpressen",
       "origin": "Default"
     },
     {
       "variantId": "mod_Program",
       "previewValue": "Demoprogram1",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_PartDesign",
+      "previewValue": "FlatPanel",
       "origin": "Derived"
     },
     {
@@ -93,11 +107,6 @@
       "variantId": "mod_HingeQtySelection",
       "default": "2",
       "origin": "Default"
-    },
-    {
-      "variantId": "mod_Length",
-      "previewValue": "1000",
-      "origin": "Derived"
     }
   ],
   "assignedParts": [],

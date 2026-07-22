@@ -1,6 +1,6 @@
 // Schuler Consulting
-// Create:  February 2026
-// By Henning Wiesbrock
+// Create: August 2023
+// By Ludwig Weber
 // Purpose: Create OrderOutput for productionManager
 //
 // Description:
@@ -19,12 +19,7 @@ let openEntities = false;
 let target = o.targetProductionSite;
 
 // function to validate strings
-function escapeXml(unsafe: string) {
-
-  // Stop if don't get a value
-  if (unsafe == null) return "";
-
-  // Replace if we got a value
+function escapeXml(unsafe:string) {
   return unsafe.replace(/[<>&'"]/g, 
   function (c):string {
     switch (c) {
@@ -67,7 +62,7 @@ outStr += '<project' + '\n';
 
 outStr += 'xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"' + '\n';
 outStr += 'xsi:schemaLocation="http://schemas.datacontract.org/2004/07/HomagGroup.ProductionManager.Core.Logic.Import ImportExport.xsd"' + '\n';
-outStr += 'xsi:noNamespaceSchemaLocation="ImportExport.xsd"' + '\n';
+outStr += 'xsi:noNamespaceSchemLocatition="ImportExport.xsd"' + '\n';
 outStr += 'xmlns="http://schemas.datacontract.org/2004/07/HomagGroup.ProductionManager.Core.Logic.Import" >' + '\n';
 
 //===================================================
@@ -83,16 +78,16 @@ outStr += '<param name="OrderNumber" value="' + o.posOrderNo + '" />' + '\n';
 outStr += '<param name="OrderName" value="' + o.posOrderDesc2 + '" />' + '\n';
 outStr += '<param name="CustomerName" value="' + escapeXml(o.shopContact!) + '" />' + '\n';
 outStr += '<param name="CustomerNumber" value="' + escapeXml(o.posOrderDesc1!) + '" />' + '\n';
-outStr += '<param name="Source" value="salesConfigurator" />' + '\n';
+//outStr += '<param name="Source" value="orderConfigurator" />' + '\n';
 //outStr += '<param name="OrderDate" value="2023-08-28T22:30:40Z" />' + '\n';
 const currentDate = new Date(); // aktuelles Datum erhalten
 outStr += '<param name="OrderDate" value="' + currentDate.toISOString() + '" />' + '\n';
 //outStr += '<param name="DeliveryDate" value="2023-11-28T22:30:40Z" />' + '\n';
-outStr += '<param name="DeliveryDate" value="' + escapeXml(o.posDeliveryDate?.toString() ?? "") + '" />' + '\n';
-outStr += '<param name="AddressField1" value="' + escapeXml(o.shippingStreetNo ?? "") + '" />' + '\n';
+outStr += '<param name="DeliveryDate" value="' + escapeXml(o.posDeliveryDate!.toString()) + '" />' + '\n';
+outStr += '<param name="AddressField1" value="' + escapeXml(o.shippingStreetNo!) + '" />' + '\n';
 outStr += '<param name="AddressField2" value="" />' + '\n';
-outStr += '<param name="AddressField3" value="' + escapeXml(o.shippingCity ?? "") + '" />' + '\n';
-outStr += '<param name="AddressField4" value="' + escapeXml(o.shippingZipCode ?? "") + '" />' + '\n';
+outStr += '<param name="AddressField3" value="' + escapeXml(o.shippingCity!) + '" />' + '\n';
+outStr += '<param name="AddressField4" value="' + escapeXml(o.shippingZipCode!) + '" />' + '\n';
 outStr += '</properties>' + '\n';
 
 outStr += '<images>' + '\n';
@@ -112,10 +107,10 @@ if (o.additionalData) {
         outStr += '<param name="Description" value="' + escapeXml(ad.description) + '" />' + '\n';
       }
       outStr += '<param name="OriginalFileName" value="' + escapeXml(ad.originalFileName ?? "") + '" />' + '\n';
-      outStr += '<param name="ImageLinkBinary" value="Images\\' + fileIdx + "_" + escapeXml(ad.originalFileName ?? "") + '" />' + '\n';
+      outStr += '<param name="ImageLinkBinary" value="Images\\' + fileIdx + escapeXml(ad.originalFileName ?? "") + '" />' + '\n';
       outStr += '</properties>' + '\n';
       outStr += '</image>' + '\n';
-      this.createFileEntry(result, 'Images/' + fileIdx + "_" + ad.originalFileName!, ad.value, "additionalData");
+      this.createFileEntry(result, 'Images/' + fileIdx + ad.originalFileName!, ad.value, "additionalData");
       fileIdx++;
     }
   });
@@ -144,9 +139,6 @@ ol.forEach(p =>
   outStr += '<param name="Quantity" value="1.00000" />' + '\n';
   outStr += '<param name="QuantityUnit" value="pcs" />' + '\n';
 
-// required to map back production data to original group
-  outStr += '<param name="ExternalSystemId" value="' + p.orderLineId + '" />' + '\n';
-
   outStr += '</properties>' + '\n';
   outStr += '<images>' + '\n';
   if (p.additionalData) {
@@ -158,10 +150,10 @@ ol.forEach(p =>
           outStr += '<param name="Description" value="' + escapeXml(ad.description) + '" />' + '\n';
         }
         outStr += '<param name="OriginalFileName" value="' + escapeXml(ad.originalFileName ?? "") + '" />' + '\n';
-        outStr += '<param name="ImageLinkBinary" value="Images\\' + fileIdx + "_" + escapeXml(ad.originalFileName ?? "") + '" />' + '\n';
+        outStr += '<param name="ImageLinkBinary" value="Images\\' + fileIdx + escapeXml(ad.originalFileName ?? "") + '" />' + '\n';
         outStr += '</properties>' + '\n';
         outStr += '</image>' + '\n';
-        this.createFileEntry(result, 'Images/' + fileIdx + "_" + ad.originalFileName!, ad.value, "additionalData");
+        this.createFileEntry(result, 'Images/' + fileIdx + ad.originalFileName!, ad.value, "additionalData");
         fileIdx++;
       }
     });

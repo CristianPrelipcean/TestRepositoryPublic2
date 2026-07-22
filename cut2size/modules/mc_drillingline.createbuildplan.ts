@@ -24,19 +24,19 @@ let BasePosX: number = 0;
 let BasePosY: number = 0;
 
 // Change Processing Base Point
-if (this.mod_ProcessingBasePoint == 'LeftBack') {
+if (this.mod_ProcessingBasePoint == 'PartZeroPoint') {
   BasePosX = this.mod_PositionX
   BasePosY = this.mod_PositionY
 }
-else if(this.mod_ProcessingBasePoint == 'LeftFront') {
+else if(this.mod_ProcessingBasePoint == 'PartWidth') {
   BasePosX = this.mod_PositionX
   BasePosY = this.mod_Width - this.mod_PositionY
 }
-else if (this.mod_ProcessingBasePoint == 'RightFront') {
+else if (this.mod_ProcessingBasePoint == 'PartWidthPartLength') {
   BasePosX = this.mod_Length-this.mod_PositionX
   BasePosY = this.mod_Width-this.mod_PositionY
 }
-else if (this.mod_ProcessingBasePoint == 'RightBack') {
+else if (this.mod_ProcessingBasePoint == 'PartLength') {
   BasePosX = this.mod_Length-this.mod_PositionX
   BasePosY = this.mod_PositionY
 }
@@ -68,70 +68,48 @@ for (let i = 0; i < Drills; i++) {
     let xCoord = 0;
     let yCoord = 0;
 
-    if (this.mod_ProcessingBasePoint == 'LeftBack' && this.mod_ProcessingOrientation == 'Across') {
-      xCoord = -this.mod_Diameter / 2 + BasePosX;
+    if (this.mod_ProcessingBasePoint == 'PartZeroPoint' && this.mod_ProcessingOrientation == 'Across') {
+      xCoord = -this.mod_Diameter / 2 + BasePosX ;
       yCoord = -this.mod_Diameter / 2 + BasePosY + i * this.mod_DrillingDistance;
+    } 
+    else if (this.mod_ProcessingBasePoint == 'PartZeroPoint' && this.mod_ProcessingOrientation == 'Along') {
+      xCoord = -this.mod_Diameter / 2 + BasePosX+ i * this.mod_DrillingDistance;
+      yCoord = -this.mod_Diameter / 2 + BasePosY;
     }
-    else if (this.mod_ProcessingBasePoint == 'LeftBack' && this.mod_ProcessingOrientation == 'Along') {
+    else if (this.mod_ProcessingBasePoint == 'PartWidth' && this.mod_ProcessingOrientation == 'Across') {
+      xCoord = -this.mod_Diameter / 2 + BasePosX ;
+      yCoord = -this.mod_Diameter / 2 + BasePosY - i * this.mod_DrillingDistance ;
+    } 
+    else if (this.mod_ProcessingBasePoint == 'PartWidth' && this.mod_ProcessingOrientation == 'Along') {
       xCoord = -this.mod_Diameter / 2 + BasePosX + i * this.mod_DrillingDistance;
       yCoord = -this.mod_Diameter / 2 + BasePosY;
     }
-    else if (this.mod_ProcessingBasePoint == 'LeftFront' && this.mod_ProcessingOrientation == 'Across') {
-      xCoord = -this.mod_Diameter / 2 + BasePosX;
-      yCoord = -this.mod_Diameter / 2 + BasePosY - i * this.mod_DrillingDistance;
-    }
-    else if (this.mod_ProcessingBasePoint == 'LeftFront' && this.mod_ProcessingOrientation == 'Along') {
-      xCoord = -this.mod_Diameter / 2 + BasePosX + i * this.mod_DrillingDistance;
+    else if (this.mod_ProcessingBasePoint == 'PartWidthPartLength' && this.mod_ProcessingOrientation == 'Across') {
+      xCoord = -this.mod_Diameter / 2 + BasePosX ;
+      yCoord = -this.mod_Diameter / 2 + BasePosY - i * this.mod_DrillingDistance ;
+    } 
+    else if (this.mod_ProcessingBasePoint == 'PartWidthPartLength' && this.mod_ProcessingOrientation == 'Along') {
+      xCoord = -this.mod_Diameter / 2 + BasePosX- i * this.mod_DrillingDistance;
       yCoord = -this.mod_Diameter / 2 + BasePosY;
     }
-    else if (this.mod_ProcessingBasePoint == 'RightFront' && this.mod_ProcessingOrientation == 'Across') {
-      xCoord = -this.mod_Diameter / 2 + BasePosX;
-      yCoord = -this.mod_Diameter / 2 + BasePosY - i * this.mod_DrillingDistance;
-    }
-    else if (this.mod_ProcessingBasePoint == 'RightFront' && this.mod_ProcessingOrientation == 'Along') {
-      xCoord = -this.mod_Diameter / 2 + BasePosX - i * this.mod_DrillingDistance;
-      yCoord = -this.mod_Diameter / 2 + BasePosY;
-    }
-    else if (this.mod_ProcessingBasePoint == 'RightBack' && this.mod_ProcessingOrientation == 'Across') {
-      xCoord = -this.mod_Diameter / 2 + BasePosX;
-      yCoord = -this.mod_Diameter / 2 + BasePosY + i * this.mod_DrillingDistance;
-    }
-    else if (this.mod_ProcessingBasePoint == 'RightBack' && this.mod_ProcessingOrientation == 'Along') {
+    else if (this.mod_ProcessingBasePoint == 'PartLength' && this.mod_ProcessingOrientation == 'Across') {
+      xCoord = -this.mod_Diameter / 2 + BasePosX ;
+      yCoord = -this.mod_Diameter / 2 + BasePosY + i * this.mod_DrillingDistance ;
+    } 
+    else if (this.mod_ProcessingBasePoint == 'PartLength' && this.mod_ProcessingOrientation == 'Along') {
       xCoord = -this.mod_Diameter / 2 + BasePosX - i * this.mod_DrillingDistance;
       yCoord = -this.mod_Diameter / 2 + BasePosY;
     }
 
-    // DrillSide Top
+// Create and Set the Graphic
+    let elemGraphics = this.addpart_ProcessingGraphics(xCoord, 0, yCoord, this.mod_Diameter, -this.mod_DrillDepth, this.mod_Diameter);
+    let svgPath = '<svg><circle cx="' + this.mod_Diameter / 2 + '" cy="' + this.mod_Diameter / 2 + '" r="' + this.mod_Diameter / 2 + '" /></svg>';
+    elemGraphics.extrude(svgPath, 'y');
 
-    if (this.mod_DrillSide == 'Top') {
-
-      // Create and Set the Graphic
-      let elemGraphics = this.addpart_ProcessingGraphics(xCoord, 0, yCoord, this.mod_Diameter, -this.mod_DrillDepth, this.mod_Diameter);
-      let svgPath = '<svg><circle cx="' + this.mod_Diameter / 2 + '" cy="' + this.mod_Diameter / 2 + '" r="' + this.mod_Diameter / 2 + '" /></svg>';
-      elemGraphics.extrude(svgPath, 'y');
-
-      // Create Output
-      if (i == 0) {
-        let elemDrill = this.addpart_DrillingLine(xCoord + (this.mod_Diameter / 2), 0, yCoord + (this.mod_Diameter / 2), this.mod_Diameter, this.mod_DrillDepth, this.mod_Diameter);
-        elemDrill.pa_DrillQty = Drills;
-      }
-    }
-  
-
-  // DrillSide Bottom
-
-    if (this.mod_DrillSide == 'Btm') {
-
-      // Create and Set the Graphic
-      let elemGraphics = this.addpart_ProcessingGraphics(xCoord, -this.mod_Thickness, yCoord, this.mod_Diameter, this.mod_DrillDepth, this.mod_Diameter);
-      let svgPath = '<svg><circle cx="' + this.mod_Diameter / 2 + '" cy="' + this.mod_Diameter / 2 + '" r="' + this.mod_Diameter / 2 + '" /></svg>';
-      elemGraphics.extrude(svgPath, 'y');
-
-      // Create Output
-      if (i == 0) {
-        let elemDrill = this.addpart_DrillingLine(xCoord + (this.mod_Diameter / 2), this.mod_Thickness, yCoord + (this.mod_Diameter / 2), this.mod_Diameter, this.mod_DrillDepth, this.mod_Diameter);
-        elemDrill.pa_DrillQty = Drills;
-      }
-    }
+// Create Output
+    if(i==0) {
+      let elemDrill = this.addpart_DrillingLine(xCoord+(this.mod_Diameter/2), 0, yCoord+(this.mod_Diameter/2), this.mod_Diameter, this.mod_DrillDepth, this.mod_Diameter);
+      elemDrill.pa_DrillQty = Drills;
+    } 
   }
 }

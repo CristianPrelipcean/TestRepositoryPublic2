@@ -3,10 +3,9 @@
   "shortName": "Drill Con",
   "configurable": false,
   "isRoot": false,
-  "isConfigDummy": false,
   "description": "Construction module for drillings",
-  "groupName": "Processing Construction",
-  "imageId": "8ed929f0-d58f-4f33-b057-4e6b3d542a62:mc_Drill.jpg",
+  "groupName": "Equipment Construction",
+  "imageId": "dcbb0cf3-9c4d-4944-9386-efdb6bd6e841:mc_Drill.jpg",
   "restrictionTypeId": "Internal",
   "childModules": [],
   "assignedVariants": [
@@ -46,18 +45,23 @@
       "origin": "Derived"
     },
     {
+      "variantId": "mod_Height",
+      "previewValue": "1500",
+      "origin": "Derived"
+    },
+    {
       "variantId": "mod_DrillSide",
+      "previewValue": "Front",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_PartType",
       "previewValue": "Front",
       "origin": "Derived"
     },
     {
       "variantId": "mod_DrillEntireThk",
       "previewValue": "true",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_Length",
-      "previewValue": "1000",
       "origin": "Derived"
     }
   ],

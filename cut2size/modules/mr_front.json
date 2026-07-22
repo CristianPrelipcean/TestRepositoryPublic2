@@ -1,0 +1,148 @@
+{
+  "moduleId": "mr_Front",
+  "shortName": "Frontpanel",
+  "configurable": true,
+  "isRoot": true,
+  "description": "Root module for frontpanels",
+  "groupName": "Root",
+  "imageId": "f65285c6-09f3-44f5-8976-0a81c3aed305:mr_Front.jpg",
+  "restrictionTypeId": "Public",
+  "childModules": [
+    {
+      "moduleId": "mc_FrontPanel01"
+    },
+    {
+      "moduleId": "me_Cut"
+    },
+    {
+      "moduleId": "me_Drill"
+    },
+    {
+      "moduleId": "me_Groove"
+    },
+    {
+      "moduleId": "me_Pocket"
+    },
+    {
+      "moduleId": "me_Hinge"
+    },
+    {
+      "moduleId": "me_Handle"
+    }
+  ],
+  "assignedVariants": [
+    {
+      "variantId": "mod_Width",
+      "previewValue": "1000",
+      "origin": "Required"
+    },
+    {
+      "variantId": "mod_Thickness",
+      "previewValue": "19",
+      "origin": "Required"
+    },
+    {
+      "variantId": "mod_Program",
+      "default": "Melamin_Woodline",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_Color",
+      "previewValue": "Melamin_Woodline_34139_Wildeiche",
+      "origin": "Required"
+    },
+    {
+      "variantId": "mod_PartGrain",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_BtmColor",
+      "defaultScript": "this.mod_Color",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_EdgeLeftColor",
+      "defaultScript": "this.mod_Color",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_EdgeRightColor",
+      "defaultScript": "this.mod_Color",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_EdgeLeftClass",
+      "default": "Thick",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_EdgeRightClass",
+      "default": "Thick",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_EdgeTechnology",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_EdgeJointType",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_EdgePosType",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_EdgesPartLibraryVis",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_TypeElement",
+      "default": "Fronts",
+      "origin": "Fixed"
+    },
+    {
+      "variantId": "mod_PartDesign",
+      "previewValue": "FlatPanel",
+      "origin": "Required"
+    },
+    {
+      "variantId": "mod_Height",
+      "previewValue": "1000",
+      "origin": "Required"
+    },
+    {
+      "variantId": "mod_FrontType",
+      "default": "DoorLeft",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_EdgeBtmColor",
+      "defaultScript": "this.mod_Color",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_EdgeTopColor",
+      "defaultScript": "this.mod_Color",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_EdgeBtmClass",
+      "default": "Thick",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_EdgeTopClass",
+      "default": "Thick",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_PartType",
+      "default": "Front",
+      "origin": "Fixed"
+    }
+  ],
+  "assignedParts": [],
+  "assignedCustomTables": [],
+  "assignedFunctions": []
+}

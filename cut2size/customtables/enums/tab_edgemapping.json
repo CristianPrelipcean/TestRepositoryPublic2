@@ -1,13 +1,574 @@
 [
   {
     "tableName": "tab_EdgeMapping",
-    "columnId": "EdgeObject",
+    "columnId": "EdgeId",
     "refCustomTableName": "tab_EdgeLibrary",
-    "refColumnId": "in_EdgeCode"
+    "refColumnId": "in_EdgeId"
   },
   {
     "tableName": "tab_EdgeMapping",
     "columnId": "in_Color",
-    "refColumnId": "Value"
+    "enumsJson": [
+      {
+        "value": "VERBUNDGLAS_Snow",
+        "description": "Snow"
+      },
+      {
+        "value": "Organic_Glas_S85669_Satin_White_Grey",
+        "description": "S85669 Satin White Grey"
+      },
+      {
+        "value": "Organic_Glas_S11022_Satin_White",
+        "description": "S11022 Satin White"
+      },
+      {
+        "value": "Organic_Glas_S11045_Satin_Arctic_White",
+        "description": "S11045 Satin Arctic White"
+      },
+      {
+        "value": "Organic_Glas_85670_Light_Grey",
+        "description": "85670 Light Grey"
+      },
+      {
+        "value": "Organic_Glas_85648_Dark_Grey",
+        "description": "85648 Dark Grey"
+      },
+      {
+        "value": "Organic_Glas_5367_Mint",
+        "description": "5367 Mint"
+      },
+      {
+        "value": "Organic_Glas_7585_Creme",
+        "description": "7585 Creme"
+      },
+      {
+        "value": "Organic_Glas_85669_White_Grey",
+        "description": "85669 White Grey"
+      },
+      {
+        "value": "Organic_Glas_11145_Snow",
+        "description": "11145 Snow"
+      },
+      {
+        "value": "Organic_Glas_85474_Grey",
+        "description": "85474 Grey"
+      },
+      {
+        "value": "Organic_Glas_7529_Kashmir",
+        "description": "7529 Kashmir"
+      },
+      {
+        "value": "Organic_Glas_7516_Magnolia",
+        "description": "7516 Magnolia"
+      },
+      {
+        "value": "Organic_Glas_11022_White",
+        "description": "11022 White"
+      },
+      {
+        "value": "Organic_Glas_11045_Arctic_White",
+        "description": "11045 Arctic White"
+      },
+      {
+        "value": "Acryl_TopMatt_85735_Stein_Grau",
+        "description": "85735 Stein Grau"
+      },
+      {
+        "value": "Acryl_TopMatt_1982_Weiss",
+        "description": "1982 Weiß"
+      },
+      {
+        "value": "Acryl_TopMatt_85383_Dunkel_Grau",
+        "description": "85383 Dunkel Grau"
+      },
+      {
+        "value": "Acryl_TopMatt_85468_Hell_Grau",
+        "description": "85468 Hell Grau"
+      },
+      {
+        "value": "Acryl_TopMatt_8421_Schwarz",
+        "description": "8421 Schwarz"
+      },
+      {
+        "value": "Acryl_TopMatt_11082_Weiss",
+        "description": "11082 Weiß"
+      },
+      {
+        "value": "STEELLINE_403P_Silver",
+        "description": "403P Silver"
+      },
+      {
+        "value": "STEELLINE_265P_Antracite",
+        "description": "265P Antracite"
+      },
+      {
+        "value": "STEELLINE_243P_Brown",
+        "description": "243P Brown"
+      },
+      {
+        "value": "STEELLINE_233P_Bronze",
+        "description": "233P Bronze"
+      },
+      {
+        "value": "PET_HG_240_Polarweiss",
+        "description": "240 Polarweiß"
+      },
+      {
+        "value": "PET_HG_239_Magnolia",
+        "description": "239 Magnolia"
+      },
+      {
+        "value": "PET_HG_238_Weiss",
+        "description": "238 Weiß"
+      },
+      {
+        "value": "Organic_Glas_S7516_Satin_Magnolia",
+        "description": "S7516 Satin Magnolia"
+      },
+      {
+        "value": "PET_Matt_1127_Steingrau",
+        "description": "1127 Steingrau"
+      },
+      {
+        "value": "Organic_Glas_S5367_Satin_Mint",
+        "description": "S5367 Satin Mint"
+      },
+      {
+        "value": "Organic_Glas_S7529_Satin_Kashmir",
+        "description": "S7529 Satin Kashmir"
+      },
+      {
+        "value": "Melamin_Stone_A29_Pinara_Artstone",
+        "description": "A29 Pinara Artstone"
+      },
+      {
+        "value": "Melamin_Woodline_U998_Shadow_Black",
+        "description": "U998 Shadow Black"
+      },
+      {
+        "value": "Melamin_Woodline_3183_York_Eiche_Goldbraun",
+        "description": "3183 York Eiche goldbraun"
+      },
+      {
+        "value": "Melamin_Woodline_1181_York_Eiche_Tabak",
+        "description": "1181 York Eiche Tabak"
+      },
+      {
+        "value": "Melamin_Stone_F275_Dark",
+        "description": "F275 Dark"
+      },
+      {
+        "value": "Melamin_Stone_FB02_Grey",
+        "description": "FB02 Grey"
+      },
+      {
+        "value": "Melamin_Stone_FB43_Oxide",
+        "description": "FB43 Oxide"
+      },
+      {
+        "value": "Melamin_Stone_FB47_Lava",
+        "description": "FB47 Lava"
+      },
+      {
+        "value": "Melamin_Woodline_1180_York_Eiche",
+        "description": "1180 York Eiche"
+      },
+      {
+        "value": "Melamin_Woodline_H1277ST22_Akazie",
+        "description": "H1277ST22 Akazie"
+      },
+      {
+        "value": "Melamin_Woodline_34139_Wildeiche",
+        "description": "34139 Wildeiche"
+      },
+      {
+        "value": "Melmain_Woodline_FB08_Grafit",
+        "description": "FB08 Grafit"
+      },
+      {
+        "value": "Melamin_Uni_U646_Niagaragruen",
+        "description": "U646 Niagaragrün"
+      },
+      {
+        "value": "Melamin_Uni_U636_Fjordgruen",
+        "description": "U636 Fjordgrün"
+      },
+      {
+        "value": "Melamin_Uni_U741_Lava",
+        "description": "U741 Lava"
+      },
+      {
+        "value": "Melamin_Uni_U727_Sand",
+        "description": "U727 Sand"
+      },
+      {
+        "value": "Melamin_Uni_U156_Sandbeige",
+        "description": "U156 Sandbeige"
+      },
+      {
+        "value": "Melamin_Uni_U222_Magnoia",
+        "description": "U222 Magnolia"
+      },
+      {
+        "value": "Melamin_Uni_U775_Weissgrau",
+        "description": "U775 Weißgrau"
+      },
+      {
+        "value": "Melamin_Uni_W930_Weiss",
+        "description": "W930 Weiß"
+      },
+      {
+        "value": "Melamin_Uni_W913_Weiss",
+        "description": "W913 Weiß"
+      },
+      {
+        "value": "Organic_Glas_S11145_Satin_Snow",
+        "description": "S11145 Satin Snow"
+      },
+      {
+        "value": "Organic_Glas_S85670_Satin_Light_Grey",
+        "description": "S85670 Satin Light Grey"
+      },
+      {
+        "value": "Organic_Glas_S7585_Satin_Dark_Grey",
+        "description": "S85648 Satin Dark Grey"
+      },
+      {
+        "value": "Organic_Glas_S7585_Satin_Creme",
+        "description": "S7585 Satin Creme"
+      },
+      {
+        "value": "Organic_Glas_1721L_Mirror",
+        "description": "1721L Mirror"
+      },
+      {
+        "value": "Organic_Glas_S85474_Satin_Grey",
+        "description": "S85474 Satin Grey"
+      },
+      {
+        "value": "Melamin_Stone_A28_Pinara_Artstone",
+        "description": "A28 Pinara Artstone"
+      },
+      {
+        "value": "PET_Matt_425_Slate_Grey",
+        "description": "425 Slate Grey"
+      },
+      {
+        "value": "PET_Matt_255_Kashmir",
+        "description": "255 Kashmir"
+      },
+      {
+        "value": "VERBUNDKERAMIK_Laminam_Diamond_Cream",
+        "description": "Laminam Diamond Cream"
+      },
+      {
+        "value": "VERBUNDKERAMIK_Laminam_Oxide_Bianco",
+        "description": "Laminam Oxide Bianco"
+      },
+      {
+        "value": "VERBUNDKERAMIK_Laminam_Fokos_Roccia",
+        "description": "Laminam Fokos Roccia"
+      },
+      {
+        "value": "VERBUNDKERAMIK_Laminam_Nero_Greco",
+        "description": "Laminam Nero Greco"
+      },
+      {
+        "value": "VERBUNDKERAMIK_Laminam_Oxide_Moro",
+        "description": "Laminam Oxide Moro"
+      },
+      {
+        "value": "VERBUNDKERAMIK_Laminam_Oxide_Avorio",
+        "description": "Laminam Oxide Avorio"
+      },
+      {
+        "value": "VERBUNDKERAMIK_Laminam_Oxide_Nero",
+        "description": "Laminam Oxide Nero"
+      },
+      {
+        "value": "VERBUNDKERAMIK_Laminam_Savoia_Grigia",
+        "description": "Laminam Savoia Grigia"
+      },
+      {
+        "value": "VERBUNDKERAMIK_Laminam_Oxide_Perla",
+        "description": "Laminam Oxide Perla"
+      },
+      {
+        "value": "VERBUNDKERAMIK_Laminam_Savoia_Antracite",
+        "description": "Laminam Savoia Antracite"
+      },
+      {
+        "value": "VERBUNDKERAMIK_Laminam_Savoia_Perla",
+        "description": "Laminam Savoia Perla"
+      },
+      {
+        "value": "VERBUNDGLAS_Gold",
+        "description": "Gold"
+      },
+      {
+        "value": "VERBUNDGLAS_Mirror",
+        "description": "Mirror"
+      },
+      {
+        "value": "VERBUNDGLAS_Satin_Grey",
+        "description": "Satin Grey"
+      },
+      {
+        "value": "VERBUNDGLAS_Satin_Kaschmir",
+        "description": "Satin Kaschmir"
+      },
+      {
+        "value": "VERBUNDGLAS_Satin_Grain_Brown",
+        "description": "Satin Grain Brown"
+      },
+      {
+        "value": "VERBUNDGLAS_Satin_Magnolia",
+        "description": "Satin Magnolia"
+      },
+      {
+        "value": "VERBUNDGLAS_Satin_White",
+        "description": "Satin White"
+      },
+      {
+        "value": "VERBUNDGLAS_Satin_Snow",
+        "description": "Satin Snow"
+      },
+      {
+        "value": "VERBUNDGLAS_Black",
+        "description": "Black"
+      },
+      {
+        "value": "VERBUNDGLAS_Grey",
+        "description": "Grey"
+      },
+      {
+        "value": "VERBUNDGLAS_Earth",
+        "description": "Earth"
+      },
+      {
+        "value": "VERBUNDGLAS_Cappuccino",
+        "description": "Cappuccino"
+      },
+      {
+        "value": "VERBUNDGLAS_Champagne",
+        "description": "Champagne"
+      },
+      {
+        "value": "VERBUNDGLAS_Magnolia",
+        "description": "Magnolia"
+      },
+      {
+        "value": "VERBUNDGLAS_White_Grey",
+        "description": "White Grey"
+      },
+      {
+        "value": "VERBUNDGLAS_White",
+        "description": "White"
+      },
+      {
+        "value": "VERBUNDKERAMIK_Laminam_Fokos_Graphite",
+        "description": "Laminam Fokos Graphite"
+      },
+      {
+        "value": "PET_Matt_567_Black",
+        "description": "567 Black"
+      },
+      {
+        "value": "VERBUNDKERAMIK_Laminam_Pitra_Grey",
+        "description": "Laminam Pitra Grey"
+      },
+      {
+        "value": "VERBUNDKERAMIK_Laminam_Calce_Teracotta",
+        "description": "Laminam Calce Teracotta"
+      },
+      {
+        "value": "PET_Matt_215_Old_White",
+        "description": "215 Old White"
+      },
+      {
+        "value": "PET_Matt_546_White",
+        "description": "546 White"
+      },
+      {
+        "value": "ACRYL_HG_Met_85385_Silber",
+        "description": "85385 Silber met."
+      },
+      {
+        "value": "ACRYL_HG_Met_7499_Champ",
+        "description": "7499 Champ.met."
+      },
+      {
+        "value": "ACRYL_HG_Met_85387_Graphit",
+        "description": "85387 Graphit  met."
+      },
+      {
+        "value": "ACRYL_HG_85383_Dunkelgrau",
+        "description": "85383 Dunkelgrau"
+      },
+      {
+        "value": "ACRYL_HG_85384_Lichtgrau",
+        "description": "85384 Lichtgrau"
+      },
+      {
+        "value": "ACRYL_HG_3362_Rot",
+        "description": "3362 Rot"
+      },
+      {
+        "value": "ACRYL_HG_7498_Cappuccino",
+        "description": "7498 Cappuccino"
+      },
+      {
+        "value": "ACRYL_HG_8421_Schwarz",
+        "description": "8421 Schwarz"
+      },
+      {
+        "value": "ACRYL_HG_7496_Creme",
+        "description": "7496 Creme"
+      },
+      {
+        "value": "ACRYL_HG_1994_Weiss",
+        "description": "1994 Weiß"
+      },
+      {
+        "value": "ACRYL_HG_1982_Weiss",
+        "description": "1298 Weiß"
+      },
+      {
+        "value": "ACRYL_HG_11046_Arctic_White",
+        "description": "11046 ArcticWhite"
+      },
+      {
+        "value": "VERBUNDKERAMIK_Dekton_Reverie",
+        "description": "Dekton Reverie"
+      },
+      {
+        "value": "VERBUNDKERAMIK_Dekton_Sirius",
+        "description": "Dekton Sirius"
+      },
+      {
+        "value": "VERBUNDKERAMIK_Dekton_Rem",
+        "description": "Dekton Rem"
+      },
+      {
+        "value": "VERBUNDKERAMIK_Dekton_Laurent",
+        "description": "Dekton Laurent"
+      },
+      {
+        "value": "VERBUNDKERAMIK_Dekton_Kreta",
+        "description": "Dekton Kreta"
+      },
+      {
+        "value": "VERBUNDKERAMIK_Dekton_Kelya",
+        "description": "Dekton Kelya"
+      },
+      {
+        "value": "VERBUNDKERAMIK_Neolith_Beton",
+        "description": "Neolith Beton"
+      },
+      {
+        "value": "VERBUNDKERAMIK_Neolith_Calacatta",
+        "description": "Neolith Calacatta"
+      },
+      {
+        "value": "VERBUNDKERAMIK_Neolith_Basalt_Black",
+        "description": "Neolith Basalt Black"
+      },
+      {
+        "value": "VERBUNDKERAMIK_Neolith_Iron_Moss",
+        "description": "Neolith Iron Moss"
+      },
+      {
+        "value": "VERBUNDKERAMIK__Neolith_Nero_Zimbabwe",
+        "description": "Neolith Nero Zimbabwe"
+      },
+      {
+        "value": "VERBUNDKERAMIK_Neolith_Zaha_Stone",
+        "description": "Neolith Zaha Stone"
+      },
+      {
+        "value": "VERBUNDKERAMIK_Neolith_Iron_Corten",
+        "description": "Neolith Iron Corten"
+      },
+      {
+        "value": "VERBUNDKERAMIK_Laminam_Calce_Antracite",
+        "description": "Laminam Calce Antracite"
+      },
+      {
+        "value": "Melamin_Stone_AL4_Intaglio_On_Track",
+        "description": "AL4 Intaglio On Track"
+      },
+      {
+        "value": "VERBUNDKERAMIK_Laminam_Calce_Antracite",
+        "description": "Laminam_Calce_Antracite"
+      },
+      {
+        "value": "VERBUNDKERAMIK_Laminam_Pitra_Grey",
+        "description": "Laminam_Pitra_Grey"
+      },
+      {
+        "value": "VERBUNDKERAMIK_Dekton_Rem",
+        "description": "Dekton_Rem"
+      },
+      {
+        "value": "Melamin_Stone_AL4_Intaglio_On_Track",
+        "description": "AL4_Intaglio_On_Track"
+      },
+      {
+        "value": "All",
+        "description": "All values are possible"
+      }
+    ]
+  },
+  {
+    "tableName": "tab_EdgeMapping",
+    "columnId": "in_EdgeClass",
+    "enumsJson": [
+      {
+        "value": "Thick",
+        "description": "Edge class high"
+      },
+      {
+        "value": "Thin",
+        "description": "Edge class low"
+      },
+      {
+        "value": "Rough",
+        "description": "No edge class"
+      }
+    ]
+  },
+  {
+    "tableName": "tab_EdgeMapping",
+    "columnId": "in_EdgeTechnology",
+    "enumsJson": [
+      {
+        "value": "Laser",
+        "description": "Laser technology"
+      },
+      {
+        "value": "HotMeltGlue",
+        "description": "Hot melt glue technology"
+      },
+      {
+        "value": "Acryl",
+        "description": "Acryl technology"
+      },
+      {
+        "value": "NoEdge",
+        "description": "No edge"
+      },
+      {
+        "value": "PU",
+        "description": "PU technology"
+      },
+      {
+        "value": "Laser2FB",
+        "description": "Laser technology 2 farbige Kante"
+      },
+      {
+        "value": "All",
+        "description": "All values are possible"
+      }
+    ]
   }
 ]
