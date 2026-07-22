@@ -1,0 +1,551 @@
+{
+  "tableName": "tab_HandlePosConstruction",
+  "description": "Construction of handle (positioning of handles)",
+  "restrictionTypeId": "Internal",
+  "groupName": "Handle",
+  "columns": [
+    {
+      "name": "_id",
+      "type": "Integer",
+      "allowNull": false
+    },
+    {
+      "name": "in_HandlePosMatrix",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_HandlePosHorizontal",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_HandlePosVertical",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_HandleOrientation",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "PosX",
+      "type": "Text",
+      "allowNull": true,
+      "functionDefinition": "(m: parent,  HandleLength:number):number"
+    },
+    {
+      "name": "PosY",
+      "type": "Text",
+      "allowNull": true,
+      "functionDefinition": "(m: parent,  HandleLength:number):number"
+    }
+  ],
+  "rows": [
+    {
+      "data": [
+        {
+          "columnName": "in_HandlePosMatrix",
+          "value": "11"
+        },
+        {
+          "columnName": "in_HandlePosHorizontal",
+          "value": "Left"
+        },
+        {
+          "columnName": "in_HandlePosVertical",
+          "value": "Up"
+        },
+        {
+          "columnName": "in_HandleOrientation",
+          "value": "Vert"
+        },
+        {
+          "columnName": "PosX",
+          "value": "m.mod_PositionX"
+        },
+        {
+          "columnName": "PosY",
+          "value": "m.mod_Height - m.mod_PositionY - HandleLength / 2"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_HandlePosMatrix",
+          "value": "12"
+        },
+        {
+          "columnName": "in_HandlePosHorizontal",
+          "value": "Center"
+        },
+        {
+          "columnName": "in_HandlePosVertical",
+          "value": "Up"
+        },
+        {
+          "columnName": "in_HandleOrientation",
+          "value": "Vert"
+        },
+        {
+          "columnName": "PosX",
+          "value": "m.mod_Width / 2"
+        },
+        {
+          "columnName": "PosY",
+          "value": "m.mod_Height - m.mod_PositionY - HandleLength / 2"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_HandlePosMatrix",
+          "value": "13"
+        },
+        {
+          "columnName": "in_HandlePosHorizontal",
+          "value": "Right"
+        },
+        {
+          "columnName": "in_HandlePosVertical",
+          "value": "Up"
+        },
+        {
+          "columnName": "in_HandleOrientation",
+          "value": "Vert"
+        },
+        {
+          "columnName": "PosX",
+          "value": "m.mod_Width - m.mod_PositionX"
+        },
+        {
+          "columnName": "PosY",
+          "value": "m.mod_Height - m.mod_PositionY - HandleLength / 2"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_HandlePosMatrix",
+          "value": "21"
+        },
+        {
+          "columnName": "in_HandlePosHorizontal",
+          "value": "Left"
+        },
+        {
+          "columnName": "in_HandlePosVertical",
+          "value": "Center"
+        },
+        {
+          "columnName": "in_HandleOrientation",
+          "value": "Vert"
+        },
+        {
+          "columnName": "PosX",
+          "value": "m.mod_PositionX"
+        },
+        {
+          "columnName": "PosY",
+          "value": "m.mod_Height/2"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_HandlePosMatrix",
+          "value": "22"
+        },
+        {
+          "columnName": "in_HandlePosHorizontal",
+          "value": "Center"
+        },
+        {
+          "columnName": "in_HandlePosVertical",
+          "value": "Center"
+        },
+        {
+          "columnName": "in_HandleOrientation",
+          "value": "Vert"
+        },
+        {
+          "columnName": "PosX",
+          "value": "m.mod_Width / 2"
+        },
+        {
+          "columnName": "PosY",
+          "value": "m.mod_Height/2"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_HandlePosMatrix",
+          "value": "23"
+        },
+        {
+          "columnName": "in_HandlePosHorizontal",
+          "value": "Right"
+        },
+        {
+          "columnName": "in_HandlePosVertical",
+          "value": "Center"
+        },
+        {
+          "columnName": "in_HandleOrientation",
+          "value": "Vert"
+        },
+        {
+          "columnName": "PosX",
+          "value": "m.mod_Width - m.mod_PositionX"
+        },
+        {
+          "columnName": "PosY",
+          "value": "m.mod_Height/2"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_HandlePosMatrix",
+          "value": "31"
+        },
+        {
+          "columnName": "in_HandlePosHorizontal",
+          "value": "Left"
+        },
+        {
+          "columnName": "in_HandlePosVertical",
+          "value": "Down"
+        },
+        {
+          "columnName": "in_HandleOrientation",
+          "value": "Vert"
+        },
+        {
+          "columnName": "PosX",
+          "value": "m.mod_PositionX"
+        },
+        {
+          "columnName": "PosY",
+          "value": "m.mod_PositionY + HandleLength / 2"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_HandlePosMatrix",
+          "value": "32"
+        },
+        {
+          "columnName": "in_HandlePosHorizontal",
+          "value": "Center"
+        },
+        {
+          "columnName": "in_HandlePosVertical",
+          "value": "Down"
+        },
+        {
+          "columnName": "in_HandleOrientation",
+          "value": "Vert"
+        },
+        {
+          "columnName": "PosX",
+          "value": "m.mod_Width / 2"
+        },
+        {
+          "columnName": "PosY",
+          "value": "m.mod_PositionY + HandleLength / 2"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_HandlePosMatrix",
+          "value": "33"
+        },
+        {
+          "columnName": "in_HandlePosHorizontal",
+          "value": "Right"
+        },
+        {
+          "columnName": "in_HandlePosVertical",
+          "value": "Down"
+        },
+        {
+          "columnName": "in_HandleOrientation",
+          "value": "Vert"
+        },
+        {
+          "columnName": "PosX",
+          "value": "m.mod_Width - m.mod_PositionX"
+        },
+        {
+          "columnName": "PosY",
+          "value": "m.mod_PositionY + HandleLength / 2"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_HandlePosMatrix",
+          "value": "11"
+        },
+        {
+          "columnName": "in_HandlePosHorizontal",
+          "value": "Left"
+        },
+        {
+          "columnName": "in_HandlePosVertical",
+          "value": "Up"
+        },
+        {
+          "columnName": "in_HandleOrientation",
+          "value": "Hor"
+        },
+        {
+          "columnName": "PosX",
+          "value": "m.mod_PositionX + HandleLength / 2"
+        },
+        {
+          "columnName": "PosY",
+          "value": "m.mod_Height - m.mod_PositionY"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_HandlePosMatrix",
+          "value": "12"
+        },
+        {
+          "columnName": "in_HandlePosHorizontal",
+          "value": "Center"
+        },
+        {
+          "columnName": "in_HandlePosVertical",
+          "value": "Up"
+        },
+        {
+          "columnName": "in_HandleOrientation",
+          "value": "Hor"
+        },
+        {
+          "columnName": "PosX",
+          "value": "m.mod_Width / 2"
+        },
+        {
+          "columnName": "PosY",
+          "value": "m.mod_Height - m.mod_PositionY"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_HandlePosMatrix",
+          "value": "13"
+        },
+        {
+          "columnName": "in_HandlePosHorizontal",
+          "value": "Right"
+        },
+        {
+          "columnName": "in_HandlePosVertical",
+          "value": "Up"
+        },
+        {
+          "columnName": "in_HandleOrientation",
+          "value": "Hor"
+        },
+        {
+          "columnName": "PosX",
+          "value": "m.mod_Width - m.mod_PositionX - HandleLength / 2"
+        },
+        {
+          "columnName": "PosY",
+          "value": "m.mod_Height - m.mod_PositionY"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_HandlePosMatrix",
+          "value": "21"
+        },
+        {
+          "columnName": "in_HandlePosHorizontal",
+          "value": "Left"
+        },
+        {
+          "columnName": "in_HandlePosVertical",
+          "value": "Center"
+        },
+        {
+          "columnName": "in_HandleOrientation",
+          "value": "Hor"
+        },
+        {
+          "columnName": "PosX",
+          "value": "m.mod_PositionX + HandleLength / 2"
+        },
+        {
+          "columnName": "PosY",
+          "value": "m.mod_Height/2"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_HandlePosMatrix",
+          "value": "22"
+        },
+        {
+          "columnName": "in_HandlePosHorizontal",
+          "value": "Center"
+        },
+        {
+          "columnName": "in_HandlePosVertical",
+          "value": "Center"
+        },
+        {
+          "columnName": "in_HandleOrientation",
+          "value": "Hor"
+        },
+        {
+          "columnName": "PosX",
+          "value": "m.mod_Width / 2"
+        },
+        {
+          "columnName": "PosY",
+          "value": "m.mod_Height/2"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_HandlePosMatrix",
+          "value": "23"
+        },
+        {
+          "columnName": "in_HandlePosHorizontal",
+          "value": "Right"
+        },
+        {
+          "columnName": "in_HandlePosVertical",
+          "value": "Center"
+        },
+        {
+          "columnName": "in_HandleOrientation",
+          "value": "Hor"
+        },
+        {
+          "columnName": "PosX",
+          "value": "m.mod_Width - m.mod_PositionX - HandleLength / 2"
+        },
+        {
+          "columnName": "PosY",
+          "value": "m.mod_Height/2"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_HandlePosMatrix",
+          "value": "31"
+        },
+        {
+          "columnName": "in_HandlePosHorizontal",
+          "value": "Left"
+        },
+        {
+          "columnName": "in_HandlePosVertical",
+          "value": "Down"
+        },
+        {
+          "columnName": "in_HandleOrientation",
+          "value": "Hor"
+        },
+        {
+          "columnName": "PosX",
+          "value": "m.mod_PositionX + HandleLength / 2"
+        },
+        {
+          "columnName": "PosY",
+          "value": "m.mod_PositionY"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_HandlePosMatrix",
+          "value": "32"
+        },
+        {
+          "columnName": "in_HandlePosHorizontal",
+          "value": "Center"
+        },
+        {
+          "columnName": "in_HandlePosVertical",
+          "value": "Down"
+        },
+        {
+          "columnName": "in_HandleOrientation",
+          "value": "Hor"
+        },
+        {
+          "columnName": "PosX",
+          "value": "m.mod_Width / 2"
+        },
+        {
+          "columnName": "PosY",
+          "value": "m.mod_PositionY"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_HandlePosMatrix",
+          "value": "33"
+        },
+        {
+          "columnName": "in_HandlePosHorizontal",
+          "value": "Right"
+        },
+        {
+          "columnName": "in_HandlePosVertical",
+          "value": "Down"
+        },
+        {
+          "columnName": "in_HandleOrientation",
+          "value": "Hor"
+        },
+        {
+          "columnName": "PosX",
+          "value": "m.mod_Width - m.mod_PositionX - HandleLength / 2"
+        },
+        {
+          "columnName": "PosY",
+          "value": "m.mod_PositionY"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "partCode": "part_Front",
+  "shortName": "Front",
+  "description": "Front panel",
+  "wdt": "XYZ",
+  "groupName": "Panels",
+  "imageId": "2a1f1950-f59e-4698-88c0-9781cf8b503a:mc_FrontPanel.jpg",
+  "model3dImageId": "",
+  "invisible": false,
+  "restrictionTypeId": "Public",
+  "noNcData": false,
+  "partVariants": [
+    {
+      "partVarId": "pa_BtmColor",
+      "valueScript": "this.parent.mod_BtmColor",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeBackClass",
+      "valueScript": "this.parent.mod_EdgeBackClass",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeBackColor",
+      "valueScript": "this.parent.mod_EdgeBackColor",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeFrontClass",
+      "valueScript": "this.parent.mod_EdgeFrontClass",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeFrontColor",
+      "valueScript": "this.parent.mod_EdgeFrontColor",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeLeftClass",
+      "valueScript": "this.parent.mod_EdgeLeftClass",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeLeftColor",
+      "valueScript": "this.parent.mod_EdgeLeftColor",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeRightClass",
+      "valueScript": "this.parent.mod_EdgeRightClass",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeRightColor",
+      "valueScript": "this.parent.mod_EdgeRightColor",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_PartGrain",
+      "valueScript": "this.parent.mod_PartGrain",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_TopColor",
+      "valueScript": "this.parent.mod_Color",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeJointType",
+      "valueScript": "this.parent.mod_EdgeJointType",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_Program",
+      "valueScript": "this.parent.mod_Program",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_TypeElement",
+      "valueScript": "this.parent.mod_TypeElement",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_BomId",
+      "valueScript": "",
+      "isWritable": false
+    }
+  ],
+  "bomData": [
+    {
+      "bomElementTypeId": "bomout_Group",
+      "description": "Output Parts / Boards for panel",
+      "conditionScript": "partSelf._g?.basic_CreateBom == 'Library'",
+      "valueScript": "//====================================================================\n  // Call the process functions\n  //====================================================================\n\n  GlobalFunc.process_BoardBom(this, part)"
+    }
+  ],
+  "ncData": []
+}
