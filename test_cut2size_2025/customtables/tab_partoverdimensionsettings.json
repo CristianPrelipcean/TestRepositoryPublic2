@@ -1,0 +1,73 @@
+{
+  "tableName": "tab_PartOverdimensionSettings",
+  "description": "Overdimensioning of Parts",
+  "restrictionTypeId": "Public",
+  "groupName": "Edges",
+  "columns": [
+    {
+      "name": "_id",
+      "type": "Integer",
+      "allowNull": false
+    },
+    {
+      "name": "in_EdgeThk",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "Overdimension",
+      "type": "Dim",
+      "allowNull": false
+    }
+  ],
+  "rows": [
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeThk",
+          "value": "0.8"
+        },
+        {
+          "columnName": "Overdimension",
+          "value": "2"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeThk",
+          "value": "1"
+        },
+        {
+          "columnName": "Overdimension",
+          "value": "2"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeThk",
+          "value": "2"
+        },
+        {
+          "columnName": "Overdimension",
+          "value": "2"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeThk",
+          "value": "1.3"
+        },
+        {
+          "columnName": "Overdimension",
+          "value": "1.55"
+        }
+      ]
+    }
+  ]
+}

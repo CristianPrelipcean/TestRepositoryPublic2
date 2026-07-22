@@ -1,0 +1,146 @@
+{
+  "tableName": "tab_HingePosition",
+  "description": "Hinge Positions",
+  "restrictionTypeId": "Public",
+  "groupName": "Hinge",
+  "columns": [
+    {
+      "name": "_id",
+      "type": "Integer",
+      "allowNull": false
+    },
+    {
+      "name": "in_Program",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_PartDesign",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_FrontHeightMin",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "in_FrontHeightMax",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "in_FrontWidthMin",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "in_FrontWidthMax",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "HingeDescriptor",
+      "type": "Text",
+      "allowNull": true
+    }
+  ],
+  "rows": [
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_PartDesign",
+          "value": "FlatPanel"
+        },
+        {
+          "columnName": "in_FrontHeightMin",
+          "value": "200"
+        },
+        {
+          "columnName": "in_FrontHeightMax",
+          "value": "899.99"
+        },
+        {
+          "columnName": "in_FrontWidthMin",
+          "value": "50"
+        },
+        {
+          "columnName": "in_FrontWidthMax",
+          "value": "2000"
+        },
+        {
+          "columnName": "HingeDescriptor",
+          "value": "106mm_1_106mm"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_PartDesign",
+          "value": "FlatPanel"
+        },
+        {
+          "columnName": "in_FrontHeightMin",
+          "value": "900"
+        },
+        {
+          "columnName": "in_FrontHeightMax",
+          "value": "1499.99"
+        },
+        {
+          "columnName": "in_FrontWidthMin",
+          "value": "50"
+        },
+        {
+          "columnName": "in_FrontWidthMax",
+          "value": "2000"
+        },
+        {
+          "columnName": "HingeDescriptor",
+          "value": "106mm_1_1_106mm"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "in_PartDesign",
+          "value": "FlatPanel"
+        },
+        {
+          "columnName": "in_FrontHeightMin",
+          "value": "1500"
+        },
+        {
+          "columnName": "in_FrontHeightMax",
+          "value": "2750"
+        },
+        {
+          "columnName": "in_FrontWidthMin",
+          "value": "50"
+        },
+        {
+          "columnName": "in_FrontWidthMax",
+          "value": "2000"
+        },
+        {
+          "columnName": "HingeDescriptor",
+          "value": "106mm_576mm_1_576mm_106mm"
+        }
+      ]
+    }
+  ]
+}

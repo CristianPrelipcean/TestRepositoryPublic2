@@ -1,0 +1,94 @@
+{
+  "tableName": "tab_PartSettings",
+  "description": "Settings for parts",
+  "restrictionTypeId": "Public",
+  "groupName": "Bom",
+  "columns": [
+    {
+      "name": "_id",
+      "type": "Integer",
+      "allowNull": false
+    },
+    {
+      "name": "in_Part",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "BomPartDescription",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "PartGroup",
+      "type": "Text",
+      "allowNull": true
+    }
+  ],
+  "rows": [
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_Backwall"
+        },
+        {
+          "columnName": "BomPartDescription",
+          "value": "Rückwand"
+        },
+        {
+          "columnName": "PartGroup",
+          "value": "Backs"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_DoorLeft"
+        },
+        {
+          "columnName": "BomPartDescription",
+          "value": "Linke Tür"
+        },
+        {
+          "columnName": "PartGroup",
+          "value": "Doors"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_DoorRight"
+        },
+        {
+          "columnName": "BomPartDescription",
+          "value": "Rechte Tür"
+        },
+        {
+          "columnName": "PartGroup",
+          "value": "Doors"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_Drawer"
+        },
+        {
+          "columnName": "BomPartDescription",
+          "value": "Schubkastenfront"
+        },
+        {
+          "columnName": "PartGroup",
+          "value": "Drawers"
+        }
+      ]
+    }
+  ]
+}

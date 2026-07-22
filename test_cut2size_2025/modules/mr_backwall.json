@@ -1,0 +1,127 @@
+{
+  "moduleId": "mr_Backwall",
+  "shortName": "Backwall",
+  "configurable": true,
+  "isRoot": true,
+  "description": "Root module for backwalls",
+  "groupName": "Root",
+  "imageId": "5cb28340-69b5-4d55-9944-c7398202c642:mr_Backwall.jpg",
+  "restrictionTypeId": "Public",
+  "childModules": [
+    {
+      "moduleId": "me_Drill"
+    },
+    {
+      "moduleId": "mc_BackwallPanel01"
+    }
+  ],
+  "assignedVariants": [
+    {
+      "variantId": "mod_Width",
+      "previewValue": "1000",
+      "origin": "Required"
+    },
+    {
+      "variantId": "mod_Thickness",
+      "previewValue": "8",
+      "origin": "Required"
+    },
+    {
+      "variantId": "mod_Program",
+      "default": "Melamin_Woodline",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_Color",
+      "default": "Melamin_Woodline_34139_Wildeiche",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_PartGrain",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_BtmColor",
+      "defaultScript": "this.mod_Color",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_EdgeLeftColor",
+      "default": "NoEdge",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_EdgeRightColor",
+      "default": "NoEdge",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_EdgeTechnology",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_EdgeRightClass",
+      "default": "Rough",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_EdgeLeftClass",
+      "default": "Rough",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_EdgeJointType",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_EdgePosType",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_EdgesPartLibraryVis",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_TypeElement",
+      "default": "Backwalls",
+      "origin": "Fixed"
+    },
+    {
+      "variantId": "mod_PartDesign",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_EdgeBtmClass",
+      "default": "Rough",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_EdgeBtmColor",
+      "default": "NoEdge",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_EdgeTopClass",
+      "default": "Rough",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_EdgeTopColor",
+      "default": "NoEdge",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_Height",
+      "previewValue": "1000",
+      "origin": "Required"
+    },
+    {
+      "variantId": "mod_PartType",
+      "default": "Backwall",
+      "origin": "Fixed"
+    }
+  ],
+  "assignedParts": [],
+  "assignedCustomTables": [],
+  "assignedFunctions": []
+}

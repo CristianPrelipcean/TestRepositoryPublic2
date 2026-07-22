@@ -1,0 +1,4441 @@
+{
+  "tableName": "tab_EdgeMapping",
+  "description": "Mapping for edges",
+  "restrictionTypeId": "Public",
+  "groupName": "Edges",
+  "columns": [
+    {
+      "name": "_id",
+      "type": "Integer",
+      "allowNull": false
+    },
+    {
+      "name": "in_EdgeClass",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_EdgeTechnology",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_Color",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_BoardThkMin",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "in_BoardThkMax",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "EdgeId",
+      "type": "Text",
+      "allowNull": true
+    }
+  ],
+  "rows": [
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Rough"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "All"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "All"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "NoEdge"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "PU"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "Melamin_Woodline_U998_Shadow_Black"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "ABS U998"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "PU"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "Melmain_Woodline_FB08_Grafit"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "ABS W02"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "PU"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "Melamin_Woodline_34139_Wildeiche"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "ABS W03"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "PU"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "Melamin_Woodline_H1277ST22_Akazie"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "ABS W04"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "PU"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "Melamin_Stone_FB47_Lava"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "ABS W10"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "PU"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "Melamin_Stone_FB43_Oxide"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "ABS W11"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "PU"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "Melamin_Stone_FB02_Grey"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "ABS W12"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "PU"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "Melamin_Stone_F275_Dark"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "ABS W13"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "PU"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "Melamin_Woodline_1180_York_Eiche"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "ABS W14"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "Laser2FB"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "ACRYL_HG_3362_Rot"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "D02"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "Laser2FB"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "ACRYL_HG_8421_Schwarz"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "D03"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "Laser2FB"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "PET_HG_240_Polarweiss"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "D04"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "Laser2FB"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "ACRYL_HG_11046_Arctic_White"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "D04"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "Laser2FB"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "ACRYL_HG_1982_Weiss"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "D04"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "Laser2FB"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "ACRYL_HG_1982_Weiss"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "D04"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "Laser2FB"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "ACRYL_HG_7496_Creme"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "D05"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "Laser2FB"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "PET_HG_239_Magnolia"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "D05"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "Laser2FB"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "ACRYL_HG_Met_85385_Silber"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "D06"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "Laser2FB"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "ACRYL_HG_Met_7499_Champ"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "D07"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "Laser2FB"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "ACRYL_HG_Met_85387_Graphit"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "D10"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "Laser2FB"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "PET_Matt_255_Kashmir"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "D13"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "Laser2FB"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "PET_Matt_215_Old_White"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "D14"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "Laser2FB"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "PET_HG_238_Weiss"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "D14"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "Laser2FB"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "ACRYL_HG_7498_Cappuccino"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "D16"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "Laser2FB"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "ACRYL_HG_85384_Lichtgrau"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "D17"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "Laser2FB"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "PET_Matt_425_Slate_Grey"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "D18"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "Laser2FB"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "PET_Matt_1127_Steingrau"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "D19"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "Laser"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "STEELLINE_265P_Antracite"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "L 265P"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "Laser"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "STEELLINE_403P_Silver"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "L 403P"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "Laser"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "ACRYL_HG_1982_Weiss"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "L1298"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "Laser"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "PET_HG_238_Weiss"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "L1298"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "Laser"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "STEELLINE_233P_Bronze"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "L233P"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "Laser"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "ACRYL_HG_11046_Arctic_White"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "L240"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "Laser"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "PET_HG_240_Polarweiss"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "L240"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "Laser"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "STEELLINE_243P_Brown"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "L243P"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "Laser"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "PET_HG_239_Magnolia"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "L7436"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "Laser"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "ACRYL_HG_8421_Schwarz"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "L8102"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "Laser"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "Organic_Glas_1721L_Mirror"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "L8576"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "Laser"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "ACRYL_HG_Met_85387_Graphit"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "L8855"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "Laser"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "PET_Matt_567_Black"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "LM01"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "Laser"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "Acryl_TopMatt_8421_Schwarz"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "LM01"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "Laser"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "PET_Matt_546_White"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "LM02"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "Laser"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "Acryl_TopMatt_11082_Weiss"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "LM02"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "Laser"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "PET_Matt_255_Kashmir"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "LM04"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "Laser"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "PET_Matt_425_Slate_Grey"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "LM07"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "Laser"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "PET_Matt_1127_Steingrau"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "LM08"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "Laser"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "Acryl_TopMatt_85735_Stein_Grau"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "LM08"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "Laser"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "Organic_Glas_85669_White_Grey"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "LO54"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "Laser"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "Organic_Glas_S85669_Satin_White_Grey"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "LO54"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "Laser"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "Organic_Glas_5367_Mint"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "LO55"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "Laser"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "Organic_Glas_S5367_Satin_Mint"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "LO55"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "Laser"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "Organic_Glas_S11022_Satin_White"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "LO59"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "Laser"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "Organic_Glas_11145_Snow"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "LO60"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "Laser"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "Organic_Glas_S11045_Satin_Arctic_White"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "LO60"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "Laser"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "Organic_Glas_S11145_Satin_Snow"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "LO60"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "Laser"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "Organic_Glas_85648_Dark_Grey"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "LO61"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "Laser"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "Organic_Glas_S85474_Satin_Grey"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "LO61"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "Laser"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "Organic_Glas_S7585_Satin_Dark_Grey"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "LO61"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "Laser"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "Organic_Glas_85670_Light_Grey"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "LO62"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "Laser"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "Organic_Glas_S85670_Satin_Light_Grey"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "LO62"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "Laser"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "Organic_Glas_S7529_Satin_Kashmir"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "LO62"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "Laser"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "Organic_Glas_7516_Magnolia"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "LO63"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "Laser"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "Organic_Glas_7585_Creme"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "LO63"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "Laser"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "Organic_Glas_S7516_Satin_Magnolia"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "LO63"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "Laser"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "Organic_Glas_S7585_Satin_Creme"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "LO63"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "Laser"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "Organic_Glas_11022_White"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "LO64"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "Laser"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "Organic_Glas_11045_Arctic_White"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "LO65"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "Laser"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "Organic_Glas_7529_Kashmir"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "LO66"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "Laser"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "Organic_Glas_85474_Grey"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "LO67"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "Laser"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "Organic_Glas_11022_White"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "LO74"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "Laser"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "Organic_Glas_S11022_Satin_White"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "LO74"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "Laser"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "Organic_Glas_11045_Arctic_White"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "LO75"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "Laser"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "Organic_Glas_S11045_Satin_Arctic_White"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "LO75"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "Laser"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "Organic_Glas_85474_Grey"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "LO77"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "Laser"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "Organic_Glas_S85474_Satin_Grey"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "LO77"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "Laser"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "Melamin_Uni_U156_Sandbeige"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "LU156"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "Laser"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "Melamin_Uni_U222_Magnoia"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "LU222"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "Laser"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "Melamin_Uni_U727_Sand"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "LU727"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "Laser"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "Melamin_Uni_U741_Lava"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "LU741"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "Laser"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "Melamin_Uni_U775_Weissgrau"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "LU775"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "Laser"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "PET_Matt_215_Old_White"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "LW913"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "Laser"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "Melamin_Uni_W913_Weiss"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "LW913"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "Laser"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "Acryl_TopMatt_1982_Weiss"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "LW913"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "Laser"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "Melamin_Uni_W930_Weiss"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "LW930"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "PU"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "VERBUNDKERAMIK_Neolith_Calacatta"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "P01"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "PU"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "VERBUNDKERAMIK_Dekton_Reverie"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "P01"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "PU"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "VERBUNDKERAMIK_Laminam_Oxide_Moro"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "P02"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "PU"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "VERBUNDKERAMIK_Neolith_Iron_Corten"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "P02"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "PU"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "VERBUNDKERAMIK_Dekton_Kelya"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "P02"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "PU"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "VERBUNDKERAMIK_Laminam_Oxide_Avorio"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "P09"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "PU"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "VERBUNDKERAMIK_Laminam_Savoia_Perla"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "P09"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "PU"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "VERBUNDKERAMIK_Dekton_Rem"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "P09"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "PU"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "VERBUNDKERAMIK_Laminam_Oxide_Nero"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "P10"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "PU"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "VERBUNDKERAMIK_Laminam_Savoia_Antracite"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "P10"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "PU"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "VERBUNDKERAMIK_Neolith_Basalt_Black"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "P10"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "PU"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "VERBUNDKERAMIK_Neolith_Iron_Moss"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "P10"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "PU"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "VERBUNDKERAMIK_Laminam_Savoia_Grigia"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "P11"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "PU"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "VERBUNDKERAMIK_Neolith_Beton"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "P11"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "PU"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "VERBUNDKERAMIK_Neolith_Zaha_Stone"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "P11"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "PU"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "VERBUNDKERAMIK_Dekton_Kreta"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "P11"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "PU"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "VERBUNDGLAS_Satin_Kaschmir"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "P49 "
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "PU"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "VERBUNDGLAS_White_Grey"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "P50"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "PU"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "VERBUNDGLAS_Earth"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "P51"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "PU"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "VERBUNDGLAS_Satin_Grain_Brown"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "P51"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "PU"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "VERBUNDGLAS_Magnolia"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "P52"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "PU"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "VERBUNDGLAS_Satin_Magnolia"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "P52"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "PU"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "VERBUNDGLAS_White"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "P53"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "PU"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "VERBUNDGLAS_Satin_White"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "P53"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "PU"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "VERBUNDGLAS_Black"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "P54"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "PU"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "VERBUNDKERAMIK_Dekton_Sirius"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "P54"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "PU"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "VERBUNDGLAS_Cappuccino"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "P56 "
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "PU"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "VERBUNDGLAS_Champagne"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "P57"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "PU"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "VERBUNDGLAS_Grey"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "P58"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "PU"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "VERBUNDKERAMIK__Neolith_Nero_Zimbabwe"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "P58"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "PU"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "VERBUNDKERAMIK_Dekton_Laurent"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "P58"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "PU"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "VERBUNDGLAS_Snow"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "P61"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "PU"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "VERBUNDGLAS_Satin_Snow"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "P61"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "PU"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "VERBUNDGLAS_Satin_Grey"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "P62 "
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "PU"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "VERBUNDGLAS_Mirror"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "P99"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "Laser"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "PET_Matt_567_Black"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "R01"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "Laser"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "PET_Matt_546_White"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "R02"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "PU"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "ACRYL_HG_1982_Weiss"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "S1298"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "PU"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "ACRYL_HG_1994_Weiss"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "S1374"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "PU"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "ACRYL_HG_3362_Rot"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "S3120"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "PU"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "ACRYL_HG_7498_Cappuccino"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "S7368"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "PU"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "ACRYL_HG_Met_7499_Champ"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "S7407"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "PU"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "ACRYL_HG_8421_Schwarz"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "S8102"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "PU"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "ACRYL_HG_85383_Dunkelgrau"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "S85335"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "PU"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "ACRYL_HG_85384_Lichtgrau"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "S85336"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "PU"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "Acryl_TopMatt_85383_Dunkel_Grau"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "S85383"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "PU"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "Acryl_TopMatt_85468_Hell_Grau"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "S85468"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "PU"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "ACRYL_HG_Met_85385_Silber"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "S8636"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "PU"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "ACRYL_HG_Met_85387_Graphit"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "S8855"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "Laser"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "PET_Matt_567_Black"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "24"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "LM01"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "Laser"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "PET_Matt_546_White"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "24"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "LM02"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "Laser"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "ACRYL_HG_1982_Weiss"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "24"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "28"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "L1298"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "Laser"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "Organic_Glas_S11145_Satin_Snow"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "LO69"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "Laser"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "Organic_Glas_S85474_Satin_Grey"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "LO70"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "Laser"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "Organic_Glas_S7585_Satin_Dark_Grey"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "LO68"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "PU"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "Melamin_Woodline_3183_York_Eiche_Goldbraun"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "ABS H3183"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "PU"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "Melamin_Woodline_1181_York_Eiche_Tabak"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "ABS H1181"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "Laser"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "Melamin_Uni_U646_Niagaragruen"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "L U646"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "Laser"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "Melamin_Uni_U636_Fjordgruen"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "L U636"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "PU"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "VERBUNDGLAS_Gold"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "P54"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "PU"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "VERBUNDKERAMIK_Laminam_Oxide_Perla"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "P13"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "PU"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "VERBUNDKERAMIK_Laminam_Nero_Greco"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "P58"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "PU"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "VERBUNDKERAMIK_Laminam_Fokos_Roccia"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "P11"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "PU"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "VERBUNDKERAMIK_Laminam_Oxide_Bianco"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "P01"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "PU"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "VERBUNDKERAMIK_Laminam_Diamond_Cream"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "P09"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "PU"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "VERBUNDKERAMIK_Laminam_Fokos_Graphite"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "P02"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "PU"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "VERBUNDKERAMIK_Laminam_Pitra_Grey"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "P12"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "PU"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "VERBUNDKERAMIK_Laminam_Calce_Antracite"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "P12"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "PU"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "VERBUNDKERAMIK_Laminam_Calce_Teracotta"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "P14"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "PU"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "Melamin_Stone_A29_Pinara_Artstone"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "A29"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "PU"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "Melamin_Stone_A28_Pinara_Artstone"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "A28"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_EdgeClass",
+          "value": "Thick"
+        },
+        {
+          "columnName": "in_EdgeTechnology",
+          "value": "PU"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "Melamin_Stone_AL4_Intaglio_On_Track"
+        },
+        {
+          "columnName": "in_BoardThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BoardThkMax",
+          "value": "24"
+        },
+        {
+          "columnName": "EdgeId",
+          "value": "AL4"
+        }
+      ]
+    }
+  ]
+}

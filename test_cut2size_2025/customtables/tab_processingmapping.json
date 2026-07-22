@@ -1,0 +1,446 @@
+{
+  "tableName": "tab_ProcessingMapping",
+  "description": "Mapping of the hardware object to the processings",
+  "restrictionTypeId": "Public",
+  "groupName": "ProcessingHardware",
+  "columns": [
+    {
+      "name": "_id",
+      "type": "Integer",
+      "allowNull": false
+    },
+    {
+      "name": "in_ProcessingItem",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "ProcessingId",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "ProcessingLibrary",
+      "type": "Text",
+      "allowNull": true
+    }
+  ],
+  "rows": [
+    {
+      "data": [
+        {
+          "columnName": "in_ProcessingItem",
+          "value": "ProcessItemHinge35/13Screw45/9.5"
+        },
+        {
+          "columnName": "ProcessingId",
+          "value": "ProcessIdHinge35/13Screw45/9.5"
+        },
+        {
+          "columnName": "ProcessingLibrary",
+          "value": "DrillVertical"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ProcessingItem",
+          "value": "ProcessingItemMetalla510Screw_35/13.5_45/9.5"
+        },
+        {
+          "columnName": "ProcessingId",
+          "value": "ProcessingIdMetalla510Screw_35/13.5_45/9.5"
+        },
+        {
+          "columnName": "ProcessingLibrary",
+          "value": "DrillVertical"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ProcessingItem",
+          "value": "ProcessingItemMetalla510Screw_35/13.5_48/6"
+        },
+        {
+          "columnName": "ProcessingId",
+          "value": "ProcessingIdMetalla510Screw_35/13.5_48/6"
+        },
+        {
+          "columnName": "ProcessingLibrary",
+          "value": "DrillVertical"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ProcessingItem",
+          "value": "ProcessingItemMetalla510Screw_35/13.5_52/5.5"
+        },
+        {
+          "columnName": "ProcessingId",
+          "value": "ProcessingIdMetalla510Screw_35/13.5_52/5.5"
+        },
+        {
+          "columnName": "ProcessingLibrary",
+          "value": "DrillVertical"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ProcessingItem",
+          "value": "ProcessingItemMetalla510Press_35/13.5_45/9.5"
+        },
+        {
+          "columnName": "ProcessingId",
+          "value": "ProcessingIdMetalla510Press_35/13.5_45/9.5"
+        },
+        {
+          "columnName": "ProcessingLibrary",
+          "value": "DrillVertical"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ProcessingItem",
+          "value": "ProcessingItemMetalla510Press_35/13.5_48/6"
+        },
+        {
+          "columnName": "ProcessingId",
+          "value": "ProcessingIdMetalla510Press_35/13.5_48/6"
+        },
+        {
+          "columnName": "ProcessingLibrary",
+          "value": "DrillVertical"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ProcessingItem",
+          "value": "ProcessingItemMetalla510Press_35/13.5_52/5.5"
+        },
+        {
+          "columnName": "ProcessingId",
+          "value": "ProcessingIdMetalla510Press_35/13.5_52/5.5"
+        },
+        {
+          "columnName": "ProcessingLibrary",
+          "value": "DrillVertical"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ProcessingItem",
+          "value": "ProcItem_Schrauben 45/9.5_Ø35↓13.5_Ø5↓1"
+        },
+        {
+          "columnName": "ProcessingId",
+          "value": "ProcId_Schrauben 45/9.5_Ø35↓13.5_Ø5↓1"
+        },
+        {
+          "columnName": "ProcessingLibrary",
+          "value": "DrillVertical"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ProcessingItem",
+          "value": "ProcItem_Schrauben 48/6_Ø35↓13.5_Ø5↓1"
+        },
+        {
+          "columnName": "ProcessingId",
+          "value": "ProcId_Schrauben 48/6_Ø35↓13.5_Ø5↓1"
+        },
+        {
+          "columnName": "ProcessingLibrary",
+          "value": "DrillVertical"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ProcessingItem",
+          "value": "ProcItem_Schrauben 52/5.5_Ø35↓13.5_Ø5↓1"
+        },
+        {
+          "columnName": "ProcessingId",
+          "value": "ProcId_Schrauben 52/5.5_Ø35↓13.5_Ø5↓1"
+        },
+        {
+          "columnName": "ProcessingLibrary",
+          "value": "DrillVertical"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ProcessingItem",
+          "value": "ProcItem_Werkzeuglos 45/9.5_Ø35↓13.5_Ø8↓13.5"
+        },
+        {
+          "columnName": "ProcessingId",
+          "value": "ProcId_Werkzeuglos 45/9.5_Ø35↓13.5_Ø8↓13.5"
+        },
+        {
+          "columnName": "ProcessingLibrary",
+          "value": "DrillVertical"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ProcessingItem",
+          "value": "ProcItem_Werkzeuglos 48/6_Ø35↓13.5_Ø10↓13.5"
+        },
+        {
+          "columnName": "ProcessingId",
+          "value": "ProcId_Werkzeuglos 48/6_Ø35↓13.5_Ø10↓13.5"
+        },
+        {
+          "columnName": "ProcessingLibrary",
+          "value": "DrillVertical"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ProcessingItem",
+          "value": "ProcItem_Werkzeuglos 52/5.5_Ø35↓13.5_Ø10↓13.5"
+        },
+        {
+          "columnName": "ProcessingId",
+          "value": "ProcId_Werkzeuglos 52/5.5_Ø35↓13.5_Ø10↓13.5"
+        },
+        {
+          "columnName": "ProcessingLibrary",
+          "value": "DrillVertical"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ProcessingItem",
+          "value": "ProcItem_Schrauben 48/6_Ø35↓11_Ø5↓1"
+        },
+        {
+          "columnName": "ProcessingId",
+          "value": "ProcId_Schrauben 48/6_Ø35↓11_Ø5↓1"
+        },
+        {
+          "columnName": "ProcessingLibrary",
+          "value": "DrillVertical"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ProcessingItem",
+          "value": "ProcItem_Einpressen 48/6_Ø35↓11_Ø10↓11"
+        },
+        {
+          "columnName": "ProcessingId",
+          "value": "ProcId_Einpressen 48/6_Ø35↓11_Ø10↓11"
+        },
+        {
+          "columnName": "ProcessingLibrary",
+          "value": "DrillVertical"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ProcessingItem",
+          "value": "ProcItem_Eindrücken 48/6_Ø35↓11_Ø10↓11"
+        },
+        {
+          "columnName": "ProcessingId",
+          "value": "ProcId_Eindrücken 48/6_Ø35↓11_Ø10↓11"
+        },
+        {
+          "columnName": "ProcessingLibrary",
+          "value": "DrillVertical"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ProcessingItem",
+          "value": "ProcItem_Werkzeuglos 48/6_Ø35↓11_Ø10↓11"
+        },
+        {
+          "columnName": "ProcessingId",
+          "value": "ProcId_Werkzeuglos 48/6_Ø35↓11_Ø10↓11"
+        },
+        {
+          "columnName": "ProcessingLibrary",
+          "value": "DrillVertical"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ProcessingItem",
+          "value": "ProcItem_Schrauben 52/5.5_Ø35↓11_Ø5↓1"
+        },
+        {
+          "columnName": "ProcessingId",
+          "value": "ProcId_Schrauben 52/5.5_Ø35↓11_Ø5↓1"
+        },
+        {
+          "columnName": "ProcessingLibrary",
+          "value": "DrillVertical"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ProcessingItem",
+          "value": "ProcItem_Einpressen 52/5.5_Ø35↓11_Ø10↓11"
+        },
+        {
+          "columnName": "ProcessingId",
+          "value": "ProcId_Einpressen 52/5.5_Ø35↓11_Ø10↓11"
+        },
+        {
+          "columnName": "ProcessingLibrary",
+          "value": "DrillVertical"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ProcessingItem",
+          "value": "ProcItem_Eindrücken 52/5.5_Ø35↓11_Ø10↓11"
+        },
+        {
+          "columnName": "ProcessingId",
+          "value": "ProcId_Eindrücken 52/5.5_Ø35↓11_Ø10↓11"
+        },
+        {
+          "columnName": "ProcessingLibrary",
+          "value": "DrillVertical"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ProcessingItem",
+          "value": "ProcItem_Werkzeuglos 52/5.5_Ø35↓11_Ø10↓11"
+        },
+        {
+          "columnName": "ProcessingId",
+          "value": "ProcId_Werkzeuglos 52/5.5_Ø35↓11_Ø10↓11"
+        },
+        {
+          "columnName": "ProcessingLibrary",
+          "value": "DrillVertical"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ProcessingItem",
+          "value": "ProcItem_Schrauben 48/6_Ø35↓8_Ø5↓1"
+        },
+        {
+          "columnName": "ProcessingId",
+          "value": "ProcId_Schrauben 48/6_Ø35↓8_Ø5↓1"
+        },
+        {
+          "columnName": "ProcessingLibrary",
+          "value": "DrillVertical"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ProcessingItem",
+          "value": "ProcItem_Schrauben 38/7.5_Ø26↓11.5_Ø5↓1"
+        },
+        {
+          "columnName": "ProcessingId",
+          "value": "ProcId_Schrauben 38/7.5_Ø26↓11.5_Ø5↓1"
+        },
+        {
+          "columnName": "ProcessingLibrary",
+          "value": "DrillVertical"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ProcessingItem",
+          "value": "ProcItem_Schrauben 52/7.5_Ø40↓13_Ø5↓1"
+        },
+        {
+          "columnName": "ProcessingId",
+          "value": "ProcId_Schrauben 52/7.5_Ø40↓13_Ø5↓1"
+        },
+        {
+          "columnName": "ProcessingLibrary",
+          "value": "DrillVertical"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ProcessingItem",
+          "value": "ProcItem_Schrauben 48/6_Ø35↓9_Ø5↓1"
+        },
+        {
+          "columnName": "ProcessingId",
+          "value": "ProcId_Schrauben 48/6_Ø35↓9_Ø5↓1"
+        },
+        {
+          "columnName": "ProcessingLibrary",
+          "value": "DrillVertical"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ProcessingItem",
+          "value": "ProcItem_Einpressen 48/6_Ø35↓9_Ø10↓9"
+        },
+        {
+          "columnName": "ProcessingId",
+          "value": "ProcId_Einpressen 48/6_Ø35↓9_Ø10↓9"
+        },
+        {
+          "columnName": "ProcessingLibrary",
+          "value": "DrillVertical"
+        }
+      ]
+    }
+  ]
+}

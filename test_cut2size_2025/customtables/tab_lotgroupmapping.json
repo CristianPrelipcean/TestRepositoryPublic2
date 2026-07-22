@@ -1,0 +1,328 @@
+{
+  "tableName": "tab_LotGroupMapping",
+  "description": "Lot group mapping",
+  "restrictionTypeId": "Custom",
+  "groupName": "LotGroup",
+  "columns": [
+    {
+      "name": "_id",
+      "type": "Integer",
+      "allowNull": false
+    },
+    {
+      "name": "in_TypeElement",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_ProductGroup",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_PartDesign",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_GrainPatternRelevant",
+      "type": "Bool",
+      "allowNull": true
+    },
+    {
+      "name": "LotGroup",
+      "type": "Text",
+      "allowNull": true
+    }
+  ],
+  "rows": [
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "Fronts"
+        },
+        {
+          "columnName": "in_ProductGroup",
+          "value": "Wood"
+        },
+        {
+          "columnName": "in_PartDesign",
+          "value": "FlatPanel"
+        },
+        {
+          "columnName": "in_GrainPatternRelevant",
+          "value": "false"
+        },
+        {
+          "columnName": "LotGroup",
+          "value": "W2"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "Fronts"
+        },
+        {
+          "columnName": "in_ProductGroup",
+          "value": "Wood"
+        },
+        {
+          "columnName": "in_PartDesign",
+          "value": "WoodFrameWood"
+        },
+        {
+          "columnName": "in_GrainPatternRelevant",
+          "value": "false"
+        },
+        {
+          "columnName": "LotGroup",
+          "value": "W25-teilig"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "Fronts"
+        },
+        {
+          "columnName": "in_ProductGroup",
+          "value": "Wood"
+        },
+        {
+          "columnName": "in_PartDesign",
+          "value": "WoodFrameGlass"
+        },
+        {
+          "columnName": "in_GrainPatternRelevant",
+          "value": "false"
+        },
+        {
+          "columnName": "LotGroup",
+          "value": "W25-teiligGLAS"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "Fronts"
+        },
+        {
+          "columnName": "in_ProductGroup",
+          "value": "Ceramics"
+        },
+        {
+          "columnName": "in_PartDesign",
+          "value": "FlatPanelCeramic"
+        },
+        {
+          "columnName": "in_GrainPatternRelevant",
+          "value": "false"
+        },
+        {
+          "columnName": "LotGroup",
+          "value": "W1GL"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "Fronts"
+        },
+        {
+          "columnName": "in_ProductGroup",
+          "value": "Glass"
+        },
+        {
+          "columnName": "in_PartDesign",
+          "value": "FlatPanelGlas"
+        },
+        {
+          "columnName": "in_GrainPatternRelevant",
+          "value": "false"
+        },
+        {
+          "columnName": "LotGroup",
+          "value": "W1GL"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "Fronts"
+        },
+        {
+          "columnName": "in_ProductGroup",
+          "value": "Ceramics"
+        },
+        {
+          "columnName": "in_PartDesign",
+          "value": "FlatPanelCeramic"
+        },
+        {
+          "columnName": "in_GrainPatternRelevant",
+          "value": "true"
+        },
+        {
+          "columnName": "LotGroup",
+          "value": "W1GLAW"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "Backwalls"
+        },
+        {
+          "columnName": "in_ProductGroup",
+          "value": "Wood"
+        },
+        {
+          "columnName": "in_PartDesign",
+          "value": "FlatPanel"
+        },
+        {
+          "columnName": "in_GrainPatternRelevant",
+          "value": "false"
+        },
+        {
+          "columnName": "LotGroup",
+          "value": "W2"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "Backwalls"
+        },
+        {
+          "columnName": "in_ProductGroup",
+          "value": "Wood"
+        },
+        {
+          "columnName": "in_PartDesign",
+          "value": "WoodFrameWood"
+        },
+        {
+          "columnName": "in_GrainPatternRelevant",
+          "value": "false"
+        },
+        {
+          "columnName": "LotGroup",
+          "value": "W25-teilig"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "Backwalls"
+        },
+        {
+          "columnName": "in_ProductGroup",
+          "value": "Wood"
+        },
+        {
+          "columnName": "in_PartDesign",
+          "value": "WoodFrameGlass"
+        },
+        {
+          "columnName": "in_GrainPatternRelevant",
+          "value": "false"
+        },
+        {
+          "columnName": "LotGroup",
+          "value": "W25-teiligGLAS"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "Backwalls"
+        },
+        {
+          "columnName": "in_ProductGroup",
+          "value": "Ceramics"
+        },
+        {
+          "columnName": "in_PartDesign",
+          "value": "FlatPanelCeramic"
+        },
+        {
+          "columnName": "in_GrainPatternRelevant",
+          "value": "false"
+        },
+        {
+          "columnName": "LotGroup",
+          "value": "W1GL"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "Backwalls"
+        },
+        {
+          "columnName": "in_ProductGroup",
+          "value": "Glass"
+        },
+        {
+          "columnName": "in_PartDesign",
+          "value": "FlatPanelGlas"
+        },
+        {
+          "columnName": "in_GrainPatternRelevant",
+          "value": "false"
+        },
+        {
+          "columnName": "LotGroup",
+          "value": "W1GL"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "Backwalls"
+        },
+        {
+          "columnName": "in_ProductGroup",
+          "value": "Ceramics"
+        },
+        {
+          "columnName": "in_PartDesign",
+          "value": "FlatPanelCeramic"
+        },
+        {
+          "columnName": "in_GrainPatternRelevant",
+          "value": "true"
+        },
+        {
+          "columnName": "LotGroup",
+          "value": "W1GLAW"
+        }
+      ]
+    }
+  ]
+}

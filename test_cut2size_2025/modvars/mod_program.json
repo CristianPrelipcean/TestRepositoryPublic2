@@ -1,0 +1,102 @@
+{
+  "variantId": "mod_Program",
+  "shortName": "Program",
+  "variantTypeId": "Text",
+  "description": "Material category of the panels",
+  "restrictionTypeId": "Public",
+  "groupName": "Global",
+  "imageId": "0762a865-990d-4d53-9526-752708f406d6:Program.jpg",
+  "isArray": false,
+  "isPosRelevant": true,
+  "mainAttr": false,
+  "matrix": [
+    {
+      "id": "ProductGroup",
+      "type": "Text",
+      "default": "Wood",
+      "isCustom": true
+    },
+    {
+      "id": "GrainPatternRelevant",
+      "type": "Bool",
+      "isCustom": true
+    }
+  ],
+  "selections": [
+    {
+      "value": "Acryl_TopMatt",
+      "description": "Acryl TopMatt",
+      "shortName": "Acryl TopMatt",
+      "matrix": [
+        {
+          "id": "Custom_ProductGroup",
+          "value": "Wood"
+        },
+        {
+          "id": "Custom_GrainPatternRelevant",
+          "value": false
+        }
+      ]
+    },
+    {
+      "value": "Melamin_Stone",
+      "description": "Melamin Stone",
+      "shortName": "Melamin Stone",
+      "matrix": [
+        {
+          "id": "Custom_ProductGroup",
+          "value": "Wood"
+        },
+        {
+          "id": "Custom_GrainPatternRelevant",
+          "value": false
+        }
+      ]
+    },
+    {
+      "value": "Melamin_Uni",
+      "description": "Melamin Uni",
+      "shortName": "Melamin Uni",
+      "matrix": [
+        {
+          "id": "Custom_ProductGroup",
+          "value": "Wood"
+        },
+        {
+          "id": "Custom_GrainPatternRelevant",
+          "value": false
+        }
+      ]
+    },
+    {
+      "value": "Melamin_Woodline",
+      "description": "Melamin Woodline",
+      "shortName": "Melamin Woodline",
+      "matrix": [
+        {
+          "id": "Custom_ProductGroup",
+          "value": "Wood"
+        },
+        {
+          "id": "Custom_GrainPatternRelevant",
+          "value": false
+        }
+      ]
+    },
+    {
+      "value": "PET_Matt",
+      "description": "PET Matt",
+      "shortName": "PET Matt",
+      "matrix": [
+        {
+          "id": "Custom_ProductGroup",
+          "value": "Wood"
+        },
+        {
+          "id": "Custom_GrainPatternRelevant",
+          "value": false
+        }
+      ]
+    }
+  ]
+}

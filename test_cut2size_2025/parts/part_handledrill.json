@@ -1,0 +1,45 @@
+{
+  "partCode": "part_HandleDrill",
+  "shortName": "Drill handle",
+  "description": "Handle drill for the front",
+  "wdt": "XYZ",
+  "groupName": "Processings",
+  "imageId": "8adf5bf5-0563-4705-ab79-2d2e0ca17cd4:part_HandleDrill.jpg",
+  "model3dImageId": "",
+  "invisible": true,
+  "restrictionTypeId": "Public",
+  "partVariants": [
+    {
+      "partVarId": "pa_Diameter",
+      "valueScript": "this.parent.mod_Diameter",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_DrillDepth",
+      "valueScript": "this.parent.mod_DrillDepth",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_DrillingDistance",
+      "valueScript": "this.parent.mod_DrillingDistance",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_DrillQty",
+      "valueScript": "this.parent.mod_DrillQty",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_HandleOrientation",
+      "valueScript": "this.parent.mod_HandleOrientation",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_HandlePosMatrix",
+      "valueScript": "this.parent.mod_HandlePosMatrix",
+      "isWritable": false
+    }
+  ],
+  "bomData": [],
+  "ncData": []
+}

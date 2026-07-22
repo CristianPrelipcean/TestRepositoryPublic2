@@ -1,0 +1,739 @@
+{
+  "tableName": "tab_HingeMapping",
+  "description": "Hinge mapping",
+  "restrictionTypeId": "Public",
+  "groupName": "Hinge",
+  "columns": [
+    {
+      "name": "_id",
+      "type": "Integer",
+      "allowNull": false
+    },
+    {
+      "name": "in_Supplier",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_HingeProgram",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_MountingType",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "HingeObject",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "HingeDrillingDistanceMin",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "HingeDrillingDistanceMax",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "FrontThkMin",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "FrontThkMax",
+      "type": "Dim",
+      "allowNull": false
+    }
+  ],
+  "rows": [
+    {
+      "data": [
+        {
+          "columnName": "in_Supplier",
+          "value": "DemoSupplier"
+        },
+        {
+          "columnName": "in_HingeProgram",
+          "value": "45/9.5_Ø35↓13.5_Ø5↓1"
+        },
+        {
+          "columnName": "in_MountingType",
+          "value": "Schrauben"
+        },
+        {
+          "columnName": "HingeObject",
+          "value": "Schrauben 45/9.5_Ø35↓13.5_Ø5↓1"
+        },
+        {
+          "columnName": "HingeDrillingDistanceMin",
+          "value": "3"
+        },
+        {
+          "columnName": "HingeDrillingDistanceMax",
+          "value": "6"
+        },
+        {
+          "columnName": "FrontThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "FrontThkMax",
+          "value": "26"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Supplier",
+          "value": "DemoSupplier"
+        },
+        {
+          "columnName": "in_HingeProgram",
+          "value": "48/6_Ø35↓13.5_Ø5↓1"
+        },
+        {
+          "columnName": "in_MountingType",
+          "value": "Schrauben"
+        },
+        {
+          "columnName": "HingeObject",
+          "value": "Schrauben 48/6_Ø35↓13.5_Ø5↓1"
+        },
+        {
+          "columnName": "HingeDrillingDistanceMin",
+          "value": "3"
+        },
+        {
+          "columnName": "HingeDrillingDistanceMax",
+          "value": "6"
+        },
+        {
+          "columnName": "FrontThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "FrontThkMax",
+          "value": "26"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Supplier",
+          "value": "DemoSupplier"
+        },
+        {
+          "columnName": "in_HingeProgram",
+          "value": "52/5.5_Ø35↓13.5_Ø5↓1"
+        },
+        {
+          "columnName": "in_MountingType",
+          "value": "Schrauben"
+        },
+        {
+          "columnName": "HingeObject",
+          "value": "Schrauben 52/5.5_Ø35↓13.5_Ø5↓1"
+        },
+        {
+          "columnName": "HingeDrillingDistanceMin",
+          "value": "3"
+        },
+        {
+          "columnName": "HingeDrillingDistanceMax",
+          "value": "6"
+        },
+        {
+          "columnName": "FrontThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "FrontThkMax",
+          "value": "26"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Supplier",
+          "value": "DemoSupplier"
+        },
+        {
+          "columnName": "in_HingeProgram",
+          "value": "45/9.5_Ø35↓13.5_Ø8↓13.5"
+        },
+        {
+          "columnName": "in_MountingType",
+          "value": "Werkzeuglos"
+        },
+        {
+          "columnName": "HingeObject",
+          "value": "Werkzeuglos 45/9.5_Ø35↓13.5_Ø8↓13.5"
+        },
+        {
+          "columnName": "HingeDrillingDistanceMin",
+          "value": "3"
+        },
+        {
+          "columnName": "HingeDrillingDistanceMax",
+          "value": "6"
+        },
+        {
+          "columnName": "FrontThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "FrontThkMax",
+          "value": "26"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Supplier",
+          "value": "DemoSupplier"
+        },
+        {
+          "columnName": "in_HingeProgram",
+          "value": "48/6_Ø35↓13.5_Ø10↓13.5"
+        },
+        {
+          "columnName": "in_MountingType",
+          "value": "Werkzeuglos"
+        },
+        {
+          "columnName": "HingeObject",
+          "value": "Werkzeuglos 48/6_Ø35↓13.5_Ø10↓13.5"
+        },
+        {
+          "columnName": "HingeDrillingDistanceMin",
+          "value": "3"
+        },
+        {
+          "columnName": "HingeDrillingDistanceMax",
+          "value": "6"
+        },
+        {
+          "columnName": "FrontThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "FrontThkMax",
+          "value": "26"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Supplier",
+          "value": "DemoSupplier"
+        },
+        {
+          "columnName": "in_HingeProgram",
+          "value": "52/5.5_Ø35↓13.5_Ø10↓13.5"
+        },
+        {
+          "columnName": "in_MountingType",
+          "value": "Werkzeuglos"
+        },
+        {
+          "columnName": "HingeObject",
+          "value": "Werkzeuglos 52/5.5_Ø35↓13.5_Ø10↓13.5"
+        },
+        {
+          "columnName": "HingeDrillingDistanceMin",
+          "value": "3"
+        },
+        {
+          "columnName": "HingeDrillingDistanceMax",
+          "value": "6"
+        },
+        {
+          "columnName": "FrontThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "FrontThkMax",
+          "value": "26"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Supplier",
+          "value": "DemoSupplier"
+        },
+        {
+          "columnName": "in_HingeProgram",
+          "value": "48/6_Ø35↓11_Ø5↓1"
+        },
+        {
+          "columnName": "in_MountingType",
+          "value": "Schrauben"
+        },
+        {
+          "columnName": "HingeObject",
+          "value": "Schrauben 48/6_Ø35↓11_Ø5↓1"
+        },
+        {
+          "columnName": "HingeDrillingDistanceMin",
+          "value": "3"
+        },
+        {
+          "columnName": "HingeDrillingDistanceMax",
+          "value": "6"
+        },
+        {
+          "columnName": "FrontThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "FrontThkMax",
+          "value": "26"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Supplier",
+          "value": "DemoSupplier"
+        },
+        {
+          "columnName": "in_HingeProgram",
+          "value": "48/6_Ø35↓11_Ø10↓11"
+        },
+        {
+          "columnName": "in_MountingType",
+          "value": "Einpressen"
+        },
+        {
+          "columnName": "HingeObject",
+          "value": "Einpressen 48/6_Ø35↓11_Ø10↓11"
+        },
+        {
+          "columnName": "HingeDrillingDistanceMin",
+          "value": "3"
+        },
+        {
+          "columnName": "HingeDrillingDistanceMax",
+          "value": "6"
+        },
+        {
+          "columnName": "FrontThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "FrontThkMax",
+          "value": "26"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Supplier",
+          "value": "DemoSupplier"
+        },
+        {
+          "columnName": "in_HingeProgram",
+          "value": "48/6_Ø35↓11_Ø10↓11"
+        },
+        {
+          "columnName": "in_MountingType",
+          "value": "Eindrücken"
+        },
+        {
+          "columnName": "HingeObject",
+          "value": "Eindrücken 48/6_Ø35↓11_Ø10↓11"
+        },
+        {
+          "columnName": "HingeDrillingDistanceMin",
+          "value": "3"
+        },
+        {
+          "columnName": "HingeDrillingDistanceMax",
+          "value": "6"
+        },
+        {
+          "columnName": "FrontThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "FrontThkMax",
+          "value": "26"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Supplier",
+          "value": "DemoSupplier"
+        },
+        {
+          "columnName": "in_HingeProgram",
+          "value": "48/6_Ø35↓11_Ø10↓11"
+        },
+        {
+          "columnName": "in_MountingType",
+          "value": "Werkzeuglos"
+        },
+        {
+          "columnName": "HingeObject",
+          "value": "Werkzeuglos 48/6_Ø35↓11_Ø10↓11"
+        },
+        {
+          "columnName": "HingeDrillingDistanceMin",
+          "value": "3"
+        },
+        {
+          "columnName": "HingeDrillingDistanceMax",
+          "value": "6"
+        },
+        {
+          "columnName": "FrontThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "FrontThkMax",
+          "value": "26"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Supplier",
+          "value": "DemoSupplier"
+        },
+        {
+          "columnName": "in_HingeProgram",
+          "value": "52/5.5_Ø35↓11_Ø5↓1"
+        },
+        {
+          "columnName": "in_MountingType",
+          "value": "Schrauben"
+        },
+        {
+          "columnName": "HingeObject",
+          "value": "Schrauben 52/5.5_Ø35↓11_Ø5↓1"
+        },
+        {
+          "columnName": "HingeDrillingDistanceMin",
+          "value": "3"
+        },
+        {
+          "columnName": "HingeDrillingDistanceMax",
+          "value": "6"
+        },
+        {
+          "columnName": "FrontThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "FrontThkMax",
+          "value": "26"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Supplier",
+          "value": "DemoSupplier"
+        },
+        {
+          "columnName": "in_HingeProgram",
+          "value": "52/5.5_Ø35↓11_Ø10↓11"
+        },
+        {
+          "columnName": "in_MountingType",
+          "value": "Einpressen"
+        },
+        {
+          "columnName": "HingeObject",
+          "value": "Einpressen 52/5.5_Ø35↓11_Ø10↓11"
+        },
+        {
+          "columnName": "HingeDrillingDistanceMin",
+          "value": "3"
+        },
+        {
+          "columnName": "HingeDrillingDistanceMax",
+          "value": "6"
+        },
+        {
+          "columnName": "FrontThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "FrontThkMax",
+          "value": "26"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Supplier",
+          "value": "DemoSupplier"
+        },
+        {
+          "columnName": "in_HingeProgram",
+          "value": "52/5.5_Ø35↓11_Ø10↓11"
+        },
+        {
+          "columnName": "in_MountingType",
+          "value": "Eindrücken"
+        },
+        {
+          "columnName": "HingeObject",
+          "value": "Eindrücken 52/5.5_Ø35↓11_Ø10↓11"
+        },
+        {
+          "columnName": "HingeDrillingDistanceMin",
+          "value": "3"
+        },
+        {
+          "columnName": "HingeDrillingDistanceMax",
+          "value": "6"
+        },
+        {
+          "columnName": "FrontThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "FrontThkMax",
+          "value": "26"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Supplier",
+          "value": "DemoSupplier"
+        },
+        {
+          "columnName": "in_HingeProgram",
+          "value": "52/5.5_Ø35↓11_Ø10↓11"
+        },
+        {
+          "columnName": "in_MountingType",
+          "value": "Werkzeuglos"
+        },
+        {
+          "columnName": "HingeObject",
+          "value": "Werkzeuglos 52/5.5_Ø35↓11_Ø10↓11"
+        },
+        {
+          "columnName": "HingeDrillingDistanceMin",
+          "value": "3"
+        },
+        {
+          "columnName": "HingeDrillingDistanceMax",
+          "value": "6"
+        },
+        {
+          "columnName": "FrontThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "FrontThkMax",
+          "value": "26"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Supplier",
+          "value": "DemoSupplier"
+        },
+        {
+          "columnName": "in_HingeProgram",
+          "value": "48/6_Ø35↓8_Ø5↓1"
+        },
+        {
+          "columnName": "in_MountingType",
+          "value": "Schrauben"
+        },
+        {
+          "columnName": "HingeObject",
+          "value": "Schrauben 48/6_Ø35↓8_Ø5↓1"
+        },
+        {
+          "columnName": "HingeDrillingDistanceMin",
+          "value": "3"
+        },
+        {
+          "columnName": "HingeDrillingDistanceMax",
+          "value": "6"
+        },
+        {
+          "columnName": "FrontThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "FrontThkMax",
+          "value": "26"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Supplier",
+          "value": "DemoSupplier"
+        },
+        {
+          "columnName": "in_HingeProgram",
+          "value": "38/7.5_Ø26↓11.5_Ø5↓1"
+        },
+        {
+          "columnName": "in_MountingType",
+          "value": "Schrauben"
+        },
+        {
+          "columnName": "HingeObject",
+          "value": "Schrauben 38/7.5_Ø26↓11.5_Ø5↓1"
+        },
+        {
+          "columnName": "HingeDrillingDistanceMin",
+          "value": "3"
+        },
+        {
+          "columnName": "HingeDrillingDistanceMax",
+          "value": "6"
+        },
+        {
+          "columnName": "FrontThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "FrontThkMax",
+          "value": "26"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Supplier",
+          "value": "DemoSupplier"
+        },
+        {
+          "columnName": "in_HingeProgram",
+          "value": "52/7.5_Ø40↓13_Ø5↓1"
+        },
+        {
+          "columnName": "in_MountingType",
+          "value": "Schrauben"
+        },
+        {
+          "columnName": "HingeObject",
+          "value": "Schrauben 52/7.5_Ø40↓13_Ø5↓1"
+        },
+        {
+          "columnName": "HingeDrillingDistanceMin",
+          "value": "3"
+        },
+        {
+          "columnName": "HingeDrillingDistanceMax",
+          "value": "6"
+        },
+        {
+          "columnName": "FrontThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "FrontThkMax",
+          "value": "26"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Supplier",
+          "value": "DemoSupplier"
+        },
+        {
+          "columnName": "in_HingeProgram",
+          "value": "48/6_Ø35↓9_Ø5↓1"
+        },
+        {
+          "columnName": "in_MountingType",
+          "value": "Schrauben"
+        },
+        {
+          "columnName": "HingeObject",
+          "value": "Schrauben 48/6_Ø35↓9_Ø5↓1"
+        },
+        {
+          "columnName": "HingeDrillingDistanceMin",
+          "value": "3"
+        },
+        {
+          "columnName": "HingeDrillingDistanceMax",
+          "value": "6"
+        },
+        {
+          "columnName": "FrontThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "FrontThkMax",
+          "value": "26"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Supplier",
+          "value": "DemoSupplier"
+        },
+        {
+          "columnName": "in_HingeProgram",
+          "value": "48/6_Ø35↓9_Ø10↓9"
+        },
+        {
+          "columnName": "in_MountingType",
+          "value": "Einpressen"
+        },
+        {
+          "columnName": "HingeObject",
+          "value": "Einpressen 48/6_Ø35↓9_Ø10↓9"
+        },
+        {
+          "columnName": "HingeDrillingDistanceMin",
+          "value": "3"
+        },
+        {
+          "columnName": "HingeDrillingDistanceMax",
+          "value": "6"
+        },
+        {
+          "columnName": "FrontThkMin",
+          "value": "18"
+        },
+        {
+          "columnName": "FrontThkMax",
+          "value": "26"
+        }
+      ]
+    }
+  ]
+}
