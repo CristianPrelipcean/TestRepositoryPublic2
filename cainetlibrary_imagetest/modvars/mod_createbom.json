@@ -1,0 +1,40 @@
+{
+  "variantId": "mod_CreateBom",
+  "shortName": "Create Bom",
+  "variantTypeId": "Text",
+  "description": "List of values for the bom creation",
+  "restrictionTypeId": "Internal",
+  "groupName": "Information",
+  "imageId": "38457dd2-389a-48f3-9c41-88ad34f3d3be:CreateBom.png",
+  "assignedGlobalVarId": "basic_CreateBom",
+  "isArray": false,
+  "isPosRelevant": false,
+  "userRight": "Master",
+  "matrix": [],
+  "selections": [
+    {
+      "value": "SimpleBoard",
+      "description": "Outputs panel data only, including cutting optimization information and label data for production",
+      "shortName": "SimpleBoard",
+      "matrix": []
+    },
+    {
+      "value": "BoardAndEdges",
+      "description": "Outputs panel and edge banding data separately to support edge banding machine processing",
+      "shortName": "BoardAndEdges",
+      "matrix": []
+    },
+    {
+      "value": "StockParts",
+      "description": "Selects suitable pre-processed panels from available stock based on material and dimensions",
+      "shortName": "StockPartSolution",
+      "matrix": []
+    },
+    {
+      "value": "Custom",
+      "description": "Allows custom, user-defined solutions for generating bill of materials data",
+      "shortName": "CustomSolution",
+      "matrix": []
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "functionId": "process_HoodInsert",
+  "description": "Zentrale Auswertungslogik für den Dunstabzug.",
+  "funcType": "Function",
+  "restrictionTypeId": "Internal",
+  "funcDef": "process_HoodInsert(HoodSupplier: string, HoodId: string, IntegrationType: string, ConstructionType: string, CabinetWidth: number, CabinetHeight: number, CabinetDepth: number): {\r\n  DatasetComplete: boolean;\r\n  GraphicId: string;\r\n  ConstructionId: string;\r\n  CarcaseConstructionId: string;\r\n  RearOffset: number;\r\n  BottomShortening: number; \r\n}"
+}

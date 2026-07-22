@@ -1,0 +1,41 @@
+{
+  "partCode": "part_Handlestrip",
+  "shortName": "Handle strip",
+  "description": "Handle strip",
+  "wdt": "XYZ",
+  "groupName": "Hardware",
+  "imageId": "987e7742-a7be-43bf-b209-9bc78c3c4c1a:handlestripe.jpg",
+  "invisible": false,
+  "restrictionTypeId": "Public",
+  "partVariants": [
+    {
+      "partVarId": "pa_Supplier",
+      "valueScript": "",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_SupplierArticle",
+      "valueScript": "",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_HardwareId",
+      "valueScript": "this.parent.mod_HardwareId",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_ParentName",
+      "valueScript": "this.parent.mod_FrontId",
+      "isWritable": false
+    }
+  ],
+  "bomData": [
+    {
+      "bomElementTypeId": "bomout_Group",
+      "description": "Add the handlestrip to BOM",
+      "conditionScript": "partSelf._g?.basic_CreateBom == 'Library'",
+      "valueScript": "// Type of the Bom-Element (will be checked in order output)\n  let elementType='Hardware';\n\n  // ProductionSite Category (to split the orders for different production sites)\n  let elementCategory='';\n\n  // Id of the parent to create the hierarchy\n  let parentBomId=part.pa_ParentName;\n\n  // Call the function to process the Bom-Element\n  GlobalFunc.process_HardwareBom(this, part, elementType, elementCategory, parentBomId, part.pa_HardwareId)"
+    }
+  ],
+  "ncData": []
+}

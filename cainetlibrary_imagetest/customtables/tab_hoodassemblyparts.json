@@ -1,0 +1,495 @@
+{
+  "tableName": "tab_HoodAssemblyParts",
+  "description": "Lists Parts that fit the Carcase with internal Hood",
+  "restrictionTypeId": "Public",
+  "groupName": "Hood",
+  "columns": [
+    {
+      "name": "_id",
+      "type": "Integer",
+      "allowNull": false
+    },
+    {
+      "name": "in_CarcaseConstructionID",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "PartID",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "Width",
+      "type": "Text",
+      "allowNull": true,
+      "functionDefinition": "(m: parent):number"
+    },
+    {
+      "name": "Height",
+      "type": "Text",
+      "allowNull": true,
+      "functionDefinition": "(m: parent):number"
+    },
+    {
+      "name": "Depth",
+      "type": "Text",
+      "allowNull": true,
+      "functionDefinition": "(m: parent):number"
+    },
+    {
+      "name": "PositionWidth",
+      "type": "Text",
+      "allowNull": true,
+      "functionDefinition": "(m: parent):number"
+    },
+    {
+      "name": "PositionHeight",
+      "type": "Text",
+      "allowNull": true,
+      "functionDefinition": "(m: parent):number"
+    },
+    {
+      "name": "PositionDepth",
+      "type": "Text",
+      "allowNull": true,
+      "functionDefinition": "(m: parent):number"
+    }
+  ],
+  "rows": [
+    {
+      "data": [
+        {
+          "columnName": "in_CarcaseConstructionID",
+          "value": "ID1"
+        },
+        {
+          "columnName": "PartID",
+          "value": "part_HoodShelftop"
+        },
+        {
+          "columnName": "Width",
+          "value": "m.mod_CarcaseWidth"
+        },
+        {
+          "columnName": "Height",
+          "value": "19"
+        },
+        {
+          "columnName": "Depth",
+          "value": "m.mod_CarcaseDepth - 0.5"
+        },
+        {
+          "columnName": "PositionWidth",
+          "value": "0"
+        },
+        {
+          "columnName": "PositionHeight",
+          "value": "m.mod_CarcaseHeight - 19.5"
+        },
+        {
+          "columnName": "PositionDepth",
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_CarcaseConstructionID",
+          "value": "ID1"
+        },
+        {
+          "columnName": "PartID",
+          "value": "part_HoodShelfbtm"
+        },
+        {
+          "columnName": "Width",
+          "value": "m.mod_CarcaseWidth"
+        },
+        {
+          "columnName": "Height",
+          "value": "19"
+        },
+        {
+          "columnName": "Depth",
+          "value": "m.mod_CarcaseDepth"
+        },
+        {
+          "columnName": "PositionWidth",
+          "value": "0"
+        },
+        {
+          "columnName": "PositionHeight",
+          "value": "0"
+        },
+        {
+          "columnName": "PositionDepth",
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_CarcaseConstructionID",
+          "value": "ID1"
+        },
+        {
+          "columnName": "PartID",
+          "value": "part_HoodRail"
+        },
+        {
+          "columnName": "Width",
+          "value": "m.mod_CarcaseWidth"
+        },
+        {
+          "columnName": "Height",
+          "value": "120"
+        },
+        {
+          "columnName": "Depth",
+          "value": "m.mod_CarcaseDepth"
+        },
+        {
+          "columnName": "PositionWidth",
+          "value": "0"
+        },
+        {
+          "columnName": "PositionHeight",
+          "value": "0"
+        },
+        {
+          "columnName": "PositionDepth",
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_CarcaseConstructionID",
+          "value": "ID1"
+        },
+        {
+          "columnName": "PartID",
+          "value": "part_HoodBackwall"
+        },
+        {
+          "columnName": "Width",
+          "value": "m.mod_CarcaseWidth"
+        },
+        {
+          "columnName": "Height",
+          "value": "m.mod_CarcaseHeight"
+        },
+        {
+          "columnName": "Depth",
+          "value": "8"
+        },
+        {
+          "columnName": "PositionWidth",
+          "value": "0"
+        },
+        {
+          "columnName": "PositionHeight",
+          "value": "0"
+        },
+        {
+          "columnName": "PositionDepth",
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_CarcaseConstructionID",
+          "value": "HoodConstructId02"
+        },
+        {
+          "columnName": "PartID",
+          "value": "part_HoodShelftop"
+        },
+        {
+          "columnName": "Width",
+          "value": "m.mod_CarcaseWidth"
+        },
+        {
+          "columnName": "Height",
+          "value": "19"
+        },
+        {
+          "columnName": "Depth",
+          "value": "m.mod_CarcaseDepth - 0.5"
+        },
+        {
+          "columnName": "PositionWidth",
+          "value": "0"
+        },
+        {
+          "columnName": "PositionHeight",
+          "value": "m.mod_CarcaseHeight - 19.5"
+        },
+        {
+          "columnName": "PositionDepth",
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_CarcaseConstructionID",
+          "value": "HoodConstructId02"
+        },
+        {
+          "columnName": "PartID",
+          "value": "part_HoodShelfbtm"
+        },
+        {
+          "columnName": "Width",
+          "value": "m.mod_CarcaseWidth"
+        },
+        {
+          "columnName": "Height",
+          "value": "19"
+        },
+        {
+          "columnName": "Depth",
+          "value": "m.mod_CarcaseDepth"
+        },
+        {
+          "columnName": "PositionWidth",
+          "value": "0"
+        },
+        {
+          "columnName": "PositionHeight",
+          "value": "0"
+        },
+        {
+          "columnName": "PositionDepth",
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_CarcaseConstructionID",
+          "value": "HoodConstructId02"
+        },
+        {
+          "columnName": "PartID",
+          "value": "part_HoodBackwall"
+        },
+        {
+          "columnName": "Width",
+          "value": "m.mod_CarcaseWidth"
+        },
+        {
+          "columnName": "Height",
+          "value": "m.mod_CarcaseHeight"
+        },
+        {
+          "columnName": "Depth",
+          "value": "8"
+        },
+        {
+          "columnName": "PositionWidth",
+          "value": "0"
+        },
+        {
+          "columnName": "PositionHeight",
+          "value": "0"
+        },
+        {
+          "columnName": "PositionDepth",
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_CarcaseConstructionID",
+          "value": "HoodConstructId03"
+        },
+        {
+          "columnName": "PartID",
+          "value": "part_HoodSidepanelleft"
+        },
+        {
+          "columnName": "Width",
+          "value": "19"
+        },
+        {
+          "columnName": "Height",
+          "value": "m.mod_CarcaseHeight"
+        },
+        {
+          "columnName": "Depth",
+          "value": "m.mod_CarcaseDepth"
+        },
+        {
+          "columnName": "PositionWidth",
+          "value": "0"
+        },
+        {
+          "columnName": "PositionHeight",
+          "value": "0"
+        },
+        {
+          "columnName": "PositionDepth",
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_CarcaseConstructionID",
+          "value": "HoodConstructId03"
+        },
+        {
+          "columnName": "PartID",
+          "value": "part_HoodSidepanelright"
+        },
+        {
+          "columnName": "Width",
+          "value": "19"
+        },
+        {
+          "columnName": "Height",
+          "value": "m.mod_CarcaseHeight"
+        },
+        {
+          "columnName": "Depth",
+          "value": "m.mod_CarcaseDepth"
+        },
+        {
+          "columnName": "PositionWidth",
+          "value": "0"
+        },
+        {
+          "columnName": "PositionHeight",
+          "value": "0"
+        },
+        {
+          "columnName": "PositionDepth",
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_CarcaseConstructionID",
+          "value": "HoodConstructId03"
+        },
+        {
+          "columnName": "PartID",
+          "value": "part_HoodShelftop"
+        },
+        {
+          "columnName": "Width",
+          "value": "m.mod_CarcaseWidth"
+        },
+        {
+          "columnName": "Height",
+          "value": "19"
+        },
+        {
+          "columnName": "Depth",
+          "value": "m.mod_CarcaseDepth - 0.5"
+        },
+        {
+          "columnName": "PositionWidth",
+          "value": "0"
+        },
+        {
+          "columnName": "PositionHeight",
+          "value": "m.mod_CarcaseHeight - 19.5"
+        },
+        {
+          "columnName": "PositionDepth",
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_CarcaseConstructionID",
+          "value": "HoodConstructId03"
+        },
+        {
+          "columnName": "PartID",
+          "value": "part_HoodShelfbtm"
+        },
+        {
+          "columnName": "Width",
+          "value": "m.mod_CarcaseWidth"
+        },
+        {
+          "columnName": "Height",
+          "value": "19"
+        },
+        {
+          "columnName": "Depth",
+          "value": "m.mod_CarcaseDepth"
+        },
+        {
+          "columnName": "PositionWidth",
+          "value": "0"
+        },
+        {
+          "columnName": "PositionHeight",
+          "value": "0"
+        },
+        {
+          "columnName": "PositionDepth",
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_CarcaseConstructionID",
+          "value": "HoodConstructId03"
+        },
+        {
+          "columnName": "PartID",
+          "value": "part_HoodBackwall"
+        },
+        {
+          "columnName": "Width",
+          "value": "m.mod_CarcaseWidth"
+        },
+        {
+          "columnName": "Height",
+          "value": "m.mod_CarcaseHeight"
+        },
+        {
+          "columnName": "Depth",
+          "value": "m.mod_CarcaseDepth"
+        },
+        {
+          "columnName": "PositionWidth",
+          "value": "0"
+        },
+        {
+          "columnName": "PositionHeight",
+          "value": "0"
+        },
+        {
+          "columnName": "PositionDepth",
+          "value": "0"
+        }
+      ]
+    }
+  ],
+  "dataSource": "Default",
+  "changedAt": "2026-03-16T14:46:46.7557101+00:00"
+}

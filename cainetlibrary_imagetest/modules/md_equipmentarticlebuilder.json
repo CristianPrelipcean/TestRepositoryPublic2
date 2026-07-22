@@ -1,0 +1,88 @@
+{
+  "moduleId": "md_EquipmentArticleBuilder",
+  "shortName": "Equipment article builder",
+  "configurable": true,
+  "isRoot": true,
+  "isConfigDummy": true,
+  "description": "Root module to build sub articles",
+  "groupName": "Root",
+  "imageId": "087f8434-b93d-4d2c-85f9-80328df80711:ArticleBuilder.png",
+  "restrictionTypeId": "Public",
+  "childModules": [
+    {
+      "moduleId": "me_ShelfadjMultiple01"
+    },
+    {
+      "moduleId": "me_ClothingOrganizer01"
+    }
+  ],
+  "assignedVariants": [
+    {
+      "variantId": "mod_CarcaseColor",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_CarcaseId",
+      "default": "None",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_CarcaseProgram",
+      "default": "ModernNature",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_FrontDesign",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_FrontProgram",
+      "default": "Classic",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_ShelfadjColor",
+      "default": "Automatic",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_ShelfadjDescriptor",
+      "default": "1_1",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_ShelfadjDesign",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_ShelfadjDrillDistance",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_ShelfadjDrillType",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_TypeElement",
+      "default": "WallUnit",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_Width",
+      "default": "600",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_CarcaseSpaceDimension",
+      "default": "",
+      "origin": "Default"
+    }
+  ],
+  "assignedParts": [
+    {
+      "partCode": "part_Placeholder"
+    }
+  ],
+  "assignedCustomTables": [],
+  "assignedFunctions": []
+}

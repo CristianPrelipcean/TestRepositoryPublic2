@@ -1,0 +1,61 @@
+{
+  "variantId": "mod_CarcaseBackwallProgram",
+  "shortName": "Backwall program",
+  "variantTypeId": "Text",
+  "description": "Program of the backwall",
+  "restrictionTypeId": "Public",
+  "groupName": "Carcase | Design",
+  "imageId": "2d352564-2416-43f6-b305-58502eede1f3:BackwGrooveVertDepthOutSide_Uebersicht.jpg",
+  "isArray": false,
+  "isPosRelevant": true,
+  "mainAttr": false,
+  "userRight": "Master",
+  "implicitRelevant": false,
+  "posView": "Dropdown",
+  "sorting": 105,
+  "matrix": [
+    {
+      "id": "GrainGroupId",
+      "type": "Text",
+      "default": "Neutral"
+    }
+  ],
+  "selections": [
+    {
+      "value": "ModernNature",
+      "description": "Carcase in wooden colors horizontal",
+      "shortName": "ModernNature",
+      "imageId": "83583fb7-218a-4c74-9099-ffcfea2bed05:ModernNature.jpg",
+      "matrix": [
+        {
+          "id": "GrainGroupId",
+          "value": "Horizontal"
+        }
+      ]
+    },
+    {
+      "value": "Nature",
+      "description": "Carcase in wooden colors vertical",
+      "shortName": "Nature",
+      "imageId": "e061e2fe-db84-4569-846e-bdee37893782:Nature.jpg",
+      "matrix": [
+        {
+          "id": "GrainGroupId",
+          "value": "Vertical"
+        }
+      ]
+    },
+    {
+      "value": "Classic",
+      "description": "Classic carcase in single colors",
+      "shortName": "Classic",
+      "imageId": "86e5b288-61c1-4ab1-94db-f87a6589e4f5:Classic.jpg",
+      "matrix": [
+        {
+          "id": "GrainGroupId",
+          "value": "Neutral"
+        }
+      ]
+    }
+  ]
+}

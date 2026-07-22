@@ -1,0 +1,95 @@
+{
+  "tableName": "tab_ClothingOrganizerDepthPosition",
+  "restrictionTypeId": "Public",
+  "groupName": "ClothingOrganizer",
+  "columns": [
+    {
+      "name": "_id",
+      "type": "Integer",
+      "allowNull": false
+    },
+    {
+      "name": "in_ClothingOrganizerType",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_ClothingOrganizerDesign",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "DescriptorDepthPosition",
+      "type": "Text",
+      "allowNull": true
+    }
+  ],
+  "rows": [
+    {
+      "data": [
+        {
+          "columnName": "in_ClothingOrganizerType",
+          "value": "WardrobeLift"
+        },
+        {
+          "columnName": "in_ClothingOrganizerDesign",
+          "value": "ConeroLift"
+        },
+        {
+          "columnName": "DescriptorDepthPosition",
+          "value": "240mm_1"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ClothingOrganizerType",
+          "value": "WardrobeLift"
+        },
+        {
+          "columnName": "in_ClothingOrganizerDesign",
+          "value": "ConeroLift_445–628mm"
+        },
+        {
+          "columnName": "DescriptorDepthPosition",
+          "value": "240mm_1"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ClothingOrganizerType",
+          "value": "TrouserRack"
+        },
+        {
+          "columnName": "in_ClothingOrganizerDesign",
+          "value": "ConeroTrouser"
+        },
+        {
+          "columnName": "DescriptorDepthPosition",
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ClothingOrganizerType",
+          "value": "TieRack"
+        },
+        {
+          "columnName": "in_ClothingOrganizerDesign",
+          "value": "ConeroTie"
+        },
+        {
+          "columnName": "DescriptorDepthPosition",
+          "value": "0"
+        }
+      ]
+    }
+  ],
+  "dataSource": "Default",
+  "changedAt": "2026-05-15T14:27:32.4192282+00:00"
+}

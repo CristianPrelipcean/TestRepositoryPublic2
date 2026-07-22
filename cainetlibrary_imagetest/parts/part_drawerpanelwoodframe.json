@@ -1,0 +1,175 @@
+{
+  "partCode": "part_DrawerPanelWoodFrame",
+  "shortName": "Drawer",
+  "description": "Drawer wood frame panel",
+  "wdt": "XYZ",
+  "groupName": "PanelWoodFrame",
+  "imageId": "f225108b-c20c-4578-b2dd-37e828008492:Drawer.png",
+  "model3dImageId": "",
+  "invisible": true,
+  "restrictionTypeId": "Public",
+  "noNcData": false,
+  "partVariants": [
+    {
+      "partVarId": "pa_BomId",
+      "valueScript": "this.parent.mod_FrontId",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_BtmColor",
+      "valueScript": "this.parent.mod_FrontColor",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeBackColor",
+      "valueScript": "this.parent.mod_FrontColor",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeBackType",
+      "valueScript": "'FRE'",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeFrontColor",
+      "valueScript": "this.parent.mod_FrontEdgeColor",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeFrontType",
+      "valueScript": "'FRE'",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeJointType",
+      "valueScript": "'VVVV'",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeLeftColor",
+      "valueScript": "this.parent.mod_FrontEdgeColor",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeLeftType",
+      "valueScript": "'FRE'",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeRightColor",
+      "valueScript": "this.parent.mod_FrontEdgeColor",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeRightType",
+      "valueScript": "'FRE'",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_FrontConstructionInfo",
+      "valueScript": "",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_GrainDirection",
+      "valueScript": "'Neutral'",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_Program",
+      "valueScript": "this.parent.mod_FrontProgram",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_TopColor",
+      "valueScript": "this.parent.mod_FrontColor",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_Weight",
+      "valueScript": "0",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_FramePartsWidthHor",
+      "valueScript": "",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_FramePartsWidthVert",
+      "valueScript": "",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_PanelWoodFrameType",
+      "valueScript": "",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_FrameFillingThk",
+      "valueScript": "",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_FrameFillingMaterial",
+      "valueScript": "",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_TypeElement",
+      "valueScript": "this.parent.mod_TypeElement",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_AdditionalInfo1",
+      "valueScript": "'None'",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_FrameFillingColor",
+      "valueScript": "this.parent.mod_FrameFillingColor",
+      "isWritable": false
+    }
+  ],
+  "bomData": [
+    {
+      "bomElementTypeId": "bomout_Group",
+      "description": "Output Parts / Boards for panel wood frame",
+      "conditionScript": "partSelf._g?.basic_CreateBom == 'Library'",
+      "valueScript": "//====================================================================\n  // Call the process functions\n  //====================================================================\n\n  GlobalFunc.process_PanelWoodFrameBom(this, part, part.pa_BomId)"
+    }
+  ],
+  "ncData": [
+    {
+      "part2": "part_HandleDrill",
+      "touchName": "FromFront",
+      "bomElementTypeId": "ncout_Group",
+      "description": "Drillings for the handle",
+      "valueScript": "GlobalFunc.ncout_HandleDrill(this, partSelf, part2, posRel)",
+      "bomExecuteType": "Touch"
+    },
+    {
+      "part2": "part_DrawerBoxDrilling",
+      "touchName": "FromBack",
+      "bomElementTypeId": "ncout_Group",
+      "description": "Drillings for front connector of drawer boxes",
+      "valueScript": "//====================================================================\n// Get data for drillings\n//====================================================================\n\n// Variables\nlet drillings: ICT_tab_HardwareDrillVertLibrary[] = [];\n\n// Find all processings for the drawerbox (to each part)\nlet processings = GlobalFunc.find_ProcessingMapping(part2.pa_ProcessingId2);\n\n// Find the drillings for the sidepanel\nprocessings.forEach((processing) => {\n  if(processing.ProcessingLibrary == 'DrillVertical'){\n    let foundDrillings = GlobalFunc.find_HardwareDrillVertLibrary(processing.ProcessingId!, 'Front');\n    drillings = drillings.concat(foundDrillings);\n  } \n});\n\n//====================================================================\n// For each drilling (insert the drillings) left box connector\n//====================================================================\n\ndrillings.forEach(x => \n{  \n  // Position of the drill\n  let PosX=posRel.x + x.XA;\n  let PosY=posRel.y + x.YA;\n  let PosZ=0;\n\n  // Add Vertical Drill\n  let DrillVert = this.addncout_DrillVert();\n  DrillVert.nc_TOOL=\"102\";\n  DrillVert.nc_XA=PosX;\n  DrillVert.nc_YA=partSelf._dimy - PosY;\n  DrillVert.nc_TI=x.TI;\n  DrillVert.nc_DU=x.DU;\n\n  DrillVert.nc_BM = x.matrix_BM || \"LS\"\n  DrillVert.nc_WI = x.matrix_WI ?? 0;\n  DrillVert.nc_AB = x.matrix_AB ?? 1;\n  DrillVert.nc_LA = x.matrix_LA ?? 0;\n  DrillVert.nc_MI = x.matrix_MI ?? 0;\n  DrillVert.nc_KO = x.matrix_KO || \"00\";\n  DrillVert.nc_Side = \"Top\";  \n\n  // Add drawing\n  let drilling01 = partSelf.add3DElement('Drilling01', DrillVert, PosX, PosY, PosZ, x.DU, x.DU, x.TI );\n  drilling01.extrude('<svg><circle cx=\"' + 0 + '\" cy=\"' + 0 + '\" r=\"' + x.DU/2 + '\" /></svg>', 'z');\n})              \n              \n//====================================================================\n// For each drilling (insert the drillings) right box connector\n//====================================================================\n\ndrillings.forEach(x => \n  {  \n    // Position of the drill\n    let PosX=posRel.x + part2._dimx - x.XA;\n    let PosY=posRel.y + x.YA;\n    let PosZ=0;\n  \n    // Add Vertical Drill\n    let DrillVert = this.addncout_DrillVert();\n    DrillVert.nc_TOOL=\"102\";\n    DrillVert.nc_XA=PosX;\n    DrillVert.nc_YA=partSelf._dimy - PosY;\n    DrillVert.nc_TI=x.TI;\n    DrillVert.nc_DU=x.DU;\n  \n    DrillVert.nc_BM = x.matrix_BM || \"LS\"\n    DrillVert.nc_WI = x.matrix_WI ?? 0;\n    DrillVert.nc_AB = x.matrix_AB ?? 1;\n    DrillVert.nc_LA = x.matrix_LA ?? 0;\n    DrillVert.nc_MI = x.matrix_MI ?? 0;\n    DrillVert.nc_KO = x.matrix_KO || \"00\";\n    DrillVert.nc_Side = \"Top\";  \n  \n    // Add drawing\n    let drilling01 = partSelf.add3DElement('Drilling01', DrillVert, PosX, PosY, PosZ, x.DU, x.DU, x.TI );\n    drilling01.extrude('<svg><circle cx=\"' + 0 + '\" cy=\"' + 0 + '\" r=\"' + x.DU/2 + '\" /></svg>', 'z');\n  })",
+      "bomExecuteType": "Touch"
+    },
+    {
+      "part2": "part_DrawerShelfbtmConnectorDrilling",
+      "touchName": "FromBack",
+      "bomElementTypeId": "ncout_Group",
+      "description": "Drillings for bottom shelf connector of drawer boxes",
+      "valueScript": "//====================================================================\n// Get data for drillings\n//====================================================================\n\n// Variables\nlet drillings: ICT_tab_HardwareDrillVertLibrary[] = [];\n\n// Find all processings for the drawerbox (to each part)\nlet processings = GlobalFunc.find_ProcessingMapping(part2.pa_ProcessingId);\n\n// Find the drillings for the sidepanel\nprocessings.forEach((processing) => {\n  if(processing.ProcessingLibrary == 'DrillVertical'){\n    let foundDrillings = GlobalFunc.find_HardwareDrillVertLibrary(processing.ProcessingId!, 'Front');\n    drillings = drillings.concat(foundDrillings);\n  } \n});\n\n//====================================================================\n// For each drilling (insert the drillings) bottom shelf connector\n//====================================================================\n\ndrillings.forEach(x => \n{  \n  // Position of the drill\n  let PosX=posRel.x + x.XA;\n  let PosY=posRel.y + x.YA;\n  let PosZ=0;\n\n  // Add Vertical Drill\n  let DrillVert = this.addncout_DrillVert();\n  DrillVert.nc_TOOL=\"102\";\n  DrillVert.nc_XA=PosX;\n  DrillVert.nc_YA=partSelf._dimy - PosY;\n  DrillVert.nc_TI=x.TI;\n  DrillVert.nc_DU=x.DU;\n\n  DrillVert.nc_BM = x.matrix_BM || \"LS\"\n  DrillVert.nc_WI = x.matrix_WI ?? 0;\n  DrillVert.nc_AB = x.matrix_AB ?? 1;\n  DrillVert.nc_LA = x.matrix_LA ?? 0;\n  DrillVert.nc_MI = x.matrix_MI ?? 0;\n  DrillVert.nc_KO = x.matrix_KO || \"00\";\n  DrillVert.nc_Side = \"Top\";  \n\n  // Add drawing\n  let drilling01 = partSelf.add3DElement('Drilling01', DrillVert, PosX, PosY, PosZ, x.DU, x.DU, x.TI );\n  drilling01.extrude('<svg><circle cx=\"' + 0 + '\" cy=\"' + 0 + '\" r=\"' + x.DU/2 + '\" /></svg>', 'z');\n})",
+      "bomExecuteType": "Touch"
+    },
+    {
+      "touchName": "",
+      "bomElementTypeId": "ncout_Group",
+      "description": "Show the dowels in the graphics for the frames",
+      "valueScript": "// Call the function to show the drillings in the graphic\n  GlobalFunc.process_FrameFrontGraphicDrilling(this, partSelf);",
+      "bomExecuteType": "End"
+    }
+  ]
+}

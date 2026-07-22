@@ -1,0 +1,572 @@
+{
+  "moduleId": "mf_Door",
+  "shortName": "Doors",
+  "configurable": true,
+  "isRoot": false,
+  "isConfigDummy": false,
+  "description": "Front module for door",
+  "groupName": "FrontModule",
+  "imageId": "d055147b-bb08-4de4-a02d-b592df0ba81b:Door.png",
+  "restrictionTypeId": "Public",
+  "childModules": [
+    {
+      "moduleId": "mc_Door01"
+    },
+    {
+      "moduleId": "mc_ShelfadjGroup01"
+    },
+    {
+      "moduleId": "me_ShelfadjMultiple01"
+    },
+    {
+      "moduleId": "me_ClothingOrganizer01"
+    },
+    {
+      "moduleId": "me_HoodInsert"
+    },
+    {
+      "moduleId": "md_EquipmentPlaceholder"
+    }
+  ],
+  "assignedVariants": [
+    {
+      "variantId": "mod_BackwallPos",
+      "previewValue": "22",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_CarcaseBackwallConstruction",
+      "previewValue": "Grooved_LBRT",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_CarcaseDepth",
+      "previewValue": "500",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_CarcaseHeight",
+      "previewValue": "720",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_CarcaseId",
+      "default": "None",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_CarcaseWidth",
+      "previewValue": "600",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_DoorDirection",
+      "default": "Left",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_DoorType",
+      "default": "Single",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_FingergripTop",
+      "default": "false",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_FrontHeight",
+      "default": "9999",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_FrontId",
+      "default": "None",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_FrontSplit",
+      "default": "false",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_FrontThk",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_FrontWidth",
+      "default": "300",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_HandleDrill",
+      "default": "True",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_HandleLine",
+      "previewValue": "1050",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_HandlePosLogic",
+      "previewValue": "HandleLine",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_HingePos1",
+      "default": "0",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_HingePos2",
+      "default": "0",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_HingePos3",
+      "default": "0",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_HingePos4",
+      "default": "0",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_HingePos5",
+      "default": "0",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_HingePos6",
+      "default": "0",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_FrontQtyElements",
+      "default": "0",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_ShelffixedThk",
+      "previewValue": "19",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_ShelffixedType",
+      "default": "ContactBw",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_SidepanelleftThk",
+      "previewValue": "19",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_SidepanelrightThk",
+      "previewValue": "19",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_FrontPosStart",
+      "default": "0",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_FrontColor",
+      "previewValue": "240",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_FrontEdgeColor",
+      "previewValue": "240",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_FrontEdgeThk",
+      "previewValue": "1",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_FrontGapCarcase",
+      "previewValue": "2",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_FrontGapHor",
+      "previewValue": "3",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_FrontGapVert",
+      "previewValue": "3",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_FrontOversizeBtm",
+      "default": "0",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_FrontOversizeLeft",
+      "default": "0",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_FrontOversizeRight",
+      "default": "0",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_FrontOversizeTop",
+      "default": "0",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_FrontProgram",
+      "previewValue": "Classic",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_FrontSplitHeight1",
+      "default": "0",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_FrontSplitHeight2",
+      "default": "0",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_FrontSplitHeight3",
+      "default": "0",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_FrontSplitType1",
+      "default": "0",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_FrontSplitType2",
+      "default": "0",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_HandleColor",
+      "previewValue": "Demoblue",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_HandleLength",
+      "previewValue": "128",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_HandleOffsetX",
+      "default": "0",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_HandleOffsetY",
+      "default": "0",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_HandlePosMatrix",
+      "default": "Center",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_HandlePosType",
+      "previewValue": "01",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_HandlestripPos",
+      "default": "4",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_HeightPosInsertion",
+      "previewValue": "0",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_HingeType",
+      "default": "110ºSoftClose",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_ShelfadjDrillDistance",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_ShelfadjDrillType",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_ShelfadjOffsetBack",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_ShelfadjOffsetFront",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_ShelfadjThk",
+      "previewValue": "0",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_ShelffixedBtm",
+      "default": "True",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_ShelffixedPos",
+      "default": "GapMiddle",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_ShelffixedOffsetFront",
+      "default": "0",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_ShelffixedOversizeFront",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_ShelffixedOversizeBack",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_HandleDesign",
+      "previewValue": "10",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_FrontDesign",
+      "previewValue": "FlatPanel",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_ShelfadjDesign",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_Originpos",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_PlinthAreaHeight",
+      "previewValue": "80",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_ParentName",
+      "previewValue": "NotDefined",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_ModuleName",
+      "default": " mf_Door",
+      "origin": "Fixed"
+    },
+    {
+      "variantId": "mod_FrontGapHorTop",
+      "previewValue": "3",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_HingeLogic",
+      "default": "AutoSel_AutoPos",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_FingergripTopType",
+      "default": "NoFingergrip",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_FingergripBtmType",
+      "default": "NoFingergrip",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_TypeElement",
+      "previewValue": "BaseUnit",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_MountingPlateType",
+      "default": "Horizontal",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_InteriorEquipmentHinge",
+      "default": "All",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_HingeColor",
+      "default": "DemoNickelPlated",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_ShelffixedTop",
+      "default": "false",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_VertDividerType",
+      "previewValue": "NoVertDivider",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_SidepanelmiddleThk",
+      "previewValue": "19",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_FrontDescriptor",
+      "default": "1_1",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_CarcaseFrontConstruction",
+      "previewValue": "FrontOverlayLBRT",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_CarcaseSpaceDimension",
+      "default": "",
+      "previewValue": "",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_CarcaseDirectionInfo",
+      "default": "All",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_CarcasePartInfo",
+      "default": "",
+      "previewValue": "",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_VertDividerInfoList",
+      "default": "",
+      "previewValue": "",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_PushtoopenLine",
+      "previewValue": "1000",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_PushtoopenOffset",
+      "default": "0",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_PushtoopenPosition",
+      "default": "Automatic",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_PushtoopenType",
+      "previewValue": "Automatic",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_PushtoopenColor",
+      "previewValue": "DemoGrey",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_OpeningType",
+      "previewValue": "Handle",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_FrontHeightSelection",
+      "previewValue": "9999",
+      "origin": "Required"
+    },
+    {
+      "variantId": "mod_ShelfadjColor",
+      "previewValue": "240",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_ShelfadjDescriptor",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_FrameFillingColor",
+      "previewValue": "240",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_FrameFillingType",
+      "previewValue": "Automatic",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_FirstFront",
+      "default": "false",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_LastFront",
+      "default": "false",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_HandlePosMatrixMultiple",
+      "default": "DoubleCenter",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_FrontSegmentType",
+      "previewValue": "Automatic",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_FrontSegmentColor",
+      "previewValue": "FloatGlass",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_FrontSegmentDescriptor",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_DoorDirectionSelection",
+      "previewValue": "Automatic",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_Information",
+      "default": "",
+      "previewValue": "",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_DoorTypeSelection",
+      "origin": "GlobalVar"
+    }
+  ],
+  "assignedParts": [],
+  "assignedCustomTables": [],
+  "assignedFunctions": [
+    {
+      "functionId": "process_Door"
+    }
+  ]
+}

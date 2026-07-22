@@ -1,0 +1,188 @@
+{
+  "partCode": "part_DoorPanelWoodFrame",
+  "shortName": "Door panel wood frame",
+  "description": "Door panel wood frame",
+  "wdt": "XYZ",
+  "groupName": "PanelWoodFrame",
+  "imageId": "19a50917-32d7-4f3b-a254-3fba118005fe:Door.png",
+  "model3dImageId": "",
+  "invisible": true,
+  "restrictionTypeId": "Public",
+  "noNcData": false,
+  "partVariants": [
+    {
+      "partVarId": "pa_BomId",
+      "valueScript": "this.parent.mod_FrontId",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_BtmColor",
+      "valueScript": "this.parent.mod_FrontColor",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeBackColor",
+      "valueScript": "this.parent.mod_FrontEdgeColor",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeBackType",
+      "valueScript": "'FRE'",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeFrontColor",
+      "valueScript": "this.parent.mod_FrontEdgeColor",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeFrontType",
+      "valueScript": "'FRE'",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeJointType",
+      "valueScript": "'VVVV'",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeLeftColor",
+      "valueScript": "this.parent.mod_FrontEdgeColor",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeLeftType",
+      "valueScript": "'FRE'",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeRightColor",
+      "valueScript": "this.parent.mod_FrontEdgeColor",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeRightType",
+      "valueScript": "'FRE'",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_FrameFillingMaterial",
+      "valueScript": "",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_DoorDirection",
+      "valueScript": "this.parent.mod_DoorDirection",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_FrameFillingThk",
+      "valueScript": "",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_FramePartsWidthHor",
+      "valueScript": "",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_FramePartsWidthVert",
+      "valueScript": "",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_FrontConstructionInfo",
+      "valueScript": "",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_GrainDirection",
+      "valueScript": "'Neutral'",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_PanelWoodFrameType",
+      "valueScript": "",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_Program",
+      "valueScript": "this.parent.mod_FrontProgram",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_TopColor",
+      "valueScript": "this.parent.mod_FrontColor",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_TypeElement",
+      "valueScript": "this.parent.mod_TypeElement",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_Weight",
+      "valueScript": "",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_AdditionalInfo1",
+      "valueScript": "'None'",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_FrameFillingColor",
+      "valueScript": "this.parent.mod_FrameFillingColor",
+      "isWritable": false
+    }
+  ],
+  "bomData": [
+    {
+      "bomElementTypeId": "bomout_Group",
+      "description": "Output Parts / Boards for panel wood frame",
+      "conditionScript": "partSelf._g?.basic_CreateBom == 'Library'",
+      "valueScript": "//====================================================================\n  // Call the process functions\n  //====================================================================\n\n  GlobalFunc.process_PanelWoodFrameBom(this, part, part.pa_BomId)"
+    }
+  ],
+  "ncData": [
+    {
+      "part2": "part_HandleDrill",
+      "touchName": "FromFront",
+      "bomElementTypeId": "ncout_Group",
+      "description": "Drillings for handles",
+      "valueScript": "GlobalFunc.ncout_HandleDrill(this, partSelf, part2, posRel)",
+      "bomExecuteType": "Touch"
+    },
+    {
+      "part2": "part_HingeDrill",
+      "touchName": "FromBack",
+      "bomElementTypeId": "ncout_Group",
+      "description": "Drillings for Hinges",
+      "valueScript": "//====================================================================\n  // Get data for drillings and rotation\n  //====================================================================\n\n  let drillings: any[] = [];\n  let drills: any[] = [];\n  let processings = GlobalFunc.find_ProcessingMapping(part2.pa_ProcessingId);\n  let insertPoint = GlobalFunc.process_MachiningInsertionHelper('012', part2.pa_Model3DGroupName)\n\n  processings.forEach((processing) => {\n    drills = GlobalFunc.find_HardwareDrillVertLibrary(processing.ProcessingId!, 'Front');\n    drills.forEach((drill) => {\n      drillings.push(drill);\n    });\n  });\n\n  //====================================================================\n  // For each drilling (insert the drillings)\n  //====================================================================\n\n  drillings.forEach(x => {\n    // Add Vertical Drill\n    let DrillVert = this.addncout_DrillVert();\n    DrillVert.nc_TOOL = \"102\";\n\n    if (posRel.x < partSelf._dimx / 2) {\n      DrillVert.nc_XA = part2.pa_DrillDistance + insertPoint.InsertionPointX + x.XA + insertPoint.GraphicLibrary.PartOffsetX;\n      DrillVert.nc_YA = partSelf._dimy - posRel.y + insertPoint.InsertionPointY + x.YA + insertPoint.GraphicLibrary.PartOffsetY;\n    }\n    else {\n      DrillVert.nc_XA = partSelf._dimx - part2.pa_DrillDistance - insertPoint.InsertionPointX - x.XA - insertPoint.GraphicLibrary.PartOffsetX;\n      DrillVert.nc_YA = partSelf._dimy - posRel.y + insertPoint.InsertionPointY + x.YA - insertPoint.GraphicLibrary.PartOffsetY;\n    }\n\n    DrillVert.nc_TI = x.TI;\n    DrillVert.nc_DU = x.DU;\n\n    DrillVert.nc_BM = x.matrix_BM || \"LS\"\n    DrillVert.nc_WI = x.matrix_WI ?? 0;\n    DrillVert.nc_AB = x.matrix_AB ?? 1;\n    DrillVert.nc_LA = x.matrix_LA ?? 0;\n    DrillVert.nc_MI = x.matrix_MI ?? 0;\n    DrillVert.nc_KO = x.matrix_KO || \"00\";\n    DrillVert.nc_Side = \"Top\";\n\n    // Add drawing\n    if (posRel.x < partSelf._dimx / 2) {\n      let drilling01 = partSelf.add3DElement('Drilling01', DrillVert, part2.pa_DrillDistance + insertPoint.InsertionPointX + x.XA + insertPoint.GraphicLibrary.PartOffsetX, posRel.y + insertPoint.InsertionPointY + x.YA + insertPoint.GraphicLibrary.PartOffsetY, 0, x.DU, x.DU, x.TI);\n      drilling01.extrude('<svg><circle cx=\"' + 0 + '\" cy=\"' + 0 + '\" r=\"' + x.DU / 2 + '\" /></svg>', 'z');\n    }\n    else {\n      let drilling01 = partSelf.add3DElement('Drilling01', DrillVert, partSelf._dimx - part2.pa_DrillDistance - insertPoint.InsertionPointX - x.XA - insertPoint.GraphicLibrary.PartOffsetX, posRel.y + insertPoint.InsertionPointY + x.YA - insertPoint.GraphicLibrary.PartOffsetY, 0, x.DU, x.DU, x.TI);\n      drilling01.extrude('<svg><circle cx=\"' + 0 + '\" cy=\"' + 0 + '\" r=\"' + x.DU / 2 + '\" /></svg>', 'z');\n    }\n  });",
+      "bomExecuteType": "Touch"
+    },
+    {
+      "part2": "part_PushtoopenDrill",
+      "touchName": "FromBack",
+      "bomElementTypeId": "ncout_Group",
+      "description": "Drillings for PushToOpen",
+      "valueScript": "GlobalFunc.ops_PushtoopenDrill('Front', this, partSelf, part2, posRel);",
+      "bomExecuteType": "Touch"
+    },
+    {
+      "part2": "part_PushtoopenMountingPlateDrill",
+      "touchName": "FromBack",
+      "bomElementTypeId": "ncout_Group",
+      "description": "Drillings for PushToOpen Adapter",
+      "valueScript": "GlobalFunc.ops_PushtoopenDrill('Front', this, partSelf, part2, posRel);",
+      "bomExecuteType": "Touch"
+    },
+    {
+      "touchName": "",
+      "bomElementTypeId": "ncout_Group",
+      "description": "Show the dowels in the graphics for the frames",
+      "valueScript": "// Call the function to show the drillings in the graphic\n  GlobalFunc.process_FrameFrontGraphicDrilling(this, partSelf);",
+      "bomExecuteType": "End"
+    }
+  ]
+}

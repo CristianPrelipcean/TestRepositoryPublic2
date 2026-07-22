@@ -1,0 +1,102 @@
+{
+  "tableName": "tab_HoodAssemblyMapping",
+  "description": "Determines the appropriate cabinet construction from the appliance, cabinet dimensions, and installation requirements.",
+  "restrictionTypeId": "Public",
+  "groupName": "Hood",
+  "columns": [
+    {
+      "name": "_id",
+      "type": "Integer",
+      "allowNull": false
+    },
+    {
+      "name": "in_ConstructionId",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_CabinetWidth",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "in_CabinetHeight",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "in_CabinetDepth",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "in_IntegrationType",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_ConstructionType",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "CarcaseConstructionId",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "RearOffset",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "BottomShortening",
+      "type": "Dim",
+      "allowNull": false
+    }
+  ],
+  "rows": [
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionId",
+          "value": "Siemens_LI97SA561S"
+        },
+        {
+          "columnName": "in_CabinetWidth",
+          "value": "600"
+        },
+        {
+          "columnName": "in_CabinetHeight",
+          "value": "600"
+        },
+        {
+          "columnName": "in_CabinetDepth",
+          "value": "320"
+        },
+        {
+          "columnName": "in_IntegrationType",
+          "value": ""
+        },
+        {
+          "columnName": "in_ConstructionType",
+          "value": ""
+        },
+        {
+          "columnName": "CarcaseConstructionId",
+          "value": ""
+        },
+        {
+          "columnName": "RearOffset",
+          "value": "10"
+        },
+        {
+          "columnName": "BottomShortening",
+          "value": "0"
+        }
+      ]
+    }
+  ],
+  "dataSource": "Default",
+  "changedAt": "2026-05-13T12:13:18.3791165+00:00"
+}

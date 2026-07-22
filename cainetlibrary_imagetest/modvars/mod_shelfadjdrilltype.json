@@ -1,0 +1,110 @@
+{
+  "variantId": "mod_ShelfadjDrillType",
+  "shortName": "Drill type",
+  "variantTypeId": "Text",
+  "description": "Drill type for the adjustable shelves",
+  "restrictionTypeId": "Public",
+  "groupName": "Carcase | Shelfadj",
+  "imageId": "32f1c416-1a55-4375-bc30-e27b2d078318:ShelfAdjDrillTyp.jpg",
+  "assignedGlobalVarId": "basic_ShelfadjDrillType",
+  "isArray": false,
+  "isPosRelevant": true,
+  "mainAttr": false,
+  "userRight": "Master",
+  "implicitRelevant": false,
+  "posView": "Dropdown",
+  "matrix": [
+    {
+      "id": "NumberDrillings",
+      "type": "Integer",
+      "default": 0
+    },
+    {
+      "id": "ShelfadjQtyRelevant",
+      "type": "Bool",
+      "default": false
+    }
+  ],
+  "selections": [
+    {
+      "value": "Group3Drills",
+      "description": "Group 3 Drills",
+      "shortName": "Group3Drills",
+      "imageId": "d677eb7d-095c-4e17-9b5b-585bf53da95d:Group3Drills.jpg",
+      "matrix": [
+        {
+          "id": "NumberDrillings",
+          "value": 3
+        },
+        {
+          "id": "ShelfadjQtyRelevant",
+          "value": true
+        }
+      ]
+    },
+    {
+      "value": "Group5Drills",
+      "description": "Group 5 Drills",
+      "shortName": "Group5Drills",
+      "imageId": "8f88d320-11b1-4065-beb6-5a0e8e1d1c77:Group5Drills.jpg",
+      "matrix": [
+        {
+          "id": "NumberDrillings",
+          "value": 5
+        },
+        {
+          "id": "ShelfadjQtyRelevant",
+          "value": true
+        }
+      ]
+    },
+    {
+      "value": "FullHeightDrills",
+      "description": "Drilling Line Full Height",
+      "shortName": "FullHeightDrills",
+      "imageId": "8b6c58b3-7e5e-46aa-99d2-d314d872b850:FullHeightDrills.jpg",
+      "matrix": [
+        {
+          "id": "NumberDrillings",
+          "value": 0
+        },
+        {
+          "id": "ShelfadjQtyRelevant",
+          "value": false
+        }
+      ]
+    },
+    {
+      "value": "SingleDrill",
+      "description": "Single Drill",
+      "shortName": "SingleDrill",
+      "imageId": "dd60e318-5d37-4137-89fa-7343a12f9b26:SingleDrill.jpg",
+      "matrix": [
+        {
+          "id": "NumberDrillings",
+          "value": 1
+        },
+        {
+          "id": "ShelfadjQtyRelevant",
+          "value": false
+        }
+      ]
+    },
+    {
+      "value": "Automatic",
+      "description": "Automatic",
+      "shortName": "Automatic",
+      "imageId": "5242939b-2ad8-4fb6-9350-5b4b08ff115b:Automatic.png",
+      "matrix": [
+        {
+          "id": "NumberDrillings",
+          "value": 0
+        },
+        {
+          "id": "ShelfadjQtyRelevant",
+          "value": false
+        }
+      ]
+    }
+  ]
+}

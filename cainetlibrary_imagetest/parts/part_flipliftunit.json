@@ -1,0 +1,32 @@
+{
+  "partCode": "part_FlipliftUnit",
+  "shortName": "Flip lift unit",
+  "description": "Part group for flip lift",
+  "wdt": "XYZ",
+  "groupName": "Fliplift",
+  "imageId": "521b4446-7994-4f68-b472-fcdb93fd269f:Partgroup.png",
+  "invisible": true,
+  "restrictionTypeId": "Public",
+  "noNcData": false,
+  "partVariants": [
+    {
+      "partVarId": "pa_BomId",
+      "valueScript": "this.parent.mod_FrontId",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_PartgroupBomId",
+      "valueScript": "this.parent.mod_CarcaseId",
+      "isWritable": false
+    }
+  ],
+  "bomData": [
+    {
+      "bomElementTypeId": "bomout_PartGroup",
+      "description": "Partgroup of fliplift",
+      "conditionScript": "partSelf._g?.basic_CreateBom == 'Library'",
+      "valueScript": "// Type of the Bom-Element (will be checked in order output)\nlet elementType='Partgroup';\n\n// ProductionSite Category (to split the orders for different production sites)\nlet elementCategory='';\n\n// Id of the parent to create the hierarchy\nlet parentId1=part.pa_PartgroupBomId;\n\n// Id of this element to identify the childs of this element\nlet elementId=part.pa_BomId;\n\n// Name of the PartGroup\nlet name='Partgroup Fliplift'\n\nthis.bom_ElementId=elementId\nthis.bom_ElementType=elementType;\nthis.bom_ParentId=parentId1;\nthis.bom_Length=part._width;\nthis.bom_Width=part._depth;\nthis.bom_Thk = part._thickness;\nthis.bom_Name=name;\nthis.bom_PartId=part._id;\nthis.bom_ElementCategory=elementCategory"
+    }
+  ],
+  "ncData": []
+}

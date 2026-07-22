@@ -1,0 +1,33 @@
+{
+  "partCode": "part_PantryPulloutBom",
+  "shortName": "Pantry pullout BOM",
+  "description": "Ghost part to add the BOM for the pantry pullout hardware",
+  "wdt": "XYZ",
+  "groupName": "Pullout",
+  "imageId": "cee675b9-850c-4072-b680-a0f15b4455ea:BOM.png",
+  "model3dImageId": "",
+  "invisible": true,
+  "restrictionTypeId": "Internal",
+  "noNcData": true,
+  "partVariants": [
+    {
+      "partVarId": "pa_HardwareId",
+      "valueScript": "''",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_ParentName",
+      "valueScript": "this.parent.mod_FrontId",
+      "isWritable": false
+    }
+  ],
+  "bomData": [
+    {
+      "bomElementTypeId": "bomout_Group",
+      "description": "Insert all the hardware elements to the BOM",
+      "conditionScript": "partSelf._g?.basic_CreateBom == 'Library'",
+      "valueScript": "//====================================================================\n  // Input the BomId's and quantity of baskets\n  //====================================================================\n  \n  const bomRawData = JSON.parse(partSelf.pa_HardwareId);\n  const frameId = bomRawData.FrameId;\n  const basketId = bomRawData.BasketId;\n  const basketQty = bomRawData.BasketsQty;\n\n    // Type of the Bom-Element (will be checked in order output)\n  let elementType='Hardware';\n\n  // ProductionSite Category (to split the orders for different production sites)\n  let elementCategory='';\n\n  // Id of the parent to create the hierarchy\n  let parentBomId=part.pa_ParentName;\n\n  // Call the function to process the Bom-Element\n  GlobalFunc.process_HardwareBom(this, part, elementType, elementCategory, parentBomId, frameId);\n  GlobalFunc.process_HardwareBom(this, part, elementType, elementCategory, parentBomId, basketId, basketQty);"
+    }
+  ],
+  "ncData": []
+}

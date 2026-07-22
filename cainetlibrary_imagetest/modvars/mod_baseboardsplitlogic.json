@@ -1,0 +1,30 @@
+{
+  "variantId": "mod_BaseboardSplitLogic",
+  "shortName": "Baseboard Split Logic",
+  "variantTypeId": "Text",
+  "description": "Splitting logic if baseboards are too long",
+  "restrictionTypeId": "Public",
+  "groupName": "Baseboard",
+  "imageId": "04d132c7-1c9d-40a9-b93a-72f61b20e357:Logic.png",
+  "assignedGlobalVarId": "basic_BaseboardSplitLogic",
+  "isArray": false,
+  "isPosRelevant": true,
+  "mainAttr": false,
+  "userRight": "Master",
+  "implicitRelevant": false,
+  "matrix": [],
+  "selections": [
+    {
+      "value": "BetweenCabinets",
+      "description": "",
+      "shortName": "Baseboards are split under the cabinets' edges if the maximum board length is reached.",
+      "matrix": []
+    },
+    {
+      "value": "EqualDimension",
+      "description": "",
+      "shortName": "Baseboards are split to be equal in length, even under the middle of the cabinets.",
+      "matrix": []
+    }
+  ]
+}

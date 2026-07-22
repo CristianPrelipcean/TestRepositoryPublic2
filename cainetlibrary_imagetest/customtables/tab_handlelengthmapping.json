@@ -1,0 +1,835 @@
+{
+  "tableName": "tab_HandleLengthMapping",
+  "description": "This table determined the handle length depending on the front dimension",
+  "restrictionTypeId": "Public",
+  "groupName": "Handles",
+  "columns": [
+    {
+      "name": "_id",
+      "type": "Integer",
+      "allowNull": false
+    },
+    {
+      "name": "in_HandleDesign",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_FrontDimensionMin",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "in_FrontDimensionMax",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "HandleLength",
+      "type": "Dim",
+      "allowNull": false
+    }
+  ],
+  "rows": [
+    {
+      "data": [
+        {
+          "columnName": "in_HandleDesign",
+          "value": "30"
+        },
+        {
+          "columnName": "in_FrontDimensionMin",
+          "value": "150"
+        },
+        {
+          "columnName": "in_FrontDimensionMax",
+          "value": "259.9"
+        },
+        {
+          "columnName": "HandleLength",
+          "value": "96"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_HandleDesign",
+          "value": "30"
+        },
+        {
+          "columnName": "in_FrontDimensionMin",
+          "value": "260"
+        },
+        {
+          "columnName": "in_FrontDimensionMax",
+          "value": "419.9"
+        },
+        {
+          "columnName": "HandleLength",
+          "value": "160"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_HandleDesign",
+          "value": "30"
+        },
+        {
+          "columnName": "in_FrontDimensionMin",
+          "value": "420"
+        },
+        {
+          "columnName": "in_FrontDimensionMax",
+          "value": "579.9"
+        },
+        {
+          "columnName": "HandleLength",
+          "value": "320"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_HandleDesign",
+          "value": "30"
+        },
+        {
+          "columnName": "in_FrontDimensionMin",
+          "value": "580"
+        },
+        {
+          "columnName": "in_FrontDimensionMax",
+          "value": "659.9"
+        },
+        {
+          "columnName": "HandleLength",
+          "value": "480"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_HandleDesign",
+          "value": "30"
+        },
+        {
+          "columnName": "in_FrontDimensionMin",
+          "value": "660"
+        },
+        {
+          "columnName": "in_FrontDimensionMax",
+          "value": "739.9"
+        },
+        {
+          "columnName": "HandleLength",
+          "value": "560"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_HandleDesign",
+          "value": "30"
+        },
+        {
+          "columnName": "in_FrontDimensionMin",
+          "value": "740"
+        },
+        {
+          "columnName": "in_FrontDimensionMax",
+          "value": "1059.9"
+        },
+        {
+          "columnName": "HandleLength",
+          "value": "640"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_HandleDesign",
+          "value": "30"
+        },
+        {
+          "columnName": "in_FrontDimensionMin",
+          "value": "1060"
+        },
+        {
+          "columnName": "in_FrontDimensionMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "HandleLength",
+          "value": "960"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_HandleDesign",
+          "value": "40"
+        },
+        {
+          "columnName": "in_FrontDimensionMin",
+          "value": "295"
+        },
+        {
+          "columnName": "in_FrontDimensionMax",
+          "value": "295"
+        },
+        {
+          "columnName": "HandleLength",
+          "value": "295"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_HandleDesign",
+          "value": "40"
+        },
+        {
+          "columnName": "in_FrontDimensionMin",
+          "value": "395"
+        },
+        {
+          "columnName": "in_FrontDimensionMax",
+          "value": "395"
+        },
+        {
+          "columnName": "HandleLength",
+          "value": "395"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_HandleDesign",
+          "value": "40"
+        },
+        {
+          "columnName": "in_FrontDimensionMin",
+          "value": "445"
+        },
+        {
+          "columnName": "in_FrontDimensionMax",
+          "value": "445"
+        },
+        {
+          "columnName": "HandleLength",
+          "value": "445"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_HandleDesign",
+          "value": "40"
+        },
+        {
+          "columnName": "in_FrontDimensionMin",
+          "value": "495"
+        },
+        {
+          "columnName": "in_FrontDimensionMax",
+          "value": "495"
+        },
+        {
+          "columnName": "HandleLength",
+          "value": "495"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_HandleDesign",
+          "value": "40"
+        },
+        {
+          "columnName": "in_FrontDimensionMin",
+          "value": "595"
+        },
+        {
+          "columnName": "in_FrontDimensionMax",
+          "value": "595"
+        },
+        {
+          "columnName": "HandleLength",
+          "value": "595"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_HandleDesign",
+          "value": "40"
+        },
+        {
+          "columnName": "in_FrontDimensionMin",
+          "value": "795"
+        },
+        {
+          "columnName": "in_FrontDimensionMax",
+          "value": "795"
+        },
+        {
+          "columnName": "HandleLength",
+          "value": "795"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_HandleDesign",
+          "value": "40"
+        },
+        {
+          "columnName": "in_FrontDimensionMin",
+          "value": "895"
+        },
+        {
+          "columnName": "in_FrontDimensionMax",
+          "value": "895"
+        },
+        {
+          "columnName": "HandleLength",
+          "value": "895"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_HandleDesign",
+          "value": "40"
+        },
+        {
+          "columnName": "in_FrontDimensionMin",
+          "value": "995"
+        },
+        {
+          "columnName": "in_FrontDimensionMax",
+          "value": "995"
+        },
+        {
+          "columnName": "HandleLength",
+          "value": "995"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_HandleDesign",
+          "value": "40"
+        },
+        {
+          "columnName": "in_FrontDimensionMin",
+          "value": "1195"
+        },
+        {
+          "columnName": "in_FrontDimensionMax",
+          "value": "1195"
+        },
+        {
+          "columnName": "HandleLength",
+          "value": "1195"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_HandleDesign",
+          "value": "40"
+        },
+        {
+          "columnName": "in_FrontDimensionMin",
+          "value": "1196"
+        },
+        {
+          "columnName": "in_FrontDimensionMax",
+          "value": "2500"
+        },
+        {
+          "columnName": "HandleLength",
+          "value": "2500"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_HandleDesign",
+          "value": "50"
+        },
+        {
+          "columnName": "in_FrontDimensionMin",
+          "value": "100"
+        },
+        {
+          "columnName": "in_FrontDimensionMax",
+          "value": "2500"
+        },
+        {
+          "columnName": "HandleLength",
+          "value": "2500"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_HandleDesign",
+          "value": "110"
+        },
+        {
+          "columnName": "in_FrontDimensionMin",
+          "value": "150"
+        },
+        {
+          "columnName": "in_FrontDimensionMax",
+          "value": "249"
+        },
+        {
+          "columnName": "HandleLength",
+          "value": "96"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_HandleDesign",
+          "value": "110"
+        },
+        {
+          "columnName": "in_FrontDimensionMin",
+          "value": "250"
+        },
+        {
+          "columnName": "in_FrontDimensionMax",
+          "value": "299"
+        },
+        {
+          "columnName": "HandleLength",
+          "value": "128"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_HandleDesign",
+          "value": "110"
+        },
+        {
+          "columnName": "in_FrontDimensionMin",
+          "value": "300"
+        },
+        {
+          "columnName": "in_FrontDimensionMax",
+          "value": "349"
+        },
+        {
+          "columnName": "HandleLength",
+          "value": "160"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_HandleDesign",
+          "value": "110"
+        },
+        {
+          "columnName": "in_FrontDimensionMin",
+          "value": "350"
+        },
+        {
+          "columnName": "in_FrontDimensionMax",
+          "value": "399"
+        },
+        {
+          "columnName": "HandleLength",
+          "value": "210"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_HandleDesign",
+          "value": "110"
+        },
+        {
+          "columnName": "in_FrontDimensionMin",
+          "value": "400"
+        },
+        {
+          "columnName": "in_FrontDimensionMax",
+          "value": "449"
+        },
+        {
+          "columnName": "HandleLength",
+          "value": "260"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_HandleDesign",
+          "value": "110"
+        },
+        {
+          "columnName": "in_FrontDimensionMin",
+          "value": "450"
+        },
+        {
+          "columnName": "in_FrontDimensionMax",
+          "value": "499"
+        },
+        {
+          "columnName": "HandleLength",
+          "value": "310"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_HandleDesign",
+          "value": "110"
+        },
+        {
+          "columnName": "in_FrontDimensionMin",
+          "value": "500"
+        },
+        {
+          "columnName": "in_FrontDimensionMax",
+          "value": "549"
+        },
+        {
+          "columnName": "HandleLength",
+          "value": "360"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_HandleDesign",
+          "value": "110"
+        },
+        {
+          "columnName": "in_FrontDimensionMin",
+          "value": "550"
+        },
+        {
+          "columnName": "in_FrontDimensionMax",
+          "value": "599"
+        },
+        {
+          "columnName": "HandleLength",
+          "value": "410"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_HandleDesign",
+          "value": "110"
+        },
+        {
+          "columnName": "in_FrontDimensionMin",
+          "value": "600"
+        },
+        {
+          "columnName": "in_FrontDimensionMax",
+          "value": "699"
+        },
+        {
+          "columnName": "HandleLength",
+          "value": "460"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_HandleDesign",
+          "value": "110"
+        },
+        {
+          "columnName": "in_FrontDimensionMin",
+          "value": "700"
+        },
+        {
+          "columnName": "in_FrontDimensionMax",
+          "value": "799"
+        },
+        {
+          "columnName": "HandleLength",
+          "value": "560"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_HandleDesign",
+          "value": "110"
+        },
+        {
+          "columnName": "in_FrontDimensionMin",
+          "value": "800"
+        },
+        {
+          "columnName": "in_FrontDimensionMax",
+          "value": "899"
+        },
+        {
+          "columnName": "HandleLength",
+          "value": "660"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_HandleDesign",
+          "value": "110"
+        },
+        {
+          "columnName": "in_FrontDimensionMin",
+          "value": "900"
+        },
+        {
+          "columnName": "in_FrontDimensionMax",
+          "value": "999"
+        },
+        {
+          "columnName": "HandleLength",
+          "value": "760"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_HandleDesign",
+          "value": "110"
+        },
+        {
+          "columnName": "in_FrontDimensionMin",
+          "value": "1000"
+        },
+        {
+          "columnName": "in_FrontDimensionMax",
+          "value": "1099"
+        },
+        {
+          "columnName": "HandleLength",
+          "value": "860"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_HandleDesign",
+          "value": "110"
+        },
+        {
+          "columnName": "in_FrontDimensionMin",
+          "value": "1100"
+        },
+        {
+          "columnName": "in_FrontDimensionMax",
+          "value": "1199"
+        },
+        {
+          "columnName": "HandleLength",
+          "value": "960"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_HandleDesign",
+          "value": "110"
+        },
+        {
+          "columnName": "in_FrontDimensionMin",
+          "value": "1200"
+        },
+        {
+          "columnName": "in_FrontDimensionMax",
+          "value": "1299"
+        },
+        {
+          "columnName": "HandleLength",
+          "value": "1060"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_HandleDesign",
+          "value": "110"
+        },
+        {
+          "columnName": "in_FrontDimensionMin",
+          "value": "1300"
+        },
+        {
+          "columnName": "in_FrontDimensionMax",
+          "value": "1399"
+        },
+        {
+          "columnName": "HandleLength",
+          "value": "1160"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_HandleDesign",
+          "value": "110"
+        },
+        {
+          "columnName": "in_FrontDimensionMin",
+          "value": "1400"
+        },
+        {
+          "columnName": "in_FrontDimensionMax",
+          "value": "1499"
+        },
+        {
+          "columnName": "HandleLength",
+          "value": "1260"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_HandleDesign",
+          "value": "110"
+        },
+        {
+          "columnName": "in_FrontDimensionMin",
+          "value": "1500"
+        },
+        {
+          "columnName": "in_FrontDimensionMax",
+          "value": "1599"
+        },
+        {
+          "columnName": "HandleLength",
+          "value": "1360"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_HandleDesign",
+          "value": "110"
+        },
+        {
+          "columnName": "in_FrontDimensionMin",
+          "value": "1600"
+        },
+        {
+          "columnName": "in_FrontDimensionMax",
+          "value": "1699"
+        },
+        {
+          "columnName": "HandleLength",
+          "value": "1460"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_HandleDesign",
+          "value": "110"
+        },
+        {
+          "columnName": "in_FrontDimensionMin",
+          "value": "1700"
+        },
+        {
+          "columnName": "in_FrontDimensionMax",
+          "value": "1849"
+        },
+        {
+          "columnName": "HandleLength",
+          "value": "1560"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_HandleDesign",
+          "value": "110"
+        },
+        {
+          "columnName": "in_FrontDimensionMin",
+          "value": "1850"
+        },
+        {
+          "columnName": "in_FrontDimensionMax",
+          "value": "2099"
+        },
+        {
+          "columnName": "HandleLength",
+          "value": "1760"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_HandleDesign",
+          "value": "110"
+        },
+        {
+          "columnName": "in_FrontDimensionMin",
+          "value": "2100"
+        },
+        {
+          "columnName": "in_FrontDimensionMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "HandleLength",
+          "value": "1960"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+[
+  {
+    "tableName": "tab_HandleSettings",
+    "columnId": "ReferencePointX",
+    "enumsJson": [
+      {
+        "value": "Border",
+        "imageId": "3ec8af4a-a9cb-4755-8e2c-fccacbc7c7ce:X_Border.jpg"
+      },
+      {
+        "value": "Center",
+        "imageId": "79cb5309-7e79-461d-b1e5-bf5d4280ba10:X_Center.jpg"
+      }
+    ]
+  },
+  {
+    "tableName": "tab_HandleSettings",
+    "columnId": "ReferencePointY",
+    "enumsJson": [
+      {
+        "value": "Border",
+        "imageId": "a5b85b5f-0722-4dea-9558-39a94461e8fb:Y_Border.jpg"
+      },
+      {
+        "value": "Center",
+        "imageId": "abeef9d2-0e89-4b90-bfa7-b5aab595b28f:Y_Center.jpg"
+      }
+    ]
+  },
+  {
+    "tableName": "tab_HandleSettings",
+    "columnId": "in_HandlePosType",
+    "refColumnId": "Value"
+  },
+  {
+    "tableName": "tab_HandleSettings",
+    "columnId": "in_PartGroup",
+    "refCustomTableName": "tab_PartSettings",
+    "refColumnId": "PartGroup"
+  }
+]

@@ -1,0 +1,31 @@
+{
+  "partCode": "part_PulloutHardware",
+  "shortName": "PulloutHardware",
+  "description": "Hardware for the pullout",
+  "wdt": "XYZ",
+  "groupName": "Pullout",
+  "imageId": "7da40377-b274-4b64-b9a7-b58fdb301f3f:PulloutHardware.png",
+  "model3dImageId": "",
+  "invisible": false,
+  "restrictionTypeId": "Internal",
+  "noNcData": true,
+  "partVariants": [
+    {
+      "partVarId": "pa_HardwareId",
+      "valueScript": ""
+    },
+    {
+      "partVarId": "pa_ParentName",
+      "valueScript": "this.parent.mod_FrontId",
+      "isWritable": false
+    }
+  ],
+  "bomData": [
+    {
+      "bomElementTypeId": "bomout_Group",
+      "conditionScript": "partSelf._g?.basic_CreateBom == 'Library'",
+      "valueScript": "// Type of the Bom-Element (will be checked in order output)\n  let elementType='Hardware';\n\n  // ProductionSite Category (to split the orders for different production sites)\n  let elementCategory='';\n\n  // Id of the parent to create the hierarchy\n  let parentBomId = part.pa_ParentName;\n\n   // Parse the json string\n    const hardwareIdElements = JSON.parse(part.pa_HardwareId) as { values: string[] };\n\n    // Check if the json got a valid format\n    if (!Array.isArray(hardwareIdElements.values)) {\n      throw new Error(\"Could not create the BOM for the Pullout fittings\");\n    }\n\n    // Iterate throug the hardware elements\n    for (const hardwareId of hardwareIdElements.values) {\n\n      // Check if we should add an entry\n      if (hardwareId !== \"None\") {\n          // Call the function to process the Bom-Element\n        GlobalFunc.process_HardwareBom(this, part, elementType, elementCategory, parentBomId, hardwareId)\n      }\n    }"
+    }
+  ],
+  "ncData": []
+}

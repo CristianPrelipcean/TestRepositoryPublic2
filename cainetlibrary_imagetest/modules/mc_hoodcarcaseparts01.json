@@ -1,0 +1,72 @@
+{
+  "moduleId": "mc_HoodCarcaseParts01",
+  "shortName": "Hood carcase parts01",
+  "configurable": false,
+  "isRoot": false,
+  "isConfigDummy": false,
+  "description": "Construction module for hood",
+  "groupName": "Hood",
+  "imageId": "1b299e71-c611-4acc-831a-b8790a80a6d6:HoodInsert.png",
+  "restrictionTypeId": "Internal",
+  "childModules": [],
+  "assignedVariants": [
+    {
+      "variantId": "mod_HoodInformation",
+      "default": "",
+      "previewValue": "",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_CarcaseWidth",
+      "previewValue": "500",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_CarcaseHeight",
+      "previewValue": "500",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_CarcaseDepth",
+      "previewValue": "300",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_CarcaseSpaceDimension",
+      "default": "",
+      "previewValue": "",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_HoodRailverttopbackthk",
+      "default": "19",
+      "origin": "Default"
+    }
+  ],
+  "assignedParts": [
+    {
+      "partCode": "part_HoodRail"
+    },
+    {
+      "partCode": "part_HoodShelftop"
+    },
+    {
+      "partCode": "part_HoodShelfbtm"
+    },
+    {
+      "partCode": "part_HoodBackwall"
+    },
+    {
+      "partCode": "part_HoodSidepanelleft"
+    },
+    {
+      "partCode": "part_HoodSidepanelright"
+    }
+  ],
+  "assignedCustomTables": [
+    {
+      "customTableId": "tab_HoodAssemblyParts"
+    }
+  ],
+  "assignedFunctions": []
+}

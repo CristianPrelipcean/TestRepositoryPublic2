@@ -1,0 +1,75 @@
+{
+  "tableName": "tab_DuststripMapping",
+  "description": "Mapping for dust strip",
+  "restrictionTypeId": "Public",
+  "groupName": "FrontConstruction",
+  "columns": [
+    {
+      "name": "_id",
+      "type": "Integer",
+      "allowNull": false
+    },
+    {
+      "name": "in_FrontProgram",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_FrontColor",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_FrontDesign",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "DuststripObject",
+      "type": "Text",
+      "allowNull": true
+    }
+  ],
+  "rows": [
+    {
+      "data": [
+        {
+          "columnName": "in_FrontProgram",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontColor",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "DuststripObject",
+          "value": "GlueDuststripGreyBrown"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_FrontProgram",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontColor",
+          "value": "Demowhite"
+        },
+        {
+          "columnName": "in_FrontDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "DuststripObject",
+          "value": "GlueDuststripWhite"
+        }
+      ]
+    }
+  ]
+}

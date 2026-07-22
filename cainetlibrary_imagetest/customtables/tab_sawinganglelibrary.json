@@ -1,0 +1,236 @@
+{
+  "tableName": "tab_SawingAngleLibrary",
+  "description": "Library for NC Sawing with Angle",
+  "restrictionTypeId": "Public",
+  "groupName": "Processings",
+  "columns": [
+    {
+      "name": "_id",
+      "type": "Integer",
+      "allowNull": false
+    },
+    {
+      "name": "in_ProcessingId",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "XA",
+      "type": "Text",
+      "allowNull": true,
+      "functionDefinition": "(varPos:number):number"
+    },
+    {
+      "name": "YA",
+      "type": "Text",
+      "allowNull": true,
+      "functionDefinition": "(varPos:number):number"
+    },
+    {
+      "name": "XE",
+      "type": "Text",
+      "allowNull": true,
+      "functionDefinition": "(varPos:number):number"
+    },
+    {
+      "name": "YE",
+      "type": "Text",
+      "allowNull": true,
+      "functionDefinition": "(varPos:number):number"
+    },
+    {
+      "name": "XY",
+      "type": "Integer",
+      "allowNull": false
+    },
+    {
+      "name": "WI",
+      "type": "Text",
+      "allowNull": true,
+      "functionDefinition": "(varAngle:number):number"
+    },
+    {
+      "name": "EM",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "Z_",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "VZ",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "RK",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "VT",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "AB",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "matrix_KO",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "matrix_NB",
+      "type": "Dim",
+      "allowNull": true
+    },
+    {
+      "name": "matrix_T_",
+      "type": "Text",
+      "allowNull": true
+    }
+  ],
+  "rows": [
+    {
+      "data": [
+        {
+          "columnName": "in_ProcessingId",
+          "value": "AngledCutInLengthNegativeAngle"
+        },
+        {
+          "columnName": "XA",
+          "value": "varPos"
+        },
+        {
+          "columnName": "YA",
+          "value": "varPos"
+        },
+        {
+          "columnName": "XE",
+          "value": "varPos"
+        },
+        {
+          "columnName": "YE",
+          "value": "varPos"
+        },
+        {
+          "columnName": "XY",
+          "value": "1"
+        },
+        {
+          "columnName": "WI",
+          "value": "(-1) * varAngle"
+        },
+        {
+          "columnName": "EM",
+          "value": "MOD2"
+        },
+        {
+          "columnName": "Z_",
+          "value": "-5"
+        },
+        {
+          "columnName": "VZ",
+          "value": "3"
+        },
+        {
+          "columnName": "RK",
+          "value": "WRKR"
+        },
+        {
+          "columnName": "VT",
+          "value": "0"
+        },
+        {
+          "columnName": "AB",
+          "value": "0"
+        },
+        {
+          "columnName": "matrix_KO",
+          "value": ""
+        },
+        {
+          "columnName": "matrix_NB",
+          "value": ""
+        },
+        {
+          "columnName": "matrix_T_",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ProcessingId",
+          "value": "AngledCutInLengthPositiveAngle"
+        },
+        {
+          "columnName": "XA",
+          "value": "varPos"
+        },
+        {
+          "columnName": "YA",
+          "value": "varPos"
+        },
+        {
+          "columnName": "XE",
+          "value": "varPos"
+        },
+        {
+          "columnName": "YE",
+          "value": "varPos"
+        },
+        {
+          "columnName": "XY",
+          "value": "1"
+        },
+        {
+          "columnName": "WI",
+          "value": "varAngle"
+        },
+        {
+          "columnName": "EM",
+          "value": "MOD2"
+        },
+        {
+          "columnName": "Z_",
+          "value": "-5"
+        },
+        {
+          "columnName": "VZ",
+          "value": "3"
+        },
+        {
+          "columnName": "RK",
+          "value": "WRKL"
+        },
+        {
+          "columnName": "VT",
+          "value": "0"
+        },
+        {
+          "columnName": "AB",
+          "value": "0"
+        },
+        {
+          "columnName": "matrix_KO",
+          "value": ""
+        },
+        {
+          "columnName": "matrix_NB",
+          "value": ""
+        },
+        {
+          "columnName": "matrix_T_",
+          "value": ""
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "variantId": "mod_HingeType",
+  "shortName": "Type",
+  "variantTypeId": "Text",
+  "description": "Type of the hinge",
+  "restrictionTypeId": "Public",
+  "groupName": "Hardware | Hinge",
+  "imageId": "f48a3164-af6a-46f2-9818-17d5e50e34ed:HingeType.jpg",
+  "isArray": false,
+  "isPosRelevant": true,
+  "mainAttr": false,
+  "userRight": "Master",
+  "implicitRelevant": false,
+  "posView": "Dropdown",
+  "matrix": [
+    {
+      "id": "DrillingDistanceType",
+      "type": "Text",
+      "default": "Fixed"
+    }
+  ],
+  "selections": [
+    {
+      "value": "110º",
+      "description": "Standard Hinge 110º",
+      "shortName": "110º",
+      "matrix": [
+        {
+          "id": "DrillingDistanceType",
+          "value": "Fixed"
+        }
+      ]
+    },
+    {
+      "value": "110ºSoftClose",
+      "description": "Standard Hinge 110º with SoftClose",
+      "shortName": "110ºSoftClose",
+      "matrix": [
+        {
+          "id": "DrillingDistanceType",
+          "value": "CalculationBasedMin"
+        }
+      ]
+    },
+    {
+      "value": "165º",
+      "description": "Wide Opening Hinge 165º",
+      "shortName": "165º",
+      "matrix": [
+        {
+          "id": "DrillingDistanceType",
+          "value": "Fixed"
+        }
+      ]
+    },
+    {
+      "value": "155ºSoftClose",
+      "description": "Wide Opening Hinge 155º with SoftClose",
+      "shortName": "155ºSoftClose",
+      "matrix": [
+        {
+          "id": "DrillingDistanceType",
+          "value": "CalculationBasedMax"
+        }
+      ]
+    },
+    {
+      "value": "BlindCornerInset110ºSoftClose",
+      "description": "Blind Corner Hinge Inset 110º with SoftClose",
+      "shortName": "BlindCornerInset110ºSoftClose",
+      "matrix": [
+        {
+          "id": "DrillingDistanceType",
+          "value": "Fixed"
+        }
+      ]
+    },
+    {
+      "value": "NoHinges",
+      "description": "No Hinges",
+      "shortName": "NoHinges",
+      "matrix": [
+        {
+          "id": "DrillingDistanceType",
+          "value": "Fixed"
+        }
+      ]
+    }
+  ]
+}

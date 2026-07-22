@@ -1,0 +1,111 @@
+{
+  "variantId": "mod_HandlePosMatrixMultiple",
+  "shortName": "Handle position matrix multiple",
+  "variantTypeId": "Text",
+  "description": "Multiple positions of handle matrix",
+  "restrictionTypeId": "Internal",
+  "groupName": "FrontOpening | Handle",
+  "imageId": "23f35ad4-61ef-47f6-a66a-a0b3b6e6440b:HandlePosMatrix.png",
+  "isArray": false,
+  "isPosRelevant": true,
+  "mainAttr": false,
+  "userRight": "Master",
+  "implicitRelevant": false,
+  "posView": "Dropdown",
+  "matrix": [
+    {
+      "id": "FirstMatrix",
+      "type": "Text",
+      "shortName": "FirstMatrix",
+      "default": "Center"
+    },
+    {
+      "id": "SecondMatrix",
+      "type": "Text",
+      "shortName": "SecondMatrix",
+      "default": "Center"
+    }
+  ],
+  "selections": [
+    {
+      "value": "DoubleTop",
+      "description": "Double doors both top postion",
+      "shortName": "DoubleTop",
+      "imageId": "03fe99bc-c8c8-4919-b0e3-943b5aba0114:Dbl_Top.jpg",
+      "matrix": [
+        {
+          "id": "FirstMatrix",
+          "value": "Top"
+        },
+        {
+          "id": "SecondMatrix",
+          "value": "Top"
+        }
+      ]
+    },
+    {
+      "value": "DoubleCenter",
+      "description": "Double doors both via HandleLine",
+      "shortName": "DoubleCenter",
+      "imageId": "f4ea5d51-755d-4882-bc67-765daf178a5c:Dbl_Center.jpg",
+      "matrix": [
+        {
+          "id": "FirstMatrix",
+          "value": "Center"
+        },
+        {
+          "id": "SecondMatrix",
+          "value": "Center"
+        }
+      ]
+    },
+    {
+      "value": "DoubleBottom",
+      "description": "Double doors both bottom position",
+      "shortName": "DoubleBottom",
+      "imageId": "2643f0b0-c3c5-415d-9fcb-5968cf8551f6:Dbl_Bottom.jpg",
+      "matrix": [
+        {
+          "id": "FirstMatrix",
+          "value": "Bottom"
+        },
+        {
+          "id": "SecondMatrix",
+          "value": "Bottom"
+        }
+      ]
+    },
+    {
+      "value": "Center_Center",
+      "description": "Vertical splitted doors both via HandleLine",
+      "shortName": "Center_Center",
+      "imageId": "2c64c38a-a5cf-4693-b650-3fb9dfdef614:Vert_Center.jpg",
+      "matrix": [
+        {
+          "id": "FirstMatrix",
+          "value": "Center"
+        },
+        {
+          "id": "SecondMatrix",
+          "value": "Center"
+        }
+      ]
+    },
+    {
+      "value": "Top_Bottom",
+      "description": "Vertical splitted doors top and bottom position",
+      "shortName": "Top_Bottom",
+      "imageId": "b4875107-4786-4e2e-a168-b537b1a0bd0d:Vert_TopBtm.jpg",
+      "matrix": [
+        {
+          "id": "FirstMatrix",
+          "value": "Top"
+        },
+        {
+          "id": "SecondMatrix",
+          "value": "Bottom"
+        }
+      ]
+    }
+  ]
+}

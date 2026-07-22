@@ -1,0 +1,104 @@
+{
+  "moduleId": "mr_Paneltop",
+  "shortName": "Top panel",
+  "configurable": false,
+  "isRoot": false,
+  "description": "Module for top panel",
+  "groupName": "Root",
+  "imageId": "a33d41dc-fb5f-43e0-a0fc-ff1fdb2f903e:TopPanel.jpg",
+  "restrictionTypeId": "Public",
+  "generateMethod": "Paneltop",
+  "childModules": [
+    {
+      "moduleId": "mc_Paneltop01"
+    }
+  ],
+  "assignedVariants": [
+    {
+      "variantId": "mod_PaneltopEdgeBackColor",
+      "defaultScript": "this.mod_PaneltopColor",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_PaneltopEdgeFrontColor",
+      "defaultScript": "this.mod_PaneltopColor",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_PaneltopEdgeLeftColor",
+      "defaultScript": "this.mod_PaneltopColor",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_PaneltopEdgeRightColor",
+      "defaultScript": "this.mod_PaneltopColor",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_PaneltopEdgeVisBack",
+      "default": "false",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_PaneltopEdgeVisFront",
+      "default": "false",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_PaneltopEdgeVisLeft",
+      "default": "false",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_PaneltopEdgeVisRight",
+      "default": "false",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_ModuleName",
+      "default": "mr_Paneltop",
+      "origin": "Fixed"
+    },
+    {
+      "variantId": "mod_PaneltopColor",
+      "default": "240",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_PaneltopThk",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_PaneltopConstruction",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_PaneltopOverhangFront",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_PaneltopProgram",
+      "default": "Style",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_PaneltopOversizeBack",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_FrontGapHor",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_FrontGapCarcase",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_LengthList",
+      "origin": "Default"
+    }
+  ],
+  "assignedParts": [],
+  "assignedCustomTables": [],
+  "assignedFunctions": []
+}

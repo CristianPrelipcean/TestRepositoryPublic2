@@ -1,0 +1,37 @@
+{
+  "moduleId": "me_LaundryMachine",
+  "shortName": "Laundry Machine",
+  "configurable": true,
+  "isRoot": false,
+  "isConfigDummy": false,
+  "description": "Laundry Machine",
+  "groupName": "Appliance",
+  "imageId": "32ac7aa6-9749-408a-acbe-f57b88e51f6a:LaundryMachine.png",
+  "restrictionTypeId": "Public",
+  "childModules": [
+    {
+      "moduleId": "mc_ApplianceGraphic"
+    }
+  ],
+  "assignedVariants": [
+    {
+      "variantId": "mod_LaundryMachineId",
+      "default": "GenericMachine",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_LaundryMachineSupplier",
+      "default": "GenericSupplier",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_CarcaseSpaceDimension",
+      "default": "",
+      "previewValue": "",
+      "origin": "Default"
+    }
+  ],
+  "assignedParts": [],
+  "assignedCustomTables": [],
+  "assignedFunctions": []
+}

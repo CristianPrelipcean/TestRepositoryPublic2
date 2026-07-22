@@ -1,0 +1,352 @@
+{
+  "moduleId": "mf_PantryPullout",
+  "shortName": "Pantry pull out",
+  "configurable": true,
+  "isRoot": false,
+  "isConfigDummy": false,
+  "description": "Vertical full-height pull-out unit for tall pantry cabinets",
+  "groupName": "FrontModule",
+  "imageId": "19ec9ad9-7feb-4312-b6a7-0efa99994157:PantryPullout.png",
+  "restrictionTypeId": "Public",
+  "childModules": [
+    {
+      "moduleId": "mc_PantryPullout01"
+    }
+  ],
+  "assignedVariants": [
+    {
+      "variantId": "mod_CarcaseSpaceDimension",
+      "default": "",
+      "previewValue": "",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_BackwallPos",
+      "previewValue": "22",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_CarcaseDepth",
+      "previewValue": "500",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_CarcaseHeight",
+      "previewValue": "720",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_CarcaseWidth",
+      "previewValue": "600",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_CarcaseBackwallConstruction",
+      "previewValue": "Grooved_LBRT",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_CarcaseId",
+      "default": "",
+      "previewValue": "",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_FrontColor",
+      "previewValue": "190",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_FrontDesign",
+      "previewValue": "Standard",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_FrontGapCarcase",
+      "previewValue": "2",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_FrontGapHor",
+      "previewValue": "3",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_FrontGapVert",
+      "previewValue": "3",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_FrontHeight",
+      "default": "9999",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_FrontHeightSelection",
+      "previewValue": "9999",
+      "origin": "Required"
+    },
+    {
+      "variantId": "mod_FingergripTop",
+      "default": "false",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_FrontId",
+      "default": "None",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_FrontSplit",
+      "default": "false",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_FrontThk",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_FrontWidth",
+      "defaultScript": "this.parent.mod_Width",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_HandleDrill",
+      "default": "True",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_HandleLine",
+      "previewValue": "1050",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_HandlePosLogic",
+      "previewValue": "HandleLine",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_FrontQtyElements",
+      "default": "0",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_ShelffixedType",
+      "default": "ContactBw",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_FrontPosStart",
+      "default": "0",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_FrontOversizeBtm",
+      "default": "0",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_FrontOversizeLeft",
+      "default": "0",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_FrontOversizeRight",
+      "default": "0",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_FrontOversizeTop",
+      "default": "0",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_FrontProgram",
+      "previewValue": "Demoprogram1",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_FrontSplitType1",
+      "default": "0",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_FrontSplitType2",
+      "default": "0",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_HandleColor",
+      "previewValue": "Demoblue",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_HandleLength",
+      "previewValue": "128",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_HandleOffsetX",
+      "default": "0",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_HandleOffsetY",
+      "default": "0",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_HandlePosMatrix",
+      "default": "Center",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_HandlePosType",
+      "previewValue": "01",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_HandlestripPos",
+      "default": "4",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_HeightPosInsertion",
+      "previewValue": "0",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_PlinthAreaHeight",
+      "previewValue": "100",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_ShelffixedBtm",
+      "default": "false",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_ShelffixedPos",
+      "default": "GapMiddle",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_ShelffixedOffsetFront",
+      "default": "0",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_ShelffixedThk",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_ShelffixedOversizeFront",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_ShelffixedOversizeBack",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_HandleDesign",
+      "previewValue": "10",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_Originpos",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_ParentName",
+      "previewValue": "NotDefined",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_ModuleName",
+      "default": "mf_Drawer",
+      "origin": "Fixed"
+    },
+    {
+      "variantId": "mod_FingergripBtmType",
+      "default": "NoFingergrip",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_FingergripTopType",
+      "default": "NoFingergrip",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_ShelffixedTop",
+      "default": "false",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_VertDividerType",
+      "previewValue": "NoVertDivider",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_SidepanelmiddleThk",
+      "previewValue": "19",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_FrameFillingType",
+      "previewValue": "Automatic",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_FrameFillingColor",
+      "previewValue": "240",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_DrawerOpeningDistance",
+      "default": "0",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_FirstFront",
+      "default": "false",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_LastFront",
+      "default": "false",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_PantryPulloutDesign",
+      "default": "Classic",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_PantryPulloutType",
+      "default": "Dispensa",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_PantryPulloutColor",
+      "default": "Automatic",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_FrontSplitDescriptor",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_HandlePosMatrixMultiple",
+      "default": "Center_Center",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_HandleActivated",
+      "default": "All",
+      "origin": "Default"
+    }
+  ],
+  "assignedParts": [],
+  "assignedCustomTables": [],
+  "assignedFunctions": []
+}

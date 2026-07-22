@@ -1,0 +1,103 @@
+{
+  "moduleId": "mr_MirrorBoard",
+  "shortName": "Mirror board",
+  "configurable": true,
+  "isRoot": true,
+  "isConfigDummy": false,
+  "description": "Module for mirror board",
+  "groupName": "Root",
+  "imageId": "29e98f7a-918b-4f1b-82e7-d289d4d207e6:Mirrorboard.png",
+  "restrictionTypeId": "Public",
+  "childModules": [
+    {
+      "moduleId": "mc_MirrorBoard"
+    },
+    {
+      "moduleId": "mf_BoardShelf"
+    }
+  ],
+  "assignedVariants": [
+    {
+      "variantId": "mod_MirrorBoardColor",
+      "default": "199",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_MirrorBoardProgram",
+      "default": "Classic",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_MirrorBoardId",
+      "default": "Mirrorboard01",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_Width",
+      "previewValue": "600",
+      "origin": "Required"
+    },
+    {
+      "variantId": "mod_Height",
+      "previewValue": "1000",
+      "origin": "Required"
+    },
+    {
+      "variantId": "mod_MirrorBoardThickness",
+      "default": "19",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_HeightPosInsertion",
+      "default": "0",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_MirrorColor",
+      "default": "Mirror",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_MirrorWidth",
+      "previewValue": "600",
+      "origin": "Required"
+    },
+    {
+      "variantId": "mod_MirrorHeight",
+      "previewValue": "1000",
+      "origin": "Required"
+    },
+    {
+      "variantId": "mod_MirrorThickness",
+      "default": "3",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_MirrorPositionWidth",
+      "default": "0",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_MirrorPositionHeight",
+      "default": "0",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_BoardShelfColor",
+      "default": "199",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_BoardShelfProgram",
+      "default": "Classic",
+      "origin": "Default"
+    }
+  ],
+  "assignedParts": [
+    {
+      "partCode": "part_MirrorBoardGroup"
+    }
+  ],
+  "assignedCustomTables": [],
+  "assignedFunctions": []
+}

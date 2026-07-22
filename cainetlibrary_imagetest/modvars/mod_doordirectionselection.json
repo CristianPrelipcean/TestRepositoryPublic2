@@ -1,0 +1,60 @@
+{
+  "variantId": "mod_DoorDirectionSelection",
+  "shortName": "Door direction",
+  "variantTypeId": "Text",
+  "description": "Direction of the door",
+  "restrictionTypeId": "Internal",
+  "groupName": "Front | Construction",
+  "imageId": "440d5210-3ee8-4e59-93d9-d9dccf512470:270d8cc4-d872-48d4-86c4-4264413248f1_doordirection.jpg",
+  "assignedGlobalVarId": "basic_DoorDirection",
+  "isArray": false,
+  "isPosRelevant": true,
+  "mainAttr": true,
+  "userRight": "Simple",
+  "implicitRelevant": false,
+  "matrix": [],
+  "selections": [
+    {
+      "value": "Left",
+      "description": "Door left hinged",
+      "shortName": "Left",
+      "imageId": "29c25918-269c-4e91-bf69-c89111bbc456:Left.jpg",
+      "matrix": []
+    },
+    {
+      "value": "Right",
+      "description": "Door right hinged",
+      "shortName": "Right",
+      "imageId": "a4920d76-4666-4447-abda-a4a8c7bda526:Right.jpg",
+      "matrix": []
+    },
+    {
+      "value": "LeftRight",
+      "description": "First Door left hinged, Second Door right hinged",
+      "shortName": "Left & Right",
+      "imageId": "20080b8a-6f77-4c54-a505-105576d7509d:LeftRight.jpg",
+      "matrix": []
+    },
+    {
+      "value": "LeftLeft",
+      "description": "First Door left hinged, Second Door left hinged",
+      "shortName": "Left & Left",
+      "imageId": "bb9e1f4e-5757-45e6-8e06-8918b8dcc3a8:LeftLeft.jpg",
+      "matrix": []
+    },
+    {
+      "value": "RightRight",
+      "description": "First Door right hinged, Second Door right hinged",
+      "shortName": "Right & Right",
+      "imageId": "9fa30d2e-b382-47fc-9792-9a77372fc861:RightRight.jpg",
+      "matrix": []
+    },
+    {
+      "value": "Automatic",
+      "description": "Setting via tab_DoorSettings",
+      "shortName": "Automatic",
+      "imageId": "5242939b-2ad8-4fb6-9350-5b4b08ff115b:Automatic.png",
+      "matrix": []
+    }
+  ]
+}

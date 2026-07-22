@@ -1,0 +1,126 @@
+{
+  "partCode": "part_DrawerBackwallWood",
+  "shortName": "DrawerBackwallWood",
+  "description": "Drawer backwall wood",
+  "wdt": "XYZ",
+  "groupName": "Drawerbox",
+  "imageId": "d582f6ec-344d-4757-b57e-08c479700bc1:DrawerBackw.jpg",
+  "invisible": false,
+  "restrictionTypeId": "Public",
+  "noNcData": false,
+  "partVariants": [
+    {
+      "partVarId": "pa_BomId",
+      "valueScript": "",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_BtmColor",
+      "valueScript": "",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeBackColor",
+      "valueScript": "",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeBackType",
+      "valueScript": "",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeFrontColor",
+      "valueScript": "",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeFrontType",
+      "valueScript": "",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeJointType",
+      "valueScript": "",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeRightColor",
+      "valueScript": "",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeLeftColor",
+      "valueScript": "",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeLeftType",
+      "valueScript": "",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeRightType",
+      "valueScript": "",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_GrainDirection",
+      "valueScript": "'Neutral'",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_TopColor",
+      "valueScript": "",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_ParentName",
+      "valueScript": "",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_ProcessingId",
+      "valueScript": "",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_AdditionalInfo1",
+      "valueScript": "'None'",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_TypeElement",
+      "valueScript": "this.parent.mod_TypeElement",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_ProgramGrainGroup",
+      "valueScript": "this.parent.mod_CarcaseProgram_matrix.GrainGroupId",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_ColorGrainGroup",
+      "valueScript": "'NoGrain'",
+      "isWritable": false
+    }
+  ],
+  "bomData": [
+    {
+      "bomElementTypeId": "bomout_Group",
+      "description": "Boards and edges for drawerbox backwall wood",
+      "conditionScript": "partSelf._g?.basic_CreateBom == 'Library'",
+      "valueScript": "// Add the Board\n            let Board = this.addbomout_Board();\n\n            // Type of the Bom-Element (will be checked in order output)\n            let elementType='Board';\n\n            // ProductionSite Category (to split the orders for different production sites)\n            let elementCategory='';\n            \n            // Id of the parent to create the hierarchy\n            let parentBomId=part.pa_BomId;\n            \n            // Call the function to process the Bom-Element\n            GlobalFunc.process_BoardBom(Board, part, elementType, elementCategory, parentBomId)"
+    }
+  ],
+  "ncData": [
+    {
+      "part2": "part_DrawerBoxDrilling",
+      "touchName": "Collision",
+      "bomElementTypeId": "ncout_Group",
+      "description": "Drills in backwall for connection of drawer boxes",
+      "valueScript": "//====================================================================\n// Get data for drillings\n//====================================================================\n\n// Variables\nlet drillings: ICT_tab_HardwareDrillVertLibrary[] = [];\n\n// Find all processings for the drawerbox (to each part)\nlet processings = GlobalFunc.find_ProcessingMapping(partSelf.pa_ProcessingId);\n\n// Find the drillings for the sidepanel\nprocessings.forEach((processing) => {\n  if(processing.ProcessingLibrary == 'DrillVertical'){\n    let foundDrillings = GlobalFunc.find_HardwareDrillVertLibrary(processing.ProcessingId!, 'BoxBackwall');\n    drillings = drillings.concat(foundDrillings);\n  }\n});\n\n//====================================================================\n// For each drilling (insert the drillings) left side\n//====================================================================\n\n// drill for screwing the box side to the bottom shelf (right side)\ndrillings.forEach(x => \n{  \n  // Position of the drill\n  let PosX=x.XA;\n  let PosY=x.YA;\n  let PosZ=0;\n\n  // Add Vertical Drill\n  let DrillVert = this.addncout_DrillVert();\n  DrillVert.nc_TOOL=\"102\";\n  DrillVert.nc_XA=x.XA;\n  DrillVert.nc_YA=x.YA;\n  DrillVert.nc_TI=x.TI;\n  DrillVert.nc_DU=x.DU;\n\n  DrillVert.nc_BM = x.matrix_BM || \"LS\"\n  DrillVert.nc_WI = x.matrix_WI ?? 0;\n  DrillVert.nc_AB = x.matrix_AB ?? 1;\n  DrillVert.nc_LA = x.matrix_LA ?? 0;\n  DrillVert.nc_MI = x.matrix_MI ?? 0;\n  DrillVert.nc_KO = x.matrix_KO || \"00\";\n  DrillVert.nc_Side = \"Top\";  \n\n  // Add drawing\n  let drilling01 = partSelf.add3DElement('Drilling01', DrillVert, PosX, PosY, PosZ, x.DU, x.DU, x.TI );\n  drilling01.extrude('<svg><circle cx=\"' + 0 + '\" cy=\"' + 0 + '\" r=\"' + x.DU/2 + '\" /></svg>', 'z');\n})\n\n//====================================================================\n// For each drilling (insert the drillings) right side\n//====================================================================\n\n// drill for screwing the box side to the bottom shelf (right side)\ndrillings.forEach(x => \n{  \n  // Position of the drill\n  let PosX=partSelf._dimx - x.XA;\n  let PosY=x.YA;\n  let PosZ=0;\n\n  // Add Vertical Drill\n  let DrillVert = this.addncout_DrillVert();\n  DrillVert.nc_TOOL=\"102\";\n  DrillVert.nc_XA=partSelf._dimx - x.XA;\n  DrillVert.nc_YA=x.YA;\n  DrillVert.nc_TI=x.TI;\n  DrillVert.nc_DU=x.DU;\n\n  DrillVert.nc_BM = x.matrix_BM || \"LS\"\n  DrillVert.nc_WI = x.matrix_WI ?? 0;\n  DrillVert.nc_AB = x.matrix_AB ?? 1;\n  DrillVert.nc_LA = x.matrix_LA ?? 0;\n  DrillVert.nc_MI = x.matrix_MI ?? 0;\n  DrillVert.nc_KO = x.matrix_KO || \"00\";\n  DrillVert.nc_Side = \"Top\";  \n\n  // Add drawing\n  let drilling01 = partSelf.add3DElement('Drilling01', DrillVert, PosX, PosY, PosZ, x.DU, x.DU, x.TI );\n  drilling01.extrude('<svg><circle cx=\"' + 0 + '\" cy=\"' + 0 + '\" r=\"' + x.DU/2 + '\" /></svg>', 'z');\n})",
+      "bomExecuteType": "Touch"
+    }
+  ]
+}

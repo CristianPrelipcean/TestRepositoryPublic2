@@ -1,0 +1,32 @@
+{
+  "partCode": "part_HingeDoor",
+  "shortName": "Hinge door",
+  "description": "Hinge part on door",
+  "wdt": "XYZ",
+  "groupName": "Hardware",
+  "imageId": "f2abe039-571a-4a04-a896-47ce2ce438a0:HingeCarcase.jpg",
+  "invisible": false,
+  "restrictionTypeId": "Public",
+  "noNcData": false,
+  "partVariants": [
+    {
+      "partVarId": "pa_HardwareId",
+      "valueScript": "''",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_ParentName",
+      "valueScript": "this.parent.mod_FrontId",
+      "isWritable": false
+    }
+  ],
+  "bomData": [
+    {
+      "bomElementTypeId": "bomout_Group",
+      "description": "Hinge BOM",
+      "conditionScript": "partSelf._g?.basic_CreateBom == 'Library'",
+      "valueScript": "// Type of the Bom-Element (will be checked in order output)\n  let elementType='Hardware';\n\n  // ProductionSite Category (to split the orders for different production sites)\n  let elementCategory='';\n\n  // Id of the parent to create the hierarchy\n  let parentBomId=part.pa_ParentName;\n\n  // Call the function to process the Bom-Element\n  GlobalFunc.process_HardwareBom(this, part, elementType, elementCategory, parentBomId, part.pa_HardwareId)"
+    }
+  ],
+  "ncData": []
+}

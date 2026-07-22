@@ -1,0 +1,126 @@
+{
+  "partCode": "part_Countertop",
+  "shortName": "Countertop",
+  "description": "Countertop",
+  "wdt": "XZY",
+  "groupName": "Countertop",
+  "imageId": "6611223d-ac32-49d0-8e10-962cda6405e7:Countertop.png",
+  "model3dImageId": "",
+  "invisible": false,
+  "restrictionTypeId": "Public",
+  "noNcData": false,
+  "partVariants": [
+    {
+      "partVarId": "pa_BomId",
+      "valueScript": "this.parent.mod_CountertopId",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeBackColor",
+      "valueScript": "this.parent.mod_CountertopColor",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeBackType",
+      "valueScript": "'NOE'",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeFrontColor",
+      "valueScript": "this.parent.mod_CountertopColor",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeFrontType",
+      "valueScript": "'FRE'",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeJointType",
+      "valueScript": "'VVVV'",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeLeftColor",
+      "valueScript": "this.parent.mod_CountertopColor",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeLeftType",
+      "valueScript": "'FRE'",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeRightColor",
+      "valueScript": "this.parent.mod_CountertopColor",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_GrainDirection",
+      "valueScript": "'Neutral'",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_TopColor",
+      "valueScript": "this.parent.mod_CountertopColor",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_BtmColor",
+      "valueScript": "this.parent.mod_CountertopColor",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_Program",
+      "valueScript": "this.parent.mod_CountertopProgram",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeRightType",
+      "valueScript": "'FRE'",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_AdditionalInfo1",
+      "valueScript": "'None'",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_CountertopInfo",
+      "valueScript": "",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_ColorGrainGroup",
+      "valueScript": "this.parent.mod_CountertopColor_matrix.GrainGroupId",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_ProgramGrainGroup",
+      "valueScript": "this.parent.mod_CountertopProgram_matrix.GrainGroupId",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_TypeElement",
+      "valueScript": "'All'",
+      "isWritable": false
+    }
+  ],
+  "bomData": [
+    {
+      "bomElementTypeId": "bomout_Board",
+      "description": "Output Parts / board",
+      "conditionScript": "partSelf._g?.basic_CreateBom == 'Library'",
+      "valueScript": "// Type of the Bom-Element (will be checked in order output)\nlet elementType='Board';\n\n// ProductionSite Category (to split the orders for different production sites)\nlet elementCategory='';\n\n// Id of the parent to create the hierarchy\nlet parentBomId=part.pa_BomId;\n\n// Call the function to process the Bom-Element\nGlobalFunc.process_BoardBom(this, part, elementType, elementCategory, parentBomId)"
+    }
+  ],
+  "ncData": [
+    {
+      "touchName": "",
+      "bomElementTypeId": "ncout_Group",
+      "description": "Insert all the processings via attributes on the part",
+      "valueScript": "//======================================================================\n  // Read and parse the data from the countertop segments\n  //======================================================================\n\n  // Read the attribute of the countertop info (which are the information from the segments)\n  const jsonString = partSelf.pa_CountertopInfo;\n\n  try {\n    const parsed = JSON.parse(jsonString);\n\n    //======================================================================\n    // Add the cutouts\n    //======================================================================\n\n    if (Array.isArray(parsed.Countertops)) {\n      parsed.Countertops.forEach((itemStr: string) => {\n        try {\n          const item = JSON.parse(itemStr);\n\n          // If there is a cutout in the segment\n          if (item.CutoutData) {\n            const cutoutData = JSON.parse(item.CutoutData);\n            const cutOut = this.addncout_CountertopCutoutRectangular();\n            cutOut.nc_DrawingRelevant = true;\n            cutOut.nc_MprRelevant = true;\n            cutOut.nc_LA = cutoutData.CutWidth;\n            cutOut.nc_BR = cutoutData.CutDepth;\n            cutOut.nc_RD = cutoutData.CutRadius;\n            cutOut.nc_XA = cutoutData.CutPosX;\n            cutOut.nc_YA = cutoutData.CutPosY + cutoutData.CutDepth / 2;\n            cutOut.nc_Side = \"Top\";\n            cutOut.nc_Supplier = cutoutData.Supplier;\n            cutOut.nc_ArticleId = cutoutData.Id;\n            cutOut.nc_KO = \"00\";\n            cutOut.nc_TOOL = \"139\";\n            cutOut.nc_IN = \"SimpleCutOut.mpr\";\n          }\n\n        }\n        catch (innerErr) {\n          console.error(\"Error while parsing the element: \", innerErr);\n        }\n      });\n    }\n\n    //======================================================================\n    // Add the connections\n    //======================================================================\n\n    if (Array.isArray(parsed.Connections)) {\n      parsed.Connections.forEach((conn: any) => {\n\n        if (conn.type == \"Long\") {\n          const connLong = this.addncout_CountertopConnectionLong();\n          connLong.nc_DrawingRelevant = true;\n          connLong.nc_MprRelevant = true;\n          connLong.nc_LA = conn.length;\n          connLong.nc_Position = conn.position;\n          connLong.nc_Side = \"Top\";\n          connLong.nc_KO = \"00\";\n          connLong.nc_TOOL = \"139\";\n          connLong.nc_IN = \"ConnectionLong.mpr\";\n        }\n        else if (conn.type == \"Short\") {\n          const connShort = this.addncout_CountertopConnectionShort();\n          connShort.nc_DrawingRelevant = true;\n          connShort.nc_MprRelevant = true;\n          connShort.nc_LA = conn.length;\n          connShort.nc_Position = conn.position;\n          connShort.nc_Side = \"Top\";\n          connShort.nc_KO = \"00\";\n          connShort.nc_TOOL = \"139\";\n          connShort.nc_IN = \"ConnectionShort.mpr\";\n        }\n      });\n    }\n\n    else {\n      console.error(\"parsed.Countertops is not an array\");\n    }\n  }\n  catch (err) {\n    console.error(\"Error while parsing pa_CountertopInfo: \", err);\n  }\n\n  //======================================================================\n  // Add the edges\n  //======================================================================\n\n  let edges = this.addncout_CountertopEdges();\n  edges.nc_DrawingRelevant = true;\n  edges.nc_MprRelevant = false;\n  edges.nc_Side = \"Top\";\n  edges.nc_TOOL = \"112\";\n  edges.nc_EdgesFront = partSelf.pa_EdgeFrontType == \"FRE\" ? \"visible\" : \"invisible\";\n  edges.nc_EdgesBack = partSelf.pa_EdgeBackType == \"FRE\" ? \"visible\" : \"invisible\";\n  edges.nc_EdgesLeft = partSelf.pa_EdgeLeftType == \"FRE\" ? \"visible\" : \"invisible\";\n  edges.nc_EdgesRight = partSelf.pa_EdgeRightType == \"FRE\" ? \"visible\" : \"invisible\";",
+      "bomExecuteType": "End"
+    }
+  ]
+}
