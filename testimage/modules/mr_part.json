@@ -1,0 +1,121 @@
+{
+  "moduleId": "mr_Part",
+  "shortName": "Part",
+  "configurable": true,
+  "isRoot": true,
+  "isConfigDummy": false,
+  "description": "Simple flat panel part",
+  "groupName": "Root",
+  "imageId": "28636d56-bf2f-4674-a6d7-2ce13794cf13:mr_Part.jpg",
+  "restrictionTypeId": "Public",
+  "childModules": [
+    {
+      "moduleId": "mc_FrontPanel01"
+    },
+    {
+      "moduleId": "mc_ShelfPanel01"
+    },
+    {
+      "moduleId": "mc_SidePanel01"
+    },
+    {
+      "moduleId": "me_Drill"
+    },
+    {
+      "moduleId": "mrp_Part"
+    },
+    {
+      "moduleId": "me_DrillVert"
+    }
+  ],
+  "assignedVariants": [
+    {
+      "variantId": "mod_Color",
+      "default": "240",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_BtmColor",
+      "defaultScript": "this.mod_Color",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_EdgeBackClass",
+      "default": "Thick",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_EdgeFrontColor",
+      "defaultScript": "this.mod_Color",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_EdgeFrontClass",
+      "default": "Thick",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_EdgeBackColor",
+      "defaultScript": "this.mod_Color",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_EdgeLeftClass",
+      "default": "Thick",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_EdgeLeftColor",
+      "defaultScript": "this.mod_Color",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_EdgeRightColor",
+      "defaultScript": "this.mod_Color",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_EdgeRightClass",
+      "default": "Thick",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_EdgeJointType",
+      "default": "LSLS",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_Length",
+      "default": "1000",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_PartGrain",
+      "default": "Lengthwise",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_Program",
+      "default": "Nature",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_Thickness",
+      "default": "19",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_TypeElement",
+      "default": "Fronts",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_Width",
+      "default": "1000",
+      "origin": "Default"
+    }
+  ],
+  "assignedParts": [],
+  "assignedCustomTables": [],
+  "assignedFunctions": []
+}
