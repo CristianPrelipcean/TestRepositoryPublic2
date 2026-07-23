@@ -7,8 +7,9 @@
   if (this.roots.length > 0) {
     const articlePos = this.getArticlePos();
     const positioningData = {
-      posGroup: [articlePos.x, articlePos.y, articlePos.z],
-      posRotationY: articlePos.rotationY,
+      //posGroup: [articlePos.x, articlePos.y, articlePos.z],
+      posGroup: [0, 0, 0],
+      //posRotationY: articlePos.rotationY,
       rootId: this.roots[0].root._id,
       rootRelPos: [100,100,100],
       rootRelRotationY: 45
