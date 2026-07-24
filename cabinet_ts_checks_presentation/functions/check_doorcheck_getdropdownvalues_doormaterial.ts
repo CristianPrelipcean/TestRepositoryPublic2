@@ -42,7 +42,7 @@ check_doorCheck_getDropDownValues_doorMaterial(attr: Checks.IdoorCheck_Attribute
             ? Checks.CheckDropDownEntryKind.Normal
             : Checks.CheckDropDownEntryKind.Conflicting;
 
-        result.push({ value: selection.value, kind });
+        result.push({ value: selection.value, kind, showAsNormal: true });
     }
 
     return result;
