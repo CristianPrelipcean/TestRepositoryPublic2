@@ -3,7 +3,7 @@
     if (matrix.FaceDefault) {
       part.addFaceMaterial(matrix.FaceDefault, FaceKey.Default);
     }
-//test
+
     if (matrix.FaceFront) {
       part.addFaceMaterial(matrix.FaceFront, FaceKey.Front, matrix.FaceFrontRotation,
         matrix.FaceFrontOffset, matrix.FaceFrontOffset, matrix.FaceFrontScale, matrix.FaceFrontScale);
@@ -69,4 +69,5 @@
   }
   if (this.showRoomContours) {
     this.addGenerationContour(GenerationMethod.ROOM, 0.0, Contour.M(0, 0));
-  }
+  }
+
