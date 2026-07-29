@@ -1,0 +1,57 @@
+{
+  "tableName": "tab_LaundryMachineMapping",
+  "description": "Laundry machine mapping table",
+  "restrictionTypeId": "Public",
+  "groupName": "Appliance",
+  "columns": [
+    {
+      "name": "_id",
+      "type": "Integer",
+      "allowNull": false
+    },
+    {
+      "name": "in_Supplier",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_LaundryMachineId",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "ConstructionId",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "GraphicId",
+      "type": "Text",
+      "allowNull": true
+    }
+  ],
+  "rows": [
+    {
+      "data": [
+        {
+          "columnName": "in_Supplier",
+          "value": "GenericSupplier"
+        },
+        {
+          "columnName": "in_LaundryMachineId",
+          "value": "GenericMachine"
+        },
+        {
+          "columnName": "ConstructionId",
+          "value": "None"
+        },
+        {
+          "columnName": "GraphicId",
+          "value": "GenericLaundryMachine"
+        }
+      ]
+    }
+  ],
+  "dataSource": "Default",
+  "changedAt": "2025-11-07T11:31:29.5782186+00:00"
+}

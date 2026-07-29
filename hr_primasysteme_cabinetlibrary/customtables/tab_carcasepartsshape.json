@@ -1,0 +1,2926 @@
+{
+  "tableName": "tab_CarcasePartsShape",
+  "description": "Parts Shape (SvgPath)",
+  "restrictionTypeId": "Public",
+  "groupName": "CarcaseConstruction",
+  "columns": [
+    {
+      "name": "_id",
+      "type": "Integer",
+      "allowNull": false
+    },
+    {
+      "name": "in_Part",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_Fingergrip",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_AdditionalInfo01",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_AdditionalInfo02",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_AdditionalInfo03",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_AdditionalInfo04",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "Sequence",
+      "type": "Integer",
+      "allowNull": false
+    },
+    {
+      "name": "Description",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "SvgPath",
+      "type": "Text",
+      "allowNull": true,
+      "functionDefinition": "(m:parent):string"
+    },
+    {
+      "name": "ExtrudeDirection",
+      "type": "Text",
+      "allowNull": true
+    }
+  ],
+  "rows": [
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_Backwall"
+        },
+        {
+          "columnName": "in_Fingergrip",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo01",
+          "value": "SlopedCeiling"
+        },
+        {
+          "columnName": "in_AdditionalInfo02",
+          "value": "Construction01"
+        },
+        {
+          "columnName": "in_AdditionalInfo03",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo04",
+          "value": "All"
+        },
+        {
+          "columnName": "Sequence",
+          "value": "10"
+        },
+        {
+          "columnName": "Description",
+          "value": "StartPoint (BottomBack)"
+        },
+        {
+          "columnName": "SvgPath",
+          "value": "'M 0,0'"
+        },
+        {
+          "columnName": "ExtrudeDirection",
+          "value": "x"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_Backwall"
+        },
+        {
+          "columnName": "in_Fingergrip",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo01",
+          "value": "SlopedCeiling"
+        },
+        {
+          "columnName": "in_AdditionalInfo02",
+          "value": "Construction01"
+        },
+        {
+          "columnName": "in_AdditionalInfo03",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo04",
+          "value": "All"
+        },
+        {
+          "columnName": "Sequence",
+          "value": "20"
+        },
+        {
+          "columnName": "Description",
+          "value": "Move to front (thickness)"
+        },
+        {
+          "columnName": "SvgPath",
+          "value": "'l ' + m.mod_Depth + ',0'"
+        },
+        {
+          "columnName": "ExtrudeDirection",
+          "value": "x"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_Backwall"
+        },
+        {
+          "columnName": "in_Fingergrip",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo01",
+          "value": "SlopedCeiling"
+        },
+        {
+          "columnName": "in_AdditionalInfo02",
+          "value": "Construction01"
+        },
+        {
+          "columnName": "in_AdditionalInfo03",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo04",
+          "value": "All"
+        },
+        {
+          "columnName": "Sequence",
+          "value": "30"
+        },
+        {
+          "columnName": "Description",
+          "value": "Move up (lower point of the angle)"
+        },
+        {
+          "columnName": "SvgPath",
+          "value": "'l 0,' + (m.mod_Height - GlobalFunc.calc_pythagoreanTheorem(m.mod_SlopeAngle / 2, 0, m.mod_Depth, 0)[1]) "
+        },
+        {
+          "columnName": "ExtrudeDirection",
+          "value": "x"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_Backwall"
+        },
+        {
+          "columnName": "in_Fingergrip",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo01",
+          "value": "SlopedCeiling"
+        },
+        {
+          "columnName": "in_AdditionalInfo02",
+          "value": "Construction01"
+        },
+        {
+          "columnName": "in_AdditionalInfo03",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo04",
+          "value": "All"
+        },
+        {
+          "columnName": "Sequence",
+          "value": "40"
+        },
+        {
+          "columnName": "Description",
+          "value": "Move up and right (angled line)"
+        },
+        {
+          "columnName": "SvgPath",
+          "value": "'l -' + m.mod_Depth + ',' + (GlobalFunc.calc_pythagoreanTheorem(m.mod_SlopeAngle / 2, 0, m.mod_Depth, 0)[1])"
+        },
+        {
+          "columnName": "ExtrudeDirection",
+          "value": "x"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_Backwall"
+        },
+        {
+          "columnName": "in_Fingergrip",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo01",
+          "value": "SlopedCeiling"
+        },
+        {
+          "columnName": "in_AdditionalInfo02",
+          "value": "Construction01"
+        },
+        {
+          "columnName": "in_AdditionalInfo03",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo04",
+          "value": "All"
+        },
+        {
+          "columnName": "Sequence",
+          "value": "50"
+        },
+        {
+          "columnName": "Description",
+          "value": "Close contour"
+        },
+        {
+          "columnName": "SvgPath",
+          "value": "'z'"
+        },
+        {
+          "columnName": "ExtrudeDirection",
+          "value": "x"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_SlopedCeilingShelftopHor"
+        },
+        {
+          "columnName": "in_Fingergrip",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo01",
+          "value": "SlopedCeiling"
+        },
+        {
+          "columnName": "in_AdditionalInfo02",
+          "value": "Construction01"
+        },
+        {
+          "columnName": "in_AdditionalInfo03",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo04",
+          "value": "All"
+        },
+        {
+          "columnName": "Sequence",
+          "value": "10"
+        },
+        {
+          "columnName": "Description",
+          "value": "StartPoint (TopBack - Top of angled line)"
+        },
+        {
+          "columnName": "SvgPath",
+          "value": "'M 0,' + m.mod_Height"
+        },
+        {
+          "columnName": "ExtrudeDirection",
+          "value": "x"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_SlopedCeilingShelftopHor"
+        },
+        {
+          "columnName": "in_Fingergrip",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo01",
+          "value": "SlopedCeiling"
+        },
+        {
+          "columnName": "in_AdditionalInfo02",
+          "value": "Construction01"
+        },
+        {
+          "columnName": "in_AdditionalInfo03",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo04",
+          "value": "All"
+        },
+        {
+          "columnName": "Sequence",
+          "value": "20"
+        },
+        {
+          "columnName": "Description",
+          "value": "Move to front (depth)"
+        },
+        {
+          "columnName": "SvgPath",
+          "value": "'l ' + m.mod_Depth + ',0'"
+        },
+        {
+          "columnName": "ExtrudeDirection",
+          "value": "x"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_SlopedCeilingShelftopHor"
+        },
+        {
+          "columnName": "in_Fingergrip",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo01",
+          "value": "SlopedCeiling"
+        },
+        {
+          "columnName": "in_AdditionalInfo02",
+          "value": "Construction01"
+        },
+        {
+          "columnName": "in_AdditionalInfo03",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo04",
+          "value": "All"
+        },
+        {
+          "columnName": "Sequence",
+          "value": "30"
+        },
+        {
+          "columnName": "Description",
+          "value": "Move down (thickness)"
+        },
+        {
+          "columnName": "SvgPath",
+          "value": "'l 0,-' + m.mod_Height"
+        },
+        {
+          "columnName": "ExtrudeDirection",
+          "value": "x"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_SlopedCeilingShelftopHor"
+        },
+        {
+          "columnName": "in_Fingergrip",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo01",
+          "value": "SlopedCeiling"
+        },
+        {
+          "columnName": "in_AdditionalInfo02",
+          "value": "Construction01"
+        },
+        {
+          "columnName": "in_AdditionalInfo03",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo04",
+          "value": "All"
+        },
+        {
+          "columnName": "Sequence",
+          "value": "40"
+        },
+        {
+          "columnName": "Description",
+          "value": "Move back (Bottom of Angled line)"
+        },
+        {
+          "columnName": "SvgPath",
+          "value": "'l -' + (m.mod_Depth - (GlobalFunc.calc_pythagoreanTheorem((270 - m.mod_SlopeAngle) / 2, 0, m.mod_Height, 0)[1])) + ',0'"
+        },
+        {
+          "columnName": "ExtrudeDirection",
+          "value": "x"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_SlopedCeilingShelftopHor"
+        },
+        {
+          "columnName": "in_Fingergrip",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo01",
+          "value": "SlopedCeiling"
+        },
+        {
+          "columnName": "in_AdditionalInfo02",
+          "value": "Construction01"
+        },
+        {
+          "columnName": "in_AdditionalInfo03",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo04",
+          "value": "All"
+        },
+        {
+          "columnName": "Sequence",
+          "value": "50"
+        },
+        {
+          "columnName": "Description",
+          "value": "Close contour (Angled line)"
+        },
+        {
+          "columnName": "SvgPath",
+          "value": "'z'"
+        },
+        {
+          "columnName": "ExtrudeDirection",
+          "value": "x"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_SlopedCeilingShelftopAngle"
+        },
+        {
+          "columnName": "in_Fingergrip",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo01",
+          "value": "SlopedCeiling"
+        },
+        {
+          "columnName": "in_AdditionalInfo02",
+          "value": "Construction01"
+        },
+        {
+          "columnName": "in_AdditionalInfo03",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo04",
+          "value": "All"
+        },
+        {
+          "columnName": "Sequence",
+          "value": "10"
+        },
+        {
+          "columnName": "Description",
+          "value": "StartPoint (BottomBack - TopRight of angled line on Bottom)"
+        },
+        {
+          "columnName": "SvgPath",
+          "value": "'M 0,0'"
+        },
+        {
+          "columnName": "ExtrudeDirection",
+          "value": "x"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_SlopedCeilingShelftopAngle"
+        },
+        {
+          "columnName": "in_Fingergrip",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo01",
+          "value": "SlopedCeiling"
+        },
+        {
+          "columnName": "in_AdditionalInfo02",
+          "value": "Construction01"
+        },
+        {
+          "columnName": "in_AdditionalInfo03",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo04",
+          "value": "All"
+        },
+        {
+          "columnName": "Sequence",
+          "value": "20"
+        },
+        {
+          "columnName": "Description",
+          "value": "Move to Front and Down (BottomLeft of angled line on Bottom)"
+        },
+        {
+          "columnName": "SvgPath",
+          "value": "'l ' + m.mod_Height + ',-' + (GlobalFunc.calc_pythagoreanTheorem(m.mod_SlopeAngle / 2, 0, m.mod_Height, 0)[1])"
+        },
+        {
+          "columnName": "ExtrudeDirection",
+          "value": "x"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_SlopedCeilingShelftopAngle"
+        },
+        {
+          "columnName": "in_Fingergrip",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo01",
+          "value": "SlopedCeiling"
+        },
+        {
+          "columnName": "in_AdditionalInfo02",
+          "value": "Construction01"
+        },
+        {
+          "columnName": "in_AdditionalInfo03",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo04",
+          "value": "All"
+        },
+        {
+          "columnName": "Sequence",
+          "value": "30"
+        },
+        {
+          "columnName": "Description",
+          "value": "Move Front and Up (BottomLeft of angled line on Top)"
+        },
+        {
+          "columnName": "SvgPath",
+          "value": "'l ' + (m.mod_CarcaseDepth - m.mod_TopDepth - m.mod_Height + (GlobalFunc.calc_pythagoreanTheorem((270 - m.mod_SlopeAngle) / 2, 0, m.mod_Height, 0)[1])) + ',' + (m.mod_CarcaseHeight - m.mod_BackHeight - m.mod_Height + (GlobalFunc.calc_pythagoreanTheorem(m.mod_SlopeAngle / 2, 0, m.mod_Height, 0)[1]))"
+        },
+        {
+          "columnName": "ExtrudeDirection",
+          "value": "x"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_SlopedCeilingShelftopAngle"
+        },
+        {
+          "columnName": "in_Fingergrip",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo01",
+          "value": "SlopedCeiling"
+        },
+        {
+          "columnName": "in_AdditionalInfo02",
+          "value": "Construction01"
+        },
+        {
+          "columnName": "in_AdditionalInfo03",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo04",
+          "value": "All"
+        },
+        {
+          "columnName": "Sequence",
+          "value": "40"
+        },
+        {
+          "columnName": "Description",
+          "value": "Move back and Up (TopRight of angled line on Top)"
+        },
+        {
+          "columnName": "SvgPath",
+          "value": "'l -' + (GlobalFunc.calc_pythagoreanTheorem((270 - m.mod_SlopeAngle) / 2, 0, m.mod_Height, 0)[1]) + ',' + m.mod_Height"
+        },
+        {
+          "columnName": "ExtrudeDirection",
+          "value": "x"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_SlopedCeilingShelftopAngle"
+        },
+        {
+          "columnName": "in_Fingergrip",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo01",
+          "value": "SlopedCeiling"
+        },
+        {
+          "columnName": "in_AdditionalInfo02",
+          "value": "Construction01"
+        },
+        {
+          "columnName": "in_AdditionalInfo03",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo04",
+          "value": "All"
+        },
+        {
+          "columnName": "Sequence",
+          "value": "50"
+        },
+        {
+          "columnName": "Description",
+          "value": "Close contour (Move down and Right)"
+        },
+        {
+          "columnName": "SvgPath",
+          "value": "'z'"
+        },
+        {
+          "columnName": "ExtrudeDirection",
+          "value": "x"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_SidePanel"
+        },
+        {
+          "columnName": "in_Fingergrip",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo01",
+          "value": "SlopedCeiling"
+        },
+        {
+          "columnName": "in_AdditionalInfo02",
+          "value": "Construction01"
+        },
+        {
+          "columnName": "in_AdditionalInfo03",
+          "value": "SideCShelf"
+        },
+        {
+          "columnName": "in_AdditionalInfo04",
+          "value": "All"
+        },
+        {
+          "columnName": "Sequence",
+          "value": "10000"
+        },
+        {
+          "columnName": "Description",
+          "value": "StartPoint (BottomBack)"
+        },
+        {
+          "columnName": "SvgPath",
+          "value": "'M 0,0'"
+        },
+        {
+          "columnName": "ExtrudeDirection",
+          "value": "x"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_SidePanel"
+        },
+        {
+          "columnName": "in_Fingergrip",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo01",
+          "value": "SlopedCeiling"
+        },
+        {
+          "columnName": "in_AdditionalInfo02",
+          "value": "Construction01"
+        },
+        {
+          "columnName": "in_AdditionalInfo03",
+          "value": "SideCShelf"
+        },
+        {
+          "columnName": "in_AdditionalInfo04",
+          "value": "All"
+        },
+        {
+          "columnName": "Sequence",
+          "value": "20000"
+        },
+        {
+          "columnName": "Description",
+          "value": "Move to front (depth)"
+        },
+        {
+          "columnName": "SvgPath",
+          "value": "'l ' + m.mod_Depth + ',0'"
+        },
+        {
+          "columnName": "ExtrudeDirection",
+          "value": "x"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_SidePanel"
+        },
+        {
+          "columnName": "in_Fingergrip",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo01",
+          "value": "SlopedCeiling"
+        },
+        {
+          "columnName": "in_AdditionalInfo02",
+          "value": "Construction01"
+        },
+        {
+          "columnName": "in_AdditionalInfo03",
+          "value": "SideCShelf"
+        },
+        {
+          "columnName": "in_AdditionalInfo04",
+          "value": "All"
+        },
+        {
+          "columnName": "Sequence",
+          "value": "30000"
+        },
+        {
+          "columnName": "Description",
+          "value": "Move to up (height)"
+        },
+        {
+          "columnName": "SvgPath",
+          "value": "'V' + m.mod_Height"
+        },
+        {
+          "columnName": "ExtrudeDirection",
+          "value": "x"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_SidePanel"
+        },
+        {
+          "columnName": "in_Fingergrip",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo01",
+          "value": "SlopedCeiling"
+        },
+        {
+          "columnName": "in_AdditionalInfo02",
+          "value": "Construction01"
+        },
+        {
+          "columnName": "in_AdditionalInfo03",
+          "value": "SideCShelf"
+        },
+        {
+          "columnName": "in_AdditionalInfo04",
+          "value": "All"
+        },
+        {
+          "columnName": "Sequence",
+          "value": "40000"
+        },
+        {
+          "columnName": "Description",
+          "value": "Move back (Top depth)"
+        },
+        {
+          "columnName": "SvgPath",
+          "value": "'H' + (m.mod_Depth - m.mod_TopDepth)"
+        },
+        {
+          "columnName": "ExtrudeDirection",
+          "value": "x"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_SidePanel"
+        },
+        {
+          "columnName": "in_Fingergrip",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo01",
+          "value": "SlopedCeiling"
+        },
+        {
+          "columnName": "in_AdditionalInfo02",
+          "value": "Construction01"
+        },
+        {
+          "columnName": "in_AdditionalInfo03",
+          "value": "SideCShelf"
+        },
+        {
+          "columnName": "in_AdditionalInfo04",
+          "value": "All"
+        },
+        {
+          "columnName": "Sequence",
+          "value": "50000"
+        },
+        {
+          "columnName": "Description",
+          "value": "Move down and back (to the vertice)"
+        },
+        {
+          "columnName": "SvgPath",
+          "value": "'l -' + (m.mod_Depth - m.mod_TopDepth) + ',-' + (m.mod_Height - m.mod_BackHeight)"
+        },
+        {
+          "columnName": "ExtrudeDirection",
+          "value": "x"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_SidePanel"
+        },
+        {
+          "columnName": "in_Fingergrip",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo01",
+          "value": "SlopedCeiling"
+        },
+        {
+          "columnName": "in_AdditionalInfo02",
+          "value": "Construction01"
+        },
+        {
+          "columnName": "in_AdditionalInfo03",
+          "value": "SideCShelf"
+        },
+        {
+          "columnName": "in_AdditionalInfo04",
+          "value": "All"
+        },
+        {
+          "columnName": "Sequence",
+          "value": "60000"
+        },
+        {
+          "columnName": "Description",
+          "value": "Close contour (move down)"
+        },
+        {
+          "columnName": "SvgPath",
+          "value": "'z'"
+        },
+        {
+          "columnName": "ExtrudeDirection",
+          "value": "x"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_SidePanel"
+        },
+        {
+          "columnName": "in_Fingergrip",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo01",
+          "value": "SlopedCeiling"
+        },
+        {
+          "columnName": "in_AdditionalInfo02",
+          "value": "Construction01.1"
+        },
+        {
+          "columnName": "in_AdditionalInfo03",
+          "value": "ShelfCSide"
+        },
+        {
+          "columnName": "in_AdditionalInfo04",
+          "value": "All"
+        },
+        {
+          "columnName": "Sequence",
+          "value": "1000"
+        },
+        {
+          "columnName": "Description",
+          "value": "StartPoint (BottomBack)"
+        },
+        {
+          "columnName": "SvgPath",
+          "value": "'M 0,0'"
+        },
+        {
+          "columnName": "ExtrudeDirection",
+          "value": "x"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_SidePanel"
+        },
+        {
+          "columnName": "in_Fingergrip",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo01",
+          "value": "SlopedCeiling"
+        },
+        {
+          "columnName": "in_AdditionalInfo02",
+          "value": "Construction01.1"
+        },
+        {
+          "columnName": "in_AdditionalInfo03",
+          "value": "ShelfCSide"
+        },
+        {
+          "columnName": "in_AdditionalInfo04",
+          "value": "All"
+        },
+        {
+          "columnName": "Sequence",
+          "value": "2000"
+        },
+        {
+          "columnName": "Description",
+          "value": "Move to front (depth)"
+        },
+        {
+          "columnName": "SvgPath",
+          "value": "'l ' + m.mod_Depth + ',0'"
+        },
+        {
+          "columnName": "ExtrudeDirection",
+          "value": "x"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_SidePanel"
+        },
+        {
+          "columnName": "in_Fingergrip",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo01",
+          "value": "SlopedCeiling"
+        },
+        {
+          "columnName": "in_AdditionalInfo02",
+          "value": "Construction01.1"
+        },
+        {
+          "columnName": "in_AdditionalInfo03",
+          "value": "ShelfCSide"
+        },
+        {
+          "columnName": "in_AdditionalInfo04",
+          "value": "All"
+        },
+        {
+          "columnName": "Sequence",
+          "value": "3000"
+        },
+        {
+          "columnName": "Description",
+          "value": "Move to up (height)"
+        },
+        {
+          "columnName": "SvgPath",
+          "value": "'V' + m.mod_Height"
+        },
+        {
+          "columnName": "ExtrudeDirection",
+          "value": "x"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_SidePanel"
+        },
+        {
+          "columnName": "in_Fingergrip",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo01",
+          "value": "SlopedCeiling"
+        },
+        {
+          "columnName": "in_AdditionalInfo02",
+          "value": "Construction01.1"
+        },
+        {
+          "columnName": "in_AdditionalInfo03",
+          "value": "ShelfCSide"
+        },
+        {
+          "columnName": "in_AdditionalInfo04",
+          "value": "All"
+        },
+        {
+          "columnName": "Sequence",
+          "value": "4000"
+        },
+        {
+          "columnName": "Description",
+          "value": "Move back (Top depth)"
+        },
+        {
+          "columnName": "SvgPath",
+          "value": "'H' + (m.mod_Depth - (m.mod_TopDepth - m.g.basic_SidepanelOffsetFront - (GlobalFunc.calc_pythagoreanTheorem((270 - m.mod_SlopeAngle) / 2, 0, m.mod_ShelftopThk, 0)[1])))"
+        },
+        {
+          "columnName": "ExtrudeDirection",
+          "value": "x"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_SidePanel"
+        },
+        {
+          "columnName": "in_Fingergrip",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo01",
+          "value": "SlopedCeiling"
+        },
+        {
+          "columnName": "in_AdditionalInfo02",
+          "value": "Construction01.1"
+        },
+        {
+          "columnName": "in_AdditionalInfo03",
+          "value": "ShelfCSide"
+        },
+        {
+          "columnName": "in_AdditionalInfo04",
+          "value": "All"
+        },
+        {
+          "columnName": "Sequence",
+          "value": "5000"
+        },
+        {
+          "columnName": "Description",
+          "value": "Move down and back (to the vertice)"
+        },
+        {
+          "columnName": "SvgPath",
+          "value": "'l -' + (m.mod_Depth - (m.mod_TopDepth - m.g.basic_SidepanelOffsetFront - (GlobalFunc.calc_pythagoreanTheorem((270 - m.mod_SlopeAngle) / 2, 0, m.mod_ShelftopThk, 0)[1]))) + ',-' + ((GlobalFunc.calc_pythagoreanTheorem(m.mod_SlopeAngle - 90, (m.mod_Depth - (m.mod_TopDepth - m.g.basic_SidepanelOffsetFront - (GlobalFunc.calc_pythagoreanTheorem((270 - m.mod_SlopeAngle) / 2, 0, m.mod_ShelftopThk, 0)[1]))), 0, 0)[2]))"
+        },
+        {
+          "columnName": "ExtrudeDirection",
+          "value": "x"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_SidePanel"
+        },
+        {
+          "columnName": "in_Fingergrip",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo01",
+          "value": "SlopedCeiling"
+        },
+        {
+          "columnName": "in_AdditionalInfo02",
+          "value": "Construction01.1"
+        },
+        {
+          "columnName": "in_AdditionalInfo03",
+          "value": "ShelfCSide"
+        },
+        {
+          "columnName": "in_AdditionalInfo04",
+          "value": "All"
+        },
+        {
+          "columnName": "Sequence",
+          "value": "6000"
+        },
+        {
+          "columnName": "Description",
+          "value": "Close contour (move down)"
+        },
+        {
+          "columnName": "SvgPath",
+          "value": "'z'"
+        },
+        {
+          "columnName": "ExtrudeDirection",
+          "value": "x"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_SidePanel"
+        },
+        {
+          "columnName": "in_Fingergrip",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo01",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo02",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo03",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo04",
+          "value": "All"
+        },
+        {
+          "columnName": "Sequence",
+          "value": "100"
+        },
+        {
+          "columnName": "Description",
+          "value": "StartPoint (Bottom Back)"
+        },
+        {
+          "columnName": "SvgPath",
+          "value": "'M0 0'"
+        },
+        {
+          "columnName": "ExtrudeDirection",
+          "value": "x"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_SidePanel"
+        },
+        {
+          "columnName": "in_Fingergrip",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo01",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo02",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo03",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo04",
+          "value": "All"
+        },
+        {
+          "columnName": "Sequence",
+          "value": "200"
+        },
+        {
+          "columnName": "Description",
+          "value": "Move to front (depth)"
+        },
+        {
+          "columnName": "SvgPath",
+          "value": "'H' + m.mod_Depth"
+        },
+        {
+          "columnName": "ExtrudeDirection",
+          "value": "x"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_SidePanel"
+        },
+        {
+          "columnName": "in_Fingergrip",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo01",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo02",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo03",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo04",
+          "value": "All"
+        },
+        {
+          "columnName": "Sequence",
+          "value": "300"
+        },
+        {
+          "columnName": "Description",
+          "value": "Move up (height)"
+        },
+        {
+          "columnName": "SvgPath",
+          "value": "'V' + m.mod_Height"
+        },
+        {
+          "columnName": "ExtrudeDirection",
+          "value": "x"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_SidePanel"
+        },
+        {
+          "columnName": "in_Fingergrip",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo01",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo02",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo03",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo04",
+          "value": "All"
+        },
+        {
+          "columnName": "Sequence",
+          "value": "400"
+        },
+        {
+          "columnName": "Description",
+          "value": "Move back (depth)"
+        },
+        {
+          "columnName": "SvgPath",
+          "value": "'H0'"
+        },
+        {
+          "columnName": "ExtrudeDirection",
+          "value": "x"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_SidePanel"
+        },
+        {
+          "columnName": "in_Fingergrip",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo01",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo02",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo03",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo04",
+          "value": "All"
+        },
+        {
+          "columnName": "Sequence",
+          "value": "500"
+        },
+        {
+          "columnName": "Description",
+          "value": "Close contour (Down)"
+        },
+        {
+          "columnName": "SvgPath",
+          "value": "'Z'"
+        },
+        {
+          "columnName": "ExtrudeDirection",
+          "value": "x"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_SidePanel"
+        },
+        {
+          "columnName": "in_Fingergrip",
+          "value": "Top"
+        },
+        {
+          "columnName": "in_AdditionalInfo01",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo02",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo03",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo04",
+          "value": "All"
+        },
+        {
+          "columnName": "Sequence",
+          "value": "290"
+        },
+        {
+          "columnName": "Description",
+          "value": "Fingergrip top"
+        },
+        {
+          "columnName": "SvgPath",
+          "value": "' V' + (m.mod_Height - m.mod_FingergripType_matrix.LShapeHeight!) + ' h-' + m.mod_FingergripType_matrix.LShapeDepth!"
+        },
+        {
+          "columnName": "ExtrudeDirection",
+          "value": "x"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_SidePanel"
+        },
+        {
+          "columnName": "in_Fingergrip",
+          "value": "Middle1"
+        },
+        {
+          "columnName": "in_AdditionalInfo01",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo02",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo03",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo04",
+          "value": "All"
+        },
+        {
+          "columnName": "Sequence",
+          "value": "210"
+        },
+        {
+          "columnName": "Description",
+          "value": "First Fingergrip in middle"
+        },
+        {
+          "columnName": "SvgPath",
+          "value": "'V' + (-(m.mod_FingergripType_matrix.CShapeHeight! / 2) + (m.mod_FingergripPos1 - m.mod_Originpos[1])) + ' h-' + m.mod_FingergripType_matrix.CShapeDepth! + ' v' + m.mod_FingergripType_matrix.CShapeHeight! + ' h' + m.mod_FingergripType_matrix.CShapeDepth!"
+        },
+        {
+          "columnName": "ExtrudeDirection",
+          "value": "x"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_SidePanel"
+        },
+        {
+          "columnName": "in_Fingergrip",
+          "value": "Middle2"
+        },
+        {
+          "columnName": "in_AdditionalInfo01",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo02",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo03",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo04",
+          "value": "All"
+        },
+        {
+          "columnName": "Sequence",
+          "value": "220"
+        },
+        {
+          "columnName": "Description",
+          "value": "Second Fingergrip in middle"
+        },
+        {
+          "columnName": "SvgPath",
+          "value": "'V' + (-(m.mod_FingergripType_matrix.CShapeHeight! / 2) + (m.mod_FingergripPos2 - m.mod_Originpos[1])) + ' h-' + m.mod_FingergripType_matrix.CShapeDepth! + ' v' + m.mod_FingergripType_matrix.CShapeHeight! + ' h' + m.mod_FingergripType_matrix.CShapeDepth!"
+        },
+        {
+          "columnName": "ExtrudeDirection",
+          "value": "x"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_SidePanel"
+        },
+        {
+          "columnName": "in_Fingergrip",
+          "value": "Middle3"
+        },
+        {
+          "columnName": "in_AdditionalInfo01",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo02",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo03",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo04",
+          "value": "All"
+        },
+        {
+          "columnName": "Sequence",
+          "value": "230"
+        },
+        {
+          "columnName": "Description",
+          "value": "Third Fingergrip in middle"
+        },
+        {
+          "columnName": "SvgPath",
+          "value": "'V' + (-(m.mod_FingergripType_matrix.CShapeHeight! / 2) + (m.mod_FingergripPos3 - m.mod_Originpos[1])) + ' h-' + m.mod_FingergripType_matrix.CShapeDepth! + ' v' + m.mod_FingergripType_matrix.CShapeHeight! + ' h' + m.mod_FingergripType_matrix.CShapeDepth!"
+        },
+        {
+          "columnName": "ExtrudeDirection",
+          "value": "x"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_SidePanel"
+        },
+        {
+          "columnName": "in_Fingergrip",
+          "value": "Middle4"
+        },
+        {
+          "columnName": "in_AdditionalInfo01",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo02",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo03",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo04",
+          "value": "All"
+        },
+        {
+          "columnName": "Sequence",
+          "value": "240"
+        },
+        {
+          "columnName": "Description",
+          "value": "Fourth Fingergrip in middle"
+        },
+        {
+          "columnName": "SvgPath",
+          "value": "'V' + (-(m.mod_FingergripType_matrix.CShapeHeight! / 2) + (m.mod_FingergripPos4 - m.mod_Originpos[1])) + ' h-' + m.mod_FingergripType_matrix.CShapeDepth! + ' v' + m.mod_FingergripType_matrix.CShapeHeight! + ' h' + m.mod_FingergripType_matrix.CShapeDepth!"
+        },
+        {
+          "columnName": "ExtrudeDirection",
+          "value": "x"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_SidePanel"
+        },
+        {
+          "columnName": "in_Fingergrip",
+          "value": "Middle5"
+        },
+        {
+          "columnName": "in_AdditionalInfo01",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo02",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo03",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo04",
+          "value": "All"
+        },
+        {
+          "columnName": "Sequence",
+          "value": "250"
+        },
+        {
+          "columnName": "Description",
+          "value": "Fifth Fingergrip in middle"
+        },
+        {
+          "columnName": "SvgPath",
+          "value": "'V' + (-(m.mod_FingergripType_matrix.CShapeHeight! / 2) + (m.mod_FingergripPos5 - m.mod_Originpos[1])) + ' h-' + m.mod_FingergripType_matrix.CShapeDepth! + ' v' + m.mod_FingergripType_matrix.CShapeHeight! + ' h' + m.mod_FingergripType_matrix.CShapeDepth!"
+        },
+        {
+          "columnName": "ExtrudeDirection",
+          "value": "x"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_SidePanel"
+        },
+        {
+          "columnName": "in_Fingergrip",
+          "value": "Middle1"
+        },
+        {
+          "columnName": "in_AdditionalInfo01",
+          "value": "SlopedCeiling"
+        },
+        {
+          "columnName": "in_AdditionalInfo02",
+          "value": "Construction01"
+        },
+        {
+          "columnName": "in_AdditionalInfo03",
+          "value": "SideCShelf"
+        },
+        {
+          "columnName": "in_AdditionalInfo04",
+          "value": "All"
+        },
+        {
+          "columnName": "Sequence",
+          "value": "21000"
+        },
+        {
+          "columnName": "Description",
+          "value": "First Fingergrip in middle"
+        },
+        {
+          "columnName": "SvgPath",
+          "value": "'V' + (-(m.mod_FingergripType_matrix.CShapeHeight! / 2) + (m.mod_FingergripPos1 - m.mod_Originpos[1])) + ' h-' + m.mod_FingergripType_matrix.CShapeDepth! + ' v' + m.mod_FingergripType_matrix.CShapeHeight! + ' h' + m.mod_FingergripType_matrix.CShapeDepth!"
+        },
+        {
+          "columnName": "ExtrudeDirection",
+          "value": "x"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_SidePanel"
+        },
+        {
+          "columnName": "in_Fingergrip",
+          "value": "Middle2"
+        },
+        {
+          "columnName": "in_AdditionalInfo01",
+          "value": "SlopedCeiling"
+        },
+        {
+          "columnName": "in_AdditionalInfo02",
+          "value": "Construction01"
+        },
+        {
+          "columnName": "in_AdditionalInfo03",
+          "value": "SideCShelf"
+        },
+        {
+          "columnName": "in_AdditionalInfo04",
+          "value": "All"
+        },
+        {
+          "columnName": "Sequence",
+          "value": "22000"
+        },
+        {
+          "columnName": "Description",
+          "value": "Second Fingergrip in middle"
+        },
+        {
+          "columnName": "SvgPath",
+          "value": "'V' + (-(m.mod_FingergripType_matrix.CShapeHeight! / 2) + (m.mod_FingergripPos2 - m.mod_Originpos[1])) + ' h-' + m.mod_FingergripType_matrix.CShapeDepth! + ' v' + m.mod_FingergripType_matrix.CShapeHeight! + ' h' + m.mod_FingergripType_matrix.CShapeDepth!"
+        },
+        {
+          "columnName": "ExtrudeDirection",
+          "value": "x"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_SidePanel"
+        },
+        {
+          "columnName": "in_Fingergrip",
+          "value": "Middle3"
+        },
+        {
+          "columnName": "in_AdditionalInfo01",
+          "value": "SlopedCeiling"
+        },
+        {
+          "columnName": "in_AdditionalInfo02",
+          "value": "Construction01"
+        },
+        {
+          "columnName": "in_AdditionalInfo03",
+          "value": "SideCShelf"
+        },
+        {
+          "columnName": "in_AdditionalInfo04",
+          "value": "All"
+        },
+        {
+          "columnName": "Sequence",
+          "value": "23000"
+        },
+        {
+          "columnName": "Description",
+          "value": "Third Fingergrip in middle"
+        },
+        {
+          "columnName": "SvgPath",
+          "value": "'V' + (-(m.mod_FingergripType_matrix.CShapeHeight! / 2) + (m.mod_FingergripPos3 - m.mod_Originpos[1])) + ' h-' + m.mod_FingergripType_matrix.CShapeDepth! + ' v' + m.mod_FingergripType_matrix.CShapeHeight! + ' h' + m.mod_FingergripType_matrix.CShapeDepth!"
+        },
+        {
+          "columnName": "ExtrudeDirection",
+          "value": "x"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_SidePanel"
+        },
+        {
+          "columnName": "in_Fingergrip",
+          "value": "Middle4"
+        },
+        {
+          "columnName": "in_AdditionalInfo01",
+          "value": "SlopedCeiling"
+        },
+        {
+          "columnName": "in_AdditionalInfo02",
+          "value": "Construction01"
+        },
+        {
+          "columnName": "in_AdditionalInfo03",
+          "value": "SideCShelf"
+        },
+        {
+          "columnName": "in_AdditionalInfo04",
+          "value": "All"
+        },
+        {
+          "columnName": "Sequence",
+          "value": "24000"
+        },
+        {
+          "columnName": "Description",
+          "value": "Fourth Fingergrip in middle"
+        },
+        {
+          "columnName": "SvgPath",
+          "value": "'V' + (-(m.mod_FingergripType_matrix.CShapeHeight! / 2) + (m.mod_FingergripPos4 - m.mod_Originpos[1])) + ' h-' + m.mod_FingergripType_matrix.CShapeDepth! + ' v' + m.mod_FingergripType_matrix.CShapeHeight! + ' h' + m.mod_FingergripType_matrix.CShapeDepth!"
+        },
+        {
+          "columnName": "ExtrudeDirection",
+          "value": "x"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_SidePanel"
+        },
+        {
+          "columnName": "in_Fingergrip",
+          "value": "Middle5"
+        },
+        {
+          "columnName": "in_AdditionalInfo01",
+          "value": "SlopedCeiling"
+        },
+        {
+          "columnName": "in_AdditionalInfo02",
+          "value": "Construction01"
+        },
+        {
+          "columnName": "in_AdditionalInfo03",
+          "value": "SideCShelf"
+        },
+        {
+          "columnName": "in_AdditionalInfo04",
+          "value": "All"
+        },
+        {
+          "columnName": "Sequence",
+          "value": "25000"
+        },
+        {
+          "columnName": "Description",
+          "value": "Fifth Fingergrip in middle"
+        },
+        {
+          "columnName": "SvgPath",
+          "value": "'V' + (-(m.mod_FingergripType_matrix.CShapeHeight! / 2) + (m.mod_FingergripPos5 - m.mod_Originpos[1])) + ' h-' + m.mod_FingergripType_matrix.CShapeDepth! + ' v' + m.mod_FingergripType_matrix.CShapeHeight! + ' h' + m.mod_FingergripType_matrix.CShapeDepth!"
+        },
+        {
+          "columnName": "ExtrudeDirection",
+          "value": "x"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_SidePanel"
+        },
+        {
+          "columnName": "in_Fingergrip",
+          "value": "Top"
+        },
+        {
+          "columnName": "in_AdditionalInfo01",
+          "value": "SlopedCeiling"
+        },
+        {
+          "columnName": "in_AdditionalInfo02",
+          "value": "Construction01"
+        },
+        {
+          "columnName": "in_AdditionalInfo03",
+          "value": "SideCShelf"
+        },
+        {
+          "columnName": "in_AdditionalInfo04",
+          "value": "All"
+        },
+        {
+          "columnName": "Sequence",
+          "value": "29000"
+        },
+        {
+          "columnName": "Description",
+          "value": "Fingergrip top"
+        },
+        {
+          "columnName": "SvgPath",
+          "value": "' V' + (m.mod_Height - m.mod_FingergripType_matrix.LShapeHeight!) + ' h-' + m.mod_FingergripType_matrix.LShapeDepth!"
+        },
+        {
+          "columnName": "ExtrudeDirection",
+          "value": "x"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_SidePanel"
+        },
+        {
+          "columnName": "in_Fingergrip",
+          "value": "Middle1"
+        },
+        {
+          "columnName": "in_AdditionalInfo01",
+          "value": "SlopedCeiling"
+        },
+        {
+          "columnName": "in_AdditionalInfo02",
+          "value": "Construction01.1"
+        },
+        {
+          "columnName": "in_AdditionalInfo03",
+          "value": "ShelfCSide"
+        },
+        {
+          "columnName": "in_AdditionalInfo04",
+          "value": "All"
+        },
+        {
+          "columnName": "Sequence",
+          "value": "2100"
+        },
+        {
+          "columnName": "Description",
+          "value": "First Fingergrip in middle"
+        },
+        {
+          "columnName": "SvgPath",
+          "value": "'V' + (-(m.mod_FingergripType_matrix.CShapeHeight! / 2) + (m.mod_FingergripPos1 - m.mod_Originpos[1])) + ' h-' + m.mod_FingergripType_matrix.CShapeDepth! + ' v' + m.mod_FingergripType_matrix.CShapeHeight! + ' h' + m.mod_FingergripType_matrix.CShapeDepth!"
+        },
+        {
+          "columnName": "ExtrudeDirection",
+          "value": "x"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_SidePanel"
+        },
+        {
+          "columnName": "in_Fingergrip",
+          "value": "Middle2"
+        },
+        {
+          "columnName": "in_AdditionalInfo01",
+          "value": "SlopedCeiling"
+        },
+        {
+          "columnName": "in_AdditionalInfo02",
+          "value": "Construction01.1"
+        },
+        {
+          "columnName": "in_AdditionalInfo03",
+          "value": "ShelfCSide"
+        },
+        {
+          "columnName": "in_AdditionalInfo04",
+          "value": "All"
+        },
+        {
+          "columnName": "Sequence",
+          "value": "2200"
+        },
+        {
+          "columnName": "Description",
+          "value": "Second Fingergrip in middle"
+        },
+        {
+          "columnName": "SvgPath",
+          "value": "'V' + (-(m.mod_FingergripType_matrix.CShapeHeight! / 2) + (m.mod_FingergripPos2 - m.mod_Originpos[1])) + ' h-' + m.mod_FingergripType_matrix.CShapeDepth! + ' v' + m.mod_FingergripType_matrix.CShapeHeight! + ' h' + m.mod_FingergripType_matrix.CShapeDepth!"
+        },
+        {
+          "columnName": "ExtrudeDirection",
+          "value": "x"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_SidePanel"
+        },
+        {
+          "columnName": "in_Fingergrip",
+          "value": "Middle3"
+        },
+        {
+          "columnName": "in_AdditionalInfo01",
+          "value": "SlopedCeiling"
+        },
+        {
+          "columnName": "in_AdditionalInfo02",
+          "value": "Construction01.1"
+        },
+        {
+          "columnName": "in_AdditionalInfo03",
+          "value": "ShelfCSide"
+        },
+        {
+          "columnName": "in_AdditionalInfo04",
+          "value": "All"
+        },
+        {
+          "columnName": "Sequence",
+          "value": "2300"
+        },
+        {
+          "columnName": "Description",
+          "value": "Third Fingergrip in middle"
+        },
+        {
+          "columnName": "SvgPath",
+          "value": "'V' + (-(m.mod_FingergripType_matrix.CShapeHeight! / 2) + (m.mod_FingergripPos3 - m.mod_Originpos[1])) + ' h-' + m.mod_FingergripType_matrix.CShapeDepth! + ' v' + m.mod_FingergripType_matrix.CShapeHeight! + ' h' + m.mod_FingergripType_matrix.CShapeDepth!"
+        },
+        {
+          "columnName": "ExtrudeDirection",
+          "value": "x"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_SidePanel"
+        },
+        {
+          "columnName": "in_Fingergrip",
+          "value": "Middle4"
+        },
+        {
+          "columnName": "in_AdditionalInfo01",
+          "value": "SlopedCeiling"
+        },
+        {
+          "columnName": "in_AdditionalInfo02",
+          "value": "Construction01.1"
+        },
+        {
+          "columnName": "in_AdditionalInfo03",
+          "value": "ShelfCSide"
+        },
+        {
+          "columnName": "in_AdditionalInfo04",
+          "value": "All"
+        },
+        {
+          "columnName": "Sequence",
+          "value": "2400"
+        },
+        {
+          "columnName": "Description",
+          "value": "Fourth Fingergrip in middle"
+        },
+        {
+          "columnName": "SvgPath",
+          "value": "'V' + (-(m.mod_FingergripType_matrix.CShapeHeight! / 2) + (m.mod_FingergripPos4 - m.mod_Originpos[1])) + ' h-' + m.mod_FingergripType_matrix.CShapeDepth! + ' v' + m.mod_FingergripType_matrix.CShapeHeight! + ' h' + m.mod_FingergripType_matrix.CShapeDepth!"
+        },
+        {
+          "columnName": "ExtrudeDirection",
+          "value": "x"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_SidePanel"
+        },
+        {
+          "columnName": "in_Fingergrip",
+          "value": "Middle5"
+        },
+        {
+          "columnName": "in_AdditionalInfo01",
+          "value": "SlopedCeiling"
+        },
+        {
+          "columnName": "in_AdditionalInfo02",
+          "value": "Construction01.1"
+        },
+        {
+          "columnName": "in_AdditionalInfo03",
+          "value": "ShelfCSide"
+        },
+        {
+          "columnName": "in_AdditionalInfo04",
+          "value": "All"
+        },
+        {
+          "columnName": "Sequence",
+          "value": "2500"
+        },
+        {
+          "columnName": "Description",
+          "value": "Fifth Fingergrip in middle"
+        },
+        {
+          "columnName": "SvgPath",
+          "value": "'V' + (-(m.mod_FingergripType_matrix.CShapeHeight! / 2) + (m.mod_FingergripPos5 - m.mod_Originpos[1])) + ' h-' + m.mod_FingergripType_matrix.CShapeDepth! + ' v' + m.mod_FingergripType_matrix.CShapeHeight! + ' h' + m.mod_FingergripType_matrix.CShapeDepth!"
+        },
+        {
+          "columnName": "ExtrudeDirection",
+          "value": "x"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_SidePanel"
+        },
+        {
+          "columnName": "in_Fingergrip",
+          "value": "Top"
+        },
+        {
+          "columnName": "in_AdditionalInfo01",
+          "value": "SlopedCeiling"
+        },
+        {
+          "columnName": "in_AdditionalInfo02",
+          "value": "Construction01.1"
+        },
+        {
+          "columnName": "in_AdditionalInfo03",
+          "value": "ShelfCSide"
+        },
+        {
+          "columnName": "in_AdditionalInfo04",
+          "value": "All"
+        },
+        {
+          "columnName": "Sequence",
+          "value": "2900"
+        },
+        {
+          "columnName": "Description",
+          "value": "Fingergrip top"
+        },
+        {
+          "columnName": "SvgPath",
+          "value": "' V' + (m.mod_Height - m.mod_FingergripType_matrix.LShapeHeight!) + ' h-' + m.mod_FingergripType_matrix.LShapeDepth!"
+        },
+        {
+          "columnName": "ExtrudeDirection",
+          "value": "x"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_Backwall"
+        },
+        {
+          "columnName": "in_Fingergrip",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo01",
+          "value": "SlopedCeiling"
+        },
+        {
+          "columnName": "in_AdditionalInfo02",
+          "value": "Construction01.1"
+        },
+        {
+          "columnName": "in_AdditionalInfo03",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo04",
+          "value": "All"
+        },
+        {
+          "columnName": "Sequence",
+          "value": "10"
+        },
+        {
+          "columnName": "Description",
+          "value": "StartPoint (BottomBack)"
+        },
+        {
+          "columnName": "SvgPath",
+          "value": "'M 0,0'"
+        },
+        {
+          "columnName": "ExtrudeDirection",
+          "value": "x"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_Backwall"
+        },
+        {
+          "columnName": "in_Fingergrip",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo01",
+          "value": "SlopedCeiling"
+        },
+        {
+          "columnName": "in_AdditionalInfo02",
+          "value": "Construction01.1"
+        },
+        {
+          "columnName": "in_AdditionalInfo03",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo04",
+          "value": "All"
+        },
+        {
+          "columnName": "Sequence",
+          "value": "20"
+        },
+        {
+          "columnName": "Description",
+          "value": "Move to front (thickness)"
+        },
+        {
+          "columnName": "SvgPath",
+          "value": "'l ' + m.mod_Depth + ',0'"
+        },
+        {
+          "columnName": "ExtrudeDirection",
+          "value": "x"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_Backwall"
+        },
+        {
+          "columnName": "in_Fingergrip",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo01",
+          "value": "SlopedCeiling"
+        },
+        {
+          "columnName": "in_AdditionalInfo02",
+          "value": "Construction01.1"
+        },
+        {
+          "columnName": "in_AdditionalInfo03",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo04",
+          "value": "All"
+        },
+        {
+          "columnName": "Sequence",
+          "value": "30"
+        },
+        {
+          "columnName": "Description",
+          "value": "Move up (lower point of the angle)"
+        },
+        {
+          "columnName": "SvgPath",
+          "value": "'l 0,' + (m.mod_Height - GlobalFunc.calc_pythagoreanTheorem(m.mod_SlopeAngle / 2, 0, m.mod_Depth, 0)[1]) "
+        },
+        {
+          "columnName": "ExtrudeDirection",
+          "value": "x"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_Backwall"
+        },
+        {
+          "columnName": "in_Fingergrip",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo01",
+          "value": "SlopedCeiling"
+        },
+        {
+          "columnName": "in_AdditionalInfo02",
+          "value": "Construction01.1"
+        },
+        {
+          "columnName": "in_AdditionalInfo03",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo04",
+          "value": "All"
+        },
+        {
+          "columnName": "Sequence",
+          "value": "40"
+        },
+        {
+          "columnName": "Description",
+          "value": "Move up and right (angled line)"
+        },
+        {
+          "columnName": "SvgPath",
+          "value": "'l -' + m.mod_Depth + ',' + (GlobalFunc.calc_pythagoreanTheorem(m.mod_SlopeAngle / 2, 0, m.mod_Depth, 0)[1])"
+        },
+        {
+          "columnName": "ExtrudeDirection",
+          "value": "x"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_Backwall"
+        },
+        {
+          "columnName": "in_Fingergrip",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo01",
+          "value": "SlopedCeiling"
+        },
+        {
+          "columnName": "in_AdditionalInfo02",
+          "value": "Construction01.1"
+        },
+        {
+          "columnName": "in_AdditionalInfo03",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo04",
+          "value": "All"
+        },
+        {
+          "columnName": "Sequence",
+          "value": "50"
+        },
+        {
+          "columnName": "Description",
+          "value": "Close contour"
+        },
+        {
+          "columnName": "SvgPath",
+          "value": "'z'"
+        },
+        {
+          "columnName": "ExtrudeDirection",
+          "value": "x"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_SlopedCeilingShelftopAngle"
+        },
+        {
+          "columnName": "in_Fingergrip",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo01",
+          "value": "SlopedCeiling"
+        },
+        {
+          "columnName": "in_AdditionalInfo02",
+          "value": "Construction01.1"
+        },
+        {
+          "columnName": "in_AdditionalInfo03",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo04",
+          "value": "All"
+        },
+        {
+          "columnName": "Sequence",
+          "value": "10"
+        },
+        {
+          "columnName": "Description",
+          "value": "StartPoint (BottomBack - TopRight of angled line on Bottom)"
+        },
+        {
+          "columnName": "SvgPath",
+          "value": "'M 0,0'"
+        },
+        {
+          "columnName": "ExtrudeDirection",
+          "value": "x"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_SlopedCeilingShelftopAngle"
+        },
+        {
+          "columnName": "in_Fingergrip",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo01",
+          "value": "SlopedCeiling"
+        },
+        {
+          "columnName": "in_AdditionalInfo02",
+          "value": "Construction01.1"
+        },
+        {
+          "columnName": "in_AdditionalInfo03",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo04",
+          "value": "All"
+        },
+        {
+          "columnName": "Sequence",
+          "value": "20"
+        },
+        {
+          "columnName": "Description",
+          "value": "Move to Front and Down (BottomLeft of angled line on Bottom)"
+        },
+        {
+          "columnName": "SvgPath",
+          "value": "'l ' + m.mod_Height + ',-' + (GlobalFunc.calc_pythagoreanTheorem(m.mod_SlopeAngle / 2, 0, m.mod_Height, 0)[1])"
+        },
+        {
+          "columnName": "ExtrudeDirection",
+          "value": "x"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_SlopedCeilingShelftopAngle"
+        },
+        {
+          "columnName": "in_Fingergrip",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo01",
+          "value": "SlopedCeiling"
+        },
+        {
+          "columnName": "in_AdditionalInfo02",
+          "value": "Construction01.1"
+        },
+        {
+          "columnName": "in_AdditionalInfo03",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo04",
+          "value": "All"
+        },
+        {
+          "columnName": "Sequence",
+          "value": "30"
+        },
+        {
+          "columnName": "Description",
+          "value": "Move Front and Up (BottomLeft of angled line on Top)"
+        },
+        {
+          "columnName": "SvgPath",
+          "value": "'l ' + (m.mod_CarcaseDepth - m.mod_TopDepth - m.mod_Height + (GlobalFunc.calc_pythagoreanTheorem((270 - m.mod_SlopeAngle) / 2, 0, m.mod_Height, 0)[1])) + ',' + (m.mod_CarcaseHeight - m.mod_BackHeight - m.mod_Height + (GlobalFunc.calc_pythagoreanTheorem(m.mod_SlopeAngle / 2, 0, m.mod_Height, 0)[1]))"
+        },
+        {
+          "columnName": "ExtrudeDirection",
+          "value": "x"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_SlopedCeilingShelftopAngle"
+        },
+        {
+          "columnName": "in_Fingergrip",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo01",
+          "value": "SlopedCeiling"
+        },
+        {
+          "columnName": "in_AdditionalInfo02",
+          "value": "Construction01.1"
+        },
+        {
+          "columnName": "in_AdditionalInfo03",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo04",
+          "value": "All"
+        },
+        {
+          "columnName": "Sequence",
+          "value": "40"
+        },
+        {
+          "columnName": "Description",
+          "value": "Move back and Up (TopRight of angled line on Top)"
+        },
+        {
+          "columnName": "SvgPath",
+          "value": "'l -' + (GlobalFunc.calc_pythagoreanTheorem((270 - m.mod_SlopeAngle) / 2, 0, m.mod_Height, 0)[1]) + ',' + m.mod_Height"
+        },
+        {
+          "columnName": "ExtrudeDirection",
+          "value": "x"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_SlopedCeilingShelftopAngle"
+        },
+        {
+          "columnName": "in_Fingergrip",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo01",
+          "value": "SlopedCeiling"
+        },
+        {
+          "columnName": "in_AdditionalInfo02",
+          "value": "Construction01.1"
+        },
+        {
+          "columnName": "in_AdditionalInfo03",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo04",
+          "value": "All"
+        },
+        {
+          "columnName": "Sequence",
+          "value": "50"
+        },
+        {
+          "columnName": "Description",
+          "value": "Close contour (Move down and Right)"
+        },
+        {
+          "columnName": "SvgPath",
+          "value": "'z'"
+        },
+        {
+          "columnName": "ExtrudeDirection",
+          "value": "x"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_SlopedCeilingShelftopHor"
+        },
+        {
+          "columnName": "in_Fingergrip",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo01",
+          "value": "SlopedCeiling"
+        },
+        {
+          "columnName": "in_AdditionalInfo02",
+          "value": "Construction01.1"
+        },
+        {
+          "columnName": "in_AdditionalInfo03",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo04",
+          "value": "All"
+        },
+        {
+          "columnName": "Sequence",
+          "value": "10"
+        },
+        {
+          "columnName": "Description",
+          "value": "StartPoint (TopBack - Top of angled line)"
+        },
+        {
+          "columnName": "SvgPath",
+          "value": "'M 0,' + m.mod_Height"
+        },
+        {
+          "columnName": "ExtrudeDirection",
+          "value": "x"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_SlopedCeilingShelftopHor"
+        },
+        {
+          "columnName": "in_Fingergrip",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo01",
+          "value": "SlopedCeiling"
+        },
+        {
+          "columnName": "in_AdditionalInfo02",
+          "value": "Construction01.1"
+        },
+        {
+          "columnName": "in_AdditionalInfo03",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo04",
+          "value": "All"
+        },
+        {
+          "columnName": "Sequence",
+          "value": "20"
+        },
+        {
+          "columnName": "Description",
+          "value": "Move to front (depth)"
+        },
+        {
+          "columnName": "SvgPath",
+          "value": "'l ' + m.mod_Depth + ',0'"
+        },
+        {
+          "columnName": "ExtrudeDirection",
+          "value": "x"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_SlopedCeilingShelftopHor"
+        },
+        {
+          "columnName": "in_Fingergrip",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo01",
+          "value": "SlopedCeiling"
+        },
+        {
+          "columnName": "in_AdditionalInfo02",
+          "value": "Construction01.1"
+        },
+        {
+          "columnName": "in_AdditionalInfo03",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo04",
+          "value": "All"
+        },
+        {
+          "columnName": "Sequence",
+          "value": "30"
+        },
+        {
+          "columnName": "Description",
+          "value": "Move down (thickness)"
+        },
+        {
+          "columnName": "SvgPath",
+          "value": "'l 0,-' + m.mod_Height"
+        },
+        {
+          "columnName": "ExtrudeDirection",
+          "value": "x"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_SlopedCeilingShelftopHor"
+        },
+        {
+          "columnName": "in_Fingergrip",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo01",
+          "value": "SlopedCeiling"
+        },
+        {
+          "columnName": "in_AdditionalInfo02",
+          "value": "Construction01.1"
+        },
+        {
+          "columnName": "in_AdditionalInfo03",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo04",
+          "value": "All"
+        },
+        {
+          "columnName": "Sequence",
+          "value": "40"
+        },
+        {
+          "columnName": "Description",
+          "value": "Move back (Bottom of Angled line)"
+        },
+        {
+          "columnName": "SvgPath",
+          "value": "'l -' + (m.mod_Depth - (GlobalFunc.calc_pythagoreanTheorem((270 - m.mod_SlopeAngle) / 2, 0, m.mod_Height, 0)[1])) + ',0'"
+        },
+        {
+          "columnName": "ExtrudeDirection",
+          "value": "x"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "part_SlopedCeilingShelftopHor"
+        },
+        {
+          "columnName": "in_Fingergrip",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo01",
+          "value": "SlopedCeiling"
+        },
+        {
+          "columnName": "in_AdditionalInfo02",
+          "value": "Construction01.1"
+        },
+        {
+          "columnName": "in_AdditionalInfo03",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo04",
+          "value": "All"
+        },
+        {
+          "columnName": "Sequence",
+          "value": "50"
+        },
+        {
+          "columnName": "Description",
+          "value": "Close contour (Angled line)"
+        },
+        {
+          "columnName": "SvgPath",
+          "value": "'z'"
+        },
+        {
+          "columnName": "ExtrudeDirection",
+          "value": "x"
+        }
+      ]
+    }
+  ]
+}

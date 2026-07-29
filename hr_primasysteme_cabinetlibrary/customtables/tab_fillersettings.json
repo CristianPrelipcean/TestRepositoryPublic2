@@ -1,0 +1,220 @@
+{
+  "tableName": "tab_FillerSettings",
+  "description": "ToDelete",
+  "restrictionTypeId": "Public",
+  "groupName": "Filler",
+  "columns": [
+    {
+      "name": "_id",
+      "type": "Integer",
+      "allowNull": false
+    },
+    {
+      "name": "in_FillerType",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_Direction",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_AdditionalInfo01",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "SidepanelleftType",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "SidepanelrightType",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "ShelftopConstruction",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "ShelfbtmConstruction",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "BackwallConstruction",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "UseCarcaseDepth",
+      "type": "Bool",
+      "allowNull": true
+    }
+  ],
+  "rows": [
+    {
+      "data": [
+        {
+          "columnName": "in_FillerType",
+          "value": "LShape"
+        },
+        {
+          "columnName": "in_Direction",
+          "value": "Left"
+        },
+        {
+          "columnName": "in_AdditionalInfo01",
+          "value": "All"
+        },
+        {
+          "columnName": "SidepanelleftType",
+          "value": "OutSp"
+        },
+        {
+          "columnName": "SidepanelrightType",
+          "value": "NoSp"
+        },
+        {
+          "columnName": "ShelftopConstruction",
+          "value": "NoShelfTop"
+        },
+        {
+          "columnName": "ShelfbtmConstruction",
+          "value": "NoShelfBtm"
+        },
+        {
+          "columnName": "BackwallConstruction",
+          "value": "NoBackwall"
+        },
+        {
+          "columnName": "UseCarcaseDepth",
+          "value": "false"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_FillerType",
+          "value": "LShape"
+        },
+        {
+          "columnName": "in_Direction",
+          "value": "Right"
+        },
+        {
+          "columnName": "in_AdditionalInfo01",
+          "value": "All"
+        },
+        {
+          "columnName": "SidepanelleftType",
+          "value": "NoSp"
+        },
+        {
+          "columnName": "SidepanelrightType",
+          "value": "OutSp"
+        },
+        {
+          "columnName": "ShelftopConstruction",
+          "value": "NoShelfTop"
+        },
+        {
+          "columnName": "ShelfbtmConstruction",
+          "value": "NoShelfBtm"
+        },
+        {
+          "columnName": "BackwallConstruction",
+          "value": "NoBackwall"
+        },
+        {
+          "columnName": "UseCarcaseDepth",
+          "value": "false"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_FillerType",
+          "value": "CoverCarcase"
+        },
+        {
+          "columnName": "in_Direction",
+          "value": "Left"
+        },
+        {
+          "columnName": "in_AdditionalInfo01",
+          "value": "All"
+        },
+        {
+          "columnName": "SidepanelleftType",
+          "value": "OutSp"
+        },
+        {
+          "columnName": "SidepanelrightType",
+          "value": "NoSp"
+        },
+        {
+          "columnName": "ShelftopConstruction",
+          "value": "ShelfTop"
+        },
+        {
+          "columnName": "ShelfbtmConstruction",
+          "value": "ShelfBtm"
+        },
+        {
+          "columnName": "BackwallConstruction",
+          "value": "NoBackwall"
+        },
+        {
+          "columnName": "UseCarcaseDepth",
+          "value": "true"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_FillerType",
+          "value": "CoverCarcase"
+        },
+        {
+          "columnName": "in_Direction",
+          "value": "Right"
+        },
+        {
+          "columnName": "in_AdditionalInfo01",
+          "value": "All"
+        },
+        {
+          "columnName": "SidepanelleftType",
+          "value": "NoSp"
+        },
+        {
+          "columnName": "SidepanelrightType",
+          "value": "OutSp"
+        },
+        {
+          "columnName": "ShelftopConstruction",
+          "value": "ShelfTop"
+        },
+        {
+          "columnName": "ShelfbtmConstruction",
+          "value": "ShelfBtm"
+        },
+        {
+          "columnName": "BackwallConstruction",
+          "value": "NoBackwall"
+        },
+        {
+          "columnName": "UseCarcaseDepth",
+          "value": "true"
+        }
+      ]
+    }
+  ]
+}

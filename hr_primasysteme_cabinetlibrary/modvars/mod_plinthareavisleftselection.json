@@ -1,0 +1,41 @@
+{
+  "variantId": "mod_PlinthAreaVisLeftSelection",
+  "shortName": "PlinthArea visible left",
+  "variantTypeId": "Text",
+  "description": "Plinth area visible on left side",
+  "restrictionTypeId": "Internal",
+  "groupName": "Room Integration",
+  "imageId": "images/LegVisLeft.jpg",
+  "assignedGlobalVarId": "basic_PlinthAreaVisLeftSelection",
+  "isArray": false,
+  "isPosRelevant": true,
+  "mainAttr": false,
+  "userRight": "Master",
+  "implicitRelevant": false,
+  "posView": "Dropdown",
+  "sorting": 9,
+  "matrix": [],
+  "selections": [
+    {
+      "value": "Automatic",
+      "description": "Read the information from the room situation",
+      "shortName": "Automatic",
+      "imageId": "images/Automatic.png",
+      "matrix": []
+    },
+    {
+      "value": "Visible",
+      "description": "Manual decition visible",
+      "shortName": "Visible",
+      "imageId": "images/Visible.png",
+      "matrix": []
+    },
+    {
+      "value": "NotVisible",
+      "description": "Manual decition not visible",
+      "shortName": "NotVisible",
+      "imageId": "images/Hided.png",
+      "matrix": []
+    }
+  ]
+}

@@ -1,0 +1,354 @@
+{
+  "tableName": "tab_FlipliftWeightTypeMapping",
+  "description": "Mapping of the weight type for the fliplift",
+  "restrictionTypeId": "Public",
+  "groupName": "FlipLift",
+  "columns": [
+    {
+      "name": "_id",
+      "type": "Integer",
+      "allowNull": false
+    },
+    {
+      "name": "in_FlipliftType",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_HardwareType",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_HeightMin",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "in_HeightMax",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "WeightType",
+      "type": "Text",
+      "allowNull": true,
+      "functionDefinition": "(frontHeight:number, frontWeight:number, handleWeight:number):number"
+    },
+    {
+      "name": "CalculationType",
+      "type": "Text",
+      "allowNull": true
+    }
+  ],
+  "rows": [
+    {
+      "data": [
+        {
+          "columnName": "in_FlipliftType",
+          "value": "FHF"
+        },
+        {
+          "columnName": "in_HardwareType",
+          "value": "Powerstorage"
+        },
+        {
+          "columnName": "in_HeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_HeightMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "WeightType",
+          "value": "frontHeight * (frontWeight + handleWeight)"
+        },
+        {
+          "columnName": "CalculationType",
+          "value": "Set"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_FlipliftType",
+          "value": "SHF"
+        },
+        {
+          "columnName": "in_HardwareType",
+          "value": "Powerstorage"
+        },
+        {
+          "columnName": "in_HeightMin",
+          "value": "350"
+        },
+        {
+          "columnName": "in_HeightMax",
+          "value": "490"
+        },
+        {
+          "columnName": "WeightType",
+          "value": "10"
+        },
+        {
+          "columnName": "CalculationType",
+          "value": "Set"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_FlipliftType",
+          "value": "SHF"
+        },
+        {
+          "columnName": "in_HardwareType",
+          "value": "Powerstorage"
+        },
+        {
+          "columnName": "in_HeightMin",
+          "value": "490"
+        },
+        {
+          "columnName": "in_HeightMax",
+          "value": "600"
+        },
+        {
+          "columnName": "WeightType",
+          "value": "20"
+        },
+        {
+          "columnName": "CalculationType",
+          "value": "Set"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_FlipliftType",
+          "value": "SHF"
+        },
+        {
+          "columnName": "in_HardwareType",
+          "value": "Powerstorage"
+        },
+        {
+          "columnName": "in_HeightMin",
+          "value": "600"
+        },
+        {
+          "columnName": "in_HeightMax",
+          "value": "800"
+        },
+        {
+          "columnName": "WeightType",
+          "value": "30"
+        },
+        {
+          "columnName": "CalculationType",
+          "value": "Set"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_FlipliftType",
+          "value": "LHF"
+        },
+        {
+          "columnName": "in_HardwareType",
+          "value": "Powerstorage"
+        },
+        {
+          "columnName": "in_HeightMin",
+          "value": "300"
+        },
+        {
+          "columnName": "in_HeightMax",
+          "value": "340"
+        },
+        {
+          "columnName": "WeightType",
+          "value": "10"
+        },
+        {
+          "columnName": "CalculationType",
+          "value": "Set"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_FlipliftType",
+          "value": "LHF"
+        },
+        {
+          "columnName": "in_HardwareType",
+          "value": "Powerstorage"
+        },
+        {
+          "columnName": "in_HeightMin",
+          "value": "340"
+        },
+        {
+          "columnName": "in_HeightMax",
+          "value": "390"
+        },
+        {
+          "columnName": "WeightType",
+          "value": "20"
+        },
+        {
+          "columnName": "CalculationType",
+          "value": "Set"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_FlipliftType",
+          "value": "LHF"
+        },
+        {
+          "columnName": "in_HardwareType",
+          "value": "Powerstorage"
+        },
+        {
+          "columnName": "in_HeightMin",
+          "value": "390"
+        },
+        {
+          "columnName": "in_HeightMax",
+          "value": "490"
+        },
+        {
+          "columnName": "WeightType",
+          "value": "30"
+        },
+        {
+          "columnName": "CalculationType",
+          "value": "Set"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_FlipliftType",
+          "value": "LHF"
+        },
+        {
+          "columnName": "in_HardwareType",
+          "value": "Powerstorage"
+        },
+        {
+          "columnName": "in_HeightMin",
+          "value": "490"
+        },
+        {
+          "columnName": "in_HeightMax",
+          "value": "580"
+        },
+        {
+          "columnName": "WeightType",
+          "value": "40"
+        },
+        {
+          "columnName": "CalculationType",
+          "value": "Set"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_FlipliftType",
+          "value": "UF"
+        },
+        {
+          "columnName": "in_HardwareType",
+          "value": "Gasspring"
+        },
+        {
+          "columnName": "in_HeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_HeightMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "WeightType",
+          "value": "frontHeight * (frontWeight + handleWeight * 2)"
+        },
+        {
+          "columnName": "CalculationType",
+          "value": "Single"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_FlipliftType",
+          "value": "UF"
+        },
+        {
+          "columnName": "in_HardwareType",
+          "value": "Powerstorage"
+        },
+        {
+          "columnName": "in_HeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_HeightMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "WeightType",
+          "value": "frontHeight * (frontWeight + handleWeight * 2)"
+        },
+        {
+          "columnName": "CalculationType",
+          "value": "Set"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_FlipliftType",
+          "value": "DF"
+        },
+        {
+          "columnName": "in_HardwareType",
+          "value": "DropDownHinge"
+        },
+        {
+          "columnName": "in_HeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_HeightMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "WeightType",
+          "value": "1"
+        },
+        {
+          "columnName": "CalculationType",
+          "value": "Single"
+        }
+      ]
+    }
+  ]
+}

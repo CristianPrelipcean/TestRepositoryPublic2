@@ -1,0 +1,46 @@
+{
+  "variantId": "mod_FridgeCarcasePositionType",
+  "shortName": "Fridge positioning type",
+  "variantTypeId": "Text",
+  "description": "Type of the position of the fridge in the carcase\n",
+  "restrictionTypeId": "Internal",
+  "groupName": "Fridge",
+  "imageId": "",
+  "isArray": false,
+  "isPosRelevant": true,
+  "mainAttr": false,
+  "userRight": "Advanced",
+  "implicitRelevant": false,
+  "posView": "Dropdown",
+  "matrix": [],
+  "selections": [
+    {
+      "value": "Bottom",
+      "description": "Position on bottom",
+      "shortName": "Bottom",
+      "imageId": "images/Down.png",
+      "matrix": []
+    },
+    {
+      "value": "Top",
+      "description": "Position on top",
+      "shortName": "Top",
+      "imageId": "images/Top_New.png",
+      "matrix": []
+    },
+    {
+      "value": "Free",
+      "description": "Positioning via descriptor",
+      "shortName": "Free",
+      "imageId": "images/int_Direction.jpg",
+      "matrix": []
+    },
+    {
+      "value": "Automatic",
+      "description": "Position from Construction table",
+      "shortName": "Automatic",
+      "imageId": "images/Automatic.png",
+      "matrix": []
+    }
+  ]
+}

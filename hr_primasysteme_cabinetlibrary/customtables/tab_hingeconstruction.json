@@ -1,0 +1,996 @@
+{
+  "tableName": "tab_HingeConstruction",
+  "description": "Hinge Construction (Internal)",
+  "restrictionTypeId": "Internal",
+  "groupName": "Hinge",
+  "columns": [
+    {
+      "name": "_id",
+      "type": "Integer",
+      "allowNull": false
+    },
+    {
+      "name": "in_Part",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_CarcaseFrontAngle",
+      "type": "Dim",
+      "allowNull": true
+    },
+    {
+      "name": "in_InsertionSide",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "DimensionX",
+      "type": "Text",
+      "allowNull": true,
+      "functionDefinition": "(m:parent, DimX: number, DimY: number, DimZ: number, InsertionX: number, InsertionY: number, InsertionZ: number, OffsetX: number, OffsetY: number, OffsetZ: number, DrillingDistance: number, FrontOverlay: number, HingeGapCarcase: number):number"
+    },
+    {
+      "name": "DimensionY",
+      "type": "Text",
+      "allowNull": true,
+      "functionDefinition": "(m:parent, DimX: number, DimY: number, DimZ: number, InsertionX: number, InsertionY: number, InsertionZ: number, OffsetX: number, OffsetY: number, OffsetZ: number, DrillingDistance: number, FrontOverlay: number, HingeGapCarcase: number):number"
+    },
+    {
+      "name": "DimensionZ",
+      "type": "Text",
+      "allowNull": true,
+      "functionDefinition": "(m:parent, DimX: number, DimY: number, DimZ: number, InsertionX: number, InsertionY: number, InsertionZ: number, OffsetX: number, OffsetY: number, OffsetZ: number, DrillingDistance: number, FrontOverlay: number, HingeGapCarcase: number):number"
+    },
+    {
+      "name": "PositionX",
+      "type": "Text",
+      "allowNull": true,
+      "functionDefinition": "(m:parent, DimX: number, DimY: number, DimZ: number, InsertionX: number, InsertionY: number, InsertionZ: number, OffsetX: number, OffsetY: number, OffsetZ: number, DrillingDistance: number, FrontOverlay: number, HingeGapCarcase: number):number"
+    },
+    {
+      "name": "PositionY",
+      "type": "Text",
+      "allowNull": true,
+      "functionDefinition": "(m:parent, DimX: number, DimY: number, DimZ: number, InsertionX: number, InsertionY: number, InsertionZ: number, OffsetX: number, OffsetY: number, OffsetZ: number, DrillingDistance: number, FrontOverlay: number, HingeGapCarcase: number):number"
+    },
+    {
+      "name": "PositionZ",
+      "type": "Text",
+      "allowNull": true,
+      "functionDefinition": "(m:parent, DimX: number, DimY: number, DimZ: number, InsertionX: number, InsertionY: number, InsertionZ: number, OffsetX: number, OffsetY: number, OffsetZ: number, DrillingDistance: number, FrontOverlay: number, HingeGapCarcase: number):number"
+    },
+    {
+      "name": "RotationAngle",
+      "type": "Text",
+      "allowNull": true,
+      "functionDefinition": "(m:parent, DimX: number, DimY: number, DimZ: number, InsertionX: number, InsertionY: number, InsertionZ: number, OffsetX: number, OffsetY: number, OffsetZ: number, DrillingDistance: number, FrontOverlay: number, HingeGapCarcase: number):number"
+    }
+  ],
+  "rows": [
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "HingeDoor"
+        },
+        {
+          "columnName": "in_CarcaseFrontAngle",
+          "value": "90"
+        },
+        {
+          "columnName": "in_InsertionSide",
+          "value": "Left"
+        },
+        {
+          "columnName": "DimensionX",
+          "value": "DimX"
+        },
+        {
+          "columnName": "DimensionY",
+          "value": "DimY"
+        },
+        {
+          "columnName": "DimensionZ",
+          "value": "DimZ"
+        },
+        {
+          "columnName": "PositionX",
+          "value": "DrillingDistance + InsertionX + OffsetX"
+        },
+        {
+          "columnName": "PositionY",
+          "value": "InsertionY + OffsetY"
+        },
+        {
+          "columnName": "PositionZ",
+          "value": "InsertionZ + OffsetZ"
+        },
+        {
+          "columnName": "RotationAngle",
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "HingeDoor"
+        },
+        {
+          "columnName": "in_CarcaseFrontAngle",
+          "value": "180"
+        },
+        {
+          "columnName": "in_InsertionSide",
+          "value": "Left"
+        },
+        {
+          "columnName": "DimensionX",
+          "value": "DimX"
+        },
+        {
+          "columnName": "DimensionY",
+          "value": "DimY"
+        },
+        {
+          "columnName": "DimensionZ",
+          "value": "DimZ"
+        },
+        {
+          "columnName": "PositionX",
+          "value": "DrillingDistance + InsertionX + OffsetX"
+        },
+        {
+          "columnName": "PositionY",
+          "value": "InsertionY + OffsetY"
+        },
+        {
+          "columnName": "PositionZ",
+          "value": "InsertionZ + OffsetZ"
+        },
+        {
+          "columnName": "RotationAngle",
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "HingeDoor"
+        },
+        {
+          "columnName": "in_CarcaseFrontAngle",
+          "value": "90"
+        },
+        {
+          "columnName": "in_InsertionSide",
+          "value": "Right"
+        },
+        {
+          "columnName": "DimensionX",
+          "value": "DimX"
+        },
+        {
+          "columnName": "DimensionY",
+          "value": "DimY"
+        },
+        {
+          "columnName": "DimensionZ",
+          "value": "DimZ"
+        },
+        {
+          "columnName": "PositionX",
+          "value": "-DrillingDistance - InsertionX - OffsetX"
+        },
+        {
+          "columnName": "PositionY",
+          "value": "InsertionY + OffsetY + DimY"
+        },
+        {
+          "columnName": "PositionZ",
+          "value": "InsertionZ + OffsetZ"
+        },
+        {
+          "columnName": "RotationAngle",
+          "value": "180"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "HingeDoor"
+        },
+        {
+          "columnName": "in_CarcaseFrontAngle",
+          "value": "180"
+        },
+        {
+          "columnName": "in_InsertionSide",
+          "value": "Right"
+        },
+        {
+          "columnName": "DimensionX",
+          "value": "DimX"
+        },
+        {
+          "columnName": "DimensionY",
+          "value": "DimY"
+        },
+        {
+          "columnName": "DimensionZ",
+          "value": "DimZ"
+        },
+        {
+          "columnName": "PositionX",
+          "value": "-DrillingDistance - InsertionX - OffsetX"
+        },
+        {
+          "columnName": "PositionY",
+          "value": "InsertionY + OffsetY + DimY"
+        },
+        {
+          "columnName": "PositionZ",
+          "value": "InsertionZ + OffsetZ"
+        },
+        {
+          "columnName": "RotationAngle",
+          "value": "180"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "HingeDoor"
+        },
+        {
+          "columnName": "in_CarcaseFrontAngle",
+          "value": "90"
+        },
+        {
+          "columnName": "in_InsertionSide",
+          "value": "Top"
+        },
+        {
+          "columnName": "DimensionX",
+          "value": "DimX"
+        },
+        {
+          "columnName": "DimensionY",
+          "value": "DimY"
+        },
+        {
+          "columnName": "DimensionZ",
+          "value": "DimZ"
+        },
+        {
+          "columnName": "PositionX",
+          "value": "InsertionY + OffsetY"
+        },
+        {
+          "columnName": "PositionY",
+          "value": "- DrillingDistance - InsertionX - OffsetX"
+        },
+        {
+          "columnName": "PositionZ",
+          "value": "InsertionZ + OffsetZ"
+        },
+        {
+          "columnName": "RotationAngle",
+          "value": "-90"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "HingeDoor"
+        },
+        {
+          "columnName": "in_CarcaseFrontAngle",
+          "value": "90"
+        },
+        {
+          "columnName": "in_InsertionSide",
+          "value": "Bottom"
+        },
+        {
+          "columnName": "DimensionX",
+          "value": "DimX"
+        },
+        {
+          "columnName": "DimensionY",
+          "value": "DimY"
+        },
+        {
+          "columnName": "DimensionZ",
+          "value": "DimZ"
+        },
+        {
+          "columnName": "PositionX",
+          "value": "- InsertionY - OffsetY"
+        },
+        {
+          "columnName": "PositionY",
+          "value": "DrillingDistance + InsertionX + OffsetX"
+        },
+        {
+          "columnName": "PositionZ",
+          "value": "InsertionZ + OffsetZ"
+        },
+        {
+          "columnName": "RotationAngle",
+          "value": "90"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "HingeDrill"
+        },
+        {
+          "columnName": "in_CarcaseFrontAngle",
+          "value": "90"
+        },
+        {
+          "columnName": "in_InsertionSide",
+          "value": "Left"
+        },
+        {
+          "columnName": "DimensionX",
+          "value": "1"
+        },
+        {
+          "columnName": "DimensionY",
+          "value": "1"
+        },
+        {
+          "columnName": "DimensionZ",
+          "value": "100"
+        },
+        {
+          "columnName": "PositionX",
+          "value": "FrontOverlay"
+        },
+        {
+          "columnName": "PositionY",
+          "value": "0"
+        },
+        {
+          "columnName": "PositionZ",
+          "value": "-100"
+        },
+        {
+          "columnName": "RotationAngle",
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "HingeDrill"
+        },
+        {
+          "columnName": "in_CarcaseFrontAngle",
+          "value": "180"
+        },
+        {
+          "columnName": "in_InsertionSide",
+          "value": "Left"
+        },
+        {
+          "columnName": "DimensionX",
+          "value": "50"
+        },
+        {
+          "columnName": "DimensionY",
+          "value": "1"
+        },
+        {
+          "columnName": "DimensionZ",
+          "value": "100"
+        },
+        {
+          "columnName": "PositionX",
+          "value": "FrontOverlay - 1"
+        },
+        {
+          "columnName": "PositionY",
+          "value": "0"
+        },
+        {
+          "columnName": "PositionZ",
+          "value": "-100"
+        },
+        {
+          "columnName": "RotationAngle",
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "HingeDrill"
+        },
+        {
+          "columnName": "in_CarcaseFrontAngle",
+          "value": "90"
+        },
+        {
+          "columnName": "in_InsertionSide",
+          "value": "Right"
+        },
+        {
+          "columnName": "DimensionX",
+          "value": "1"
+        },
+        {
+          "columnName": "DimensionY",
+          "value": "1"
+        },
+        {
+          "columnName": "DimensionZ",
+          "value": "100"
+        },
+        {
+          "columnName": "PositionX",
+          "value": "- FrontOverlay - 1"
+        },
+        {
+          "columnName": "PositionY",
+          "value": "0"
+        },
+        {
+          "columnName": "PositionZ",
+          "value": "-100"
+        },
+        {
+          "columnName": "RotationAngle",
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "HingeDrill"
+        },
+        {
+          "columnName": "in_CarcaseFrontAngle",
+          "value": "180"
+        },
+        {
+          "columnName": "in_InsertionSide",
+          "value": "Right"
+        },
+        {
+          "columnName": "DimensionX",
+          "value": "-50"
+        },
+        {
+          "columnName": "DimensionY",
+          "value": "1"
+        },
+        {
+          "columnName": "DimensionZ",
+          "value": "100"
+        },
+        {
+          "columnName": "PositionX",
+          "value": " - FrontOverlay + 1"
+        },
+        {
+          "columnName": "PositionY",
+          "value": "0"
+        },
+        {
+          "columnName": "PositionZ",
+          "value": "-100"
+        },
+        {
+          "columnName": "RotationAngle",
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "HingeDrill"
+        },
+        {
+          "columnName": "in_CarcaseFrontAngle",
+          "value": "90"
+        },
+        {
+          "columnName": "in_InsertionSide",
+          "value": "Top"
+        },
+        {
+          "columnName": "DimensionX",
+          "value": "1"
+        },
+        {
+          "columnName": "DimensionY",
+          "value": "1"
+        },
+        {
+          "columnName": "DimensionZ",
+          "value": "100"
+        },
+        {
+          "columnName": "PositionX",
+          "value": "0"
+        },
+        {
+          "columnName": "PositionY",
+          "value": "- FrontOverlay - 1"
+        },
+        {
+          "columnName": "PositionZ",
+          "value": "-100"
+        },
+        {
+          "columnName": "RotationAngle",
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "HingeDrill"
+        },
+        {
+          "columnName": "in_CarcaseFrontAngle",
+          "value": "90"
+        },
+        {
+          "columnName": "in_InsertionSide",
+          "value": "Bottom"
+        },
+        {
+          "columnName": "DimensionX",
+          "value": "1"
+        },
+        {
+          "columnName": "DimensionY",
+          "value": "1"
+        },
+        {
+          "columnName": "DimensionZ",
+          "value": "100"
+        },
+        {
+          "columnName": "PositionX",
+          "value": "0"
+        },
+        {
+          "columnName": "PositionY",
+          "value": "FrontOverlay "
+        },
+        {
+          "columnName": "PositionZ",
+          "value": "-100"
+        },
+        {
+          "columnName": "RotationAngle",
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "MountingPlate"
+        },
+        {
+          "columnName": "in_CarcaseFrontAngle",
+          "value": "90"
+        },
+        {
+          "columnName": "in_InsertionSide",
+          "value": "Left"
+        },
+        {
+          "columnName": "DimensionX",
+          "value": "DimX"
+        },
+        {
+          "columnName": "DimensionY",
+          "value": "DimY"
+        },
+        {
+          "columnName": "DimensionZ",
+          "value": "DimZ"
+        },
+        {
+          "columnName": "PositionX",
+          "value": "FrontOverlay + InsertionX + OffsetX"
+        },
+        {
+          "columnName": "PositionY",
+          "value": "InsertionY + OffsetY"
+        },
+        {
+          "columnName": "PositionZ",
+          "value": "InsertionZ + OffsetZ - HingeGapCarcase"
+        },
+        {
+          "columnName": "RotationAngle",
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "MountingPlate"
+        },
+        {
+          "columnName": "in_CarcaseFrontAngle",
+          "value": "90"
+        },
+        {
+          "columnName": "in_InsertionSide",
+          "value": "Right"
+        },
+        {
+          "columnName": "DimensionX",
+          "value": "DimX"
+        },
+        {
+          "columnName": "DimensionY",
+          "value": "DimY"
+        },
+        {
+          "columnName": "DimensionZ",
+          "value": "DimZ"
+        },
+        {
+          "columnName": "PositionX",
+          "value": "FrontOverlay + InsertionX + OffsetX"
+        },
+        {
+          "columnName": "PositionY",
+          "value": "InsertionY + OffsetY"
+        },
+        {
+          "columnName": "PositionZ",
+          "value": "InsertionZ + OffsetZ - HingeGapCarcase"
+        },
+        {
+          "columnName": "RotationAngle",
+          "value": "180"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "MountingPlate"
+        },
+        {
+          "columnName": "in_CarcaseFrontAngle",
+          "value": "90"
+        },
+        {
+          "columnName": "in_InsertionSide",
+          "value": "Top"
+        },
+        {
+          "columnName": "DimensionX",
+          "value": "DimX"
+        },
+        {
+          "columnName": "DimensionY",
+          "value": "DimY"
+        },
+        {
+          "columnName": "DimensionZ",
+          "value": "DimZ"
+        },
+        {
+          "columnName": "PositionX",
+          "value": "InsertionY + OffsetY"
+        },
+        {
+          "columnName": "PositionY",
+          "value": "-FrontOverlay "
+        },
+        {
+          "columnName": "PositionZ",
+          "value": "InsertionZ + OffsetZ - HingeGapCarcase"
+        },
+        {
+          "columnName": "RotationAngle",
+          "value": "-90"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "MountingPlate"
+        },
+        {
+          "columnName": "in_CarcaseFrontAngle",
+          "value": "90"
+        },
+        {
+          "columnName": "in_InsertionSide",
+          "value": "Bottom"
+        },
+        {
+          "columnName": "DimensionX",
+          "value": "DimX"
+        },
+        {
+          "columnName": "DimensionY",
+          "value": "DimY"
+        },
+        {
+          "columnName": "DimensionZ",
+          "value": "DimZ"
+        },
+        {
+          "columnName": "PositionX",
+          "value": "- InsertionY - OffsetY"
+        },
+        {
+          "columnName": "PositionY",
+          "value": "FrontOverlay "
+        },
+        {
+          "columnName": "PositionZ",
+          "value": "InsertionZ + OffsetZ - HingeGapCarcase"
+        },
+        {
+          "columnName": "RotationAngle",
+          "value": "90"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "MountingPlate"
+        },
+        {
+          "columnName": "in_CarcaseFrontAngle",
+          "value": "180"
+        },
+        {
+          "columnName": "in_InsertionSide",
+          "value": "Left"
+        },
+        {
+          "columnName": "DimensionX",
+          "value": "DimX"
+        },
+        {
+          "columnName": "DimensionY",
+          "value": "DimY"
+        },
+        {
+          "columnName": "DimensionZ",
+          "value": "DimZ"
+        },
+        {
+          "columnName": "PositionX",
+          "value": "FrontOverlay + InsertionX + OffsetX + m.mod_FrontGapVert"
+        },
+        {
+          "columnName": "PositionY",
+          "value": "InsertionY + OffsetY"
+        },
+        {
+          "columnName": "PositionZ",
+          "value": "InsertionZ + OffsetZ - HingeGapCarcase"
+        },
+        {
+          "columnName": "RotationAngle",
+          "value": "9999"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "MountingPlate"
+        },
+        {
+          "columnName": "in_CarcaseFrontAngle",
+          "value": "180"
+        },
+        {
+          "columnName": "in_InsertionSide",
+          "value": "Right"
+        },
+        {
+          "columnName": "DimensionX",
+          "value": "DimX"
+        },
+        {
+          "columnName": "DimensionY",
+          "value": "DimY"
+        },
+        {
+          "columnName": "DimensionZ",
+          "value": "DimZ"
+        },
+        {
+          "columnName": "PositionX",
+          "value": "FrontOverlay + InsertionX + OffsetX + m.mod_FrontGapVert"
+        },
+        {
+          "columnName": "PositionY",
+          "value": "InsertionY + OffsetY"
+        },
+        {
+          "columnName": "PositionZ",
+          "value": "InsertionZ + OffsetZ - HingeGapCarcase"
+        },
+        {
+          "columnName": "RotationAngle",
+          "value": "9999"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "HingeDoor"
+        },
+        {
+          "columnName": "in_CarcaseFrontAngle",
+          "value": "180"
+        },
+        {
+          "columnName": "in_InsertionSide",
+          "value": "Top"
+        },
+        {
+          "columnName": "DimensionX",
+          "value": "DimX"
+        },
+        {
+          "columnName": "DimensionY",
+          "value": "DimY"
+        },
+        {
+          "columnName": "DimensionZ",
+          "value": "DimZ"
+        },
+        {
+          "columnName": "PositionX",
+          "value": "InsertionY + OffsetY"
+        },
+        {
+          "columnName": "PositionY",
+          "value": "- OffsetX - DrillingDistance "
+        },
+        {
+          "columnName": "PositionZ",
+          "value": "InsertionZ + OffsetZ"
+        },
+        {
+          "columnName": "RotationAngle",
+          "value": "-90"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "HingeDrill"
+        },
+        {
+          "columnName": "in_CarcaseFrontAngle",
+          "value": "180"
+        },
+        {
+          "columnName": "in_InsertionSide",
+          "value": "Top"
+        },
+        {
+          "columnName": "DimensionX",
+          "value": "1"
+        },
+        {
+          "columnName": "DimensionY",
+          "value": "100"
+        },
+        {
+          "columnName": "DimensionZ",
+          "value": "1"
+        },
+        {
+          "columnName": "PositionX",
+          "value": "0"
+        },
+        {
+          "columnName": "PositionY",
+          "value": "-1"
+        },
+        {
+          "columnName": "PositionZ",
+          "value": "-1"
+        },
+        {
+          "columnName": "RotationAngle",
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Part",
+          "value": "MountingPlate"
+        },
+        {
+          "columnName": "in_CarcaseFrontAngle",
+          "value": "180"
+        },
+        {
+          "columnName": "in_InsertionSide",
+          "value": "Top"
+        },
+        {
+          "columnName": "DimensionX",
+          "value": "DimX"
+        },
+        {
+          "columnName": "DimensionY",
+          "value": "DimY"
+        },
+        {
+          "columnName": "DimensionZ",
+          "value": "DimZ"
+        },
+        {
+          "columnName": "PositionX",
+          "value": "InsertionY + OffsetY"
+        },
+        {
+          "columnName": "PositionY",
+          "value": "- FrontOverlay - OffsetZ"
+        },
+        {
+          "columnName": "PositionZ",
+          "value": "- DimZ"
+        },
+        {
+          "columnName": "RotationAngle",
+          "value": "-90"
+        }
+      ]
+    }
+  ]
+}

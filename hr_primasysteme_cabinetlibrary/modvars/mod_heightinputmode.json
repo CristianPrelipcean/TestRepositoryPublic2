@@ -1,0 +1,34 @@
+{
+  "variantId": "mod_HeightInputMode",
+  "shortName": "Height input mode",
+  "variantTypeId": "Text",
+  "description": "Defines whether the entered height represents the carcase height or the overall cabinet height",
+  "restrictionTypeId": "Internal",
+  "groupName": "Room Integration",
+  "imageId": "images/HeightMode.png",
+  "assignedGlobalVarId": "basic_HeightInputMode",
+  "isArray": false,
+  "isPosRelevant": true,
+  "mainAttr": false,
+  "userRight": "Master",
+  "implicitRelevant": false,
+  "posView": "Dropdown",
+  "sorting": 1,
+  "matrix": [],
+  "selections": [
+    {
+      "value": "CarcaseHeight",
+      "description": "CarcaseHeight",
+      "shortName": "CarcaseHeight",
+      "imageId": "images/CarcaseHeight.png",
+      "matrix": []
+    },
+    {
+      "value": "FullHeight",
+      "description": "FullHeight",
+      "shortName": "FullHeight",
+      "imageId": "images/FullHeight.png",
+      "matrix": []
+    }
+  ]
+}

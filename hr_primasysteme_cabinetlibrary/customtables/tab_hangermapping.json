@@ -1,0 +1,505 @@
+{
+  "tableName": "tab_HangerMapping",
+  "description": "Hanger Mapping",
+  "restrictionTypeId": "Public",
+  "isInputUnique": true,
+  "groupName": "Hangers",
+  "columns": [
+    {
+      "name": "_id",
+      "type": "Integer",
+      "allowNull": false
+    },
+    {
+      "name": "in_HangerType",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_CarcaseWidthMin",
+      "type": "Dim",
+      "allowNull": true
+    },
+    {
+      "name": "in_CarcaseWidthMax",
+      "type": "Dim",
+      "allowNull": true
+    },
+    {
+      "name": "in_Color",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "Object",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "IncludeWallPlateRight",
+      "type": "Bool",
+      "allowNull": true
+    },
+    {
+      "name": "WallPlateRightLength",
+      "type": "Text",
+      "allowNull": true,
+      "functionDefinition": "(m: parent,HorizontalFreeSpace: number):number"
+    },
+    {
+      "name": "IncludeWallPlateLeft",
+      "type": "Bool",
+      "allowNull": true
+    },
+    {
+      "name": "WallPlateLeftLength",
+      "type": "Text",
+      "allowNull": true,
+      "functionDefinition": "(m: parent,HorizontalFreeSpace: number):number"
+    },
+    {
+      "name": "VerticalOffset",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "VerticalOffsetWallPlateToHanger",
+      "type": "Dim",
+      "allowNull": true
+    }
+  ],
+  "rows": [
+    {
+      "data": [
+        {
+          "columnName": "in_HangerType",
+          "value": "WallUnitVisibleHanger75kg"
+        },
+        {
+          "columnName": "in_CarcaseWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseWidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "All"
+        },
+        {
+          "columnName": "Object",
+          "value": "WallUnitVisibleHanger75kgWhite"
+        },
+        {
+          "columnName": "IncludeWallPlateRight",
+          "value": "true"
+        },
+        {
+          "columnName": "WallPlateRightLength",
+          "value": "0"
+        },
+        {
+          "columnName": "IncludeWallPlateLeft",
+          "value": "true"
+        },
+        {
+          "columnName": "WallPlateLeftLength",
+          "value": "0"
+        },
+        {
+          "columnName": "VerticalOffset",
+          "value": "-50"
+        },
+        {
+          "columnName": "VerticalOffsetWallPlateToHanger",
+          "value": "-21"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_HangerType",
+          "value": "WallUnitVisibleHanger52kg"
+        },
+        {
+          "columnName": "in_CarcaseWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseWidthMax",
+          "value": "599"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "All"
+        },
+        {
+          "columnName": "Object",
+          "value": "WallUnitVisibleHanger52kgNickelPlated"
+        },
+        {
+          "columnName": "IncludeWallPlateRight",
+          "value": "true"
+        },
+        {
+          "columnName": "WallPlateRightLength",
+          "value": "125"
+        },
+        {
+          "columnName": "IncludeWallPlateLeft",
+          "value": "true"
+        },
+        {
+          "columnName": "WallPlateLeftLength",
+          "value": "125"
+        },
+        {
+          "columnName": "VerticalOffset",
+          "value": "-10"
+        },
+        {
+          "columnName": "VerticalOffsetWallPlateToHanger",
+          "value": "-16.5"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_HangerType",
+          "value": "WallUnitVisibleHanger52kg"
+        },
+        {
+          "columnName": "in_CarcaseWidthMin",
+          "value": "600"
+        },
+        {
+          "columnName": "in_CarcaseWidthMax",
+          "value": "600"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "All"
+        },
+        {
+          "columnName": "Object",
+          "value": "WallUnitVisibleHanger52kgNickelPlated"
+        },
+        {
+          "columnName": "IncludeWallPlateRight",
+          "value": "true"
+        },
+        {
+          "columnName": "WallPlateRightLength",
+          "value": "560"
+        },
+        {
+          "columnName": "IncludeWallPlateLeft",
+          "value": "false"
+        },
+        {
+          "columnName": "WallPlateLeftLength",
+          "value": "0"
+        },
+        {
+          "columnName": "VerticalOffset",
+          "value": "-10"
+        },
+        {
+          "columnName": "VerticalOffsetWallPlateToHanger",
+          "value": "-16.5"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_HangerType",
+          "value": "WallUnitVisibleHanger52kg"
+        },
+        {
+          "columnName": "in_CarcaseWidthMin",
+          "value": "601"
+        },
+        {
+          "columnName": "in_CarcaseWidthMax",
+          "value": "1255"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "All"
+        },
+        {
+          "columnName": "Object",
+          "value": "WallUnitVisibleHanger52kgNickelPlated"
+        },
+        {
+          "columnName": "IncludeWallPlateRight",
+          "value": "true"
+        },
+        {
+          "columnName": "WallPlateRightLength",
+          "value": "HorizontalFreeSpace - 5"
+        },
+        {
+          "columnName": "IncludeWallPlateLeft",
+          "value": "false"
+        },
+        {
+          "columnName": "WallPlateLeftLength",
+          "value": "0"
+        },
+        {
+          "columnName": "VerticalOffset",
+          "value": "-10"
+        },
+        {
+          "columnName": "VerticalOffsetWallPlateToHanger",
+          "value": "-16.5"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_HangerType",
+          "value": "BaseUnitVisibleHanger120kg"
+        },
+        {
+          "columnName": "in_CarcaseWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseWidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "All"
+        },
+        {
+          "columnName": "Object",
+          "value": "BaseUnitVisibleHanger120kgWhite"
+        },
+        {
+          "columnName": "IncludeWallPlateRight",
+          "value": "true"
+        },
+        {
+          "columnName": "WallPlateRightLength",
+          "value": "0"
+        },
+        {
+          "columnName": "IncludeWallPlateLeft",
+          "value": "true"
+        },
+        {
+          "columnName": "WallPlateLeftLength",
+          "value": "0"
+        },
+        {
+          "columnName": "VerticalOffset",
+          "value": "-10"
+        },
+        {
+          "columnName": "VerticalOffsetWallPlateToHanger",
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_HangerType",
+          "value": "WallUnitHiddenHanger92kg"
+        },
+        {
+          "columnName": "in_CarcaseWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseWidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "All"
+        },
+        {
+          "columnName": "Object",
+          "value": "WallUnitHiddenHanger92kgWhite"
+        },
+        {
+          "columnName": "IncludeWallPlateRight",
+          "value": "true"
+        },
+        {
+          "columnName": "WallPlateRightLength",
+          "value": "200"
+        },
+        {
+          "columnName": "IncludeWallPlateLeft",
+          "value": "true"
+        },
+        {
+          "columnName": "WallPlateLeftLength",
+          "value": "200"
+        },
+        {
+          "columnName": "VerticalOffset",
+          "value": "-30"
+        },
+        {
+          "columnName": "VerticalOffsetWallPlateToHanger",
+          "value": "-13.5"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_HangerType",
+          "value": "WallUnitVisibleHanger52kg"
+        },
+        {
+          "columnName": "in_CarcaseWidthMin",
+          "value": "1256"
+        },
+        {
+          "columnName": "in_CarcaseWidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "All"
+        },
+        {
+          "columnName": "Object",
+          "value": "WallUnitVisibleHanger52kgNickelPlated"
+        },
+        {
+          "columnName": "IncludeWallPlateRight",
+          "value": "true"
+        },
+        {
+          "columnName": "WallPlateRightLength",
+          "value": "300"
+        },
+        {
+          "columnName": "IncludeWallPlateLeft",
+          "value": "true"
+        },
+        {
+          "columnName": "WallPlateLeftLength",
+          "value": "300"
+        },
+        {
+          "columnName": "VerticalOffset",
+          "value": "-10"
+        },
+        {
+          "columnName": "VerticalOffsetWallPlateToHanger",
+          "value": "-16.5"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_HangerType",
+          "value": "WallUnitVisibleHanger45kg"
+        },
+        {
+          "columnName": "in_CarcaseWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseWidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "DemoWhite"
+        },
+        {
+          "columnName": "Object",
+          "value": "WallUnitVisibleHanger45kgWhite"
+        },
+        {
+          "columnName": "IncludeWallPlateRight",
+          "value": "true"
+        },
+        {
+          "columnName": "WallPlateRightLength",
+          "value": "120"
+        },
+        {
+          "columnName": "IncludeWallPlateLeft",
+          "value": "true"
+        },
+        {
+          "columnName": "WallPlateLeftLength",
+          "value": "120"
+        },
+        {
+          "columnName": "VerticalOffset",
+          "value": "-5"
+        },
+        {
+          "columnName": "VerticalOffsetWallPlateToHanger",
+          "value": "-17"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_HangerType",
+          "value": "WallUnitVisibleHanger45kg"
+        },
+        {
+          "columnName": "in_CarcaseWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseWidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "DemoStainlessSteel"
+        },
+        {
+          "columnName": "Object",
+          "value": "WallUnitVisibleHanger45kgGrey"
+        },
+        {
+          "columnName": "IncludeWallPlateRight",
+          "value": "true"
+        },
+        {
+          "columnName": "WallPlateRightLength",
+          "value": "120"
+        },
+        {
+          "columnName": "IncludeWallPlateLeft",
+          "value": "true"
+        },
+        {
+          "columnName": "WallPlateLeftLength",
+          "value": "120"
+        },
+        {
+          "columnName": "VerticalOffset",
+          "value": "-5"
+        },
+        {
+          "columnName": "VerticalOffsetWallPlateToHanger",
+          "value": "-17"
+        }
+      ]
+    }
+  ]
+}

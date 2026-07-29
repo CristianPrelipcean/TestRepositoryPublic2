@@ -1,0 +1,115 @@
+{
+  "tableName": "tab_FridgeMapping",
+  "description": "Mapping of the Fridge",
+  "restrictionTypeId": "Public",
+  "groupName": "Appliance",
+  "columns": [
+    {
+      "name": "_id",
+      "type": "Integer",
+      "allowNull": false
+    },
+    {
+      "name": "in_Supplier",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_FridgeId",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "ConstructionId",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "GraphicId",
+      "type": "Text",
+      "allowNull": true
+    }
+  ],
+  "rows": [
+    {
+      "data": [
+        {
+          "columnName": "in_Supplier",
+          "value": "Siemens"
+        },
+        {
+          "columnName": "in_FridgeId",
+          "value": "KI86SHDD0"
+        },
+        {
+          "columnName": "ConstructionId",
+          "value": "KI86SHDD0"
+        },
+        {
+          "columnName": "GraphicId",
+          "value": "KI86SHDD0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Supplier",
+          "value": "Siemens"
+        },
+        {
+          "columnName": "in_FridgeId",
+          "value": "KI82LADD0"
+        },
+        {
+          "columnName": "ConstructionId",
+          "value": "KI82LADD0"
+        },
+        {
+          "columnName": "GraphicId",
+          "value": "KI82LADD0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Supplier",
+          "value": "Siemens"
+        },
+        {
+          "columnName": "in_FridgeId",
+          "value": "KI41FADD0"
+        },
+        {
+          "columnName": "ConstructionId",
+          "value": "KI41FADD0"
+        },
+        {
+          "columnName": "GraphicId",
+          "value": "KI41FADD0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Supplier",
+          "value": "None"
+        },
+        {
+          "columnName": "in_FridgeId",
+          "value": "None"
+        },
+        {
+          "columnName": "ConstructionId",
+          "value": "FridgeDefault"
+        },
+        {
+          "columnName": "GraphicId",
+          "value": ""
+        }
+      ]
+    }
+  ]
+}

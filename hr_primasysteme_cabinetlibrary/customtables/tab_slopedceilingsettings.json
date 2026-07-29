@@ -1,0 +1,207 @@
+{
+  "tableName": "tab_SlopedCeilingSettings",
+  "description": "Sloped Ceiling Settings",
+  "restrictionTypeId": "Public",
+  "groupName": "SlopedCeiling",
+  "columns": [
+    {
+      "name": "_id",
+      "type": "Integer",
+      "allowNull": false
+    },
+    {
+      "name": "in_Construction",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "CarcaseConnectionLeftBtm",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "CarcaseConnectionLeftTop",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "CarcaseConnectionRightTop",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "CarcaseConnectionRightBtm",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "CarcaseShelftopConstruction",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "ShelftopHor_PartBack",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "ShelftopAngle_PartFront",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "ShelftopAngle_PartBack",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "BackwallThk",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "BackwallPos",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "CarcaseBackwallConstruction",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "SidePanelTopDepth",
+      "type": "Text",
+      "allowNull": true,
+      "functionDefinition": "(m: parent):number"
+    },
+    {
+      "name": "SidePanelBackHeight",
+      "type": "Text",
+      "allowNull": true,
+      "functionDefinition": "(m: parent):number"
+    }
+  ],
+  "rows": [
+    {
+      "data": [
+        {
+          "columnName": "in_Construction",
+          "value": "Construction01"
+        },
+        {
+          "columnName": "CarcaseConnectionLeftBtm",
+          "value": "SideCShelf"
+        },
+        {
+          "columnName": "CarcaseConnectionLeftTop",
+          "value": "SideCShelf"
+        },
+        {
+          "columnName": "CarcaseConnectionRightTop",
+          "value": "SideCShelf"
+        },
+        {
+          "columnName": "CarcaseConnectionRightBtm",
+          "value": "SideCShelf"
+        },
+        {
+          "columnName": "CarcaseShelftopConstruction",
+          "value": "SlopedCeilingShelfTop"
+        },
+        {
+          "columnName": "ShelftopHor_PartBack",
+          "value": "SlopedCeilingShelftopAngleMitre"
+        },
+        {
+          "columnName": "ShelftopAngle_PartFront",
+          "value": "Mitre"
+        },
+        {
+          "columnName": "ShelftopAngle_PartBack",
+          "value": "Mitre"
+        },
+        {
+          "columnName": "BackwallThk",
+          "value": "19"
+        },
+        {
+          "columnName": "BackwallPos",
+          "value": "19.5"
+        },
+        {
+          "columnName": "CarcaseBackwallConstruction",
+          "value": "Inlayed_LBRT"
+        },
+        {
+          "columnName": "SidePanelTopDepth",
+          "value": "m.mod_TopDepth"
+        },
+        {
+          "columnName": "SidePanelBackHeight",
+          "value": "m.mod_BackHeight"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Construction",
+          "value": "Construction01.1"
+        },
+        {
+          "columnName": "CarcaseConnectionLeftBtm",
+          "value": "SideCShelf"
+        },
+        {
+          "columnName": "CarcaseConnectionLeftTop",
+          "value": "ShelfCSide"
+        },
+        {
+          "columnName": "CarcaseConnectionRightTop",
+          "value": "ShelfCSide"
+        },
+        {
+          "columnName": "CarcaseConnectionRightBtm",
+          "value": "SideCShelf"
+        },
+        {
+          "columnName": "CarcaseShelftopConstruction",
+          "value": "SlopedCeilingShelfTop"
+        },
+        {
+          "columnName": "ShelftopHor_PartBack",
+          "value": "SlopedCeilingShelftopAngleMitre"
+        },
+        {
+          "columnName": "ShelftopAngle_PartFront",
+          "value": "Mitre"
+        },
+        {
+          "columnName": "ShelftopAngle_PartBack",
+          "value": "Mitre"
+        },
+        {
+          "columnName": "BackwallThk",
+          "value": "19"
+        },
+        {
+          "columnName": "BackwallPos",
+          "value": "19"
+        },
+        {
+          "columnName": "CarcaseBackwallConstruction",
+          "value": "Inlayed_T"
+        },
+        {
+          "columnName": "SidePanelTopDepth",
+          "value": "(m.mod_TopDepth - m.g.basic_SidepanelOffsetFront - (GlobalFunc.calc_pythagoreanTheorem((270 - m.mod_SlopeAngle) / 2, 0, m.mod_ShelftopThk, 0)[1]))"
+        },
+        {
+          "columnName": "SidePanelBackHeight",
+          "value": "(m.mod_Height - (GlobalFunc.calc_pythagoreanTheorem(m.mod_SlopeAngle - 90, (m.mod_Depth - (m.mod_TopDepth - m.g.basic_SidepanelOffsetFront - (GlobalFunc.calc_pythagoreanTheorem((270 - m.mod_SlopeAngle) / 2, 0, m.mod_ShelftopThk, 0)[1]))), 0, 0)[2]))"
+        }
+      ]
+    }
+  ]
+}

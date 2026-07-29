@@ -1,0 +1,49 @@
+{
+  "variantId": "mod_PaneltopProgram",
+  "shortName": "Program",
+  "variantTypeId": "Text",
+  "description": "Program of the panel top",
+  "restrictionTypeId": "Public",
+  "groupName": "Paneltop",
+  "imageId": "images/Paneltop.jpg",
+  "isArray": false,
+  "isPosRelevant": true,
+  "mainAttr": true,
+  "userRight": "Simple",
+  "implicitRelevant": false,
+  "posView": "Dropdown",
+  "sorting": 1,
+  "matrix": [
+    {
+      "id": "GrainGroupId",
+      "type": "Text",
+      "default": "Neutral"
+    }
+  ],
+  "selections": [
+    {
+      "value": "Style",
+      "description": "Thickness 25",
+      "shortName": "Style",
+      "imageId": "images/Style.jpg",
+      "matrix": [
+        {
+          "id": "GrainGroupId",
+          "value": "Horizontal"
+        }
+      ]
+    },
+    {
+      "value": "Cube",
+      "description": "Thickness 38",
+      "shortName": "Cube",
+      "imageId": "images/Cube.jpg",
+      "matrix": [
+        {
+          "id": "GrainGroupId",
+          "value": "Neutral"
+        }
+      ]
+    }
+  ]
+}

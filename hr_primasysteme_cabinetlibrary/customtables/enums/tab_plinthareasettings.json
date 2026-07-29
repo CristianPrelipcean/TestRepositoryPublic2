@@ -1,0 +1,169 @@
+[
+  {
+    "tableName": "tab_PlinthAreaSettings",
+    "columnId": "BasePoint",
+    "enumsJson": [
+      {
+        "value": "1",
+        "description": "Base Point 1 based on library zero Point for PosX and PosY",
+        "imageId": "images/BasePoint1.jpg"
+      },
+      {
+        "value": "2",
+        "description": "Base Point 2 based on library zero Point for PosX and PosY",
+        "imageId": "images/BasePoint2.jpg"
+      },
+      {
+        "value": "3",
+        "description": "Base Point 3 based on library zero Point for PosY and for PosX the width",
+        "imageId": "images/BasePoint3.jpg"
+      },
+      {
+        "value": "4",
+        "description": "Base Point 4 based on library zero Point for PosX and PosY",
+        "imageId": "images/BasePoint4.jpg"
+      },
+      {
+        "value": "5",
+        "description": "Base Point 5 based on library zero Point for PosX and PosY",
+        "imageId": "images/BasePoint5.jpg"
+      },
+      {
+        "value": "6",
+        "description": "Base Point 6 based on library zero Point for PosY and for PosX the width",
+        "imageId": "images/BasePoint6.jpg"
+      },
+      {
+        "value": "7",
+        "description": "Base Point 7 based on library zero Point for PosX and for PosY the depth",
+        "imageId": "images/BasePoint7.jpg"
+      },
+      {
+        "value": "8",
+        "description": "Base Point 8 based on library zero Point for PosX and for PosY the depth",
+        "imageId": "images/BasePoint8.jpg"
+      },
+      {
+        "value": "9",
+        "description": "Base Point 9 based on width for PosX and for PosY the depth",
+        "imageId": "images/BasePoint9.jpg"
+      }
+    ]
+  },
+  {
+    "tableName": "tab_PlinthAreaSettings",
+    "columnId": "HardwareRotation",
+    "enumsJson": [
+      {
+        "value": "0",
+        "description": "No rotation",
+        "imageId": "images/0_Grad.png"
+      },
+      {
+        "value": "90",
+        "description": "Rotation by 90 degrees clockwise",
+        "imageId": "images/90_Grad.png"
+      },
+      {
+        "value": "180",
+        "description": "Rotation by 180 degrees clockwise",
+        "imageId": "images/180_Grad.png"
+      },
+      {
+        "value": "270",
+        "description": "Rotation by 270 degrees clockwise",
+        "imageId": "images/270_Grad.png"
+      }
+    ]
+  },
+  {
+    "tableName": "tab_PlinthAreaSettings",
+    "columnId": "MatrixPositionType",
+    "enumsJson": [
+      {
+        "value": "11",
+        "description": "Left top",
+        "imageId": "images/LeftTop_1.jpg"
+      },
+      {
+        "value": "12",
+        "description": "Center top",
+        "imageId": "images/CenterTop.jpg"
+      },
+      {
+        "value": "13",
+        "description": "Right top",
+        "imageId": "images/RightTop_1.jpg"
+      },
+      {
+        "value": "21",
+        "description": "Left center",
+        "imageId": "images/LeftCenter.jpg"
+      },
+      {
+        "value": "22",
+        "description": "Center center",
+        "imageId": "images/CenterCenter.jpg"
+      },
+      {
+        "value": "23",
+        "description": "Right center",
+        "imageId": "images/RightCenter.jpg"
+      },
+      {
+        "value": "31",
+        "description": "Left bottom",
+        "imageId": "images/LeftBottom.jpg"
+      },
+      {
+        "value": "32",
+        "description": "Center bottom",
+        "imageId": "images/CenterBottom.jpg"
+      },
+      {
+        "value": "33",
+        "description": "Right bottom",
+        "imageId": "images/RightBottom.jpg"
+      }
+    ]
+  },
+  {
+    "tableName": "tab_PlinthAreaSettings",
+    "columnId": "SettingsLogic",
+    "enumsJson": [
+      {
+        "value": "Library",
+        "imageId": "images/Library.png"
+      },
+      {
+        "value": "Custom",
+        "imageId": "images/Custom.png"
+      }
+    ]
+  },
+  {
+    "tableName": "tab_PlinthAreaSettings",
+    "columnId": "in_PlinthAreaDesign",
+    "refColumnId": "Value"
+  },
+  {
+    "tableName": "tab_PlinthAreaSettings",
+    "columnId": "in_PositionBackMatrix",
+    "refColumnId": "Value"
+  },
+  {
+    "tableName": "tab_PlinthAreaSettings",
+    "columnId": "in_PositionFrontMatrix",
+    "refColumnId": "Value"
+  },
+  {
+    "tableName": "tab_PlinthAreaSettings",
+    "columnId": "in_PositionLeftMatrix",
+    "refColumnId": "Value"
+  },
+  {
+    "tableName": "tab_PlinthAreaSettings",
+    "columnId": "in_PositionRightMatrix",
+    "refColumnId": "Value"
+  }
+]

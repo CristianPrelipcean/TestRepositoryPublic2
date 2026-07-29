@@ -1,0 +1,6 @@
+{
+  "functionId": "process_ClothingOrganizer",
+  "funcType": "Function",
+  "restrictionTypeId": "Internal",
+  "funcDef": "process_ClothingOrganizer(m: any): {\n  IsComplete: boolean;\n  HasExtraItem: boolean;\n\n  BoardInfo: {\n    Width: number;\n    Depth: number;\n    Thickness: number;\n\tPosX: number;\n    PosY: number;\n    PosZ: number;\n    Color: string;\n  };\n\n  Hardware: {\n\tBomId: string;\t\n\tGraphics: {\n\t\tDimX: number;\n\t\tDimY: number;\n\t\tDimZ: number;\n\t\tPosX: number;\n\t\tPosY: number;\n\t\tPosZ: number;\n\t\tColor: string | null;\n\t\tModel3D: unknown | null;\n\t}[];\n  };\n\n  Processing: {\n\t\tSide: 'Left' | 'Right' | 'Top' | 'Bottom';\n\t\tRefPosX: number;\n\t\tRefPosY: number;\n\t\tRefPosZ: number;\n\t\tProcessingId: string;\n  }[]\n}"
+}

@@ -1,0 +1,114 @@
+{
+  "tableName": "tab_FramePartConnectionMapping",
+  "description": "Describes the connection between parts of the frame",
+  "restrictionTypeId": "Public",
+  "groupName": "Frame",
+  "columns": [
+    {
+      "name": "_id",
+      "type": "Integer",
+      "allowNull": false
+    },
+    {
+      "name": "in_PartGroup",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_TypeElement",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_FrontProgram",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_ThkMin",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "in_ThkMax",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "ConnectionHardwarePositioning",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "Object",
+      "type": "Text",
+      "allowNull": true
+    }
+  ],
+  "rows": [
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "All"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontProgram",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ThkMin",
+          "value": "16"
+        },
+        {
+          "columnName": "in_ThkMax",
+          "value": "99"
+        },
+        {
+          "columnName": "ConnectionHardwarePositioning",
+          "value": "FramePartConnection01"
+        },
+        {
+          "columnName": "Object",
+          "value": "Dowel02"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartGroup",
+          "value": "All"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontProgram",
+          "value": "Modern"
+        },
+        {
+          "columnName": "in_ThkMin",
+          "value": "16"
+        },
+        {
+          "columnName": "in_ThkMax",
+          "value": "99"
+        },
+        {
+          "columnName": "ConnectionHardwarePositioning",
+          "value": "FramePartConnection02"
+        },
+        {
+          "columnName": "Object",
+          "value": "Dowel02"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2182 @@
+{
+  "tableName": "tab_CarcaseShelftopSettings",
+  "description": "Settings for the top shelf in relation to mod_ShelftopConstruction",
+  "restrictionTypeId": "Public",
+  "groupName": "CarcaseConstruction",
+  "columns": [
+    {
+      "name": "_id",
+      "type": "Integer",
+      "allowNull": false
+    },
+    {
+      "name": "in_ModuleName",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_ShelfTopConstruction",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_AdditionalInfo1",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "LibrarySolution",
+      "type": "Bool",
+      "allowNull": true
+    },
+    {
+      "name": "UsedModule",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "ConstructionTablePartName",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "InsertModule",
+      "type": "Bool",
+      "allowNull": true
+    },
+    {
+      "name": "Construction",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "FrontsideRelevant",
+      "type": "Bool",
+      "allowNull": true
+    },
+    {
+      "name": "BacksideRelevant",
+      "type": "Bool",
+      "allowNull": true
+    },
+    {
+      "name": "HobMoveRelevant",
+      "type": "Bool",
+      "allowNull": true
+    }
+  ],
+  "rows": [
+    {
+      "data": [
+        {
+          "columnName": "in_ModuleName",
+          "value": "mc_Storageunit01"
+        },
+        {
+          "columnName": "in_ShelfTopConstruction",
+          "value": "ShelfTop"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "LibrarySolution",
+          "value": "true"
+        },
+        {
+          "columnName": "UsedModule",
+          "value": "mc_CarcaseShelftop01"
+        },
+        {
+          "columnName": "ConstructionTablePartName",
+          "value": "part_Shelftop"
+        },
+        {
+          "columnName": "InsertModule",
+          "value": "true"
+        },
+        {
+          "columnName": "Construction",
+          "value": "ShelfTop"
+        },
+        {
+          "columnName": "FrontsideRelevant",
+          "value": "true"
+        },
+        {
+          "columnName": "BacksideRelevant",
+          "value": "true"
+        },
+        {
+          "columnName": "HobMoveRelevant",
+          "value": "false"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ModuleName",
+          "value": "mc_Storageunit01"
+        },
+        {
+          "columnName": "in_ShelfTopConstruction",
+          "value": "RailTopFrontBackHorizontal"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "LibrarySolution",
+          "value": "true"
+        },
+        {
+          "columnName": "UsedModule",
+          "value": "mc_CarcaseShelftop01"
+        },
+        {
+          "columnName": "ConstructionTablePartName",
+          "value": "part_Railhortopfront"
+        },
+        {
+          "columnName": "InsertModule",
+          "value": "true"
+        },
+        {
+          "columnName": "Construction",
+          "value": "RailFrontHorizontal"
+        },
+        {
+          "columnName": "FrontsideRelevant",
+          "value": "true"
+        },
+        {
+          "columnName": "BacksideRelevant",
+          "value": "false"
+        },
+        {
+          "columnName": "HobMoveRelevant",
+          "value": "false"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ModuleName",
+          "value": "mc_Storageunit01"
+        },
+        {
+          "columnName": "in_ShelfTopConstruction",
+          "value": "RailTopFrontBackHorizontal"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "LibrarySolution",
+          "value": "true"
+        },
+        {
+          "columnName": "UsedModule",
+          "value": "mc_CarcaseShelftop01"
+        },
+        {
+          "columnName": "ConstructionTablePartName",
+          "value": "part_Railhortopback"
+        },
+        {
+          "columnName": "InsertModule",
+          "value": "true"
+        },
+        {
+          "columnName": "Construction",
+          "value": "RailBackHorizontal"
+        },
+        {
+          "columnName": "FrontsideRelevant",
+          "value": "false"
+        },
+        {
+          "columnName": "BacksideRelevant",
+          "value": "true"
+        },
+        {
+          "columnName": "HobMoveRelevant",
+          "value": "false"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ModuleName",
+          "value": "mc_Storageunit01"
+        },
+        {
+          "columnName": "in_ShelfTopConstruction",
+          "value": "RailTopFrontHorizontal"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "LibrarySolution",
+          "value": "true"
+        },
+        {
+          "columnName": "UsedModule",
+          "value": "mc_CarcaseShelftop01"
+        },
+        {
+          "columnName": "ConstructionTablePartName",
+          "value": "part_Railhortopfront"
+        },
+        {
+          "columnName": "InsertModule",
+          "value": "true"
+        },
+        {
+          "columnName": "Construction",
+          "value": "RailFrontHorizontal"
+        },
+        {
+          "columnName": "FrontsideRelevant",
+          "value": "true"
+        },
+        {
+          "columnName": "BacksideRelevant",
+          "value": "false"
+        },
+        {
+          "columnName": "HobMoveRelevant",
+          "value": "false"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ModuleName",
+          "value": "mc_Storageunit01"
+        },
+        {
+          "columnName": "in_ShelfTopConstruction",
+          "value": "RailTopBackHorizontal"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "LibrarySolution",
+          "value": "true"
+        },
+        {
+          "columnName": "UsedModule",
+          "value": "mc_CarcaseShelftop01"
+        },
+        {
+          "columnName": "ConstructionTablePartName",
+          "value": "part_Railhortopback"
+        },
+        {
+          "columnName": "InsertModule",
+          "value": "true"
+        },
+        {
+          "columnName": "Construction",
+          "value": "RailBackHorizontal"
+        },
+        {
+          "columnName": "FrontsideRelevant",
+          "value": "false"
+        },
+        {
+          "columnName": "BacksideRelevant",
+          "value": "true"
+        },
+        {
+          "columnName": "HobMoveRelevant",
+          "value": "false"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ModuleName",
+          "value": "mc_Storageunit01"
+        },
+        {
+          "columnName": "in_ShelfTopConstruction",
+          "value": "RailTopFrontBackVertical"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "LibrarySolution",
+          "value": "true"
+        },
+        {
+          "columnName": "UsedModule",
+          "value": "mc_CarcaseShelftop01"
+        },
+        {
+          "columnName": "ConstructionTablePartName",
+          "value": "part_Railverttopfront"
+        },
+        {
+          "columnName": "InsertModule",
+          "value": "true"
+        },
+        {
+          "columnName": "Construction",
+          "value": "RailFrontVertical"
+        },
+        {
+          "columnName": "FrontsideRelevant",
+          "value": "true"
+        },
+        {
+          "columnName": "BacksideRelevant",
+          "value": "false"
+        },
+        {
+          "columnName": "HobMoveRelevant",
+          "value": "false"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ModuleName",
+          "value": "mc_Storageunit01"
+        },
+        {
+          "columnName": "in_ShelfTopConstruction",
+          "value": "RailTopFrontBackVertical"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "LibrarySolution",
+          "value": "true"
+        },
+        {
+          "columnName": "UsedModule",
+          "value": "mc_CarcaseShelftop01"
+        },
+        {
+          "columnName": "ConstructionTablePartName",
+          "value": "part_Railverttopback"
+        },
+        {
+          "columnName": "InsertModule",
+          "value": "true"
+        },
+        {
+          "columnName": "Construction",
+          "value": "RailBackVertical"
+        },
+        {
+          "columnName": "FrontsideRelevant",
+          "value": "false"
+        },
+        {
+          "columnName": "BacksideRelevant",
+          "value": "true"
+        },
+        {
+          "columnName": "HobMoveRelevant",
+          "value": "false"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ModuleName",
+          "value": "mc_Storageunit01"
+        },
+        {
+          "columnName": "in_ShelfTopConstruction",
+          "value": "RailTopFrontVertical"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "LibrarySolution",
+          "value": "true"
+        },
+        {
+          "columnName": "UsedModule",
+          "value": "mc_CarcaseShelftop01"
+        },
+        {
+          "columnName": "ConstructionTablePartName",
+          "value": "part_Railverttopfront"
+        },
+        {
+          "columnName": "InsertModule",
+          "value": "true"
+        },
+        {
+          "columnName": "Construction",
+          "value": "RailFrontVertical"
+        },
+        {
+          "columnName": "FrontsideRelevant",
+          "value": "true"
+        },
+        {
+          "columnName": "BacksideRelevant",
+          "value": "false"
+        },
+        {
+          "columnName": "HobMoveRelevant",
+          "value": "false"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ModuleName",
+          "value": "mc_Storageunit01"
+        },
+        {
+          "columnName": "in_ShelfTopConstruction",
+          "value": "RailTopBackVertical"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "LibrarySolution",
+          "value": "true"
+        },
+        {
+          "columnName": "UsedModule",
+          "value": "mc_CarcaseShelftop01"
+        },
+        {
+          "columnName": "ConstructionTablePartName",
+          "value": "part_Railverttopback"
+        },
+        {
+          "columnName": "InsertModule",
+          "value": "true"
+        },
+        {
+          "columnName": "Construction",
+          "value": "RailBackVertical"
+        },
+        {
+          "columnName": "FrontsideRelevant",
+          "value": "false"
+        },
+        {
+          "columnName": "BacksideRelevant",
+          "value": "true"
+        },
+        {
+          "columnName": "HobMoveRelevant",
+          "value": "false"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ModuleName",
+          "value": "mc_Storageunit01"
+        },
+        {
+          "columnName": "in_ShelfTopConstruction",
+          "value": "RailTopFrontHorBackVer"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "LibrarySolution",
+          "value": "true"
+        },
+        {
+          "columnName": "UsedModule",
+          "value": "mc_CarcaseShelftop01"
+        },
+        {
+          "columnName": "ConstructionTablePartName",
+          "value": "part_Railhortopfront"
+        },
+        {
+          "columnName": "InsertModule",
+          "value": "true"
+        },
+        {
+          "columnName": "Construction",
+          "value": "RailFrontHorizontal"
+        },
+        {
+          "columnName": "FrontsideRelevant",
+          "value": "true"
+        },
+        {
+          "columnName": "BacksideRelevant",
+          "value": "false"
+        },
+        {
+          "columnName": "HobMoveRelevant",
+          "value": "false"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ModuleName",
+          "value": "mc_Storageunit01"
+        },
+        {
+          "columnName": "in_ShelfTopConstruction",
+          "value": "RailTopFrontHorBackVer"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "LibrarySolution",
+          "value": "true"
+        },
+        {
+          "columnName": "UsedModule",
+          "value": "mc_CarcaseShelftop01"
+        },
+        {
+          "columnName": "ConstructionTablePartName",
+          "value": "part_Railverttopback"
+        },
+        {
+          "columnName": "InsertModule",
+          "value": "true"
+        },
+        {
+          "columnName": "Construction",
+          "value": "RailBackVertical"
+        },
+        {
+          "columnName": "FrontsideRelevant",
+          "value": "false"
+        },
+        {
+          "columnName": "BacksideRelevant",
+          "value": "true"
+        },
+        {
+          "columnName": "HobMoveRelevant",
+          "value": "false"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ModuleName",
+          "value": "mc_Storageunit01"
+        },
+        {
+          "columnName": "in_ShelfTopConstruction",
+          "value": "RailTopFrontVerBackHor"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "LibrarySolution",
+          "value": "true"
+        },
+        {
+          "columnName": "UsedModule",
+          "value": "mc_CarcaseShelftop01"
+        },
+        {
+          "columnName": "ConstructionTablePartName",
+          "value": "part_Railverttopfront"
+        },
+        {
+          "columnName": "InsertModule",
+          "value": "true"
+        },
+        {
+          "columnName": "Construction",
+          "value": "RailFrontVertical"
+        },
+        {
+          "columnName": "FrontsideRelevant",
+          "value": "true"
+        },
+        {
+          "columnName": "BacksideRelevant",
+          "value": "false"
+        },
+        {
+          "columnName": "HobMoveRelevant",
+          "value": "false"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ModuleName",
+          "value": "mc_Storageunit01"
+        },
+        {
+          "columnName": "in_ShelfTopConstruction",
+          "value": "RailTopFrontVerBackHor"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "LibrarySolution",
+          "value": "true"
+        },
+        {
+          "columnName": "UsedModule",
+          "value": "mc_CarcaseShelftop01"
+        },
+        {
+          "columnName": "ConstructionTablePartName",
+          "value": "part_Railhortopback"
+        },
+        {
+          "columnName": "InsertModule",
+          "value": "true"
+        },
+        {
+          "columnName": "Construction",
+          "value": "RailBackHorizontal"
+        },
+        {
+          "columnName": "FrontsideRelevant",
+          "value": "false"
+        },
+        {
+          "columnName": "BacksideRelevant",
+          "value": "true"
+        },
+        {
+          "columnName": "HobMoveRelevant",
+          "value": "false"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ModuleName",
+          "value": "mc_Storageunit01"
+        },
+        {
+          "columnName": "in_ShelfTopConstruction",
+          "value": "RailTopFixedFrontBracket"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "LibrarySolution",
+          "value": "true"
+        },
+        {
+          "columnName": "UsedModule",
+          "value": "mc_CarcaseShelftop01"
+        },
+        {
+          "columnName": "ConstructionTablePartName",
+          "value": "part_Railverttopback"
+        },
+        {
+          "columnName": "InsertModule",
+          "value": "true"
+        },
+        {
+          "columnName": "Construction",
+          "value": "RailBackVertical"
+        },
+        {
+          "columnName": "FrontsideRelevant",
+          "value": "false"
+        },
+        {
+          "columnName": "BacksideRelevant",
+          "value": "true"
+        },
+        {
+          "columnName": "HobMoveRelevant",
+          "value": "false"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ModuleName",
+          "value": "mc_Storageunit01"
+        },
+        {
+          "columnName": "in_ShelfTopConstruction",
+          "value": "RailTopFixedFrontBracket"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "LibrarySolution",
+          "value": "true"
+        },
+        {
+          "columnName": "UsedModule",
+          "value": "mc_CarcaseShelftop03"
+        },
+        {
+          "columnName": "ConstructionTablePartName",
+          "value": "part_Bracket"
+        },
+        {
+          "columnName": "InsertModule",
+          "value": "true"
+        },
+        {
+          "columnName": "Construction",
+          "value": "Bracket"
+        },
+        {
+          "columnName": "FrontsideRelevant",
+          "value": "false"
+        },
+        {
+          "columnName": "BacksideRelevant",
+          "value": "false"
+        },
+        {
+          "columnName": "HobMoveRelevant",
+          "value": "false"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ModuleName",
+          "value": "mc_Storageunit01"
+        },
+        {
+          "columnName": "in_ShelfTopConstruction",
+          "value": "HobUnitFixedBracket"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "LibrarySolution",
+          "value": "true"
+        },
+        {
+          "columnName": "UsedModule",
+          "value": "mc_CarcaseShelftop01"
+        },
+        {
+          "columnName": "ConstructionTablePartName",
+          "value": "part_Railverttopback"
+        },
+        {
+          "columnName": "InsertModule",
+          "value": "true"
+        },
+        {
+          "columnName": "Construction",
+          "value": "RailBackVertical"
+        },
+        {
+          "columnName": "FrontsideRelevant",
+          "value": "false"
+        },
+        {
+          "columnName": "BacksideRelevant",
+          "value": "true"
+        },
+        {
+          "columnName": "HobMoveRelevant",
+          "value": "true"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ModuleName",
+          "value": "mc_Storageunit01"
+        },
+        {
+          "columnName": "in_ShelfTopConstruction",
+          "value": "HobUnitFixedBracket"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "LibrarySolution",
+          "value": "true"
+        },
+        {
+          "columnName": "UsedModule",
+          "value": "mc_CarcaseShelftop02"
+        },
+        {
+          "columnName": "ConstructionTablePartName",
+          "value": "part_Heatshelf"
+        },
+        {
+          "columnName": "InsertModule",
+          "value": "true"
+        },
+        {
+          "columnName": "Construction",
+          "value": "Heatshelf"
+        },
+        {
+          "columnName": "FrontsideRelevant",
+          "value": "false"
+        },
+        {
+          "columnName": "BacksideRelevant",
+          "value": "false"
+        },
+        {
+          "columnName": "HobMoveRelevant",
+          "value": "false"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ModuleName",
+          "value": "mc_Storageunit01"
+        },
+        {
+          "columnName": "in_ShelfTopConstruction",
+          "value": "HobUnitFixedBracket"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "LibrarySolution",
+          "value": "true"
+        },
+        {
+          "columnName": "UsedModule",
+          "value": "mc_CarcaseShelftop03"
+        },
+        {
+          "columnName": "ConstructionTablePartName",
+          "value": "part_Bracket"
+        },
+        {
+          "columnName": "InsertModule",
+          "value": "true"
+        },
+        {
+          "columnName": "Construction",
+          "value": "Bracket"
+        },
+        {
+          "columnName": "FrontsideRelevant",
+          "value": "false"
+        },
+        {
+          "columnName": "BacksideRelevant",
+          "value": "false"
+        },
+        {
+          "columnName": "HobMoveRelevant",
+          "value": "false"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ModuleName",
+          "value": "mc_Storageunit01"
+        },
+        {
+          "columnName": "in_ShelfTopConstruction",
+          "value": "HobUnitFixedRail"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "LibrarySolution",
+          "value": "true"
+        },
+        {
+          "columnName": "UsedModule",
+          "value": "mc_CarcaseShelftop01"
+        },
+        {
+          "columnName": "ConstructionTablePartName",
+          "value": "part_Railverttopfront"
+        },
+        {
+          "columnName": "InsertModule",
+          "value": "true"
+        },
+        {
+          "columnName": "Construction",
+          "value": "RailFrontVertical"
+        },
+        {
+          "columnName": "FrontsideRelevant",
+          "value": "true"
+        },
+        {
+          "columnName": "BacksideRelevant",
+          "value": "false"
+        },
+        {
+          "columnName": "HobMoveRelevant",
+          "value": "true"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ModuleName",
+          "value": "mc_Storageunit01"
+        },
+        {
+          "columnName": "in_ShelfTopConstruction",
+          "value": "HobUnitFixedRail"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "LibrarySolution",
+          "value": "true"
+        },
+        {
+          "columnName": "UsedModule",
+          "value": "mc_CarcaseShelftop01"
+        },
+        {
+          "columnName": "ConstructionTablePartName",
+          "value": "part_Railverttopback"
+        },
+        {
+          "columnName": "InsertModule",
+          "value": "true"
+        },
+        {
+          "columnName": "Construction",
+          "value": "RailBackVertical"
+        },
+        {
+          "columnName": "FrontsideRelevant",
+          "value": "false"
+        },
+        {
+          "columnName": "BacksideRelevant",
+          "value": "true"
+        },
+        {
+          "columnName": "HobMoveRelevant",
+          "value": "true"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ModuleName",
+          "value": "mc_Storageunit01"
+        },
+        {
+          "columnName": "in_ShelfTopConstruction",
+          "value": "HobUnitFixedRail"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "LibrarySolution",
+          "value": "true"
+        },
+        {
+          "columnName": "UsedModule",
+          "value": "mc_CarcaseShelftop02"
+        },
+        {
+          "columnName": "ConstructionTablePartName",
+          "value": "part_Heatshelf"
+        },
+        {
+          "columnName": "InsertModule",
+          "value": "true"
+        },
+        {
+          "columnName": "Construction",
+          "value": "Heatshelf"
+        },
+        {
+          "columnName": "FrontsideRelevant",
+          "value": "false"
+        },
+        {
+          "columnName": "BacksideRelevant",
+          "value": "false"
+        },
+        {
+          "columnName": "HobMoveRelevant",
+          "value": "false"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ModuleName",
+          "value": "mc_Storageunit01"
+        },
+        {
+          "columnName": "in_ShelfTopConstruction",
+          "value": "HobUnitRemovable"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "LibrarySolution",
+          "value": "true"
+        },
+        {
+          "columnName": "UsedModule",
+          "value": "mc_CarcaseShelftop01"
+        },
+        {
+          "columnName": "ConstructionTablePartName",
+          "value": "part_Railverttopback"
+        },
+        {
+          "columnName": "InsertModule",
+          "value": "true"
+        },
+        {
+          "columnName": "Construction",
+          "value": "RailBackVertical"
+        },
+        {
+          "columnName": "FrontsideRelevant",
+          "value": "false"
+        },
+        {
+          "columnName": "BacksideRelevant",
+          "value": "true"
+        },
+        {
+          "columnName": "HobMoveRelevant",
+          "value": "true"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ModuleName",
+          "value": "mc_Storageunit01"
+        },
+        {
+          "columnName": "in_ShelfTopConstruction",
+          "value": "HobUnitRemovable"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "LibrarySolution",
+          "value": "true"
+        },
+        {
+          "columnName": "UsedModule",
+          "value": "mc_CarcaseShelftop02"
+        },
+        {
+          "columnName": "ConstructionTablePartName",
+          "value": "part_Heatshelf"
+        },
+        {
+          "columnName": "InsertModule",
+          "value": "true"
+        },
+        {
+          "columnName": "Construction",
+          "value": "Heatshelf"
+        },
+        {
+          "columnName": "FrontsideRelevant",
+          "value": "false"
+        },
+        {
+          "columnName": "BacksideRelevant",
+          "value": "false"
+        },
+        {
+          "columnName": "HobMoveRelevant",
+          "value": "false"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ModuleName",
+          "value": "mc_Storageunit01"
+        },
+        {
+          "columnName": "in_ShelfTopConstruction",
+          "value": "HobUnitRemovable"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "LibrarySolution",
+          "value": "true"
+        },
+        {
+          "columnName": "UsedModule",
+          "value": "mc_CarcaseShelftop02"
+        },
+        {
+          "columnName": "ConstructionTablePartName",
+          "value": "part_HeatshelfFront"
+        },
+        {
+          "columnName": "InsertModule",
+          "value": "true"
+        },
+        {
+          "columnName": "Construction",
+          "value": "HeatshelfFront"
+        },
+        {
+          "columnName": "FrontsideRelevant",
+          "value": "false"
+        },
+        {
+          "columnName": "BacksideRelevant",
+          "value": "false"
+        },
+        {
+          "columnName": "HobMoveRelevant",
+          "value": "false"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ModuleName",
+          "value": "mc_Storageunit01"
+        },
+        {
+          "columnName": "in_ShelfTopConstruction",
+          "value": "HobUnitRemovable"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "Fingergrip"
+        },
+        {
+          "columnName": "LibrarySolution",
+          "value": "true"
+        },
+        {
+          "columnName": "UsedModule",
+          "value": "mc_CarcaseShelftop02"
+        },
+        {
+          "columnName": "ConstructionTablePartName",
+          "value": "part_Heatshelf"
+        },
+        {
+          "columnName": "InsertModule",
+          "value": "true"
+        },
+        {
+          "columnName": "Construction",
+          "value": "Heatshelf"
+        },
+        {
+          "columnName": "FrontsideRelevant",
+          "value": "false"
+        },
+        {
+          "columnName": "BacksideRelevant",
+          "value": "false"
+        },
+        {
+          "columnName": "HobMoveRelevant",
+          "value": "false"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ModuleName",
+          "value": "mc_Storageunit01"
+        },
+        {
+          "columnName": "in_ShelfTopConstruction",
+          "value": "HobUnitRemovable"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "Fingergrip"
+        },
+        {
+          "columnName": "LibrarySolution",
+          "value": "true"
+        },
+        {
+          "columnName": "UsedModule",
+          "value": "mc_CarcaseShelftop01"
+        },
+        {
+          "columnName": "ConstructionTablePartName",
+          "value": "part_Railverttopback"
+        },
+        {
+          "columnName": "InsertModule",
+          "value": "true"
+        },
+        {
+          "columnName": "Construction",
+          "value": "RailBackVertical"
+        },
+        {
+          "columnName": "FrontsideRelevant",
+          "value": "false"
+        },
+        {
+          "columnName": "BacksideRelevant",
+          "value": "true"
+        },
+        {
+          "columnName": "HobMoveRelevant",
+          "value": "true"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ModuleName",
+          "value": "mc_Storageunit01"
+        },
+        {
+          "columnName": "in_ShelfTopConstruction",
+          "value": "HobUnitFixedBracket"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "Fingergrip"
+        },
+        {
+          "columnName": "LibrarySolution",
+          "value": "true"
+        },
+        {
+          "columnName": "UsedModule",
+          "value": "mc_CarcaseShelftop03"
+        },
+        {
+          "columnName": "ConstructionTablePartName",
+          "value": "part_Bracket"
+        },
+        {
+          "columnName": "InsertModule",
+          "value": "true"
+        },
+        {
+          "columnName": "Construction",
+          "value": "Bracket"
+        },
+        {
+          "columnName": "FrontsideRelevant",
+          "value": "false"
+        },
+        {
+          "columnName": "BacksideRelevant",
+          "value": "false"
+        },
+        {
+          "columnName": "HobMoveRelevant",
+          "value": "false"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ModuleName",
+          "value": "mc_Storageunit01"
+        },
+        {
+          "columnName": "in_ShelfTopConstruction",
+          "value": "HobUnitFixedBracket"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "Fingergrip"
+        },
+        {
+          "columnName": "LibrarySolution",
+          "value": "true"
+        },
+        {
+          "columnName": "UsedModule",
+          "value": "mc_CarcaseShelftop02"
+        },
+        {
+          "columnName": "ConstructionTablePartName",
+          "value": "part_Heatshelf"
+        },
+        {
+          "columnName": "InsertModule",
+          "value": "true"
+        },
+        {
+          "columnName": "Construction",
+          "value": "Heatshelf"
+        },
+        {
+          "columnName": "FrontsideRelevant",
+          "value": "false"
+        },
+        {
+          "columnName": "BacksideRelevant",
+          "value": "false"
+        },
+        {
+          "columnName": "HobMoveRelevant",
+          "value": "false"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ModuleName",
+          "value": "mc_Storageunit01"
+        },
+        {
+          "columnName": "in_ShelfTopConstruction",
+          "value": "HobUnitFixedBracket"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "Fingergrip"
+        },
+        {
+          "columnName": "LibrarySolution",
+          "value": "true"
+        },
+        {
+          "columnName": "UsedModule",
+          "value": "mc_CarcaseShelftop01"
+        },
+        {
+          "columnName": "ConstructionTablePartName",
+          "value": "part_Railverttopback"
+        },
+        {
+          "columnName": "InsertModule",
+          "value": "true"
+        },
+        {
+          "columnName": "Construction",
+          "value": "RailBackVertical"
+        },
+        {
+          "columnName": "FrontsideRelevant",
+          "value": "false"
+        },
+        {
+          "columnName": "BacksideRelevant",
+          "value": "true"
+        },
+        {
+          "columnName": "HobMoveRelevant",
+          "value": "true"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ModuleName",
+          "value": "mc_Storageunit01"
+        },
+        {
+          "columnName": "in_ShelfTopConstruction",
+          "value": "HobUnitFixedRail"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "Fingergrip"
+        },
+        {
+          "columnName": "LibrarySolution",
+          "value": "true"
+        },
+        {
+          "columnName": "UsedModule",
+          "value": "mc_CarcaseShelftop01"
+        },
+        {
+          "columnName": "ConstructionTablePartName",
+          "value": "part_Railverttopback"
+        },
+        {
+          "columnName": "InsertModule",
+          "value": "true"
+        },
+        {
+          "columnName": "Construction",
+          "value": "RailBackVertical"
+        },
+        {
+          "columnName": "FrontsideRelevant",
+          "value": "false"
+        },
+        {
+          "columnName": "BacksideRelevant",
+          "value": "true"
+        },
+        {
+          "columnName": "HobMoveRelevant",
+          "value": "true"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ModuleName",
+          "value": "mc_Storageunit01"
+        },
+        {
+          "columnName": "in_ShelfTopConstruction",
+          "value": "HobUnitFixedRail"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "Fingergrip"
+        },
+        {
+          "columnName": "LibrarySolution",
+          "value": "true"
+        },
+        {
+          "columnName": "UsedModule",
+          "value": "mc_CarcaseShelftop01"
+        },
+        {
+          "columnName": "ConstructionTablePartName",
+          "value": "part_Railverttopfront"
+        },
+        {
+          "columnName": "InsertModule",
+          "value": "true"
+        },
+        {
+          "columnName": "Construction",
+          "value": "RailFrontVertical"
+        },
+        {
+          "columnName": "FrontsideRelevant",
+          "value": "true"
+        },
+        {
+          "columnName": "BacksideRelevant",
+          "value": "false"
+        },
+        {
+          "columnName": "HobMoveRelevant",
+          "value": "true"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ModuleName",
+          "value": "mc_Storageunit01"
+        },
+        {
+          "columnName": "in_ShelfTopConstruction",
+          "value": "HobUnitFixedRail"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "Fingergrip"
+        },
+        {
+          "columnName": "LibrarySolution",
+          "value": "true"
+        },
+        {
+          "columnName": "UsedModule",
+          "value": "mc_CarcaseShelftop02"
+        },
+        {
+          "columnName": "ConstructionTablePartName",
+          "value": "part_Heatshelf"
+        },
+        {
+          "columnName": "InsertModule",
+          "value": "true"
+        },
+        {
+          "columnName": "Construction",
+          "value": "Heatshelf"
+        },
+        {
+          "columnName": "FrontsideRelevant",
+          "value": "false"
+        },
+        {
+          "columnName": "BacksideRelevant",
+          "value": "false"
+        },
+        {
+          "columnName": "HobMoveRelevant",
+          "value": "false"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ModuleName",
+          "value": "mc_Storageunit01"
+        },
+        {
+          "columnName": "in_ShelfTopConstruction",
+          "value": "SlopedCeilingShelfTop"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "LibrarySolution",
+          "value": "true"
+        },
+        {
+          "columnName": "UsedModule",
+          "value": "mc_CarcaseShelftop04"
+        },
+        {
+          "columnName": "ConstructionTablePartName",
+          "value": "part_SlopedCeilingShelftopHor"
+        },
+        {
+          "columnName": "InsertModule",
+          "value": "true"
+        },
+        {
+          "columnName": "Construction",
+          "value": "SlopedCeilingShelfTop"
+        },
+        {
+          "columnName": "FrontsideRelevant",
+          "value": "true"
+        },
+        {
+          "columnName": "BacksideRelevant",
+          "value": "true"
+        },
+        {
+          "columnName": "HobMoveRelevant",
+          "value": "false"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ModuleName",
+          "value": "mc_Storageunit01"
+        },
+        {
+          "columnName": "in_ShelfTopConstruction",
+          "value": "SlopedCeilingShelfTop"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "LibrarySolution",
+          "value": "true"
+        },
+        {
+          "columnName": "UsedModule",
+          "value": "mc_CarcaseShelftop04"
+        },
+        {
+          "columnName": "ConstructionTablePartName",
+          "value": "part_SlopedCeilingShelftopAngle"
+        },
+        {
+          "columnName": "InsertModule",
+          "value": "true"
+        },
+        {
+          "columnName": "Construction",
+          "value": "SlopedCeilingShelfTop"
+        },
+        {
+          "columnName": "FrontsideRelevant",
+          "value": "true"
+        },
+        {
+          "columnName": "BacksideRelevant",
+          "value": "true"
+        },
+        {
+          "columnName": "HobMoveRelevant",
+          "value": "false"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ModuleName",
+          "value": "mc_Storageunit01"
+        },
+        {
+          "columnName": "in_ShelfTopConstruction",
+          "value": "RailTopFrontBackHorizontal"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "Fingergrip"
+        },
+        {
+          "columnName": "LibrarySolution",
+          "value": "true"
+        },
+        {
+          "columnName": "UsedModule",
+          "value": "mc_CarcaseShelftop01"
+        },
+        {
+          "columnName": "ConstructionTablePartName",
+          "value": "part_Railhortopfront"
+        },
+        {
+          "columnName": "InsertModule",
+          "value": "true"
+        },
+        {
+          "columnName": "Construction",
+          "value": "RailFrontHorizontal"
+        },
+        {
+          "columnName": "FrontsideRelevant",
+          "value": "true"
+        },
+        {
+          "columnName": "BacksideRelevant",
+          "value": "false"
+        },
+        {
+          "columnName": "HobMoveRelevant",
+          "value": "false"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ModuleName",
+          "value": "mc_Storageunit01"
+        },
+        {
+          "columnName": "in_ShelfTopConstruction",
+          "value": "RailTopFrontBackHorizontal"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "Fingergrip"
+        },
+        {
+          "columnName": "LibrarySolution",
+          "value": "true"
+        },
+        {
+          "columnName": "UsedModule",
+          "value": "mc_CarcaseShelftop01"
+        },
+        {
+          "columnName": "ConstructionTablePartName",
+          "value": "part_Railhortopback"
+        },
+        {
+          "columnName": "InsertModule",
+          "value": "true"
+        },
+        {
+          "columnName": "Construction",
+          "value": "RailBackHorizontal"
+        },
+        {
+          "columnName": "FrontsideRelevant",
+          "value": "false"
+        },
+        {
+          "columnName": "BacksideRelevant",
+          "value": "true"
+        },
+        {
+          "columnName": "HobMoveRelevant",
+          "value": "false"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ModuleName",
+          "value": "mc_Storageunit01"
+        },
+        {
+          "columnName": "in_ShelfTopConstruction",
+          "value": "ShelfTop"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "Fingergrip"
+        },
+        {
+          "columnName": "LibrarySolution",
+          "value": "true"
+        },
+        {
+          "columnName": "UsedModule",
+          "value": "mc_CarcaseShelftop01"
+        },
+        {
+          "columnName": "ConstructionTablePartName",
+          "value": "part_Shelftop"
+        },
+        {
+          "columnName": "InsertModule",
+          "value": "true"
+        },
+        {
+          "columnName": "Construction",
+          "value": "ShelfTop"
+        },
+        {
+          "columnName": "FrontsideRelevant",
+          "value": "true"
+        },
+        {
+          "columnName": "BacksideRelevant",
+          "value": "true"
+        },
+        {
+          "columnName": "HobMoveRelevant",
+          "value": "false"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ModuleName",
+          "value": "mc_Storageunit01"
+        },
+        {
+          "columnName": "in_ShelfTopConstruction",
+          "value": "SlopedCeilingShelfTop"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "Fingergrip"
+        },
+        {
+          "columnName": "LibrarySolution",
+          "value": "true"
+        },
+        {
+          "columnName": "UsedModule",
+          "value": "mc_CarcaseShelftop04"
+        },
+        {
+          "columnName": "ConstructionTablePartName",
+          "value": "part_SlopedCeilingShelftopHor"
+        },
+        {
+          "columnName": "InsertModule",
+          "value": "true"
+        },
+        {
+          "columnName": "Construction",
+          "value": "SlopedCeilingShelfTop"
+        },
+        {
+          "columnName": "FrontsideRelevant",
+          "value": "true"
+        },
+        {
+          "columnName": "BacksideRelevant",
+          "value": "true"
+        },
+        {
+          "columnName": "HobMoveRelevant",
+          "value": "false"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ModuleName",
+          "value": "mc_Storageunit01"
+        },
+        {
+          "columnName": "in_ShelfTopConstruction",
+          "value": "SlopedCeilingShelfTop"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "Fingergrip"
+        },
+        {
+          "columnName": "LibrarySolution",
+          "value": "true"
+        },
+        {
+          "columnName": "UsedModule",
+          "value": "mc_CarcaseShelftop04"
+        },
+        {
+          "columnName": "ConstructionTablePartName",
+          "value": "part_SlopedCeilingShelftopAngle"
+        },
+        {
+          "columnName": "InsertModule",
+          "value": "true"
+        },
+        {
+          "columnName": "Construction",
+          "value": "SlopedCeilingShelfTop"
+        },
+        {
+          "columnName": "FrontsideRelevant",
+          "value": "true"
+        },
+        {
+          "columnName": "BacksideRelevant",
+          "value": "true"
+        },
+        {
+          "columnName": "HobMoveRelevant",
+          "value": "false"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ModuleName",
+          "value": "mc_Storageunit01"
+        },
+        {
+          "columnName": "in_ShelfTopConstruction",
+          "value": "NoShelfTop"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "LibrarySolution",
+          "value": "true"
+        },
+        {
+          "columnName": "UsedModule",
+          "value": "mc_CarcaseShelftop01"
+        },
+        {
+          "columnName": "ConstructionTablePartName",
+          "value": "part_Shelftop"
+        },
+        {
+          "columnName": "InsertModule",
+          "value": "false"
+        },
+        {
+          "columnName": "Construction",
+          "value": "NoShelfTop"
+        },
+        {
+          "columnName": "FrontsideRelevant",
+          "value": "true"
+        },
+        {
+          "columnName": "BacksideRelevant",
+          "value": "true"
+        },
+        {
+          "columnName": "HobMoveRelevant",
+          "value": "false"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ModuleName",
+          "value": "mc_Storageunit01"
+        },
+        {
+          "columnName": "in_ShelfTopConstruction",
+          "value": "NoShelfTop"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "Fingergrip"
+        },
+        {
+          "columnName": "LibrarySolution",
+          "value": "true"
+        },
+        {
+          "columnName": "UsedModule",
+          "value": "mc_CarcaseShelftop01"
+        },
+        {
+          "columnName": "ConstructionTablePartName",
+          "value": "part_Shelftop"
+        },
+        {
+          "columnName": "InsertModule",
+          "value": "false"
+        },
+        {
+          "columnName": "Construction",
+          "value": "NoShelfTop"
+        },
+        {
+          "columnName": "FrontsideRelevant",
+          "value": "true"
+        },
+        {
+          "columnName": "BacksideRelevant",
+          "value": "true"
+        },
+        {
+          "columnName": "HobMoveRelevant",
+          "value": "false"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ModuleName",
+          "value": "mc_Cornerunit01"
+        },
+        {
+          "columnName": "in_ShelfTopConstruction",
+          "value": "ShelfTop"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "LibrarySolution",
+          "value": "true"
+        },
+        {
+          "columnName": "UsedModule",
+          "value": "mc_CarcaseShelftop01"
+        },
+        {
+          "columnName": "ConstructionTablePartName",
+          "value": "part_Shelftop"
+        },
+        {
+          "columnName": "InsertModule",
+          "value": "true"
+        },
+        {
+          "columnName": "Construction",
+          "value": "ShelfTop"
+        },
+        {
+          "columnName": "FrontsideRelevant",
+          "value": "true"
+        },
+        {
+          "columnName": "BacksideRelevant",
+          "value": "true"
+        },
+        {
+          "columnName": "HobMoveRelevant",
+          "value": "false"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ModuleName",
+          "value": "mc_Storageunit01"
+        },
+        {
+          "columnName": "in_ShelfTopConstruction",
+          "value": "RailTopFrontBackVertical"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "Fingergrip"
+        },
+        {
+          "columnName": "LibrarySolution",
+          "value": "true"
+        },
+        {
+          "columnName": "UsedModule",
+          "value": "mc_CarcaseShelftop01"
+        },
+        {
+          "columnName": "ConstructionTablePartName",
+          "value": "part_Railverttopfront"
+        },
+        {
+          "columnName": "InsertModule",
+          "value": "true"
+        },
+        {
+          "columnName": "Construction",
+          "value": "RailFrontVertical"
+        },
+        {
+          "columnName": "FrontsideRelevant",
+          "value": "true"
+        },
+        {
+          "columnName": "BacksideRelevant",
+          "value": "false"
+        },
+        {
+          "columnName": "HobMoveRelevant",
+          "value": "false"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ModuleName",
+          "value": "mc_Storageunit01"
+        },
+        {
+          "columnName": "in_ShelfTopConstruction",
+          "value": "RailTopFrontBackVertical"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "Fingergrip"
+        },
+        {
+          "columnName": "LibrarySolution",
+          "value": "true"
+        },
+        {
+          "columnName": "UsedModule",
+          "value": "mc_CarcaseShelftop01"
+        },
+        {
+          "columnName": "ConstructionTablePartName",
+          "value": "part_Railverttopback"
+        },
+        {
+          "columnName": "InsertModule",
+          "value": "true"
+        },
+        {
+          "columnName": "Construction",
+          "value": "RailBackVertical"
+        },
+        {
+          "columnName": "FrontsideRelevant",
+          "value": "false"
+        },
+        {
+          "columnName": "BacksideRelevant",
+          "value": "true"
+        },
+        {
+          "columnName": "HobMoveRelevant",
+          "value": "false"
+        }
+      ]
+    }
+  ]
+}

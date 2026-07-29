@@ -1,0 +1,6251 @@
+{
+  "tableName": "tab_DrawerBoxConstruction",
+  "description": "Construction of the drawer boxes",
+  "restrictionTypeId": "Public",
+  "isInputUnique": true,
+  "groupName": "DrawerBox",
+  "columns": [
+    {
+      "name": "_id",
+      "type": "Integer",
+      "allowNull": false
+    },
+    {
+      "name": "in_ConstructionId",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "ObjWidth",
+      "type": "Text",
+      "allowNull": true,
+      "functionDefinition": "(FreeSpaceWidth:number):number"
+    },
+    {
+      "name": "ObjHeight",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "ObjDepth",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "ObjPosHeight",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "SlidePosDepth",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "SlidePosHeight",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "BlockSpaceHeight",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "BlockSpaceDepth",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "BlockSpacePosHeight",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "BotShelfWidth",
+      "type": "Text",
+      "allowNull": true,
+      "functionDefinition": "(FreeSpaceWidth:number):number"
+    },
+    {
+      "name": "BotShelfDepthBwWood",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "BotShelfDepthBwMetal",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "BotShelfThickness",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "BotShelfPosHeight",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "BackwallWidth",
+      "type": "Text",
+      "allowNull": true,
+      "functionDefinition": "(FreeSpaceWidth:number):number"
+    },
+    {
+      "name": "BackwallHeight",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "BackwallThickness",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "BackwallPosHeight",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "BackwallPosDepth",
+      "type": "Dim",
+      "allowNull": false
+    }
+  ],
+  "rows": [
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionId",
+          "value": "Legra_400_N"
+        },
+        {
+          "columnName": "ObjWidth",
+          "value": "FreeSpaceWidth-14"
+        },
+        {
+          "columnName": "ObjHeight",
+          "value": "78"
+        },
+        {
+          "columnName": "ObjDepth",
+          "value": "402"
+        },
+        {
+          "columnName": "ObjPosHeight",
+          "value": "0.4"
+        },
+        {
+          "columnName": "SlidePosDepth",
+          "value": "4"
+        },
+        {
+          "columnName": "SlidePosHeight",
+          "value": "1.7"
+        },
+        {
+          "columnName": "BlockSpaceHeight",
+          "value": "78.4"
+        },
+        {
+          "columnName": "BlockSpaceDepth",
+          "value": "403"
+        },
+        {
+          "columnName": "BlockSpacePosHeight",
+          "value": "0.4"
+        },
+        {
+          "columnName": "BotShelfWidth",
+          "value": "FreeSpaceWidth-35"
+        },
+        {
+          "columnName": "BotShelfDepthBwWood",
+          "value": "390"
+        },
+        {
+          "columnName": "BotShelfDepthBwMetal",
+          "value": "379"
+        },
+        {
+          "columnName": "BotShelfThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BotShelfPosHeight",
+          "value": "23.4"
+        },
+        {
+          "columnName": "BackwallWidth",
+          "value": "FreeSpaceWidth-38"
+        },
+        {
+          "columnName": "BackwallHeight",
+          "value": "39"
+        },
+        {
+          "columnName": "BackwallThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BackwallPosHeight",
+          "value": "39.4"
+        },
+        {
+          "columnName": "BackwallPosDepth",
+          "value": "390"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionId",
+          "value": "Legra_450_N"
+        },
+        {
+          "columnName": "ObjWidth",
+          "value": "FreeSpaceWidth-14"
+        },
+        {
+          "columnName": "ObjHeight",
+          "value": "78"
+        },
+        {
+          "columnName": "ObjDepth",
+          "value": "452"
+        },
+        {
+          "columnName": "ObjPosHeight",
+          "value": "0.4"
+        },
+        {
+          "columnName": "SlidePosDepth",
+          "value": "4"
+        },
+        {
+          "columnName": "SlidePosHeight",
+          "value": "1.7"
+        },
+        {
+          "columnName": "BlockSpaceHeight",
+          "value": "78.4"
+        },
+        {
+          "columnName": "BlockSpaceDepth",
+          "value": "453"
+        },
+        {
+          "columnName": "BlockSpacePosHeight",
+          "value": "0.4"
+        },
+        {
+          "columnName": "BotShelfWidth",
+          "value": "FreeSpaceWidth-35"
+        },
+        {
+          "columnName": "BotShelfDepthBwWood",
+          "value": "440"
+        },
+        {
+          "columnName": "BotShelfDepthBwMetal",
+          "value": "429"
+        },
+        {
+          "columnName": "BotShelfThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BotShelfPosHeight",
+          "value": "23.4"
+        },
+        {
+          "columnName": "BackwallWidth",
+          "value": "FreeSpaceWidth-38"
+        },
+        {
+          "columnName": "BackwallHeight",
+          "value": "39"
+        },
+        {
+          "columnName": "BackwallThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BackwallPosHeight",
+          "value": "39.4"
+        },
+        {
+          "columnName": "BackwallPosDepth",
+          "value": "440"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionId",
+          "value": "Legra_500_N"
+        },
+        {
+          "columnName": "ObjWidth",
+          "value": "FreeSpaceWidth-14"
+        },
+        {
+          "columnName": "ObjHeight",
+          "value": "78"
+        },
+        {
+          "columnName": "ObjDepth",
+          "value": "502"
+        },
+        {
+          "columnName": "ObjPosHeight",
+          "value": "0.4"
+        },
+        {
+          "columnName": "SlidePosDepth",
+          "value": "4"
+        },
+        {
+          "columnName": "SlidePosHeight",
+          "value": "1.7"
+        },
+        {
+          "columnName": "BlockSpaceHeight",
+          "value": "78.4"
+        },
+        {
+          "columnName": "BlockSpaceDepth",
+          "value": "503"
+        },
+        {
+          "columnName": "BlockSpacePosHeight",
+          "value": "0.4"
+        },
+        {
+          "columnName": "BotShelfWidth",
+          "value": "FreeSpaceWidth-35"
+        },
+        {
+          "columnName": "BotShelfDepthBwWood",
+          "value": "490"
+        },
+        {
+          "columnName": "BotShelfDepthBwMetal",
+          "value": "479"
+        },
+        {
+          "columnName": "BotShelfThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BotShelfPosHeight",
+          "value": "23.4"
+        },
+        {
+          "columnName": "BackwallWidth",
+          "value": "FreeSpaceWidth-38"
+        },
+        {
+          "columnName": "BackwallHeight",
+          "value": "39"
+        },
+        {
+          "columnName": "BackwallThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BackwallPosHeight",
+          "value": "39.4"
+        },
+        {
+          "columnName": "BackwallPosDepth",
+          "value": "490"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionId",
+          "value": "Legra_550_N"
+        },
+        {
+          "columnName": "ObjWidth",
+          "value": "FreeSpaceWidth-14"
+        },
+        {
+          "columnName": "ObjHeight",
+          "value": "78"
+        },
+        {
+          "columnName": "ObjDepth",
+          "value": "552"
+        },
+        {
+          "columnName": "ObjPosHeight",
+          "value": "0.4"
+        },
+        {
+          "columnName": "SlidePosDepth",
+          "value": "4"
+        },
+        {
+          "columnName": "SlidePosHeight",
+          "value": "1.7"
+        },
+        {
+          "columnName": "BlockSpaceHeight",
+          "value": "78.4"
+        },
+        {
+          "columnName": "BlockSpaceDepth",
+          "value": "553"
+        },
+        {
+          "columnName": "BlockSpacePosHeight",
+          "value": "0.4"
+        },
+        {
+          "columnName": "BotShelfWidth",
+          "value": "FreeSpaceWidth-35"
+        },
+        {
+          "columnName": "BotShelfDepthBwWood",
+          "value": "540"
+        },
+        {
+          "columnName": "BotShelfDepthBwMetal",
+          "value": "529"
+        },
+        {
+          "columnName": "BotShelfThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BotShelfPosHeight",
+          "value": "23.4"
+        },
+        {
+          "columnName": "BackwallWidth",
+          "value": "FreeSpaceWidth-38"
+        },
+        {
+          "columnName": "BackwallHeight",
+          "value": "39"
+        },
+        {
+          "columnName": "BackwallThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BackwallPosHeight",
+          "value": "39.4"
+        },
+        {
+          "columnName": "BackwallPosDepth",
+          "value": "540"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionId",
+          "value": "Legra_270_M"
+        },
+        {
+          "columnName": "ObjWidth",
+          "value": "FreeSpaceWidth-14"
+        },
+        {
+          "columnName": "ObjHeight",
+          "value": "102"
+        },
+        {
+          "columnName": "ObjDepth",
+          "value": "272"
+        },
+        {
+          "columnName": "ObjPosHeight",
+          "value": "0.4"
+        },
+        {
+          "columnName": "SlidePosDepth",
+          "value": "4"
+        },
+        {
+          "columnName": "SlidePosHeight",
+          "value": "1.7"
+        },
+        {
+          "columnName": "BlockSpaceHeight",
+          "value": "102.4"
+        },
+        {
+          "columnName": "BlockSpaceDepth",
+          "value": "273"
+        },
+        {
+          "columnName": "BlockSpacePosHeight",
+          "value": "0.4"
+        },
+        {
+          "columnName": "BotShelfWidth",
+          "value": "FreeSpaceWidth-35"
+        },
+        {
+          "columnName": "BotShelfDepthBwWood",
+          "value": "260"
+        },
+        {
+          "columnName": "BotShelfDepthBwMetal",
+          "value": "249"
+        },
+        {
+          "columnName": "BotShelfThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BotShelfPosHeight",
+          "value": "23.4"
+        },
+        {
+          "columnName": "BackwallWidth",
+          "value": "FreeSpaceWidth-38"
+        },
+        {
+          "columnName": "BackwallHeight",
+          "value": "63"
+        },
+        {
+          "columnName": "BackwallThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BackwallPosHeight",
+          "value": "39.4"
+        },
+        {
+          "columnName": "BackwallPosDepth",
+          "value": "270"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionId",
+          "value": "Legra_300_M"
+        },
+        {
+          "columnName": "ObjWidth",
+          "value": "FreeSpaceWidth-14"
+        },
+        {
+          "columnName": "ObjHeight",
+          "value": "102"
+        },
+        {
+          "columnName": "ObjDepth",
+          "value": "302"
+        },
+        {
+          "columnName": "ObjPosHeight",
+          "value": "0.4"
+        },
+        {
+          "columnName": "SlidePosDepth",
+          "value": "4"
+        },
+        {
+          "columnName": "SlidePosHeight",
+          "value": "1.7"
+        },
+        {
+          "columnName": "BlockSpaceHeight",
+          "value": "102.4"
+        },
+        {
+          "columnName": "BlockSpaceDepth",
+          "value": "303"
+        },
+        {
+          "columnName": "BlockSpacePosHeight",
+          "value": "0.4"
+        },
+        {
+          "columnName": "BotShelfWidth",
+          "value": "FreeSpaceWidth-35"
+        },
+        {
+          "columnName": "BotShelfDepthBwWood",
+          "value": "290"
+        },
+        {
+          "columnName": "BotShelfDepthBwMetal",
+          "value": "279"
+        },
+        {
+          "columnName": "BotShelfThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BotShelfPosHeight",
+          "value": "23.4"
+        },
+        {
+          "columnName": "BackwallWidth",
+          "value": "FreeSpaceWidth-38"
+        },
+        {
+          "columnName": "BackwallHeight",
+          "value": "63"
+        },
+        {
+          "columnName": "BackwallThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BackwallPosHeight",
+          "value": "39.4"
+        },
+        {
+          "columnName": "BackwallPosDepth",
+          "value": "290"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionId",
+          "value": "Legra_350_M"
+        },
+        {
+          "columnName": "ObjWidth",
+          "value": "FreeSpaceWidth-14"
+        },
+        {
+          "columnName": "ObjHeight",
+          "value": "102"
+        },
+        {
+          "columnName": "ObjDepth",
+          "value": "352"
+        },
+        {
+          "columnName": "ObjPosHeight",
+          "value": "0.4"
+        },
+        {
+          "columnName": "SlidePosDepth",
+          "value": "4"
+        },
+        {
+          "columnName": "SlidePosHeight",
+          "value": "1.7"
+        },
+        {
+          "columnName": "BlockSpaceHeight",
+          "value": "102.4"
+        },
+        {
+          "columnName": "BlockSpaceDepth",
+          "value": "353"
+        },
+        {
+          "columnName": "BlockSpacePosHeight",
+          "value": "0.4"
+        },
+        {
+          "columnName": "BotShelfWidth",
+          "value": "FreeSpaceWidth-35"
+        },
+        {
+          "columnName": "BotShelfDepthBwWood",
+          "value": "340"
+        },
+        {
+          "columnName": "BotShelfDepthBwMetal",
+          "value": "329"
+        },
+        {
+          "columnName": "BotShelfThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BotShelfPosHeight",
+          "value": "23.4"
+        },
+        {
+          "columnName": "BackwallWidth",
+          "value": "FreeSpaceWidth-38"
+        },
+        {
+          "columnName": "BackwallHeight",
+          "value": "63"
+        },
+        {
+          "columnName": "BackwallThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BackwallPosHeight",
+          "value": "39.4"
+        },
+        {
+          "columnName": "BackwallPosDepth",
+          "value": "340"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionId",
+          "value": "Legra_400_M"
+        },
+        {
+          "columnName": "ObjWidth",
+          "value": "FreeSpaceWidth-14"
+        },
+        {
+          "columnName": "ObjHeight",
+          "value": "102"
+        },
+        {
+          "columnName": "ObjDepth",
+          "value": "402"
+        },
+        {
+          "columnName": "ObjPosHeight",
+          "value": "0.4"
+        },
+        {
+          "columnName": "SlidePosDepth",
+          "value": "4"
+        },
+        {
+          "columnName": "SlidePosHeight",
+          "value": "1.7"
+        },
+        {
+          "columnName": "BlockSpaceHeight",
+          "value": "102.4"
+        },
+        {
+          "columnName": "BlockSpaceDepth",
+          "value": "403"
+        },
+        {
+          "columnName": "BlockSpacePosHeight",
+          "value": "0.4"
+        },
+        {
+          "columnName": "BotShelfWidth",
+          "value": "FreeSpaceWidth-35"
+        },
+        {
+          "columnName": "BotShelfDepthBwWood",
+          "value": "390"
+        },
+        {
+          "columnName": "BotShelfDepthBwMetal",
+          "value": "379"
+        },
+        {
+          "columnName": "BotShelfThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BotShelfPosHeight",
+          "value": "23.4"
+        },
+        {
+          "columnName": "BackwallWidth",
+          "value": "FreeSpaceWidth-38"
+        },
+        {
+          "columnName": "BackwallHeight",
+          "value": "63"
+        },
+        {
+          "columnName": "BackwallThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BackwallPosHeight",
+          "value": "39.4"
+        },
+        {
+          "columnName": "BackwallPosDepth",
+          "value": "390"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionId",
+          "value": "Legra_450_M"
+        },
+        {
+          "columnName": "ObjWidth",
+          "value": "FreeSpaceWidth-14"
+        },
+        {
+          "columnName": "ObjHeight",
+          "value": "102"
+        },
+        {
+          "columnName": "ObjDepth",
+          "value": "452"
+        },
+        {
+          "columnName": "ObjPosHeight",
+          "value": "0.4"
+        },
+        {
+          "columnName": "SlidePosDepth",
+          "value": "4"
+        },
+        {
+          "columnName": "SlidePosHeight",
+          "value": "1.7"
+        },
+        {
+          "columnName": "BlockSpaceHeight",
+          "value": "102.4"
+        },
+        {
+          "columnName": "BlockSpaceDepth",
+          "value": "453"
+        },
+        {
+          "columnName": "BlockSpacePosHeight",
+          "value": "0.4"
+        },
+        {
+          "columnName": "BotShelfWidth",
+          "value": "FreeSpaceWidth-35"
+        },
+        {
+          "columnName": "BotShelfDepthBwWood",
+          "value": "440"
+        },
+        {
+          "columnName": "BotShelfDepthBwMetal",
+          "value": "429"
+        },
+        {
+          "columnName": "BotShelfThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BotShelfPosHeight",
+          "value": "23.4"
+        },
+        {
+          "columnName": "BackwallWidth",
+          "value": "FreeSpaceWidth-38"
+        },
+        {
+          "columnName": "BackwallHeight",
+          "value": "63"
+        },
+        {
+          "columnName": "BackwallThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BackwallPosHeight",
+          "value": "39.4"
+        },
+        {
+          "columnName": "BackwallPosDepth",
+          "value": "440"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionId",
+          "value": "Legra_500_M"
+        },
+        {
+          "columnName": "ObjWidth",
+          "value": "FreeSpaceWidth-14"
+        },
+        {
+          "columnName": "ObjHeight",
+          "value": "102"
+        },
+        {
+          "columnName": "ObjDepth",
+          "value": "502"
+        },
+        {
+          "columnName": "ObjPosHeight",
+          "value": "0.4"
+        },
+        {
+          "columnName": "SlidePosDepth",
+          "value": "4"
+        },
+        {
+          "columnName": "SlidePosHeight",
+          "value": "1.7"
+        },
+        {
+          "columnName": "BlockSpaceHeight",
+          "value": "102.4"
+        },
+        {
+          "columnName": "BlockSpaceDepth",
+          "value": "503"
+        },
+        {
+          "columnName": "BlockSpacePosHeight",
+          "value": "0.4"
+        },
+        {
+          "columnName": "BotShelfWidth",
+          "value": "FreeSpaceWidth-35"
+        },
+        {
+          "columnName": "BotShelfDepthBwWood",
+          "value": "490"
+        },
+        {
+          "columnName": "BotShelfDepthBwMetal",
+          "value": "479"
+        },
+        {
+          "columnName": "BotShelfThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BotShelfPosHeight",
+          "value": "23.4"
+        },
+        {
+          "columnName": "BackwallWidth",
+          "value": "FreeSpaceWidth-38"
+        },
+        {
+          "columnName": "BackwallHeight",
+          "value": "63"
+        },
+        {
+          "columnName": "BackwallThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BackwallPosHeight",
+          "value": "39.4"
+        },
+        {
+          "columnName": "BackwallPosDepth",
+          "value": "490"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionId",
+          "value": "Legra_550_M"
+        },
+        {
+          "columnName": "ObjWidth",
+          "value": "FreeSpaceWidth-14"
+        },
+        {
+          "columnName": "ObjHeight",
+          "value": "102"
+        },
+        {
+          "columnName": "ObjDepth",
+          "value": "552"
+        },
+        {
+          "columnName": "ObjPosHeight",
+          "value": "0.4"
+        },
+        {
+          "columnName": "SlidePosDepth",
+          "value": "4"
+        },
+        {
+          "columnName": "SlidePosHeight",
+          "value": "1.7"
+        },
+        {
+          "columnName": "BlockSpaceHeight",
+          "value": "102.4"
+        },
+        {
+          "columnName": "BlockSpaceDepth",
+          "value": "553"
+        },
+        {
+          "columnName": "BlockSpacePosHeight",
+          "value": "0.4"
+        },
+        {
+          "columnName": "BotShelfWidth",
+          "value": "FreeSpaceWidth-35"
+        },
+        {
+          "columnName": "BotShelfDepthBwWood",
+          "value": "540"
+        },
+        {
+          "columnName": "BotShelfDepthBwMetal",
+          "value": "529"
+        },
+        {
+          "columnName": "BotShelfThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BotShelfPosHeight",
+          "value": "23.4"
+        },
+        {
+          "columnName": "BackwallWidth",
+          "value": "FreeSpaceWidth-38"
+        },
+        {
+          "columnName": "BackwallHeight",
+          "value": "63"
+        },
+        {
+          "columnName": "BackwallThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BackwallPosHeight",
+          "value": "39.4"
+        },
+        {
+          "columnName": "BackwallPosDepth",
+          "value": "540"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionId",
+          "value": "Legra_600_M"
+        },
+        {
+          "columnName": "ObjWidth",
+          "value": "FreeSpaceWidth-14"
+        },
+        {
+          "columnName": "ObjHeight",
+          "value": "102"
+        },
+        {
+          "columnName": "ObjDepth",
+          "value": "602"
+        },
+        {
+          "columnName": "ObjPosHeight",
+          "value": "0.4"
+        },
+        {
+          "columnName": "SlidePosDepth",
+          "value": "4"
+        },
+        {
+          "columnName": "SlidePosHeight",
+          "value": "1.7"
+        },
+        {
+          "columnName": "BlockSpaceHeight",
+          "value": "102.4"
+        },
+        {
+          "columnName": "BlockSpaceDepth",
+          "value": "603"
+        },
+        {
+          "columnName": "BlockSpacePosHeight",
+          "value": "0.4"
+        },
+        {
+          "columnName": "BotShelfWidth",
+          "value": "FreeSpaceWidth-35"
+        },
+        {
+          "columnName": "BotShelfDepthBwWood",
+          "value": "590"
+        },
+        {
+          "columnName": "BotShelfDepthBwMetal",
+          "value": "579"
+        },
+        {
+          "columnName": "BotShelfThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BotShelfPosHeight",
+          "value": "23.4"
+        },
+        {
+          "columnName": "BackwallWidth",
+          "value": "FreeSpaceWidth-38"
+        },
+        {
+          "columnName": "BackwallHeight",
+          "value": "63"
+        },
+        {
+          "columnName": "BackwallThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BackwallPosHeight",
+          "value": "39.4"
+        },
+        {
+          "columnName": "BackwallPosDepth",
+          "value": "590"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionId",
+          "value": "Legra_650_M"
+        },
+        {
+          "columnName": "ObjWidth",
+          "value": "FreeSpaceWidth-14"
+        },
+        {
+          "columnName": "ObjHeight",
+          "value": "102"
+        },
+        {
+          "columnName": "ObjDepth",
+          "value": "652"
+        },
+        {
+          "columnName": "ObjPosHeight",
+          "value": "0.4"
+        },
+        {
+          "columnName": "SlidePosDepth",
+          "value": "4"
+        },
+        {
+          "columnName": "SlidePosHeight",
+          "value": "1.7"
+        },
+        {
+          "columnName": "BlockSpaceHeight",
+          "value": "102.4"
+        },
+        {
+          "columnName": "BlockSpaceDepth",
+          "value": "653"
+        },
+        {
+          "columnName": "BlockSpacePosHeight",
+          "value": "0.4"
+        },
+        {
+          "columnName": "BotShelfWidth",
+          "value": "FreeSpaceWidth-35"
+        },
+        {
+          "columnName": "BotShelfDepthBwWood",
+          "value": "640"
+        },
+        {
+          "columnName": "BotShelfDepthBwMetal",
+          "value": "629"
+        },
+        {
+          "columnName": "BotShelfThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BotShelfPosHeight",
+          "value": "23.4"
+        },
+        {
+          "columnName": "BackwallWidth",
+          "value": "FreeSpaceWidth-38"
+        },
+        {
+          "columnName": "BackwallHeight",
+          "value": "63"
+        },
+        {
+          "columnName": "BackwallThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BackwallPosHeight",
+          "value": "39.4"
+        },
+        {
+          "columnName": "BackwallPosDepth",
+          "value": "640"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionId",
+          "value": "Legra_300_K"
+        },
+        {
+          "columnName": "ObjWidth",
+          "value": "FreeSpaceWidth-14"
+        },
+        {
+          "columnName": "ObjHeight",
+          "value": "140"
+        },
+        {
+          "columnName": "ObjDepth",
+          "value": "302"
+        },
+        {
+          "columnName": "ObjPosHeight",
+          "value": "0.4"
+        },
+        {
+          "columnName": "SlidePosDepth",
+          "value": "4"
+        },
+        {
+          "columnName": "SlidePosHeight",
+          "value": "1.7"
+        },
+        {
+          "columnName": "BlockSpaceHeight",
+          "value": "140.4"
+        },
+        {
+          "columnName": "BlockSpaceDepth",
+          "value": "303"
+        },
+        {
+          "columnName": "BlockSpacePosHeight",
+          "value": "0.4"
+        },
+        {
+          "columnName": "BotShelfWidth",
+          "value": "FreeSpaceWidth-35"
+        },
+        {
+          "columnName": "BotShelfDepthBwWood",
+          "value": "290"
+        },
+        {
+          "columnName": "BotShelfDepthBwMetal",
+          "value": "279"
+        },
+        {
+          "columnName": "BotShelfThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BotShelfPosHeight",
+          "value": "23.4"
+        },
+        {
+          "columnName": "BackwallWidth",
+          "value": "FreeSpaceWidth-38"
+        },
+        {
+          "columnName": "BackwallHeight",
+          "value": "101"
+        },
+        {
+          "columnName": "BackwallThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BackwallPosHeight",
+          "value": "39.4"
+        },
+        {
+          "columnName": "BackwallPosDepth",
+          "value": "290"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionId",
+          "value": "Legra_350_K"
+        },
+        {
+          "columnName": "ObjWidth",
+          "value": "FreeSpaceWidth-14"
+        },
+        {
+          "columnName": "ObjHeight",
+          "value": "140"
+        },
+        {
+          "columnName": "ObjDepth",
+          "value": "352"
+        },
+        {
+          "columnName": "ObjPosHeight",
+          "value": "0.4"
+        },
+        {
+          "columnName": "SlidePosDepth",
+          "value": "4"
+        },
+        {
+          "columnName": "SlidePosHeight",
+          "value": "1.7"
+        },
+        {
+          "columnName": "BlockSpaceHeight",
+          "value": "140.4"
+        },
+        {
+          "columnName": "BlockSpaceDepth",
+          "value": "353"
+        },
+        {
+          "columnName": "BlockSpacePosHeight",
+          "value": "0.4"
+        },
+        {
+          "columnName": "BotShelfWidth",
+          "value": "FreeSpaceWidth-35"
+        },
+        {
+          "columnName": "BotShelfDepthBwWood",
+          "value": "340"
+        },
+        {
+          "columnName": "BotShelfDepthBwMetal",
+          "value": "329"
+        },
+        {
+          "columnName": "BotShelfThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BotShelfPosHeight",
+          "value": "23.4"
+        },
+        {
+          "columnName": "BackwallWidth",
+          "value": "FreeSpaceWidth-38"
+        },
+        {
+          "columnName": "BackwallHeight",
+          "value": "101"
+        },
+        {
+          "columnName": "BackwallThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BackwallPosHeight",
+          "value": "39.4"
+        },
+        {
+          "columnName": "BackwallPosDepth",
+          "value": "340"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionId",
+          "value": "Legra_400_K"
+        },
+        {
+          "columnName": "ObjWidth",
+          "value": "FreeSpaceWidth-14"
+        },
+        {
+          "columnName": "ObjHeight",
+          "value": "140"
+        },
+        {
+          "columnName": "ObjDepth",
+          "value": "402"
+        },
+        {
+          "columnName": "ObjPosHeight",
+          "value": "0.4"
+        },
+        {
+          "columnName": "SlidePosDepth",
+          "value": "4"
+        },
+        {
+          "columnName": "SlidePosHeight",
+          "value": "1.7"
+        },
+        {
+          "columnName": "BlockSpaceHeight",
+          "value": "140.4"
+        },
+        {
+          "columnName": "BlockSpaceDepth",
+          "value": "403"
+        },
+        {
+          "columnName": "BlockSpacePosHeight",
+          "value": "0.4"
+        },
+        {
+          "columnName": "BotShelfWidth",
+          "value": "FreeSpaceWidth-35"
+        },
+        {
+          "columnName": "BotShelfDepthBwWood",
+          "value": "390"
+        },
+        {
+          "columnName": "BotShelfDepthBwMetal",
+          "value": "379"
+        },
+        {
+          "columnName": "BotShelfThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BotShelfPosHeight",
+          "value": "23.4"
+        },
+        {
+          "columnName": "BackwallWidth",
+          "value": "FreeSpaceWidth-38"
+        },
+        {
+          "columnName": "BackwallHeight",
+          "value": "101"
+        },
+        {
+          "columnName": "BackwallThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BackwallPosHeight",
+          "value": "39.4"
+        },
+        {
+          "columnName": "BackwallPosDepth",
+          "value": "390"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionId",
+          "value": "Legra_450_K"
+        },
+        {
+          "columnName": "ObjWidth",
+          "value": "FreeSpaceWidth-14"
+        },
+        {
+          "columnName": "ObjHeight",
+          "value": "140"
+        },
+        {
+          "columnName": "ObjDepth",
+          "value": "452"
+        },
+        {
+          "columnName": "ObjPosHeight",
+          "value": "0.4"
+        },
+        {
+          "columnName": "SlidePosDepth",
+          "value": "4"
+        },
+        {
+          "columnName": "SlidePosHeight",
+          "value": "1.7"
+        },
+        {
+          "columnName": "BlockSpaceHeight",
+          "value": "140.4"
+        },
+        {
+          "columnName": "BlockSpaceDepth",
+          "value": "453"
+        },
+        {
+          "columnName": "BlockSpacePosHeight",
+          "value": "0.4"
+        },
+        {
+          "columnName": "BotShelfWidth",
+          "value": "FreeSpaceWidth-35"
+        },
+        {
+          "columnName": "BotShelfDepthBwWood",
+          "value": "440"
+        },
+        {
+          "columnName": "BotShelfDepthBwMetal",
+          "value": "429"
+        },
+        {
+          "columnName": "BotShelfThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BotShelfPosHeight",
+          "value": "23.4"
+        },
+        {
+          "columnName": "BackwallWidth",
+          "value": "FreeSpaceWidth-38"
+        },
+        {
+          "columnName": "BackwallHeight",
+          "value": "101"
+        },
+        {
+          "columnName": "BackwallThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BackwallPosHeight",
+          "value": "39.4"
+        },
+        {
+          "columnName": "BackwallPosDepth",
+          "value": "440"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionId",
+          "value": "Legra_500_K"
+        },
+        {
+          "columnName": "ObjWidth",
+          "value": "FreeSpaceWidth-14"
+        },
+        {
+          "columnName": "ObjHeight",
+          "value": "140"
+        },
+        {
+          "columnName": "ObjDepth",
+          "value": "502"
+        },
+        {
+          "columnName": "ObjPosHeight",
+          "value": "0.4"
+        },
+        {
+          "columnName": "SlidePosDepth",
+          "value": "4"
+        },
+        {
+          "columnName": "SlidePosHeight",
+          "value": "1.7"
+        },
+        {
+          "columnName": "BlockSpaceHeight",
+          "value": "140.4"
+        },
+        {
+          "columnName": "BlockSpaceDepth",
+          "value": "503"
+        },
+        {
+          "columnName": "BlockSpacePosHeight",
+          "value": "0.4"
+        },
+        {
+          "columnName": "BotShelfWidth",
+          "value": "FreeSpaceWidth-35"
+        },
+        {
+          "columnName": "BotShelfDepthBwWood",
+          "value": "490"
+        },
+        {
+          "columnName": "BotShelfDepthBwMetal",
+          "value": "479"
+        },
+        {
+          "columnName": "BotShelfThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BotShelfPosHeight",
+          "value": "23.4"
+        },
+        {
+          "columnName": "BackwallWidth",
+          "value": "FreeSpaceWidth-38"
+        },
+        {
+          "columnName": "BackwallHeight",
+          "value": "101"
+        },
+        {
+          "columnName": "BackwallThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BackwallPosHeight",
+          "value": "39.4"
+        },
+        {
+          "columnName": "BackwallPosDepth",
+          "value": "490"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionId",
+          "value": "Legra_550_K"
+        },
+        {
+          "columnName": "ObjWidth",
+          "value": "FreeSpaceWidth-14"
+        },
+        {
+          "columnName": "ObjHeight",
+          "value": "140"
+        },
+        {
+          "columnName": "ObjDepth",
+          "value": "552"
+        },
+        {
+          "columnName": "ObjPosHeight",
+          "value": "0.4"
+        },
+        {
+          "columnName": "SlidePosDepth",
+          "value": "4"
+        },
+        {
+          "columnName": "SlidePosHeight",
+          "value": "1.7"
+        },
+        {
+          "columnName": "BlockSpaceHeight",
+          "value": "140.4"
+        },
+        {
+          "columnName": "BlockSpaceDepth",
+          "value": "553"
+        },
+        {
+          "columnName": "BlockSpacePosHeight",
+          "value": "0.4"
+        },
+        {
+          "columnName": "BotShelfWidth",
+          "value": "FreeSpaceWidth-35"
+        },
+        {
+          "columnName": "BotShelfDepthBwWood",
+          "value": "540"
+        },
+        {
+          "columnName": "BotShelfDepthBwMetal",
+          "value": "529"
+        },
+        {
+          "columnName": "BotShelfThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BotShelfPosHeight",
+          "value": "23.4"
+        },
+        {
+          "columnName": "BackwallWidth",
+          "value": "FreeSpaceWidth-38"
+        },
+        {
+          "columnName": "BackwallHeight",
+          "value": "101"
+        },
+        {
+          "columnName": "BackwallThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BackwallPosHeight",
+          "value": "39.4"
+        },
+        {
+          "columnName": "BackwallPosDepth",
+          "value": "540"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionId",
+          "value": "Legra_600_K"
+        },
+        {
+          "columnName": "ObjWidth",
+          "value": "FreeSpaceWidth-14"
+        },
+        {
+          "columnName": "ObjHeight",
+          "value": "140"
+        },
+        {
+          "columnName": "ObjDepth",
+          "value": "602"
+        },
+        {
+          "columnName": "ObjPosHeight",
+          "value": "0.4"
+        },
+        {
+          "columnName": "SlidePosDepth",
+          "value": "4"
+        },
+        {
+          "columnName": "SlidePosHeight",
+          "value": "1.7"
+        },
+        {
+          "columnName": "BlockSpaceHeight",
+          "value": "140.4"
+        },
+        {
+          "columnName": "BlockSpaceDepth",
+          "value": "603"
+        },
+        {
+          "columnName": "BlockSpacePosHeight",
+          "value": "0.4"
+        },
+        {
+          "columnName": "BotShelfWidth",
+          "value": "FreeSpaceWidth-35"
+        },
+        {
+          "columnName": "BotShelfDepthBwWood",
+          "value": "590"
+        },
+        {
+          "columnName": "BotShelfDepthBwMetal",
+          "value": "579"
+        },
+        {
+          "columnName": "BotShelfThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BotShelfPosHeight",
+          "value": "23.4"
+        },
+        {
+          "columnName": "BackwallWidth",
+          "value": "FreeSpaceWidth-38"
+        },
+        {
+          "columnName": "BackwallHeight",
+          "value": "101"
+        },
+        {
+          "columnName": "BackwallThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BackwallPosHeight",
+          "value": "39.4"
+        },
+        {
+          "columnName": "BackwallPosDepth",
+          "value": "590"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionId",
+          "value": "Legra_270_C"
+        },
+        {
+          "columnName": "ObjWidth",
+          "value": "FreeSpaceWidth-14"
+        },
+        {
+          "columnName": "ObjHeight",
+          "value": "187"
+        },
+        {
+          "columnName": "ObjDepth",
+          "value": "272"
+        },
+        {
+          "columnName": "ObjPosHeight",
+          "value": "0.4"
+        },
+        {
+          "columnName": "SlidePosDepth",
+          "value": "4"
+        },
+        {
+          "columnName": "SlidePosHeight",
+          "value": "1.7"
+        },
+        {
+          "columnName": "BlockSpaceHeight",
+          "value": "187.4"
+        },
+        {
+          "columnName": "BlockSpaceDepth",
+          "value": "273"
+        },
+        {
+          "columnName": "BlockSpacePosHeight",
+          "value": "0.4"
+        },
+        {
+          "columnName": "BotShelfWidth",
+          "value": "FreeSpaceWidth-35"
+        },
+        {
+          "columnName": "BotShelfDepthBwWood",
+          "value": "260"
+        },
+        {
+          "columnName": "BotShelfDepthBwMetal",
+          "value": "249"
+        },
+        {
+          "columnName": "BotShelfThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BotShelfPosHeight",
+          "value": "23.4"
+        },
+        {
+          "columnName": "BackwallWidth",
+          "value": "FreeSpaceWidth-38"
+        },
+        {
+          "columnName": "BackwallHeight",
+          "value": "148"
+        },
+        {
+          "columnName": "BackwallThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BackwallPosHeight",
+          "value": "39.4"
+        },
+        {
+          "columnName": "BackwallPosDepth",
+          "value": "270"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionId",
+          "value": "Legra_300_C"
+        },
+        {
+          "columnName": "ObjWidth",
+          "value": "FreeSpaceWidth-14"
+        },
+        {
+          "columnName": "ObjHeight",
+          "value": "187"
+        },
+        {
+          "columnName": "ObjDepth",
+          "value": "302"
+        },
+        {
+          "columnName": "ObjPosHeight",
+          "value": "0.4"
+        },
+        {
+          "columnName": "SlidePosDepth",
+          "value": "4"
+        },
+        {
+          "columnName": "SlidePosHeight",
+          "value": "1.7"
+        },
+        {
+          "columnName": "BlockSpaceHeight",
+          "value": "187.4"
+        },
+        {
+          "columnName": "BlockSpaceDepth",
+          "value": "303"
+        },
+        {
+          "columnName": "BlockSpacePosHeight",
+          "value": "0.4"
+        },
+        {
+          "columnName": "BotShelfWidth",
+          "value": "FreeSpaceWidth-35"
+        },
+        {
+          "columnName": "BotShelfDepthBwWood",
+          "value": "290"
+        },
+        {
+          "columnName": "BotShelfDepthBwMetal",
+          "value": "279"
+        },
+        {
+          "columnName": "BotShelfThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BotShelfPosHeight",
+          "value": "23.4"
+        },
+        {
+          "columnName": "BackwallWidth",
+          "value": "FreeSpaceWidth-38"
+        },
+        {
+          "columnName": "BackwallHeight",
+          "value": "148"
+        },
+        {
+          "columnName": "BackwallThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BackwallPosHeight",
+          "value": "39.4"
+        },
+        {
+          "columnName": "BackwallPosDepth",
+          "value": "290"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionId",
+          "value": "Legra_350_C"
+        },
+        {
+          "columnName": "ObjWidth",
+          "value": "FreeSpaceWidth-14"
+        },
+        {
+          "columnName": "ObjHeight",
+          "value": "187"
+        },
+        {
+          "columnName": "ObjDepth",
+          "value": "352"
+        },
+        {
+          "columnName": "ObjPosHeight",
+          "value": "0.4"
+        },
+        {
+          "columnName": "SlidePosDepth",
+          "value": "4"
+        },
+        {
+          "columnName": "SlidePosHeight",
+          "value": "1.7"
+        },
+        {
+          "columnName": "BlockSpaceHeight",
+          "value": "187.4"
+        },
+        {
+          "columnName": "BlockSpaceDepth",
+          "value": "353"
+        },
+        {
+          "columnName": "BlockSpacePosHeight",
+          "value": "0.4"
+        },
+        {
+          "columnName": "BotShelfWidth",
+          "value": "FreeSpaceWidth-35"
+        },
+        {
+          "columnName": "BotShelfDepthBwWood",
+          "value": "340"
+        },
+        {
+          "columnName": "BotShelfDepthBwMetal",
+          "value": "329"
+        },
+        {
+          "columnName": "BotShelfThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BotShelfPosHeight",
+          "value": "23.4"
+        },
+        {
+          "columnName": "BackwallWidth",
+          "value": "FreeSpaceWidth-38"
+        },
+        {
+          "columnName": "BackwallHeight",
+          "value": "148"
+        },
+        {
+          "columnName": "BackwallThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BackwallPosHeight",
+          "value": "39.4"
+        },
+        {
+          "columnName": "BackwallPosDepth",
+          "value": "340"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionId",
+          "value": "Legra_400_C"
+        },
+        {
+          "columnName": "ObjWidth",
+          "value": "FreeSpaceWidth-14"
+        },
+        {
+          "columnName": "ObjHeight",
+          "value": "187"
+        },
+        {
+          "columnName": "ObjDepth",
+          "value": "402"
+        },
+        {
+          "columnName": "ObjPosHeight",
+          "value": "0.4"
+        },
+        {
+          "columnName": "SlidePosDepth",
+          "value": "4"
+        },
+        {
+          "columnName": "SlidePosHeight",
+          "value": "1.7"
+        },
+        {
+          "columnName": "BlockSpaceHeight",
+          "value": "187.4"
+        },
+        {
+          "columnName": "BlockSpaceDepth",
+          "value": "403"
+        },
+        {
+          "columnName": "BlockSpacePosHeight",
+          "value": "0.4"
+        },
+        {
+          "columnName": "BotShelfWidth",
+          "value": "FreeSpaceWidth-35"
+        },
+        {
+          "columnName": "BotShelfDepthBwWood",
+          "value": "390"
+        },
+        {
+          "columnName": "BotShelfDepthBwMetal",
+          "value": "379"
+        },
+        {
+          "columnName": "BotShelfThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BotShelfPosHeight",
+          "value": "23.4"
+        },
+        {
+          "columnName": "BackwallWidth",
+          "value": "FreeSpaceWidth-38"
+        },
+        {
+          "columnName": "BackwallHeight",
+          "value": "148"
+        },
+        {
+          "columnName": "BackwallThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BackwallPosHeight",
+          "value": "39.4"
+        },
+        {
+          "columnName": "BackwallPosDepth",
+          "value": "390"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionId",
+          "value": "Legra_450_C"
+        },
+        {
+          "columnName": "ObjWidth",
+          "value": "FreeSpaceWidth-14"
+        },
+        {
+          "columnName": "ObjHeight",
+          "value": "187"
+        },
+        {
+          "columnName": "ObjDepth",
+          "value": "452"
+        },
+        {
+          "columnName": "ObjPosHeight",
+          "value": "0.4"
+        },
+        {
+          "columnName": "SlidePosDepth",
+          "value": "4"
+        },
+        {
+          "columnName": "SlidePosHeight",
+          "value": "1.7"
+        },
+        {
+          "columnName": "BlockSpaceHeight",
+          "value": "187.4"
+        },
+        {
+          "columnName": "BlockSpaceDepth",
+          "value": "453"
+        },
+        {
+          "columnName": "BlockSpacePosHeight",
+          "value": "0.4"
+        },
+        {
+          "columnName": "BotShelfWidth",
+          "value": "FreeSpaceWidth-35"
+        },
+        {
+          "columnName": "BotShelfDepthBwWood",
+          "value": "440"
+        },
+        {
+          "columnName": "BotShelfDepthBwMetal",
+          "value": "429"
+        },
+        {
+          "columnName": "BotShelfThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BotShelfPosHeight",
+          "value": "23.4"
+        },
+        {
+          "columnName": "BackwallWidth",
+          "value": "FreeSpaceWidth-38"
+        },
+        {
+          "columnName": "BackwallHeight",
+          "value": "148"
+        },
+        {
+          "columnName": "BackwallThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BackwallPosHeight",
+          "value": "39.4"
+        },
+        {
+          "columnName": "BackwallPosDepth",
+          "value": "440"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionId",
+          "value": "Legra_500_C"
+        },
+        {
+          "columnName": "ObjWidth",
+          "value": "FreeSpaceWidth-14"
+        },
+        {
+          "columnName": "ObjHeight",
+          "value": "187"
+        },
+        {
+          "columnName": "ObjDepth",
+          "value": "502"
+        },
+        {
+          "columnName": "ObjPosHeight",
+          "value": "0.4"
+        },
+        {
+          "columnName": "SlidePosDepth",
+          "value": "4"
+        },
+        {
+          "columnName": "SlidePosHeight",
+          "value": "1.7"
+        },
+        {
+          "columnName": "BlockSpaceHeight",
+          "value": "187.4"
+        },
+        {
+          "columnName": "BlockSpaceDepth",
+          "value": "503"
+        },
+        {
+          "columnName": "BlockSpacePosHeight",
+          "value": "0.4"
+        },
+        {
+          "columnName": "BotShelfWidth",
+          "value": "FreeSpaceWidth-35"
+        },
+        {
+          "columnName": "BotShelfDepthBwWood",
+          "value": "490"
+        },
+        {
+          "columnName": "BotShelfDepthBwMetal",
+          "value": "479"
+        },
+        {
+          "columnName": "BotShelfThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BotShelfPosHeight",
+          "value": "23.4"
+        },
+        {
+          "columnName": "BackwallWidth",
+          "value": "FreeSpaceWidth-38"
+        },
+        {
+          "columnName": "BackwallHeight",
+          "value": "148"
+        },
+        {
+          "columnName": "BackwallThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BackwallPosHeight",
+          "value": "39.4"
+        },
+        {
+          "columnName": "BackwallPosDepth",
+          "value": "490"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionId",
+          "value": "Legra_550_C"
+        },
+        {
+          "columnName": "ObjWidth",
+          "value": "FreeSpaceWidth-14"
+        },
+        {
+          "columnName": "ObjHeight",
+          "value": "187"
+        },
+        {
+          "columnName": "ObjDepth",
+          "value": "552"
+        },
+        {
+          "columnName": "ObjPosHeight",
+          "value": "0.4"
+        },
+        {
+          "columnName": "SlidePosDepth",
+          "value": "4"
+        },
+        {
+          "columnName": "SlidePosHeight",
+          "value": "1.7"
+        },
+        {
+          "columnName": "BlockSpaceHeight",
+          "value": "187.4"
+        },
+        {
+          "columnName": "BlockSpaceDepth",
+          "value": "553"
+        },
+        {
+          "columnName": "BlockSpacePosHeight",
+          "value": "0.4"
+        },
+        {
+          "columnName": "BotShelfWidth",
+          "value": "FreeSpaceWidth-35"
+        },
+        {
+          "columnName": "BotShelfDepthBwWood",
+          "value": "540"
+        },
+        {
+          "columnName": "BotShelfDepthBwMetal",
+          "value": "529"
+        },
+        {
+          "columnName": "BotShelfThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BotShelfPosHeight",
+          "value": "23.4"
+        },
+        {
+          "columnName": "BackwallWidth",
+          "value": "FreeSpaceWidth-38"
+        },
+        {
+          "columnName": "BackwallHeight",
+          "value": "148"
+        },
+        {
+          "columnName": "BackwallThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BackwallPosHeight",
+          "value": "39.4"
+        },
+        {
+          "columnName": "BackwallPosDepth",
+          "value": "540"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionId",
+          "value": "Legra_600_C"
+        },
+        {
+          "columnName": "ObjWidth",
+          "value": "FreeSpaceWidth-14"
+        },
+        {
+          "columnName": "ObjHeight",
+          "value": "187"
+        },
+        {
+          "columnName": "ObjDepth",
+          "value": "602"
+        },
+        {
+          "columnName": "ObjPosHeight",
+          "value": "0.4"
+        },
+        {
+          "columnName": "SlidePosDepth",
+          "value": "4"
+        },
+        {
+          "columnName": "SlidePosHeight",
+          "value": "1.7"
+        },
+        {
+          "columnName": "BlockSpaceHeight",
+          "value": "187.4"
+        },
+        {
+          "columnName": "BlockSpaceDepth",
+          "value": "603"
+        },
+        {
+          "columnName": "BlockSpacePosHeight",
+          "value": "0.4"
+        },
+        {
+          "columnName": "BotShelfWidth",
+          "value": "FreeSpaceWidth-35"
+        },
+        {
+          "columnName": "BotShelfDepthBwWood",
+          "value": "590"
+        },
+        {
+          "columnName": "BotShelfDepthBwMetal",
+          "value": "579"
+        },
+        {
+          "columnName": "BotShelfThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BotShelfPosHeight",
+          "value": "23.4"
+        },
+        {
+          "columnName": "BackwallWidth",
+          "value": "FreeSpaceWidth-38"
+        },
+        {
+          "columnName": "BackwallHeight",
+          "value": "148"
+        },
+        {
+          "columnName": "BackwallThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BackwallPosHeight",
+          "value": "39.4"
+        },
+        {
+          "columnName": "BackwallPosDepth",
+          "value": "590"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionId",
+          "value": "Legra_650_C"
+        },
+        {
+          "columnName": "ObjWidth",
+          "value": "FreeSpaceWidth-14"
+        },
+        {
+          "columnName": "ObjHeight",
+          "value": "187"
+        },
+        {
+          "columnName": "ObjDepth",
+          "value": "652"
+        },
+        {
+          "columnName": "ObjPosHeight",
+          "value": "0.4"
+        },
+        {
+          "columnName": "SlidePosDepth",
+          "value": "4"
+        },
+        {
+          "columnName": "SlidePosHeight",
+          "value": "1.7"
+        },
+        {
+          "columnName": "BlockSpaceHeight",
+          "value": "187.4"
+        },
+        {
+          "columnName": "BlockSpaceDepth",
+          "value": "653"
+        },
+        {
+          "columnName": "BlockSpacePosHeight",
+          "value": "0.4"
+        },
+        {
+          "columnName": "BotShelfWidth",
+          "value": "FreeSpaceWidth-35"
+        },
+        {
+          "columnName": "BotShelfDepthBwWood",
+          "value": "640"
+        },
+        {
+          "columnName": "BotShelfDepthBwMetal",
+          "value": "629"
+        },
+        {
+          "columnName": "BotShelfThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BotShelfPosHeight",
+          "value": "23.4"
+        },
+        {
+          "columnName": "BackwallWidth",
+          "value": "FreeSpaceWidth-38"
+        },
+        {
+          "columnName": "BackwallHeight",
+          "value": "148"
+        },
+        {
+          "columnName": "BackwallThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BackwallPosHeight",
+          "value": "39.4"
+        },
+        {
+          "columnName": "BackwallPosDepth",
+          "value": "640"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionId",
+          "value": "Legra_400_F"
+        },
+        {
+          "columnName": "ObjWidth",
+          "value": "FreeSpaceWidth-14"
+        },
+        {
+          "columnName": "ObjHeight",
+          "value": "251"
+        },
+        {
+          "columnName": "ObjDepth",
+          "value": "402"
+        },
+        {
+          "columnName": "ObjPosHeight",
+          "value": "0.4"
+        },
+        {
+          "columnName": "SlidePosDepth",
+          "value": "4"
+        },
+        {
+          "columnName": "SlidePosHeight",
+          "value": "1.7"
+        },
+        {
+          "columnName": "BlockSpaceHeight",
+          "value": "251.4"
+        },
+        {
+          "columnName": "BlockSpaceDepth",
+          "value": "403"
+        },
+        {
+          "columnName": "BlockSpacePosHeight",
+          "value": "0.4"
+        },
+        {
+          "columnName": "BotShelfWidth",
+          "value": "FreeSpaceWidth-35"
+        },
+        {
+          "columnName": "BotShelfDepthBwWood",
+          "value": "390"
+        },
+        {
+          "columnName": "BotShelfDepthBwMetal",
+          "value": "379"
+        },
+        {
+          "columnName": "BotShelfThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BotShelfPosHeight",
+          "value": "23.4"
+        },
+        {
+          "columnName": "BackwallWidth",
+          "value": "FreeSpaceWidth-38"
+        },
+        {
+          "columnName": "BackwallHeight",
+          "value": "212"
+        },
+        {
+          "columnName": "BackwallThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BackwallPosHeight",
+          "value": "39.4"
+        },
+        {
+          "columnName": "BackwallPosDepth",
+          "value": "390"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionId",
+          "value": "Legra_450_F"
+        },
+        {
+          "columnName": "ObjWidth",
+          "value": "FreeSpaceWidth-14"
+        },
+        {
+          "columnName": "ObjHeight",
+          "value": "251"
+        },
+        {
+          "columnName": "ObjDepth",
+          "value": "452"
+        },
+        {
+          "columnName": "ObjPosHeight",
+          "value": "0.4"
+        },
+        {
+          "columnName": "SlidePosDepth",
+          "value": "4"
+        },
+        {
+          "columnName": "SlidePosHeight",
+          "value": "1.7"
+        },
+        {
+          "columnName": "BlockSpaceHeight",
+          "value": "251.4"
+        },
+        {
+          "columnName": "BlockSpaceDepth",
+          "value": "453"
+        },
+        {
+          "columnName": "BlockSpacePosHeight",
+          "value": "0.4"
+        },
+        {
+          "columnName": "BotShelfWidth",
+          "value": "FreeSpaceWidth-35"
+        },
+        {
+          "columnName": "BotShelfDepthBwWood",
+          "value": "440"
+        },
+        {
+          "columnName": "BotShelfDepthBwMetal",
+          "value": "429"
+        },
+        {
+          "columnName": "BotShelfThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BotShelfPosHeight",
+          "value": "23.4"
+        },
+        {
+          "columnName": "BackwallWidth",
+          "value": "FreeSpaceWidth-38"
+        },
+        {
+          "columnName": "BackwallHeight",
+          "value": "212"
+        },
+        {
+          "columnName": "BackwallThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BackwallPosHeight",
+          "value": "39.4"
+        },
+        {
+          "columnName": "BackwallPosDepth",
+          "value": "440"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionId",
+          "value": "Legra_500_F"
+        },
+        {
+          "columnName": "ObjWidth",
+          "value": "FreeSpaceWidth-14"
+        },
+        {
+          "columnName": "ObjHeight",
+          "value": "251"
+        },
+        {
+          "columnName": "ObjDepth",
+          "value": "502"
+        },
+        {
+          "columnName": "ObjPosHeight",
+          "value": "0.4"
+        },
+        {
+          "columnName": "SlidePosDepth",
+          "value": "4"
+        },
+        {
+          "columnName": "SlidePosHeight",
+          "value": "1.7"
+        },
+        {
+          "columnName": "BlockSpaceHeight",
+          "value": "251.4"
+        },
+        {
+          "columnName": "BlockSpaceDepth",
+          "value": "503"
+        },
+        {
+          "columnName": "BlockSpacePosHeight",
+          "value": "0.4"
+        },
+        {
+          "columnName": "BotShelfWidth",
+          "value": "FreeSpaceWidth-35"
+        },
+        {
+          "columnName": "BotShelfDepthBwWood",
+          "value": "490"
+        },
+        {
+          "columnName": "BotShelfDepthBwMetal",
+          "value": "479"
+        },
+        {
+          "columnName": "BotShelfThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BotShelfPosHeight",
+          "value": "23.4"
+        },
+        {
+          "columnName": "BackwallWidth",
+          "value": "FreeSpaceWidth-38"
+        },
+        {
+          "columnName": "BackwallHeight",
+          "value": "212"
+        },
+        {
+          "columnName": "BackwallThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BackwallPosHeight",
+          "value": "39.4"
+        },
+        {
+          "columnName": "BackwallPosDepth",
+          "value": "490"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionId",
+          "value": "Legra_550_F"
+        },
+        {
+          "columnName": "ObjWidth",
+          "value": "FreeSpaceWidth-14"
+        },
+        {
+          "columnName": "ObjHeight",
+          "value": "251"
+        },
+        {
+          "columnName": "ObjDepth",
+          "value": "552"
+        },
+        {
+          "columnName": "ObjPosHeight",
+          "value": "0.4"
+        },
+        {
+          "columnName": "SlidePosDepth",
+          "value": "4"
+        },
+        {
+          "columnName": "SlidePosHeight",
+          "value": "1.7"
+        },
+        {
+          "columnName": "BlockSpaceHeight",
+          "value": "251.4"
+        },
+        {
+          "columnName": "BlockSpaceDepth",
+          "value": "553"
+        },
+        {
+          "columnName": "BlockSpacePosHeight",
+          "value": "0.4"
+        },
+        {
+          "columnName": "BotShelfWidth",
+          "value": "FreeSpaceWidth-35"
+        },
+        {
+          "columnName": "BotShelfDepthBwWood",
+          "value": "540"
+        },
+        {
+          "columnName": "BotShelfDepthBwMetal",
+          "value": "529"
+        },
+        {
+          "columnName": "BotShelfThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BotShelfPosHeight",
+          "value": "23.4"
+        },
+        {
+          "columnName": "BackwallWidth",
+          "value": "FreeSpaceWidth-38"
+        },
+        {
+          "columnName": "BackwallHeight",
+          "value": "212"
+        },
+        {
+          "columnName": "BackwallThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BackwallPosHeight",
+          "value": "39.4"
+        },
+        {
+          "columnName": "BackwallPosDepth",
+          "value": "540"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionId",
+          "value": "Legra_600_F"
+        },
+        {
+          "columnName": "ObjWidth",
+          "value": "FreeSpaceWidth-14"
+        },
+        {
+          "columnName": "ObjHeight",
+          "value": "251"
+        },
+        {
+          "columnName": "ObjDepth",
+          "value": "602"
+        },
+        {
+          "columnName": "ObjPosHeight",
+          "value": "0.4"
+        },
+        {
+          "columnName": "SlidePosDepth",
+          "value": "4"
+        },
+        {
+          "columnName": "SlidePosHeight",
+          "value": "1.7"
+        },
+        {
+          "columnName": "BlockSpaceHeight",
+          "value": "251.4"
+        },
+        {
+          "columnName": "BlockSpaceDepth",
+          "value": "603"
+        },
+        {
+          "columnName": "BlockSpacePosHeight",
+          "value": "0.4"
+        },
+        {
+          "columnName": "BotShelfWidth",
+          "value": "FreeSpaceWidth-35"
+        },
+        {
+          "columnName": "BotShelfDepthBwWood",
+          "value": "590"
+        },
+        {
+          "columnName": "BotShelfDepthBwMetal",
+          "value": "579"
+        },
+        {
+          "columnName": "BotShelfThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BotShelfPosHeight",
+          "value": "23.4"
+        },
+        {
+          "columnName": "BackwallWidth",
+          "value": "FreeSpaceWidth-38"
+        },
+        {
+          "columnName": "BackwallHeight",
+          "value": "212"
+        },
+        {
+          "columnName": "BackwallThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BackwallPosHeight",
+          "value": "39.4"
+        },
+        {
+          "columnName": "BackwallPosDepth",
+          "value": "590"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionId",
+          "value": "Legra_650_F"
+        },
+        {
+          "columnName": "ObjWidth",
+          "value": "FreeSpaceWidth-14"
+        },
+        {
+          "columnName": "ObjHeight",
+          "value": "251"
+        },
+        {
+          "columnName": "ObjDepth",
+          "value": "652"
+        },
+        {
+          "columnName": "ObjPosHeight",
+          "value": "0.4"
+        },
+        {
+          "columnName": "SlidePosDepth",
+          "value": "4"
+        },
+        {
+          "columnName": "SlidePosHeight",
+          "value": "1.7"
+        },
+        {
+          "columnName": "BlockSpaceHeight",
+          "value": "251.4"
+        },
+        {
+          "columnName": "BlockSpaceDepth",
+          "value": "653"
+        },
+        {
+          "columnName": "BlockSpacePosHeight",
+          "value": "0.4"
+        },
+        {
+          "columnName": "BotShelfWidth",
+          "value": "FreeSpaceWidth-35"
+        },
+        {
+          "columnName": "BotShelfDepthBwWood",
+          "value": "640"
+        },
+        {
+          "columnName": "BotShelfDepthBwMetal",
+          "value": "629"
+        },
+        {
+          "columnName": "BotShelfThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BotShelfPosHeight",
+          "value": "23.4"
+        },
+        {
+          "columnName": "BackwallWidth",
+          "value": "FreeSpaceWidth-38"
+        },
+        {
+          "columnName": "BackwallHeight",
+          "value": "212"
+        },
+        {
+          "columnName": "BackwallThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BackwallPosHeight",
+          "value": "39.4"
+        },
+        {
+          "columnName": "BackwallPosDepth",
+          "value": "640"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionId",
+          "value": "AvanTechYou_500_77"
+        },
+        {
+          "columnName": "ObjWidth",
+          "value": "FreeSpaceWidth-14"
+        },
+        {
+          "columnName": "ObjHeight",
+          "value": "63"
+        },
+        {
+          "columnName": "ObjDepth",
+          "value": "503"
+        },
+        {
+          "columnName": "ObjPosHeight",
+          "value": "13"
+        },
+        {
+          "columnName": "SlidePosDepth",
+          "value": "3"
+        },
+        {
+          "columnName": "SlidePosHeight",
+          "value": "-13"
+        },
+        {
+          "columnName": "BlockSpaceHeight",
+          "value": "77"
+        },
+        {
+          "columnName": "BlockSpaceDepth",
+          "value": "504"
+        },
+        {
+          "columnName": "BlockSpacePosHeight",
+          "value": "1.25"
+        },
+        {
+          "columnName": "BotShelfWidth",
+          "value": "FreeSpaceWidth-24"
+        },
+        {
+          "columnName": "BotShelfDepthBwWood",
+          "value": "474"
+        },
+        {
+          "columnName": "BotShelfDepthBwMetal",
+          "value": "474"
+        },
+        {
+          "columnName": "BotShelfThickness",
+          "value": "8"
+        },
+        {
+          "columnName": "BotShelfPosHeight",
+          "value": "27"
+        },
+        {
+          "columnName": "BackwallWidth",
+          "value": "FreeSpaceWidth-24"
+        },
+        {
+          "columnName": "BackwallHeight",
+          "value": "46"
+        },
+        {
+          "columnName": "BackwallThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BackwallPosHeight",
+          "value": "27"
+        },
+        {
+          "columnName": "BackwallPosDepth",
+          "value": "490"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionId",
+          "value": "AvanTechYou_500_101"
+        },
+        {
+          "columnName": "ObjWidth",
+          "value": "FreeSpaceWidth-14"
+        },
+        {
+          "columnName": "ObjHeight",
+          "value": "88"
+        },
+        {
+          "columnName": "ObjDepth",
+          "value": "503"
+        },
+        {
+          "columnName": "ObjPosHeight",
+          "value": "13"
+        },
+        {
+          "columnName": "SlidePosDepth",
+          "value": "3"
+        },
+        {
+          "columnName": "SlidePosHeight",
+          "value": "-13"
+        },
+        {
+          "columnName": "BlockSpaceHeight",
+          "value": "106"
+        },
+        {
+          "columnName": "BlockSpaceDepth",
+          "value": "504"
+        },
+        {
+          "columnName": "BlockSpacePosHeight",
+          "value": "1.25"
+        },
+        {
+          "columnName": "BotShelfWidth",
+          "value": "FreeSpaceWidth-24"
+        },
+        {
+          "columnName": "BotShelfDepthBwWood",
+          "value": "479"
+        },
+        {
+          "columnName": "BotShelfDepthBwMetal",
+          "value": "474"
+        },
+        {
+          "columnName": "BotShelfThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BotShelfPosHeight",
+          "value": "27"
+        },
+        {
+          "columnName": "BackwallWidth",
+          "value": "FreeSpaceWidth-24"
+        },
+        {
+          "columnName": "BackwallHeight",
+          "value": "54"
+        },
+        {
+          "columnName": "BackwallThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BackwallPosHeight",
+          "value": "43"
+        },
+        {
+          "columnName": "BackwallPosDepth",
+          "value": "490"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionId",
+          "value": "AvanTechYou_500_139"
+        },
+        {
+          "columnName": "ObjWidth",
+          "value": "FreeSpaceWidth-14"
+        },
+        {
+          "columnName": "ObjHeight",
+          "value": "126"
+        },
+        {
+          "columnName": "ObjDepth",
+          "value": "503"
+        },
+        {
+          "columnName": "ObjPosHeight",
+          "value": "13"
+        },
+        {
+          "columnName": "SlidePosDepth",
+          "value": "3"
+        },
+        {
+          "columnName": "SlidePosHeight",
+          "value": "-13"
+        },
+        {
+          "columnName": "BlockSpaceHeight",
+          "value": "144"
+        },
+        {
+          "columnName": "BlockSpaceDepth",
+          "value": "504"
+        },
+        {
+          "columnName": "BlockSpacePosHeight",
+          "value": "1.25"
+        },
+        {
+          "columnName": "BotShelfWidth",
+          "value": "FreeSpaceWidth-24"
+        },
+        {
+          "columnName": "BotShelfDepthBwWood",
+          "value": "479"
+        },
+        {
+          "columnName": "BotShelfDepthBwMetal",
+          "value": "474"
+        },
+        {
+          "columnName": "BotShelfThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BotShelfPosHeight",
+          "value": "27"
+        },
+        {
+          "columnName": "BackwallWidth",
+          "value": "FreeSpaceWidth-24"
+        },
+        {
+          "columnName": "BackwallHeight",
+          "value": "92"
+        },
+        {
+          "columnName": "BackwallThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BackwallPosHeight",
+          "value": "43"
+        },
+        {
+          "columnName": "BackwallPosDepth",
+          "value": "490"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionId",
+          "value": "AvanTechYou_500_187"
+        },
+        {
+          "columnName": "ObjWidth",
+          "value": "FreeSpaceWidth-14"
+        },
+        {
+          "columnName": "ObjHeight",
+          "value": "174"
+        },
+        {
+          "columnName": "ObjDepth",
+          "value": "503"
+        },
+        {
+          "columnName": "ObjPosHeight",
+          "value": "13"
+        },
+        {
+          "columnName": "SlidePosDepth",
+          "value": "3"
+        },
+        {
+          "columnName": "SlidePosHeight",
+          "value": "-13"
+        },
+        {
+          "columnName": "BlockSpaceHeight",
+          "value": "192"
+        },
+        {
+          "columnName": "BlockSpaceDepth",
+          "value": "504"
+        },
+        {
+          "columnName": "BlockSpacePosHeight",
+          "value": "1.25"
+        },
+        {
+          "columnName": "BotShelfWidth",
+          "value": "FreeSpaceWidth-24"
+        },
+        {
+          "columnName": "BotShelfDepthBwWood",
+          "value": "479"
+        },
+        {
+          "columnName": "BotShelfDepthBwMetal",
+          "value": "474"
+        },
+        {
+          "columnName": "BotShelfThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BotShelfPosHeight",
+          "value": "27"
+        },
+        {
+          "columnName": "BackwallWidth",
+          "value": "FreeSpaceWidth-24"
+        },
+        {
+          "columnName": "BackwallHeight",
+          "value": "140.5"
+        },
+        {
+          "columnName": "BackwallThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BackwallPosHeight",
+          "value": "43"
+        },
+        {
+          "columnName": "BackwallPosDepth",
+          "value": "490"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionId",
+          "value": "AvanTechYou_500_251"
+        },
+        {
+          "columnName": "ObjWidth",
+          "value": "FreeSpaceWidth-14"
+        },
+        {
+          "columnName": "ObjHeight",
+          "value": "238"
+        },
+        {
+          "columnName": "ObjDepth",
+          "value": "503"
+        },
+        {
+          "columnName": "ObjPosHeight",
+          "value": "13"
+        },
+        {
+          "columnName": "SlidePosDepth",
+          "value": "3"
+        },
+        {
+          "columnName": "SlidePosHeight",
+          "value": "-13"
+        },
+        {
+          "columnName": "BlockSpaceHeight",
+          "value": "256"
+        },
+        {
+          "columnName": "BlockSpaceDepth",
+          "value": "504"
+        },
+        {
+          "columnName": "BlockSpacePosHeight",
+          "value": "1.25"
+        },
+        {
+          "columnName": "BotShelfWidth",
+          "value": "FreeSpaceWidth-24"
+        },
+        {
+          "columnName": "BotShelfDepthBwWood",
+          "value": "479"
+        },
+        {
+          "columnName": "BotShelfDepthBwMetal",
+          "value": "474"
+        },
+        {
+          "columnName": "BotShelfThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BotShelfPosHeight",
+          "value": "27"
+        },
+        {
+          "columnName": "BackwallWidth",
+          "value": "FreeSpaceWidth-24"
+        },
+        {
+          "columnName": "BackwallHeight",
+          "value": "204.5"
+        },
+        {
+          "columnName": "BackwallThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BackwallPosHeight",
+          "value": "43"
+        },
+        {
+          "columnName": "BackwallPosDepth",
+          "value": "490"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionId",
+          "value": "AvanTechYou_270_101"
+        },
+        {
+          "columnName": "ObjWidth",
+          "value": "FreeSpaceWidth-14"
+        },
+        {
+          "columnName": "ObjHeight",
+          "value": "88"
+        },
+        {
+          "columnName": "ObjDepth",
+          "value": "270"
+        },
+        {
+          "columnName": "ObjPosHeight",
+          "value": "13"
+        },
+        {
+          "columnName": "SlidePosDepth",
+          "value": "3"
+        },
+        {
+          "columnName": "SlidePosHeight",
+          "value": "-13"
+        },
+        {
+          "columnName": "BlockSpaceHeight",
+          "value": "106"
+        },
+        {
+          "columnName": "BlockSpaceDepth",
+          "value": "273"
+        },
+        {
+          "columnName": "BlockSpacePosHeight",
+          "value": "1.25"
+        },
+        {
+          "columnName": "BotShelfWidth",
+          "value": "FreeSpaceWidth-24"
+        },
+        {
+          "columnName": "BotShelfDepthBwWood",
+          "value": "249"
+        },
+        {
+          "columnName": "BotShelfDepthBwMetal",
+          "value": "249"
+        },
+        {
+          "columnName": "BotShelfThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BotShelfPosHeight",
+          "value": "27"
+        },
+        {
+          "columnName": "BackwallWidth",
+          "value": "FreeSpaceWidth-24"
+        },
+        {
+          "columnName": "BackwallHeight",
+          "value": "54"
+        },
+        {
+          "columnName": "BackwallThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BackwallPosHeight",
+          "value": "43"
+        },
+        {
+          "columnName": "BackwallPosDepth",
+          "value": "260"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionId",
+          "value": "AvanTechYou_270_139"
+        },
+        {
+          "columnName": "ObjWidth",
+          "value": "FreeSpaceWidth-14"
+        },
+        {
+          "columnName": "ObjHeight",
+          "value": "126"
+        },
+        {
+          "columnName": "ObjDepth",
+          "value": "270"
+        },
+        {
+          "columnName": "ObjPosHeight",
+          "value": "13"
+        },
+        {
+          "columnName": "SlidePosDepth",
+          "value": "3"
+        },
+        {
+          "columnName": "SlidePosHeight",
+          "value": "-13"
+        },
+        {
+          "columnName": "BlockSpaceHeight",
+          "value": "144"
+        },
+        {
+          "columnName": "BlockSpaceDepth",
+          "value": "273"
+        },
+        {
+          "columnName": "BlockSpacePosHeight",
+          "value": "1.25"
+        },
+        {
+          "columnName": "BotShelfWidth",
+          "value": "FreeSpaceWidth-24"
+        },
+        {
+          "columnName": "BotShelfDepthBwWood",
+          "value": "249"
+        },
+        {
+          "columnName": "BotShelfDepthBwMetal",
+          "value": "249"
+        },
+        {
+          "columnName": "BotShelfThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BotShelfPosHeight",
+          "value": "27"
+        },
+        {
+          "columnName": "BackwallWidth",
+          "value": "FreeSpaceWidth-24"
+        },
+        {
+          "columnName": "BackwallHeight",
+          "value": "92"
+        },
+        {
+          "columnName": "BackwallThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BackwallPosHeight",
+          "value": "43"
+        },
+        {
+          "columnName": "BackwallPosDepth",
+          "value": "260"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionId",
+          "value": "AvanTechYou_270_187"
+        },
+        {
+          "columnName": "ObjWidth",
+          "value": "FreeSpaceWidth-14"
+        },
+        {
+          "columnName": "ObjHeight",
+          "value": "174"
+        },
+        {
+          "columnName": "ObjDepth",
+          "value": "270"
+        },
+        {
+          "columnName": "ObjPosHeight",
+          "value": "13"
+        },
+        {
+          "columnName": "SlidePosDepth",
+          "value": "3"
+        },
+        {
+          "columnName": "SlidePosHeight",
+          "value": "-13"
+        },
+        {
+          "columnName": "BlockSpaceHeight",
+          "value": "192"
+        },
+        {
+          "columnName": "BlockSpaceDepth",
+          "value": "273"
+        },
+        {
+          "columnName": "BlockSpacePosHeight",
+          "value": "1.25"
+        },
+        {
+          "columnName": "BotShelfWidth",
+          "value": "FreeSpaceWidth-24"
+        },
+        {
+          "columnName": "BotShelfDepthBwWood",
+          "value": "249"
+        },
+        {
+          "columnName": "BotShelfDepthBwMetal",
+          "value": "249"
+        },
+        {
+          "columnName": "BotShelfThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BotShelfPosHeight",
+          "value": "27"
+        },
+        {
+          "columnName": "BackwallWidth",
+          "value": "FreeSpaceWidth-24"
+        },
+        {
+          "columnName": "BackwallHeight",
+          "value": "140.5"
+        },
+        {
+          "columnName": "BackwallThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BackwallPosHeight",
+          "value": "43"
+        },
+        {
+          "columnName": "BackwallPosDepth",
+          "value": "260"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionId",
+          "value": "AvanTechYou_300_101"
+        },
+        {
+          "columnName": "ObjWidth",
+          "value": "FreeSpaceWidth-14"
+        },
+        {
+          "columnName": "ObjHeight",
+          "value": "88"
+        },
+        {
+          "columnName": "ObjDepth",
+          "value": "300"
+        },
+        {
+          "columnName": "ObjPosHeight",
+          "value": "13"
+        },
+        {
+          "columnName": "SlidePosDepth",
+          "value": "3"
+        },
+        {
+          "columnName": "SlidePosHeight",
+          "value": "-13"
+        },
+        {
+          "columnName": "BlockSpaceHeight",
+          "value": "106"
+        },
+        {
+          "columnName": "BlockSpaceDepth",
+          "value": "303"
+        },
+        {
+          "columnName": "BlockSpacePosHeight",
+          "value": "1.25"
+        },
+        {
+          "columnName": "BotShelfWidth",
+          "value": "FreeSpaceWidth-24"
+        },
+        {
+          "columnName": "BotShelfDepthBwWood",
+          "value": "279"
+        },
+        {
+          "columnName": "BotShelfDepthBwMetal",
+          "value": "279"
+        },
+        {
+          "columnName": "BotShelfThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BotShelfPosHeight",
+          "value": "27"
+        },
+        {
+          "columnName": "BackwallWidth",
+          "value": "FreeSpaceWidth-24"
+        },
+        {
+          "columnName": "BackwallHeight",
+          "value": "54"
+        },
+        {
+          "columnName": "BackwallThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BackwallPosHeight",
+          "value": "43"
+        },
+        {
+          "columnName": "BackwallPosDepth",
+          "value": "290"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionId",
+          "value": "AvanTechYou_300_139"
+        },
+        {
+          "columnName": "ObjWidth",
+          "value": "FreeSpaceWidth-14"
+        },
+        {
+          "columnName": "ObjHeight",
+          "value": "126"
+        },
+        {
+          "columnName": "ObjDepth",
+          "value": "300"
+        },
+        {
+          "columnName": "ObjPosHeight",
+          "value": "13"
+        },
+        {
+          "columnName": "SlidePosDepth",
+          "value": "3"
+        },
+        {
+          "columnName": "SlidePosHeight",
+          "value": "-13"
+        },
+        {
+          "columnName": "BlockSpaceHeight",
+          "value": "144"
+        },
+        {
+          "columnName": "BlockSpaceDepth",
+          "value": "303"
+        },
+        {
+          "columnName": "BlockSpacePosHeight",
+          "value": "1.25"
+        },
+        {
+          "columnName": "BotShelfWidth",
+          "value": "FreeSpaceWidth-24"
+        },
+        {
+          "columnName": "BotShelfDepthBwWood",
+          "value": "279"
+        },
+        {
+          "columnName": "BotShelfDepthBwMetal",
+          "value": "279"
+        },
+        {
+          "columnName": "BotShelfThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BotShelfPosHeight",
+          "value": "27"
+        },
+        {
+          "columnName": "BackwallWidth",
+          "value": "FreeSpaceWidth-24"
+        },
+        {
+          "columnName": "BackwallHeight",
+          "value": "92"
+        },
+        {
+          "columnName": "BackwallThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BackwallPosHeight",
+          "value": "43"
+        },
+        {
+          "columnName": "BackwallPosDepth",
+          "value": "290"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionId",
+          "value": "AvanTechYou_300_187"
+        },
+        {
+          "columnName": "ObjWidth",
+          "value": "FreeSpaceWidth-14"
+        },
+        {
+          "columnName": "ObjHeight",
+          "value": "174"
+        },
+        {
+          "columnName": "ObjDepth",
+          "value": "300"
+        },
+        {
+          "columnName": "ObjPosHeight",
+          "value": "13"
+        },
+        {
+          "columnName": "SlidePosDepth",
+          "value": "3"
+        },
+        {
+          "columnName": "SlidePosHeight",
+          "value": "-13"
+        },
+        {
+          "columnName": "BlockSpaceHeight",
+          "value": "192"
+        },
+        {
+          "columnName": "BlockSpaceDepth",
+          "value": "303"
+        },
+        {
+          "columnName": "BlockSpacePosHeight",
+          "value": "1.25"
+        },
+        {
+          "columnName": "BotShelfWidth",
+          "value": "FreeSpaceWidth-24"
+        },
+        {
+          "columnName": "BotShelfDepthBwWood",
+          "value": "279"
+        },
+        {
+          "columnName": "BotShelfDepthBwMetal",
+          "value": "279"
+        },
+        {
+          "columnName": "BotShelfThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BotShelfPosHeight",
+          "value": "27"
+        },
+        {
+          "columnName": "BackwallWidth",
+          "value": "FreeSpaceWidth-24"
+        },
+        {
+          "columnName": "BackwallHeight",
+          "value": "140.5"
+        },
+        {
+          "columnName": "BackwallThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BackwallPosHeight",
+          "value": "43"
+        },
+        {
+          "columnName": "BackwallPosDepth",
+          "value": "290"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionId",
+          "value": "AvanTechYou_350_101"
+        },
+        {
+          "columnName": "ObjWidth",
+          "value": "FreeSpaceWidth-14"
+        },
+        {
+          "columnName": "ObjHeight",
+          "value": "88"
+        },
+        {
+          "columnName": "ObjDepth",
+          "value": "350"
+        },
+        {
+          "columnName": "ObjPosHeight",
+          "value": "13"
+        },
+        {
+          "columnName": "SlidePosDepth",
+          "value": "3"
+        },
+        {
+          "columnName": "SlidePosHeight",
+          "value": "-13"
+        },
+        {
+          "columnName": "BlockSpaceHeight",
+          "value": "106"
+        },
+        {
+          "columnName": "BlockSpaceDepth",
+          "value": "353"
+        },
+        {
+          "columnName": "BlockSpacePosHeight",
+          "value": "1.25"
+        },
+        {
+          "columnName": "BotShelfWidth",
+          "value": "FreeSpaceWidth-24"
+        },
+        {
+          "columnName": "BotShelfDepthBwWood",
+          "value": "329"
+        },
+        {
+          "columnName": "BotShelfDepthBwMetal",
+          "value": "329"
+        },
+        {
+          "columnName": "BotShelfThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BotShelfPosHeight",
+          "value": "27"
+        },
+        {
+          "columnName": "BackwallWidth",
+          "value": "FreeSpaceWidth-24"
+        },
+        {
+          "columnName": "BackwallHeight",
+          "value": "54"
+        },
+        {
+          "columnName": "BackwallThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BackwallPosHeight",
+          "value": "43"
+        },
+        {
+          "columnName": "BackwallPosDepth",
+          "value": "340"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionId",
+          "value": "AvanTechYou_350_139"
+        },
+        {
+          "columnName": "ObjWidth",
+          "value": "FreeSpaceWidth-14"
+        },
+        {
+          "columnName": "ObjHeight",
+          "value": "126"
+        },
+        {
+          "columnName": "ObjDepth",
+          "value": "350"
+        },
+        {
+          "columnName": "ObjPosHeight",
+          "value": "13"
+        },
+        {
+          "columnName": "SlidePosDepth",
+          "value": "3"
+        },
+        {
+          "columnName": "SlidePosHeight",
+          "value": "-13"
+        },
+        {
+          "columnName": "BlockSpaceHeight",
+          "value": "144"
+        },
+        {
+          "columnName": "BlockSpaceDepth",
+          "value": "353"
+        },
+        {
+          "columnName": "BlockSpacePosHeight",
+          "value": "1.25"
+        },
+        {
+          "columnName": "BotShelfWidth",
+          "value": "FreeSpaceWidth-24"
+        },
+        {
+          "columnName": "BotShelfDepthBwWood",
+          "value": "329"
+        },
+        {
+          "columnName": "BotShelfDepthBwMetal",
+          "value": "329"
+        },
+        {
+          "columnName": "BotShelfThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BotShelfPosHeight",
+          "value": "27"
+        },
+        {
+          "columnName": "BackwallWidth",
+          "value": "FreeSpaceWidth-24"
+        },
+        {
+          "columnName": "BackwallHeight",
+          "value": "92"
+        },
+        {
+          "columnName": "BackwallThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BackwallPosHeight",
+          "value": "43"
+        },
+        {
+          "columnName": "BackwallPosDepth",
+          "value": "340"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionId",
+          "value": "AvanTechYou_350_187"
+        },
+        {
+          "columnName": "ObjWidth",
+          "value": "FreeSpaceWidth-14"
+        },
+        {
+          "columnName": "ObjHeight",
+          "value": "174"
+        },
+        {
+          "columnName": "ObjDepth",
+          "value": "350"
+        },
+        {
+          "columnName": "ObjPosHeight",
+          "value": "13"
+        },
+        {
+          "columnName": "SlidePosDepth",
+          "value": "3"
+        },
+        {
+          "columnName": "SlidePosHeight",
+          "value": "-13"
+        },
+        {
+          "columnName": "BlockSpaceHeight",
+          "value": "192"
+        },
+        {
+          "columnName": "BlockSpaceDepth",
+          "value": "353"
+        },
+        {
+          "columnName": "BlockSpacePosHeight",
+          "value": "1.25"
+        },
+        {
+          "columnName": "BotShelfWidth",
+          "value": "FreeSpaceWidth-24"
+        },
+        {
+          "columnName": "BotShelfDepthBwWood",
+          "value": "329"
+        },
+        {
+          "columnName": "BotShelfDepthBwMetal",
+          "value": "329"
+        },
+        {
+          "columnName": "BotShelfThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BotShelfPosHeight",
+          "value": "27"
+        },
+        {
+          "columnName": "BackwallWidth",
+          "value": "FreeSpaceWidth-24"
+        },
+        {
+          "columnName": "BackwallHeight",
+          "value": "140.5"
+        },
+        {
+          "columnName": "BackwallThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BackwallPosHeight",
+          "value": "43"
+        },
+        {
+          "columnName": "BackwallPosDepth",
+          "value": "340"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionId",
+          "value": "AvanTechYou_350_251"
+        },
+        {
+          "columnName": "ObjWidth",
+          "value": "FreeSpaceWidth-14"
+        },
+        {
+          "columnName": "ObjHeight",
+          "value": "238"
+        },
+        {
+          "columnName": "ObjDepth",
+          "value": "350"
+        },
+        {
+          "columnName": "ObjPosHeight",
+          "value": "13"
+        },
+        {
+          "columnName": "SlidePosDepth",
+          "value": "3"
+        },
+        {
+          "columnName": "SlidePosHeight",
+          "value": "-13"
+        },
+        {
+          "columnName": "BlockSpaceHeight",
+          "value": "256"
+        },
+        {
+          "columnName": "BlockSpaceDepth",
+          "value": "353"
+        },
+        {
+          "columnName": "BlockSpacePosHeight",
+          "value": "1.25"
+        },
+        {
+          "columnName": "BotShelfWidth",
+          "value": "FreeSpaceWidth-24"
+        },
+        {
+          "columnName": "BotShelfDepthBwWood",
+          "value": "329"
+        },
+        {
+          "columnName": "BotShelfDepthBwMetal",
+          "value": "329"
+        },
+        {
+          "columnName": "BotShelfThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BotShelfPosHeight",
+          "value": "27"
+        },
+        {
+          "columnName": "BackwallWidth",
+          "value": "FreeSpaceWidth-24"
+        },
+        {
+          "columnName": "BackwallHeight",
+          "value": "204.5"
+        },
+        {
+          "columnName": "BackwallThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BackwallPosHeight",
+          "value": "43"
+        },
+        {
+          "columnName": "BackwallPosDepth",
+          "value": "340"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionId",
+          "value": "AvanTechYou_400_77"
+        },
+        {
+          "columnName": "ObjWidth",
+          "value": "FreeSpaceWidth-14"
+        },
+        {
+          "columnName": "ObjHeight",
+          "value": "63"
+        },
+        {
+          "columnName": "ObjDepth",
+          "value": "400"
+        },
+        {
+          "columnName": "ObjPosHeight",
+          "value": "13"
+        },
+        {
+          "columnName": "SlidePosDepth",
+          "value": "3"
+        },
+        {
+          "columnName": "SlidePosHeight",
+          "value": "-13"
+        },
+        {
+          "columnName": "BlockSpaceHeight",
+          "value": "77"
+        },
+        {
+          "columnName": "BlockSpaceDepth",
+          "value": "403"
+        },
+        {
+          "columnName": "BlockSpacePosHeight",
+          "value": "1.25"
+        },
+        {
+          "columnName": "BotShelfWidth",
+          "value": "FreeSpaceWidth-24"
+        },
+        {
+          "columnName": "BotShelfDepthBwWood",
+          "value": "374"
+        },
+        {
+          "columnName": "BotShelfDepthBwMetal",
+          "value": "374"
+        },
+        {
+          "columnName": "BotShelfThickness",
+          "value": "8"
+        },
+        {
+          "columnName": "BotShelfPosHeight",
+          "value": "27"
+        },
+        {
+          "columnName": "BackwallWidth",
+          "value": "FreeSpaceWidth-24"
+        },
+        {
+          "columnName": "BackwallHeight",
+          "value": "46"
+        },
+        {
+          "columnName": "BackwallThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BackwallPosHeight",
+          "value": "27"
+        },
+        {
+          "columnName": "BackwallPosDepth",
+          "value": "390"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionId",
+          "value": "AvanTechYou_400_101"
+        },
+        {
+          "columnName": "ObjWidth",
+          "value": "FreeSpaceWidth-14"
+        },
+        {
+          "columnName": "ObjHeight",
+          "value": "88"
+        },
+        {
+          "columnName": "ObjDepth",
+          "value": "400"
+        },
+        {
+          "columnName": "ObjPosHeight",
+          "value": "13"
+        },
+        {
+          "columnName": "SlidePosDepth",
+          "value": "3"
+        },
+        {
+          "columnName": "SlidePosHeight",
+          "value": "-13"
+        },
+        {
+          "columnName": "BlockSpaceHeight",
+          "value": "106"
+        },
+        {
+          "columnName": "BlockSpaceDepth",
+          "value": "403"
+        },
+        {
+          "columnName": "BlockSpacePosHeight",
+          "value": "1.25"
+        },
+        {
+          "columnName": "BotShelfWidth",
+          "value": "FreeSpaceWidth-24"
+        },
+        {
+          "columnName": "BotShelfDepthBwWood",
+          "value": "379"
+        },
+        {
+          "columnName": "BotShelfDepthBwMetal",
+          "value": "379"
+        },
+        {
+          "columnName": "BotShelfThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BotShelfPosHeight",
+          "value": "27"
+        },
+        {
+          "columnName": "BackwallWidth",
+          "value": "FreeSpaceWidth-24"
+        },
+        {
+          "columnName": "BackwallHeight",
+          "value": "54"
+        },
+        {
+          "columnName": "BackwallThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BackwallPosHeight",
+          "value": "43"
+        },
+        {
+          "columnName": "BackwallPosDepth",
+          "value": "390"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionId",
+          "value": "AvanTechYou_400_139"
+        },
+        {
+          "columnName": "ObjWidth",
+          "value": "FreeSpaceWidth-14"
+        },
+        {
+          "columnName": "ObjHeight",
+          "value": "126"
+        },
+        {
+          "columnName": "ObjDepth",
+          "value": "400"
+        },
+        {
+          "columnName": "ObjPosHeight",
+          "value": "13"
+        },
+        {
+          "columnName": "SlidePosDepth",
+          "value": "3"
+        },
+        {
+          "columnName": "SlidePosHeight",
+          "value": "-13"
+        },
+        {
+          "columnName": "BlockSpaceHeight",
+          "value": "144"
+        },
+        {
+          "columnName": "BlockSpaceDepth",
+          "value": "403"
+        },
+        {
+          "columnName": "BlockSpacePosHeight",
+          "value": "1.25"
+        },
+        {
+          "columnName": "BotShelfWidth",
+          "value": "FreeSpaceWidth-24"
+        },
+        {
+          "columnName": "BotShelfDepthBwWood",
+          "value": "379"
+        },
+        {
+          "columnName": "BotShelfDepthBwMetal",
+          "value": "379"
+        },
+        {
+          "columnName": "BotShelfThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BotShelfPosHeight",
+          "value": "27"
+        },
+        {
+          "columnName": "BackwallWidth",
+          "value": "FreeSpaceWidth-24"
+        },
+        {
+          "columnName": "BackwallHeight",
+          "value": "92"
+        },
+        {
+          "columnName": "BackwallThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BackwallPosHeight",
+          "value": "43"
+        },
+        {
+          "columnName": "BackwallPosDepth",
+          "value": "390"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionId",
+          "value": "AvanTechYou_400_187"
+        },
+        {
+          "columnName": "ObjWidth",
+          "value": "FreeSpaceWidth-14"
+        },
+        {
+          "columnName": "ObjHeight",
+          "value": "174"
+        },
+        {
+          "columnName": "ObjDepth",
+          "value": "400"
+        },
+        {
+          "columnName": "ObjPosHeight",
+          "value": "13"
+        },
+        {
+          "columnName": "SlidePosDepth",
+          "value": "3"
+        },
+        {
+          "columnName": "SlidePosHeight",
+          "value": "-13"
+        },
+        {
+          "columnName": "BlockSpaceHeight",
+          "value": "192"
+        },
+        {
+          "columnName": "BlockSpaceDepth",
+          "value": "403"
+        },
+        {
+          "columnName": "BlockSpacePosHeight",
+          "value": "1.25"
+        },
+        {
+          "columnName": "BotShelfWidth",
+          "value": "FreeSpaceWidth-24"
+        },
+        {
+          "columnName": "BotShelfDepthBwWood",
+          "value": "379"
+        },
+        {
+          "columnName": "BotShelfDepthBwMetal",
+          "value": "379"
+        },
+        {
+          "columnName": "BotShelfThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BotShelfPosHeight",
+          "value": "27"
+        },
+        {
+          "columnName": "BackwallWidth",
+          "value": "FreeSpaceWidth-24"
+        },
+        {
+          "columnName": "BackwallHeight",
+          "value": "140.5"
+        },
+        {
+          "columnName": "BackwallThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BackwallPosHeight",
+          "value": "43"
+        },
+        {
+          "columnName": "BackwallPosDepth",
+          "value": "390"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionId",
+          "value": "AvanTechYou_400_251"
+        },
+        {
+          "columnName": "ObjWidth",
+          "value": "FreeSpaceWidth-14"
+        },
+        {
+          "columnName": "ObjHeight",
+          "value": "238"
+        },
+        {
+          "columnName": "ObjDepth",
+          "value": "400"
+        },
+        {
+          "columnName": "ObjPosHeight",
+          "value": "13"
+        },
+        {
+          "columnName": "SlidePosDepth",
+          "value": "3"
+        },
+        {
+          "columnName": "SlidePosHeight",
+          "value": "-13"
+        },
+        {
+          "columnName": "BlockSpaceHeight",
+          "value": "256"
+        },
+        {
+          "columnName": "BlockSpaceDepth",
+          "value": "403"
+        },
+        {
+          "columnName": "BlockSpacePosHeight",
+          "value": "1.25"
+        },
+        {
+          "columnName": "BotShelfWidth",
+          "value": "FreeSpaceWidth-24"
+        },
+        {
+          "columnName": "BotShelfDepthBwWood",
+          "value": "379"
+        },
+        {
+          "columnName": "BotShelfDepthBwMetal",
+          "value": "379"
+        },
+        {
+          "columnName": "BotShelfThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BotShelfPosHeight",
+          "value": "27"
+        },
+        {
+          "columnName": "BackwallWidth",
+          "value": "FreeSpaceWidth-24"
+        },
+        {
+          "columnName": "BackwallHeight",
+          "value": "204.5"
+        },
+        {
+          "columnName": "BackwallThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BackwallPosHeight",
+          "value": "43"
+        },
+        {
+          "columnName": "BackwallPosDepth",
+          "value": "390"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionId",
+          "value": "AvanTechYou_450_77"
+        },
+        {
+          "columnName": "ObjWidth",
+          "value": "FreeSpaceWidth-14"
+        },
+        {
+          "columnName": "ObjHeight",
+          "value": "63"
+        },
+        {
+          "columnName": "ObjDepth",
+          "value": "450"
+        },
+        {
+          "columnName": "ObjPosHeight",
+          "value": "13"
+        },
+        {
+          "columnName": "SlidePosDepth",
+          "value": "3"
+        },
+        {
+          "columnName": "SlidePosHeight",
+          "value": "-13"
+        },
+        {
+          "columnName": "BlockSpaceHeight",
+          "value": "77"
+        },
+        {
+          "columnName": "BlockSpaceDepth",
+          "value": "453"
+        },
+        {
+          "columnName": "BlockSpacePosHeight",
+          "value": "1.25"
+        },
+        {
+          "columnName": "BotShelfWidth",
+          "value": "FreeSpaceWidth-24"
+        },
+        {
+          "columnName": "BotShelfDepthBwWood",
+          "value": "424"
+        },
+        {
+          "columnName": "BotShelfDepthBwMetal",
+          "value": "424"
+        },
+        {
+          "columnName": "BotShelfThickness",
+          "value": "8"
+        },
+        {
+          "columnName": "BotShelfPosHeight",
+          "value": "27"
+        },
+        {
+          "columnName": "BackwallWidth",
+          "value": "FreeSpaceWidth-24"
+        },
+        {
+          "columnName": "BackwallHeight",
+          "value": "46"
+        },
+        {
+          "columnName": "BackwallThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BackwallPosHeight",
+          "value": "27"
+        },
+        {
+          "columnName": "BackwallPosDepth",
+          "value": "440"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionId",
+          "value": "AvanTechYou_450_101"
+        },
+        {
+          "columnName": "ObjWidth",
+          "value": "FreeSpaceWidth-14"
+        },
+        {
+          "columnName": "ObjHeight",
+          "value": "88"
+        },
+        {
+          "columnName": "ObjDepth",
+          "value": "450"
+        },
+        {
+          "columnName": "ObjPosHeight",
+          "value": "13"
+        },
+        {
+          "columnName": "SlidePosDepth",
+          "value": "3"
+        },
+        {
+          "columnName": "SlidePosHeight",
+          "value": "-13"
+        },
+        {
+          "columnName": "BlockSpaceHeight",
+          "value": "106"
+        },
+        {
+          "columnName": "BlockSpaceDepth",
+          "value": "453"
+        },
+        {
+          "columnName": "BlockSpacePosHeight",
+          "value": "1.25"
+        },
+        {
+          "columnName": "BotShelfWidth",
+          "value": "FreeSpaceWidth-24"
+        },
+        {
+          "columnName": "BotShelfDepthBwWood",
+          "value": "429"
+        },
+        {
+          "columnName": "BotShelfDepthBwMetal",
+          "value": "429"
+        },
+        {
+          "columnName": "BotShelfThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BotShelfPosHeight",
+          "value": "27"
+        },
+        {
+          "columnName": "BackwallWidth",
+          "value": "FreeSpaceWidth-24"
+        },
+        {
+          "columnName": "BackwallHeight",
+          "value": "54"
+        },
+        {
+          "columnName": "BackwallThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BackwallPosHeight",
+          "value": "43"
+        },
+        {
+          "columnName": "BackwallPosDepth",
+          "value": "440"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionId",
+          "value": "AvanTechYou_450_139"
+        },
+        {
+          "columnName": "ObjWidth",
+          "value": "FreeSpaceWidth-14"
+        },
+        {
+          "columnName": "ObjHeight",
+          "value": "126"
+        },
+        {
+          "columnName": "ObjDepth",
+          "value": "450"
+        },
+        {
+          "columnName": "ObjPosHeight",
+          "value": "13"
+        },
+        {
+          "columnName": "SlidePosDepth",
+          "value": "3"
+        },
+        {
+          "columnName": "SlidePosHeight",
+          "value": "-13"
+        },
+        {
+          "columnName": "BlockSpaceHeight",
+          "value": "144"
+        },
+        {
+          "columnName": "BlockSpaceDepth",
+          "value": "453"
+        },
+        {
+          "columnName": "BlockSpacePosHeight",
+          "value": "1.25"
+        },
+        {
+          "columnName": "BotShelfWidth",
+          "value": "FreeSpaceWidth-24"
+        },
+        {
+          "columnName": "BotShelfDepthBwWood",
+          "value": "429"
+        },
+        {
+          "columnName": "BotShelfDepthBwMetal",
+          "value": "429"
+        },
+        {
+          "columnName": "BotShelfThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BotShelfPosHeight",
+          "value": "27"
+        },
+        {
+          "columnName": "BackwallWidth",
+          "value": "FreeSpaceWidth-24"
+        },
+        {
+          "columnName": "BackwallHeight",
+          "value": "92"
+        },
+        {
+          "columnName": "BackwallThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BackwallPosHeight",
+          "value": "43"
+        },
+        {
+          "columnName": "BackwallPosDepth",
+          "value": "440"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionId",
+          "value": "AvanTechYou_450_187"
+        },
+        {
+          "columnName": "ObjWidth",
+          "value": "FreeSpaceWidth-14"
+        },
+        {
+          "columnName": "ObjHeight",
+          "value": "174"
+        },
+        {
+          "columnName": "ObjDepth",
+          "value": "450"
+        },
+        {
+          "columnName": "ObjPosHeight",
+          "value": "13"
+        },
+        {
+          "columnName": "SlidePosDepth",
+          "value": "3"
+        },
+        {
+          "columnName": "SlidePosHeight",
+          "value": "-13"
+        },
+        {
+          "columnName": "BlockSpaceHeight",
+          "value": "192"
+        },
+        {
+          "columnName": "BlockSpaceDepth",
+          "value": "453"
+        },
+        {
+          "columnName": "BlockSpacePosHeight",
+          "value": "1.25"
+        },
+        {
+          "columnName": "BotShelfWidth",
+          "value": "FreeSpaceWidth-24"
+        },
+        {
+          "columnName": "BotShelfDepthBwWood",
+          "value": "429"
+        },
+        {
+          "columnName": "BotShelfDepthBwMetal",
+          "value": "429"
+        },
+        {
+          "columnName": "BotShelfThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BotShelfPosHeight",
+          "value": "27"
+        },
+        {
+          "columnName": "BackwallWidth",
+          "value": "FreeSpaceWidth-24"
+        },
+        {
+          "columnName": "BackwallHeight",
+          "value": "140.5"
+        },
+        {
+          "columnName": "BackwallThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BackwallPosHeight",
+          "value": "43"
+        },
+        {
+          "columnName": "BackwallPosDepth",
+          "value": "440"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionId",
+          "value": "AvanTechYou_450_251"
+        },
+        {
+          "columnName": "ObjWidth",
+          "value": "FreeSpaceWidth-14"
+        },
+        {
+          "columnName": "ObjHeight",
+          "value": "238"
+        },
+        {
+          "columnName": "ObjDepth",
+          "value": "450"
+        },
+        {
+          "columnName": "ObjPosHeight",
+          "value": "13"
+        },
+        {
+          "columnName": "SlidePosDepth",
+          "value": "3"
+        },
+        {
+          "columnName": "SlidePosHeight",
+          "value": "-13"
+        },
+        {
+          "columnName": "BlockSpaceHeight",
+          "value": "256"
+        },
+        {
+          "columnName": "BlockSpaceDepth",
+          "value": "453"
+        },
+        {
+          "columnName": "BlockSpacePosHeight",
+          "value": "1.25"
+        },
+        {
+          "columnName": "BotShelfWidth",
+          "value": "FreeSpaceWidth-24"
+        },
+        {
+          "columnName": "BotShelfDepthBwWood",
+          "value": "429"
+        },
+        {
+          "columnName": "BotShelfDepthBwMetal",
+          "value": "429"
+        },
+        {
+          "columnName": "BotShelfThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BotShelfPosHeight",
+          "value": "27"
+        },
+        {
+          "columnName": "BackwallWidth",
+          "value": "FreeSpaceWidth-24"
+        },
+        {
+          "columnName": "BackwallHeight",
+          "value": "204.5"
+        },
+        {
+          "columnName": "BackwallThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BackwallPosHeight",
+          "value": "43"
+        },
+        {
+          "columnName": "BackwallPosDepth",
+          "value": "440"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionId",
+          "value": "AvanTechYou_550_77"
+        },
+        {
+          "columnName": "ObjWidth",
+          "value": "FreeSpaceWidth-14"
+        },
+        {
+          "columnName": "ObjHeight",
+          "value": "63"
+        },
+        {
+          "columnName": "ObjDepth",
+          "value": "550"
+        },
+        {
+          "columnName": "ObjPosHeight",
+          "value": "13"
+        },
+        {
+          "columnName": "SlidePosDepth",
+          "value": "3"
+        },
+        {
+          "columnName": "SlidePosHeight",
+          "value": "-13"
+        },
+        {
+          "columnName": "BlockSpaceHeight",
+          "value": "77"
+        },
+        {
+          "columnName": "BlockSpaceDepth",
+          "value": "553"
+        },
+        {
+          "columnName": "BlockSpacePosHeight",
+          "value": "1.25"
+        },
+        {
+          "columnName": "BotShelfWidth",
+          "value": "FreeSpaceWidth-24"
+        },
+        {
+          "columnName": "BotShelfDepthBwWood",
+          "value": "524"
+        },
+        {
+          "columnName": "BotShelfDepthBwMetal",
+          "value": "524"
+        },
+        {
+          "columnName": "BotShelfThickness",
+          "value": "8"
+        },
+        {
+          "columnName": "BotShelfPosHeight",
+          "value": "27"
+        },
+        {
+          "columnName": "BackwallWidth",
+          "value": "FreeSpaceWidth-24"
+        },
+        {
+          "columnName": "BackwallHeight",
+          "value": "46"
+        },
+        {
+          "columnName": "BackwallThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BackwallPosHeight",
+          "value": "27"
+        },
+        {
+          "columnName": "BackwallPosDepth",
+          "value": "540"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionId",
+          "value": "AvanTechYou_550_101"
+        },
+        {
+          "columnName": "ObjWidth",
+          "value": "FreeSpaceWidth-14"
+        },
+        {
+          "columnName": "ObjHeight",
+          "value": "88"
+        },
+        {
+          "columnName": "ObjDepth",
+          "value": "550"
+        },
+        {
+          "columnName": "ObjPosHeight",
+          "value": "13"
+        },
+        {
+          "columnName": "SlidePosDepth",
+          "value": "3"
+        },
+        {
+          "columnName": "SlidePosHeight",
+          "value": "-13"
+        },
+        {
+          "columnName": "BlockSpaceHeight",
+          "value": "106"
+        },
+        {
+          "columnName": "BlockSpaceDepth",
+          "value": "553"
+        },
+        {
+          "columnName": "BlockSpacePosHeight",
+          "value": "1.25"
+        },
+        {
+          "columnName": "BotShelfWidth",
+          "value": "FreeSpaceWidth-24"
+        },
+        {
+          "columnName": "BotShelfDepthBwWood",
+          "value": "529"
+        },
+        {
+          "columnName": "BotShelfDepthBwMetal",
+          "value": "529"
+        },
+        {
+          "columnName": "BotShelfThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BotShelfPosHeight",
+          "value": "27"
+        },
+        {
+          "columnName": "BackwallWidth",
+          "value": "FreeSpaceWidth-24"
+        },
+        {
+          "columnName": "BackwallHeight",
+          "value": "54"
+        },
+        {
+          "columnName": "BackwallThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BackwallPosHeight",
+          "value": "43"
+        },
+        {
+          "columnName": "BackwallPosDepth",
+          "value": "540"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionId",
+          "value": "AvanTechYou_550_139"
+        },
+        {
+          "columnName": "ObjWidth",
+          "value": "FreeSpaceWidth-14"
+        },
+        {
+          "columnName": "ObjHeight",
+          "value": "126"
+        },
+        {
+          "columnName": "ObjDepth",
+          "value": "550"
+        },
+        {
+          "columnName": "ObjPosHeight",
+          "value": "13"
+        },
+        {
+          "columnName": "SlidePosDepth",
+          "value": "3"
+        },
+        {
+          "columnName": "SlidePosHeight",
+          "value": "-13"
+        },
+        {
+          "columnName": "BlockSpaceHeight",
+          "value": "144"
+        },
+        {
+          "columnName": "BlockSpaceDepth",
+          "value": "553"
+        },
+        {
+          "columnName": "BlockSpacePosHeight",
+          "value": "1.25"
+        },
+        {
+          "columnName": "BotShelfWidth",
+          "value": "FreeSpaceWidth-24"
+        },
+        {
+          "columnName": "BotShelfDepthBwWood",
+          "value": "529"
+        },
+        {
+          "columnName": "BotShelfDepthBwMetal",
+          "value": "529"
+        },
+        {
+          "columnName": "BotShelfThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BotShelfPosHeight",
+          "value": "27"
+        },
+        {
+          "columnName": "BackwallWidth",
+          "value": "FreeSpaceWidth-24"
+        },
+        {
+          "columnName": "BackwallHeight",
+          "value": "92"
+        },
+        {
+          "columnName": "BackwallThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BackwallPosHeight",
+          "value": "43"
+        },
+        {
+          "columnName": "BackwallPosDepth",
+          "value": "540"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionId",
+          "value": "AvanTechYou_550_187"
+        },
+        {
+          "columnName": "ObjWidth",
+          "value": "FreeSpaceWidth-14"
+        },
+        {
+          "columnName": "ObjHeight",
+          "value": "174"
+        },
+        {
+          "columnName": "ObjDepth",
+          "value": "550"
+        },
+        {
+          "columnName": "ObjPosHeight",
+          "value": "13"
+        },
+        {
+          "columnName": "SlidePosDepth",
+          "value": "3"
+        },
+        {
+          "columnName": "SlidePosHeight",
+          "value": "-13"
+        },
+        {
+          "columnName": "BlockSpaceHeight",
+          "value": "192"
+        },
+        {
+          "columnName": "BlockSpaceDepth",
+          "value": "553"
+        },
+        {
+          "columnName": "BlockSpacePosHeight",
+          "value": "1.25"
+        },
+        {
+          "columnName": "BotShelfWidth",
+          "value": "FreeSpaceWidth-24"
+        },
+        {
+          "columnName": "BotShelfDepthBwWood",
+          "value": "529"
+        },
+        {
+          "columnName": "BotShelfDepthBwMetal",
+          "value": "529"
+        },
+        {
+          "columnName": "BotShelfThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BotShelfPosHeight",
+          "value": "27"
+        },
+        {
+          "columnName": "BackwallWidth",
+          "value": "FreeSpaceWidth-24"
+        },
+        {
+          "columnName": "BackwallHeight",
+          "value": "140.5"
+        },
+        {
+          "columnName": "BackwallThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BackwallPosHeight",
+          "value": "43"
+        },
+        {
+          "columnName": "BackwallPosDepth",
+          "value": "540"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionId",
+          "value": "AvanTechYou_550_251"
+        },
+        {
+          "columnName": "ObjWidth",
+          "value": "FreeSpaceWidth-14"
+        },
+        {
+          "columnName": "ObjHeight",
+          "value": "238"
+        },
+        {
+          "columnName": "ObjDepth",
+          "value": "550"
+        },
+        {
+          "columnName": "ObjPosHeight",
+          "value": "13"
+        },
+        {
+          "columnName": "SlidePosDepth",
+          "value": "3"
+        },
+        {
+          "columnName": "SlidePosHeight",
+          "value": "-13"
+        },
+        {
+          "columnName": "BlockSpaceHeight",
+          "value": "256"
+        },
+        {
+          "columnName": "BlockSpaceDepth",
+          "value": "553"
+        },
+        {
+          "columnName": "BlockSpacePosHeight",
+          "value": "1.25"
+        },
+        {
+          "columnName": "BotShelfWidth",
+          "value": "FreeSpaceWidth-24"
+        },
+        {
+          "columnName": "BotShelfDepthBwWood",
+          "value": "529"
+        },
+        {
+          "columnName": "BotShelfDepthBwMetal",
+          "value": "529"
+        },
+        {
+          "columnName": "BotShelfThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BotShelfPosHeight",
+          "value": "27"
+        },
+        {
+          "columnName": "BackwallWidth",
+          "value": "FreeSpaceWidth-24"
+        },
+        {
+          "columnName": "BackwallHeight",
+          "value": "204.5"
+        },
+        {
+          "columnName": "BackwallThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BackwallPosHeight",
+          "value": "43"
+        },
+        {
+          "columnName": "BackwallPosDepth",
+          "value": "540"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionId",
+          "value": "AvanTechYou_600_101"
+        },
+        {
+          "columnName": "ObjWidth",
+          "value": "FreeSpaceWidth-14"
+        },
+        {
+          "columnName": "ObjHeight",
+          "value": "88"
+        },
+        {
+          "columnName": "ObjDepth",
+          "value": "600"
+        },
+        {
+          "columnName": "ObjPosHeight",
+          "value": "13"
+        },
+        {
+          "columnName": "SlidePosDepth",
+          "value": "3"
+        },
+        {
+          "columnName": "SlidePosHeight",
+          "value": "-13"
+        },
+        {
+          "columnName": "BlockSpaceHeight",
+          "value": "106"
+        },
+        {
+          "columnName": "BlockSpaceDepth",
+          "value": "603"
+        },
+        {
+          "columnName": "BlockSpacePosHeight",
+          "value": "1.25"
+        },
+        {
+          "columnName": "BotShelfWidth",
+          "value": "FreeSpaceWidth-24"
+        },
+        {
+          "columnName": "BotShelfDepthBwWood",
+          "value": "579"
+        },
+        {
+          "columnName": "BotShelfDepthBwMetal",
+          "value": "579"
+        },
+        {
+          "columnName": "BotShelfThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BotShelfPosHeight",
+          "value": "27"
+        },
+        {
+          "columnName": "BackwallWidth",
+          "value": "FreeSpaceWidth-24"
+        },
+        {
+          "columnName": "BackwallHeight",
+          "value": "54"
+        },
+        {
+          "columnName": "BackwallThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BackwallPosHeight",
+          "value": "43"
+        },
+        {
+          "columnName": "BackwallPosDepth",
+          "value": "590"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionId",
+          "value": "AvanTechYou_600_139"
+        },
+        {
+          "columnName": "ObjWidth",
+          "value": "FreeSpaceWidth-14"
+        },
+        {
+          "columnName": "ObjHeight",
+          "value": "126"
+        },
+        {
+          "columnName": "ObjDepth",
+          "value": "600"
+        },
+        {
+          "columnName": "ObjPosHeight",
+          "value": "13"
+        },
+        {
+          "columnName": "SlidePosDepth",
+          "value": "3"
+        },
+        {
+          "columnName": "SlidePosHeight",
+          "value": "-13"
+        },
+        {
+          "columnName": "BlockSpaceHeight",
+          "value": "144"
+        },
+        {
+          "columnName": "BlockSpaceDepth",
+          "value": "603"
+        },
+        {
+          "columnName": "BlockSpacePosHeight",
+          "value": "1.25"
+        },
+        {
+          "columnName": "BotShelfWidth",
+          "value": "FreeSpaceWidth-24"
+        },
+        {
+          "columnName": "BotShelfDepthBwWood",
+          "value": "579"
+        },
+        {
+          "columnName": "BotShelfDepthBwMetal",
+          "value": "579"
+        },
+        {
+          "columnName": "BotShelfThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BotShelfPosHeight",
+          "value": "27"
+        },
+        {
+          "columnName": "BackwallWidth",
+          "value": "FreeSpaceWidth-24"
+        },
+        {
+          "columnName": "BackwallHeight",
+          "value": "92"
+        },
+        {
+          "columnName": "BackwallThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BackwallPosHeight",
+          "value": "43"
+        },
+        {
+          "columnName": "BackwallPosDepth",
+          "value": "590"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionId",
+          "value": "AvanTechYou_600_187"
+        },
+        {
+          "columnName": "ObjWidth",
+          "value": "FreeSpaceWidth-14"
+        },
+        {
+          "columnName": "ObjHeight",
+          "value": "174"
+        },
+        {
+          "columnName": "ObjDepth",
+          "value": "600"
+        },
+        {
+          "columnName": "ObjPosHeight",
+          "value": "13"
+        },
+        {
+          "columnName": "SlidePosDepth",
+          "value": "3"
+        },
+        {
+          "columnName": "SlidePosHeight",
+          "value": "-13"
+        },
+        {
+          "columnName": "BlockSpaceHeight",
+          "value": "192"
+        },
+        {
+          "columnName": "BlockSpaceDepth",
+          "value": "603"
+        },
+        {
+          "columnName": "BlockSpacePosHeight",
+          "value": "1.25"
+        },
+        {
+          "columnName": "BotShelfWidth",
+          "value": "FreeSpaceWidth-24"
+        },
+        {
+          "columnName": "BotShelfDepthBwWood",
+          "value": "579"
+        },
+        {
+          "columnName": "BotShelfDepthBwMetal",
+          "value": "579"
+        },
+        {
+          "columnName": "BotShelfThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BotShelfPosHeight",
+          "value": "27"
+        },
+        {
+          "columnName": "BackwallWidth",
+          "value": "FreeSpaceWidth-24"
+        },
+        {
+          "columnName": "BackwallHeight",
+          "value": "140.5"
+        },
+        {
+          "columnName": "BackwallThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BackwallPosHeight",
+          "value": "43"
+        },
+        {
+          "columnName": "BackwallPosDepth",
+          "value": "590"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionId",
+          "value": "AvanTechYou_600_251"
+        },
+        {
+          "columnName": "ObjWidth",
+          "value": "FreeSpaceWidth-14"
+        },
+        {
+          "columnName": "ObjHeight",
+          "value": "238"
+        },
+        {
+          "columnName": "ObjDepth",
+          "value": "600"
+        },
+        {
+          "columnName": "ObjPosHeight",
+          "value": "13"
+        },
+        {
+          "columnName": "SlidePosDepth",
+          "value": "3"
+        },
+        {
+          "columnName": "SlidePosHeight",
+          "value": "-13"
+        },
+        {
+          "columnName": "BlockSpaceHeight",
+          "value": "256"
+        },
+        {
+          "columnName": "BlockSpaceDepth",
+          "value": "603"
+        },
+        {
+          "columnName": "BlockSpacePosHeight",
+          "value": "1.25"
+        },
+        {
+          "columnName": "BotShelfWidth",
+          "value": "FreeSpaceWidth-24"
+        },
+        {
+          "columnName": "BotShelfDepthBwWood",
+          "value": "579"
+        },
+        {
+          "columnName": "BotShelfDepthBwMetal",
+          "value": "579"
+        },
+        {
+          "columnName": "BotShelfThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BotShelfPosHeight",
+          "value": "27"
+        },
+        {
+          "columnName": "BackwallWidth",
+          "value": "FreeSpaceWidth-24"
+        },
+        {
+          "columnName": "BackwallHeight",
+          "value": "204.5"
+        },
+        {
+          "columnName": "BackwallThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BackwallPosHeight",
+          "value": "43"
+        },
+        {
+          "columnName": "BackwallPosDepth",
+          "value": "690"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionId",
+          "value": "AvanTechYou_650_101"
+        },
+        {
+          "columnName": "ObjWidth",
+          "value": "FreeSpaceWidth-14"
+        },
+        {
+          "columnName": "ObjHeight",
+          "value": "88"
+        },
+        {
+          "columnName": "ObjDepth",
+          "value": "650"
+        },
+        {
+          "columnName": "ObjPosHeight",
+          "value": "13"
+        },
+        {
+          "columnName": "SlidePosDepth",
+          "value": "3"
+        },
+        {
+          "columnName": "SlidePosHeight",
+          "value": "-13"
+        },
+        {
+          "columnName": "BlockSpaceHeight",
+          "value": "106"
+        },
+        {
+          "columnName": "BlockSpaceDepth",
+          "value": "653"
+        },
+        {
+          "columnName": "BlockSpacePosHeight",
+          "value": "1.25"
+        },
+        {
+          "columnName": "BotShelfWidth",
+          "value": "FreeSpaceWidth-24"
+        },
+        {
+          "columnName": "BotShelfDepthBwWood",
+          "value": "629"
+        },
+        {
+          "columnName": "BotShelfDepthBwMetal",
+          "value": "629"
+        },
+        {
+          "columnName": "BotShelfThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BotShelfPosHeight",
+          "value": "27"
+        },
+        {
+          "columnName": "BackwallWidth",
+          "value": "FreeSpaceWidth-24"
+        },
+        {
+          "columnName": "BackwallHeight",
+          "value": "54"
+        },
+        {
+          "columnName": "BackwallThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BackwallPosHeight",
+          "value": "43"
+        },
+        {
+          "columnName": "BackwallPosDepth",
+          "value": "640"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionId",
+          "value": "AvanTechYou_650_139"
+        },
+        {
+          "columnName": "ObjWidth",
+          "value": "FreeSpaceWidth-14"
+        },
+        {
+          "columnName": "ObjHeight",
+          "value": "126"
+        },
+        {
+          "columnName": "ObjDepth",
+          "value": "650"
+        },
+        {
+          "columnName": "ObjPosHeight",
+          "value": "13"
+        },
+        {
+          "columnName": "SlidePosDepth",
+          "value": "3"
+        },
+        {
+          "columnName": "SlidePosHeight",
+          "value": "-13"
+        },
+        {
+          "columnName": "BlockSpaceHeight",
+          "value": "144"
+        },
+        {
+          "columnName": "BlockSpaceDepth",
+          "value": "653"
+        },
+        {
+          "columnName": "BlockSpacePosHeight",
+          "value": "1.25"
+        },
+        {
+          "columnName": "BotShelfWidth",
+          "value": "FreeSpaceWidth-24"
+        },
+        {
+          "columnName": "BotShelfDepthBwWood",
+          "value": "629"
+        },
+        {
+          "columnName": "BotShelfDepthBwMetal",
+          "value": "629"
+        },
+        {
+          "columnName": "BotShelfThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BotShelfPosHeight",
+          "value": "27"
+        },
+        {
+          "columnName": "BackwallWidth",
+          "value": "FreeSpaceWidth-24"
+        },
+        {
+          "columnName": "BackwallHeight",
+          "value": "92"
+        },
+        {
+          "columnName": "BackwallThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BackwallPosHeight",
+          "value": "43"
+        },
+        {
+          "columnName": "BackwallPosDepth",
+          "value": "640"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionId",
+          "value": "AvanTechYou_650_187"
+        },
+        {
+          "columnName": "ObjWidth",
+          "value": "FreeSpaceWidth-14"
+        },
+        {
+          "columnName": "ObjHeight",
+          "value": "174"
+        },
+        {
+          "columnName": "ObjDepth",
+          "value": "650"
+        },
+        {
+          "columnName": "ObjPosHeight",
+          "value": "13"
+        },
+        {
+          "columnName": "SlidePosDepth",
+          "value": "3"
+        },
+        {
+          "columnName": "SlidePosHeight",
+          "value": "-13"
+        },
+        {
+          "columnName": "BlockSpaceHeight",
+          "value": "192"
+        },
+        {
+          "columnName": "BlockSpaceDepth",
+          "value": "653"
+        },
+        {
+          "columnName": "BlockSpacePosHeight",
+          "value": "1.25"
+        },
+        {
+          "columnName": "BotShelfWidth",
+          "value": "FreeSpaceWidth-24"
+        },
+        {
+          "columnName": "BotShelfDepthBwWood",
+          "value": "629"
+        },
+        {
+          "columnName": "BotShelfDepthBwMetal",
+          "value": "629"
+        },
+        {
+          "columnName": "BotShelfThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BotShelfPosHeight",
+          "value": "27"
+        },
+        {
+          "columnName": "BackwallWidth",
+          "value": "FreeSpaceWidth-24"
+        },
+        {
+          "columnName": "BackwallHeight",
+          "value": "140.5"
+        },
+        {
+          "columnName": "BackwallThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BackwallPosHeight",
+          "value": "43"
+        },
+        {
+          "columnName": "BackwallPosDepth",
+          "value": "640"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionId",
+          "value": "AvanTechYou_650_251"
+        },
+        {
+          "columnName": "ObjWidth",
+          "value": "FreeSpaceWidth-14"
+        },
+        {
+          "columnName": "ObjHeight",
+          "value": "238"
+        },
+        {
+          "columnName": "ObjDepth",
+          "value": "650"
+        },
+        {
+          "columnName": "ObjPosHeight",
+          "value": "11.25"
+        },
+        {
+          "columnName": "SlidePosDepth",
+          "value": "5"
+        },
+        {
+          "columnName": "SlidePosHeight",
+          "value": "-13"
+        },
+        {
+          "columnName": "BlockSpaceHeight",
+          "value": "256"
+        },
+        {
+          "columnName": "BlockSpaceDepth",
+          "value": "653"
+        },
+        {
+          "columnName": "BlockSpacePosHeight",
+          "value": "0"
+        },
+        {
+          "columnName": "BotShelfWidth",
+          "value": "FreeSpaceWidth-24"
+        },
+        {
+          "columnName": "BotShelfDepthBwWood",
+          "value": "629"
+        },
+        {
+          "columnName": "BotShelfDepthBwMetal",
+          "value": "629"
+        },
+        {
+          "columnName": "BotShelfThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BotShelfPosHeight",
+          "value": "25.25"
+        },
+        {
+          "columnName": "BackwallWidth",
+          "value": "FreeSpaceWidth-24"
+        },
+        {
+          "columnName": "BackwallHeight",
+          "value": "204.5"
+        },
+        {
+          "columnName": "BackwallThickness",
+          "value": "16"
+        },
+        {
+          "columnName": "BackwallPosHeight",
+          "value": "41.25"
+        },
+        {
+          "columnName": "BackwallPosDepth",
+          "value": "640"
+        }
+      ]
+    }
+  ]
+}

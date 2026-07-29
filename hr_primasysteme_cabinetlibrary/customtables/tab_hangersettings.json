@@ -1,0 +1,311 @@
+{
+  "tableName": "tab_HangerSettings",
+  "description": "Hanger Settings",
+  "restrictionTypeId": "Public",
+  "isInputUnique": true,
+  "groupName": "Hangers",
+  "columns": [
+    {
+      "name": "_id",
+      "type": "Integer",
+      "allowNull": false
+    },
+    {
+      "name": "in_TypeElement",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_CarcaseHeightMin",
+      "type": "Dim",
+      "allowNull": true
+    },
+    {
+      "name": "in_CarcaseHeightMax",
+      "type": "Dim",
+      "allowNull": true
+    },
+    {
+      "name": "in_CarcaseWidthMin",
+      "type": "Dim",
+      "allowNull": true
+    },
+    {
+      "name": "in_CarcaseWidthMax",
+      "type": "Dim",
+      "allowNull": true
+    },
+    {
+      "name": "in_WeightMin",
+      "type": "Real",
+      "allowNull": true
+    },
+    {
+      "name": "in_WeightMax",
+      "type": "Real",
+      "allowNull": true
+    },
+    {
+      "name": "in_DistanceBehindBackwallMin",
+      "type": "Dim",
+      "allowNull": true
+    },
+    {
+      "name": "in_BackwallPositionMin",
+      "type": "Dim",
+      "allowNull": true
+    },
+    {
+      "name": "in_BackwallPositionMax",
+      "type": "Dim",
+      "allowNull": true
+    },
+    {
+      "name": "HangerType",
+      "type": "Text",
+      "allowNull": true
+    }
+  ],
+  "rows": [
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_CarcaseHeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseHeightMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CarcaseWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseWidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "75"
+        },
+        {
+          "columnName": "in_DistanceBehindBackwallMin",
+          "value": "9"
+        },
+        {
+          "columnName": "in_BackwallPositionMin",
+          "value": "15"
+        },
+        {
+          "columnName": "in_BackwallPositionMax",
+          "value": "28"
+        },
+        {
+          "columnName": "HangerType",
+          "value": "WallUnitVisibleHanger75kg"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_CarcaseHeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseHeightMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CarcaseWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseWidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "52"
+        },
+        {
+          "columnName": "in_DistanceBehindBackwallMin",
+          "value": "5.5"
+        },
+        {
+          "columnName": "in_BackwallPositionMin",
+          "value": "13.5"
+        },
+        {
+          "columnName": "in_BackwallPositionMax",
+          "value": "24"
+        },
+        {
+          "columnName": "HangerType",
+          "value": "WallUnitVisibleHanger52kg"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_CarcaseHeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseHeightMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CarcaseWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseWidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "120"
+        },
+        {
+          "columnName": "in_DistanceBehindBackwallMin",
+          "value": "10"
+        },
+        {
+          "columnName": "in_BackwallPositionMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BackwallPositionMax",
+          "value": "37"
+        },
+        {
+          "columnName": "HangerType",
+          "value": "BaseUnitVisibleHanger120kg"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_CarcaseHeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseHeightMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CarcaseWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseWidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "92"
+        },
+        {
+          "columnName": "in_DistanceBehindBackwallMin",
+          "value": "16"
+        },
+        {
+          "columnName": "in_BackwallPositionMin",
+          "value": "16"
+        },
+        {
+          "columnName": "in_BackwallPositionMax",
+          "value": "32"
+        },
+        {
+          "columnName": "HangerType",
+          "value": "WallUnitHiddenHanger92kg"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_CarcaseHeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseHeightMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CarcaseWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_CarcaseWidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_WeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "45"
+        },
+        {
+          "columnName": "in_DistanceBehindBackwallMin",
+          "value": "15"
+        },
+        {
+          "columnName": "in_BackwallPositionMin",
+          "value": "23"
+        },
+        {
+          "columnName": "in_BackwallPositionMax",
+          "value": "30"
+        },
+        {
+          "columnName": "HangerType",
+          "value": "WallUnitVisibleHanger45kg"
+        }
+      ]
+    }
+  ]
+}

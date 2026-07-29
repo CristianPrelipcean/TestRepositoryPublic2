@@ -1,0 +1,40 @@
+{
+  "variantId": "mod_DoorTypeSelection",
+  "shortName": "Door type",
+  "variantTypeId": "Text",
+  "description": "Type of the door (single/double)",
+  "restrictionTypeId": "Public",
+  "groupName": "Front | Construction",
+  "imageId": "images/DoorType.jpg",
+  "assignedGlobalVarId": "basic_DoorType",
+  "isArray": false,
+  "isPosRelevant": true,
+  "mainAttr": false,
+  "userRight": "Master",
+  "implicitRelevant": false,
+  "posView": "Dropdown",
+  "matrix": [],
+  "selections": [
+    {
+      "value": "Single",
+      "description": "Single door",
+      "shortName": "Single",
+      "imageId": "images/SingleDoor.jpg",
+      "matrix": []
+    },
+    {
+      "value": "Double",
+      "description": "Double door",
+      "shortName": "Double",
+      "imageId": "images/DoubleDoor.jpg",
+      "matrix": []
+    },
+    {
+      "value": "Automatic",
+      "description": "Setting via tab_DoorSettings",
+      "shortName": "Automatic",
+      "imageId": "images/Automatic.png",
+      "matrix": []
+    }
+  ]
+}

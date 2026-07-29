@@ -1,0 +1,33 @@
+{
+  "variantId": "mod_GroupGenerationLogic",
+  "shortName": "Group generation logic",
+  "variantTypeId": "Text",
+  "description": "Defines the logic used to generate cabinets and related elements within the group",
+  "restrictionTypeId": "Public",
+  "groupName": "Group management",
+  "imageId": "images/GroupGenerationLogic.png",
+  "isArray": false,
+  "isPosRelevant": true,
+  "mainAttr": false,
+  "userRight": "Simple",
+  "implicitRelevant": false,
+  "posView": "Dropdown",
+  "sorting": 3,
+  "matrix": [],
+  "selections": [
+    {
+      "value": "Closet",
+      "description": "Generates a wardrobe configuration",
+      "shortName": "Closet",
+      "imageId": "images/Closet.png",
+      "matrix": []
+    },
+    {
+      "value": "Kitchen",
+      "description": "Generates a kitchen configuration",
+      "shortName": "Kitchen",
+      "imageId": "images/Kitchen.png",
+      "matrix": []
+    }
+  ]
+}

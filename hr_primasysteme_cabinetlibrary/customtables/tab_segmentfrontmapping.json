@@ -1,0 +1,103 @@
+{
+  "tableName": "tab_SegmentFrontMapping",
+  "description": "Mapping of the segment in relation to mod_FrontSegmentType",
+  "restrictionTypeId": "Public",
+  "groupName": "FrontConstruction",
+  "columns": [
+    {
+      "name": "_id",
+      "type": "Integer",
+      "allowNull": false
+    },
+    {
+      "name": "in_FrontProgram",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_FrontDesign",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_FrontColor",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "SegmentType",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "SegmentColor",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "SegmentGrain",
+      "type": "Text",
+      "allowNull": true
+    }
+  ],
+  "rows": [
+    {
+      "data": [
+        {
+          "columnName": "in_FrontProgram",
+          "value": "Classic"
+        },
+        {
+          "columnName": "in_FrontDesign",
+          "value": "SegmentGlassClassic"
+        },
+        {
+          "columnName": "in_FrontColor",
+          "value": "All"
+        },
+        {
+          "columnName": "SegmentType",
+          "value": "Glass"
+        },
+        {
+          "columnName": "SegmentColor",
+          "value": "FloatGlass"
+        },
+        {
+          "columnName": "SegmentGrain",
+          "value": "NoGrain"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_FrontProgram",
+          "value": "Nature"
+        },
+        {
+          "columnName": "in_FrontDesign",
+          "value": "SegmentGlassClassic"
+        },
+        {
+          "columnName": "in_FrontColor",
+          "value": "All"
+        },
+        {
+          "columnName": "SegmentType",
+          "value": "Glass"
+        },
+        {
+          "columnName": "SegmentColor",
+          "value": "FloatGlass"
+        },
+        {
+          "columnName": "SegmentGrain",
+          "value": "NoGrain"
+        }
+      ]
+    }
+  ],
+  "dataSource": "Default",
+  "changedAt": "2026-02-24T08:44:13.5643009+00:00"
+}

@@ -1,0 +1,226 @@
+{
+  "tableName": "tab_PartsGraphicRotation",
+  "description": "Parts Graphics Rotation",
+  "restrictionTypeId": "Internal",
+  "groupName": "Hardware",
+  "columns": [
+    {
+      "name": "_id",
+      "type": "Integer",
+      "allowNull": false
+    },
+    {
+      "name": "in_ReferencePointXYZ",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_RotationAxis",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_Rotation",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "AdditionalX",
+      "type": "Text",
+      "allowNull": true,
+      "functionDefinition": "(DimX:number, DimY:number, DimZ:number):number"
+    },
+    {
+      "name": "AdditionalY",
+      "type": "Text",
+      "allowNull": true,
+      "functionDefinition": "(DimX:number, DimY:number, DimZ:number):number"
+    },
+    {
+      "name": "AdditionalZ",
+      "type": "Text",
+      "allowNull": true,
+      "functionDefinition": "(DimX:number, DimY:number, DimZ:number):number"
+    },
+    {
+      "name": "RotationVectorX",
+      "type": "Text",
+      "allowNull": true,
+      "functionDefinition": "(DimX:number, DimY:number, DimZ:number):number"
+    },
+    {
+      "name": "RotationVectorY",
+      "type": "Text",
+      "allowNull": true,
+      "functionDefinition": "(DimX:number, DimY:number, DimZ:number):number"
+    },
+    {
+      "name": "RotationVectorZ",
+      "type": "Text",
+      "allowNull": true,
+      "functionDefinition": "(DimX:number, DimY:number, DimZ:number):number"
+    }
+  ],
+  "rows": [
+    {
+      "data": [
+        {
+          "columnName": "in_ReferencePointXYZ",
+          "value": "012"
+        },
+        {
+          "columnName": "in_RotationAxis",
+          "value": "Z"
+        },
+        {
+          "columnName": "in_Rotation",
+          "value": "0"
+        },
+        {
+          "columnName": "AdditionalX",
+          "value": "0"
+        },
+        {
+          "columnName": "AdditionalY",
+          "value": "0"
+        },
+        {
+          "columnName": "AdditionalZ",
+          "value": "0"
+        },
+        {
+          "columnName": "RotationVectorX",
+          "value": "0"
+        },
+        {
+          "columnName": "RotationVectorY",
+          "value": "0"
+        },
+        {
+          "columnName": "RotationVectorZ",
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ReferencePointXYZ",
+          "value": "012"
+        },
+        {
+          "columnName": "in_RotationAxis",
+          "value": "Z"
+        },
+        {
+          "columnName": "in_Rotation",
+          "value": "90"
+        },
+        {
+          "columnName": "AdditionalX",
+          "value": "0"
+        },
+        {
+          "columnName": "AdditionalY",
+          "value": "0"
+        },
+        {
+          "columnName": "AdditionalZ",
+          "value": "0"
+        },
+        {
+          "columnName": "RotationVectorX",
+          "value": "0"
+        },
+        {
+          "columnName": "RotationVectorY",
+          "value": "DimY/2"
+        },
+        {
+          "columnName": "RotationVectorZ",
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ReferencePointXYZ",
+          "value": "012"
+        },
+        {
+          "columnName": "in_RotationAxis",
+          "value": "Z"
+        },
+        {
+          "columnName": "in_Rotation",
+          "value": "180"
+        },
+        {
+          "columnName": "AdditionalX",
+          "value": "0"
+        },
+        {
+          "columnName": "AdditionalY",
+          "value": "0"
+        },
+        {
+          "columnName": "AdditionalZ",
+          "value": "0"
+        },
+        {
+          "columnName": "RotationVectorX",
+          "value": "0"
+        },
+        {
+          "columnName": "RotationVectorY",
+          "value": "DimY/2"
+        },
+        {
+          "columnName": "RotationVectorZ",
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ReferencePointXYZ",
+          "value": "012"
+        },
+        {
+          "columnName": "in_RotationAxis",
+          "value": "Z"
+        },
+        {
+          "columnName": "in_Rotation",
+          "value": "270"
+        },
+        {
+          "columnName": "AdditionalX",
+          "value": "0"
+        },
+        {
+          "columnName": "AdditionalY",
+          "value": "0"
+        },
+        {
+          "columnName": "AdditionalZ",
+          "value": "0"
+        },
+        {
+          "columnName": "RotationVectorX",
+          "value": "0"
+        },
+        {
+          "columnName": "RotationVectorY",
+          "value": "DimY/2"
+        },
+        {
+          "columnName": "RotationVectorZ",
+          "value": "0"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "variantId": "mod_CeilingFillerProgram",
+  "shortName": "Filler program",
+  "variantTypeId": "Text",
+  "description": "Filler program",
+  "restrictionTypeId": "Public",
+  "groupName": "CeilingFiller",
+  "imageId": "images/CeilingFiller.png",
+  "isArray": false,
+  "isPosRelevant": true,
+  "mainAttr": false,
+  "userRight": "Simple",
+  "implicitRelevant": false,
+  "matrix": [
+    {
+      "id": "GrainGroupId",
+      "type": "Text",
+      "default": "Neutral"
+    }
+  ],
+  "selections": [
+    {
+      "value": "Classic",
+      "description": "Simple fronts in plain decors",
+      "shortName": "Classic",
+      "imageId": "images/Classic.jpg",
+      "matrix": [
+        {
+          "id": "GrainGroupId",
+          "value": "Neutral"
+        }
+      ]
+    },
+    {
+      "value": "Nature",
+      "description": "Simple fronts in wood decors",
+      "shortName": "Nature",
+      "imageId": "images/Nature.jpg",
+      "matrix": [
+        {
+          "id": "GrainGroupId",
+          "value": "Horizontal"
+        }
+      ]
+    },
+    {
+      "value": "Tradition",
+      "description": "Traditional frame fronts with wooden filling",
+      "shortName": "Tradition",
+      "imageId": "images/Tradition.jpg",
+      "matrix": [
+        {
+          "id": "GrainGroupId",
+          "value": "Vertical"
+        }
+      ]
+    },
+    {
+      "value": "Modern",
+      "description": "Mitred frame fronts with glass filling",
+      "shortName": "Modern",
+      "imageId": "images/Modern.jpg",
+      "matrix": [
+        {
+          "id": "GrainGroupId",
+          "value": "Vertical"
+        }
+      ]
+    },
+    {
+      "value": "Tuscan",
+      "description": "Milled fronts in plain decors",
+      "shortName": "Tuscan",
+      "imageId": "images/Tuscan.jpg",
+      "matrix": [
+        {
+          "id": "GrainGroupId",
+          "value": "Neutral"
+        }
+      ]
+    }
+  ]
+}

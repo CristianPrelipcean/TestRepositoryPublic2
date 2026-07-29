@@ -1,0 +1,40 @@
+{
+  "variantId": "mod_GroupHeightAdjustment",
+  "shortName": "Group height adjustment",
+  "variantTypeId": "Text",
+  "description": "Defines how the group height is adjusted",
+  "restrictionTypeId": "Internal",
+  "groupName": "Group management",
+  "imageId": "images/GroupHeightAdjustment.png",
+  "isArray": false,
+  "isPosRelevant": true,
+  "mainAttr": false,
+  "userRight": "Simple",
+  "implicitRelevant": false,
+  "posView": "Dropdown",
+  "sorting": 2,
+  "matrix": [],
+  "selections": [
+    {
+      "value": "KeepArticleConfiguration",
+      "description": "Keeps the article height",
+      "shortName": "KeepArticleConfiguration",
+      "imageId": "images/KeepArticleConfiguration.png",
+      "matrix": []
+    },
+    {
+      "value": "UseGroupHeight",
+      "description": "Uses the group height",
+      "shortName": "UseGroupHeight",
+      "imageId": "images/UseGroupHeight.png",
+      "matrix": []
+    },
+    {
+      "value": "UseRoomHeight",
+      "description": "Uses the room height",
+      "shortName": "UseRoomHeight",
+      "imageId": "images/UseRoomHeight.png",
+      "matrix": []
+    }
+  ]
+}

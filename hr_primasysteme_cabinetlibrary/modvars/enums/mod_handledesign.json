@@ -1,0 +1,64 @@
+[
+  {
+    "variantId": "mod_HandleDesign",
+    "matrixId": "HandleColor",
+    "enumsJson": [
+      {
+        "value": "Fixed",
+        "description": "Just one color available",
+        "imageId": "images/Locked.png"
+      },
+      {
+        "value": "Attribute",
+        "description": "Color selection via attribute",
+        "imageId": "images/Attribute.png"
+      }
+    ]
+  },
+  {
+    "variantId": "mod_HandleDesign",
+    "matrixId": "HandleLength",
+    "enumsJson": [
+      {
+        "value": "Fixed",
+        "description": "Only one length available",
+        "imageId": "images/Locked.png"
+      },
+      {
+        "value": "Attribute",
+        "description": "Selection via attribute",
+        "imageId": "images/Attribute.png"
+      },
+      {
+        "value": "FrontDimension",
+        "description": "Searching for the maximum length",
+        "imageId": "images/FrontDimension.jpg"
+      }
+    ]
+  },
+  {
+    "variantId": "mod_HandleDesign",
+    "matrixId": "HandleType",
+    "enumsJson": [
+      {
+        "value": "None",
+        "description": "No handle",
+        "imageId": "images/None_3.png"
+      },
+      {
+        "value": "Handle",
+        "description": "Using the module mc_Handle01",
+        "imageId": "images/Handle.jpg"
+      },
+      {
+        "value": "Handlestrip",
+        "description": "Using the module mc_Handlestrip01",
+        "imageId": "images/HandleStrip.jpg"
+      },
+      {
+        "value": "InsetHandle",
+        "description": "Using the module mc_Handle01"
+      }
+    ]
+  }
+]

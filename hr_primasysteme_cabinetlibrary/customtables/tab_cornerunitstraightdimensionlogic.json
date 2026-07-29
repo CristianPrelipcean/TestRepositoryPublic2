@@ -1,0 +1,74 @@
+{
+  "tableName": "tab_CornerunitStraightDimensionLogic",
+  "description": "Corner Unit Straight Dimension Logic",
+  "restrictionTypeId": "Public",
+  "groupName": "CarcaseConstruction",
+  "columns": [
+    {
+      "name": "_id",
+      "type": "Integer",
+      "allowNull": false
+    },
+    {
+      "name": "in_DimensionLogic",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_CarcaseDirection",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "mod_Width",
+      "type": "Text",
+      "allowNull": true,
+      "functionDefinition": "(m:parent):number"
+    },
+    {
+      "name": "mod_TotalWidth",
+      "type": "Text",
+      "allowNull": true,
+      "functionDefinition": "(m:parent):number"
+    },
+    {
+      "name": "mod_WidthBlind",
+      "type": "Text",
+      "allowNull": true,
+      "functionDefinition": "(m:parent):number"
+    },
+    {
+      "name": "mod_WidthRight",
+      "type": "Text",
+      "allowNull": true,
+      "functionDefinition": "(m:parent):number"
+    },
+    {
+      "name": "mod_CornerunitFrontWidth",
+      "type": "Text",
+      "allowNull": true,
+      "functionDefinition": "(m:parent):number"
+    },
+    {
+      "name": "mod_Depth",
+      "type": "Text",
+      "allowNull": true,
+      "functionDefinition": "(m:parent):number"
+    },
+    {
+      "name": "mod_TotalDepth",
+      "type": "Text",
+      "allowNull": true,
+      "functionDefinition": "(m:parent):number"
+    },
+    {
+      "name": "mod_WidthLeft",
+      "type": "Text",
+      "allowNull": true,
+      "functionDefinition": "(m:parent):number"
+    }
+  ],
+  "rows": [],
+  "dataSource": "Default",
+  "changedAt": "2025-11-28T17:03:14.0049175+00:00"
+}

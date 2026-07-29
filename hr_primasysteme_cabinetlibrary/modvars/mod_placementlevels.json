@@ -1,0 +1,50 @@
+{
+  "variantId": "mod_PlacementLevels",
+  "shortName": "Placement levels",
+  "variantTypeId": "Text",
+  "description": "Defines one or more height levels used for automatic cabinet placement",
+  "restrictionTypeId": "Internal",
+  "groupName": "Room Integration",
+  "imageId": "images/PlacementLevels.png",
+  "assignedGlobalVarId": "basic_PlacementLevels",
+  "isArray": false,
+  "isPosRelevant": true,
+  "mainAttr": false,
+  "userRight": "Master",
+  "implicitRelevant": false,
+  "posView": "Dropdown",
+  "sorting": 2,
+  "matrix": [
+    {
+      "id": "Levels",
+      "type": "Text",
+      "shortName": "Levels"
+    }
+  ],
+  "selections": [
+    {
+      "value": "OnFloor",
+      "description": "Placed on the floor",
+      "shortName": "OnFloor",
+      "imageId": "images/OnFloor.png",
+      "matrix": [
+        {
+          "id": "Levels",
+          "value": "OnFloor"
+        }
+      ]
+    },
+    {
+      "value": "WallHanging",
+      "description": "3 placement levels 1500, 1600, 1700",
+      "shortName": "WallHanging",
+      "imageId": "images/PlacementLevels.png",
+      "matrix": [
+        {
+          "id": "Levels",
+          "value": "1500_1600_1700"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+[
+  {
+    "tableName": "tab_GrainDirectionSettings",
+    "columnId": "GrainDirection",
+    "enumsJson": [
+      {
+        "value": "None",
+        "description": "No grain",
+        "imageId": "images/None_1.png"
+      },
+      {
+        "value": "Lengthwise",
+        "description": "The grain lengthwise follows the length",
+        "imageId": "images/Lenthwise.png"
+      },
+      {
+        "value": "Crosswise",
+        "description": "The grain crosswise follows the width",
+        "imageId": "images/Crosswise.png"
+      }
+    ]
+  },
+  {
+    "tableName": "tab_GrainDirectionSettings",
+    "columnId": "in_ColorGroupId",
+    "enumsJson": [
+      {
+        "value": "NoGrain",
+        "description": "Color without a grain",
+        "imageId": "images/NoGrain.png"
+      },
+      {
+        "value": "Grain",
+        "description": "Color with a grain",
+        "imageId": "images/Grain.png"
+      }
+    ]
+  },
+  {
+    "tableName": "tab_GrainDirectionSettings",
+    "columnId": "in_PartId",
+    "refCustomTableName": "tab_PartSettings",
+    "refColumnId": "in_Part"
+  },
+  {
+    "tableName": "tab_GrainDirectionSettings",
+    "columnId": "in_ProgramGroupId",
+    "enumsJson": [
+      {
+        "value": "Neutral",
+        "description": "No Grain",
+        "imageId": "images/None.jpg"
+      },
+      {
+        "value": "Horizontal",
+        "description": "The grain horizontal follows the length",
+        "imageId": "images/Lenghtwise.jpg"
+      },
+      {
+        "value": "Vertical",
+        "description": "The grain vertical follows the width",
+        "imageId": "images/Crosswise.jpg"
+      }
+    ]
+  }
+]

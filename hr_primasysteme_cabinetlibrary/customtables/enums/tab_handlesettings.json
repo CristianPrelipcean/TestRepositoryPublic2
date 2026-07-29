@@ -1,0 +1,41 @@
+[
+  {
+    "tableName": "tab_HandleSettings",
+    "columnId": "ReferencePointX",
+    "enumsJson": [
+      {
+        "value": "Border",
+        "imageId": "images/X_Border.jpg"
+      },
+      {
+        "value": "Center",
+        "imageId": "images/X_Center.jpg"
+      }
+    ]
+  },
+  {
+    "tableName": "tab_HandleSettings",
+    "columnId": "ReferencePointY",
+    "enumsJson": [
+      {
+        "value": "Border",
+        "imageId": "images/Y_Border.jpg"
+      },
+      {
+        "value": "Center",
+        "imageId": "images/Y_Center.jpg"
+      }
+    ]
+  },
+  {
+    "tableName": "tab_HandleSettings",
+    "columnId": "in_HandlePosType",
+    "refColumnId": "Value"
+  },
+  {
+    "tableName": "tab_HandleSettings",
+    "columnId": "in_PartGroup",
+    "refCustomTableName": "tab_PartSettings",
+    "refColumnId": "PartGroup"
+  }
+]

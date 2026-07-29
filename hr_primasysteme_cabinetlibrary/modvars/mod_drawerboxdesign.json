@@ -1,0 +1,58 @@
+{
+  "variantId": "mod_DrawerBoxDesign",
+  "shortName": "Drawer box design",
+  "variantTypeId": "Text",
+  "description": "Design of the drawer box",
+  "restrictionTypeId": "Public",
+  "groupName": "Hardware | DrawerBox",
+  "imageId": "images/DrawerBoxType.jpg",
+  "assignedGlobalVarId": "basic_DrawerBoxDesign",
+  "isArray": false,
+  "isPosRelevant": true,
+  "mainAttr": false,
+  "userRight": "Master",
+  "implicitRelevant": false,
+  "posView": "Dropdown",
+  "matrix": [
+    {
+      "id": "DrawerBoxType",
+      "type": "Text",
+      "default": "DrawerBox"
+    }
+  ],
+  "selections": [
+    {
+      "value": "Legrabox",
+      "description": "Blum Legrabox",
+      "shortName": "Legrabox",
+      "matrix": [
+        {
+          "id": "DrawerBoxType",
+          "value": "DrawerBox"
+        }
+      ]
+    },
+    {
+      "value": "Actros",
+      "description": "Hettich Actros",
+      "shortName": "Actros",
+      "matrix": [
+        {
+          "id": "DrawerBoxType",
+          "value": "DrawerBox"
+        }
+      ]
+    },
+    {
+      "value": "AvanTechYou",
+      "description": "Hettich AvanTech You",
+      "shortName": "AvanTech You",
+      "matrix": [
+        {
+          "id": "DrawerBoxType",
+          "value": "DrawerBox"
+        }
+      ]
+    }
+  ]
+}

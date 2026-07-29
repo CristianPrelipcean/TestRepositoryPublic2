@@ -1,0 +1,262 @@
+[
+  {
+    "tableName": "tab_GraphicLibrary",
+    "columnId": "ColorId",
+    "refCustomTableName": "tab_MaterialMapping",
+    "refColumnId": "in_ColorId"
+  },
+  {
+    "tableName": "tab_GraphicLibrary",
+    "columnId": "GraphicFileId",
+    "refCustomTableName": "tab_GraphicFileLibrary",
+    "refColumnId": "in_GraphicFileId"
+  },
+  {
+    "tableName": "tab_GraphicLibrary",
+    "columnId": "Identifier",
+    "enumsJson": [
+      {
+        "value": "BoxLeft",
+        "description": "BoxLeft"
+      },
+      {
+        "value": "BoxRight",
+        "description": "BoxRight"
+      },
+      {
+        "value": "DrawerBox",
+        "description": "DrawerBox"
+      },
+      {
+        "value": "HangerCoverCapLeft",
+        "description": "HangerCoverCapLeft"
+      },
+      {
+        "value": "HangerCoverCapRight",
+        "description": "HangerCoverCapRight"
+      },
+      {
+        "value": "HangerLeftInvisible",
+        "description": "HangerLeftInvisible"
+      },
+      {
+        "value": "HangerLeftVisible",
+        "description": "HangerLeftVisible"
+      },
+      {
+        "value": "HangerRightInvisible",
+        "description": "HangerRightInvisible"
+      },
+      {
+        "value": "HangerRightVisible",
+        "description": "HangerRightVisible"
+      },
+      {
+        "value": "SlideLeft",
+        "description": "SlideLeft"
+      },
+      {
+        "value": "SlideRight",
+        "description": "SlideRight"
+      },
+      {
+        "value": "WallPlate",
+        "description": "WallPlate"
+      },
+      {
+        "value": "NoIdentifier",
+        "description": "NoIdentifier"
+      },
+      {
+        "value": "CarcaseLeft",
+        "description": "CarcaseLeft"
+      },
+      {
+        "value": "CarcaseRight",
+        "description": "CarcaseRight"
+      },
+      {
+        "value": "FrontConnector",
+        "description": "FrontConnector"
+      },
+      {
+        "value": "Mechanism",
+        "description": "Mechanism"
+      },
+      {
+        "value": "CarcaseConnector",
+        "description": "CarcaseConnector"
+      },
+      {
+        "value": "FrontAndCarcaseConnector",
+        "description": "FrontAndCarcaseConnector"
+      },
+      {
+        "value": "SlideBtm",
+        "description": "SlideBtm"
+      },
+      {
+        "value": "SlideTop",
+        "description": "SlideTop"
+      },
+      {
+        "value": "Frame",
+        "description": "Frame"
+      },
+      {
+        "value": "ConnectorTop",
+        "description": "ConnectorTop"
+      },
+      {
+        "value": "ConnectorBtm",
+        "description": "ConnectorBtm"
+      },
+      {
+        "value": "Basket",
+        "description": "Basket"
+      },
+      {
+        "value": "Slides",
+        "description": "Slides"
+      },
+      {
+        "value": "ClothingOrganizer_L",
+        "description": "Drill only left"
+      },
+      {
+        "value": "ClothingOrganizer_R",
+        "description": "Drill only right"
+      },
+      {
+        "value": "ClothingOrganizer_LR",
+        "description": "Drill left and right"
+      },
+      {
+        "value": "ClothingOrganizer_T",
+        "description": "Drill only top"
+      },
+      {
+        "value": "ClothingOrganizer_B",
+        "description": "Drill only bottom"
+      },
+      {
+        "value": "ClothingOrganizer_TB",
+        "description": "Drill top and bottom"
+      }
+    ]
+  },
+  {
+    "tableName": "tab_GraphicLibrary",
+    "columnId": "ReferencePointXYZ",
+    "enumsJson": [
+      {
+        "value": "000",
+        "imageId": "images/000.jpg"
+      },
+      {
+        "value": "001",
+        "imageId": "images/001.jpg"
+      },
+      {
+        "value": "002",
+        "imageId": "images/002.jpg"
+      },
+      {
+        "value": "100",
+        "imageId": "images/100.jpg"
+      },
+      {
+        "value": "101",
+        "imageId": "images/101.jpg"
+      },
+      {
+        "value": "102",
+        "imageId": "images/102.jpg"
+      },
+      {
+        "value": "200",
+        "imageId": "images/200.jpg"
+      },
+      {
+        "value": "201",
+        "imageId": "images/201.jpg"
+      },
+      {
+        "value": "202",
+        "imageId": "images/202.jpg"
+      },
+      {
+        "value": "010",
+        "imageId": "images/010.jpg"
+      },
+      {
+        "value": "011",
+        "imageId": "images/011.jpg"
+      },
+      {
+        "value": "012",
+        "imageId": "images/012.jpg"
+      },
+      {
+        "value": "110",
+        "imageId": "images/110.jpg"
+      },
+      {
+        "value": "111",
+        "imageId": "images/111.jpg"
+      },
+      {
+        "value": "112",
+        "imageId": "images/112.jpg"
+      },
+      {
+        "value": "210",
+        "imageId": "images/210.jpg"
+      },
+      {
+        "value": "211",
+        "imageId": "images/211.jpg"
+      },
+      {
+        "value": "212",
+        "imageId": "images/212.jpg"
+      },
+      {
+        "value": "020",
+        "imageId": "images/020.jpg"
+      },
+      {
+        "value": "021",
+        "imageId": "images/021.jpg"
+      },
+      {
+        "value": "022",
+        "imageId": "images/022.jpg"
+      },
+      {
+        "value": "120",
+        "imageId": "images/120.jpg"
+      },
+      {
+        "value": "121",
+        "imageId": "images/121.jpg"
+      },
+      {
+        "value": "122",
+        "imageId": "images/122.jpg"
+      },
+      {
+        "value": "220",
+        "imageId": "images/220.jpg"
+      },
+      {
+        "value": "221",
+        "imageId": "images/221.jpg"
+      },
+      {
+        "value": "222",
+        "imageId": "images/222.jpg"
+      }
+    ]
+  }
+]

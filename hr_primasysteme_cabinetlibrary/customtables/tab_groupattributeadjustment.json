@@ -1,0 +1,197 @@
+{
+  "tableName": "tab_GroupAttributeAdjustment",
+  "description": "Defines reusable attribute assignments referenced by AdjustmentIds in Blueprint and HeightAdjustment tables.",
+  "restrictionTypeId": "Public",
+  "groupName": "GroupOrchestrator",
+  "columns": [
+    {
+      "name": "_id",
+      "type": "Integer",
+      "allowNull": false
+    },
+    {
+      "name": "in_AdjustmentId",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "AttributeId",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "AttributeType",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "AttributeValue",
+      "type": "Text",
+      "allowNull": true
+    }
+  ],
+  "rows": [
+    {
+      "data": [
+        {
+          "columnName": "in_AdjustmentId",
+          "value": "None"
+        },
+        {
+          "columnName": "AttributeId",
+          "value": "None"
+        },
+        {
+          "columnName": "AttributeType",
+          "value": "Boolean"
+        },
+        {
+          "columnName": "AttributeValue",
+          "value": "false"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_AdjustmentId",
+          "value": "CeilingFiller"
+        },
+        {
+          "columnName": "AttributeId",
+          "value": "mod_CreateCeilingFiller"
+        },
+        {
+          "columnName": "AttributeType",
+          "value": "Boolean"
+        },
+        {
+          "columnName": "AttributeValue",
+          "value": "true"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_AdjustmentId",
+          "value": "PanelTop"
+        },
+        {
+          "columnName": "AttributeId",
+          "value": "mod_CreatePaneltop"
+        },
+        {
+          "columnName": "AttributeType",
+          "value": "Boolean"
+        },
+        {
+          "columnName": "AttributeValue",
+          "value": "true"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_AdjustmentId",
+          "value": "CounterTop"
+        },
+        {
+          "columnName": "AttributeId",
+          "value": "mod_CreateCountertop"
+        },
+        {
+          "columnName": "AttributeType",
+          "value": "Boolean"
+        },
+        {
+          "columnName": "AttributeValue",
+          "value": "true"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_AdjustmentId",
+          "value": "CeilingFiller"
+        },
+        {
+          "columnName": "AttributeId",
+          "value": "mod_CreatePaneltop"
+        },
+        {
+          "columnName": "AttributeType",
+          "value": "Boolean"
+        },
+        {
+          "columnName": "AttributeValue",
+          "value": "false"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_AdjustmentId",
+          "value": "PanelTop"
+        },
+        {
+          "columnName": "AttributeId",
+          "value": "mod_CreateCeilingFiller"
+        },
+        {
+          "columnName": "AttributeType",
+          "value": "Boolean"
+        },
+        {
+          "columnName": "AttributeValue",
+          "value": "false"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_AdjustmentId",
+          "value": "DoorLeft"
+        },
+        {
+          "columnName": "AttributeId",
+          "value": "mod_DoorDirectionSelection"
+        },
+        {
+          "columnName": "AttributeType",
+          "value": "String"
+        },
+        {
+          "columnName": "AttributeValue",
+          "value": "Left"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_AdjustmentId",
+          "value": "DoorRight"
+        },
+        {
+          "columnName": "AttributeId",
+          "value": "mod_DoorDirectionSelection"
+        },
+        {
+          "columnName": "AttributeType",
+          "value": "String"
+        },
+        {
+          "columnName": "AttributeValue",
+          "value": "Right"
+        }
+      ]
+    }
+  ],
+  "dataSource": "Default",
+  "changedAt": "2026-07-07T13:32:42.3139721+00:00"
+}

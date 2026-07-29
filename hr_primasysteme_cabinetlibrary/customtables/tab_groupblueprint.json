@@ -1,0 +1,2573 @@
+{
+  "tableName": "tab_GroupBlueprint",
+  "description": "Defines blueprint layouts for automatically generating groups based on the selected generation logic and the available wall length. Each record represents one article within the blueprint and specifies its sizing and docking behavior.",
+  "restrictionTypeId": "Public",
+  "groupName": "GroupOrchestrator",
+  "columns": [
+    {
+      "name": "_id",
+      "type": "Integer",
+      "allowNull": false
+    },
+    {
+      "name": "in_GenerationLogic",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_MinTargetLength",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "in_MaxTargetLength",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "Position",
+      "type": "Integer",
+      "allowNull": false
+    },
+    {
+      "name": "ArticleId",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "WidthMode",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "WidthValue",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "GroupWidthRelevant",
+      "type": "Bool",
+      "allowNull": true
+    },
+    {
+      "name": "DockToPosition",
+      "type": "Integer",
+      "allowNull": false
+    },
+    {
+      "name": "MyDockingVector",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "NeighbourDockingVector",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "AdjustmentId",
+      "type": "Text",
+      "allowNull": true
+    }
+  ],
+  "rows": [
+    {
+      "data": [
+        {
+          "columnName": "in_GenerationLogic",
+          "value": "Closet"
+        },
+        {
+          "columnName": "in_MinTargetLength",
+          "value": "1000"
+        },
+        {
+          "columnName": "in_MaxTargetLength",
+          "value": "1500"
+        },
+        {
+          "columnName": "Position",
+          "value": "1"
+        },
+        {
+          "columnName": "ArticleId",
+          "value": "HESTA60"
+        },
+        {
+          "columnName": "WidthMode",
+          "value": "Adjusted"
+        },
+        {
+          "columnName": "WidthValue",
+          "value": "0"
+        },
+        {
+          "columnName": "GroupWidthRelevant",
+          "value": "true"
+        },
+        {
+          "columnName": "DockToPosition",
+          "value": "0"
+        },
+        {
+          "columnName": "MyDockingVector",
+          "value": "LeftBottom"
+        },
+        {
+          "columnName": "NeighbourDockingVector",
+          "value": "RightBottom"
+        },
+        {
+          "columnName": "AdjustmentId",
+          "value": "None"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GenerationLogic",
+          "value": "Closet"
+        },
+        {
+          "columnName": "in_MinTargetLength",
+          "value": "1000"
+        },
+        {
+          "columnName": "in_MaxTargetLength",
+          "value": "1500"
+        },
+        {
+          "columnName": "Position",
+          "value": "2"
+        },
+        {
+          "columnName": "ArticleId",
+          "value": "HEETA60"
+        },
+        {
+          "columnName": "WidthMode",
+          "value": "Adjusted"
+        },
+        {
+          "columnName": "WidthValue",
+          "value": "0"
+        },
+        {
+          "columnName": "GroupWidthRelevant",
+          "value": "true"
+        },
+        {
+          "columnName": "DockToPosition",
+          "value": "1"
+        },
+        {
+          "columnName": "MyDockingVector",
+          "value": "LeftBottom"
+        },
+        {
+          "columnName": "NeighbourDockingVector",
+          "value": "RightBottom"
+        },
+        {
+          "columnName": "AdjustmentId",
+          "value": "None"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GenerationLogic",
+          "value": "Closet"
+        },
+        {
+          "columnName": "in_MinTargetLength",
+          "value": "1501"
+        },
+        {
+          "columnName": "in_MaxTargetLength",
+          "value": "2000"
+        },
+        {
+          "columnName": "Position",
+          "value": "1"
+        },
+        {
+          "columnName": "ArticleId",
+          "value": "HESTA60"
+        },
+        {
+          "columnName": "WidthMode",
+          "value": "Adjusted"
+        },
+        {
+          "columnName": "WidthValue",
+          "value": "0"
+        },
+        {
+          "columnName": "GroupWidthRelevant",
+          "value": "true"
+        },
+        {
+          "columnName": "DockToPosition",
+          "value": "0"
+        },
+        {
+          "columnName": "MyDockingVector",
+          "value": "LeftBottom"
+        },
+        {
+          "columnName": "NeighbourDockingVector",
+          "value": "RightBottom"
+        },
+        {
+          "columnName": "AdjustmentId",
+          "value": "None"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GenerationLogic",
+          "value": "Closet"
+        },
+        {
+          "columnName": "in_MinTargetLength",
+          "value": "1501"
+        },
+        {
+          "columnName": "in_MaxTargetLength",
+          "value": "2000"
+        },
+        {
+          "columnName": "Position",
+          "value": "2"
+        },
+        {
+          "columnName": "ArticleId",
+          "value": "HEMTA60"
+        },
+        {
+          "columnName": "WidthMode",
+          "value": "Adjusted"
+        },
+        {
+          "columnName": "WidthValue",
+          "value": "0"
+        },
+        {
+          "columnName": "GroupWidthRelevant",
+          "value": "true"
+        },
+        {
+          "columnName": "DockToPosition",
+          "value": "1"
+        },
+        {
+          "columnName": "MyDockingVector",
+          "value": "LeftBottom"
+        },
+        {
+          "columnName": "NeighbourDockingVector",
+          "value": "RightBottom"
+        },
+        {
+          "columnName": "AdjustmentId",
+          "value": "None"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GenerationLogic",
+          "value": "Closet"
+        },
+        {
+          "columnName": "in_MinTargetLength",
+          "value": "1501"
+        },
+        {
+          "columnName": "in_MaxTargetLength",
+          "value": "2000"
+        },
+        {
+          "columnName": "Position",
+          "value": "3"
+        },
+        {
+          "columnName": "ArticleId",
+          "value": "HEETA60"
+        },
+        {
+          "columnName": "WidthMode",
+          "value": "Adjusted"
+        },
+        {
+          "columnName": "WidthValue",
+          "value": "0"
+        },
+        {
+          "columnName": "GroupWidthRelevant",
+          "value": "true"
+        },
+        {
+          "columnName": "DockToPosition",
+          "value": "2"
+        },
+        {
+          "columnName": "MyDockingVector",
+          "value": "LeftBottom"
+        },
+        {
+          "columnName": "NeighbourDockingVector",
+          "value": "RightBottom"
+        },
+        {
+          "columnName": "AdjustmentId",
+          "value": "None"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GenerationLogic",
+          "value": "Closet"
+        },
+        {
+          "columnName": "in_MinTargetLength",
+          "value": "2401"
+        },
+        {
+          "columnName": "in_MaxTargetLength",
+          "value": "2700"
+        },
+        {
+          "columnName": "Position",
+          "value": "1"
+        },
+        {
+          "columnName": "ArticleId",
+          "value": "HEST60"
+        },
+        {
+          "columnName": "WidthMode",
+          "value": "Fixed"
+        },
+        {
+          "columnName": "WidthValue",
+          "value": "300"
+        },
+        {
+          "columnName": "GroupWidthRelevant",
+          "value": "true"
+        },
+        {
+          "columnName": "DockToPosition",
+          "value": "0"
+        },
+        {
+          "columnName": "MyDockingVector",
+          "value": "LeftBottom"
+        },
+        {
+          "columnName": "NeighbourDockingVector",
+          "value": "RightBottom"
+        },
+        {
+          "columnName": "AdjustmentId",
+          "value": "DoorLeft"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GenerationLogic",
+          "value": "Closet"
+        },
+        {
+          "columnName": "in_MinTargetLength",
+          "value": "2401"
+        },
+        {
+          "columnName": "in_MaxTargetLength",
+          "value": "2700"
+        },
+        {
+          "columnName": "Position",
+          "value": "2"
+        },
+        {
+          "columnName": "ArticleId",
+          "value": "HEMTA60"
+        },
+        {
+          "columnName": "WidthMode",
+          "value": "Adjusted"
+        },
+        {
+          "columnName": "WidthValue",
+          "value": "0"
+        },
+        {
+          "columnName": "GroupWidthRelevant",
+          "value": "true"
+        },
+        {
+          "columnName": "DockToPosition",
+          "value": "1"
+        },
+        {
+          "columnName": "MyDockingVector",
+          "value": "LeftBottom"
+        },
+        {
+          "columnName": "NeighbourDockingVector",
+          "value": "RightBottom"
+        },
+        {
+          "columnName": "AdjustmentId",
+          "value": "DoorLeft"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GenerationLogic",
+          "value": "Closet"
+        },
+        {
+          "columnName": "in_MinTargetLength",
+          "value": "2401"
+        },
+        {
+          "columnName": "in_MaxTargetLength",
+          "value": "2700"
+        },
+        {
+          "columnName": "Position",
+          "value": "3"
+        },
+        {
+          "columnName": "ArticleId",
+          "value": "HEMTA60"
+        },
+        {
+          "columnName": "WidthMode",
+          "value": "Fixed"
+        },
+        {
+          "columnName": "WidthValue",
+          "value": "900"
+        },
+        {
+          "columnName": "GroupWidthRelevant",
+          "value": "true"
+        },
+        {
+          "columnName": "DockToPosition",
+          "value": "2"
+        },
+        {
+          "columnName": "MyDockingVector",
+          "value": "LeftBottom"
+        },
+        {
+          "columnName": "NeighbourDockingVector",
+          "value": "RightBottom"
+        },
+        {
+          "columnName": "AdjustmentId",
+          "value": "None"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GenerationLogic",
+          "value": "Closet"
+        },
+        {
+          "columnName": "in_MinTargetLength",
+          "value": "2401"
+        },
+        {
+          "columnName": "in_MaxTargetLength",
+          "value": "2700"
+        },
+        {
+          "columnName": "Position",
+          "value": "4"
+        },
+        {
+          "columnName": "ArticleId",
+          "value": "HEMTA60"
+        },
+        {
+          "columnName": "WidthMode",
+          "value": "Adjusted"
+        },
+        {
+          "columnName": "WidthValue",
+          "value": "0"
+        },
+        {
+          "columnName": "GroupWidthRelevant",
+          "value": "true"
+        },
+        {
+          "columnName": "DockToPosition",
+          "value": "3"
+        },
+        {
+          "columnName": "MyDockingVector",
+          "value": "LeftBottom"
+        },
+        {
+          "columnName": "NeighbourDockingVector",
+          "value": "RightBottom"
+        },
+        {
+          "columnName": "AdjustmentId",
+          "value": "DoorRight"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GenerationLogic",
+          "value": "Closet"
+        },
+        {
+          "columnName": "in_MinTargetLength",
+          "value": "2401"
+        },
+        {
+          "columnName": "in_MaxTargetLength",
+          "value": "2700"
+        },
+        {
+          "columnName": "Position",
+          "value": "5"
+        },
+        {
+          "columnName": "ArticleId",
+          "value": "HEET60"
+        },
+        {
+          "columnName": "WidthMode",
+          "value": "Fixed"
+        },
+        {
+          "columnName": "WidthValue",
+          "value": "300"
+        },
+        {
+          "columnName": "GroupWidthRelevant",
+          "value": "true"
+        },
+        {
+          "columnName": "DockToPosition",
+          "value": "4"
+        },
+        {
+          "columnName": "MyDockingVector",
+          "value": "LeftBottom"
+        },
+        {
+          "columnName": "NeighbourDockingVector",
+          "value": "RightBottom"
+        },
+        {
+          "columnName": "AdjustmentId",
+          "value": "DoorRight"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GenerationLogic",
+          "value": "Closet"
+        },
+        {
+          "columnName": "in_MinTargetLength",
+          "value": "2001"
+        },
+        {
+          "columnName": "in_MaxTargetLength",
+          "value": "2400"
+        },
+        {
+          "columnName": "Position",
+          "value": "1"
+        },
+        {
+          "columnName": "ArticleId",
+          "value": "HEST60"
+        },
+        {
+          "columnName": "WidthMode",
+          "value": "Adjusted"
+        },
+        {
+          "columnName": "WidthValue",
+          "value": "0"
+        },
+        {
+          "columnName": "GroupWidthRelevant",
+          "value": "true"
+        },
+        {
+          "columnName": "DockToPosition",
+          "value": "0"
+        },
+        {
+          "columnName": "MyDockingVector",
+          "value": "LeftBottom"
+        },
+        {
+          "columnName": "NeighbourDockingVector",
+          "value": "RightBottom"
+        },
+        {
+          "columnName": "AdjustmentId",
+          "value": "DoorLeft"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GenerationLogic",
+          "value": "Closet"
+        },
+        {
+          "columnName": "in_MinTargetLength",
+          "value": "2001"
+        },
+        {
+          "columnName": "in_MaxTargetLength",
+          "value": "2400"
+        },
+        {
+          "columnName": "Position",
+          "value": "2"
+        },
+        {
+          "columnName": "ArticleId",
+          "value": "HEMTA60"
+        },
+        {
+          "columnName": "WidthMode",
+          "value": "Fixed"
+        },
+        {
+          "columnName": "WidthValue",
+          "value": "1200"
+        },
+        {
+          "columnName": "GroupWidthRelevant",
+          "value": "true"
+        },
+        {
+          "columnName": "DockToPosition",
+          "value": "1"
+        },
+        {
+          "columnName": "MyDockingVector",
+          "value": "LeftBottom"
+        },
+        {
+          "columnName": "NeighbourDockingVector",
+          "value": "RightBottom"
+        },
+        {
+          "columnName": "AdjustmentId",
+          "value": "None"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GenerationLogic",
+          "value": "Closet"
+        },
+        {
+          "columnName": "in_MinTargetLength",
+          "value": "2001"
+        },
+        {
+          "columnName": "in_MaxTargetLength",
+          "value": "2400"
+        },
+        {
+          "columnName": "Position",
+          "value": "3"
+        },
+        {
+          "columnName": "ArticleId",
+          "value": "HEET60"
+        },
+        {
+          "columnName": "WidthMode",
+          "value": "Adjusted"
+        },
+        {
+          "columnName": "WidthValue",
+          "value": "0"
+        },
+        {
+          "columnName": "GroupWidthRelevant",
+          "value": "true"
+        },
+        {
+          "columnName": "DockToPosition",
+          "value": "2"
+        },
+        {
+          "columnName": "MyDockingVector",
+          "value": "LeftBottom"
+        },
+        {
+          "columnName": "NeighbourDockingVector",
+          "value": "RightBottom"
+        },
+        {
+          "columnName": "AdjustmentId",
+          "value": "DoorRight"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GenerationLogic",
+          "value": "Closet"
+        },
+        {
+          "columnName": "in_MinTargetLength",
+          "value": "2701"
+        },
+        {
+          "columnName": "in_MaxTargetLength",
+          "value": "3500"
+        },
+        {
+          "columnName": "Position",
+          "value": "1"
+        },
+        {
+          "columnName": "ArticleId",
+          "value": "HEST60"
+        },
+        {
+          "columnName": "WidthMode",
+          "value": "Adjusted"
+        },
+        {
+          "columnName": "WidthValue",
+          "value": "0"
+        },
+        {
+          "columnName": "GroupWidthRelevant",
+          "value": "true"
+        },
+        {
+          "columnName": "DockToPosition",
+          "value": "0"
+        },
+        {
+          "columnName": "MyDockingVector",
+          "value": "LeftBottom"
+        },
+        {
+          "columnName": "NeighbourDockingVector",
+          "value": "RightBottom"
+        },
+        {
+          "columnName": "AdjustmentId",
+          "value": "DoorLeft"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GenerationLogic",
+          "value": "Closet"
+        },
+        {
+          "columnName": "in_MinTargetLength",
+          "value": "2701"
+        },
+        {
+          "columnName": "in_MaxTargetLength",
+          "value": "3500"
+        },
+        {
+          "columnName": "Position",
+          "value": "2"
+        },
+        {
+          "columnName": "ArticleId",
+          "value": "HEMTA60"
+        },
+        {
+          "columnName": "WidthMode",
+          "value": "Adjusted"
+        },
+        {
+          "columnName": "WidthValue",
+          "value": "0"
+        },
+        {
+          "columnName": "GroupWidthRelevant",
+          "value": "true"
+        },
+        {
+          "columnName": "DockToPosition",
+          "value": "1"
+        },
+        {
+          "columnName": "MyDockingVector",
+          "value": "LeftBottom"
+        },
+        {
+          "columnName": "NeighbourDockingVector",
+          "value": "RightBottom"
+        },
+        {
+          "columnName": "AdjustmentId",
+          "value": "DoorLeft"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GenerationLogic",
+          "value": "Closet"
+        },
+        {
+          "columnName": "in_MinTargetLength",
+          "value": "2701"
+        },
+        {
+          "columnName": "in_MaxTargetLength",
+          "value": "3500"
+        },
+        {
+          "columnName": "Position",
+          "value": "3"
+        },
+        {
+          "columnName": "ArticleId",
+          "value": "HEMTA60"
+        },
+        {
+          "columnName": "WidthMode",
+          "value": "Fixed"
+        },
+        {
+          "columnName": "WidthValue",
+          "value": "900"
+        },
+        {
+          "columnName": "GroupWidthRelevant",
+          "value": "true"
+        },
+        {
+          "columnName": "DockToPosition",
+          "value": "2"
+        },
+        {
+          "columnName": "MyDockingVector",
+          "value": "LeftBottom"
+        },
+        {
+          "columnName": "NeighbourDockingVector",
+          "value": "RightBottom"
+        },
+        {
+          "columnName": "AdjustmentId",
+          "value": "None"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GenerationLogic",
+          "value": "Closet"
+        },
+        {
+          "columnName": "in_MinTargetLength",
+          "value": "2701"
+        },
+        {
+          "columnName": "in_MaxTargetLength",
+          "value": "3500"
+        },
+        {
+          "columnName": "Position",
+          "value": "4"
+        },
+        {
+          "columnName": "ArticleId",
+          "value": "HEMTA60"
+        },
+        {
+          "columnName": "WidthMode",
+          "value": "Fixed"
+        },
+        {
+          "columnName": "WidthValue",
+          "value": "900"
+        },
+        {
+          "columnName": "GroupWidthRelevant",
+          "value": "true"
+        },
+        {
+          "columnName": "DockToPosition",
+          "value": "3"
+        },
+        {
+          "columnName": "MyDockingVector",
+          "value": "LeftBottom"
+        },
+        {
+          "columnName": "NeighbourDockingVector",
+          "value": "RightBottom"
+        },
+        {
+          "columnName": "AdjustmentId",
+          "value": "None"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GenerationLogic",
+          "value": "Closet"
+        },
+        {
+          "columnName": "in_MinTargetLength",
+          "value": "2701"
+        },
+        {
+          "columnName": "in_MaxTargetLength",
+          "value": "3500"
+        },
+        {
+          "columnName": "Position",
+          "value": "5"
+        },
+        {
+          "columnName": "ArticleId",
+          "value": "HEMTA60"
+        },
+        {
+          "columnName": "WidthMode",
+          "value": "Adjusted"
+        },
+        {
+          "columnName": "WidthValue",
+          "value": "0"
+        },
+        {
+          "columnName": "GroupWidthRelevant",
+          "value": "true"
+        },
+        {
+          "columnName": "DockToPosition",
+          "value": "4"
+        },
+        {
+          "columnName": "MyDockingVector",
+          "value": "LeftBottom"
+        },
+        {
+          "columnName": "NeighbourDockingVector",
+          "value": "RightBottom"
+        },
+        {
+          "columnName": "AdjustmentId",
+          "value": "DoorRight"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GenerationLogic",
+          "value": "Closet"
+        },
+        {
+          "columnName": "in_MinTargetLength",
+          "value": "2701"
+        },
+        {
+          "columnName": "in_MaxTargetLength",
+          "value": "3500"
+        },
+        {
+          "columnName": "Position",
+          "value": "6"
+        },
+        {
+          "columnName": "ArticleId",
+          "value": "HEET60"
+        },
+        {
+          "columnName": "WidthMode",
+          "value": "Adjusted"
+        },
+        {
+          "columnName": "WidthValue",
+          "value": "0"
+        },
+        {
+          "columnName": "GroupWidthRelevant",
+          "value": "true"
+        },
+        {
+          "columnName": "DockToPosition",
+          "value": "5"
+        },
+        {
+          "columnName": "MyDockingVector",
+          "value": "LeftBottom"
+        },
+        {
+          "columnName": "NeighbourDockingVector",
+          "value": "RightBottom"
+        },
+        {
+          "columnName": "AdjustmentId",
+          "value": "DoorRight"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GenerationLogic",
+          "value": "Closet"
+        },
+        {
+          "columnName": "in_MinTargetLength",
+          "value": "3501"
+        },
+        {
+          "columnName": "in_MaxTargetLength",
+          "value": "6000"
+        },
+        {
+          "columnName": "Position",
+          "value": "1"
+        },
+        {
+          "columnName": "ArticleId",
+          "value": "HEST60"
+        },
+        {
+          "columnName": "WidthMode",
+          "value": "Adjusted"
+        },
+        {
+          "columnName": "WidthValue",
+          "value": "0"
+        },
+        {
+          "columnName": "GroupWidthRelevant",
+          "value": "true"
+        },
+        {
+          "columnName": "DockToPosition",
+          "value": "0"
+        },
+        {
+          "columnName": "MyDockingVector",
+          "value": "LeftBottom"
+        },
+        {
+          "columnName": "NeighbourDockingVector",
+          "value": "RightBottom"
+        },
+        {
+          "columnName": "AdjustmentId",
+          "value": "None"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GenerationLogic",
+          "value": "Closet"
+        },
+        {
+          "columnName": "in_MinTargetLength",
+          "value": "3501"
+        },
+        {
+          "columnName": "in_MaxTargetLength",
+          "value": "6000"
+        },
+        {
+          "columnName": "Position",
+          "value": "2"
+        },
+        {
+          "columnName": "ArticleId",
+          "value": "HEMTA60"
+        },
+        {
+          "columnName": "WidthMode",
+          "value": "Adjusted"
+        },
+        {
+          "columnName": "WidthValue",
+          "value": "0"
+        },
+        {
+          "columnName": "GroupWidthRelevant",
+          "value": "true"
+        },
+        {
+          "columnName": "DockToPosition",
+          "value": "1"
+        },
+        {
+          "columnName": "MyDockingVector",
+          "value": "LeftBottom"
+        },
+        {
+          "columnName": "NeighbourDockingVector",
+          "value": "RightBottom"
+        },
+        {
+          "columnName": "AdjustmentId",
+          "value": "None"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GenerationLogic",
+          "value": "Closet"
+        },
+        {
+          "columnName": "in_MinTargetLength",
+          "value": "3501"
+        },
+        {
+          "columnName": "in_MaxTargetLength",
+          "value": "6000"
+        },
+        {
+          "columnName": "Position",
+          "value": "3"
+        },
+        {
+          "columnName": "ArticleId",
+          "value": "HEMTA60"
+        },
+        {
+          "columnName": "WidthMode",
+          "value": "Adjusted"
+        },
+        {
+          "columnName": "WidthValue",
+          "value": "0"
+        },
+        {
+          "columnName": "GroupWidthRelevant",
+          "value": "true"
+        },
+        {
+          "columnName": "DockToPosition",
+          "value": "2"
+        },
+        {
+          "columnName": "MyDockingVector",
+          "value": "LeftBottom"
+        },
+        {
+          "columnName": "NeighbourDockingVector",
+          "value": "RightBottom"
+        },
+        {
+          "columnName": "AdjustmentId",
+          "value": "None"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GenerationLogic",
+          "value": "Closet"
+        },
+        {
+          "columnName": "in_MinTargetLength",
+          "value": "3501"
+        },
+        {
+          "columnName": "in_MaxTargetLength",
+          "value": "6000"
+        },
+        {
+          "columnName": "Position",
+          "value": "4"
+        },
+        {
+          "columnName": "ArticleId",
+          "value": "HEMTA60"
+        },
+        {
+          "columnName": "WidthMode",
+          "value": "Adjusted"
+        },
+        {
+          "columnName": "WidthValue",
+          "value": "0"
+        },
+        {
+          "columnName": "GroupWidthRelevant",
+          "value": "true"
+        },
+        {
+          "columnName": "DockToPosition",
+          "value": "3"
+        },
+        {
+          "columnName": "MyDockingVector",
+          "value": "LeftBottom"
+        },
+        {
+          "columnName": "NeighbourDockingVector",
+          "value": "RightBottom"
+        },
+        {
+          "columnName": "AdjustmentId",
+          "value": "None"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GenerationLogic",
+          "value": "Closet"
+        },
+        {
+          "columnName": "in_MinTargetLength",
+          "value": "3501"
+        },
+        {
+          "columnName": "in_MaxTargetLength",
+          "value": "6000"
+        },
+        {
+          "columnName": "Position",
+          "value": "5"
+        },
+        {
+          "columnName": "ArticleId",
+          "value": "HEMTA60"
+        },
+        {
+          "columnName": "WidthMode",
+          "value": "Adjusted"
+        },
+        {
+          "columnName": "WidthValue",
+          "value": "0"
+        },
+        {
+          "columnName": "GroupWidthRelevant",
+          "value": "true"
+        },
+        {
+          "columnName": "DockToPosition",
+          "value": "4"
+        },
+        {
+          "columnName": "MyDockingVector",
+          "value": "LeftBottom"
+        },
+        {
+          "columnName": "NeighbourDockingVector",
+          "value": "RightBottom"
+        },
+        {
+          "columnName": "AdjustmentId",
+          "value": "None"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GenerationLogic",
+          "value": "Closet"
+        },
+        {
+          "columnName": "in_MinTargetLength",
+          "value": "3501"
+        },
+        {
+          "columnName": "in_MaxTargetLength",
+          "value": "6000"
+        },
+        {
+          "columnName": "Position",
+          "value": "6"
+        },
+        {
+          "columnName": "ArticleId",
+          "value": "HEET60"
+        },
+        {
+          "columnName": "WidthMode",
+          "value": "Adjusted"
+        },
+        {
+          "columnName": "WidthValue",
+          "value": "0"
+        },
+        {
+          "columnName": "GroupWidthRelevant",
+          "value": "true"
+        },
+        {
+          "columnName": "DockToPosition",
+          "value": "5"
+        },
+        {
+          "columnName": "MyDockingVector",
+          "value": "LeftBottom"
+        },
+        {
+          "columnName": "NeighbourDockingVector",
+          "value": "RightBottom"
+        },
+        {
+          "columnName": "AdjustmentId",
+          "value": "None"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GenerationLogic",
+          "value": "Kitchen"
+        },
+        {
+          "columnName": "in_MinTargetLength",
+          "value": "3001"
+        },
+        {
+          "columnName": "in_MaxTargetLength",
+          "value": "3300"
+        },
+        {
+          "columnName": "Position",
+          "value": "1"
+        },
+        {
+          "columnName": "ArticleId",
+          "value": "HOTS2AB60"
+        },
+        {
+          "columnName": "WidthMode",
+          "value": "Fixed"
+        },
+        {
+          "columnName": "WidthValue",
+          "value": "600"
+        },
+        {
+          "columnName": "GroupWidthRelevant",
+          "value": "true"
+        },
+        {
+          "columnName": "DockToPosition",
+          "value": "0"
+        },
+        {
+          "columnName": "MyDockingVector",
+          "value": "LeftBottom"
+        },
+        {
+          "columnName": "NeighbourDockingVector",
+          "value": "RightBottom"
+        },
+        {
+          "columnName": "AdjustmentId",
+          "value": "DoorLeft"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GenerationLogic",
+          "value": "Kitchen"
+        },
+        {
+          "columnName": "in_MinTargetLength",
+          "value": "3001"
+        },
+        {
+          "columnName": "in_MaxTargetLength",
+          "value": "3300"
+        },
+        {
+          "columnName": "Position",
+          "value": "2"
+        },
+        {
+          "columnName": "ArticleId",
+          "value": "UTB30"
+        },
+        {
+          "columnName": "WidthMode",
+          "value": "Adjusted"
+        },
+        {
+          "columnName": "WidthValue",
+          "value": "0"
+        },
+        {
+          "columnName": "GroupWidthRelevant",
+          "value": "true"
+        },
+        {
+          "columnName": "DockToPosition",
+          "value": "1"
+        },
+        {
+          "columnName": "MyDockingVector",
+          "value": "LeftBottom"
+        },
+        {
+          "columnName": "NeighbourDockingVector",
+          "value": "RightBottom"
+        },
+        {
+          "columnName": "AdjustmentId",
+          "value": "DoorLeft"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GenerationLogic",
+          "value": "Kitchen"
+        },
+        {
+          "columnName": "in_MinTargetLength",
+          "value": "3001"
+        },
+        {
+          "columnName": "in_MaxTargetLength",
+          "value": "3300"
+        },
+        {
+          "columnName": "Position",
+          "value": "3"
+        },
+        {
+          "columnName": "ArticleId",
+          "value": "SUBA60"
+        },
+        {
+          "columnName": "WidthMode",
+          "value": "Fixed"
+        },
+        {
+          "columnName": "WidthValue",
+          "value": "600"
+        },
+        {
+          "columnName": "GroupWidthRelevant",
+          "value": "true"
+        },
+        {
+          "columnName": "DockToPosition",
+          "value": "2"
+        },
+        {
+          "columnName": "MyDockingVector",
+          "value": "LeftBottom"
+        },
+        {
+          "columnName": "NeighbourDockingVector",
+          "value": "RightBottom"
+        },
+        {
+          "columnName": "AdjustmentId",
+          "value": "None"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GenerationLogic",
+          "value": "Kitchen"
+        },
+        {
+          "columnName": "in_MinTargetLength",
+          "value": "3001"
+        },
+        {
+          "columnName": "in_MaxTargetLength",
+          "value": "3300"
+        },
+        {
+          "columnName": "Position",
+          "value": "4"
+        },
+        {
+          "columnName": "ArticleId",
+          "value": "US2A60"
+        },
+        {
+          "columnName": "WidthMode",
+          "value": "Fixed"
+        },
+        {
+          "columnName": "WidthValue",
+          "value": "600"
+        },
+        {
+          "columnName": "GroupWidthRelevant",
+          "value": "true"
+        },
+        {
+          "columnName": "DockToPosition",
+          "value": "3"
+        },
+        {
+          "columnName": "MyDockingVector",
+          "value": "LeftBottom"
+        },
+        {
+          "columnName": "NeighbourDockingVector",
+          "value": "RightBottom"
+        },
+        {
+          "columnName": "AdjustmentId",
+          "value": "None"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GenerationLogic",
+          "value": "Kitchen"
+        },
+        {
+          "columnName": "in_MinTargetLength",
+          "value": "3001"
+        },
+        {
+          "columnName": "in_MaxTargetLength",
+          "value": "3300"
+        },
+        {
+          "columnName": "Position",
+          "value": "5"
+        },
+        {
+          "columnName": "ArticleId",
+          "value": "UKS2A60"
+        },
+        {
+          "columnName": "WidthMode",
+          "value": "Fixed"
+        },
+        {
+          "columnName": "WidthValue",
+          "value": "600"
+        },
+        {
+          "columnName": "GroupWidthRelevant",
+          "value": "true"
+        },
+        {
+          "columnName": "DockToPosition",
+          "value": "4"
+        },
+        {
+          "columnName": "MyDockingVector",
+          "value": "LeftBottom"
+        },
+        {
+          "columnName": "NeighbourDockingVector",
+          "value": "RightBottom"
+        },
+        {
+          "columnName": "AdjustmentId",
+          "value": "None"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GenerationLogic",
+          "value": "Kitchen"
+        },
+        {
+          "columnName": "in_MinTargetLength",
+          "value": "3001"
+        },
+        {
+          "columnName": "in_MaxTargetLength",
+          "value": "3300"
+        },
+        {
+          "columnName": "Position",
+          "value": "6"
+        },
+        {
+          "columnName": "ArticleId",
+          "value": "US2A30"
+        },
+        {
+          "columnName": "WidthMode",
+          "value": "Fixed"
+        },
+        {
+          "columnName": "WidthValue",
+          "value": "300"
+        },
+        {
+          "columnName": "GroupWidthRelevant",
+          "value": "true"
+        },
+        {
+          "columnName": "DockToPosition",
+          "value": "5"
+        },
+        {
+          "columnName": "MyDockingVector",
+          "value": "LeftBottom"
+        },
+        {
+          "columnName": "NeighbourDockingVector",
+          "value": "RightBottom"
+        },
+        {
+          "columnName": "AdjustmentId",
+          "value": "None"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GenerationLogic",
+          "value": "Kitchen"
+        },
+        {
+          "columnName": "in_MinTargetLength",
+          "value": "3001"
+        },
+        {
+          "columnName": "in_MaxTargetLength",
+          "value": "3300"
+        },
+        {
+          "columnName": "Position",
+          "value": "7"
+        },
+        {
+          "columnName": "ArticleId",
+          "value": "OTB30"
+        },
+        {
+          "columnName": "WidthMode",
+          "value": "Adjusted"
+        },
+        {
+          "columnName": "WidthValue",
+          "value": "0"
+        },
+        {
+          "columnName": "GroupWidthRelevant",
+          "value": "false"
+        },
+        {
+          "columnName": "DockToPosition",
+          "value": "1"
+        },
+        {
+          "columnName": "MyDockingVector",
+          "value": "LeftTop"
+        },
+        {
+          "columnName": "NeighbourDockingVector",
+          "value": "RightTop"
+        },
+        {
+          "columnName": "AdjustmentId",
+          "value": "DoorLeft"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GenerationLogic",
+          "value": "Kitchen"
+        },
+        {
+          "columnName": "in_MinTargetLength",
+          "value": "3001"
+        },
+        {
+          "columnName": "in_MaxTargetLength",
+          "value": "3300"
+        },
+        {
+          "columnName": "Position",
+          "value": "8"
+        },
+        {
+          "columnName": "ArticleId",
+          "value": "OTB60"
+        },
+        {
+          "columnName": "WidthMode",
+          "value": "Fixed"
+        },
+        {
+          "columnName": "WidthValue",
+          "value": "600"
+        },
+        {
+          "columnName": "GroupWidthRelevant",
+          "value": "false"
+        },
+        {
+          "columnName": "DockToPosition",
+          "value": "7"
+        },
+        {
+          "columnName": "MyDockingVector",
+          "value": "LeftTop"
+        },
+        {
+          "columnName": "NeighbourDockingVector",
+          "value": "RightTop"
+        },
+        {
+          "columnName": "AdjustmentId",
+          "value": "DoorRight"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GenerationLogic",
+          "value": "Kitchen"
+        },
+        {
+          "columnName": "in_MinTargetLength",
+          "value": "3001"
+        },
+        {
+          "columnName": "in_MaxTargetLength",
+          "value": "3300"
+        },
+        {
+          "columnName": "Position",
+          "value": "9"
+        },
+        {
+          "columnName": "ArticleId",
+          "value": "OTB60"
+        },
+        {
+          "columnName": "WidthMode",
+          "value": "Fixed"
+        },
+        {
+          "columnName": "WidthValue",
+          "value": "600"
+        },
+        {
+          "columnName": "GroupWidthRelevant",
+          "value": "false"
+        },
+        {
+          "columnName": "DockToPosition",
+          "value": "8"
+        },
+        {
+          "columnName": "MyDockingVector",
+          "value": "LeftTop"
+        },
+        {
+          "columnName": "NeighbourDockingVector",
+          "value": "RightTop"
+        },
+        {
+          "columnName": "AdjustmentId",
+          "value": "DoorRight"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GenerationLogic",
+          "value": "Kitchen"
+        },
+        {
+          "columnName": "in_MinTargetLength",
+          "value": "3301"
+        },
+        {
+          "columnName": "in_MaxTargetLength",
+          "value": "3600"
+        },
+        {
+          "columnName": "Position",
+          "value": "1"
+        },
+        {
+          "columnName": "ArticleId",
+          "value": "HOTS2AB60"
+        },
+        {
+          "columnName": "WidthMode",
+          "value": "Fixed"
+        },
+        {
+          "columnName": "WidthValue",
+          "value": "600"
+        },
+        {
+          "columnName": "GroupWidthRelevant",
+          "value": "true"
+        },
+        {
+          "columnName": "DockToPosition",
+          "value": "0"
+        },
+        {
+          "columnName": "MyDockingVector",
+          "value": "LeftBottom"
+        },
+        {
+          "columnName": "NeighbourDockingVector",
+          "value": "RightBottom"
+        },
+        {
+          "columnName": "AdjustmentId",
+          "value": "DoorLeft"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GenerationLogic",
+          "value": "Kitchen"
+        },
+        {
+          "columnName": "in_MinTargetLength",
+          "value": "3301"
+        },
+        {
+          "columnName": "in_MaxTargetLength",
+          "value": "3600"
+        },
+        {
+          "columnName": "Position",
+          "value": "2"
+        },
+        {
+          "columnName": "ArticleId",
+          "value": "UTB30"
+        },
+        {
+          "columnName": "WidthMode",
+          "value": "Adjusted"
+        },
+        {
+          "columnName": "WidthValue",
+          "value": "0"
+        },
+        {
+          "columnName": "GroupWidthRelevant",
+          "value": "true"
+        },
+        {
+          "columnName": "DockToPosition",
+          "value": "1"
+        },
+        {
+          "columnName": "MyDockingVector",
+          "value": "LeftBottom"
+        },
+        {
+          "columnName": "NeighbourDockingVector",
+          "value": "RightBottom"
+        },
+        {
+          "columnName": "AdjustmentId",
+          "value": "DoorLeft"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GenerationLogic",
+          "value": "Kitchen"
+        },
+        {
+          "columnName": "in_MinTargetLength",
+          "value": "3301"
+        },
+        {
+          "columnName": "in_MaxTargetLength",
+          "value": "3600"
+        },
+        {
+          "columnName": "Position",
+          "value": "3"
+        },
+        {
+          "columnName": "ArticleId",
+          "value": "SUBA60"
+        },
+        {
+          "columnName": "WidthMode",
+          "value": "Fixed"
+        },
+        {
+          "columnName": "WidthValue",
+          "value": "600"
+        },
+        {
+          "columnName": "GroupWidthRelevant",
+          "value": "true"
+        },
+        {
+          "columnName": "DockToPosition",
+          "value": "2"
+        },
+        {
+          "columnName": "MyDockingVector",
+          "value": "LeftBottom"
+        },
+        {
+          "columnName": "NeighbourDockingVector",
+          "value": "RightBottom"
+        },
+        {
+          "columnName": "AdjustmentId",
+          "value": "None"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GenerationLogic",
+          "value": "Kitchen"
+        },
+        {
+          "columnName": "in_MinTargetLength",
+          "value": "3301"
+        },
+        {
+          "columnName": "in_MaxTargetLength",
+          "value": "3600"
+        },
+        {
+          "columnName": "Position",
+          "value": "4"
+        },
+        {
+          "columnName": "ArticleId",
+          "value": "US2A60"
+        },
+        {
+          "columnName": "WidthMode",
+          "value": "Fixed"
+        },
+        {
+          "columnName": "WidthValue",
+          "value": "600"
+        },
+        {
+          "columnName": "GroupWidthRelevant",
+          "value": "true"
+        },
+        {
+          "columnName": "DockToPosition",
+          "value": "3"
+        },
+        {
+          "columnName": "MyDockingVector",
+          "value": "LeftBottom"
+        },
+        {
+          "columnName": "NeighbourDockingVector",
+          "value": "RightBottom"
+        },
+        {
+          "columnName": "AdjustmentId",
+          "value": "None"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GenerationLogic",
+          "value": "Kitchen"
+        },
+        {
+          "columnName": "in_MinTargetLength",
+          "value": "3301"
+        },
+        {
+          "columnName": "in_MaxTargetLength",
+          "value": "3600"
+        },
+        {
+          "columnName": "Position",
+          "value": "5"
+        },
+        {
+          "columnName": "ArticleId",
+          "value": "UKS2A60"
+        },
+        {
+          "columnName": "WidthMode",
+          "value": "Fixed"
+        },
+        {
+          "columnName": "WidthValue",
+          "value": "600"
+        },
+        {
+          "columnName": "GroupWidthRelevant",
+          "value": "true"
+        },
+        {
+          "columnName": "DockToPosition",
+          "value": "4"
+        },
+        {
+          "columnName": "MyDockingVector",
+          "value": "LeftBottom"
+        },
+        {
+          "columnName": "NeighbourDockingVector",
+          "value": "RightBottom"
+        },
+        {
+          "columnName": "AdjustmentId",
+          "value": "None"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GenerationLogic",
+          "value": "Kitchen"
+        },
+        {
+          "columnName": "in_MinTargetLength",
+          "value": "3301"
+        },
+        {
+          "columnName": "in_MaxTargetLength",
+          "value": "3600"
+        },
+        {
+          "columnName": "Position",
+          "value": "6"
+        },
+        {
+          "columnName": "ArticleId",
+          "value": "US2A60"
+        },
+        {
+          "columnName": "WidthMode",
+          "value": "Fixed"
+        },
+        {
+          "columnName": "WidthValue",
+          "value": "600"
+        },
+        {
+          "columnName": "GroupWidthRelevant",
+          "value": "true"
+        },
+        {
+          "columnName": "DockToPosition",
+          "value": "5"
+        },
+        {
+          "columnName": "MyDockingVector",
+          "value": "LeftBottom"
+        },
+        {
+          "columnName": "NeighbourDockingVector",
+          "value": "RightBottom"
+        },
+        {
+          "columnName": "AdjustmentId",
+          "value": "None"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GenerationLogic",
+          "value": "Kitchen"
+        },
+        {
+          "columnName": "in_MinTargetLength",
+          "value": "3301"
+        },
+        {
+          "columnName": "in_MaxTargetLength",
+          "value": "3600"
+        },
+        {
+          "columnName": "Position",
+          "value": "7"
+        },
+        {
+          "columnName": "ArticleId",
+          "value": "OTB30"
+        },
+        {
+          "columnName": "WidthMode",
+          "value": "Adjusted"
+        },
+        {
+          "columnName": "WidthValue",
+          "value": "0"
+        },
+        {
+          "columnName": "GroupWidthRelevant",
+          "value": "false"
+        },
+        {
+          "columnName": "DockToPosition",
+          "value": "1"
+        },
+        {
+          "columnName": "MyDockingVector",
+          "value": "LeftTop"
+        },
+        {
+          "columnName": "NeighbourDockingVector",
+          "value": "RightTop"
+        },
+        {
+          "columnName": "AdjustmentId",
+          "value": "DoorLeft"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GenerationLogic",
+          "value": "Kitchen"
+        },
+        {
+          "columnName": "in_MinTargetLength",
+          "value": "3301"
+        },
+        {
+          "columnName": "in_MaxTargetLength",
+          "value": "3600"
+        },
+        {
+          "columnName": "Position",
+          "value": "8"
+        },
+        {
+          "columnName": "ArticleId",
+          "value": "OTB60"
+        },
+        {
+          "columnName": "WidthMode",
+          "value": "Fixed"
+        },
+        {
+          "columnName": "WidthValue",
+          "value": "600"
+        },
+        {
+          "columnName": "GroupWidthRelevant",
+          "value": "false"
+        },
+        {
+          "columnName": "DockToPosition",
+          "value": "7"
+        },
+        {
+          "columnName": "MyDockingVector",
+          "value": "LeftTop"
+        },
+        {
+          "columnName": "NeighbourDockingVector",
+          "value": "RightTop"
+        },
+        {
+          "columnName": "AdjustmentId",
+          "value": "DoorRight"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GenerationLogic",
+          "value": "Kitchen"
+        },
+        {
+          "columnName": "in_MinTargetLength",
+          "value": "3301"
+        },
+        {
+          "columnName": "in_MaxTargetLength",
+          "value": "3600"
+        },
+        {
+          "columnName": "Position",
+          "value": "9"
+        },
+        {
+          "columnName": "ArticleId",
+          "value": "OTB60"
+        },
+        {
+          "columnName": "WidthMode",
+          "value": "Fixed"
+        },
+        {
+          "columnName": "WidthValue",
+          "value": "600"
+        },
+        {
+          "columnName": "GroupWidthRelevant",
+          "value": "false"
+        },
+        {
+          "columnName": "DockToPosition",
+          "value": "8"
+        },
+        {
+          "columnName": "MyDockingVector",
+          "value": "LeftTop"
+        },
+        {
+          "columnName": "NeighbourDockingVector",
+          "value": "RightTop"
+        },
+        {
+          "columnName": "AdjustmentId",
+          "value": "DoorRight"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GenerationLogic",
+          "value": "Kitchen"
+        },
+        {
+          "columnName": "in_MinTargetLength",
+          "value": "2400"
+        },
+        {
+          "columnName": "in_MaxTargetLength",
+          "value": "3000"
+        },
+        {
+          "columnName": "Position",
+          "value": "1"
+        },
+        {
+          "columnName": "ArticleId",
+          "value": "US2A60"
+        },
+        {
+          "columnName": "WidthMode",
+          "value": "Adjusted"
+        },
+        {
+          "columnName": "WidthValue",
+          "value": "0"
+        },
+        {
+          "columnName": "GroupWidthRelevant",
+          "value": "true"
+        },
+        {
+          "columnName": "DockToPosition",
+          "value": "0"
+        },
+        {
+          "columnName": "MyDockingVector",
+          "value": "LeftBottom"
+        },
+        {
+          "columnName": "NeighbourDockingVector",
+          "value": "RightBottom"
+        },
+        {
+          "columnName": "AdjustmentId",
+          "value": "None"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GenerationLogic",
+          "value": "Kitchen"
+        },
+        {
+          "columnName": "in_MinTargetLength",
+          "value": "2400"
+        },
+        {
+          "columnName": "in_MaxTargetLength",
+          "value": "3000"
+        },
+        {
+          "columnName": "Position",
+          "value": "2"
+        },
+        {
+          "columnName": "ArticleId",
+          "value": "SUBA60"
+        },
+        {
+          "columnName": "WidthMode",
+          "value": "Fixed"
+        },
+        {
+          "columnName": "WidthValue",
+          "value": "600"
+        },
+        {
+          "columnName": "GroupWidthRelevant",
+          "value": "true"
+        },
+        {
+          "columnName": "DockToPosition",
+          "value": "1"
+        },
+        {
+          "columnName": "MyDockingVector",
+          "value": "LeftBottom"
+        },
+        {
+          "columnName": "NeighbourDockingVector",
+          "value": "RightBottom"
+        },
+        {
+          "columnName": "AdjustmentId",
+          "value": "None"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GenerationLogic",
+          "value": "Kitchen"
+        },
+        {
+          "columnName": "in_MinTargetLength",
+          "value": "2400"
+        },
+        {
+          "columnName": "in_MaxTargetLength",
+          "value": "3000"
+        },
+        {
+          "columnName": "Position",
+          "value": "3"
+        },
+        {
+          "columnName": "ArticleId",
+          "value": "US2A60"
+        },
+        {
+          "columnName": "WidthMode",
+          "value": "Fixed"
+        },
+        {
+          "columnName": "WidthValue",
+          "value": "600"
+        },
+        {
+          "columnName": "GroupWidthRelevant",
+          "value": "true"
+        },
+        {
+          "columnName": "DockToPosition",
+          "value": "2"
+        },
+        {
+          "columnName": "MyDockingVector",
+          "value": "LeftBottom"
+        },
+        {
+          "columnName": "NeighbourDockingVector",
+          "value": "RightBottom"
+        },
+        {
+          "columnName": "AdjustmentId",
+          "value": "None"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GenerationLogic",
+          "value": "Kitchen"
+        },
+        {
+          "columnName": "in_MinTargetLength",
+          "value": "2400"
+        },
+        {
+          "columnName": "in_MaxTargetLength",
+          "value": "3000"
+        },
+        {
+          "columnName": "Position",
+          "value": "4"
+        },
+        {
+          "columnName": "ArticleId",
+          "value": "UKS2A60"
+        },
+        {
+          "columnName": "WidthMode",
+          "value": "Fixed"
+        },
+        {
+          "columnName": "WidthValue",
+          "value": "600"
+        },
+        {
+          "columnName": "GroupWidthRelevant",
+          "value": "true"
+        },
+        {
+          "columnName": "DockToPosition",
+          "value": "3"
+        },
+        {
+          "columnName": "MyDockingVector",
+          "value": "LeftBottom"
+        },
+        {
+          "columnName": "NeighbourDockingVector",
+          "value": "RightBottom"
+        },
+        {
+          "columnName": "AdjustmentId",
+          "value": "None"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_GenerationLogic",
+          "value": "Kitchen"
+        },
+        {
+          "columnName": "in_MinTargetLength",
+          "value": "2400"
+        },
+        {
+          "columnName": "in_MaxTargetLength",
+          "value": "3000"
+        },
+        {
+          "columnName": "Position",
+          "value": "5"
+        },
+        {
+          "columnName": "ArticleId",
+          "value": "US2A60"
+        },
+        {
+          "columnName": "WidthMode",
+          "value": "Adjusted"
+        },
+        {
+          "columnName": "WidthValue",
+          "value": "0"
+        },
+        {
+          "columnName": "GroupWidthRelevant",
+          "value": "true"
+        },
+        {
+          "columnName": "DockToPosition",
+          "value": "4"
+        },
+        {
+          "columnName": "MyDockingVector",
+          "value": "LeftBottom"
+        },
+        {
+          "columnName": "NeighbourDockingVector",
+          "value": "RightBottom"
+        },
+        {
+          "columnName": "AdjustmentId",
+          "value": "None"
+        }
+      ]
+    }
+  ],
+  "dataSource": "Default",
+  "changedAt": "2026-07-06T08:23:50.6499169+00:00"
+}

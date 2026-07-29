@@ -1,0 +1,46 @@
+{
+  "variantId": "mod_FillerType",
+  "shortName": "Filler construction type",
+  "variantTypeId": "Text",
+  "description": "Filler construction type",
+  "restrictionTypeId": "Public",
+  "groupName": "Carcase | Construction",
+  "imageId": "images/Filler.png",
+  "isArray": false,
+  "isPosRelevant": true,
+  "mainAttr": true,
+  "userRight": "Advanced",
+  "implicitRelevant": false,
+  "posView": "Dropdown",
+  "matrix": [],
+  "selections": [
+    {
+      "value": "LShape",
+      "description": "Filler with one front and one side",
+      "shortName": "LShape",
+      "imageId": "images/LShape.jpg",
+      "matrix": []
+    },
+    {
+      "value": "CoverCarcase",
+      "description": "Filler with one front, one sidepanel, one shelftop and one shelf btm",
+      "shortName": "CoverCarcase",
+      "imageId": "images/CoverCarcase.jpg",
+      "matrix": []
+    },
+    {
+      "value": "SupportPanel",
+      "description": "Filler with one front fixed with a support panel",
+      "shortName": "SupportPanel",
+      "imageId": "images/FillerSupport.jpg",
+      "matrix": []
+    },
+    {
+      "value": "CarcaseFlush",
+      "description": "Filler at the carcase level",
+      "shortName": "CarcaseFlush",
+      "imageId": "images/FillerFitting.jpg",
+      "matrix": []
+    }
+  ]
+}

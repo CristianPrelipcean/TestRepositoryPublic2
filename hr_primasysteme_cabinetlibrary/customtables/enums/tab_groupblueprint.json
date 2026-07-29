@@ -1,0 +1,61 @@
+[
+  {
+    "tableName": "tab_GroupBlueprint",
+    "columnId": "AdjustmentId",
+    "refCustomTableName": "tab_GroupAttributeAdjustment",
+    "refColumnId": "in_AdjustmentId"
+  },
+  {
+    "tableName": "tab_GroupBlueprint",
+    "columnId": "MyDockingVector",
+    "enumsJson": [
+      {
+        "value": "LeftBottom"
+      },
+      {
+        "value": "RightBottom"
+      },
+      {
+        "value": "LeftTop"
+      },
+      {
+        "value": "RightTop"
+      }
+    ]
+  },
+  {
+    "tableName": "tab_GroupBlueprint",
+    "columnId": "NeighbourDockingVector",
+    "enumsJson": [
+      {
+        "value": "LeftBottom"
+      },
+      {
+        "value": "RightBottom"
+      },
+      {
+        "value": "LeftTop"
+      },
+      {
+        "value": "RightTop"
+      }
+    ]
+  },
+  {
+    "tableName": "tab_GroupBlueprint",
+    "columnId": "WidthMode",
+    "enumsJson": [
+      {
+        "value": "Fixed"
+      },
+      {
+        "value": "Adjusted"
+      }
+    ]
+  },
+  {
+    "tableName": "tab_GroupBlueprint",
+    "columnId": "in_GenerationLogic",
+    "refColumnId": "Value"
+  }
+]

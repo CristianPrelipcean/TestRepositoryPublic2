@@ -1,0 +1,114 @@
+{
+  "tableName": "tab_ComponentLibrary",
+  "description": "Component Library",
+  "restrictionTypeId": "Public",
+  "groupName": "Processings",
+  "columns": [
+    {
+      "name": "_id",
+      "type": "Integer",
+      "allowNull": false
+    },
+    {
+      "name": "in_ProcessingId",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "ComponentId",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "ComponentMPR",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "XA",
+      "type": "Text",
+      "allowNull": true,
+      "functionDefinition": "(partSelf:parent, part2:parent):number"
+    },
+    {
+      "name": "YA",
+      "type": "Text",
+      "allowNull": true,
+      "functionDefinition": "(partSelf:parent, part2:parent):number"
+    },
+    {
+      "name": "ZA",
+      "type": "Text",
+      "allowNull": true,
+      "functionDefinition": "(partSelf:parent, part2:parent):number"
+    },
+    {
+      "name": "EM",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "KAT",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "KO",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "Side",
+      "type": "Text",
+      "allowNull": true
+    }
+  ],
+  "rows": [
+    {
+      "data": [
+        {
+          "columnName": "in_ProcessingId",
+          "value": "FrontTuscanMilling"
+        },
+        {
+          "columnName": "ComponentId",
+          "value": "FrontTuscanMilling"
+        },
+        {
+          "columnName": "ComponentMPR",
+          "value": "FrontTuscanMilling.mpr"
+        },
+        {
+          "columnName": "XA",
+          "value": "0"
+        },
+        {
+          "columnName": "YA",
+          "value": "0"
+        },
+        {
+          "columnName": "ZA",
+          "value": "0"
+        },
+        {
+          "columnName": "EM",
+          "value": "0"
+        },
+        {
+          "columnName": "KAT",
+          "value": "Komponentenmakro"
+        },
+        {
+          "columnName": "KO",
+          "value": ""
+        },
+        {
+          "columnName": "Side",
+          "value": "Btm"
+        }
+      ]
+    }
+  ],
+  "dataSource": "Default",
+  "changedAt": "2026-01-09T19:11:09.4256396+00:00"
+}

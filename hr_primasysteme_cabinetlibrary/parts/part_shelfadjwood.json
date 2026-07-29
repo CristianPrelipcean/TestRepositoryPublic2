@@ -1,0 +1,111 @@
+{
+  "partCode": "part_ShelfadjWood",
+  "shortName": "Adj shelf wood",
+  "description": "Adjustable shelf wood",
+  "wdt": "XZY",
+  "groupName": "Panels",
+  "imageId": "images/Shelfadj_Wood.png",
+  "model3dImageId": "",
+  "invisible": false,
+  "restrictionTypeId": "Public",
+  "noNcData": false,
+  "partVariants": [
+    {
+      "partVarId": "pa_TopColor",
+      "valueScript": "this.parent.mod_ShelfadjColor",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_BtmColor",
+      "valueScript": "this.parent.mod_ShelfadjColor",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeFrontColor",
+      "valueScript": "this.parent.mod_ShelfadjColor",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeLeftColor",
+      "valueScript": "this.parent.mod_ShelfadjColor",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeBackColor",
+      "valueScript": "this.parent.mod_ShelfadjColor",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeRightColor",
+      "valueScript": "this.parent.mod_ShelfadjColor",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeFrontType",
+      "valueScript": "'CFE'"
+    },
+    {
+      "partVarId": "pa_EdgeLeftType",
+      "valueScript": "'CBE'"
+    },
+    {
+      "partVarId": "pa_EdgeBackType",
+      "valueScript": "'CBE'"
+    },
+    {
+      "partVarId": "pa_EdgeRightType",
+      "valueScript": "'CBE'"
+    },
+    {
+      "partVarId": "pa_EdgeJointType",
+      "valueScript": "'VVVV'"
+    },
+    {
+      "partVarId": "pa_GrainDirection",
+      "valueScript": "'Neutral'",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_Program",
+      "valueScript": "this.parent.mod_CarcaseProgram"
+    },
+    {
+      "partVarId": "pa_BomId",
+      "valueScript": "this.parent.mod_CarcaseId",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_AdditionalInfo1",
+      "valueScript": "'None'",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_ColorGrainGroup",
+      "valueScript": "this.parent.mod_ShelfadjColor_matrix.GrainGroupId",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_ProgramGrainGroup",
+      "valueScript": "this.parent.mod_CarcaseProgram_matrix.GrainGroupId",
+      "isWritable": false
+    }
+  ],
+  "bomData": [
+    {
+      "bomElementTypeId": "bomout_Group",
+      "description": "Output parts / edges / stockparts in relation to the basic_CreateBom setting",
+      "conditionScript": "partSelf._g?.basic_CreateBom != null && partSelf._g.basic_CreateBom !== 'Custom'",
+      "valueScript": "// HOMAG Standard Bom-Generation-Method\r\n//=================================================\r\n\r\n// Type of the Bom-Element (will be checked in order output)\r\nconst elementType='Board';\r\n\r\n// ProductionSite Category (to split the orders for different production sites)\r\nconst elementCategory='';\r\n\r\n// Id of the parent to create the hierarchy\r\nconst parentBomId=part.pa_BomId;\r\n\r\n// Mode from basic setting\r\nconst Mode = partSelf._g?.basic_CreateBom  ? partSelf._g.basic_CreateBom : 'SimpleBoard';\r\n\r\n// Call the function to process the Bom-Element\r\nGlobalFunc.process_BomGeneration(this, part, elementType, elementCategory, parentBomId, Mode, 'Carcase');"
+    }
+  ],
+  "ncData": [
+    {
+      "part2": "part_ShelfAdjPinDrill",
+      "touchName": "FromBottom",
+      "bomElementTypeId": "ncout_Group",
+      "description": "Drill the pin on bottom side of the adjustable shelf",
+      "valueScript": "//====================================================================\n  // Validate processing ID\n  //====================================================================\n\n  const processingId = part2.pa_ProcessingId?.trim();\n  if (!processingId || processingId.toLowerCase() === 'n/a') {\n    return;\n  }\n\n  //====================================================================\n  // Get drilling information\n  //====================================================================\n\n  const drillVertId = GlobalFunc.find_ProcessingMapping(processingId)?.[0]?.ProcessingId ?? '';\n  const drillInfo = GlobalFunc.find_HardwareDrillVertLibrary(drillVertId, 'ShelfAdj')?.[0];\n\n  if (!drillInfo) {\n    return;\n  }\n\n  //====================================================================\n  // Determine drill position\n  //====================================================================\n\n  type ShelfDrillSide = 'Left' | 'Right' | 'Front' | 'Back';\n  const tolerance = 30;\n  let drillSide: ShelfDrillSide;\n\n  if (posRel.x < tolerance) {\n    drillSide = 'Left';\n  }\n  else if (posRel.x > partSelf._dimx - tolerance) {\n    drillSide = 'Right';\n  }\n  else if (posRel.z < tolerance) {\n    drillSide = 'Back';\n  }\n  else {\n    drillSide = 'Front';\n  }\n\n  const offset = drillInfo.XA ?? 0;\n  const positions: Record<ShelfDrillSide, { x: number; y: number }> = {\n    Left:  { x: offset,                    y: posRel.z },\n    Right: { x: partSelf._dimx - offset,   y: posRel.z },\n    Front: { x: posRel.x,                  y: partSelf._dimz - offset },\n    Back:  { x: posRel.x,                  y: offset }\n  };\n  const { x: posX, y: posY } = positions[drillSide];\n\n  //====================================================================\n  // Add vertical drilling\n  //====================================================================\n\n  const drill = this.addncout_DrillVert();\n\n  drill.nc_TOOL = '102';\n  drill.nc_XA = posX;\n  drill.nc_YA = posY;\n  drill.nc_TI = drillInfo.TI;\n  drill.nc_DU = drillInfo.DU;\n  drill.nc_Side = 'Btm';\n\n  drill.nc_BM = drillInfo.matrix_BM || 'LS';\n  drill.nc_WI = drillInfo.matrix_WI ?? 0;\n  drill.nc_AB = drillInfo.matrix_AB ?? 1;\n  drill.nc_LA = drillInfo.matrix_LA ?? 0;\n  drill.nc_MI = drillInfo.matrix_MI ?? 0;\n  drill.nc_KO = drillInfo.matrix_KO || '00';\n\n  //====================================================================\n  // Add visual drilling\n  //====================================================================\n\n  const drilling3D = partSelf.add3DElement('ShelfAdjPinDrilling', drill,\n    posX, 0, posY,\n    drillInfo.DU, drillInfo.TI, drillInfo.DU\n  );\n\n  drilling3D.extrude(`<svg><circle cx=\"0\" cy=\"0\" r=\"${drillInfo.DU / 2}\" /></svg>`, 'y');",
+      "bomExecuteType": "Touch"
+    }
+  ]
+}

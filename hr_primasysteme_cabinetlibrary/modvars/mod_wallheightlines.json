@@ -1,0 +1,94 @@
+{
+  "variantId": "mod_WallHeightLines",
+  "shortName": "Wall height lines",
+  "variantTypeId": "Text",
+  "description": "Defines the wall height lines available for positioning wall mounted cabinets",
+  "restrictionTypeId": "Public",
+  "groupName": "Room Integration",
+  "imageId": "images/HeightLines.png",
+  "assignedGlobalVarId": "basic_WallHeightLines",
+  "isArray": false,
+  "isPosRelevant": true,
+  "mainAttr": false,
+  "userRight": "Simple",
+  "implicitRelevant": false,
+  "posView": "Dropdown",
+  "matrix": [
+    {
+      "id": "LineDefinition",
+      "type": "Text",
+      "shortName": "LineDefinition"
+    },
+    {
+      "id": "LinesFixed",
+      "type": "Bool",
+      "shortName": "LinesFixed",
+      "default": false
+    },
+    {
+      "id": "BaseLine",
+      "type": "Text",
+      "shortName": "BaseLine",
+      "default": "Floor"
+    }
+  ],
+  "selections": [
+    {
+      "value": "FloorLevel",
+      "description": "Stay on the floor",
+      "shortName": "FloorLevel",
+      "matrix": [
+        {
+          "id": "LineDefinition",
+          "value": "0"
+        },
+        {
+          "id": "LinesFixed",
+          "value": true
+        },
+        {
+          "id": "BaseLine",
+          "value": "Floor"
+        }
+      ]
+    },
+    {
+      "value": "WallCabinets",
+      "description": "Fixed lines for wall units",
+      "shortName": "Wall cabinets fixed",
+      "matrix": [
+        {
+          "id": "LineDefinition",
+          "value": "1500_1600_1700"
+        },
+        {
+          "id": "LinesFixed",
+          "value": true
+        },
+        {
+          "id": "BaseLine",
+          "value": "Floor"
+        }
+      ]
+    },
+    {
+      "value": "WallCabinetsPlinthArea",
+      "description": "Lines for wall units",
+      "shortName": "Wall cabinets",
+      "matrix": [
+        {
+          "id": "LineDefinition",
+          "value": "1500_1600_1700"
+        },
+        {
+          "id": "LinesFixed",
+          "value": false
+        },
+        {
+          "id": "BaseLine",
+          "value": "PlinthAreaHeight"
+        }
+      ]
+    }
+  ]
+}

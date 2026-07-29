@@ -1,0 +1,111 @@
+{
+  "variantId": "mod_PulloutType",
+  "shortName": "Pull out type",
+  "variantTypeId": "Text",
+  "description": "Type of the pull out type",
+  "restrictionTypeId": "Public",
+  "groupName": "Front | Construction",
+  "imageId": "",
+  "isArray": false,
+  "isPosRelevant": true,
+  "mainAttr": false,
+  "userRight": "Master",
+  "implicitRelevant": false,
+  "matrix": [
+    {
+      "id": "PullOutDesign",
+      "type": "Text",
+      "shortName": "Design",
+      "default": "Fixed"
+    },
+    {
+      "id": "PullOutElementColor",
+      "type": "Text",
+      "shortName": "Color",
+      "default": "Fixed"
+    },
+    {
+      "id": "PullOutConnectionPosition",
+      "type": "Text",
+      "shortName": "Direction",
+      "default": "Fixed"
+    },
+    {
+      "id": "PushToOpenAvailable",
+      "type": "Bool",
+      "shortName": "Push to open available",
+      "default": false
+    }
+  ],
+  "selections": [
+    {
+      "value": "No15",
+      "description": "Type: No15",
+      "shortName": "No15",
+      "matrix": [
+        {
+          "id": "PullOutDesign",
+          "value": "Attribute"
+        },
+        {
+          "id": "PullOutElementColor",
+          "value": "Fixed"
+        },
+        {
+          "id": "PullOutConnectionPosition",
+          "value": "Fixed"
+        },
+        {
+          "id": "PushToOpenAvailable",
+          "value": true
+        }
+      ]
+    },
+    {
+      "value": "Dispensa",
+      "description": "Type: Dispensa",
+      "shortName": "Dispensa",
+      "matrix": [
+        {
+          "id": "PullOutDesign",
+          "value": "Fixed"
+        },
+        {
+          "id": "PullOutElementColor",
+          "value": "Attribute"
+        },
+        {
+          "id": "PullOutConnectionPosition",
+          "value": "Fixed"
+        },
+        {
+          "id": "PushToOpenAvailable",
+          "value": true
+        }
+      ]
+    },
+    {
+      "value": "Pinello",
+      "description": "Type: Pinello",
+      "shortName": "Pinello",
+      "matrix": [
+        {
+          "id": "PullOutDesign",
+          "value": "Attribute"
+        },
+        {
+          "id": "PullOutElementColor",
+          "value": "Fixed"
+        },
+        {
+          "id": "PullOutConnectionPosition",
+          "value": "Attribute"
+        },
+        {
+          "id": "PushToOpenAvailable",
+          "value": false
+        }
+      ]
+    }
+  ]
+}

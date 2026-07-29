@@ -1,0 +1,50 @@
+{
+  "variantId": "mod_DoorDirection",
+  "shortName": "Door direction",
+  "variantTypeId": "Text",
+  "description": "Direction of the door",
+  "restrictionTypeId": "Internal",
+  "groupName": "Front | Construction",
+  "imageId": "images/DoorDirection.jpg",
+  "isArray": false,
+  "isPosRelevant": false,
+  "userRight": "Master",
+  "matrix": [],
+  "selections": [
+    {
+      "value": "Left",
+      "description": "Door left hinged",
+      "shortName": "Left",
+      "imageId": "images/Left.jpg",
+      "matrix": []
+    },
+    {
+      "value": "Right",
+      "description": "Door right hinged",
+      "shortName": "Right",
+      "imageId": "images/Right.jpg",
+      "matrix": []
+    },
+    {
+      "value": "LeftRight",
+      "description": "First Door left hinged, Second Door right hinged",
+      "shortName": "Left & Right",
+      "imageId": "images/LeftRight.jpg",
+      "matrix": []
+    },
+    {
+      "value": "LeftLeft",
+      "description": "First Door left hinged, Second Door left hinged",
+      "shortName": "Left & Left",
+      "imageId": "images/LeftLeft.jpg",
+      "matrix": []
+    },
+    {
+      "value": "RightRight",
+      "description": "First Door right hinged, Second Door right hinged",
+      "shortName": "Right & Right",
+      "imageId": "images/RightRight.jpg",
+      "matrix": []
+    }
+  ]
+}

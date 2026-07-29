@@ -1,0 +1,653 @@
+{
+  "tableName": "tab_SawingVertLibrary",
+  "description": "Library for NC Sawing Vertical",
+  "restrictionTypeId": "Public",
+  "groupName": "Processings",
+  "columns": [
+    {
+      "name": "_id",
+      "type": "Integer",
+      "allowNull": false
+    },
+    {
+      "name": "in_ProcessingId",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_Part2Position",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "Side",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "XA",
+      "type": "Text",
+      "allowNull": true,
+      "functionDefinition": "(partSelf: any, part2: any, posRel: any):number"
+    },
+    {
+      "name": "YA",
+      "type": "Text",
+      "allowNull": true,
+      "functionDefinition": "(partSelf: any, part2: any, posRel: any):number"
+    },
+    {
+      "name": "XE",
+      "type": "Text",
+      "allowNull": true,
+      "functionDefinition": "(partSelf: any, part2: any, posRel: any):number"
+    },
+    {
+      "name": "YE",
+      "type": "Text",
+      "allowNull": true,
+      "functionDefinition": "(partSelf: any, part2: any, posRel: any):number"
+    },
+    {
+      "name": "TI",
+      "type": "Text",
+      "allowNull": true,
+      "functionDefinition": "(partSelf: any, part2: any, posRel: any):number"
+    },
+    {
+      "name": "NB",
+      "type": "Text",
+      "allowNull": true,
+      "functionDefinition": "(partSelf: any, part2: any, posRel: any):number"
+    },
+    {
+      "name": "EM",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "RK",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "matrix_KO",
+      "type": "Text",
+      "allowNull": true
+    }
+  ],
+  "rows": [
+    {
+      "data": [
+        {
+          "columnName": "in_ProcessingId",
+          "value": "BackwallGrooveSidepanelleft"
+        },
+        {
+          "columnName": "in_Part2Position",
+          "value": "Right"
+        },
+        {
+          "columnName": "Side",
+          "value": "Top"
+        },
+        {
+          "columnName": "XA",
+          "value": "partSelf._dimy - posRel.y - part2._dimy - partSelf.g.basic_BackwallGrooveGapDepth"
+        },
+        {
+          "columnName": "YA",
+          "value": "partSelf._dimz - posRel.z - part2._dimz"
+        },
+        {
+          "columnName": "XE",
+          "value": "partSelf._dimy - posRel.y + partSelf.g.basic_BackwallGrooveGapDepth"
+        },
+        {
+          "columnName": "YE",
+          "value": "partSelf._dimz - posRel.z - part2._dimz"
+        },
+        {
+          "columnName": "TI",
+          "value": "partSelf._dimx - posRel.x + partSelf.g.basic_BackwallGrooveGapDepth"
+        },
+        {
+          "columnName": "NB",
+          "value": "part2._dimz + partSelf.g.basic_BackwallGrooveGapThk"
+        },
+        {
+          "columnName": "EM",
+          "value": "MOD1"
+        },
+        {
+          "columnName": "RK",
+          "value": "WRKL"
+        },
+        {
+          "columnName": "matrix_KO",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ProcessingId",
+          "value": "BackwallGrooveSidepanelright"
+        },
+        {
+          "columnName": "in_Part2Position",
+          "value": "Left"
+        },
+        {
+          "columnName": "Side",
+          "value": "Top"
+        },
+        {
+          "columnName": "XA",
+          "value": "posRel.y - partSelf.g.basic_BackwallGrooveGapDepth"
+        },
+        {
+          "columnName": "YA",
+          "value": "partSelf._dimz - posRel.z - part2._dimz"
+        },
+        {
+          "columnName": "XE",
+          "value": "posRel.y + part2._dimy + partSelf.g.basic_BackwallGrooveGapDepth"
+        },
+        {
+          "columnName": "YE",
+          "value": "partSelf._dimz - posRel.z - part2._dimz"
+        },
+        {
+          "columnName": "TI",
+          "value": "part2._dimx + posRel.x + partSelf.g.basic_BackwallGrooveGapDepth"
+        },
+        {
+          "columnName": "NB",
+          "value": "part2._dimz + partSelf.g.basic_BackwallGrooveGapThk"
+        },
+        {
+          "columnName": "EM",
+          "value": "MOD1"
+        },
+        {
+          "columnName": "RK",
+          "value": "WRKL"
+        },
+        {
+          "columnName": "matrix_KO",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ProcessingId",
+          "value": "BackwallGrooveSidepanelmiddle"
+        },
+        {
+          "columnName": "in_Part2Position",
+          "value": "Left"
+        },
+        {
+          "columnName": "Side",
+          "value": "Top"
+        },
+        {
+          "columnName": "XA",
+          "value": "posRel.y - partSelf.g.basic_BackwallGrooveGapDepth"
+        },
+        {
+          "columnName": "YA",
+          "value": "partSelf._dimz - posRel.z - part2._dimz"
+        },
+        {
+          "columnName": "XE",
+          "value": "posRel.y + part2._dimy + partSelf.g.basic_BackwallGrooveGapDepth"
+        },
+        {
+          "columnName": "YE",
+          "value": "partSelf._dimz - posRel.z - part2._dimz"
+        },
+        {
+          "columnName": "TI",
+          "value": "part2._dimx + posRel.x + partSelf.g.basic_BackwallGrooveGapDepth"
+        },
+        {
+          "columnName": "NB",
+          "value": "part2._dimz + partSelf.g.basic_BackwallGrooveGapThk"
+        },
+        {
+          "columnName": "EM",
+          "value": "MOD1"
+        },
+        {
+          "columnName": "RK",
+          "value": "WRKL"
+        },
+        {
+          "columnName": "matrix_KO",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ProcessingId",
+          "value": "BackwallGrooveSidepanelmiddle"
+        },
+        {
+          "columnName": "in_Part2Position",
+          "value": "Right"
+        },
+        {
+          "columnName": "Side",
+          "value": "Btm"
+        },
+        {
+          "columnName": "XA",
+          "value": "posRel.y - partSelf.g.basic_BackwallGrooveGapDepth"
+        },
+        {
+          "columnName": "YA",
+          "value": "partSelf._dimz - posRel.z - part2._dimz"
+        },
+        {
+          "columnName": "XE",
+          "value": "posRel.y + part2._dimy + partSelf.g.basic_BackwallGrooveGapDepth"
+        },
+        {
+          "columnName": "YE",
+          "value": "partSelf._dimz - posRel.z - part2._dimz"
+        },
+        {
+          "columnName": "TI",
+          "value": "partSelf._dimx - posRel.x + partSelf.g.basic_BackwallGrooveGapDepth"
+        },
+        {
+          "columnName": "NB",
+          "value": "part2._dimz + partSelf.g.basic_BackwallGrooveGapThk"
+        },
+        {
+          "columnName": "EM",
+          "value": "MOD1"
+        },
+        {
+          "columnName": "RK",
+          "value": "WRKL"
+        },
+        {
+          "columnName": "matrix_KO",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ProcessingId",
+          "value": "BackwallGrooveShelfbtm"
+        },
+        {
+          "columnName": "in_Part2Position",
+          "value": "Top"
+        },
+        {
+          "columnName": "Side",
+          "value": "Top"
+        },
+        {
+          "columnName": "XA",
+          "value": "posRel.x - partSelf.g.basic_BackwallGrooveGapDepth"
+        },
+        {
+          "columnName": "YA",
+          "value": "partSelf._dimz - posRel.z - part2._dimz"
+        },
+        {
+          "columnName": "XE",
+          "value": "posRel.x + part2._dimx + partSelf.g.basic_BackwallGrooveGapDepth"
+        },
+        {
+          "columnName": "YE",
+          "value": "partSelf._dimz - posRel.z - part2._dimz"
+        },
+        {
+          "columnName": "TI",
+          "value": "partSelf._dimy - posRel.y + partSelf.g.basic_BackwallGrooveGapDepth"
+        },
+        {
+          "columnName": "NB",
+          "value": "part2._dimz + partSelf.g.basic_BackwallGrooveGapThk"
+        },
+        {
+          "columnName": "EM",
+          "value": "MOD1"
+        },
+        {
+          "columnName": "RK",
+          "value": "WRKL"
+        },
+        {
+          "columnName": "matrix_KO",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ProcessingId",
+          "value": "BackwallGrooveShelftop"
+        },
+        {
+          "columnName": "in_Part2Position",
+          "value": "Btm"
+        },
+        {
+          "columnName": "Side",
+          "value": "Top"
+        },
+        {
+          "columnName": "XA",
+          "value": "posRel.x - partSelf.g.basic_BackwallGrooveGapDepth"
+        },
+        {
+          "columnName": "YA",
+          "value": "posRel.z + part2._dimz"
+        },
+        {
+          "columnName": "XE",
+          "value": "posRel.x + part2._dimx + partSelf.g.basic_BackwallGrooveGapDepth"
+        },
+        {
+          "columnName": "YE",
+          "value": "posRel.z + part2._dimz"
+        },
+        {
+          "columnName": "TI",
+          "value": "part2._dimy + posRel.y + partSelf.g.basic_BackwallGrooveGapDepth"
+        },
+        {
+          "columnName": "NB",
+          "value": "part2._dimz + partSelf.g.basic_BackwallGrooveGapThk"
+        },
+        {
+          "columnName": "EM",
+          "value": "MOD1"
+        },
+        {
+          "columnName": "RK",
+          "value": "WRKR"
+        },
+        {
+          "columnName": "matrix_KO",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ProcessingId",
+          "value": "BackwallGrooveShelffixed"
+        },
+        {
+          "columnName": "in_Part2Position",
+          "value": "Btm"
+        },
+        {
+          "columnName": "Side",
+          "value": "Top"
+        },
+        {
+          "columnName": "XA",
+          "value": "posRel.x - partSelf.g.basic_BackwallGrooveGapDepth"
+        },
+        {
+          "columnName": "YA",
+          "value": "posRel.z + part2._dimz"
+        },
+        {
+          "columnName": "XE",
+          "value": "posRel.x + part2._dimx + partSelf.g.basic_BackwallGrooveGapDepth"
+        },
+        {
+          "columnName": "YE",
+          "value": "posRel.z + part2._dimz"
+        },
+        {
+          "columnName": "TI",
+          "value": "part2._dimy + posRel.y + partSelf.g.basic_BackwallGrooveGapDepth"
+        },
+        {
+          "columnName": "NB",
+          "value": "part2._dimz + partSelf.g.basic_BackwallGrooveGapThk"
+        },
+        {
+          "columnName": "EM",
+          "value": "MOD1"
+        },
+        {
+          "columnName": "RK",
+          "value": "WRKR"
+        },
+        {
+          "columnName": "matrix_KO",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ProcessingId",
+          "value": "BackwallGrooveShelffixed"
+        },
+        {
+          "columnName": "in_Part2Position",
+          "value": "Top"
+        },
+        {
+          "columnName": "Side",
+          "value": "Btm"
+        },
+        {
+          "columnName": "XA",
+          "value": "posRel.x - partSelf.g.basic_BackwallGrooveGapDepth"
+        },
+        {
+          "columnName": "YA",
+          "value": "posRel.z + part2._dimz"
+        },
+        {
+          "columnName": "XE",
+          "value": "posRel.x + part2._dimx + partSelf.g.basic_BackwallGrooveGapDepth"
+        },
+        {
+          "columnName": "YE",
+          "value": "posRel.z + part2._dimz"
+        },
+        {
+          "columnName": "TI",
+          "value": "partSelf._dimy - posRel.y + partSelf.g.basic_BackwallGrooveGapDepth"
+        },
+        {
+          "columnName": "NB",
+          "value": "part2._dimz + partSelf.g.basic_BackwallGrooveGapThk"
+        },
+        {
+          "columnName": "EM",
+          "value": "MOD1"
+        },
+        {
+          "columnName": "RK",
+          "value": "WRKR"
+        },
+        {
+          "columnName": "matrix_KO",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ProcessingId",
+          "value": "SlopedCeilingShapeSidepanelleft"
+        },
+        {
+          "columnName": "in_Part2Position",
+          "value": "All"
+        },
+        {
+          "columnName": "Side",
+          "value": "Top"
+        },
+        {
+          "columnName": "XA",
+          "value": "0"
+        },
+        {
+          "columnName": "YA",
+          "value": "partSelf.pa_TopDepth"
+        },
+        {
+          "columnName": "XE",
+          "value": "partSelf._dimy - partSelf.pa_BackHeight"
+        },
+        {
+          "columnName": "YE",
+          "value": "partSelf._dimz"
+        },
+        {
+          "columnName": "TI",
+          "value": "partSelf._dimx + 2"
+        },
+        {
+          "columnName": "NB",
+          "value": "5"
+        },
+        {
+          "columnName": "EM",
+          "value": "MOD2"
+        },
+        {
+          "columnName": "RK",
+          "value": "WRKL"
+        },
+        {
+          "columnName": "matrix_KO",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ProcessingId",
+          "value": "SlopedCeilingShapeSidepanelright"
+        },
+        {
+          "columnName": "in_Part2Position",
+          "value": "All"
+        },
+        {
+          "columnName": "Side",
+          "value": "Top"
+        },
+        {
+          "columnName": "XA",
+          "value": "partSelf.pa_BackHeight"
+        },
+        {
+          "columnName": "YA",
+          "value": "partSelf._dimz"
+        },
+        {
+          "columnName": "XE",
+          "value": "partSelf._dimy"
+        },
+        {
+          "columnName": "YE",
+          "value": "partSelf.pa_TopDepth"
+        },
+        {
+          "columnName": "TI",
+          "value": "partSelf._dimx + 2"
+        },
+        {
+          "columnName": "NB",
+          "value": "5"
+        },
+        {
+          "columnName": "EM",
+          "value": "MOD2"
+        },
+        {
+          "columnName": "RK",
+          "value": "WRKL"
+        },
+        {
+          "columnName": "matrix_KO",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ProcessingId",
+          "value": "SlopedCeilingShapeSidepanelmiddle"
+        },
+        {
+          "columnName": "in_Part2Position",
+          "value": "All"
+        },
+        {
+          "columnName": "Side",
+          "value": "Top"
+        },
+        {
+          "columnName": "XA",
+          "value": "partSelf.pa_BackHeight"
+        },
+        {
+          "columnName": "YA",
+          "value": "partSelf._dimz"
+        },
+        {
+          "columnName": "XE",
+          "value": "partSelf._dimy"
+        },
+        {
+          "columnName": "YE",
+          "value": "partSelf.pa_TopDepth"
+        },
+        {
+          "columnName": "TI",
+          "value": "partSelf._dimx + 2"
+        },
+        {
+          "columnName": "NB",
+          "value": "5"
+        },
+        {
+          "columnName": "EM",
+          "value": "MOD2"
+        },
+        {
+          "columnName": "RK",
+          "value": "WRKL"
+        },
+        {
+          "columnName": "matrix_KO",
+          "value": ""
+        }
+      ]
+    }
+  ]
+}
