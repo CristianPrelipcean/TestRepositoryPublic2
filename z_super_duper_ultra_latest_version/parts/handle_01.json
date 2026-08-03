@@ -1,0 +1,19 @@
+{
+  "partCode": "handle_01",
+  "shortName": "handle_01",
+  "wdt": "YZX",
+  "invisible": false,
+  "restrictionTypeId": "",
+  "noNcData": true,
+  "partVariants": [],
+  "bomData": [],
+  "ncData": [
+    {
+      "part2": "160_DoorLeft",
+      "touchName": "FromFront",
+      "bomElementTypeId": "Bohrung",
+      "valueScript": "let doorThickness = part2._dimz;\n               let drillingDiameter = partSelf._dimz / 4;\n               let drillingOffsetX = 15;\n               let drillingOffsetZ = partSelf._dimy / 2;\n               let handleLength = partSelf._dimx;\n\n               let drilling01 = partSelf.add3DElement('handleDrilling01', this, drillingOffsetX, 0, drillingOffsetZ, 0, 0, drillingOffsetZ + (doorThickness/2));\n               drilling01.extrude('<svg><circle cx=\"' + drillingDiameter + '\" cy=\"' + drillingOffsetZ + '\" r=\"' + drillingDiameter + '\" /></svg>', 'z');\n               let drilling02 = partSelf.add3DElement('handleDrilling02', this, handleLength - drillingOffsetX - drillingDiameter, 0, drillingOffsetZ, 0, 0, drillingOffsetZ + (doorThickness/2));\n               drilling02.extrude('<svg><circle cx=\"' + drillingDiameter + '\" cy=\"' + drillingOffsetZ + '\" r=\"' + drillingDiameter + '\" /></svg>', 'z');",
+      "bomExecuteType": "Touch"
+    }
+  ]
+}
