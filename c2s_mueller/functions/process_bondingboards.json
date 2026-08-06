@@ -1,0 +1,7 @@
+{
+  "functionId": "process_BondingBoards",
+  "description": "Build an array of boards to insert in the BOM",
+  "funcType": "Function",
+  "restrictionTypeId": "Internal",
+  "funcDef": "process_BondingBoards(input: {\r\n  targetThickness: number;\r\n  finalDims: { length: number; width: number };\r\n  bondingOversize: { length: number; width: number };\r\n  bonding: boolean;\r\n\r\n  topCandidates: Array<{\r\n    materialCode: string;\r\n    thickness: number;\r\n    minThk?: number;\r\n    maxThk?: number;\r\n    density?: number;\r\n    grain?: string;\r\n    length?: number;\r\n    width?: number;\r\n  }>;\r\n\r\n  bottomCandidates?: Array<{\r\n    materialCode: string;\r\n    thickness: number;\r\n    minThk?: number;\r\n    maxThk?: number;\r\n    density?: number;\r\n    grain?: string;\r\n    length?: number;\r\n    width?: number;\r\n  }>;\r\n}): Array<"
+}
