@@ -1,0 +1,1 @@
+  logInfo("prepareContext script");
