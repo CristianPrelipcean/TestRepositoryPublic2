@@ -1,3 +1,4 @@
+  logInfo("calculateContainerModules script");
   let startPos = 0;
   if (this.m.length > 0) {
     let cm = this.m[0];
