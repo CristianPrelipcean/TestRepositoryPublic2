@@ -1,4 +1,4 @@
-  logInfo("afterDataCompletion script")
+  logInfo("afterDataCompletion script");
   // Calculate the startPos
 
   let startPos = 0;
