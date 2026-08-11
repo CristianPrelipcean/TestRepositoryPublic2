@@ -1,9 +1,12 @@
   logInfo("adjust with success from group orchestrator.");
 
-  const articleName = "basic_Cabinet_006_fix_errors";
+  // const articleName = "basic_Cabinet_006_fix_errors";
+  const articleName1 = "basic_Cabinet_007";
+  const articleName2 = "basic_Cabinet_008";
+  const articleName3 = "basic_Cabinet_009";
   const thisRoot = this.roots[0].root;
 
-  const newArticle = this.createArticle(articleName);
+  const newArticle = this.createArticle(articleName1);
   if (newArticle) {
     this.addRoots(newArticle);
 
@@ -16,7 +19,7 @@
     this.addDocking(thisRoot, Dock.RightTop, r1, Dock.LeftTop, DockMode.StartEnd, [0, 1500, 0], 0);
   }
 
-  const newArticle2 = this.createArticle(articleName);
+  const newArticle2 = this.createArticle(articleName2);
   if (newArticle2) {
     this.addRoots(newArticle2);
 
@@ -26,7 +29,7 @@
     this.addDocking(thisRoot, Dock.LeftTop, r2, Dock.LeftTop, DockMode.StartStart, [0, 1500, 0], 0);
   }
 
-  const newArticle3 = this.createArticle(articleName);
+  const newArticle3 = this.createArticle(articleName3);
   if (newArticle3) {
     this.addRoots(newArticle3);
 
