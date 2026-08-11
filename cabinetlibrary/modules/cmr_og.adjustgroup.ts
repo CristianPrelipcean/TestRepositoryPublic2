@@ -18,6 +18,9 @@
     // dock on the wall
     this.addDocking(thisRoot, Dock.RightTop, r1, Dock.LeftTop, DockMode.StartEnd, [0, 1500, 0], 0);
   }
+  else {
+    logError("Article does not exist!!! " + articleName1);
+  }
 
   const newArticle2 = this.createArticle(articleName2);
   if (newArticle2) {
@@ -28,6 +31,9 @@
     // dock on the wall
     this.addDocking(thisRoot, Dock.LeftTop, r2, Dock.LeftTop, DockMode.StartStart, [0, 1500, 0], 0);
   }
+  else {
+    logError("Article does not exist!!! " + articleName2);
+  }
 
   const newArticle3 = this.createArticle(articleName3);
   if (newArticle3) {
@@ -37,4 +43,7 @@
 
     // dock on the floor
     this.addDocking(thisRoot, Dock.RightBottom, r3, Dock.LeftBottom, DockMode.EndEnd, [0, 0, 0], 0);
+  }
+  else {
+    logError("Article does not exist!!! " + articleName3);
   }
