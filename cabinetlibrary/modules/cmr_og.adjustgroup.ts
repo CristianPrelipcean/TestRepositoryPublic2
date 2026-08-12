@@ -1,9 +1,9 @@
   logInfo("adjust with success from group orchestrator.");
 
   // const articleName = "basic_Cabinet_006_fix_errors";
-  const articleName1 = "basic_Cabinet_007";
-  const articleName2 = "basic_Cabinet_008";
-  const articleName3 = "basic_Cabinet_009";
+  const articleName1 = "LW_Fliplift";
+  const articleName2 = "LW_Mikrowelle";
+  const articleName3 = "LW_Dishwasher";
   const thisRoot = this.roots[0].root;
 
   const newArticle = this.createArticle(articleName1);
