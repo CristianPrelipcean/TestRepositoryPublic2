@@ -1,8 +1,8 @@
 check_test1_getDropDownValues_doorHeight(attr: Checks.Itest1_Attributes): Checks.CheckDropDownRange | undefined{
-        const heightConstraints = new Map<string, { min: number; max: number }>([
-        ["wood", { min: 2000, max: 3000 }],
-        ["steel", { min: 2000, max: 2500 }],
-        ["glass", { min: 1500, max: 2200 }],
+const heightConstraints = new Map<string, { min: number; max: number }>([
+        ["wood",      { min: 2000, max: 3000 }],
+        ["steel",     { min: 2000, max: 2500 }],
+        ["glass",     { min: 1500, max: 2200 }],
         ["aluminium", { min: 2500, max: 3000 }],
     ]);
 
@@ -16,7 +16,7 @@ check_test1_getDropDownValues_doorHeight(attr: Checks.Itest1_Attributes): Checks
     let { min, max } = heightConstraint;
 
     // clamp max height by max height-to-width ratio
-    const maxHeightToWidthRatio = 2;
+    const maxHeightToWidthRatio = 3;
     if (attr.doorWidth !== undefined && attr.doorWidth > 0) {
         const maxHeightByRatio = Math.floor(attr.doorWidth * maxHeightToWidthRatio);
         max = Math.min(max, maxHeightByRatio);
@@ -26,6 +26,5 @@ check_test1_getDropDownValues_doorHeight(attr: Checks.Itest1_Attributes): Checks
         return undefined;
     }
 
-    const result = { min, max };
-    return result;
+    return { min, max };
 }
