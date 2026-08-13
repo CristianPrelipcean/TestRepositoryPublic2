@@ -1,29 +1,30 @@
 check_test3_getDropDownValues_thickness(attr: Checks.Itest3_Attributes): Checks.CheckDropDownRange | undefined{
-    const widthConstraints = new Map<string, { min: number; max: number }>([
-    ["16", { min: 500,  max: 1200 }],
-    ["18", { min: 1000, max: 1500 }],
-    ["19", { min: 1000, max: 2000 }],
-    ["25", { min: 1500, max: 2000 }],
-]);
 
-const widthConstraint = widthConstraints.get(String(attr.thickness ?? ""));
+    const thicknessConstraints = new Map<string, { min: number; max: number }>([
+        ["wood",      { min: 16, max: 19 }],
+        ["steel",     { min: 16, max: 22 }],
+        ["glass",     { min: 6,  max: 16 }],
+        ["aluminium", { min: 19, max: 25 }],
+    ]);
 
-if (widthConstraint === undefined) {
-    return undefined;
-}
+    const thicknessConstraint = thicknessConstraints.get(attr.doorMaterial ?? "");
 
-let { min, max } = widthConstraint;
+    if (thicknessConstraint === undefined) {
+        return undefined;
+    }
 
-// clamp min width by max height-to-thickness ratio
-const maxHeightToThicknessRatio = 2;
-if (attr.doorHeight !== undefined && attr.doorHeight > 0) {
-    const minWidthByRatio = Math.ceil(attr.doorHeight / maxHeightToThicknessRatio);
-    min = Math.max(min, minWidthByRatio);
-}
+    let { min, max } = thicknessConstraint;
 
-if (min > max) {
-    return undefined;
-}
+    // clamp by door height: taller doors need more thickness
+    const minThicknessByHeight = 2;
+    if (attr.doorHeight !== undefined && attr.doorHeight > 0) {
+        const minByHeight = Math.ceil(attr.doorHeight / minThicknessByHeight);
+        min = Math.max(min, minByHeight);
+    }
 
-return { min, max };
+    if (min > max) {
+        return undefined;
+    }
+
+    return { min, max };
 }
