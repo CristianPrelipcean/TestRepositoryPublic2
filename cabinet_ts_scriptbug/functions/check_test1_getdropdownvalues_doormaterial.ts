@@ -6,16 +6,16 @@ check_test1_getDropDownValues_doorMaterial(attr: Checks.Itest1_Attributes, selec
     }
 
     const widthConstraints = new Map<string, MaterialConstraint>([
-        ["wood", { min: 1000, max: 2000 }],
-        ["steel", { min: 1000, max: 1500 }],
-        ["glass", { min: 500, max: 1200 }],
+        ["wood",      { min: 1000, max: 2000 }],
+        ["steel",     { min: 1000, max: 1500 }],
+        ["glass",     { min: 500,  max: 1200 }],
         ["aluminium", { min: 1500, max: 2000 }],
     ]);
 
     const heightConstraints = new Map<string, MaterialConstraint>([
-        ["wood", { min: 2000, max: 3000 }],
-        ["steel", { min: 2000, max: 2500 }],
-        ["glass", { min: 1500, max: 2200 }],
+        ["wood",      { min: 2000, max: 3000 }],
+        ["steel",     { min: 2000, max: 2500 }],
+        ["glass",     { min: 1500, max: 2200 }],
         ["aluminium", { min: 2500, max: 3000 }],
     ]);
 
@@ -34,7 +34,7 @@ check_test1_getDropDownValues_doorMaterial(attr: Checks.Itest1_Attributes, selec
             && attr.doorHeight !== undefined
             && isInRange(attr.doorHeight, heightConstraint);
 
-        const maxHeightToWidthRatio = 2;
+        const maxHeightToWidthRatio = 3;
         const ratioOk = attr.doorWidth !== undefined && attr.doorHeight !== undefined
             && (attr.doorHeight / attr.doorWidth) <= maxHeightToWidthRatio;
 
