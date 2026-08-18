@@ -20,6 +20,7 @@ process_Machinings(inputString:string): [string, number , number, string, string
   // Cycle to split the string and push the machinings to an array of machinings
   while ((tempMachinings[m] ? tempMachinings[m]: 0) != 0)
   {
+    
     // Split the 2 sides of a Machining separated with @
     temp=tempMachinings[m].split("@", 2);
     // Split the first side of a Machining to get its values
