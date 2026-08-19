@@ -1,3 +1,0 @@
-check_BCE2_getDropDownValues_C(attr: Checks.IBCE2_Attributes, selections: SelectionEntry_C[]): Checks.CheckDropDownEntry[]{
-    return [];
-}
