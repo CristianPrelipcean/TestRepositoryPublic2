@@ -1,0 +1,69 @@
+{
+  "variantId": "mod_Program",
+  "shortName": "Program",
+  "variantTypeId": "Text",
+  "description": "Material category of the panels",
+  "restrictionTypeId": "Public",
+  "groupName": "Global",
+  "imageId": "f9db36f0-25f9-4c0e-9afb-a7e7a010ba1d:Program.jpg",
+  "isArray": false,
+  "isPosRelevant": true,
+  "mainAttr": false,
+  "userRight": "Master",
+  "implicitRelevant": false,
+  "matrix": [
+    {
+      "id": "BoardStyle",
+      "type": "Text",
+      "shortName": "Board style",
+      "default": "Fixed",
+      "isCustom": true
+    }
+  ],
+  "selections": [
+    {
+      "value": "Melamin_Stone",
+      "description": "Melamin_Stone",
+      "shortName": "Melamin_Stone",
+      "matrix": [
+        {
+          "id": "Custom_BoardStyle",
+          "value": "Fixed"
+        }
+      ]
+    },
+    {
+      "value": "Melamin_Uni",
+      "description": "Melamin_Uni",
+      "shortName": "Melamin_Uni",
+      "matrix": [
+        {
+          "id": "Custom_BoardStyle",
+          "value": "Fixed"
+        }
+      ]
+    },
+    {
+      "value": "Melamin_Woodline",
+      "description": "Melamin_Woodline",
+      "shortName": "Melamin_Woodline",
+      "matrix": [
+        {
+          "id": "Custom_BoardStyle",
+          "value": "Fixed"
+        }
+      ]
+    },
+    {
+      "value": "Verbundkeramik",
+      "description": "Verbundkeramik",
+      "shortName": "Verbundkeramik",
+      "matrix": [
+        {
+          "id": "Custom_BoardStyle",
+          "value": "Config"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "tableName": "ctab_LotGroupMapping",
+  "description": "Lot group mapping",
+  "restrictionTypeId": "Custom",
+  "groupName": "Bom",
+  "columns": [
+    {
+      "name": "_id",
+      "type": "Integer",
+      "allowNull": false
+    },
+    {
+      "name": "in_TypeElement",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_Program",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "LotGroup",
+      "type": "Text",
+      "allowNull": true
+    }
+  ],
+  "rows": [
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_Program",
+          "value": "All"
+        },
+        {
+          "columnName": "LotGroup",
+          "value": "W2"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "Fronts"
+        },
+        {
+          "columnName": "in_Program",
+          "value": "Verbundkeramik"
+        },
+        {
+          "columnName": "LotGroup",
+          "value": "W1GL"
+        }
+      ]
+    }
+  ],
+  "dataSource": "Default",
+  "changedAt": "2026-08-19T06:09:18.3331438+00:00"
+}

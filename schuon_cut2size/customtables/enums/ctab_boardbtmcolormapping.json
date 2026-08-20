@@ -1,0 +1,36 @@
+[
+  {
+    "tableName": "ctab_BoardBtmColorMapping",
+    "columnId": "BoardId",
+    "refCustomTableName": "tab_BoardLibrary",
+    "refColumnId": "in_MaterialCode"
+  },
+  {
+    "tableName": "ctab_BoardBtmColorMapping",
+    "columnId": "BoardType",
+    "enumsJson": [
+      {
+        "value": "Grundmaterial",
+        "description": "Basis für die konfigurierte Platte"
+      },
+      {
+        "value": "Finish-Material",
+        "description": "Veredelung der Oberfläche"
+      },
+      {
+        "value": "Vorbereitet",
+        "description": "Vorbereitete Platte, die kommissionsweise geschnitten wird"
+      }
+    ]
+  },
+  {
+    "tableName": "ctab_BoardBtmColorMapping",
+    "columnId": "in_BtmColor",
+    "refColumnId": "Value"
+  },
+  {
+    "tableName": "ctab_BoardBtmColorMapping",
+    "columnId": "in_Color",
+    "refColumnId": "Value"
+  }
+]
