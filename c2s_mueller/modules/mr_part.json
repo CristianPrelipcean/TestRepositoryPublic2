@@ -6,7 +6,7 @@
   "isConfigDummy": false,
   "description": "Simple flat panel part",
   "groupName": "Root",
-  "imageId": "96d54609-e746-4da1-b0e5-a856c43906ee:mr_Part.jpg",
+  "imageId": "f440e818-fc40-4c41-8d2f-a9c04b291493:mr_Part.jpg",
   "restrictionTypeId": "Public",
   "childModules": [
     {
@@ -29,6 +29,9 @@
     },
     {
       "moduleId": "me_DrillHor"
+    },
+    {
+      "moduleId": "me_Handle"
     }
   ],
   "assignedVariants": [
@@ -115,6 +118,11 @@
     {
       "variantId": "mod_Width",
       "default": "1000",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_OpeningDirection",
+      "default": "Left",
       "origin": "Default"
     }
   ],

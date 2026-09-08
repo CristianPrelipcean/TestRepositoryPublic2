@@ -175,10 +175,21 @@ process_BoardBom(Elem: any, part: any) {
 
       // ---------------- Edge data (only master) ----------------
       if (isMaster) {
-        Board.bom_EdgeFront = edges.edgeCodes.front;
-        Board.bom_EdgeLeft = edges.edgeCodes.left;
-        Board.bom_EdgeBack = edges.edgeCodes.back;
-        Board.bom_EdgeRight = edges.edgeCodes.right;
+          if (edges.edgeCodes.front != "NoEdgeband") {
+            Board.bom_EdgeFront = edges.edgeCodes.front;
+          }
+
+          if (edges.edgeCodes.left != "NoEdgeband") {
+            Board.bom_EdgeLeft = edges.edgeCodes.left;
+          }
+
+          if (edges.edgeCodes.back != "NoEdgeband") {
+            Board.bom_EdgeBack = edges.edgeCodes.back;
+          }
+
+          if (edges.edgeCodes.right != "NoEdgeband") {
+            Board.bom_EdgeRight = edges.edgeCodes.right;
+          }
 
         Board.bom_EdgeJointFrontLeft = edges.joint.frontLeft;
         Board.bom_EdgeJointLeftBack = edges.joint.leftBack;
@@ -198,13 +209,6 @@ process_BoardBom(Elem: any, part: any) {
           Board.bom_EdgeBackProcessing = edges.processing.edgeBack;
           Board.bom_EdgeRightProcessing = edges.processing.edgeRight;
         }
-      }
-      else {
-        // Bottom layers -> no edging
-        Board.bom_EdgeFront = "NoEdgeband";
-        Board.bom_EdgeLeft = "NoEdgeband";
-        Board.bom_EdgeBack = "NoEdgeband";
-        Board.bom_EdgeRight = "NoEdgeband";
       }
 
       // ---------------- Additional ----------------

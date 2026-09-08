@@ -102,8 +102,11 @@
           let XCoord = 0;
           if (this.mod_OpeningDirection == 'Left') {
             XCoord = drill.XA! + this.mod_HingeDrillingDistance;
-          } else {
+          }
+          else if (this.mod_OpeningDirection == 'Right') {
             XCoord = this.mod_Length - drill.XA! - this.mod_HingeDrillingDistance;
+          } else {
+            return
           }
 
           let YCoord = Position + drill.YA!;
@@ -132,7 +135,7 @@
             elemGraphics.extrude(svgPath, 'z');
 
             // Add processing color
-            GlobalFunc.process_AddMaterial(elemGraphics, 'Processing', 'None', this.g.basic_ProcessingColor);
+            GlobalFunc.process_AddMaterial(elemGraphics, 'Processing', 'None', this.g.basic_ProcessingHingeDrillColor);
 
             // Add drilling part for nc-data
             let elemDrill = this.addpart_DrillVert(XCoord, YCoord, -1, 1, 1, 1);

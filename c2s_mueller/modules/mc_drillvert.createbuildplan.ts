@@ -34,7 +34,7 @@
 
     }
     
-        let DrillData = GlobalFunc.find_ProcessingDrillingsCalculation(
+        let DrillData = GlobalFunc.find_ProcessingDrillVertCalculation(
           this.mod_TypeElement_matrix.PartView,
           this.mod_DrillSide,
           this.mod_ProcessingBasePoint,
@@ -86,7 +86,7 @@
             elemGraphics.extrude(svgPath, DrillData.GraphicExtrusion!)
             
             // Get the processing Color
-            GlobalFunc.process_AddMaterial(elemGraphics, 'Processing', 'None', this.g.basic_ProcessingColor);
+            GlobalFunc.process_AddMaterial(elemGraphics, 'Processing', 'None', this.g.basic_ProcessingDrillVertColor);
     
             // Create Touch part
             let elemDrill = this.addpart_DrillVert(

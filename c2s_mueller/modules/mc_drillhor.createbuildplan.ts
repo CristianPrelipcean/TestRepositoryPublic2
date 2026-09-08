@@ -93,7 +93,7 @@
         elemGraphics.extrude(svgPath, DrillData.GraphicExtrusion!)
 
         // Get the processing Color
-        GlobalFunc.process_AddMaterial(elemGraphics, 'Processing', 'None', this.g.basic_ProcessingColor);
+        GlobalFunc.process_AddMaterial(elemGraphics, 'Processing', 'None', this.g.basic_ProcessingDrillHorColor);
 
         // Create Touch part
         let elemDrill = this.addpart_DrillHor(
@@ -120,7 +120,7 @@
   // Log the error and stop execution if any function call fails
   catch (error: any) {
 
-    let ErrorMessage = GlobalFunc.find_ErrorList('Error 22002', 1);
+    let ErrorMessage = GlobalFunc.find_ErrorList('Error 21009', 1);
     logError(ErrorMessage.Message(error.message));
     return;
   }

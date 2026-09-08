@@ -6,7 +6,7 @@
   "isConfigDummy": false,
   "description": "Construction module for handles",
   "groupName": "Processing Construction",
-  "imageId": "53f25401-4457-4d53-af3c-87dca9310dff:mc_Handle.jpg",
+  "imageId": "b83b1644-2661-4021-abbf-834efd311e44:mc_Handle.jpg",
   "restrictionTypeId": "Internal",
   "childModules": [],
   "assignedVariants": [
@@ -74,14 +74,29 @@
       "variantId": "mod_Length",
       "previewValue": "1000",
       "origin": "Derived"
+    },
+    {
+      "variantId": "mod_OpeningDirection",
+      "previewValue": "Left",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_DrillinglineLogic",
+      "previewValue": "DrillQty",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_DrillSide",
+      "previewValue": "Back",
+      "origin": "Derived"
     }
   ],
   "assignedParts": [
     {
-      "partCode": "part_HandleDrill"
+      "partCode": "part_ProcessingGraphics"
     },
     {
-      "partCode": "part_ProcessingGraphics"
+      "partCode": "part_DrillVert"
     }
   ],
   "assignedCustomTables": [],
