@@ -139,7 +139,7 @@ ol.forEach(p =>
   //outStr += '<param name="Barcode" value="' + o.orderNo + '_' + p.posOrderLineNo + '" />' + '\n';
   outStr += '<param name="OrderItemNumber" value="' + p.posOrderLineNo + '" />' + '\n';
   outStr += '<param name="ArticleNumber" value="Artikelnummer" />' + '\n';
-  outStr += '<param name="ArticleDescription" value="Artikelbeschreibung" />' + '\n';
+  outStr += '<param name="ArticleDescription" value="' + p.additionalInfoText + '" />' + '\n';
   //outStr += '<param name="ArticleGroup" value="Interliving Badset" />' + '\n';
   outStr += '<param name="Quantity" value="1.00000" />' + '\n';
   outStr += '<param name="QuantityUnit" value="pcs" />' + '\n';
