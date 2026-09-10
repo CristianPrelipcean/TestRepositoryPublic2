@@ -7,7 +7,7 @@
 
     let r1 = newArticle[0].root;
     if (r1 instanceof OD_M_shape01) {
-      r1.generateWorktop = false;
+      r1.generateWorktop = true;
       r1.height = 640;
     }
 
