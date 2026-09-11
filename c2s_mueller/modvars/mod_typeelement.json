@@ -5,7 +5,7 @@
   "description": "Defines the element type of the part",
   "restrictionTypeId": "Public",
   "groupName": "Global",
-  "imageId": "eedce332-25d4-467c-81e3-8690ee4d07e1:TypeElement.jpg",
+  "imageId": "6376eccc-8c5d-44c3-b739-f95e7a35dafe:TypeElement.jpg",
   "isArray": false,
   "isPosRelevant": true,
   "mainAttr": false,
@@ -21,10 +21,34 @@
   ],
   "selections": [
     {
+      "value": "Sides",
+      "description": "Sides",
+      "shortName": "Sides",
+      "imageId": "d07b0fff-e846-4d7b-8468-f59d7baddada:Sides.jpg",
+      "matrix": [
+        {
+          "id": "PartView",
+          "value": "SideView"
+        }
+      ]
+    },
+    {
+      "value": "Shelves",
+      "description": "Shelves",
+      "shortName": "Shelves",
+      "imageId": "cdbbe251-57b1-49cf-8318-f78bda95e537:Shelves.jpg",
+      "matrix": [
+        {
+          "id": "PartView",
+          "value": "ShelfView"
+        }
+      ]
+    },
+    {
       "value": "Backwalls",
       "description": "Backwalls",
       "shortName": "Backwalls",
-      "imageId": "b60c0f1e-c813-4b5d-8354-c520f9fdcb9a:Backwalls.jpg",
+      "imageId": "fb864df1-6cfc-4e08-bb0f-bd6a6c262095:Backwalls.jpg",
       "matrix": [
         {
           "id": "PartView",
@@ -36,35 +60,11 @@
       "value": "Fronts",
       "description": "Fronts",
       "shortName": "Fronts",
-      "imageId": "70d7fcd9-926e-40f3-bf53-759d7089f348:Fronts.jpg",
+      "imageId": "0f4345ff-26c4-4a36-aa05-830eb60211ed:Fronts.jpg",
       "matrix": [
         {
           "id": "PartView",
           "value": "FrontView"
-        }
-      ]
-    },
-    {
-      "value": "Shelves",
-      "description": "Shelves",
-      "shortName": "Shelves",
-      "imageId": "2b228183-8d4c-4cf4-82e0-ce1c3b28e6d9:Shelves.jpg",
-      "matrix": [
-        {
-          "id": "PartView",
-          "value": "ShelfView"
-        }
-      ]
-    },
-    {
-      "value": "Sides",
-      "description": "Sides",
-      "shortName": "Sides",
-      "imageId": "54e90fa7-7d0c-4da1-a115-95776ad99287:Sides.jpg",
-      "matrix": [
-        {
-          "id": "PartView",
-          "value": "SideView"
         }
       ]
     }

@@ -139,7 +139,7 @@ ol.forEach(p =>
   //outStr += '<param name="Barcode" value="' + o.orderNo + '_' + p.posOrderLineNo + '" />' + '\n';
   outStr += '<param name="OrderItemNumber" value="' + p.posOrderLineNo + '" />' + '\n';
   outStr += '<param name="ArticleNumber" value="Artikelnummer" />' + '\n';
-  outStr += '<param name="ArticleDescription" value="' + 'AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' + '" />' + '\n';
+  outStr += '<param name="ArticleDescription" value="Artikelbeschreibung" />' + '\n';
   //outStr += '<param name="ArticleGroup" value="Interliving Badset" />' + '\n';
   outStr += '<param name="Quantity" value="1.00000" />' + '\n';
   outStr += '<param name="QuantityUnit" value="pcs" />' + '\n';
@@ -236,30 +236,39 @@ ol.forEach(p =>
       outStr += '<param name="Width" value="' + k.entry.cutWidth + '" />' + '\n';
       outStr += '<param name="FinishLength" value="' + k.entry.width + '" />' + '\n';
       outStr += '<param name="FinishWidth" value="' + k.entry.depth + '" />' + '\n';
-     if (k.entry.CutDimLength2) {
-     outStr += '<param name="SecondCutLength" value="' + k.entry.CutDimLength2 + '" />' + '\n';
-    }
-    if (k.entry.CutDimWidth2) {
-      outStr += '<param name="SecondCutWidth" value="' + k.entry.CutDimWidth2 + '" />' + '\n';      
-    } 
-      outStr += '<param name="Thickness" value="' + k.entry.thickness + '" />' + '\n';            
+      if (k.entry.CutDimLength2) {
+        outStr += '<param name="SecondCutLength" value="' + k.entry.CutDimLength2 + '" />' + '\n';
+      }
+      if (k.entry.CutDimWidth2) {
+        outStr += '<param name="SecondCutWidth" value="' + k.entry.CutDimWidth2 + '" />' + '\n';      
+      } 
+      outStr += '<param name="Thickness" value="' + k.entry.thickness + '" />' + '\n';    
+      addEdgeParam("EdgeFront", k.entry.EdgeFront);
+      addEdgeParam("EdgeBack", k.entry.EdgeBack);
+      addEdgeParam("EdgeLeft", k.entry.EdgeLeft);
+      addEdgeParam("EdgeRight", k.entry.EdgeRight);
+      addEdgeParam("EdgeDiagram", k.entry.EdgeTransition);
+
+        /*
       outStr += '<param name="EdgeFront" value="' + k.entry.EdgeFront + '" />' + '\n'; 
       outStr += '<param name="EdgeBack" value="' + k.entry.EdgeBack + '" />' + '\n'; 
       outStr += '<param name="EdgeLeft" value="' + k.entry.EdgeLeft + '" />' + '\n'; 
       outStr += '<param name="EdgeRight" value="' + k.entry.EdgeRight + '" />' + '\n';
       outStr += '<param name="EdgeDiagram" value="' + k.entry.EdgeTransition + '" />' + '\n'; 
+      */
+
       outStr += '<param name="ArticleGroup" value="' + k.entry.ArticleGroup + '" />' + '\n'; 
       outStr += '</properties>' + '\n';
 
       // Reference to the MPR
       outStr += '<images>' + '\n'; 
-      if(result.has("Images/" + o.orderNo + "_" + p.orderLineNo + "_" + k.entry.barcode + '.mpr')){
+      if(result.has("Images/" + o.orderNo + "_" + p.orderLineNo + "_" + k.barcode + '.mpr')){
         outStr += '<image>' + '\n';
         outStr += '<properties>' + '\n'; 
         outStr += '<param name="Category" value="MPR" />' + '\n'; 
         outStr += '<param name="Description" value="Bohrbild" />' + '\n'; 
-        outStr += '<param name="OriginalFileName" value="' + o.orderNo + "_" + p.orderLineNo + "_" + k.entry.barcode + '.mpr" />' + '\n'; 
-        outStr += '<param name="ImageLinkBinary" value="Images\\' + o.orderNo + "_" + p.orderLineNo + "_" + k.entry.barcode + '.mpr" />' + '\n'; 
+        outStr += '<param name="OriginalFileName" value="' + o.orderNo + "_" + p.orderLineNo + "_" + k.barcode + '.mpr" />' + '\n'; 
+        outStr += '<param name="ImageLinkBinary" value="Images\\' + o.orderNo + "_" + p.orderLineNo + "_" + k.barcode + '.mpr" />' + '\n'; 
         outStr += '</properties>' + '\n';
         outStr += '</image>' + '\n';
       } 
@@ -267,13 +276,13 @@ ol.forEach(p =>
 
       // Reference to the SVG
       outStr += '<images>' + '\n'; 
-      if(result.has("Images/" + o.orderNo + "_" + p.orderLineNo + "_" + k.entry.barcode + '.svg')){
+      if(result.has("Images/" + o.orderNo + "_" + p.orderLineNo + "_" + k.barcode + '.svg')){
         outStr += '<image>' + '\n';
         outStr += '<properties>' + '\n'; 
         outStr += '<param name="Category" value="SVG" />' + '\n'; 
         outStr += '<param name="Description" value="Bauteilzeichnung" />' + '\n'; 
-        outStr += '<param name="OriginalFileName" value="' + o.orderNo + "_" + p.orderLineNo + "_" + k.entry.barcode + '.svg" />' + '\n'; 
-        outStr += '<param name="ImageLinkBinary" value="Images\\' + o.orderNo + "_" + p.orderLineNo + "_" + k.entry.barcode + '.svg" />' + '\n'; 
+        outStr += '<param name="OriginalFileName" value="' + o.orderNo + "_" + p.orderLineNo + "_" + k.barcode + '.svg" />' + '\n'; 
+        outStr += '<param name="ImageLinkBinary" value="Images\\' + o.orderNo + "_" + p.orderLineNo + "_" + k.barcode + '.svg" />' + '\n'; 
         outStr += '</properties>' + '\n';
         outStr += '</image>' + '\n';
       } 
@@ -281,6 +290,15 @@ ol.forEach(p =>
 
       outStr += '</entity>' + '\n';         
     }
+  }
+
+
+  function addEdgeParam(name: string, value: string | undefined): void {
+    if (!value || value === "NoEdge" || value === "NoEdgeband" || value === ":::" || value === "::::") {
+      return;
+    }
+
+    outStr += `<param name="${name}" value="${value}" />\n`;
   }
 
   // Logic for data insertion to the string Level1

@@ -6,7 +6,7 @@
   "isConfigDummy": false,
   "description": "Equipment module for handles",
   "groupName": "Processing",
-  "imageId": "b83b1644-2661-4021-abbf-834efd311e44:mc_Handle.jpg",
+  "imageId": "628b407c-db6d-46f6-89ac-93ee60e31c95:mc_Handle.jpg",
   "restrictionTypeId": "Public",
   "childModules": [
     {
@@ -61,7 +61,7 @@
     },
     {
       "variantId": "mod_HandlePosMatrix",
-      "default": "Top",
+      "defaultScript": "this.g.basic_HandlePosMatrix",
       "origin": "Default"
     },
     {
@@ -78,21 +78,6 @@
       "variantId": "mod_Length",
       "previewValue": "1000",
       "origin": "Derived"
-    },
-    {
-      "variantId": "mod_OpeningDirection",
-      "previewValue": "Left",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_DrillSide",
-      "default": "Back",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_DrillinglineLogic",
-      "default": "DrillQty",
-      "origin": "Fixed"
     }
   ],
   "assignedParts": [],
