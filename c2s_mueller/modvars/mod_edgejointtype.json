@@ -5,7 +5,7 @@
   "description": "Describes the edge joint type ",
   "restrictionTypeId": "Public",
   "groupName": "Edge",
-  "imageId": "67c454a9-db30-442b-9a22-c4c44e46f234:EdgeJointType.jpg",
+  "imageId": "4ebdecfb-550e-4372-a43b-084b36e71055:EdgeJointType.jpg",
   "isArray": false,
   "isPosRelevant": false,
   "userRight": "Master",
@@ -21,7 +21,7 @@
       "value": "EEEE",
       "description": "No edges",
       "shortName": "NoEdges",
-      "imageId": "3964200d-d765-4744-a350-81e770979ac4:NoEdges.jpg",
+      "imageId": "770c96f9-eb5b-44f6-9a4c-90d472277e2d:NoEdges.jpg",
       "matrix": [
         {
           "id": "EdgeQty",
@@ -30,86 +30,14 @@
       ]
     },
     {
-      "value": "SLSE",
-      "description": "Transitions: ShortLongShortEmpty",
-      "shortName": "SLSE",
-      "imageId": "bb2b850b-dd93-47c5-938d-e46e32c677a5:SLSE.jpg",
+      "value": "EEES",
+      "description": "Transitions: EmptyEmptyEmptyShort",
+      "shortName": "EEES",
+      "imageId": "3cf2a208-3947-4fb3-b199-3370568f0999:EEES.jpg",
       "matrix": [
         {
           "id": "EdgeQty",
-          "value": 3
-        }
-      ]
-    },
-    {
-      "value": "LSSE",
-      "description": "Transitions: LongShortShortEmpty",
-      "shortName": "LSSE",
-      "imageId": "d00e69ef-1e7a-4a79-b72f-4cb7d4fb4766:LSSE.jpg",
-      "matrix": [
-        {
-          "id": "EdgeQty",
-          "value": 3
-        }
-      ]
-    },
-    {
-      "value": "SSSE",
-      "description": "Transitions: ShortShortShortEmpty",
-      "shortName": "SSSE",
-      "imageId": "b65334ca-5f08-485c-a8dc-ef228ee3b575:SSSE.jpg",
-      "matrix": [
-        {
-          "id": "EdgeQty",
-          "value": 3
-        }
-      ]
-    },
-    {
-      "value": "LSEL",
-      "description": "Transitions: LongShortEmptyLong",
-      "shortName": "LSEL",
-      "imageId": "03f5a094-2835-44be-9a52-629c7e0d7d32:LSEL.jpg",
-      "matrix": [
-        {
-          "id": "EdgeQty",
-          "value": 3
-        }
-      ]
-    },
-    {
-      "value": "LSES",
-      "description": "Transitions: LongShortEmptyShort",
-      "shortName": "LSES",
-      "imageId": "4c9d4532-98b0-4496-9b82-ef5f4ceb96bf:LSES.jpg",
-      "matrix": [
-        {
-          "id": "EdgeQty",
-          "value": 3
-        }
-      ]
-    },
-    {
-      "value": "SSEL",
-      "description": "Transitions: ShortShortEmptyLong",
-      "shortName": "SSEL",
-      "imageId": "41a48509-44a5-4a32-86a7-c264f89bdeec:SSEL.jpg",
-      "matrix": [
-        {
-          "id": "EdgeQty",
-          "value": 3
-        }
-      ]
-    },
-    {
-      "value": "SSES",
-      "description": "Transitions: ShortShortEmptyShort",
-      "shortName": "SSES",
-      "imageId": "6b376fdf-a4d6-4588-8312-32a4a01c170e:SSES.jpg",
-      "matrix": [
-        {
-          "id": "EdgeQty",
-          "value": 3
+          "value": 1
         }
       ]
     },
@@ -117,131 +45,11 @@
       "value": "EELS",
       "description": "Transitions: EmptyEmptyLongShort",
       "shortName": "EELS",
-      "imageId": "66f82a36-ff14-4a6e-a39b-ad2fb6be6a55:EELS.jpg",
+      "imageId": "4a911c6b-8c24-4544-89b4-78803732ba3d:EELS.jpg",
       "matrix": [
         {
           "id": "EdgeQty",
           "value": 2
-        }
-      ]
-    },
-    {
-      "value": "EESS",
-      "description": "Transitions: EmptyEmptyShortShort",
-      "shortName": "EESS",
-      "imageId": "741d0024-14e9-438d-b032-999b56d64dfd:EESS.jpg",
-      "matrix": [
-        {
-          "id": "EdgeQty",
-          "value": 2
-        }
-      ]
-    },
-    {
-      "value": "SESE",
-      "description": "Transitions: ShortEmptyShortEmpty",
-      "shortName": "SESE",
-      "imageId": "6648dccc-a388-450e-b29e-a3cca0cbb5ce:SESE.jpg",
-      "matrix": [
-        {
-          "id": "EdgeQty",
-          "value": 2
-        }
-      ]
-    },
-    {
-      "value": "ELSE",
-      "description": "Transitions: EmptyLongShortEmpty",
-      "shortName": "ELSE",
-      "imageId": "8d2fa2c1-073e-4a23-b56b-36e074b8aa68:ELSE.jpg",
-      "matrix": [
-        {
-          "id": "EdgeQty",
-          "value": 2
-        }
-      ]
-    },
-    {
-      "value": "ESSE",
-      "description": "Transitions: EmptyShortShortEmpty",
-      "shortName": "ESSE",
-      "imageId": "6b3af2aa-c64f-40eb-8f5c-fc675773d937:ESSE.jpg",
-      "matrix": [
-        {
-          "id": "EdgeQty",
-          "value": 2
-        }
-      ]
-    },
-    {
-      "value": "SEEL",
-      "description": "Transitions: ShortEmptyEmptyLong",
-      "shortName": "SEEL",
-      "imageId": "4afa0961-48cd-43b1-89f9-91191a6a313f:SEEL.jpg",
-      "matrix": [
-        {
-          "id": "EdgeQty",
-          "value": 2
-        }
-      ]
-    },
-    {
-      "value": "SEES",
-      "description": "Transitions: ShortEmptyEmptyShort",
-      "shortName": "SEES",
-      "imageId": "b01aa9de-1318-4f7e-bc91-f8a9e1cbf512:SEES.jpg",
-      "matrix": [
-        {
-          "id": "EdgeQty",
-          "value": 2
-        }
-      ]
-    },
-    {
-      "value": "ESES",
-      "description": "Transitions: EmptyShortEmptyShort",
-      "shortName": "ESES",
-      "imageId": "89e15ba7-86a0-4e2f-ab56-99b7ea21527d:ESES.jpg",
-      "matrix": [
-        {
-          "id": "EdgeQty",
-          "value": 2
-        }
-      ]
-    },
-    {
-      "value": "LSEE",
-      "description": "Transitions: LongShortEmptyEmpty",
-      "shortName": "LSEE",
-      "imageId": "7920a97b-0555-462c-82df-3c70ae4a7ede:LSEE.jpg",
-      "matrix": [
-        {
-          "id": "EdgeQty",
-          "value": 2
-        }
-      ]
-    },
-    {
-      "value": "SSEE",
-      "description": "Transitions: ShortShortEmptyEmpty",
-      "shortName": "SSEE",
-      "imageId": "0a1233ec-da84-4f62-a588-853d5d5e0057:SSEE.jpg",
-      "matrix": [
-        {
-          "id": "EdgeQty",
-          "value": 2
-        }
-      ]
-    },
-    {
-      "value": "EEES",
-      "description": "Transitions: EmptyEmptyEmptyShort",
-      "shortName": "EEES",
-      "imageId": "f8701ec8-4d3f-4515-8a56-ce85e32809bf:EEES.jpg",
-      "matrix": [
-        {
-          "id": "EdgeQty",
-          "value": 1
         }
       ]
     },
@@ -249,7 +57,7 @@
       "value": "EESE",
       "description": "Transitions: EmptyEmptyShortEmpty",
       "shortName": "EESE",
-      "imageId": "f2a3e313-cf0b-4125-a9d7-b0e0ed6242d7:EESE.jpg",
+      "imageId": "ab056c62-ef1d-4d43-b246-20b4f09eea61:EESE.jpg",
       "matrix": [
         {
           "id": "EdgeQty",
@@ -258,266 +66,14 @@
       ]
     },
     {
-      "value": "LLSE",
-      "description": "Transitions: LongLongShortEmpty",
-      "shortName": "LLSE",
-      "imageId": "19f1bda6-8bc4-410d-88a7-2f7fbdb14f38:LLSE.jpg",
+      "value": "EESS",
+      "description": "Transitions: EmptyEmptyShortShort",
+      "shortName": "EESS",
+      "imageId": "9fb3cd0c-8735-4536-90f0-9bc5f099833d:EESS.jpg",
       "matrix": [
         {
           "id": "EdgeQty",
-          "value": 3
-        }
-      ]
-    },
-    {
-      "value": "SEEE",
-      "description": "Transitions: ShortEmptyEmptyEmpty",
-      "shortName": "SEEE",
-      "imageId": "f516fa5a-a5df-4eb2-8c29-a4ffc4875de2:SEEE.jpg",
-      "matrix": [
-        {
-          "id": "EdgeQty",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "value": "ESSS",
-      "description": "Transitions: EmptyShortShortShort",
-      "shortName": "ESSS",
-      "imageId": "8574eacf-31a4-4580-94f1-664ba60150a6:ESSS.jpg",
-      "matrix": [
-        {
-          "id": "EdgeQty",
-          "value": 3
-        }
-      ]
-    },
-    {
-      "value": "ELSS",
-      "description": "Transitions: EmptyLongShortShort",
-      "shortName": "ELSS",
-      "imageId": "994aaec8-88f8-4ee6-a8d8-b40a10b7c5a4:ELSS.jpg",
-      "matrix": [
-        {
-          "id": "EdgeQty",
-          "value": 3
-        }
-      ]
-    },
-    {
-      "value": "LSLS",
-      "description": "Transitions: LongShortLongShort",
-      "shortName": "LSLS",
-      "imageId": "9ebee8a2-f6aa-4583-9b5b-2cd03a25e90b:LSLS.jpg",
-      "matrix": [
-        {
-          "id": "EdgeQty",
-          "value": 4
-        }
-      ]
-    },
-    {
-      "value": "SLSL",
-      "description": "Transitions: ShortLongShortLong",
-      "shortName": "SLSL",
-      "imageId": "32ba4539-374b-493e-8130-896b94006cbe:SLSL.jpg",
-      "matrix": [
-        {
-          "id": "EdgeQty",
-          "value": 4
-        }
-      ]
-    },
-    {
-      "value": "LLSL",
-      "description": "Transitions: LongLongShortLong",
-      "shortName": "LLSL",
-      "imageId": "1e7695bd-78c3-4aa1-9aad-654759495483:LLSL.jpg",
-      "matrix": [
-        {
-          "id": "EdgeQty",
-          "value": 4
-        }
-      ]
-    },
-    {
-      "value": "LLLS",
-      "description": "Transitions: LongLongLongShort",
-      "shortName": "LLLS",
-      "imageId": "9b493140-6ff5-42e9-a616-9f8c12a71ce8:LLLS.jpg",
-      "matrix": [
-        {
-          "id": "EdgeQty",
-          "value": 4
-        }
-      ]
-    },
-    {
-      "value": "LLSS",
-      "description": "Transitions: LongLongShortShort",
-      "shortName": "LLSS",
-      "imageId": "c90e208e-bd94-4644-80c3-8d9abce43f3b:LLSS.jpg",
-      "matrix": [
-        {
-          "id": "EdgeQty",
-          "value": 4
-        }
-      ]
-    },
-    {
-      "value": "SLLL",
-      "description": "Transitions: ShortLongLongLong",
-      "shortName": "SLLL",
-      "imageId": "f1c016ef-3089-4629-820a-e7d30bc74017:SLLL.jpg",
-      "matrix": [
-        {
-          "id": "EdgeQty",
-          "value": 4
-        }
-      ]
-    },
-    {
-      "value": "SLLS",
-      "description": "Transitions: ShortLongLongShort",
-      "shortName": "SLLS",
-      "imageId": "667018f0-bc30-4357-9115-b15ceab93e5f:SLLS.jpg",
-      "matrix": [
-        {
-          "id": "EdgeQty",
-          "value": 4
-        }
-      ]
-    },
-    {
-      "value": "SLSS",
-      "description": "Transitions: ShortLongShortShort",
-      "shortName": "SLSS",
-      "imageId": "97c2e8ec-54a2-4dc0-8232-6cc94ecf2f00:SLSS.jpg",
-      "matrix": [
-        {
-          "id": "EdgeQty",
-          "value": 4
-        }
-      ]
-    },
-    {
-      "value": "LSLL",
-      "description": "Transitions: LongShortLongLong",
-      "shortName": "LSLL",
-      "imageId": "7f7475c9-7fee-41d3-841d-408782501516:LSLL.jpg",
-      "matrix": [
-        {
-          "id": "EdgeQty",
-          "value": 4
-        }
-      ]
-    },
-    {
-      "value": "LSSL",
-      "description": "Transitions: LongShortShortLong",
-      "shortName": "LSSL",
-      "imageId": "ad88053a-4a13-4951-8033-894351c0e479:LSSL.jpg",
-      "matrix": [
-        {
-          "id": "EdgeQty",
-          "value": 4
-        }
-      ]
-    },
-    {
-      "value": "LSSS",
-      "description": "Transitions: LongShortShortShort",
-      "shortName": "LSSS",
-      "imageId": "7700e32e-5e00-44b3-8cbd-7f2bb8ec61df:LSSS.jpg",
-      "matrix": [
-        {
-          "id": "EdgeQty",
-          "value": 4
-        }
-      ]
-    },
-    {
-      "value": "SSLL",
-      "description": "Transitions: ShortShortLongLong",
-      "shortName": "SSLL",
-      "imageId": "00beed9a-61bf-4bad-8737-8baa1c905f17:SSLL.jpg",
-      "matrix": [
-        {
-          "id": "EdgeQty",
-          "value": 4
-        }
-      ]
-    },
-    {
-      "value": "SSSL",
-      "description": "Transitions: ShortShortShortLong",
-      "shortName": "SSSL",
-      "imageId": "9c111217-ed73-47b3-81dc-81137d65928f:SSSL.jpg",
-      "matrix": [
-        {
-          "id": "EdgeQty",
-          "value": 4
-        }
-      ]
-    },
-    {
-      "value": "SSLS",
-      "description": "Transitions: ShortShortLongShort",
-      "shortName": "SSLS",
-      "imageId": "32c2d56a-db69-496c-9b48-b256b3412734:SSLS.jpg",
-      "matrix": [
-        {
-          "id": "EdgeQty",
-          "value": 4
-        }
-      ]
-    },
-    {
-      "value": "SELL",
-      "description": "Transitions: ShortEmptyLongLong",
-      "shortName": "SELL",
-      "imageId": "0f60afa8-b389-4046-a85b-96e0d17404c9:SELL.jpg",
-      "matrix": [
-        {
-          "id": "EdgeQty",
-          "value": 3
-        }
-      ]
-    },
-    {
-      "value": "SESL",
-      "description": "Transitions: ShortEmptyShortLong",
-      "shortName": "SESL",
-      "imageId": "c1c41432-7a86-4d9f-8311-e38d13a02f88:SESL.jpg",
-      "matrix": [
-        {
-          "id": "EdgeQty",
-          "value": 3
-        }
-      ]
-    },
-    {
-      "value": "SELS",
-      "description": "Transitions: ShortEmptyLongShort",
-      "shortName": "SELS",
-      "imageId": "5a1f7b7a-6358-4d82-be7e-614e2e163416:SELS.jpg",
-      "matrix": [
-        {
-          "id": "EdgeQty",
-          "value": 3
-        }
-      ]
-    },
-    {
-      "value": "SESS",
-      "description": "Transitions: ShortEmptyShortShort",
-      "shortName": "SESS",
-      "imageId": "1e37d555-03c0-4bea-b000-5a9c423c8de2:SESS.jpg",
-      "matrix": [
-        {
-          "id": "EdgeQty",
-          "value": 3
+          "value": 2
         }
       ]
     },
@@ -525,7 +81,7 @@
       "value": "ELLS",
       "description": "Transitions: EmptyLongLongShort",
       "shortName": "ELLS",
-      "imageId": "b4f6f613-ac79-49d7-b7ee-89d4acaff6fc:ELLS.jpg",
+      "imageId": "6c5983f8-6cf8-4542-8ae2-edc8fb6f222b:ELLS.jpg",
       "matrix": [
         {
           "id": "EdgeQty",
@@ -534,10 +90,22 @@
       ]
     },
     {
-      "value": "ESLS",
-      "description": "Transitions: EmptyShortLongShort",
-      "shortName": "ESLS",
-      "imageId": "4d8d333b-e162-44b9-918a-2f0cc2ce2e26:ESLS.jpg",
+      "value": "ELSE",
+      "description": "Transitions: EmptyLongShortEmpty",
+      "shortName": "ELSE",
+      "imageId": "a3d6a6bb-a0eb-4f99-86cb-faa5ed1fc515:ELSE.jpg",
+      "matrix": [
+        {
+          "id": "EdgeQty",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "value": "ELSS",
+      "description": "Transitions: EmptyLongShortShort",
+      "shortName": "ELSS",
+      "imageId": "f6b4d568-568f-417c-98c4-63cd6c040173:ELSS.jpg",
       "matrix": [
         {
           "id": "EdgeQty",
@@ -549,11 +117,443 @@
       "value": "ESEE",
       "description": "Transitions: EmptyShortEmptyEmpty",
       "shortName": "ESEE",
-      "imageId": "e83d7c7f-7bb7-491e-9e26-0cb54fb1b706:ESEE.jpg",
+      "imageId": "4aa1dc4e-9bba-4333-9812-a3c92035ebd1:ESEE.jpg",
       "matrix": [
         {
           "id": "EdgeQty",
           "value": 1
+        }
+      ]
+    },
+    {
+      "value": "ESES",
+      "description": "Transitions: EmptyShortEmptyShort",
+      "shortName": "ESES",
+      "imageId": "640bccaa-798e-44d6-96b9-683de62a9b1d:ESES.jpg",
+      "matrix": [
+        {
+          "id": "EdgeQty",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "value": "ESLS",
+      "description": "Transitions: EmptyShortLongShort",
+      "shortName": "ESLS",
+      "imageId": "b84c21c2-308f-4ecc-afba-4bbfc2a13a1c:ESLS.jpg",
+      "matrix": [
+        {
+          "id": "EdgeQty",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "value": "ESSE",
+      "description": "Transitions: EmptyShortShortEmpty",
+      "shortName": "ESSE",
+      "imageId": "2ad33155-91ff-442b-89b7-c168d3acdd8b:ESSE.jpg",
+      "matrix": [
+        {
+          "id": "EdgeQty",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "value": "ESSS",
+      "description": "Transitions: EmptyShortShortShort",
+      "shortName": "ESSS",
+      "imageId": "12fd4044-2155-4ce4-bafb-80d1bbc5fd7e:ESSS.jpg",
+      "matrix": [
+        {
+          "id": "EdgeQty",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "value": "LLLS",
+      "description": "Transitions: LongLongLongShort",
+      "shortName": "LLLS",
+      "imageId": "cb042b3c-8a3e-498d-8202-91b6c1075210:LLLS.jpg",
+      "matrix": [
+        {
+          "id": "EdgeQty",
+          "value": 4
+        }
+      ]
+    },
+    {
+      "value": "LLSE",
+      "description": "Transitions: LongLongShortEmpty",
+      "shortName": "LLSE",
+      "imageId": "3b7011e4-b2c2-4f41-9bf6-85393bd5988d:LLSE.jpg",
+      "matrix": [
+        {
+          "id": "EdgeQty",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "value": "LLSL",
+      "description": "Transitions: LongLongShortLong",
+      "shortName": "LLSL",
+      "imageId": "d3363773-e5b2-498b-a3ec-234c89b8e273:LLSL.jpg",
+      "matrix": [
+        {
+          "id": "EdgeQty",
+          "value": 4
+        }
+      ]
+    },
+    {
+      "value": "LLSS",
+      "description": "Transitions: LongLongShortShort",
+      "shortName": "LLSS",
+      "imageId": "bf970f94-5e9e-46df-9273-940cd6742688:LLSS.jpg",
+      "matrix": [
+        {
+          "id": "EdgeQty",
+          "value": 4
+        }
+      ]
+    },
+    {
+      "value": "LSEE",
+      "description": "Transitions: LongShortEmptyEmpty",
+      "shortName": "LSEE",
+      "imageId": "7d154aa3-4ada-4221-97b2-fd555f78a04f:LSEE.jpg",
+      "matrix": [
+        {
+          "id": "EdgeQty",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "value": "LSEL",
+      "description": "Transitions: LongShortEmptyLong",
+      "shortName": "LSEL",
+      "imageId": "fd3b4292-4295-40d2-b640-c9ba867cff46:LSEL.jpg",
+      "matrix": [
+        {
+          "id": "EdgeQty",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "value": "LSES",
+      "description": "Transitions: LongShortEmptyShort",
+      "shortName": "LSES",
+      "imageId": "65ca4f5f-5db8-41a1-ab87-f386051e2b7b:LSES.jpg",
+      "matrix": [
+        {
+          "id": "EdgeQty",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "value": "LSLL",
+      "description": "Transitions: LongShortLongLong",
+      "shortName": "LSLL",
+      "imageId": "e514ff97-3a07-4900-b382-2e7f5e691ee8:LSLL.jpg",
+      "matrix": [
+        {
+          "id": "EdgeQty",
+          "value": 4
+        }
+      ]
+    },
+    {
+      "value": "LSLS",
+      "description": "Transitions: LongShortLongShort",
+      "shortName": "LSLS",
+      "imageId": "efc25626-5d46-4f40-aeb8-f104263e7093:LSLS.jpg",
+      "matrix": [
+        {
+          "id": "EdgeQty",
+          "value": 4
+        }
+      ]
+    },
+    {
+      "value": "LSSE",
+      "description": "Transitions: LongShortShortEmpty",
+      "shortName": "LSSE",
+      "imageId": "739e2c16-6349-43b5-94fb-8cfa7837611c:LSSE.jpg",
+      "matrix": [
+        {
+          "id": "EdgeQty",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "value": "LSSL",
+      "description": "Transitions: LongShortShortLong",
+      "shortName": "LSSL",
+      "imageId": "39301aa9-1357-4bad-bb99-51e2785b5272:LSSL.jpg",
+      "matrix": [
+        {
+          "id": "EdgeQty",
+          "value": 4
+        }
+      ]
+    },
+    {
+      "value": "LSSS",
+      "description": "Transitions: LongShortShortShort",
+      "shortName": "LSSS",
+      "imageId": "e810e0cd-0a19-4507-9709-d12a3c242e2e:LSSS.jpg",
+      "matrix": [
+        {
+          "id": "EdgeQty",
+          "value": 4
+        }
+      ]
+    },
+    {
+      "value": "SEEE",
+      "description": "Transitions: ShortEmptyEmptyEmpty",
+      "shortName": "SEEE",
+      "imageId": "4c1fe288-6faa-4818-ae57-9a392793fb7b:SEEE.jpg",
+      "matrix": [
+        {
+          "id": "EdgeQty",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "value": "SEEL",
+      "description": "Transitions: ShortEmptyEmptyLong",
+      "shortName": "SEEL",
+      "imageId": "92b0b1f6-d8c6-4751-b321-edbc4401c735:SEEL.jpg",
+      "matrix": [
+        {
+          "id": "EdgeQty",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "value": "SEES",
+      "description": "Transitions: ShortEmptyEmptyShort",
+      "shortName": "SEES",
+      "imageId": "0e6f669c-a3b7-4950-bcd0-f2a443eb2382:SEES.jpg",
+      "matrix": [
+        {
+          "id": "EdgeQty",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "value": "SELL",
+      "description": "Transitions: ShortEmptyLongLong",
+      "shortName": "SELL",
+      "imageId": "0407c9db-61ae-4744-8fda-fd577a3d22b4:SELL.jpg",
+      "matrix": [
+        {
+          "id": "EdgeQty",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "value": "SELS",
+      "description": "Transitions: ShortEmptyLongShort",
+      "shortName": "SELS",
+      "imageId": "2d4448a1-d683-49f1-99bf-3181e13fa78f:SELS.jpg",
+      "matrix": [
+        {
+          "id": "EdgeQty",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "value": "SESE",
+      "description": "Transitions: ShortEmptyShortEmpty",
+      "shortName": "SESE",
+      "imageId": "f6befc45-d8f0-4e84-a2c3-321988de0dc8:SESE.jpg",
+      "matrix": [
+        {
+          "id": "EdgeQty",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "value": "SESL",
+      "description": "Transitions: ShortEmptyShortLong",
+      "shortName": "SESL",
+      "imageId": "b2d00238-f738-43bd-a127-d28945a2252a:SESL.jpg",
+      "matrix": [
+        {
+          "id": "EdgeQty",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "value": "SESS",
+      "description": "Transitions: ShortEmptyShortShort",
+      "shortName": "SESS",
+      "imageId": "78afdcc3-87b4-49da-9dd7-27031c7f8d3a:SESS.jpg",
+      "matrix": [
+        {
+          "id": "EdgeQty",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "value": "SLLL",
+      "description": "Transitions: ShortLongLongLong",
+      "shortName": "SLLL",
+      "imageId": "99424312-c21e-4329-9833-542ea95cdc7c:SLLL.jpg",
+      "matrix": [
+        {
+          "id": "EdgeQty",
+          "value": 4
+        }
+      ]
+    },
+    {
+      "value": "SLLS",
+      "description": "Transitions: ShortLongLongShort",
+      "shortName": "SLLS",
+      "imageId": "49ea7d88-f2b5-408f-be8f-91929abdbf36:SLLS.jpg",
+      "matrix": [
+        {
+          "id": "EdgeQty",
+          "value": 4
+        }
+      ]
+    },
+    {
+      "value": "SLSE",
+      "description": "Transitions: ShortLongShortEmpty",
+      "shortName": "SLSE",
+      "imageId": "1f52ea2f-4ea0-42b4-b6c3-f52e300bd319:SLSE.jpg",
+      "matrix": [
+        {
+          "id": "EdgeQty",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "value": "SLSL",
+      "description": "Transitions: ShortLongShortLong",
+      "shortName": "SLSL",
+      "imageId": "c4737886-b199-474f-b6a1-e69da8c45003:SLSL.jpg",
+      "matrix": [
+        {
+          "id": "EdgeQty",
+          "value": 4
+        }
+      ]
+    },
+    {
+      "value": "SLSS",
+      "description": "Transitions: ShortLongShortShort",
+      "shortName": "SLSS",
+      "imageId": "a4232d76-78dc-4b14-b197-d88bbd04f269:SLSS.jpg",
+      "matrix": [
+        {
+          "id": "EdgeQty",
+          "value": 4
+        }
+      ]
+    },
+    {
+      "value": "SSEE",
+      "description": "Transitions: ShortShortEmptyEmpty",
+      "shortName": "SSEE",
+      "imageId": "54498a5b-ff80-4c18-9917-cd2ab138847e:SSEE.jpg",
+      "matrix": [
+        {
+          "id": "EdgeQty",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "value": "SSEL",
+      "description": "Transitions: ShortShortEmptyLong",
+      "shortName": "SSEL",
+      "imageId": "9f9103ef-c3ab-4601-acb7-cd72626ef956:SSEL.jpg",
+      "matrix": [
+        {
+          "id": "EdgeQty",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "value": "SSES",
+      "description": "Transitions: ShortShortEmptyShort",
+      "shortName": "SSES",
+      "imageId": "4532c2f7-5649-40f7-a43f-76e255004ac1:SSES.jpg",
+      "matrix": [
+        {
+          "id": "EdgeQty",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "value": "SSLL",
+      "description": "Transitions: ShortShortLongLong",
+      "shortName": "SSLL",
+      "imageId": "52fd3d54-1328-48aa-a1f1-21c7d5f59c47:SSLL.jpg",
+      "matrix": [
+        {
+          "id": "EdgeQty",
+          "value": 4
+        }
+      ]
+    },
+    {
+      "value": "SSLS",
+      "description": "Transitions: ShortShortLongShort",
+      "shortName": "SSLS",
+      "imageId": "36629844-fc93-4f68-82fe-c909c1948296:SSLS.jpg",
+      "matrix": [
+        {
+          "id": "EdgeQty",
+          "value": 4
+        }
+      ]
+    },
+    {
+      "value": "SSSE",
+      "description": "Transitions: ShortShortShortEmpty",
+      "shortName": "SSSE",
+      "imageId": "f4ec46f3-3078-468b-bc4d-0e33c5be8118:SSSE.jpg",
+      "matrix": [
+        {
+          "id": "EdgeQty",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "value": "SSSL",
+      "description": "Transitions: ShortShortShortLong",
+      "shortName": "SSSL",
+      "imageId": "98fc8825-f431-4f8e-83f9-dc17eeab05c7:SSSL.jpg",
+      "matrix": [
+        {
+          "id": "EdgeQty",
+          "value": 4
         }
       ]
     }

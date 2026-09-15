@@ -6,7 +6,7 @@
   "isConfigDummy": false,
   "description": "Equipment module for hinges",
   "groupName": "Processing",
-  "imageId": "b790b28c-d028-4287-8894-359d396603d6:me_Hinge.jpg",
+  "imageId": "60816033-7127-4fd5-b14c-ed083ba09038:me_Hinge.jpg",
   "restrictionTypeId": "Public",
   "childModules": [
     {
@@ -26,8 +26,7 @@
     },
     {
       "variantId": "mod_HingeDescriptor",
-      "default": "",
-      "previewValue": "",
+      "default": "100mm:1:100mm",
       "origin": "Default"
     },
     {
@@ -57,7 +56,7 @@
     },
     {
       "variantId": "mod_HingePosLogic",
-      "default": "Table",
+      "default": "AttributeDescriptor",
       "origin": "Default"
     },
     {
@@ -67,8 +66,8 @@
     },
     {
       "variantId": "mod_OpeningDirection",
-      "default": "Left",
-      "origin": "Default"
+      "previewValue": "Left",
+      "origin": "Derived"
     }
   ],
   "assignedParts": [],
