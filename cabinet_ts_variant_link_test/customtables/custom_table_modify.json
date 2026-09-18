@@ -1,0 +1,114 @@
+{
+  "tableName": "Custom_Table_Modify",
+  "description": "Custom table to be modified in unit tests",
+  "columns": [
+    {
+      "name": "_id",
+      "type": "Integer",
+      "allowNull": false
+    },
+    {
+      "name": "in_integerField",
+      "type": "Integer",
+      "allowNull": true
+    },
+    {
+      "name": "matrix_numericField",
+      "type": "Dim",
+      "allowNull": true
+    },
+    {
+      "name": "textField",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "func1",
+      "type": "Text",
+      "allowNull": true,
+      "functionDefinition": "(value: number): number | undefined"
+    }
+  ],
+  "rows": [
+    {
+      "data": [
+        {
+          "columnName": "in_integerField",
+          "value": "1"
+        },
+        {
+          "columnName": "matrix_numericField",
+          "value": "2"
+        },
+        {
+          "columnName": "textField",
+          "value": "initialText"
+        },
+        {
+          "columnName": "func1",
+          "value": "value * 5"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_integerField",
+          "value": "2"
+        },
+        {
+          "columnName": "matrix_numericField",
+          "value": "2"
+        },
+        {
+          "columnName": "textField",
+          "value": "initialText"
+        },
+        {
+          "columnName": "func1",
+          "value": "value * 5"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_integerField",
+          "value": "3"
+        },
+        {
+          "columnName": "matrix_numericField",
+          "value": "2"
+        },
+        {
+          "columnName": "textField",
+          "value": "initialText"
+        },
+        {
+          "columnName": "func1",
+          "value": "value * 5"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_integerField",
+          "value": "4"
+        },
+        {
+          "columnName": "matrix_numericField",
+          "value": "2"
+        },
+        {
+          "columnName": "textField",
+          "value": "initialText"
+        },
+        {
+          "columnName": "func1",
+          "value": "value * 5"
+        }
+      ]
+    }
+  ]
+}

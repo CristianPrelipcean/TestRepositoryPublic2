@@ -1,0 +1,59 @@
+{
+  "tableName": "Customer_Table_01",
+  "columns": [
+    {
+      "name": "_id",
+      "type": "Integer",
+      "allowNull": false
+    },
+    {
+      "name": "TextFeld",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "IntegerFeld",
+      "type": "Integer",
+      "allowNull": true
+    },
+    {
+      "name": "RealFeld",
+      "type": "Real",
+      "allowNull": true
+    }
+  ],
+  "rows": [
+    {
+      "data": [
+        {
+          "columnName": "TextFeld",
+          "value": "Wert 01"
+        },
+        {
+          "columnName": "IntegerFeld",
+          "value": "12"
+        },
+        {
+          "columnName": "RealFeld",
+          "value": "4.3"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "TextFeld",
+          "value": "Wert 02"
+        },
+        {
+          "columnName": "IntegerFeld",
+          "value": "1"
+        },
+        {
+          "columnName": "RealFeld",
+          "value": "3"
+        }
+      ]
+    }
+  ]
+}
