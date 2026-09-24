@@ -2,7 +2,7 @@
   logInfo("x:" + this.getArticlePos().x);
   logInfo("y:" + this.getArticlePos().y);
   logInfo("z:" + this.getArticlePos().z);
-  logInfo("rotationY:" + this.getArticlePos().rotationY);
+  logInfo("rotationY:" + this.getArticlePos().rotationY); // test
 
   // if (this.roots.length > 0) {
   //   const articlePos = this.getArticlePos();
