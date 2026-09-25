@@ -30,4 +30,6 @@
   });
 
   const roomContours = this.getRoomContours();
-  logInfo(JSON.stringify(roomContours));
+  logInfo(JSON.stringify(roomContours));
+  //abc
+
