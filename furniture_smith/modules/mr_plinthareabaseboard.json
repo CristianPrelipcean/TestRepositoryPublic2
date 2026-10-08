@@ -7,79 +7,44 @@
   "isDropContainer": false,
   "description": "Plinth Area Baseboard",
   "groupName": "Root",
-  "imageId": "55444fb7-0dc2-4652-834d-45f82866e463:PlinthAreaFront.jpg",
+  "imageId": "0d1ab24d-37bd-4858-bcd7-a1ebace5bb91:PlinthAreaFront.jpg",
   "restrictionTypeId": "Public",
   "generateMethod": "PlinthAreaBaseboard",
   "childModules": [
     {
-      "moduleId": "mc_Toekick"
+      "moduleId": "mc_Baseboard01"
     },
     {
       "moduleId": "mc_Leg01"
     },
     {
-      "moduleId": "mc_Baseboard01"
+      "moduleId": "mc_Toekick"
     }
   ],
   "assignedVariants": [
     {
-      "variantId": "mod_PlinthAreaDesign",
-      "default": "90",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_PlinthAreaHeight",
-      "default": "100",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_PlinthAreaVisLeft",
-      "default": "true",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_PlinthAreaVisRight",
-      "default": "true",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_PlinthAreaPosLogic",
-      "default": "Library",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_PlinthAreaPosLeftMatrix",
-      "default": "LCF",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_PlinthAreaPosRightMatrix",
-      "default": "RCF",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_PlinthAreaPosFrontMatrix",
-      "default": "FCF",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_PlinthAreaPosBackMatrix",
-      "default": "BCF",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_PlinthAreaElementColor",
-      "default": "StainlessSteel",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_PlinthAreaExtraItem",
-      "default": "None",
+      "variantId": "mod_BaseboardColor",
+      "defaultScript": "this.mod_CarcaseColor",
       "origin": "Default"
     },
     {
       "variantId": "mod_BaseboardDepthLogic",
       "default": "FollowsMinDepth",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_BaseboardEdgeBackColor",
+      "defaultScript": "this.mod_CarcaseColor",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_BaseboardEdgeColor",
+      "defaultScript": "this.mod_CarcaseColor",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_BaseboardEdgeFrontColor",
+      "defaultScript": "this.mod_CarcaseColor",
       "origin": "Default"
     },
     {
@@ -98,13 +63,28 @@
       "origin": "Default"
     },
     {
+      "variantId": "mod_BaseboardProgram",
+      "defaultScript": "this.mod_CarcaseProgram",
+      "origin": "Default"
+    },
+    {
       "variantId": "mod_BaseboardSplitLogic",
       "default": "BetweenCabinets",
       "origin": "Default"
     },
     {
+      "variantId": "mod_BaseboardThk",
+      "default": "19",
+      "origin": "Default"
+    },
+    {
       "variantId": "mod_CarcaseColor",
       "default": "316",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_CarcaseEdgeBackColor",
+      "defaultScript": "this.mod_CarcaseColor",
       "origin": "Default"
     },
     {
@@ -118,12 +98,67 @@
       "origin": "Default"
     },
     {
-      "variantId": "mod_CarcaseEdgeBackColor",
-      "defaultScript": "this.mod_CarcaseColor",
+      "variantId": "mod_CarcaseProgram",
+      "default": "Classic",
       "origin": "Default"
     },
     {
       "variantId": "mod_LengthList",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_PlinthAreaDesign",
+      "default": "90",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_PlinthAreaElementColor",
+      "default": "StainlessSteel",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_PlinthAreaExtraItem",
+      "default": "None",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_PlinthAreaHeight",
+      "default": "100",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_PlinthAreaPosBackMatrix",
+      "default": "BCF",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_PlinthAreaPosFrontMatrix",
+      "default": "FCF",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_PlinthAreaPosLeftMatrix",
+      "default": "LCF",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_PlinthAreaPosLogic",
+      "default": "Library",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_PlinthAreaPosRightMatrix",
+      "default": "RCF",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_PlinthAreaVisLeft",
+      "default": "true",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_PlinthAreaVisRight",
+      "default": "true",
       "origin": "Default"
     },
     {
@@ -169,41 +204,6 @@
     {
       "variantId": "mod_ToekickThk",
       "origin": "GlobalVar"
-    },
-    {
-      "variantId": "mod_BaseboardThk",
-      "default": "19",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_BaseboardColor",
-      "defaultScript": "this.mod_CarcaseColor",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_BaseboardEdgeColor",
-      "defaultScript": "this.mod_CarcaseColor",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_BaseboardEdgeBackColor",
-      "defaultScript": "this.mod_CarcaseColor",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_BaseboardEdgeFrontColor",
-      "defaultScript": "this.mod_CarcaseColor",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_BaseboardProgram",
-      "defaultScript": "this.mod_CarcaseProgram",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_CarcaseProgram",
-      "default": "Classic",
-      "origin": "Default"
     }
   ],
   "assignedParts": [

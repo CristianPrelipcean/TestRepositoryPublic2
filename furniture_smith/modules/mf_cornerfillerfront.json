@@ -7,7 +7,7 @@
   "isDropContainer": false,
   "description": "Front module for corner filler",
   "groupName": "FrontModule",
-  "imageId": "b1e2b490-600d-4a19-945c-789931f1c1f0:CornerFillerFront.jpg",
+  "imageId": "a4f7ba5a-77e6-4c5e-bbee-d86088d278d4:CornerFillerFront.jpg",
   "restrictionTypeId": "Public",
   "childModules": [
     {
@@ -16,38 +16,9 @@
   ],
   "assignedVariants": [
     {
-      "variantId": "mod_WidthLeft",
-      "default": "100",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_WidthRight",
-      "default": "100",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_HeightLeft",
-      "default": "720",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_HeightRight",
-      "default": "720",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_CarcaseId",
-      "default": "None",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_CornerunitStraightConstruction",
-      "origin": "GlobalVar"
-    },
-    {
-      "variantId": "mod_CornerunitFrontWidth",
-      "default": "100",
-      "origin": "Default"
+      "variantId": "mod_CarcaseDepth",
+      "previewValue": "500",
+      "origin": "Derived"
     },
     {
       "variantId": "mod_CarcaseDirection",
@@ -55,8 +26,62 @@
       "origin": "Derived"
     },
     {
+      "variantId": "mod_CarcaseHeight",
+      "previewValue": "780",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_CarcaseId",
+      "default": "None",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_CarcasePartInfo",
+      "default": "",
+      "previewValue": "",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_CarcaseWidth",
+      "previewValue": "600",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_CornerunitFrontWidth",
+      "default": "100",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_CornerunitStraightConstruction",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_CornerunitStraightFillerConstruction",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_FillerHardware",
+      "default": "Bracket01",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_FillerType",
+      "default": "LShape",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_FingergripBtmType",
+      "default": "NoFingergrip",
+      "origin": "Default"
+    },
+    {
       "variantId": "mod_FingergripTop",
       "default": "false",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_FingergripTopType",
+      "default": "NoFingergrip",
       "origin": "Default"
     },
     {
@@ -105,6 +130,16 @@
       "origin": "Default"
     },
     {
+      "variantId": "mod_FrontOversizeLeft",
+      "default": "0",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_FrontOversizeRight",
+      "default": "0",
+      "origin": "Default"
+    },
+    {
       "variantId": "mod_FrontOversizeTop",
       "default": "0",
       "origin": "Default"
@@ -120,42 +155,9 @@
       "origin": "Derived"
     },
     {
-      "variantId": "mod_ModuleName",
-      "default": "mf_CornerFillerFront",
-      "origin": "Fixed"
-    },
-    {
-      "variantId": "mod_ParentName",
-      "default": "mf_CornerFillerFront",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_PlinthAreaHeight",
-      "previewValue": "80",
+      "variantId": "mod_HandleColor",
+      "previewValue": "Demoblue",
       "origin": "Derived"
-    },
-    {
-      "variantId": "mod_CarcaseDepth",
-      "previewValue": "500",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_CarcaseHeight",
-      "previewValue": "780",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_CarcaseWidth",
-      "previewValue": "600",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_ThkLeft",
-      "origin": "GlobalVar"
-    },
-    {
-      "variantId": "mod_ThkRight",
-      "origin": "GlobalVar"
     },
     {
       "variantId": "mod_HandleDesign",
@@ -168,12 +170,40 @@
       "origin": "Derived"
     },
     {
-      "variantId": "mod_HandleColor",
-      "previewValue": "Demoblue",
+      "variantId": "mod_HeightLeft",
+      "default": "720",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_HeightRight",
+      "default": "720",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_ModuleName",
+      "default": "mf_CornerFillerFront",
+      "origin": "Fixed"
+    },
+    {
+      "variantId": "mod_Originpos",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_ParentName",
+      "default": "mf_CornerFillerFront",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_PlinthAreaHeight",
+      "previewValue": "80",
       "origin": "Derived"
     },
     {
-      "variantId": "mod_CornerunitStraightFillerConstruction",
+      "variantId": "mod_ThkLeft",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_ThkRight",
       "origin": "GlobalVar"
     },
     {
@@ -182,43 +212,13 @@
       "origin": "Default"
     },
     {
-      "variantId": "mod_FillerType",
-      "default": "LShape",
+      "variantId": "mod_WidthLeft",
+      "default": "100",
       "origin": "Default"
     },
     {
-      "variantId": "mod_FillerHardware",
-      "default": "Bracket01",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_CarcasePartInfo",
-      "default": "",
-      "previewValue": "",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_Originpos",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_FingergripTopType",
-      "default": "NoFingergrip",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_FingergripBtmType",
-      "default": "NoFingergrip",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_FrontOversizeLeft",
-      "default": "0",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_FrontOversizeRight",
-      "default": "0",
+      "variantId": "mod_WidthRight",
+      "default": "100",
       "origin": "Default"
     }
   ],

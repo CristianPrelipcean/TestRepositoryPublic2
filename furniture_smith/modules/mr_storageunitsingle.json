@@ -5,59 +5,73 @@
   "isRoot": true,
   "description": "Module for storage unit",
   "groupName": "Root",
-  "imageId": "d0a68c74-62e2-4d4a-ba90-89ea74d3adc5:Partgroup.png",
+  "imageId": "612dfa5c-8c59-44c2-b790-c0cfec26a02a:Partgroup.png",
   "restrictionTypeId": "Public",
   "childModules": [
     {
-      "moduleId": "mc_Storageunit01"
-    },
-    {
-      "moduleId": "mf_Drawer"
+      "moduleId": "mc_FillerStraight01"
     },
     {
       "moduleId": "mc_PlinthArea01"
     },
     {
-      "moduleId": "mf_Fliplift"
+      "moduleId": "mc_Storageunit01"
     },
     {
-      "moduleId": "mf_Door"
-    },
-    {
-      "moduleId": "mf_Oven"
-    },
-    {
-      "moduleId": "mf_Fridge"
-    },
-    {
-      "moduleId": "mf_RackArea"
-    },
-    {
-      "moduleId": "mf_Fixedfront"
-    },
-    {
-      "moduleId": "mf_Hob"
-    },
-    {
-      "moduleId": "mf_Sink"
-    },
-    {
-      "moduleId": "mf_Pullout"
-    },
-    {
-      "moduleId": "mf_PantryPullout"
+      "moduleId": "mc_Upright01"
     },
     {
       "moduleId": "md_FrontPlaceholder"
     },
     {
-      "moduleId": "mc_FillerStraight01"
+      "moduleId": "mf_Door"
     },
     {
-      "moduleId": "mc_Upright01"
+      "moduleId": "mf_Drawer"
+    },
+    {
+      "moduleId": "mf_Fixedfront"
+    },
+    {
+      "moduleId": "mf_Fliplift"
+    },
+    {
+      "moduleId": "mf_Fridge"
+    },
+    {
+      "moduleId": "mf_Hob"
+    },
+    {
+      "moduleId": "mf_Oven"
+    },
+    {
+      "moduleId": "mf_PantryPullout"
+    },
+    {
+      "moduleId": "mf_Pullout"
+    },
+    {
+      "moduleId": "mf_RackArea"
+    },
+    {
+      "moduleId": "mf_Sink"
     }
   ],
   "assignedVariants": [
+    {
+      "variantId": "mod_AutomaticHeightAdjustment",
+      "default": "false",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_BackHeight",
+      "default": "600",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_BackwallFixedHeight",
+      "origin": "GlobalVar"
+    },
     {
       "variantId": "mod_BackwallPos",
       "origin": "GlobalVar"
@@ -67,8 +81,27 @@
       "origin": "GlobalVar"
     },
     {
+      "variantId": "mod_CarcaseBackwallColor",
+      "defaultScript": "this.mod_CarcaseColor",
+      "origin": "Default"
+    },
+    {
       "variantId": "mod_CarcaseBackwallConstruction",
       "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_CarcaseBackwallProgram",
+      "defaultScript": "this.mod_CarcaseProgram",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_CarcaseCeilingDistance",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_CarcaseColor",
+      "default": "178",
+      "origin": "Default"
     },
     {
       "variantId": "mod_CarcaseConnectionLeftBtm",
@@ -87,109 +120,8 @@
       "origin": "GlobalVar"
     },
     {
-      "variantId": "mod_CarcaseShelfbtmConstruction",
-      "origin": "GlobalVar"
-    },
-    {
-      "variantId": "mod_CarcaseShelftopConstruction",
-      "origin": "GlobalVar"
-    },
-    {
-      "variantId": "mod_CarcaseVisBack",
-      "default": "false",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_CarcaseVisBtm",
-      "default": "false",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_CarcaseVisTop",
-      "default": "false",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_HandleLine",
-      "origin": "GlobalVar"
-    },
-    {
-      "variantId": "mod_HandlePosLogic",
-      "origin": "GlobalVar"
-    },
-    {
-      "variantId": "mod_HangerPosX",
-      "default": "Left_Right",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_HangerPosY",
-      "default": "Automatic",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_RailhortopbackThk",
-      "origin": "GlobalVar"
-    },
-    {
-      "variantId": "mod_RailhortopfrontThk",
-      "origin": "GlobalVar"
-    },
-    {
-      "variantId": "mod_RailverttopbackThk",
-      "origin": "GlobalVar"
-    },
-    {
-      "variantId": "mod_RailverttopfrontThk",
-      "origin": "GlobalVar"
-    },
-    {
-      "variantId": "mod_ShelfbtmThk",
-      "origin": "GlobalVar"
-    },
-    {
-      "variantId": "mod_ShelffixedThk",
-      "origin": "GlobalVar"
-    },
-    {
-      "variantId": "mod_ShelftopThk",
-      "origin": "GlobalVar"
-    },
-    {
-      "variantId": "mod_SidepanelleftThk",
-      "origin": "GlobalVar"
-    },
-    {
-      "variantId": "mod_SidepanelrightThk",
-      "origin": "GlobalVar"
-    },
-    {
-      "variantId": "mod_HardwareColor",
-      "origin": "GlobalVar"
-    },
-    {
-      "variantId": "mod_OpeningType",
-      "default": "Handle",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_CarcaseBackwallColor",
-      "defaultScript": "this.mod_CarcaseColor",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_CarcaseBackwallProgram",
-      "defaultScript": "this.mod_CarcaseProgram",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_CarcaseColor",
-      "default": "178",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_CarcaseOutsideColor",
-      "defaultScript": "this.mod_FrontColor",
+      "variantId": "mod_CarcaseDistanceWall",
+      "default": "0",
       "origin": "Default"
     },
     {
@@ -208,14 +140,67 @@
       "origin": "Default"
     },
     {
-      "variantId": "mod_CarcaseProgram",
-      "default": "Classic",
+      "variantId": "mod_CarcaseFrontConstruction",
+      "default": "FrontOverlayLBRT",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_CarcaseHeight",
+      "default": "0",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_CarcaseOutsideColor",
+      "defaultScript": "this.mod_FrontColor",
       "origin": "Default"
     },
     {
       "variantId": "mod_CarcaseOutsideProgram",
       "defaultScript": "this.mod_CarcaseProgram",
       "origin": "Default"
+    },
+    {
+      "variantId": "mod_CarcaseOverdimensionBackLogic",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_CarcasePartConnectionBackHor",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_CarcasePartConnectionBackVert",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_CarcasePartConnectionBtmVert",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_CarcasePartConnectionLeftHor",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_CarcasePartConnectionRightHor",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_CarcasePartConnectionTopVert",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_CarcasePartInfo",
+      "default": "",
+      "previewValue": "",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_CarcaseProgram",
+      "default": "Classic",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_CarcaseShelfbtmConstruction",
+      "origin": "GlobalVar"
     },
     {
       "variantId": "mod_CarcaseShelfbtmOversizeInsideWall",
@@ -227,6 +212,10 @@
     },
     {
       "variantId": "mod_CarcaseShelfbtmOversizeRight",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_CarcaseShelftopConstruction",
       "origin": "GlobalVar"
     },
     {
@@ -270,8 +259,92 @@
       "origin": "Default"
     },
     {
-      "variantId": "mod_CarcaseDistanceWall",
-      "default": "0",
+      "variantId": "mod_CarcaseVisBack",
+      "default": "false",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_CarcaseVisBtm",
+      "default": "false",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_CarcaseVisLeftAutomaticType",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_CarcaseVisLeftSelection",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_CarcaseVisRightAutomaticType",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_CarcaseVisRightSelection",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_CarcaseVisTop",
+      "default": "false",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_CeilingAreaVisLeftSelection",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_CeilingAreaVisRightSelection",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_CleatThk",
+      "default": "19",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_CleatWidth",
+      "default": "150",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_CountertopInfo",
+      "default": "",
+      "previewValue": "",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_CountertopThk",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_CreateBacksplash",
+      "default": "false",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_CreateCeilingFiller",
+      "default": "false",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_CreateCountertop",
+      "default": "false",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_CreateFingergrip",
+      "default": "false",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_CreatePaneltop",
+      "default": "false",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_CreateToekick",
+      "default": "false",
       "origin": "Default"
     },
     {
@@ -280,199 +353,13 @@
       "origin": "Required"
     },
     {
+      "variantId": "mod_DoorDirectionSelection",
+      "origin": "GlobalVar"
+    },
+    {
       "variantId": "mod_FingergripType",
       "default": "None",
       "origin": "Default"
-    },
-    {
-      "variantId": "mod_FrontColor",
-      "default": "240",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_FrontEdgeColor",
-      "default": "Automatic",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_FrontEdgeThk",
-      "default": "0",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_FrontGapCarcase",
-      "origin": "GlobalVar"
-    },
-    {
-      "variantId": "mod_FrontGapHor",
-      "origin": "GlobalVar"
-    },
-    {
-      "variantId": "mod_FrontGapVert",
-      "origin": "GlobalVar"
-    },
-    {
-      "variantId": "mod_FrontProgram",
-      "default": "Nature",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_FrontPosStart",
-      "origin": "GlobalVar"
-    },
-    {
-      "variantId": "mod_HandleColor",
-      "origin": "GlobalVar"
-    },
-    {
-      "variantId": "mod_HandleLength",
-      "origin": "GlobalVar"
-    },
-    {
-      "variantId": "mod_HandlePosType",
-      "origin": "GlobalVar"
-    },
-    {
-      "variantId": "mod_HangerType",
-      "origin": "GlobalVar"
-    },
-    {
-      "variantId": "mod_Height",
-      "previewValue": "720",
-      "origin": "Required"
-    },
-    {
-      "variantId": "mod_HeightPosInsertion",
-      "default": "0",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_LightPosX1",
-      "default": "0",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_LightPosX2",
-      "default": "0",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_LightPosX3",
-      "default": "0",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_LightPosX4",
-      "default": "0",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_LightPosX5",
-      "default": "0",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_LightPart",
-      "default": "BottomShelf",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_LightPosX",
-      "default": "Central",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_LightPosY",
-      "default": "100",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_LightSystem",
-      "default": "NoLight",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_Model",
-      "default": "Classic",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_PlinthAreaHeight",
-      "origin": "GlobalVar"
-    },
-    {
-      "variantId": "mod_ShelfadjThk",
-      "origin": "GlobalVar"
-    },
-    {
-      "variantId": "mod_TypeElement",
-      "default": "BaseUnit",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_Width",
-      "previewValue": "600",
-      "origin": "Required"
-    },
-    {
-      "variantId": "mod_BackwallFixedHeight",
-      "origin": "GlobalVar"
-    },
-    {
-      "variantId": "mod_HandleDesign",
-      "default": "20",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_FrontDesign",
-      "origin": "GlobalVar"
-    },
-    {
-      "variantId": "mod_PlinthAreaPosLeftMatrix",
-      "origin": "GlobalVar"
-    },
-    {
-      "variantId": "mod_PlinthAreaDesign",
-      "origin": "GlobalVar"
-    },
-    {
-      "variantId": "mod_PlinthAreaPosBackMatrix",
-      "origin": "GlobalVar"
-    },
-    {
-      "variantId": "mod_PlinthAreaPosFrontMatrix",
-      "origin": "GlobalVar"
-    },
-    {
-      "variantId": "mod_PlinthAreaPosRightMatrix",
-      "origin": "GlobalVar"
-    },
-    {
-      "variantId": "mod_PlinthAreaElementColor",
-      "default": "Black",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_ParentName",
-      "default": "mr_StorageunitSingle",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_ModuleName",
-      "default": "mr_StorageunitSingle",
-      "origin": "Fixed"
-    },
-    {
-      "variantId": "mod_PlinthAreaExtraItem",
-      "origin": "GlobalVar"
-    },
-    {
-      "variantId": "mod_FrontGapHorTop",
-      "origin": "GlobalVar"
-    },
-    {
-      "variantId": "mod_ShelvesBackwallFittingConnection",
-      "origin": "GlobalVar"
     },
     {
       "variantId": "mod_FittingConnectionBtmVert",
@@ -507,164 +394,6 @@
       "origin": "GlobalVar"
     },
     {
-      "variantId": "mod_CarcasePartConnectionBackHor",
-      "origin": "GlobalVar"
-    },
-    {
-      "variantId": "mod_CarcasePartConnectionBackVert",
-      "origin": "GlobalVar"
-    },
-    {
-      "variantId": "mod_CarcasePartConnectionBtmVert",
-      "origin": "GlobalVar"
-    },
-    {
-      "variantId": "mod_CarcasePartConnectionLeftHor",
-      "origin": "GlobalVar"
-    },
-    {
-      "variantId": "mod_CarcasePartConnectionRightHor",
-      "origin": "GlobalVar"
-    },
-    {
-      "variantId": "mod_CarcasePartConnectionTopVert",
-      "origin": "GlobalVar"
-    },
-    {
-      "variantId": "mod_HangerOffsetPosY",
-      "default": "0",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_HangerColor",
-      "default": "DemoStainlessSteel",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_RackAreaOversizeCarcaseType",
-      "origin": "GlobalVar"
-    },
-    {
-      "variantId": "mod_RackAreaManualOffsetCarcase",
-      "origin": "GlobalVar"
-    },
-    {
-      "variantId": "mod_CleatThk",
-      "default": "19",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_CleatWidth",
-      "default": "150",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_VertDividerType",
-      "origin": "GlobalVar"
-    },
-    {
-      "variantId": "mod_SidepanelmiddleThk",
-      "default": "19",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_CarcaseFrontConstruction",
-      "default": "FrontOverlayLBRT",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_CarcasePartInfo",
-      "default": "",
-      "previewValue": "",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_PushtoopenLine",
-      "origin": "GlobalVar"
-    },
-    {
-      "variantId": "mod_PushtoopenType",
-      "default": "Automatic",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_PushtoopenColor",
-      "origin": "GlobalVar"
-    },
-    {
-      "variantId": "mod_CreateCountertop",
-      "default": "false",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_CreateToekick",
-      "default": "false",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_CreateFingergrip",
-      "default": "false",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_CreatePaneltop",
-      "default": "false",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_PlinthAreaPositionInfo",
-      "default": "",
-      "previewValue": "",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_SlopedCeilingDimensionLogic",
-      "origin": "GlobalVar"
-    },
-    {
-      "variantId": "mod_SlopedCeilingConstruction",
-      "origin": "GlobalVar"
-    },
-    {
-      "variantId": "mod_SlopeAngle",
-      "default": "0",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_BackHeight",
-      "default": "600",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_TopDepth",
-      "origin": "GlobalVar"
-    },
-    {
-      "variantId": "mod_CountertopThk",
-      "origin": "GlobalVar"
-    },
-    {
-      "variantId": "mod_CountertopInfo",
-      "default": "",
-      "previewValue": "",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_SidepanelleftType",
-      "default": "OutSp",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_SidepanelrightType",
-      "default": "OutSp",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_ShelfadjColor",
-      "default": "Automatic",
-      "origin": "Default"
-    },
-    {
       "variantId": "mod_FrameFillingColor",
       "default": "LikeFrameColor",
       "origin": "Default"
@@ -675,19 +404,62 @@
       "origin": "Default"
     },
     {
-      "variantId": "mod_PulloutElementColor",
-      "default": "silver",
+      "variantId": "mod_FrontColor",
+      "default": "240",
       "origin": "Default"
     },
     {
-      "variantId": "mod_PulloutDesign",
-      "default": "snelloFioro",
+      "variantId": "mod_FrontDesign",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_FrontEdgeColor",
+      "default": "Automatic",
       "origin": "Default"
     },
     {
-      "variantId": "mod_PulloutType",
-      "default": "No15",
+      "variantId": "mod_FrontEdgeThk",
+      "default": "0",
       "origin": "Default"
+    },
+    {
+      "variantId": "mod_FrontGapCarcase",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_FrontGapHor",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_FrontGapHorTop",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_FrontGapVert",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_FrontPosStart",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_FrontProgram",
+      "default": "Nature",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_FrontSegmentColor",
+      "default": "FloatGlass",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_FrontSegmentType",
+      "default": "Automatic",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_GlobalFrontOversizeBtm",
+      "origin": "GlobalVar"
     },
     {
       "variantId": "mod_GlobalFrontOversizeLeft",
@@ -702,31 +474,81 @@
       "origin": "GlobalVar"
     },
     {
-      "variantId": "mod_GlobalFrontOversizeBtm",
+      "variantId": "mod_GroupGenerationStatus",
+      "default": "",
+      "previewValue": "",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_GroupHeight",
+      "default": "1500",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_HandleColor",
       "origin": "GlobalVar"
     },
     {
-      "variantId": "mod_CreateBacksplash",
-      "default": "false",
+      "variantId": "mod_HandleDesign",
+      "default": "20",
       "origin": "Default"
     },
     {
-      "variantId": "mod_FrontSegmentColor",
-      "default": "FloatGlass",
+      "variantId": "mod_HandleLength",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_HandleLine",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_HandlePosLogic",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_HandlePosType",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_HangerColor",
+      "default": "DemoStainlessSteel",
       "origin": "Default"
     },
     {
-      "variantId": "mod_FrontSegmentType",
+      "variantId": "mod_HangerOffsetPosY",
+      "default": "0",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_HangerPosX",
+      "default": "Left_Right",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_HangerPosY",
       "default": "Automatic",
       "origin": "Default"
     },
     {
-      "variantId": "mod_DoorDirectionSelection",
+      "variantId": "mod_HangerType",
       "origin": "GlobalVar"
     },
     {
-      "variantId": "mod_CreateCeilingFiller",
-      "default": "false",
+      "variantId": "mod_HardwareColor",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_Height",
+      "previewValue": "720",
+      "origin": "Required"
+    },
+    {
+      "variantId": "mod_HeightInputMode",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_HeightPosInsertion",
+      "default": "0",
       "origin": "Default"
     },
     {
@@ -736,19 +558,117 @@
       "origin": "Default"
     },
     {
-      "variantId": "mod_CarcaseVisLeftSelection",
+      "variantId": "mod_LightPart",
+      "default": "BottomShelf",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_LightPosX",
+      "default": "Central",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_LightPosX1",
+      "default": "0",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_LightPosX2",
+      "default": "0",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_LightPosX3",
+      "default": "0",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_LightPosX4",
+      "default": "0",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_LightPosX5",
+      "default": "0",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_LightPosY",
+      "default": "100",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_LightSystem",
+      "default": "NoLight",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_Model",
+      "default": "Classic",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_ModuleContextInformationList",
+      "default": "",
+      "previewValue": "",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_ModuleName",
+      "default": "mr_StorageunitSingle",
+      "origin": "Fixed"
+    },
+    {
+      "variantId": "mod_OpeningType",
+      "default": "Handle",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_ParentName",
+      "default": "mr_StorageunitSingle",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_PlacementLevels",
       "origin": "GlobalVar"
     },
     {
-      "variantId": "mod_CarcaseVisRightSelection",
+      "variantId": "mod_PlinthAreaDesign",
       "origin": "GlobalVar"
     },
     {
-      "variantId": "mod_CeilingAreaVisLeftSelection",
+      "variantId": "mod_PlinthAreaElementColor",
+      "default": "Black",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_PlinthAreaExtraItem",
       "origin": "GlobalVar"
     },
     {
-      "variantId": "mod_CeilingAreaVisRightSelection",
+      "variantId": "mod_PlinthAreaHeight",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_PlinthAreaPosBackMatrix",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_PlinthAreaPosFrontMatrix",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_PlinthAreaPositionInfo",
+      "default": "",
+      "previewValue": "",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_PlinthAreaPosLeftMatrix",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_PlinthAreaPosRightMatrix",
       "origin": "GlobalVar"
     },
     {
@@ -760,51 +680,129 @@
       "origin": "GlobalVar"
     },
     {
-      "variantId": "mod_CarcaseOverdimensionBackLogic",
-      "origin": "GlobalVar"
-    },
-    {
-      "variantId": "mod_ModuleContextInformationList",
-      "default": "",
-      "previewValue": "",
+      "variantId": "mod_PulloutDesign",
+      "default": "snelloFioro",
       "origin": "Default"
     },
     {
-      "variantId": "mod_AutomaticHeightAdjustment",
-      "default": "false",
+      "variantId": "mod_PulloutElementColor",
+      "default": "silver",
       "origin": "Default"
     },
     {
-      "variantId": "mod_CarcaseVisLeftAutomaticType",
+      "variantId": "mod_PulloutType",
+      "default": "No15",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_PushtoopenColor",
       "origin": "GlobalVar"
     },
     {
-      "variantId": "mod_CarcaseVisRightAutomaticType",
+      "variantId": "mod_PushtoopenLine",
       "origin": "GlobalVar"
     },
     {
-      "variantId": "mod_CarcaseCeilingDistance",
+      "variantId": "mod_PushtoopenType",
+      "default": "Automatic",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_RackAreaManualOffsetCarcase",
       "origin": "GlobalVar"
     },
     {
-      "variantId": "mod_PlacementLevels",
+      "variantId": "mod_RackAreaOversizeCarcaseType",
       "origin": "GlobalVar"
     },
     {
-      "variantId": "mod_HeightInputMode",
+      "variantId": "mod_RailhortopbackThk",
       "origin": "GlobalVar"
     },
     {
-      "variantId": "mod_CarcaseHeight",
+      "variantId": "mod_RailhortopfrontThk",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_RailverttopbackThk",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_RailverttopfrontThk",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_ShelfadjColor",
+      "default": "Automatic",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_ShelfadjThk",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_ShelfbtmThk",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_ShelffixedThk",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_ShelftopThk",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_ShelvesBackwallFittingConnection",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_SidepanelleftThk",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_SidepanelleftType",
+      "default": "OutSp",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_SidepanelmiddleThk",
+      "default": "19",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_SidepanelrightThk",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_SidepanelrightType",
+      "default": "OutSp",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_SlopeAngle",
       "default": "0",
       "origin": "Default"
     },
     {
-      "variantId": "mod_UprightThk",
+      "variantId": "mod_SlopedCeilingConstruction",
       "origin": "GlobalVar"
     },
     {
-      "variantId": "mod_WallHeightLines",
+      "variantId": "mod_SlopedCeilingDimensionLogic",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_TopDepth",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_TypeElement",
+      "default": "BaseUnit",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_UprightThk",
       "origin": "GlobalVar"
     },
     {
@@ -813,15 +811,17 @@
       "origin": "Default"
     },
     {
-      "variantId": "mod_GroupHeight",
-      "default": "1500",
-      "origin": "Default"
+      "variantId": "mod_VertDividerType",
+      "origin": "GlobalVar"
     },
     {
-      "variantId": "mod_GroupGenerationStatus",
-      "default": "",
-      "previewValue": "",
-      "origin": "Default"
+      "variantId": "mod_WallHeightLines",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_Width",
+      "previewValue": "600",
+      "origin": "Required"
     }
   ],
   "assignedParts": [],

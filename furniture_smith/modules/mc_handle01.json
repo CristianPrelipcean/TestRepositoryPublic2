@@ -5,7 +5,7 @@
   "isRoot": false,
   "description": "Management of the handle",
   "groupName": "Handle",
-  "imageId": "7833a641-25f9-4e50-aa5b-ba76fe4a3e37:Handle_200.jpg",
+  "imageId": "045bf6c4-9f31-4e99-8faa-6cdc93a1a3a2:Handle_200.jpg",
   "restrictionTypeId": "Internal",
   "childModules": [],
   "assignedVariants": [
@@ -25,24 +25,9 @@
       "origin": "Derived"
     },
     {
-      "variantId": "mod_HandleDrill",
-      "previewValue": "True",
+      "variantId": "mod_FrontOversizeBtm",
+      "previewValue": "0",
       "origin": "Derived"
-    },
-    {
-      "variantId": "mod_HandleLine",
-      "previewValue": "1050",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_HandlePosLogic",
-      "previewValue": "HandleLine",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_Height",
-      "default": "720",
-      "origin": "Default"
     },
     {
       "variantId": "mod_FrontPosStart",
@@ -50,13 +35,23 @@
       "origin": "Derived"
     },
     {
-      "variantId": "mod_Width",
-      "default": "600",
+      "variantId": "mod_FrontProgram",
+      "previewValue": "Demoprogram1",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_FrontThk",
+      "previewValue": "19",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_FrontType",
+      "default": "None",
       "origin": "Default"
     },
     {
-      "variantId": "mod_FrontProgram",
-      "previewValue": "Demoprogram1",
+      "variantId": "mod_FrontWidth",
+      "previewValue": "594",
       "origin": "Derived"
     },
     {
@@ -65,8 +60,23 @@
       "origin": "Derived"
     },
     {
+      "variantId": "mod_HandleDesign",
+      "previewValue": "10",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_HandleDrill",
+      "previewValue": "True",
+      "origin": "Derived"
+    },
+    {
       "variantId": "mod_HandleLength",
       "previewValue": "128",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_HandleLine",
+      "previewValue": "1050",
       "origin": "Derived"
     },
     {
@@ -80,6 +90,15 @@
       "origin": "Derived"
     },
     {
+      "variantId": "mod_HandlePosFrontOversize",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_HandlePosLogic",
+      "previewValue": "HandleLine",
+      "origin": "Derived"
+    },
+    {
       "variantId": "mod_HandlePosMatrix",
       "previewValue": "11",
       "origin": "Derived"
@@ -90,19 +109,39 @@
       "origin": "Derived"
     },
     {
+      "variantId": "mod_HandleWeightCalculations",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_HardwareId",
+      "default": "None",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_HardwareTypeList",
+      "default": "",
+      "previewValue": "",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_Height",
+      "default": "720",
+      "origin": "Default"
+    },
+    {
       "variantId": "mod_HeightPosInsertion",
       "previewValue": "0",
       "origin": "Derived"
     },
     {
-      "variantId": "mod_PlinthAreaHeight",
-      "previewValue": "100",
-      "origin": "Derived"
+      "variantId": "mod_Model3DGroupName",
+      "default": "None",
+      "origin": "Default"
     },
     {
-      "variantId": "mod_HandleDesign",
-      "previewValue": "10",
-      "origin": "Derived"
+      "variantId": "mod_ModuleName",
+      "default": "mc_Handle01",
+      "origin": "Fixed"
     },
     {
       "variantId": "mod_PartInfo",
@@ -110,9 +149,9 @@
       "origin": "Default"
     },
     {
-      "variantId": "mod_ModuleName",
-      "default": "mc_Handle01",
-      "origin": "Fixed"
+      "variantId": "mod_PlinthAreaHeight",
+      "previewValue": "100",
+      "origin": "Derived"
     },
     {
       "variantId": "mod_ProcessingId",
@@ -125,53 +164,14 @@
       "origin": "Default"
     },
     {
-      "variantId": "mod_HardwareId",
-      "default": "None",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_Model3DGroupName",
-      "default": "None",
-      "origin": "Default"
-    },
-    {
       "variantId": "mod_Rotation",
       "default": "0",
       "origin": "Default"
     },
     {
-      "variantId": "mod_FrontThk",
-      "previewValue": "19",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_FrontWidth",
-      "previewValue": "594",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_HandleWeightCalculations",
+      "variantId": "mod_Width",
+      "default": "600",
       "origin": "Default"
-    },
-    {
-      "variantId": "mod_FrontType",
-      "default": "None",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_HardwareTypeList",
-      "default": "",
-      "previewValue": "",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_FrontOversizeBtm",
-      "previewValue": "0",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_HandlePosFrontOversize",
-      "origin": "GlobalVar"
     }
   ],
   "assignedParts": [

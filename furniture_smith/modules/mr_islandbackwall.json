@@ -5,7 +5,7 @@
   "isRoot": true,
   "description": "Module for island backwall",
   "groupName": "Root",
-  "imageId": "6dacf1e4-d154-4bdd-997b-913f3f524483:IslandBackwall.jpg",
+  "imageId": "19ce6efc-0ec7-4423-b1c9-cf4508028702:IslandBackwall.jpg",
   "restrictionTypeId": "Public",
   "childModules": [
     {
@@ -19,11 +19,6 @@
       "origin": "Default"
     },
     {
-      "variantId": "mod_Program",
-      "default": "Demoprogram1",
-      "origin": "Default"
-    },
-    {
       "variantId": "mod_Depth",
       "previewValue": "350",
       "origin": "Required"
@@ -34,8 +29,18 @@
       "origin": "Required"
     },
     {
-      "variantId": "mod_Thk",
-      "default": "19",
+      "variantId": "mod_IslandBackwallOverdimension",
+      "default": "10",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_IslandBackwallOverhangFront",
+      "default": "30",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_IslandBackwallWidth",
+      "default": "1000",
       "origin": "Default"
     },
     {
@@ -48,18 +53,13 @@
       "origin": "GlobalVar"
     },
     {
-      "variantId": "mod_IslandBackwallOverhangFront",
-      "default": "30",
+      "variantId": "mod_Program",
+      "default": "Demoprogram1",
       "origin": "Default"
     },
     {
-      "variantId": "mod_IslandBackwallOverdimension",
-      "default": "10",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_IslandBackwallWidth",
-      "default": "1000",
+      "variantId": "mod_Thk",
+      "default": "19",
       "origin": "Default"
     }
   ],

@@ -7,23 +7,23 @@
   "isDropContainer": false,
   "description": "Root module to build sub articles",
   "groupName": "Root",
-  "imageId": "35a94c79-4906-4bdc-9684-90aa3bdcb466:ArticleBuilder.png",
+  "imageId": "b9493fb2-3271-4ee1-ae60-38e7a6859994:ArticleBuilder.png",
   "restrictionTypeId": "Public",
   "childModules": [
     {
-      "moduleId": "me_ShelfadjMultiple01"
-    },
-    {
       "moduleId": "me_ClothingOrganizer01"
-    },
-    {
-      "moduleId": "me_Vertdivider01"
     },
     {
       "moduleId": "me_InnerDrawerGroup"
     },
     {
+      "moduleId": "me_ShelfadjMultiple01"
+    },
+    {
       "moduleId": "me_Shelffixed01"
+    },
+    {
+      "moduleId": "me_Vertdivider01"
     }
   ],
   "assignedVariants": [
@@ -40,6 +40,11 @@
     {
       "variantId": "mod_CarcaseProgram",
       "default": "ModernNature",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_CarcaseSpaceDimension",
+      "default": "",
       "origin": "Default"
     },
     {
@@ -81,11 +86,6 @@
     {
       "variantId": "mod_Width",
       "default": "600",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_CarcaseSpaceDimension",
-      "default": "",
       "origin": "Default"
     }
   ],

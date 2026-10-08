@@ -5,10 +5,20 @@
   "isRoot": false,
   "description": "Management of the drills for adjustable shelves",
   "groupName": "Equipment",
-  "imageId": "1f435a60-cbaf-4d98-8d13-2c67ebdb1739:ShelfadjDrill.jpg",
+  "imageId": "f335681b-518f-4310-8937-698c295ee51e:ShelfadjDrill.jpg",
   "restrictionTypeId": "Internal",
   "childModules": [],
   "assignedVariants": [
+    {
+      "variantId": "mod_Depth",
+      "default": "600",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_Height",
+      "default": "600",
+      "origin": "Default"
+    },
     {
       "variantId": "mod_ModuleName",
       "default": "mc_ShelfadjDrill01",
@@ -20,37 +30,22 @@
       "origin": "Default"
     },
     {
-      "variantId": "mod_ShelfadjDrillDistance",
-      "default": "32",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_Depth",
-      "default": "600",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_Width",
-      "default": "600",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_Height",
-      "default": "600",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_ShelfadjSidepanelDrillDescriptor",
-      "default": "None",
-      "origin": "Default"
-    },
-    {
       "variantId": "mod_ShelfadjBackwallDrillDescriptor",
       "default": "None",
       "origin": "Default"
     },
     {
       "variantId": "mod_ShelfadjBackwallProcessingId",
+      "default": "None",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_ShelfadjDrillDistance",
+      "default": "32",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_ShelfadjSidepanelDrillDescriptor",
       "default": "None",
       "origin": "Default"
     },
@@ -70,14 +65,19 @@
       "origin": "Default"
     },
     {
+      "variantId": "mod_ShelfadjVertdividerDrillDescriptor",
+      "default": "None",
+      "origin": "Default"
+    },
+    {
       "variantId": "mod_ShelfadjVertDividerProcessingId",
       "default": "None",
       "origin": "Default"
     },
     {
-      "variantId": "mod_ShelfadjVertdividerDrillDescriptor",
-      "default": "None",
-      "origin": "Default"
+      "variantId": "mod_VertDividerPosition",
+      "previewValue": "0",
+      "origin": "Derived"
     },
     {
       "variantId": "mod_VertDividerType",
@@ -85,9 +85,9 @@
       "origin": "Derived"
     },
     {
-      "variantId": "mod_VertDividerPosition",
-      "previewValue": "0",
-      "origin": "Derived"
+      "variantId": "mod_Width",
+      "default": "600",
+      "origin": "Default"
     }
   ],
   "assignedParts": [

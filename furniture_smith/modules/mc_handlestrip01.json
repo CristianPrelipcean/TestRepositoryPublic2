@@ -5,10 +5,15 @@
   "isRoot": false,
   "description": "Management of the handle strip",
   "groupName": "Handle",
-  "imageId": "836d4ec9-84f1-49a6-a21b-7fc83312e9e0:HandleStrip.jpg",
+  "imageId": "e6300778-2c4a-46d6-ac08-ec85970bb3be:HandleStrip.jpg",
   "restrictionTypeId": "Internal",
   "childModules": [],
   "assignedVariants": [
+    {
+      "variantId": "mod_CarcaseWidth",
+      "previewValue": "600",
+      "origin": "Derived"
+    },
     {
       "variantId": "mod_Depth",
       "default": "500",
@@ -17,6 +22,11 @@
     {
       "variantId": "mod_DoorDirection",
       "previewValue": "Left",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_FrontGapVert",
+      "previewValue": "5",
       "origin": "Derived"
     },
     {
@@ -30,28 +40,9 @@
       "origin": "Derived"
     },
     {
-      "variantId": "mod_FrontType",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_HandleDrill",
-      "previewValue": "True",
+      "variantId": "mod_FrontOversizeBtm",
+      "previewValue": "0",
       "origin": "Derived"
-    },
-    {
-      "variantId": "mod_HandleLine",
-      "previewValue": "1050",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_HandlePosLogic",
-      "previewValue": "HandleLine",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_Height",
-      "default": "720",
-      "origin": "Default"
     },
     {
       "variantId": "mod_FrontPosStart",
@@ -59,13 +50,22 @@
       "origin": "Derived"
     },
     {
-      "variantId": "mod_Width",
-      "default": "600",
+      "variantId": "mod_FrontProgram",
+      "previewValue": "Demoprogram1",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_FrontThk",
+      "previewValue": "19",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_FrontType",
       "origin": "Default"
     },
     {
-      "variantId": "mod_FrontProgram",
-      "previewValue": "Demoprogram1",
+      "variantId": "mod_FrontWidth",
+      "previewValue": "0",
       "origin": "Derived"
     },
     {
@@ -74,8 +74,23 @@
       "origin": "Derived"
     },
     {
+      "variantId": "mod_HandleDesign",
+      "previewValue": "90",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_HandleDrill",
+      "previewValue": "True",
+      "origin": "Derived"
+    },
+    {
       "variantId": "mod_HandleLength",
       "previewValue": "128",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_HandleLine",
+      "previewValue": "1050",
       "origin": "Derived"
     },
     {
@@ -89,6 +104,15 @@
       "origin": "Derived"
     },
     {
+      "variantId": "mod_HandlePosFrontOversize",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_HandlePosLogic",
+      "previewValue": "HandleLine",
+      "origin": "Derived"
+    },
+    {
       "variantId": "mod_HandlePosMatrix",
       "previewValue": "11",
       "origin": "Derived"
@@ -99,34 +123,19 @@
       "origin": "Derived"
     },
     {
-      "variantId": "mod_HeightPosInsertion",
-      "previewValue": "0",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_PlinthAreaHeight",
-      "previewValue": "100",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_PartInfo",
-      "default": "part_DoorLeft",
+      "variantId": "mod_HardwareId",
+      "default": "None",
       "origin": "Default"
     },
     {
-      "variantId": "mod_HandleDesign",
-      "previewValue": "90",
-      "origin": "Derived"
+      "variantId": "mod_Height",
+      "default": "720",
+      "origin": "Default"
     },
     {
-      "variantId": "mod_CarcaseWidth",
-      "previewValue": "600",
+      "variantId": "mod_HeightPosInsertion",
+      "previewValue": "0",
       "origin": "Derived"
-    },
-    {
-      "variantId": "mod_ModuleName",
-      "default": "mc_Handlestrip01",
-      "origin": "Fixed"
     },
     {
       "variantId": "mod_Information",
@@ -134,13 +143,23 @@
       "origin": "Default"
     },
     {
-      "variantId": "mod_FrontWidth",
-      "previewValue": "0",
-      "origin": "Derived"
+      "variantId": "mod_Model3DGroupName",
+      "default": "None",
+      "origin": "Default"
     },
     {
-      "variantId": "mod_FrontGapVert",
-      "previewValue": "5",
+      "variantId": "mod_ModuleName",
+      "default": "mc_Handlestrip01",
+      "origin": "Fixed"
+    },
+    {
+      "variantId": "mod_PartInfo",
+      "default": "part_DoorLeft",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_PlinthAreaHeight",
+      "previewValue": "100",
       "origin": "Derived"
     },
     {
@@ -159,28 +178,9 @@
       "origin": "Default"
     },
     {
-      "variantId": "mod_HardwareId",
-      "default": "None",
+      "variantId": "mod_Width",
+      "default": "600",
       "origin": "Default"
-    },
-    {
-      "variantId": "mod_Model3DGroupName",
-      "default": "None",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_FrontThk",
-      "previewValue": "19",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_FrontOversizeBtm",
-      "previewValue": "0",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_HandlePosFrontOversize",
-      "origin": "GlobalVar"
     }
   ],
   "assignedParts": [

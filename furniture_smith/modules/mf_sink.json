@@ -5,17 +5,33 @@
   "isRoot": false,
   "description": "Sink",
   "groupName": "Appliance",
-  "imageId": "c19748dc-1a3e-4661-866c-e53a8d624dd6:Sink.png",
+  "imageId": "7a9deec4-7f7e-4903-90fc-30b007df18ed:Sink.png",
   "restrictionTypeId": "Public",
   "childModules": [
     {
-      "moduleId": "mc_Sink01"
+      "moduleId": "mc_ApplianceGraphic"
     },
     {
-      "moduleId": "mc_ApplianceGraphic"
+      "moduleId": "mc_Sink01"
     }
   ],
   "assignedVariants": [
+    {
+      "variantId": "mod_CountertopInfo",
+      "default": "",
+      "previewValue": "",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_MixerId",
+      "default": "None",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_MixerSupplier",
+      "default": "None",
+      "origin": "Default"
+    },
     {
       "variantId": "mod_SinkId",
       "default": "None",
@@ -34,22 +50,6 @@
     {
       "variantId": "mod_SinkSupplier",
       "default": "None",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_MixerId",
-      "default": "None",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_MixerSupplier",
-      "default": "None",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_CountertopInfo",
-      "default": "",
-      "previewValue": "",
       "origin": "Default"
     }
   ],

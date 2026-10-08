@@ -5,23 +5,20 @@
   "isRoot": false,
   "description": "Front module for rack area",
   "groupName": "FrontModule",
-  "imageId": "09284a97-aecb-4d74-956a-dfcb579fb85d:RackArea.jpg",
+  "imageId": "6419b6d1-8c2b-4986-87e0-59c52fc49824:RackArea.jpg",
   "restrictionTypeId": "Public",
   "childModules": [
     {
-      "moduleId": "mc_ShelfadjGroup01"
+      "moduleId": "mc_RackArea01"
     },
     {
-      "moduleId": "mc_RackArea01"
+      "moduleId": "mc_ShelfadjGroup01"
     },
     {
       "moduleId": "mc_ShelffixedGroup01"
     },
     {
-      "moduleId": "me_ShelfadjMultiple01"
-    },
-    {
-      "moduleId": "me_LaundryMachine"
+      "moduleId": "md_EquipmentPlaceholder"
     },
     {
       "moduleId": "me_ClothingOrganizer01"
@@ -30,7 +27,10 @@
       "moduleId": "me_InnerDrawerGroup"
     },
     {
-      "moduleId": "md_EquipmentPlaceholder"
+      "moduleId": "me_LaundryMachine"
+    },
+    {
+      "moduleId": "me_ShelfadjMultiple01"
     },
     {
       "moduleId": "me_Shelffixed01"
@@ -61,8 +61,65 @@
       "origin": "Derived"
     },
     {
+      "variantId": "mod_CarcaseId",
+      "default": "None",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_CarcasePartConnectionBackHor",
+      "default": "BackwallCShelf",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_CarcasePartConnectionLeftHor",
+      "default": "SideCShelf",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_CarcasePartConnectionRightHor",
+      "default": "SideCShelf",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_CarcaseSpaceDimension",
+      "default": "",
+      "previewValue": "",
+      "origin": "Default"
+    },
+    {
       "variantId": "mod_CarcaseWidth",
       "previewValue": "600",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_CompartmentsInformation",
+      "default": "",
+      "previewValue": "",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_FingergripBtmType",
+      "default": "NoFingergrip",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_FingergripTop",
+      "default": "false",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_FingergripTopType",
+      "default": "NoFingergrip",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_FittingConnectionLeftHor",
+      "previewValue": "Dowel",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_FittingConnectionRightHor",
+      "previewValue": "Dowel",
       "origin": "Derived"
     },
     {
@@ -91,54 +148,14 @@
       "origin": "Derived"
     },
     {
-      "variantId": "mod_FrontProgram",
-      "previewValue": "Demoprogram1",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_HeightPosInsertion",
-      "previewValue": "0",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_ModuleName",
-      "default": "mf_RackArea",
-      "origin": "Fixed"
-    },
-    {
-      "variantId": "mod_ParentName",
-      "previewValue": "NotDefined",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_PlinthAreaHeight",
-      "previewValue": "80",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_ShelffixedThk",
-      "previewValue": "19",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_SidepanelleftThk",
-      "previewValue": "19",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_SidepanelrightThk",
-      "previewValue": "19",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_TypeElement",
-      "previewValue": "BaseUnit",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_CarcaseId",
-      "default": "None",
+      "variantId": "mod_FrontHeight",
+      "default": "9999",
       "origin": "Default"
+    },
+    {
+      "variantId": "mod_FrontHeightSelection",
+      "previewValue": "9999",
+      "origin": "Required"
     },
     {
       "variantId": "mod_FrontId",
@@ -171,6 +188,11 @@
       "origin": "Default"
     },
     {
+      "variantId": "mod_FrontProgram",
+      "previewValue": "Demoprogram1",
+      "origin": "Derived"
+    },
+    {
       "variantId": "mod_FrontThk",
       "default": "19",
       "origin": "Default"
@@ -181,7 +203,44 @@
       "origin": "Default"
     },
     {
+      "variantId": "mod_HeightPosInsertion",
+      "previewValue": "0",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_ModuleName",
+      "default": "mf_RackArea",
+      "origin": "Fixed"
+    },
+    {
       "variantId": "mod_Originpos",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_ParentName",
+      "previewValue": "NotDefined",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_PlinthAreaHeight",
+      "previewValue": "80",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_RackAreaShelftopConstruction",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_RackAreaType",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_ShelfadjColor",
+      "previewValue": "240",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_ShelfadjDescriptor",
       "origin": "Default"
     },
     {
@@ -236,6 +295,11 @@
       "origin": "Default"
     },
     {
+      "variantId": "mod_ShelffixedThk",
+      "previewValue": "19",
+      "origin": "Derived"
+    },
+    {
       "variantId": "mod_ShelffixedTop",
       "default": "false",
       "origin": "Default"
@@ -246,88 +310,24 @@
       "origin": "Default"
     },
     {
-      "variantId": "mod_FrontHeight",
-      "default": "9999",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_FingergripBtmType",
-      "default": "NoFingergrip",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_FingergripTop",
-      "default": "false",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_FingergripTopType",
-      "default": "NoFingergrip",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_RackAreaType",
-      "origin": "GlobalVar"
-    },
-    {
-      "variantId": "mod_CarcasePartConnectionLeftHor",
-      "default": "SideCShelf",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_CarcasePartConnectionBackHor",
-      "default": "BackwallCShelf",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_CarcasePartConnectionRightHor",
-      "default": "SideCShelf",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_FittingConnectionLeftHor",
-      "previewValue": "Dowel",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_FittingConnectionRightHor",
-      "previewValue": "Dowel",
-      "origin": "Derived"
-    },
-    {
       "variantId": "mod_ShelvesBackwallFittingConnection",
       "default": "Screws",
       "origin": "Default"
     },
     {
-      "variantId": "mod_RackAreaShelftopConstruction",
-      "origin": "GlobalVar"
-    },
-    {
-      "variantId": "mod_CarcaseSpaceDimension",
-      "default": "",
-      "previewValue": "",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_FrontHeightSelection",
-      "previewValue": "9999",
-      "origin": "Required"
-    },
-    {
-      "variantId": "mod_ShelfadjColor",
-      "previewValue": "240",
+      "variantId": "mod_SidepanelleftThk",
+      "previewValue": "19",
       "origin": "Derived"
     },
     {
-      "variantId": "mod_ShelfadjDescriptor",
-      "origin": "Default"
+      "variantId": "mod_SidepanelrightThk",
+      "previewValue": "19",
+      "origin": "Derived"
     },
     {
-      "variantId": "mod_CompartmentsInformation",
-      "default": "",
-      "previewValue": "",
-      "origin": "Default"
+      "variantId": "mod_TypeElement",
+      "previewValue": "BaseUnit",
+      "origin": "Derived"
     }
   ],
   "assignedParts": [],

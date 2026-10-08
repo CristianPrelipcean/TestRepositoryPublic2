@@ -5,7 +5,7 @@
   "isRoot": false,
   "description": "Management of the plinth area",
   "groupName": "Toekick",
-  "imageId": "66047dad-40fa-4364-b815-244198a22339:PlinthArea.png",
+  "imageId": "049781c2-946d-4f31-9170-92fd39efc705:PlinthArea.png",
   "restrictionTypeId": "Internal",
   "childModules": [
     {
@@ -24,21 +24,6 @@
       "origin": "Derived"
     },
     {
-      "variantId": "mod_CarcaseWidth",
-      "previewValue": "600",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_SidepanelleftThk",
-      "previewValue": "19",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_SidepanelrightThk",
-      "previewValue": "19",
-      "origin": "Derived"
-    },
-    {
       "variantId": "mod_CarcaseSidepanelleftOversizeBtm",
       "default": "0",
       "origin": "Default"
@@ -49,18 +34,38 @@
       "origin": "Default"
     },
     {
-      "variantId": "mod_PlinthAreaHeight",
-      "previewValue": "100",
+      "variantId": "mod_CarcaseWidth",
+      "previewValue": "600",
       "origin": "Derived"
     },
     {
-      "variantId": "mod_PlinthAreaPosLeftMatrix",
-      "previewValue": "LCF",
-      "origin": "Derived"
+      "variantId": "mod_LegInsertion",
+      "default": "true",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_ModuleName",
+      "default": "mc_PlinthArea01",
+      "origin": "Fixed"
     },
     {
       "variantId": "mod_PlinthAreaDesign",
       "previewValue": "40",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_PlinthAreaElementColor",
+      "previewValue": "BL",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_PlinthAreaExtraItem",
+      "previewValue": "None",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_PlinthAreaHeight",
+      "previewValue": "100",
       "origin": "Derived"
     },
     {
@@ -74,8 +79,14 @@
       "origin": "Derived"
     },
     {
-      "variantId": "mod_PlinthAreaPosRightMatrix",
-      "previewValue": "RCF",
+      "variantId": "mod_PlinthAreaPositionInfo",
+      "default": "",
+      "previewValue": "",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_PlinthAreaPosLeftMatrix",
+      "previewValue": "LCF",
       "origin": "Derived"
     },
     {
@@ -83,7 +94,22 @@
       "origin": "GlobalVar"
     },
     {
+      "variantId": "mod_PlinthAreaPosRightMatrix",
+      "previewValue": "RCF",
+      "origin": "Derived"
+    },
+    {
       "variantId": "mod_ShelfbtmThk",
+      "previewValue": "19",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_SidepanelleftThk",
+      "previewValue": "19",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_SidepanelrightThk",
       "previewValue": "19",
       "origin": "Derived"
     },
@@ -91,32 +117,6 @@
       "variantId": "mod_TypeElement",
       "previewValue": "BaseUnit",
       "origin": "Derived"
-    },
-    {
-      "variantId": "mod_PlinthAreaElementColor",
-      "previewValue": "BL",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_ModuleName",
-      "default": "mc_PlinthArea01",
-      "origin": "Fixed"
-    },
-    {
-      "variantId": "mod_PlinthAreaExtraItem",
-      "previewValue": "None",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_PlinthAreaPositionInfo",
-      "default": "",
-      "previewValue": "",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_LegInsertion",
-      "default": "true",
-      "origin": "Default"
     },
     {
       "variantId": "mod_Weight",

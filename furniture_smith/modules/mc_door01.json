@@ -5,14 +5,17 @@
   "isRoot": false,
   "description": "Construction module for the door",
   "groupName": "FrontConstruction",
-  "imageId": "4f3a389c-018f-4f65-8d33-244f33e9ff36:Door.png",
+  "imageId": "5b09f651-be0e-4ab5-a70e-377621b2fb52:Door.png",
   "restrictionTypeId": "Internal",
   "childModules": [
     {
-      "moduleId": "mc_FrontPanelGlass01"
+      "moduleId": "mc_Duststrip01"
     },
     {
       "moduleId": "mc_FrontPanel01"
+    },
+    {
+      "moduleId": "mc_FrontPanelGlass01"
     },
     {
       "moduleId": "mc_Handle01"
@@ -21,25 +24,22 @@
       "moduleId": "mc_Handlestrip01"
     },
     {
-      "moduleId": "mc_ThermoformedPanel01"
+      "moduleId": "mc_HingeGroup01"
     },
     {
       "moduleId": "mc_MetalFrame01"
     },
     {
-      "moduleId": "mc_Duststrip01"
+      "moduleId": "mc_PanelWoodFrame01"
     },
     {
       "moduleId": "mc_Pushtoopen01"
     },
     {
-      "moduleId": "mc_PanelWoodFrame01"
-    },
-    {
-      "moduleId": "mc_HingeGroup01"
-    },
-    {
       "moduleId": "mc_SegmentFront01"
+    },
+    {
+      "moduleId": "mc_ThermoformedPanel01"
     }
   ],
   "assignedVariants": [
@@ -59,6 +59,18 @@
       "origin": "Derived"
     },
     {
+      "variantId": "mod_CarcasePartInfo",
+      "default": "",
+      "previewValue": "",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_CarcaseSpaceDimension",
+      "default": "",
+      "previewValue": "",
+      "origin": "Default"
+    },
+    {
       "variantId": "mod_CarcaseWidth",
       "previewValue": "600",
       "origin": "Derived"
@@ -74,68 +86,48 @@
       "origin": "Derived"
     },
     {
+      "variantId": "mod_FingergripBtmType",
+      "previewValue": "NoFingergrip",
+      "origin": "Derived"
+    },
+    {
       "variantId": "mod_FingergripTop",
       "previewValue": "False",
       "origin": "Derived"
     },
     {
-      "variantId": "mod_FrontHeight",
-      "previewValue": "720",
+      "variantId": "mod_FingergripTopType",
+      "previewValue": "NoFingergrip",
       "origin": "Derived"
     },
     {
-      "variantId": "mod_FrontId",
-      "previewValue": "None",
+      "variantId": "mod_FirstFront",
+      "previewValue": "false",
       "origin": "Derived"
     },
     {
-      "variantId": "mod_FrontSplit",
-      "default": "false",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_FrontThk",
-      "previewValue": "19",
+      "variantId": "mod_FrameFillingColor",
+      "previewValue": "240",
       "origin": "Derived"
     },
     {
-      "variantId": "mod_FrontWidth",
-      "default": "597",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_HandleDrill",
-      "previewValue": "True",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_HandleLine",
-      "previewValue": "1050",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_HandlePosLogic",
-      "previewValue": "HandleLine",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_FrontQtyElements",
-      "default": "1",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_ShelffixedType",
-      "previewValue": "ContactBw",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_FrontPosStart",
-      "previewValue": "0",
+      "variantId": "mod_FrameFillingType",
+      "previewValue": "Automatic",
       "origin": "Derived"
     },
     {
       "variantId": "mod_FrontColor",
       "previewValue": "240",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_FrontDescriptor",
+      "previewValue": "1_1_1",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_FrontDesign",
+      "previewValue": "FlatPanel",
       "origin": "Derived"
     },
     {
@@ -159,8 +151,23 @@
       "origin": "Derived"
     },
     {
+      "variantId": "mod_FrontGapHorTop",
+      "previewValue": "3",
+      "origin": "Derived"
+    },
+    {
       "variantId": "mod_FrontGapVert",
       "previewValue": "3",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_FrontHeight",
+      "previewValue": "720",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_FrontId",
+      "previewValue": "None",
       "origin": "Derived"
     },
     {
@@ -184,9 +191,39 @@
       "origin": "Derived"
     },
     {
+      "variantId": "mod_FrontPosStart",
+      "previewValue": "0",
+      "origin": "Derived"
+    },
+    {
       "variantId": "mod_FrontProgram",
       "previewValue": "Classic",
       "origin": "Derived"
+    },
+    {
+      "variantId": "mod_FrontQtyElements",
+      "default": "1",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_FrontSegmentColor",
+      "previewValue": "FloatGlass",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_FrontSegmentDescriptor",
+      "previewValue": "1_1_1",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_FrontSegmentType",
+      "previewValue": "Automatic",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_FrontSplit",
+      "default": "false",
+      "origin": "Default"
     },
     {
       "variantId": "mod_FrontSplitHeight1",
@@ -214,13 +251,43 @@
       "origin": "Derived"
     },
     {
+      "variantId": "mod_FrontThk",
+      "previewValue": "19",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_FrontWidth",
+      "default": "597",
+      "origin": "Default"
+    },
+    {
       "variantId": "mod_HandleColor",
       "previewValue": "Demoblue",
       "origin": "Derived"
     },
     {
+      "variantId": "mod_HandleDesign",
+      "previewValue": "10",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_HandleDrill",
+      "previewValue": "True",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_HandleInsertion",
+      "default": "true",
+      "origin": "Default"
+    },
+    {
       "variantId": "mod_HandleLength",
       "previewValue": "128",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_HandleLine",
+      "previewValue": "1050",
       "origin": "Derived"
     },
     {
@@ -231,6 +298,11 @@
     {
       "variantId": "mod_HandleOffsetY",
       "previewValue": "0",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_HandlePosLogic",
+      "previewValue": "HandleLine",
       "origin": "Derived"
     },
     {
@@ -254,33 +326,19 @@
       "origin": "Derived"
     },
     {
-      "variantId": "mod_HingeType",
-      "previewValue": "110ºSoftClose",
+      "variantId": "mod_HingeColor",
+      "previewValue": "DemoNickelPlated",
       "origin": "Derived"
     },
     {
-      "variantId": "mod_PlinthAreaHeight",
-      "previewValue": "100",
-      "origin": "Derived"
+      "variantId": "mod_HingeInfo",
+      "default": "",
+      "previewValue": "",
+      "origin": "Default"
     },
     {
-      "variantId": "mod_ShelffixedBtm",
-      "previewValue": "False",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_ShelffixedPos",
-      "previewValue": "GapMiddle",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_HandleDesign",
-      "previewValue": "10",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_FrontDesign",
-      "previewValue": "FlatPanel",
+      "variantId": "mod_HingeLogic",
+      "previewValue": "AutoSel_AutoPos",
       "origin": "Derived"
     },
     {
@@ -314,6 +372,21 @@
       "origin": "Derived"
     },
     {
+      "variantId": "mod_HingeType",
+      "previewValue": "110ºSoftClose",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_InteriorEquipmentHinge",
+      "previewValue": "All",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_LastFront",
+      "previewValue": "false",
+      "origin": "Derived"
+    },
+    {
       "variantId": "mod_ModuleName",
       "default": "mc_Door01",
       "origin": "Fixed"
@@ -324,43 +397,14 @@
       "origin": "Derived"
     },
     {
-      "variantId": "mod_TypeElement",
-      "previewValue": "BaseUnit",
-      "origin": "Derived"
+      "variantId": "mod_OpeningAngle",
+      "default": "",
+      "previewValue": "",
+      "origin": "Default"
     },
     {
-      "variantId": "mod_InteriorEquipmentHinge",
-      "previewValue": "All",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_HingeLogic",
-      "previewValue": "AutoSel_AutoPos",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_FingergripBtmType",
-      "previewValue": "NoFingergrip",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_FingergripTopType",
-      "previewValue": "NoFingergrip",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_SidepanelleftThk",
-      "previewValue": "19",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_SidepanelrightThk",
-      "previewValue": "19",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_HingeColor",
-      "previewValue": "DemoNickelPlated",
+      "variantId": "mod_OpeningType",
+      "previewValue": "Handle",
       "origin": "Derived"
     },
     {
@@ -368,41 +412,23 @@
       "origin": "Default"
     },
     {
-      "variantId": "mod_VertDividerType",
-      "previewValue": "NoVertDivider",
+      "variantId": "mod_PlinthAreaHeight",
+      "previewValue": "100",
       "origin": "Derived"
     },
     {
-      "variantId": "mod_SidepanelmiddleThk",
-      "previewValue": "19",
+      "variantId": "mod_PushtoopenColor",
+      "previewValue": "DemoGrey",
       "origin": "Derived"
-    },
-    {
-      "variantId": "mod_HingeInfo",
-      "default": "",
-      "previewValue": "",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_FrontDescriptor",
-      "previewValue": "1_1_1",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_CarcaseSpaceDimension",
-      "default": "",
-      "previewValue": "",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_CarcasePartInfo",
-      "default": "",
-      "previewValue": "",
-      "origin": "Default"
     },
     {
       "variantId": "mod_PushtoopenLine",
       "previewValue": "1000",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_PushtoopenOffset",
+      "previewValue": "0",
       "origin": "Derived"
     },
     {
@@ -416,69 +442,43 @@
       "origin": "Derived"
     },
     {
-      "variantId": "mod_PushtoopenOffset",
-      "previewValue": "0",
+      "variantId": "mod_ShelffixedBtm",
+      "previewValue": "False",
       "origin": "Derived"
     },
     {
-      "variantId": "mod_PushtoopenColor",
-      "previewValue": "DemoGrey",
+      "variantId": "mod_ShelffixedPos",
+      "previewValue": "GapMiddle",
       "origin": "Derived"
     },
     {
-      "variantId": "mod_OpeningType",
-      "previewValue": "Handle",
+      "variantId": "mod_ShelffixedType",
+      "previewValue": "ContactBw",
       "origin": "Derived"
     },
     {
-      "variantId": "mod_OpeningAngle",
-      "default": "",
-      "previewValue": "",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_FrameFillingColor",
-      "previewValue": "240",
+      "variantId": "mod_SidepanelleftThk",
+      "previewValue": "19",
       "origin": "Derived"
     },
     {
-      "variantId": "mod_FrameFillingType",
-      "previewValue": "Automatic",
+      "variantId": "mod_SidepanelmiddleThk",
+      "previewValue": "19",
       "origin": "Derived"
     },
     {
-      "variantId": "mod_FirstFront",
-      "previewValue": "false",
+      "variantId": "mod_SidepanelrightThk",
+      "previewValue": "19",
       "origin": "Derived"
     },
     {
-      "variantId": "mod_LastFront",
-      "previewValue": "false",
+      "variantId": "mod_TypeElement",
+      "previewValue": "BaseUnit",
       "origin": "Derived"
     },
     {
-      "variantId": "mod_FrontGapHorTop",
-      "previewValue": "3",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_HandleInsertion",
-      "default": "true",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_FrontSegmentType",
-      "previewValue": "Automatic",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_FrontSegmentColor",
-      "previewValue": "FloatGlass",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_FrontSegmentDescriptor",
-      "previewValue": "1_1_1",
+      "variantId": "mod_VertDividerType",
+      "previewValue": "NoVertDivider",
       "origin": "Derived"
     }
   ],

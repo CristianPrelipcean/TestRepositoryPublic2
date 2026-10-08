@@ -7,7 +7,7 @@
   "isDropContainer": false,
   "description": "Ceiling Filler construction",
   "groupName": "CeilingFiller",
-  "imageId": "5263d1a1-4aea-4619-b200-07bcc05ab6a3:CeilingFiller.png",
+  "imageId": "baf18794-a67d-4c2c-bd7e-e8be38d03c41:CeilingFiller.png",
   "restrictionTypeId": "Internal",
   "childModules": [],
   "assignedVariants": [
@@ -15,6 +15,11 @@
       "variantId": "mod_CeilingFillerColor",
       "previewValue": "240",
       "origin": "Derived"
+    },
+    {
+      "variantId": "mod_CeilingFillerConstruction",
+      "default": "Construction1",
+      "origin": "Default"
     },
     {
       "variantId": "mod_CeilingFillerEdgeBackColor",
@@ -37,25 +42,6 @@
       "origin": "Derived"
     },
     {
-      "variantId": "mod_CeilingFillerProgram",
-      "previewValue": "Nature",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_Width",
-      "default": "1000",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_CeilingFillerHeight",
-      "origin": "GlobalVar"
-    },
-    {
-      "variantId": "mod_CeilingFillerThk",
-      "previewValue": "19",
-      "origin": "Derived"
-    },
-    {
       "variantId": "mod_CeilingFillerFittingPanelDepth",
       "previewValue": "80",
       "origin": "Derived"
@@ -66,9 +52,18 @@
       "origin": "Derived"
     },
     {
-      "variantId": "mod_CeilingFillerConstruction",
-      "default": "Construction1",
+      "variantId": "mod_CeilingFillerHeight",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_CeilingFillerId",
+      "default": "0",
       "origin": "Default"
+    },
+    {
+      "variantId": "mod_CeilingFillerProgram",
+      "previewValue": "Nature",
+      "origin": "Derived"
     },
     {
       "variantId": "mod_CeilingFillerRecess",
@@ -76,8 +71,8 @@
       "origin": "Derived"
     },
     {
-      "variantId": "mod_FrontGapHor",
-      "previewValue": "4",
+      "variantId": "mod_CeilingFillerThk",
+      "previewValue": "19",
       "origin": "Derived"
     },
     {
@@ -86,8 +81,13 @@
       "origin": "Derived"
     },
     {
-      "variantId": "mod_CeilingFillerId",
-      "default": "0",
+      "variantId": "mod_FrontGapHor",
+      "previewValue": "4",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_Width",
+      "default": "1000",
       "origin": "Default"
     }
   ],

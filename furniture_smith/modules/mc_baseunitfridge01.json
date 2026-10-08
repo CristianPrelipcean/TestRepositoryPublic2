@@ -7,17 +7,17 @@
   "isDropContainer": false,
   "description": "Construction module for baseunit fridge",
   "groupName": "Appliance",
-  "imageId": "960049c6-bfcf-4768-b3b7-a17146c9ae64:BaseunitFridge.png",
+  "imageId": "9ed8b90c-d266-47a7-b89d-28860bb498d8:BaseunitFridge.png",
   "restrictionTypeId": "Internal",
   "childModules": [
     {
       "moduleId": "mc_ApplianceGraphic"
     },
     {
-      "moduleId": "mc_Handle01"
+      "moduleId": "mc_FrontPanel01"
     },
     {
-      "moduleId": "mc_FrontPanel01"
+      "moduleId": "mc_Handle01"
     },
     {
       "moduleId": "mc_PanelWoodFrame01"
@@ -43,6 +43,11 @@
     {
       "variantId": "mod_Depth",
       "previewValue": "550",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_DoorDirection",
+      "previewValue": "Right",
       "origin": "Derived"
     },
     {
@@ -283,11 +288,6 @@
     {
       "variantId": "mod_TypeElement",
       "previewValue": "BaseUnit",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_DoorDirection",
-      "previewValue": "Right",
       "origin": "Derived"
     }
   ],

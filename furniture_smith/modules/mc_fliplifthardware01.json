@@ -7,7 +7,7 @@
   "isDropContainer": false,
   "description": "Management of the hardware for the fliplifts",
   "groupName": "Hardware",
-  "imageId": "728efc42-9ede-4bc2-bd87-897b055f9c07:fliplift.jpg",
+  "imageId": "9f564744-718c-4c77-a5e7-22cf909f7b31:fliplift.jpg",
   "restrictionTypeId": "Internal",
   "childModules": [],
   "assignedVariants": [
@@ -24,32 +24,12 @@
       "origin": "Default"
     },
     {
-      "variantId": "mod_FlipliftFrontHeightList",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_FrontHeight",
-      "previewValue": "600",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_FlipliftType",
-      "previewValue": "FHF",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_Width",
-      "default": "600",
-      "origin": "Default"
-    },
-    {
       "variantId": "mod_Depth",
       "default": "350",
       "origin": "Default"
     },
     {
-      "variantId": "mod_Height",
-      "default": "600",
+      "variantId": "mod_FlipliftFrontHeightList",
       "origin": "Default"
     },
     {
@@ -68,29 +48,32 @@
       "origin": "Derived"
     },
     {
+      "variantId": "mod_FlipliftLogic",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_FlipliftType",
+      "previewValue": "FHF",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_FrontGapCarcase",
+      "previewValue": "2",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_FrontHeight",
+      "previewValue": "600",
+      "origin": "Derived"
+    },
+    {
       "variantId": "mod_FrontId",
       "default": "",
       "previewValue": "",
       "origin": "Derived"
     },
     {
-      "variantId": "mod_FrontWidth",
-      "previewValue": "600",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_ModuleName",
-      "default": "",
-      "previewValue": "",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_OpeningType",
-      "previewValue": "Handle",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_OpeningAngle",
+      "variantId": "mod_FrontOverlayInfo",
       "default": "",
       "previewValue": "",
       "origin": "Default"
@@ -98,11 +81,6 @@
     {
       "variantId": "mod_FrontpanelWeightCalculations",
       "origin": "Default"
-    },
-    {
-      "variantId": "mod_FrontGapCarcase",
-      "previewValue": "2",
-      "origin": "Derived"
     },
     {
       "variantId": "mod_FrontPosStart",
@@ -121,6 +99,15 @@
       "origin": "Derived"
     },
     {
+      "variantId": "mod_FrontWidth",
+      "previewValue": "600",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_HandleWeightCalculations",
+      "origin": "Default"
+    },
+    {
       "variantId": "mod_HardwareColor",
       "previewValue": "LightColor",
       "origin": "Derived"
@@ -132,18 +119,31 @@
       "origin": "Default"
     },
     {
-      "variantId": "mod_FrontOverlayInfo",
+      "variantId": "mod_Height",
+      "default": "600",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_ModuleName",
+      "default": "",
+      "previewValue": "",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_OpeningAngle",
       "default": "",
       "previewValue": "",
       "origin": "Default"
     },
     {
-      "variantId": "mod_HandleWeightCalculations",
-      "origin": "Default"
+      "variantId": "mod_OpeningType",
+      "previewValue": "Handle",
+      "origin": "Derived"
     },
     {
-      "variantId": "mod_FlipliftLogic",
-      "origin": "GlobalVar"
+      "variantId": "mod_Width",
+      "default": "600",
+      "origin": "Default"
     }
   ],
   "assignedParts": [
@@ -151,10 +151,10 @@
       "partCode": "part_FlipliftHardwareBom"
     },
     {
-      "partCode": "part_FlipliftHardwareGraphic"
+      "partCode": "part_FlipliftHardwareFrontpanelDrilling"
     },
     {
-      "partCode": "part_FlipliftHardwareFrontpanelDrilling"
+      "partCode": "part_FlipliftHardwareGraphic"
     },
     {
       "partCode": "part_FlipliftHardwareSidepanelDrilling"

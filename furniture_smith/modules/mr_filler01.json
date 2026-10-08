@@ -7,14 +7,14 @@
   "isDropContainer": false,
   "description": "Module for filler",
   "groupName": "Waste",
-  "imageId": "6876b07f-31dd-49a3-a912-4e95336984db:Filler.jpg",
+  "imageId": "4b0b00e7-696b-4abf-9440-5cdbebee7ad4:Filler.jpg",
   "restrictionTypeId": "Public",
   "childModules": [
     {
-      "moduleId": "mc_Storageunit01"
+      "moduleId": "mc_PlinthArea01"
     },
     {
-      "moduleId": "mc_PlinthArea01"
+      "moduleId": "mc_Storageunit01"
     },
     {
       "moduleId": "mf_FillerFront"
@@ -31,16 +31,21 @@
       "origin": "GlobalVar"
     },
     {
-      "variantId": "mod_CarcaseConnectionRightBtm",
+      "variantId": "mod_CarcaseConnectionLeftTop",
       "origin": "GlobalVar"
     },
     {
-      "variantId": "mod_CarcaseConnectionLeftTop",
+      "variantId": "mod_CarcaseConnectionRightBtm",
       "origin": "GlobalVar"
     },
     {
       "variantId": "mod_CarcaseConnectionRightTop",
       "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_CarcaseDistanceWall",
+      "default": "0",
+      "origin": "Default"
     },
     {
       "variantId": "mod_CarcaseEdgeBackColor",
@@ -53,28 +58,18 @@
       "origin": "Default"
     },
     {
-      "variantId": "mod_CarcaseFrontConstruction",
-      "default": "FrontOverlayLBRT",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_FrontColor",
-      "default": "240",
-      "origin": "Default"
-    },
-    {
       "variantId": "mod_CarcaseEdgeFrontColor",
       "defaultScript": "this.mod_FrontColor",
       "origin": "Default"
     },
     {
-      "variantId": "mod_CarcaseOutsideColor",
-      "defaultScript": "this.mod_FrontColor",
+      "variantId": "mod_CarcaseFrontConstruction",
+      "default": "FrontOverlayLBRT",
       "origin": "Default"
     },
     {
-      "variantId": "mod_CarcaseProgram",
-      "default": "Classic",
+      "variantId": "mod_CarcaseOutsideColor",
+      "defaultScript": "this.mod_FrontColor",
       "origin": "Default"
     },
     {
@@ -91,11 +86,11 @@
       "origin": "GlobalVar"
     },
     {
-      "variantId": "mod_CarcasePartConnectionLeftHor",
+      "variantId": "mod_CarcasePartConnectionBtmVert",
       "origin": "GlobalVar"
     },
     {
-      "variantId": "mod_CarcasePartConnectionBtmVert",
+      "variantId": "mod_CarcasePartConnectionLeftHor",
       "origin": "GlobalVar"
     },
     {
@@ -110,6 +105,11 @@
       "variantId": "mod_CarcasePartInfo",
       "default": "",
       "previewValue": "",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_CarcaseProgram",
+      "default": "Classic",
       "origin": "Default"
     },
     {
@@ -162,12 +162,12 @@
       "origin": "Default"
     },
     {
-      "variantId": "mod_CarcaseVisLeft",
+      "variantId": "mod_CarcaseVisBtm",
       "default": "false",
       "origin": "Default"
     },
     {
-      "variantId": "mod_CarcaseVisBtm",
+      "variantId": "mod_CarcaseVisLeft",
       "default": "false",
       "origin": "Default"
     },
@@ -182,6 +182,14 @@
       "origin": "Default"
     },
     {
+      "variantId": "mod_CeilingFillerConstruction",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_CeilingFillerHeight",
+      "origin": "GlobalVar"
+    },
+    {
       "variantId": "mod_CountertopInfo",
       "default": "",
       "previewValue": "",
@@ -192,17 +200,27 @@
       "origin": "GlobalVar"
     },
     {
+      "variantId": "mod_CreateBacksplash",
+      "default": "false",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_CreateCeilingFiller",
+      "default": "false",
+      "origin": "Default"
+    },
+    {
       "variantId": "mod_CreateCountertop",
       "default": "false",
       "origin": "Default"
     },
     {
-      "variantId": "mod_CreatePaneltop",
+      "variantId": "mod_CreateFingergrip",
       "default": "false",
       "origin": "Default"
     },
     {
-      "variantId": "mod_CreateFingergrip",
+      "variantId": "mod_CreatePaneltop",
       "default": "false",
       "origin": "Default"
     },
@@ -215,6 +233,25 @@
       "variantId": "mod_Depth",
       "previewValue": "548",
       "origin": "Required"
+    },
+    {
+      "variantId": "mod_Direction",
+      "default": "Left",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_FillerDepth",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_FillerHardware",
+      "default": "Bracket01",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_FillerType",
+      "default": "LShape",
+      "origin": "Default"
     },
     {
       "variantId": "mod_FingergripType",
@@ -230,11 +267,11 @@
       "origin": "GlobalVar"
     },
     {
-      "variantId": "mod_FittingConnectionLeftTop",
+      "variantId": "mod_FittingConnectionLeftHor",
       "origin": "GlobalVar"
     },
     {
-      "variantId": "mod_FittingConnectionLeftHor",
+      "variantId": "mod_FittingConnectionLeftTop",
       "origin": "GlobalVar"
     },
     {
@@ -242,16 +279,21 @@
       "origin": "GlobalVar"
     },
     {
-      "variantId": "mod_FittingConnectionRightTop",
+      "variantId": "mod_FittingConnectionRightHor",
       "origin": "GlobalVar"
     },
     {
-      "variantId": "mod_FittingConnectionRightHor",
+      "variantId": "mod_FittingConnectionRightTop",
       "origin": "GlobalVar"
     },
     {
       "variantId": "mod_FittingConnectionTopVert",
       "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_FrontColor",
+      "default": "240",
+      "origin": "Default"
     },
     {
       "variantId": "mod_FrontDesign",
@@ -291,6 +333,26 @@
       "variantId": "mod_FrontProgram",
       "default": "Nature",
       "origin": "Default"
+    },
+    {
+      "variantId": "mod_GlobalFrontOversizeBtm",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_GlobalFrontOversizeLeft",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_GlobalFrontOversizeRight",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_GlobalFrontOversizeTop",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_HardwareColor",
+      "origin": "GlobalVar"
     },
     {
       "variantId": "mod_Height",
@@ -379,13 +441,13 @@
       "origin": "GlobalVar"
     },
     {
-      "variantId": "mod_SidepanelrightThk",
-      "origin": "GlobalVar"
-    },
-    {
       "variantId": "mod_SidepanelleftType",
       "default": "OutSp",
       "origin": "Default"
+    },
+    {
+      "variantId": "mod_SidepanelrightThk",
+      "origin": "GlobalVar"
     },
     {
       "variantId": "mod_SidepanelrightType",
@@ -401,68 +463,6 @@
       "variantId": "mod_Width",
       "previewValue": "150",
       "origin": "Required"
-    },
-    {
-      "variantId": "mod_CarcaseDistanceWall",
-      "default": "0",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_HardwareColor",
-      "origin": "GlobalVar"
-    },
-    {
-      "variantId": "mod_Direction",
-      "default": "Left",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_FillerType",
-      "default": "LShape",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_FillerDepth",
-      "origin": "GlobalVar"
-    },
-    {
-      "variantId": "mod_FillerHardware",
-      "default": "Bracket01",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_CreateBacksplash",
-      "default": "false",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_GlobalFrontOversizeBtm",
-      "origin": "GlobalVar"
-    },
-    {
-      "variantId": "mod_GlobalFrontOversizeLeft",
-      "origin": "GlobalVar"
-    },
-    {
-      "variantId": "mod_GlobalFrontOversizeRight",
-      "origin": "GlobalVar"
-    },
-    {
-      "variantId": "mod_GlobalFrontOversizeTop",
-      "origin": "GlobalVar"
-    },
-    {
-      "variantId": "mod_CreateCeilingFiller",
-      "default": "false",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_CeilingFillerHeight",
-      "origin": "GlobalVar"
-    },
-    {
-      "variantId": "mod_CeilingFillerConstruction",
-      "origin": "GlobalVar"
     }
   ],
   "assignedParts": [

@@ -7,7 +7,7 @@
   "isDropContainer": false,
   "description": "Front module for filler",
   "groupName": "Waste",
-  "imageId": "833a7254-b146-425f-a8f0-dfe2a8cff16c:FillerFront.jpg",
+  "imageId": "02f5caed-1a99-4771-996a-3a1b981d98fc:FillerFront.jpg",
   "restrictionTypeId": "Public",
   "childModules": [
     {
@@ -21,9 +21,9 @@
       "origin": "Derived"
     },
     {
-      "variantId": "mod_Direction",
-      "previewValue": "Left",
-      "origin": "Derived"
+      "variantId": "mod_CarcaseDirectionInfo",
+      "default": "All",
+      "origin": "Default"
     },
     {
       "variantId": "mod_CarcaseFrontConstruction",
@@ -58,6 +58,29 @@
       "origin": "Derived"
     },
     {
+      "variantId": "mod_Direction",
+      "previewValue": "Left",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_DoorDirection",
+      "default": "Left",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_DoorDirectionSelection",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_DoorType",
+      "default": "Single",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_DoorTypeSelection",
+      "origin": "GlobalVar"
+    },
+    {
       "variantId": "mod_FingergripBtmType",
       "default": "NoFingergrip",
       "origin": "Default"
@@ -70,6 +93,11 @@
     {
       "variantId": "mod_FingergripTopType",
       "default": "NoFingergrip",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_FirstFront",
+      "default": "false",
       "origin": "Default"
     },
     {
@@ -172,6 +200,11 @@
       "origin": "Derived"
     },
     {
+      "variantId": "mod_LastFront",
+      "default": "false",
+      "origin": "Default"
+    },
+    {
       "variantId": "mod_ModuleName",
       "default": "mf_FillerFront",
       "origin": "Fixed"
@@ -206,42 +239,9 @@
       "origin": "Derived"
     },
     {
-      "variantId": "mod_CarcaseDirectionInfo",
-      "default": "All",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_DoorType",
-      "default": "Single",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_DoorDirection",
-      "default": "Left",
-      "origin": "Default"
-    },
-    {
       "variantId": "mod_VertDividerType",
       "default": "Automatic",
       "origin": "Default"
-    },
-    {
-      "variantId": "mod_FirstFront",
-      "default": "false",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_LastFront",
-      "default": "false",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_DoorDirectionSelection",
-      "origin": "GlobalVar"
-    },
-    {
-      "variantId": "mod_DoorTypeSelection",
-      "origin": "GlobalVar"
     }
   ],
   "assignedParts": [],

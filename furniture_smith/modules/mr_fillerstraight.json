@@ -7,7 +7,7 @@
   "isDropContainer": false,
   "description": "Module for filler",
   "groupName": "Filler",
-  "imageId": "bab152d2-d8ec-492f-88d6-f420f3b46b60:Filler.png",
+  "imageId": "8bf44d72-9375-4034-941e-3659df4f65e0:Filler.png",
   "restrictionTypeId": "Public",
   "childModules": [
     {
@@ -21,18 +21,13 @@
       "origin": "Default"
     },
     {
+      "variantId": "mod_CarcaseDistanceWall",
+      "default": "0",
+      "origin": "Default"
+    },
+    {
       "variantId": "mod_CarcaseEdgeColor",
       "defaultScript": "this.mod_CarcaseColor",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_CarcaseFrontConstruction",
-      "default": "FrontOverlayLBRT",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_FrontColor",
-      "default": "240",
       "origin": "Default"
     },
     {
@@ -41,9 +36,22 @@
       "origin": "Default"
     },
     {
+      "variantId": "mod_CarcaseFrontConstruction",
+      "default": "FrontOverlayLBRT",
+      "origin": "Default"
+    },
+    {
       "variantId": "mod_CarcaseProgram",
       "default": "Classic",
       "origin": "Default"
+    },
+    {
+      "variantId": "mod_CeilingFillerConstruction",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_CeilingFillerHeight",
+      "origin": "GlobalVar"
     },
     {
       "variantId": "mod_CountertopInfo",
@@ -54,17 +62,27 @@
       "origin": "GlobalVar"
     },
     {
+      "variantId": "mod_CreateBacksplash",
+      "default": "false",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_CreateCeilingFiller",
+      "default": "false",
+      "origin": "Default"
+    },
+    {
       "variantId": "mod_CreateCountertop",
       "default": "false",
       "origin": "Default"
     },
     {
-      "variantId": "mod_CreatePaneltop",
+      "variantId": "mod_CreateFingergrip",
       "default": "false",
       "origin": "Default"
     },
     {
-      "variantId": "mod_CreateFingergrip",
+      "variantId": "mod_CreatePaneltop",
       "default": "false",
       "origin": "Default"
     },
@@ -79,8 +97,23 @@
       "origin": "Required"
     },
     {
+      "variantId": "mod_Direction",
+      "default": "Left",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_FillerType",
+      "default": "LShape",
+      "origin": "Default"
+    },
+    {
       "variantId": "mod_FingergripType",
       "default": "None",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_FrontColor",
+      "default": "240",
       "origin": "Default"
     },
     {
@@ -121,6 +154,22 @@
       "variantId": "mod_FrontProgram",
       "default": "Nature",
       "origin": "Default"
+    },
+    {
+      "variantId": "mod_GlobalFrontOversizeBtm",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_GlobalFrontOversizeLeft",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_GlobalFrontOversizeRight",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_GlobalFrontOversizeTop",
+      "origin": "GlobalVar"
     },
     {
       "variantId": "mod_Height",
@@ -209,55 +258,6 @@
       "variantId": "mod_Width",
       "previewValue": "150",
       "origin": "Required"
-    },
-    {
-      "variantId": "mod_CarcaseDistanceWall",
-      "default": "0",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_Direction",
-      "default": "Left",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_FillerType",
-      "default": "LShape",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_CreateBacksplash",
-      "default": "false",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_GlobalFrontOversizeBtm",
-      "origin": "GlobalVar"
-    },
-    {
-      "variantId": "mod_GlobalFrontOversizeLeft",
-      "origin": "GlobalVar"
-    },
-    {
-      "variantId": "mod_GlobalFrontOversizeRight",
-      "origin": "GlobalVar"
-    },
-    {
-      "variantId": "mod_GlobalFrontOversizeTop",
-      "origin": "GlobalVar"
-    },
-    {
-      "variantId": "mod_CreateCeilingFiller",
-      "default": "false",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_CeilingFillerHeight",
-      "origin": "GlobalVar"
-    },
-    {
-      "variantId": "mod_CeilingFillerConstruction",
-      "origin": "GlobalVar"
     }
   ],
   "assignedParts": [],

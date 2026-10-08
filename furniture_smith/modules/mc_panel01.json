@@ -5,15 +5,10 @@
   "isRoot": false,
   "description": "Management of panels",
   "groupName": "ConstructionParts",
-  "imageId": "93d82507-d77e-4c86-9fd5-7fbaa64587c6:Frontpanel.jpg",
+  "imageId": "ecd54615-2641-42ff-bf84-b2864e3f7079:Frontpanel.jpg",
   "restrictionTypeId": "Internal",
   "childModules": [],
   "assignedVariants": [
-    {
-      "variantId": "mod_PanelId",
-      "default": "None",
-      "origin": "Default"
-    },
     {
       "variantId": "mod_Color",
       "previewValue": "240",
@@ -23,6 +18,36 @@
       "variantId": "mod_Depth",
       "default": "350",
       "origin": "Default"
+    },
+    {
+      "variantId": "mod_Height",
+      "default": "900",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_IslandBackwallOverhangFront",
+      "previewValue": "30",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_ModuleName",
+      "default": "mc_Panel01",
+      "origin": "Fixed"
+    },
+    {
+      "variantId": "mod_PanelId",
+      "default": "None",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_PaneltopColor",
+      "previewValue": "380",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_PaneltopThk",
+      "previewValue": "25",
+      "origin": "Derived"
     },
     {
       "variantId": "mod_Program",
@@ -38,31 +63,6 @@
       "variantId": "mod_Width",
       "default": "1000",
       "origin": "Default"
-    },
-    {
-      "variantId": "mod_ModuleName",
-      "default": "mc_Panel01",
-      "origin": "Fixed"
-    },
-    {
-      "variantId": "mod_Height",
-      "default": "900",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_PaneltopColor",
-      "previewValue": "380",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_PaneltopThk",
-      "previewValue": "25",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_IslandBackwallOverhangFront",
-      "previewValue": "30",
-      "origin": "Derived"
     }
   ],
   "assignedParts": [
@@ -70,10 +70,10 @@
       "partCode": "part_PanelHor"
     },
     {
-      "partCode": "part_PanelVert"
+      "partCode": "part_PanelUnit"
     },
     {
-      "partCode": "part_PanelUnit"
+      "partCode": "part_PanelVert"
     }
   ],
   "assignedCustomTables": [],

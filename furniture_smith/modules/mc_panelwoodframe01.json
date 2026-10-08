@@ -5,7 +5,7 @@
   "isRoot": false,
   "description": "Panel wood frame",
   "groupName": "FrontConstructionParts",
-  "imageId": "033967b5-5898-47c4-856f-fe007959b5f8:WoodFrame.jpg",
+  "imageId": "48be95dd-bf72-44b4-adbb-6bb204ea746c:WoodFrame.jpg",
   "restrictionTypeId": "Internal",
   "childModules": [],
   "assignedVariants": [
@@ -15,13 +15,28 @@
       "origin": "Default"
     },
     {
-      "variantId": "mod_FrontDesign",
-      "previewValue": "WoodFrame",
+      "variantId": "mod_DoorDirection",
+      "default": "Left",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_FlipliftType",
+      "default": "FHF",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_FrameFillingColor",
+      "previewValue": "FloatGlass",
       "origin": "Derived"
     },
     {
       "variantId": "mod_FrontColor",
       "previewValue": "Demoblue",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_FrontDesign",
+      "previewValue": "WoodFrame",
       "origin": "Derived"
     },
     {
@@ -64,8 +79,20 @@
       "origin": "Derived"
     },
     {
+      "variantId": "mod_HardwareTypeList",
+      "default": "",
+      "previewValue": "",
+      "origin": "Default"
+    },
+    {
       "variantId": "mod_Height",
       "default": "720",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_Information",
+      "default": "",
+      "previewValue": "",
       "origin": "Default"
     },
     {
@@ -79,76 +106,49 @@
       "origin": "Default"
     },
     {
-      "variantId": "mod_Width",
-      "default": "600",
-      "origin": "Default"
-    },
-    {
       "variantId": "mod_TypeElement",
       "previewValue": "BaseUnit",
       "origin": "Derived"
     },
     {
-      "variantId": "mod_DoorDirection",
-      "default": "Left",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_FlipliftType",
-      "default": "FHF",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_Information",
-      "default": "",
-      "previewValue": "",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_FrameFillingColor",
-      "previewValue": "FloatGlass",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_HardwareTypeList",
-      "default": "",
-      "previewValue": "",
+      "variantId": "mod_Width",
+      "default": "600",
       "origin": "Default"
     }
   ],
   "assignedParts": [
     {
-      "partCode": "part_PanelWoodFrameTop"
-    },
-    {
-      "partCode": "part_PanelWoodFrameLeft"
-    },
-    {
-      "partCode": "part_PanelWoodFrameBtm"
-    },
-    {
-      "partCode": "part_PanelWoodFrameRight"
-    },
-    {
-      "partCode": "part_PanelWoodFrameFilling"
-    },
-    {
-      "partCode": "part_DrawerPanelWoodFrame"
-    },
-    {
-      "partCode": "part_DoorPanelWoodFrame"
-    },
-    {
-      "partCode": "part_FlipliftPanelWoodFrame"
-    },
-    {
-      "partCode": "part_FixedfrontPanelWoodFrame"
+      "partCode": "part_BaseunitFridgePanelWoodFrame"
     },
     {
       "partCode": "part_DishwasherPanelWoodFrame"
     },
     {
-      "partCode": "part_BaseunitFridgePanelWoodFrame"
+      "partCode": "part_DoorPanelWoodFrame"
+    },
+    {
+      "partCode": "part_DrawerPanelWoodFrame"
+    },
+    {
+      "partCode": "part_FixedfrontPanelWoodFrame"
+    },
+    {
+      "partCode": "part_FlipliftPanelWoodFrame"
+    },
+    {
+      "partCode": "part_PanelWoodFrameBtm"
+    },
+    {
+      "partCode": "part_PanelWoodFrameFilling"
+    },
+    {
+      "partCode": "part_PanelWoodFrameLeft"
+    },
+    {
+      "partCode": "part_PanelWoodFrameRight"
+    },
+    {
+      "partCode": "part_PanelWoodFrameTop"
     },
     {
       "partCode": "part_VirtualFront"

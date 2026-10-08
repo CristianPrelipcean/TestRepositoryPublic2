@@ -5,12 +5,12 @@
   "isRoot": false,
   "description": "Push To Open",
   "groupName": "PushToOpen",
-  "imageId": "74b685d2-08dd-4f1b-bcd2-fd9d9093d0ab:PushToOpenType.jpg",
+  "imageId": "12616ac9-6b87-44e6-afcd-805e2495278e:PushToOpenType.jpg",
   "restrictionTypeId": "Internal",
   "childModules": [],
   "assignedVariants": [
     {
-      "variantId": "mod_PushtoopenInfo",
+      "variantId": "mod_CarcasePartInfo",
       "default": "",
       "previewValue": "",
       "origin": "Default"
@@ -21,26 +21,6 @@
       "origin": "Derived"
     },
     {
-      "variantId": "mod_CarcasePartInfo",
-      "default": "",
-      "previewValue": "",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_FrontPosStart",
-      "previewValue": "100",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_PushtoopenLine",
-      "previewValue": "1000",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_Originpos",
-      "origin": "Default"
-    },
-    {
       "variantId": "mod_FrontGapVert",
       "previewValue": "4",
       "origin": "Derived"
@@ -49,6 +29,26 @@
       "variantId": "mod_FrontId",
       "previewValue": "'None'",
       "origin": "Derived"
+    },
+    {
+      "variantId": "mod_FrontPosStart",
+      "previewValue": "100",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_Originpos",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_PushtoopenInfo",
+      "default": "",
+      "previewValue": "",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_PushtoopenLine",
+      "previewValue": "1000",
+      "origin": "Derived"
     }
   ],
   "assignedParts": [
@@ -56,10 +56,10 @@
       "partCode": "part_Pushtoopen"
     },
     {
-      "partCode": "part_PushtoopenDrill"
+      "partCode": "part_PushtoopenBom"
     },
     {
-      "partCode": "part_PushtoopenBom"
+      "partCode": "part_PushtoopenDrill"
     },
     {
       "partCode": "part_PushtoopenMountingPlateDrill"

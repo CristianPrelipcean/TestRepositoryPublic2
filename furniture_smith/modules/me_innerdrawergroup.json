@@ -8,7 +8,7 @@
   "isDropContainer": false,
   "description": "Grouping of inner drawers",
   "groupName": "Equipment",
-  "imageId": "bf3c1cb9-b561-4454-b941-6fe5c95dce0e:me_InnerDrawerGroup.png",
+  "imageId": "0712dad7-19dc-4bcc-8feb-5797e1e289e6:me_InnerDrawerGroup.png",
   "restrictionTypeId": "Internal",
   "childModules": [
     {
@@ -17,62 +17,13 @@
   ],
   "assignedVariants": [
     {
-      "variantId": "mod_Width",
-      "default": "0",
-      "origin": "Default"
+      "variantId": "mod_CarcaseId",
+      "default": "",
+      "previewValue": "",
+      "origin": "Derived"
     },
     {
       "variantId": "mod_Depth",
-      "default": "0",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_Height",
-      "default": "0",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_InnerDrawerFrontOffset",
-      "default": "0",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_InnerDrawerRearOffset",
-      "default": "0",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_InnerDrawerFrontRule",
-      "default": "ManufacturerBoardFront",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_InnerDrawerSpacerRule",
-      "default": "ManufacturerBoardSpacer",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_InnerDrawerLayoutStrategy",
-      "default": "FillAvailableSpace",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_InnerDrawerCount",
-      "default": "1",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_InnerDrawerGroupHeight",
-      "default": "0",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_InnerDrawerSpacing",
-      "default": "0",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_InnerDrawerHeightPosition",
       "default": "0",
       "origin": "Default"
     },
@@ -107,6 +58,31 @@
       "origin": "Default"
     },
     {
+      "variantId": "mod_FreeSpaceStartPosY",
+      "default": "0",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_FrontId",
+      "default": "InnerDrawer_01",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_HardwareColor",
+      "previewValue": "DarkColor",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_Height",
+      "default": "0",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_InnerDrawerCount",
+      "default": "1",
+      "origin": "Default"
+    },
+    {
       "variantId": "mod_InnerDrawerFrontGapBottom",
       "default": "0",
       "origin": "Default"
@@ -117,23 +93,22 @@
       "origin": "Default"
     },
     {
-      "variantId": "mod_FrontId",
-      "default": "InnerDrawer_01",
+      "variantId": "mod_InnerDrawerFrontOffset",
+      "default": "0",
       "origin": "Default"
     },
     {
-      "variantId": "mod_CarcaseId",
-      "default": "",
-      "previewValue": "",
-      "origin": "Derived"
+      "variantId": "mod_InnerDrawerFrontRule",
+      "default": "ManufacturerBoardFront",
+      "origin": "Default"
     },
     {
-      "variantId": "mod_HardwareColor",
-      "previewValue": "DarkColor",
-      "origin": "Derived"
+      "variantId": "mod_InnerDrawerGroupHeight",
+      "default": "0",
+      "origin": "Default"
     },
     {
-      "variantId": "mod_InnerDrawerWidthPosition",
+      "variantId": "mod_InnerDrawerHeightPosition",
       "default": "0",
       "origin": "Default"
     },
@@ -144,9 +119,35 @@
       "origin": "Default"
     },
     {
-      "variantId": "mod_FreeSpaceStartPosY",
+      "variantId": "mod_InnerDrawerLayoutStrategy",
+      "default": "FillAvailableSpace",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_InnerDrawerRearOffset",
       "default": "0",
       "origin": "Default"
+    },
+    {
+      "variantId": "mod_InnerDrawerSpacerRule",
+      "default": "ManufacturerBoardSpacer",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_InnerDrawerSpacing",
+      "default": "0",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_InnerDrawerWidthPosition",
+      "default": "0",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_ModuleName",
+      "default": "",
+      "previewValue": "",
+      "origin": "Derived"
     },
     {
       "variantId": "mod_ParentName",
@@ -155,10 +156,9 @@
       "origin": "Derived"
     },
     {
-      "variantId": "mod_ModuleName",
-      "default": "",
-      "previewValue": "",
-      "origin": "Derived"
+      "variantId": "mod_Width",
+      "default": "0",
+      "origin": "Default"
     }
   ],
   "assignedParts": [

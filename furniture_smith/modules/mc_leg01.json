@@ -5,7 +5,7 @@
   "isRoot": false,
   "description": "Management of the leg",
   "groupName": "Toekick",
-  "imageId": "c469f9e6-d8eb-4999-baa0-e1fbe6bc7b78:Leg.png",
+  "imageId": "d560ce6b-842e-416c-aeaa-94603cfa76f3:Leg.png",
   "restrictionTypeId": "Internal",
   "childModules": [],
   "assignedVariants": [
@@ -15,18 +15,17 @@
       "origin": "Derived"
     },
     {
-      "variantId": "mod_PlinthAreaHeight",
-      "previewValue": "100",
-      "origin": "Derived"
+      "variantId": "mod_HardwareId",
+      "default": "None",
+      "origin": "Default"
     },
     {
-      "variantId": "mod_PlinthAreaDesign",
-      "previewValue": "40",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_Rotation",
+      "variantId": "mod_Height",
       "default": "0",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_Model3DGroupName",
       "origin": "Default"
     },
     {
@@ -35,8 +34,9 @@
       "origin": "Fixed"
     },
     {
-      "variantId": "mod_Model3DGroupName",
-      "origin": "Default"
+      "variantId": "mod_PlinthAreaDesign",
+      "previewValue": "40",
+      "origin": "Derived"
     },
     {
       "variantId": "mod_PlinthAreaElementColor",
@@ -49,8 +49,8 @@
       "origin": "Derived"
     },
     {
-      "variantId": "mod_ShelfbtmThk",
-      "previewValue": "19",
+      "variantId": "mod_PlinthAreaHeight",
+      "previewValue": "100",
       "origin": "Derived"
     },
     {
@@ -64,14 +64,14 @@
       "origin": "Default"
     },
     {
-      "variantId": "mod_HardwareId",
-      "default": "None",
+      "variantId": "mod_Rotation",
+      "default": "0",
       "origin": "Default"
     },
     {
-      "variantId": "mod_Height",
-      "default": "0",
-      "origin": "Default"
+      "variantId": "mod_ShelfbtmThk",
+      "previewValue": "19",
+      "origin": "Derived"
     }
   ],
   "assignedParts": [

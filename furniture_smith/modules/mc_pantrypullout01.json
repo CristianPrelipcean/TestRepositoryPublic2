@@ -7,7 +7,7 @@
   "isDropContainer": false,
   "description": "Vertical full-height pull-out unit for tall pantry cabinets",
   "groupName": "FrontConstruction",
-  "imageId": "4320133c-345b-489a-8771-6519fd7a657b:PantryPullout.png",
+  "imageId": "f3c0c22d-15bc-4c45-a6f0-971b3fa25625:PantryPullout.png",
   "restrictionTypeId": "Internal",
   "childModules": [
     {
@@ -51,9 +51,25 @@
       "origin": "Derived"
     },
     {
+      "variantId": "mod_CarcaseSpaceDimension",
+      "default": "",
+      "previewValue": "",
+      "origin": "Default"
+    },
+    {
       "variantId": "mod_CarcaseWidth",
       "previewValue": "600",
       "origin": "Derived"
+    },
+    {
+      "variantId": "mod_Depth",
+      "previewValue": "575",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_DrawerOpeningDistance",
+      "default": "0",
+      "origin": "Default"
     },
     {
       "variantId": "mod_FingergripTop",
@@ -61,63 +77,28 @@
       "origin": "Derived"
     },
     {
-      "variantId": "mod_FrontHeight",
-      "previewValue": "720",
+      "variantId": "mod_FirstFront",
+      "previewValue": "false",
       "origin": "Derived"
     },
     {
-      "variantId": "mod_FrontId",
-      "previewValue": "None",
+      "variantId": "mod_FrameFillingColor",
+      "previewValue": "240",
       "origin": "Derived"
     },
     {
-      "variantId": "mod_FrontSplit",
-      "previewValue": "False",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_FrontThk",
-      "previewValue": "19",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_FrontWidth",
-      "previewValue": "597",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_HandleDrill",
-      "previewValue": "True",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_HandleLine",
-      "previewValue": "1050",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_HandlePosLogic",
-      "previewValue": "HandleLine",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_FrontQtyElements",
-      "previewValue": "1",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_ShelffixedType",
-      "previewValue": "ContactBw",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_FrontPosStart",
-      "previewValue": "0",
+      "variantId": "mod_FrameFillingType",
+      "previewValue": "Automatic",
       "origin": "Derived"
     },
     {
       "variantId": "mod_FrontColor",
       "previewValue": "Demoblue",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_FrontDesign",
+      "previewValue": "FlatPanel",
       "origin": "Derived"
     },
     {
@@ -141,8 +122,23 @@
       "origin": "Derived"
     },
     {
+      "variantId": "mod_FrontGapHorTop",
+      "previewValue": "3",
+      "origin": "Derived"
+    },
+    {
       "variantId": "mod_FrontGapVert",
       "previewValue": "3",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_FrontHeight",
+      "previewValue": "720",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_FrontId",
+      "previewValue": "None",
       "origin": "Derived"
     },
     {
@@ -166,8 +162,28 @@
       "origin": "Derived"
     },
     {
+      "variantId": "mod_FrontPosStart",
+      "previewValue": "0",
+      "origin": "Derived"
+    },
+    {
       "variantId": "mod_FrontProgram",
       "previewValue": "Demoprogram1",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_FrontQtyElements",
+      "previewValue": "1",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_FrontSplit",
+      "previewValue": "False",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_FrontSplitDescriptor",
+      "previewValue": "1_1",
       "origin": "Derived"
     },
     {
@@ -181,13 +197,43 @@
       "origin": "Derived"
     },
     {
+      "variantId": "mod_FrontThk",
+      "previewValue": "19",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_FrontWidth",
+      "previewValue": "597",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_HandleActivated",
+      "previewValue": "All",
+      "origin": "Derived"
+    },
+    {
       "variantId": "mod_HandleColor",
       "previewValue": "Demoblue",
       "origin": "Derived"
     },
     {
+      "variantId": "mod_HandleDesign",
+      "previewValue": "10",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_HandleDrill",
+      "previewValue": "True",
+      "origin": "Derived"
+    },
+    {
       "variantId": "mod_HandleLength",
       "previewValue": "128",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_HandleLine",
+      "previewValue": "1050",
       "origin": "Derived"
     },
     {
@@ -201,8 +247,18 @@
       "origin": "Derived"
     },
     {
+      "variantId": "mod_HandlePosLogic",
+      "previewValue": "HandleLine",
+      "origin": "Derived"
+    },
+    {
       "variantId": "mod_HandlePosMatrix",
       "previewValue": "11",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_HandlePosMatrixMultiple",
+      "previewValue": "Center_Center",
       "origin": "Derived"
     },
     {
@@ -216,118 +272,13 @@
       "origin": "Derived"
     },
     {
+      "variantId": "mod_HardwareColor",
+      "previewValue": "LightColor",
+      "origin": "Derived"
+    },
+    {
       "variantId": "mod_HeightPosInsertion",
       "previewValue": "0",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_PlinthAreaHeight",
-      "previewValue": "100",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_ShelffixedBtm",
-      "previewValue": "False",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_ShelffixedPos",
-      "previewValue": "GapMiddle",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_HandleDesign",
-      "previewValue": "10",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_ModuleName",
-      "default": "mc_PantryPullout01",
-      "origin": "Fixed"
-    },
-    {
-      "variantId": "mod_FrontGapHorTop",
-      "previewValue": "3",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_FrontDesign",
-      "previewValue": "FlatPanel",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_Depth",
-      "previewValue": "575",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_ShelfbtmThk",
-      "previewValue": "16",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_ShelffixedThk",
-      "previewValue": "16",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_TypeElement",
-      "previewValue": "BaseUnit",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_Originpos",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_VertDividerType",
-      "previewValue": "NoVertDivider",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_CarcaseSpaceDimension",
-      "default": "",
-      "previewValue": "",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_FrameFillingType",
-      "previewValue": "Automatic",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_FrameFillingColor",
-      "previewValue": "240",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_DrawerOpeningDistance",
-      "default": "0",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_FirstFront",
-      "previewValue": "false",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_LastFront",
-      "previewValue": "false",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_PantryPulloutDesign",
-      "previewValue": "Classic",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_PantryPulloutType",
-      "previewValue": "Dispensa",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_PantryPulloutColor",
-      "previewValue": "Anthrazit",
       "origin": "Derived"
     },
     {
@@ -343,23 +294,72 @@
       "origin": "Default"
     },
     {
-      "variantId": "mod_HardwareColor",
-      "previewValue": "LightColor",
+      "variantId": "mod_LastFront",
+      "previewValue": "false",
       "origin": "Derived"
     },
     {
-      "variantId": "mod_FrontSplitDescriptor",
-      "previewValue": "1_1",
+      "variantId": "mod_ModuleName",
+      "default": "mc_PantryPullout01",
+      "origin": "Fixed"
+    },
+    {
+      "variantId": "mod_Originpos",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_PantryPulloutColor",
+      "previewValue": "Anthrazit",
       "origin": "Derived"
     },
     {
-      "variantId": "mod_HandlePosMatrixMultiple",
-      "previewValue": "Center_Center",
+      "variantId": "mod_PantryPulloutDesign",
+      "previewValue": "Classic",
       "origin": "Derived"
     },
     {
-      "variantId": "mod_HandleActivated",
-      "previewValue": "All",
+      "variantId": "mod_PantryPulloutType",
+      "previewValue": "Dispensa",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_PlinthAreaHeight",
+      "previewValue": "100",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_ShelfbtmThk",
+      "previewValue": "16",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_ShelffixedBtm",
+      "previewValue": "False",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_ShelffixedPos",
+      "previewValue": "GapMiddle",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_ShelffixedThk",
+      "previewValue": "16",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_ShelffixedType",
+      "previewValue": "ContactBw",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_TypeElement",
+      "previewValue": "BaseUnit",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_VertDividerType",
+      "previewValue": "NoVertDivider",
       "origin": "Derived"
     }
   ],

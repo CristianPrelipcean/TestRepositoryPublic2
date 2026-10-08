@@ -7,11 +7,14 @@
   "isDropContainer": false,
   "description": "Construction module for the filler",
   "groupName": "Filler",
-  "imageId": "bab152d2-d8ec-492f-88d6-f420f3b46b60:Filler.png",
+  "imageId": "8bf44d72-9375-4034-941e-3659df4f65e0:Filler.png",
   "restrictionTypeId": "Internal",
   "childModules": [
     {
-      "moduleId": "mc_StorageunitSidepanel01"
+      "moduleId": "mc_FillerFront01"
+    },
+    {
+      "moduleId": "mc_FillerSupportPanels01"
     },
     {
       "moduleId": "mc_StorageunitShelfbtm01"
@@ -20,10 +23,7 @@
       "moduleId": "mc_StorageunitShelftop01"
     },
     {
-      "moduleId": "mc_FillerFront01"
-    },
-    {
-      "moduleId": "mc_FillerSupportPanels01"
+      "moduleId": "mc_StorageunitSidepanel01"
     }
   ],
   "assignedVariants": [
@@ -53,6 +53,12 @@
       "origin": "Derived"
     },
     {
+      "variantId": "mod_CarcaseId",
+      "default": "",
+      "previewValue": "",
+      "origin": "Default"
+    },
+    {
       "variantId": "mod_CarcaseProgram",
       "previewValue": "Classic",
       "origin": "Derived"
@@ -66,6 +72,11 @@
       "variantId": "mod_Direction",
       "previewValue": "Left",
       "origin": "Derived"
+    },
+    {
+      "variantId": "mod_FillerHardware",
+      "default": "Bracket01",
+      "origin": "Default"
     },
     {
       "variantId": "mod_FillerType",
@@ -103,17 +114,12 @@
       "origin": "Derived"
     },
     {
-      "variantId": "mod_FrontGapHorTop",
-      "previewValue": "0",
-      "origin": "Derived"
-    },
-    {
       "variantId": "mod_FrontGapHor",
       "previewValue": "0",
       "origin": "Derived"
     },
     {
-      "variantId": "mod_FrontPosStart",
+      "variantId": "mod_FrontGapHorTop",
       "previewValue": "0",
       "origin": "Derived"
     },
@@ -123,7 +129,7 @@
       "origin": "Derived"
     },
     {
-      "variantId": "mod_GlobalFrontOversizeBtm",
+      "variantId": "mod_FrontPosStart",
       "previewValue": "0",
       "origin": "Derived"
     },
@@ -133,12 +139,17 @@
       "origin": "Derived"
     },
     {
-      "variantId": "mod_GlobalFrontOversizeRight",
+      "variantId": "mod_GlobalFrontOversizeBtm",
       "previewValue": "0",
       "origin": "Derived"
     },
     {
       "variantId": "mod_GlobalFrontOversizeLeft",
+      "previewValue": "0",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_GlobalFrontOversizeRight",
       "previewValue": "0",
       "origin": "Derived"
     },
@@ -201,17 +212,6 @@
       "variantId": "mod_Width",
       "previewValue": "600",
       "origin": "Required"
-    },
-    {
-      "variantId": "mod_FillerHardware",
-      "default": "Bracket01",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_CarcaseId",
-      "default": "",
-      "previewValue": "",
-      "origin": "Default"
     }
   ],
   "assignedParts": [],

@@ -5,21 +5,29 @@
   "isRoot": true,
   "description": "Module for appliances",
   "groupName": "Root",
-  "imageId": "b9f7352b-043e-4143-90d0-289d03887600:DishwasherModule.jpg",
+  "imageId": "eeddec2f-8384-4562-b587-bcaa3ac6474e:DishwasherModule.jpg",
   "restrictionTypeId": "Public",
   "childModules": [
     {
-      "moduleId": "mf_Dishwasher"
+      "moduleId": "mf_BaseunitFridge"
     },
     {
-      "moduleId": "mf_BaseunitFridge"
+      "moduleId": "mf_Dishwasher"
     }
   ],
   "assignedVariants": [
     {
-      "variantId": "mod_FrontColor",
-      "default": "240",
+      "variantId": "mod_CarcaseDistanceWall",
+      "default": "0",
       "origin": "Default"
+    },
+    {
+      "variantId": "mod_CeilingFillerConstruction",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_CeilingFillerHeight",
+      "origin": "GlobalVar"
     },
     {
       "variantId": "mod_CountertopInfo",
@@ -32,17 +40,27 @@
       "origin": "GlobalVar"
     },
     {
+      "variantId": "mod_CreateBacksplash",
+      "default": "false",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_CreateCeilingFiller",
+      "default": "false",
+      "origin": "Default"
+    },
+    {
       "variantId": "mod_CreateCountertop",
       "default": "true",
       "origin": "Default"
     },
     {
-      "variantId": "mod_CreatePaneltop",
+      "variantId": "mod_CreateFingergrip",
       "default": "false",
       "origin": "Default"
     },
     {
-      "variantId": "mod_CreateFingergrip",
+      "variantId": "mod_CreatePaneltop",
       "default": "false",
       "origin": "Default"
     },
@@ -57,8 +75,27 @@
       "origin": "Required"
     },
     {
+      "variantId": "mod_DropZoneVisible",
+      "origin": "Default"
+    },
+    {
       "variantId": "mod_FingergripType",
       "default": "None",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_FrameFillingColor",
+      "default": "LikeFrameColor",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_FrameFillingType",
+      "default": "Automatic",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_FrontColor",
+      "default": "240",
       "origin": "Default"
     },
     {
@@ -101,6 +138,40 @@
       "origin": "Default"
     },
     {
+      "variantId": "mod_HandleColor",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_HandleDesign",
+      "default": "20",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_HandleDrill",
+      "default": "true",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_HandleLength",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_HandleLine",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_HandlePosLogic",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_HandlePosType",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_HardwareColor",
+      "origin": "GlobalVar"
+    },
+    {
       "variantId": "mod_Height",
       "previewValue": "720",
       "origin": "Required"
@@ -108,6 +179,12 @@
     {
       "variantId": "mod_HeightPosInsertion",
       "default": "0",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_InformationList",
+      "default": "",
+      "previewValue": "",
       "origin": "Default"
     },
     {
@@ -161,6 +238,10 @@
       "origin": "GlobalVar"
     },
     {
+      "variantId": "mod_PlinthAreaPosLogic",
+      "origin": "GlobalVar"
+    },
+    {
       "variantId": "mod_PlinthAreaPosRightMatrix",
       "origin": "GlobalVar"
     },
@@ -175,6 +256,10 @@
       "origin": "Default"
     },
     {
+      "variantId": "mod_ShelfbtmThk",
+      "origin": "GlobalVar"
+    },
+    {
       "variantId": "mod_TypeElement",
       "default": "BaseUnit",
       "origin": "Default"
@@ -183,91 +268,6 @@
       "variantId": "mod_Width",
       "previewValue": "600",
       "origin": "Required"
-    },
-    {
-      "variantId": "mod_CarcaseDistanceWall",
-      "default": "0",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_HardwareColor",
-      "origin": "GlobalVar"
-    },
-    {
-      "variantId": "mod_HandleLine",
-      "origin": "GlobalVar"
-    },
-    {
-      "variantId": "mod_HandlePosType",
-      "origin": "GlobalVar"
-    },
-    {
-      "variantId": "mod_HandlePosLogic",
-      "origin": "GlobalVar"
-    },
-    {
-      "variantId": "mod_HandleDrill",
-      "default": "true",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_HandleColor",
-      "origin": "GlobalVar"
-    },
-    {
-      "variantId": "mod_HandleLength",
-      "origin": "GlobalVar"
-    },
-    {
-      "variantId": "mod_HandleDesign",
-      "default": "20",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_FrameFillingType",
-      "default": "Automatic",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_DropZoneVisible",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_PlinthAreaPosLogic",
-      "origin": "GlobalVar"
-    },
-    {
-      "variantId": "mod_ShelfbtmThk",
-      "origin": "GlobalVar"
-    },
-    {
-      "variantId": "mod_InformationList",
-      "default": "",
-      "previewValue": "",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_FrameFillingColor",
-      "default": "LikeFrameColor",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_CreateBacksplash",
-      "default": "false",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_CreateCeilingFiller",
-      "default": "false",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_CeilingFillerHeight",
-      "origin": "GlobalVar"
-    },
-    {
-      "variantId": "mod_CeilingFillerConstruction",
-      "origin": "GlobalVar"
     }
   ],
   "assignedParts": [

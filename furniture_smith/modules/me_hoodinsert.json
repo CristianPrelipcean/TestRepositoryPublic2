@@ -7,7 +7,7 @@
   "isDropContainer": false,
   "description": "Shelf in the Inside of a Hood Cabinet",
   "groupName": "Appliance",
-  "imageId": "03315386-279b-4b1b-9a5e-a09da674d335:HoodInsert.png",
+  "imageId": "13866ef8-e38a-41b2-8a34-3ef2fbff027f:HoodInsert.png",
   "restrictionTypeId": "Public",
   "childModules": [
     {
@@ -16,14 +16,9 @@
   ],
   "assignedVariants": [
     {
-      "variantId": "mod_HoodId",
-      "default": "None",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_HoodSupplier",
-      "default": "None",
-      "origin": "Default"
+      "variantId": "mod_CarcaseDepth",
+      "previewValue": "500",
+      "origin": "Derived"
     },
     {
       "variantId": "mod_CarcaseHeight",
@@ -31,9 +26,10 @@
       "origin": "Derived"
     },
     {
-      "variantId": "mod_CarcaseDepth",
-      "previewValue": "500",
-      "origin": "Derived"
+      "variantId": "mod_CarcaseId",
+      "default": "",
+      "previewValue": "",
+      "origin": "Default"
     },
     {
       "variantId": "mod_CarcaseSpaceDimension",
@@ -45,12 +41,6 @@
       "variantId": "mod_CarcaseWidth",
       "previewValue": "600",
       "origin": "Derived"
-    },
-    {
-      "variantId": "mod_CarcaseId",
-      "default": "",
-      "previewValue": "",
-      "origin": "Default"
     },
     {
       "variantId": "mod_FrontGapHor",
@@ -69,18 +59,44 @@
       "origin": "Default"
     },
     {
+      "variantId": "mod_HoodConstructionType",
+      "default": "Automatic",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_HoodId",
+      "default": "None",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_HoodInformation",
+      "default": "",
+      "previewValue": "",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_HoodIntegrationType",
+      "default": "Automatic",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_HoodSupplier",
+      "default": "None",
+      "origin": "Default"
+    },
+    {
       "variantId": "mod_Information",
       "default": "",
       "previewValue": "",
       "origin": "Default"
     },
     {
-      "variantId": "mod_Originpos",
+      "variantId": "mod_ModuleName",
+      "default": "me_HoodInsert",
       "origin": "Default"
     },
     {
-      "variantId": "mod_ModuleName",
-      "default": "me_HoodInsert",
+      "variantId": "mod_Originpos",
       "origin": "Default"
     },
     {
@@ -106,30 +122,14 @@
       "origin": "Derived"
     },
     {
-      "variantId": "mod_SidepanelrightThk",
-      "previewValue": "18",
-      "origin": "Derived"
-    },
-    {
       "variantId": "mod_SidepanelleftThk",
       "previewValue": "18",
       "origin": "Derived"
     },
     {
-      "variantId": "mod_HoodIntegrationType",
-      "default": "Automatic",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_HoodConstructionType",
-      "default": "Automatic",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_HoodInformation",
-      "default": "",
-      "previewValue": "",
-      "origin": "Default"
+      "variantId": "mod_SidepanelrightThk",
+      "previewValue": "18",
+      "origin": "Derived"
     }
   ],
   "assignedParts": [],

@@ -5,7 +5,7 @@
   "isRoot": false,
   "description": "Front module for dishwasher",
   "groupName": "Appliance",
-  "imageId": "8d0a25cd-ae74-4737-961b-4677e32942cc:Dishwasher.png",
+  "imageId": "8ae4107c-02a9-413f-8c1f-3d24bd50fec9:Dishwasher.png",
   "restrictionTypeId": "Public",
   "childModules": [
     {
@@ -14,62 +14,64 @@
   ],
   "assignedVariants": [
     {
+      "variantId": "mod_Depth",
+      "previewValue": "550",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_DishwasherId",
+      "default": "SN87TX02CE",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_DishwasherInfo",
+      "default": "",
+      "previewValue": "",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_DishwasherSupplier",
+      "default": "Siemens",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_FingergripBtmType",
+      "default": "NoFingergrip",
+      "origin": "Default"
+    },
+    {
       "variantId": "mod_FingergripTop",
       "default": "false",
       "origin": "Default"
     },
     {
-      "variantId": "mod_FrontHeight",
-      "default": "9999",
+      "variantId": "mod_FingergripTopType",
+      "default": "NoFingergrip",
       "origin": "Default"
     },
     {
-      "variantId": "mod_FrontId",
-      "default": "None",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_FrontSplit",
-      "default": "false",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_FrontThk",
-      "origin": "GlobalVar"
-    },
-    {
-      "variantId": "mod_FrontWidth",
-      "default": "300",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_HandleDrill",
-      "default": "True",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_HandleLine",
-      "previewValue": "1050",
+      "variantId": "mod_FrameFillingColor",
+      "previewValue": "240",
       "origin": "Derived"
     },
     {
-      "variantId": "mod_HandlePosLogic",
-      "previewValue": "HandleLine",
+      "variantId": "mod_FrameFillingType",
+      "previewValue": "Automatic",
       "origin": "Derived"
-    },
-    {
-      "variantId": "mod_FrontQtyElements",
-      "default": "0",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_FrontPosStart",
-      "default": "0",
-      "origin": "Default"
     },
     {
       "variantId": "mod_FrontColor",
       "previewValue": "240",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_FrontDescriptor",
+      "default": "1_1",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_FrontDesign",
+      "previewValue": "FlatPanel",
       "origin": "Derived"
     },
     {
@@ -93,9 +95,29 @@
       "origin": "Derived"
     },
     {
+      "variantId": "mod_FrontGapHorTop",
+      "previewValue": "3",
+      "origin": "Derived"
+    },
+    {
       "variantId": "mod_FrontGapVert",
       "previewValue": "3",
       "origin": "Derived"
+    },
+    {
+      "variantId": "mod_FrontHeight",
+      "default": "9999",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_FrontHeightSelection",
+      "previewValue": "9999",
+      "origin": "Required"
+    },
+    {
+      "variantId": "mod_FrontId",
+      "default": "None",
+      "origin": "Default"
     },
     {
       "variantId": "mod_FrontOversizeBtm",
@@ -118,9 +140,24 @@
       "origin": "Default"
     },
     {
+      "variantId": "mod_FrontPosStart",
+      "default": "0",
+      "origin": "Default"
+    },
+    {
       "variantId": "mod_FrontProgram",
       "previewValue": "Classic",
       "origin": "Derived"
+    },
+    {
+      "variantId": "mod_FrontQtyElements",
+      "default": "0",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_FrontSplit",
+      "default": "false",
+      "origin": "Default"
     },
     {
       "variantId": "mod_FrontSplitHeight1",
@@ -148,13 +185,37 @@
       "origin": "Default"
     },
     {
+      "variantId": "mod_FrontThk",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_FrontWidth",
+      "default": "300",
+      "origin": "Default"
+    },
+    {
       "variantId": "mod_HandleColor",
       "previewValue": "Demoblue",
       "origin": "Derived"
     },
     {
+      "variantId": "mod_HandleDesign",
+      "previewValue": "10",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_HandleDrill",
+      "default": "True",
+      "origin": "Default"
+    },
+    {
       "variantId": "mod_HandleLength",
       "previewValue": "128",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_HandleLine",
+      "previewValue": "1050",
       "origin": "Derived"
     },
     {
@@ -166,6 +227,11 @@
       "variantId": "mod_HandleOffsetY",
       "default": "0",
       "origin": "Default"
+    },
+    {
+      "variantId": "mod_HandlePosLogic",
+      "previewValue": "HandleLine",
+      "origin": "Derived"
     },
     {
       "variantId": "mod_HandlePosMatrix",
@@ -183,42 +249,13 @@
       "origin": "Default"
     },
     {
+      "variantId": "mod_Height",
+      "previewValue": "720",
+      "origin": "Derived"
+    },
+    {
       "variantId": "mod_HeightPosInsertion",
       "previewValue": "0",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_HandleDesign",
-      "previewValue": "10",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_FrontDesign",
-      "previewValue": "FlatPanel",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_Originpos",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_PlinthAreaHeight",
-      "previewValue": "80",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_ParentName",
-      "previewValue": "NotDefined",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_ModuleName",
-      "default": " mf_Door",
-      "origin": "Fixed"
-    },
-    {
-      "variantId": "mod_FrontGapHorTop",
-      "previewValue": "3",
       "origin": "Derived"
     },
     {
@@ -227,64 +264,27 @@
       "origin": "Default"
     },
     {
-      "variantId": "mod_FingergripTopType",
-      "default": "NoFingergrip",
+      "variantId": "mod_ModuleName",
+      "default": " mf_Door",
+      "origin": "Fixed"
+    },
+    {
+      "variantId": "mod_Originpos",
       "origin": "Default"
     },
     {
-      "variantId": "mod_FingergripBtmType",
-      "default": "NoFingergrip",
-      "origin": "Default"
+      "variantId": "mod_ParentName",
+      "previewValue": "NotDefined",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_PlinthAreaHeight",
+      "previewValue": "80",
+      "origin": "Derived"
     },
     {
       "variantId": "mod_TypeElement",
       "previewValue": "BaseUnit",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_FrontDescriptor",
-      "default": "1_1",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_FrameFillingType",
-      "previewValue": "Automatic",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_FrontHeightSelection",
-      "previewValue": "9999",
-      "origin": "Required"
-    },
-    {
-      "variantId": "mod_DishwasherId",
-      "default": "SN87TX02CE",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_DishwasherSupplier",
-      "default": "Siemens",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_Height",
-      "previewValue": "720",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_Depth",
-      "previewValue": "550",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_DishwasherInfo",
-      "default": "",
-      "previewValue": "",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_FrameFillingColor",
-      "previewValue": "240",
       "origin": "Derived"
     }
   ],

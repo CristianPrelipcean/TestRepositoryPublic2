@@ -7,7 +7,7 @@
   "isDropContainer": false,
   "description": "Segmented front elements",
   "groupName": "FrontConstructionParts",
-  "imageId": "59e37606-58f8-45c4-a02c-5646543aa9a6:Segmentglass.png",
+  "imageId": "ed6fce12-67ad-410e-855e-15c5bd37e7b3:Segmentglass.png",
   "restrictionTypeId": "Internal",
   "childModules": [],
   "assignedVariants": [
@@ -17,13 +17,23 @@
       "origin": "Default"
     },
     {
-      "variantId": "mod_FrontDesign",
-      "previewValue": "WoodFrame",
-      "origin": "Derived"
+      "variantId": "mod_DoorDirection",
+      "default": "Left",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_FlipliftType",
+      "default": "FHF",
+      "origin": "Default"
     },
     {
       "variantId": "mod_FrontColor",
       "previewValue": "Demoblue",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_FrontDesign",
+      "previewValue": "WoodFrame",
       "origin": "Derived"
     },
     {
@@ -51,6 +61,21 @@
       "origin": "Derived"
     },
     {
+      "variantId": "mod_FrontSegmentColor",
+      "previewValue": "FloatGlass",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_FrontSegmentDescriptor",
+      "previewValue": "1_1_1",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_FrontSegmentType",
+      "previewValue": "Automatic",
+      "origin": "Derived"
+    },
+    {
       "variantId": "mod_FrontType",
       "previewValue": "None",
       "origin": "Derived"
@@ -66,8 +91,20 @@
       "origin": "Derived"
     },
     {
+      "variantId": "mod_HardwareTypeList",
+      "default": "",
+      "previewValue": "",
+      "origin": "Default"
+    },
+    {
       "variantId": "mod_Height",
       "default": "720",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_Information",
+      "default": "",
+      "previewValue": "",
       "origin": "Default"
     },
     {
@@ -81,50 +118,13 @@
       "origin": "Default"
     },
     {
-      "variantId": "mod_Width",
-      "default": "600",
-      "origin": "Default"
-    },
-    {
       "variantId": "mod_TypeElement",
       "previewValue": "BaseUnit",
       "origin": "Derived"
     },
     {
-      "variantId": "mod_DoorDirection",
-      "default": "Left",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_FlipliftType",
-      "default": "FHF",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_Information",
-      "default": "",
-      "previewValue": "",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_FrontSegmentType",
-      "previewValue": "Automatic",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_FrontSegmentColor",
-      "previewValue": "FloatGlass",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_FrontSegmentDescriptor",
-      "previewValue": "1_1_1",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_HardwareTypeList",
-      "default": "",
-      "previewValue": "",
+      "variantId": "mod_Width",
+      "default": "600",
       "origin": "Default"
     }
   ],

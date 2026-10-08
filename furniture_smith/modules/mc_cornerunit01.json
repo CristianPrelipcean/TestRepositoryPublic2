@@ -5,7 +5,7 @@
   "isRoot": false,
   "description": "Corner unit",
   "groupName": "CarcaseConstruction",
-  "imageId": "a61f34b0-1b09-40df-a482-e49238cb50fd:Cornerunit.jpg",
+  "imageId": "acc031d4-f4d3-47a1-b4fa-449b18592d51:Cornerunit.jpg",
   "restrictionTypeId": "Internal",
   "childModules": [
     {
@@ -14,9 +14,9 @@
   ],
   "assignedVariants": [
     {
-      "variantId": "mod_ModuleName",
-      "default": "mc_Cornerunit01",
-      "origin": "Fixed"
+      "variantId": "mod_BackHeight",
+      "previewValue": "600",
+      "origin": "Derived"
     },
     {
       "variantId": "mod_CarcaseColor",
@@ -44,14 +44,9 @@
       "origin": "Derived"
     },
     {
-      "variantId": "mod_DepthLeft",
-      "previewValue": "548",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_DepthRight",
-      "previewValue": "548",
-      "origin": "Derived"
+      "variantId": "mod_CarcaseDirection",
+      "default": "Left",
+      "origin": "Default"
     },
     {
       "variantId": "mod_CarcaseEdgeBackColor",
@@ -71,11 +66,6 @@
     {
       "variantId": "mod_CarcaseFrontConstruction",
       "previewValue": "FrontOverlayLBRT",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_Height",
-      "previewValue": "700",
       "origin": "Derived"
     },
     {
@@ -99,17 +89,22 @@
       "origin": "Derived"
     },
     {
-      "variantId": "mod_CarcasePartConnectionBtmVert",
-      "previewValue": "ShelfCSide",
-      "origin": "Derived"
-    },
-    {
       "variantId": "mod_CarcasePartConnectionBackVert",
       "previewValue": "BackwallCSide",
       "origin": "Derived"
     },
     {
+      "variantId": "mod_CarcasePartConnectionBtmVert",
+      "previewValue": "ShelfCSide",
+      "origin": "Derived"
+    },
+    {
       "variantId": "mod_CarcasePartConnectionLeftHor",
+      "previewValue": "SideCShelf",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_CarcasePartConnectionRightHor",
       "previewValue": "SideCShelf",
       "origin": "Derived"
     },
@@ -123,11 +118,6 @@
       "default": "",
       "previewValue": "",
       "origin": "Default"
-    },
-    {
-      "variantId": "mod_CarcasePartConnectionRightHor",
-      "previewValue": "SideCShelf",
-      "origin": "Derived"
     },
     {
       "variantId": "mod_CarcaseProgram",
@@ -170,12 +160,12 @@
       "origin": "Derived"
     },
     {
-      "variantId": "mod_CarcaseSidepanelleftOversizeTop",
+      "variantId": "mod_CarcaseSidepanelleftOversizeInsideWall",
       "previewValue": "0",
       "origin": "Derived"
     },
     {
-      "variantId": "mod_CarcaseSidepanelleftOversizeInsideWall",
+      "variantId": "mod_CarcaseSidepanelleftOversizeTop",
       "previewValue": "0",
       "origin": "Derived"
     },
@@ -210,23 +200,23 @@
       "origin": "Default"
     },
     {
-      "variantId": "mod_CarcaseVisTop",
-      "previewValue": "false",
-      "origin": "Derived"
-    },
-    {
       "variantId": "mod_CarcaseVisRight",
       "default": "false",
       "origin": "Default"
     },
     {
-      "variantId": "mod_WidthLeft",
-      "previewValue": "300",
+      "variantId": "mod_CarcaseVisTop",
+      "previewValue": "false",
       "origin": "Derived"
     },
     {
-      "variantId": "mod_WidthRight",
-      "previewValue": "300",
+      "variantId": "mod_DepthLeft",
+      "previewValue": "548",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_DepthRight",
+      "previewValue": "548",
       "origin": "Derived"
     },
     {
@@ -276,6 +266,16 @@
       "origin": "Default"
     },
     {
+      "variantId": "mod_Height",
+      "previewValue": "700",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_ModuleName",
+      "default": "mc_Cornerunit01",
+      "origin": "Fixed"
+    },
+    {
       "variantId": "mod_PlinthAreaHeight",
       "previewValue": "100",
       "origin": "Derived"
@@ -311,21 +311,6 @@
       "origin": "Derived"
     },
     {
-      "variantId": "mod_TypeElement",
-      "previewValue": "BaseUnit",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_TotalDimLeft",
-      "previewValue": "900",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_TotalDimRight",
-      "previewValue": "900",
-      "origin": "Derived"
-    },
-    {
       "variantId": "mod_SlopeAngle",
       "previewValue": "0",
       "origin": "Derived"
@@ -341,25 +326,40 @@
       "origin": "Derived"
     },
     {
-      "variantId": "mod_BackHeight",
-      "previewValue": "600",
-      "origin": "Derived"
-    },
-    {
       "variantId": "mod_TopDepth",
       "previewValue": "150",
       "origin": "Derived"
     },
     {
-      "variantId": "mod_CarcaseDirection",
-      "default": "Left",
-      "origin": "Default"
+      "variantId": "mod_TotalDimLeft",
+      "previewValue": "900",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_TotalDimRight",
+      "previewValue": "900",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_TypeElement",
+      "previewValue": "BaseUnit",
+      "origin": "Derived"
     },
     {
       "variantId": "mod_VertDividerInfoList",
       "default": "",
       "previewValue": "",
       "origin": "Default"
+    },
+    {
+      "variantId": "mod_WidthLeft",
+      "previewValue": "300",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_WidthRight",
+      "previewValue": "300",
+      "origin": "Derived"
     }
   ],
   "assignedParts": [

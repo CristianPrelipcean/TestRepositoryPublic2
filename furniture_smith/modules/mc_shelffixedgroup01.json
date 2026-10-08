@@ -5,7 +5,7 @@
   "isRoot": false,
   "description": "Management of the fixed shelf by the front module rack area",
   "groupName": "Equipment",
-  "imageId": "c717fab8-65c7-466a-9519-a4c1f22a0235:ShelffixedGroup.jpg",
+  "imageId": "caad4e73-452e-433f-aaf2-45aad728bf98:ShelffixedGroup.jpg",
   "restrictionTypeId": "Internal",
   "childModules": [],
   "assignedVariants": [
@@ -13,61 +13,6 @@
       "variantId": "mod_CarcaseColor",
       "previewValue": "Demoblue",
       "origin": "Derived"
-    },
-    {
-      "variantId": "mod_CarcaseId",
-      "previewValue": "None",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_CarcaseProgram",
-      "previewValue": "Demoprogram1",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_Depth",
-      "default": "522",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_FrontDesign",
-      "previewValue": "FlatPanel",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_FrontProgram",
-      "previewValue": "Demoprogram1",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_HardwareId",
-      "default": "None",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_Height",
-      "default": "720",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_ModuleName",
-      "default": "mc_ShelffixedGroup01",
-      "origin": "Fixed"
-    },
-    {
-      "variantId": "mod_TypeElement",
-      "previewValue": "WallUnit",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_Width",
-      "default": "600",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_ShelffixedOffsetFront",
-      "default": "10",
-      "origin": "Default"
     },
     {
       "variantId": "mod_CarcaseEdgeColor",
@@ -80,8 +25,18 @@
       "origin": "Derived"
     },
     {
+      "variantId": "mod_CarcaseId",
+      "previewValue": "None",
+      "origin": "Derived"
+    },
+    {
       "variantId": "mod_CarcasePartConnectionBackHor",
       "previewValue": "BackwallCShelf",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_CarcasePartConnectionBtmVert",
+      "previewValue": "ShelfCSide",
       "origin": "Derived"
     },
     {
@@ -93,6 +48,27 @@
       "variantId": "mod_CarcasePartConnectionRightHor",
       "previewValue": "SideCShelf",
       "origin": "Derived"
+    },
+    {
+      "variantId": "mod_CarcasePartConnectionTopVert",
+      "previewValue": "ShelfCSide",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_CarcaseProgram",
+      "previewValue": "Demoprogram1",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_CarcaseSpaceDimension",
+      "default": "",
+      "previewValue": "",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_Depth",
+      "default": "522",
+      "origin": "Default"
     },
     {
       "variantId": "mod_EdgeBackType",
@@ -120,6 +96,11 @@
       "origin": "Default"
     },
     {
+      "variantId": "mod_FittingConnectionBtmVert",
+      "previewValue": "Dowel",
+      "origin": "Derived"
+    },
+    {
       "variantId": "mod_FittingConnectionLeftHor",
       "previewValue": "Dowel",
       "origin": "Derived"
@@ -130,14 +111,49 @@
       "origin": "Derived"
     },
     {
+      "variantId": "mod_FittingConnectionTopVert",
+      "previewValue": "Dowel",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_FrontDesign",
+      "previewValue": "FlatPanel",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_FrontProgram",
+      "previewValue": "Demoprogram1",
+      "origin": "Derived"
+    },
+    {
       "variantId": "mod_HardwareColor",
       "previewValue": "LightColor",
       "origin": "Derived"
     },
     {
+      "variantId": "mod_HardwareId",
+      "default": "None",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_Height",
+      "default": "720",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_ModuleName",
+      "default": "mc_ShelffixedGroup01",
+      "origin": "Fixed"
+    },
+    {
       "variantId": "mod_ParentName",
       "previewValue": "None",
       "origin": "Derived"
+    },
+    {
+      "variantId": "mod_ShelffixedOffsetFront",
+      "default": "10",
+      "origin": "Default"
     },
     {
       "variantId": "mod_ShelffixedPartParentName",
@@ -160,29 +176,13 @@
       "origin": "Derived"
     },
     {
-      "variantId": "mod_CarcasePartConnectionBtmVert",
-      "previewValue": "ShelfCSide",
+      "variantId": "mod_TypeElement",
+      "previewValue": "WallUnit",
       "origin": "Derived"
     },
     {
-      "variantId": "mod_CarcasePartConnectionTopVert",
-      "previewValue": "ShelfCSide",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_FittingConnectionTopVert",
-      "previewValue": "Dowel",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_FittingConnectionBtmVert",
-      "previewValue": "Dowel",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_CarcaseSpaceDimension",
-      "default": "",
-      "previewValue": "",
+      "variantId": "mod_Width",
+      "default": "600",
       "origin": "Default"
     }
   ],

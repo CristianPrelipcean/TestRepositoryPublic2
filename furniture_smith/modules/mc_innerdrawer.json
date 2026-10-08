@@ -8,7 +8,7 @@
   "isDropContainer": false,
   "description": "Construction module for inner Drawer",
   "groupName": "InnerDrawer",
-  "imageId": "b1239cb8-9d76-49f7-a75c-b9eb68318b76:mc_InnerDrawer.png",
+  "imageId": "f7a2c19f-75de-4605-a5fa-8917d4748b7d:mc_InnerDrawer.png",
   "restrictionTypeId": "Internal",
   "childModules": [
     {
@@ -18,10 +18,10 @@
       "moduleId": "mc_InnerDrawerFront01"
     },
     {
-      "moduleId": "mc_InnerDrawerSpacer01"
+      "moduleId": "mc_InnerDrawerFront02"
     },
     {
-      "moduleId": "mc_InnerDrawerFront02"
+      "moduleId": "mc_InnerDrawerSpacer01"
     },
     {
       "moduleId": "mc_InnerDrawerSpacer02"
@@ -29,7 +29,8 @@
   ],
   "assignedVariants": [
     {
-      "variantId": "mod_Information",
+      "variantId": "mod_Depth",
+      "previewValue": "500",
       "origin": "Derived"
     },
     {
@@ -63,13 +64,7 @@
       "origin": "Derived"
     },
     {
-      "variantId": "mod_Depth",
-      "previewValue": "500",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_Width",
-      "previewValue": "500",
+      "variantId": "mod_Information",
       "origin": "Derived"
     },
     {
@@ -78,12 +73,18 @@
       "origin": "Derived"
     },
     {
+      "variantId": "mod_InnerDrawerId",
+      "default": "",
+      "previewValue": "",
+      "origin": "Derived"
+    },
+    {
       "variantId": "mod_InnerDrawerSpacerRule",
       "previewValue": "ManufacturerBoardSpacer",
       "origin": "Derived"
     },
     {
-      "variantId": "mod_InnerDrawerId",
+      "variantId": "mod_ModuleName",
       "default": "",
       "previewValue": "",
       "origin": "Derived"
@@ -95,9 +96,8 @@
       "origin": "Derived"
     },
     {
-      "variantId": "mod_ModuleName",
-      "default": "",
-      "previewValue": "",
+      "variantId": "mod_Width",
+      "previewValue": "500",
       "origin": "Derived"
     }
   ],

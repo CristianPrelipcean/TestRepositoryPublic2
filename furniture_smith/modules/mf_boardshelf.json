@@ -7,7 +7,7 @@
   "isDropContainer": false,
   "description": "Shelf for boards like mirror board or coat board",
   "groupName": "AddonModule",
-  "imageId": "0f363dac-3b94-4081-9af9-303c9acb7d0e:BoardShelf.png",
+  "imageId": "58fef831-294e-45e4-8c82-11ede2a8fa99:BoardShelf.png",
   "restrictionTypeId": "Public",
   "childModules": [
     {
@@ -19,24 +19,9 @@
   ],
   "assignedVariants": [
     {
-      "variantId": "mod_FrontId",
-      "default": "Boardshelf01",
-      "origin": "Default"
-    },
-    {
       "variantId": "mod_BoardShelfColor",
       "previewValue": "199",
       "origin": "Derived"
-    },
-    {
-      "variantId": "mod_BoardShelfProgram",
-      "previewValue": "Classic",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_BoardShelfWidth",
-      "previewValue": "600",
-      "origin": "Required"
     },
     {
       "variantId": "mod_BoardShelfDepth",
@@ -44,8 +29,8 @@
       "origin": "Required"
     },
     {
-      "variantId": "mod_BoardShelfThickness",
-      "default": "19",
+      "variantId": "mod_BoardShelfPositionHeight",
+      "default": "0",
       "origin": "Default"
     },
     {
@@ -54,8 +39,23 @@
       "origin": "Default"
     },
     {
-      "variantId": "mod_BoardShelfPositionHeight",
-      "default": "0",
+      "variantId": "mod_BoardShelfProgram",
+      "previewValue": "Classic",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_BoardShelfThickness",
+      "default": "19",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_BoardShelfWidth",
+      "previewValue": "600",
+      "origin": "Required"
+    },
+    {
+      "variantId": "mod_FrontId",
+      "default": "Boardshelf01",
       "origin": "Default"
     }
   ],

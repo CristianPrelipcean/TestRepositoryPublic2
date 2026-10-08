@@ -7,7 +7,7 @@
   "isDropContainer": false,
   "description": "Front module for baseunit fridge",
   "groupName": "Appliance",
-  "imageId": "960049c6-bfcf-4768-b3b7-a17146c9ae64:BaseunitFridge.png",
+  "imageId": "9ed8b90c-d266-47a7-b89d-28860bb498d8:BaseunitFridge.png",
   "restrictionTypeId": "Public",
   "childModules": [
     {
@@ -35,6 +35,31 @@
       "variantId": "mod_Depth",
       "previewValue": "500",
       "origin": "Derived"
+    },
+    {
+      "variantId": "mod_DoorDirection",
+      "default": "Right",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_DoorDirectionSelection",
+      "default": "Left",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_FingergripBtmType",
+      "default": "NoFingergrip",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_FingergripTop",
+      "default": "false",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_FingergripTopType",
+      "default": "NoFingergrip",
+      "origin": "Default"
     },
     {
       "variantId": "mod_FrameFillingColor",
@@ -192,21 +217,6 @@
       "origin": "Derived"
     },
     {
-      "variantId": "mod_FingergripBtmType",
-      "default": "NoFingergrip",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_FingergripTop",
-      "default": "false",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_FingergripTopType",
-      "default": "NoFingergrip",
-      "origin": "Default"
-    },
-    {
       "variantId": "mod_HandleDrill",
       "default": "true",
       "origin": "Default"
@@ -289,16 +299,6 @@
       "variantId": "mod_TypeElement",
       "previewValue": "BaseUnit",
       "origin": "Derived"
-    },
-    {
-      "variantId": "mod_DoorDirection",
-      "default": "Right",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_DoorDirectionSelection",
-      "default": "Left",
-      "origin": "Default"
     }
   ],
   "assignedParts": [],

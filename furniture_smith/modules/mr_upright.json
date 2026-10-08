@@ -5,7 +5,7 @@
   "isRoot": true,
   "description": "Module for upright",
   "groupName": "Root",
-  "imageId": "7e424b28-13dc-40ab-8b4b-8b2dc9703541:AdditionalParts.png",
+  "imageId": "e2f1883f-78a0-422e-b8a0-0e9b13903b31:AdditionalParts.png",
   "restrictionTypeId": "Public",
   "childModules": [
     {
@@ -14,37 +14,17 @@
   ],
   "assignedVariants": [
     {
-      "variantId": "mod_UprightColor",
-      "default": "240",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_UprightFloorProfileColor",
-      "default": "DemoStainlessSteel",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_UprightDepth",
-      "previewValue": "600",
-      "origin": "Required"
-    },
-    {
-      "variantId": "mod_UprightHeight",
-      "previewValue": "720",
-      "origin": "Required"
-    },
-    {
-      "variantId": "mod_PlinthAreaHeight",
-      "default": "100",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_UprightThk",
+      "variantId": "mod_CountertopThk",
       "origin": "GlobalVar"
     },
     {
-      "variantId": "mod_UprightOverhang",
-      "default": "23",
+      "variantId": "mod_CreateBacksplash",
+      "default": "false",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_CreateCeilingFiller",
+      "default": "false",
       "origin": "Default"
     },
     {
@@ -53,8 +33,8 @@
       "origin": "Default"
     },
     {
-      "variantId": "mod_UprightConstruction",
-      "default": "ToFloor",
+      "variantId": "mod_CreatePaneltop",
+      "default": "false",
       "origin": "Default"
     },
     {
@@ -63,23 +43,39 @@
       "origin": "Default"
     },
     {
+      "variantId": "mod_PlinthAreaHeight",
+      "default": "100",
+      "origin": "Default"
+    },
+    {
       "variantId": "mod_TypeElement",
       "default": "Upright",
       "origin": "Default"
     },
     {
-      "variantId": "mod_UprightProgram",
-      "default": "ModernNature",
+      "variantId": "mod_UprightColor",
+      "default": "240",
       "origin": "Default"
     },
     {
-      "variantId": "mod_CreateBacksplash",
-      "default": "false",
+      "variantId": "mod_UprightConstruction",
+      "default": "ToFloor",
       "origin": "Default"
     },
     {
-      "variantId": "mod_CountertopThk",
-      "origin": "GlobalVar"
+      "variantId": "mod_UprightDepth",
+      "previewValue": "600",
+      "origin": "Required"
+    },
+    {
+      "variantId": "mod_UprightFloorProfileColor",
+      "default": "DemoStainlessSteel",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_UprightHeight",
+      "previewValue": "720",
+      "origin": "Required"
     },
     {
       "variantId": "mod_UprightOverdimensionBtm",
@@ -92,14 +88,18 @@
       "origin": "Default"
     },
     {
-      "variantId": "mod_CreatePaneltop",
-      "default": "false",
+      "variantId": "mod_UprightOverhang",
+      "default": "23",
       "origin": "Default"
     },
     {
-      "variantId": "mod_CreateCeilingFiller",
-      "default": "false",
+      "variantId": "mod_UprightProgram",
+      "default": "ModernNature",
       "origin": "Default"
+    },
+    {
+      "variantId": "mod_UprightThk",
+      "origin": "GlobalVar"
     }
   ],
   "assignedParts": [],

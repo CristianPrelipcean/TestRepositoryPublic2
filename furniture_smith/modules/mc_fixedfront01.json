@@ -5,23 +5,23 @@
   "isRoot": false,
   "description": "Construction module for fixed front",
   "groupName": "FrontConstruction",
-  "imageId": "69084abc-7f88-4d8f-a0d3-f19829aff984:FixedPanel.jpg",
+  "imageId": "9cc92ba8-2d79-4349-b47b-c0c98727da20:FixedPanel.jpg",
   "restrictionTypeId": "Internal",
   "childModules": [
     {
       "moduleId": "mc_FrontPanel01"
     },
     {
-      "moduleId": "mc_PanelWoodFrame01"
+      "moduleId": "mc_Handlestrip01"
     },
     {
       "moduleId": "mc_MetalFrame01"
     },
     {
-      "moduleId": "mc_ThermoformedPanel01"
+      "moduleId": "mc_PanelWoodFrame01"
     },
     {
-      "moduleId": "mc_Handlestrip01"
+      "moduleId": "mc_ThermoformedPanel01"
     }
   ],
   "assignedVariants": [
@@ -62,6 +62,21 @@
     {
       "variantId": "mod_FingergripTop",
       "previewValue": "False",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_FirstFront",
+      "previewValue": "false",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_FrameFillingColor",
+      "previewValue": "240",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_FrameFillingType",
+      "previewValue": "Automatic",
       "origin": "Derived"
     },
     {
@@ -155,6 +170,16 @@
       "origin": "Derived"
     },
     {
+      "variantId": "mod_HandleDesign",
+      "previewValue": "20",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_HandlePosType",
+      "previewValue": "01",
+      "origin": "Derived"
+    },
+    {
       "variantId": "mod_HandlestripPos",
       "previewValue": "4",
       "origin": "Derived"
@@ -165,6 +190,11 @@
       "origin": "Derived"
     },
     {
+      "variantId": "mod_LastFront",
+      "previewValue": "false",
+      "origin": "Derived"
+    },
+    {
       "variantId": "mod_ModuleName",
       "default": "mc_Drawer01",
       "origin": "Fixed"
@@ -172,11 +202,6 @@
     {
       "variantId": "mod_Originpos",
       "origin": "Default"
-    },
-    {
-      "variantId": "mod_FrameFillingType",
-      "previewValue": "Automatic",
-      "origin": "Derived"
     },
     {
       "variantId": "mod_PlinthAreaHeight",
@@ -216,31 +241,6 @@
     {
       "variantId": "mod_VertDividerType",
       "previewValue": "NoVertDivider",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_HandlePosType",
-      "previewValue": "01",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_HandleDesign",
-      "previewValue": "20",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_FrameFillingColor",
-      "previewValue": "240",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_FirstFront",
-      "previewValue": "false",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_LastFront",
-      "previewValue": "false",
       "origin": "Derived"
     }
   ],

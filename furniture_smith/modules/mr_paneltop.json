@@ -5,7 +5,7 @@
   "isRoot": false,
   "description": "Module for top panel",
   "groupName": "Root",
-  "imageId": "bb9df84b-592c-4b56-a819-9e8668e27afe:TopPanel.jpg",
+  "imageId": "b7ec56e3-b5a9-49b2-9385-92f68960bc6b:TopPanel.jpg",
   "restrictionTypeId": "Public",
   "generateMethod": "Paneltop",
   "childModules": [
@@ -14,6 +14,32 @@
     }
   ],
   "assignedVariants": [
+    {
+      "variantId": "mod_FrontGapCarcase",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_FrontGapHor",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_LengthList",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_ModuleName",
+      "default": "mr_Paneltop",
+      "origin": "Fixed"
+    },
+    {
+      "variantId": "mod_PaneltopColor",
+      "default": "240",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_PaneltopConstruction",
+      "origin": "GlobalVar"
+    },
     {
       "variantId": "mod_PaneltopEdgeBackColor",
       "defaultScript": "this.mod_PaneltopColor",
@@ -55,25 +81,11 @@
       "origin": "Default"
     },
     {
-      "variantId": "mod_ModuleName",
-      "default": "mr_Paneltop",
-      "origin": "Fixed"
-    },
-    {
-      "variantId": "mod_PaneltopColor",
-      "default": "240",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_PaneltopThk",
-      "origin": "GlobalVar"
-    },
-    {
-      "variantId": "mod_PaneltopConstruction",
-      "origin": "GlobalVar"
-    },
-    {
       "variantId": "mod_PaneltopOverhangFront",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_PaneltopOversizeBack",
       "origin": "GlobalVar"
     },
     {
@@ -82,20 +94,8 @@
       "origin": "Default"
     },
     {
-      "variantId": "mod_PaneltopOversizeBack",
+      "variantId": "mod_PaneltopThk",
       "origin": "GlobalVar"
-    },
-    {
-      "variantId": "mod_FrontGapHor",
-      "origin": "GlobalVar"
-    },
-    {
-      "variantId": "mod_FrontGapCarcase",
-      "origin": "GlobalVar"
-    },
-    {
-      "variantId": "mod_LengthList",
-      "origin": "Default"
     }
   ],
   "assignedParts": [],

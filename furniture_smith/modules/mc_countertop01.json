@@ -5,18 +5,33 @@
   "isRoot": false,
   "description": "Countertop SubModule",
   "groupName": "Countertop",
-  "imageId": "aafb2ccc-e6df-459c-8c6b-6afa6f86ee74:Countertop.png",
+  "imageId": "791c06e9-ab56-4d93-b177-54c85f52b681:Countertop.png",
   "restrictionTypeId": "Internal",
   "childModules": [],
   "assignedVariants": [
     {
-      "variantId": "mod_CountertopLeftEndType",
-      "default": "StraightUnfinished",
-      "origin": "Default"
-    },
-    {
       "variantId": "mod_CountertopColor",
       "previewValue": "380",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_CountertopConnectionLengthLeft",
+      "previewValue": "0",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_CountertopConnectionLengthRight",
+      "previewValue": "0",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_CountertopConnectionOversize",
+      "previewValue": "0",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_CountertopDepth",
+      "previewValue": "610",
       "origin": "Derived"
     },
     {
@@ -45,29 +60,15 @@
       "origin": "Derived"
     },
     {
-      "variantId": "mod_CountertopDepth",
-      "previewValue": "610",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_CountertopThk",
-      "previewValue": "40",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_CountertopRightEndType",
-      "default": "StraightUnfinished",
+      "variantId": "mod_CountertopInfo",
+      "default": "",
+      "previewValue": "",
       "origin": "Default"
     },
     {
-      "variantId": "mod_CountertopWidth",
-      "previewValue": "1500",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_CountertopConnectionLengthLeft",
-      "previewValue": "0",
-      "origin": "Derived"
+      "variantId": "mod_CountertopLeftEndType",
+      "default": "StraightUnfinished",
+      "origin": "Default"
     },
     {
       "variantId": "mod_CountertopOverhangLeft",
@@ -80,24 +81,23 @@
       "origin": "Derived"
     },
     {
-      "variantId": "mod_CountertopConnectionLengthRight",
-      "previewValue": "0",
+      "variantId": "mod_CountertopProgram",
+      "previewValue": "Style",
       "origin": "Derived"
     },
     {
-      "variantId": "mod_CountertopConnectionOversize",
-      "previewValue": "0",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_CountertopInfo",
-      "default": "",
-      "previewValue": "",
+      "variantId": "mod_CountertopRightEndType",
+      "default": "StraightUnfinished",
       "origin": "Default"
     },
     {
-      "variantId": "mod_CountertopProgram",
-      "previewValue": "Style",
+      "variantId": "mod_CountertopThk",
+      "previewValue": "40",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_CountertopWidth",
+      "previewValue": "1500",
       "origin": "Derived"
     }
   ],

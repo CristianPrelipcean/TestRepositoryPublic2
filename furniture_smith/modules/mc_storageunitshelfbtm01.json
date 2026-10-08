@@ -5,43 +5,23 @@
   "isRoot": false,
   "description": "Bottom shelf for storage unit",
   "groupName": "CarcaseConstructionParts",
-  "imageId": "327add54-a469-4c64-b760-97989902e7b8:Shelfbtm.png",
+  "imageId": "af7d5a9d-96f1-4590-9753-429ed264ab4a:Shelfbtm.png",
   "restrictionTypeId": "Internal",
   "childModules": [],
   "assignedVariants": [
-    {
-      "variantId": "mod_CarcaseId",
-      "previewValue": "None",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_CarcaseVisBtm",
-      "previewValue": "false",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_Depth",
-      "default": "500",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_Height",
-      "default": "720",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_Width",
-      "default": "600",
-      "origin": "Default"
-    },
     {
       "variantId": "mod_CarcaseColor",
       "previewValue": "Demoblue",
       "origin": "Derived"
     },
     {
-      "variantId": "mod_CarcaseOutsideColor",
-      "previewValue": "Demoblue",
+      "variantId": "mod_CarcaseConnectionLeftBtm",
+      "previewValue": "SideCShelf",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_CarcaseConnectionRightBtm",
+      "previewValue": "SideCShelf",
       "origin": "Derived"
     },
     {
@@ -60,8 +40,13 @@
       "origin": "Derived"
     },
     {
-      "variantId": "mod_CarcaseProgram",
-      "previewValue": "Demoprogram1",
+      "variantId": "mod_CarcaseId",
+      "previewValue": "None",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_CarcaseOutsideColor",
+      "previewValue": "Demoblue",
       "origin": "Derived"
     },
     {
@@ -70,7 +55,27 @@
       "origin": "Derived"
     },
     {
-      "variantId": "mod_EdgeLeftType",
+      "variantId": "mod_CarcasePartConnectionBtmVert",
+      "previewValue": "Dowel",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_CarcaseProgram",
+      "previewValue": "Demoprogram1",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_CarcaseVisBtm",
+      "previewValue": "false",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_Depth",
+      "default": "500",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_EdgeBackType",
       "default": "NOE",
       "origin": "Default"
     },
@@ -80,7 +85,12 @@
       "origin": "Default"
     },
     {
-      "variantId": "mod_EdgeBackType",
+      "variantId": "mod_EdgeJointType",
+      "default": "VVVV",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_EdgeLeftType",
       "default": "NOE",
       "origin": "Default"
     },
@@ -90,47 +100,7 @@
       "origin": "Default"
     },
     {
-      "variantId": "mod_EdgeJointType",
-      "default": "VVVV",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_ModuleName",
-      "default": "mc_StorageunitShelfbtm01",
-      "origin": "Fixed"
-    },
-    {
-      "variantId": "mod_CarcaseConnectionLeftBtm",
-      "previewValue": "SideCShelf",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_CarcaseConnectionRightBtm",
-      "previewValue": "SideCShelf",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_TypeElement",
-      "previewValue": "BaseUnit",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_HardwareColor",
-      "previewValue": "LightColor",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_ParentName",
-      "previewValue": "None",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_PartName",
-      "default": "None",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_CarcasePartConnectionBtmVert",
+      "variantId": "mod_FittingConnectionBtmVert",
       "previewValue": "Dowel",
       "origin": "Derived"
     },
@@ -145,14 +115,44 @@
       "origin": "Derived"
     },
     {
-      "variantId": "mod_FittingConnectionBtmVert",
-      "previewValue": "Dowel",
+      "variantId": "mod_HardwareColor",
+      "previewValue": "LightColor",
       "origin": "Derived"
+    },
+    {
+      "variantId": "mod_Height",
+      "default": "720",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_ModuleName",
+      "default": "mc_StorageunitShelfbtm01",
+      "origin": "Fixed"
+    },
+    {
+      "variantId": "mod_ParentName",
+      "previewValue": "None",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_PartName",
+      "default": "None",
+      "origin": "Default"
     },
     {
       "variantId": "mod_SlopeAngle",
       "previewValue": "0",
       "origin": "Derived"
+    },
+    {
+      "variantId": "mod_TypeElement",
+      "previewValue": "BaseUnit",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_Width",
+      "default": "600",
+      "origin": "Default"
     }
   ],
   "assignedParts": [

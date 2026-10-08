@@ -7,27 +7,22 @@
   "isDropContainer": false,
   "description": "Baseboard for multiple cabinets",
   "groupName": "",
-  "imageId": "dedfd928-d662-4fb6-9c3f-9878b8a3d350:Baseboard.png",
+  "imageId": "3b582388-b187-4bbc-ac47-dc4665e77f50:Baseboard.png",
   "restrictionTypeId": "Internal",
   "childModules": [],
   "assignedVariants": [
+    {
+      "variantId": "mod_BaseboardColor",
+      "previewValue": "316",
+      "origin": "Derived"
+    },
     {
       "variantId": "mod_BaseboardDepth",
       "default": "500",
       "origin": "Default"
     },
     {
-      "variantId": "mod_BaseboardLength",
-      "default": "1000",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_BaseboardThk",
-      "previewValue": "19",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_BaseboardColor",
+      "variantId": "mod_BaseboardEdgeBackColor",
       "previewValue": "316",
       "origin": "Derived"
     },
@@ -42,19 +37,24 @@
       "origin": "Derived"
     },
     {
-      "variantId": "mod_BaseboardEdgeBackColor",
-      "previewValue": "316",
-      "origin": "Derived"
-    },
-    {
       "variantId": "mod_BaseboardId",
       "default": "",
       "previewValue": "",
       "origin": "Default"
     },
     {
+      "variantId": "mod_BaseboardLength",
+      "default": "1000",
+      "origin": "Default"
+    },
+    {
       "variantId": "mod_BaseboardProgram",
       "previewValue": "Classic",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_BaseboardThk",
+      "previewValue": "19",
       "origin": "Derived"
     }
   ],

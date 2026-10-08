@@ -7,29 +7,18 @@
   "isDropContainer": false,
   "description": "Construction module for hood",
   "groupName": "Hood",
-  "imageId": "03315386-279b-4b1b-9a5e-a09da674d335:HoodInsert.png",
+  "imageId": "13866ef8-e38a-41b2-8a34-3ef2fbff027f:HoodInsert.png",
   "restrictionTypeId": "Internal",
   "childModules": [],
   "assignedVariants": [
     {
-      "variantId": "mod_HoodInformation",
-      "default": "",
-      "previewValue": "",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_CarcaseWidth",
-      "previewValue": "500",
+      "variantId": "mod_CarcaseDepth",
+      "previewValue": "300",
       "origin": "Derived"
     },
     {
       "variantId": "mod_CarcaseHeight",
       "previewValue": "500",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_CarcaseDepth",
-      "previewValue": "300",
       "origin": "Derived"
     },
     {
@@ -39,19 +28,9 @@
       "origin": "Default"
     },
     {
-      "variantId": "mod_HoodRailverttopbackthk",
-      "default": "19",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_HoodShelftopthk",
-      "default": "19",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_HoodShelfbtmthk",
-      "default": "19",
-      "origin": "Default"
+      "variantId": "mod_CarcaseWidth",
+      "previewValue": "500",
+      "origin": "Derived"
     },
     {
       "variantId": "mod_HoodBackwallthk",
@@ -59,17 +38,7 @@
       "origin": "Default"
     },
     {
-      "variantId": "mod_HoodSidepanelthk",
-      "default": "19",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_HoodGrooveDistance",
-      "default": "15",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_HoodConstructionRailtopthk",
+      "variantId": "mod_HoodConstructionRailbtmthk",
       "default": "19",
       "origin": "Default"
     },
@@ -79,45 +48,76 @@
       "origin": "Default"
     },
     {
+      "variantId": "mod_HoodConstructionRailtopthk",
+      "default": "19",
+      "origin": "Default"
+    },
+    {
       "variantId": "mod_HoodConstructionRailtopwdth",
       "default": "124",
       "origin": "Default"
     },
     {
-      "variantId": "mod_HoodConstructionRailbtmthk",
+      "variantId": "mod_HoodGrooveDistance",
+      "default": "15",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_HoodInformation",
+      "default": "",
+      "previewValue": "",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_HoodRailvertfrontbtmthk",
       "default": "19",
       "origin": "Default"
     },
     {
-      "variantId": "mod_HoodRailvertfrontbtmthk",
+      "variantId": "mod_HoodRailverttopbackthk",
+      "default": "19",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_HoodShelfbtmthk",
+      "default": "19",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_HoodShelftopthk",
+      "default": "19",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_HoodSidepanelthk",
       "default": "19",
       "origin": "Default"
     }
   ],
   "assignedParts": [
     {
+      "partCode": "part_HoodBackwall"
+    },
+    {
+      "partCode": "part_HoodConstructionRail"
+    },
+    {
       "partCode": "part_HoodRail"
     },
     {
-      "partCode": "part_HoodShelftop"
+      "partCode": "part_HoodShelfadj"
     },
     {
       "partCode": "part_HoodShelfbtm"
     },
     {
-      "partCode": "part_HoodBackwall"
+      "partCode": "part_HoodShelftop"
     },
     {
       "partCode": "part_HoodSidepanelleft"
     },
     {
       "partCode": "part_HoodSidepanelright"
-    },
-    {
-      "partCode": "part_HoodShelfadj"
-    },
-    {
-      "partCode": "part_HoodConstructionRail"
     }
   ],
   "assignedCustomTables": [
