@@ -1,0 +1,99 @@
+{
+  "moduleId": "md_EquipmentArticleBuilder",
+  "shortName": "Equipment article builder",
+  "configurable": true,
+  "isRoot": true,
+  "isConfigDummy": true,
+  "isDropContainer": false,
+  "description": "Root module to build sub articles",
+  "groupName": "Root",
+  "imageId": "969348ac-5f29-489d-a30f-312c56611d0b:ArticleBuilder.png",
+  "restrictionTypeId": "Public",
+  "childModules": [
+    {
+      "moduleId": "me_ShelfadjMultiple01"
+    },
+    {
+      "moduleId": "me_ClothingOrganizer01"
+    },
+    {
+      "moduleId": "me_Vertdivider01"
+    },
+    {
+      "moduleId": "me_InnerDrawerGroup"
+    },
+    {
+      "moduleId": "me_Shelffixed01"
+    }
+  ],
+  "assignedVariants": [
+    {
+      "variantId": "mod_CarcaseColor",
+      "default": "178",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_CarcaseId",
+      "default": "None",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_CarcaseProgram",
+      "default": "ModernNature",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_FrontDesign",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_FrontProgram",
+      "default": "Classic",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_ShelfadjColor",
+      "default": "Automatic",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_ShelfadjDescriptor",
+      "default": "1_1",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_ShelfadjDesign",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_ShelfadjDrillDistance",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_ShelfadjDrillType",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_TypeElement",
+      "default": "WallUnit",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_Width",
+      "default": "600",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_CarcaseSpaceDimension",
+      "default": "",
+      "origin": "Default"
+    }
+  ],
+  "assignedParts": [
+    {
+      "partCode": "part_Placeholder"
+    }
+  ],
+  "assignedCustomTables": [],
+  "assignedFunctions": []
+}

@@ -1,0 +1,777 @@
+{
+  "tableName": "tab_FridgeNicheConstruction",
+  "description": "Defines the construction principle of the refrigerator niche",
+  "restrictionTypeId": "Public",
+  "groupName": "Appliance",
+  "columns": [
+    {
+      "name": "_id",
+      "type": "Integer",
+      "allowNull": false
+    },
+    {
+      "name": "in_StartPosMin",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "in_StartPosMax",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "in_FrontHeightMin",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "in_FrontHeightMax",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "in_NicheHeightMin",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "in_NicheHeightMax",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "in_SplittedDoor",
+      "type": "Bool",
+      "allowNull": true
+    },
+    {
+      "name": "in_FirstFrontHeightMin",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "in_FirstFrontHeightMax",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "in_PosType",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "BtmShelfType",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "TopShelfType",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "PositionType",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "CarcaseDescriptor",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "FrontDescriptor",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "BackwallPosTop",
+      "type": "Dim",
+      "allowNull": false
+    }
+  ],
+  "rows": [
+    {
+      "data": [
+        {
+          "columnName": "in_StartPosMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_StartPosMax",
+          "value": "25"
+        },
+        {
+          "columnName": "in_FrontHeightMin",
+          "value": "1200"
+        },
+        {
+          "columnName": "in_FrontHeightMax",
+          "value": "1300"
+        },
+        {
+          "columnName": "in_NicheHeightMin",
+          "value": "1220"
+        },
+        {
+          "columnName": "in_NicheHeightMax",
+          "value": "1250"
+        },
+        {
+          "columnName": "in_SplittedDoor",
+          "value": "false"
+        },
+        {
+          "columnName": "in_FirstFrontHeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FirstFrontHeightMax",
+          "value": "0"
+        },
+        {
+          "columnName": "in_PosType",
+          "value": "Automatic"
+        },
+        {
+          "columnName": "BtmShelfType",
+          "value": "None"
+        },
+        {
+          "columnName": "TopShelfType",
+          "value": "Filler"
+        },
+        {
+          "columnName": "PositionType",
+          "value": "Bottom"
+        },
+        {
+          "columnName": "CarcaseDescriptor",
+          "value": ""
+        },
+        {
+          "columnName": "FrontDescriptor",
+          "value": ""
+        },
+        {
+          "columnName": "BackwallPosTop",
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_StartPosMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_StartPosMax",
+          "value": "25"
+        },
+        {
+          "columnName": "in_FrontHeightMin",
+          "value": "1300"
+        },
+        {
+          "columnName": "in_FrontHeightMax",
+          "value": "1350"
+        },
+        {
+          "columnName": "in_NicheHeightMin",
+          "value": "1220"
+        },
+        {
+          "columnName": "in_NicheHeightMax",
+          "value": "1250"
+        },
+        {
+          "columnName": "in_SplittedDoor",
+          "value": "false"
+        },
+        {
+          "columnName": "in_FirstFrontHeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FirstFrontHeightMax",
+          "value": "0"
+        },
+        {
+          "columnName": "in_PosType",
+          "value": "Automatic"
+        },
+        {
+          "columnName": "BtmShelfType",
+          "value": "Airflow"
+        },
+        {
+          "columnName": "TopShelfType",
+          "value": "None"
+        },
+        {
+          "columnName": "PositionType",
+          "value": "Top"
+        },
+        {
+          "columnName": "CarcaseDescriptor",
+          "value": ""
+        },
+        {
+          "columnName": "FrontDescriptor",
+          "value": ""
+        },
+        {
+          "columnName": "BackwallPosTop",
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_StartPosMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_StartPosMax",
+          "value": "25"
+        },
+        {
+          "columnName": "in_FrontHeightMin",
+          "value": "1350"
+        },
+        {
+          "columnName": "in_FrontHeightMax",
+          "value": "1450"
+        },
+        {
+          "columnName": "in_NicheHeightMin",
+          "value": "1220"
+        },
+        {
+          "columnName": "in_NicheHeightMax",
+          "value": "1250"
+        },
+        {
+          "columnName": "in_SplittedDoor",
+          "value": "false"
+        },
+        {
+          "columnName": "in_FirstFrontHeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FirstFrontHeightMax",
+          "value": "0"
+        },
+        {
+          "columnName": "in_PosType",
+          "value": "Automatic"
+        },
+        {
+          "columnName": "BtmShelfType",
+          "value": "Airflow"
+        },
+        {
+          "columnName": "TopShelfType",
+          "value": "Filler"
+        },
+        {
+          "columnName": "PositionType",
+          "value": "Free"
+        },
+        {
+          "columnName": "CarcaseDescriptor",
+          "value": "100mm_1"
+        },
+        {
+          "columnName": "FrontDescriptor",
+          "value": ""
+        },
+        {
+          "columnName": "BackwallPosTop",
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_StartPosMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_StartPosMax",
+          "value": "25"
+        },
+        {
+          "columnName": "in_FrontHeightMin",
+          "value": "1450"
+        },
+        {
+          "columnName": "in_FrontHeightMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_NicheHeightMin",
+          "value": "1220"
+        },
+        {
+          "columnName": "in_NicheHeightMax",
+          "value": "1250"
+        },
+        {
+          "columnName": "in_SplittedDoor",
+          "value": "false"
+        },
+        {
+          "columnName": "in_FirstFrontHeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FirstFrontHeightMax",
+          "value": "0"
+        },
+        {
+          "columnName": "in_PosType",
+          "value": "Automatic"
+        },
+        {
+          "columnName": "BtmShelfType",
+          "value": "Airflow"
+        },
+        {
+          "columnName": "TopShelfType",
+          "value": "Storage"
+        },
+        {
+          "columnName": "PositionType",
+          "value": "Free"
+        },
+        {
+          "columnName": "CarcaseDescriptor",
+          "value": "100mm_1"
+        },
+        {
+          "columnName": "FrontDescriptor",
+          "value": ""
+        },
+        {
+          "columnName": "BackwallPosTop",
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_StartPosMin",
+          "value": "100"
+        },
+        {
+          "columnName": "in_StartPosMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_FrontHeightMin",
+          "value": "1200"
+        },
+        {
+          "columnName": "in_FrontHeightMax",
+          "value": "1350"
+        },
+        {
+          "columnName": "in_NicheHeightMin",
+          "value": "1220"
+        },
+        {
+          "columnName": "in_NicheHeightMax",
+          "value": "1250"
+        },
+        {
+          "columnName": "in_SplittedDoor",
+          "value": "false"
+        },
+        {
+          "columnName": "in_FirstFrontHeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FirstFrontHeightMax",
+          "value": "0"
+        },
+        {
+          "columnName": "in_PosType",
+          "value": "Automatic"
+        },
+        {
+          "columnName": "BtmShelfType",
+          "value": "None"
+        },
+        {
+          "columnName": "TopShelfType",
+          "value": "Filler"
+        },
+        {
+          "columnName": "PositionType",
+          "value": "Bottom"
+        },
+        {
+          "columnName": "CarcaseDescriptor",
+          "value": ""
+        },
+        {
+          "columnName": "FrontDescriptor",
+          "value": ""
+        },
+        {
+          "columnName": "BackwallPosTop",
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_StartPosMin",
+          "value": "100"
+        },
+        {
+          "columnName": "in_StartPosMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_FrontHeightMin",
+          "value": "1350"
+        },
+        {
+          "columnName": "in_FrontHeightMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_NicheHeightMin",
+          "value": "1220"
+        },
+        {
+          "columnName": "in_NicheHeightMax",
+          "value": "1250"
+        },
+        {
+          "columnName": "in_SplittedDoor",
+          "value": "false"
+        },
+        {
+          "columnName": "in_FirstFrontHeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FirstFrontHeightMax",
+          "value": "0"
+        },
+        {
+          "columnName": "in_PosType",
+          "value": "Automatic"
+        },
+        {
+          "columnName": "BtmShelfType",
+          "value": "None"
+        },
+        {
+          "columnName": "TopShelfType",
+          "value": "Storage"
+        },
+        {
+          "columnName": "PositionType",
+          "value": "Bottom"
+        },
+        {
+          "columnName": "CarcaseDescriptor",
+          "value": ""
+        },
+        {
+          "columnName": "FrontDescriptor",
+          "value": ""
+        },
+        {
+          "columnName": "BackwallPosTop",
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_StartPosMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_StartPosMax",
+          "value": "25"
+        },
+        {
+          "columnName": "in_FrontHeightMin",
+          "value": "1750"
+        },
+        {
+          "columnName": "in_FrontHeightMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_NicheHeightMin",
+          "value": "1750"
+        },
+        {
+          "columnName": "in_NicheHeightMax",
+          "value": "1800"
+        },
+        {
+          "columnName": "in_SplittedDoor",
+          "value": "true"
+        },
+        {
+          "columnName": "in_FirstFrontHeightMin",
+          "value": "600"
+        },
+        {
+          "columnName": "in_FirstFrontHeightMax",
+          "value": "700"
+        },
+        {
+          "columnName": "in_PosType",
+          "value": "Automatic"
+        },
+        {
+          "columnName": "BtmShelfType",
+          "value": "Airflow"
+        },
+        {
+          "columnName": "TopShelfType",
+          "value": "Storage"
+        },
+        {
+          "columnName": "PositionType",
+          "value": "Free"
+        },
+        {
+          "columnName": "CarcaseDescriptor",
+          "value": ""
+        },
+        {
+          "columnName": "FrontDescriptor",
+          "value": "720mm_1"
+        },
+        {
+          "columnName": "BackwallPosTop",
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_StartPosMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_StartPosMax",
+          "value": "25"
+        },
+        {
+          "columnName": "in_FrontHeightMin",
+          "value": "1750"
+        },
+        {
+          "columnName": "in_FrontHeightMax",
+          "value": "1850"
+        },
+        {
+          "columnName": "in_NicheHeightMin",
+          "value": "1750"
+        },
+        {
+          "columnName": "in_NicheHeightMax",
+          "value": "1800"
+        },
+        {
+          "columnName": "in_SplittedDoor",
+          "value": "false"
+        },
+        {
+          "columnName": "in_FirstFrontHeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FirstFrontHeightMax",
+          "value": "0"
+        },
+        {
+          "columnName": "in_PosType",
+          "value": "Automatic"
+        },
+        {
+          "columnName": "BtmShelfType",
+          "value": "None"
+        },
+        {
+          "columnName": "TopShelfType",
+          "value": "Filler"
+        },
+        {
+          "columnName": "PositionType",
+          "value": "Bottom"
+        },
+        {
+          "columnName": "CarcaseDescriptor",
+          "value": ""
+        },
+        {
+          "columnName": "FrontDescriptor",
+          "value": ""
+        },
+        {
+          "columnName": "BackwallPosTop",
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_StartPosMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_StartPosMax",
+          "value": "25"
+        },
+        {
+          "columnName": "in_FrontHeightMin",
+          "value": "1850"
+        },
+        {
+          "columnName": "in_FrontHeightMax",
+          "value": "1950"
+        },
+        {
+          "columnName": "in_NicheHeightMin",
+          "value": "1750"
+        },
+        {
+          "columnName": "in_NicheHeightMax",
+          "value": "1800"
+        },
+        {
+          "columnName": "in_SplittedDoor",
+          "value": "false"
+        },
+        {
+          "columnName": "in_FirstFrontHeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FirstFrontHeightMax",
+          "value": "0"
+        },
+        {
+          "columnName": "in_PosType",
+          "value": "Automatic"
+        },
+        {
+          "columnName": "BtmShelfType",
+          "value": "Airflow"
+        },
+        {
+          "columnName": "TopShelfType",
+          "value": "None"
+        },
+        {
+          "columnName": "PositionType",
+          "value": "Top"
+        },
+        {
+          "columnName": "CarcaseDescriptor",
+          "value": ""
+        },
+        {
+          "columnName": "FrontDescriptor",
+          "value": ""
+        },
+        {
+          "columnName": "BackwallPosTop",
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_StartPosMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_StartPosMax",
+          "value": "25"
+        },
+        {
+          "columnName": "in_FrontHeightMin",
+          "value": "1950"
+        },
+        {
+          "columnName": "in_FrontHeightMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_NicheHeightMin",
+          "value": "1750"
+        },
+        {
+          "columnName": "in_NicheHeightMax",
+          "value": "1800"
+        },
+        {
+          "columnName": "in_SplittedDoor",
+          "value": "false"
+        },
+        {
+          "columnName": "in_FirstFrontHeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FirstFrontHeightMax",
+          "value": "0"
+        },
+        {
+          "columnName": "in_PosType",
+          "value": "Automatic"
+        },
+        {
+          "columnName": "BtmShelfType",
+          "value": "Airflow"
+        },
+        {
+          "columnName": "TopShelfType",
+          "value": "Storage"
+        },
+        {
+          "columnName": "PositionType",
+          "value": "Free"
+        },
+        {
+          "columnName": "CarcaseDescriptor",
+          "value": "100mm_1"
+        },
+        {
+          "columnName": "FrontDescriptor",
+          "value": ""
+        },
+        {
+          "columnName": "BackwallPosTop",
+          "value": "0"
+        }
+      ]
+    }
+  ],
+  "dataSource": "Default",
+  "changedAt": "2025-10-30T11:30:24.2796357+00:00"
+}

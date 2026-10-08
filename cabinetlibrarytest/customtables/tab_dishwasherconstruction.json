@@ -1,0 +1,178 @@
+{
+  "tableName": "tab_DishwasherConstruction",
+  "description": "Table for the construction of the dishwasher element\n",
+  "restrictionTypeId": "Public",
+  "groupName": "Appliance",
+  "columns": [
+    {
+      "name": "_id",
+      "type": "Integer",
+      "allowNull": false
+    },
+    {
+      "name": "in_ConstructionId",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "NominalWidth",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "MinHeight",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "MaxHeight",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "MinDepth",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "Integration",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "ControlPanelHeight",
+      "type": "Dim",
+      "allowNull": false
+    }
+  ],
+  "rows": [
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionId",
+          "value": "SN55ZS07CE"
+        },
+        {
+          "columnName": "NominalWidth",
+          "value": "600"
+        },
+        {
+          "columnName": "MinHeight",
+          "value": "815"
+        },
+        {
+          "columnName": "MaxHeight",
+          "value": "900"
+        },
+        {
+          "columnName": "MinDepth",
+          "value": "550"
+        },
+        {
+          "columnName": "Integration",
+          "value": "partial"
+        },
+        {
+          "columnName": "ControlPanelHeight",
+          "value": "120"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionId",
+          "value": "SN87TX02CE"
+        },
+        {
+          "columnName": "NominalWidth",
+          "value": "600"
+        },
+        {
+          "columnName": "MinHeight",
+          "value": "815"
+        },
+        {
+          "columnName": "MaxHeight",
+          "value": "900"
+        },
+        {
+          "columnName": "MinDepth",
+          "value": "550"
+        },
+        {
+          "columnName": "Integration",
+          "value": "full"
+        },
+        {
+          "columnName": "ControlPanelHeight",
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionId",
+          "value": "SR55ZS10ME"
+        },
+        {
+          "columnName": "NominalWidth",
+          "value": "450"
+        },
+        {
+          "columnName": "MinHeight",
+          "value": "815"
+        },
+        {
+          "columnName": "MaxHeight",
+          "value": "900"
+        },
+        {
+          "columnName": "MinDepth",
+          "value": "550"
+        },
+        {
+          "columnName": "Integration",
+          "value": "partial"
+        },
+        {
+          "columnName": "ControlPanelHeight",
+          "value": "120"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionId",
+          "value": "SR65YX08ME"
+        },
+        {
+          "columnName": "NominalWidth",
+          "value": "450"
+        },
+        {
+          "columnName": "MinHeight",
+          "value": "815"
+        },
+        {
+          "columnName": "MaxHeight",
+          "value": "900"
+        },
+        {
+          "columnName": "MinDepth",
+          "value": "550"
+        },
+        {
+          "columnName": "Integration",
+          "value": "full"
+        },
+        {
+          "columnName": "ControlPanelHeight",
+          "value": "0"
+        }
+      ]
+    }
+  ]
+}

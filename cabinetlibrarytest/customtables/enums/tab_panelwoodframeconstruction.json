@@ -1,0 +1,125 @@
+[
+  {
+    "tableName": "tab_PanelWoodFrameConstruction",
+    "columnId": "ConstructionType",
+    "enumsJson": [
+      {
+        "value": "Standard",
+        "description": "Standard"
+      },
+      {
+        "value": "InsetHandle",
+        "description": "InsetHandle"
+      },
+      {
+        "value": "HandleStrip",
+        "description": "HandleStrip"
+      }
+    ]
+  },
+  {
+    "tableName": "tab_PanelWoodFrameConstruction",
+    "columnId": "FillingGrainDirection",
+    "enumsJson": [
+      {
+        "value": "None",
+        "description": "No grain",
+        "imageId": "258a0a32-97e2-4e43-aacc-86dd8724f4e2:None_5.png"
+      },
+      {
+        "value": "Lengthwise",
+        "description": "The grain lengthwise follows the length",
+        "imageId": "121d4edc-d8ee-43f8-8546-ed490341f6f5:Lenthwise.png"
+      },
+      {
+        "value": "Crosswise",
+        "description": "The grain crosswise follows the width",
+        "imageId": "7d6837a7-21f4-4466-9ee6-43302d0b3f18:Crosswise.png"
+      }
+    ]
+  },
+  {
+    "tableName": "tab_PanelWoodFrameConstruction",
+    "columnId": "FrameHorGrainDirection",
+    "enumsJson": [
+      {
+        "value": "None",
+        "description": "No grain",
+        "imageId": "b5cce2ce-c4e2-4739-b635-e34ea88b4b87:None_4.png"
+      },
+      {
+        "value": "Lengthwise",
+        "description": "The grain lengthwise follows the length",
+        "imageId": "121d4edc-d8ee-43f8-8546-ed490341f6f5:Lenthwise.png"
+      },
+      {
+        "value": "Crosswise",
+        "description": "The grain crosswise follows the width",
+        "imageId": "7d6837a7-21f4-4466-9ee6-43302d0b3f18:Crosswise.png"
+      }
+    ]
+  },
+  {
+    "tableName": "tab_PanelWoodFrameConstruction",
+    "columnId": "FrameType",
+    "enumsJson": [
+      {
+        "value": "HeightCoveredWidth"
+      },
+      {
+        "value": "WidthCoveredHeight"
+      },
+      {
+        "value": "Mitre"
+      }
+    ]
+  },
+  {
+    "tableName": "tab_PanelWoodFrameConstruction",
+    "columnId": "FrameVertGrainDirection",
+    "enumsJson": [
+      {
+        "value": "None",
+        "description": "No grain",
+        "imageId": "f1d754b0-345b-42e9-b1c1-a140c64685ce:None_2.png"
+      },
+      {
+        "value": "Lengthwise",
+        "description": "The grain lengthwise follows the length",
+        "imageId": "121d4edc-d8ee-43f8-8546-ed490341f6f5:Lenthwise.png"
+      },
+      {
+        "value": "Crosswise",
+        "description": "The grain crosswise follows the width",
+        "imageId": "7d6837a7-21f4-4466-9ee6-43302d0b3f18:Crosswise.png"
+      }
+    ]
+  },
+  {
+    "tableName": "tab_PanelWoodFrameConstruction",
+    "columnId": "in_FillingColorGrainGroupId",
+    "refColumnId": "GrainGroupId"
+  },
+  {
+    "tableName": "tab_PanelWoodFrameConstruction",
+    "columnId": "in_FillingType",
+    "refColumnId": "Value"
+  },
+  {
+    "tableName": "tab_PanelWoodFrameConstruction",
+    "columnId": "in_FrontColorGrainGroupId",
+    "refColumnId": "GrainGroupId"
+  },
+  {
+    "tableName": "tab_PanelWoodFrameConstruction",
+    "columnId": "in_FrontConstructionId",
+    "refCustomTableName": "tab_FrontConstruction",
+    "refColumnId": "FrontConstructionId"
+  },
+  {
+    "tableName": "tab_PanelWoodFrameConstruction",
+    "columnId": "in_PartGroup",
+    "refCustomTableName": "tab_PartSettings",
+    "refColumnId": "PartGroup"
+  }
+]

@@ -1,0 +1,54 @@
+{
+  "tableName": "tab_PulloutHardwareInsertionSettings",
+  "description": "Insertion settings for the pull out",
+  "restrictionTypeId": "Public",
+  "groupName": "Pullout",
+  "columns": [
+    {
+      "name": "_id",
+      "type": "Integer",
+      "allowNull": false
+    },
+    {
+      "name": "in_TypeElement",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_FrontProgram",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_HandelDesign",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_HandlePosType",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_ShelffixedBtm",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_FrontStartPosMin",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "in_FrontStartPosMax",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "PulloutHardwarePos",
+      "type": "Text",
+      "allowNull": true
+    }
+  ],
+  "rows": []
+}

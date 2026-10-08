@@ -1,0 +1,1484 @@
+{
+  "tableName": "tab_CornerFillerFrontpanelConstruction",
+  "description": "Corner Filler Frontpanel Construction",
+  "restrictionTypeId": "Internal",
+  "groupName": "FrontConstruction",
+  "columns": [
+    {
+      "name": "_id",
+      "type": "Integer",
+      "allowNull": false
+    },
+    {
+      "name": "in_ParentModule",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_CornerFillerFrontConstruction",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_CarcaseDirection",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "Module",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "InsertModule",
+      "type": "Bool",
+      "allowNull": true
+    },
+    {
+      "name": "FrontId",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "Direction",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "Width",
+      "type": "Text",
+      "allowNull": true,
+      "functionDefinition": "(m:parent, widthLeft:number, widthRight:number, heightLeft:number, heightRight:number, carcaseWidth:number, carcaseDepth:number, startPositionHeight: number, cornerUnitFrontWidth: number):number"
+    },
+    {
+      "name": "Height",
+      "type": "Text",
+      "allowNull": true,
+      "functionDefinition": "(m:parent, widthLeft:number, widthRight:number, heightLeft:number, heightRight:number, carcaseWidth:number, carcaseDepth:number, startPositionHeight: number, cornerUnitFrontWidth: number):number"
+    },
+    {
+      "name": "Depth",
+      "type": "Text",
+      "allowNull": true,
+      "functionDefinition": "(m:parent, widthLeft:number, widthRight:number, heightLeft:number, heightRight:number, carcaseWidth:number, carcaseDepth:number, startPositionHeight: number, cornerUnitFrontWidth: number):number"
+    },
+    {
+      "name": "WidthPos",
+      "type": "Text",
+      "allowNull": true,
+      "functionDefinition": "(m:parent, widthLeft:number, widthRight:number, heightLeft:number, heightRight:number, carcaseWidth:number, carcaseDepth:number, startPositionHeight: number, cornerUnitFrontWidth: number):number"
+    },
+    {
+      "name": "HeigthPos",
+      "type": "Text",
+      "allowNull": true,
+      "functionDefinition": "(m:parent, widthLeft:number, widthRight:number, heightLeft:number, heightRight:number, carcaseWidth:number, carcaseDepth:number, startPositionHeight: number, cornerUnitFrontWidth: number):number"
+    },
+    {
+      "name": "DepthPos",
+      "type": "Text",
+      "allowNull": true,
+      "functionDefinition": "(m:parent, widthLeft:number, widthRight:number, heightLeft:number, heightRight:number, carcaseWidth:number, carcaseDepth:number, startPositionHeight: number, cornerUnitFrontWidth: number):number"
+    },
+    {
+      "name": "RotationAngle",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "RotationDirection",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "RotationPointWidth",
+      "type": "Text",
+      "allowNull": true,
+      "functionDefinition": "(m:parent, widthLeft:number, widthRight:number, heightLeft:number, heightRight:number, carcaseWidth:number, carcaseDepth:number, startPositionHeight: number, cornerUnitFrontWidth: number):number"
+    },
+    {
+      "name": "RotationPointHeight",
+      "type": "Text",
+      "allowNull": true,
+      "functionDefinition": "(m:parent, widthLeft:number, widthRight:number, heightLeft:number, heightRight:number, carcaseWidth:number, carcaseDepth:number, startPositionHeight: number, cornerUnitFrontWidth: number):number"
+    },
+    {
+      "name": "RotationPointDepth",
+      "type": "Text",
+      "allowNull": true,
+      "functionDefinition": "(m:parent, widthLeft:number, widthRight:number, heightLeft:number, heightRight:number, carcaseWidth:number, carcaseDepth:number, startPositionHeight: number, cornerUnitFrontWidth: number):number"
+    }
+  ],
+  "rows": [
+    {
+      "data": [
+        {
+          "columnName": "in_ParentModule",
+          "value": "mf_CornerFillerFront"
+        },
+        {
+          "columnName": "in_CornerFillerFrontConstruction",
+          "value": "Construction01"
+        },
+        {
+          "columnName": "in_CarcaseDirection",
+          "value": "Left"
+        },
+        {
+          "columnName": "Module",
+          "value": "mc_CornerFillerFront01"
+        },
+        {
+          "columnName": "InsertModule",
+          "value": "true"
+        },
+        {
+          "columnName": "FrontId",
+          "value": "CornerStraightFiller"
+        },
+        {
+          "columnName": "Direction",
+          "value": "Left"
+        },
+        {
+          "columnName": "Width",
+          "value": "widthLeft - m.mod_FrontGapVert / 2 - m.mod_FrontGapCarcase"
+        },
+        {
+          "columnName": "Height",
+          "value": "heightLeft"
+        },
+        {
+          "columnName": "Depth",
+          "value": "m.mod_ThkLeft"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "carcaseWidth - cornerUnitFrontWidth - m.mod_FrontGapVert / 2 - (widthRight - m.mod_FrontGapVert / 2 - m.mod_FrontGapCarcase) - (widthLeft - m.mod_FrontGapVert / 2 - m.mod_FrontGapCarcase)"
+        },
+        {
+          "columnName": "HeigthPos",
+          "value": "startPositionHeight"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "m.mod_FrontGapCarcase + carcaseDepth"
+        },
+        {
+          "columnName": "RotationAngle",
+          "value": "90"
+        },
+        {
+          "columnName": "RotationDirection",
+          "value": "y"
+        },
+        {
+          "columnName": "RotationPointWidth",
+          "value": "carcaseWidth - cornerUnitFrontWidth - m.mod_FrontGapVert / 2 - (widthRight - m.mod_FrontGapVert / 2 - m.mod_FrontGapCarcase)"
+        },
+        {
+          "columnName": "RotationPointHeight",
+          "value": "startPositionHeight"
+        },
+        {
+          "columnName": "RotationPointDepth",
+          "value": "m.mod_FrontGapCarcase + carcaseDepth"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ParentModule",
+          "value": "mf_CornerFillerFront"
+        },
+        {
+          "columnName": "in_CornerFillerFrontConstruction",
+          "value": "Construction01"
+        },
+        {
+          "columnName": "in_CarcaseDirection",
+          "value": "Left"
+        },
+        {
+          "columnName": "Module",
+          "value": "mc_CornerFillerFront01"
+        },
+        {
+          "columnName": "InsertModule",
+          "value": "true"
+        },
+        {
+          "columnName": "FrontId",
+          "value": "CornerStraightFiller"
+        },
+        {
+          "columnName": "Direction",
+          "value": "Right"
+        },
+        {
+          "columnName": "Width",
+          "value": "widthRight - m.mod_FrontGapVert / 2 - m.mod_FrontGapCarcase"
+        },
+        {
+          "columnName": "Height",
+          "value": "heightRight"
+        },
+        {
+          "columnName": "Depth",
+          "value": "m.mod_ThkRight"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "carcaseWidth - cornerUnitFrontWidth - m.mod_FrontGapVert / 2 - (widthRight - m.mod_FrontGapVert / 2 - m.mod_FrontGapCarcase)"
+        },
+        {
+          "columnName": "HeigthPos",
+          "value": "startPositionHeight"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "m.mod_FrontGapCarcase + carcaseDepth"
+        },
+        {
+          "columnName": "RotationAngle",
+          "value": "0"
+        },
+        {
+          "columnName": "RotationDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "RotationPointWidth",
+          "value": "0"
+        },
+        {
+          "columnName": "RotationPointHeight",
+          "value": "0"
+        },
+        {
+          "columnName": "RotationPointDepth",
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ParentModule",
+          "value": "mf_CornerFillerFront"
+        },
+        {
+          "columnName": "in_CornerFillerFrontConstruction",
+          "value": "Construction02"
+        },
+        {
+          "columnName": "in_CarcaseDirection",
+          "value": "Left"
+        },
+        {
+          "columnName": "Module",
+          "value": "mc_CornerFillerFront01"
+        },
+        {
+          "columnName": "InsertModule",
+          "value": "true"
+        },
+        {
+          "columnName": "FrontId",
+          "value": "CornerStraightFiller"
+        },
+        {
+          "columnName": "Direction",
+          "value": "Left"
+        },
+        {
+          "columnName": "Width",
+          "value": "widthLeft - m.mod_FrontGapVert / 2 - m.mod_FrontGapCarcase"
+        },
+        {
+          "columnName": "Height",
+          "value": "heightLeft"
+        },
+        {
+          "columnName": "Depth",
+          "value": "m.mod_ThkLeft"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "carcaseWidth - cornerUnitFrontWidth - m.mod_FrontGapVert / 2 - (widthRight - m.mod_ThkLeft - m.mod_FrontGapVert / 2 - m.mod_FrontGapCarcase) - (widthLeft - m.mod_FrontGapVert / 2 - m.mod_FrontGapCarcase)"
+        },
+        {
+          "columnName": "HeigthPos",
+          "value": "startPositionHeight"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "m.mod_FrontGapCarcase + carcaseDepth"
+        },
+        {
+          "columnName": "RotationAngle",
+          "value": "90"
+        },
+        {
+          "columnName": "RotationDirection",
+          "value": "y"
+        },
+        {
+          "columnName": "RotationPointWidth",
+          "value": "carcaseWidth - cornerUnitFrontWidth - m.mod_FrontGapVert / 2 - (widthRight - m.mod_ThkLeft - m.mod_FrontGapVert / 2 - m.mod_FrontGapCarcase) - m.mod_ThkLeft / 2"
+        },
+        {
+          "columnName": "RotationPointHeight",
+          "value": "startPositionHeight"
+        },
+        {
+          "columnName": "RotationPointDepth",
+          "value": "m.mod_FrontGapCarcase + carcaseDepth + m.mod_ThkLeft / 2"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ParentModule",
+          "value": "mf_CornerFillerFront"
+        },
+        {
+          "columnName": "in_CornerFillerFrontConstruction",
+          "value": "Construction02"
+        },
+        {
+          "columnName": "in_CarcaseDirection",
+          "value": "Left"
+        },
+        {
+          "columnName": "Module",
+          "value": "mc_CornerFillerFront01"
+        },
+        {
+          "columnName": "InsertModule",
+          "value": "true"
+        },
+        {
+          "columnName": "FrontId",
+          "value": "CornerStraightFiller"
+        },
+        {
+          "columnName": "Direction",
+          "value": "Right"
+        },
+        {
+          "columnName": "Width",
+          "value": "widthRight - m.mod_ThkLeft - m.mod_FrontGapVert / 2 - m.mod_FrontGapCarcase"
+        },
+        {
+          "columnName": "Height",
+          "value": "heightRight"
+        },
+        {
+          "columnName": "Depth",
+          "value": "m.mod_ThkRight"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "carcaseWidth - cornerUnitFrontWidth - m.mod_FrontGapVert / 2 - (widthRight - m.mod_ThkLeft - m.mod_FrontGapVert / 2 - m.mod_FrontGapCarcase) "
+        },
+        {
+          "columnName": "HeigthPos",
+          "value": "startPositionHeight"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "m.mod_FrontGapCarcase + carcaseDepth"
+        },
+        {
+          "columnName": "RotationAngle",
+          "value": "0"
+        },
+        {
+          "columnName": "RotationDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "RotationPointWidth",
+          "value": "0"
+        },
+        {
+          "columnName": "RotationPointHeight",
+          "value": "0"
+        },
+        {
+          "columnName": "RotationPointDepth",
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ParentModule",
+          "value": "mf_CornerFillerFront"
+        },
+        {
+          "columnName": "in_CornerFillerFrontConstruction",
+          "value": "Construction03"
+        },
+        {
+          "columnName": "in_CarcaseDirection",
+          "value": "Left"
+        },
+        {
+          "columnName": "Module",
+          "value": "mc_CornerFillerFront01"
+        },
+        {
+          "columnName": "InsertModule",
+          "value": "true"
+        },
+        {
+          "columnName": "FrontId",
+          "value": "CornerStraightFiller"
+        },
+        {
+          "columnName": "Direction",
+          "value": "Left"
+        },
+        {
+          "columnName": "Width",
+          "value": "widthLeft - m.mod_ThkRight - m.mod_FrontGapVert / 2 - m.mod_FrontGapCarcase"
+        },
+        {
+          "columnName": "Height",
+          "value": "heightLeft"
+        },
+        {
+          "columnName": "Depth",
+          "value": "m.mod_ThkLeft"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "carcaseWidth - cornerUnitFrontWidth - m.mod_FrontGapVert / 2 - (widthRight - m.mod_FrontGapVert / 2 - m.mod_FrontGapCarcase) - (widthLeft - m.mod_ThkRight - m.mod_FrontGapVert / 2 - m.mod_FrontGapCarcase)"
+        },
+        {
+          "columnName": "HeigthPos",
+          "value": "startPositionHeight"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "m.mod_FrontGapCarcase + carcaseDepth"
+        },
+        {
+          "columnName": "RotationAngle",
+          "value": "90"
+        },
+        {
+          "columnName": "RotationDirection",
+          "value": "y"
+        },
+        {
+          "columnName": "RotationPointWidth",
+          "value": "carcaseWidth - cornerUnitFrontWidth - m.mod_FrontGapVert / 2 - (widthRight - m.mod_FrontGapVert / 2 - m.mod_FrontGapCarcase) + m.mod_ThkRight / 2"
+        },
+        {
+          "columnName": "RotationPointHeight",
+          "value": "startPositionHeight"
+        },
+        {
+          "columnName": "RotationPointDepth",
+          "value": "m.mod_FrontGapCarcase + carcaseDepth+ m.mod_ThkRight / 2"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ParentModule",
+          "value": "mf_CornerFillerFront"
+        },
+        {
+          "columnName": "in_CornerFillerFrontConstruction",
+          "value": "Construction03"
+        },
+        {
+          "columnName": "in_CarcaseDirection",
+          "value": "Left"
+        },
+        {
+          "columnName": "Module",
+          "value": "mc_CornerFillerFront01"
+        },
+        {
+          "columnName": "InsertModule",
+          "value": "true"
+        },
+        {
+          "columnName": "FrontId",
+          "value": "CornerStraightFiller"
+        },
+        {
+          "columnName": "Direction",
+          "value": "Right"
+        },
+        {
+          "columnName": "Width",
+          "value": "widthRight - m.mod_FrontGapVert / 2 - m.mod_FrontGapCarcase"
+        },
+        {
+          "columnName": "Height",
+          "value": "heightRight"
+        },
+        {
+          "columnName": "Depth",
+          "value": "m.mod_ThkRight"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "carcaseWidth - cornerUnitFrontWidth - m.mod_FrontGapVert / 2 - (widthRight - m.mod_FrontGapVert / 2 - m.mod_FrontGapCarcase)"
+        },
+        {
+          "columnName": "HeigthPos",
+          "value": "startPositionHeight"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "m.mod_FrontGapCarcase + carcaseDepth"
+        },
+        {
+          "columnName": "RotationAngle",
+          "value": "0"
+        },
+        {
+          "columnName": "RotationDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "RotationPointWidth",
+          "value": "0"
+        },
+        {
+          "columnName": "RotationPointHeight",
+          "value": "0"
+        },
+        {
+          "columnName": "RotationPointDepth",
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ParentModule",
+          "value": "mf_CornerFillerFront"
+        },
+        {
+          "columnName": "in_CornerFillerFrontConstruction",
+          "value": "Construction01"
+        },
+        {
+          "columnName": "in_CarcaseDirection",
+          "value": "Right"
+        },
+        {
+          "columnName": "Module",
+          "value": "mc_CornerFillerFront01"
+        },
+        {
+          "columnName": "InsertModule",
+          "value": "true"
+        },
+        {
+          "columnName": "FrontId",
+          "value": "CornerStraightFiller"
+        },
+        {
+          "columnName": "Direction",
+          "value": "Left"
+        },
+        {
+          "columnName": "Width",
+          "value": "widthLeft - m.mod_FrontGapVert / 2 - m.mod_FrontGapCarcase"
+        },
+        {
+          "columnName": "Height",
+          "value": "heightLeft"
+        },
+        {
+          "columnName": "Depth",
+          "value": "m.mod_ThkLeft"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "cornerUnitFrontWidth + m.mod_FrontGapVert / 2"
+        },
+        {
+          "columnName": "HeigthPos",
+          "value": "startPositionHeight"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "m.mod_FrontGapCarcase + carcaseDepth"
+        },
+        {
+          "columnName": "RotationAngle",
+          "value": "0"
+        },
+        {
+          "columnName": "RotationDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "RotationPointWidth",
+          "value": "0"
+        },
+        {
+          "columnName": "RotationPointHeight",
+          "value": "0"
+        },
+        {
+          "columnName": "RotationPointDepth",
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ParentModule",
+          "value": "mf_CornerFillerFront"
+        },
+        {
+          "columnName": "in_CornerFillerFrontConstruction",
+          "value": "Construction01"
+        },
+        {
+          "columnName": "in_CarcaseDirection",
+          "value": "Right"
+        },
+        {
+          "columnName": "Module",
+          "value": "mc_CornerFillerFront01"
+        },
+        {
+          "columnName": "InsertModule",
+          "value": "true"
+        },
+        {
+          "columnName": "FrontId",
+          "value": "CornerStraightFiller"
+        },
+        {
+          "columnName": "Direction",
+          "value": "Right"
+        },
+        {
+          "columnName": "Width",
+          "value": "widthRight - m.mod_FrontGapVert / 2 - m.mod_FrontGapCarcase"
+        },
+        {
+          "columnName": "Height",
+          "value": "heightRight"
+        },
+        {
+          "columnName": "Depth",
+          "value": "m.mod_ThkRight"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "cornerUnitFrontWidth + m.mod_FrontGapVert / 2 + (widthLeft - m.mod_FrontGapVert / 2 - m.mod_FrontGapCarcase)"
+        },
+        {
+          "columnName": "HeigthPos",
+          "value": "startPositionHeight"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "m.mod_FrontGapCarcase + carcaseDepth"
+        },
+        {
+          "columnName": "RotationAngle",
+          "value": "-90"
+        },
+        {
+          "columnName": "RotationDirection",
+          "value": "y"
+        },
+        {
+          "columnName": "RotationPointWidth",
+          "value": "cornerUnitFrontWidth + m.mod_FrontGapVert / 2 + (widthLeft - m.mod_FrontGapVert / 2 - m.mod_FrontGapCarcase)"
+        },
+        {
+          "columnName": "RotationPointHeight",
+          "value": "startPositionHeight"
+        },
+        {
+          "columnName": "RotationPointDepth",
+          "value": "m.mod_FrontGapCarcase + carcaseDepth"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ParentModule",
+          "value": "mf_CornerFillerFront"
+        },
+        {
+          "columnName": "in_CornerFillerFrontConstruction",
+          "value": "Construction02"
+        },
+        {
+          "columnName": "in_CarcaseDirection",
+          "value": "Right"
+        },
+        {
+          "columnName": "Module",
+          "value": "mc_CornerFillerFront01"
+        },
+        {
+          "columnName": "InsertModule",
+          "value": "true"
+        },
+        {
+          "columnName": "FrontId",
+          "value": "CornerStraightFiller"
+        },
+        {
+          "columnName": "Direction",
+          "value": "Left"
+        },
+        {
+          "columnName": "Width",
+          "value": "widthLeft - m.mod_FrontGapVert / 2 - m.mod_FrontGapCarcase - m.mod_ThkRight"
+        },
+        {
+          "columnName": "Height",
+          "value": "heightLeft"
+        },
+        {
+          "columnName": "Depth",
+          "value": "m.mod_ThkLeft"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "cornerUnitFrontWidth + m.mod_FrontGapVert / 2"
+        },
+        {
+          "columnName": "HeigthPos",
+          "value": "startPositionHeight"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "m.mod_FrontGapCarcase + carcaseDepth"
+        },
+        {
+          "columnName": "RotationAngle",
+          "value": "0"
+        },
+        {
+          "columnName": "RotationDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "RotationPointWidth",
+          "value": "0"
+        },
+        {
+          "columnName": "RotationPointHeight",
+          "value": "0"
+        },
+        {
+          "columnName": "RotationPointDepth",
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ParentModule",
+          "value": "mf_CornerFillerFront"
+        },
+        {
+          "columnName": "in_CornerFillerFrontConstruction",
+          "value": "Construction02"
+        },
+        {
+          "columnName": "in_CarcaseDirection",
+          "value": "Right"
+        },
+        {
+          "columnName": "Module",
+          "value": "mc_CornerFillerFront01"
+        },
+        {
+          "columnName": "InsertModule",
+          "value": "true"
+        },
+        {
+          "columnName": "FrontId",
+          "value": "CornerStraightFiller"
+        },
+        {
+          "columnName": "Direction",
+          "value": "Right"
+        },
+        {
+          "columnName": "Width",
+          "value": "widthRight - m.mod_FrontGapVert / 2 - m.mod_FrontGapCarcase"
+        },
+        {
+          "columnName": "Height",
+          "value": "heightRight"
+        },
+        {
+          "columnName": "Depth",
+          "value": "m.mod_ThkRight"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "cornerUnitFrontWidth + m.mod_FrontGapVert / 2 + (widthLeft - m.mod_FrontGapVert / 2 - m.mod_FrontGapCarcase - m.mod_ThkRight)"
+        },
+        {
+          "columnName": "HeigthPos",
+          "value": "startPositionHeight"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "m.mod_FrontGapCarcase + carcaseDepth"
+        },
+        {
+          "columnName": "RotationAngle",
+          "value": "-90"
+        },
+        {
+          "columnName": "RotationDirection",
+          "value": "y"
+        },
+        {
+          "columnName": "RotationPointWidth",
+          "value": "cornerUnitFrontWidth + m.mod_FrontGapVert / 2 + (widthLeft - m.mod_FrontGapVert / 2 - m.mod_FrontGapCarcase - m.mod_ThkRight) + m.mod_ThkRight/2"
+        },
+        {
+          "columnName": "RotationPointHeight",
+          "value": "startPositionHeight"
+        },
+        {
+          "columnName": "RotationPointDepth",
+          "value": "m.mod_FrontGapCarcase + carcaseDepth + m.mod_ThkRight/2"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ParentModule",
+          "value": "mf_CornerFillerFront"
+        },
+        {
+          "columnName": "in_CornerFillerFrontConstruction",
+          "value": "Construction03"
+        },
+        {
+          "columnName": "in_CarcaseDirection",
+          "value": "Right"
+        },
+        {
+          "columnName": "Module",
+          "value": "mc_CornerFillerFront01"
+        },
+        {
+          "columnName": "InsertModule",
+          "value": "true"
+        },
+        {
+          "columnName": "FrontId",
+          "value": "CornerStraightFiller"
+        },
+        {
+          "columnName": "Direction",
+          "value": "Left"
+        },
+        {
+          "columnName": "Width",
+          "value": "widthLeft - m.mod_FrontGapVert / 2 - m.mod_FrontGapCarcase"
+        },
+        {
+          "columnName": "Height",
+          "value": "heightLeft"
+        },
+        {
+          "columnName": "Depth",
+          "value": "m.mod_ThkLeft"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "cornerUnitFrontWidth + m.mod_FrontGapVert / 2"
+        },
+        {
+          "columnName": "HeigthPos",
+          "value": "startPositionHeight"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "m.mod_FrontGapCarcase + carcaseDepth"
+        },
+        {
+          "columnName": "RotationAngle",
+          "value": "0"
+        },
+        {
+          "columnName": "RotationDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "RotationPointWidth",
+          "value": "0"
+        },
+        {
+          "columnName": "RotationPointHeight",
+          "value": "0"
+        },
+        {
+          "columnName": "RotationPointDepth",
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ParentModule",
+          "value": "mf_CornerFillerFront"
+        },
+        {
+          "columnName": "in_CornerFillerFrontConstruction",
+          "value": "Construction03"
+        },
+        {
+          "columnName": "in_CarcaseDirection",
+          "value": "Right"
+        },
+        {
+          "columnName": "Module",
+          "value": "mc_CornerFillerFront01"
+        },
+        {
+          "columnName": "InsertModule",
+          "value": "true"
+        },
+        {
+          "columnName": "FrontId",
+          "value": "CornerStraightFiller"
+        },
+        {
+          "columnName": "Direction",
+          "value": "Right"
+        },
+        {
+          "columnName": "Width",
+          "value": "widthRight - m.mod_FrontGapVert / 2 - m.mod_FrontGapCarcase - m.mod_ThkLeft"
+        },
+        {
+          "columnName": "Height",
+          "value": "heightRight"
+        },
+        {
+          "columnName": "Depth",
+          "value": "m.mod_ThkRight"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "cornerUnitFrontWidth + m.mod_FrontGapVert / 2 + widthLeft - m.mod_FrontGapVert / 2 - m.mod_FrontGapCarcase"
+        },
+        {
+          "columnName": "HeigthPos",
+          "value": "startPositionHeight"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "m.mod_FrontGapCarcase + carcaseDepth"
+        },
+        {
+          "columnName": "RotationAngle",
+          "value": "-90"
+        },
+        {
+          "columnName": "RotationDirection",
+          "value": "y"
+        },
+        {
+          "columnName": "RotationPointWidth",
+          "value": "cornerUnitFrontWidth + m.mod_FrontGapVert / 2 + (widthLeft - m.mod_FrontGapVert / 2 - m.mod_FrontGapCarcase) - m.mod_ThkLeft / 2"
+        },
+        {
+          "columnName": "RotationPointHeight",
+          "value": "startPositionHeight"
+        },
+        {
+          "columnName": "RotationPointDepth",
+          "value": "m.mod_FrontGapCarcase + carcaseDepth + m.mod_ThkLeft / 2"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ParentModule",
+          "value": "mr_CornerFiller"
+        },
+        {
+          "columnName": "in_CornerFillerFrontConstruction",
+          "value": "Construction01"
+        },
+        {
+          "columnName": "in_CarcaseDirection",
+          "value": "Left"
+        },
+        {
+          "columnName": "Module",
+          "value": "mc_CornerFillerFront01"
+        },
+        {
+          "columnName": "InsertModule",
+          "value": "true"
+        },
+        {
+          "columnName": "FrontId",
+          "value": "CornerFiller"
+        },
+        {
+          "columnName": "Direction",
+          "value": "Left"
+        },
+        {
+          "columnName": "Width",
+          "value": "widthLeft - m.mod_FrontGapVert / 2 - m.mod_FrontGapCarcase"
+        },
+        {
+          "columnName": "Height",
+          "value": "heightLeft"
+        },
+        {
+          "columnName": "Depth",
+          "value": "m.mod_ThkLeft"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "carcaseWidth - cornerUnitFrontWidth - m.mod_FrontGapVert / 2 - (widthRight - m.mod_FrontGapVert / 2 - m.mod_FrontGapCarcase) - (widthLeft - m.mod_FrontGapVert / 2 - m.mod_FrontGapCarcase)"
+        },
+        {
+          "columnName": "HeigthPos",
+          "value": "startPositionHeight"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "m.mod_FrontGapCarcase + carcaseDepth"
+        },
+        {
+          "columnName": "RotationAngle",
+          "value": "90"
+        },
+        {
+          "columnName": "RotationDirection",
+          "value": "y"
+        },
+        {
+          "columnName": "RotationPointWidth",
+          "value": "carcaseWidth - cornerUnitFrontWidth - m.mod_FrontGapVert / 2 - (widthRight - m.mod_FrontGapVert / 2 - m.mod_FrontGapCarcase)"
+        },
+        {
+          "columnName": "RotationPointHeight",
+          "value": "startPositionHeight"
+        },
+        {
+          "columnName": "RotationPointDepth",
+          "value": "m.mod_FrontGapCarcase + carcaseDepth"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ParentModule",
+          "value": "mr_CornerFiller"
+        },
+        {
+          "columnName": "in_CornerFillerFrontConstruction",
+          "value": "Construction01"
+        },
+        {
+          "columnName": "in_CarcaseDirection",
+          "value": "Left"
+        },
+        {
+          "columnName": "Module",
+          "value": "mc_CornerFillerFront01"
+        },
+        {
+          "columnName": "InsertModule",
+          "value": "true"
+        },
+        {
+          "columnName": "FrontId",
+          "value": "CornerFiller"
+        },
+        {
+          "columnName": "Direction",
+          "value": "Right"
+        },
+        {
+          "columnName": "Width",
+          "value": "widthRight - m.mod_FrontGapVert / 2 - m.mod_FrontGapCarcase"
+        },
+        {
+          "columnName": "Height",
+          "value": "heightRight"
+        },
+        {
+          "columnName": "Depth",
+          "value": "m.mod_ThkRight"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "carcaseWidth - cornerUnitFrontWidth - m.mod_FrontGapVert / 2 - (widthRight - m.mod_FrontGapVert / 2 - m.mod_FrontGapCarcase)"
+        },
+        {
+          "columnName": "HeigthPos",
+          "value": "startPositionHeight"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "m.mod_FrontGapCarcase + carcaseDepth"
+        },
+        {
+          "columnName": "RotationAngle",
+          "value": "0"
+        },
+        {
+          "columnName": "RotationDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "RotationPointWidth",
+          "value": "0"
+        },
+        {
+          "columnName": "RotationPointHeight",
+          "value": "0"
+        },
+        {
+          "columnName": "RotationPointDepth",
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ParentModule",
+          "value": "mr_CornerFiller"
+        },
+        {
+          "columnName": "in_CornerFillerFrontConstruction",
+          "value": "Construction02"
+        },
+        {
+          "columnName": "in_CarcaseDirection",
+          "value": "Left"
+        },
+        {
+          "columnName": "Module",
+          "value": "mc_CornerFillerFront01"
+        },
+        {
+          "columnName": "InsertModule",
+          "value": "true"
+        },
+        {
+          "columnName": "FrontId",
+          "value": "CornerFiller"
+        },
+        {
+          "columnName": "Direction",
+          "value": "Left"
+        },
+        {
+          "columnName": "Width",
+          "value": "widthLeft - m.mod_FrontGapVert / 2 - m.mod_FrontGapCarcase"
+        },
+        {
+          "columnName": "Height",
+          "value": "heightLeft"
+        },
+        {
+          "columnName": "Depth",
+          "value": "m.mod_ThkLeft"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "carcaseWidth - cornerUnitFrontWidth - m.mod_FrontGapVert / 2 - (widthRight - m.mod_ThkLeft - m.mod_FrontGapVert / 2 - m.mod_FrontGapCarcase) - (widthLeft - m.mod_FrontGapVert / 2 - m.mod_FrontGapCarcase)"
+        },
+        {
+          "columnName": "HeigthPos",
+          "value": "startPositionHeight"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "m.mod_FrontGapCarcase + carcaseDepth"
+        },
+        {
+          "columnName": "RotationAngle",
+          "value": "90"
+        },
+        {
+          "columnName": "RotationDirection",
+          "value": "y"
+        },
+        {
+          "columnName": "RotationPointWidth",
+          "value": "carcaseWidth - cornerUnitFrontWidth - m.mod_FrontGapVert / 2 - (widthRight - m.mod_ThkLeft - m.mod_FrontGapVert / 2 - m.mod_FrontGapCarcase) - m.mod_ThkLeft / 2"
+        },
+        {
+          "columnName": "RotationPointHeight",
+          "value": "startPositionHeight"
+        },
+        {
+          "columnName": "RotationPointDepth",
+          "value": "m.mod_FrontGapCarcase + carcaseDepth + m.mod_ThkLeft / 2"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ParentModule",
+          "value": "mr_CornerFiller"
+        },
+        {
+          "columnName": "in_CornerFillerFrontConstruction",
+          "value": "Construction02"
+        },
+        {
+          "columnName": "in_CarcaseDirection",
+          "value": "Left"
+        },
+        {
+          "columnName": "Module",
+          "value": "mc_CornerFillerFront01"
+        },
+        {
+          "columnName": "InsertModule",
+          "value": "true"
+        },
+        {
+          "columnName": "FrontId",
+          "value": "CornerFiller"
+        },
+        {
+          "columnName": "Direction",
+          "value": "Right"
+        },
+        {
+          "columnName": "Width",
+          "value": "widthRight - m.mod_ThkLeft - m.mod_FrontGapVert / 2 - m.mod_FrontGapCarcase"
+        },
+        {
+          "columnName": "Height",
+          "value": "heightRight"
+        },
+        {
+          "columnName": "Depth",
+          "value": "m.mod_ThkRight"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "carcaseWidth - cornerUnitFrontWidth - m.mod_FrontGapVert / 2 - (widthRight - m.mod_ThkLeft - m.mod_FrontGapVert / 2 - m.mod_FrontGapCarcase) "
+        },
+        {
+          "columnName": "HeigthPos",
+          "value": "startPositionHeight"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "m.mod_FrontGapCarcase + carcaseDepth"
+        },
+        {
+          "columnName": "RotationAngle",
+          "value": "0"
+        },
+        {
+          "columnName": "RotationDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "RotationPointWidth",
+          "value": "0"
+        },
+        {
+          "columnName": "RotationPointHeight",
+          "value": "0"
+        },
+        {
+          "columnName": "RotationPointDepth",
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ParentModule",
+          "value": "mr_CornerFiller"
+        },
+        {
+          "columnName": "in_CornerFillerFrontConstruction",
+          "value": "Construction03"
+        },
+        {
+          "columnName": "in_CarcaseDirection",
+          "value": "Left"
+        },
+        {
+          "columnName": "Module",
+          "value": "mc_CornerFillerFront01"
+        },
+        {
+          "columnName": "InsertModule",
+          "value": "true"
+        },
+        {
+          "columnName": "FrontId",
+          "value": "CornerFiller"
+        },
+        {
+          "columnName": "Direction",
+          "value": "Left"
+        },
+        {
+          "columnName": "Width",
+          "value": "widthLeft - m.mod_ThkRight - m.mod_FrontGapVert / 2 - m.mod_FrontGapCarcase"
+        },
+        {
+          "columnName": "Height",
+          "value": "heightLeft"
+        },
+        {
+          "columnName": "Depth",
+          "value": "m.mod_ThkLeft"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "carcaseWidth - cornerUnitFrontWidth - m.mod_FrontGapVert / 2 - (widthRight - m.mod_FrontGapVert / 2 - m.mod_FrontGapCarcase) - (widthLeft - m.mod_ThkRight - m.mod_FrontGapVert / 2 - m.mod_FrontGapCarcase)"
+        },
+        {
+          "columnName": "HeigthPos",
+          "value": "startPositionHeight"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "m.mod_FrontGapCarcase + carcaseDepth"
+        },
+        {
+          "columnName": "RotationAngle",
+          "value": "90"
+        },
+        {
+          "columnName": "RotationDirection",
+          "value": "y"
+        },
+        {
+          "columnName": "RotationPointWidth",
+          "value": "carcaseWidth - cornerUnitFrontWidth - m.mod_FrontGapVert / 2 - (widthRight - m.mod_FrontGapVert / 2 - m.mod_FrontGapCarcase) + m.mod_ThkRight / 2"
+        },
+        {
+          "columnName": "RotationPointHeight",
+          "value": "startPositionHeight"
+        },
+        {
+          "columnName": "RotationPointDepth",
+          "value": "m.mod_FrontGapCarcase + carcaseDepth + m.mod_ThkRight / 2"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ParentModule",
+          "value": "mr_CornerFiller"
+        },
+        {
+          "columnName": "in_CornerFillerFrontConstruction",
+          "value": "Construction03"
+        },
+        {
+          "columnName": "in_CarcaseDirection",
+          "value": "Left"
+        },
+        {
+          "columnName": "Module",
+          "value": "mc_CornerFillerFront01"
+        },
+        {
+          "columnName": "InsertModule",
+          "value": "true"
+        },
+        {
+          "columnName": "FrontId",
+          "value": "CornerFiller"
+        },
+        {
+          "columnName": "Direction",
+          "value": "Right"
+        },
+        {
+          "columnName": "Width",
+          "value": "widthRight - m.mod_FrontGapVert / 2 - m.mod_FrontGapCarcase"
+        },
+        {
+          "columnName": "Height",
+          "value": "heightRight"
+        },
+        {
+          "columnName": "Depth",
+          "value": "m.mod_ThkRight"
+        },
+        {
+          "columnName": "WidthPos",
+          "value": "carcaseWidth - cornerUnitFrontWidth - m.mod_FrontGapVert / 2 - (widthRight - m.mod_FrontGapVert / 2 - m.mod_FrontGapCarcase)"
+        },
+        {
+          "columnName": "HeigthPos",
+          "value": "startPositionHeight"
+        },
+        {
+          "columnName": "DepthPos",
+          "value": "m.mod_FrontGapCarcase + carcaseDepth"
+        },
+        {
+          "columnName": "RotationAngle",
+          "value": "0"
+        },
+        {
+          "columnName": "RotationDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "RotationPointWidth",
+          "value": "0"
+        },
+        {
+          "columnName": "RotationPointHeight",
+          "value": "0"
+        },
+        {
+          "columnName": "RotationPointDepth",
+          "value": "0"
+        }
+      ]
+    }
+  ],
+  "dataSource": "Default",
+  "changedAt": "2025-11-24T08:55:04.3283143+00:00"
+}

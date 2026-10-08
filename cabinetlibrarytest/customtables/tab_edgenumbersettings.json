@@ -1,0 +1,136 @@
+{
+  "tableName": "tab_EdgeNumberSettings",
+  "description": "Edge Number Settings",
+  "restrictionTypeId": "Public",
+  "groupName": "Edges",
+  "columns": [
+    {
+      "name": "_id",
+      "type": "Integer",
+      "allowNull": false
+    },
+    {
+      "name": "in_PartName",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_Edge",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "BomEdgeDescription",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "BomEdgeNumber",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "BomEdgeType",
+      "type": "Text",
+      "allowNull": true
+    }
+  ],
+  "rows": [
+    {
+      "data": [
+        {
+          "columnName": "in_PartName",
+          "value": "All"
+        },
+        {
+          "columnName": "in_Edge",
+          "value": "EdgeFront"
+        },
+        {
+          "columnName": "BomEdgeDescription",
+          "value": "Edge South"
+        },
+        {
+          "columnName": "BomEdgeNumber",
+          "value": "1"
+        },
+        {
+          "columnName": "BomEdgeType",
+          "value": "Edge1"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartName",
+          "value": "All"
+        },
+        {
+          "columnName": "in_Edge",
+          "value": "EdgeLeft"
+        },
+        {
+          "columnName": "BomEdgeDescription",
+          "value": "Edge West"
+        },
+        {
+          "columnName": "BomEdgeNumber",
+          "value": "4"
+        },
+        {
+          "columnName": "BomEdgeType",
+          "value": "Edge4"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartName",
+          "value": "All"
+        },
+        {
+          "columnName": "in_Edge",
+          "value": "EdgeBack"
+        },
+        {
+          "columnName": "BomEdgeDescription",
+          "value": "Edge North"
+        },
+        {
+          "columnName": "BomEdgeNumber",
+          "value": "3"
+        },
+        {
+          "columnName": "BomEdgeType",
+          "value": "Edge3"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartName",
+          "value": "All"
+        },
+        {
+          "columnName": "in_Edge",
+          "value": "EdgeRight"
+        },
+        {
+          "columnName": "BomEdgeDescription",
+          "value": "Edge East"
+        },
+        {
+          "columnName": "BomEdgeNumber",
+          "value": "2"
+        },
+        {
+          "columnName": "BomEdgeType",
+          "value": "Edge2"
+        }
+      ]
+    }
+  ]
+}

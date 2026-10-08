@@ -1,0 +1,197 @@
+{
+  "tableName": "tab_CarcaseSlopedCeilingDimension",
+  "description": "Carcase Sloped Ceiling Dimension",
+  "restrictionTypeId": "Internal",
+  "groupName": "SlopedCeiling",
+  "columns": [
+    {
+      "name": "_id",
+      "type": "Integer",
+      "allowNull": false
+    },
+    {
+      "name": "in_Construction",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_DimensionLogic",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "TopDepth",
+      "type": "Text",
+      "allowNull": true,
+      "functionDefinition": "(m: parent, BackHeight:number, Angle:number):number"
+    },
+    {
+      "name": "Height",
+      "type": "Text",
+      "allowNull": true,
+      "functionDefinition": "(m: parent, BackHeight:number, Angle:number):number"
+    }
+  ],
+  "rows": [
+    {
+      "data": [
+        {
+          "columnName": "in_Construction",
+          "value": "Construction01"
+        },
+        {
+          "columnName": "in_DimensionLogic",
+          "value": "BasedInTopDepth"
+        },
+        {
+          "columnName": "TopDepth",
+          "value": "m.mod_TopDepth"
+        },
+        {
+          "columnName": "Height",
+          "value": "BackHeight + GlobalFunc.calc_pythagoreanTheorem(Angle - 90, m.mod_Depth - m.mod_TopDepth, 0, 0)[2]"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Construction",
+          "value": "Construction01"
+        },
+        {
+          "columnName": "in_DimensionLogic",
+          "value": "BasedInHeight"
+        },
+        {
+          "columnName": "TopDepth",
+          "value": "m.mod_Depth - GlobalFunc.calc_pythagoreanTheorem(Angle- 90, 0, m.mod_Height - BackHeight, 0)[1]"
+        },
+        {
+          "columnName": "Height",
+          "value": "m.mod_Height"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Construction",
+          "value": "Construction02"
+        },
+        {
+          "columnName": "in_DimensionLogic",
+          "value": "BasedInTopDepth"
+        },
+        {
+          "columnName": "TopDepth",
+          "value": "m.mod_TopDepth"
+        },
+        {
+          "columnName": "Height",
+          "value": "BackHeight + GlobalFunc.calc_pythagoreanTheorem(Angle - 90, m.mod_Depth - m.mod_TopDepth, 0, 0)[2]"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Construction",
+          "value": "Construction02"
+        },
+        {
+          "columnName": "in_DimensionLogic",
+          "value": "BasedInHeight"
+        },
+        {
+          "columnName": "TopDepth",
+          "value": "m.mod_Depth - GlobalFunc.calc_pythagoreanTheorem(Angle- 90, 0, m.mod_Height - BackHeight, 0)[1]"
+        },
+        {
+          "columnName": "Height",
+          "value": "m.mod_Height"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Construction",
+          "value": "Construction03"
+        },
+        {
+          "columnName": "in_DimensionLogic",
+          "value": "BasedInTopDepth"
+        },
+        {
+          "columnName": "TopDepth",
+          "value": "m.mod_TopDepth"
+        },
+        {
+          "columnName": "Height",
+          "value": "BackHeight + GlobalFunc.calc_pythagoreanTheorem(Angle - 90, m.mod_Depth - m.mod_TopDepth, 0, 0)[2]"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Construction",
+          "value": "Construction03"
+        },
+        {
+          "columnName": "in_DimensionLogic",
+          "value": "BasedInHeight"
+        },
+        {
+          "columnName": "TopDepth",
+          "value": "m.mod_Depth - GlobalFunc.calc_pythagoreanTheorem(Angle- 90, 0, m.mod_Height - BackHeight, 0)[1]"
+        },
+        {
+          "columnName": "Height",
+          "value": "m.mod_Height"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Construction",
+          "value": "Construction01.1"
+        },
+        {
+          "columnName": "in_DimensionLogic",
+          "value": "BasedInTopDepth"
+        },
+        {
+          "columnName": "TopDepth",
+          "value": "m.mod_TopDepth"
+        },
+        {
+          "columnName": "Height",
+          "value": "BackHeight + GlobalFunc.calc_pythagoreanTheorem(Angle - 90, m.mod_Depth - m.mod_TopDepth, 0, 0)[2]"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Construction",
+          "value": "Construction01.1"
+        },
+        {
+          "columnName": "in_DimensionLogic",
+          "value": "BasedInHeight"
+        },
+        {
+          "columnName": "TopDepth",
+          "value": "m.mod_Depth - GlobalFunc.calc_pythagoreanTheorem(Angle- 90, 0, m.mod_Height - BackHeight, 0)[1]"
+        },
+        {
+          "columnName": "Height",
+          "value": "m.mod_Height"
+        }
+      ]
+    }
+  ]
+}

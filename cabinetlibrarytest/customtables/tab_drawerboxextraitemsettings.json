@@ -1,0 +1,373 @@
+{
+  "tableName": "tab_DrawerBoxExtraItemSettings",
+  "description": "Settings to get the extra items for drawer boxes",
+  "restrictionTypeId": "Public",
+  "groupName": "DrawerBox",
+  "columns": [
+    {
+      "name": "_id",
+      "type": "Integer",
+      "allowNull": false
+    },
+    {
+      "name": "in_FrontProgram",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_OpeningType",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_WidthMin",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "in_WidthMax",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "in_DepthMin",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "in_DepthMax",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "FrontToBottomConnectorId",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "FrontToBottomConnectorDescriptor",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "PushToOpenId",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "SyncronizationId",
+      "type": "Text",
+      "allowNull": true
+    }
+  ],
+  "rows": [
+    {
+      "data": [
+        {
+          "columnName": "in_FrontProgram",
+          "value": "All"
+        },
+        {
+          "columnName": "in_OpeningType",
+          "value": "All"
+        },
+        {
+          "columnName": "in_WidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WidthMax",
+          "value": "700"
+        },
+        {
+          "columnName": "in_DepthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_DepthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "FrontToBottomConnectorId",
+          "value": "None"
+        },
+        {
+          "columnName": "FrontToBottomConnectorDescriptor",
+          "value": "None"
+        },
+        {
+          "columnName": "PushToOpenId",
+          "value": "None"
+        },
+        {
+          "columnName": "SyncronizationId",
+          "value": "None"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_FrontProgram",
+          "value": "All"
+        },
+        {
+          "columnName": "in_OpeningType",
+          "value": "All"
+        },
+        {
+          "columnName": "in_WidthMin",
+          "value": "700.1"
+        },
+        {
+          "columnName": "in_WidthMax",
+          "value": "900"
+        },
+        {
+          "columnName": "in_DepthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_DepthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "FrontToBottomConnectorId",
+          "value": "Legra_FrontBotCon"
+        },
+        {
+          "columnName": "FrontToBottomConnectorDescriptor",
+          "value": "1_1"
+        },
+        {
+          "columnName": "PushToOpenId",
+          "value": "None"
+        },
+        {
+          "columnName": "SyncronizationId",
+          "value": "None"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_FrontProgram",
+          "value": "All"
+        },
+        {
+          "columnName": "in_OpeningType",
+          "value": "All"
+        },
+        {
+          "columnName": "in_WidthMin",
+          "value": "900.1"
+        },
+        {
+          "columnName": "in_WidthMax",
+          "value": "1100"
+        },
+        {
+          "columnName": "in_DepthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_DepthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "FrontToBottomConnectorId",
+          "value": "Legra_FrontBotCon"
+        },
+        {
+          "columnName": "FrontToBottomConnectorDescriptor",
+          "value": "200mm_1_200mm"
+        },
+        {
+          "columnName": "PushToOpenId",
+          "value": "None"
+        },
+        {
+          "columnName": "SyncronizationId",
+          "value": "None"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_FrontProgram",
+          "value": "All"
+        },
+        {
+          "columnName": "in_OpeningType",
+          "value": "All"
+        },
+        {
+          "columnName": "in_WidthMin",
+          "value": "1100.1"
+        },
+        {
+          "columnName": "in_WidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_DepthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_DepthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "FrontToBottomConnectorId",
+          "value": "Legra_FrontBotCon"
+        },
+        {
+          "columnName": "FrontToBottomConnectorDescriptor",
+          "value": "1_1_1_1"
+        },
+        {
+          "columnName": "PushToOpenId",
+          "value": "None"
+        },
+        {
+          "columnName": "SyncronizationId",
+          "value": "None"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_FrontProgram",
+          "value": "All"
+        },
+        {
+          "columnName": "in_OpeningType",
+          "value": "Handle"
+        },
+        {
+          "columnName": "in_WidthMin",
+          "value": "800"
+        },
+        {
+          "columnName": "in_WidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_DepthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_DepthMax",
+          "value": "449"
+        },
+        {
+          "columnName": "FrontToBottomConnectorId",
+          "value": "Legra_FrontBotCon"
+        },
+        {
+          "columnName": "FrontToBottomConnectorDescriptor",
+          "value": "1_1_1"
+        },
+        {
+          "columnName": "PushToOpenId",
+          "value": "None"
+        },
+        {
+          "columnName": "SyncronizationId",
+          "value": "Legra_Syncro_Small"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_FrontProgram",
+          "value": "All"
+        },
+        {
+          "columnName": "in_OpeningType",
+          "value": "Handle"
+        },
+        {
+          "columnName": "in_WidthMin",
+          "value": "800"
+        },
+        {
+          "columnName": "in_WidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_DepthMin",
+          "value": "450"
+        },
+        {
+          "columnName": "in_DepthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "FrontToBottomConnectorId",
+          "value": "Legra_FrontBotCon"
+        },
+        {
+          "columnName": "FrontToBottomConnectorDescriptor",
+          "value": "1_1_1"
+        },
+        {
+          "columnName": "PushToOpenId",
+          "value": "None"
+        },
+        {
+          "columnName": "SyncronizationId",
+          "value": "Legra_Syncro_Large"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_FrontProgram",
+          "value": "All"
+        },
+        {
+          "columnName": "in_OpeningType",
+          "value": "PushToOpenManual"
+        },
+        {
+          "columnName": "in_WidthMin",
+          "value": "800"
+        },
+        {
+          "columnName": "in_WidthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_DepthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_DepthMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "FrontToBottomConnectorId",
+          "value": "Legra_FrontBotCon"
+        },
+        {
+          "columnName": "FrontToBottomConnectorDescriptor",
+          "value": "1_1_1"
+        },
+        {
+          "columnName": "PushToOpenId",
+          "value": "None"
+        },
+        {
+          "columnName": "SyncronizationId",
+          "value": "Legra_Syncro_TipOn_Large"
+        }
+      ]
+    }
+  ]
+}

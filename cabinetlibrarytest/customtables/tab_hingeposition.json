@@ -1,0 +1,6566 @@
+{
+  "tableName": "tab_HingePosition",
+  "description": "Hinge Positions",
+  "restrictionTypeId": "Public",
+  "isInputUnique": true,
+  "groupName": "Hinge",
+  "columns": [
+    {
+      "name": "_id",
+      "type": "Integer",
+      "allowNull": false
+    },
+    {
+      "name": "in_TypeElement",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_FrontConstructionId",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_AdditionalInfo1",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_AdditionalInfo2",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_FrontHeightMin",
+      "type": "Dim",
+      "allowNull": true
+    },
+    {
+      "name": "in_FrontHeightMax",
+      "type": "Dim",
+      "allowNull": true
+    },
+    {
+      "name": "in_FrontWidthMin",
+      "type": "Dim",
+      "allowNull": true
+    },
+    {
+      "name": "in_FrontWidthMax",
+      "type": "Dim",
+      "allowNull": true
+    },
+    {
+      "name": "in_WeightMax",
+      "type": "Real",
+      "allowNull": true
+    },
+    {
+      "name": "in_FingergripTypeTop",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_FingergripTypeBtm",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_HandleDesign",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_HandlePosType",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "Descriptor",
+      "type": "Text",
+      "allowNull": true
+    }
+  ],
+  "rows": [
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo2",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontHeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontHeightMax",
+          "value": "750"
+        },
+        {
+          "columnName": "in_FrontWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontWidthMax",
+          "value": "700"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "6"
+        },
+        {
+          "columnName": "in_FingergripTypeTop",
+          "value": "NoFingergrip"
+        },
+        {
+          "columnName": "in_FingergripTypeBtm",
+          "value": "NoFingergrip"
+        },
+        {
+          "columnName": "in_HandleDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "All"
+        },
+        {
+          "columnName": "Descriptor",
+          "value": "80mm_1_80mm"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo2",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontHeightMin",
+          "value": "750"
+        },
+        {
+          "columnName": "in_FrontHeightMax",
+          "value": "1500"
+        },
+        {
+          "columnName": "in_FrontWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontWidthMax",
+          "value": "700"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "12"
+        },
+        {
+          "columnName": "in_FingergripTypeTop",
+          "value": "NoFingergrip"
+        },
+        {
+          "columnName": "in_FingergripTypeBtm",
+          "value": "NoFingergrip"
+        },
+        {
+          "columnName": "in_HandleDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "All"
+        },
+        {
+          "columnName": "Descriptor",
+          "value": "80mm_1_1_80mm"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo2",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontHeightMin",
+          "value": "1500"
+        },
+        {
+          "columnName": "in_FrontHeightMax",
+          "value": "2100"
+        },
+        {
+          "columnName": "in_FrontWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontWidthMax",
+          "value": "700"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "17"
+        },
+        {
+          "columnName": "in_FingergripTypeTop",
+          "value": "NoFingergrip"
+        },
+        {
+          "columnName": "in_FingergripTypeBtm",
+          "value": "NoFingergrip"
+        },
+        {
+          "columnName": "in_HandleDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "All"
+        },
+        {
+          "columnName": "Descriptor",
+          "value": "80mm_1_1_1_80mm"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo2",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontHeightMin",
+          "value": "2100"
+        },
+        {
+          "columnName": "in_FrontHeightMax",
+          "value": "2500"
+        },
+        {
+          "columnName": "in_FrontWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontWidthMax",
+          "value": "700"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "22"
+        },
+        {
+          "columnName": "in_FingergripTypeTop",
+          "value": "NoFingergrip"
+        },
+        {
+          "columnName": "in_FingergripTypeBtm",
+          "value": "NoFingergrip"
+        },
+        {
+          "columnName": "in_HandleDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "All"
+        },
+        {
+          "columnName": "Descriptor",
+          "value": "80mm_1_1_1_1_80mm"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo2",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontHeightMin",
+          "value": "2500"
+        },
+        {
+          "columnName": "in_FrontHeightMax",
+          "value": "3000"
+        },
+        {
+          "columnName": "in_FrontWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontWidthMax",
+          "value": "700"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "28"
+        },
+        {
+          "columnName": "in_FingergripTypeTop",
+          "value": "NoFingergrip"
+        },
+        {
+          "columnName": "in_FingergripTypeBtm",
+          "value": "NoFingergrip"
+        },
+        {
+          "columnName": "in_HandleDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "All"
+        },
+        {
+          "columnName": "Descriptor",
+          "value": "80mm_1_1_1_1_1_80mm"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo2",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontHeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontHeightMax",
+          "value": "750"
+        },
+        {
+          "columnName": "in_FrontWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontWidthMax",
+          "value": "700"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "6"
+        },
+        {
+          "columnName": "in_FingergripTypeTop",
+          "value": "Metal"
+        },
+        {
+          "columnName": "in_FingergripTypeBtm",
+          "value": "NoFingergrip"
+        },
+        {
+          "columnName": "in_HandleDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "All"
+        },
+        {
+          "columnName": "Descriptor",
+          "value": "80mm_1_80mm"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo2",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontHeightMin",
+          "value": "750"
+        },
+        {
+          "columnName": "in_FrontHeightMax",
+          "value": "1500"
+        },
+        {
+          "columnName": "in_FrontWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontWidthMax",
+          "value": "700"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "12"
+        },
+        {
+          "columnName": "in_FingergripTypeTop",
+          "value": "Metal"
+        },
+        {
+          "columnName": "in_FingergripTypeBtm",
+          "value": "NoFingergrip"
+        },
+        {
+          "columnName": "in_HandleDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "All"
+        },
+        {
+          "columnName": "Descriptor",
+          "value": "80mm_1_1_80mm"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo2",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontHeightMin",
+          "value": "1500"
+        },
+        {
+          "columnName": "in_FrontHeightMax",
+          "value": "2100"
+        },
+        {
+          "columnName": "in_FrontWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontWidthMax",
+          "value": "700"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "17"
+        },
+        {
+          "columnName": "in_FingergripTypeTop",
+          "value": "Metal"
+        },
+        {
+          "columnName": "in_FingergripTypeBtm",
+          "value": "NoFingergrip"
+        },
+        {
+          "columnName": "in_HandleDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "All"
+        },
+        {
+          "columnName": "Descriptor",
+          "value": "80mm_1_1_1_80mm"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo2",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontHeightMin",
+          "value": "2100"
+        },
+        {
+          "columnName": "in_FrontHeightMax",
+          "value": "2500"
+        },
+        {
+          "columnName": "in_FrontWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontWidthMax",
+          "value": "700"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "22"
+        },
+        {
+          "columnName": "in_FingergripTypeTop",
+          "value": "Metal"
+        },
+        {
+          "columnName": "in_FingergripTypeBtm",
+          "value": "NoFingergrip"
+        },
+        {
+          "columnName": "in_HandleDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "All"
+        },
+        {
+          "columnName": "Descriptor",
+          "value": "80mm_1_1_1_1_80mm"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo2",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontHeightMin",
+          "value": "2500"
+        },
+        {
+          "columnName": "in_FrontHeightMax",
+          "value": "3000"
+        },
+        {
+          "columnName": "in_FrontWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontWidthMax",
+          "value": "700"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "28"
+        },
+        {
+          "columnName": "in_FingergripTypeTop",
+          "value": "Metal"
+        },
+        {
+          "columnName": "in_FingergripTypeBtm",
+          "value": "NoFingergrip"
+        },
+        {
+          "columnName": "in_HandleDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "All"
+        },
+        {
+          "columnName": "Descriptor",
+          "value": "80mm_1_1_1_1_1_80mm"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo2",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontHeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontHeightMax",
+          "value": "750"
+        },
+        {
+          "columnName": "in_FrontWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontWidthMax",
+          "value": "700"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "6"
+        },
+        {
+          "columnName": "in_FingergripTypeTop",
+          "value": "Wood"
+        },
+        {
+          "columnName": "in_FingergripTypeBtm",
+          "value": "NoFingergrip"
+        },
+        {
+          "columnName": "in_HandleDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "All"
+        },
+        {
+          "columnName": "Descriptor",
+          "value": "80mm_1_80mm"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo2",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontHeightMin",
+          "value": "750"
+        },
+        {
+          "columnName": "in_FrontHeightMax",
+          "value": "1500"
+        },
+        {
+          "columnName": "in_FrontWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontWidthMax",
+          "value": "700"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "12"
+        },
+        {
+          "columnName": "in_FingergripTypeTop",
+          "value": "Wood"
+        },
+        {
+          "columnName": "in_FingergripTypeBtm",
+          "value": "NoFingergrip"
+        },
+        {
+          "columnName": "in_HandleDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "All"
+        },
+        {
+          "columnName": "Descriptor",
+          "value": "80mm_1_1_80mm"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo2",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontHeightMin",
+          "value": "1500"
+        },
+        {
+          "columnName": "in_FrontHeightMax",
+          "value": "2100"
+        },
+        {
+          "columnName": "in_FrontWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontWidthMax",
+          "value": "700"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "17"
+        },
+        {
+          "columnName": "in_FingergripTypeTop",
+          "value": "Wood"
+        },
+        {
+          "columnName": "in_FingergripTypeBtm",
+          "value": "NoFingergrip"
+        },
+        {
+          "columnName": "in_HandleDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "All"
+        },
+        {
+          "columnName": "Descriptor",
+          "value": "80mm_1_1_1_80mm"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo2",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontHeightMin",
+          "value": "2100"
+        },
+        {
+          "columnName": "in_FrontHeightMax",
+          "value": "2500"
+        },
+        {
+          "columnName": "in_FrontWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontWidthMax",
+          "value": "700"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "22"
+        },
+        {
+          "columnName": "in_FingergripTypeTop",
+          "value": "Wood"
+        },
+        {
+          "columnName": "in_FingergripTypeBtm",
+          "value": "NoFingergrip"
+        },
+        {
+          "columnName": "in_HandleDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "All"
+        },
+        {
+          "columnName": "Descriptor",
+          "value": "80mm_1_1_1_1_80mm"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo2",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontHeightMin",
+          "value": "2500"
+        },
+        {
+          "columnName": "in_FrontHeightMax",
+          "value": "3000"
+        },
+        {
+          "columnName": "in_FrontWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontWidthMax",
+          "value": "700"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "28"
+        },
+        {
+          "columnName": "in_FingergripTypeTop",
+          "value": "Wood"
+        },
+        {
+          "columnName": "in_FingergripTypeBtm",
+          "value": "NoFingergrip"
+        },
+        {
+          "columnName": "in_HandleDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "All"
+        },
+        {
+          "columnName": "Descriptor",
+          "value": "80mm_1_1_1_1_1_80mm"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo2",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontHeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontHeightMax",
+          "value": "750"
+        },
+        {
+          "columnName": "in_FrontWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontWidthMax",
+          "value": "700"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "6"
+        },
+        {
+          "columnName": "in_FingergripTypeTop",
+          "value": "Metal"
+        },
+        {
+          "columnName": "in_FingergripTypeBtm",
+          "value": "Metal"
+        },
+        {
+          "columnName": "in_HandleDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "All"
+        },
+        {
+          "columnName": "Descriptor",
+          "value": "80mm_1_80mm"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo2",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontHeightMin",
+          "value": "750"
+        },
+        {
+          "columnName": "in_FrontHeightMax",
+          "value": "1500"
+        },
+        {
+          "columnName": "in_FrontWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontWidthMax",
+          "value": "700"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "12"
+        },
+        {
+          "columnName": "in_FingergripTypeTop",
+          "value": "Metal"
+        },
+        {
+          "columnName": "in_FingergripTypeBtm",
+          "value": "Metal"
+        },
+        {
+          "columnName": "in_HandleDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "All"
+        },
+        {
+          "columnName": "Descriptor",
+          "value": "80mm_1_1_80mm"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo2",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontHeightMin",
+          "value": "1500"
+        },
+        {
+          "columnName": "in_FrontHeightMax",
+          "value": "2100"
+        },
+        {
+          "columnName": "in_FrontWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontWidthMax",
+          "value": "700"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "17"
+        },
+        {
+          "columnName": "in_FingergripTypeTop",
+          "value": "Metal"
+        },
+        {
+          "columnName": "in_FingergripTypeBtm",
+          "value": "Metal"
+        },
+        {
+          "columnName": "in_HandleDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "All"
+        },
+        {
+          "columnName": "Descriptor",
+          "value": "80mm_1_1_1_80mm"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo2",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontHeightMin",
+          "value": "2100"
+        },
+        {
+          "columnName": "in_FrontHeightMax",
+          "value": "2500"
+        },
+        {
+          "columnName": "in_FrontWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontWidthMax",
+          "value": "700"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "22"
+        },
+        {
+          "columnName": "in_FingergripTypeTop",
+          "value": "Metal"
+        },
+        {
+          "columnName": "in_FingergripTypeBtm",
+          "value": "Metal"
+        },
+        {
+          "columnName": "in_HandleDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "All"
+        },
+        {
+          "columnName": "Descriptor",
+          "value": "80mm_1_1_1_1_80mm"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo2",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontHeightMin",
+          "value": "2500"
+        },
+        {
+          "columnName": "in_FrontHeightMax",
+          "value": "3000"
+        },
+        {
+          "columnName": "in_FrontWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontWidthMax",
+          "value": "700"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "28"
+        },
+        {
+          "columnName": "in_FingergripTypeTop",
+          "value": "Metal"
+        },
+        {
+          "columnName": "in_FingergripTypeBtm",
+          "value": "Metal"
+        },
+        {
+          "columnName": "in_HandleDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "All"
+        },
+        {
+          "columnName": "Descriptor",
+          "value": "80mm_1_1_1_1_1_80mm"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo2",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontHeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontHeightMax",
+          "value": "750"
+        },
+        {
+          "columnName": "in_FrontWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontWidthMax",
+          "value": "700"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "6"
+        },
+        {
+          "columnName": "in_FingergripTypeTop",
+          "value": "NoFingergrip"
+        },
+        {
+          "columnName": "in_FingergripTypeBtm",
+          "value": "Metal"
+        },
+        {
+          "columnName": "in_HandleDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "All"
+        },
+        {
+          "columnName": "Descriptor",
+          "value": "80mm_1_80mm"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo2",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontHeightMin",
+          "value": "750"
+        },
+        {
+          "columnName": "in_FrontHeightMax",
+          "value": "1500"
+        },
+        {
+          "columnName": "in_FrontWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontWidthMax",
+          "value": "700"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "12"
+        },
+        {
+          "columnName": "in_FingergripTypeTop",
+          "value": "NoFingergrip"
+        },
+        {
+          "columnName": "in_FingergripTypeBtm",
+          "value": "Metal"
+        },
+        {
+          "columnName": "in_HandleDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "All"
+        },
+        {
+          "columnName": "Descriptor",
+          "value": "80mm_1_1_80mm"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo2",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontHeightMin",
+          "value": "1500"
+        },
+        {
+          "columnName": "in_FrontHeightMax",
+          "value": "2100"
+        },
+        {
+          "columnName": "in_FrontWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontWidthMax",
+          "value": "700"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "17"
+        },
+        {
+          "columnName": "in_FingergripTypeTop",
+          "value": "NoFingergrip"
+        },
+        {
+          "columnName": "in_FingergripTypeBtm",
+          "value": "Metal"
+        },
+        {
+          "columnName": "in_HandleDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "All"
+        },
+        {
+          "columnName": "Descriptor",
+          "value": "80mm_1_1_1_80mm"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo2",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontHeightMin",
+          "value": "2100"
+        },
+        {
+          "columnName": "in_FrontHeightMax",
+          "value": "2500"
+        },
+        {
+          "columnName": "in_FrontWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontWidthMax",
+          "value": "700"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "22"
+        },
+        {
+          "columnName": "in_FingergripTypeTop",
+          "value": "NoFingergrip"
+        },
+        {
+          "columnName": "in_FingergripTypeBtm",
+          "value": "Metal"
+        },
+        {
+          "columnName": "in_HandleDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "All"
+        },
+        {
+          "columnName": "Descriptor",
+          "value": "80mm_1_1_1_1_80mm"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo2",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontHeightMin",
+          "value": "2500"
+        },
+        {
+          "columnName": "in_FrontHeightMax",
+          "value": "3000"
+        },
+        {
+          "columnName": "in_FrontWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontWidthMax",
+          "value": "700"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "28"
+        },
+        {
+          "columnName": "in_FingergripTypeTop",
+          "value": "NoFingergrip"
+        },
+        {
+          "columnName": "in_FingergripTypeBtm",
+          "value": "Metal"
+        },
+        {
+          "columnName": "in_HandleDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "All"
+        },
+        {
+          "columnName": "Descriptor",
+          "value": "80mm_1_1_1_1_1_80mm"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo2",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontHeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontHeightMax",
+          "value": "750"
+        },
+        {
+          "columnName": "in_FrontWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontWidthMax",
+          "value": "700"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "6"
+        },
+        {
+          "columnName": "in_FingergripTypeTop",
+          "value": "Wood"
+        },
+        {
+          "columnName": "in_FingergripTypeBtm",
+          "value": "Wood"
+        },
+        {
+          "columnName": "in_HandleDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "All"
+        },
+        {
+          "columnName": "Descriptor",
+          "value": "80mm_1_80mm"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo2",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontHeightMin",
+          "value": "750"
+        },
+        {
+          "columnName": "in_FrontHeightMax",
+          "value": "1500"
+        },
+        {
+          "columnName": "in_FrontWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontWidthMax",
+          "value": "700"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "12"
+        },
+        {
+          "columnName": "in_FingergripTypeTop",
+          "value": "Wood"
+        },
+        {
+          "columnName": "in_FingergripTypeBtm",
+          "value": "Wood"
+        },
+        {
+          "columnName": "in_HandleDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "All"
+        },
+        {
+          "columnName": "Descriptor",
+          "value": "80mm_1_1_80mm"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo2",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontHeightMin",
+          "value": "1500"
+        },
+        {
+          "columnName": "in_FrontHeightMax",
+          "value": "2100"
+        },
+        {
+          "columnName": "in_FrontWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontWidthMax",
+          "value": "700"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "17"
+        },
+        {
+          "columnName": "in_FingergripTypeTop",
+          "value": "Wood"
+        },
+        {
+          "columnName": "in_FingergripTypeBtm",
+          "value": "Wood"
+        },
+        {
+          "columnName": "in_HandleDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "All"
+        },
+        {
+          "columnName": "Descriptor",
+          "value": "80mm_1_1_1_80mm"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo2",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontHeightMin",
+          "value": "2100"
+        },
+        {
+          "columnName": "in_FrontHeightMax",
+          "value": "2500"
+        },
+        {
+          "columnName": "in_FrontWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontWidthMax",
+          "value": "700"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "22"
+        },
+        {
+          "columnName": "in_FingergripTypeTop",
+          "value": "Wood"
+        },
+        {
+          "columnName": "in_FingergripTypeBtm",
+          "value": "Wood"
+        },
+        {
+          "columnName": "in_HandleDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "All"
+        },
+        {
+          "columnName": "Descriptor",
+          "value": "80mm_1_1_1_1_80mm"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo2",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontHeightMin",
+          "value": "2500"
+        },
+        {
+          "columnName": "in_FrontHeightMax",
+          "value": "3000"
+        },
+        {
+          "columnName": "in_FrontWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontWidthMax",
+          "value": "700"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "28"
+        },
+        {
+          "columnName": "in_FingergripTypeTop",
+          "value": "Wood"
+        },
+        {
+          "columnName": "in_FingergripTypeBtm",
+          "value": "Wood"
+        },
+        {
+          "columnName": "in_HandleDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "All"
+        },
+        {
+          "columnName": "Descriptor",
+          "value": "80mm_1_1_1_1_1_80mm"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo2",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontHeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontHeightMax",
+          "value": "750"
+        },
+        {
+          "columnName": "in_FrontWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontWidthMax",
+          "value": "700"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "6"
+        },
+        {
+          "columnName": "in_FingergripTypeTop",
+          "value": "NoFingergrip"
+        },
+        {
+          "columnName": "in_FingergripTypeBtm",
+          "value": "Wood"
+        },
+        {
+          "columnName": "in_HandleDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "All"
+        },
+        {
+          "columnName": "Descriptor",
+          "value": "80mm_1_80mm"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo2",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontHeightMin",
+          "value": "750"
+        },
+        {
+          "columnName": "in_FrontHeightMax",
+          "value": "1500"
+        },
+        {
+          "columnName": "in_FrontWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontWidthMax",
+          "value": "700"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "12"
+        },
+        {
+          "columnName": "in_FingergripTypeTop",
+          "value": "NoFingergrip"
+        },
+        {
+          "columnName": "in_FingergripTypeBtm",
+          "value": "Wood"
+        },
+        {
+          "columnName": "in_HandleDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "All"
+        },
+        {
+          "columnName": "Descriptor",
+          "value": "80mm_1_1_80mm"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo2",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontHeightMin",
+          "value": "1500"
+        },
+        {
+          "columnName": "in_FrontHeightMax",
+          "value": "2100"
+        },
+        {
+          "columnName": "in_FrontWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontWidthMax",
+          "value": "700"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "17"
+        },
+        {
+          "columnName": "in_FingergripTypeTop",
+          "value": "NoFingergrip"
+        },
+        {
+          "columnName": "in_FingergripTypeBtm",
+          "value": "Wood"
+        },
+        {
+          "columnName": "in_HandleDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "All"
+        },
+        {
+          "columnName": "Descriptor",
+          "value": "80mm_1_1_1_80mm"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo2",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontHeightMin",
+          "value": "2100"
+        },
+        {
+          "columnName": "in_FrontHeightMax",
+          "value": "2500"
+        },
+        {
+          "columnName": "in_FrontWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontWidthMax",
+          "value": "700"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "22"
+        },
+        {
+          "columnName": "in_FingergripTypeTop",
+          "value": "NoFingergrip"
+        },
+        {
+          "columnName": "in_FingergripTypeBtm",
+          "value": "Wood"
+        },
+        {
+          "columnName": "in_HandleDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "All"
+        },
+        {
+          "columnName": "Descriptor",
+          "value": "80mm_1_1_1_1_80mm"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo2",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontHeightMin",
+          "value": "2500"
+        },
+        {
+          "columnName": "in_FrontHeightMax",
+          "value": "3000"
+        },
+        {
+          "columnName": "in_FrontWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontWidthMax",
+          "value": "700"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "28"
+        },
+        {
+          "columnName": "in_FingergripTypeTop",
+          "value": "NoFingergrip"
+        },
+        {
+          "columnName": "in_FingergripTypeBtm",
+          "value": "Wood"
+        },
+        {
+          "columnName": "in_HandleDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "All"
+        },
+        {
+          "columnName": "Descriptor",
+          "value": "80mm_1_1_1_1_1_80mm"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo2",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontHeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontHeightMax",
+          "value": "750"
+        },
+        {
+          "columnName": "in_FrontWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontWidthMax",
+          "value": "700"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "6"
+        },
+        {
+          "columnName": "in_FingergripTypeTop",
+          "value": "NoFingergrip"
+        },
+        {
+          "columnName": "in_FingergripTypeBtm",
+          "value": "NoFingergrip"
+        },
+        {
+          "columnName": "in_HandleDesign",
+          "value": "50"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "StripeBtm"
+        },
+        {
+          "columnName": "Descriptor",
+          "value": "115mm_1_80mm"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo2",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontHeightMin",
+          "value": "750"
+        },
+        {
+          "columnName": "in_FrontHeightMax",
+          "value": "1500"
+        },
+        {
+          "columnName": "in_FrontWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontWidthMax",
+          "value": "700"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "12"
+        },
+        {
+          "columnName": "in_FingergripTypeTop",
+          "value": "NoFingergrip"
+        },
+        {
+          "columnName": "in_FingergripTypeBtm",
+          "value": "NoFingergrip"
+        },
+        {
+          "columnName": "in_HandleDesign",
+          "value": "50"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "StripeBtm"
+        },
+        {
+          "columnName": "Descriptor",
+          "value": "115mm_1_1_80mm"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo2",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontHeightMin",
+          "value": "1500"
+        },
+        {
+          "columnName": "in_FrontHeightMax",
+          "value": "2100"
+        },
+        {
+          "columnName": "in_FrontWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontWidthMax",
+          "value": "700"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "17"
+        },
+        {
+          "columnName": "in_FingergripTypeTop",
+          "value": "NoFingergrip"
+        },
+        {
+          "columnName": "in_FingergripTypeBtm",
+          "value": "NoFingergrip"
+        },
+        {
+          "columnName": "in_HandleDesign",
+          "value": "50"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "StripeBtm"
+        },
+        {
+          "columnName": "Descriptor",
+          "value": "115mm_1_1_1_80mm"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo2",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontHeightMin",
+          "value": "2100"
+        },
+        {
+          "columnName": "in_FrontHeightMax",
+          "value": "2500"
+        },
+        {
+          "columnName": "in_FrontWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontWidthMax",
+          "value": "700"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "22"
+        },
+        {
+          "columnName": "in_FingergripTypeTop",
+          "value": "NoFingergrip"
+        },
+        {
+          "columnName": "in_FingergripTypeBtm",
+          "value": "NoFingergrip"
+        },
+        {
+          "columnName": "in_HandleDesign",
+          "value": "50"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "StripeBtm"
+        },
+        {
+          "columnName": "Descriptor",
+          "value": "115mm_1_1_1_1_80mm"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo2",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontHeightMin",
+          "value": "2500"
+        },
+        {
+          "columnName": "in_FrontHeightMax",
+          "value": "3000"
+        },
+        {
+          "columnName": "in_FrontWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontWidthMax",
+          "value": "700"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "28"
+        },
+        {
+          "columnName": "in_FingergripTypeTop",
+          "value": "NoFingergrip"
+        },
+        {
+          "columnName": "in_FingergripTypeBtm",
+          "value": "NoFingergrip"
+        },
+        {
+          "columnName": "in_HandleDesign",
+          "value": "50"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "StripeBtm"
+        },
+        {
+          "columnName": "Descriptor",
+          "value": "115mm_1_1_1_1_1_80mm"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo2",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontHeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontHeightMax",
+          "value": "750"
+        },
+        {
+          "columnName": "in_FrontWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontWidthMax",
+          "value": "700"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "6"
+        },
+        {
+          "columnName": "in_FingergripTypeTop",
+          "value": "NoFingergrip"
+        },
+        {
+          "columnName": "in_FingergripTypeBtm",
+          "value": "NoFingergrip"
+        },
+        {
+          "columnName": "in_HandleDesign",
+          "value": "50"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "StripeTop"
+        },
+        {
+          "columnName": "Descriptor",
+          "value": "80mm_1_115mm"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo2",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontHeightMin",
+          "value": "750"
+        },
+        {
+          "columnName": "in_FrontHeightMax",
+          "value": "1500"
+        },
+        {
+          "columnName": "in_FrontWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontWidthMax",
+          "value": "700"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "12"
+        },
+        {
+          "columnName": "in_FingergripTypeTop",
+          "value": "NoFingergrip"
+        },
+        {
+          "columnName": "in_FingergripTypeBtm",
+          "value": "NoFingergrip"
+        },
+        {
+          "columnName": "in_HandleDesign",
+          "value": "50"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "StripeTop"
+        },
+        {
+          "columnName": "Descriptor",
+          "value": "80mm_1_1_115mm"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo2",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontHeightMin",
+          "value": "1500"
+        },
+        {
+          "columnName": "in_FrontHeightMax",
+          "value": "2100"
+        },
+        {
+          "columnName": "in_FrontWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontWidthMax",
+          "value": "700"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "17"
+        },
+        {
+          "columnName": "in_FingergripTypeTop",
+          "value": "NoFingergrip"
+        },
+        {
+          "columnName": "in_FingergripTypeBtm",
+          "value": "NoFingergrip"
+        },
+        {
+          "columnName": "in_HandleDesign",
+          "value": "50"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "StripeTop"
+        },
+        {
+          "columnName": "Descriptor",
+          "value": "80mm_1_1_1_115mm"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo2",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontHeightMin",
+          "value": "2100"
+        },
+        {
+          "columnName": "in_FrontHeightMax",
+          "value": "2500"
+        },
+        {
+          "columnName": "in_FrontWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontWidthMax",
+          "value": "700"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "22"
+        },
+        {
+          "columnName": "in_FingergripTypeTop",
+          "value": "NoFingergrip"
+        },
+        {
+          "columnName": "in_FingergripTypeBtm",
+          "value": "NoFingergrip"
+        },
+        {
+          "columnName": "in_HandleDesign",
+          "value": "50"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "StripeTop"
+        },
+        {
+          "columnName": "Descriptor",
+          "value": "80mm_1_1_1_1_115mm"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo2",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontHeightMin",
+          "value": "2500"
+        },
+        {
+          "columnName": "in_FrontHeightMax",
+          "value": "3000"
+        },
+        {
+          "columnName": "in_FrontWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontWidthMax",
+          "value": "700"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "28"
+        },
+        {
+          "columnName": "in_FingergripTypeTop",
+          "value": "NoFingergrip"
+        },
+        {
+          "columnName": "in_FingergripTypeBtm",
+          "value": "NoFingergrip"
+        },
+        {
+          "columnName": "in_HandleDesign",
+          "value": "50"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "StripeTop"
+        },
+        {
+          "columnName": "Descriptor",
+          "value": "80mm_1_1_1_1_1_115mm"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "BaseUnitSink"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo2",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontHeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontHeightMax",
+          "value": "750"
+        },
+        {
+          "columnName": "in_FrontWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontWidthMax",
+          "value": "700"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "6"
+        },
+        {
+          "columnName": "in_FingergripTypeTop",
+          "value": "NoFingergrip"
+        },
+        {
+          "columnName": "in_FingergripTypeBtm",
+          "value": "NoFingergrip"
+        },
+        {
+          "columnName": "in_HandleDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "All"
+        },
+        {
+          "columnName": "Descriptor",
+          "value": "80mm_1_170mm"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "BaseUnitSink"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo2",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontHeightMin",
+          "value": "750"
+        },
+        {
+          "columnName": "in_FrontHeightMax",
+          "value": "1500"
+        },
+        {
+          "columnName": "in_FrontWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontWidthMax",
+          "value": "700"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "12"
+        },
+        {
+          "columnName": "in_FingergripTypeTop",
+          "value": "NoFingergrip"
+        },
+        {
+          "columnName": "in_FingergripTypeBtm",
+          "value": "NoFingergrip"
+        },
+        {
+          "columnName": "in_HandleDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "All"
+        },
+        {
+          "columnName": "Descriptor",
+          "value": "80mm_1_1_170mm"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "BaseUnitSink"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo2",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontHeightMin",
+          "value": "1500"
+        },
+        {
+          "columnName": "in_FrontHeightMax",
+          "value": "2100"
+        },
+        {
+          "columnName": "in_FrontWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontWidthMax",
+          "value": "700"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "17"
+        },
+        {
+          "columnName": "in_FingergripTypeTop",
+          "value": "NoFingergrip"
+        },
+        {
+          "columnName": "in_FingergripTypeBtm",
+          "value": "NoFingergrip"
+        },
+        {
+          "columnName": "in_HandleDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "All"
+        },
+        {
+          "columnName": "Descriptor",
+          "value": "80mm_1_1_1_170mm"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "BaseUnitSink"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo2",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontHeightMin",
+          "value": "2100"
+        },
+        {
+          "columnName": "in_FrontHeightMax",
+          "value": "2500"
+        },
+        {
+          "columnName": "in_FrontWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontWidthMax",
+          "value": "700"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "22"
+        },
+        {
+          "columnName": "in_FingergripTypeTop",
+          "value": "NoFingergrip"
+        },
+        {
+          "columnName": "in_FingergripTypeBtm",
+          "value": "NoFingergrip"
+        },
+        {
+          "columnName": "in_HandleDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "All"
+        },
+        {
+          "columnName": "Descriptor",
+          "value": "80mm_1_1_1_1_170mm"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "BaseUnitSink"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo2",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontHeightMin",
+          "value": "2500"
+        },
+        {
+          "columnName": "in_FrontHeightMax",
+          "value": "3000"
+        },
+        {
+          "columnName": "in_FrontWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontWidthMax",
+          "value": "700"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "28"
+        },
+        {
+          "columnName": "in_FingergripTypeTop",
+          "value": "NoFingergrip"
+        },
+        {
+          "columnName": "in_FingergripTypeBtm",
+          "value": "NoFingergrip"
+        },
+        {
+          "columnName": "in_HandleDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "All"
+        },
+        {
+          "columnName": "Descriptor",
+          "value": "80mm_1_1_1_1_1_170mm"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "FHF"
+        },
+        {
+          "columnName": "in_AdditionalInfo2",
+          "value": "Powerstorage"
+        },
+        {
+          "columnName": "in_FrontHeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontHeightMax",
+          "value": "900"
+        },
+        {
+          "columnName": "in_FrontWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontWidthMax",
+          "value": "600"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "6"
+        },
+        {
+          "columnName": "in_FingergripTypeTop",
+          "value": "NoFingergrip"
+        },
+        {
+          "columnName": "in_FingergripTypeBtm",
+          "value": "NoFingergrip"
+        },
+        {
+          "columnName": "in_HandleDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "All"
+        },
+        {
+          "columnName": "Descriptor",
+          "value": "80mm_1_80mm"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "FHF"
+        },
+        {
+          "columnName": "in_AdditionalInfo2",
+          "value": "Powerstorage"
+        },
+        {
+          "columnName": "in_FrontHeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontHeightMax",
+          "value": "900"
+        },
+        {
+          "columnName": "in_FrontWidthMin",
+          "value": "600"
+        },
+        {
+          "columnName": "in_FrontWidthMax",
+          "value": "1000"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "12"
+        },
+        {
+          "columnName": "in_FingergripTypeTop",
+          "value": "NoFingergrip"
+        },
+        {
+          "columnName": "in_FingergripTypeBtm",
+          "value": "NoFingergrip"
+        },
+        {
+          "columnName": "in_HandleDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "All"
+        },
+        {
+          "columnName": "Descriptor",
+          "value": "80mm_1_1_80mm"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "FHF"
+        },
+        {
+          "columnName": "in_AdditionalInfo2",
+          "value": "Powerstorage"
+        },
+        {
+          "columnName": "in_FrontHeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontHeightMax",
+          "value": "900"
+        },
+        {
+          "columnName": "in_FrontWidthMin",
+          "value": "1000"
+        },
+        {
+          "columnName": "in_FrontWidthMax",
+          "value": "1400"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "17"
+        },
+        {
+          "columnName": "in_FingergripTypeTop",
+          "value": "NoFingergrip"
+        },
+        {
+          "columnName": "in_FingergripTypeBtm",
+          "value": "NoFingergrip"
+        },
+        {
+          "columnName": "in_HandleDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "All"
+        },
+        {
+          "columnName": "Descriptor",
+          "value": "80mm_1_1_1_80mm"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "UF"
+        },
+        {
+          "columnName": "in_AdditionalInfo2",
+          "value": "Gasspring"
+        },
+        {
+          "columnName": "in_FrontHeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontHeightMax",
+          "value": "900"
+        },
+        {
+          "columnName": "in_FrontWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontWidthMax",
+          "value": "600"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "6"
+        },
+        {
+          "columnName": "in_FingergripTypeTop",
+          "value": "NoFingergrip"
+        },
+        {
+          "columnName": "in_FingergripTypeBtm",
+          "value": "NoFingergrip"
+        },
+        {
+          "columnName": "in_HandleDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "All"
+        },
+        {
+          "columnName": "Descriptor",
+          "value": "80mm_1_80mm"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "UF"
+        },
+        {
+          "columnName": "in_AdditionalInfo2",
+          "value": "Gasspring"
+        },
+        {
+          "columnName": "in_FrontHeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontHeightMax",
+          "value": "900"
+        },
+        {
+          "columnName": "in_FrontWidthMin",
+          "value": "600"
+        },
+        {
+          "columnName": "in_FrontWidthMax",
+          "value": "1000"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "12"
+        },
+        {
+          "columnName": "in_FingergripTypeTop",
+          "value": "NoFingergrip"
+        },
+        {
+          "columnName": "in_FingergripTypeBtm",
+          "value": "NoFingergrip"
+        },
+        {
+          "columnName": "in_HandleDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "All"
+        },
+        {
+          "columnName": "Descriptor",
+          "value": "80mm_1_1_80mm"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "UF"
+        },
+        {
+          "columnName": "in_AdditionalInfo2",
+          "value": "Gasspring"
+        },
+        {
+          "columnName": "in_FrontHeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontHeightMax",
+          "value": "900"
+        },
+        {
+          "columnName": "in_FrontWidthMin",
+          "value": "1000"
+        },
+        {
+          "columnName": "in_FrontWidthMax",
+          "value": "1400"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "17"
+        },
+        {
+          "columnName": "in_FingergripTypeTop",
+          "value": "NoFingergrip"
+        },
+        {
+          "columnName": "in_FingergripTypeBtm",
+          "value": "NoFingergrip"
+        },
+        {
+          "columnName": "in_HandleDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "All"
+        },
+        {
+          "columnName": "Descriptor",
+          "value": "80mm_1_1_1_80mm"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "DF"
+        },
+        {
+          "columnName": "in_AdditionalInfo2",
+          "value": "DropDownHinge"
+        },
+        {
+          "columnName": "in_FrontHeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontHeightMax",
+          "value": "900"
+        },
+        {
+          "columnName": "in_FrontWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontWidthMax",
+          "value": "600"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "6"
+        },
+        {
+          "columnName": "in_FingergripTypeTop",
+          "value": "NoFingergrip"
+        },
+        {
+          "columnName": "in_FingergripTypeBtm",
+          "value": "NoFingergrip"
+        },
+        {
+          "columnName": "in_HandleDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "All"
+        },
+        {
+          "columnName": "Descriptor",
+          "value": "80mm_1_80mm"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "DF"
+        },
+        {
+          "columnName": "in_AdditionalInfo2",
+          "value": "DropDownHinge"
+        },
+        {
+          "columnName": "in_FrontHeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontHeightMax",
+          "value": "900"
+        },
+        {
+          "columnName": "in_FrontWidthMin",
+          "value": "600"
+        },
+        {
+          "columnName": "in_FrontWidthMax",
+          "value": "1000"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "12"
+        },
+        {
+          "columnName": "in_FingergripTypeTop",
+          "value": "NoFingergrip"
+        },
+        {
+          "columnName": "in_FingergripTypeBtm",
+          "value": "NoFingergrip"
+        },
+        {
+          "columnName": "in_HandleDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "All"
+        },
+        {
+          "columnName": "Descriptor",
+          "value": "80mm_1_1_80mm"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "DF"
+        },
+        {
+          "columnName": "in_AdditionalInfo2",
+          "value": "DropDownHinge"
+        },
+        {
+          "columnName": "in_FrontHeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontHeightMax",
+          "value": "900"
+        },
+        {
+          "columnName": "in_FrontWidthMin",
+          "value": "1000"
+        },
+        {
+          "columnName": "in_FrontWidthMax",
+          "value": "1400"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "17"
+        },
+        {
+          "columnName": "in_FingergripTypeTop",
+          "value": "NoFingergrip"
+        },
+        {
+          "columnName": "in_FingergripTypeBtm",
+          "value": "NoFingergrip"
+        },
+        {
+          "columnName": "in_HandleDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "All"
+        },
+        {
+          "columnName": "Descriptor",
+          "value": "80mm_1_1_1_80mm"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "TraditionFrame01"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo2",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontHeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontHeightMax",
+          "value": "750"
+        },
+        {
+          "columnName": "in_FrontWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontWidthMax",
+          "value": "700"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "6"
+        },
+        {
+          "columnName": "in_FingergripTypeTop",
+          "value": "NoFingergrip"
+        },
+        {
+          "columnName": "in_FingergripTypeBtm",
+          "value": "NoFingergrip"
+        },
+        {
+          "columnName": "in_HandleDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "All"
+        },
+        {
+          "columnName": "Descriptor",
+          "value": "140mm_1_140mm"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "TraditionFrame01"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo2",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontHeightMin",
+          "value": "750"
+        },
+        {
+          "columnName": "in_FrontHeightMax",
+          "value": "1500"
+        },
+        {
+          "columnName": "in_FrontWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontWidthMax",
+          "value": "700"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "12"
+        },
+        {
+          "columnName": "in_FingergripTypeTop",
+          "value": "NoFingergrip"
+        },
+        {
+          "columnName": "in_FingergripTypeBtm",
+          "value": "NoFingergrip"
+        },
+        {
+          "columnName": "in_HandleDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "All"
+        },
+        {
+          "columnName": "Descriptor",
+          "value": "140mm_1_1_140mm"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "TraditionFrame01"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo2",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontHeightMin",
+          "value": "1500"
+        },
+        {
+          "columnName": "in_FrontHeightMax",
+          "value": "2100"
+        },
+        {
+          "columnName": "in_FrontWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontWidthMax",
+          "value": "700"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "17"
+        },
+        {
+          "columnName": "in_FingergripTypeTop",
+          "value": "NoFingergrip"
+        },
+        {
+          "columnName": "in_FingergripTypeBtm",
+          "value": "NoFingergrip"
+        },
+        {
+          "columnName": "in_HandleDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "All"
+        },
+        {
+          "columnName": "Descriptor",
+          "value": "140mm_1_1_1_140mm"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "TraditionFrame01"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo2",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontHeightMin",
+          "value": "2100"
+        },
+        {
+          "columnName": "in_FrontHeightMax",
+          "value": "2500"
+        },
+        {
+          "columnName": "in_FrontWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontWidthMax",
+          "value": "700"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "22"
+        },
+        {
+          "columnName": "in_FingergripTypeTop",
+          "value": "NoFingergrip"
+        },
+        {
+          "columnName": "in_FingergripTypeBtm",
+          "value": "NoFingergrip"
+        },
+        {
+          "columnName": "in_HandleDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "All"
+        },
+        {
+          "columnName": "Descriptor",
+          "value": "140mm_1_1_1_1_140mm"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "TraditionFrame01"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo2",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontHeightMin",
+          "value": "2500"
+        },
+        {
+          "columnName": "in_FrontHeightMax",
+          "value": "3000"
+        },
+        {
+          "columnName": "in_FrontWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontWidthMax",
+          "value": "700"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "28"
+        },
+        {
+          "columnName": "in_FingergripTypeTop",
+          "value": "NoFingergrip"
+        },
+        {
+          "columnName": "in_FingergripTypeBtm",
+          "value": "NoFingergrip"
+        },
+        {
+          "columnName": "in_HandleDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "All"
+        },
+        {
+          "columnName": "Descriptor",
+          "value": "140mm_1_1_1_1_1_140mm"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "TraditionFrame01"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo2",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontHeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontHeightMax",
+          "value": "750"
+        },
+        {
+          "columnName": "in_FrontWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontWidthMax",
+          "value": "700"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "6"
+        },
+        {
+          "columnName": "in_FingergripTypeTop",
+          "value": "Metal"
+        },
+        {
+          "columnName": "in_FingergripTypeBtm",
+          "value": "NoFingergrip"
+        },
+        {
+          "columnName": "in_HandleDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "All"
+        },
+        {
+          "columnName": "Descriptor",
+          "value": "140mm_1_140mm"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "TraditionFrame01"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo2",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontHeightMin",
+          "value": "750"
+        },
+        {
+          "columnName": "in_FrontHeightMax",
+          "value": "1500"
+        },
+        {
+          "columnName": "in_FrontWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontWidthMax",
+          "value": "700"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "12"
+        },
+        {
+          "columnName": "in_FingergripTypeTop",
+          "value": "Metal"
+        },
+        {
+          "columnName": "in_FingergripTypeBtm",
+          "value": "NoFingergrip"
+        },
+        {
+          "columnName": "in_HandleDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "All"
+        },
+        {
+          "columnName": "Descriptor",
+          "value": "140mm_1_1_140mm"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "TraditionFrame01"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo2",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontHeightMin",
+          "value": "1500"
+        },
+        {
+          "columnName": "in_FrontHeightMax",
+          "value": "2100"
+        },
+        {
+          "columnName": "in_FrontWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontWidthMax",
+          "value": "700"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "17"
+        },
+        {
+          "columnName": "in_FingergripTypeTop",
+          "value": "Metal"
+        },
+        {
+          "columnName": "in_FingergripTypeBtm",
+          "value": "NoFingergrip"
+        },
+        {
+          "columnName": "in_HandleDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "All"
+        },
+        {
+          "columnName": "Descriptor",
+          "value": "140mm_1_1_1_140mm"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "TraditionFrame01"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo2",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontHeightMin",
+          "value": "2100"
+        },
+        {
+          "columnName": "in_FrontHeightMax",
+          "value": "2500"
+        },
+        {
+          "columnName": "in_FrontWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontWidthMax",
+          "value": "700"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "22"
+        },
+        {
+          "columnName": "in_FingergripTypeTop",
+          "value": "Metal"
+        },
+        {
+          "columnName": "in_FingergripTypeBtm",
+          "value": "NoFingergrip"
+        },
+        {
+          "columnName": "in_HandleDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "All"
+        },
+        {
+          "columnName": "Descriptor",
+          "value": "140mm_1_1_1_1_140mm"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "TraditionFrame01"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo2",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontHeightMin",
+          "value": "2500"
+        },
+        {
+          "columnName": "in_FrontHeightMax",
+          "value": "3000"
+        },
+        {
+          "columnName": "in_FrontWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontWidthMax",
+          "value": "700"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "28"
+        },
+        {
+          "columnName": "in_FingergripTypeTop",
+          "value": "Metal"
+        },
+        {
+          "columnName": "in_FingergripTypeBtm",
+          "value": "NoFingergrip"
+        },
+        {
+          "columnName": "in_HandleDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "All"
+        },
+        {
+          "columnName": "Descriptor",
+          "value": "140mm_1_1_1_1_1_140mm"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "TraditionFrame01"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo2",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontHeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontHeightMax",
+          "value": "750"
+        },
+        {
+          "columnName": "in_FrontWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontWidthMax",
+          "value": "700"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "6"
+        },
+        {
+          "columnName": "in_FingergripTypeTop",
+          "value": "Wood"
+        },
+        {
+          "columnName": "in_FingergripTypeBtm",
+          "value": "NoFingergrip"
+        },
+        {
+          "columnName": "in_HandleDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "All"
+        },
+        {
+          "columnName": "Descriptor",
+          "value": "140mm_1_140mm"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "TraditionFrame01"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo2",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontHeightMin",
+          "value": "750"
+        },
+        {
+          "columnName": "in_FrontHeightMax",
+          "value": "1500"
+        },
+        {
+          "columnName": "in_FrontWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontWidthMax",
+          "value": "700"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "12"
+        },
+        {
+          "columnName": "in_FingergripTypeTop",
+          "value": "Wood"
+        },
+        {
+          "columnName": "in_FingergripTypeBtm",
+          "value": "NoFingergrip"
+        },
+        {
+          "columnName": "in_HandleDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "All"
+        },
+        {
+          "columnName": "Descriptor",
+          "value": "140mm_1_1_140mm"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "TraditionFrame01"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo2",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontHeightMin",
+          "value": "1500"
+        },
+        {
+          "columnName": "in_FrontHeightMax",
+          "value": "2100"
+        },
+        {
+          "columnName": "in_FrontWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontWidthMax",
+          "value": "700"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "17"
+        },
+        {
+          "columnName": "in_FingergripTypeTop",
+          "value": "Wood"
+        },
+        {
+          "columnName": "in_FingergripTypeBtm",
+          "value": "NoFingergrip"
+        },
+        {
+          "columnName": "in_HandleDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "All"
+        },
+        {
+          "columnName": "Descriptor",
+          "value": "140mm_1_1_1_140mm"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "TraditionFrame01"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo2",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontHeightMin",
+          "value": "2100"
+        },
+        {
+          "columnName": "in_FrontHeightMax",
+          "value": "2500"
+        },
+        {
+          "columnName": "in_FrontWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontWidthMax",
+          "value": "700"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "22"
+        },
+        {
+          "columnName": "in_FingergripTypeTop",
+          "value": "Wood"
+        },
+        {
+          "columnName": "in_FingergripTypeBtm",
+          "value": "NoFingergrip"
+        },
+        {
+          "columnName": "in_HandleDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "All"
+        },
+        {
+          "columnName": "Descriptor",
+          "value": "140mm_1_1_1_1_140mm"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "TraditionFrame01"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo2",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontHeightMin",
+          "value": "2500"
+        },
+        {
+          "columnName": "in_FrontHeightMax",
+          "value": "3000"
+        },
+        {
+          "columnName": "in_FrontWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontWidthMax",
+          "value": "700"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "28"
+        },
+        {
+          "columnName": "in_FingergripTypeTop",
+          "value": "Wood"
+        },
+        {
+          "columnName": "in_FingergripTypeBtm",
+          "value": "NoFingergrip"
+        },
+        {
+          "columnName": "in_HandleDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "All"
+        },
+        {
+          "columnName": "Descriptor",
+          "value": "140mm_1_1_1_1_1_140mm"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "TraditionFrame01"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo2",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontHeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontHeightMax",
+          "value": "750"
+        },
+        {
+          "columnName": "in_FrontWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontWidthMax",
+          "value": "700"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "6"
+        },
+        {
+          "columnName": "in_FingergripTypeTop",
+          "value": "Metal"
+        },
+        {
+          "columnName": "in_FingergripTypeBtm",
+          "value": "Metal"
+        },
+        {
+          "columnName": "in_HandleDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "All"
+        },
+        {
+          "columnName": "Descriptor",
+          "value": "140mm_1_140mm"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "TraditionFrame01"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo2",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontHeightMin",
+          "value": "750"
+        },
+        {
+          "columnName": "in_FrontHeightMax",
+          "value": "1500"
+        },
+        {
+          "columnName": "in_FrontWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontWidthMax",
+          "value": "700"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "12"
+        },
+        {
+          "columnName": "in_FingergripTypeTop",
+          "value": "Metal"
+        },
+        {
+          "columnName": "in_FingergripTypeBtm",
+          "value": "Metal"
+        },
+        {
+          "columnName": "in_HandleDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "All"
+        },
+        {
+          "columnName": "Descriptor",
+          "value": "140mm_1_1_140mm"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "TraditionFrame01"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo2",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontHeightMin",
+          "value": "1500"
+        },
+        {
+          "columnName": "in_FrontHeightMax",
+          "value": "2100"
+        },
+        {
+          "columnName": "in_FrontWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontWidthMax",
+          "value": "700"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "17"
+        },
+        {
+          "columnName": "in_FingergripTypeTop",
+          "value": "Metal"
+        },
+        {
+          "columnName": "in_FingergripTypeBtm",
+          "value": "Metal"
+        },
+        {
+          "columnName": "in_HandleDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "All"
+        },
+        {
+          "columnName": "Descriptor",
+          "value": "140mm_1_1_1_140mm"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "TraditionFrame01"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo2",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontHeightMin",
+          "value": "2100"
+        },
+        {
+          "columnName": "in_FrontHeightMax",
+          "value": "2500"
+        },
+        {
+          "columnName": "in_FrontWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontWidthMax",
+          "value": "700"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "22"
+        },
+        {
+          "columnName": "in_FingergripTypeTop",
+          "value": "Metal"
+        },
+        {
+          "columnName": "in_FingergripTypeBtm",
+          "value": "Metal"
+        },
+        {
+          "columnName": "in_HandleDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "All"
+        },
+        {
+          "columnName": "Descriptor",
+          "value": "140mm_1_1_1_1_140mm"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "TraditionFrame01"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo2",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontHeightMin",
+          "value": "2500"
+        },
+        {
+          "columnName": "in_FrontHeightMax",
+          "value": "3000"
+        },
+        {
+          "columnName": "in_FrontWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontWidthMax",
+          "value": "700"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "28"
+        },
+        {
+          "columnName": "in_FingergripTypeTop",
+          "value": "Metal"
+        },
+        {
+          "columnName": "in_FingergripTypeBtm",
+          "value": "Metal"
+        },
+        {
+          "columnName": "in_HandleDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "All"
+        },
+        {
+          "columnName": "Descriptor",
+          "value": "140mm_1_1_1_1_1_140mm"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "TraditionFrame01"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo2",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontHeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontHeightMax",
+          "value": "750"
+        },
+        {
+          "columnName": "in_FrontWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontWidthMax",
+          "value": "700"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "6"
+        },
+        {
+          "columnName": "in_FingergripTypeTop",
+          "value": "NoFingergrip"
+        },
+        {
+          "columnName": "in_FingergripTypeBtm",
+          "value": "Metal"
+        },
+        {
+          "columnName": "in_HandleDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "All"
+        },
+        {
+          "columnName": "Descriptor",
+          "value": "140mm_1_140mm"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "TraditionFrame01"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo2",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontHeightMin",
+          "value": "750"
+        },
+        {
+          "columnName": "in_FrontHeightMax",
+          "value": "1500"
+        },
+        {
+          "columnName": "in_FrontWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontWidthMax",
+          "value": "700"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "12"
+        },
+        {
+          "columnName": "in_FingergripTypeTop",
+          "value": "NoFingergrip"
+        },
+        {
+          "columnName": "in_FingergripTypeBtm",
+          "value": "Metal"
+        },
+        {
+          "columnName": "in_HandleDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "All"
+        },
+        {
+          "columnName": "Descriptor",
+          "value": "140mm_1_1_140mm"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "TraditionFrame01"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo2",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontHeightMin",
+          "value": "1500"
+        },
+        {
+          "columnName": "in_FrontHeightMax",
+          "value": "2100"
+        },
+        {
+          "columnName": "in_FrontWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontWidthMax",
+          "value": "700"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "17"
+        },
+        {
+          "columnName": "in_FingergripTypeTop",
+          "value": "NoFingergrip"
+        },
+        {
+          "columnName": "in_FingergripTypeBtm",
+          "value": "Metal"
+        },
+        {
+          "columnName": "in_HandleDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "All"
+        },
+        {
+          "columnName": "Descriptor",
+          "value": "140mm_1_1_1_140mm"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "TraditionFrame01"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo2",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontHeightMin",
+          "value": "2100"
+        },
+        {
+          "columnName": "in_FrontHeightMax",
+          "value": "2500"
+        },
+        {
+          "columnName": "in_FrontWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontWidthMax",
+          "value": "700"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "22"
+        },
+        {
+          "columnName": "in_FingergripTypeTop",
+          "value": "NoFingergrip"
+        },
+        {
+          "columnName": "in_FingergripTypeBtm",
+          "value": "Metal"
+        },
+        {
+          "columnName": "in_HandleDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "All"
+        },
+        {
+          "columnName": "Descriptor",
+          "value": "140mm_1_1_1_1_140mm"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "TraditionFrame01"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo2",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontHeightMin",
+          "value": "2500"
+        },
+        {
+          "columnName": "in_FrontHeightMax",
+          "value": "3000"
+        },
+        {
+          "columnName": "in_FrontWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontWidthMax",
+          "value": "700"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "28"
+        },
+        {
+          "columnName": "in_FingergripTypeTop",
+          "value": "NoFingergrip"
+        },
+        {
+          "columnName": "in_FingergripTypeBtm",
+          "value": "Metal"
+        },
+        {
+          "columnName": "in_HandleDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "All"
+        },
+        {
+          "columnName": "Descriptor",
+          "value": "140mm_1_1_1_1_1_140mm"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "TraditionFrame01"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo2",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontHeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontHeightMax",
+          "value": "750"
+        },
+        {
+          "columnName": "in_FrontWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontWidthMax",
+          "value": "700"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "6"
+        },
+        {
+          "columnName": "in_FingergripTypeTop",
+          "value": "Wood"
+        },
+        {
+          "columnName": "in_FingergripTypeBtm",
+          "value": "Wood"
+        },
+        {
+          "columnName": "in_HandleDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "All"
+        },
+        {
+          "columnName": "Descriptor",
+          "value": "140mm_1_140mm"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "TraditionFrame01"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo2",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontHeightMin",
+          "value": "750"
+        },
+        {
+          "columnName": "in_FrontHeightMax",
+          "value": "1500"
+        },
+        {
+          "columnName": "in_FrontWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontWidthMax",
+          "value": "700"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "12"
+        },
+        {
+          "columnName": "in_FingergripTypeTop",
+          "value": "Wood"
+        },
+        {
+          "columnName": "in_FingergripTypeBtm",
+          "value": "Wood"
+        },
+        {
+          "columnName": "in_HandleDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "All"
+        },
+        {
+          "columnName": "Descriptor",
+          "value": "140mm_1_1_140mm"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "TraditionFrame01"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo2",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontHeightMin",
+          "value": "1500"
+        },
+        {
+          "columnName": "in_FrontHeightMax",
+          "value": "2100"
+        },
+        {
+          "columnName": "in_FrontWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontWidthMax",
+          "value": "700"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "17"
+        },
+        {
+          "columnName": "in_FingergripTypeTop",
+          "value": "Wood"
+        },
+        {
+          "columnName": "in_FingergripTypeBtm",
+          "value": "Wood"
+        },
+        {
+          "columnName": "in_HandleDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "All"
+        },
+        {
+          "columnName": "Descriptor",
+          "value": "140mm_1_1_1_140mm"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "TraditionFrame01"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo2",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontHeightMin",
+          "value": "2100"
+        },
+        {
+          "columnName": "in_FrontHeightMax",
+          "value": "2500"
+        },
+        {
+          "columnName": "in_FrontWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontWidthMax",
+          "value": "700"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "22"
+        },
+        {
+          "columnName": "in_FingergripTypeTop",
+          "value": "Wood"
+        },
+        {
+          "columnName": "in_FingergripTypeBtm",
+          "value": "Wood"
+        },
+        {
+          "columnName": "in_HandleDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "All"
+        },
+        {
+          "columnName": "Descriptor",
+          "value": "140mm_1_1_1_1_140mm"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "TraditionFrame01"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo2",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontHeightMin",
+          "value": "2500"
+        },
+        {
+          "columnName": "in_FrontHeightMax",
+          "value": "3000"
+        },
+        {
+          "columnName": "in_FrontWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontWidthMax",
+          "value": "700"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "28"
+        },
+        {
+          "columnName": "in_FingergripTypeTop",
+          "value": "Wood"
+        },
+        {
+          "columnName": "in_FingergripTypeBtm",
+          "value": "Wood"
+        },
+        {
+          "columnName": "in_HandleDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "All"
+        },
+        {
+          "columnName": "Descriptor",
+          "value": "140mm_1_1_1_1_1_140mm"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "TraditionFrame01"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo2",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontHeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontHeightMax",
+          "value": "750"
+        },
+        {
+          "columnName": "in_FrontWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontWidthMax",
+          "value": "700"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "6"
+        },
+        {
+          "columnName": "in_FingergripTypeTop",
+          "value": "NoFingergrip"
+        },
+        {
+          "columnName": "in_FingergripTypeBtm",
+          "value": "Wood"
+        },
+        {
+          "columnName": "in_HandleDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "All"
+        },
+        {
+          "columnName": "Descriptor",
+          "value": "140mm_1_140mm"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "TraditionFrame01"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo2",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontHeightMin",
+          "value": "750"
+        },
+        {
+          "columnName": "in_FrontHeightMax",
+          "value": "1500"
+        },
+        {
+          "columnName": "in_FrontWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontWidthMax",
+          "value": "700"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "12"
+        },
+        {
+          "columnName": "in_FingergripTypeTop",
+          "value": "NoFingergrip"
+        },
+        {
+          "columnName": "in_FingergripTypeBtm",
+          "value": "Wood"
+        },
+        {
+          "columnName": "in_HandleDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "All"
+        },
+        {
+          "columnName": "Descriptor",
+          "value": "140mm_1_1_140mm"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "TraditionFrame01"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo2",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontHeightMin",
+          "value": "1500"
+        },
+        {
+          "columnName": "in_FrontHeightMax",
+          "value": "2100"
+        },
+        {
+          "columnName": "in_FrontWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontWidthMax",
+          "value": "700"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "17"
+        },
+        {
+          "columnName": "in_FingergripTypeTop",
+          "value": "NoFingergrip"
+        },
+        {
+          "columnName": "in_FingergripTypeBtm",
+          "value": "Wood"
+        },
+        {
+          "columnName": "in_HandleDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "All"
+        },
+        {
+          "columnName": "Descriptor",
+          "value": "140mm_1_1_1_140mm"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "TraditionFrame01"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo2",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontHeightMin",
+          "value": "2100"
+        },
+        {
+          "columnName": "in_FrontHeightMax",
+          "value": "2500"
+        },
+        {
+          "columnName": "in_FrontWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontWidthMax",
+          "value": "700"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "22"
+        },
+        {
+          "columnName": "in_FingergripTypeTop",
+          "value": "NoFingergrip"
+        },
+        {
+          "columnName": "in_FingergripTypeBtm",
+          "value": "Wood"
+        },
+        {
+          "columnName": "in_HandleDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "All"
+        },
+        {
+          "columnName": "Descriptor",
+          "value": "140mm_1_1_1_1_140mm"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "TraditionFrame01"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo2",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontHeightMin",
+          "value": "2500"
+        },
+        {
+          "columnName": "in_FrontHeightMax",
+          "value": "3000"
+        },
+        {
+          "columnName": "in_FrontWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontWidthMax",
+          "value": "700"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "28"
+        },
+        {
+          "columnName": "in_FingergripTypeTop",
+          "value": "NoFingergrip"
+        },
+        {
+          "columnName": "in_FingergripTypeBtm",
+          "value": "Wood"
+        },
+        {
+          "columnName": "in_HandleDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "All"
+        },
+        {
+          "columnName": "Descriptor",
+          "value": "140mm_1_1_1_1_1_140mm"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "TraditionFrame01"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo2",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontHeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontHeightMax",
+          "value": "750"
+        },
+        {
+          "columnName": "in_FrontWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontWidthMax",
+          "value": "700"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "6"
+        },
+        {
+          "columnName": "in_FingergripTypeTop",
+          "value": "NoFingergrip"
+        },
+        {
+          "columnName": "in_FingergripTypeBtm",
+          "value": "NoFingergrip"
+        },
+        {
+          "columnName": "in_HandleDesign",
+          "value": "50"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "StripeBtm"
+        },
+        {
+          "columnName": "Descriptor",
+          "value": "140mm_1_140mm"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "TraditionFrame01"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo2",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontHeightMin",
+          "value": "750"
+        },
+        {
+          "columnName": "in_FrontHeightMax",
+          "value": "1500"
+        },
+        {
+          "columnName": "in_FrontWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontWidthMax",
+          "value": "700"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "12"
+        },
+        {
+          "columnName": "in_FingergripTypeTop",
+          "value": "NoFingergrip"
+        },
+        {
+          "columnName": "in_FingergripTypeBtm",
+          "value": "NoFingergrip"
+        },
+        {
+          "columnName": "in_HandleDesign",
+          "value": "50"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "StripeBtm"
+        },
+        {
+          "columnName": "Descriptor",
+          "value": "140mm_1_1_140mm"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "TraditionFrame01"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo2",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontHeightMin",
+          "value": "1500"
+        },
+        {
+          "columnName": "in_FrontHeightMax",
+          "value": "2100"
+        },
+        {
+          "columnName": "in_FrontWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontWidthMax",
+          "value": "700"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "17"
+        },
+        {
+          "columnName": "in_FingergripTypeTop",
+          "value": "NoFingergrip"
+        },
+        {
+          "columnName": "in_FingergripTypeBtm",
+          "value": "NoFingergrip"
+        },
+        {
+          "columnName": "in_HandleDesign",
+          "value": "50"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "StripeBtm"
+        },
+        {
+          "columnName": "Descriptor",
+          "value": "140mm_1_1_1_140mm"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "TraditionFrame01"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo2",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontHeightMin",
+          "value": "2100"
+        },
+        {
+          "columnName": "in_FrontHeightMax",
+          "value": "2500"
+        },
+        {
+          "columnName": "in_FrontWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontWidthMax",
+          "value": "700"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "22"
+        },
+        {
+          "columnName": "in_FingergripTypeTop",
+          "value": "NoFingergrip"
+        },
+        {
+          "columnName": "in_FingergripTypeBtm",
+          "value": "NoFingergrip"
+        },
+        {
+          "columnName": "in_HandleDesign",
+          "value": "50"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "StripeBtm"
+        },
+        {
+          "columnName": "Descriptor",
+          "value": "140mm_1_1_1_1_140mm"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "TraditionFrame01"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo2",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontHeightMin",
+          "value": "2500"
+        },
+        {
+          "columnName": "in_FrontHeightMax",
+          "value": "3000"
+        },
+        {
+          "columnName": "in_FrontWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontWidthMax",
+          "value": "700"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "28"
+        },
+        {
+          "columnName": "in_FingergripTypeTop",
+          "value": "NoFingergrip"
+        },
+        {
+          "columnName": "in_FingergripTypeBtm",
+          "value": "NoFingergrip"
+        },
+        {
+          "columnName": "in_HandleDesign",
+          "value": "50"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "StripeBtm"
+        },
+        {
+          "columnName": "Descriptor",
+          "value": "140mm_1_1_1_1_1_140mm"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "TraditionFrame01"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo2",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontHeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontHeightMax",
+          "value": "750"
+        },
+        {
+          "columnName": "in_FrontWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontWidthMax",
+          "value": "700"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "6"
+        },
+        {
+          "columnName": "in_FingergripTypeTop",
+          "value": "NoFingergrip"
+        },
+        {
+          "columnName": "in_FingergripTypeBtm",
+          "value": "NoFingergrip"
+        },
+        {
+          "columnName": "in_HandleDesign",
+          "value": "50"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "StripeTop"
+        },
+        {
+          "columnName": "Descriptor",
+          "value": "140mm_1_140mm"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "TraditionFrame01"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo2",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontHeightMin",
+          "value": "750"
+        },
+        {
+          "columnName": "in_FrontHeightMax",
+          "value": "1500"
+        },
+        {
+          "columnName": "in_FrontWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontWidthMax",
+          "value": "700"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "12"
+        },
+        {
+          "columnName": "in_FingergripTypeTop",
+          "value": "NoFingergrip"
+        },
+        {
+          "columnName": "in_FingergripTypeBtm",
+          "value": "NoFingergrip"
+        },
+        {
+          "columnName": "in_HandleDesign",
+          "value": "50"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "StripeTop"
+        },
+        {
+          "columnName": "Descriptor",
+          "value": "140mm_1_1_140mm"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "TraditionFrame01"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo2",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontHeightMin",
+          "value": "1500"
+        },
+        {
+          "columnName": "in_FrontHeightMax",
+          "value": "2100"
+        },
+        {
+          "columnName": "in_FrontWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontWidthMax",
+          "value": "700"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "17"
+        },
+        {
+          "columnName": "in_FingergripTypeTop",
+          "value": "NoFingergrip"
+        },
+        {
+          "columnName": "in_FingergripTypeBtm",
+          "value": "NoFingergrip"
+        },
+        {
+          "columnName": "in_HandleDesign",
+          "value": "50"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "StripeTop"
+        },
+        {
+          "columnName": "Descriptor",
+          "value": "140mm_1_1_1_140mm"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "TraditionFrame01"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo2",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontHeightMin",
+          "value": "2100"
+        },
+        {
+          "columnName": "in_FrontHeightMax",
+          "value": "2500"
+        },
+        {
+          "columnName": "in_FrontWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontWidthMax",
+          "value": "700"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "22"
+        },
+        {
+          "columnName": "in_FingergripTypeTop",
+          "value": "NoFingergrip"
+        },
+        {
+          "columnName": "in_FingergripTypeBtm",
+          "value": "NoFingergrip"
+        },
+        {
+          "columnName": "in_HandleDesign",
+          "value": "50"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "StripeTop"
+        },
+        {
+          "columnName": "Descriptor",
+          "value": "140mm_1_1_1_1_140mm"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "TraditionFrame01"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo2",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontHeightMin",
+          "value": "2500"
+        },
+        {
+          "columnName": "in_FrontHeightMax",
+          "value": "3000"
+        },
+        {
+          "columnName": "in_FrontWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontWidthMax",
+          "value": "700"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "28"
+        },
+        {
+          "columnName": "in_FingergripTypeTop",
+          "value": "NoFingergrip"
+        },
+        {
+          "columnName": "in_FingergripTypeBtm",
+          "value": "NoFingergrip"
+        },
+        {
+          "columnName": "in_HandleDesign",
+          "value": "50"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "StripeTop"
+        },
+        {
+          "columnName": "Descriptor",
+          "value": "140mm_1_1_1_1_1_140mm"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "WallUnit"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "SegmentFront01"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo2",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontHeightMin",
+          "value": "750"
+        },
+        {
+          "columnName": "in_FrontHeightMax",
+          "value": "1500"
+        },
+        {
+          "columnName": "in_FrontWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontWidthMax",
+          "value": "700"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "99"
+        },
+        {
+          "columnName": "in_FingergripTypeTop",
+          "value": "NoFingergrip"
+        },
+        {
+          "columnName": "in_FingergripTypeBtm",
+          "value": "NoFingergrip"
+        },
+        {
+          "columnName": "in_HandleDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "All"
+        },
+        {
+          "columnName": "Descriptor",
+          "value": "60mm_520mm_1_60mm"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "WallUnit"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "SegmentFront01"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo2",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontHeightMin",
+          "value": "1500"
+        },
+        {
+          "columnName": "in_FrontHeightMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_FrontWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontWidthMax",
+          "value": "700"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "99"
+        },
+        {
+          "columnName": "in_FingergripTypeTop",
+          "value": "NoFingergrip"
+        },
+        {
+          "columnName": "in_FingergripTypeBtm",
+          "value": "NoFingergrip"
+        },
+        {
+          "columnName": "in_HandleDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "All"
+        },
+        {
+          "columnName": "Descriptor",
+          "value": "60mm_520mm_1_1_60mm"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "SegmentFront01"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo2",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontHeightMin",
+          "value": "750"
+        },
+        {
+          "columnName": "in_FrontHeightMax",
+          "value": "1500"
+        },
+        {
+          "columnName": "in_FrontWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontWidthMax",
+          "value": "700"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "99"
+        },
+        {
+          "columnName": "in_FingergripTypeTop",
+          "value": "NoFingergrip"
+        },
+        {
+          "columnName": "in_FingergripTypeBtm",
+          "value": "NoFingergrip"
+        },
+        {
+          "columnName": "in_HandleDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "All"
+        },
+        {
+          "columnName": "Descriptor",
+          "value": "60mm_1_520mm_60mm"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "SegmentFront01"
+        },
+        {
+          "columnName": "in_AdditionalInfo1",
+          "value": "All"
+        },
+        {
+          "columnName": "in_AdditionalInfo2",
+          "value": "All"
+        },
+        {
+          "columnName": "in_FrontHeightMin",
+          "value": "1500"
+        },
+        {
+          "columnName": "in_FrontHeightMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_FrontWidthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontWidthMax",
+          "value": "700"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "99"
+        },
+        {
+          "columnName": "in_FingergripTypeTop",
+          "value": "NoFingergrip"
+        },
+        {
+          "columnName": "in_FingergripTypeBtm",
+          "value": "NoFingergrip"
+        },
+        {
+          "columnName": "in_HandleDesign",
+          "value": "All"
+        },
+        {
+          "columnName": "in_HandlePosType",
+          "value": "All"
+        },
+        {
+          "columnName": "Descriptor",
+          "value": "60mm_1_1_520mm_60mm"
+        }
+      ]
+    }
+  ]
+}

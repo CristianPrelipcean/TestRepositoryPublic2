@@ -1,0 +1,79 @@
+{
+  "variantId": "mod_HandlePosMatrix",
+  "shortName": "Handle matrix",
+  "variantTypeId": "Text",
+  "description": "Matrix position of the handle",
+  "restrictionTypeId": "Internal",
+  "groupName": "FrontOpening | Handle",
+  "imageId": "eac263ee-c565-47ff-8136-d0ed11bdde9e:HandlePosMatrix.png",
+  "isArray": false,
+  "isPosRelevant": true,
+  "mainAttr": false,
+  "userRight": "Master",
+  "implicitRelevant": false,
+  "posView": "Dropdown",
+  "matrix": [
+    {
+      "id": "Mode",
+      "type": "Text",
+      "shortName": "Mode",
+      "default": "HandleLine"
+    },
+    {
+      "id": "Section",
+      "type": "Text",
+      "shortName": "Section",
+      "default": "Center"
+    }
+  ],
+  "selections": [
+    {
+      "value": "Top",
+      "description": "Top",
+      "shortName": "Top",
+      "imageId": "1fe7d40e-8da3-43d2-bccd-dbd04bb57441:Top.jpg",
+      "matrix": [
+        {
+          "id": "Mode",
+          "value": "Matrix"
+        },
+        {
+          "id": "Section",
+          "value": "Up"
+        }
+      ]
+    },
+    {
+      "value": "Center",
+      "description": "Center",
+      "shortName": "Center",
+      "imageId": "7058e584-e91b-4561-9c81-b1fd0dde5cb2:Center.jpg",
+      "matrix": [
+        {
+          "id": "Mode",
+          "value": "HandleLine"
+        },
+        {
+          "id": "Section",
+          "value": "Center"
+        }
+      ]
+    },
+    {
+      "value": "Bottom",
+      "description": "Bottom",
+      "shortName": "Bottom",
+      "imageId": "5b3c4626-9204-4a80-bf56-46b6aab16180:Bottom.jpg",
+      "matrix": [
+        {
+          "id": "Mode",
+          "value": "Matrix"
+        },
+        {
+          "id": "Section",
+          "value": "Down"
+        }
+      ]
+    }
+  ]
+}

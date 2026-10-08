@@ -1,0 +1,28 @@
+{
+  "variantId": "mod_CarcaseOverdimensionBackLogic",
+  "shortName": "Overdimension back logic",
+  "variantTypeId": "Text",
+  "description": "Logic for the carcase overdimenson on back side",
+  "restrictionTypeId": "Internal",
+  "groupName": "Information",
+  "imageId": "c21d927d-4496-4fe8-aad5-bb2973ff4dfe:Logic.png",
+  "assignedGlobalVarId": "basic_CarcaseOverdimensionBackLogic",
+  "isArray": false,
+  "isPosRelevant": false,
+  "userRight": "Master",
+  "matrix": [],
+  "selections": [
+    {
+      "value": "WallClosureIfVisible",
+      "description": "If the side is visible the cabinet gets an overdimension on the specific side",
+      "shortName": "WallClosureIfVisible",
+      "matrix": []
+    },
+    {
+      "value": "NoOverdimensionAllowed",
+      "description": "There are never overdimensions on the back side of a cabinet",
+      "shortName": "NoOverdimensionAllowed",
+      "matrix": []
+    }
+  ]
+}

@@ -1,0 +1,855 @@
+{
+  "tableName": "tab_PushtoopenMapping",
+  "description": "Push To Open Mapping",
+  "restrictionTypeId": "Public",
+  "groupName": "PushToOpen",
+  "columns": [
+    {
+      "name": "_id",
+      "type": "Integer",
+      "allowNull": false
+    },
+    {
+      "name": "in_Position",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_Type",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_PartThkMin",
+      "type": "Dim",
+      "allowNull": true
+    },
+    {
+      "name": "in_PartThkMax",
+      "type": "Dim",
+      "allowNull": true
+    },
+    {
+      "name": "in_FrontOverlayMin",
+      "type": "Dim",
+      "allowNull": true
+    },
+    {
+      "name": "in_FrontOverlayMax",
+      "type": "Dim",
+      "allowNull": true
+    },
+    {
+      "name": "in_WeightMin",
+      "type": "Real",
+      "allowNull": true
+    },
+    {
+      "name": "in_WeightMax",
+      "type": "Real",
+      "allowNull": false
+    },
+    {
+      "name": "in_Color",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "ObjectCarcase",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "DrillAdjustablePosThk",
+      "type": "Dim",
+      "allowNull": true
+    },
+    {
+      "name": "MinFrontGapCarcase",
+      "type": "Real",
+      "allowNull": false
+    }
+  ],
+  "rows": [
+    {
+      "data": [
+        {
+          "columnName": "in_Position",
+          "value": "Bottom"
+        },
+        {
+          "columnName": "in_Type",
+          "value": "DrilledCenter"
+        },
+        {
+          "columnName": "in_PartThkMin",
+          "value": "15.1"
+        },
+        {
+          "columnName": "in_PartThkMax",
+          "value": "16"
+        },
+        {
+          "columnName": "in_FrontOverlayMin",
+          "value": "13"
+        },
+        {
+          "columnName": "in_FrontOverlayMax",
+          "value": "999"
+        },
+        {
+          "columnName": "in_WeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "999"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "All"
+        },
+        {
+          "columnName": "ObjectCarcase",
+          "value": "PushToOpenShortGrey"
+        },
+        {
+          "columnName": "DrillAdjustablePosThk",
+          "value": ""
+        },
+        {
+          "columnName": "MinFrontGapCarcase",
+          "value": "3.1"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Position",
+          "value": "Bottom"
+        },
+        {
+          "columnName": "in_Type",
+          "value": "DrilledCenter"
+        },
+        {
+          "columnName": "in_PartThkMin",
+          "value": "18.1"
+        },
+        {
+          "columnName": "in_PartThkMax",
+          "value": "19"
+        },
+        {
+          "columnName": "in_FrontOverlayMin",
+          "value": "15"
+        },
+        {
+          "columnName": "in_FrontOverlayMax",
+          "value": "999"
+        },
+        {
+          "columnName": "in_WeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "999"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "All"
+        },
+        {
+          "columnName": "ObjectCarcase",
+          "value": "PushToOpenShortGrey"
+        },
+        {
+          "columnName": "DrillAdjustablePosThk",
+          "value": ""
+        },
+        {
+          "columnName": "MinFrontGapCarcase",
+          "value": "3.1"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Position",
+          "value": "Bottom"
+        },
+        {
+          "columnName": "in_Type",
+          "value": "DrilledCenter"
+        },
+        {
+          "columnName": "in_PartThkMin",
+          "value": "24.1"
+        },
+        {
+          "columnName": "in_PartThkMax",
+          "value": "25"
+        },
+        {
+          "columnName": "in_FrontOverlayMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_FrontOverlayMax",
+          "value": "999"
+        },
+        {
+          "columnName": "in_WeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "999"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "All"
+        },
+        {
+          "columnName": "ObjectCarcase",
+          "value": "PushToOpenShortGrey"
+        },
+        {
+          "columnName": "DrillAdjustablePosThk",
+          "value": ""
+        },
+        {
+          "columnName": "MinFrontGapCarcase",
+          "value": "3.1"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Position",
+          "value": "Bottom"
+        },
+        {
+          "columnName": "in_Type",
+          "value": "DrilledAdjustable"
+        },
+        {
+          "columnName": "in_PartThkMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_PartThkMax",
+          "value": "999"
+        },
+        {
+          "columnName": "in_FrontOverlayMin",
+          "value": "13"
+        },
+        {
+          "columnName": "in_FrontOverlayMax",
+          "value": "999"
+        },
+        {
+          "columnName": "in_WeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "999"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "All"
+        },
+        {
+          "columnName": "ObjectCarcase",
+          "value": "PushToOpenShortGrey"
+        },
+        {
+          "columnName": "DrillAdjustablePosThk",
+          "value": "5"
+        },
+        {
+          "columnName": "MinFrontGapCarcase",
+          "value": "3.1"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Position",
+          "value": "Bottom"
+        },
+        {
+          "columnName": "in_Type",
+          "value": "WithAdapterHousing"
+        },
+        {
+          "columnName": "in_PartThkMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_PartThkMax",
+          "value": "999"
+        },
+        {
+          "columnName": "in_FrontOverlayMin",
+          "value": "-5"
+        },
+        {
+          "columnName": "in_FrontOverlayMax",
+          "value": "12.99"
+        },
+        {
+          "columnName": "in_WeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "999"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "All"
+        },
+        {
+          "columnName": "ObjectCarcase",
+          "value": "AdapterHousingShortGrey"
+        },
+        {
+          "columnName": "DrillAdjustablePosThk",
+          "value": ""
+        },
+        {
+          "columnName": "MinFrontGapCarcase",
+          "value": "2"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Position",
+          "value": "Side"
+        },
+        {
+          "columnName": "in_Type",
+          "value": "DrilledCenter"
+        },
+        {
+          "columnName": "in_PartThkMin",
+          "value": "15.1"
+        },
+        {
+          "columnName": "in_PartThkMax",
+          "value": "16"
+        },
+        {
+          "columnName": "in_FrontOverlayMin",
+          "value": "13"
+        },
+        {
+          "columnName": "in_FrontOverlayMax",
+          "value": "999"
+        },
+        {
+          "columnName": "in_WeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "999"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "All"
+        },
+        {
+          "columnName": "ObjectCarcase",
+          "value": "PushToOpenShortGrey"
+        },
+        {
+          "columnName": "DrillAdjustablePosThk",
+          "value": ""
+        },
+        {
+          "columnName": "MinFrontGapCarcase",
+          "value": "3.1"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Position",
+          "value": "Side"
+        },
+        {
+          "columnName": "in_Type",
+          "value": "DrilledCenter"
+        },
+        {
+          "columnName": "in_PartThkMin",
+          "value": "18.1"
+        },
+        {
+          "columnName": "in_PartThkMax",
+          "value": "19"
+        },
+        {
+          "columnName": "in_FrontOverlayMin",
+          "value": "15"
+        },
+        {
+          "columnName": "in_FrontOverlayMax",
+          "value": "999"
+        },
+        {
+          "columnName": "in_WeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "999"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "All"
+        },
+        {
+          "columnName": "ObjectCarcase",
+          "value": "PushToOpenShortGrey"
+        },
+        {
+          "columnName": "DrillAdjustablePosThk",
+          "value": ""
+        },
+        {
+          "columnName": "MinFrontGapCarcase",
+          "value": "3.1"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Position",
+          "value": "Side"
+        },
+        {
+          "columnName": "in_Type",
+          "value": "DrilledCenter"
+        },
+        {
+          "columnName": "in_PartThkMin",
+          "value": "24.1"
+        },
+        {
+          "columnName": "in_PartThkMax",
+          "value": "25"
+        },
+        {
+          "columnName": "in_FrontOverlayMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_FrontOverlayMax",
+          "value": "999"
+        },
+        {
+          "columnName": "in_WeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "999"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "All"
+        },
+        {
+          "columnName": "ObjectCarcase",
+          "value": "PushToOpenShortGrey"
+        },
+        {
+          "columnName": "DrillAdjustablePosThk",
+          "value": ""
+        },
+        {
+          "columnName": "MinFrontGapCarcase",
+          "value": "3.1"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Position",
+          "value": "Side"
+        },
+        {
+          "columnName": "in_Type",
+          "value": "DrilledAdjustable"
+        },
+        {
+          "columnName": "in_PartThkMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_PartThkMax",
+          "value": "999"
+        },
+        {
+          "columnName": "in_FrontOverlayMin",
+          "value": "13"
+        },
+        {
+          "columnName": "in_FrontOverlayMax",
+          "value": "999"
+        },
+        {
+          "columnName": "in_WeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "999"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "All"
+        },
+        {
+          "columnName": "ObjectCarcase",
+          "value": "PushToOpenShortGrey"
+        },
+        {
+          "columnName": "DrillAdjustablePosThk",
+          "value": "5"
+        },
+        {
+          "columnName": "MinFrontGapCarcase",
+          "value": "3.1"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Position",
+          "value": "Side"
+        },
+        {
+          "columnName": "in_Type",
+          "value": "WithAdapterHousing"
+        },
+        {
+          "columnName": "in_PartThkMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_PartThkMax",
+          "value": "999"
+        },
+        {
+          "columnName": "in_FrontOverlayMin",
+          "value": "-5"
+        },
+        {
+          "columnName": "in_FrontOverlayMax",
+          "value": "12.99"
+        },
+        {
+          "columnName": "in_WeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "999"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "All"
+        },
+        {
+          "columnName": "ObjectCarcase",
+          "value": "AdapterHousingShortGrey"
+        },
+        {
+          "columnName": "DrillAdjustablePosThk",
+          "value": ""
+        },
+        {
+          "columnName": "MinFrontGapCarcase",
+          "value": "2"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Position",
+          "value": "Top"
+        },
+        {
+          "columnName": "in_Type",
+          "value": "DrilledCenter"
+        },
+        {
+          "columnName": "in_PartThkMin",
+          "value": "15.1"
+        },
+        {
+          "columnName": "in_PartThkMax",
+          "value": "16"
+        },
+        {
+          "columnName": "in_FrontOverlayMin",
+          "value": "13"
+        },
+        {
+          "columnName": "in_FrontOverlayMax",
+          "value": "999"
+        },
+        {
+          "columnName": "in_WeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "999"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "All"
+        },
+        {
+          "columnName": "ObjectCarcase",
+          "value": "PushToOpenShortGrey"
+        },
+        {
+          "columnName": "DrillAdjustablePosThk",
+          "value": ""
+        },
+        {
+          "columnName": "MinFrontGapCarcase",
+          "value": "3.1"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Position",
+          "value": "Top"
+        },
+        {
+          "columnName": "in_Type",
+          "value": "DrilledCenter"
+        },
+        {
+          "columnName": "in_PartThkMin",
+          "value": "18.1"
+        },
+        {
+          "columnName": "in_PartThkMax",
+          "value": "19"
+        },
+        {
+          "columnName": "in_FrontOverlayMin",
+          "value": "15"
+        },
+        {
+          "columnName": "in_FrontOverlayMax",
+          "value": "999"
+        },
+        {
+          "columnName": "in_WeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "999"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "All"
+        },
+        {
+          "columnName": "ObjectCarcase",
+          "value": "PushToOpenShortGrey"
+        },
+        {
+          "columnName": "DrillAdjustablePosThk",
+          "value": ""
+        },
+        {
+          "columnName": "MinFrontGapCarcase",
+          "value": "3.1"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Position",
+          "value": "Top"
+        },
+        {
+          "columnName": "in_Type",
+          "value": "DrilledCenter"
+        },
+        {
+          "columnName": "in_PartThkMin",
+          "value": "24.1"
+        },
+        {
+          "columnName": "in_PartThkMax",
+          "value": "25"
+        },
+        {
+          "columnName": "in_FrontOverlayMin",
+          "value": "18"
+        },
+        {
+          "columnName": "in_FrontOverlayMax",
+          "value": "999"
+        },
+        {
+          "columnName": "in_WeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "999"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "All"
+        },
+        {
+          "columnName": "ObjectCarcase",
+          "value": "PushToOpenShortGrey"
+        },
+        {
+          "columnName": "DrillAdjustablePosThk",
+          "value": ""
+        },
+        {
+          "columnName": "MinFrontGapCarcase",
+          "value": "3.1"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Position",
+          "value": "Top"
+        },
+        {
+          "columnName": "in_Type",
+          "value": "DrilledAdjustable"
+        },
+        {
+          "columnName": "in_PartThkMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_PartThkMax",
+          "value": "999"
+        },
+        {
+          "columnName": "in_FrontOverlayMin",
+          "value": "13"
+        },
+        {
+          "columnName": "in_FrontOverlayMax",
+          "value": "999"
+        },
+        {
+          "columnName": "in_WeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "999"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "All"
+        },
+        {
+          "columnName": "ObjectCarcase",
+          "value": "PushToOpenShortGrey"
+        },
+        {
+          "columnName": "DrillAdjustablePosThk",
+          "value": "5"
+        },
+        {
+          "columnName": "MinFrontGapCarcase",
+          "value": "3.1"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_Position",
+          "value": "Top"
+        },
+        {
+          "columnName": "in_Type",
+          "value": "WithAdapterHousing"
+        },
+        {
+          "columnName": "in_PartThkMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_PartThkMax",
+          "value": "999"
+        },
+        {
+          "columnName": "in_FrontOverlayMin",
+          "value": "-5"
+        },
+        {
+          "columnName": "in_FrontOverlayMax",
+          "value": "12.99"
+        },
+        {
+          "columnName": "in_WeightMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_WeightMax",
+          "value": "999"
+        },
+        {
+          "columnName": "in_Color",
+          "value": "All"
+        },
+        {
+          "columnName": "ObjectCarcase",
+          "value": "AdapterHousingShortGrey"
+        },
+        {
+          "columnName": "DrillAdjustablePosThk",
+          "value": ""
+        },
+        {
+          "columnName": "MinFrontGapCarcase",
+          "value": "2"
+        }
+      ]
+    }
+  ]
+}

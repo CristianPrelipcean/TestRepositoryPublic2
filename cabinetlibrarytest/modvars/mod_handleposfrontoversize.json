@@ -1,0 +1,28 @@
+{
+  "variantId": "mod_HandlePosFrontOversize",
+  "shortName": "Handle Pos Front Oversize",
+  "variantTypeId": "Text",
+  "description": "Handle Position affected by Front Oversize",
+  "restrictionTypeId": "Internal",
+  "groupName": "FrontOpening | Handle",
+  "imageId": "",
+  "assignedGlobalVarId": "basic_HandlePosFrontOversize",
+  "isArray": false,
+  "isPosRelevant": false,
+  "userRight": "Master",
+  "matrix": [],
+  "selections": [
+    {
+      "value": "IgnoreFrontOversize",
+      "description": "Handle position ignores front oversize",
+      "shortName": "Ignore Front Oversize",
+      "matrix": []
+    },
+    {
+      "value": "IncludeFrontOversizeBottom",
+      "description": "Handle position includes front oversize bottom",
+      "shortName": "Include Front Oversize Bottom",
+      "matrix": []
+    }
+  ]
+}

@@ -1,0 +1,131 @@
+{
+  "tableName": "tab_SpacerConstruction",
+  "description": "Spacer Construction Table",
+  "restrictionTypeId": "Public",
+  "groupName": "Hardware",
+  "columns": [
+    {
+      "name": "_id",
+      "type": "Integer",
+      "allowNull": false
+    },
+    {
+      "name": "in_SpacerModule",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "FrontOffset",
+      "type": "Dim",
+      "allowNull": true
+    },
+    {
+      "name": "LengthType",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "FixedLength",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "HeightType",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "FixedHeight",
+      "type": "Dim",
+      "allowNull": false
+    }
+  ],
+  "rows": [
+    {
+      "data": [
+        {
+          "columnName": "in_SpacerModule",
+          "value": "mc_InnerDrawerSpacer01"
+        },
+        {
+          "columnName": "FrontOffset",
+          "value": "5"
+        },
+        {
+          "columnName": "LengthType",
+          "value": "FixedLength"
+        },
+        {
+          "columnName": "FixedLength",
+          "value": "410"
+        },
+        {
+          "columnName": "HeightType",
+          "value": "FixedHeight"
+        },
+        {
+          "columnName": "FixedHeight",
+          "value": "50"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_SpacerModule",
+          "value": "mc_InnerDrawerSpacer03"
+        },
+        {
+          "columnName": "FrontOffset",
+          "value": "0"
+        },
+        {
+          "columnName": "LengthType",
+          "value": "FixedLength"
+        },
+        {
+          "columnName": "FixedLength",
+          "value": "0"
+        },
+        {
+          "columnName": "HeightType",
+          "value": "FixedHeight"
+        },
+        {
+          "columnName": "FixedHeight",
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_SpacerModule",
+          "value": "mc_InnerDrawerSpacer02"
+        },
+        {
+          "columnName": "FrontOffset",
+          "value": "5"
+        },
+        {
+          "columnName": "LengthType",
+          "value": "FixedLength"
+        },
+        {
+          "columnName": "FixedLength",
+          "value": "410"
+        },
+        {
+          "columnName": "HeightType",
+          "value": "FixedHeight"
+        },
+        {
+          "columnName": "FixedHeight",
+          "value": "50"
+        }
+      ]
+    }
+  ],
+  "dataSource": "Default",
+  "changedAt": "2026-09-09T14:05:57.9094912+00:00"
+}

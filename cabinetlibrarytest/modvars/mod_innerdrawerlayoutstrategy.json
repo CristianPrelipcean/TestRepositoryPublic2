@@ -1,0 +1,35 @@
+{
+  "variantId": "mod_InnerDrawerLayoutStrategy",
+  "shortName": "Inner Drawer Layout Strategy",
+  "variantTypeId": "Text",
+  "description": "Defines the strategy for the vertical arrangement of the inner drawers within the available pace",
+  "restrictionTypeId": "Public",
+  "groupName": "InnerDrawer Group Settings",
+  "imageId": "e9083d1d-db16-4fd0-a639-63b75cd3dbec:LayoutStrategie.png",
+  "isArray": false,
+  "isPosRelevant": true,
+  "mainAttr": false,
+  "userRight": "Simple",
+  "implicitRelevant": false,
+  "matrix": [],
+  "selections": [
+    {
+      "value": "FillAvailableSpace",
+      "description": "The entire available height is used for the interior drawer assembly.",
+      "shortName": "Fill Available Space",
+      "matrix": []
+    },
+    {
+      "value": "DefinedGroupHeight",
+      "description": "The inner drawers are distributed within a group height specified by the user",
+      "shortName": "Defined Group Height",
+      "matrix": []
+    },
+    {
+      "value": "FixedSpacing",
+      "description": "The interior drawers are arranged at a fixed distance from one another",
+      "shortName": "Fixed Spacing",
+      "matrix": []
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+[
+  {
+    "tableName": "tab_HandleConstruction",
+    "columnId": "Rotation",
+    "enumsJson": [
+      {
+        "value": "0",
+        "description": "0 degree",
+        "imageId": "a1c961bf-ea41-42d3-8d28-f79a5b892fee:0_Grad.png"
+      },
+      {
+        "value": "90",
+        "description": "90 degree",
+        "imageId": "3f369c32-c66b-41f9-8fdc-37ba0113081e:90_Grad.png"
+      },
+      {
+        "value": "180",
+        "description": "180 degree",
+        "imageId": "6ca2b81b-f368-45d2-9f57-0328b0db5fce:180_Grad.png"
+      },
+      {
+        "value": "270",
+        "description": "270 degree",
+        "imageId": "6b26b227-f7d9-48fb-be08-3e85d9428f6c:270_Grad.png"
+      }
+    ]
+  },
+  {
+    "tableName": "tab_HandleConstruction",
+    "columnId": "in_HandlePosHorizontal",
+    "refCustomTableName": "tab_HandleSettings",
+    "refColumnId": "ReferencePointX"
+  },
+  {
+    "tableName": "tab_HandleConstruction",
+    "columnId": "in_HandlePosVertical",
+    "refCustomTableName": "tab_HandleSettings",
+    "refColumnId": "ReferencePointY"
+  }
+]

@@ -1,0 +1,242 @@
+[
+  {
+    "tableName": "tab_DoorSettings",
+    "columnId": "DoorQty",
+    "enumsJson": [
+      {
+        "value": "1",
+        "description": "Single door"
+      },
+      {
+        "value": "2",
+        "description": "Double door"
+      }
+    ]
+  },
+  {
+    "tableName": "tab_DoorSettings",
+    "columnId": "FirstDoorDirection",
+    "enumsJson": [
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Left",
+        "description": "Door left hinged"
+      },
+      {
+        "value": "Right",
+        "description": "Door right hinged"
+      }
+    ]
+  },
+  {
+    "tableName": "tab_DoorSettings",
+    "columnId": "RealDoorDirection",
+    "refColumnId": "Value"
+  },
+  {
+    "tableName": "tab_DoorSettings",
+    "columnId": "RealDoorType",
+    "refColumnId": "Value"
+  },
+  {
+    "tableName": "tab_DoorSettings",
+    "columnId": "SecondDoorDirection",
+    "enumsJson": [
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Left",
+        "description": "Door left hinged"
+      },
+      {
+        "value": "Right",
+        "description": "Door right hinged"
+      },
+      {
+        "value": "NotNecessary",
+        "description": "No Door available"
+      }
+    ]
+  },
+  {
+    "tableName": "tab_DoorSettings",
+    "columnId": "VertDividerType",
+    "enumsJson": [
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "NoVertDivider",
+        "description": "No vertical divider needed"
+      },
+      {
+        "value": "MiddleSide",
+        "description": "Side panel middle as a vertical divider (Touch the backwall)"
+      },
+      {
+        "value": "Cleat",
+        "description": "Cleat as a vertical divider"
+      },
+      {
+        "value": "DustStripRight",
+        "description": "Dust strip on the right door as a vertical divider"
+      },
+      {
+        "value": "DustStripLeft",
+        "description": "Dust strip on the left door as a vertical divider"
+      },
+      {
+        "value": "MiddleSideShort",
+        "description": "Side panel middle as a vertical divider (Does not touch the backwall)"
+      }
+    ]
+  },
+  {
+    "tableName": "tab_DoorSettings",
+    "columnId": "in_CabinetType",
+    "enumsJson": [
+      {
+        "value": "mr_StorageunitSingle",
+        "description": "Root module for storage unit single"
+      },
+      {
+        "value": "mr_CornerunitStraight",
+        "description": "Root module for corner unit straight"
+      },
+      {
+        "value": "mr_StorageunitEndless",
+        "description": "Root module for endless storage unit"
+      },
+      {
+        "value": "All",
+        "description": "With this setting, all cabinet types are permitted"
+      },
+      {
+        "value": "mr_Filler01",
+        "description": "Root module for filler"
+      }
+    ]
+  },
+  {
+    "tableName": "tab_DoorSettings",
+    "columnId": "in_FrontColor",
+    "enumsJson": [
+      {
+        "value": "Demoblue",
+        "description": "Demo color blue"
+      },
+      {
+        "value": "Demogreen",
+        "description": "Demo color green"
+      },
+      {
+        "value": "Demored",
+        "description": "Demo color red"
+      },
+      {
+        "value": "Demowhite",
+        "description": "Demo color white"
+      },
+      {
+        "value": "Demobeech",
+        "description": "Demo color beech"
+      },
+      {
+        "value": "Demomaple",
+        "description": "Demo color maple"
+      },
+      {
+        "value": "Demooak",
+        "description": "Demo color oak"
+      },
+      {
+        "value": "All",
+        "description": "With this setting, all front colors are permitted"
+      }
+    ]
+  },
+  {
+    "tableName": "tab_DoorSettings",
+    "columnId": "in_FrontDesign",
+    "enumsJson": [
+      {
+        "value": "FlatPanel",
+        "description": "Flat panel front elements"
+      },
+      {
+        "value": "WoodFrame",
+        "description": "Wood frame front elements"
+      },
+      {
+        "value": "AluminiumFrame",
+        "description": "Aluminium frame front elements"
+      },
+      {
+        "value": "ThermoformedFrame",
+        "description": "Thermoformed frame front elements"
+      },
+      {
+        "value": "SegmentGlass",
+        "description": "Segment glass front elements"
+      },
+      {
+        "value": "WoodFrameCrossBar01",
+        "description": "Wood frame front elements with cross bars 01"
+      },
+      {
+        "value": "All",
+        "description": "With this setting, all front designs are permitted"
+      }
+    ]
+  },
+  {
+    "tableName": "tab_DoorSettings",
+    "columnId": "in_TypeElement",
+    "enumsJson": [
+      {
+        "value": "BaseUnit",
+        "description": "Base units for storage"
+      },
+      {
+        "value": "BaseUnitSink",
+        "description": "Base units for sink integration"
+      },
+      {
+        "value": "BaseUnitAppliance",
+        "description": "Base units for appliance integration"
+      },
+      {
+        "value": "WallUnit",
+        "description": "Wall units for storage"
+      },
+      {
+        "value": "TallUnit",
+        "description": "Tall units for storage"
+      },
+      {
+        "value": "TallUnitAppliance",
+        "description": "Tall units for appliance integration"
+      },
+      {
+        "value": "All",
+        "description": "With this setting, all element types are permitted"
+      },
+      {
+        "value": "Filler",
+        "description": "Filler"
+      }
+    ]
+  }
+]

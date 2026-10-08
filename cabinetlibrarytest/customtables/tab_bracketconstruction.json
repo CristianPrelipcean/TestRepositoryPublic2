@@ -1,0 +1,618 @@
+{
+  "tableName": "tab_BracketConstruction",
+  "description": "Shelf Bracket construction",
+  "restrictionTypeId": "Public",
+  "groupName": "Brackets",
+  "columns": [
+    {
+      "name": "_id",
+      "type": "Integer",
+      "allowNull": false
+    },
+    {
+      "name": "in_ConstructionId",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_ShelfThk",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "in_ShelfDepthMin",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "in_ShelfDepthMax",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "in_ShelfLenghtMin",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "in_ShelfLenghtMax",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "BracketNo",
+      "type": "Integer",
+      "allowNull": false
+    },
+    {
+      "name": "Position1",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "Position2",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "Position3",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "Position4",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "Position5",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "Position6",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "TestColumn",
+      "type": "Text",
+      "allowNull": true,
+      "functionDefinition": "(m: any):number|undefined"
+    }
+  ],
+  "rows": [
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionId",
+          "value": "brARRAS5"
+        },
+        {
+          "columnName": "in_ShelfThk",
+          "value": "19"
+        },
+        {
+          "columnName": "in_ShelfDepthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_ShelfDepthMax",
+          "value": "400"
+        },
+        {
+          "columnName": "in_ShelfLenghtMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_ShelfLenghtMax",
+          "value": "900"
+        },
+        {
+          "columnName": "BracketNo",
+          "value": "2"
+        },
+        {
+          "columnName": "Position1",
+          "value": "50"
+        },
+        {
+          "columnName": "Position2",
+          "value": "this.mod_Width-50"
+        },
+        {
+          "columnName": "Position3",
+          "value": ""
+        },
+        {
+          "columnName": "Position4",
+          "value": ""
+        },
+        {
+          "columnName": "Position5",
+          "value": ""
+        },
+        {
+          "columnName": "Position6",
+          "value": ""
+        },
+        {
+          "columnName": "TestColumn"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionId",
+          "value": "brARRAS5"
+        },
+        {
+          "columnName": "in_ShelfThk",
+          "value": "19"
+        },
+        {
+          "columnName": "in_ShelfDepthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_ShelfDepthMax",
+          "value": "400"
+        },
+        {
+          "columnName": "in_ShelfLenghtMin",
+          "value": "901"
+        },
+        {
+          "columnName": "in_ShelfLenghtMax",
+          "value": "1650"
+        },
+        {
+          "columnName": "BracketNo",
+          "value": "3"
+        },
+        {
+          "columnName": "Position1",
+          "value": "50"
+        },
+        {
+          "columnName": "Position2",
+          "value": "this.mod_Width/2"
+        },
+        {
+          "columnName": "Position3",
+          "value": "this.mod_Width-50"
+        },
+        {
+          "columnName": "Position4",
+          "value": ""
+        },
+        {
+          "columnName": "Position5",
+          "value": ""
+        },
+        {
+          "columnName": "Position6",
+          "value": ""
+        },
+        {
+          "columnName": "TestColumn"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionId",
+          "value": "brARRAS5"
+        },
+        {
+          "columnName": "in_ShelfThk",
+          "value": "19"
+        },
+        {
+          "columnName": "in_ShelfDepthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_ShelfDepthMax",
+          "value": "400"
+        },
+        {
+          "columnName": "in_ShelfLenghtMin",
+          "value": "1651"
+        },
+        {
+          "columnName": "in_ShelfLenghtMax",
+          "value": "2400"
+        },
+        {
+          "columnName": "BracketNo",
+          "value": "4"
+        },
+        {
+          "columnName": "Position1",
+          "value": "50"
+        },
+        {
+          "columnName": "Position2",
+          "value": "this.mod_Width/3"
+        },
+        {
+          "columnName": "Position3",
+          "value": "this.mod_Width/3*2"
+        },
+        {
+          "columnName": "Position4",
+          "value": "this.mod_Width-50"
+        },
+        {
+          "columnName": "Position5",
+          "value": ""
+        },
+        {
+          "columnName": "Position6",
+          "value": ""
+        },
+        {
+          "columnName": "TestColumn"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionId",
+          "value": "brARRAS5"
+        },
+        {
+          "columnName": "in_ShelfThk",
+          "value": "19"
+        },
+        {
+          "columnName": "in_ShelfDepthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_ShelfDepthMax",
+          "value": "400"
+        },
+        {
+          "columnName": "in_ShelfLenghtMin",
+          "value": "2401"
+        },
+        {
+          "columnName": "in_ShelfLenghtMax",
+          "value": "2900"
+        },
+        {
+          "columnName": "BracketNo",
+          "value": "5"
+        },
+        {
+          "columnName": "Position1",
+          "value": "50"
+        },
+        {
+          "columnName": "Position2",
+          "value": "this.mod_Width/4"
+        },
+        {
+          "columnName": "Position3",
+          "value": "this.mod_Width/2"
+        },
+        {
+          "columnName": "Position4",
+          "value": "this.mod_Width/4*3"
+        },
+        {
+          "columnName": "Position5",
+          "value": "this.mod_Width-50"
+        },
+        {
+          "columnName": "Position6",
+          "value": ""
+        },
+        {
+          "columnName": "TestColumn"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionId",
+          "value": "brTucano"
+        },
+        {
+          "columnName": "in_ShelfThk",
+          "value": "19"
+        },
+        {
+          "columnName": "in_ShelfDepthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_ShelfDepthMax",
+          "value": "400"
+        },
+        {
+          "columnName": "in_ShelfLenghtMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_ShelfLenghtMax",
+          "value": "600"
+        },
+        {
+          "columnName": "BracketNo",
+          "value": "2"
+        },
+        {
+          "columnName": "Position1",
+          "value": "50"
+        },
+        {
+          "columnName": "Position2",
+          "value": "this.mod_Width-50"
+        },
+        {
+          "columnName": "Position3",
+          "value": ""
+        },
+        {
+          "columnName": "Position4",
+          "value": ""
+        },
+        {
+          "columnName": "Position5",
+          "value": ""
+        },
+        {
+          "columnName": "Position6",
+          "value": ""
+        },
+        {
+          "columnName": "TestColumn"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionId",
+          "value": "brTucano"
+        },
+        {
+          "columnName": "in_ShelfThk",
+          "value": "19"
+        },
+        {
+          "columnName": "in_ShelfDepthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_ShelfDepthMax",
+          "value": "400"
+        },
+        {
+          "columnName": "in_ShelfLenghtMin",
+          "value": "601"
+        },
+        {
+          "columnName": "in_ShelfLenghtMax",
+          "value": "1100"
+        },
+        {
+          "columnName": "BracketNo",
+          "value": "3"
+        },
+        {
+          "columnName": "Position1",
+          "value": "50"
+        },
+        {
+          "columnName": "Position2",
+          "value": "this.mod_Width/2"
+        },
+        {
+          "columnName": "Position3",
+          "value": "this.mod_Width-50"
+        },
+        {
+          "columnName": "Position4",
+          "value": ""
+        },
+        {
+          "columnName": "Position5",
+          "value": ""
+        },
+        {
+          "columnName": "Position6",
+          "value": ""
+        },
+        {
+          "columnName": "TestColumn"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionId",
+          "value": "brTucano"
+        },
+        {
+          "columnName": "in_ShelfThk",
+          "value": "19"
+        },
+        {
+          "columnName": "in_ShelfDepthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_ShelfDepthMax",
+          "value": "400"
+        },
+        {
+          "columnName": "in_ShelfLenghtMin",
+          "value": "1101"
+        },
+        {
+          "columnName": "in_ShelfLenghtMax",
+          "value": "1800"
+        },
+        {
+          "columnName": "BracketNo",
+          "value": "4"
+        },
+        {
+          "columnName": "Position1",
+          "value": "50"
+        },
+        {
+          "columnName": "Position2",
+          "value": "this.mod_Width/3"
+        },
+        {
+          "columnName": "Position3",
+          "value": "this.mod_Width/3*2"
+        },
+        {
+          "columnName": "Position4",
+          "value": "this.mod_Width-50"
+        },
+        {
+          "columnName": "Position5",
+          "value": ""
+        },
+        {
+          "columnName": "Position6",
+          "value": ""
+        },
+        {
+          "columnName": "TestColumn"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionId",
+          "value": "brTucano"
+        },
+        {
+          "columnName": "in_ShelfThk",
+          "value": "19"
+        },
+        {
+          "columnName": "in_ShelfDepthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_ShelfDepthMax",
+          "value": "300"
+        },
+        {
+          "columnName": "in_ShelfLenghtMin",
+          "value": "1801"
+        },
+        {
+          "columnName": "in_ShelfLenghtMax",
+          "value": "2500"
+        },
+        {
+          "columnName": "BracketNo",
+          "value": "5"
+        },
+        {
+          "columnName": "Position1",
+          "value": "50"
+        },
+        {
+          "columnName": "Position2",
+          "value": "this.mod_Width/4"
+        },
+        {
+          "columnName": "Position3",
+          "value": "this.mod_Width/2"
+        },
+        {
+          "columnName": "Position4",
+          "value": "this.mod_Width/4"
+        },
+        {
+          "columnName": "Position5",
+          "value": "this.mod_Width-50"
+        },
+        {
+          "columnName": "Position6",
+          "value": ""
+        },
+        {
+          "columnName": "TestColumn"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionId",
+          "value": "brTucano"
+        },
+        {
+          "columnName": "in_ShelfThk",
+          "value": "19"
+        },
+        {
+          "columnName": "in_ShelfDepthMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_ShelfDepthMax",
+          "value": "400"
+        },
+        {
+          "columnName": "in_ShelfLenghtMin",
+          "value": "2501"
+        },
+        {
+          "columnName": "in_ShelfLenghtMax",
+          "value": "2900"
+        },
+        {
+          "columnName": "BracketNo",
+          "value": "6"
+        },
+        {
+          "columnName": "Position1",
+          "value": "50"
+        },
+        {
+          "columnName": "Position2",
+          "value": "this.mod_Width/5"
+        },
+        {
+          "columnName": "Position3",
+          "value": "this.mod_Width/5*2"
+        },
+        {
+          "columnName": "Position4",
+          "value": "this.mod_Width/5*3"
+        },
+        {
+          "columnName": "Position5",
+          "value": "this.mod_Width/5*4"
+        },
+        {
+          "columnName": "Position6",
+          "value": "this.mod_Width-50"
+        },
+        {
+          "columnName": "TestColumn",
+          "value": "m.mod_Width-50"
+        }
+      ]
+    }
+  ]
+}

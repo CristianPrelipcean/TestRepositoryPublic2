@@ -1,0 +1,61 @@
+{
+  "moduleId": "mc_InnerDrawerFront01",
+  "shortName": "Inner Drawer Front",
+  "configurable": false,
+  "isRoot": false,
+  "isConfigDummy": false,
+  "isGroupOrchestrator": false,
+  "isDropContainer": false,
+  "description": "Construction module for inner drawer front",
+  "groupName": "InnerDrawer",
+  "imageId": "993f4718-facd-47be-9f28-ce8e9ddda75b:mc_InnerdrawerFront.png",
+  "restrictionTypeId": "Internal",
+  "childModules": [],
+  "assignedVariants": [
+    {
+      "variantId": "mod_Information",
+      "default": "",
+      "previewValue": "",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_InnerDrawerFrontGapBottom",
+      "previewValue": "2",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_CarcaseColor",
+      "previewValue": "152",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_FrontId",
+      "default": "",
+      "previewValue": "",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_InnerDrawerFrontColor",
+      "defaultScript": "this.mod_CarcaseColor",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_InnerDrawerId",
+      "default": "",
+      "previewValue": "",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_InnerDrawerFrontGapTop",
+      "previewValue": "2",
+      "origin": "Derived"
+    }
+  ],
+  "assignedParts": [
+    {
+      "partCode": "part_InnerDrawerFront"
+    }
+  ],
+  "assignedCustomTables": [],
+  "assignedFunctions": []
+}
