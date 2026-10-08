@@ -4,7 +4,7 @@
   "description": "Leg for plinth area",
   "wdt": "XYZ",
   "groupName": "Hardware",
-  "imageId": "13e3c337-98c2-4143-80e4-28d19ed61790:Leg.png",
+  "imageId": "bd5b893d-1cf0-448a-b87c-013e9cdfb786:Leg.png",
   "model3dImageId": "",
   "invisible": false,
   "restrictionTypeId": "Public",
@@ -25,7 +25,7 @@
     {
       "bomElementTypeId": "bomout_Group",
       "description": "Add all the elements for the leg to BOM",
-      "conditionScript": "partSelf._g?.basic_CreateBom == 'Library'",
+      "conditionScript": "partSelf._g?.basic_CreateHardwareBom == 'Library'",
       "valueScript": "// Type of the Bom-Element (will be checked in order output)\n  let elementType='Hardware';\n\n  // ProductionSite Category (to split the orders for different production sites)\n  let elementCategory='';\n\n  // Id of the parent to create the hierarchy\n  let parentBomId=part.pa_ParentName;\n\n  // Call the function to process the Bom-Element\n  GlobalFunc.process_HardwareBom(this, part, elementType, elementCategory, parentBomId, part.pa_HardwareId)"
     }
   ],

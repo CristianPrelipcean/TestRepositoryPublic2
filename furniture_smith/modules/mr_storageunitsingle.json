@@ -5,7 +5,7 @@
   "isRoot": true,
   "description": "Module for storage unit",
   "groupName": "Root",
-  "imageId": "da893b2e-65aa-4e54-b374-2ec7c1d4da21:Partgroup.png",
+  "imageId": "d0a68c74-62e2-4d4a-ba90-89ea74d3adc5:Partgroup.png",
   "restrictionTypeId": "Public",
   "childModules": [
     {
@@ -51,7 +51,10 @@
       "moduleId": "md_FrontPlaceholder"
     },
     {
-      "moduleId": "mc_Filler01"
+      "moduleId": "mc_FillerStraight01"
+    },
+    {
+      "moduleId": "mc_Upright01"
     }
   ],
   "assignedVariants": [
@@ -201,7 +204,7 @@
     },
     {
       "variantId": "mod_CarcaseEdgeFrontColor",
-      "defaultScript": "this.mod_FrontColor",
+      "defaultScript": "this.mod_CarcaseColor",
       "origin": "Default"
     },
     {
@@ -688,23 +691,19 @@
     },
     {
       "variantId": "mod_GlobalFrontOversizeLeft",
-      "default": "0",
-      "origin": "Default"
+      "origin": "GlobalVar"
     },
     {
       "variantId": "mod_GlobalFrontOversizeRight",
-      "default": "0",
-      "origin": "Default"
+      "origin": "GlobalVar"
     },
     {
       "variantId": "mod_GlobalFrontOversizeTop",
-      "default": "0",
-      "origin": "Default"
+      "origin": "GlobalVar"
     },
     {
       "variantId": "mod_GlobalFrontOversizeBtm",
-      "default": "0",
-      "origin": "Default"
+      "origin": "GlobalVar"
     },
     {
       "variantId": "mod_CreateBacksplash",
@@ -763,6 +762,66 @@
     {
       "variantId": "mod_CarcaseOverdimensionBackLogic",
       "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_ModuleContextInformationList",
+      "default": "",
+      "previewValue": "",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_AutomaticHeightAdjustment",
+      "default": "false",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_CarcaseVisLeftAutomaticType",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_CarcaseVisRightAutomaticType",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_CarcaseCeilingDistance",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_PlacementLevels",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_HeightInputMode",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_CarcaseHeight",
+      "default": "0",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_UprightThk",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_WallHeightLines",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_UseGroupHeight",
+      "default": "false",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_GroupHeight",
+      "default": "1500",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_GroupGenerationStatus",
+      "default": "",
+      "previewValue": "",
+      "origin": "Default"
     }
   ],
   "assignedParts": [],

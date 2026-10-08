@@ -5,13 +5,14 @@
   "description": "Define the design of the clothing organizer type",
   "restrictionTypeId": "Public",
   "groupName": "ClothingOrganizer",
-  "imageId": "",
+  "imageId": "9d92a7e5-866a-45d6-b1ed-55131ed6708a:ClothingOrganizerDesign.png",
   "isArray": false,
   "isPosRelevant": true,
   "mainAttr": false,
-  "userRight": "Simple",
+  "userRight": "Master",
   "implicitRelevant": false,
-  "posView": "Dropdown",
+  "posView": "ImageSmall",
+  "sorting": 2,
   "matrix": [
     {
       "id": "Board",
@@ -22,70 +23,60 @@
   ],
   "selections": [
     {
-      "value": "CONERO",
-      "description": "CONERO",
-      "shortName": "CONERO",
-      "matrix": [
-        {
-          "id": "Board",
-          "value": false
-        }
-      ]
+      "value": "None",
+      "description": "None",
+      "shortName": "None",
+      "imageId": "e16f0b53-faa0-4ac0-881f-62edd59c9597:None.png",
+      "matrix": []
     },
     {
-      "value": "CONEROTOP",
-      "description": "CONEROTOP",
-      "shortName": "CONEROTOP",
-      "matrix": [
-        {
-          "id": "Board",
-          "value": true
-        }
-      ]
+      "value": "ConeroLift",
+      "description": "Conero Lift",
+      "shortName": "Conero Lift",
+      "imageId": "3a0a9421-43cf-4334-aa29-4ea817be0224:WardrobeLift.png",
+      "matrix": []
     },
     {
-      "value": "SideRail",
-      "description": "SideRail",
-      "shortName": "SideRail",
-      "matrix": [
-        {
-          "id": "Board",
-          "value": false
-        }
-      ]
+      "value": "ConeroLift_445–628mm",
+      "description": "Kleiderlift, Kesseböhmer Conero - lichte Schrankbreite 445–628 mm",
+      "shortName": "Kleiderlift, Kesseböhmer Conero - lichte Schrankbreite 445–628 mm",
+      "imageId": "3a0a9421-43cf-4334-aa29-4ea817be0224:WardrobeLift.png",
+      "matrix": []
     },
     {
-      "value": "ShelfRail",
-      "description": "ShelfRail",
-      "shortName": "ShelfRail",
-      "matrix": [
-        {
-          "id": "Board",
-          "value": false
-        }
-      ]
+      "value": "ConeroTrouser",
+      "description": "Conero Trouser",
+      "shortName": "Conero Trouser",
+      "imageId": "0f8ee754-3b03-45e6-91b5-54e59234109f:TrouserRack.png",
+      "matrix": []
     },
     {
-      "value": "CONERO BASIC TROUSERS",
-      "description": "CONERO BASIC TROUSERS",
-      "shortName": "CONERO BASIC TROUSERS",
-      "matrix": [
-        {
-          "id": "Board",
-          "value": false
-        }
-      ]
+      "value": "ConeroTie",
+      "description": "Conero Tie",
+      "shortName": "Conero Tie",
+      "imageId": "99b598b8-5634-410f-81a2-8e4711d4d05e:TieRack.png",
+      "matrix": []
     },
     {
-      "value": "CONERO BASIC TROUSERS SMALL",
-      "description": "CONERO BASIC TROUSERS",
-      "shortName": "CONERO BASIC TROUSERS",
-      "matrix": [
-        {
-          "id": "Board",
-          "value": false
-        }
-      ]
+      "value": "PulloutMirror_1155mm",
+      "description": "Pullout mirror height=1155mm",
+      "shortName": "Pullout mirror height=1155mm",
+      "imageId": "fd3659a2-2481-408f-b2aa-a11cdbcff98c:MirrorPullout.png",
+      "matrix": []
+    },
+    {
+      "value": "JewelleryDrawer",
+      "description": "Jewellery drawer",
+      "shortName": "Jewellery drawer",
+      "imageId": "93614b03-6b58-4b26-96d3-4c041089f4f5:JewelleryDrawer.png",
+      "matrix": []
+    },
+    {
+      "value": "ClothingRail",
+      "description": "Clothing Rail",
+      "shortName": "ClothingRail",
+      "imageId": "5788c03f-e083-4d62-b544-addee56a0c9e:Hangers.png",
+      "matrix": []
     }
   ]
 }

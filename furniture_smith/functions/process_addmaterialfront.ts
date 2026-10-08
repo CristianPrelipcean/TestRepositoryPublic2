@@ -4,8 +4,8 @@ process_AddMaterialFront(
   Category: string,
   Grain: string,
   EdgeColor: string = 'None',
-  FrameMitre: boolean = false,
   FillingColor: string = 'None',
+  SvgBased: boolean = false
 ) {
 
   // Initialize variables, interfaces and types
@@ -36,7 +36,14 @@ process_AddMaterialFront(
       const Rotation = grainDirection === 'Crosswise' ? 0 : 90;
 
       // Add the colors
-      addAllColors(EdgeMaterialId, 90, EdgeMaterialId, 90, MainMaterialId, Rotation, MainMaterialId, Rotation, EdgeMaterialId, 0, EdgeMaterialId, 0);
+      if (!SvgBased) {
+        addAllColors(EdgeMaterialId, 90, EdgeMaterialId, 90, MainMaterialId, Rotation, MainMaterialId, Rotation, EdgeMaterialId, 0, EdgeMaterialId, 0);
+      }
+      else {
+        addShapeColors(MainMaterialId, MainMaterialId, EdgeMaterialId, Rotation);
+      }
+      
+      
     
     }
 
@@ -91,12 +98,13 @@ process_AddMaterialFront(
       const Rotation = grainDirection === 'Crosswise' ? 0 : 90;
 
       // Add the colors
-	  if(!FrameMitre){
-		addAllColors(EdgeMaterialId, 90, EdgeMaterialId, 90, MainMaterialId, Rotation, MainMaterialId, Rotation, EdgeMaterialId, 0, EdgeMaterialId, 0);
-	  }
-	  else{
-		addShapeColors(MainMaterialId, MainMaterialId, EdgeMaterialId, Rotation);
-	  }   
+      //if(!FrameMitre){
+      if(!SvgBased){
+        addAllColors(EdgeMaterialId, 90, EdgeMaterialId, 90, MainMaterialId, Rotation, MainMaterialId, Rotation, EdgeMaterialId, 0, EdgeMaterialId, 0);
+      }
+      else{
+        addShapeColors(MainMaterialId, MainMaterialId, EdgeMaterialId, Rotation);
+      }   
     }
 
 	  // Horizontal frame parts
@@ -114,12 +122,13 @@ process_AddMaterialFront(
       const Rotation = grainDirection === 'Lengthwise' ? 0 : 90;
 
       // Add the colors
-	  if(!FrameMitre){
-		addAllColors(EdgeMaterialId, 90, EdgeMaterialId, 90, MainMaterialId, Rotation, MainMaterialId, Rotation, EdgeMaterialId, 0, EdgeMaterialId, 0);
-	  }
-	  else{
-		addShapeColors(MainMaterialId, MainMaterialId, EdgeMaterialId, Rotation);
-	  }      
+      //if (!FrameMitre) {
+      if (!SvgBased){
+        addAllColors(EdgeMaterialId, 90, EdgeMaterialId, 90, MainMaterialId, Rotation, MainMaterialId, Rotation, EdgeMaterialId, 0, EdgeMaterialId, 0);
+      }
+      else{
+        addShapeColors(MainMaterialId, MainMaterialId, EdgeMaterialId, Rotation);
+      }      
     }
 
 	  // Filling parts

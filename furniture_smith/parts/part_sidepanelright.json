@@ -4,7 +4,7 @@
   "description": "Sidepanel right",
   "wdt": "YZX",
   "groupName": "Panels",
-  "imageId": "089d37a6-eafb-45f2-a901-291004e15c4a:Sidepanel_Right.png",
+  "imageId": "1329be50-95c6-4d00-8a24-1d0005a9ef0e:Sidepanel_Right.png",
   "invisible": false,
   "restrictionTypeId": "Public",
   "noNcData": false,
@@ -231,10 +231,10 @@
   ],
   "bomData": [
     {
-      "bomElementTypeId": "bomout_Board",
-      "description": "Output Parts / Boards",
-      "conditionScript": "partSelf._g?.basic_CreateBom == 'Library'",
-      "valueScript": "// Type of the Bom-Element (will be checked in order output)\nlet elementType='Board';\n\n// ProductionSite Category (to split the orders for different production sites)\nlet elementCategory='';\n\n// Id of the parent to create the hierarchy\nlet parentBomId=part.pa_BomId;\n\n// Call the function to process the Bom-Element\nGlobalFunc.process_BoardBom(this, part, elementType, elementCategory, parentBomId);"
+      "bomElementTypeId": "bomout_Group",
+      "description": "Output parts / edges / stockparts in relation to the basic_CreateBom setting",
+      "conditionScript": "partSelf._g?.basic_CreateBom != null && partSelf._g.basic_CreateBom !== 'Custom'",
+      "valueScript": "// Type of the Bom-Element (will be checked in order output)\n  const elementType='Board';\n\n  // ProductionSite Category (to split the orders for different production sites)\n  const elementCategory='';\n\n  // Id of the parent to create the hierarchy\n  const parentBomId=part.pa_BomId;\n\n  // Mode from basic setting\n  const Mode = partSelf._g?.basic_CreateBom  ? partSelf._g.basic_CreateBom : 'SimpleBoard';\n\n  // Call the function to process the Bom-Element\n  GlobalFunc.process_BomGeneration(this, part, elementType, elementCategory, parentBomId, Mode, 'Carcase');"
     }
   ],
   "ncData": [

@@ -83,6 +83,8 @@
 		.set(CONTOUR_ATTRIBUTE_OWNER_ID, this._id)
 		.set(CONTOUR_ATTRIBUTE_OWNER_TYPE, mr_CornerunitStraight)
 		.set(CONTOUR_ATTRIBUTE_CORNER_CONTOUR_TYPE, CONTOUR_ATTRIBUTE_CORNER_CONTOUR_TYPE_STRAIGHT)
+		.set('mod_CeilingFillerConstruction', this.mod_CeilingFillerConstruction ?? this.g.basic_CeilingFillerConstruction)
+		.set('mod_CeilingFillerHeight', this.mod_CeilingFillerHeight ?? this.g.basic_CeilingFillerHeight)
 		;
 
 
@@ -109,6 +111,8 @@
 		.set(CONTOUR_ATTRIBUTE_OWNER_ID, this._id)
 		.set(CONTOUR_ATTRIBUTE_OWNER_TYPE, mr_CornerunitStraight)
 		.set(CONTOUR_ATTRIBUTE_CORNER_CONTOUR_TYPE, CONTOUR_ATTRIBUTE_CORNER_CONTOUR_TYPE_PERPENDICULAR)
+		.set('mod_CeilingFillerConstruction', this.mod_CeilingFillerConstruction ?? this.g.basic_CeilingFillerConstruction)
+		.set('mod_CeilingFillerHeight', this.mod_CeilingFillerHeight ?? this.g.basic_CeilingFillerHeight)
 		;
 
 	if (this.mod_CreateCountertop) {

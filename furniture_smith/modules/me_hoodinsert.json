@@ -4,13 +4,14 @@
   "configurable": true,
   "isRoot": false,
   "isConfigDummy": false,
+  "isDropContainer": false,
   "description": "Shelf in the Inside of a Hood Cabinet",
-  "groupName": "Hood",
-  "imageId": "",
+  "groupName": "Appliance",
+  "imageId": "03315386-279b-4b1b-9a5e-a09da674d335:HoodInsert.png",
   "restrictionTypeId": "Public",
   "childModules": [
     {
-      "moduleId": "mc_HoodInsert01"
+      "moduleId": "mc_ApplianceGraphic"
     }
   ],
   "assignedVariants": [
@@ -113,6 +114,22 @@
       "variantId": "mod_SidepanelleftThk",
       "previewValue": "18",
       "origin": "Derived"
+    },
+    {
+      "variantId": "mod_HoodIntegrationType",
+      "default": "Automatic",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_HoodConstructionType",
+      "default": "Automatic",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_HoodInformation",
+      "default": "",
+      "previewValue": "",
+      "origin": "Default"
     }
   ],
   "assignedParts": [],

@@ -1,10 +1,12 @@
-find_ShelfadjSettings(CarcaseColor:string, FrontDesign:string, FrontProgram:string, ShelfadjType:string, CarcaseSpaceWidth: number, CarcaseSpaceDepth: number):ICT_tab_ShelfadjSettings{
+find_ShelfadjSettings(CarcaseColor:string, FrontDesign:string, FrontProgram:string, ShelfadjType:string, CarcaseSpaceWidth: number, CarcaseSpaceDepth: number, FrontModule:string, FrontModuleType:string):ICT_tab_ShelfadjSettings{
 
 	// Wildcard parameters
 	let WildcardParams: any = {	
 		in_CarcaseColor: CarcaseColor,
 		in_FrontDesign: FrontDesign,
-		in_FrontProgram: FrontProgram
+		in_FrontProgram: FrontProgram,
+		in_FrontModule: FrontModule,
+		in_FrontModuleType: FrontModuleType
 	};
 	
 	// Fixed parameters

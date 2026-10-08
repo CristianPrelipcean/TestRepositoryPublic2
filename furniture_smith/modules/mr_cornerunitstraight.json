@@ -5,7 +5,7 @@
   "isRoot": true,
   "description": "Module for corner unit straight",
   "groupName": "Root",
-  "imageId": "cff9663c-1003-4ac9-b6d0-3a7dc7690480:mr_CornerunitStraight.jpg",
+  "imageId": "d82d4708-6b8f-4077-89b7-bc0a55ecdffc:mr_CornerunitStraight.jpg",
   "restrictionTypeId": "Public",
   "childModules": [
     {
@@ -689,23 +689,19 @@
     },
     {
       "variantId": "mod_GlobalFrontOversizeLeft",
-      "default": "0",
-      "origin": "Default"
+      "origin": "GlobalVar"
     },
     {
       "variantId": "mod_GlobalFrontOversizeRight",
-      "default": "0",
-      "origin": "Default"
+      "origin": "GlobalVar"
     },
     {
       "variantId": "mod_GlobalFrontOversizeTop",
-      "default": "0",
-      "origin": "Default"
+      "origin": "GlobalVar"
     },
     {
       "variantId": "mod_GlobalFrontOversizeBtm",
-      "default": "0",
-      "origin": "Default"
+      "origin": "GlobalVar"
     },
     {
       "variantId": "mod_CreateBacksplash",
@@ -753,6 +749,14 @@
       "variantId": "mod_CreateCeilingFiller",
       "default": "false",
       "origin": "Default"
+    },
+    {
+      "variantId": "mod_CeilingFillerHeight",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_CeilingFillerConstruction",
+      "origin": "GlobalVar"
     }
   ],
   "assignedParts": [],

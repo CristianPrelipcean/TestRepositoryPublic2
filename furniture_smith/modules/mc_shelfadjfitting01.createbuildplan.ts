@@ -27,10 +27,16 @@
   const ObjectVertDivider = this.mod_ShelfadjVertDividerProcessingId;
 
   // Drilling lines on the sidepanels
-  const DrillingLinesSide = GlobalFunc.process_Descriptor(this.mod_ShelfadjSidepanelDrillDescriptor, this.mod_Depth);
+  let DrillingLinesSide: number[] = [];
+  if (this.mod_ShelfadjSidepanelDrillDescriptor != "N/a" && this.mod_ShelfadjSidepanelDrillDescriptor != "N/A") {
+    DrillingLinesSide = GlobalFunc.process_Descriptor(this.mod_ShelfadjSidepanelDrillDescriptor, this.mod_Depth);
+  }
 
   // Drilling lines on the backwall
-  const DrillingLinesBackwall = GlobalFunc.process_Descriptor(this.mod_ShelfadjBackwallDrillDescriptor, this.mod_Width);
+  let DrillingLinesBackwall: number[] = [];
+  if (this.mod_ShelfadjBackwallDrillDescriptor != "N/a" && this.mod_ShelfadjBackwallDrillDescriptor != "N/A") {
+    DrillingLinesBackwall = GlobalFunc.process_Descriptor(this.mod_ShelfadjBackwallDrillDescriptor, this.mod_Width);
+  }
 
   //===================================================
   //          Add the fitting parts
@@ -55,7 +61,10 @@
   });
 
   // Insert the fittings for the vertical divider
-  if (this.mod_VertDividerType == "Cleat" || this.mod_VertDividerType == "MiddleSideShort") {
+  if (this.mod_VertDividerType === "Cleat" || this.mod_VertDividerType === "MiddleSideShort") {
+    if (!ObjectVertDivider || ObjectVertDivider.toLowerCase() === 'n/a') {
+      return;
+    }
     InsertPart(this, 'Front', ObjectVertDivider, this.mod_VertDividerPosition);
   };
 
@@ -67,6 +76,7 @@
 
     // Variables
     let Elem: any;
+    let Drill: any;
 
     // process the data of the tables
     const HardwareObject = GlobalFunc.find_ObjectMapping(Object);
@@ -96,27 +106,36 @@
     // Left sidepanel
     if (Side == 'Left') {
       Elem = m.addpart_ShelfadjFitting(PosX, PosY, PosZ, DimX, DimY, DimZ);
+      Drill = m.addpart_ShelfAdjPinDrill(PosX, -1, position, DimX, 1, 1);
+      Drill.pa_ProcessingId = HardwareObject?.ProcessingItem ?? '';
     }
 
     // Right sidepanel
     else if (Side == 'Right') {
       Elem = m.addpart_ShelfadjFitting(m.mod_Width + PosX, PosY, PosZ, DimX, DimY, DimZ);
-      const partMatrix = PartHelper.rotateY(Elem!, 180, new Vector3(-PartOffsetX, 0, DimZ / 2));
-      Elem!.setMatrix(partMatrix);
+      Drill = m.addpart_ShelfAdjPinDrill(m.mod_Width + PosX, -1, position, DimX, 1, 1);
+      Drill.pa_ProcessingId = HardwareObject?.ProcessingItem ?? '';
+      const partMatrix = PartHelper.rotateY(Elem, 180, new Vector3(-PartOffsetX, 0, DimZ / 2));
+      Elem.setMatrix(partMatrix);
+      Drill.setMatrix(partMatrix);
     }
 
     // Backwall
     else if (Side == 'Back') {
       Elem = m.addpart_ShelfadjFitting(position + DimZ / 2, PosY, PartOffsetX, DimX, DimY, DimZ);
-      const partMatrix = PartHelper.rotateY(Elem!, 270, new Vector3(0, 0, 0));
-      Elem!.setMatrix(partMatrix);
+      Drill = m.addpart_ShelfAdjPinDrill(position, -1, 0, 1, 1, 20);
+      Drill.pa_ProcessingId = HardwareObject?.ProcessingItem ?? '';
+      const partMatrix = PartHelper.rotateY(Elem, 270, new Vector3(0, 0, 0));
+      Elem.setMatrix(partMatrix);
     }
 
     // Vertical divider
     else if (Side == 'Front') {
       Elem = m.addpart_ShelfadjFitting(position - DimZ / 2, PosY, m.mod_Depth - PartOffsetX, DimX, DimY, DimZ);
-      const partMatrix = PartHelper.rotateY(Elem!, 90, new Vector3(0, 0, 0));
-      Elem!.setMatrix(partMatrix);
+      Drill = m.addpart_ShelfAdjPinDrill(position, -1, m.mod_Depth - 20, 1, 1, 20);
+      Drill.pa_ProcessingId = HardwareObject?.ProcessingItem ?? '';
+      const partMatrix = PartHelper.rotateY(Elem, 90, new Vector3(0, 0, 0));
+      Elem.setMatrix(partMatrix);
     }
 
     // Add obj-File and assign to PartGroup

@@ -4,7 +4,7 @@
   "description": "Dust strip",
   "wdt": "XYZ",
   "groupName": "Hardware",
-  "imageId": "7099da6d-25d9-4c33-8168-3765e2ace1af:Duststrip_1.jpg",
+  "imageId": "caab876c-1e40-4027-9aad-9fe78e8ac948:Duststrip_1.jpg",
   "model3dImageId": "",
   "invisible": false,
   "restrictionTypeId": "Public",
@@ -25,7 +25,7 @@
     {
       "bomElementTypeId": "bomout_Group",
       "description": "Add the duststrip to BOM",
-      "conditionScript": "partSelf._g?.basic_CreateBom == 'Library'",
+      "conditionScript": "partSelf._g?.basic_CreateHardwareBom == 'Library'",
       "valueScript": "// Type of the Bom-Element (will be checked in order output)\n  let elementType='Hardware';\n\n  // ProductionSite Category (to split the orders for different production sites)\n  let elementCategory='';\n\n  // Id of the parent to create the hierarchy\n  let parentBomId=part.pa_ParentName;\n\n  // Call the function to process the Bom-Element\n  GlobalFunc.process_HardwareBom(this, part, elementType, elementCategory, parentBomId, part.pa_HardwareId)"
     }
   ],

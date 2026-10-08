@@ -4,7 +4,7 @@
   "description": "Vertical rail front",
   "wdt": "XYZ",
   "groupName": "Panels",
-  "imageId": "05ae4a89-b903-4bd5-b25d-67cd27cb18f4:RailTopFrontVert.jpg",
+  "imageId": "c2b83034-2c7c-4d71-a5b6-1290a9a10480:RailTopFrontVert.jpg",
   "invisible": false,
   "restrictionTypeId": "Public",
   "partVariants": [
@@ -130,10 +130,10 @@
   ],
   "bomData": [
     {
-      "bomElementTypeId": "bomout_Board",
-      "description": "Output Parts / Boards",
-      "conditionScript": "partSelf._g?.basic_CreateBom == 'Library'",
-      "valueScript": "// Type of the Bom-Element (will be checked in order output)\nlet elementType='Board';\n\n// ProductionSite Category (to split the orders for different production sites)\nlet elementCategory='';\n\n// Id of the parent to create the hierarchy\nlet parentBomId=part.pa_BomId;\n\n// Call the function to process the Bom-Element\nGlobalFunc.process_BoardBom(this, part, elementType, elementCategory, parentBomId)"
+      "bomElementTypeId": "bomout_Group",
+      "description": "Output parts / edges / stockparts in relation to the basic_CreateBom setting",
+      "conditionScript": "partSelf._g?.basic_CreateBom != null && partSelf._g.basic_CreateBom !== 'Custom'",
+      "valueScript": "// HOMAG Standard Bom-Generation-Method\r\n//=================================================\r\n\r\n// Type of the Bom-Element (will be checked in order output)\r\nconst elementType='Board';\r\n\r\n// ProductionSite Category (to split the orders for different production sites)\r\nconst elementCategory='';\r\n\r\n// Id of the parent to create the hierarchy\r\nconst parentBomId=part.pa_BomId;\r\n\r\n// Mode from basic setting\r\nconst Mode = partSelf._g?.basic_CreateBom  ? partSelf._g.basic_CreateBom : 'SimpleBoard';\r\n\r\n// Call the function to process the Bom-Element\r\nGlobalFunc.process_BomGeneration(this, part, elementType, elementCategory, parentBomId, Mode, 'Carcase');"
     }
   ],
   "ncData": [

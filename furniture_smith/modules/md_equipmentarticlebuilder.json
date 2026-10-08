@@ -4,9 +4,10 @@
   "configurable": true,
   "isRoot": true,
   "isConfigDummy": true,
+  "isDropContainer": false,
   "description": "Root module to build sub articles",
   "groupName": "Root",
-  "imageId": "",
+  "imageId": "35a94c79-4906-4bdc-9684-90aa3bdcb466:ArticleBuilder.png",
   "restrictionTypeId": "Public",
   "childModules": [
     {
@@ -14,12 +15,22 @@
     },
     {
       "moduleId": "me_ClothingOrganizer01"
+    },
+    {
+      "moduleId": "me_Vertdivider01"
+    },
+    {
+      "moduleId": "me_InnerDrawerGroup"
+    },
+    {
+      "moduleId": "me_Shelffixed01"
     }
   ],
   "assignedVariants": [
     {
       "variantId": "mod_CarcaseColor",
-      "origin": "GlobalVar"
+      "default": "178",
+      "origin": "Default"
     },
     {
       "variantId": "mod_CarcaseId",

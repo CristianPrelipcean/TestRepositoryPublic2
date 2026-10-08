@@ -1,5 +1,5 @@
 
-  // Schuler Consulting
+  // HOMAG Digital
   // Create: February 2024
   // By Henning Wiesbrock
   // Purpose: CabinetLibrary
@@ -11,150 +11,138 @@
   //
   // Revisions:
   // By Ludwig Weber
-  // Revision of the complete script
+  // July 2026
+  // Complete refactoring of the script
   //===================================================
 
   //===================================================
-  //          Calculations and definitions
+  // Calculations and definitions
   //===================================================
 
-  // Interface for the return values of the function process_ShelfadjPos
-  interface IShelfAdjInfo {
-    StartPosY: number[];
-    StartPosX: number;
-    StartPosZ: number;
-    ShelfThk: number;
-    ModuleType: string;
-    Color: string;
-    GrainGroupId: string;
-    DrillSettings: ICT_tab_ShelfadjDrillSettings;
-    DrillDistance: number;
-    QtyDrills: number;
-    Width: number;
-    Depth: number;
-    OffsetFront: number;
-    OffsetBack: number;
+  const adjShelfInfo = GlobalFunc.process_ShelfadjPos(this);
+
+  if (!adjShelfInfo.IsComplete) {
+    return;
   }
 
-  // Call function for process the adjustable shelves
-  let AdjShelfInfo: IShelfAdjInfo = GlobalFunc.process_ShelfadjPos(this);
+  const shelves = adjShelfInfo.StartPosY;
+  const settings = adjShelfInfo.DrillSettings;
 
-  //===================================================
-  //          Add the corresponding modules for adjustable shelves
-  //===================================================
+  if (!settings) {
+    return;
+  }
 
-  // Add the module for the adjustable shelves
-  if (AdjShelfInfo.StartPosY.length > 0) {
-    AdjShelfInfo.StartPosY.forEach((shelfPosY, index) => {
-
-      // Insert the specific adjustable shelf based on the module type
-      let Panel;
-
-      switch (AdjShelfInfo.ModuleType) {
-        case "Wood":
-          Panel = this.addOD_M_mc_ShelfadjWood01();
-          break;
-        case "Glass":
-          Panel = this.addOD_M_mc_ShelfadjGlass01();
-          break;
-        default:
-          logError(`Wrong ModuleID: ${AdjShelfInfo.ModuleType}`);
-          return;
-      }
-
-      // Move the module into the correct position
-      Panel.setOrigin(AdjShelfInfo.StartPosX, shelfPosY, AdjShelfInfo.StartPosZ);
-
-      // Set attributes of the child
-      Panel.mod_Width = AdjShelfInfo.Width;
-      Panel.mod_Depth = AdjShelfInfo.Depth;
-      Panel.mod_ShelfadjThk = AdjShelfInfo.ShelfThk;
-      Panel.mod_CarcaseId = this.mod_CarcaseId;
-      Panel.mod_ShelfadjColor = AdjShelfInfo.Color;
-    });
+  if (shelves.length === 0) {
+    return;
   }
 
   //===================================================
-  //          Add the module for the fittings
+  // Determine fitting and drilling area
   //===================================================
 
-  // Detect if there are fittings at backwall or front side
-  let startPosZ = AdjShelfInfo.StartPosZ;
-  let depthZ = AdjShelfInfo.Depth;
+  let startPosZ = adjShelfInfo.StartPosZ;
+  let depthZ = adjShelfInfo.Depth;
 
-  if (AdjShelfInfo.DrillSettings.ObjectBackwall == "N/a" && AdjShelfInfo.DrillSettings.ObjectVertDividerType != "N/a") {
-    startPosZ = AdjShelfInfo.StartPosZ;
-    depthZ = this.mod_Depth - AdjShelfInfo.StartPosZ;
+  const hasBackwall = !!settings.ObjectBackwall && settings.ObjectBackwall.trim().toLowerCase() !== "n/a";
+  const hasVertDivider = (this.mod_VertDividerType === "Cleat" || this.mod_VertDividerType === "MiddleSideShort") && !!settings.ObjectVertDividerType && settings.ObjectVertDividerType.toLowerCase() !== "n/a";
+
+  if (!hasBackwall && hasVertDivider) {
+    depthZ = this.mod_Depth - adjShelfInfo.StartPosZ;
   }
-  else if (AdjShelfInfo.DrillSettings.ObjectBackwall != "N/a" && AdjShelfInfo.DrillSettings.ObjectVertDividerType == "N/a") {
+  else if (hasBackwall && !hasVertDivider) {
     startPosZ = 0;
-    depthZ = AdjShelfInfo.Depth + AdjShelfInfo.StartPosZ;
+    depthZ = adjShelfInfo.Depth + adjShelfInfo.StartPosZ;
   }
-  else if (AdjShelfInfo.DrillSettings.ObjectBackwall != "N/a" && AdjShelfInfo.DrillSettings.ObjectVertDividerType != "N/a") {
+  else if (hasBackwall && hasVertDivider) {
     startPosZ = 0;
     depthZ = this.mod_Depth;
   }
 
-  // Cycle for each shelf add a module for fittings
-  if (AdjShelfInfo.StartPosY.length > 0) {
-    AdjShelfInfo.StartPosY.forEach((shelfPosY, index) => {
-
-      // Insert the module for the fittings
-      let Fitting = this.addOD_M_mc_ShelfadjFitting01();
-
-      // Move the module into the correct position
-      Fitting.setOrigin(0, shelfPosY, startPosZ);
-
-      // Set attributes of the child
-      Fitting.mod_Width = AdjShelfInfo.Width;
-      Fitting.mod_Depth = depthZ;
-      Fitting.mod_Height = AdjShelfInfo.ShelfThk;
-      Fitting.mod_CarcaseId = this.mod_CarcaseId;
-      Fitting.mod_VertDividerPosition = this.mod_VertDividerPosition;
-      assignDrillingAttributes(Fitting, AdjShelfInfo.DrillSettings, this);
-    });
-  }
-
   //===================================================
-  //          Add the module for the drillings
+  // Add shelves, fittings and grouped drillings
   //===================================================
 
-  // Full height drills
-  if (AdjShelfInfo.QtyDrills == 0) {
-    const Drillings = this.addOD_M_mc_ShelfadjDrill01();
-    Drillings.mod_Height = this.mod_Height - this.mod_ShelfadjDrillinglineOffsetBtm - this.mod_ShelfadjDrillinglineOffsetTop;
-    Drillings.mod_Width = this.mod_Width;
-    Drillings.mod_Depth = depthZ;
-    Drillings.setOrigin(0, this.mod_ShelfadjDrillinglineOffsetBtm, startPosZ);
-    assignDrillingAttributes(Drillings, AdjShelfInfo.DrillSettings, this);
-  }
+  const halfQty = Math.floor((adjShelfInfo.QtyDrills - 1) / 2);
+  const drillHeight = adjShelfInfo.DrillDistance * (adjShelfInfo.QtyDrills - 1);
 
-  // Group of drills
-  else {
-    if (AdjShelfInfo.StartPosY.length > 0) {
-      AdjShelfInfo.StartPosY.forEach((shelfPosY, index) => {
-        const Drillings = this.addOD_M_mc_ShelfadjDrill01();
-        Drillings.mod_Height = AdjShelfInfo.DrillDistance * (AdjShelfInfo.QtyDrills - 1);
-        Drillings.mod_Width = this.mod_Width;
-        Drillings.mod_Depth = depthZ;
-        const HalfQty = Math.floor((AdjShelfInfo.QtyDrills - 1) / 2)
-        Drillings.setOrigin(0, shelfPosY - AdjShelfInfo.DrillDistance * HalfQty, startPosZ);
-        assignDrillingAttributes(Drillings, AdjShelfInfo.DrillSettings, this);
-      });
+  shelves.forEach(shelfPosY => {
+
+    // Adjustable shelf
+    //----------------------------------------------
+    let panel: any;
+
+    switch (adjShelfInfo.ModuleType) {
+      case "Wood":
+        panel = this.addOD_M_mc_ShelfadjWood01();
+        break;
+
+      case "Glass":
+        panel = this.addOD_M_mc_ShelfadjGlass01();
+        break;
+
+      default:
+        logError(`Wrong ModuleID: ${adjShelfInfo.ModuleType}`);
+        return;
     }
+
+    panel.setOrigin(adjShelfInfo.StartPosX, shelfPosY, adjShelfInfo.StartPosZ);
+
+    panel.mod_Width = adjShelfInfo.Width;
+    panel.mod_Depth = adjShelfInfo.Depth;
+    panel.mod_ShelfadjThk = adjShelfInfo.ShelfThk;
+    panel.mod_CarcaseId = this.mod_CarcaseId;
+    panel.mod_ShelfadjColor = adjShelfInfo.Color;
+
+    // Fittings
+    //----------------------------------------------
+    const fitting = this.addOD_M_mc_ShelfadjFitting01();
+    fitting.setOrigin(0, shelfPosY, startPosZ);
+
+    fitting.mod_Width = this.mod_Width;
+    fitting.mod_Depth = depthZ;
+    fitting.mod_Height = adjShelfInfo.ShelfThk;
+    fitting.mod_CarcaseId = this.mod_CarcaseId;
+    fitting.mod_VertDividerPosition = this.mod_VertDividerPosition;
+    assignDrillingAttributes(fitting, settings);
+
+    // Grouped drillings
+    //----------------------------------------------
+    if (adjShelfInfo.QtyDrills > 0) {
+      const drillings = this.addOD_M_mc_ShelfadjDrill01();
+      drillings.setOrigin(0, shelfPosY - adjShelfInfo.DrillDistance * halfQty, startPosZ);
+
+      drillings.mod_Height = drillHeight;
+      drillings.mod_Width = this.mod_Width;
+      drillings.mod_Depth = depthZ;
+      assignDrillingAttributes(drillings, settings);
+    }
+  });
+
+  //===================================================
+  // Add full-height drilling
+  //===================================================
+
+  if (adjShelfInfo.QtyDrills === 0) {
+    const drillings = this.addOD_M_mc_ShelfadjDrill01();
+
+    drillings.mod_Height = this.mod_Height - this.mod_ShelfadjDrillinglineOffsetBtm - this.mod_ShelfadjDrillinglineOffsetTop;
+    drillings.mod_Width = this.mod_Width;
+    drillings.mod_Depth = depthZ;
+    drillings.setOrigin(0, this.mod_ShelfadjDrillinglineOffsetBtm, startPosZ);
+    assignDrillingAttributes(drillings, settings);
   }
 
   //===================================================
-  // Function to set the attributes of the child
+  // Set drilling attributes
   //===================================================
 
-  function assignDrillingAttributes(Drillings: any, settings: any, m: any) {
-    Drillings.mod_ShelfadjBackwallProcessingId = settings.ObjectBackwall!;
-    Drillings.mod_ShelfadjSidepanelProcessingFrontId = settings.ObjectSidesFront!;
-    Drillings.mod_ShelfadjSidepanelProcessingMiddleId = settings.ObjectSidesMiddle!;
-    Drillings.mod_ShelfadjSidepanelProcessingBackId = settings.ObjectSidesBack!;
-    Drillings.mod_ShelfadjVertDividerProcessingId = settings.ObjectVertDividerType!;
-    Drillings.mod_ShelfadjSidepanelDrillDescriptor = settings.SidepanelDescriptor;
-    Drillings.mod_ShelfadjBackwallDrillDescriptor = settings.BackwallDescriptor;
-    Drillings.mod_ShelfadjDrillDistance = AdjShelfInfo.DrillDistance;
+  function assignDrillingAttributes(drillings: any, drillSettings: ICT_tab_ShelfadjDrillSettings): void {
+    drillings.mod_ShelfadjBackwallProcessingId = drillSettings.ObjectBackwall!;
+    drillings.mod_ShelfadjSidepanelProcessingFrontId = drillSettings.ObjectSidesFront!;
+    drillings.mod_ShelfadjSidepanelProcessingMiddleId = drillSettings.ObjectSidesMiddle!;
+    drillings.mod_ShelfadjSidepanelProcessingBackId = drillSettings.ObjectSidesBack!;
+    drillings.mod_ShelfadjVertDividerProcessingId = drillSettings.ObjectVertDividerType!;
+    drillings.mod_ShelfadjSidepanelDrillDescriptor = drillSettings.SidepanelDescriptor;
+    drillings.mod_ShelfadjBackwallDrillDescriptor = drillSettings.BackwallDescriptor;
+    drillings.mod_ShelfadjDrillDistance = adjShelfInfo.DrillDistance;
   }

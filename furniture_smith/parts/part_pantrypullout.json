@@ -4,7 +4,7 @@
   "description": "Frontpanel for the pantry pullout",
   "wdt": "XYZ",
   "groupName": "Pullout",
-  "imageId": "29d5a6d8-a795-4079-b234-c50756e95ea3:PantryPullout.png",
+  "imageId": "0a315c13-f01f-4508-b78f-34d93f763059:PantryPullout.png",
   "model3dImageId": "",
   "invisible": false,
   "restrictionTypeId": "Public",
@@ -113,10 +113,10 @@
   ],
   "bomData": [
     {
-      "bomElementTypeId": "bomout_Board",
-      "description": "Board for the pantry pullout",
-      "conditionScript": "partSelf._g?.basic_CreateBom == 'Library'",
-      "valueScript": "// Type of the Bom-Element (will be checked in order output)\n  let elementType='Board';\n\n  // ProductionSite Category (to split the orders for different production sites)\n  let elementCategory='';\n\n  // Id of the parent to create the hierarchy\n  let parentBomId=part.pa_BomId;\n\n  // Call the function to process the Bom-Element\n  GlobalFunc.process_BoardBom(this, part, elementType, elementCategory, parentBomId);"
+      "bomElementTypeId": "bomout_Group",
+      "description": "Output parts / edges / stockparts in relation to the basic_CreateBom setting",
+      "conditionScript": "partSelf._g?.basic_CreateBom != null && partSelf._g.basic_CreateBom !== 'Custom'",
+      "valueScript": "// HOMAG Standard Bom-Generation-Method\r\n//=================================================\r\n\r\n// Type of the Bom-Element (will be checked in order output)\r\nconst elementType='Board';\r\n\r\n// ProductionSite Category (to split the orders for different production sites)\r\nconst elementCategory='';\r\n\r\n// Id of the parent to create the hierarchy\r\nconst parentBomId=part.pa_BomId;\r\n\r\n// Mode from basic setting\r\nconst Mode = partSelf._g?.basic_CreateBom  ? partSelf._g.basic_CreateBom : 'SimpleBoard';\r\n\r\n// Call the function to process the Bom-Element\r\nGlobalFunc.process_BomGeneration(this, part, elementType, elementCategory, parentBomId, Mode, 'Carcase');"
     }
   ],
   "ncData": [
@@ -127,6 +127,14 @@
       "conditionScript": "partSelf.pa_ProcessingId != ''",
       "valueScript": "// Get Processing Mapping\n  let processingItems = GlobalFunc.find_ProcessingMapping(partSelf.pa_ProcessingId);\n\n  processingItems.forEach((processingItem) => {\n    // Components\n    if (processingItem.ProcessingLibrary == \"Component\") { \n\n      let componentLibrary = GlobalFunc.find_ComponentLibrary(processingItem.ProcessingId!);\n      // Add Component\n      let component = this.addncout_Component();\n      component.nc_TOOL = \"139\";\n      component.nc_IN = componentLibrary.ComponentMPR!;\n      component.nc_XA = componentLibrary.XA(partSelf,partSelf)!;\n      component.nc_YA = componentLibrary.YA(partSelf,partSelf)!;\n      component.nc_ZA = componentLibrary.ZA(partSelf,partSelf)!;\n      component.nc_WI = 0;\n      component.nc_EM = componentLibrary.EM!;\n      component.nc_KAT = componentLibrary.KAT!;\n      component.nc_KO = componentLibrary.KO!;\n      component.nc_Side = componentLibrary.Side!;\n      \n      let variables = GlobalFunc.find_ComponentVariables(componentLibrary.ComponentId!);\n      component.nc_VA = \"\";\n      variables.forEach((variable) => {\n        let variableValue = variable.VariableValue(partSelf,partSelf)!;\n        component.nc_VA += 'VA=\"' +variable.Variable + ' ' + parseFloat(variableValue.toFixed(2)) + '\"' + \"\\r\\n\";\n      });    \n    }\n\n    //else if (processingItem.ProcessingLibrary == \"DrillingVertical\") {}\n\n    //else if (processingItem.ProcessingLibrary == \"DrillingHorizontal\") {}\n\n    \n\n\n    \n  });",
       "bomExecuteType": "Start"
+    },
+    {
+      "part2": "part_HandleDrill",
+      "touchName": "FromFront",
+      "bomElementTypeId": "ncout_Group",
+      "description": "Drillings for handles",
+      "valueScript": "GlobalFunc.ncout_HandleDrill(this, partSelf, part2, posRel)",
+      "bomExecuteType": "Touch"
     }
   ]
 }

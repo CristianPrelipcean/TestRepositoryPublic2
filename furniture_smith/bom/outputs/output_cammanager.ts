@@ -559,13 +559,26 @@
       // Create Processings (Workgroups/Operations JSON pro Part)
       const procOut: Map<string, BomOutputFileEntry> = oOutput.createBomOutputcreate_CamManagerProcessings(p.bomEntries);
 
-
+      // Find the bom parent
       const findBomParent = (parent: string): any[] => {
         const r: any[] = [];
+
         bom.forEach((value: any, key: string) => {
-          const k = JSON.parse(key);
-          if (k.parent === parent) r.push(k);
+          try {
+            const raw = fileEntryToString(value);
+            const parsed = JSON.parse(raw);
+
+            const k = parsed.entry ?? parsed;
+
+            if (k.parent === parent) {
+              r.push(k);
+            }
+          } 
+          catch (e) {
+            logError("Could not parse BOM entry: " + key + " value: " + value + "error: " + e);
+          }
         });
+
         return r;
       };
 

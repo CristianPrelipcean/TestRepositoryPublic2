@@ -5,7 +5,7 @@
   "isRoot": false,
   "description": "Carcase of storage unit",
   "groupName": "CarcaseConstruction",
-  "imageId": "f3295568-9040-4789-8b6e-f9ec0c9d2f59:Carcase.png",
+  "imageId": "8df38928-cb65-48be-a4ce-c72f4a9a9642:Carcase.png",
   "restrictionTypeId": "Internal",
   "childModules": [
     {
@@ -40,6 +40,9 @@
     },
     {
       "moduleId": "mc_StorageunitShelftop04"
+    },
+    {
+      "moduleId": "mc_HoodCarcaseParts01"
     }
   ],
   "assignedVariants": [
@@ -581,6 +584,15 @@
     },
     {
       "variantId": "mod_Originpos",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_HoodInsertion",
+      "default": "false",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_HoodInformation",
       "origin": "Default"
     }
   ],

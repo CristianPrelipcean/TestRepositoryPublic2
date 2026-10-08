@@ -7,7 +7,14 @@
   // CreateBuildPlan of mc_FillerFront01
   // Add Partgroup for the filler front
   //====================================================================
- 
+
+  //====================================================================
+  //          Add Partgroup for the door
+  //====================================================================
+
+  let FillerUnit=this.addpart_FillerUnit(0,0,0,this.mod_FrontWidth,this.mod_FrontHeight,this.mod_FrontThk);
+  this.createPartGroup(this.mod_FrontId, FillerUnit);
+  
   // Get the Information of the mod_FillerHardwareInfo
   interface iFillerHardwareInfo {
     Object: string[];
@@ -39,6 +46,9 @@
       let posxDrawing = this.mod_FrontGapVert / 2 + fillerHardwareInfo.PosX[i] + positionFillerHardware.InsertionPointX + positionFillerHardware.OffsetX
       let posyDrawing = fillerHardwareInfo.PosY[i] + positionFillerHardware.InsertionPointY + positionFillerHardware.OffsetY
       let poszDrawing = 0 + positionFillerHardware.InsertionPointZ + positionFillerHardware.OffsetZ - positionFillerHardware.OversizeZ;
+
+
+      
 
       // Get the rotation
       let rotation = 0;

@@ -1,0 +1,267 @@
+{
+  "tableName": "tab_FrontPanelSelection",
+  "description": "Provides rules for selecting pre-cut and edgebanded carcase panels based on material and dimensions, linking to corresponding stock parts",
+  "restrictionTypeId": "Public",
+  "groupName": "Materials",
+  "columns": [
+    {
+      "name": "_id",
+      "type": "Integer",
+      "allowNull": false
+    },
+    {
+      "name": "in_PartId",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_FrontProgram",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_FrontColor",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_FrontDesign",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_LengthMin",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "in_LengthMax",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "in_WidthMin",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "in_WidthMax",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "StockPartId",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "Length",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "Width",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "Thickness",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "Recut",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "Rework",
+      "type": "Text",
+      "allowNull": true
+    }
+  ],
+  "rows": [
+    {
+      "data": [
+        {
+          "columnName": "in_PartId",
+          "value": "part_Door"
+        },
+        {
+          "columnName": "in_FrontProgram",
+          "value": "Nature"
+        },
+        {
+          "columnName": "in_FrontColor",
+          "value": "215"
+        },
+        {
+          "columnName": "in_FrontDesign",
+          "value": "Standard"
+        },
+        {
+          "columnName": "in_LengthMin",
+          "value": "720"
+        },
+        {
+          "columnName": "in_LengthMax",
+          "value": "720"
+        },
+        {
+          "columnName": "in_WidthMin",
+          "value": "548"
+        },
+        {
+          "columnName": "in_WidthMax",
+          "value": "548"
+        },
+        {
+          "columnName": "StockPartId",
+          "value": "FP_5000783"
+        },
+        {
+          "columnName": "Length",
+          "value": "720"
+        },
+        {
+          "columnName": "Width",
+          "value": "548"
+        },
+        {
+          "columnName": "Thickness",
+          "value": "19"
+        },
+        {
+          "columnName": "Recut",
+          "value": "None"
+        },
+        {
+          "columnName": "Rework",
+          "value": "None"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartId",
+          "value": "part_Drawer"
+        },
+        {
+          "columnName": "in_FrontProgram",
+          "value": "Tradition"
+        },
+        {
+          "columnName": "in_FrontColor",
+          "value": "215"
+        },
+        {
+          "columnName": "in_FrontDesign",
+          "value": "Standard"
+        },
+        {
+          "columnName": "in_LengthMin",
+          "value": "720"
+        },
+        {
+          "columnName": "in_LengthMax",
+          "value": "720"
+        },
+        {
+          "columnName": "in_WidthMin",
+          "value": "548"
+        },
+        {
+          "columnName": "in_WidthMax",
+          "value": "548"
+        },
+        {
+          "columnName": "StockPartId",
+          "value": "FP_7000193"
+        },
+        {
+          "columnName": "Length",
+          "value": "720"
+        },
+        {
+          "columnName": "Width",
+          "value": "548"
+        },
+        {
+          "columnName": "Thickness",
+          "value": "16"
+        },
+        {
+          "columnName": "Recut",
+          "value": "None"
+        },
+        {
+          "columnName": "Rework",
+          "value": "Laquering"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_PartId",
+          "value": "part_Fliplift"
+        },
+        {
+          "columnName": "in_FrontProgram",
+          "value": "Classic"
+        },
+        {
+          "columnName": "in_FrontColor",
+          "value": "152"
+        },
+        {
+          "columnName": "in_FrontDesign",
+          "value": "Standard"
+        },
+        {
+          "columnName": "in_LengthMin",
+          "value": "500"
+        },
+        {
+          "columnName": "in_LengthMax",
+          "value": "720"
+        },
+        {
+          "columnName": "in_WidthMin",
+          "value": "448"
+        },
+        {
+          "columnName": "in_WidthMax",
+          "value": "548"
+        },
+        {
+          "columnName": "StockPartId",
+          "value": "FP_1000884"
+        },
+        {
+          "columnName": "Length",
+          "value": "720"
+        },
+        {
+          "columnName": "Width",
+          "value": "548"
+        },
+        {
+          "columnName": "Thickness",
+          "value": "16"
+        },
+        {
+          "columnName": "Recut",
+          "value": "Length_Width"
+        },
+        {
+          "columnName": "Rework",
+          "value": "Cutting_Edging"
+        }
+      ]
+    }
+  ],
+  "dataSource": "Default",
+  "changedAt": "2026-04-20T08:20:40.5779228+00:00"
+}

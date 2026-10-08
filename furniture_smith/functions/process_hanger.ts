@@ -82,6 +82,11 @@ process_Hanger(m: parent, BackwallPosition: number, DistanceBehindBackwallMin: n
 		//---------------Get data from table HangerSettings---------------------------
 		let retHangerSettings = GlobalFunc.find_HangerSettings(m.mod_TypeElement, m.mod_CarcaseHeight, m.mod_CarcaseWidth, 20, DistanceBehindBackwallMin, BackwallPosition); ////////////////////////////////// ROOT MODULE NOT DEFINED AND CALCULATION OF WEIGHT PENDING!!!!!!!!!
 
+		// Guard
+		if (retHangerSettings == undefined) {
+			return HangerData;
+		}
+
 		//---------------Get data from table HangerMapping---------------------------
 		let retHangerMapping = GlobalFunc.find_HangerMapping(retHangerSettings.HangerType!, m.mod_CarcaseWidth, m.mod_HangerColor);
 		

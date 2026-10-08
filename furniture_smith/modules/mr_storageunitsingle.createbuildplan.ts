@@ -21,6 +21,10 @@
   const wallDistanceLeft = storageunitInfo.WallDistanceLeft;
   const autoFillerRight = storageunitInfo.AutoFillerRight;
   const wallDistanceRight = storageunitInfo.WallDistanceRight;
+  const contextInfo = JSON.parse(this.mod_ModuleContextInformationList[0] ?? "{}");
+  const hasContext = contextInfo.DataComplete === true;
+	const wallDistanceBackRaw = hasContext ? (contextInfo.DistanceWallBack ?? 0) : 0;
+	const wallDistanceBack = wallDistanceBackRaw >= 0 && wallDistanceBackRaw < 290 ? wallDistanceBackRaw : 0;
 
   // Check all the added Information of CountertopInfo
   let cutout = 0;
@@ -61,18 +65,18 @@
   } = GlobalFunc.process_MathLongparts();
 
   const mc_Storageunit01 = this.m.find(p => p instanceof OD_M_mc_Storageunit01) as any;
-
-  const PlinthAreaType = this.mod_PlinthAreaDesign_matrix.PlinthAreaType ?? 'None';
-  const plinthAreaHeight = (PlinthAreaType !== 'None' ? (this.mod_PlinthAreaHeight ?? 0) : 0);
   const inSlopedCeilingArea = mc_Storageunit01.mod_SlopeAngle > 0;
-  const carcaseTopY = mc_Storageunit01.mod_CarcaseHeight + plinthAreaHeight;
+
+  // StartPosition of Cabinet
+  const StartPosCabinet = this.mod_PlacementLevels === 'OnFloor' ? this.mod_PlinthAreaHeight : 0;
+  const carcaseTopY = mc_Storageunit01.mod_CarcaseHeight + StartPosCabinet;
 
   //======================================================================
   // Countertop
   //======================================================================
 
   const countertopContourBounds = {
-	xMin: autoFillerLeft ? -wallDistanceLeft : 0,
+    xMin: autoFillerLeft ? -wallDistanceLeft : 0,
     xMax: autoFillerRight ? this.mod_Width + wallDistanceRight : this.mod_Width,
     zMin: Math.min(0, -this.mod_CarcaseDistanceWall),
     zMax: this.mod_Depth,
@@ -131,18 +135,8 @@
     const paneltopContourBounds = {
       xMin: countertopContourBounds.xMin,
       xMax: countertopContourBounds.xMax,
-      zMin:
-        inSlopedCeilingArea
-          ? (
-            +	this.mod_Depth
-            - topPanelDepth
-          )
-          : (
-            countertopContourBounds.zMin
-          ),
-      zMax: (
-        +	this.mod_Depth
-      ),
+      zMin: inSlopedCeilingArea ? ( this.mod_Depth - topPanelDepth ) : -wallDistanceBack,
+      zMax: this.mod_Depth,
     };
 
     const contourPaneltop = Contour
@@ -225,7 +219,7 @@
 
         this.addGenerationContour(
           GenerationMethod.Fingergrip,
-          pos + plinthAreaHeight,
+          pos + StartPosCabinet,
           fingergripContour,
         );
       });
@@ -237,117 +231,185 @@
   //======================================================================
   // Toekick and Baseboard
   //======================================================================
-  // Seems sufficient without the isOnFloor check, but can be added later if needed.
-  // const isOnFloor = this.getFullOrigin()._y < 1;
-  const createToekick =
-    // THIS CONDITION MUST BE IN PLACE !!!!!
-    // WITHOUT THE WALL UNITS CREATE ERRORS !!!!!
-    (this.mod_CreateToekick ?? false)
-    // && isOnFloor
-    && this.mod_PlinthAreaDesign_matrix.PlinthAreaType !== 'None'
-    ;
-  const createBaseboard = this.mod_CreateToekick && this.mod_PlinthAreaDesign_matrix.PlinthAreaType === 'Baseboard+Legs';
+  // The mod_CreateToekick condition is required to prevent errors on wall units.
+  const plinthAreaType = this.mod_PlinthAreaDesign_matrix.PlinthAreaType;
+  const createToekick = (this.mod_CreateToekick ?? false) && plinthAreaType !== 'None';
+  const createBaseboard = createToekick && plinthAreaType === 'Baseboard+Legs';
 
-  // Use the legs provided by the plinth area, only add toekick to it
-  if (createBaseboard) {
-    // Baseboard Contour
-    const mod_PlinthAreaVisLeft = storageunitInfo.PlinthAreaVisLeft === 1;
-    const mod_PlinthAreaVisRight = storageunitInfo.PlinthAreaVisRight === 1;
-    const baseboardContourBounds = {
-      xMin: 0,
-      xMax: this.mod_Width,
-      zMin: 0,
-      zMax: this.mod_Depth,
-    };
+  // Create a contour with rectangular bounds.
+  const createRectangularContour = (xMin: number, xMax: number, zMin: number, zMax: number): Contour => {
+    return Contour
+      .M(xMin, zMin)
+      .L(CKind.Back, xMax, zMin)
+      .L(CKind.Right, xMax, zMax)
+      .L(CKind.Front, xMin, zMax)
+      .Z(CKind.Left);
+  };
 
-    const contourBaseboard = Contour
-      .M(baseboardContourBounds.xMin, baseboardContourBounds.zMin)
-      .L(CKind.Back, baseboardContourBounds.xMax, baseboardContourBounds.zMin)
-      .L(CKind.Right, baseboardContourBounds.xMax, baseboardContourBounds.zMax)
-      .L(CKind.Front, baseboardContourBounds.xMin, baseboardContourBounds.zMax)
-      .Z(CKind.Left)
-      ;
-
-    contourBaseboard.attributes
+  // Apply the attributes required by the plinth area generator.
+  const setPlinthAreaAttributes = (contour: Contour, addBaseboard: boolean, addToekick: boolean, visibleLeft: number, visibleRight: number): void => {
+    contour.attributes
       .set(CONTOUR_ATTRIBUTE_OWNER_TYPE, mr_StorageunitSingle)
-      .set(CONTOUR_ATTRIBUTE_ADD_BASEBOARD, 1)
-      .set(CONTOUR_ATTRIBUTE_ADD_TOEKICK, 1)
-      .set('mod_PlinthAreaVisLeft', storageunitInfo.PlinthAreaVisLeft)
-      .set('mod_PlinthAreaVisRight', storageunitInfo.PlinthAreaVisRight)
+      .set(CONTOUR_ATTRIBUTE_ADD_BASEBOARD, addBaseboard ? 1 : 0)
+      .set(CONTOUR_ATTRIBUTE_ADD_TOEKICK, addToekick ? 1 : 0)
+      .set('mod_PlinthAreaVisLeft', visibleLeft)
+      .set('mod_PlinthAreaVisRight', visibleRight)
       .set('mod_TypeElement', this.mod_TypeElement)
       .set('mod_PlinthAreaPosLeftMatrix', this.mod_PlinthAreaPosLeftMatrix)
       .set('mod_PlinthAreaPosRightMatrix', this.mod_PlinthAreaPosRightMatrix)
       .set('mod_PlinthAreaPosFrontMatrix', this.mod_PlinthAreaPosFrontMatrix)
-      .set('mod_PlinthAreaPosBackMatrix', this.mod_PlinthAreaPosBackMatrix)
-      ;
+      .set('mod_PlinthAreaPosBackMatrix', this.mod_PlinthAreaPosBackMatrix);
+  };
+
+  //--------------------------------------------------------------------
+  // Baseboard with legs
+  //--------------------------------------------------------------------
+  if (createBaseboard) {
+    const baseboardContourBounds = {
+      xMin: 0,
+      xMax: this.mod_Width,
+      zMin: -wallDistanceBack,
+      zMax: this.mod_Depth
+    };
+
+    // Create the regular baseboard and toekick within the cabinet width.
+    const contourBaseboard = createRectangularContour(
+      baseboardContourBounds.xMin,
+      baseboardContourBounds.xMax,
+      baseboardContourBounds.zMin,
+      baseboardContourBounds.zMax
+    );
+
+    setPlinthAreaAttributes(
+      contourBaseboard,
+      true,
+      true,
+      storageunitInfo.PlinthAreaVisLeft,
+      storageunitInfo.PlinthAreaVisRight
+    );
 
     this.addGenerationContour(
       GenerationMethod.PlinthAreaBaseboard,
-      plinthAreaHeight,
-      contourBaseboard,
+      StartPosCabinet,
+      contourBaseboard
     );
 
-  }
-  else if (createToekick) {
-    // Toekich Contour
-    // Retrieve the positions of the legs
-	  let legPositionInfo = {
-		LineLeft: 0,
-		LineRight: 0,
-		LineFront: 0,
-		LineBack: 0
-	};
+    // Extend only the toekick into the left filler area.
+    if (autoFillerLeft && wallDistanceLeft > 0) {
+      const contourToekickFillerLeft = createRectangularContour(
+        -wallDistanceLeft,
+        0,
+        baseboardContourBounds.zMin,
+        baseboardContourBounds.zMax
+      );
 
-	try {
-		const parsed = JSON.parse(this.mod_PlinthAreaPositionInfo[0]);
-
-		if (parsed && typeof parsed === "object") {
-			legPositionInfo = {
-				LineLeft: parsed.LineLeft ?? 0,
-				LineRight: parsed.LineRight ?? 0,
-				LineFront: parsed.LineFront ?? 0,
-				LineBack: parsed.LineBack ?? 0
-			};
-		} 
-		else {
-			logError(`Invalid legPositionInfo object in ${this._id}`);
-		}
-	} 
-	catch {
-		logError(`Could not parse this.mod_PlinthAreaPositionInfo[0] in mr_StorageunitStraight ${this._id}. Toekick will not be recessed correctly.`);
-	}
-
-  const mod_PlinthAreaVisLeft = storageunitInfo.PlinthAreaVisLeft === 1;
-  const mod_PlinthAreaVisRight = storageunitInfo.PlinthAreaVisRight === 1;
-	const toekickContourBounds = {
-		xMin: autoFillerLeft ? -wallDistanceLeft : (mod_PlinthAreaVisLeft ? legPositionInfo.LineLeft : 0),
-		xMax: autoFillerRight ? this.mod_Width + wallDistanceRight : this.mod_Width - (mod_PlinthAreaVisRight ? legPositionInfo.LineRight : 0),
-		zMin: legPositionInfo.LineBack,
-		zMax: this.mod_Depth - legPositionInfo.LineFront,
-	};
-
-    if (plinthAreaHeight > 0) {
-
-      const contourToekick = Contour
-        .M(toekickContourBounds.xMin, toekickContourBounds.zMin)
-        .L(CKind.Back, toekickContourBounds.xMax, toekickContourBounds.zMin)
-        .L(CKind.Right, toekickContourBounds.xMax, toekickContourBounds.zMax)
-        .L(CKind.Front, toekickContourBounds.xMin, toekickContourBounds.zMax)
-        .Z(CKind.Left)
-        ;
-
-      contourToekick.attributes
-        .set(CONTOUR_ATTRIBUTE_OWNER_TYPE, mr_StorageunitSingle)
-        .set(CONTOUR_ATTRIBUTE_ADD_TOEKICK, createToekick ? 1 : 0)
-        .set('mod_PlinthAreaVisLeft', storageunitInfo.PlinthAreaVisLeft)
-        .set('mod_PlinthAreaVisRight', storageunitInfo.PlinthAreaVisRight)
-        ;
+      setPlinthAreaAttributes(
+        contourToekickFillerLeft,
+        false,
+        true,
+        storageunitInfo.PlinthAreaVisLeft,
+        0
+      );
 
       this.addGenerationContour(
-        GenerationMethod.Toekick,
-        plinthAreaHeight,
-        contourToekick,
+        GenerationMethod.PlinthAreaBaseboard,
+        StartPosCabinet,
+        contourToekickFillerLeft
       );
     }
 
+    // Extend only the toekick into the right filler area.
+    if (autoFillerRight && wallDistanceRight > 0) {
+      const contourToekickFillerRight = createRectangularContour(
+        this.mod_Width,
+        this.mod_Width + wallDistanceRight,
+        baseboardContourBounds.zMin,
+        baseboardContourBounds.zMax
+      );
+
+      setPlinthAreaAttributes(
+        contourToekickFillerRight,
+        false,
+        true,
+        0,
+        storageunitInfo.PlinthAreaVisRight
+      );
+
+      this.addGenerationContour(
+        GenerationMethod.PlinthAreaBaseboard,
+        StartPosCabinet,
+        contourToekickFillerRight
+      );
+    }
+  }
+
+  //--------------------------------------------------------------------
+  // Toekick without baseboard
+  //--------------------------------------------------------------------
+  else if (createToekick) {
+    // Retrieve the leg positions provided by the plinth area.
+    let legPositionInfo = {
+      LineLeft: 0,
+      LineRight: 0,
+      LineFront: 0,
+      LineBack: 0
+    };
+
+    try {
+      const parsed: unknown = JSON.parse(this.mod_PlinthAreaPositionInfo[0]);
+
+      if (parsed && typeof parsed === 'object') {
+        const positionInfo = parsed as {
+          LineLeft?: number;
+          LineRight?: number;
+          LineFront?: number;
+          LineBack?: number;
+        };
+
+        legPositionInfo = {
+          LineLeft: positionInfo.LineLeft ?? 0,
+          LineRight: positionInfo.LineRight ?? 0,
+          LineFront: positionInfo.LineFront ?? 0,
+          LineBack: positionInfo.LineBack ?? 0
+        };
+      }
+      else {
+        logError(`Invalid leg position information in ${this._id}.`);
+      }
+    }
+    catch {
+      logError(`Could not parse mod_PlinthAreaPositionInfo[0] in mr_StorageunitStraight ${this._id}. The toekick will not be recessed correctly.`);
+    }
+
+    const plinthAreaVisibleLeft = storageunitInfo.PlinthAreaVisLeft === 1;
+    const plinthAreaVisibleRight = storageunitInfo.PlinthAreaVisRight === 1;
+
+    const toekickContourBounds = {
+      xMin: autoFillerLeft ? -wallDistanceLeft : plinthAreaVisibleLeft ? legPositionInfo.LineLeft : 0,
+      xMax: autoFillerRight ? this.mod_Width + wallDistanceRight : this.mod_Width - (plinthAreaVisibleRight ? legPositionInfo.LineRight : 0),
+      zMin: legPositionInfo.LineBack - wallDistanceBack,
+      zMax: this.mod_Depth - legPositionInfo.LineFront
+    };
+
+    // A positive cabinet start position is required for toekick generation.
+    if (StartPosCabinet > 0) {
+      const contourToekick = createRectangularContour(
+        toekickContourBounds.xMin,
+        toekickContourBounds.xMax,
+        toekickContourBounds.zMin,
+        toekickContourBounds.zMax
+      );
+
+      contourToekick.attributes
+        .set(CONTOUR_ATTRIBUTE_OWNER_TYPE, mr_StorageunitSingle)
+        .set(CONTOUR_ATTRIBUTE_ADD_TOEKICK, 1)
+        .set('mod_PlinthAreaVisLeft', storageunitInfo.PlinthAreaVisLeft)
+        .set('mod_PlinthAreaVisRight', storageunitInfo.PlinthAreaVisRight);
+
+      this.addGenerationContour(
+        GenerationMethod.Toekick,
+        StartPosCabinet,
+        contourToekick
+      );
+    }
   }

@@ -21,7 +21,7 @@ process_ClothingOrganizer(m: any): {
 		PosX: number;
 		PosY: number;
 		PosZ: number;
-		Color: string;
+		Color: string | null;
 		Model3D: unknown | null;
 	}[];
   };
@@ -60,7 +60,7 @@ process_ClothingOrganizer(m: any): {
 		PosX: number;
 		PosY: number;
 		PosZ: number;
-		Color: string;
+		Color: string | null;
 		Model3D: unknown | null;
 		}[],
 	},
@@ -74,10 +74,45 @@ process_ClothingOrganizer(m: any): {
 	}[],
   });
 
-  const clothingOrganizerInfo = createDefaultResult();
-  
-  try {
+	const clothingOrganizerInfo = createDefaultResult();
 
+	
+	//--------------- Early return to exit the function if type or Design are None ---------------
+	if (m.mod_ClothingOrganizerType === "None" || m.mod_ClothingOrganizerDesign === "None") {
+		const err = 'Either the ClothingOrganizer design or type is None, or both are None. ';
+		const errorMessage = GlobalFunc.find_ErrorList('Error 40011', 1);
+		logError(errorMessage.Message(err));
+		return clothingOrganizerInfo;
+	}
+
+	//--------------- Check if carcase clear dimensions fit to lift dimensions ---------------
+	//--------------- Implementation missing using the right insertation point in height for checking if there is enough space------------ 
+	const carcaseClearWidth = m.mod_Width;
+	const carcaseClearDepth = m.mod_Depth;
+	const carcaseClearHeight = m.mod_Height;
+
+	const clothingOrganizerDimensions = GlobalFunc.find_ClothingOrganizerInstallationDimensions(m.mod_ClothingOrganizerDesign); // The function might return multiple results
+
+	if (!clothingOrganizerDimensions) {
+	  return clothingOrganizerInfo;
+	}
+
+	// Try to find one result (from the list of results) where the carcaseClear dimensions are valid
+	const matchingDimension = clothingOrganizerDimensions.find(dim =>
+  carcaseClearWidth >= (dim.ClothingOrganizerInstallationMinWidth ?? 0) &&
+  carcaseClearWidth <= (dim.ClothingOrganizerInstallationMaxWidth ?? 0) &&
+  carcaseClearDepth >= (dim.ClothingOrganizerInstallationMinDepth ?? 0) &&
+  carcaseClearHeight >= (dim.ClothingOrganizerInstallationMinHeight ?? 0)
+	);
+
+	if (!matchingDimension) {
+		const err = 'The cabinet dimensions do not match the selected clothing organizer';
+		const errorMessage = GlobalFunc.find_ErrorList('Error 40011', 1);
+		logError(errorMessage.Message(err));
+		return clothingOrganizerInfo;
+	}
+
+  try {
     //--------------- Manage the colors -----------------------------------
     
 	// Default we take the color from the attribute
@@ -93,21 +128,23 @@ process_ClothingOrganizer(m: any): {
 
 	let positionZ = 0;
 	const descriptorAttribute = m.mod_ClothingOrganizerDepthPosition;
-	const positionSettings = GlobalFunc.find_ClothingOrganizerPositionZSettings(m.mod_ClothingOrganizerType, m.mod_ClothingOrganizerDesign);
-	const descriptor = descriptorAttribute && descriptorAttribute !== '' ? descriptorAttribute : positionSettings?.DescriptorPositionZ;
+	const positionSettings = GlobalFunc.find_ClothingOrganizerDepthPosition(m.mod_ClothingOrganizerType, m.mod_ClothingOrganizerDesign);
+		
+	const descriptor = descriptorAttribute && descriptorAttribute !== '' ? descriptorAttribute : positionSettings?.DescriptorDepthPosition;
 
 	if (descriptor) {
 		const descriptorResult = GlobalFunc.process_Descriptor(descriptor, m.mod_Depth);
 		positionZ = descriptorResult?.[0] ?? 0;
 	}
 
-    //--------------- 3D data for hardware -----------------------------------
+  //--------------- 3D data for hardware -----------------------------------
 
 	// Retrieve the hardwareId
-	const hardwareMapping = GlobalFunc.find_ClothingOrganizerMapping(m.mod_ClothingOrganizerType, m.mod_ClothingOrganizerDesign, elementColor, m.mod_ClothingOrganizerConnectionPosition);
-	if (!hardwareMapping) {
-		throw new Error('No clothing organizer mapping found.');
-	}
+	const hardwareMapping = GlobalFunc.find_ClothingOrganizerMapping(m.mod_ClothingOrganizerType, m.mod_ClothingOrganizerDesign, elementColor, m.mod_ClothingOrganizerConnectionPosition, carcaseClearWidth);
+		if (!hardwareMapping) {
+			throw new Error('No clothing organizer mapping found.');	
+		}
+
 
 	// Retrieve the Id's for BOM / Processing / Graphic
 	const objectMapping = GlobalFunc.find_ObjectMapping(hardwareMapping.Object!);
@@ -130,22 +167,46 @@ process_ClothingOrganizer(m: any): {
 			throw new Error('No graphic data found for clothing organizer.');
 		}
 
+		// Calculate correct dimensionX for the graphic
+		let model3DWidth = 0;
+		const model3DGraphicDimensionX = graphicInfo.DimensionX
+
+		if (m.mod_ClothingOrganizerConnectionPosition === 'Left&Right') {
+			model3DWidth = m.mod_Width - ((graphicInfo.PartOffsetX ?? 0) * 2);
+		} 
+		else if (model3DGraphicDimensionX >= 0 && model3DGraphicDimensionX <= m.mod_Width){
+			model3DWidth = graphicInfo.DimensionX;
+		}
+
+		// Set Position of 3DModel based on Clothing Organizer Connection Position
+		let model3D_XPos = 0;
+
+		if (m.mod_ClothingOrganizerConnectionPosition === 'Right') {
+			model3D_XPos = (m.mod_Width - model3DWidth - (graphicInfo.PartOffsetX ?? 0))
+		} else if (m.mod_ClothingOrganizerConnectionPosition === 'Left') {
+			model3D_XPos = (graphicInfo.PartOffsetX ?? 0)
+		} else if (m.mod_ClothingOrganizerConnectionPosition === 'Left&Right') {
+			model3D_XPos = ((graphicInfo.PartOffsetX ?? 0) * 2)
+		}
+		
+
 		// Set the valid data to the returned object
 		clothingOrganizerInfo.Hardware.Graphics.push({
 			Model3D: fileInfo.Model3D ?? null,
-			DimX: m.mod_Width - ((graphicInfo.PartOffsetX ?? 0) * 2),
+			DimX: model3DWidth,
 			DimY: graphicInfo.DimensionY ?? 0,
 			DimZ: graphicInfo.DimensionZ ?? 0,
-			PosX: graphicInfo.PartOffsetX ?? 0,
-			PosY: m.mod_ClothingOrganizerHeightPosition,
-			PosZ: positionZ,
+			PosX: model3D_XPos,
+			PosY: m.mod_ClothingOrganizerHeightPosition - m.mod_Originpos[1] + (graphicInfo.PartOffsetY ?? 0) + matchingDimension.ReservedSpaceBottom,
+			PosZ: positionZ + (graphicInfo.PartOffsetZ ?? 0),
 			Color: graphicInfo.ColorId ?? '',
 		});
+		
 
 		//--------------- Processings and BOM ----------------------------------
 
 		// Add all the needed processings (Call the helper)
-		const processings = createProcessingsForGraphic(m, graphicInfo, objectMapping.ProcessingItem ?? '', m.mod_ClothingOrganizerHeightPosition, positionZ);
+		const processings = createProcessingsForGraphic(m, graphicInfo, objectMapping.ProcessingItem ?? '', m.mod_ClothingOrganizerHeightPosition - m.mod_Originpos[1] + matchingDimension.ReservedSpaceBottom, positionZ);
 		clothingOrganizerInfo.Processing.push(...processings);
 	}
 
@@ -195,7 +256,6 @@ process_ClothingOrganizer(m: any): {
 
 		// Read the connection side
 		const drillSide = m.mod_ClothingOrganizerConnectionPosition;
-
 		// Hardware which touches left and right sidepanel
 		if (drillSide === 'Left&Right' && graphicInfo.Identifier === 'ClothingOrganizer_LR') {
 			result.push({
@@ -213,7 +273,23 @@ process_ClothingOrganizer(m: any): {
 			RefPosZ: (graphicInfo.InsertionPointZ ?? 0) + depthPos,
 			ProcessingId: processingId,
 			});
-		}
+		} else if (drillSide === 'Left' && graphicInfo.Identifier === 'ClothingOrganizer_L') {
+			result.push({
+				Side: 'Left',
+				RefPosX: 0,
+				RefPosY: (graphicInfo.InsertionPointY ?? 0) + heightPos,
+				RefPosZ: (graphicInfo.InsertionPointZ ?? 0) + depthPos,
+				ProcessingId: processingId,
+			});
+			} else if (drillSide === 'Right' && graphicInfo.Identifier === 'ClothingOrganizer_R') {
+			result.push({
+				Side: 'Right',
+				RefPosX: m.mod_Width,
+				RefPosY: (graphicInfo.InsertionPointY ?? 0) + heightPos,
+				RefPosZ: (graphicInfo.InsertionPointZ ?? 0) + depthPos,
+				ProcessingId: processingId,
+			});
+			}
 
 		// Return the result
 		return result;

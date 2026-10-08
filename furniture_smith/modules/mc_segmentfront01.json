@@ -4,9 +4,10 @@
   "configurable": false,
   "isRoot": false,
   "isConfigDummy": false,
+  "isDropContainer": false,
   "description": "Segmented front elements",
   "groupName": "FrontConstructionParts",
-  "imageId": "669bd10a-c72a-4649-895e-d3a92e9a694c:Segmentglass.png",
+  "imageId": "59e37606-58f8-45c4-a02c-5646543aa9a6:Segmentglass.png",
   "restrictionTypeId": "Internal",
   "childModules": [],
   "assignedVariants": [
@@ -119,6 +120,12 @@
       "variantId": "mod_FrontSegmentDescriptor",
       "previewValue": "1_1_1",
       "origin": "Derived"
+    },
+    {
+      "variantId": "mod_HardwareTypeList",
+      "default": "",
+      "previewValue": "",
+      "origin": "Default"
     }
   ],
   "assignedParts": [
@@ -127,6 +134,9 @@
     },
     {
       "partCode": "part_SegmentedFront"
+    },
+    {
+      "partCode": "part_VirtualFront"
     }
   ],
   "assignedCustomTables": [],

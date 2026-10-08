@@ -1,4 +1,4 @@
-	
+
 	// Schuler Consulting
 	// Create: Okt 2022
 	// By Ludwig Weber
@@ -45,16 +45,16 @@
 	let LastBackWallConstruction = this.mod_CarcaseBackwallConstruction;
 
 	let totalFrontAreaInfoList = this.mod_FrontAreaInfoList.length;
-	let j=0;
+	let j = 0;
 	this.mod_FrontAreaInfoList.forEach(elem => {
 		let front: FrontInfo = JSON.parse(elem);
 		j++
-		
+
 		FirstBackWallPosition = j == 1 ? front.BackwallPosition : FirstBackWallPosition;
 		FirstBackWallConstruction = j == 1 ? front.BackwallConstruction : FirstBackWallConstruction;
 
 		if (j == totalFrontAreaInfoList) {
-			LastBackWallPosition =  front.BackwallPosition;
+			LastBackWallPosition = front.BackwallPosition;
 			LastBackWallConstruction = front.BackwallConstruction;
 			if (this.mod_SlopeAngle != 0) {
 
@@ -71,13 +71,13 @@
 				this.mod_FrontAreaInfoList[j - 1] = (JSON.stringify(front));
 
 				// If there's only one backwall then the first and last backwall are the same, so we must update the first backwall with the automatic adjustment
-				if (totalFrontAreaInfoList == 1) { 
+				if (totalFrontAreaInfoList == 1) {
 					FirstBackWallPosition = LastBackWallPosition;
 					FirstBackWallConstruction = LastBackWallConstruction;
 				}
 			}
 		}
-		
+
 	});
 
 	//==========================================================================================================
@@ -85,11 +85,11 @@
 	//==========================================================================================================
 
 	// Define variable to store cabinet inside position relative to LeftSidePanel
-	let tmpBwLSp = 0;             
-	let tmpLSpPosBack = 0 ;       
-	let tmpLSpPosFront = 0 ;      
-	let tmpLSpPart = 'LeftSidePanel';   
-	let retSpl: any;   
+	let tmpBwLSp = 0;
+	let tmpLSpPosBack = 0;
+	let tmpLSpPosFront = 0;
+	let tmpLSpPart = 'LeftSidePanel';
+	let retSpl: any;
 
 	// Call the process function
 	let retSidepanelLeft = GlobalFunc.process_StorageunitSidepanelConstruction(this, 'Left', FirstBackWallConstruction, FirstBackWallPosition)
@@ -107,7 +107,7 @@
 
 	// Define variable to store cabinet inside position relative to RightSidePanel
 	let tmpBwRSp = 0;
-	let tmpRSpPosBack = 0 ;
+	let tmpRSpPosBack = 0;
 	let tmpRSpPosFront = this.mod_CarcaseDepth;
 	let tmpRSpPart = 'RightSidePanel';
 	let retSpr: any;
@@ -130,30 +130,48 @@
 	//          Add the bottom shelf
 	//==========================================================================================================
 
-	// Call the process function
-	let retBtmShelf = GlobalFunc.process_StorageunitShelfbtmConstruction(this, FirstBackWallConstruction, FirstBackWallPosition);
-	let retBtm = JSON.parse(retBtmShelf);
-
 	// Feedback from the process function
-	let tmpBwBtm = retBtm.BwBtm;               // Manage starting position of the first backwall
-	let tmpBtmPosBack = retBtm.BtmPosBack;     // Define back side position of the bottom shelf (fixed shelf starting position)
-	let tmpBtmPosFront = retBtm.BtmPosFront;   // Frontposition of the bottom shelf (free space calculation)
-	let tmpBtmPart = retBtm.BtmPart;           // Name of the construction part (provided in the parts list for fittings like push to open)   
+	let tmpBwBtm = 0;               // Manage starting position of the first backwall
+	let tmpBtmPosBack = 0;          // Define back side position of the bottom shelf (fixed shelf starting position)
+	let tmpBtmPosFront = 0;         // Frontposition of the bottom shelf (free space calculation)
+	let tmpBtmPart = "ShelfBtm";    // Name of the construction part (provided in the parts list for fittings like push to open)   
+	let retBtm: any;
+
+	if (!this.mod_HoodInsertion) {
+		// Call the process function
+		let retBtmShelf = GlobalFunc.process_StorageunitShelfbtmConstruction(this, FirstBackWallConstruction, FirstBackWallPosition);
+		retBtm = JSON.parse(retBtmShelf);
+		// Feedback from the process function
+		tmpBwBtm = retBtm.BwBtm;               // Manage starting position of the first backwall
+		tmpBtmPosBack = retBtm.BtmPosBack;     // Define back side position of the bottom shelf (fixed shelf starting position)
+		tmpBtmPosFront = retBtm.BtmPosFront;   // Frontposition of the bottom shelf (free space calculation)
+		tmpBtmPart = retBtm.BtmPart;           // Name of the construction part (provided in the parts list for fittings like push to open)   	
+	}
 
 	//==========================================================================================================
 	//          Add the top shelf
 	//==========================================================================================================
 
-	// Call the process function
-	let retTopShelf = GlobalFunc.process_StorageunitShelftopConstruction(this, LastBackWallConstruction, LastBackWallPosition);
-	let retTop = JSON.parse(retTopShelf);
-
 	// Feedback from the process function
-	let tmpBwTop = retTop.BwTop;                // Manage backwall height
-	let tmpTopPosBack = retTop.TopPosBack;      // Define back side position of the top shelf (fixed shelf starting position)
-	let tmpTopPosFront = retTop.TopPosFront;    // Frontposition of the top shelf (free space calculation)
-	let tmpTopPart = retTop.TopPart;            // Name of the construction part (provided in the parts list for fittings like push to open)
-	let tmpSpaceTop = retTop.SpaceTop;          // Define the end position of the freespace in height
+	let tmpBwTop = this.mod_CarcaseHeight;            // Manage starting position of the first backwall
+	let tmpTopPosBack = 0;        // Define back side position of the top shelf (fixed shelf starting position)
+	let tmpTopPosFront = this.mod_CarcaseDepth;       // Frontposition of the top shelf (free space calculation)
+	let tmpTopPart = "ShelfTop";  // Name of the construction part (provided in the parts list for fittings like push to open)   
+	let tmpSpaceTop = this.mod_CarcaseHeight;
+	let retTop: any;
+
+	if (!this.mod_HoodInsertion) {
+		// Call the process function
+		let retTopShelf = GlobalFunc.process_StorageunitShelftopConstruction(this, LastBackWallConstruction, LastBackWallPosition);
+		retTop = JSON.parse(retTopShelf);
+
+		// Feedback from the process function
+		tmpBwTop = retTop.BwTop;                // Manage backwall height
+		tmpTopPosBack = retTop.TopPosBack;      // Define back side position of the top shelf (fixed shelf starting position)
+		tmpTopPosFront = retTop.TopPosFront;    // Frontposition of the top shelf (free space calculation)
+		tmpTopPart = retTop.TopPart;            // Name of the construction part (provided in the parts list for fittings like push to open)
+		tmpSpaceTop = retTop.SpaceTop;          // Define the end position of the freespace in height
+	}
 
 	// Calculate the full vertical freespace
 	let freeSpaceHeight = tmpBwTop - tmpBwBtm;
@@ -171,9 +189,26 @@
 	//          Add the backwalls
 	//==========================================================================================================
 
-	// Call the process function
-	let retBackwall = GlobalFunc.process_StorageunitBackwallConstruction(this, tmpLSpPart, tmpRSpPart, tmpBtmPart, tmpTopPart, freeSpaceHeight, freeSpaceWidth, freeSpaceWidthPos, freeSpaceHeightPos, retShelfFixed);
-	let retBackwalls = JSON.parse(retBackwall);
+	// Default if there is a hood insertion
+	// We have to replace that later
+	let retBackwalls: any[] = [
+		{
+			Part: "part_Backwall",
+			Height: this.mod_CarcaseHeight - this.mod_ShelfbtmThk - this.mod_ShelftopThk,
+			Width: this.mod_CarcaseWidth - this.mod_SidepanelleftThk - this.mod_SidepanelrightThk,
+			Depth: 8,
+			WidthPos: this.mod_SidepanelleftThk,
+			HeightPos: this.mod_ShelfbtmThk,
+			DepthPos: this.mod_BackwallPos
+		}
+	];
+	let retBackwall = JSON.stringify(retBackwalls);
+
+	// Call the process function to insert the backwall
+	if (!this.mod_HoodInsertion) {
+		retBackwall = GlobalFunc.process_StorageunitBackwallConstruction(this, tmpLSpPart, tmpRSpPart, tmpBtmPart, tmpTopPart, freeSpaceHeight, freeSpaceWidth, freeSpaceWidthPos, freeSpaceHeightPos, retShelfFixed);
+		retBackwalls = JSON.parse(retBackwall);
+	}
 
 	//==========================================================================================================
 	//          Calculate free space
@@ -246,14 +281,16 @@
 	let HorizontalPartsDimZ: number[] = [0];
 	let HorizontalPartsFrontAngle: number[] = [0];
 
-	// BottomShelf
-	HorizontalPartsType.push(this.mod_CarcaseShelfbtmConstruction);
-	HorizontalPartsPosY.push(retBtm.HeightPos);
-	HorizontalPartsPosZ.push(retBtm.DepthPos);
-	HorizontalPartsDimY.push(retBtm.Height);
-	HorizontalPartsDimZ.push(retBtm.Depth);
-	HorizontalPartsFrontAngle.push(90);
-	
+	if (!this.mod_HoodInsertion) {
+
+		// BottomShelf
+		HorizontalPartsType.push(this.mod_CarcaseShelfbtmConstruction);
+		HorizontalPartsPosY.push(retBtm.HeightPos);
+		HorizontalPartsPosZ.push(retBtm.DepthPos);
+		HorizontalPartsDimY.push(retBtm.Height);
+		HorizontalPartsDimZ.push(retBtm.Depth);
+		HorizontalPartsFrontAngle.push(90);
+	}
 	// FixedShelves
 	for (let i = 1; i <= this.mod_FrontAreaInfoList.length - 1; i++) {
 		let frontAreaInfo = JSON.parse(this.mod_FrontAreaInfoList[i]);
@@ -272,13 +309,22 @@
 	}
 
 	//TopShelf (FrontPart)
-	HorizontalPartsType.push(tmpTopPart);
-	HorizontalPartsPosY.push(retTop.HeightPos);
-	HorizontalPartsPosZ.push(retTop.DepthPos);
-	HorizontalPartsDimY.push(retTop.Height);
-	HorizontalPartsDimZ.push(retTop.Depth);
-	HorizontalPartsFrontAngle.push(90);
-
+	if (!this.mod_HoodInsertion) {
+		HorizontalPartsType.push(tmpTopPart);
+		HorizontalPartsPosY.push(retTop.HeightPos);
+		HorizontalPartsPosZ.push(retTop.DepthPos);
+		HorizontalPartsDimY.push(retTop.Height);
+		HorizontalPartsDimZ.push(retTop.Depth);
+		HorizontalPartsFrontAngle.push(90);
+	}
+	else {
+		HorizontalPartsType.push(tmpTopPart);
+		HorizontalPartsPosY.push(this.mod_CarcaseHeight);
+		HorizontalPartsPosZ.push(0);
+		HorizontalPartsDimY.push(0);
+		HorizontalPartsDimZ.push(this.mod_CarcaseDepth);
+		HorizontalPartsFrontAngle.push(90);
+	}
 
 	//--------------- Vertical Parts -----------------
 
@@ -299,7 +345,7 @@
 		VerticalPartsDimX[i] = VerticalPartsDimX[i] || [];
 		VerticalPartsDimZ[i] = VerticalPartsDimZ[i] || [];
 		VerticalPartsFrontAngle[i] = VerticalPartsFrontAngle[i] || [];
-		
+
 		//Left Side
 		VerticalPartsType[i].push('LeftSidePanel');
 		VerticalPartsPosX[i].push(retSpl.WidthPos + this.mod_CarcaseMovement);
@@ -340,7 +386,7 @@
 		VerticalPartsPosZ: VerticalPartsPosZ,
 		VerticalPartsDimX: VerticalPartsDimX,
 		VerticalPartsDimZ: VerticalPartsDimZ,
-		VerticalPartsFrontAngle: VerticalPartsFrontAngle		
+		VerticalPartsFrontAngle: VerticalPartsFrontAngle
 	};
 
 	let CarcasePartInfoJson = JSON.stringify(CarcasePartInfo);
@@ -365,4 +411,16 @@
 
 		// Call the process function
 		GlobalFunc.process_Hanger(this, lastDepthPosBw, lastSpaceBehindBw, tmpBwTop, retFreeSpace);
+	}
+	//==========================================================================================================
+	//          Add the hood parts
+	//==========================================================================================================
+
+	if (this.mod_HoodInsertion) {
+		const hoodParts = this.addOD_M_mc_HoodCarcaseParts01();
+		hoodParts.setOrigin(FullWidthStartPos, 0, FullDepthStartPos);
+		hoodParts.mod_CarcaseWidth = FullWidthFreeSpace;
+		hoodParts.mod_CarcaseDepth = FullDepthFreeSpace;
+		hoodParts.mod_CarcaseHeight = FullHeightFreeSpace;
+		
 	}

@@ -1,0 +1,30 @@
+{
+  "partCode": "part_InnerDrawerFront",
+  "shortName": "Inner Drawer Front",
+  "description": "Inner Drawer Front",
+  "wdt": "XYZ",
+  "groupName": "InnerDrawer",
+  "imageId": "",
+  "model3dImageId": "",
+  "invisible": false,
+  "restrictionTypeId": "Public",
+  "noNcData": false,
+  "partVariants": [],
+  "bomData": [],
+  "ncData": [
+    {
+      "part2": "part_DrawerBoxDrilling",
+      "touchName": "FromBack",
+      "bomElementTypeId": "ncout_Group",
+      "valueScript": "//====================================================================\n// Get data for drillings\n//====================================================================\n\n// Variables\nlet drillings: ICT_tab_HardwareDrillVertLibrary[] = [];\n\n// Find all processings for the drawerbox (to each part)\nlet processings = GlobalFunc.find_ProcessingMapping(part2.pa_ProcessingId2);\n\n// Find the drillings for the sidepanel\nprocessings.forEach((processing) => {\n  if(processing.ProcessingLibrary == 'DrillVertical'){\n    let foundDrillings = GlobalFunc.find_HardwareDrillVertLibrary(processing.ProcessingId!, 'Front');\n    drillings = drillings.concat(foundDrillings);\n  } \n});\n\n//====================================================================\n// For each drilling (insert the drillings) left box connector\n//====================================================================\n\ndrillings.forEach(x => \n{  \n  // Position of the drill\n  let PosX=posRel.x + x.XA;\n  let PosY=posRel.y + x.YA;\n  let PosZ=0;\n\n  // Add Vertical Drill\n  let DrillVert = this.addncout_DrillVert();\n  DrillVert.nc_TOOL=\"102\";\n  DrillVert.nc_XA=PosX;\n  DrillVert.nc_YA = partSelf._dimy - PosY;\n  DrillVert.nc_TI=x.TI;\n  DrillVert.nc_DU=x.DU;\n\n  DrillVert.nc_BM = x.matrix_BM || \"LS\"\n  DrillVert.nc_WI = x.matrix_WI ?? 0;\n  DrillVert.nc_AB = x.matrix_AB ?? 1;\n  DrillVert.nc_LA = x.matrix_LA ?? 0;\n  DrillVert.nc_MI = x.matrix_MI ?? 0;\n  DrillVert.nc_KO = x.matrix_KO || \"00\";\n  DrillVert.nc_Side = \"Top\";  \n\n  // Add drawing\n  let drilling01 = partSelf.add3DElement('Drilling01', DrillVert, PosX, PosY, PosZ, x.DU, x.DU, x.TI );\n  drilling01.extrude('<svg><circle cx=\"' + 0 + '\" cy=\"' + 0 + '\" r=\"' + x.DU/2 + '\" /></svg>', 'z');\n})              \n              \n//====================================================================\n// For each drilling (insert the drillings) right box connector\n//====================================================================\n\ndrillings.forEach(x => \n  {  \n    // Position of the drill\n    let PosX=posRel.x + part2._dimx - x.XA;\n    let PosY=posRel.y + x.YA;\n    let PosZ=0;\n  \n    // Add Vertical Drill\n    let DrillVert = this.addncout_DrillVert();\n    DrillVert.nc_TOOL=\"102\";\n    DrillVert.nc_XA=PosX;\n    DrillVert.nc_YA = partSelf._dimy - PosY;\n    DrillVert.nc_TI=x.TI;\n    DrillVert.nc_DU=x.DU;\n  \n    DrillVert.nc_BM = x.matrix_BM || \"LS\"\n    DrillVert.nc_WI = x.matrix_WI ?? 0;\n    DrillVert.nc_AB = x.matrix_AB ?? 1;\n    DrillVert.nc_LA = x.matrix_LA ?? 0;\n    DrillVert.nc_MI = x.matrix_MI ?? 0;\n    DrillVert.nc_KO = x.matrix_KO || \"00\";\n    DrillVert.nc_Side = \"Top\";  \n  \n    // Add drawing\n    let drilling01 = partSelf.add3DElement('Drilling01', DrillVert, PosX, PosY, PosZ, x.DU, x.DU, x.TI );\n    drilling01.extrude('<svg><circle cx=\"' + 0 + '\" cy=\"' + 0 + '\" r=\"' + x.DU/2 + '\" /></svg>', 'z');\n  })",
+      "bomExecuteType": "Touch"
+    },
+    {
+      "part2": "part_DrawerShelfbtmConnector",
+      "touchName": "FromBack",
+      "bomElementTypeId": "ncout_Group",
+      "valueScript": "// //====================================================================\n  // // Get data for drillings\n  // //====================================================================\n\n  // // Variables\n  // let drillings: ICT_tab_HardwareDrillVertLibrary[] = [];\n\n  // // Find all processings for the drawerbox (to each part)\n  // let processings = GlobalFunc.find_ProcessingMapping(part2.pa_ProcessingId);\n\n  // // Find the drillings for the sidepanel\n  // processings.forEach((processing) => {\n  //   if(processing.ProcessingLibrary == 'DrillVertical'){\n  //     let foundDrillings = GlobalFunc.find_HardwareDrillVertLibrary(processing.ProcessingId!, 'Front');\n  //     drillings = drillings.concat(foundDrillings);\n  //   } \n  // });\n\n  // //====================================================================\n  // // For each drilling (insert the drillings) bottom shelf connector\n  // //====================================================================\n\n  // drillings.forEach(x => \n  // {  \n  //   // Position of the drill\n  //   let PosX=posRel.x + x.XA;\n  //   let PosY=posRel.y + x.YA;\n  //   let PosZ=0;\n\n  //   // Add Vertical Drill\n  //   let DrillVert = this.addncout_DrillVert();\n  //   DrillVert.nc_TOOL=\"102\";\n  //   DrillVert.nc_XA=PosX;\n  //   DrillVert.nc_YA = partSelf._dimy - PosY;\n  //   DrillVert.nc_TI=x.TI;\n  //   DrillVert.nc_DU=x.DU;\n\n  //   DrillVert.nc_BM = x.matrix_BM || \"LS\"\n  //   DrillVert.nc_WI = x.matrix_WI ?? 0;\n  //   DrillVert.nc_AB = x.matrix_AB ?? 1;\n  //   DrillVert.nc_LA = x.matrix_LA ?? 0;\n  //   DrillVert.nc_MI = x.matrix_MI ?? 0;\n  //   DrillVert.nc_KO = x.matrix_KO || \"00\";\n  //   DrillVert.nc_Side = \"Top\";  \n\n  //   // Add drawing\n  //   let drilling01 = partSelf.add3DElement('Drilling01', DrillVert, PosX, PosY, PosZ, x.DU, x.DU, x.TI );\n  //   drilling01.extrude('<svg><circle cx=\"' + 0 + '\" cy=\"' + 0 + '\" r=\"' + x.DU/2 + '\" /></svg>', 'z');\n  // })",
+      "bomExecuteType": "Touch"
+    }
+  ]
+}

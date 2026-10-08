@@ -116,7 +116,7 @@
   //          Add module for the handle
   //===================================================
 
-  else if (this.mod_HandleDesign_matrix.HandleType == "Handle") {
+  else if ((this.mod_HandleDesign_matrix.HandleType == "Handle" || this.mod_HandleDesign_matrix.HandleType == "InsetHandle")) {
     // Add the module
     let Handle = this.addOD_M_mc_Handle01();
 
@@ -135,6 +135,7 @@
     // Seal the handle to get the frontWeight
     let sealedHandle = Handle.seal();
     handleWeight = sealedHandle.mod_HandleWeightCalculations[0];
+    Drawer.mod_HardwareTypeList.push(sealedHandle.mod_HardwareTypeList[0]);
   }
 
   //===================================================

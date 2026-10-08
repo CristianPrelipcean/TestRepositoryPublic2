@@ -1,22 +1,44 @@
 [
   {
     "tableName": "tab_FrontPanelConstruction",
+    "columnId": "ConstructionType",
+    "enumsJson": [
+      {
+        "value": "Standard",
+        "description": "Standard"
+      },
+      {
+        "value": "FrontWithMilling",
+        "description": "FrontWithMilling"
+      },
+      {
+        "value": "InsetHandle",
+        "description": "InsetHandle"
+      },
+      {
+        "value": "HandleStrip",
+        "description": "HandleStrip"
+      }
+    ]
+  },
+  {
+    "tableName": "tab_FrontPanelConstruction",
     "columnId": "GrainDirection",
     "enumsJson": [
       {
         "value": "None",
         "description": "No grain",
-        "imageId": "089991ec-2222-45e3-a4ef-5a6e3d2e090c:None_1.png"
+        "imageId": "d29be51c-330d-4dd2-9994-1e4655434bf7:None_1.png"
       },
       {
         "value": "Lengthwise",
         "description": "The grain lengthwise follows the length",
-        "imageId": "3a235bec-aa1c-48ff-b3ae-fcc016aad4ed:Lenthwise.png"
+        "imageId": "4e359df9-a5c7-44e7-8db8-d9400a59e7ab:Lenthwise.png"
       },
       {
         "value": "Crosswise",
         "description": "The grain crosswise follows the width",
-        "imageId": "d19948eb-5681-478f-a69f-8b64cb5a20f3:Crosswise.png"
+        "imageId": "24acebd6-191c-4a69-b341-f1a974217e86:Crosswise.png"
       }
     ]
   }

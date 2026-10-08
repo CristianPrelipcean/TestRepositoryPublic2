@@ -13,10 +13,10 @@ process_EdgeInfo(PartID:string, PartThickness:number, ColorFront:string, ColorLe
 	let EdgeRightData = getEdgeData(Program, EdgeRightType,	ColorRight,	PartThickness);
 
 	//---------------Get EdgeCode-----------------
-	let EdgeFrontCode = EdgeFrontData 	? 	EdgeFrontData.EdgeId! 	: 	'NoEdge'; 
-	let EdgeLeftCode = 	EdgeLeftData 	? 	EdgeLeftData.EdgeId! 	: 	'NoEdge';
-	let EdgeBackCode = 	EdgeBackData 	? 	EdgeBackData.EdgeId! 	: 	'NoEdge';
-	let EdgeRightCode = EdgeRightData 	? 	EdgeRightData.EdgeId! 	: 	'NoEdge';
+	const EdgeFrontCode = EdgeFrontData?.in_EdgeCode ?? 'NoEdge';
+	const EdgeLeftCode  = EdgeLeftData?.in_EdgeCode ?? 'NoEdge';
+	const EdgeBackCode  = EdgeBackData?.in_EdgeCode ?? 'NoEdge';
+	const EdgeRightCode = EdgeRightData?.in_EdgeCode ?? 'NoEdge';
 
 	//---------------Get EdgeJoint-----------------
 	let EdgeJointFrontLeft = 	getEdgeJoint(PartID, EdgeFrontCode, EdgeLeftCode, EdgeJointType, 'FrontLeft');

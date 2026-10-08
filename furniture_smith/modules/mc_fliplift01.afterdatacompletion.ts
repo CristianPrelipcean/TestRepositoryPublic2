@@ -127,7 +127,7 @@
   //          Add module for the handle
   //===================================================
 
-  else if (this.mod_HandleDesign_matrix.HandleType == "Handle" && this.mod_FlipliftFrontNumber == 0) {
+  else if ((this.mod_HandleDesign_matrix.HandleType == "Handle" || this.mod_HandleDesign_matrix.HandleType == "InsetHandle") && this.mod_FlipliftFrontNumber == 0) {
     // Add the module
     let Handle = this.addOD_M_mc_Handle01();
 
@@ -147,6 +147,7 @@
     let sealedHandle = Handle.seal();
     handleWeight = sealedHandle.mod_HandleWeightCalculations[0];
     this.mod_HandleWeightCalculations.push(handleWeight);
+    fliplift.mod_HardwareTypeList.push(sealedHandle.mod_HardwareTypeList[0]);	
   }
 
   //===================================================

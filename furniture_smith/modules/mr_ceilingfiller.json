@@ -4,9 +4,10 @@
   "configurable": false,
   "isRoot": false,
   "isConfigDummy": false,
+  "isDropContainer": false,
   "description": "Ceilling filler",
   "groupName": "Root",
-  "imageId": "",
+  "imageId": "5263d1a1-4aea-4619-b200-07bcc05ab6a3:CeilingFiller.png",
   "restrictionTypeId": "Public",
   "generateMethod": "CeilingFiller",
   "childModules": [
@@ -54,11 +55,6 @@
       "origin": "Default"
     },
     {
-      "variantId": "mod_CeilingFillerConstruction",
-      "default": "Construction1",
-      "origin": "Default"
-    },
-    {
       "variantId": "mod_CeilingFillerColor",
       "default": "240",
       "origin": "Default"
@@ -70,7 +66,7 @@
     },
     {
       "variantId": "mod_CeilingFillerEdgeFrontColor",
-      "default": "240",
+      "defaultScript": "this.mod_CeilingFillerColor",
       "origin": "Default"
     },
     {
@@ -98,6 +94,10 @@
     },
     {
       "variantId": "mod_CeilingFillerFittingPanelDepth",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_CeilingFillerConstruction",
       "origin": "GlobalVar"
     }
   ],

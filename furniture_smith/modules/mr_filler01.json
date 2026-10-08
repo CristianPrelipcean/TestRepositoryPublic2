@@ -4,9 +4,10 @@
   "configurable": true,
   "isRoot": true,
   "isConfigDummy": false,
+  "isDropContainer": false,
   "description": "Module for filler",
   "groupName": "Waste",
-  "imageId": "6db0ffbb-b43b-44aa-8355-f4978df2fccf:Filler.jpg",
+  "imageId": "6876b07f-31dd-49a3-a912-4e95336984db:Filler.jpg",
   "restrictionTypeId": "Public",
   "childModules": [
     {
@@ -436,28 +437,32 @@
     },
     {
       "variantId": "mod_GlobalFrontOversizeBtm",
-      "default": "0",
-      "origin": "Default"
+      "origin": "GlobalVar"
     },
     {
       "variantId": "mod_GlobalFrontOversizeLeft",
-      "default": "0",
-      "origin": "Default"
+      "origin": "GlobalVar"
     },
     {
       "variantId": "mod_GlobalFrontOversizeRight",
-      "default": "0",
-      "origin": "Default"
+      "origin": "GlobalVar"
     },
     {
       "variantId": "mod_GlobalFrontOversizeTop",
-      "default": "0",
-      "origin": "Default"
+      "origin": "GlobalVar"
     },
     {
       "variantId": "mod_CreateCeilingFiller",
       "default": "false",
       "origin": "Default"
+    },
+    {
+      "variantId": "mod_CeilingFillerHeight",
+      "origin": "GlobalVar"
+    },
+    {
+      "variantId": "mod_CeilingFillerConstruction",
+      "origin": "GlobalVar"
     }
   ],
   "assignedParts": [

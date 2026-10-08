@@ -1,4 +1,4 @@
-process_FrontPanelConstruction(Module: any, Partgroup: string, Program: string, Width: number, Height: number, Handlestrip: string, HandlePosType: string, FrontGrain: string, OverlayBtm = 0):
+process_FrontPanelConstruction(Module: any, Partgroup: string, Program: string, Width: number, Height: number, HandleDesignGroup: string, HandlePosType: string, FrontGrain: string, OverlayBtm = 0):
  { retFrontConstruction: any, retSpecificConstruction: any, width: number, height: number, thickness: number, posX: number, posY: number, posZ: number, weight: number, fillingColor: string, fillingGrain: string, fillingType: string, frontSegmentType: string, frontSegmentColor: string, frontSegmentGrainId: string } {
 
 	// Interface
@@ -27,7 +27,7 @@ process_FrontPanelConstruction(Module: any, Partgroup: string, Program: string, 
 		// Retrieve data from table FrontConstruction
 		//===================================================
 
-		retFrontConstruction = GlobalFunc.find_FrontConstruction(Program, Handlestrip, HandlePosType, Width, Height, Partgroup, FrontDesign, frontColor);
+		retFrontConstruction = GlobalFunc.find_FrontConstruction(Program, HandleDesignGroup, HandlePosType, Width, Height, Partgroup, FrontDesign, frontColor);
 
 		// Safety check: If we got no value we stop the evaluation.
 		if (!retFrontConstruction?.FrontConstructionId) {
@@ -121,7 +121,7 @@ process_FrontPanelConstruction(Module: any, Partgroup: string, Program: string, 
 		//---------------------------------------------------
 		if (Module.g.basic_FrontpanelWeightLogic === 'Custom') {
 
-			weight = GlobalFunc.ue_FrontpanelWeightCalculations(Module, Partgroup, Program, Width, Height, Handlestrip, HandlePosType, FrontGrain)
+			weight = GlobalFunc.ue_FrontpanelWeightCalculations(Module, Partgroup, Program, Width, Height, HandleDesignGroup, HandlePosType, FrontGrain)
 
 			if (!weight || weight === undefined) {
 				weight = 0;    

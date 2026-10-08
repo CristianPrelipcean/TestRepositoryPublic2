@@ -212,16 +212,8 @@
     }
 
     // Get the maximum toekick possible length from the boards properties.
-    let maximumLength;
-    try {
-      const boardMapping = GlobalFunc.find_BoardMapping(this.mod_ToekickColor, this.mod_ToekickThk);
-      const boardEntry = GlobalFunc.find_BoardLibrary(boardMapping.BoardId!);
-      maximumLength = boardEntry!.BoardLength;
-    }
-    catch (e) {
-      maximumLength = 9999;
-      //logError(`Error while retrieving maximum toekick length. Using fallback value ${maximumLength}. Error: ${e}`);
-    }
+    const boardMapping = GlobalFunc.find_BoardMapping(this.mod_ToekickColor, this.mod_ToekickThk);
+    const maximumLength = GlobalFunc.find_BoardDimensions(boardMapping.BoardId ?? "").Length;
 
     /*
      * Distribute the toekick segments to groups of maximum length, do not split them in the middle of the segments and

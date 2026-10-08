@@ -168,6 +168,7 @@
 
   // Check if an equipment is docked in the cabinet
   let checkEquipmentDocked = false;
+  let counterCO = 0;
 
   // Cycle through all children of the mf_Door
   this.m.forEach((p, index) => {
@@ -185,6 +186,18 @@
 
       // SetOrigin of the child
       p.setOrigin(CarcaseSpaceDimension.WidthFreeStartPos - this.mod_Originpos[0], CarcaseSpaceDimension.HeightFreeStartPos - this.mod_Originpos[1], CarcaseSpaceDimension.DepthFreeStartPos - this.mod_Originpos[2]);
+    }
+    else if (p instanceof OD_M_me_ClothingOrganizer01){
+      checkEquipmentDocked = true;
+      counterCO++;
+
+			p.mod_Width = CarcaseSpaceDimension.WidthFreeSpace;
+			p.mod_Depth = CarcaseSpaceDimension.DepthFreeSpace;
+      p.mod_Height = CarcaseSpaceDimension.HeightFreeSpace;
+      p.mod_ClothingOrganizerId = this.mod_FrontId + "_" + counterCO;
+
+			// SetOrigin of the child
+			p.setOrigin(CarcaseSpaceDimension.WidthFreeStartPos - this.mod_Originpos[0], CarcaseSpaceDimension.HeightFreeStartPos - this.mod_Originpos[1], CarcaseSpaceDimension.DepthFreeStartPos - this.mod_Originpos[2]);
     }
   })
 

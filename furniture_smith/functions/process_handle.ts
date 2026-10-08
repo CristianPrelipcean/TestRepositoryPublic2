@@ -168,17 +168,26 @@ process_Handle(m: IFuncParents_mc_Handle01) {
 
 		let minValue = 9999;
 		let maxValue = 0;
+		let DrillDistance = 0;
 		let processings = GlobalFunc.find_ProcessingMapping(retObjectMapping.ProcessingItem!);
 
 		processings.forEach((processing) => {
-			let drills = GlobalFunc.find_HardwareDrillVertLibrary(processing.ProcessingId!, 'Front');
-			drills.forEach((drill) => {
-				if (drill.XA < minValue) { minValue = drill.XA }
-				if (drill.XA > maxValue) { maxValue = drill.XA }
-			});
+			if (processing.ProcessingLibrary == "DrillVertical") {
+				let drills = GlobalFunc.find_HardwareDrillVertLibrary(processing.ProcessingId!, 'Front');
+				drills.forEach((drill) => {
+					if (drill.XA < minValue) { minValue = drill.XA }
+					if (drill.XA > maxValue) { maxValue = drill.XA }
+				});
+				DrillDistance = maxValue - minValue;
+			}
+			else if (processing.ProcessingLibrary == "Milling") {
+				let mills = GlobalFunc.find_HardwareMilingLibrary(processing.ProcessingId!, 'Front');
+				mills.forEach((mill) => {
+					DrillDistance = mill.BR(0,0,0,0) ?? 0
+				});
+				
+			}
 		});
-
-		let DrillDistance = maxValue - minValue;
 
 		//---------------Find sector for the handle---------------------------
 
@@ -207,6 +216,8 @@ process_Handle(m: IFuncParents_mc_Handle01) {
 
 		// Via HandleLine
 		else {
+
+			HandleLength = GraphicInfo?.DimensionX ?? 0;
 
 			//---------------vertical sector
 
@@ -238,15 +249,15 @@ process_Handle(m: IFuncParents_mc_Handle01) {
 
 				// Find handle position Up
 				let retHandleUp = GlobalFunc.find_HandleConstruction(PartGroup!, SectorHor!, 'Up', PosType!, retHandleSetting.ReferencePointX!, retHandleSetting.ReferencePointY!)
-				let tmpPosUp = retHandleUp.PosY1(m, retHandleSetting.DistanceY, HardwareInfo!.Length, HardwareInfo!.Thickness, DrillDistance, tmpHandleLine);
+				let tmpPosUp = retHandleUp.PosY1(m, retHandleSetting.DistanceY, HandleLength, HardwareInfo!.Thickness, DrillDistance, tmpHandleLine);
 
 				// Find handle position Center
 				let retHandleCenter = GlobalFunc.find_HandleConstruction(PartGroup!, SectorHor!, 'Center', PosType!, retHandleSetting.ReferencePointX!, retHandleSetting.ReferencePointY!)
-				let tmpPosCenter = retHandleCenter.PosY1(m, retHandleSetting.DistanceY, HardwareInfo!.Length, HardwareInfo!.Thickness, DrillDistance, tmpHandleLine);
+				let tmpPosCenter = retHandleCenter.PosY1(m, retHandleSetting.DistanceY, HandleLength, HardwareInfo!.Thickness, DrillDistance, tmpHandleLine);
 
 				// Find handle position Down
 				let retHandleDown = GlobalFunc.find_HandleConstruction(PartGroup!, SectorHor!, 'Down', PosType!, retHandleSetting.ReferencePointX!, retHandleSetting.ReferencePointY!)
-				let tmpPosDown = retHandleDown.PosY1(m, retHandleSetting.DistanceY, HardwareInfo!.Length, HardwareInfo!.Thickness, DrillDistance, tmpHandleLine);
+				let tmpPosDown = retHandleDown.PosY1(m, retHandleSetting.DistanceY, HandleLength, HardwareInfo!.Thickness, DrillDistance, tmpHandleLine);
 
 				// Compare the positions and decide the sector
 				if (tmpPosCenter < tmpPosDown) { SectorVert = 'Down'; }
@@ -260,8 +271,6 @@ process_Handle(m: IFuncParents_mc_Handle01) {
 		let retHandleConstr = GlobalFunc.find_HandleConstruction(PartGroup!, SectorHor!, SectorVert!, PosType!, retHandleSetting.ReferencePointX!, retHandleSetting.ReferencePointY!);
 
 		//---------------Check if handle length fit to the front dimension----
-
-		HandleLength = GraphicInfo?.DimensionX ?? 0;
 
 		if (HandleRotation == 0 || HandleRotation == 180) {
 			if (m.mod_Width <= HandleLength) {

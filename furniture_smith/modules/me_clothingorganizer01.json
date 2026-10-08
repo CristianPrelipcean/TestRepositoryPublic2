@@ -4,8 +4,9 @@
   "configurable": true,
   "isRoot": false,
   "isConfigDummy": false,
+  "isDropContainer": false,
   "groupName": "Equipment",
-  "imageId": "a72de315-1a9d-4741-8af5-9e0b58e11e92:ClothingOrganizer.png",
+  "imageId": "6279f2fe-5d96-4f1a-add6-f51dabe4ec51:ClothingOrganizer.png",
   "restrictionTypeId": "Public",
   "childModules": [
     {
@@ -38,12 +39,12 @@
     },
     {
       "variantId": "mod_ClothingOrganizerDesign",
-      "default": "CONERO",
+      "default": "None",
       "origin": "Default"
     },
     {
       "variantId": "mod_ClothingOrganizerType",
-      "default": "LiftRail",
+      "default": "None",
       "origin": "Default"
     },
     {
@@ -73,7 +74,6 @@
     },
     {
       "variantId": "mod_ClothingOrganizerDepthPosition",
-      "default": "150mm_1",
       "origin": "Default"
     },
     {
@@ -83,6 +83,41 @@
     {
       "variantId": "mod_ClothingOrganizerColor",
       "default": "Automatic",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_ClothingOrganizerId",
+      "default": "None",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_FrontId",
+      "previewValue": "None",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_CarcaseId",
+      "default": "",
+      "previewValue": "",
+      "origin": "Derived"
+    },
+    {
+      "variantId": "mod_ClothingOrganizerWidthPosition",
+      "default": "0",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_Originpos",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_ShelffixedBtm",
+      "default": "false",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_ShelffixedTop",
+      "default": "false",
       "origin": "Default"
     }
   ],

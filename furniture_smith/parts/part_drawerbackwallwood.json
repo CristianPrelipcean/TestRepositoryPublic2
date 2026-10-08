@@ -4,7 +4,7 @@
   "description": "Drawer backwall wood",
   "wdt": "XYZ",
   "groupName": "Drawerbox",
-  "imageId": "d4068146-208e-4102-a6ef-2b0dda606232:DrawerBackw.jpg",
+  "imageId": "a917b544-77e4-4bde-852f-4a46e00d1add:DrawerBackw.jpg",
   "invisible": false,
   "restrictionTypeId": "Public",
   "noNcData": false,
@@ -109,8 +109,8 @@
     {
       "bomElementTypeId": "bomout_Group",
       "description": "Boards and edges for drawerbox backwall wood",
-      "conditionScript": "partSelf._g?.basic_CreateBom == 'Library'",
-      "valueScript": "// Add the Board\n            let Board = this.addbomout_Board();\n\n            // Type of the Bom-Element (will be checked in order output)\n            let elementType='Board';\n\n            // ProductionSite Category (to split the orders for different production sites)\n            let elementCategory='';\n            \n            // Id of the parent to create the hierarchy\n            let parentBomId=part.pa_BomId;\n            \n            // Call the function to process the Bom-Element\n            GlobalFunc.process_BoardBom(Board, part, elementType, elementCategory, parentBomId)"
+      "conditionScript": "partSelf._g?.basic_CreateBom != null && partSelf._g.basic_CreateBom !== 'Custom'",
+      "valueScript": "// HOMAG Standard Bom-Generation-Method\r\n//=================================================\r\n\r\n// Type of the Bom-Element (will be checked in order output)\r\nconst elementType='Board';\r\n\r\n// ProductionSite Category (to split the orders for different production sites)\r\nconst elementCategory='';\r\n\r\n// Id of the parent to create the hierarchy\r\nconst parentBomId=part.pa_BomId;\r\n\r\n// Mode from basic setting\r\nconst Mode = partSelf._g?.basic_CreateBom  ? partSelf._g.basic_CreateBom : 'SimpleBoard';\r\n\r\n// Call the function to process the Bom-Element\r\nGlobalFunc.process_BomGeneration(this, part, elementType, elementCategory, parentBomId, Mode, 'Carcase');"
     }
   ],
   "ncData": [

@@ -238,34 +238,15 @@
       if (k.Type === "Hardware" && (k.category === target || target == 'TARGET-PRODUCTION-SITE' || target == undefined)){
         outStr += '<entity>' + '\n';
         outStr += '<properties>' + '\n';           
-        //outStr += '<param name="Elementtype" value="Hardware" />' + '\n'; 
         outStr += '<param name="Elementtype" value="' + k.Type + '" />' + '\n'; 
         outStr += '<param name="Typ" value="Resource" />' + '\n';
-        //outStr += '<param name="ArticleNumber" value="Hardware" />' + '\n';
         outStr += '<param name="ArticleNumber" value="' + k.Name + '" />' + '\n';
-        //outStr += '<param name="ArticleDescription" value="' + k.Name + '" />' + '\n';
         outStr += '<param name="ArticleDescription" value="' + escapeXml(String(extras["bom_Description1"])) + '" />' + '\n';
-        //outStr += '<param name="Quantity" value="1" />' + '\n';
         outStr += '<param name="Quantity" value="' + escapeXml(String(extras["bom_Qty"])) + '" />' + '\n';
         outStr += '<param name="QuantityUnit" value="pcs" />' + '\n';            
         outStr += '<param name="Length" value="' + k.width + '" />' + '\n';
         outStr += '<param name="Width" value="' + k.depth + '" />' + '\n';
         outStr += '<param name="Thickness" value="' + k.thickness + '" />' + '\n';    
-
-        /*
-        if (extras["bom_Supplier"]) {
-          outStr += '<param name="Supplier" value="' + escapeXml(String(extras["bom_Supplier"])) + '" />' + '\n';
-        }
-        if (extras["bom_SupplierArticle"]) {
-          outStr += '<param name="SupplierArticle" value="' + escapeXml(String(extras["bom_SupplierArticle"])) + '" />' + '\n';
-        }
-        if (extras["bom_Description1"]) {
-          outStr += '<param name="Description1" value="' + escapeXml(String(extras["bom_Description1"])) + '" />' + '\n';
-        }
-        if (extras["bom_Description2"]) {
-          outStr += '<param name="Description2" value="' + escapeXml(String(extras["bom_Description2"])) + '" />' + '\n';
-        }
-        */
 
         for (const [extraName, extraValue] of Object.entries(extras)) {
           if (extraValue !== undefined && extraValue !== null && extraValue !== "") {

@@ -221,6 +221,12 @@ process_StorageunitFreeSpaceCalculations(m: parent, posLeftPart: number = 0, pos
         tmpHgt = tmpPos - startPos - (frontInfo.FingergripTop ? fingergripReductionTop : 0);
       }
 
+      // Clamp free space height to the front area
+      const frontTop = frontInfo.StartingPosition + frontInfo.RealFrontHeight;
+      const maxFreeSpaceHeight = frontTop - startPos;
+      tmpHgt = Math.min(tmpHgt, maxFreeSpaceHeight);
+      tmpHgt = Math.max(tmpHgt, 0);
+    
       // Set the calculated values
       freeSpaceInfo.FreeSpaceHeight.push(tmpHgt);
       freeSpaceInfo.FreeSpaceHeightStartPos.push(startPos);

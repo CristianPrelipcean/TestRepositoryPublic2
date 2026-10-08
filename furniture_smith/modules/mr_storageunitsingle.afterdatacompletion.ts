@@ -1,4 +1,17 @@
 
+	// Schuler Consulting
+	// Create: Okt 2022
+	// By Ludwig Weber
+	// Purpose: CabinetLibrary
+	//
+	// Description:
+	// AfterDataCompletion of mr_StorageUnit_Single
+	// Add the carcase to the root-module
+	// Add the PlinthArea to the root-module
+	// Cycle through the childs and manage the front elements
+	// Cycle through the childs and search for fingergrip
+	// Cycle through the childs get backwall information
+	//
 	// Revisions:
 	// July 2024
 	// by Henning Wiesbrock
@@ -26,32 +39,104 @@
 	//----------------------------------------------------
 
 	let carc = this.addOD_M_mc_Storageunit01(0);
+	const carcaseId = 'Carcase_01';
 
 	// StartPosition of Cabinet
-	let StartPosCabinet = this.mod_PlinthAreaDesign_matrix.PlinthAreaType !== 'None' ? this.mod_PlinthAreaHeight! : 0;
+	const StartPosCabinet = this.mod_PlacementLevels === 'OnFloor' ? this.mod_PlinthAreaHeight : 0;
 
-	// Dimensioning variables
+
+	//======================================================================
+	// Dimensioning variables (room and sloped ceiling)
+	//======================================================================
+
 	let angle = 0;
 	let wallAngle = 0;
 	let backHeight = 0;
 	let wallBackheight = 0;
-	let height = this.mod_Height;
+	let height = this.mod_CarcaseHeight > 0 ? this.mod_CarcaseHeight : this.mod_Height;
 	let topDepth = this.mod_TopDepth;
 
-	// Read data
-	const surroundingContours = this.getRoomContours() ?? [];
-	const articlePos = this.getArticlePos();
+	//======================================================================
+	// Read and validate module context information
+	//======================================================================
 
-	// Article dimensions
-	const articleDimension = {
-		x: this.mod_Width ?? 0,
-		y: this.mod_Height ?? 0,
-		z: this.mod_Depth ?? 0
+	const moduleContextInfo = JSON.parse(this.mod_ModuleContextInformationList[0] ?? "{}");
+	const hasModuleContextInfo = moduleContextInfo.DataComplete === true;
+	if (!hasModuleContextInfo) {
+		logInfo("Module context information returned incomplete data.");
+	}
+
+	//======================================================================
+	// Apply sloped ceiling information from module context
+	//======================================================================
+
+	if (hasModuleContextInfo && moduleContextInfo.SlopedCeiling && moduleContextInfo.SlopedCeilingDirection === "toBack"
+	) {
+		wallAngle = moduleContextInfo.SlopedCeilingAngle;
+		wallBackheight = moduleContextInfo.SlopedCeilingLevel;
+	}
+
+//======================================================================
+	// Determine automatic filler situation
+	//======================================================================
+
+	const minWallDistance = 20;
+	const maxWallDistance = 290;
+	const isAutomaticLeft = this.mod_CarcaseVisLeftSelection === "Automatic";
+	const isAutomaticRight = this.mod_CarcaseVisRightSelection === "Automatic";
+	const isVisibleLeft = this.mod_CarcaseVisLeftSelection === "Visible";
+	const isVisibleRight = this.mod_CarcaseVisRightSelection === "Visible";
+
+	const wallDistanceLeft = hasModuleContextInfo ? moduleContextInfo.DistanceWallLeft : 999;
+	const wallDistanceRight = hasModuleContextInfo ? moduleContextInfo.DistanceWallRight : 999;
+	const isNearWallLeft = wallDistanceLeft >= minWallDistance && wallDistanceLeft <= maxWallDistance;
+	const isNearWallRight = wallDistanceRight >= minWallDistance && wallDistanceRight <= maxWallDistance;
+
+	const autoFillerLeft = isAutomaticLeft && hasModuleContextInfo && !moduleContextInfo.HasDockingLeft && isNearWallLeft;
+	const autoFillerRight = isAutomaticRight && hasModuleContextInfo && !moduleContextInfo.HasDockingRight && isNearWallRight;
+
+	//======================================================================
+	// Apply automatic filler and upright logic to return and visibility values
+	//======================================================================
+
+	const hasWallDistanceLeft = wallDistanceLeft > minWallDistance;
+	const hasWallDistanceRight = wallDistanceRight > minWallDistance;
+	const returnPlinthLeft = autoFillerLeft ? false : moduleContextInfo.ReturnPlinthLeft;
+	const returnPlinthRight = autoFillerRight ? false : moduleContextInfo.ReturnPlinthRight;
+	const returnCeilingFillerLeft = autoFillerLeft ? false : moduleContextInfo.ReturnCeilingFillerLeft;
+	const returnCeilingFillerRight = autoFillerRight ? false : moduleContextInfo.ReturnCeilingFillerRight;
+
+	let needsVisibleSideLeft = isVisibleLeft || (isAutomaticLeft && !autoFillerLeft && hasWallDistanceLeft && moduleContextInfo.NeedsVisibleSideLeft);
+	let needsVisibleSideRight = isVisibleRight || (isAutomaticRight && !autoFillerRight && hasWallDistanceRight && moduleContextInfo.NeedsVisibleSideRight);
+	const autoUprightLeft = (isVisibleLeft || isAutomaticLeft) && this.mod_CarcaseVisLeftAutomaticType === "AddUpright" && needsVisibleSideLeft;
+	const autoUprightRight = (isVisibleRight || isAutomaticRight) && this.mod_CarcaseVisRightAutomaticType === "AddUpright" && needsVisibleSideRight;
+
+	needsVisibleSideLeft = needsVisibleSideLeft && !autoUprightLeft;
+	needsVisibleSideRight = needsVisibleSideRight && !autoUprightRight;
+
+	//======================================================================
+	// Create information object for visibility and automatism control
+	//======================================================================
+
+	const storageunitInfo = {
+		PlinthAreaVisLeft: resolveVisibility(this.mod_PlinthAreaVisLeftSelection, returnPlinthLeft),
+		PlinthAreaVisRight: resolveVisibility(this.mod_PlinthAreaVisRightSelection, returnPlinthRight),
+		CeilingAreaVisLeft: resolveVisibility(this.mod_CeilingAreaVisLeftSelection, returnCeilingFillerLeft),
+		CeilingAreaVisRight: resolveVisibility(this.mod_CeilingAreaVisRightSelection, returnCeilingFillerRight),
+		CarcaseVisLeft: resolveVisibility("Automatic", needsVisibleSideLeft),
+		CarcaseVisRight: resolveVisibility("Automatic", needsVisibleSideRight),
+		AutoFillerLeft: autoFillerLeft,
+		AutoFillerRight: autoFillerRight,
+		AutoUprightLeft: autoUprightLeft,
+		AutoUprightRight: autoUprightRight,
+		WallDistanceLeft: wallDistanceLeft,
+		WallDistanceRight: wallDistanceRight	
 	};
+	this.mod_InformationList[0] = JSON.stringify(storageunitInfo);
 
-	// Analyze surroundings
-	//----------------------------------------------------	
-	const surroundingAnalysis = GlobalFunc.process_AnalyzeArticleSurroundings(surroundingContours, articlePos, articleDimension);
+	//======================================================================
+	// Helper function to resolve the visibility based on the selection and the automatic value
+	//======================================================================
 
 	type VisibilityValue = 1 | 0;
 	function resolveVisibility(selection: string, automaticValue: boolean): VisibilityValue {
@@ -72,83 +157,21 @@
 		}
 	}
 
-	// Guard
-	if (!surroundingAnalysis.dataComplete) {
-		logInfo("Article surrounding analysis returned incomplete data.");
-	}
-	else {
-		if (surroundingAnalysis.slopedCeiling && surroundingAnalysis.slopedCeilingDirection == "toBack") {
-			wallAngle = surroundingAnalysis.slopedCeilingAngle;
-			wallBackheight = surroundingAnalysis.slopedCeilingLevel;
-		}
-	}
-
-	const isFirstElement = surroundingAnalysis.dataComplete ? surroundingAnalysis.firstElement : false;
-	const isLastElement = surroundingAnalysis.dataComplete ? surroundingAnalysis.lastElement : false;
-	const disWallDisLeft = surroundingAnalysis.dataComplete ? surroundingAnalysis.distanceWallLeft : 999;
-	const disWallDisRight = surroundingAnalysis.dataComplete ? surroundingAnalysis.distanceWallRight : 999;
-
-
-	// Understand if we are close to the wall with this cabinet
-	const isNearWallLeft = disWallDisLeft >= 0 && disWallDisLeft <= 200;
-	const isNearWallRight = disWallDisRight >= 0 && disWallDisRight <= 200;
-
-	// Flag for finishing sidepanels and add the closing parts at the toekick and ceiling filler
-	const autoLeft = isFirstElement && !isNearWallLeft;
-	const autoRight = isLastElement && !isNearWallRight;
-
-	// Flag to add the filler
-	const autoFillerLeft = isFirstElement && isNearWallLeft;
-	const autoFillerRight = isLastElement && isNearWallRight;
-
-	// Create the object for the automatism and visiblity control
-	const storageunitInfo = {
-		PlinthAreaVisLeft: resolveVisibility(this.mod_PlinthAreaVisLeftSelection, autoLeft),
-		PlinthAreaVisRight: resolveVisibility(this.mod_PlinthAreaVisRightSelection, autoRight),
-		CeilingAreaVisLeft: resolveVisibility(this.mod_CeilingAreaVisLeftSelection, autoLeft),
-		CeilingAreaVisRight: resolveVisibility(this.mod_CeilingAreaVisRightSelection, autoRight),
-		CarcaseVisLeft: resolveVisibility(this.mod_CarcaseVisLeftSelection, autoLeft),
-		CarcaseVisRight: resolveVisibility(this.mod_CarcaseVisRightSelection, autoRight),
-		AutoFillerLeft: autoFillerLeft,
-		AutoFillerRight: autoFillerRight,
-		WallDistanceLeft: disWallDisLeft,
-		WallDistanceRight: disWallDisRight	
-	};
-	this.mod_InformationList[0] = JSON.stringify(storageunitInfo);
-
-	// Automatic filler and upright
-	//----------------------------------------------------	
-
-	if(autoFillerLeft){
-		const filler = this.addOD_M_mc_Filler01();
-		filler.mod_FrontPosStart = this.mod_FrontPosStart;
-		filler.mod_Direction = 'Left';
-		filler.mod_FillerType = 'LShape';
-		filler.mod_TypeElement = 'Filler';
-		filler.mod_Width = disWallDisLeft;
-
-		filler.setOrigin(-disWallDisLeft, StartPosCabinet, 0)
-	}
-
-	if(autoFillerRight){
-		const filler = this.addOD_M_mc_Filler01();
-		filler.mod_FrontPosStart = this.mod_FrontPosStart;
-		filler.mod_Direction = 'Right';
-		filler.mod_FillerType = 'LShape';
-		filler.mod_TypeElement = 'Filler';
-		filler.mod_Width = disWallDisRight;
-
-		filler.setOrigin(this.mod_Width, StartPosCabinet, 0)
-	}
-
+	//======================================================================
 	// Calculate the dimension logic for sloped ceiling
-	//----------------------------------------------------	
-	if (this.mod_SlopedCeilingDimensionLogic_matrix.UseWallData) { // Use the Wall data
-		if (this.mod_SlopedCeilingDimensionLogic_matrix.Height == 'Max') { //Calculate the maximum height
+	//======================================================================
+
+	// Use the Wall data
+	if (this.mod_SlopedCeilingDimensionLogic_matrix.UseWallData) { 
+
+		//Calculate the maximum height
+		if (this.mod_SlopedCeilingDimensionLogic_matrix.Height == 'Max') { 
 			angle = wallAngle;
 			backHeight = wallBackheight - StartPosCabinet - this.g.basic_SlopedCeilingHeightReduction;
 		}
-		else if (this.mod_SlopedCeilingDimensionLogic_matrix.Height == 'User' && StartPosCabinet + this.mod_Height > wallBackheight) { // Calculate the height based on the user height definition (only if it touches the sloped ceiling)
+
+		// Calculate the height based on the user height definition (only if it touches the sloped ceiling)
+		else if (this.mod_SlopedCeilingDimensionLogic_matrix.Height == 'User' && StartPosCabinet + this.mod_Height > wallBackheight) { 
 			angle = wallAngle;
 			backHeight = wallBackheight - StartPosCabinet - this.g.basic_SlopedCeilingHeightReduction;
 		}
@@ -164,7 +187,8 @@
 		backHeight = this.mod_BackHeight - StartPosCabinet;
 	}
 
-	if (angle != 0) { // It's a SlopedCeiling Cabinet
+	// It's a SlopedCeiling Cabinet
+	if (angle != 0) { 
 		// Calculate height and top depth using maximum height possible
 		let maxheight = GlobalFunc.find_CarcaseSlopedCeilingDimension(this.mod_SlopedCeilingConstruction, 'BasedInTopDepth').Height(this, backHeight, angle);
 		let maxheightTopDepth = GlobalFunc.find_CarcaseSlopedCeilingDimension(this.mod_SlopedCeilingConstruction, 'BasedInTopDepth').TopDepth(this, backHeight, angle);
@@ -175,15 +199,16 @@
 		// Calculate the Top Depth
 		topDepth = GlobalFunc.find_CarcaseSlopedCeilingDimension(this.mod_SlopedCeilingConstruction, this.mod_SlopedCeilingDimensionLogic_matrix.DimensionLogic).TopDepth(this, backHeight, angle);
 
-		if (height > maxheight) { // If the height is bigger than the maximum height, we limit the cabinet to the maximum height
+		// If the height is bigger than the maximum height, we limit the cabinet to the maximum height
+		if (height > maxheight) { 
 			height = maxheight;
 			topDepth = maxheightTopDepth;
 		}
-		height != this.mod_Height ? logWarning('Automatic adjustment: Carcase height is now ' + height + ' instead of ' + this.mod_Height) : '';
+		height != this.mod_CarcaseHeight ? logWarning('Automatic adjustment: Carcase height is now ' + height + ' instead of ' + this.mod_CarcaseHeight) : '';
 		topDepth != this.mod_TopDepth ? logWarning('Automatic adjustment: Top depth is now ' + topDepth + ' instead of ' + this.mod_TopDepth) : '';
 
 		// Read Settings table
-		let slopedCeilingSettings = GlobalFunc.find_SlopedCeilingSettings(this.mod_SlopedCeilingConstruction!);
+		const slopedCeilingSettings = GlobalFunc.find_SlopedCeilingSettings(this.mod_SlopedCeilingConstruction!);
 
 		// Adjust CarcaseConnectionLeftBtm
 		if (slopedCeilingSettings.CarcaseConnectionLeftBtm != this.mod_CarcaseConnectionLeftBtm) {
@@ -216,8 +241,54 @@
 		}
 	}
 
+	//======================================================================
+	// Add automatic fillers
+	//======================================================================
+
+	const createAutoFiller = (direction: "Left" | "Right", width: number, originX: number) => {
+		const filler = this.addOD_M_mc_FillerStraight01(1);
+
+		filler.mod_FrontPosStart = this.mod_FrontPosStart;
+		filler.mod_Height = height - this.mod_FrontGapHorTop;
+		filler.mod_Direction = direction;
+		filler.mod_FillerType = "LShape";
+		filler.mod_TypeElement = "Filler";
+		filler.mod_Width = width;
+		filler.mod_CarcaseId = carcaseId;
+		filler.setOrigin(originX, StartPosCabinet, 0);
+	};
+
+	if (autoFillerLeft) createAutoFiller("Left", wallDistanceLeft, -wallDistanceLeft);
+	if (autoFillerRight) createAutoFiller("Right", wallDistanceRight, this.mod_Width);
+
+	//======================================================================
+	// Add automatic uprights
+	//======================================================================
+
+	const wallDistanceBack = moduleContextInfo.DistanceWallBack >= 0 && moduleContextInfo.DistanceWallBack < 290 ? moduleContextInfo.DistanceWallBack : 0;
+	const createAutoUpright = (direction: "Left" | "Right", originX: number) => {
+		const upright = this.addOD_M_mc_Upright01(1);
+
+		upright.mod_Height = height + this.mod_GlobalFrontOversizeBtm + this.mod_GlobalFrontOversizeTop;
+		upright.mod_Depth = this.mod_Depth + 22 + wallDistanceBack;
+		upright.mod_UprightConstruction = 'CarcaseHeight';
+		upright.mod_UprightColor = this.mod_FrontColor;
+		upright.mod_UprightFloorProfileColor = 'DemoStainlessSteel';
+		upright.mod_UprightOverdimensionBtm = 0;
+		upright.mod_UprightOverdimensionTop = 0;
+		upright.mod_UprightOverhang = 22;
+		upright.mod_UprightProgram = this.mod_FrontProgram;
+		upright.mod_UprightSide = direction;
+		upright.mod_TypeElement = "Upright";
+		upright.setOrigin(originX, StartPosCabinet - this.mod_GlobalFrontOversizeBtm, -wallDistanceBack);
+	};
+
+	if (autoUprightLeft) createAutoUpright("Left", -this.mod_UprightThk);
+	if (autoUprightRight) createAutoUpright("Right", this.mod_Width);
+
+	//======================================================================
 	// Calculation of the carcase width and starting Position (Endless cabinets)
-	//----------------------------------------------------
+	//======================================================================
 
 	function GetSideAdjustment(type: string, thickness: number): number {
 		switch (type) {
@@ -267,7 +338,7 @@
 	carc.mod_BackHeight = backHeight;
 	carc.mod_SidepanelleftType = this.mod_SidepanelleftType;
 	carc.mod_SidepanelrightType = this.mod_SidepanelrightType;
-	carc.mod_CarcaseId = 'Carcase_01';
+	carc.mod_CarcaseId = carcaseId;
 	carc.mod_CarcaseVisLeft = storageunitInfo.CarcaseVisLeft === 1;
 	carc.mod_CarcaseVisRight = storageunitInfo.CarcaseVisRight === 1;
 
@@ -437,7 +508,7 @@
 
 			// Create Carcase ID and Attributes
 			GlobalCount++;
-			p.mod_CarcaseId = 'Carcase_01';
+			p.mod_CarcaseId = carcaseId;
 			p.mod_CarcaseDepth = this.mod_Depth;
 			p.mod_CarcaseWidth = this.mod_Width;
 			p.mod_CarcaseHeight = height;
@@ -584,6 +655,7 @@
 
 					// Flag for first front element
 					p.mod_FirstFront = true;
+					p.mod_HeightPosInsertion = this.mod_HeightPosInsertion;
 
 					// Apply global oversize if front element has no oversize defined
 					if(this.mod_GlobalFrontOversizeBtm > 0 && p.mod_FrontOversizeBtm === 0){
@@ -634,6 +706,23 @@
 		}
 
 		//===============================================================================================
+		// Manage the Hood 
+		//===============================================================================================
+		if (p instanceof OD_M_mf_Door) {
+			p.m.forEach((h, i, arrH) => {
+				if (h instanceof OD_M_me_HoodInsert) {
+					
+					let hoodinsert = GlobalFunc.process_HoodInsert(h.mod_HoodSupplier ?? "",h.mod_HoodId ?? "",h.mod_HoodIntegrationType ??"",h.mod_HoodConstructionType??"",this.mod_Width,this.mod_Height,this.mod_Depth);
+					if(hoodinsert && hoodinsert.DatasetComplete){
+						carc.mod_HoodInsertion = true;
+						carc.mod_HoodInformation = JSON.stringify(hoodinsert);
+						h.mod_HoodInformation == JSON.stringify(hoodinsert);
+					}
+				}
+			})
+		}
+
+		//===============================================================================================
 		// Manage the oven
 		//===============================================================================================
 
@@ -641,7 +730,7 @@
 
 			// Create Carcase ID and Attributes
 			GlobalCount++;
-			p.mod_CarcaseId = 'Carcase_01';
+			p.mod_CarcaseId = carcaseId;
 			p.mod_CarcaseDepth = this.mod_Depth;
 			p.mod_CarcaseWidth = this.mod_Width;
 			p.mod_CarcaseHeight = height;
@@ -728,7 +817,7 @@
 
 			// Stringify the object and push it to the list attribute
 			//-------------------------------------------------------------------------------------
-
+			
 			if (insertFixedShelf) {
 				carc.mod_ShelffixedInfoList.push(JSON.stringify(createShelfFixedInfo(p, this)));
 			}
@@ -970,7 +1059,7 @@
 	// Set the values to the relevant attributes of the carcase
 	plinth.mod_CarcaseDepth = this.mod_Depth - BtmShelfPosDepth;
 	plinth.mod_CarcaseWidth = this.mod_Width;
-	plinth.mod_CarcaseId = 'Carcase_01';
+	plinth.mod_CarcaseId = carcaseId;
 
 	plinth.setOrigin(0, BtmShelfPos, BtmShelfPosDepth);
 
@@ -983,18 +1072,22 @@
 	//===================================================
 
 	const TopEndCabinet = StartPosCabinet + height;
+	let dockPosLeft = 0;
+	let dockPosRight = this.mod_Width;
+	if (autoUprightLeft) dockPosLeft = -this.mod_UprightThk;
+	if (autoUprightRight) dockPosRight = this.mod_Width + this.mod_UprightThk;
 
 	// Left side
-	this.addDockingInfo(Dock.LeftBottom, new Vector3(0, 0, -this.mod_CarcaseDistanceWall), new Vector3(0, 0, this.mod_Depth));
-	this.addDockingInfo(Dock.LeftTop, new Vector3(0, TopEndCabinet, -this.mod_CarcaseDistanceWall), new Vector3(0, TopEndCabinet, this.mod_Depth));
+	this.addDockingInfo(Dock.LeftBottom, new Vector3(dockPosLeft, 0, -this.mod_CarcaseDistanceWall), new Vector3(dockPosLeft, 0, this.mod_Depth));
+	this.addDockingInfo(Dock.LeftTop, new Vector3(dockPosLeft, TopEndCabinet, -this.mod_CarcaseDistanceWall), new Vector3(dockPosLeft, TopEndCabinet, this.mod_Depth));
 
 	// Right side
-	this.addDockingInfo(Dock.RightBottom, new Vector3(this.mod_Width, 0, -this.mod_CarcaseDistanceWall), new Vector3(this.mod_Width, 0, this.mod_Depth));
-	this.addDockingInfo(Dock.RightTop, new Vector3(this.mod_Width, TopEndCabinet, -this.mod_CarcaseDistanceWall), new Vector3(this.mod_Width, TopEndCabinet, this.mod_Depth));
+	this.addDockingInfo(Dock.RightBottom, new Vector3(dockPosRight, 0, -this.mod_CarcaseDistanceWall), new Vector3(dockPosRight, 0, this.mod_Depth));
+	this.addDockingInfo(Dock.RightTop, new Vector3(dockPosRight, TopEndCabinet, -this.mod_CarcaseDistanceWall), new Vector3(dockPosRight, TopEndCabinet, this.mod_Depth));
 
 	// Back side
-	this.addDockingInfo(Dock.BackBottom, new Vector3(0, 0, -this.mod_CarcaseDistanceWall), new Vector3(this.mod_Width, 0, -this.mod_CarcaseDistanceWall));
-	this.addDockingInfo(Dock.BackTop, new Vector3(0, TopEndCabinet, -this.mod_CarcaseDistanceWall), new Vector3(this.mod_Width, TopEndCabinet, -this.mod_CarcaseDistanceWall));
+	this.addDockingInfo(Dock.BackBottom, new Vector3(dockPosLeft, 0, -this.mod_CarcaseDistanceWall), new Vector3(dockPosRight, 0, -this.mod_CarcaseDistanceWall));
+	this.addDockingInfo(Dock.BackTop, new Vector3(dockPosLeft, TopEndCabinet, -this.mod_CarcaseDistanceWall), new Vector3(dockPosRight, TopEndCabinet, -this.mod_CarcaseDistanceWall));
 
 	//===================================================
 	//          Call the UserExit of this module

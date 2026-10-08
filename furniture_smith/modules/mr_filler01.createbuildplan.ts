@@ -129,6 +129,8 @@
 
       contourPaneltop.attributes
         .set(CONTOUR_ATTRIBUTE_OWNER_TYPE, this.modId)
+        .set('mod_CeilingFillerConstruction', this.mod_CeilingFillerConstruction ?? this.g.basic_CeilingFillerConstruction)
+        .set('mod_CeilingFillerHeight', this.mod_CeilingFillerHeight ?? this.g.basic_CeilingFillerHeight)
         ;
 
       const ceilingContourType = this.mod_CreatePaneltop ? GenerationMethod.Paneltop : GenerationMethod.CeilingFiller;

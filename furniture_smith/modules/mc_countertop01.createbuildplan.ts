@@ -179,7 +179,7 @@
 
   let FinishPanel = this.addpart_Countertop(0, 0, 0, Countertopfinalwidth, this.mod_CountertopThk, this.mod_CountertopDepth);
   FinishPanel.extrude('<svg><path d="' + SvgPath + '"></path></svg>', 'y');
-  GlobalFunc.process_AddMaterial(FinishPanel, 'countertop', this.mod_CountertopColor, this.mod_CountertopColor, this.mod_CountertopColor, this.mod_CountertopColor, 'None', false, true);
+  GlobalFunc.process_AddMaterialGeneratedParts(FinishPanel, 'countertop', this.mod_CountertopColor, this.mod_CountertopColor, this.mod_CountertopColor, this.mod_CountertopColor, false, true);
   this.assignPartGroup(BomIdname, FinishPanel);
 
   // Add the Information for the countertop drawings

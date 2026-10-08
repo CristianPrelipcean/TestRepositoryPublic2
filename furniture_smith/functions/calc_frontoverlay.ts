@@ -1,7 +1,7 @@
 calc_FrontOverlay(m: parent, Width: number, Height: number, WidthPos:number, HeightPos: number, FrontOrientation: string) {
 
 	//====================================================================
-	// Initialize variables
+	// Initialize variables 
 	//====================================================================
 interface IFrontOverlay {
 		Bottom?: number;

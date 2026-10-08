@@ -1,11 +1,14 @@
 {
   "moduleId": "me_ShelfadjMultiple01",
-  "shortName": "Adjustable Multiple Shelves Group",
+  "shortName": "Adjustable Shelves",
   "configurable": true,
   "isRoot": false,
   "isConfigDummy": false,
+  "isGroupOrchestrator": false,
+  "isDropContainer": false,
+  "description": "Multiple adjustable shelves",
   "groupName": "Equipment",
-  "imageId": "2b881c8e-ebb1-4c82-b419-fab5a4699824:Shelfadjustable.png",
+  "imageId": "07fb8cb7-2967-48fe-8d93-05c38f40eee3:Shelfadjustable.png",
   "restrictionTypeId": "Public",
   "childModules": [
     {
@@ -66,7 +69,7 @@
     },
     {
       "variantId": "mod_Height",
-      "default": "500",
+      "default": "9999",
       "origin": "Default"
     },
     {
@@ -81,7 +84,6 @@
     },
     {
       "variantId": "mod_ShelfadjDescriptor",
-      "previewValue": "1_1",
       "origin": "Derived"
     },
     {
@@ -136,8 +138,7 @@
     },
     {
       "variantId": "mod_ShelfadjThk",
-      "default": "19",
-      "origin": "Default"
+      "origin": "GlobalVar"
     },
     {
       "variantId": "mod_TypeElement",
@@ -158,6 +159,21 @@
       "variantId": "mod_Width",
       "previewValue": "600",
       "origin": "Derived"
+    },
+    {
+      "variantId": "mod_ShelfadjGroupPositionX",
+      "default": "0",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_FreeSpaceY",
+      "default": "0",
+      "origin": "Default"
+    },
+    {
+      "variantId": "mod_FreeSpaceStartPosY",
+      "default": "0",
+      "origin": "Default"
     }
   ],
   "assignedParts": [],

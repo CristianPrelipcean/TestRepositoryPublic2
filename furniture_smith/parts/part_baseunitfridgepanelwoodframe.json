@@ -140,8 +140,8 @@
     {
       "bomElementTypeId": "bomout_Group",
       "description": "Output Parts / Boards for panel wood frame",
-      "conditionScript": "partSelf._g?.basic_CreateBom == 'Library'",
-      "valueScript": "GlobalFunc.process_PanelWoodFrameBom(this, part, part.pa_BomId);"
+      "conditionScript": "partSelf._g?.basic_CreateBom != null && partSelf._g.basic_CreateBom !== 'Custom'",
+      "valueScript": "//====================================================================\r\n  // Call the process functions\r\n  //====================================================================\r\n\r\n  GlobalFunc.process_PanelWoodFrameBom(this, part, part.pa_BomId)"
     }
   ],
   "ncData": [

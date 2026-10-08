@@ -70,35 +70,35 @@
 
     // Get the front weight
     frontWeight = retDoorInfo.weight;
+  
+
+    //===================================================
+    //          Add module for the handle
+    //===================================================
+
+    if (this.mod_HandleDesign_matrix.HandleType == "Handle"  || this.mod_HandleDesign_matrix.HandleType == "InsetHandle") {
+
+      // Add the module
+      let Handle = this.addOD_M_mc_Handle01(3);
+
+      // Set values to the attributes of the child
+      Handle.mod_Width = retDoorInfo.width;
+      Handle.mod_Height = retDoorInfo.height;
+      Handle.mod_Depth = retDoorInfo.thickness;
+
+      // Provide Information about part on which the handle is positioned
+      Handle.mod_FrontType = 'part_BaseunitFridgePanel';
+      Handle.mod_PartInfo = this.mod_DoorDirection;
+
+      // setOrigin
+      Handle.setOrigin(retDoorInfo.posX, retDoorInfo.posY, retDoorInfo.posZ);
+
+      // Seal the handle to get the frontWeight
+      let sealedHandle = Handle.seal();
+      handleWeight = sealedHandle.mod_HandleWeightCalculations[0];
+      Door.mod_HardwareTypeList.push(sealedHandle.mod_HardwareTypeList[0]);	
+    }
   }
-
-  //===================================================
-  //          Add module for the handle
-  //===================================================
-
-  if (this.mod_HandleDesign_matrix.HandleType == "Handle" && dwInfo.Integration !== 'NoPanel') {
-
-    // Add the module
-    let Handle = this.addOD_M_mc_Handle01(3);
-
-    // Set values to the attributes of the child
-    Handle.mod_Width = retDoorInfo.width;
-    Handle.mod_Height = retDoorInfo.height;
-    Handle.mod_Depth = retDoorInfo.thickness;
-
-    // Provide Information about part on which the handle is positioned
-    Handle.mod_FrontType = 'part_BaseunitFridgePanel';
-    Handle.mod_PartInfo = this.mod_DoorDirection;
-
-    // setOrigin
-    Handle.setOrigin(retDoorInfo.posX, retDoorInfo.posY, retDoorInfo.posZ);
-
-    // Seal the handle to get the frontWeight
-    let sealedHandle = Handle.seal();
-    handleWeight = sealedHandle.mod_HandleWeightCalculations[0];
-
-  }
-
   //===================================================================================
   // Add the graphic module for appliances
   //===================================================================================

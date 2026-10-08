@@ -11,18 +11,18 @@ ue_CornerunitStraight (parentModule: any){
   parentModule._posData.set('carcaseColor', parentModule.mod_CarcaseColor);
   parentModule._posData.set('doorDirection', parentModule.mod_DoorDirection);
 
-  //==========================================================================================================
-  //          Manage the insertion level
-  //==========================================================================================================
+	//===================================================
+	//          Manage the insertion level
+	//===================================================
 
-  if (parentModule.mod_HeightPosInsertion > 0) {
-    let InsertionHeight = parentModule.mod_HeightPosInsertion + parentModule.mod_PlinthAreaHeight;
-    parentModule.addInsertLevelHeight(InsertionHeight, true);
-    parentModule.insertLevelFixed = true;
-  }
-  else {
-    parentModule.addInsertLevelHeight(0, true);
-    parentModule.insertLevelFixed = true;
-  }
+	if (parentModule.mod_HeightPosInsertion > 0) {
+		const InsertionHeight = parentModule.mod_HeightPosInsertion + parentModule.mod_PlinthAreaHeight;
+		parentModule.addInsertLevelHeight(InsertionHeight, true);
+		parentModule.insertLevelFixed = false;
+	}
+	else {
+		parentModule.addInsertLevelHeight(0, true);
+		parentModule.insertLevelFixed = true;
+	}
   
 }

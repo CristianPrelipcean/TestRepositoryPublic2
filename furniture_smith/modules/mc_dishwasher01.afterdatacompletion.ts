@@ -75,7 +75,7 @@
   //          Add module for the handle
   //===================================================
 
-  if (this.mod_HandleDesign_matrix.HandleType == "Handle" && dwInfo.Integration === 'full') {
+  if ((this.mod_HandleDesign_matrix.HandleType == "Handle" || this.mod_HandleDesign_matrix.HandleType == "InsetHandle") && dwInfo.Integration === 'full') {
 
     // Add the module
     let Handle = this.addOD_M_mc_Handle01(3);
@@ -95,7 +95,7 @@
     // Seal the handle to get the frontWeight
     let sealedHandle = Handle.seal();
     handleWeight = sealedHandle.mod_HandleWeightCalculations[0];
-
+    Door.mod_HardwareTypeList.push(sealedHandle.mod_HardwareTypeList[0]);	
   }
 
   //===================================================================================

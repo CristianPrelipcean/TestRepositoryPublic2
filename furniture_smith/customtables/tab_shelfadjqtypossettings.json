@@ -27,12 +27,22 @@
     {
       "name": "in_CarcaseSpaceHeightMin",
       "type": "Dim",
-      "allowNull": true
+      "allowNull": false
     },
     {
       "name": "in_CarcaseSpaceHeightMax",
       "type": "Dim",
-      "allowNull": true
+      "allowNull": false
+    },
+    {
+      "name": "in_CarcaseSpaceDepthMin",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "in_CarcaseSpaceDepthMax",
+      "type": "Dim",
+      "allowNull": false
     },
     {
       "name": "DescriptorPosY",
@@ -57,39 +67,19 @@
         },
         {
           "columnName": "in_CarcaseSpaceHeightMin",
-          "value": "0"
-        },
-        {
-          "columnName": "in_CarcaseSpaceHeightMax",
-          "value": "400"
-        },
-        {
-          "columnName": "DescriptorPosY",
-          "value": "N/A"
-        }
-      ]
-    },
-    {
-      "data": [
-        {
-          "columnName": "in_TypeElement",
-          "value": "BaseUnit"
-        },
-        {
-          "columnName": "in_FrontModule",
-          "value": "Door"
-        },
-        {
-          "columnName": "in_FrontModuleType",
-          "value": "All"
-        },
-        {
-          "columnName": "in_CarcaseSpaceHeightMin",
           "value": "400.01"
         },
         {
           "columnName": "in_CarcaseSpaceHeightMax",
           "value": "600"
+        },
+        {
+          "columnName": "in_CarcaseSpaceDepthMin",
+          "value": "200"
+        },
+        {
+          "columnName": "in_CarcaseSpaceDepthMax",
+          "value": "9999"
         },
         {
           "columnName": "DescriptorPosY",
@@ -120,6 +110,14 @@
           "value": "800"
         },
         {
+          "columnName": "in_CarcaseSpaceDepthMin",
+          "value": "200"
+        },
+        {
+          "columnName": "in_CarcaseSpaceDepthMax",
+          "value": "9999"
+        },
+        {
           "columnName": "DescriptorPosY",
           "value": "1_1_1"
         }
@@ -148,6 +146,14 @@
           "value": "900"
         },
         {
+          "columnName": "in_CarcaseSpaceDepthMin",
+          "value": "200"
+        },
+        {
+          "columnName": "in_CarcaseSpaceDepthMax",
+          "value": "9999"
+        },
+        {
           "columnName": "DescriptorPosY",
           "value": "1_1_1_1"
         }
@@ -176,36 +182,16 @@
           "value": "9999"
         },
         {
+          "columnName": "in_CarcaseSpaceDepthMin",
+          "value": "200"
+        },
+        {
+          "columnName": "in_CarcaseSpaceDepthMax",
+          "value": "9999"
+        },
+        {
           "columnName": "DescriptorPosY",
           "value": "1_1_1_1_1"
-        }
-      ]
-    },
-    {
-      "data": [
-        {
-          "columnName": "in_TypeElement",
-          "value": "TallUnit"
-        },
-        {
-          "columnName": "in_FrontModule",
-          "value": "Door"
-        },
-        {
-          "columnName": "in_FrontModuleType",
-          "value": "All"
-        },
-        {
-          "columnName": "in_CarcaseSpaceHeightMin",
-          "value": "0"
-        },
-        {
-          "columnName": "in_CarcaseSpaceHeightMax",
-          "value": "400"
-        },
-        {
-          "columnName": "DescriptorPosY",
-          "value": "N/A"
         }
       ]
     },
@@ -230,6 +216,14 @@
         {
           "columnName": "in_CarcaseSpaceHeightMax",
           "value": "600"
+        },
+        {
+          "columnName": "in_CarcaseSpaceDepthMin",
+          "value": "200"
+        },
+        {
+          "columnName": "in_CarcaseSpaceDepthMax",
+          "value": "9999"
         },
         {
           "columnName": "DescriptorPosY",
@@ -260,6 +254,14 @@
           "value": "800"
         },
         {
+          "columnName": "in_CarcaseSpaceDepthMin",
+          "value": "200"
+        },
+        {
+          "columnName": "in_CarcaseSpaceDepthMax",
+          "value": "9999"
+        },
+        {
           "columnName": "DescriptorPosY",
           "value": "1_1_1"
         }
@@ -286,6 +288,14 @@
         {
           "columnName": "in_CarcaseSpaceHeightMax",
           "value": "900"
+        },
+        {
+          "columnName": "in_CarcaseSpaceDepthMin",
+          "value": "200"
+        },
+        {
+          "columnName": "in_CarcaseSpaceDepthMax",
+          "value": "9999"
         },
         {
           "columnName": "DescriptorPosY",
@@ -316,36 +326,16 @@
           "value": "9999"
         },
         {
+          "columnName": "in_CarcaseSpaceDepthMin",
+          "value": "200"
+        },
+        {
+          "columnName": "in_CarcaseSpaceDepthMax",
+          "value": "9999"
+        },
+        {
           "columnName": "DescriptorPosY",
           "value": "1_1_1_1_1"
-        }
-      ]
-    },
-    {
-      "data": [
-        {
-          "columnName": "in_TypeElement",
-          "value": "All"
-        },
-        {
-          "columnName": "in_FrontModule",
-          "value": "Door"
-        },
-        {
-          "columnName": "in_FrontModuleType",
-          "value": "All"
-        },
-        {
-          "columnName": "in_CarcaseSpaceHeightMin",
-          "value": "0"
-        },
-        {
-          "columnName": "in_CarcaseSpaceHeightMax",
-          "value": "400"
-        },
-        {
-          "columnName": "DescriptorPosY",
-          "value": "N/A"
         }
       ]
     },
@@ -370,6 +360,14 @@
         {
           "columnName": "in_CarcaseSpaceHeightMax",
           "value": "600"
+        },
+        {
+          "columnName": "in_CarcaseSpaceDepthMin",
+          "value": "200"
+        },
+        {
+          "columnName": "in_CarcaseSpaceDepthMax",
+          "value": "9999"
         },
         {
           "columnName": "DescriptorPosY",
@@ -400,6 +398,14 @@
           "value": "800"
         },
         {
+          "columnName": "in_CarcaseSpaceDepthMin",
+          "value": "200"
+        },
+        {
+          "columnName": "in_CarcaseSpaceDepthMax",
+          "value": "9999"
+        },
+        {
           "columnName": "DescriptorPosY",
           "value": "1_1_1"
         }
@@ -426,6 +432,14 @@
         {
           "columnName": "in_CarcaseSpaceHeightMax",
           "value": "900"
+        },
+        {
+          "columnName": "in_CarcaseSpaceDepthMin",
+          "value": "200"
+        },
+        {
+          "columnName": "in_CarcaseSpaceDepthMax",
+          "value": "9999"
         },
         {
           "columnName": "DescriptorPosY",
@@ -456,36 +470,16 @@
           "value": "9999"
         },
         {
+          "columnName": "in_CarcaseSpaceDepthMin",
+          "value": "200"
+        },
+        {
+          "columnName": "in_CarcaseSpaceDepthMax",
+          "value": "9999"
+        },
+        {
           "columnName": "DescriptorPosY",
           "value": "1_1_1_1_1"
-        }
-      ]
-    },
-    {
-      "data": [
-        {
-          "columnName": "in_TypeElement",
-          "value": "All"
-        },
-        {
-          "columnName": "in_FrontModule",
-          "value": "RackArea"
-        },
-        {
-          "columnName": "in_FrontModuleType",
-          "value": "All"
-        },
-        {
-          "columnName": "in_CarcaseSpaceHeightMin",
-          "value": "0"
-        },
-        {
-          "columnName": "in_CarcaseSpaceHeightMax",
-          "value": "400"
-        },
-        {
-          "columnName": "DescriptorPosY",
-          "value": "N/A"
         }
       ]
     },
@@ -510,6 +504,14 @@
         {
           "columnName": "in_CarcaseSpaceHeightMax",
           "value": "600"
+        },
+        {
+          "columnName": "in_CarcaseSpaceDepthMin",
+          "value": "200"
+        },
+        {
+          "columnName": "in_CarcaseSpaceDepthMax",
+          "value": "9999"
         },
         {
           "columnName": "DescriptorPosY",
@@ -540,6 +542,14 @@
           "value": "800"
         },
         {
+          "columnName": "in_CarcaseSpaceDepthMin",
+          "value": "200"
+        },
+        {
+          "columnName": "in_CarcaseSpaceDepthMax",
+          "value": "9999"
+        },
+        {
           "columnName": "DescriptorPosY",
           "value": "1_1_1"
         }
@@ -566,6 +576,14 @@
         {
           "columnName": "in_CarcaseSpaceHeightMax",
           "value": "900"
+        },
+        {
+          "columnName": "in_CarcaseSpaceDepthMin",
+          "value": "200"
+        },
+        {
+          "columnName": "in_CarcaseSpaceDepthMax",
+          "value": "9999"
         },
         {
           "columnName": "DescriptorPosY",
@@ -596,64 +614,16 @@
           "value": "9999"
         },
         {
-          "columnName": "DescriptorPosY",
-          "value": "1_1_1_1_1"
-        }
-      ]
-    },
-    {
-      "data": [
-        {
-          "columnName": "in_TypeElement",
-          "value": "BaseUnitSink"
+          "columnName": "in_CarcaseSpaceDepthMin",
+          "value": "200"
         },
         {
-          "columnName": "in_FrontModule",
-          "value": "Door"
-        },
-        {
-          "columnName": "in_FrontModuleType",
-          "value": "All"
-        },
-        {
-          "columnName": "in_CarcaseSpaceHeightMin",
-          "value": "0"
-        },
-        {
-          "columnName": "in_CarcaseSpaceHeightMax",
+          "columnName": "in_CarcaseSpaceDepthMax",
           "value": "9999"
         },
         {
           "columnName": "DescriptorPosY",
-          "value": "N/A"
-        }
-      ]
-    },
-    {
-      "data": [
-        {
-          "columnName": "in_TypeElement",
-          "value": "All"
-        },
-        {
-          "columnName": "in_FrontModule",
-          "value": "Fliplift"
-        },
-        {
-          "columnName": "in_FrontModuleType",
-          "value": "All"
-        },
-        {
-          "columnName": "in_CarcaseSpaceHeightMin",
-          "value": "0"
-        },
-        {
-          "columnName": "in_CarcaseSpaceHeightMax",
-          "value": "400"
-        },
-        {
-          "columnName": "DescriptorPosY",
-          "value": "N/A"
+          "value": "1_1_1_1_1"
         }
       ]
     },
@@ -678,6 +648,14 @@
         {
           "columnName": "in_CarcaseSpaceHeightMax",
           "value": "800"
+        },
+        {
+          "columnName": "in_CarcaseSpaceDepthMin",
+          "value": "200"
+        },
+        {
+          "columnName": "in_CarcaseSpaceDepthMax",
+          "value": "9999"
         },
         {
           "columnName": "DescriptorPosY",
@@ -708,6 +686,14 @@
           "value": "1200"
         },
         {
+          "columnName": "in_CarcaseSpaceDepthMin",
+          "value": "200"
+        },
+        {
+          "columnName": "in_CarcaseSpaceDepthMax",
+          "value": "9999"
+        },
+        {
           "columnName": "DescriptorPosY",
           "value": "1_1_1"
         }
@@ -733,6 +719,14 @@
         },
         {
           "columnName": "in_CarcaseSpaceHeightMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CarcaseSpaceDepthMin",
+          "value": "200"
+        },
+        {
+          "columnName": "in_CarcaseSpaceDepthMax",
           "value": "9999"
         },
         {
@@ -764,6 +758,14 @@
           "value": "9999"
         },
         {
+          "columnName": "in_CarcaseSpaceDepthMin",
+          "value": "200"
+        },
+        {
+          "columnName": "in_CarcaseSpaceDepthMax",
+          "value": "9999"
+        },
+        {
           "columnName": "DescriptorPosY",
           "value": "1_1"
         }
@@ -789,6 +791,14 @@
         },
         {
           "columnName": "in_CarcaseSpaceHeightMax",
+          "value": "9999"
+        },
+        {
+          "columnName": "in_CarcaseSpaceDepthMin",
+          "value": "200"
+        },
+        {
+          "columnName": "in_CarcaseSpaceDepthMax",
           "value": "9999"
         },
         {

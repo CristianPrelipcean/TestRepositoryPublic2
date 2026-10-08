@@ -1,7 +1,8 @@
 {
   "tableName": "tab_HoodAssemblyMapping",
-  "description": "Mapping of Internal Hoods that returns CarcaseConstructionID",
+  "description": "Determines the appropriate cabinet construction from the appliance, cabinet dimensions, and installation requirements.",
   "restrictionTypeId": "Public",
+  "groupName": "Hood",
   "columns": [
     {
       "name": "_id",
@@ -9,52 +10,399 @@
       "allowNull": false
     },
     {
-      "name": "in_HoodConstructionID",
+      "name": "in_ConstructionId",
       "type": "Text",
       "allowNull": true
     },
     {
-      "name": "in_MountingType",
+      "name": "in_CabinetWidth",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "in_CabinetHeight",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "in_CabinetDepth",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "in_IntegrationType",
       "type": "Text",
       "allowNull": true
     },
     {
-      "name": "in_MinCorpusWidth",
-      "type": "Integer",
-      "allowNull": true
-    },
-    {
-      "name": "in_MaxCorpusWidth",
-      "type": "Integer",
-      "allowNull": true
-    },
-    {
-      "name": "in_MinCorpusHeight",
-      "type": "Integer",
-      "allowNull": true
-    },
-    {
-      "name": "in_MaxCorpusHeight",
-      "type": "Integer",
-      "allowNull": true
-    },
-    {
-      "name": "in_MinCorpusDepth",
-      "type": "Integer",
-      "allowNull": true
-    },
-    {
-      "name": "in_MaxCorpusDepth",
-      "type": "Integer",
-      "allowNull": true
-    },
-    {
-      "name": "CarcaseConstructionID",
+      "name": "in_ConstructionType",
       "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "CarcaseConstructionId",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "FrontOffset",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "BottomShortening",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "UseStandardCarcaseBackwall",
+      "type": "Bool",
+      "allowNull": true
+    },
+    {
+      "name": "UseStandardCarcaseShelfTop",
+      "type": "Bool",
       "allowNull": true
     }
   ],
-  "rows": [],
+  "rows": [
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionId",
+          "value": "Siemens_LI97SA561S"
+        },
+        {
+          "columnName": "in_CabinetWidth",
+          "value": "600"
+        },
+        {
+          "columnName": "in_CabinetHeight",
+          "value": "600"
+        },
+        {
+          "columnName": "in_CabinetDepth",
+          "value": "320"
+        },
+        {
+          "columnName": "in_IntegrationType",
+          "value": ""
+        },
+        {
+          "columnName": "in_ConstructionType",
+          "value": ""
+        },
+        {
+          "columnName": "CarcaseConstructionId",
+          "value": ""
+        },
+        {
+          "columnName": "FrontOffset",
+          "value": "10"
+        },
+        {
+          "columnName": "BottomShortening",
+          "value": "0"
+        },
+        {
+          "columnName": "UseStandardCarcaseBackwall",
+          "value": "false"
+        },
+        {
+          "columnName": "UseStandardCarcaseShelfTop",
+          "value": "false"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionId",
+          "value": "Neff_D46ED52X1"
+        },
+        {
+          "columnName": "in_CabinetWidth",
+          "value": "600"
+        },
+        {
+          "columnName": "in_CabinetHeight",
+          "value": "600"
+        },
+        {
+          "columnName": "in_CabinetDepth",
+          "value": "320"
+        },
+        {
+          "columnName": "in_IntegrationType",
+          "value": ""
+        },
+        {
+          "columnName": "in_ConstructionType",
+          "value": ""
+        },
+        {
+          "columnName": "CarcaseConstructionId",
+          "value": "HoodCarcase001"
+        },
+        {
+          "columnName": "FrontOffset",
+          "value": "0"
+        },
+        {
+          "columnName": "BottomShortening",
+          "value": "0"
+        },
+        {
+          "columnName": "UseStandardCarcaseBackwall",
+          "value": "false"
+        },
+        {
+          "columnName": "UseStandardCarcaseShelfTop",
+          "value": "false"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionId",
+          "value": "VZug_DFN60"
+        },
+        {
+          "columnName": "in_CabinetWidth",
+          "value": "600"
+        },
+        {
+          "columnName": "in_CabinetHeight",
+          "value": "600"
+        },
+        {
+          "columnName": "in_CabinetDepth",
+          "value": "320"
+        },
+        {
+          "columnName": "in_IntegrationType",
+          "value": ""
+        },
+        {
+          "columnName": "in_ConstructionType",
+          "value": ""
+        },
+        {
+          "columnName": "CarcaseConstructionId",
+          "value": "HoodCarcase003"
+        },
+        {
+          "columnName": "FrontOffset",
+          "value": "0"
+        },
+        {
+          "columnName": "BottomShortening",
+          "value": "0"
+        },
+        {
+          "columnName": "UseStandardCarcaseBackwall",
+          "value": "false"
+        },
+        {
+          "columnName": "UseStandardCarcaseShelfTop",
+          "value": "false"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionId",
+          "value": "Siemens_LI99SA684"
+        },
+        {
+          "columnName": "in_CabinetWidth",
+          "value": "900"
+        },
+        {
+          "columnName": "in_CabinetHeight",
+          "value": "600"
+        },
+        {
+          "columnName": "in_CabinetDepth",
+          "value": "320"
+        },
+        {
+          "columnName": "in_IntegrationType",
+          "value": ""
+        },
+        {
+          "columnName": "in_ConstructionType",
+          "value": ""
+        },
+        {
+          "columnName": "CarcaseConstructionId",
+          "value": "HoodCarcase002"
+        },
+        {
+          "columnName": "FrontOffset",
+          "value": "0"
+        },
+        {
+          "columnName": "BottomShortening",
+          "value": "0"
+        },
+        {
+          "columnName": "UseStandardCarcaseBackwall",
+          "value": "false"
+        },
+        {
+          "columnName": "UseStandardCarcaseShelfTop",
+          "value": "false"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionId",
+          "value": "HoodConstruct01"
+        },
+        {
+          "columnName": "in_CabinetWidth",
+          "value": "600"
+        },
+        {
+          "columnName": "in_CabinetHeight",
+          "value": "600"
+        },
+        {
+          "columnName": "in_CabinetDepth",
+          "value": "320"
+        },
+        {
+          "columnName": "in_IntegrationType",
+          "value": ""
+        },
+        {
+          "columnName": "in_ConstructionType",
+          "value": ""
+        },
+        {
+          "columnName": "CarcaseConstructionId",
+          "value": "HoodCarcase01"
+        },
+        {
+          "columnName": "FrontOffset",
+          "value": "0"
+        },
+        {
+          "columnName": "BottomShortening",
+          "value": "0"
+        },
+        {
+          "columnName": "UseStandardCarcaseBackwall",
+          "value": "false"
+        },
+        {
+          "columnName": "UseStandardCarcaseShelfTop",
+          "value": "false"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionId",
+          "value": "HoodConstruct02"
+        },
+        {
+          "columnName": "in_CabinetWidth",
+          "value": "600"
+        },
+        {
+          "columnName": "in_CabinetHeight",
+          "value": "600"
+        },
+        {
+          "columnName": "in_CabinetDepth",
+          "value": "320"
+        },
+        {
+          "columnName": "in_IntegrationType",
+          "value": ""
+        },
+        {
+          "columnName": "in_ConstructionType",
+          "value": ""
+        },
+        {
+          "columnName": "CarcaseConstructionId",
+          "value": "HoodCarcase02"
+        },
+        {
+          "columnName": "FrontOffset",
+          "value": "0"
+        },
+        {
+          "columnName": "BottomShortening",
+          "value": "0"
+        },
+        {
+          "columnName": "UseStandardCarcaseBackwall",
+          "value": "false"
+        },
+        {
+          "columnName": "UseStandardCarcaseShelfTop",
+          "value": "false"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_ConstructionId",
+          "value": "HoodConstruct03"
+        },
+        {
+          "columnName": "in_CabinetWidth",
+          "value": "600"
+        },
+        {
+          "columnName": "in_CabinetHeight",
+          "value": "600"
+        },
+        {
+          "columnName": "in_CabinetDepth",
+          "value": "320"
+        },
+        {
+          "columnName": "in_IntegrationType",
+          "value": ""
+        },
+        {
+          "columnName": "in_ConstructionType",
+          "value": ""
+        },
+        {
+          "columnName": "CarcaseConstructionId",
+          "value": "HoodCarcase03"
+        },
+        {
+          "columnName": "FrontOffset",
+          "value": "0"
+        },
+        {
+          "columnName": "BottomShortening",
+          "value": "0"
+        },
+        {
+          "columnName": "UseStandardCarcaseBackwall",
+          "value": "false"
+        },
+        {
+          "columnName": "UseStandardCarcaseShelfTop",
+          "value": "false"
+        }
+      ]
+    }
+  ],
   "dataSource": "Default",
-  "changedAt": "2026-03-16T14:44:41.1485806+00:00"
+  "changedAt": "2026-05-13T12:13:18.3791165+00:00"
 }

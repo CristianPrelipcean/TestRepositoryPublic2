@@ -3,7 +3,6 @@
 	// ###############################################################
 	// CUSTOMSCRIPT_mr_PlinthAreaBaseboard_AFTERDATACOMPLETION
 
-
 	//===================================================
 	//          Call the UserExit of this module
 	//===================================================
@@ -109,16 +108,8 @@
 		return baseboard;
 	};
 
-	let toekickMaximumLength;
-	try {
-		const boardMapping = GlobalFunc.find_BoardMapping(this.mod_ToekickColor, this.mod_ToekickThk);
-		const boardEntry = GlobalFunc.find_BoardLibrary(boardMapping.BoardId!);
-		toekickMaximumLength = boardEntry!.BoardLength;
-	}
-	catch (e) {
-		toekickMaximumLength = 9999;
-		//logError(`Error while retrieving maximum toekick length. Using fallback value ${maximumLength}. Error: ${e}`);
-	}
+	const boardMapping = GlobalFunc.find_BoardMapping(this.mod_ToekickColor, this.mod_ToekickThk);
+	const toekickMaximumLength = GlobalFunc.find_BoardDimensions(boardMapping.BoardId ?? "").Length;
 
 	// Add the toekick submodule between two points
 	let toekickIndex = 1;
@@ -130,10 +121,10 @@
 	 * @param end 
 	 * @returns mc_Toekick instance
 	 */
-	const addToekick = (start: Vector3, end: Vector3) => {
+	const addToekick = (start: { _x: number, _y: number, _z: number }, end: { _x: number, _y: number, _z: number }) => {
 		const toekick = this.addOD_M_mc_Toekick();
 		toekick.mod_ToekickId = `Toekick_${toekickIndex++}`;
-		const equation = new LineSegmentEquation(start, end);
+		const equation = new LineSegmentEquation(new Vector3(start._x, start._y, start._z), new Vector3(end._x, end._y, end._z));
 		toekick.mod_ToekickLength = equation.length;
 		toekick.setOrigin(equation.getTransformationMatrixToStartPoint());
 		// for pricing
@@ -172,16 +163,8 @@
 	}
 
 	// Get the maximum toekick possible length from the boards properties.
-	let baseboardMaxUnsplitLength;
-	try {
-		const boardMapping = GlobalFunc.find_BoardMapping(this.mod_CarcaseColor, this.mod_BaseboardThk);
-		const boardEntry = GlobalFunc.find_BoardLibrary(boardMapping.BoardId!);
-		baseboardMaxUnsplitLength = boardEntry!.BoardLength;
-	}
-	catch (e) {
-		baseboardMaxUnsplitLength = 9999;
-		logError(`Error while retrieving maximum baseboard length. Using fallback value ${baseboardMaxUnsplitLength}. Error: ${e}`);
-	}
+	const boardMappingB = GlobalFunc.find_BoardMapping(this.mod_CarcaseColor, this.mod_BaseboardThk);
+	const baseboardMaxUnsplitLength = GlobalFunc.find_BoardDimensions(boardMappingB.BoardId ?? "").Length;
 
 	let mod_BaseboardSplitLogic = this.mod_BaseboardSplitLogic;
 	// ===================================================
@@ -727,7 +710,7 @@
 				frontToekick.mod_ToekickHeight = plintAreaHeightSpace;
 				runningPosX += toekickLength;
 
-				
+
 			}
 
 		}

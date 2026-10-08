@@ -1,4 +1,4 @@
-find_ShelfadjQtyPosSettings(TypeElement:string, FrontModule:string, FrontModuleType:string, CarcaseSpaceHeight: number):any{
+find_ShelfadjQtyPosSettings(TypeElement:string, FrontModule:string, FrontModuleType:string, CarcaseSpaceHeight: number, CarcaseSpaceDepth: number):any{
 
 	// Wildcard parameters
 	let WildcardParams: any = {	
@@ -16,6 +16,11 @@ find_ShelfadjQtyPosSettings(TypeElement:string, FrontModule:string, FrontModuleT
 			MinAttr: "in_CarcaseSpaceHeightMin",
 			MaxAttr: "in_CarcaseSpaceHeightMax",
 			Value: CarcaseSpaceHeight
+		},
+		"Range2": {
+			MinAttr: "in_CarcaseSpaceDepthMin",
+			MaxAttr: "in_CarcaseSpaceDepthMax",
+			Value: CarcaseSpaceDepth
 		}
 	};
 
@@ -25,7 +30,7 @@ find_ShelfadjQtyPosSettings(TypeElement:string, FrontModule:string, FrontModuleT
 	// Call the function and return the value
 	let retVal = GlobalFunc.process_BasicTableQuery(ct_tab_ShelfadjQtyPosSettings, WildcardParams, FixedParams, RangeParams, UniqueOutput);
 	if (retVal == undefined) {
-		logError('Error 14012: Could not find entry in tab_ShelfadjQtyPosSettings for input values: ' + CarcaseSpaceHeight);
+		//logError('Error 14012: Could not find entry in tab_ShelfadjQtyPosSettings for input values: ' + CarcaseSpaceHeight);
 	}
 	return retVal;
 }

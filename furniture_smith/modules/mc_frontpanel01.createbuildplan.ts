@@ -19,6 +19,8 @@
   // Ludwig Weber March 2025
   // Add the fixed front
   //================================================================================================
+  
+
 
   //================================================================================================
   //          Initialize (Create the map)
@@ -65,28 +67,7 @@
       // Add part by invoking createPart method
       let element = createPart();
 
-      //================================================================================================
-      // Assign 3D model if available or extrude for fillers
-      //================================================================================================
-
-      if (retFrontConstruction.retSpecificConstruction.GraphicFileId != 'None' && retFrontConstruction.retSpecificConstruction.GraphicFileId != '') {
-
-        // Get the obj file
-        let graphicFileLibrary = GlobalFunc.find_GraphicFileLibrary(retFrontConstruction.retSpecificConstruction.GraphicFileId);
-
-        //Assign the obj file
-        element.assign3DModel(graphicFileLibrary.Model3D!, false);
-
-        // Set materialCategory
-        materialCategory = "FrontPanelObj01";
-      } 
-      else if (this.mod_ParentName == 'mf_CornerFillerFront' && this.mod_CornerunitStraightFillerConstruction_matrix.PartInCornerCabinet === 'Mitre') {
-        let points = (this.mod_FrontType === 'CornerStraightFillerRight' || this.mod_FrontType === 'CornerFillerRight')
-                      ? `0,0 ${this.mod_Width},0 ${this.mod_Width},${this.mod_Depth} ${this.mod_Depth},${this.mod_Depth}`
-                      : `0,0 ${this.mod_Width},0 ${this.mod_Width-this.mod_Depth},${this.mod_Depth} 0,${this.mod_Depth}`;
-
-        element.extrude(`<svg><polygon points="${points}" /></svg>`, 'y'); 
-      }
+      let svgBasedPart: boolean = false;
 
       //================================================================================================
       // Common assignments
@@ -121,13 +102,127 @@
         element.pa_ProcessingId = retFrontConstruction.retSpecificConstruction.ProcessingItem!;
       }
 
-      // Add the material
-      GlobalFunc.process_AddMaterialFront(element, this, materialCategory, retFrontConstruction.retSpecificConstruction.GrainDirection, FrontEdgeColor);
+      //================================================================================================
+      // Other constructions
+      //================================================================================================
+
+      //Construction with OBJ file
+      //---------------------------------------------------
+      if (retFrontConstruction.retSpecificConstruction.ConstructionType == 'FrontWithMilling') {
+
+        // Get the obj file
+        let graphicFileLibrary = GlobalFunc.find_GraphicFileLibrary(retFrontConstruction.retSpecificConstruction.GraphicFileId);
+
+        //Assign the obj file
+        element.assign3DModel(graphicFileLibrary.Model3D!, false);
+
+        // Set materialCategory
+        materialCategory = "FrontPanelObj01";
+      } 
+
+      // Fillers that need SvgPath
+      //---------------------------------------------------
+      else if (this.mod_ParentName == 'mf_CornerFillerFront' && this.mod_CornerunitStraightFillerConstruction_matrix.PartInCornerCabinet === 'Mitre') {
+        let points = (this.mod_FrontType === 'CornerStraightFillerRight' || this.mod_FrontType === 'CornerFillerRight')
+                      ? `0,0 ${this.mod_Width},0 ${this.mod_Width},${this.mod_Depth} ${this.mod_Depth},${this.mod_Depth}`
+                      : `0,0 ${this.mod_Width},0 ${this.mod_Width-this.mod_Depth},${this.mod_Depth} 0,${this.mod_Depth}`;
+
+        element.extrude(`<svg><polygon points="${points}" /></svg>`, 'y'); 
+        svgBasedPart = true;
+      }
+
+      // Construction with InSetHandles
+      //---------------------------------------------------
+      else if (retFrontConstruction.retSpecificConstruction.ConstructionType == 'InsetHandle') { 
+        //Create SvgPath for the Front
+        let points = `M0,0 ${this.mod_Width},0 ${this.mod_Width},${this.mod_Height} 0,${this.mod_Height} 0,0 Z`
+
+        // Get handle data
+        interface HandleData {
+        Model3D?: any;
+        Model3DGroupName: string;
+        ColorId: string;
+        Length: number;
+        Depth: number;
+        Thickness: number;
+        Weight: number;
+        Rotation: number;
+        PosVertical: number;
+        PosHorizontal: number;
+        ProcessingId: string;
+        HardwareId: string;
+        }
+
+        const handleJson = this.mod_HardwareTypeList?.[0];
+        if (handleJson) 
+        {
+          const retHandle: HandleData = JSON.parse(handleJson);
+
+          // Get the handle ProcessingItem
+          let handleProcessings = GlobalFunc.find_ProcessingMapping(retFrontConstruction.retSpecificConstruction.ProcessingItem);
+
+          // Get the millings
+          handleProcessings.forEach(handleProcessing =>
+          {
+            if (handleProcessing.ProcessingLibrary == "Milling") {
+              let handleMillings = GlobalFunc.find_HardwareMilingLibrary(handleProcessing.ProcessingId!, 'Front')
+              handleMillings.forEach(handleMilling => {
+                //Add SvgPath for the Pocket (Rotation of Handle affects the SvgPath)
+                const frontOversizeBtm = this.g.basic_HandlePosFrontOversize == "IncludeFrontOversizeBottom" ? this.mod_FrontOversizeBtm : 0;
+                if (retHandle.Rotation == 0) {
+                  let posV = retHandle.PosVertical - handleMilling.BR(0, 0, 0, 0)/2;
+                  let posH = retHandle.PosHorizontal - handleMilling.LA(0, 0, 0, 0) / 2 + frontOversizeBtm;              
+                  points += `M${posV},${posH} l0,${handleMilling.LA(0, 0, 0, 0)} l${handleMilling.BR(0, 0, 0, 0)},0 l0,-${handleMilling.LA(0, 0, 0, 0)} Z`;
+                }
+                else if (retHandle.Rotation == 90) {
+                  let posV = retHandle.PosVertical - handleMilling.LA(0, 0, 0, 0)/2;
+                  let posH = retHandle.PosHorizontal - handleMilling.BR(0, 0, 0, 0) / 2 + frontOversizeBtm;              
+                  points += `M${posV},${posH} l0,${handleMilling.BR(0, 0, 0, 0)} l${handleMilling.LA(0, 0, 0, 0)},0 l0,-${handleMilling.BR(0, 0, 0, 0)} Z`;
+                }
+                else if (retHandle.Rotation == 180) {
+                  let posV = retHandle.PosVertical - handleMilling.BR(0, 0, 0, 0)/2;
+                  let posH = retHandle.PosHorizontal - handleMilling.LA(0, 0, 0, 0) / 2 + frontOversizeBtm;              
+                  points += `M${posV},${posH} l0,${handleMilling.LA(0, 0, 0, 0)} l${handleMilling.BR(0, 0, 0, 0)},0 l0,-${handleMilling.LA(0, 0, 0, 0)} Z`;
+                }
+                else if (retHandle.Rotation == 270) {
+                  let posV = retHandle.PosVertical - handleMilling.LA(0, 0, 0, 0)/2;
+                  let posH = retHandle.PosHorizontal - handleMilling.BR(0, 0, 0, 0) / 2 + frontOversizeBtm;              
+                  points += `M${posV},${posH} l0,${handleMilling.BR(0, 0, 0, 0)} l${handleMilling.LA(0, 0, 0, 0)},0 l0,-${handleMilling.BR(0, 0, 0, 0)} Z`;
+                }
+              })
+            }
+          })
+        }
+        // Extrude element (Door + pocket)
+        element.extrude('<svg><path d="' + points + '"></path></svg>', 'z');
+        svgBasedPart = true;
+      }
+
+      // Add the material to Door
+      GlobalFunc.process_AddMaterialFront(element, this, materialCategory, retFrontConstruction.retSpecificConstruction.GrainDirection, FrontEdgeColor, 'None', svgBasedPart);
 
       // Front opening
       if (opening) {
         this.assignOpenGroup(this.mod_FrontId, element);
       }
+
+      //================================================================================================
+      // Add VirtualPartOnBack (in case there's a pocket for handle as an example)
+      //================================================================================================
+      if (retFrontConstruction.retSpecificConstruction.AddVirtualPartOnBack) {
+        // Add the VirtualPartOnBack
+        let VirtualPartOnBack = this.addpart_VirtualFront(0, 0, 0, this.mod_Width, this.mod_Height, 0.5);
+
+        // Add the material
+        GlobalFunc.process_AddMaterialFront(VirtualPartOnBack, this, materialCategory, retFrontConstruction.retSpecificConstruction.GrainDirection, FrontEdgeColor, 'None', false);
+
+        // Front opening
+        if (opening) {
+          this.assignOpenGroup(this.mod_FrontId, VirtualPartOnBack);
+        }
+      }
+
+
     } 
 
   //================================================================================================

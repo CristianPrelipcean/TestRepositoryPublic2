@@ -26,7 +26,10 @@
     const isRight = this.mod_SidepanelType === 'Right';
 
     // Block the cuts for fingergrips if it is a finished sidepanel
-    const visibleBlocked = (isLeft && this.mod_CarcaseVisLeft) || (isRight && this.mod_CarcaseVisRight);
+    let visibleBlocked = (isLeft && this.mod_CarcaseVisLeft) || (isRight && this.mod_CarcaseVisRight);
+    if (this.mod_SlopeAngle != 0){
+      visibleBlocked = false;
+    }
     if (visibleBlocked) { allowFingergripCuts = false; }
 
     // Do not cut the outer side panel of the corner units. [Jiri Polcar]

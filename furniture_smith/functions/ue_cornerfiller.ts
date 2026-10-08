@@ -14,9 +14,9 @@ ue_CornerFiller (parentModule: any){
   //==========================================================================================================
 
   if (parentModule.mod_HeightPosInsertion > 0) {
-    let InsertionHeight = parentModule.mod_HeightPosInsertion + parentModule.mod_PlinthAreaHeight;
+    const InsertionHeight = parentModule.mod_HeightPosInsertion + parentModule.mod_PlinthAreaHeight;
     parentModule.addInsertLevelHeight(InsertionHeight, true);
-    parentModule.insertLevelFixed = true;
+    parentModule.insertLevelFixed = false;
   }
   else {
     parentModule.addInsertLevelHeight(0, true);

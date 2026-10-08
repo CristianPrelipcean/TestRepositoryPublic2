@@ -4,7 +4,7 @@
   "description": "Drawer wood frame panel",
   "wdt": "XYZ",
   "groupName": "PanelWoodFrame",
-  "imageId": "98164374-8c27-430d-9257-73f93f5b32b2:Drawer.png",
+  "imageId": "22416402-7d2b-449a-856d-6de1951f1354:Drawer.png",
   "model3dImageId": "",
   "invisible": true,
   "restrictionTypeId": "Public",
@@ -135,7 +135,7 @@
     {
       "bomElementTypeId": "bomout_Group",
       "description": "Output Parts / Boards for panel wood frame",
-      "conditionScript": "partSelf._g?.basic_CreateBom == 'Library'",
+      "conditionScript": "partSelf._g?.basic_CreateBom != null && partSelf._g.basic_CreateBom !== 'Custom'",
       "valueScript": "//====================================================================\n  // Call the process functions\n  //====================================================================\n\n  GlobalFunc.process_PanelWoodFrameBom(this, part, part.pa_BomId)"
     }
   ],

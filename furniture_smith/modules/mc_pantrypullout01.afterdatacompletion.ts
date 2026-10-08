@@ -90,7 +90,9 @@
       frontWeight += setModule(PullOut, retDrawerInfo, OversizeInfo, front.height, front.start);
 
       // Handle insertion
-      handleWeight += handleInsertionHelper(this, retDrawerInfo, front.height, front.start, i, finalFrontList.length);
+      let handleDataResult = handleInsertionHelper(this, retDrawerInfo, front.height, front.start, i, finalFrontList.length);
+      handleWeight += handleDataResult.weight;
+      PullOut.mod_HardwareTypeList.push(handleDataResult.hardwareTypeList[0]);	
     }
   }
 
@@ -104,7 +106,9 @@
     frontWeight = setModule(PullOut, retDrawerInfo, OversizeInfo, retDrawerInfo.height, retDrawerInfo.posY);
 
     // Handle insertion
-    handleWeight += handleInsertionHelper(this, retDrawerInfo, retDrawerInfo.height, retDrawerInfo.posY, 1, 1);
+    let handleDataResult = handleInsertionHelper(this, retDrawerInfo, retDrawerInfo.height, retDrawerInfo.posY, 1, 1);
+    handleWeight += handleDataResult.weight;
+    PullOut.mod_HardwareTypeList.push(handleDataResult.hardwareTypeList[0]);	
   }
 
   //-------------------Helper function AddModule-------
@@ -174,10 +178,13 @@
   //          Add module for the handle
   //===================================================
 
-  function handleInsertionHelper(m: any, retDrawerInfo: any, heightFront: number, startPos: number, index: number, quantity: number): number {
+  function handleInsertionHelper(m: any, retDrawerInfo: any, heightFront: number, startPos: number, index: number, quantity: number): {weight: number, hardwareTypeList: string[]} {
+    // Interface
+    let weight: number = 0;
+    let hardwareTypeList: string[] = [];
 
     // Check if there should be a handle inserted:
-    if (m.mod_HandleDesign_matrix?.HandleType !== "Handle") return 0;
+    if (m.mod_HandleDesign_matrix?.HandleType !== "Handle" && m.mod_HandleDesign_matrix?.HandleType !== "InsetHandle") return { weight, hardwareTypeList};
 
     // Check if there should be a handle for the specific front
     const mode = m.mod_HandleActivated ?? "All";
@@ -201,7 +208,7 @@
     }
 
     // Break if the handle should not be inserted
-    if (!insert) return 0;
+    if (!insert) return { weight, hardwareTypeList };
 
     // Add the module
     let Handle = m.addOD_M_mc_Handle01();
@@ -234,7 +241,9 @@
 
     // Seal the handle to get the frontWeight
     let sealedHandle = Handle.seal();
-    return sealedHandle.mod_HandleWeightCalculations[0] ?? 0;
+    weight = sealedHandle.mod_HandleWeightCalculations[0] ?? 0;
+    hardwareTypeList.push(sealedHandle.mod_HardwareTypeList[0]);	
+    return { weight, hardwareTypeList }
   };
 
   //===================================================

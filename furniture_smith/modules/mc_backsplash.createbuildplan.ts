@@ -25,5 +25,4 @@
   let FinishPanel = this.addpart_Backsplash(0, 0, 0, this.mod_BacksplashWidth, this.mod_BacksplashHeight, this.mod_BacksplashThk);
   FinishPanel.pa_BomId = this.mod_BacksplashId;
   this.assignPartGroup(this.mod_BacksplashId, FinishPanel);
-
-  GlobalFunc.process_AddMaterial(FinishPanel, 'front', this.mod_BacksplashColor, this.mod_BacksplashColor, this.mod_BacksplashColor, this.mod_BacksplashColor, 'None', false, true);
+  GlobalFunc.process_AddMaterialGeneratedParts(FinishPanel, 'verticalPanel', this.mod_BacksplashColor, this.mod_BacksplashColor, this.mod_BacksplashColor, this.mod_BacksplashColor, false, false);

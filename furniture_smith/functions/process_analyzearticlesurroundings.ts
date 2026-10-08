@@ -69,24 +69,6 @@ process_AnalyzeArticleSurroundings(surroundingContours: any, articlePosition: an
 		return result;
 	}
 
-	// To get the information of bugs
-	let hasValidSegmentCount = true;
-	let hasValidMinY = true;
-	for (const c of validContours) {
-		// Check Segment count
-		if (c.segments.length > 5) {
-			hasValidSegmentCount = false;
-		}
-
-		// Check minY
-		const ys = c.segments.map((s: any) => s.y);
-		const minY = Math.min(...ys);
-
-		if (minY !== 0) {
-			hasValidMinY = false;
-		}
-	}
-
 	// Get all the levels
 	const validLevels = validContours.map((c: any) => c.level);
 
@@ -100,22 +82,10 @@ process_AnalyzeArticleSurroundings(surroundingContours: any, articlePosition: an
 	const ys = baseLevel.segments.map((s: any) => s.y);
 
 	// Get the min and max values
-	let minX = Math.min(...xs);
-	let maxX = Math.max(...xs);
-	let minY = Math.min(...ys);
-	let maxY = Math.max(...ys);
-
-	// Workaround if contour seems buggy
-	if (!hasValidSegmentCount || !hasValidMinY) {
-
-		minY = 0;
-		minX = -250 + articlePosition.x;
-		maxX = articleDimension.x + articlePosition.x + 250;
-		maxY = articleDimension.z + 250;
-
-		// Optional Debug
-		logInfo("Contour seems buggy! Hard coded modification.");
-	}
+	const minX = Math.min(...xs);
+	const maxX = Math.max(...xs);
+	const minY = Math.min(...ys);
+	const maxY = Math.max(...ys);
 
 	//======================================================================
 	// Article dimension
@@ -125,8 +95,6 @@ process_AnalyzeArticleSurroundings(surroundingContours: any, articlePosition: an
 	const dimY = articleDimension.y ?? 0;
 	const dimZ = articleDimension.z ?? 0;
 
-	const rotY = articlePosition.rotationY;
-
 	//======================================================================
 	// Article position
 	//======================================================================
@@ -134,6 +102,8 @@ process_AnalyzeArticleSurroundings(surroundingContours: any, articlePosition: an
 	const x = articlePosition.x ?? 0;
 	const y = articlePosition.y ?? 0;
 	const z = articlePosition.z ?? 0;
+	const ryRaw = articleDimension.ry ?? 0;
+	const ry = ((Math.round(ryRaw / 90) * 90) % 360 + 360) % 360;
 
 	// Find the lowest level
 	const lowestLevel = Math.min(...validLevels);
@@ -146,7 +116,8 @@ process_AnalyzeArticleSurroundings(surroundingContours: any, articlePosition: an
 	if (validLevels.length >= 2) {
 		const highestLevel = Math.max(...validLevels);
 		result.distanceCeiling = round2(highestLevel - y - dimY);
-	} else {
+	}
+	else {
 		result.distanceCeiling = 0;
 	}
 
@@ -155,9 +126,30 @@ process_AnalyzeArticleSurroundings(surroundingContours: any, articlePosition: an
 	//======================================================================
 
 	// Calculate the distance to the wall
-	const disLeft = x - minX;
-	const disRight = maxX - x - dimX;
-	const disBack = z - minY;
+	let disLeft = 0;
+	let disRight = 0;
+	let disBack = 0;
+
+	if (ry === 0) {
+		disLeft = x - minX;
+		disRight = maxX - x - dimX;
+		disBack = z - minY;
+	}
+	else if (ry === 90) {
+		disLeft = maxY - z;
+		disRight = z - minY - dimX;
+		disBack = minX - x;
+	}
+	else if (ry === 180) {
+		disLeft = maxX - x;
+		disRight = x - minX - dimX;
+		disBack = maxY - z;
+	}
+	else if (ry === 270) {
+		disLeft = z - minY - dimX;
+		disRight = maxY - z;
+		disBack = maxX - x - dimZ;
+	}
 
 	// Return the distance to the wall
 	result.distanceWallLeft = round2(disLeft);
@@ -174,15 +166,13 @@ process_AnalyzeArticleSurroundings(surroundingContours: any, articlePosition: an
 
 	// Check if it is close to the wall (between 0 and 300) => Expect it is the first or last
 	// That is expecting not knowing!
-	function isNearWall(distance: number, rotation: number): boolean {
-		const inRange = distance >= -EPS && distance <= maxWallDistance + EPS;
-		const isCorrectRotation = rotation === 0;
-		return isCorrectRotation && inRange;
+	function isNearWall(distance: number): boolean {
+		return distance >= -EPS && distance <= maxWallDistance + EPS;
 	}
 
 	// Return first or last element = true or false
-	result.firstElement = isNearWall(result.distanceWallLeft, rotY);
-	result.lastElement = isNearWall(result.distanceWallRight, rotY);
+	result.firstElement = isNearWall(result.distanceWallLeft);
+	result.lastElement = isNearWall(result.distanceWallRight);
 
 	//======================================================================
 	// Sloped ceiling
@@ -220,17 +210,30 @@ process_AnalyzeArticleSurroundings(surroundingContours: any, articlePosition: an
 
 			// Left side
 			if (Math.abs(prev.x - minX) < EPS && Math.abs(curr.x - minX) < EPS) {
-				direction = "toLeft";
+				if (ry === 0) direction = "toLeft";
+				else if (ry === 90) direction = "toBack";
+				else if (ry === 180) direction = "toRight";
 			}
 
 			// Right side
 			else if (Math.abs(prev.x - maxX) < EPS && Math.abs(curr.x - maxX) < EPS) {
-				direction = "toRight";
+				if (ry === 0) direction = "toRight";
+				else if (ry === 180) direction = "toLeft";
+				else if (ry === 270) direction = "toBack";
 			}
 
 			// Back side
 			else if (Math.abs(prev.y - minY) < EPS && Math.abs(curr.y - minY) < EPS) {
-				direction = "toBack";
+				if (ry === 0) direction = "toBack";
+				else if (ry === 90) direction = "toRight";
+				else if (ry === 270) direction = "toLeft";
+			}
+
+			// Front side
+			else if (Math.abs(prev.y - maxY) < EPS && Math.abs(curr.y - maxY) < EPS) {
+				if (ry === 90) direction = "toLeft";
+				else if (ry === 180) direction = "toBack";
+				else if (ry === 270) direction = "toRight";
 			}
 
 			// Guard for direction => no sloped ceiling found for this segment

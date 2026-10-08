@@ -153,9 +153,18 @@
 		}
 	}
 
-	catch (error: any) { // Failed to insert the Door
+	// Error handling (door insertion failed)
+	catch (error: any) { 
 		logError('mf_Door - AfterDatacompletion: ' + error.message);
 	}
+
+
+	//===================================================
+	//          Build Compartments (add dividers and create compartments informations)
+	//===================================================
+
+	const compartmentsInformation = JSON.parse(GlobalFunc.process_CreateCompartments(this));
+	this.mod_CompartmentsInformation.push(JSON.stringify(compartmentsInformation));
 
 	//===================================================
 	//          Find Equipment Docked
@@ -170,30 +179,46 @@
 		// If there is a shelfadjMultiple
 		if (p instanceof OD_M_me_ShelfadjMultiple01) {
 			checkEquipmentDocked = true;
+/*
+			// Limit shelf group height to the available front height
+			const shelfadjGroupHeight = p.mod_Height ?? 0;
+			const posY = p.mod_ShelfadjGroupPositionY ?? 0;
+			const maxHeight = this.mod_FrontHeight - posY;
+			if (shelfadjGroupHeight > maxHeight) {
+				p.mod_Height = Math.max(0, maxHeight);
+			}
+*/
 
-			p.mod_Width = CarcaseSpaceDimension.WidthFreeSpace;
-			p.mod_Depth = CarcaseSpaceDimension.DepthFreeSpace;
-			p.mod_ShelfadjPartParentName = "Door";
-			p.mod_ShelfadjPartParentType = this.mod_DoorType;
-			p.mod_CarcaseSpaceDimension.push(this.mod_CarcaseSpaceDimension[0]);
-			p.mod_VertDividerType = vertDividerType;
-			p.mod_VertDividerPosition = VertDividerInfoList.PosX + VertDividerInfoList.DimX / 2 - CarcaseSpaceDimension.WidthFreeStartPos;
-			p.mod_CarcaseId = this.mod_CarcaseId;
+			// Limit shelf group height to the available front height
+			const shelfadjGroupHeight = p.mod_Height ?? 0;
+			const compartmentHeight = p.mod_FreeSpaceY ?? 0;
+			const compartmentStartPosY = p.mod_FreeSpaceStartPosY ?? 0;
+			const requestedHeight = p.mod_Height ?? 0;
+			const posY = p.mod_ShelfadjGroupPositionY ?? 0;
+			const maxHeight = compartmentHeight - (posY - compartmentStartPosY)
+			if (shelfadjGroupHeight > maxHeight) {
+				p.mod_Height = maxHeight;
+			}
 
-			// SetOrigin of the child
-			p.setOrigin(CarcaseSpaceDimension.WidthFreeStartPos - this.mod_Originpos[0], CarcaseSpaceDimension.HeightFreeStartPos - this.mod_Originpos[1], CarcaseSpaceDimension.DepthFreeStartPos - this.mod_Originpos[2]);
+
 		}
 
 		// If there is a clothing organzier
 		else if (p instanceof OD_M_me_ClothingOrganizer01) {
 			checkEquipmentDocked = true;
 
-			p.mod_Width = CarcaseSpaceDimension.WidthFreeSpace;
-			p.mod_Depth = CarcaseSpaceDimension.DepthFreeSpace;
-			p.mod_Height = CarcaseSpaceDimension.HeightFreeSpace;
-
-			// SetOrigin of the child
-			p.setOrigin(CarcaseSpaceDimension.WidthFreeStartPos - this.mod_Originpos[0], CarcaseSpaceDimension.HeightFreeStartPos - this.mod_Originpos[1], CarcaseSpaceDimension.DepthFreeStartPos - this.mod_Originpos[2]);
+					//--------------- Calculate the positionY of hardware -----------------------------------
+			
+			// Limit height position to the available FreeSpace
+			const compartmentHeight = p.mod_Height ?? 0;
+			const compartmentStartPosY = p.mod_Originpos[1] ?? 0;
+			const maxPosHeight = compartmentHeight + compartmentStartPosY;
+			const thickness = GlobalFunc.find_ClothingOrganizerInstallationDimensions(p.mod_ClothingOrganizerDesign!)[0].ClothingOrganizerInstallationMinHeight ?? 0;
+			const requestedPosition = p.mod_ClothingOrganizerHeightPosition ?? 0;
+			if ( requestedPosition + thickness > maxPosHeight) {
+				const adjustedPosition = maxPosHeight - thickness;
+        p.mod_ClothingOrganizerHeightPosition = Math.max(adjustedPosition, 0);
+			}
 		}
 
 		// If there is a hood insert
@@ -205,7 +230,22 @@
 			p.mod_CarcaseHeight = CarcaseSpaceDimension.HeightFreeSpace;
 
 			// SetOrigin of the child
-			//p.setOrigin(CarcaseSpaceDimension.WidthFreeStartPos - this.mod_Originpos[0], CarcaseSpaceDimension.HeightFreeStartPos - this.mod_Originpos[1], CarcaseSpaceDimension.DepthFreeStartPos - this.mod_Originpos[2]);
+			p.setOrigin(CarcaseSpaceDimension.WidthFreeStartPos - this.mod_Originpos[0], 0, CarcaseSpaceDimension.DepthFreeStartPos - this.mod_Originpos[2]);
+		}
+
+		// If there is a inner drawer group
+		else if (p instanceof OD_M_me_InnerDrawerGroup) {
+			checkEquipmentDocked = true;
+		}
+
+		// If there is a VertDivider (Middle Side Panel)
+		else if (p instanceof OD_M_me_Vertdivider01) {
+			checkEquipmentDocked = true;
+		}
+
+		// If there is a ShelfFixed (Middle Side Panel)
+		else if (p instanceof OD_M_me_Shelffixed01) {
+			checkEquipmentDocked = true;
 		}
 	})
 
