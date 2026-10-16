@@ -16,53 +16,74 @@
   ],
   "assignedVariants": [
     {
-      "variantId": "mod_PositionX",
-      "previewValue": "100",
-      "origin": "Required"
-    },
-    {
-      "variantId": "mod_PositionY",
-      "previewValue": "100",
-      "origin": "Required"
-    },
-    {
       "variantId": "mod_Diameter",
       "previewValue": "8",
-      "origin": "Required"
+      "required": true,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_DrillDepth",
       "previewValue": "10",
-      "origin": "Required"
-    },
-    {
-      "variantId": "mod_Width",
-      "previewValue": "500",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_Thickness",
-      "previewValue": "19",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_ProcessingBasePoint",
-      "origin": "GlobalVar"
-    },
-    {
-      "variantId": "mod_DrillSide",
-      "default": "Front",
-      "origin": "Default"
+      "required": true,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_DrillEntireThk",
       "default": "false",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_DrillSide",
+      "default": "Front",
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_Length",
       "previewValue": "1000",
-      "origin": "Derived"
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_PositionX",
+      "previewValue": "100",
+      "required": true,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_PositionY",
+      "previewValue": "100",
+      "required": true,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ProcessingBasePoint",
+      "required": false,
+      "derive": false,
+      "fixed": false,
+      "defaultGlobalVar": true
+    },
+    {
+      "variantId": "mod_Thickness",
+      "previewValue": "19",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_Width",
+      "previewValue": "500",
+      "required": false,
+      "derive": true,
+      "fixed": false
     }
   ],
   "assignedParts": [],
