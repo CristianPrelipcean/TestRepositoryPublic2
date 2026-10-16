@@ -4,7 +4,7 @@
   "description": "Hanger System BOM",
   "wdt": "XYZ",
   "groupName": "Hardware",
-  "imageId": "d80c9a0b-8edc-4c96-99a3-b7d919052bec:BOM.png",
+  "imageId": "cde235f5-cdcc-461c-aa12-1e7ebe9d2e58:BOM.png",
   "model3dImageId": "",
   "invisible": true,
   "restrictionTypeId": "Public",
@@ -13,6 +13,11 @@
     {
       "partVarId": "pa_HardwareId",
       "valueScript": "''",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_ParentName",
+      "valueScript": "this.parent.mod_CarcaseId",
       "isWritable": false
     },
     {
@@ -34,15 +39,11 @@
       "partVarId": "pa_WallPlateQtyRight",
       "valueScript": "0",
       "isWritable": false
-    },
-    {
-      "partVarId": "pa_ParentName",
-      "valueScript": "this.parent.mod_CarcaseId",
-      "isWritable": false
     }
   ],
   "bomData": [
     {
+      "id": 176,
       "bomElementTypeId": "bomout_Group",
       "description": "BOM Hangers",
       "conditionScript": "partSelf._g?.basic_CreateHardwareBom == 'Library'",

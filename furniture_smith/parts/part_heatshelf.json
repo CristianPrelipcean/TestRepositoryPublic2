@@ -4,80 +4,22 @@
   "description": "Heatshelf",
   "wdt": "XZY",
   "groupName": "Panels",
-  "imageId": "0563a86b-2ed8-4898-a286-526bf56d2490:Hob_Removable.jpg",
+  "imageId": "376ccd18-5091-4977-bda7-b3da1bda9642:Hob_Removable.jpg",
   "invisible": false,
   "restrictionTypeId": "",
   "noNcData": false,
   "partVariants": [
     {
-      "partVarId": "pa_TopColor",
-      "valueScript": "this.parent.mod_CarcaseColor"
-    },
-    {
-      "partVarId": "pa_BtmColor",
-      "valueScript": "this.parent.mod_CarcaseOutsideColor"
-    },
-    {
-      "partVarId": "pa_EdgeFrontColor",
-      "valueScript": "this.parent.mod_CarcaseEdgeColor",
-      "isWritable": false
-    },
-    {
-      "partVarId": "pa_EdgeLeftColor",
-      "valueScript": "this.parent.mod_CarcaseEdgeColor"
-    },
-    {
-      "partVarId": "pa_EdgeBackColor",
-      "valueScript": "this.parent.mod_CarcaseEdgeBackColor"
-    },
-    {
-      "partVarId": "pa_EdgeRightColor",
-      "valueScript": "this.parent.mod_CarcaseEdgeColor"
-    },
-    {
-      "partVarId": "pa_EdgeFrontType",
-      "valueScript": "this.parent.mod_EdgeFrontType"
-    },
-    {
-      "partVarId": "pa_EdgeLeftType",
-      "valueScript": "this.parent.mod_EdgeLeftType"
-    },
-    {
-      "partVarId": "pa_EdgeBackType",
-      "valueScript": "this.parent.mod_EdgeBackType"
-    },
-    {
-      "partVarId": "pa_EdgeRightType",
-      "valueScript": "this.parent.mod_EdgeRightType"
-    },
-    {
-      "partVarId": "pa_EdgeJointType",
-      "valueScript": "this.parent.mod_EdgeJointType"
-    },
-    {
-      "partVarId": "pa_GrainDirection",
-      "valueScript": "'Neutral'",
-      "isWritable": false
-    },
-    {
-      "partVarId": "pa_Program",
-      "valueScript": "this.parent.mod_CarcaseProgram"
+      "partVarId": "pa_AdditionalInfo1",
+      "valueScript": "'None'"
     },
     {
       "partVarId": "pa_BomId",
       "valueScript": "this.parent.mod_CarcaseId"
     },
     {
-      "partVarId": "pa_AdditionalInfo1",
-      "valueScript": "'None'"
-    },
-    {
-      "partVarId": "pa_TypeElement",
-      "valueScript": "this.parent.mod_TypeElement"
-    },
-    {
-      "partVarId": "pa_ParentName",
-      "valueScript": "this.parent.mod_ParentName"
+      "partVarId": "pa_BtmColor",
+      "valueScript": "this.parent.mod_CarcaseOutsideColor"
     },
     {
       "partVarId": "pa_ColorGrainGroup",
@@ -85,13 +27,72 @@
       "isWritable": false
     },
     {
+      "partVarId": "pa_EdgeBackColor",
+      "valueScript": "this.parent.mod_CarcaseEdgeBackColor"
+    },
+    {
+      "partVarId": "pa_EdgeBackType",
+      "valueScript": "this.parent.mod_EdgeBackType"
+    },
+    {
+      "partVarId": "pa_EdgeFrontColor",
+      "valueScript": "this.parent.mod_CarcaseEdgeColor",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeFrontType",
+      "valueScript": "this.parent.mod_EdgeFrontType"
+    },
+    {
+      "partVarId": "pa_EdgeJointType",
+      "valueScript": "this.parent.mod_EdgeJointType"
+    },
+    {
+      "partVarId": "pa_EdgeLeftColor",
+      "valueScript": "this.parent.mod_CarcaseEdgeColor"
+    },
+    {
+      "partVarId": "pa_EdgeLeftType",
+      "valueScript": "this.parent.mod_EdgeLeftType"
+    },
+    {
+      "partVarId": "pa_EdgeRightColor",
+      "valueScript": "this.parent.mod_CarcaseEdgeColor"
+    },
+    {
+      "partVarId": "pa_EdgeRightType",
+      "valueScript": "this.parent.mod_EdgeRightType"
+    },
+    {
+      "partVarId": "pa_GrainDirection",
+      "valueScript": "'Neutral'",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_ParentName",
+      "valueScript": "this.parent.mod_ParentName"
+    },
+    {
+      "partVarId": "pa_Program",
+      "valueScript": "this.parent.mod_CarcaseProgram"
+    },
+    {
       "partVarId": "pa_ProgramGrainGroup",
       "valueScript": "this.parent.mod_CarcaseProgram_matrix.GrainGroupId",
       "isWritable": false
+    },
+    {
+      "partVarId": "pa_TopColor",
+      "valueScript": "this.parent.mod_CarcaseColor"
+    },
+    {
+      "partVarId": "pa_TypeElement",
+      "valueScript": "this.parent.mod_TypeElement"
     }
   ],
   "bomData": [
     {
+      "id": 211,
       "bomElementTypeId": "bomout_Group",
       "description": "Output parts / edges / stockparts in relation to the basic_CreateBom setting",
       "conditionScript": "partSelf._g?.basic_CreateBom != null && partSelf._g.basic_CreateBom !== 'Custom'",
@@ -100,6 +101,7 @@
   ],
   "ncData": [
     {
+      "id": 539,
       "part2": "part_HeatshelfFront",
       "touchName": "FromTop",
       "bomElementTypeId": "ncout_Group",

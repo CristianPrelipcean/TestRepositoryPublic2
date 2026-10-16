@@ -5,43 +5,57 @@
   "isRoot": false,
   "description": "Front panel in Glass for different front elements",
   "groupName": "FrontConstructionParts",
-  "imageId": "ecd54615-2641-42ff-bf84-b2864e3f7079:Frontpanel.jpg",
+  "imageId": "631f171f-8d4d-4416-b8c8-c5515c5befea:Frontpanel.jpg",
   "restrictionTypeId": "Internal",
   "childModules": [],
   "assignedVariants": [
     {
       "variantId": "mod_Depth",
       "default": "500",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_FrontId",
       "previewValue": "None",
-      "origin": "Derived"
+      "required": false,
+      "derive": true,
+      "fixed": false
     },
     {
       "variantId": "mod_FrontProgram",
       "previewValue": "Demoprogram1",
-      "origin": "Derived"
+      "required": false,
+      "derive": true,
+      "fixed": false
     },
     {
       "variantId": "mod_FrontType",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_Height",
       "default": "720",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_ModuleName",
       "default": "mc_FrontPanelGlass01",
-      "origin": "Fixed"
+      "required": false,
+      "derive": false,
+      "fixed": true
     },
     {
       "variantId": "mod_Width",
       "default": "600",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     }
   ],
   "assignedParts": [

@@ -5,7 +5,7 @@
   "isRoot": false,
   "description": "HingeGroup - Represents the front that will receive the hinges",
   "groupName": "Hardware",
-  "imageId": "82f122ec-6cf2-4a0f-bb7d-fd5cd4d6f337:HingeGroup.jpg",
+  "imageId": "44022b68-3c49-46f9-aace-b72d4cca42a3:HingeGroup.jpg",
   "restrictionTypeId": "Internal",
   "childModules": [
     {
@@ -17,196 +17,272 @@
       "variantId": "mod_CarcaseId",
       "default": "",
       "previewValue": "",
-      "origin": "Derived"
+      "required": false,
+      "derive": true,
+      "fixed": false
     },
     {
       "variantId": "mod_CarcasePartInfo",
       "default": "",
       "previewValue": "",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_Depth",
       "previewValue": "580",
-      "origin": "Derived"
+      "required": false,
+      "derive": true,
+      "fixed": false
     },
     {
       "variantId": "mod_DoorDirection",
       "previewValue": "Left",
-      "origin": "Derived"
+      "required": false,
+      "derive": true,
+      "fixed": false
     },
     {
       "variantId": "mod_DoorType",
       "previewValue": "Single",
-      "origin": "Derived"
+      "required": false,
+      "derive": true,
+      "fixed": false
     },
     {
       "variantId": "mod_FingergripBtmType",
       "previewValue": "NoFingergrip",
-      "origin": "Derived"
+      "required": false,
+      "derive": true,
+      "fixed": false
     },
     {
       "variantId": "mod_FingergripTopType",
       "previewValue": "NoFingergrip",
-      "origin": "Derived"
+      "required": false,
+      "derive": true,
+      "fixed": false
     },
     {
       "variantId": "mod_FlipliftHardwareType",
       "default": "Automatic",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_FlipliftType",
       "default": "FHF",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_FrontGapCarcase",
       "previewValue": "2",
-      "origin": "Derived"
+      "required": false,
+      "derive": true,
+      "fixed": false
     },
     {
       "variantId": "mod_FrontHeight",
       "previewValue": "1000",
-      "origin": "Derived"
+      "required": false,
+      "derive": true,
+      "fixed": false
     },
     {
       "variantId": "mod_FrontId",
       "default": "",
       "previewValue": "",
-      "origin": "Derived"
+      "required": false,
+      "derive": true,
+      "fixed": false
     },
     {
       "variantId": "mod_FrontPosStart",
       "previewValue": "0",
-      "origin": "Derived"
+      "required": false,
+      "derive": true,
+      "fixed": false
     },
     {
       "variantId": "mod_FrontThk",
       "previewValue": "19",
-      "origin": "Derived"
+      "required": false,
+      "derive": true,
+      "fixed": false
     },
     {
       "variantId": "mod_FrontType",
       "default": "",
       "previewValue": "",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_FrontWidth",
       "previewValue": "597",
-      "origin": "Derived"
+      "required": false,
+      "derive": true,
+      "fixed": false
     },
     {
       "variantId": "mod_HandleDesign",
       "previewValue": "10",
-      "origin": "Derived"
+      "required": false,
+      "derive": true,
+      "fixed": false
     },
     {
       "variantId": "mod_HandlePosLogic",
       "previewValue": "HandleLine",
-      "origin": "Derived"
+      "required": false,
+      "derive": true,
+      "fixed": false
     },
     {
       "variantId": "mod_Height",
       "default": "1000",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_HingeColor",
       "previewValue": "DemoNickelPlated",
-      "origin": "Derived"
+      "required": false,
+      "derive": true,
+      "fixed": false
     },
     {
       "variantId": "mod_HingeInfo",
       "default": "",
       "previewValue": "",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_HingeLogic",
       "previewValue": "AutoSel_AutoPos",
-      "origin": "Derived"
+      "required": false,
+      "derive": true,
+      "fixed": false
     },
     {
       "variantId": "mod_HingePos1",
       "previewValue": "20",
-      "origin": "Derived"
+      "required": false,
+      "derive": true,
+      "fixed": false
     },
     {
       "variantId": "mod_HingePos2",
       "previewValue": "40",
-      "origin": "Derived"
+      "required": false,
+      "derive": true,
+      "fixed": false
     },
     {
       "variantId": "mod_HingePos3",
       "previewValue": "60",
-      "origin": "Derived"
+      "required": false,
+      "derive": true,
+      "fixed": false
     },
     {
       "variantId": "mod_HingePos4",
       "previewValue": "80",
-      "origin": "Derived"
+      "required": false,
+      "derive": true,
+      "fixed": false
     },
     {
       "variantId": "mod_HingePos5",
       "previewValue": "100",
-      "origin": "Derived"
+      "required": false,
+      "derive": true,
+      "fixed": false
     },
     {
       "variantId": "mod_HingePos6",
       "previewValue": "120",
-      "origin": "Derived"
+      "required": false,
+      "derive": true,
+      "fixed": false
     },
     {
       "variantId": "mod_HingeType",
       "previewValue": "110º",
-      "origin": "Derived"
+      "required": false,
+      "derive": true,
+      "fixed": false
     },
     {
       "variantId": "mod_Information",
       "default": "",
       "previewValue": "",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_InteriorEquipmentHinge",
       "previewValue": "All",
-      "origin": "Derived"
+      "required": false,
+      "derive": true,
+      "fixed": false
     },
     {
       "variantId": "mod_ModuleName",
-      "origin": "Derived"
+      "required": false,
+      "derive": true,
+      "fixed": false
     },
     {
       "variantId": "mod_MountingPlateType",
       "previewValue": "Horizontal",
-      "origin": "Derived"
+      "required": false,
+      "derive": true,
+      "fixed": false
     },
     {
       "variantId": "mod_OpeningAngle",
       "default": "",
       "previewValue": "",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_OpeningType",
       "previewValue": "Handle",
-      "origin": "Derived"
+      "required": false,
+      "derive": true,
+      "fixed": false
     },
     {
       "variantId": "mod_Originpos",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_TypeElement",
       "previewValue": "BaseUnit",
-      "origin": "Derived"
+      "required": false,
+      "derive": true,
+      "fixed": false
     },
     {
       "variantId": "mod_Width",
       "previewValue": "600",
-      "origin": "Derived"
+      "required": false,
+      "derive": true,
+      "fixed": false
     }
   ],
   "assignedParts": [
@@ -217,13 +293,13 @@
   "assignedCustomTables": [],
   "assignedFunctions": [
     {
+      "functionId": "process_Hinge"
+    },
+    {
       "functionId": "ue_HingePositioning"
     },
     {
       "functionId": "ue_HingeSelection"
-    },
-    {
-      "functionId": "process_Hinge"
     }
   ]
 }

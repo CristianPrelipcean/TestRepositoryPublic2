@@ -4,14 +4,19 @@
   "description": "Drill for hinges front and carcase",
   "wdt": "XYZ",
   "groupName": "Processings",
-  "imageId": "57689033-0e3b-4e12-ad67-cd671fc60eb9:Drillpart.png",
+  "imageId": "6d6d9d84-c279-46b7-9338-4d56325fd5df:Drillpart.png",
   "invisible": true,
   "restrictionTypeId": "Public",
   "noNcData": false,
   "partVariants": [
     {
-      "partVarId": "pa_Model3DGroupName",
-      "valueScript": "''",
+      "partVarId": "pa_DrillDistance",
+      "valueScript": "0",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_FrontGapCarcase",
+      "valueScript": "0",
       "isWritable": false
     },
     {
@@ -20,8 +25,13 @@
       "isWritable": false
     },
     {
-      "partVarId": "pa_DrillDistance",
+      "partVarId": "pa_HingeGapCarcase",
       "valueScript": "0",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_Model3DGroupName",
+      "valueScript": "''",
       "isWritable": false
     },
     {
@@ -37,16 +47,6 @@
     {
       "partVarId": "pa_ProcessingId2",
       "valueScript": "''",
-      "isWritable": false
-    },
-    {
-      "partVarId": "pa_FrontGapCarcase",
-      "valueScript": "0",
-      "isWritable": false
-    },
-    {
-      "partVarId": "pa_HingeGapCarcase",
-      "valueScript": "0",
       "isWritable": false
     }
   ],

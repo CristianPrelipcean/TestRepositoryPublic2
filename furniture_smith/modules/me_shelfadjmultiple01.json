@@ -8,7 +8,7 @@
   "isDropContainer": false,
   "description": "Multiple adjustable shelves",
   "groupName": "Equipment",
-  "imageId": "2c4f3493-8f83-4b9b-9a44-745870e381a0:Shelfadjustable.png",
+  "imageId": "02ceb606-94a5-434f-8145-2f1b0f07db02:Shelfadjustable.png",
   "restrictionTypeId": "Public",
   "childModules": [
     {
@@ -28,152 +28,213 @@
     {
       "variantId": "mod_CarcaseColor",
       "previewValue": "316",
-      "origin": "Derived"
+      "required": false,
+      "derive": true,
+      "fixed": false
     },
     {
       "variantId": "mod_CarcaseId",
       "previewValue": "None",
-      "origin": "Derived"
+      "required": false,
+      "derive": true,
+      "fixed": false
     },
     {
       "variantId": "mod_CarcaseProgram",
       "previewValue": "ModernNature",
-      "origin": "Derived"
+      "required": false,
+      "derive": true,
+      "fixed": false
     },
     {
       "variantId": "mod_CarcaseSpaceDimension",
       "default": "",
       "previewValue": "",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_Depth",
       "default": "522",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_FreeSpaceStartPosY",
       "default": "0",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_FreeSpaceY",
       "default": "0",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_FrontDesign",
       "previewValue": "Standard",
-      "origin": "Derived"
+      "required": false,
+      "derive": true,
+      "fixed": false
     },
     {
       "variantId": "mod_FrontProgram",
       "previewValue": "Classic",
-      "origin": "Derived"
+      "required": false,
+      "derive": true,
+      "fixed": false
     },
     {
       "variantId": "mod_HardwareId",
       "default": "",
       "previewValue": "",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_Height",
       "default": "9999",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_ModuleName",
       "default": "me_ShelfadjMultiple01",
-      "origin": "Fixed"
+      "required": false,
+      "derive": false,
+      "fixed": true
     },
     {
       "variantId": "mod_ShelfadjColor",
       "previewValue": "316",
-      "origin": "Derived"
+      "required": false,
+      "derive": true,
+      "fixed": false
     },
     {
       "variantId": "mod_ShelfadjDescriptor",
-      "origin": "Derived"
+      "required": false,
+      "derive": true,
+      "fixed": false
     },
     {
       "variantId": "mod_ShelfadjDesign",
       "previewValue": "40",
-      "origin": "Derived"
+      "required": false,
+      "derive": true,
+      "fixed": false
     },
     {
       "variantId": "mod_ShelfadjDrillDistance",
       "previewValue": "32",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_ShelfadjDrillinglineOffsetBtm",
-      "default": "0",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_ShelfadjDrillinglineOffsetTop",
-      "default": "0",
-      "origin": "Default"
+      "required": false,
+      "derive": true,
+      "fixed": false
     },
     {
       "variantId": "mod_ShelfadjDrillType",
       "previewValue": "SingleDrill",
-      "origin": "Derived"
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ShelfadjDrillinglineOffsetBtm",
+      "default": "0",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ShelfadjDrillinglineOffsetTop",
+      "default": "0",
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_ShelfadjGroupPositionX",
       "default": "0",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_ShelfadjGroupPositionY",
       "default": "0",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_ShelfadjOffsetBack",
       "default": "0",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_ShelfadjOffsetFront",
       "default": "10",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_ShelfadjPartParentName",
       "default": "None",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_ShelfadjPartParentType",
       "default": "None",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_ShelfadjThk",
-      "origin": "GlobalVar"
+      "required": false,
+      "derive": false,
+      "fixed": false,
+      "defaultGlobalVar": true
     },
     {
       "variantId": "mod_TypeElement",
       "previewValue": "WallUnit",
-      "origin": "Derived"
+      "required": false,
+      "derive": true,
+      "fixed": false
     },
     {
       "variantId": "mod_VertDividerPosition",
       "default": "0",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_VertDividerType",
       "default": "NoVertDivider",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_Width",
       "previewValue": "600",
-      "origin": "Derived"
+      "required": false,
+      "derive": true,
+      "fixed": false
     }
   ],
   "assignedParts": [],

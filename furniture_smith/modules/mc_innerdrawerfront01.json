@@ -8,47 +8,61 @@
   "isDropContainer": false,
   "description": "Construction module for inner drawer front",
   "groupName": "InnerDrawer",
-  "imageId": "32aabea9-9876-48d8-9391-161337aaf3bd:mc_InnerdrawerFront.png",
+  "imageId": "52984249-f2f4-4a41-b777-ad2b6aed94fd:mc_InnerdrawerFront.png",
   "restrictionTypeId": "Internal",
   "childModules": [],
   "assignedVariants": [
     {
       "variantId": "mod_CarcaseColor",
       "previewValue": "152",
-      "origin": "Derived"
+      "required": false,
+      "derive": true,
+      "fixed": false
     },
     {
       "variantId": "mod_FrontId",
       "default": "",
       "previewValue": "",
-      "origin": "Derived"
+      "required": false,
+      "derive": true,
+      "fixed": false
     },
     {
       "variantId": "mod_Information",
       "default": "",
       "previewValue": "",
-      "origin": "Derived"
+      "required": false,
+      "derive": true,
+      "fixed": false
     },
     {
       "variantId": "mod_InnerDrawerFrontColor",
       "defaultScript": "this.mod_CarcaseColor",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_InnerDrawerFrontGapBottom",
       "previewValue": "2",
-      "origin": "Derived"
+      "required": false,
+      "derive": true,
+      "fixed": false
     },
     {
       "variantId": "mod_InnerDrawerFrontGapTop",
       "previewValue": "2",
-      "origin": "Derived"
+      "required": false,
+      "derive": true,
+      "fixed": false
     },
     {
       "variantId": "mod_InnerDrawerId",
       "default": "",
       "previewValue": "",
-      "origin": "Derived"
+      "required": false,
+      "derive": true,
+      "fixed": false
     }
   ],
   "assignedParts": [

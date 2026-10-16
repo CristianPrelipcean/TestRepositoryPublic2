@@ -5,49 +5,66 @@
   "isRoot": false,
   "description": "Management of the hanger system ",
   "groupName": "Hardware",
-  "imageId": "8de460d7-37ea-4cb8-b711-b6cc4a3304f5:hangersystem.jpg",
+  "imageId": "ead4d4bb-9d33-42f3-990d-917128ea6a54:hangersystem.jpg",
   "restrictionTypeId": "Internal",
   "childModules": [],
   "assignedVariants": [
     {
       "variantId": "mod_BackwallThk",
       "previewValue": "15",
-      "origin": "Derived"
+      "required": false,
+      "derive": true,
+      "fixed": false
     },
     {
       "variantId": "mod_CarcaseId",
       "previewValue": "'None'",
-      "origin": "Derived"
+      "required": false,
+      "derive": true,
+      "fixed": false
     },
     {
       "variantId": "mod_HangerInfo",
       "default": "",
       "previewValue": "",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_HangerPosX",
       "previewValue": "Left_Right",
-      "origin": "Derived"
+      "required": false,
+      "derive": true,
+      "fixed": false
     },
     {
       "variantId": "mod_HangerPosY",
       "previewValue": "Top",
-      "origin": "Derived"
+      "required": false,
+      "derive": true,
+      "fixed": false
     },
     {
       "variantId": "mod_HangerType",
       "previewValue": "NoHanger",
-      "origin": "Derived"
+      "required": false,
+      "derive": true,
+      "fixed": false,
+      "defaultGlobalVar": false
     },
     {
       "variantId": "mod_ModuleName",
       "default": "mc_HangerSystem01",
-      "origin": "Fixed"
+      "required": false,
+      "derive": false,
+      "fixed": true
     },
     {
       "variantId": "mod_Originpos",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     }
   ],
   "assignedParts": [

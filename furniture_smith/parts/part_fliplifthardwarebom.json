@@ -4,25 +4,26 @@
   "description": "Ghost part to add the BOM for the fliplift fittings",
   "wdt": "XYZ",
   "groupName": "Hardware",
-  "imageId": "d80c9a0b-8edc-4c96-99a3-b7d919052bec:BOM.png",
+  "imageId": "cde235f5-cdcc-461c-aa12-1e7ebe9d2e58:BOM.png",
   "model3dImageId": "",
   "invisible": true,
   "restrictionTypeId": "Internal",
   "noNcData": true,
   "partVariants": [
     {
-      "partVarId": "pa_ParentName",
-      "valueScript": "this.parent.mod_FrontId",
+      "partVarId": "pa_HardwareId",
+      "valueScript": "''",
       "isWritable": false
     },
     {
-      "partVarId": "pa_HardwareId",
-      "valueScript": "''",
+      "partVarId": "pa_ParentName",
+      "valueScript": "this.parent.mod_FrontId",
       "isWritable": false
     }
   ],
   "bomData": [
     {
+      "id": 199,
       "bomElementTypeId": "bomout_Group",
       "description": "Hardware for fliplifts",
       "conditionScript": "partSelf._g?.basic_CreateHardwareBom == 'Library'",

@@ -7,87 +7,119 @@
   "isDropContainer": false,
   "description": "Front panel for thermoformed Panel",
   "groupName": "FrontConstructionParts",
-  "imageId": "ef776bb8-9e0a-448e-9a8e-697372243f22:MetalframeDoor.png",
+  "imageId": "da6881a9-eeba-4313-9486-8d3123896c53:MetalframeDoor.png",
   "restrictionTypeId": "Internal",
   "childModules": [],
   "assignedVariants": [
     {
       "variantId": "mod_Depth",
       "default": "500",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_FrontColor",
       "previewValue": "Demoblue",
-      "origin": "Derived"
+      "required": false,
+      "derive": true,
+      "fixed": false
     },
     {
       "variantId": "mod_FrontDesign",
       "previewValue": "ThermoformedFrame",
-      "origin": "Derived"
+      "required": false,
+      "derive": true,
+      "fixed": false
     },
     {
       "variantId": "mod_FrontEdgeColor",
       "previewValue": "Demoblue",
-      "origin": "Derived"
+      "required": false,
+      "derive": true,
+      "fixed": false
     },
     {
       "variantId": "mod_FrontEdgeThk",
-      "origin": "Derived"
+      "required": false,
+      "derive": true,
+      "fixed": false
     },
     {
       "variantId": "mod_FrontId",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_FrontpanelWeightCalculations",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_FrontpanelWeightLogic",
-      "default": "Library",
-      "origin": "Default"
+      "required": false,
+      "derive": true,
+      "fixed": false
     },
     {
       "variantId": "mod_FrontProgram",
       "previewValue": "Demoprogram1",
-      "origin": "Derived"
+      "required": false,
+      "derive": true,
+      "fixed": false
     },
     {
       "variantId": "mod_FrontType",
-      "origin": "Derived"
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_FrontpanelWeightCalculations",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_FrontpanelWeightLogic",
+      "default": "Library",
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_HardwareTypeList",
       "default": "",
       "previewValue": "",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_Height",
       "default": "720",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_Information",
       "default": "",
       "previewValue": "",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_ModuleName",
       "default": "mc_ThermoformedPanel01",
-      "origin": "Fixed"
+      "required": false,
+      "derive": false,
+      "fixed": true
     },
     {
       "variantId": "mod_PartInfo",
       "default": "part_DoorLeft",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_Width",
       "default": "600",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     }
   ],
   "assignedParts": [],

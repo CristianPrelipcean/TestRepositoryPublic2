@@ -5,29 +5,37 @@
   "isRoot": false,
   "description": "Construction module for the fingergrip",
   "groupName": "Fingergrip",
-  "imageId": "84ee2db0-f6d1-43a0-a872-e6b48e50473f:Fingrgrip.jpg",
+  "imageId": "6aeb5c8e-b45f-40b8-9366-6ce4994a6a5e:Fingrgrip.jpg",
   "restrictionTypeId": "Internal",
   "childModules": [],
   "assignedVariants": [
     {
       "variantId": "mod_FingergripColor",
       "previewValue": "DemoBlue",
-      "origin": "Derived"
+      "required": false,
+      "derive": true,
+      "fixed": false
     },
     {
       "variantId": "mod_FingergripLength",
       "previewValue": "1000",
-      "origin": "Required"
+      "required": true,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_FingergripPostype",
       "previewValue": "Middle",
-      "origin": "Required"
+      "required": true,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_FingergripType",
       "previewValue": "None",
-      "origin": "Derived"
+      "required": false,
+      "derive": true,
+      "fixed": false
     }
   ],
   "assignedParts": [

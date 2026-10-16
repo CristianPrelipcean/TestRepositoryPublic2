@@ -4,12 +4,17 @@
   "description": "Backsplash part",
   "wdt": "XYZ",
   "groupName": "Backsplash",
-  "imageId": "e5f423a8-f761-4090-a2cd-dfb72f5d3046:Backsplash.png",
+  "imageId": "a2699a62-549b-4cec-9173-7efb60ea67a7:Backsplash.png",
   "model3dImageId": "",
   "invisible": false,
   "restrictionTypeId": "Public",
   "noNcData": false,
   "partVariants": [
+    {
+      "partVarId": "pa_AdditionalInfo1",
+      "valueScript": "'None'",
+      "isWritable": false
+    },
     {
       "partVarId": "pa_BomId",
       "valueScript": "'Backsplash01'",
@@ -79,15 +84,11 @@
       "partVarId": "pa_TopColor",
       "valueScript": "this.parent.mod_BacksplashColor",
       "isWritable": false
-    },
-    {
-      "partVarId": "pa_AdditionalInfo1",
-      "valueScript": "'None'",
-      "isWritable": false
     }
   ],
   "bomData": [
     {
+      "id": 182,
       "bomElementTypeId": "bomout_Group",
       "description": "Output parts / edges / stockparts in relation to the basic_CreateBom setting",
       "conditionScript": "partSelf._g?.basic_CreateBom != null && partSelf._g.basic_CreateBom !== 'Custom'",

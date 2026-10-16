@@ -4,7 +4,7 @@
   "description": "Part group for the pullout unit",
   "wdt": "XYZ",
   "groupName": "Pullout",
-  "imageId": "1a94a407-50ac-4c78-b97f-dffcdd35c9ae:Pullout.png",
+  "imageId": "a5957182-e044-4b53-bcac-196c0066bf54:Pullout.png",
   "model3dImageId": "",
   "invisible": true,
   "restrictionTypeId": "Internal",
@@ -21,6 +21,7 @@
   ],
   "bomData": [
     {
+      "id": 229,
       "bomElementTypeId": "bomout_PartGroup",
       "description": "Partgroup for pullout",
       "conditionScript": "partSelf._g?.basic_CreateBom != null && partSelf._g.basic_CreateBom !== 'Custom'",

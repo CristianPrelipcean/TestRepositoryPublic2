@@ -7,7 +7,7 @@
   "isDropContainer": false,
   "description": "Root module to build sub articles",
   "groupName": "Root",
-  "imageId": "b9493fb2-3271-4ee1-ae60-38e7a6859994:ArticleBuilder.png",
+  "imageId": "7affe046-4b9f-4b86-9a83-4b781c3401c9:ArticleBuilder.png",
   "restrictionTypeId": "Public",
   "childModules": [
     {
@@ -30,63 +30,86 @@
     {
       "variantId": "mod_CarcaseColor",
       "default": "178",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_CarcaseId",
       "default": "None",
-      "origin": "Default"
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_CarcaseProgram",
       "default": "ModernNature",
-      "origin": "Default"
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_CarcaseSpaceDimension",
       "default": "",
-      "origin": "Default"
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_FrontDesign",
-      "origin": "GlobalVar"
+      "required": false,
+      "derive": false,
+      "fixed": false,
+      "defaultGlobalVar": true
     },
     {
       "variantId": "mod_FrontProgram",
       "default": "Classic",
-      "origin": "Default"
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_ShelfadjColor",
       "default": "Automatic",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_ShelfadjDescriptor",
       "default": "1_1",
-      "origin": "Default"
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_ShelfadjDesign",
-      "origin": "GlobalVar"
+      "required": false,
+      "derive": false,
+      "fixed": false,
+      "defaultGlobalVar": true
     },
     {
       "variantId": "mod_ShelfadjDrillDistance",
-      "origin": "GlobalVar"
+      "required": false,
+      "derive": false,
+      "fixed": false,
+      "defaultGlobalVar": true
     },
     {
       "variantId": "mod_ShelfadjDrillType",
-      "origin": "GlobalVar"
+      "required": false,
+      "derive": false,
+      "fixed": false,
+      "defaultGlobalVar": true
     },
     {
       "variantId": "mod_TypeElement",
       "default": "WallUnit",
-      "origin": "Default"
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_Width",
       "default": "600",
-      "origin": "Default"
+      "derive": false,
+      "fixed": false
     }
   ],
   "assignedParts": [

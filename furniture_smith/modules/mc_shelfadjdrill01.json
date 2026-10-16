@@ -5,89 +5,121 @@
   "isRoot": false,
   "description": "Management of the drills for adjustable shelves",
   "groupName": "Equipment",
-  "imageId": "f335681b-518f-4310-8937-698c295ee51e:ShelfadjDrill.jpg",
+  "imageId": "9dacc556-1d05-470f-870b-eba52881978d:ShelfadjDrill.jpg",
   "restrictionTypeId": "Internal",
   "childModules": [],
   "assignedVariants": [
     {
       "variantId": "mod_Depth",
       "default": "600",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_Height",
       "default": "600",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_ModuleName",
       "default": "mc_ShelfadjDrill01",
-      "origin": "Fixed"
+      "required": false,
+      "derive": false,
+      "fixed": true
     },
     {
       "variantId": "mod_Rotation",
       "default": "0",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_ShelfadjBackwallDrillDescriptor",
       "default": "None",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_ShelfadjBackwallProcessingId",
       "default": "None",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_ShelfadjDrillDistance",
       "default": "32",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_ShelfadjSidepanelDrillDescriptor",
       "default": "None",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_ShelfadjSidepanelProcessingBackId",
       "default": "None",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_ShelfadjSidepanelProcessingFrontId",
       "default": "None",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_ShelfadjSidepanelProcessingMiddleId",
       "default": "None",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_ShelfadjVertdividerDrillDescriptor",
-      "default": "None",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_ShelfadjVertDividerProcessingId",
       "default": "None",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ShelfadjVertdividerDrillDescriptor",
+      "default": "None",
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_VertDividerPosition",
       "previewValue": "0",
-      "origin": "Derived"
+      "required": false,
+      "derive": true,
+      "fixed": false
     },
     {
       "variantId": "mod_VertDividerType",
       "previewValue": "NoVertDivider",
-      "origin": "Derived"
+      "required": false,
+      "derive": true,
+      "fixed": false
     },
     {
       "variantId": "mod_Width",
       "default": "600",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     }
   ],
   "assignedParts": [

@@ -4,7 +4,7 @@
   "description": "Part group for drawer",
   "wdt": "XYZ",
   "groupName": "PartGroup",
-  "imageId": "e2d9714a-aa9b-4e75-b648-0e446f4a886c:Drawer.png",
+  "imageId": "8e394632-47b3-48cc-b3bf-ca06105d5fdb:Drawer.png",
   "invisible": true,
   "restrictionTypeId": "Public",
   "noNcData": false,
@@ -22,6 +22,7 @@
   ],
   "bomData": [
     {
+      "id": 175,
       "bomElementTypeId": "bomout_PartGroup",
       "description": "Partgroup for carcase",
       "conditionScript": "partSelf._g?.basic_CreateBom != null && partSelf._g.basic_CreateBom !== 'Custom'",

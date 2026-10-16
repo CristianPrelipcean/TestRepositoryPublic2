@@ -5,64 +5,86 @@
   "isRoot": false,
   "description": "Management of panels",
   "groupName": "ConstructionParts",
-  "imageId": "ecd54615-2641-42ff-bf84-b2864e3f7079:Frontpanel.jpg",
+  "imageId": "631f171f-8d4d-4416-b8c8-c5515c5befea:Frontpanel.jpg",
   "restrictionTypeId": "Internal",
   "childModules": [],
   "assignedVariants": [
     {
       "variantId": "mod_Color",
       "previewValue": "240",
-      "origin": "Derived"
+      "required": false,
+      "derive": true,
+      "fixed": false
     },
     {
       "variantId": "mod_Depth",
       "default": "350",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_Height",
       "default": "900",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_IslandBackwallOverhangFront",
       "previewValue": "30",
-      "origin": "Derived"
+      "required": false,
+      "derive": true,
+      "fixed": false
     },
     {
       "variantId": "mod_ModuleName",
       "default": "mc_Panel01",
-      "origin": "Fixed"
+      "required": false,
+      "derive": false,
+      "fixed": true
     },
     {
       "variantId": "mod_PanelId",
       "default": "None",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_PaneltopColor",
       "previewValue": "380",
-      "origin": "Derived"
+      "required": false,
+      "derive": true,
+      "fixed": false
     },
     {
       "variantId": "mod_PaneltopThk",
       "previewValue": "25",
-      "origin": "Derived"
+      "required": false,
+      "derive": true,
+      "fixed": false
     },
     {
       "variantId": "mod_Program",
       "previewValue": "Demoprogram1",
-      "origin": "Derived"
+      "required": false,
+      "derive": true,
+      "fixed": false
     },
     {
       "variantId": "mod_Thk",
       "default": "19",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_Width",
       "default": "1000",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     }
   ],
   "assignedParts": [

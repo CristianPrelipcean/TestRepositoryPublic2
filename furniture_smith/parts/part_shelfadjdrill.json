@@ -4,21 +4,11 @@
   "description": "Adjustable shelf drilling line in the carcase",
   "wdt": "XYZ",
   "groupName": "Processings",
-  "imageId": "57689033-0e3b-4e12-ad67-cd671fc60eb9:Drillpart.png",
+  "imageId": "6d6d9d84-c279-46b7-9338-4d56325fd5df:Drillpart.png",
   "invisible": true,
   "restrictionTypeId": "Public",
   "noNcData": false,
   "partVariants": [
-    {
-      "partVarId": "pa_ShelfadjDrillDistance",
-      "valueScript": "this.parent.mod_ShelfadjDrillDistance",
-      "isWritable": false
-    },
-    {
-      "partVarId": "pa_ShelfadjSidepanelDrillDescriptor",
-      "valueScript": "this.parent.mod_ShelfadjSidepanelDrillDescriptor",
-      "isWritable": false
-    },
     {
       "partVarId": "pa_ShelfadjBackwallDrillDescriptor",
       "valueScript": "this.parent.mod_ShelfadjBackwallDrillDescriptor",
@@ -30,8 +20,13 @@
       "isWritable": false
     },
     {
-      "partVarId": "pa_ShelfadjSidepanelProcessingMiddleId",
-      "valueScript": "this.parent.mod_ShelfadjSidepanelProcessingMiddleId",
+      "partVarId": "pa_ShelfadjDrillDistance",
+      "valueScript": "this.parent.mod_ShelfadjDrillDistance",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_ShelfadjSidepanelDrillDescriptor",
+      "valueScript": "this.parent.mod_ShelfadjSidepanelDrillDescriptor",
       "isWritable": false
     },
     {
@@ -42,6 +37,11 @@
     {
       "partVarId": "pa_ShelfadjSidepanelProcessingFrontId",
       "valueScript": "this.parent.mod_ShelfadjSidepanelProcessingFrontId",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_ShelfadjSidepanelProcessingMiddleId",
+      "valueScript": "this.parent.mod_ShelfadjSidepanelProcessingMiddleId",
       "isWritable": false
     },
     {

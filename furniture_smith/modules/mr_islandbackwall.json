@@ -5,7 +5,7 @@
   "isRoot": true,
   "description": "Module for island backwall",
   "groupName": "Root",
-  "imageId": "19ce6efc-0ec7-4423-b1c9-cf4508028702:IslandBackwall.jpg",
+  "imageId": "3b5ef370-a835-4946-91a8-3b17b4841314:IslandBackwall.jpg",
   "restrictionTypeId": "Public",
   "childModules": [
     {
@@ -16,51 +16,72 @@
     {
       "variantId": "mod_Color",
       "default": "240",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_Depth",
       "previewValue": "350",
-      "origin": "Required"
+      "required": true,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_Height",
       "previewValue": "920",
-      "origin": "Required"
+      "required": true,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_IslandBackwallOverdimension",
       "default": "10",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_IslandBackwallOverhangFront",
       "default": "30",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_IslandBackwallWidth",
       "default": "1000",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_PaneltopColor",
       "default": "380",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_PaneltopThk",
-      "origin": "GlobalVar"
+      "required": false,
+      "derive": false,
+      "fixed": false,
+      "defaultGlobalVar": true
     },
     {
       "variantId": "mod_Program",
       "default": "Demoprogram1",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_Thk",
       "default": "19",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     }
   ],
   "assignedParts": [],

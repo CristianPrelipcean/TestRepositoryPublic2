@@ -5,7 +5,7 @@
   "isRoot": false,
   "description": "Management of the adjustable shelf",
   "groupName": "Equipment",
-  "imageId": "affb84e4-a66a-4aee-be20-428ea197966f:AdjGroup.jpg",
+  "imageId": "93da38cc-526b-4ae7-82e3-ea3895e35d70:AdjGroup.jpg",
   "restrictionTypeId": "Internal",
   "childModules": [
     {
@@ -25,130 +25,184 @@
     {
       "variantId": "mod_CarcaseColor",
       "previewValue": "Demoblue",
-      "origin": "Derived"
+      "required": false,
+      "derive": true,
+      "fixed": false
     },
     {
       "variantId": "mod_CarcaseId",
       "previewValue": "None",
-      "origin": "Derived"
+      "required": false,
+      "derive": true,
+      "fixed": false
     },
     {
       "variantId": "mod_CarcaseProgram",
       "previewValue": "Demoprogram1",
-      "origin": "Derived"
+      "required": false,
+      "derive": true,
+      "fixed": false
     },
     {
       "variantId": "mod_CarcaseSpaceDimension",
       "default": "",
       "previewValue": "",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_Depth",
       "default": "522",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_FrontDesign",
       "previewValue": "FlatPanel",
-      "origin": "Derived"
+      "required": false,
+      "derive": true,
+      "fixed": false
     },
     {
       "variantId": "mod_FrontProgram",
       "previewValue": "Demoprogram1",
-      "origin": "Derived"
+      "required": false,
+      "derive": true,
+      "fixed": false
     },
     {
       "variantId": "mod_HardwareId",
       "default": "None",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_Height",
       "default": "720",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_ModuleName",
       "default": "mc_ShelfadjGroup01",
-      "origin": "Fixed"
+      "required": false,
+      "derive": false,
+      "fixed": true
     },
     {
       "variantId": "mod_ShelfadjColor",
       "previewValue": "240",
-      "origin": "Derived"
+      "required": false,
+      "derive": true,
+      "fixed": false
     },
     {
       "variantId": "mod_ShelfadjDescriptor",
-      "origin": "Derived"
+      "required": false,
+      "derive": true,
+      "fixed": false
     },
     {
       "variantId": "mod_ShelfadjDesign",
       "previewValue": "10",
-      "origin": "Derived"
+      "required": false,
+      "derive": true,
+      "fixed": false
     },
     {
       "variantId": "mod_ShelfadjDrillDistance",
       "previewValue": "48",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_ShelfadjDrillinglineOffsetBtm",
-      "origin": "GlobalVar"
-    },
-    {
-      "variantId": "mod_ShelfadjDrillinglineOffsetTop",
-      "origin": "GlobalVar"
+      "required": false,
+      "derive": true,
+      "fixed": false
     },
     {
       "variantId": "mod_ShelfadjDrillType",
       "previewValue": "SingleDrill",
-      "origin": "Derived"
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ShelfadjDrillinglineOffsetBtm",
+      "required": false,
+      "derive": false,
+      "fixed": false,
+      "defaultGlobalVar": true
+    },
+    {
+      "variantId": "mod_ShelfadjDrillinglineOffsetTop",
+      "required": false,
+      "derive": false,
+      "fixed": false,
+      "defaultGlobalVar": true
     },
     {
       "variantId": "mod_ShelfadjOffsetBack",
       "previewValue": "0",
-      "origin": "Derived"
+      "required": false,
+      "derive": true,
+      "fixed": false
     },
     {
       "variantId": "mod_ShelfadjOffsetFront",
       "previewValue": "10",
-      "origin": "Derived"
+      "required": false,
+      "derive": true,
+      "fixed": false
     },
     {
       "variantId": "mod_ShelfadjPartParentName",
       "default": "None",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_ShelfadjPartParentType",
       "default": "None",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_ShelfadjThk",
       "previewValue": "0",
-      "origin": "Derived"
+      "required": false,
+      "derive": true,
+      "fixed": false
     },
     {
       "variantId": "mod_TypeElement",
       "previewValue": "WallUnit",
-      "origin": "Derived"
+      "required": false,
+      "derive": true,
+      "fixed": false
     },
     {
       "variantId": "mod_VertDividerPosition",
       "default": "0",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_VertDividerType",
       "default": "NoVertDivider",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_Width",
       "default": "600",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     }
   ],
   "assignedParts": [

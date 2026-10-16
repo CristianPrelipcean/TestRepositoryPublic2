@@ -5,115 +5,157 @@
   "isRoot": false,
   "description": "Panel wood frame",
   "groupName": "FrontConstructionParts",
-  "imageId": "48be95dd-bf72-44b4-adbb-6bb204ea746c:WoodFrame.jpg",
+  "imageId": "476cf631-6d4f-4377-989d-f5c56c2467af:WoodFrame.jpg",
   "restrictionTypeId": "Internal",
   "childModules": [],
   "assignedVariants": [
     {
       "variantId": "mod_Depth",
       "default": "500",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_DoorDirection",
       "default": "Left",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_FlipliftType",
       "default": "FHF",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_FrameFillingColor",
       "previewValue": "FloatGlass",
-      "origin": "Derived"
+      "required": false,
+      "derive": true,
+      "fixed": false
     },
     {
       "variantId": "mod_FrontColor",
       "previewValue": "Demoblue",
-      "origin": "Derived"
+      "required": false,
+      "derive": true,
+      "fixed": false
     },
     {
       "variantId": "mod_FrontDesign",
       "previewValue": "WoodFrame",
-      "origin": "Derived"
+      "required": false,
+      "derive": true,
+      "fixed": false
     },
     {
       "variantId": "mod_FrontEdgeColor",
       "previewValue": "Demoblue",
-      "origin": "Derived"
+      "required": false,
+      "derive": true,
+      "fixed": false
     },
     {
       "variantId": "mod_FrontEdgeThk",
       "previewValue": "1",
-      "origin": "Derived"
+      "required": false,
+      "derive": true,
+      "fixed": false
     },
     {
       "variantId": "mod_FrontId",
       "previewValue": "0",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_FrontpanelWeightCalculations",
-      "origin": "Default"
+      "required": false,
+      "derive": true,
+      "fixed": false
     },
     {
       "variantId": "mod_FrontProgram",
       "previewValue": "Demoprogram1",
-      "origin": "Derived"
+      "required": false,
+      "derive": true,
+      "fixed": false
     },
     {
       "variantId": "mod_FrontType",
       "previewValue": "None",
-      "origin": "Derived"
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_FrontpanelWeightCalculations",
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_HandleDesign",
       "previewValue": "10",
-      "origin": "Derived"
+      "required": false,
+      "derive": true,
+      "fixed": false
     },
     {
       "variantId": "mod_HandlePosType",
       "previewValue": "01",
-      "origin": "Derived"
+      "required": false,
+      "derive": true,
+      "fixed": false
     },
     {
       "variantId": "mod_HardwareTypeList",
       "default": "",
       "previewValue": "",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_Height",
       "default": "720",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_Information",
       "default": "",
       "previewValue": "",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_ModuleName",
       "default": "mc_PanelWoodFrame01",
-      "origin": "Fixed"
+      "required": false,
+      "derive": false,
+      "fixed": true
     },
     {
       "variantId": "mod_PartInfo",
       "default": "part_DoorLeftPanelWoodFrame",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_TypeElement",
       "previewValue": "BaseUnit",
-      "origin": "Derived"
+      "required": false,
+      "derive": true,
+      "fixed": false
     },
     {
       "variantId": "mod_Width",
       "default": "600",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     }
   ],
   "assignedParts": [

@@ -5,7 +5,7 @@
   "isRoot": false,
   "description": "Module for top panel",
   "groupName": "Root",
-  "imageId": "b7ec56e3-b5a9-49b2-9385-92f68960bc6b:TopPanel.jpg",
+  "imageId": "ec7d5a6d-d4f4-4aa1-8233-90ce94544a54:TopPanel.jpg",
   "restrictionTypeId": "Public",
   "generateMethod": "Paneltop",
   "childModules": [
@@ -16,86 +16,124 @@
   "assignedVariants": [
     {
       "variantId": "mod_FrontGapCarcase",
-      "origin": "GlobalVar"
+      "required": false,
+      "derive": false,
+      "fixed": false,
+      "defaultGlobalVar": true
     },
     {
       "variantId": "mod_FrontGapHor",
-      "origin": "GlobalVar"
+      "required": false,
+      "derive": false,
+      "fixed": false,
+      "defaultGlobalVar": true
     },
     {
       "variantId": "mod_LengthList",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_ModuleName",
       "default": "mr_Paneltop",
-      "origin": "Fixed"
+      "required": false,
+      "derive": false,
+      "fixed": true
     },
     {
       "variantId": "mod_PaneltopColor",
       "default": "240",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_PaneltopConstruction",
-      "origin": "GlobalVar"
+      "required": false,
+      "derive": false,
+      "fixed": false,
+      "defaultGlobalVar": true
     },
     {
       "variantId": "mod_PaneltopEdgeBackColor",
       "defaultScript": "this.mod_PaneltopColor",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_PaneltopEdgeFrontColor",
       "defaultScript": "this.mod_PaneltopColor",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_PaneltopEdgeLeftColor",
       "defaultScript": "this.mod_PaneltopColor",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_PaneltopEdgeRightColor",
       "defaultScript": "this.mod_PaneltopColor",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_PaneltopEdgeVisBack",
       "default": "false",
-      "origin": "Default"
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_PaneltopEdgeVisFront",
       "default": "false",
-      "origin": "Default"
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_PaneltopEdgeVisLeft",
       "default": "false",
-      "origin": "Default"
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_PaneltopEdgeVisRight",
       "default": "false",
-      "origin": "Default"
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_PaneltopOverhangFront",
-      "origin": "GlobalVar"
+      "required": false,
+      "derive": false,
+      "fixed": false,
+      "defaultGlobalVar": true
     },
     {
       "variantId": "mod_PaneltopOversizeBack",
-      "origin": "GlobalVar"
+      "required": false,
+      "derive": false,
+      "fixed": false,
+      "defaultGlobalVar": true
     },
     {
       "variantId": "mod_PaneltopProgram",
       "default": "Style",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_PaneltopThk",
-      "origin": "GlobalVar"
+      "required": false,
+      "derive": false,
+      "fixed": false,
+      "defaultGlobalVar": true
     }
   ],
   "assignedParts": [],

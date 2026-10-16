@@ -11,18 +11,8 @@
   "noNcData": false,
   "partVariants": [
     {
-      "partVarId": "pa_FinishPanelThk",
-      "valueScript": "",
-      "isWritable": false
-    },
-    {
-      "partVarId": "pa_FinishPanelDepth",
-      "valueScript": "",
-      "isWritable": false
-    },
-    {
-      "partVarId": "pa_FinishPanelHeight",
-      "valueScript": "",
+      "partVarId": "pa_AdditionalInfo1",
+      "valueScript": "'None'",
       "isWritable": false
     },
     {
@@ -33,6 +23,11 @@
     {
       "partVarId": "pa_BtmColor",
       "valueScript": "this.parent.mod_UprightColor",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_ColorGrainGroup",
+      "valueScript": "this.parent.mod_UprightColor_matrix.GrainGroupId",
       "isWritable": false
     },
     {
@@ -61,21 +56,6 @@
       "isWritable": false
     },
     {
-      "partVarId": "pa_GrainDirection",
-      "valueScript": "'Neutral'",
-      "isWritable": false
-    },
-    {
-      "partVarId": "pa_TopColor",
-      "valueScript": "this.parent.mod_UprightColor",
-      "isWritable": false
-    },
-    {
-      "partVarId": "pa_Program",
-      "valueScript": "'DemoProgram1'",
-      "isWritable": false
-    },
-    {
       "partVarId": "pa_EdgeLeftColor",
       "valueScript": "this.parent.mod_UprightColor",
       "isWritable": false
@@ -96,13 +76,28 @@
       "isWritable": false
     },
     {
-      "partVarId": "pa_AdditionalInfo1",
-      "valueScript": "'None'",
+      "partVarId": "pa_FinishPanelDepth",
+      "valueScript": "",
       "isWritable": false
     },
     {
-      "partVarId": "pa_TypeElement",
-      "valueScript": "this.parent.mod_TypeElement",
+      "partVarId": "pa_FinishPanelHeight",
+      "valueScript": "",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_FinishPanelThk",
+      "valueScript": "",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_GrainDirection",
+      "valueScript": "'Neutral'",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_Program",
+      "valueScript": "'DemoProgram1'",
       "isWritable": false
     },
     {
@@ -111,13 +106,19 @@
       "isWritable": false
     },
     {
-      "partVarId": "pa_ColorGrainGroup",
-      "valueScript": "this.parent.mod_UprightColor_matrix.GrainGroupId",
+      "partVarId": "pa_TopColor",
+      "valueScript": "this.parent.mod_UprightColor",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_TypeElement",
+      "valueScript": "this.parent.mod_TypeElement",
       "isWritable": false
     }
   ],
   "bomData": [
     {
+      "id": 186,
       "bomElementTypeId": "bomout_Group",
       "description": "Output parts / edges / stockparts in relation to the basic_CreateBom setting",
       "conditionScript": "partSelf._g?.basic_CreateBom != null && partSelf._g.basic_CreateBom !== 'Custom'",

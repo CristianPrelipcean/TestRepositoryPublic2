@@ -7,7 +7,7 @@
   "isDropContainer": false,
   "description": "Laundry Machine",
   "groupName": "Appliance",
-  "imageId": "e8d1c2a2-261a-419a-a000-dfa61643924a:LaundryMachine.png",
+  "imageId": "309ee867-6bec-4fa3-976d-6722ae6eeffb:LaundryMachine.png",
   "restrictionTypeId": "Public",
   "childModules": [
     {
@@ -19,17 +19,23 @@
       "variantId": "mod_CarcaseSpaceDimension",
       "default": "",
       "previewValue": "",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_LaundryMachineId",
       "default": "GenericMachine",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_LaundryMachineSupplier",
       "default": "GenericSupplier",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     }
   ],
   "assignedParts": [],

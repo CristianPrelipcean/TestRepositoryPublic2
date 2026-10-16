@@ -7,7 +7,7 @@
   "isDropContainer": false,
   "description": "Root module to build sub articles",
   "groupName": "Root",
-  "imageId": "b9493fb2-3271-4ee1-ae60-38e7a6859994:ArticleBuilder.png",
+  "imageId": "7affe046-4b9f-4b86-9a83-4b781c3401c9:ArticleBuilder.png",
   "restrictionTypeId": "Public",
   "childModules": [
     {
@@ -33,17 +33,23 @@
     {
       "variantId": "mod_Depth",
       "default": "600",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_Height",
       "default": "600",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_Width",
       "default": "600",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     }
   ],
   "assignedParts": [

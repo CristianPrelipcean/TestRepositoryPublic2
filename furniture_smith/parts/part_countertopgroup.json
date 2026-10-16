@@ -4,7 +4,7 @@
   "description": "Group Countertop",
   "wdt": "XZY",
   "groupName": "Countertop",
-  "imageId": "73b95d5c-7023-446c-b86b-089d80d0300c:Partgroup.png",
+  "imageId": "4b6d57fd-6de5-4359-94a0-828cb4ebbded:Partgroup.png",
   "model3dImageId": "",
   "invisible": true,
   "restrictionTypeId": "Public",
@@ -18,6 +18,7 @@
   ],
   "bomData": [
     {
+      "id": 185,
       "bomElementTypeId": "bomout_PartGroup",
       "description": "Part group for countertop",
       "conditionScript": "partSelf._g?.basic_CreateBom != null && partSelf._g.basic_CreateBom !== 'Custom'",

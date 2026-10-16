@@ -4,7 +4,7 @@
   "description": "Part group for storage unit",
   "wdt": "XYZ",
   "groupName": "PartGroup",
-  "imageId": "73b95d5c-7023-446c-b86b-089d80d0300c:Partgroup.png",
+  "imageId": "4b6d57fd-6de5-4359-94a0-828cb4ebbded:Partgroup.png",
   "invisible": true,
   "restrictionTypeId": "Public",
   "noNcData": true,
@@ -17,6 +17,7 @@
   ],
   "bomData": [
     {
+      "id": 148,
       "bomElementTypeId": "bomout_PartGroup",
       "description": "Partgroup for carcase",
       "conditionScript": "partSelf._g?.basic_CreateBom != null && partSelf._g.basic_CreateBom !== 'Custom'",

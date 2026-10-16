@@ -8,20 +8,24 @@
   "isDropContainer": false,
   "description": "Construction module for inner drawer spacer",
   "groupName": "InnerDrawer",
-  "imageId": "745662c5-7ac2-418d-ad55-26a6b029af22:mc_InnerDrawerDistanceBlock.png",
+  "imageId": "35aeddc5-04c3-48ef-8702-f6130d507ddd:mc_InnerDrawerDistanceBlock.png",
   "restrictionTypeId": "Internal",
   "childModules": [],
   "assignedVariants": [
     {
       "variantId": "mod_CarcaseColor",
       "default": "160",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_Information",
       "default": "",
       "previewValue": "",
-      "origin": "Derived"
+      "required": false,
+      "derive": true,
+      "fixed": false
     }
   ],
   "assignedParts": [

@@ -4,7 +4,7 @@
   "description": "Part to show the extra board for the clothing organizer including BOM and processings",
   "wdt": "XYZ",
   "groupName": "ClothingOrganizer",
-  "imageId": "626ec4a1-9f60-4ff7-b106-e258890a84ff:ClothingOrganizer.png",
+  "imageId": "cde61dfe-894e-4fcf-8cb3-5550654dd5a6:ClothingOrganizer.png",
   "model3dImageId": "",
   "invisible": false,
   "restrictionTypeId": "Public",
@@ -103,6 +103,7 @@
   ],
   "bomData": [
     {
+      "id": 234,
       "bomElementTypeId": "bomout_Group",
       "description": "Output parts / edges / stockparts in relation to the basic_CreateBom setting",
       "conditionScript": "partSelf._g?.basic_CreateBom != null && partSelf._g.basic_CreateBom !== 'Custom'",

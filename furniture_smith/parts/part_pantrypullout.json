@@ -4,7 +4,7 @@
   "description": "Frontpanel for the pantry pullout",
   "wdt": "XYZ",
   "groupName": "Pullout",
-  "imageId": "63c61978-fa1b-4cb0-904a-ad67e6df5ebd:PantryPullout.png",
+  "imageId": "1031b6b5-a65d-481d-b7f7-3afd96284157:PantryPullout.png",
   "model3dImageId": "",
   "invisible": false,
   "restrictionTypeId": "Public",
@@ -91,6 +91,11 @@
       "isWritable": false
     },
     {
+      "partVarId": "pa_ProcessingId",
+      "valueScript": "''",
+      "isWritable": false
+    },
+    {
       "partVarId": "pa_Program",
       "valueScript": "this.parent.mod_FrontProgram",
       "isWritable": false
@@ -104,15 +109,11 @@
       "partVarId": "pa_Weight",
       "valueScript": "",
       "isWritable": false
-    },
-    {
-      "partVarId": "pa_ProcessingId",
-      "valueScript": "''",
-      "isWritable": false
     }
   ],
   "bomData": [
     {
+      "id": 228,
       "bomElementTypeId": "bomout_Group",
       "description": "Output parts / edges / stockparts in relation to the basic_CreateBom setting",
       "conditionScript": "partSelf._g?.basic_CreateBom != null && partSelf._g.basic_CreateBom !== 'Custom'",
@@ -121,20 +122,22 @@
   ],
   "ncData": [
     {
-      "touchName": "",
-      "bomElementTypeId": "ncout_Group",
-      "description": "Multiple Processings",
-      "conditionScript": "partSelf.pa_ProcessingId != ''",
-      "valueScript": "// Get Processing Mapping\n  let processingItems = GlobalFunc.find_ProcessingMapping(partSelf.pa_ProcessingId);\n\n  processingItems.forEach((processingItem) => {\n    // Components\n    if (processingItem.ProcessingLibrary == \"Component\") { \n\n      let componentLibrary = GlobalFunc.find_ComponentLibrary(processingItem.ProcessingId!);\n      // Add Component\n      let component = this.addncout_Component();\n      component.nc_TOOL = \"139\";\n      component.nc_IN = componentLibrary.ComponentMPR!;\n      component.nc_XA = componentLibrary.XA(partSelf,partSelf)!;\n      component.nc_YA = componentLibrary.YA(partSelf,partSelf)!;\n      component.nc_ZA = componentLibrary.ZA(partSelf,partSelf)!;\n      component.nc_WI = 0;\n      component.nc_EM = componentLibrary.EM!;\n      component.nc_KAT = componentLibrary.KAT!;\n      component.nc_KO = componentLibrary.KO!;\n      component.nc_Side = componentLibrary.Side!;\n      \n      let variables = GlobalFunc.find_ComponentVariables(componentLibrary.ComponentId!);\n      component.nc_VA = \"\";\n      variables.forEach((variable) => {\n        let variableValue = variable.VariableValue(partSelf,partSelf)!;\n        component.nc_VA += 'VA=\"' +variable.Variable + ' ' + parseFloat(variableValue.toFixed(2)) + '\"' + \"\\r\\n\";\n      });    \n    }\n\n    //else if (processingItem.ProcessingLibrary == \"DrillingVertical\") {}\n\n    //else if (processingItem.ProcessingLibrary == \"DrillingHorizontal\") {}\n\n    \n\n\n    \n  });",
-      "bomExecuteType": "Start"
-    },
-    {
+      "id": 669,
       "part2": "part_HandleDrill",
       "touchName": "FromFront",
       "bomElementTypeId": "ncout_Group",
       "description": "Drillings for handles",
       "valueScript": "GlobalFunc.ncout_HandleDrill(this, partSelf, part2, posRel)",
       "bomExecuteType": "Touch"
+    },
+    {
+      "id": 659,
+      "touchName": "",
+      "bomElementTypeId": "ncout_Group",
+      "description": "Multiple Processings",
+      "conditionScript": "partSelf.pa_ProcessingId != ''",
+      "valueScript": "// Get Processing Mapping\n  let processingItems = GlobalFunc.find_ProcessingMapping(partSelf.pa_ProcessingId);\n\n  processingItems.forEach((processingItem) => {\n    // Components\n    if (processingItem.ProcessingLibrary == \"Component\") { \n\n      let componentLibrary = GlobalFunc.find_ComponentLibrary(processingItem.ProcessingId!);\n      // Add Component\n      let component = this.addncout_Component();\n      component.nc_TOOL = \"139\";\n      component.nc_IN = componentLibrary.ComponentMPR!;\n      component.nc_XA = componentLibrary.XA(partSelf,partSelf)!;\n      component.nc_YA = componentLibrary.YA(partSelf,partSelf)!;\n      component.nc_ZA = componentLibrary.ZA(partSelf,partSelf)!;\n      component.nc_WI = 0;\n      component.nc_EM = componentLibrary.EM!;\n      component.nc_KAT = componentLibrary.KAT!;\n      component.nc_KO = componentLibrary.KO!;\n      component.nc_Side = componentLibrary.Side!;\n      \n      let variables = GlobalFunc.find_ComponentVariables(componentLibrary.ComponentId!);\n      component.nc_VA = \"\";\n      variables.forEach((variable) => {\n        let variableValue = variable.VariableValue(partSelf,partSelf)!;\n        component.nc_VA += 'VA=\"' +variable.Variable + ' ' + parseFloat(variableValue.toFixed(2)) + '\"' + \"\\r\\n\";\n      });    \n    }\n\n    //else if (processingItem.ProcessingLibrary == \"DrillingVertical\") {}\n\n    //else if (processingItem.ProcessingLibrary == \"DrillingHorizontal\") {}\n\n    \n\n\n    \n  });",
+      "bomExecuteType": "Start"
     }
   ]
 }

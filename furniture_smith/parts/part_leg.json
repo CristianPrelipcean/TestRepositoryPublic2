@@ -4,7 +4,7 @@
   "description": "Leg for plinth area",
   "wdt": "XYZ",
   "groupName": "Hardware",
-  "imageId": "a471ab73-b808-4d0a-9b2a-4071db9d95cf:Leg.png",
+  "imageId": "de5b865d-6dba-43d4-ae2b-5f29288195b0:Leg.png",
   "model3dImageId": "",
   "invisible": false,
   "restrictionTypeId": "Public",
@@ -23,6 +23,7 @@
   ],
   "bomData": [
     {
+      "id": 151,
       "bomElementTypeId": "bomout_Group",
       "description": "Add all the elements for the leg to BOM",
       "conditionScript": "partSelf._g?.basic_CreateHardwareBom == 'Library'",

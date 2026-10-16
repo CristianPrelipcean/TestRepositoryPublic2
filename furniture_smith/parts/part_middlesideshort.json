@@ -4,7 +4,7 @@
   "description": "Middle side short",
   "wdt": "YZX",
   "groupName": "Panels",
-  "imageId": "61d149f2-0995-4288-8d2e-ac6c3c76c39f:MiddleSideShort.jpg",
+  "imageId": "78fbc18c-637d-40d9-a40d-2e08200f25d5:MiddleSideShort.jpg",
   "model3dImageId": "",
   "invisible": false,
   "restrictionTypeId": "Public",
@@ -13,14 +13,16 @@
   "bomData": [],
   "ncData": [
     {
-      "part2": "part_PushtoopenDrill",
-      "touchName": "FromFront",
+      "id": 459,
+      "part2": "part_HardwareShelfadjDrill",
+      "touchName": "FromLeft",
       "bomElementTypeId": "ncout_Group",
-      "description": "Drillings for PushToOpen",
+      "description": "Drillings for PushToOpen Adapter",
       "valueScript": "GlobalFunc.ops_PushtoopenDrill('Carcase', this, partSelf, part2, posRel);",
       "bomExecuteType": "Touch"
     },
     {
+      "id": 451,
       "part2": "part_PushtoopenMountingPlateDrill",
       "touchName": "FromRight",
       "bomElementTypeId": "ncout_Group",
@@ -29,10 +31,11 @@
       "bomExecuteType": "Touch"
     },
     {
-      "part2": "part_HardwareShelfadjDrill",
-      "touchName": "FromLeft",
+      "id": 447,
+      "part2": "part_PushtoopenDrill",
+      "touchName": "FromFront",
       "bomElementTypeId": "ncout_Group",
-      "description": "Drillings for PushToOpen Adapter",
+      "description": "Drillings for PushToOpen",
       "valueScript": "GlobalFunc.ops_PushtoopenDrill('Carcase', this, partSelf, part2, posRel);",
       "bomExecuteType": "Touch"
     }

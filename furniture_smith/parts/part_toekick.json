@@ -4,12 +4,17 @@
   "description": "Toekick Part",
   "wdt": "XYZ",
   "groupName": "Toekick",
-  "imageId": "94d53dff-e11f-436b-8c95-8fa6c17699ec:Toekick.png",
+  "imageId": "eabb884b-7bd6-403f-8150-a12e1c59ce1c:Toekick.png",
   "model3dImageId": "",
   "invisible": false,
   "restrictionTypeId": "Public",
   "noNcData": false,
   "partVariants": [
+    {
+      "partVarId": "pa_AdditionalInfo1",
+      "valueScript": "'None'",
+      "isWritable": false
+    },
     {
       "partVarId": "pa_BomId",
       "valueScript": "",
@@ -21,18 +26,8 @@
       "isWritable": false
     },
     {
-      "partVarId": "pa_GrainDirection",
-      "valueScript": "'Neutral'",
-      "isWritable": false
-    },
-    {
-      "partVarId": "pa_Program",
-      "valueScript": "'None'",
-      "isWritable": false
-    },
-    {
-      "partVarId": "pa_TopColor",
-      "valueScript": "this.parent.mod_ToekickColor",
+      "partVarId": "pa_ColorGrainGroup",
+      "valueScript": "this.parent.mod_ToekickColor_matrix.GrainGroupId",
       "isWritable": false
     },
     {
@@ -81,18 +76,23 @@
       "isWritable": false
     },
     {
-      "partVarId": "pa_AdditionalInfo1",
-      "valueScript": "'None'",
+      "partVarId": "pa_GrainDirection",
+      "valueScript": "'Neutral'",
       "isWritable": false
     },
     {
-      "partVarId": "pa_ColorGrainGroup",
-      "valueScript": "this.parent.mod_ToekickColor_matrix.GrainGroupId",
+      "partVarId": "pa_Program",
+      "valueScript": "'None'",
       "isWritable": false
     },
     {
       "partVarId": "pa_ProgramGrainGroup",
       "valueScript": "this.parent.mod_ToekickProgram_matrix.GrainGroupId",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_TopColor",
+      "valueScript": "this.parent.mod_ToekickColor",
       "isWritable": false
     },
     {
@@ -103,6 +103,7 @@
   ],
   "bomData": [
     {
+      "id": 189,
       "bomElementTypeId": "bomout_Group",
       "description": "Output parts / edges / stockparts in relation to the basic_CreateBom setting",
       "conditionScript": "partSelf._g?.basic_CreateBom != null && partSelf._g.basic_CreateBom !== 'Custom'",
