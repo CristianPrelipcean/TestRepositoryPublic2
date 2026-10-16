@@ -11,6 +11,11 @@
   "noNcData": false,
   "partVariants": [
     {
+      "partVarId": "pa_BomId",
+      "valueScript": "",
+      "isWritable": false
+    },
+    {
       "partVarId": "pa_BtmColor",
       "valueScript": "this.parent.mod_BtmColor",
       "isWritable": false
@@ -33,6 +38,11 @@
     {
       "partVarId": "pa_EdgeFrontColor",
       "valueScript": "this.parent.mod_EdgeFrontColor",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeJointType",
+      "valueScript": "this.parent.mod_EdgeJointType",
       "isWritable": false
     },
     {
@@ -61,11 +71,6 @@
       "isWritable": false
     },
     {
-      "partVarId": "pa_EdgeJointType",
-      "valueScript": "this.parent.mod_EdgeJointType",
-      "isWritable": false
-    },
-    {
       "partVarId": "pa_Program",
       "valueScript": "this.parent.mod_Program",
       "isWritable": false
@@ -79,15 +84,11 @@
       "partVarId": "pa_TypeElement",
       "valueScript": "this.parent.mod_TypeElement",
       "isWritable": false
-    },
-    {
-      "partVarId": "pa_BomId",
-      "valueScript": "",
-      "isWritable": false
     }
   ],
   "bomData": [
     {
+      "id": 165,
       "bomElementTypeId": "bomout_Group",
       "description": "Output Parts / Boards for panel",
       "conditionScript": "partSelf._g?.basic_CreateBom == 'Library'",
@@ -96,6 +97,7 @@
   ],
   "ncData": [
     {
+      "id": 361,
       "part2": "part_DrillVert",
       "touchName": "FromLeft",
       "bomElementTypeId": "ncout_Group",
