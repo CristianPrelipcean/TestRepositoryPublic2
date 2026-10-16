@@ -1,0 +1,93 @@
+{
+  "tableName": "RefTable",
+  "description": "Table that references KeyTable",
+  "columns": [
+    {
+      "name": "_id",
+      "type": "Integer",
+      "allowNull": false
+    },
+    {
+      "name": "RefKey",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "Data",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_Identity",
+      "type": "Real",
+      "allowNull": true
+    },
+    {
+      "name": "in_InputParam",
+      "type": "Integer",
+      "allowNull": true
+    }
+  ],
+  "rows": [
+    {
+      "data": [
+        {
+          "columnName": "RefKey",
+          "value": "unique key 1"
+        },
+        {
+          "columnName": "Data",
+          "value": "data value 2"
+        },
+        {
+          "columnName": "in_Identity",
+          "value": "234"
+        },
+        {
+          "columnName": "in_InputParam",
+          "value": "741"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "RefKey",
+          "value": "unique key 2"
+        },
+        {
+          "columnName": "Data",
+          "value": "data value 1"
+        },
+        {
+          "columnName": "in_Identity",
+          "value": "345"
+        },
+        {
+          "columnName": "in_InputParam",
+          "value": "852"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "RefKey",
+          "value": "unique key 3"
+        },
+        {
+          "columnName": "Data",
+          "value": "data value 3"
+        },
+        {
+          "columnName": "in_Identity",
+          "value": "456"
+        },
+        {
+          "columnName": "in_InputParam",
+          "value": "963"
+        }
+      ]
+    }
+  ]
+}

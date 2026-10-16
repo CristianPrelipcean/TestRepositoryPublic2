@@ -1,0 +1,248 @@
+{
+  "tableName": "Custom_Table_02",
+  "description": "custom table 02",
+  "columns": [
+    {
+      "name": "_id",
+      "type": "Integer",
+      "allowNull": false
+    },
+    {
+      "name": "in_textFieldIn",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_integerFieldIn",
+      "type": "Integer",
+      "allowNull": true
+    },
+    {
+      "name": "in_numericFieldIn",
+      "type": "Dim",
+      "allowNull": true
+    },
+    {
+      "name": "matrix_textField",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "matrix_integerField",
+      "type": "Integer",
+      "allowNull": true
+    },
+    {
+      "name": "matrix_numericField",
+      "type": "Dim",
+      "allowNull": true
+    },
+    {
+      "name": "textFieldOut",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "integerFieldOut",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "numericFieldOut",
+      "type": "Dim",
+      "allowNull": true
+    },
+    {
+      "name": "in_textFunctionField",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_numericFunctionField",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "func1",
+      "type": "Text",
+      "allowNull": true,
+      "functionDefinition": "(value: number): number | undefined"
+    },
+    {
+      "name": "func2",
+      "type": "Text",
+      "allowNull": true,
+      "functionDefinition": "(value1: number, value2: number): number"
+    }
+  ],
+  "rows": [
+    {
+      "data": [
+        {
+          "columnName": "in_textFieldIn",
+          "value": "in_text1"
+        },
+        {
+          "columnName": "in_integerFieldIn",
+          "value": "23"
+        },
+        {
+          "columnName": "in_numericFieldIn",
+          "value": "45.54"
+        },
+        {
+          "columnName": "matrix_textField",
+          "value": "matrix_textField"
+        },
+        {
+          "columnName": "matrix_integerField",
+          "value": "234"
+        },
+        {
+          "columnName": "matrix_numericField",
+          "value": "88.43"
+        },
+        {
+          "columnName": "textFieldOut",
+          "value": "other_textField"
+        },
+        {
+          "columnName": "integerFieldOut",
+          "value": "888"
+        },
+        {
+          "columnName": "numericFieldOut",
+          "value": "777.333"
+        },
+        {
+          "columnName": "in_textFunctionField",
+          "value": "in_textFunctionField"
+        },
+        {
+          "columnName": "in_numericFunctionField",
+          "value": "12333"
+        },
+        {
+          "columnName": "func1",
+          "value": "value * 5"
+        },
+        {
+          "columnName": "func2",
+          "value": "(value1 + value2) * 2"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_textFieldIn",
+          "value": "in_text2"
+        },
+        {
+          "columnName": "in_integerFieldIn",
+          "value": "34"
+        },
+        {
+          "columnName": "in_numericFieldIn",
+          "value": "56.65"
+        },
+        {
+          "columnName": "matrix_textField",
+          "value": "matrix_textField"
+        },
+        {
+          "columnName": "matrix_integerField",
+          "value": "345"
+        },
+        {
+          "columnName": "matrix_numericField",
+          "value": "99.54"
+        },
+        {
+          "columnName": "textFieldOut",
+          "value": "other_textField"
+        },
+        {
+          "columnName": "integerFieldOut",
+          "value": "999"
+        },
+        {
+          "columnName": "numericFieldOut",
+          "value": "888.444"
+        },
+        {
+          "columnName": "in_textFunctionField",
+          "value": "in_textFunctionField"
+        },
+        {
+          "columnName": "in_numericFunctionField",
+          "value": "23444"
+        },
+        {
+          "columnName": "func1",
+          "value": "value * 5"
+        },
+        {
+          "columnName": "func2",
+          "value": "(value1 + value2) * 4"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_textFieldIn",
+          "value": "in_text3"
+        },
+        {
+          "columnName": "in_integerFieldIn",
+          "value": "45"
+        },
+        {
+          "columnName": "in_numericFieldIn",
+          "value": "67.76"
+        },
+        {
+          "columnName": "matrix_textField",
+          "value": "matrix_textField"
+        },
+        {
+          "columnName": "matrix_integerField",
+          "value": "456"
+        },
+        {
+          "columnName": "matrix_numericField",
+          "value": "100.65"
+        },
+        {
+          "columnName": "textFieldOut",
+          "value": "other_textField"
+        },
+        {
+          "columnName": "integerFieldOut",
+          "value": "777"
+        },
+        {
+          "columnName": "numericFieldOut",
+          "value": "999.555"
+        },
+        {
+          "columnName": "in_textFunctionField",
+          "value": "in_textFunctionField"
+        },
+        {
+          "columnName": "in_numericFunctionField",
+          "value": "34555"
+        },
+        {
+          "columnName": "func1",
+          "value": "(value + 8) * 2"
+        },
+        {
+          "columnName": "func2",
+          "value": "(value1 + value2) * 8"
+        }
+      ]
+    }
+  ]
+}

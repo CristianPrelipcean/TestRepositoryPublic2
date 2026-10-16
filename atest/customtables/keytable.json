@@ -1,0 +1,113 @@
+{
+  "tableName": "KeyTable",
+  "description": "Custom table with unique column",
+  "columns": [
+    {
+      "name": "_id",
+      "type": "Integer",
+      "allowNull": false
+    },
+    {
+      "name": "in_UniqueKey",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "Text01",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "Model3d",
+      "type": "Model3D",
+      "allowNull": true
+    },
+    {
+      "name": "Model3dParameters",
+      "type": "Model3DParameters",
+      "allowNull": true
+    }
+  ],
+  "rows": [
+    {
+      "data": [
+        {
+          "columnName": "in_UniqueKey",
+          "value": "unique key 1"
+        },
+        {
+          "columnName": "Text01",
+          "value": "text value 1"
+        },
+        {
+          "columnName": "Model3d",
+          "value": "34a79ac6-1c34-4b0c-82c7-d40dbe5d8fb4:model3d.obj"
+        },
+        {
+          "columnName": "Model3dParameters",
+          "value": "{\r\n     \"regions\": {\r\n          \"y\": [\r\n               {\r\n                    \"pos\": 38,\r\n                    \"scalable\": false\r\n               },\r\n               {\r\n                    \"pos\": 42,\r\n                    \"scalable\": true\r\n               }\r\n          ]\r\n     },\r\n     \"attachmentId\": \"d75431bc-da3c-478c-bec5-94ac20ed139d:data.bin\"\r\n}"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_UniqueKey",
+          "value": "unique key 2"
+        },
+        {
+          "columnName": "Text01",
+          "value": "text value 2"
+        },
+        {
+          "columnName": "Model3d",
+          "value": "34a79ac6-1c34-4b0c-82c7-d40dbe5d8fb4:model3d.obj"
+        },
+        {
+          "columnName": "Model3dParameters",
+          "value": "{\r\n     \"regions\": {\r\n          \"y\": [\r\n               {\r\n                    \"pos\": 38,\r\n                    \"scalable\": false\r\n               },\r\n               {\r\n                    \"pos\": 42,\r\n                    \"scalable\": true\r\n               }\r\n          ]\r\n     },\r\n     \"attachmentId\": \"00b23c0a-db49-4101-afc2-fda401290811:data.bin\"\r\n}"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_UniqueKey",
+          "value": "unique key 3"
+        },
+        {
+          "columnName": "Text01",
+          "value": "text value 3"
+        },
+        {
+          "columnName": "Model3d",
+          "value": "34a79ac6-1c34-4b0c-82c7-d40dbe5d8fb4:model3d.obj"
+        },
+        {
+          "columnName": "Model3dParameters",
+          "value": "{\r\n     \"regions\": {\r\n          \"y\": [\r\n               {\r\n                    \"pos\": 11,\r\n                    \"scalable\": false\r\n               },\r\n               {\r\n                    \"pos\": 22,\r\n                    \"scalable\": true\r\n               }\r\n          ]\r\n     },\r\n     \"attachmentId\": \"89608198-0f53-403a-914f-5582ba5af9d8:data.bin\"\r\n}"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "in_UniqueKey",
+          "value": "unique key 4"
+        },
+        {
+          "columnName": "Text01",
+          "value": "text value 4"
+        },
+        {
+          "columnName": "Model3d",
+          "value": "34a79ac6-1c34-4b0c-82c7-d40dbe5d8fb4:model3d.obj"
+        },
+        {
+          "columnName": "Model3dParameters",
+          "value": "{\r\n     \"regions\": {\r\n          \"y\": [\r\n               {\r\n                    \"pos\": 4,\r\n                    \"scalable\": false\r\n               },\r\n               {\r\n                    \"pos\": 44,\r\n                    \"scalable\": true\r\n               }\r\n          ]\r\n     },\r\n     \"attachmentId\": \"cb7cfe7d-3e88-495d-8a19-8b29a8e194d4:data.bin\"\r\n}"
+        }
+      ]
+    }
+  ]
+}

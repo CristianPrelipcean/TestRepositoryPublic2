@@ -1,0 +1,24 @@
+{
+  "partCode": "102_SidePanelRight",
+  "shortName": "102_SidePanelRight",
+  "description": "",
+  "wdt": "YZX",
+  "restrictionTypeId": "",
+  "partVariants": [],
+  "bomData": [
+    {
+      "bomElementTypeId": "Platte",
+      "description": "Platte für Seite rechts",
+      "valueScript": "this.length = partSelf._dimz;\r\nthis.bom_width = partSelf._dimy;\r\nthis.thickness = partSelf._dimx;"
+    }
+  ],
+  "ncData": [
+    {
+      "part2": "125_RailHorizontalBack",
+      "touchName": "FromLeft",
+      "bomElementTypeId": "Bohrung",
+      "valueScript": "this.PosX = posRel.x;\r\nthis.MacroName = partSelf._id;\r\n\r\nlet drillingDiameter = partSelf._thickness / 4;\r\nlet halfPartThickness = partSelf._thickness / 2;\r\nlet drillCnt = 3;\r\nlet diff = part2._dimz / drillCnt;\r\nfor(let i=0; i<drillCnt; i++) {\r\n  let drilling01 = partSelf.add3DElement('drilling01', this, part2._dimx + posRel.x - (2*halfPartThickness), posRel.y, posRel.z  + diff*i, halfPartThickness * 3, drillingDiameter, drillingDiameter);\r\n  drilling01.extrude('<svg><circle cx=\"' + halfPartThickness + '\" cy=\"' + halfPartThickness + '\" r=\"' + drillingDiameter + '\" /></svg>', 'x');\r\n  }",
+      "bomExecuteType": "Touch"
+    }
+  ]
+}
