@@ -9,220 +9,298 @@
   "restrictionTypeId": "Internal",
   "childModules": [
     {
-      "moduleId": "mc_ThermoformedPanel01"
-    },
-    {
-      "moduleId": "mc_PanelWoodFrame01"
-    },
-    {
-      "moduleId": "mc_MetalFrame01"
-    },
-    {
-      "moduleId": "mc_Handlestrip01"
+      "moduleId": "mc_FrontPanel01"
     },
     {
       "moduleId": "mc_Handle01"
     },
     {
-      "moduleId": "mc_FrontPanel01"
+      "moduleId": "mc_Handlestrip01"
+    },
+    {
+      "moduleId": "mc_MetalFrame01"
+    },
+    {
+      "moduleId": "mc_PanelWoodFrame01"
+    },
+    {
+      "moduleId": "mc_ThermoformedPanel01"
     }
   ],
   "assignedVariants": [
     {
       "variantId": "mod_CarcaseDirection",
       "previewValue": "Left",
-      "origin": "Derived"
+      "required": false,
+      "derive": true,
+      "fixed": false
     },
     {
       "variantId": "mod_CarcaseId",
       "previewValue": "None",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_FingergripTop",
-      "previewValue": "false",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_FrontColor",
-      "previewValue": "Demoblue",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_FrontDesign",
-      "previewValue": "FlatPanel",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_FrontEdgeColor",
-      "previewValue": "Demoblue",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_FrontEdgeThk",
-      "previewValue": "1",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_FrontGapCarcase",
-      "previewValue": "1",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_FrontGapHor",
-      "previewValue": "2",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_FrontGapVert",
-      "previewValue": "2",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_FrontId",
-      "previewValue": "None",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_FrontOversizeBtm",
-      "previewValue": "0",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_FrontOversizeTop",
-      "previewValue": "0",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_FrontPosStart",
-      "previewValue": "0",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_FrontProgram",
-      "previewValue": "Demoprogram1",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_ModuleName",
-      "default": "mc_CornerFillerFront01",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_ParentName",
-      "previewValue": "None",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_PlinthAreaHeight",
-      "previewValue": "80",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_HandleDesign",
-      "previewValue": "10",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_FrontWidth",
-      "previewValue": "100",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_FrontHeight",
-      "previewValue": "720",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_FrontThk",
-      "previewValue": "19",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_DoorDirection",
-      "previewValue": "Left",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_HandlePosMatrix",
-      "default": "Center",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_HandlePosType",
-      "previewValue": "01",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_HandleColor",
-      "previewValue": "Demoblue",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_CornerunitStraightFillerConstruction",
-      "previewValue": "Construction01",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_FillerType",
-      "previewValue": "LShape",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_FillerHardware",
-      "previewValue": "Bracket01",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_Direction",
-      "default": "Left",
-      "origin": "Default"
+      "required": false,
+      "derive": true,
+      "fixed": false
     },
     {
       "variantId": "mod_CarcasePartInfo",
       "default": "",
       "previewValue": "",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_CornerunitStraightFillerConstruction",
+      "previewValue": "Construction01",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_Direction",
+      "default": "Left",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_DoorDirection",
+      "previewValue": "Left",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_FillerHardware",
+      "previewValue": "Bracket01",
+      "required": false,
+      "derive": true,
+      "fixed": false
     },
     {
       "variantId": "mod_FillerHardwareInfo",
       "default": "",
       "previewValue": "",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
-      "variantId": "mod_Originpos",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_TypeElement",
-      "previewValue": "Filler",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_FingergripTopType",
-      "previewValue": "NoFingergrip",
-      "origin": "Derived"
+      "variantId": "mod_FillerType",
+      "previewValue": "LShape",
+      "required": false,
+      "derive": true,
+      "fixed": false
     },
     {
       "variantId": "mod_FingergripBtmType",
       "previewValue": "NoFingergrip",
-      "origin": "Derived"
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_FingergripTop",
+      "previewValue": "false",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_FingergripTopType",
+      "previewValue": "NoFingergrip",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_FrontColor",
+      "previewValue": "Demoblue",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_FrontDesign",
+      "previewValue": "FlatPanel",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_FrontEdgeColor",
+      "previewValue": "Demoblue",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_FrontEdgeThk",
+      "previewValue": "1",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_FrontGapCarcase",
+      "previewValue": "1",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_FrontGapHor",
+      "previewValue": "2",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_FrontGapVert",
+      "previewValue": "2",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_FrontHeight",
+      "previewValue": "720",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_FrontId",
+      "previewValue": "None",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_FrontOversizeBtm",
+      "previewValue": "0",
+      "required": false,
+      "derive": true,
+      "fixed": false
     },
     {
       "variantId": "mod_FrontOversizeLeft",
       "previewValue": "0",
-      "origin": "Derived"
+      "required": false,
+      "derive": true,
+      "fixed": false
     },
     {
       "variantId": "mod_FrontOversizeRight",
       "previewValue": "0",
-      "origin": "Derived"
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_FrontOversizeTop",
+      "previewValue": "0",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_FrontPosStart",
+      "previewValue": "0",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_FrontProgram",
+      "previewValue": "Demoprogram1",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_FrontThk",
+      "previewValue": "19",
+      "required": false,
+      "derive": true,
+      "fixed": false
     },
     {
       "variantId": "mod_FrontType",
       "previewValue": "None",
-      "origin": "Derived"
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_FrontWidth",
+      "previewValue": "100",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_HandleColor",
+      "previewValue": "Demoblue",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_HandleDesign",
+      "previewValue": "10",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_HandlePosMatrix",
+      "default": "Center",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_HandlePosType",
+      "previewValue": "01",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ModuleName",
+      "default": "mc_CornerFillerFront01",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_Originpos",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ParentName",
+      "previewValue": "None",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_PlinthAreaHeight",
+      "previewValue": "80",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_TypeElement",
+      "previewValue": "Filler",
+      "required": false,
+      "derive": true,
+      "fixed": false
     }
   ],
   "assignedParts": [
@@ -243,10 +321,10 @@
   ],
   "assignedFunctions": [
     {
-      "functionId": "process_HandlestripPos"
+      "functionId": "process_FillerHardware"
     },
     {
-      "functionId": "process_FillerHardware"
+      "functionId": "process_HandlestripPos"
     }
   ]
 }

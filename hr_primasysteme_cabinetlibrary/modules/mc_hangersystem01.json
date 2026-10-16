@@ -10,55 +10,72 @@
   "childModules": [],
   "assignedVariants": [
     {
-      "variantId": "mod_HangerPosX",
-      "previewValue": "Left_Right",
-      "origin": "Derived"
+      "variantId": "mod_BackwallThk",
+      "previewValue": "15",
+      "required": false,
+      "derive": true,
+      "fixed": false
     },
     {
-      "variantId": "mod_HangerPosY",
-      "previewValue": "Top",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_HangerType",
-      "previewValue": "NoHanger",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_ModuleName",
-      "default": "mc_HangerSystem01",
-      "origin": "Fixed"
+      "variantId": "mod_CarcaseId",
+      "previewValue": "'None'",
+      "required": false,
+      "derive": true,
+      "fixed": false
     },
     {
       "variantId": "mod_HangerInfo",
       "default": "",
       "previewValue": "",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
-      "variantId": "mod_BackwallThk",
-      "previewValue": "15",
-      "origin": "Derived"
+      "variantId": "mod_HangerPosX",
+      "previewValue": "Left_Right",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_HangerPosY",
+      "previewValue": "Top",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_HangerType",
+      "previewValue": "NoHanger",
+      "required": false,
+      "derive": true,
+      "fixed": false,
+      "defaultGlobalVar": false
+    },
+    {
+      "variantId": "mod_ModuleName",
+      "default": "mc_HangerSystem01",
+      "required": false,
+      "derive": false,
+      "fixed": true
     },
     {
       "variantId": "mod_Originpos",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_CarcaseId",
-      "previewValue": "'None'",
-      "origin": "Derived"
+      "required": false,
+      "derive": false,
+      "fixed": false
     }
   ],
   "assignedParts": [
+    {
+      "partCode": "part_HangerDrill"
+    },
     {
       "partCode": "part_HangerSystem"
     },
     {
       "partCode": "part_HangerSystemBom"
-    },
-    {
-      "partCode": "part_HangerDrill"
     }
   ],
   "assignedCustomTables": [],

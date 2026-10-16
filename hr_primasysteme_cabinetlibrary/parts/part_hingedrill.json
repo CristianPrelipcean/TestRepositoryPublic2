@@ -10,8 +10,13 @@
   "noNcData": false,
   "partVariants": [
     {
-      "partVarId": "pa_Model3DGroupName",
-      "valueScript": "''",
+      "partVarId": "pa_DrillDistance",
+      "valueScript": "0",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_FrontGapCarcase",
+      "valueScript": "0",
       "isWritable": false
     },
     {
@@ -20,8 +25,13 @@
       "isWritable": false
     },
     {
-      "partVarId": "pa_DrillDistance",
+      "partVarId": "pa_HingeGapCarcase",
       "valueScript": "0",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_Model3DGroupName",
+      "valueScript": "''",
       "isWritable": false
     },
     {
@@ -37,16 +47,6 @@
     {
       "partVarId": "pa_ProcessingId2",
       "valueScript": "''",
-      "isWritable": false
-    },
-    {
-      "partVarId": "pa_FrontGapCarcase",
-      "valueScript": "0",
-      "isWritable": false
-    },
-    {
-      "partVarId": "pa_HingeGapCarcase",
-      "valueScript": "0",
       "isWritable": false
     }
   ],

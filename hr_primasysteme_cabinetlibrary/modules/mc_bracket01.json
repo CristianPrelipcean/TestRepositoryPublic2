@@ -10,34 +10,46 @@
   "childModules": [],
   "assignedVariants": [
     {
-      "variantId": "mod_Width",
-      "previewValue": "1000",
-      "origin": "Derived"
-    },
-    {
       "variantId": "mod_Depth",
       "previewValue": "120",
-      "origin": "Derived"
+      "required": false,
+      "derive": true,
+      "fixed": false
     },
     {
       "variantId": "mod_Height",
       "default": "120",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_ShelvesBrackets",
       "previewValue": "ARRAS5",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_ShelvesThk",
-      "previewValue": "19",
-      "origin": "Derived"
+      "required": false,
+      "derive": true,
+      "fixed": false
     },
     {
       "variantId": "mod_ShelvesColor",
       "previewValue": "222",
-      "origin": "Derived"
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ShelvesThk",
+      "previewValue": "19",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_Width",
+      "previewValue": "1000",
+      "required": false,
+      "derive": true,
+      "fixed": false
     }
   ],
   "assignedParts": [
