@@ -10,120 +10,163 @@
   "childModules": [],
   "assignedVariants": [
     {
-      "variantId": "mod_Width",
-      "previewValue": "1000",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_Length",
-      "previewValue": "500",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_Thickness",
-      "previewValue": "19",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_Program",
-      "previewValue": "Demoprogram1",
-      "origin": "Derived"
+      "variantId": "mod_BtmColor",
+      "previewValue": "Demoblue",
+      "required": false,
+      "derive": true,
+      "fixed": false
     },
     {
       "variantId": "mod_Color",
       "previewValue": "Demoblue",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_TypeElement",
-      "previewValue": "Fronts",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_PartGrain",
-      "previewValue": "GrainNone",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_BtmColor",
-      "previewValue": "Demoblue",
-      "origin": "Derived"
+      "required": false,
+      "derive": true,
+      "fixed": false,
+      "defaultGlobalVar": false
     },
     {
       "variantId": "mod_EdgeBackClass",
       "previewValue": "Thick",
-      "origin": "Derived"
+      "required": false,
+      "derive": true,
+      "fixed": false
     },
     {
       "variantId": "mod_EdgeBackColor",
       "previewValue": "NoEdge",
-      "origin": "Derived"
+      "required": false,
+      "derive": true,
+      "fixed": false
     },
     {
       "variantId": "mod_EdgeFrontClass",
       "previewValue": "Thick",
-      "origin": "Derived"
+      "required": false,
+      "derive": true,
+      "fixed": false
     },
     {
       "variantId": "mod_EdgeFrontColor",
       "previewValue": "NoEdge",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_EdgeLeftClass",
-      "previewValue": "Thick",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_EdgeLeftColor",
-      "previewValue": "NoEdge",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_EdgeRightClass",
-      "previewValue": "Thick",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_EdgeRightColor",
-      "previewValue": "NoEdge",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_EdgeTechnology",
-      "previewValue": "ABS",
-      "origin": "Derived"
+      "required": false,
+      "derive": true,
+      "fixed": false
     },
     {
       "variantId": "mod_EdgeJointType",
       "previewValue": "LSLS",
-      "origin": "Derived"
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_EdgeLeftClass",
+      "previewValue": "Thick",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_EdgeLeftColor",
+      "previewValue": "NoEdge",
+      "required": false,
+      "derive": true,
+      "fixed": false
     },
     {
       "variantId": "mod_EdgePosType",
       "previewValue": "EdgeOverSurface",
-      "origin": "Derived"
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_EdgeRightClass",
+      "previewValue": "Thick",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_EdgeRightColor",
+      "previewValue": "NoEdge",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_EdgeTechnology",
+      "previewValue": "ABS",
+      "required": false,
+      "derive": true,
+      "fixed": false
     },
     {
       "variantId": "mod_EdgesPartLibraryVis",
       "previewValue": "false",
-      "origin": "Derived"
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_Length",
+      "previewValue": "500",
+      "required": false,
+      "derive": true,
+      "fixed": false
     },
     {
       "variantId": "mod_PartDesign",
       "previewValue": "FlatPanel",
-      "origin": "Derived"
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_PartGrain",
+      "previewValue": "GrainNone",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_Program",
+      "previewValue": "Demoprogram1",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_Thickness",
+      "previewValue": "19",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_TypeElement",
+      "previewValue": "Fronts",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_Width",
+      "previewValue": "1000",
+      "required": false,
+      "derive": true,
+      "fixed": false
     }
   ],
   "assignedParts": [
+    {
+      "partCode": "part_Edge"
+    },
     {
       "partCode": "part_Panel"
     },
     {
       "partCode": "part_PanelGroup"
-    },
-    {
-      "partCode": "part_Edge"
     }
   ],
   "assignedCustomTables": [],

@@ -21,111 +21,159 @@
       "moduleId": "me_Groove"
     },
     {
-      "moduleId": "me_Pocket"
+      "moduleId": "me_PartConnection"
     },
     {
-      "moduleId": "me_PartConnection"
+      "moduleId": "me_Pocket"
     }
   ],
   "assignedVariants": [
     {
-      "variantId": "mod_Width",
-      "previewValue": "1000",
-      "origin": "Required"
-    },
-    {
-      "variantId": "mod_Length",
-      "previewValue": "500",
-      "origin": "Required"
-    },
-    {
-      "variantId": "mod_Thickness",
-      "previewValue": "19",
-      "origin": "Required"
-    },
-    {
-      "variantId": "mod_Program",
-      "default": "Demoprogram1",
-      "origin": "Default"
+      "variantId": "mod_BtmColor",
+      "defaultScript": "this.mod_Color",
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_Color",
       "default": "Demoblue",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_PartGrain",
-      "origin": "GlobalVar"
-    },
-    {
-      "variantId": "mod_BtmColor",
-      "defaultScript": "this.mod_Color",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_EdgeBackColor",
-      "defaultScript": "this.mod_Color",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_EdgeFrontColor",
-      "defaultScript": "this.mod_Color",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_EdgeLeftColor",
-      "defaultScript": "this.mod_Color",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_EdgeRightColor",
-      "defaultScript": "this.mod_Color",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_EdgeBackClass",
       "default": "Thick",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_EdgeBackColor",
+      "defaultScript": "this.mod_Color",
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_EdgeFrontClass",
       "default": "Thick",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_EdgeFrontColor",
+      "defaultScript": "this.mod_Color",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_EdgeJointType",
+      "required": false,
+      "derive": false,
+      "fixed": false,
+      "defaultGlobalVar": true
     },
     {
       "variantId": "mod_EdgeLeftClass",
       "default": "Thick",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_EdgeLeftColor",
+      "defaultScript": "this.mod_Color",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_EdgePosType",
+      "required": false,
+      "derive": false,
+      "fixed": false,
+      "defaultGlobalVar": true
     },
     {
       "variantId": "mod_EdgeRightClass",
       "default": "Thick",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_EdgeRightColor",
+      "defaultScript": "this.mod_Color",
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_EdgeTechnology",
-      "origin": "GlobalVar"
-    },
-    {
-      "variantId": "mod_EdgeJointType",
-      "origin": "GlobalVar"
-    },
-    {
-      "variantId": "mod_EdgePosType",
-      "origin": "GlobalVar"
+      "required": false,
+      "derive": false,
+      "fixed": false,
+      "defaultGlobalVar": true
     },
     {
       "variantId": "mod_EdgesPartLibraryVis",
-      "origin": "GlobalVar"
+      "required": false,
+      "derive": false,
+      "fixed": false,
+      "defaultGlobalVar": true
+    },
+    {
+      "variantId": "mod_Length",
+      "previewValue": "500",
+      "required": true,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_PartDesign",
+      "required": false,
+      "derive": false,
+      "fixed": false,
+      "defaultGlobalVar": true
+    },
+    {
+      "variantId": "mod_PartGrain",
+      "required": false,
+      "derive": false,
+      "fixed": false,
+      "defaultGlobalVar": true
+    },
+    {
+      "variantId": "mod_Program",
+      "default": "Demoprogram1",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_Thickness",
+      "previewValue": "19",
+      "required": true,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_TypeElement",
       "default": "Shelves",
-      "origin": "Fixed"
+      "required": false,
+      "derive": false,
+      "fixed": true
     },
     {
-      "variantId": "mod_PartDesign",
-      "origin": "GlobalVar"
+      "variantId": "mod_Width",
+      "previewValue": "1000",
+      "required": true,
+      "derive": false,
+      "fixed": false
     }
   ],
   "assignedParts": [],

@@ -15,33 +15,8 @@
       "isWritable": false
     },
     {
-      "partVarId": "pa_TopColor",
-      "valueScript": "this.parent.mod_Color",
-      "isWritable": false
-    },
-    {
-      "partVarId": "pa_Program",
-      "valueScript": "this.parent.mod_Program",
-      "isWritable": false
-    },
-    {
-      "partVarId": "pa_PartGrain",
-      "valueScript": "this.parent.mod_PartGrain",
-      "isWritable": false
-    },
-    {
-      "partVarId": "pa_EdgeTechnology",
-      "valueScript": "this.parent.mod_EdgeTechnology",
-      "isWritable": false
-    },
-    {
-      "partVarId": "pa_EdgeFrontColor",
-      "valueScript": "this.parent.mod_EdgeFrontColor",
-      "isWritable": false
-    },
-    {
-      "partVarId": "pa_EdgeLeftColor",
-      "valueScript": "this.parent.mod_EdgeLeftColor",
+      "partVarId": "pa_EdgeBackClass",
+      "valueScript": "this.parent.mod_EdgeBackClass",
       "isWritable": false
     },
     {
@@ -50,33 +25,13 @@
       "isWritable": false
     },
     {
-      "partVarId": "pa_EdgeRightColor",
-      "valueScript": "this.parent.mod_EdgeRightColor",
-      "isWritable": false
-    },
-    {
       "partVarId": "pa_EdgeFrontClass",
       "valueScript": "this.parent.mod_EdgeFrontClass",
       "isWritable": false
     },
     {
-      "partVarId": "pa_EdgeRightClass",
-      "valueScript": "this.parent.mod_EdgeRightClass",
-      "isWritable": false
-    },
-    {
-      "partVarId": "pa_EdgeBackClass",
-      "valueScript": "this.parent.mod_EdgeBackClass",
-      "isWritable": false
-    },
-    {
-      "partVarId": "pa_EdgeLeftClass",
-      "valueScript": "this.parent.mod_EdgeLeftClass",
-      "isWritable": false
-    },
-    {
-      "partVarId": "pa_EdgePosType",
-      "valueScript": "this.parent.mod_EdgePosType",
+      "partVarId": "pa_EdgeFrontColor",
+      "valueScript": "this.parent.mod_EdgeFrontColor",
       "isWritable": false
     },
     {
@@ -85,18 +40,64 @@
       "isWritable": false
     },
     {
-      "partVarId": "pa_TypeElement",
-      "valueScript": "this.parent.mod_TypeElement",
+      "partVarId": "pa_EdgeLeftClass",
+      "valueScript": "this.parent.mod_EdgeLeftClass",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeLeftColor",
+      "valueScript": "this.parent.mod_EdgeLeftColor",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgePosType",
+      "valueScript": "this.parent.mod_EdgePosType",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeRightClass",
+      "valueScript": "this.parent.mod_EdgeRightClass",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeRightColor",
+      "valueScript": "this.parent.mod_EdgeRightColor",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeTechnology",
+      "valueScript": "this.parent.mod_EdgeTechnology",
       "isWritable": false
     },
     {
       "partVarId": "pa_PartDesign",
       "valueScript": "this.parent.mod_PartDesign",
       "isWritable": false
+    },
+    {
+      "partVarId": "pa_PartGrain",
+      "valueScript": "this.parent.mod_PartGrain",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_Program",
+      "valueScript": "this.parent.mod_Program",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_TopColor",
+      "valueScript": "this.parent.mod_Color",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_TypeElement",
+      "valueScript": "this.parent.mod_TypeElement",
+      "isWritable": false
     }
   ],
   "bomData": [
     {
+      "id": 161,
       "bomElementTypeId": "bomout_Board",
       "description": "Output boards and edges",
       "valueScript": "                                 \n             // Variables\n            let EdgeFront: any;\n            let EdgeLeft: any;\n            let EdgeBack: any;  \n            let EdgeRight: any;\n            let EdgeJointValue: any;\n            \n             //---------------Get data from table BoardObjectMapping-----------------\n            \n            let BoardObjectMapping = GlobalFunc.find_BoardObjectMapping(part.pa_Program, part.pa_TypeElement, part.pa_PartDesign, part._thickness, part.pa_TopColor, part.pa_BtmColor);\n            \n\n              // Attribute values for EdgeColor and EdgeClass\n              EdgeFront = GlobalFunc.find_EdgeMapping(part.pa_EdgeFrontClass, part.pa_EdgeTechnology,part.pa_EdgeFrontColor, part._thickness)\n              EdgeLeft = GlobalFunc.find_EdgeMapping(part.pa_EdgeLeftClass, part.pa_EdgeTechnology,part.pa_EdgeLeftColor, part._thickness)\n              EdgeBack = GlobalFunc.find_EdgeMapping(part.pa_EdgeBackClass, part.pa_EdgeTechnology,part.pa_EdgeBackColor, part._thickness)\n              EdgeRight = GlobalFunc.find_EdgeMapping(part.pa_EdgeRightClass, part.pa_EdgeTechnology,part.pa_EdgeRightColor, part._thickness)\n \n\n            let BoardLibrary = GlobalFunc.find_BoardLibrary(BoardObjectMapping.BoardId);           \n            //let GrainDirection = GlobalFunc.find_GrainDirection(BoardLibrary.Grain!,part.pa_PartGrain);\n            \n            /*\n            let EdgeFrontLibrary = GlobalFunc.find_EdgeLibrary(EdgeFront.EdgeId!)\n            let EdgeLeftLibrary = GlobalFunc.find_EdgeLibrary(EdgeLeft.EdgeId!)\n            let EdgeBackLibrary = GlobalFunc.find_EdgeLibrary(EdgeBack.EdgeId!)\n            let EdgeRightLibrary = GlobalFunc.find_EdgeLibrary(EdgeRight.EdgeId!)\n            */\n            \n\n             EdgeJointValue = part.pa_EdgeJointType\n\n\n            let EdgeJoint = GlobalFunc.find_EdgeJointTypeConstruction(EdgeJointValue,part.pa_EdgePosType)\n            \n              \n            //---------------Set attributes of the board----------------------------\n            \n            this.bom_Material = BoardLibrary.MaterialCode;\n            this.bom_Width = part._depth;\n            this.bom_Length = part._width;\n            this.bom_Finalthk = part._thickness;\n            this.bom_BoardType =  BoardLibrary.BoardType!;\n            //this.bom_GrainOrientation = GrainDirection.GrainDirection;\n            this.bom_Route = 'DemoRoute';\n            this.bom_EdgeLeft = EdgeLeft.EdgeId!;\n            this.bom_EdgeRight = EdgeRight.EdgeId!;\n            this.bom_EdgeBack = EdgeBack.EdgeId!;\n            this.bom_EdgeFront = EdgeFront.EdgeId!;\n            this.bom_EdgeJointFrontLeft = EdgeJoint.EdgeJointFrontLeft;\n            this.bom_EdgeJointLeftBack = EdgeJoint.EdgeJointLeftBack;\n            this.bom_EdgeJointBackRight = EdgeJoint.EdgeJointBackRight;\n            this.bom_EdgeJointRightFront = EdgeJoint.EdgeJointRightFront;\n            this.bom_EdgeShape = EdgeJoint.EdgeShape;\n            this.bom_EdgeTransition = EdgeJoint.EdgeCode"
@@ -104,6 +105,7 @@
   ],
   "ncData": [
     {
+      "id": 357,
       "part2": "part_DrillVert",
       "touchName": "FromTop",
       "bomElementTypeId": "ncout_DrillVert",
@@ -112,6 +114,7 @@
       "bomExecuteType": "Touch"
     },
     {
+      "id": 358,
       "part2": "part_DrillingLine",
       "touchName": "FromTop",
       "bomElementTypeId": "ncout_DrillVert",
@@ -120,6 +123,7 @@
       "bomExecuteType": "Touch"
     },
     {
+      "id": 359,
       "part2": "part_HandleDrill",
       "touchName": "FromTop",
       "bomElementTypeId": "ncout_DrillVert",

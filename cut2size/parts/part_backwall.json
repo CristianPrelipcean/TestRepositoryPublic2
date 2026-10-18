@@ -16,6 +16,11 @@
       "isWritable": false
     },
     {
+      "partVarId": "pa_EdgeBtmColor",
+      "valueScript": "this.parent.mod_EdgeBtmColor",
+      "isWritable": false
+    },
+    {
       "partVarId": "pa_EdgeBtmMapping",
       "valueScript": "",
       "isWritable": false
@@ -23,6 +28,11 @@
     {
       "partVarId": "pa_EdgeJointType",
       "valueScript": "this.parent.mod_EdgeJointType",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeLeftColor",
+      "valueScript": "this.parent.mod_EdgeLeftColor",
       "isWritable": false
     },
     {
@@ -36,8 +46,18 @@
       "isWritable": false
     },
     {
+      "partVarId": "pa_EdgeRightColor",
+      "valueScript": "this.parent.mod_EdgeRightColor",
+      "isWritable": false
+    },
+    {
       "partVarId": "pa_EdgeRightMapping",
       "valueScript": "",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeTopColor",
+      "valueScript": "this.parent.mod_EdgeTopColor",
       "isWritable": false
     },
     {
@@ -51,26 +71,6 @@
       "isWritable": false
     },
     {
-      "partVarId": "pa_EdgeTopColor",
-      "valueScript": "this.parent.mod_EdgeTopColor",
-      "isWritable": false
-    },
-    {
-      "partVarId": "pa_EdgeBtmColor",
-      "valueScript": "this.parent.mod_EdgeBtmColor",
-      "isWritable": false
-    },
-    {
-      "partVarId": "pa_EdgeLeftColor",
-      "valueScript": "this.parent.mod_EdgeLeftColor",
-      "isWritable": false
-    },
-    {
-      "partVarId": "pa_EdgeRightColor",
-      "valueScript": "this.parent.mod_EdgeRightColor",
-      "isWritable": false
-    },
-    {
       "partVarId": "pa_ProgramQuery",
       "valueScript": "this.parent.mod_Program_matrix",
       "isWritable": false
@@ -78,6 +78,7 @@
   ],
   "bomData": [
     {
+      "id": 166,
       "bomElementTypeId": "bomout_Board",
       "description": "Output boards and edges",
       "valueScript": "// Call the function to process the Bom-Element\nGlobalFunc.process_BoardBomInfo(this, part)"
@@ -85,6 +86,7 @@
   ],
   "ncData": [
     {
+      "id": 373,
       "part2": "part_DrillVert",
       "touchName": "FromFront",
       "bomElementTypeId": "ncout_Group",
@@ -93,6 +95,7 @@
       "bomExecuteType": "Touch"
     },
     {
+      "id": 376,
       "part2": "part_DrillVert",
       "touchName": "FromBack",
       "bomElementTypeId": "ncout_Group",
