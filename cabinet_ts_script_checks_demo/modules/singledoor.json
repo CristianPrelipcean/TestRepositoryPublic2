@@ -7,115 +7,141 @@
   "restrictionTypeId": "Public",
   "childModules": [
     {
-      "moduleId": "internalDrawer"
-    },
-    {
       "moduleId": "boxBehindDoor"
     },
     {
       "moduleId": "containerBoxBehindDoor"
+    },
+    {
+      "moduleId": "internalDrawer"
     }
   ],
   "assignedVariants": [
     {
+      "variantId": "frontColor",
+      "previewValue": "White",
+      "derive": true
+    },
+    {
       "variantId": "frontHeight",
       "previewValue": "600",
-      "origin": "Required"
+      "required": true
     },
     {
       "variantId": "handle",
       "previewValue": "knopf01",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "frontColor",
-      "previewValue": "White",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "innerDrawerCount",
-      "default": "0",
-      "origin": "Default"
-    },
-    {
-      "variantId": "innerDrawer1Pos",
-      "default": "0",
-      "origin": "Default"
-    },
-    {
-      "variantId": "innerDrawer2Pos",
-      "default": "400",
-      "origin": "Default"
-    },
-    {
-      "variantId": "innerDrawer1Height",
-      "default": "240",
-      "origin": "Default"
-    },
-    {
-      "variantId": "innerDrawer1Depth",
-      "default": "500",
-      "origin": "Default"
-    },
-    {
-      "variantId": "innerDrawer2Height",
-      "default": "120",
-      "origin": "Default"
-    },
-    {
-      "variantId": "innerDrawer2Depth",
-      "default": "500",
-      "origin": "Default"
-    },
-    {
-      "variantId": "width",
-      "previewValue": "600",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "sidePanelThickness",
-      "previewValue": "16",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "startPos",
-      "default": "0",
-      "origin": "Default"
-    },
-    {
-      "variantId": "handleOrientation",
-      "default": "Hor",
-      "origin": "Default"
+      "derive": true
     },
     {
       "variantId": "handleOffset",
       "default": "100",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
-      "variantId": "hinge",
-      "default": "left",
-      "origin": "Default"
+      "variantId": "handleOrientation",
+      "default": "Hor",
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "hide3DModelIfOpened",
       "default": "false",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
-      "variantId": "use3DModelForDoorLeft",
-      "default": "false",
-      "origin": "Default"
+      "variantId": "hinge",
+      "default": "left",
+      "derive": false,
+      "fixed": false
     },
     {
-      "variantId": "use3DModelOpenForDoorLeft",
-      "default": "false",
-      "origin": "Default"
+      "variantId": "innerDrawer1Depth",
+      "default": "500",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "innerDrawer1Height",
+      "default": "240",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "innerDrawer1Pos",
+      "default": "0",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "innerDrawer2Depth",
+      "default": "500",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "innerDrawer2Height",
+      "default": "120",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "innerDrawer2Pos",
+      "default": "400",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "innerDrawerCount",
+      "default": "0"
+    },
+    {
+      "variantId": "sidePanelThickness",
+      "previewValue": "16",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "startPos",
+      "default": "0",
+      "required": false
     },
     {
       "variantId": "thickness",
       "default": "20",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "use3DModelForDoorLeft",
+      "default": "false",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "use3DModelOpenForDoorLeft",
+      "default": "false",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "width",
+      "previewValue": "600",
+      "derive": true
     }
   ],
   "assignedParts": [
@@ -132,19 +158,19 @@
       "partCode": "999_GrundplatteR"
     },
     {
+      "partCode": "999_InvisiblePart"
+    },
+    {
       "partCode": "999_ScharnierL"
     },
     {
       "partCode": "999_ScharnierR"
     },
     {
-      "partCode": "999_InvisiblePart"
+      "partCode": "boxPart"
     },
     {
       "partCode": "handle_01"
-    },
-    {
-      "partCode": "boxPart"
     }
   ],
   "assignedCustomTables": [],
