@@ -10,119 +10,165 @@
   "childModules": [],
   "assignedVariants": [
     {
-      "variantId": "mod_CarcaseId",
-      "previewValue": "None",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_CarcaseVisBack",
-      "previewValue": "false",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_Depth",
-      "default": "500",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_Height",
-      "default": "720",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_Width",
-      "default": "600",
-      "origin": "Default"
-    },
-    {
       "variantId": "mod_CarcaseBackwallColor",
       "previewValue": "Demoblue",
-      "origin": "Derived"
+      "required": false,
+      "derive": true,
+      "fixed": false
     },
     {
       "variantId": "mod_CarcaseBackwallProgram",
       "previewValue": "Demoprogram1",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_CarcaseOutsideColor",
-      "previewValue": "Demoblue",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_CarcaseEdgeColor",
-      "previewValue": "Demoblue",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_CarcaseOutsideProgram",
-      "previewValue": "Demoprogram1",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_EdgeBackType",
-      "default": "NOE",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_EdgeLeftType",
-      "default": "NOE",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_EdgeFrontType",
-      "default": "NOE",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_EdgeRightType",
-      "default": "NOE",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_EdgeJointType",
-      "default": "VVVV",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_ModuleName",
-      "default": "mc_StorageunitBackwall01",
-      "origin": "Fixed"
-    },
-    {
-      "variantId": "mod_CarcaseProgram",
-      "previewValue": "Demoprogram1",
-      "origin": "Derived"
+      "required": false,
+      "derive": true,
+      "fixed": false
     },
     {
       "variantId": "mod_CarcaseConnectionLeftTop",
       "previewValue": "SideCShelf",
-      "origin": "Derived"
+      "required": false,
+      "derive": true,
+      "fixed": false
     },
     {
       "variantId": "mod_CarcaseConnectionRightTop",
       "previewValue": "SideCShelf",
-      "origin": "Derived"
+      "required": false,
+      "derive": true,
+      "fixed": false
     },
     {
-      "variantId": "mod_SlopedCeilingConstruction",
-      "previewValue": "Construction01",
-      "origin": "Derived"
+      "variantId": "mod_CarcaseEdgeColor",
+      "previewValue": "Demoblue",
+      "required": false,
+      "derive": true,
+      "fixed": false
     },
     {
-      "variantId": "mod_SlopeAngle",
-      "previewValue": "0",
-      "origin": "Derived"
+      "variantId": "mod_CarcaseId",
+      "previewValue": "None",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_CarcaseOutsideColor",
+      "previewValue": "Demoblue",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_CarcaseOutsideProgram",
+      "previewValue": "Demoprogram1",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_CarcaseProgram",
+      "previewValue": "Demoprogram1",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_CarcaseVisBack",
+      "previewValue": "false",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_Depth",
+      "default": "500",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_EdgeBackType",
+      "default": "NOE",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_EdgeFrontType",
+      "default": "NOE",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_EdgeJointType",
+      "default": "VVVV",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_EdgeLeftType",
+      "default": "NOE",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_EdgeRightType",
+      "default": "NOE",
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_GrainLogic",
       "previewValue": "Library",
-      "origin": "Derived"
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_Height",
+      "default": "720",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ModuleName",
+      "default": "mc_StorageunitBackwall01",
+      "required": false,
+      "derive": false,
+      "fixed": true
+    },
+    {
+      "variantId": "mod_SlopeAngle",
+      "previewValue": "0",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_SlopedCeilingConstruction",
+      "previewValue": "Construction01",
+      "required": false,
+      "derive": true,
+      "fixed": false
     },
     {
       "variantId": "mod_TypeElement",
       "previewValue": "BaseUnit",
-      "origin": "Derived"
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_Width",
+      "default": "600",
+      "required": false,
+      "derive": false,
+      "fixed": false
     }
   ],
   "assignedParts": [

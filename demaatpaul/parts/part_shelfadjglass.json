@@ -10,12 +10,17 @@
   "noNcData": false,
   "partVariants": [
     {
-      "partVarId": "pa_BtmColor",
-      "valueScript": "this.parent.mod_ShelfadjColor",
+      "partVarId": "pa_AdditionalInfo1",
+      "valueScript": "'None'",
       "isWritable": false
     },
     {
-      "partVarId": "pa_TopColor",
+      "partVarId": "pa_BomId",
+      "valueScript": "this.parent.mod_CarcaseId",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_BtmColor",
       "valueScript": "this.parent.mod_ShelfadjColor",
       "isWritable": false
     },
@@ -40,13 +45,8 @@
       "isWritable": false
     },
     {
-      "partVarId": "pa_AdditionalInfo1",
-      "valueScript": "'None'",
-      "isWritable": false
-    },
-    {
-      "partVarId": "pa_BomId",
-      "valueScript": "this.parent.mod_CarcaseId",
+      "partVarId": "pa_TopColor",
+      "valueScript": "this.parent.mod_ShelfadjColor",
       "isWritable": false
     }
   ],

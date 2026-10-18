@@ -10,6 +10,11 @@
   "noNcData": false,
   "partVariants": [
     {
+      "partVarId": "pa_AdditionalInfo1",
+      "valueScript": "'None'",
+      "isWritable": false
+    },
+    {
       "partVarId": "pa_BomId",
       "valueScript": "",
       "isWritable": false
@@ -17,6 +22,11 @@
     {
       "partVarId": "pa_BtmColor",
       "valueScript": "",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_ColorGrainGroup",
+      "valueScript": "'NoGrain'",
       "isWritable": false
     },
     {
@@ -45,17 +55,17 @@
       "isWritable": false
     },
     {
-      "partVarId": "pa_EdgeRightColor",
-      "valueScript": "",
-      "isWritable": false
-    },
-    {
       "partVarId": "pa_EdgeLeftColor",
       "valueScript": "",
       "isWritable": false
     },
     {
       "partVarId": "pa_EdgeLeftType",
+      "valueScript": "",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeRightColor",
       "valueScript": "",
       "isWritable": false
     },
@@ -70,8 +80,8 @@
       "isWritable": false
     },
     {
-      "partVarId": "pa_TopColor",
-      "valueScript": "",
+      "partVarId": "pa_GrainLogic",
+      "valueScript": "this.parent.mod_GrainLogic",
       "isWritable": false
     },
     {
@@ -85,33 +95,24 @@
       "isWritable": false
     },
     {
-      "partVarId": "pa_AdditionalInfo1",
-      "valueScript": "'None'",
+      "partVarId": "pa_ProgramGrainGroup",
+      "valueScript": "this.parent.mod_CarcaseProgram_matrix.GrainGroupId",
       "isWritable": false
     },
     {
-      "partVarId": "pa_GrainLogic",
-      "valueScript": "this.parent.mod_GrainLogic",
+      "partVarId": "pa_TopColor",
+      "valueScript": "",
       "isWritable": false
     },
     {
       "partVarId": "pa_TypeElement",
       "valueScript": "this.parent.mod_TypeElement",
       "isWritable": false
-    },
-    {
-      "partVarId": "pa_ProgramGrainGroup",
-      "valueScript": "this.parent.mod_CarcaseProgram_matrix.GrainGroupId",
-      "isWritable": false
-    },
-    {
-      "partVarId": "pa_ColorGrainGroup",
-      "valueScript": "'NoGrain'",
-      "isWritable": false
     }
   ],
   "bomData": [
     {
+      "id": 263,
       "bomElementTypeId": "bomout_Group",
       "description": "Boards and edges for drawerbox backwall wood",
       "conditionScript": "partSelf._g?.basic_CreateBom == 'Library'",
@@ -120,6 +121,7 @@
   ],
   "ncData": [
     {
+      "id": 710,
       "part2": "part_DrawerBoxDrilling",
       "touchName": "Collision",
       "bomElementTypeId": "ncout_Group",

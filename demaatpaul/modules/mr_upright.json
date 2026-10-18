@@ -14,92 +14,130 @@
   ],
   "assignedVariants": [
     {
-      "variantId": "mod_UprightColor",
-      "default": "1045_mn",
-      "origin": "Default"
+      "variantId": "cmod_FullHeight",
+      "previewValue": "720",
+      "required": true,
+      "derive": false,
+      "fixed": false
     },
     {
-      "variantId": "mod_UprightFloorProfileColor",
-      "default": "DemoStainlessSteel",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_UprightDepth",
-      "previewValue": "600",
-      "origin": "Required"
-    },
-    {
-      "variantId": "mod_UprightHeight",
-      "defaultScript": "this.cmod_FullHeight! - this.mod_PlinthAreaHeight!",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_PlinthAreaHeight",
-      "default": "0",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_UprightThk",
-      "default": "18",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_UprightOverhang",
-      "default": "20",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_CreateCountertop",
-      "default": "false",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_UprightConstruction",
-      "default": "ToFloor",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_HeightPosInsertion",
-      "default": "0",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_TypeElement",
-      "default": "Upright",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_GrainLogic",
-      "origin": "GlobalVar"
-    },
-    {
-      "variantId": "mod_UprightProgram",
-      "default": "MatteNatur",
-      "origin": "Default"
+      "variantId": "mod_CountertopThk",
+      "required": false,
+      "derive": false,
+      "fixed": false,
+      "defaultGlobalVar": true
     },
     {
       "variantId": "mod_CreateBacksplash",
       "default": "false",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
-      "variantId": "mod_CountertopThk",
-      "origin": "GlobalVar"
+      "variantId": "mod_CreateCountertop",
+      "default": "false",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_GrainLogic",
+      "required": false,
+      "derive": false,
+      "fixed": false,
+      "defaultGlobalVar": true
+    },
+    {
+      "variantId": "mod_HeightPosInsertion",
+      "default": "0",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_PlinthAreaHeight",
+      "default": "0",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_TypeElement",
+      "default": "Upright",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_UprightColor",
+      "default": "1045_mn",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_UprightConstruction",
+      "default": "ToFloor",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_UprightDepth",
+      "previewValue": "600",
+      "required": true,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_UprightFloorProfileColor",
+      "default": "DemoStainlessSteel",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_UprightHeight",
+      "defaultScript": "this.cmod_FullHeight! - this.mod_PlinthAreaHeight!",
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_UprightOverdimensionBtm",
       "default": "0",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_UprightOverdimensionTop",
       "default": "0",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
-      "variantId": "cmod_FullHeight",
-      "previewValue": "720",
-      "origin": "Required"
+      "variantId": "mod_UprightOverhang",
+      "default": "20",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_UprightProgram",
+      "default": "MatteNatur",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_UprightThk",
+      "default": "18",
+      "required": false,
+      "derive": false,
+      "fixed": false
     }
   ],
   "assignedParts": [],

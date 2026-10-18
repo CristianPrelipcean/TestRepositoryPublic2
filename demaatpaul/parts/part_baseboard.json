@@ -11,6 +11,10 @@
   "noNcData": false,
   "partVariants": [
     {
+      "partVarId": "pa_AdditionalInfo1",
+      "valueScript": "'None'"
+    },
+    {
       "partVarId": "pa_BomId",
       "valueScript": "this.parent.mod_BaseboardId",
       "isWritable": false
@@ -20,17 +24,9 @@
       "valueScript": "this.parent.mod_BaseboardColor"
     },
     {
-      "partVarId": "pa_GrainDirection",
-      "valueScript": "'Neutral'"
-    },
-    {
-      "partVarId": "pa_Program",
-      "valueScript": "this.parent.mod_BaseboardProgram",
+      "partVarId": "pa_ColorGrainGroup",
+      "valueScript": "this.parent.mod_BaseboardColor_matrix.GrainGroupId",
       "isWritable": false
-    },
-    {
-      "partVarId": "pa_TopColor",
-      "valueScript": "this.parent.mod_BaseboardColor"
     },
     {
       "partVarId": "pa_EdgeBackColor",
@@ -73,8 +69,8 @@
       "valueScript": "'FRE'"
     },
     {
-      "partVarId": "pa_AdditionalInfo1",
-      "valueScript": "'None'"
+      "partVarId": "pa_GrainDirection",
+      "valueScript": "'Neutral'"
     },
     {
       "partVarId": "pa_GrainLogic",
@@ -82,14 +78,18 @@
       "isWritable": false
     },
     {
-      "partVarId": "pa_ColorGrainGroup",
-      "valueScript": "this.parent.mod_BaseboardColor_matrix.GrainGroupId",
+      "partVarId": "pa_Program",
+      "valueScript": "this.parent.mod_BaseboardProgram",
       "isWritable": false
     },
     {
       "partVarId": "pa_ProgramGrainGroup",
       "valueScript": "this.parent.mod_BaseboardProgram_matrix.GrainGroupId",
       "isWritable": false
+    },
+    {
+      "partVarId": "pa_TopColor",
+      "valueScript": "this.parent.mod_BaseboardColor"
     },
     {
       "partVarId": "pa_TypeElement",

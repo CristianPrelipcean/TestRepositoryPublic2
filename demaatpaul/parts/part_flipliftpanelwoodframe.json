@@ -11,6 +11,11 @@
   "noNcData": false,
   "partVariants": [
     {
+      "partVarId": "pa_AdditionalInfo1",
+      "valueScript": "'None'",
+      "isWritable": false
+    },
+    {
       "partVarId": "pa_BomId",
       "valueScript": "this.parent.mod_FrontId",
       "isWritable": false
@@ -66,28 +71,13 @@
       "isWritable": false
     },
     {
-      "partVarId": "pa_FrontConstructionInfo",
-      "valueScript": "",
+      "partVarId": "pa_FlipliftType",
+      "valueScript": "this.parent.mod_FlipliftType",
       "isWritable": false
     },
     {
-      "partVarId": "pa_GrainDirection",
-      "valueScript": "'Neutral'",
-      "isWritable": false
-    },
-    {
-      "partVarId": "pa_Program",
-      "valueScript": "this.parent.mod_FrontProgram",
-      "isWritable": false
-    },
-    {
-      "partVarId": "pa_TopColor",
-      "valueScript": "this.parent.mod_FrontColor",
-      "isWritable": false
-    },
-    {
-      "partVarId": "pa_Weight",
-      "valueScript": "",
+      "partVarId": "pa_FrameFillingColor",
+      "valueScript": "this.parent.mod_FrameFillingColor",
       "isWritable": false
     },
     {
@@ -111,28 +101,39 @@
       "isWritable": false
     },
     {
+      "partVarId": "pa_FrontConstructionInfo",
+      "valueScript": "",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_GrainDirection",
+      "valueScript": "'Neutral'",
+      "isWritable": false
+    },
+    {
       "partVarId": "pa_PanelWoodFrameType",
       "valueScript": "",
       "isWritable": false
     },
     {
-      "partVarId": "pa_FlipliftType",
-      "valueScript": "this.parent.mod_FlipliftType",
+      "partVarId": "pa_Program",
+      "valueScript": "this.parent.mod_FrontProgram",
       "isWritable": false
     },
     {
-      "partVarId": "pa_AdditionalInfo1",
-      "valueScript": "'None'",
+      "partVarId": "pa_TopColor",
+      "valueScript": "this.parent.mod_FrontColor",
       "isWritable": false
     },
     {
-      "partVarId": "pa_FrameFillingColor",
-      "valueScript": "this.parent.mod_FrameFillingColor",
+      "partVarId": "pa_Weight",
+      "valueScript": "",
       "isWritable": false
     }
   ],
   "bomData": [
     {
+      "id": 281,
       "bomElementTypeId": "bomout_Group",
       "description": "Output Parts / Boards for panel wood frame",
       "conditionScript": "partSelf._g?.basic_CreateBom == 'Library'",
@@ -141,6 +142,7 @@
   ],
   "ncData": [
     {
+      "id": 805,
       "part2": "part_HandleDrill",
       "touchName": "FromFront",
       "bomElementTypeId": "ncout_Group",
@@ -149,30 +151,7 @@
       "bomExecuteType": "Touch"
     },
     {
-      "part2": "part_HingeDrill",
-      "touchName": "FromBack",
-      "bomElementTypeId": "ncout_Group",
-      "description": "Drillings for Hinges",
-      "valueScript": "//====================================================================\n  // Get data for drillings and rotation\n  //====================================================================\n\n  let drillings: any[] = [];\n  let drills: any[] = [];\n  let processings = GlobalFunc.find_ProcessingMapping(part2.pa_ProcessingId);\n  let insertPoint = GlobalFunc.process_MachiningInsertionHelper('012',part2.pa_Model3DGroupName)\n\n  processings.forEach((processing) => {\n    drills = GlobalFunc.find_HardwareDrillVertLibrary(processing.ProcessingId!, 'Front');\n    drills.forEach((drill) => {\n      drillings.push(drill);\n    });\n  });\n\n  //====================================================================\n  // For each drilling (insert the drillings) Top side\n  //====================================================================\n\n  if (posRel.y > partSelf._dimy / 2) {\n    \n    drillings.forEach(x => {\n\n      // Add Vertical Drill\n      let DrillVert = this.addncout_DrillVert();\n      DrillVert.nc_TOOL=\"102\";\n      DrillVert.nc_XA= posRel.x + x.YA - insertPoint.GraphicLibrary.PartOffsetX;\n      DrillVert.nc_YA = partSelf._dimy - (posRel.y - part2.pa_DrillDistance + insertPoint.InsertionPointY - x.XA + insertPoint.GraphicLibrary.PartOffsetY);\n      DrillVert.nc_TI=x.TI;\n      DrillVert.nc_DU=x.DU;\n\n      DrillVert.nc_BM = x.matrix_BM || \"LS\"\n      DrillVert.nc_WI = x.matrix_WI ?? 0;\n      DrillVert.nc_AB = x.matrix_AB ?? 1;\n      DrillVert.nc_LA = x.matrix_LA ?? 0;\n      DrillVert.nc_MI = x.matrix_MI ?? 0;\n      DrillVert.nc_KO = x.matrix_KO || \"00\";\n      DrillVert.nc_Side = \"Top\";\n\n      // Add drawing\n      let drilling01 = partSelf.add3DElement('Drilling01', DrillVert, posRel.x + x.YA - insertPoint.GraphicLibrary.PartOffsetX, posRel.y - part2.pa_DrillDistance + insertPoint.InsertionPointY - x.XA + insertPoint.GraphicLibrary.PartOffsetY, 0, x.DU, x.DU, x.TI );\n      drilling01.extrude('<svg><circle cx=\"' + 0 + '\" cy=\"' + 0 + '\" r=\"' + x.DU/2 + '\" /></svg>', 'z');\n    });\n  }\n\n  //====================================================================\n  // For each drilling (insert the drillings) Bottom side\n  //====================================================================\n\n  else {\n    drillings.forEach(x => {\n      \n      // Add Vertical Drill\n      let DrillVert = this.addncout_DrillVert();\n      DrillVert.nc_TOOL = \"102\";\n      DrillVert.nc_XA = posRel.x + x.YA + insertPoint.InsertionPointY + insertPoint.GraphicLibrary.PartOffsetY;\n      DrillVert.nc_YA = partSelf._dimy - (part2.pa_DrillDistance + insertPoint.InsertionPointX + x.XA + insertPoint.GraphicLibrary.PartOffsetX);\n      DrillVert.nc_TI = x.TI;\n      DrillVert.nc_DU = x.DU;\n\n      DrillVert.nc_BM = x.matrix_BM || \"LS\"\n      DrillVert.nc_WI = x.matrix_WI ?? 0;\n      DrillVert.nc_AB = x.matrix_AB ?? 1;\n      DrillVert.nc_LA = x.matrix_LA ?? 0;\n      DrillVert.nc_MI = x.matrix_MI ?? 0;\n      DrillVert.nc_KO = x.matrix_KO || \"00\";\n      DrillVert.nc_Side = \"Top\";\n\n      // Add drawing\n      let drilling01 = partSelf.add3DElement('Drilling01', DrillVert, posRel.x + x.YA + insertPoint.InsertionPointY + insertPoint.GraphicLibrary.PartOffsetY, part2.pa_DrillDistance + insertPoint.InsertionPointX + x.XA + insertPoint.GraphicLibrary.PartOffsetX, 0, x.DU, x.DU, x.TI);\n      drilling01.extrude('<svg><circle cx=\"' + 0 + '\" cy=\"' + 0 + '\" r=\"' + x.DU / 2 + '\" /></svg>', 'z');\n    });\n  }",
-      "bomExecuteType": "Touch"
-    },
-    {
-      "part2": "part_PushtoopenDrill",
-      "touchName": "FromBack",
-      "bomElementTypeId": "ncout_Group",
-      "description": "Drillings for PushToOpen",
-      "valueScript": "GlobalFunc.ops_PushtoopenDrill('Front', this, partSelf, part2, posRel);",
-      "bomExecuteType": "Touch"
-    },
-    {
-      "part2": "part_PushtoopenMountingPlateDrill",
-      "touchName": "FromBack",
-      "bomElementTypeId": "ncout_Group",
-      "description": "Drillings for PushToOpen Adapter",
-      "valueScript": "GlobalFunc.ops_PushtoopenDrill('Front', this, partSelf, part2, posRel);",
-      "bomExecuteType": "Touch"
-    },
-    {
+      "id": 810,
       "part2": "part_FlipliftHardwareFrontpanelDrilling",
       "touchName": "FromBack",
       "bomElementTypeId": "ncout_Group",
@@ -181,6 +160,16 @@
       "bomExecuteType": "Touch"
     },
     {
+      "id": 806,
+      "part2": "part_HingeDrill",
+      "touchName": "FromBack",
+      "bomElementTypeId": "ncout_Group",
+      "description": "Drillings for Hinges",
+      "valueScript": "//====================================================================\n  // Get data for drillings and rotation\n  //====================================================================\n\n  let drillings: any[] = [];\n  let drills: any[] = [];\n  let processings = GlobalFunc.find_ProcessingMapping(part2.pa_ProcessingId);\n  let insertPoint = GlobalFunc.process_MachiningInsertionHelper('012',part2.pa_Model3DGroupName)\n\n  processings.forEach((processing) => {\n    drills = GlobalFunc.find_HardwareDrillVertLibrary(processing.ProcessingId!, 'Front');\n    drills.forEach((drill) => {\n      drillings.push(drill);\n    });\n  });\n\n  //====================================================================\n  // For each drilling (insert the drillings) Top side\n  //====================================================================\n\n  if (posRel.y > partSelf._dimy / 2) {\n    \n    drillings.forEach(x => {\n\n      // Add Vertical Drill\n      let DrillVert = this.addncout_DrillVert();\n      DrillVert.nc_TOOL=\"102\";\n      DrillVert.nc_XA= posRel.x + x.YA - insertPoint.GraphicLibrary.PartOffsetX;\n      DrillVert.nc_YA = partSelf._dimy - (posRel.y - part2.pa_DrillDistance + insertPoint.InsertionPointY - x.XA + insertPoint.GraphicLibrary.PartOffsetY);\n      DrillVert.nc_TI=x.TI;\n      DrillVert.nc_DU=x.DU;\n\n      DrillVert.nc_BM = x.matrix_BM || \"LS\"\n      DrillVert.nc_WI = x.matrix_WI ?? 0;\n      DrillVert.nc_AB = x.matrix_AB ?? 1;\n      DrillVert.nc_LA = x.matrix_LA ?? 0;\n      DrillVert.nc_MI = x.matrix_MI ?? 0;\n      DrillVert.nc_KO = x.matrix_KO || \"00\";\n      DrillVert.nc_Side = \"Top\";\n\n      // Add drawing\n      let drilling01 = partSelf.add3DElement('Drilling01', DrillVert, posRel.x + x.YA - insertPoint.GraphicLibrary.PartOffsetX, posRel.y - part2.pa_DrillDistance + insertPoint.InsertionPointY - x.XA + insertPoint.GraphicLibrary.PartOffsetY, 0, x.DU, x.DU, x.TI );\n      drilling01.extrude('<svg><circle cx=\"' + 0 + '\" cy=\"' + 0 + '\" r=\"' + x.DU/2 + '\" /></svg>', 'z');\n    });\n  }\n\n  //====================================================================\n  // For each drilling (insert the drillings) Bottom side\n  //====================================================================\n\n  else {\n    drillings.forEach(x => {\n      \n      // Add Vertical Drill\n      let DrillVert = this.addncout_DrillVert();\n      DrillVert.nc_TOOL = \"102\";\n      DrillVert.nc_XA = posRel.x + x.YA + insertPoint.InsertionPointY + insertPoint.GraphicLibrary.PartOffsetY;\n      DrillVert.nc_YA = partSelf._dimy - (part2.pa_DrillDistance + insertPoint.InsertionPointX + x.XA + insertPoint.GraphicLibrary.PartOffsetX);\n      DrillVert.nc_TI = x.TI;\n      DrillVert.nc_DU = x.DU;\n\n      DrillVert.nc_BM = x.matrix_BM || \"LS\"\n      DrillVert.nc_WI = x.matrix_WI ?? 0;\n      DrillVert.nc_AB = x.matrix_AB ?? 1;\n      DrillVert.nc_LA = x.matrix_LA ?? 0;\n      DrillVert.nc_MI = x.matrix_MI ?? 0;\n      DrillVert.nc_KO = x.matrix_KO || \"00\";\n      DrillVert.nc_Side = \"Top\";\n\n      // Add drawing\n      let drilling01 = partSelf.add3DElement('Drilling01', DrillVert, posRel.x + x.YA + insertPoint.InsertionPointY + insertPoint.GraphicLibrary.PartOffsetY, part2.pa_DrillDistance + insertPoint.InsertionPointX + x.XA + insertPoint.GraphicLibrary.PartOffsetX, 0, x.DU, x.DU, x.TI);\n      drilling01.extrude('<svg><circle cx=\"' + 0 + '\" cy=\"' + 0 + '\" r=\"' + x.DU / 2 + '\" /></svg>', 'z');\n    });\n  }",
+      "bomExecuteType": "Touch"
+    },
+    {
+      "id": 812,
       "part2": "part_HingeDrillFHF",
       "touchName": "FromBack",
       "bomElementTypeId": "ncout_Group",
@@ -189,6 +178,25 @@
       "bomExecuteType": "Touch"
     },
     {
+      "id": 807,
+      "part2": "part_PushtoopenDrill",
+      "touchName": "FromBack",
+      "bomElementTypeId": "ncout_Group",
+      "description": "Drillings for PushToOpen",
+      "valueScript": "GlobalFunc.ops_PushtoopenDrill('Front', this, partSelf, part2, posRel);",
+      "bomExecuteType": "Touch"
+    },
+    {
+      "id": 808,
+      "part2": "part_PushtoopenMountingPlateDrill",
+      "touchName": "FromBack",
+      "bomElementTypeId": "ncout_Group",
+      "description": "Drillings for PushToOpen Adapter",
+      "valueScript": "GlobalFunc.ops_PushtoopenDrill('Front', this, partSelf, part2, posRel);",
+      "bomExecuteType": "Touch"
+    },
+    {
+      "id": 815,
       "touchName": "",
       "bomElementTypeId": "ncout_Group",
       "description": "Show the dowels in the graphics for the frames",
