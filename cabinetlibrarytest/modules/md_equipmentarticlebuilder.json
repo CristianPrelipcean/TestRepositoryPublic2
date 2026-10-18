@@ -11,82 +11,105 @@
   "restrictionTypeId": "Public",
   "childModules": [
     {
-      "moduleId": "me_ShelfadjMultiple01"
-    },
-    {
       "moduleId": "me_ClothingOrganizer01"
-    },
-    {
-      "moduleId": "me_Vertdivider01"
     },
     {
       "moduleId": "me_InnerDrawerGroup"
     },
     {
+      "moduleId": "me_ShelfadjMultiple01"
+    },
+    {
       "moduleId": "me_Shelffixed01"
+    },
+    {
+      "moduleId": "me_Vertdivider01"
     }
   ],
   "assignedVariants": [
     {
       "variantId": "mod_CarcaseColor",
       "default": "178",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_CarcaseId",
       "default": "None",
-      "origin": "Default"
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_CarcaseProgram",
       "default": "ModernNature",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_FrontDesign",
-      "origin": "GlobalVar"
-    },
-    {
-      "variantId": "mod_FrontProgram",
-      "default": "Classic",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_ShelfadjColor",
-      "default": "Automatic",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_ShelfadjDescriptor",
-      "default": "1_1",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_ShelfadjDesign",
-      "origin": "GlobalVar"
-    },
-    {
-      "variantId": "mod_ShelfadjDrillDistance",
-      "origin": "GlobalVar"
-    },
-    {
-      "variantId": "mod_ShelfadjDrillType",
-      "origin": "GlobalVar"
-    },
-    {
-      "variantId": "mod_TypeElement",
-      "default": "WallUnit",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_Width",
-      "default": "600",
-      "origin": "Default"
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_CarcaseSpaceDimension",
       "default": "",
-      "origin": "Default"
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_FrontDesign",
+      "required": false,
+      "derive": false,
+      "fixed": false,
+      "defaultGlobalVar": true
+    },
+    {
+      "variantId": "mod_FrontProgram",
+      "default": "Classic",
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ShelfadjColor",
+      "default": "Automatic",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ShelfadjDescriptor",
+      "default": "1_1",
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ShelfadjDesign",
+      "required": false,
+      "derive": false,
+      "fixed": false,
+      "defaultGlobalVar": true
+    },
+    {
+      "variantId": "mod_ShelfadjDrillDistance",
+      "required": false,
+      "derive": false,
+      "fixed": false,
+      "defaultGlobalVar": true
+    },
+    {
+      "variantId": "mod_ShelfadjDrillType",
+      "required": false,
+      "derive": false,
+      "fixed": false,
+      "defaultGlobalVar": true
+    },
+    {
+      "variantId": "mod_TypeElement",
+      "default": "WallUnit",
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_Width",
+      "default": "600",
+      "derive": false,
+      "fixed": false
     }
   ],
   "assignedParts": [

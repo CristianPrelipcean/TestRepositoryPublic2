@@ -71,6 +71,11 @@
       "isWritable": false
     },
     {
+      "partVarId": "pa_FrameFillingColor",
+      "valueScript": "this.parent.mod_FrameFillingColor",
+      "isWritable": false
+    },
+    {
       "partVarId": "pa_FrameFillingMaterial",
       "valueScript": "",
       "isWritable": false
@@ -124,15 +129,11 @@
       "partVarId": "pa_Weight",
       "valueScript": "",
       "isWritable": false
-    },
-    {
-      "partVarId": "pa_FrameFillingColor",
-      "valueScript": "this.parent.mod_FrameFillingColor",
-      "isWritable": false
     }
   ],
   "bomData": [
     {
+      "id": 220,
       "bomElementTypeId": "bomout_Group",
       "description": "Output Parts / Boards for panel wood frame",
       "conditionScript": "partSelf._g?.basic_CreateBom != null && partSelf._g.basic_CreateBom !== 'Custom'",
@@ -141,6 +142,7 @@
   ],
   "ncData": [
     {
+      "id": 630,
       "part2": "part_HandleDrill",
       "touchName": "FromFront",
       "bomElementTypeId": "ncout_Group",
@@ -149,6 +151,7 @@
       "bomExecuteType": "Touch"
     },
     {
+      "id": 631,
       "touchName": "",
       "bomElementTypeId": "ncout_Group",
       "description": "Show the dowels in the graphics for the frames",

@@ -11,10 +11,10 @@
   "restrictionTypeId": "Public",
   "childModules": [
     {
-      "moduleId": "mf_Drawer"
+      "moduleId": "mf_Door"
     },
     {
-      "moduleId": "mf_Door"
+      "moduleId": "mf_Drawer"
     },
     {
       "moduleId": "mf_Fliplift"
@@ -31,19 +31,25 @@
   ],
   "assignedVariants": [
     {
-      "variantId": "mod_Width",
-      "default": "600",
-      "origin": "Default"
-    },
-    {
       "variantId": "mod_Depth",
       "default": "600",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_Height",
       "default": "600",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_Width",
+      "default": "600",
+      "required": false,
+      "derive": false,
+      "fixed": false
     }
   ],
   "assignedParts": [

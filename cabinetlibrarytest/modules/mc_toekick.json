@@ -12,33 +12,45 @@
     {
       "variantId": "mod_ToekickColor",
       "previewValue": "Demoblue",
-      "origin": "Derived"
+      "required": false,
+      "derive": true,
+      "fixed": false
     },
     {
       "variantId": "mod_ToekickHeight",
       "default": "110",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_ToekickThk",
-      "previewValue": "18",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_ToekickLength",
-      "default": "1500",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_ToekickId",
       "default": "",
       "previewValue": "",
-      "origin": "Derived"
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ToekickLength",
+      "default": "1500",
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_ToekickProgram",
       "previewValue": "Classic",
-      "origin": "Derived"
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ToekickThk",
+      "previewValue": "18",
+      "required": false,
+      "derive": true,
+      "fixed": false
     }
   ],
   "assignedParts": [

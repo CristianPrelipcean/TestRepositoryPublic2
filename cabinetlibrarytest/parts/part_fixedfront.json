@@ -81,6 +81,16 @@
       "isWritable": false
     },
     {
+      "partVarId": "pa_HardwareInfo",
+      "valueScript": "''",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_ProcessingId",
+      "valueScript": "''",
+      "isWritable": false
+    },
+    {
       "partVarId": "pa_Program",
       "valueScript": "this.parent.mod_FrontProgram",
       "isWritable": false
@@ -94,20 +104,11 @@
       "partVarId": "pa_Weight",
       "valueScript": "",
       "isWritable": false
-    },
-    {
-      "partVarId": "pa_HardwareInfo",
-      "valueScript": "''",
-      "isWritable": false
-    },
-    {
-      "partVarId": "pa_ProcessingId",
-      "valueScript": "''",
-      "isWritable": false
     }
   ],
   "bomData": [
     {
+      "id": 207,
       "bomElementTypeId": "bomout_Group",
       "description": "Output parts / edges / stockparts in relation to the basic_CreateBom setting",
       "conditionScript": "partSelf._g?.basic_CreateBom != null && partSelf._g.basic_CreateBom !== 'Custom'",
@@ -116,6 +117,7 @@
   ],
   "ncData": [
     {
+      "id": 661,
       "touchName": "",
       "bomElementTypeId": "ncout_Group",
       "description": "Multiple Processings",

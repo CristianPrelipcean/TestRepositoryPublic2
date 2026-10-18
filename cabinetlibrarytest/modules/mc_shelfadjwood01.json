@@ -10,64 +10,88 @@
   "childModules": [],
   "assignedVariants": [
     {
-      "variantId": "mod_Width",
-      "default": "568",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_Depth",
-      "default": "521",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_Height",
-      "default": "688",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_ShelfadjThk",
-      "previewValue": "0",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_CarcaseId",
-      "default": "None",
-      "origin": "Default"
-    },
-    {
       "variantId": "mod_CarcaseColor",
       "previewValue": "Demoblue",
-      "origin": "Derived"
+      "required": false,
+      "derive": true,
+      "fixed": false
     },
     {
       "variantId": "mod_CarcaseEdgeColor",
       "previewValue": "Demoblue",
-      "origin": "Derived"
+      "required": false,
+      "derive": true,
+      "fixed": false
     },
     {
       "variantId": "mod_CarcaseEdgeFrontColor",
       "previewValue": "Demoblue",
-      "origin": "Derived"
+      "required": false,
+      "derive": true,
+      "fixed": false
     },
     {
-      "variantId": "mod_ModuleName",
-      "default": "mc_ShelfadjWood01",
-      "origin": "Fixed"
+      "variantId": "mod_CarcaseId",
+      "default": "None",
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_CarcaseProgram",
       "previewValue": "Nature",
-      "origin": "Derived"
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_Depth",
+      "default": "521",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_Height",
+      "default": "688",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ModuleName",
+      "default": "mc_ShelfadjWood01",
+      "required": false,
+      "derive": false,
+      "fixed": true
     },
     {
       "variantId": "mod_ShelfadjColor",
       "previewValue": "240",
-      "origin": "Derived"
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ShelfadjThk",
+      "previewValue": "0",
+      "required": false,
+      "derive": true,
+      "fixed": false
     },
     {
       "variantId": "mod_TypeElement",
       "previewValue": "BaseUnit",
-      "origin": "Derived"
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_Width",
+      "default": "568",
+      "required": false,
+      "derive": false,
+      "fixed": false
     }
   ],
   "assignedParts": [

@@ -36,13 +36,8 @@
       "isWritable": false
     },
     {
-      "partVarId": "pa_EdgeRightType",
-      "valueScript": "'FRE'",
-      "isWritable": false
-    },
-    {
-      "partVarId": "pa_EdgeLeftType",
-      "valueScript": "'FRE'",
+      "partVarId": "pa_EdgeFrontColor",
+      "valueScript": "this.parent.mod_FrontEdgeColor",
       "isWritable": false
     },
     {
@@ -56,18 +51,28 @@
       "isWritable": false
     },
     {
-      "partVarId": "pa_EdgeFrontColor",
-      "valueScript": "this.parent.mod_FrontEdgeColor",
-      "isWritable": false
-    },
-    {
       "partVarId": "pa_EdgeLeftColor",
       "valueScript": "this.parent.mod_FrontEdgeColor",
       "isWritable": false
     },
     {
+      "partVarId": "pa_EdgeLeftType",
+      "valueScript": "'FRE'",
+      "isWritable": false
+    },
+    {
       "partVarId": "pa_EdgeRightColor",
       "valueScript": "this.parent.mod_FrontEdgeColor",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeRightType",
+      "valueScript": "'FRE'",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_FrameFillingColor",
+      "valueScript": "this.parent.mod_FrameFillingColor",
       "isWritable": false
     },
     {
@@ -119,15 +124,11 @@
       "partVarId": "pa_Weight",
       "valueScript": "",
       "isWritable": false
-    },
-    {
-      "partVarId": "pa_FrameFillingColor",
-      "valueScript": "this.parent.mod_FrameFillingColor",
-      "isWritable": false
     }
   ],
   "bomData": [
     {
+      "id": 209,
       "bomElementTypeId": "bomout_Group",
       "description": "Output Parts / Boards for panel wood frame",
       "conditionScript": "partSelf._g?.basic_CreateBom != null && partSelf._g.basic_CreateBom !== 'Custom'",
@@ -136,6 +137,7 @@
   ],
   "ncData": [
     {
+      "id": 538,
       "touchName": "",
       "bomElementTypeId": "ncout_Group",
       "description": "Show the dowels in the graphics for the frames",

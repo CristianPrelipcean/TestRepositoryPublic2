@@ -9,47 +9,61 @@
   "restrictionTypeId": "Public",
   "childModules": [
     {
-      "moduleId": "mc_Shelves01"
+      "moduleId": "mc_Bracket01"
     },
     {
-      "moduleId": "mc_Bracket01"
+      "moduleId": "mc_Shelves01"
     }
   ],
   "assignedVariants": [
     {
-      "variantId": "mod_ModuleName",
-      "default": "mr_Shelves",
-      "origin": "Fixed"
-    },
-    {
       "variantId": "mod_Depth",
       "default": "300",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
-      "variantId": "mod_Width",
-      "default": "1000",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_ShelvesThk",
-      "default": "19",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_ShelvesColor",
-      "default": "240",
-      "origin": "Default"
+      "variantId": "mod_ModuleName",
+      "default": "mr_Shelves",
+      "required": false,
+      "derive": false,
+      "fixed": true
     },
     {
       "variantId": "mod_ShelvesBrackets",
       "default": "ARRAS5",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_ShelvesBracketsColor",
       "default": "199",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ShelvesColor",
+      "default": "240",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ShelvesThk",
+      "default": "19",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_Width",
+      "default": "1000",
+      "required": false,
+      "derive": false,
+      "fixed": false
     }
   ],
   "assignedParts": [],

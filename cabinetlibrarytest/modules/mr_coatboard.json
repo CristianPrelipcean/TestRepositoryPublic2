@@ -19,49 +19,67 @@
   ],
   "assignedVariants": [
     {
-      "variantId": "mod_CoatBoardColor",
-      "default": "199",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_CoatBoardProgram",
-      "default": "Classic",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_CoatBoardId",
-      "default": "Coatboard01",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_Width",
-      "previewValue": "600",
-      "origin": "Required"
-    },
-    {
-      "variantId": "mod_Height",
-      "previewValue": "1000",
-      "origin": "Required"
-    },
-    {
-      "variantId": "mod_CoatBoardThickness",
-      "default": "19",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_HeightPosInsertion",
-      "default": "0",
-      "origin": "Default"
-    },
-    {
       "variantId": "mod_BoardShelfColor",
       "default": "199",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_BoardShelfProgram",
       "default": "Classic",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_CoatBoardColor",
+      "default": "199",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_CoatBoardId",
+      "default": "Coatboard01",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_CoatBoardProgram",
+      "default": "Classic",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_CoatBoardThickness",
+      "default": "19",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_Height",
+      "previewValue": "1000",
+      "required": true,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_HeightPosInsertion",
+      "default": "0",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_Width",
+      "previewValue": "600",
+      "required": true,
+      "derive": false,
+      "fixed": false
     }
   ],
   "assignedParts": [

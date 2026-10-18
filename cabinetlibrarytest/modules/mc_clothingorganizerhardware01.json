@@ -11,37 +11,52 @@
   "childModules": [],
   "assignedVariants": [
     {
+      "variantId": "mod_ClothingOrganizerId",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
       "variantId": "mod_Depth",
       "default": "0",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_FrontId",
+      "previewValue": "''",
+      "required": false,
+      "derive": true,
+      "fixed": false
     },
     {
       "variantId": "mod_Height",
       "default": "0",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_Width",
-      "default": "0",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_Information",
       "default": "",
       "previewValue": "",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
-      "variantId": "mod_FrontId",
-      "previewValue": "''",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_ClothingOrganizerId",
-      "origin": "Derived"
+      "variantId": "mod_Width",
+      "default": "0",
+      "required": false,
+      "derive": false,
+      "fixed": false
     }
   ],
   "assignedParts": [
+    {
+      "partCode": "part_ClothingOrganizerBOM"
+    },
     {
       "partCode": "part_ClothingOrganizerDrilling"
     },
@@ -50,9 +65,6 @@
     },
     {
       "partCode": "part_ClothingOrganizerUnit"
-    },
-    {
-      "partCode": "part_ClothingOrganizerBOM"
     }
   ],
   "assignedCustomTables": [],

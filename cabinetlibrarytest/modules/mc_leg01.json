@@ -12,66 +12,92 @@
     {
       "variantId": "mod_CarcaseId",
       "previewValue": "None",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_PlinthAreaHeight",
-      "previewValue": "100",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_PlinthAreaDesign",
-      "previewValue": "40",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_Rotation",
-      "default": "0",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_ModuleName",
-      "default": " mc_Leg01",
-      "origin": "Fixed"
-    },
-    {
-      "variantId": "mod_Model3DGroupName",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_PlinthAreaElementColor",
-      "previewValue": "BL",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_PlinthAreaExtraItem",
-      "previewValue": "None",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_ShelfbtmThk",
-      "previewValue": "19",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_ProcessingId",
-      "default": "None",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_ProcessingLibrary",
-      "default": "None",
-      "origin": "Default"
+      "required": false,
+      "derive": true,
+      "fixed": false
     },
     {
       "variantId": "mod_HardwareId",
       "default": "None",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_Height",
       "default": "0",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_Model3DGroupName",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ModuleName",
+      "default": " mc_Leg01",
+      "required": false,
+      "derive": false,
+      "fixed": true
+    },
+    {
+      "variantId": "mod_PlinthAreaDesign",
+      "previewValue": "40",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_PlinthAreaElementColor",
+      "previewValue": "BL",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_PlinthAreaExtraItem",
+      "previewValue": "None",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_PlinthAreaHeight",
+      "previewValue": "100",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ProcessingId",
+      "default": "None",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ProcessingLibrary",
+      "default": "None",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_Rotation",
+      "default": "0",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ShelfbtmThk",
+      "previewValue": "19",
+      "required": false,
+      "derive": true,
+      "fixed": false
     }
   ],
   "assignedParts": [
