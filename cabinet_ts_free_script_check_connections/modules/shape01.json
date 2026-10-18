@@ -7,180 +7,192 @@
   "restrictionTypeId": "Public",
   "childModules": [
     {
+      "moduleId": "dropContainer"
+    },
+    {
       "moduleId": "singleDoor"
     },
     {
       "moduleId": "singleDrawer"
-    },
-    {
-      "moduleId": "dropContainer"
     }
   ],
   "assignedVariants": [
     {
-      "variantId": "sidePanelThickness",
-      "default": "16",
-      "previewValue": "16",
-      "origin": "Default"
-    },
-    {
-      "variantId": "frontEdgeColor",
-      "defaultScript": "this.corpusColor",
-      "previewValue": "Red",
-      "origin": "Default"
-    },
-    {
-      "variantId": "corpusColor",
-      "previewValue": "Blue",
-      "origin": "Required"
-    },
-    {
-      "variantId": "frontColor",
-      "previewValue": "White",
-      "origin": "Required"
-    },
-    {
-      "variantId": "width",
-      "previewValue": "600",
-      "origin": "Required"
-    },
-    {
-      "variantId": "height",
-      "previewValue": "720",
-      "origin": "Required"
-    },
-    {
-      "variantId": "depth",
-      "previewValue": "550",
-      "origin": "Required"
-    },
-    {
-      "variantId": "handle",
-      "default": "knopf01",
-      "previewValue": "knopf01",
-      "origin": "Default"
-    },
-    {
-      "variantId": "testDim",
-      "default": "1",
-      "origin": "Default"
-    },
-    {
-      "variantId": "testReal",
-      "default": "2",
-      "origin": "Default"
-    },
-    {
-      "variantId": "testBool",
-      "default": "true",
-      "origin": "Default"
-    },
-    {
-      "variantId": "testText",
-      "default": "text1",
-      "origin": "Default"
-    },
-    {
-      "variantId": "testInteger",
-      "default": "3",
-      "origin": "Default"
-    },
-    {
-      "variantId": "testDimSelOnly",
-      "default": "10",
-      "origin": "Default"
-    },
-    {
-      "variantId": "testDumSel",
-      "default": "100",
-      "origin": "Default"
-    },
-    {
-      "variantId": "testTextSel",
-      "default": "Sel01",
-      "origin": "Default"
-    },
-    {
-      "variantId": "testIntegerSel",
-      "default": "30",
-      "origin": "Default"
-    },
-    {
-      "variantId": "testBoolSel",
-      "default": "false",
-      "origin": "Default"
-    },
-    {
-      "variantId": "dimArray",
-      "default": "0",
-      "origin": "Default"
-    },
-    {
-      "variantId": "exceptionVariant01",
-      "default": "test",
-      "origin": "Default"
-    },
-    {
-      "variantId": "globVarExceptionVariant01",
-      "default": "4711",
-      "origin": "Default"
-    },
-    {
-      "variantId": "globVarExceptionVariant02",
-      "default": "false",
-      "origin": "Default"
-    },
-    {
-      "variantId": "model",
-      "default": "AAA",
-      "origin": "Default"
-    },
-    {
-      "variantId": "schrankTyp",
-      "default": "AAA",
-      "origin": "Default"
-    },
-    {
-      "variantId": "spl",
-      "origin": "GlobalVar"
-    },
-    {
-      "variantId": "generateWorktop",
-      "default": "true",
-      "origin": "Default"
-    },
-    {
-      "variantId": "showRoomContours",
-      "default": "false",
-      "origin": "Default"
-    },
-    {
       "variantId": "A",
       "default": "A1",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "B",
       "default": "B1",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "C",
       "default": "C1",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "D",
       "default": "D1",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "E",
       "default": "E1",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "corpusColor",
+      "previewValue": "Blue",
+      "required": true
+    },
+    {
+      "variantId": "depth",
+      "previewValue": "550",
+      "required": true
+    },
+    {
+      "variantId": "dimArray",
+      "default": "0",
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "exceptionVariant01",
+      "default": "test",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "frontColor",
+      "previewValue": "White",
+      "required": true
+    },
+    {
+      "variantId": "frontEdgeColor",
+      "defaultScript": "this.corpusColor",
+      "previewValue": "Red"
+    },
+    {
+      "variantId": "generateWorktop",
+      "default": "true"
+    },
+    {
+      "variantId": "globVarExceptionVariant01",
+      "default": "4711",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "globVarExceptionVariant02",
+      "default": "false",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "handle",
+      "default": "knopf01",
+      "previewValue": "knopf01"
+    },
+    {
+      "variantId": "height",
+      "previewValue": "720",
+      "required": true
+    },
+    {
+      "variantId": "model",
+      "default": "AAA",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "schrankTyp",
+      "default": "AAA",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "showRoomContours",
+      "default": "false",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "sidePanelThickness",
+      "default": "16",
+      "previewValue": "16"
+    },
+    {
+      "variantId": "spl",
+      "defaultGlobalVar": true
+    },
+    {
+      "variantId": "testBool",
+      "default": "true"
+    },
+    {
+      "variantId": "testBoolSel",
+      "default": "false"
+    },
+    {
+      "variantId": "testDim",
+      "default": "1"
+    },
+    {
+      "variantId": "testDimSelOnly",
+      "default": "10"
+    },
+    {
+      "variantId": "testDumSel",
+      "default": "100"
+    },
+    {
+      "variantId": "testInteger",
+      "default": "3"
+    },
+    {
+      "variantId": "testIntegerSel",
+      "default": "30"
+    },
+    {
+      "variantId": "testReal",
+      "default": "2"
+    },
+    {
+      "variantId": "testText",
+      "default": "text1"
+    },
+    {
+      "variantId": "testTextSel",
+      "default": "Sel01"
+    },
+    {
+      "variantId": "width",
+      "previewValue": "600",
+      "required": true
     }
   ],
   "assignedParts": [
+    {
+      "partCode": "000_Corpus"
+    },
     {
       "partCode": "101_SidePanelLeft"
     },
@@ -201,9 +213,6 @@
     },
     {
       "partCode": "463_Toe"
-    },
-    {
-      "partCode": "000_Corpus"
     }
   ],
   "assignedCustomTables": [
