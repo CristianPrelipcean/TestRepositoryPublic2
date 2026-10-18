@@ -20,111 +20,147 @@
       "moduleId": "mc_SidePanel01"
     },
     {
+      "moduleId": "me_DrillHor"
+    },
+    {
       "moduleId": "me_DrillVert"
     },
     {
-      "moduleId": "mp_Part"
+      "moduleId": "me_Handle"
     },
     {
       "moduleId": "me_Hinge"
     },
     {
-      "moduleId": "me_DrillHor"
-    },
-    {
-      "moduleId": "me_Handle"
+      "moduleId": "mp_Part"
     }
   ],
   "assignedVariants": [
     {
-      "variantId": "mod_Color",
-      "default": "egger_h1715_st12",
-      "origin": "Default"
-    },
-    {
       "variantId": "mod_BtmColor",
       "defaultScript": "this.mod_Color",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_Color",
+      "default": "egger_h1715_st12",
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_EdgeBackClass",
       "default": "Thick",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_EdgeFrontColor",
-      "defaultScript": "this.mod_Color",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_EdgeFrontClass",
-      "default": "Thick",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_EdgeBackColor",
       "defaultScript": "this.mod_Color",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
-      "variantId": "mod_EdgeLeftClass",
+      "variantId": "mod_EdgeFrontClass",
       "default": "Thick",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
-      "variantId": "mod_EdgeLeftColor",
+      "variantId": "mod_EdgeFrontColor",
       "defaultScript": "this.mod_Color",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_EdgeRightColor",
-      "defaultScript": "this.mod_Color",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_EdgeRightClass",
-      "default": "Thick",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_EdgeJointType",
       "default": "LSLS",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_EdgeLeftClass",
+      "default": "Thick",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_EdgeLeftColor",
+      "defaultScript": "this.mod_Color",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_EdgeRightClass",
+      "default": "Thick",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_EdgeRightColor",
+      "defaultScript": "this.mod_Color",
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_Length",
       "default": "1000",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_PartGrain",
-      "default": "Lengthwise",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_Program",
-      "default": "Nature",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_Thickness",
-      "default": "19",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_TypeElement",
-      "default": "Fronts",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_Width",
-      "default": "1000",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_OpeningDirection",
       "default": "Left",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_PartGrain",
+      "default": "Lengthwise",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_Program",
+      "default": "Nature",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_Thickness",
+      "default": "19",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_TypeElement",
+      "default": "Fronts",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_Width",
+      "default": "1000",
+      "required": false,
+      "derive": false,
+      "fixed": false
     }
   ],
   "assignedParts": [],

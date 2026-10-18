@@ -16,84 +16,116 @@
   ],
   "assignedVariants": [
     {
-      "variantId": "mod_Width",
-      "previewValue": "500",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_Thickness",
-      "previewValue": "19",
-      "origin": "Derived"
-    },
-    {
       "variantId": "mod_Diameter",
       "default": "5",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_DrillDepth",
       "default": "0.1",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_DrillingDistance",
-      "previewValue": "128",
-      "origin": "Required"
-    },
-    {
-      "variantId": "mod_DrillQty",
-      "default": "2",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_PositionX",
-      "previewValue": "20",
-      "origin": "Required"
-    },
-    {
-      "variantId": "mod_PositionY",
-      "previewValue": "20",
-      "origin": "Required"
-    },
-    {
-      "variantId": "mod_HandleOrientation",
-      "default": "Hor",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_HandlePosMatrix",
-      "default": "Top",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_TypeElement",
-      "previewValue": "Fronts",
-      "origin": "Derived"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_DrillEntireThk",
       "default": "true",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
-      "variantId": "mod_Length",
-      "previewValue": "1000",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_OpeningDirection",
-      "previewValue": "Left",
-      "origin": "Derived"
+      "variantId": "mod_DrillQty",
+      "default": "2",
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_DrillSide",
       "default": "Back",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_DrillingDistance",
+      "previewValue": "128",
+      "required": true,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_DrillinglineLogic",
       "default": "DrillQty",
-      "origin": "Fixed"
+      "required": false,
+      "derive": false,
+      "fixed": true
+    },
+    {
+      "variantId": "mod_HandleOrientation",
+      "default": "Hor",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_HandlePosMatrix",
+      "default": "Top",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_Length",
+      "previewValue": "1000",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_OpeningDirection",
+      "previewValue": "Left",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_PositionX",
+      "previewValue": "20",
+      "required": true,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_PositionY",
+      "previewValue": "20",
+      "required": true,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_Thickness",
+      "previewValue": "19",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_TypeElement",
+      "previewValue": "Fronts",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_Width",
+      "previewValue": "500",
+      "required": false,
+      "derive": true,
+      "fixed": false
     }
   ],
   "assignedParts": [],
