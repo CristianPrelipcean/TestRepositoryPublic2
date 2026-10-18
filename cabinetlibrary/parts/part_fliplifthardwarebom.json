@@ -11,18 +11,19 @@
   "noNcData": true,
   "partVariants": [
     {
-      "partVarId": "pa_ParentName",
-      "valueScript": "this.parent.mod_FrontId",
+      "partVarId": "pa_HardwareId",
+      "valueScript": "''",
       "isWritable": false
     },
     {
-      "partVarId": "pa_HardwareId",
-      "valueScript": "''",
+      "partVarId": "pa_ParentName",
+      "valueScript": "this.parent.mod_FrontId",
       "isWritable": false
     }
   ],
   "bomData": [
     {
+      "id": 199,
       "bomElementTypeId": "bomout_Group",
       "description": "Hardware for fliplifts",
       "conditionScript": "partSelf._g?.basic_CreateBom == 'Library'",

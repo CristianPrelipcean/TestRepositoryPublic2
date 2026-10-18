@@ -18,250 +18,379 @@
     {
       "variantId": "mod_CarcaseColor",
       "default": "178",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_CarcaseEdgeColor",
-      "defaultScript": "this.mod_CarcaseColor",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_CarcaseFrontConstruction",
-      "default": "FrontOverlayLBRT",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_FrontColor",
-      "default": "240",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_CarcaseEdgeFrontColor",
-      "defaultScript": "this.mod_FrontColor",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_CarcaseProgram",
-      "default": "Classic",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_CountertopInfo",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_CountertopThk",
-      "origin": "GlobalVar"
-    },
-    {
-      "variantId": "mod_CreateCountertop",
-      "default": "false",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_CreatePaneltop",
-      "default": "false",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_CreateFingergrip",
-      "default": "false",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_CreateToekick",
-      "default": "false",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_Depth",
-      "previewValue": "548",
-      "origin": "Required"
-    },
-    {
-      "variantId": "mod_FingergripType",
-      "default": "None",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_FrontDesign",
-      "origin": "GlobalVar"
-    },
-    {
-      "variantId": "mod_FrontEdgeColor",
-      "default": "Automatic",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_FrontEdgeThk",
-      "default": "0",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_FrontGapCarcase",
-      "origin": "GlobalVar"
-    },
-    {
-      "variantId": "mod_FrontGapHor",
-      "origin": "GlobalVar"
-    },
-    {
-      "variantId": "mod_FrontGapHorTop",
-      "origin": "GlobalVar"
-    },
-    {
-      "variantId": "mod_FrontGapVert",
-      "origin": "GlobalVar"
-    },
-    {
-      "variantId": "mod_FrontPosStart",
-      "origin": "GlobalVar"
-    },
-    {
-      "variantId": "mod_FrontProgram",
-      "default": "Nature",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_Height",
-      "previewValue": "720",
-      "origin": "Required"
-    },
-    {
-      "variantId": "mod_HeightPosInsertion",
-      "default": "0",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_ModuleName",
-      "default": "mr_Filler01",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_PlinthAreaDesign",
-      "origin": "GlobalVar"
-    },
-    {
-      "variantId": "mod_PlinthAreaElementColor",
-      "default": "Black",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_PlinthAreaExtraItem",
-      "origin": "GlobalVar"
-    },
-    {
-      "variantId": "mod_PlinthAreaHeight",
-      "origin": "GlobalVar"
-    },
-    {
-      "variantId": "mod_PlinthAreaPosBackMatrix",
-      "origin": "GlobalVar"
-    },
-    {
-      "variantId": "mod_PlinthAreaPosFrontMatrix",
-      "origin": "GlobalVar"
-    },
-    {
-      "variantId": "mod_PlinthAreaPositionInfo",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_PlinthAreaPosLeftMatrix",
-      "origin": "GlobalVar"
-    },
-    {
-      "variantId": "mod_PlinthAreaPosRightMatrix",
-      "origin": "GlobalVar"
-    },
-    {
-      "variantId": "mod_PlinthAreaVisLeft",
-      "default": "false",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_PlinthAreaVisRight",
-      "default": "false",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_ShelfbtmThk",
-      "origin": "GlobalVar"
-    },
-    {
-      "variantId": "mod_ShelftopThk",
-      "origin": "GlobalVar"
-    },
-    {
-      "variantId": "mod_SidepanelleftThk",
-      "origin": "GlobalVar"
-    },
-    {
-      "variantId": "mod_SidepanelrightThk",
-      "origin": "GlobalVar"
-    },
-    {
-      "variantId": "mod_TypeElement",
-      "default": "Filler",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_Width",
-      "previewValue": "150",
-      "origin": "Required"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_CarcaseDistanceWall",
       "default": "0",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
-      "variantId": "mod_Direction",
-      "default": "Left",
-      "origin": "Default"
+      "variantId": "mod_CarcaseEdgeColor",
+      "defaultScript": "this.mod_CarcaseColor",
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
-      "variantId": "mod_FillerType",
-      "default": "LShape",
-      "origin": "Default"
+      "variantId": "mod_CarcaseEdgeFrontColor",
+      "defaultScript": "this.mod_FrontColor",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_CarcaseFrontConstruction",
+      "default": "FrontOverlayLBRT",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_CarcaseProgram",
+      "default": "Classic",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_CeilingFillerConstruction",
+      "required": false,
+      "derive": false,
+      "fixed": false,
+      "defaultGlobalVar": true
+    },
+    {
+      "variantId": "mod_CeilingFillerHeight",
+      "required": false,
+      "derive": false,
+      "fixed": false,
+      "defaultGlobalVar": true
+    },
+    {
+      "variantId": "mod_CountertopInfo",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_CountertopThk",
+      "required": false,
+      "derive": false,
+      "fixed": false,
+      "defaultGlobalVar": true
     },
     {
       "variantId": "mod_CreateBacksplash",
       "default": "false",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_GlobalFrontOversizeBtm",
-      "default": "0",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_GlobalFrontOversizeLeft",
-      "default": "0",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_GlobalFrontOversizeRight",
-      "default": "0",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_GlobalFrontOversizeTop",
-      "default": "0",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_CreateCeilingFiller",
       "default": "false",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false,
+      "defaultGlobalVar": false
     },
     {
-      "variantId": "mod_CeilingFillerHeight",
-      "origin": "GlobalVar"
+      "variantId": "mod_CreateCountertop",
+      "default": "false",
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
-      "variantId": "mod_CeilingFillerConstruction",
-      "origin": "GlobalVar"
+      "variantId": "mod_CreateFingergrip",
+      "default": "false",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_CreatePaneltop",
+      "default": "false",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_CreateToekick",
+      "default": "false",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_Depth",
+      "previewValue": "548",
+      "required": true,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_Direction",
+      "default": "Left",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_FillerType",
+      "default": "LShape",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_FingergripType",
+      "default": "None",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_FrontColor",
+      "default": "240",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_FrontDesign",
+      "required": false,
+      "derive": false,
+      "fixed": false,
+      "defaultGlobalVar": true
+    },
+    {
+      "variantId": "mod_FrontEdgeColor",
+      "default": "Automatic",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_FrontEdgeThk",
+      "default": "0",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_FrontGapCarcase",
+      "required": false,
+      "derive": false,
+      "fixed": false,
+      "defaultGlobalVar": true
+    },
+    {
+      "variantId": "mod_FrontGapHor",
+      "required": false,
+      "derive": false,
+      "fixed": false,
+      "defaultGlobalVar": true
+    },
+    {
+      "variantId": "mod_FrontGapHorTop",
+      "required": false,
+      "derive": false,
+      "fixed": false,
+      "defaultGlobalVar": true
+    },
+    {
+      "variantId": "mod_FrontGapVert",
+      "required": false,
+      "derive": false,
+      "fixed": false,
+      "defaultGlobalVar": true
+    },
+    {
+      "variantId": "mod_FrontPosStart",
+      "required": false,
+      "derive": false,
+      "fixed": false,
+      "defaultGlobalVar": true
+    },
+    {
+      "variantId": "mod_FrontProgram",
+      "default": "Nature",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_GlobalFrontOversizeBtm",
+      "default": "0",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_GlobalFrontOversizeLeft",
+      "default": "0",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_GlobalFrontOversizeRight",
+      "default": "0",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_GlobalFrontOversizeTop",
+      "default": "0",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_Height",
+      "previewValue": "720",
+      "required": true,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_HeightPosInsertion",
+      "default": "0",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ModuleName",
+      "default": "mr_Filler01",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_PlinthAreaDesign",
+      "required": false,
+      "derive": false,
+      "fixed": false,
+      "defaultGlobalVar": true
+    },
+    {
+      "variantId": "mod_PlinthAreaElementColor",
+      "default": "Black",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_PlinthAreaExtraItem",
+      "required": false,
+      "derive": false,
+      "fixed": false,
+      "defaultGlobalVar": true
+    },
+    {
+      "variantId": "mod_PlinthAreaHeight",
+      "required": false,
+      "derive": false,
+      "fixed": false,
+      "defaultGlobalVar": true
+    },
+    {
+      "variantId": "mod_PlinthAreaPosBackMatrix",
+      "required": false,
+      "derive": false,
+      "fixed": false,
+      "defaultGlobalVar": true
+    },
+    {
+      "variantId": "mod_PlinthAreaPosFrontMatrix",
+      "required": false,
+      "derive": false,
+      "fixed": false,
+      "defaultGlobalVar": true
+    },
+    {
+      "variantId": "mod_PlinthAreaPosLeftMatrix",
+      "required": false,
+      "derive": false,
+      "fixed": false,
+      "defaultGlobalVar": true
+    },
+    {
+      "variantId": "mod_PlinthAreaPosRightMatrix",
+      "required": false,
+      "derive": false,
+      "fixed": false,
+      "defaultGlobalVar": true
+    },
+    {
+      "variantId": "mod_PlinthAreaPositionInfo",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_PlinthAreaVisLeft",
+      "default": "false",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_PlinthAreaVisRight",
+      "default": "false",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ShelfbtmThk",
+      "required": false,
+      "derive": false,
+      "fixed": false,
+      "defaultGlobalVar": true
+    },
+    {
+      "variantId": "mod_ShelftopThk",
+      "required": false,
+      "derive": false,
+      "fixed": false,
+      "defaultGlobalVar": true
+    },
+    {
+      "variantId": "mod_SidepanelleftThk",
+      "required": false,
+      "derive": false,
+      "fixed": false,
+      "defaultGlobalVar": true
+    },
+    {
+      "variantId": "mod_SidepanelrightThk",
+      "required": false,
+      "derive": false,
+      "fixed": false,
+      "defaultGlobalVar": true
+    },
+    {
+      "variantId": "mod_TypeElement",
+      "default": "Filler",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_Width",
+      "previewValue": "150",
+      "required": true,
+      "derive": false,
+      "fixed": false
     }
   ],
   "assignedParts": [],

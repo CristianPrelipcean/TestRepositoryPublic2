@@ -19,30 +19,36 @@
       "moduleId": "mf_Fliplift"
     },
     {
-      "moduleId": "mf_RackArea"
+      "moduleId": "mf_Fridge"
     },
     {
       "moduleId": "mf_Oven"
     },
     {
-      "moduleId": "mf_Fridge"
+      "moduleId": "mf_RackArea"
     }
   ],
   "assignedVariants": [
     {
-      "variantId": "mod_Width",
-      "default": "600",
-      "origin": "Default"
-    },
-    {
       "variantId": "mod_Depth",
       "default": "600",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_Height",
       "default": "600",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_Width",
+      "default": "600",
+      "required": false,
+      "derive": false,
+      "fixed": false
     }
   ],
   "assignedParts": [

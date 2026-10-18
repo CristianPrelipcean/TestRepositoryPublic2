@@ -12,70 +12,96 @@
   "childModules": [],
   "assignedVariants": [
     {
-      "variantId": "mod_PantryPulloutDesign",
-      "previewValue": "Classic",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_PantryPulloutType",
-      "previewValue": "Dispensa",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_PantryPulloutColor",
-      "previewValue": "Anthrazit",
-      "origin": "Derived"
+      "variantId": "mod_Depth",
+      "default": "575",
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_FrontId",
       "previewValue": "None",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_HardwareColor",
-      "previewValue": "LightColor",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_TypeElement",
-      "previewValue": "BaseUnit",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_ParentName",
-      "previewValue": "None",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_ModuleName",
-      "default": "mc_PantryPulloutHardware01",
-      "origin": "Default"
+      "required": false,
+      "derive": true,
+      "fixed": false
     },
     {
       "variantId": "mod_FrontWidth",
       "previewValue": "600",
-      "origin": "Derived"
+      "required": false,
+      "derive": true,
+      "fixed": false
     },
     {
-      "variantId": "mod_Depth",
-      "default": "575",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_Width",
-      "default": "600",
-      "origin": "Default"
+      "variantId": "mod_HardwareColor",
+      "previewValue": "LightColor",
+      "required": false,
+      "derive": true,
+      "fixed": false
     },
     {
       "variantId": "mod_Height",
       "default": "1900",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_Information",
       "default": "",
       "previewValue": "",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ModuleName",
+      "default": "mc_PantryPulloutHardware01",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_PantryPulloutColor",
+      "previewValue": "Anthrazit",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_PantryPulloutDesign",
+      "previewValue": "Classic",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_PantryPulloutType",
+      "previewValue": "Dispensa",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ParentName",
+      "previewValue": "None",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_TypeElement",
+      "previewValue": "BaseUnit",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_Width",
+      "default": "600",
+      "required": false,
+      "derive": false,
+      "fixed": false
     }
   ],
   "assignedParts": [
@@ -83,10 +109,10 @@
       "partCode": "part_PantryPulloutBom"
     },
     {
-      "partCode": "part_PantryPulloutHardware"
+      "partCode": "part_PantryPulloutDrill"
     },
     {
-      "partCode": "part_PantryPulloutDrill"
+      "partCode": "part_PantryPulloutHardware"
     }
   ],
   "assignedCustomTables": [],

@@ -11,6 +11,11 @@
   "noNcData": false,
   "partVariants": [
     {
+      "partVarId": "pa_AdditionalInfo1",
+      "valueScript": "'None'",
+      "isWritable": false
+    },
+    {
       "partVarId": "pa_BomId",
       "valueScript": "this.parent.mod_FrontId",
       "isWritable": false
@@ -18,6 +23,11 @@
     {
       "partVarId": "pa_BtmColor",
       "valueScript": "this.parent.mod_FrontColor",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_DoorDirection",
+      "valueScript": "this.parent.mod_DoorDirection",
       "isWritable": false
     },
     {
@@ -71,8 +81,23 @@
       "isWritable": false
     },
     {
+      "partVarId": "pa_FrontPanelConstruction",
+      "valueScript": "",
+      "isWritable": false
+    },
+    {
       "partVarId": "pa_GrainDirection",
       "valueScript": "'Neutral'",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_HardwareInfo",
+      "valueScript": "''",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_ProcessingId",
+      "valueScript": "''",
       "isWritable": false
     },
     {
@@ -89,35 +114,11 @@
       "partVarId": "pa_Weight",
       "valueScript": "",
       "isWritable": false
-    },
-    {
-      "partVarId": "pa_DoorDirection",
-      "valueScript": "this.parent.mod_DoorDirection",
-      "isWritable": false
-    },
-    {
-      "partVarId": "pa_AdditionalInfo1",
-      "valueScript": "'None'",
-      "isWritable": false
-    },
-    {
-      "partVarId": "pa_HardwareInfo",
-      "valueScript": "''",
-      "isWritable": false
-    },
-    {
-      "partVarId": "pa_FrontPanelConstruction",
-      "valueScript": "",
-      "isWritable": false
-    },
-    {
-      "partVarId": "pa_ProcessingId",
-      "valueScript": "''",
-      "isWritable": false
     }
   ],
   "bomData": [
     {
+      "id": 200,
       "bomElementTypeId": "bomout_Board",
       "description": "Output Parts / Boards",
       "conditionScript": "partSelf._g?.basic_CreateBom == 'Library'",
@@ -126,6 +127,7 @@
   ],
   "ncData": [
     {
+      "id": 515,
       "part2": "part_HandleDrill",
       "touchName": "FromFront",
       "bomElementTypeId": "ncout_Group",
@@ -134,6 +136,7 @@
       "bomExecuteType": "Touch"
     },
     {
+      "id": 516,
       "part2": "part_HingeDrill",
       "touchName": "FromBack",
       "bomElementTypeId": "ncout_Group",
@@ -142,6 +145,7 @@
       "bomExecuteType": "Touch"
     },
     {
+      "id": 517,
       "part2": "part_PushtoopenDrill",
       "touchName": "FromBack",
       "bomElementTypeId": "ncout_Group",
@@ -150,6 +154,7 @@
       "bomExecuteType": "Touch"
     },
     {
+      "id": 518,
       "part2": "part_PushtoopenMountingPlateDrill",
       "touchName": "FromBack",
       "bomElementTypeId": "ncout_Group",
@@ -158,6 +163,7 @@
       "bomExecuteType": "Touch"
     },
     {
+      "id": 655,
       "touchName": "",
       "bomElementTypeId": "ncout_Group",
       "description": "Multiple Processings",

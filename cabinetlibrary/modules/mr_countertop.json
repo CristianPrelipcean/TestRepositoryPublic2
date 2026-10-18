@@ -15,77 +15,115 @@
   ],
   "assignedVariants": [
     {
-      "variantId": "mod_ModuleName",
-      "default": "mr_Countertop",
-      "origin": "Fixed"
-    },
-    {
       "variantId": "mod_CountertopColor",
       "default": "380",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_CountertopEdgeBackType",
-      "default": "NoEdge",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_CountertopEdgeFrontType",
-      "default": "Straight",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_CountertopEdgeLeftType",
-      "default": "NoEdge",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_CountertopEdgeRightType",
-      "default": "NoEdge",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_CountertopId",
-      "default": "None",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_CountertopThk",
-      "origin": "GlobalVar"
-    },
-    {
-      "variantId": "mod_CountertopOverhangLeft",
-      "origin": "GlobalVar"
-    },
-    {
-      "variantId": "mod_CountertopOverhangRight",
-      "origin": "GlobalVar"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_CountertopConnectionOversize",
-      "origin": "GlobalVar"
-    },
-    {
-      "variantId": "mod_CountertopProgram",
-      "default": "Style",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false,
+      "defaultGlobalVar": true
     },
     {
       "variantId": "mod_CountertopConnectionRadius",
-      "origin": "GlobalVar"
+      "required": false,
+      "derive": false,
+      "fixed": false,
+      "defaultGlobalVar": true
     },
     {
       "variantId": "mod_CountertopConnectionSequence",
       "default": "L_L_L",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_CountertopEdgeBackType",
+      "default": "NoEdge",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_CountertopEdgeFrontType",
+      "default": "Straight",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_CountertopEdgeLeftType",
+      "default": "NoEdge",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_CountertopEdgeRightType",
+      "default": "NoEdge",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_CountertopId",
+      "default": "None",
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_CountertopOverhangFront",
-      "origin": "GlobalVar"
+      "required": false,
+      "derive": false,
+      "fixed": false,
+      "defaultGlobalVar": true
+    },
+    {
+      "variantId": "mod_CountertopOverhangLeft",
+      "required": false,
+      "derive": false,
+      "fixed": false,
+      "defaultGlobalVar": true
+    },
+    {
+      "variantId": "mod_CountertopOverhangRight",
+      "required": false,
+      "derive": false,
+      "fixed": false,
+      "defaultGlobalVar": true
+    },
+    {
+      "variantId": "mod_CountertopProgram",
+      "default": "Style",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_CountertopThk",
+      "required": false,
+      "derive": false,
+      "fixed": false,
+      "defaultGlobalVar": true
     },
     {
       "variantId": "mod_LengthList",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ModuleName",
+      "default": "mr_Countertop",
+      "required": false,
+      "derive": false,
+      "fixed": true
     }
   ],
   "assignedParts": [],

@@ -14,81 +14,114 @@
     {
       "variantId": "mod_CeilingFillerColor",
       "previewValue": "240",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_CeilingFillerEdgeBackColor",
-      "previewValue": "240",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_CeilingFillerEdgeFrontColor",
-      "previewValue": "240",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_CeilingFillerEdgeLeftColor",
-      "previewValue": "240",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_CeilingFillerEdgeRightColor",
-      "previewValue": "240",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_CeilingFillerProgram",
-      "previewValue": "Nature",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_Width",
-      "default": "1000",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_CeilingFillerHeight",
-      "origin": "GlobalVar"
-    },
-    {
-      "variantId": "mod_CeilingFillerThk",
-      "previewValue": "19",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_CeilingFillerFittingPanelDepth",
-      "previewValue": "80",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_CeilingFillerFittingPanelThk",
-      "previewValue": "19",
-      "origin": "Derived"
+      "required": false,
+      "derive": true,
+      "fixed": false
     },
     {
       "variantId": "mod_CeilingFillerConstruction",
       "default": "Construction1",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
-      "variantId": "mod_CeilingFillerRecess",
-      "previewValue": "20",
-      "origin": "Derived"
+      "variantId": "mod_CeilingFillerEdgeBackColor",
+      "previewValue": "240",
+      "required": false,
+      "derive": true,
+      "fixed": false
     },
     {
-      "variantId": "mod_FrontGapHor",
-      "previewValue": "4",
-      "origin": "Derived"
+      "variantId": "mod_CeilingFillerEdgeFrontColor",
+      "previewValue": "240",
+      "required": false,
+      "derive": true,
+      "fixed": false
     },
     {
-      "variantId": "mod_FrontGapCarcase",
-      "previewValue": "2",
-      "origin": "Derived"
+      "variantId": "mod_CeilingFillerEdgeLeftColor",
+      "previewValue": "240",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_CeilingFillerEdgeRightColor",
+      "previewValue": "240",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_CeilingFillerFittingPanelDepth",
+      "previewValue": "80",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_CeilingFillerFittingPanelThk",
+      "previewValue": "19",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_CeilingFillerHeight",
+      "required": false,
+      "derive": false,
+      "fixed": false,
+      "defaultGlobalVar": true
     },
     {
       "variantId": "mod_CeilingFillerId",
       "default": "0",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_CeilingFillerProgram",
+      "previewValue": "Nature",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_CeilingFillerRecess",
+      "previewValue": "20",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_CeilingFillerThk",
+      "previewValue": "19",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_FrontGapCarcase",
+      "previewValue": "2",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_FrontGapHor",
+      "previewValue": "4",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_Width",
+      "default": "1000",
+      "required": false,
+      "derive": false,
+      "fixed": false
     }
   ],
   "assignedParts": [

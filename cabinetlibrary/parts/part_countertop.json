@@ -11,8 +11,28 @@
   "noNcData": false,
   "partVariants": [
     {
+      "partVarId": "pa_AdditionalInfo1",
+      "valueScript": "'None'",
+      "isWritable": false
+    },
+    {
       "partVarId": "pa_BomId",
       "valueScript": "this.parent.mod_CountertopId",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_BtmColor",
+      "valueScript": "this.parent.mod_CountertopColor",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_ColorGrainGroup",
+      "valueScript": "this.parent.mod_CountertopColor_matrix.GrainGroupId",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_CountertopInfo",
+      "valueScript": "",
       "isWritable": false
     },
     {
@@ -56,18 +76,13 @@
       "isWritable": false
     },
     {
+      "partVarId": "pa_EdgeRightType",
+      "valueScript": "'FRE'",
+      "isWritable": false
+    },
+    {
       "partVarId": "pa_GrainDirection",
       "valueScript": "'Neutral'",
-      "isWritable": false
-    },
-    {
-      "partVarId": "pa_TopColor",
-      "valueScript": "this.parent.mod_CountertopColor",
-      "isWritable": false
-    },
-    {
-      "partVarId": "pa_BtmColor",
-      "valueScript": "this.parent.mod_CountertopColor",
       "isWritable": false
     },
     {
@@ -76,28 +91,13 @@
       "isWritable": false
     },
     {
-      "partVarId": "pa_EdgeRightType",
-      "valueScript": "'FRE'",
-      "isWritable": false
-    },
-    {
-      "partVarId": "pa_AdditionalInfo1",
-      "valueScript": "'None'",
-      "isWritable": false
-    },
-    {
-      "partVarId": "pa_CountertopInfo",
-      "valueScript": "",
-      "isWritable": false
-    },
-    {
-      "partVarId": "pa_ColorGrainGroup",
-      "valueScript": "this.parent.mod_CountertopColor_matrix.GrainGroupId",
-      "isWritable": false
-    },
-    {
       "partVarId": "pa_ProgramGrainGroup",
       "valueScript": "this.parent.mod_CountertopProgram_matrix.GrainGroupId",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_TopColor",
+      "valueScript": "this.parent.mod_CountertopColor",
       "isWritable": false
     },
     {
@@ -108,6 +108,7 @@
   ],
   "bomData": [
     {
+      "id": 181,
       "bomElementTypeId": "bomout_Board",
       "description": "Output Parts / board",
       "conditionScript": "partSelf._g?.basic_CreateBom == 'Library'",
@@ -116,6 +117,7 @@
   ],
   "ncData": [
     {
+      "id": 579,
       "touchName": "",
       "bomElementTypeId": "ncout_Group",
       "description": "Insert all the processings via attributes on the part",

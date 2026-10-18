@@ -16,6 +16,26 @@
       "isWritable": false
     },
     {
+      "partVarId": "pa_AngleBack",
+      "valueScript": "0",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_AngleFront",
+      "valueScript": "0",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_AngleLeft",
+      "valueScript": "0",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_AngleRight",
+      "valueScript": "0",
+      "isWritable": false
+    },
+    {
       "partVarId": "pa_BomId",
       "valueScript": "this.parent.mod_CarcaseId",
       "isWritable": false
@@ -38,6 +58,11 @@
     {
       "partVarId": "pa_CarcasePartConnectionTopVert",
       "valueScript": "this.parent.mod_CarcasePartConnectionTopVert",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_ColorGrainGroup",
+      "valueScript": "this.parent.mod_CarcaseColor_matrix.GrainGroupId",
       "isWritable": false
     },
     {
@@ -116,22 +141,22 @@
       "isWritable": true
     },
     {
-      "partVarId": "pa_HardwareQty3",
-      "valueScript": "0",
-      "isWritable": true
-    },
-    {
-      "partVarId": "pa_HardwareQty5",
-      "valueScript": "0",
-      "isWritable": true
-    },
-    {
       "partVarId": "pa_HardwareQty2",
       "valueScript": "0",
       "isWritable": true
     },
     {
+      "partVarId": "pa_HardwareQty3",
+      "valueScript": "0",
+      "isWritable": true
+    },
+    {
       "partVarId": "pa_HardwareQty4",
+      "valueScript": "0",
+      "isWritable": true
+    },
+    {
+      "partVarId": "pa_HardwareQty5",
       "valueScript": "0",
       "isWritable": true
     },
@@ -171,12 +196,12 @@
       "isWritable": true
     },
     {
-      "partVarId": "pa_HardwareSupplierArticle4",
+      "partVarId": "pa_HardwareSupplierArticle3",
       "valueScript": "'Empty'",
       "isWritable": true
     },
     {
-      "partVarId": "pa_HardwareSupplierArticle3",
+      "partVarId": "pa_HardwareSupplierArticle4",
       "valueScript": "'Empty'",
       "isWritable": true
     },
@@ -196,6 +221,11 @@
       "isWritable": false
     },
     {
+      "partVarId": "pa_ProgramGrainGroup",
+      "valueScript": "this.parent.mod_CarcaseProgram_matrix.GrainGroupId",
+      "isWritable": false
+    },
+    {
       "partVarId": "pa_TopColor",
       "valueScript": "this.parent.mod_CarcaseColor",
       "isWritable": false
@@ -204,40 +234,11 @@
       "partVarId": "pa_TypeElement",
       "valueScript": "this.parent.mod_TypeElement",
       "isWritable": false
-    },
-    {
-      "partVarId": "pa_AngleBack",
-      "valueScript": "0",
-      "isWritable": false
-    },
-    {
-      "partVarId": "pa_AngleFront",
-      "valueScript": "0",
-      "isWritable": false
-    },
-    {
-      "partVarId": "pa_AngleLeft",
-      "valueScript": "0",
-      "isWritable": false
-    },
-    {
-      "partVarId": "pa_AngleRight",
-      "valueScript": "0",
-      "isWritable": false
-    },
-    {
-      "partVarId": "pa_ColorGrainGroup",
-      "valueScript": "this.parent.mod_CarcaseColor_matrix.GrainGroupId",
-      "isWritable": false
-    },
-    {
-      "partVarId": "pa_ProgramGrainGroup",
-      "valueScript": "this.parent.mod_CarcaseProgram_matrix.GrainGroupId",
-      "isWritable": false
     }
   ],
   "bomData": [
     {
+      "id": 214,
       "bomElementTypeId": "bomout_Board",
       "description": "Output Parts / Boards",
       "conditionScript": "partSelf._g?.basic_CreateBom == 'Library'",
@@ -246,6 +247,7 @@
   ],
   "ncData": [
     {
+      "id": 565,
       "touchName": "",
       "bomElementTypeId": "ncout_Group",
       "description": "Sawing Angle in the Back",
@@ -254,6 +256,7 @@
       "bomExecuteType": "End"
     },
     {
+      "id": 566,
       "touchName": "",
       "bomElementTypeId": "ncout_Group",
       "description": "Sawing Angle in the Front",

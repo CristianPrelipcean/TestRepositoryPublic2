@@ -16,6 +16,11 @@
       "isWritable": false
     },
     {
+      "partVarId": "pa_ParentName",
+      "valueScript": "this.parent.mod_CarcaseId",
+      "isWritable": false
+    },
+    {
       "partVarId": "pa_WallPlateLengthLeft",
       "valueScript": "0",
       "isWritable": false
@@ -34,15 +39,11 @@
       "partVarId": "pa_WallPlateQtyRight",
       "valueScript": "0",
       "isWritable": false
-    },
-    {
-      "partVarId": "pa_ParentName",
-      "valueScript": "this.parent.mod_CarcaseId",
-      "isWritable": false
     }
   ],
   "bomData": [
     {
+      "id": 176,
       "bomElementTypeId": "bomout_Group",
       "description": "BOM Hangers",
       "conditionScript": "partSelf._g?.basic_CreateBom == 'Library'",
