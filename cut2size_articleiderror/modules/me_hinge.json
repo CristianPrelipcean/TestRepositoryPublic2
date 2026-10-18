@@ -16,89 +16,124 @@
   ],
   "assignedVariants": [
     {
-      "variantId": "mod_Width",
-      "previewValue": "500",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_Thickness",
-      "previewValue": "19",
-      "origin": "Derived"
-    },
-    {
       "variantId": "mod_HingeDescriptor",
       "default": "",
       "previewValue": "",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_HingeProgram",
-      "default": "Metalla510_45/9.5",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_HingeDrillingDistance",
       "default": "3",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_Supplier",
-      "default": "Häfele",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_MountingType",
-      "default": "Press",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_Program",
-      "previewValue": "Demoprogram1",
-      "origin": "Derived"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_HingePos1",
       "default": "0",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_HingePos2",
       "default": "0",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_HingePos3",
       "default": "0",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_HingePos4",
       "default": "0",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_HingePos5",
       "default": "0",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_HingePos6",
       "default": "0",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_HingePosLogic",
-      "origin": "GlobalVar"
+      "required": false,
+      "derive": false,
+      "fixed": false,
+      "defaultGlobalVar": true
+    },
+    {
+      "variantId": "mod_HingeProgram",
+      "default": "Metalla510_45/9.5",
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_HingeQtySelection",
       "default": "2",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_Length",
       "previewValue": "1000",
-      "origin": "Derived"
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_MountingType",
+      "default": "Press",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_Program",
+      "previewValue": "Demoprogram1",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_Supplier",
+      "default": "Häfele",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_Thickness",
+      "previewValue": "19",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_Width",
+      "previewValue": "500",
+      "required": false,
+      "derive": true,
+      "fixed": false
     }
   ],
   "assignedParts": [],
