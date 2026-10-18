@@ -10,74 +10,16 @@
   "noNcData": false,
   "partVariants": [
     {
-      "partVarId": "pa_TopColor",
-      "valueScript": "this.parent.mod_CarcaseColor"
-    },
-    {
-      "partVarId": "pa_BtmColor",
-      "valueScript": "this.parent.mod_CarcaseOutsideColor"
-    },
-    {
-      "partVarId": "pa_EdgeFrontColor",
-      "valueScript": "this.parent.mod_CarcaseEdgeColor",
-      "isWritable": false
-    },
-    {
-      "partVarId": "pa_EdgeLeftColor",
-      "valueScript": "this.parent.mod_CarcaseEdgeColor"
-    },
-    {
-      "partVarId": "pa_EdgeBackColor",
-      "valueScript": "this.parent.mod_CarcaseEdgeBackColor"
-    },
-    {
-      "partVarId": "pa_EdgeRightColor",
-      "valueScript": "this.parent.mod_CarcaseEdgeColor"
-    },
-    {
-      "partVarId": "pa_EdgeFrontType",
-      "valueScript": "this.parent.mod_EdgeFrontType"
-    },
-    {
-      "partVarId": "pa_EdgeLeftType",
-      "valueScript": "this.parent.mod_EdgeLeftType"
-    },
-    {
-      "partVarId": "pa_EdgeBackType",
-      "valueScript": "this.parent.mod_EdgeBackType"
-    },
-    {
-      "partVarId": "pa_EdgeRightType",
-      "valueScript": "this.parent.mod_EdgeRightType"
-    },
-    {
-      "partVarId": "pa_EdgeJointType",
-      "valueScript": "this.parent.mod_EdgeJointType"
-    },
-    {
-      "partVarId": "pa_GrainDirection",
-      "valueScript": "'Neutral'",
-      "isWritable": false
-    },
-    {
-      "partVarId": "pa_Program",
-      "valueScript": "this.parent.mod_CarcaseProgram"
+      "partVarId": "pa_AdditionalInfo1",
+      "valueScript": "'None'"
     },
     {
       "partVarId": "pa_BomId",
       "valueScript": "this.parent.mod_CarcaseId"
     },
     {
-      "partVarId": "pa_AdditionalInfo1",
-      "valueScript": "'None'"
-    },
-    {
-      "partVarId": "pa_TypeElement",
-      "valueScript": "this.parent.mod_TypeElement"
-    },
-    {
-      "partVarId": "pa_ParentName",
-      "valueScript": "this.parent.mod_ParentName"
+      "partVarId": "pa_BtmColor",
+      "valueScript": "this.parent.mod_CarcaseOutsideColor"
     },
     {
       "partVarId": "pa_ColorGrainGroup",
@@ -85,13 +27,72 @@
       "isWritable": false
     },
     {
+      "partVarId": "pa_EdgeBackColor",
+      "valueScript": "this.parent.mod_CarcaseEdgeBackColor"
+    },
+    {
+      "partVarId": "pa_EdgeBackType",
+      "valueScript": "this.parent.mod_EdgeBackType"
+    },
+    {
+      "partVarId": "pa_EdgeFrontColor",
+      "valueScript": "this.parent.mod_CarcaseEdgeColor",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeFrontType",
+      "valueScript": "this.parent.mod_EdgeFrontType"
+    },
+    {
+      "partVarId": "pa_EdgeJointType",
+      "valueScript": "this.parent.mod_EdgeJointType"
+    },
+    {
+      "partVarId": "pa_EdgeLeftColor",
+      "valueScript": "this.parent.mod_CarcaseEdgeColor"
+    },
+    {
+      "partVarId": "pa_EdgeLeftType",
+      "valueScript": "this.parent.mod_EdgeLeftType"
+    },
+    {
+      "partVarId": "pa_EdgeRightColor",
+      "valueScript": "this.parent.mod_CarcaseEdgeColor"
+    },
+    {
+      "partVarId": "pa_EdgeRightType",
+      "valueScript": "this.parent.mod_EdgeRightType"
+    },
+    {
+      "partVarId": "pa_GrainDirection",
+      "valueScript": "'Neutral'",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_ParentName",
+      "valueScript": "this.parent.mod_ParentName"
+    },
+    {
+      "partVarId": "pa_Program",
+      "valueScript": "this.parent.mod_CarcaseProgram"
+    },
+    {
       "partVarId": "pa_ProgramGrainGroup",
       "valueScript": "this.parent.mod_CarcaseProgram_matrix.GrainGroupId",
       "isWritable": false
+    },
+    {
+      "partVarId": "pa_TopColor",
+      "valueScript": "this.parent.mod_CarcaseColor"
+    },
+    {
+      "partVarId": "pa_TypeElement",
+      "valueScript": "this.parent.mod_TypeElement"
     }
   ],
   "bomData": [
     {
+      "id": 287,
       "bomElementTypeId": "bomout_Board",
       "conditionScript": "partSelf._g?.basic_CreateBom == 'Library'",
       "valueScript": "// Type of the Bom-Element (will be checked in order output)\n  let elementType='Board';\n\n  // ProductionSite Category (to split the orders for different production sites)\n  let elementCategory='';\n\n  // Id of the parent to create the hierarchy\n  let parentBomId=part.pa_BomId;\n\n  // Call the function to process the Bom-Element\n  GlobalFunc.process_BoardBom(this, part, elementType, elementCategory, parentBomId)"
@@ -99,6 +100,7 @@
   ],
   "ncData": [
     {
+      "id": 817,
       "part2": "part_HeatshelfFront",
       "touchName": "FromTop",
       "bomElementTypeId": "ncout_Group",

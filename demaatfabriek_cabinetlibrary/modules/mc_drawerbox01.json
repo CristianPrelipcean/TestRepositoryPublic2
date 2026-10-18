@@ -10,153 +10,191 @@
   "childModules": [],
   "assignedVariants": [
     {
-      "variantId": "mod_FrontHeight",
-      "previewValue": "720",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_FrontId",
-      "previewValue": "None",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_DrawerBoxColor",
-      "previewValue": "SW",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_DrawerBoxDepthType",
-      "previewValue": "D2",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_DrawerBoxHeightType",
-      "previewValue": "H1",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_DrawerBoxOffsetDepth",
-      "previewValue": "5",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_DrawerBoxProgram",
-      "previewValue": "Pure",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_DrawerBoxLogic",
-      "origin": "GlobalVar"
-    },
-    {
-      "variantId": "mod_FrontWidth",
-      "previewValue": "600",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_DrawerBoxWeightType",
-      "previewValue": "Standard",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_ModuleName",
-      "default": "mc_DrawerBox01",
-      "origin": "Fixed"
-    },
-    {
-      "variantId": "mod_DrawerBoxDesign",
-      "previewValue": "Legrabox",
-      "origin": "Derived"
+      "variantId": "mod_CarcaseProgram",
+      "previewValue": "Classic",
+      "required": false,
+      "derive": true,
+      "fixed": false
     },
     {
       "variantId": "mod_Depth",
       "previewValue": "575",
-      "origin": "Derived"
+      "required": false,
+      "derive": true,
+      "fixed": false
     },
     {
-      "variantId": "mod_Width",
-      "previewValue": "600",
-      "origin": "Derived"
+      "variantId": "mod_DrawerBoxColor",
+      "previewValue": "SW",
+      "required": false,
+      "derive": true,
+      "fixed": false
     },
     {
-      "variantId": "mod_Height",
-      "default": "0",
-      "origin": "Default"
+      "variantId": "mod_DrawerBoxDepthType",
+      "previewValue": "D2",
+      "required": false,
+      "derive": true,
+      "fixed": false
     },
     {
-      "variantId": "mod_HardwareColor",
-      "previewValue": "LightColor",
-      "origin": "Derived"
+      "variantId": "mod_DrawerBoxDesign",
+      "previewValue": "Legrabox",
+      "required": false,
+      "derive": true,
+      "fixed": false
     },
     {
-      "variantId": "mod_TypeElement",
-      "previewValue": "BaseUnit",
-      "origin": "Derived"
+      "variantId": "mod_DrawerBoxHeightType",
+      "previewValue": "H1",
+      "required": false,
+      "derive": true,
+      "fixed": false
     },
     {
-      "variantId": "mod_OpeningType",
-      "previewValue": "Handle",
-      "origin": "Derived"
+      "variantId": "mod_DrawerBoxLogic",
+      "required": false,
+      "derive": false,
+      "fixed": false,
+      "defaultGlobalVar": true
+    },
+    {
+      "variantId": "mod_DrawerBoxOffsetDepth",
+      "previewValue": "5",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_DrawerBoxProgram",
+      "previewValue": "Pure",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_DrawerBoxWeightType",
+      "previewValue": "Standard",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_FrontHeight",
+      "previewValue": "720",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_FrontId",
+      "previewValue": "None",
+      "required": false,
+      "derive": true,
+      "fixed": false
     },
     {
       "variantId": "mod_FrontProgram",
       "previewValue": "Demoprogram1",
-      "origin": "Derived"
+      "required": false,
+      "derive": true,
+      "fixed": false
     },
     {
-      "variantId": "mod_ParentName",
-      "previewValue": "None",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_PartgroupDrawerWeight",
-      "default": "0",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_CarcaseProgram",
-      "previewValue": "Classic",
-      "origin": "Derived"
+      "variantId": "mod_FrontWidth",
+      "previewValue": "600",
+      "required": false,
+      "derive": true,
+      "fixed": false
     },
     {
       "variantId": "mod_GrainLogic",
       "previewValue": "Library",
-      "origin": "Derived"
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_HardwareColor",
+      "previewValue": "LightColor",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_Height",
+      "default": "0",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ModuleName",
+      "default": "mc_DrawerBox01",
+      "required": false,
+      "derive": false,
+      "fixed": true
+    },
+    {
+      "variantId": "mod_OpeningType",
+      "previewValue": "Handle",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ParentName",
+      "previewValue": "None",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_PartgroupDrawerWeight",
+      "default": "0",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_TypeElement",
+      "previewValue": "BaseUnit",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_Width",
+      "previewValue": "600",
+      "required": false,
+      "derive": true,
+      "fixed": false
     }
   ],
   "assignedParts": [
     {
-      "partCode": "part_DrawerShelfbtm"
+      "partCode": "part_DrawerBackwallSteel"
     },
     {
       "partCode": "part_DrawerBackwallWood"
     },
     {
-      "partCode": "part_DrawerBackwallSteel"
-    },
-    {
       "partCode": "part_DrawerBox"
-    },
-    {
-      "partCode": "part_DrawerSideLeft"
-    },
-    {
-      "partCode": "part_DrawerSideRight"
-    },
-    {
-      "partCode": "part_DrawerBoxDrilling"
     },
     {
       "partCode": "part_DrawerBoxBom"
     },
     {
-      "partCode": "part_DrawerSlideLeft"
+      "partCode": "part_DrawerBoxDrilling"
     },
     {
-      "partCode": "part_DrawerSlideRight"
+      "partCode": "part_DrawerBoxSynchronization"
     },
     {
       "partCode": "part_DrawerFrontConnector"
+    },
+    {
+      "partCode": "part_DrawerShelfbtm"
     },
     {
       "partCode": "part_DrawerShelfbtmConnector"
@@ -165,7 +203,16 @@
       "partCode": "part_DrawerShelfbtmConnectorDrilling"
     },
     {
-      "partCode": "part_DrawerBoxSynchronization"
+      "partCode": "part_DrawerSideLeft"
+    },
+    {
+      "partCode": "part_DrawerSideRight"
+    },
+    {
+      "partCode": "part_DrawerSlideLeft"
+    },
+    {
+      "partCode": "part_DrawerSlideRight"
     }
   ],
   "assignedCustomTables": [],

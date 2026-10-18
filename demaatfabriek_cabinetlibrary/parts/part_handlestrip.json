@@ -9,6 +9,11 @@
   "restrictionTypeId": "Public",
   "partVariants": [
     {
+      "partVarId": "pa_HardwareId",
+      "valueScript": "this.parent.mod_HardwareId",
+      "isWritable": false
+    },
+    {
       "partVarId": "pa_Supplier",
       "valueScript": "",
       "isWritable": false
@@ -17,15 +22,11 @@
       "partVarId": "pa_SupplierArticle",
       "valueScript": "",
       "isWritable": false
-    },
-    {
-      "partVarId": "pa_HardwareId",
-      "valueScript": "this.parent.mod_HardwareId",
-      "isWritable": false
     }
   ],
   "bomData": [
     {
+      "id": 243,
       "bomElementTypeId": "bomout_Group",
       "description": "Add the handlestrip to BOM",
       "conditionScript": "partSelf._g?.basic_CreateBom == 'Library'",

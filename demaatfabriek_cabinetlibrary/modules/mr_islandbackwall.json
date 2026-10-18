@@ -16,51 +16,72 @@
     {
       "variantId": "mod_Color",
       "default": "240",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_Program",
-      "default": "Demoprogram1",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_Depth",
       "previewValue": "350",
-      "origin": "Required"
+      "required": true,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_Height",
       "previewValue": "920",
-      "origin": "Required"
-    },
-    {
-      "variantId": "mod_Thk",
-      "default": "19",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_PaneltopColor",
-      "default": "380",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_PaneltopThk",
-      "origin": "GlobalVar"
-    },
-    {
-      "variantId": "mod_IslandBackwallOverhangFront",
-      "default": "30",
-      "origin": "Default"
+      "required": true,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_IslandBackwallOverdimension",
       "default": "10",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_IslandBackwallOverhangFront",
+      "default": "30",
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_IslandBackwallWidth",
       "default": "1000",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_PaneltopColor",
+      "default": "380",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_PaneltopThk",
+      "required": false,
+      "derive": false,
+      "fixed": false,
+      "defaultGlobalVar": true
+    },
+    {
+      "variantId": "mod_Program",
+      "default": "Demoprogram1",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_Thk",
+      "default": "19",
+      "required": false,
+      "derive": false,
+      "fixed": false
     }
   ],
   "assignedParts": [],

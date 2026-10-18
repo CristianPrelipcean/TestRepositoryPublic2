@@ -10,6 +10,11 @@
   "noNcData": false,
   "partVariants": [
     {
+      "partVarId": "pa_Length",
+      "valueScript": "0",
+      "isWritable": false
+    },
+    {
       "partVarId": "pa_Model3DGroupName",
       "valueScript": "this.parent.mod_Model3DGroupName",
       "isWritable": false
@@ -22,11 +27,6 @@
     {
       "partVarId": "pa_Rotation",
       "valueScript": "this.parent.mod_Rotation",
-      "isWritable": false
-    },
-    {
-      "partVarId": "pa_Length",
-      "valueScript": "0",
       "isWritable": false
     }
   ],
