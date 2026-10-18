@@ -7,20 +7,21 @@
   "childModules": [],
   "assignedVariants": [
     {
-      "variantId": "height",
-      "default": "120",
-      "previewValue": "120",
-      "origin": "Default"
-    },
-    {
       "variantId": "handle",
       "previewValue": "knopf01",
-      "origin": "Derived"
+      "derive": true
+    },
+    {
+      "variantId": "height",
+      "default": "120",
+      "previewValue": "120"
     },
     {
       "variantId": "startPos",
       "default": "0",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     }
   ],
   "assignedParts": [
