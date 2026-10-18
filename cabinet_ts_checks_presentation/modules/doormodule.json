@@ -10,24 +10,32 @@
   "childModules": [],
   "assignedVariants": [
     {
-      "variantId": "doorHeight",
-      "default": "2000",
-      "origin": "Default"
+      "variantId": "doorHandleMaterial",
+      "default": "wood",
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
-      "variantId": "doorWidth",
-      "default": "1000",
-      "origin": "Default"
+      "variantId": "doorHeight",
+      "default": "2000",
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "doorMaterial",
       "default": "wood",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
-      "variantId": "doorHandleMaterial",
-      "default": "wood",
-      "origin": "Default"
+      "variantId": "doorWidth",
+      "default": "1000",
+      "required": false,
+      "derive": false,
+      "fixed": false
     }
   ],
   "assignedParts": [
@@ -35,10 +43,10 @@
       "partCode": "doorBoard"
     },
     {
-      "partCode": "doorWindow"
+      "partCode": "doorKnob"
     },
     {
-      "partCode": "doorKnob"
+      "partCode": "doorWindow"
     }
   ],
   "assignedCustomTables": [],
