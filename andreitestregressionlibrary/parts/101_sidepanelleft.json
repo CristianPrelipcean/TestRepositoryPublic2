@@ -8,12 +8,16 @@
   "noNcData": false,
   "partVariants": [
     {
-      "partVarId": "pa_height",
-      "valueScript": "this._dimx"
+      "partVarId": "attributePartVariant",
+      "valueScript": ""
     },
     {
       "partVarId": "color1",
       "valueScript": "this.parent.frontColor"
+    },
+    {
+      "partVarId": "ctpv",
+      "valueScript": "(new ct2_Custom_Table_02()).findExactly(\"in_text1\", 23, 45.54, \"in_textFunctionField\", \"12333\")!"
     },
     {
       "partVarId": "m_ABC",
@@ -24,6 +28,10 @@
       "valueScript": "this.parent.width_matrix.DEF ?? \"(not set)\""
     },
     {
+      "partVarId": "m_FarbeNo",
+      "valueScript": "this.parent.corpusColor_matrix.BestellNo ?? \"(not set)\""
+    },
+    {
       "partVarId": "m_GHI",
       "valueScript": "this.parent.width_matrix.GHI ?? -1"
     },
@@ -32,39 +40,35 @@
       "valueScript": "this.parent.width_matrix.JKL ?? false"
     },
     {
-      "partVarId": "m_FarbeNo",
-      "valueScript": "this.parent.corpusColor_matrix.BestellNo ?? \"(not set)\""
-    },
-    {
-      "partVarId": "ctpv",
-      "valueScript": "(new ct2_Custom_Table_02()).findExactly(\"in_text1\", 23, 45.54, \"in_textFunctionField\", \"12333\")!"
-    },
-    {
-      "partVarId": "attributePartVariant",
-      "valueScript": ""
+      "partVarId": "pa_height",
+      "valueScript": "this._dimx"
     }
   ],
   "bomData": [
     {
-      "bomElementTypeId": "Platte",
-      "description": "Platte für Seite links",
-      "valueScript": "this.length = partSelf._dimz;\r\nthis.bom_width = partSelf._dimy;\r\nthis.thickness = partSelf._dimx;\r\nlogInfo(\"INSIDE BOM: Adding Platte\");"
+      "id": 4,
+      "bomElementTypeId": "Kante",
+      "description": "Kante blau",
+      "conditionScript": "partSelf.color1 == \"lightblue\"",
+      "valueScript": "this.length = partSelf._dimy*2 + partSelf._dimz*2;\r\nthis.bom_height = partSelf._dimx;\r\nthis.thickness = 3;"
     },
     {
+      "id": 3,
       "bomElementTypeId": "Kante",
       "description": "Kante rot",
       "conditionScript": "partSelf.color1 == \"red\"",
       "valueScript": "this.length = partSelf._dimy*2 + partSelf._dimz*2;\r\nthis.bom_height = partSelf._dimx;\r\nthis.thickness = 3;"
     },
     {
-      "bomElementTypeId": "Kante",
-      "description": "Kante blau",
-      "conditionScript": "partSelf.color1 == \"lightblue\"",
-      "valueScript": "this.length = partSelf._dimy*2 + partSelf._dimz*2;\r\nthis.bom_height = partSelf._dimx;\r\nthis.thickness = 3;"
+      "id": 1,
+      "bomElementTypeId": "Platte",
+      "description": "Platte für Seite links",
+      "valueScript": "this.length = partSelf._dimz;\r\nthis.bom_width = partSelf._dimy;\r\nthis.thickness = partSelf._dimx;\r\nlogInfo(\"INSIDE BOM: Adding Platte\");"
     }
   ],
   "ncData": [
     {
+      "id": 2,
       "part2": "124_RailHorizontalFront",
       "touchName": "FromRight",
       "bomElementTypeId": "Bohrung",
@@ -72,6 +76,7 @@
       "bomExecuteType": "Touch"
     },
     {
+      "id": 4,
       "touchName": "",
       "bomElementTypeId": "Bohrung",
       "description": "touch-start",
@@ -79,6 +84,7 @@
       "bomExecuteType": "Start"
     },
     {
+      "id": 5,
       "touchName": "",
       "bomElementTypeId": "Bohrung",
       "description": "touch-end",
