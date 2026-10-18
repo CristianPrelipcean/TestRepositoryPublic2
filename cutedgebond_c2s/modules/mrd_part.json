@@ -23,115 +23,155 @@
       "moduleId": "me_Drill"
     },
     {
-      "moduleId": "me_Hinge"
+      "moduleId": "me_DrillingLine"
     },
     {
       "moduleId": "me_Handle"
     },
     {
-      "moduleId": "me_DrillingLine"
+      "moduleId": "me_Hinge"
     }
   ],
   "assignedVariants": [
     {
-      "variantId": "mod_Color",
-      "default": "U502ST9",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_BtmColor",
-      "defaultScript": "this.mod_Color",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_EdgeBackClass",
-      "defaultScript": "GlobalFunc.cfind_EdgeBandingTypeMapping(this.cmod_EdgebandingType!,this.cmod_EdgeBandingClass!).EdgeBackClass! ",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_EdgeBackColor",
-      "defaultScript": "GlobalFunc.cfind_EdgeBandingTypeMapping(this.cmod_EdgebandingType!,this.cmod_EdgeBandingClass!).EdgeBack! == true ? this.mod_Color! : \"NoEdge\"",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_EdgeFrontClass",
-      "defaultScript": "GlobalFunc.cfind_EdgeBandingTypeMapping(this.cmod_EdgebandingType!,this.cmod_EdgeBandingClass!).EdgeFrontClass! ",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_EdgeFrontColor",
-      "defaultScript": "GlobalFunc.cfind_EdgeBandingTypeMapping(this.cmod_EdgebandingType!,this.cmod_EdgeBandingClass!).EdgeFront! == true ? this.mod_Color! : \"NoEdge\"",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_EdgeJointType",
-      "default": "LSLS",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_EdgeLeftClass",
-      "defaultScript": "GlobalFunc.cfind_EdgeBandingTypeMapping(this.cmod_EdgebandingType!,this.cmod_EdgeBandingClass!).EdgeLeftClass! ",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_EdgeLeftColor",
-      "defaultScript": "GlobalFunc.cfind_EdgeBandingTypeMapping(this.cmod_EdgebandingType!,this.cmod_EdgeBandingClass!).EdgeLeft! == true ? this.mod_Color! : \"NoEdge\"",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_EdgeRightClass",
-      "defaultScript": "GlobalFunc.cfind_EdgeBandingTypeMapping(this.cmod_EdgebandingType!,this.cmod_EdgeBandingClass!).EdgeRightClass! ",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_EdgeRightColor",
-      "defaultScript": "GlobalFunc.cfind_EdgeBandingTypeMapping(this.cmod_EdgebandingType!,this.cmod_EdgeBandingClass!).EdgeRight! == true ? this.mod_Color! : \"NoEdge\"",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_Length",
-      "default": "1000",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_PartGrain",
-      "default": "Lengthwise",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_Program",
-      "default": "Nature",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_Thickness",
-      "default": "18",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_TypeElement",
-      "default": "Fronts",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_Width",
-      "default": "1000",
-      "origin": "Default"
-    },
-    {
       "variantId": "cmod_EdgeBandingClass",
       "default": "2mm Match ABS",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "cmod_EdgebandingProfile",
       "default": "Radius",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "cmod_EdgebandingType",
       "default": "LLWW",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_BtmColor",
+      "defaultScript": "this.mod_Color",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_Color",
+      "default": "U502ST9",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_EdgeBackClass",
+      "defaultScript": "GlobalFunc.cfind_EdgeBandingTypeMapping(this.cmod_EdgebandingType!,this.cmod_EdgeBandingClass!).EdgeBackClass! ",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_EdgeBackColor",
+      "defaultScript": "GlobalFunc.cfind_EdgeBandingTypeMapping(this.cmod_EdgebandingType!,this.cmod_EdgeBandingClass!).EdgeBack! == true ? this.mod_Color! : \"NoEdge\"",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_EdgeFrontClass",
+      "defaultScript": "GlobalFunc.cfind_EdgeBandingTypeMapping(this.cmod_EdgebandingType!,this.cmod_EdgeBandingClass!).EdgeFrontClass! ",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_EdgeFrontColor",
+      "defaultScript": "GlobalFunc.cfind_EdgeBandingTypeMapping(this.cmod_EdgebandingType!,this.cmod_EdgeBandingClass!).EdgeFront! == true ? this.mod_Color! : \"NoEdge\"",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_EdgeJointType",
+      "default": "LSLS",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_EdgeLeftClass",
+      "defaultScript": "GlobalFunc.cfind_EdgeBandingTypeMapping(this.cmod_EdgebandingType!,this.cmod_EdgeBandingClass!).EdgeLeftClass! ",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_EdgeLeftColor",
+      "defaultScript": "GlobalFunc.cfind_EdgeBandingTypeMapping(this.cmod_EdgebandingType!,this.cmod_EdgeBandingClass!).EdgeLeft! == true ? this.mod_Color! : \"NoEdge\"",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_EdgeRightClass",
+      "defaultScript": "GlobalFunc.cfind_EdgeBandingTypeMapping(this.cmod_EdgebandingType!,this.cmod_EdgeBandingClass!).EdgeRightClass! ",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_EdgeRightColor",
+      "defaultScript": "GlobalFunc.cfind_EdgeBandingTypeMapping(this.cmod_EdgebandingType!,this.cmod_EdgeBandingClass!).EdgeRight! == true ? this.mod_Color! : \"NoEdge\"",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_Length",
+      "default": "1000",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_PartGrain",
+      "default": "Lengthwise",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_Program",
+      "default": "Nature",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_Thickness",
+      "default": "18",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_TypeElement",
+      "default": "Fronts",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_Width",
+      "default": "1000",
+      "required": false,
+      "derive": false,
+      "fixed": false
     }
   ],
   "assignedParts": [],

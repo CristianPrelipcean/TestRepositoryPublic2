@@ -11,6 +11,11 @@
   "noNcData": false,
   "partVariants": [
     {
+      "partVarId": "pa_BomId",
+      "valueScript": "",
+      "isWritable": false
+    },
+    {
       "partVarId": "pa_BtmColor",
       "valueScript": "this.parent.mod_BtmColor",
       "isWritable": false
@@ -33,6 +38,11 @@
     {
       "partVarId": "pa_EdgeFrontColor",
       "valueScript": "this.parent.mod_EdgeFrontColor",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeJointType",
+      "valueScript": "this.parent.mod_EdgeJointType",
       "isWritable": false
     },
     {
@@ -61,11 +71,6 @@
       "isWritable": false
     },
     {
-      "partVarId": "pa_EdgeJointType",
-      "valueScript": "this.parent.mod_EdgeJointType",
-      "isWritable": false
-    },
-    {
       "partVarId": "pa_Program",
       "valueScript": "this.parent.mod_Program",
       "isWritable": false
@@ -79,15 +84,11 @@
       "partVarId": "pa_TypeElement",
       "valueScript": "this.parent.mod_TypeElement",
       "isWritable": false
-    },
-    {
-      "partVarId": "pa_BomId",
-      "valueScript": "",
-      "isWritable": false
     }
   ],
   "bomData": [
     {
+      "id": 169,
       "bomElementTypeId": "bomout_Group",
       "description": "Output Parts / Boards for panel",
       "conditionScript": "partSelf._g?.basic_CreateBom == 'Library'",
@@ -96,18 +97,20 @@
   ],
   "ncData": [
     {
-      "part2": "part_DrillingLine",
-      "touchName": "FromRight",
-      "bomElementTypeId": "ncout_Group",
-      "valueScript": "let Drill = this.addncout_DrillVert();\n\n    // StandardValue\n    Drill.nc_TOOL = \"102\";\n    Drill.nc_XA = partSelf._dimy -posRel.y - (part2.pa_Diameter / 2);\n    Drill.nc_YA = partSelf._dimz - posRel.z - (part2.pa_Diameter / 2);\n    Drill.nc_AN = 1;\n    Drill.nc_Side = \"Right\";\n    Drill.nc_MprRelevant = true;\n    Drill.nc_DrawingRelevant = true;\n\n\n    // AttributeValues\n\n    Drill.nc_TI = part2.pa_DrillDepth;\n    Drill.nc_DU = part2.pa_Diameter;\n    Drill.nc_BM = part2.pa_DrillDepth >= partSelf._thickness ? \"LSL\" : \"LS\";\n    Drill.nc_WI = 0;\n    Drill.nc_AB = 1;\n    //Drill.nc_LA = 0;\n    Drill.nc_MI = 0;\n    Drill.nc_KO = \"00\";",
-      "bomExecuteType": "Touch"
-    },
-    {
+      "id": 370,
       "part2": "part_DrillingLine",
       "touchName": "FromLeft",
       "bomElementTypeId": "ncout_Group",
       "description": "Left",
       "valueScript": "let Drill = this.addncout_DrillVert();\n\n    // StandardValue\n    Drill.nc_TOOL = \"102\";\n    Drill.nc_XA = partSelf._dimy -posRel.y - (part2.pa_Diameter / 2);\n    Drill.nc_YA = partSelf._dimz - posRel.z - (part2.pa_Diameter / 2);\n    Drill.nc_AN = 1;\n    Drill.nc_Side = \"Left\";\n    Drill.nc_MprRelevant = true;\n    Drill.nc_DrawingRelevant = true;\n\n\n    // AttributeValues\n\n    Drill.nc_TI = part2.pa_DrillDepth;\n    Drill.nc_DU = part2.pa_Diameter;\n    Drill.nc_BM = part2.pa_DrillDepth >= partSelf._thickness ? \"LSL\" : \"LS\";\n    Drill.nc_WI = 0;\n    Drill.nc_AB = 1;\n    //Drill.nc_LA = 0;\n    Drill.nc_MI = 0;\n    Drill.nc_KO = \"00\";",
+      "bomExecuteType": "Touch"
+    },
+    {
+      "id": 368,
+      "part2": "part_DrillingLine",
+      "touchName": "FromRight",
+      "bomElementTypeId": "ncout_Group",
+      "valueScript": "let Drill = this.addncout_DrillVert();\n\n    // StandardValue\n    Drill.nc_TOOL = \"102\";\n    Drill.nc_XA = partSelf._dimy -posRel.y - (part2.pa_Diameter / 2);\n    Drill.nc_YA = partSelf._dimz - posRel.z - (part2.pa_Diameter / 2);\n    Drill.nc_AN = 1;\n    Drill.nc_Side = \"Right\";\n    Drill.nc_MprRelevant = true;\n    Drill.nc_DrawingRelevant = true;\n\n\n    // AttributeValues\n\n    Drill.nc_TI = part2.pa_DrillDepth;\n    Drill.nc_DU = part2.pa_Diameter;\n    Drill.nc_BM = part2.pa_DrillDepth >= partSelf._thickness ? \"LSL\" : \"LS\";\n    Drill.nc_WI = 0;\n    Drill.nc_AB = 1;\n    //Drill.nc_LA = 0;\n    Drill.nc_MI = 0;\n    Drill.nc_KO = \"00\";",
       "bomExecuteType": "Touch"
     }
   ]
