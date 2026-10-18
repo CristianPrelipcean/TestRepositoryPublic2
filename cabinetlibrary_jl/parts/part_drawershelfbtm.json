@@ -10,6 +10,11 @@
   "noNcData": false,
   "partVariants": [
     {
+      "partVarId": "pa_AdditionalInfo1",
+      "valueScript": "'None'",
+      "isWritable": false
+    },
+    {
       "partVarId": "pa_BomId",
       "valueScript": "",
       "isWritable": false
@@ -20,17 +25,12 @@
       "isWritable": false
     },
     {
-      "partVarId": "pa_ParentName",
-      "valueScript": "this.parent.mod_ParentName",
+      "partVarId": "pa_ColorGrainGroup",
+      "valueScript": "'NoGrain'",
       "isWritable": false
     },
     {
       "partVarId": "pa_EdgeBackColor",
-      "valueScript": "",
-      "isWritable": false
-    },
-    {
-      "partVarId": "pa_TopColor",
       "valueScript": "",
       "isWritable": false
     },
@@ -80,8 +80,13 @@
       "isWritable": false
     },
     {
-      "partVarId": "pa_AdditionalInfo1",
-      "valueScript": "'None'",
+      "partVarId": "pa_GrainLogic",
+      "valueScript": "this.parent.mod_GrainLogic",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_ParentName",
+      "valueScript": "this.parent.mod_ParentName",
       "isWritable": false
     },
     {
@@ -90,13 +95,8 @@
       "isWritable": false
     },
     {
-      "partVarId": "pa_ColorGrainGroup",
-      "valueScript": "'NoGrain'",
-      "isWritable": false
-    },
-    {
-      "partVarId": "pa_GrainLogic",
-      "valueScript": "this.parent.mod_GrainLogic",
+      "partVarId": "pa_TopColor",
+      "valueScript": "",
       "isWritable": false
     },
     {
@@ -107,6 +107,7 @@
   ],
   "bomData": [
     {
+      "id": 179,
       "bomElementTypeId": "bomout_Group",
       "description": "Boards and edges for drawerbox bottom shelf",
       "conditionScript": "partSelf._g?.basic_CreateBom == 'Library'",
@@ -115,6 +116,7 @@
   ],
   "ncData": [
     {
+      "id": 386,
       "part2": "part_DrawerBoxDrilling",
       "touchName": "Collision",
       "bomElementTypeId": "ncout_Group",
@@ -123,19 +125,21 @@
       "bomExecuteType": "Touch"
     },
     {
-      "part2": "part_DrawerBackwallWood",
-      "touchName": "FromTop",
-      "bomElementTypeId": "ncout_Group",
-      "description": "Connection to drawer backwall wood from top",
-      "valueScript": "// Calcualte quantity of drills\nlet numberOfDrills = Math.floor(partSelf._dimx / 100);\nlet distance = Math.round((partSelf._dimx-140) / (numberOfDrills-1))\nlet actPos = 70;\n\n// Cycle to insert the drills\nfor (let i = 1; i <= numberOfDrills; i++) {\n\n  // Position of the drill\n  let PosX=actPos;\n  actPos+=distance;\n  let PosY=0;\n  let PosZ=posRel.z + part2._dimz/2;\n\n  // Add Vertical Drill\n  let DrillVert = this.addncout_DrillVert();\n  DrillVert.nc_TOOL=\"102\";\n  DrillVert.nc_XA=PosX;\n  DrillVert.nc_YA=partSelf._dimz - PosZ;\n  DrillVert.nc_TI=partSelf._dimy;\n  DrillVert.nc_DU=4;\n\n  DrillVert.nc_BM = \"LS\"\n  DrillVert.nc_WI = 0;\n  DrillVert.nc_AB = 1;\n  DrillVert.nc_LA = 0;\n  DrillVert.nc_MI = 0;\n  DrillVert.nc_KO = \"00\";\n  DrillVert.nc_Side = \"Top\";  \n\n  // Add drawing\n  let drilling02 = partSelf.add3DElement('Drilling01', DrillVert, PosX, PosY, PosZ, 4, partSelf._dimy, 4);\n  drilling02.extrude('<svg><circle cx=\"' + 0 + '\" cy=\"' + 0 + '\" r=\"' + 2 + '\" /></svg>', 'y');\n}",
-      "bomExecuteType": "Touch"
-    },
-    {
+      "id": 395,
       "part2": "part_DrawerShelfbtmConnectorDrilling",
       "touchName": "FromBottom",
       "bomElementTypeId": "ncout_Group",
       "description": "Drawer box bottom connector to front",
       "valueScript": "//====================================================================\n// Get data for drillings\n//====================================================================\n\n// Variables\nlet drillings: ICT_tab_HardwareDrillVertLibrary[] = [];\n\n// Find all processings for the drawerbox (to each part)\nlet processings = GlobalFunc.find_ProcessingMapping(part2.pa_ProcessingId);\n\n// Find the drillings for the sidepanel\nprocessings.forEach((processing) => {\n  if(processing.ProcessingLibrary == 'DrillVertical'){\n    let foundDrillings = GlobalFunc.find_HardwareDrillVertLibrary(processing.ProcessingId!, 'BoxBtm');\n    drillings = drillings.concat(foundDrillings);\n  }\n});\n\n//====================================================================\n// For each drilling (insert the drillings)\n//====================================================================\n\n// drill for screwing the box side to the bottom shelf (right side)\ndrillings.forEach(x => \n{  \n  // Position of the drill\n  let PosX=posRel.x + x.XA;\n  let PosY=0;\n  let PosZ=partSelf._dimz + x.YA;\n\n  // Add Vertical Drill\n  let DrillVert = this.addncout_DrillVert();\n  DrillVert.nc_TOOL=\"102\";\n  DrillVert.nc_XA=PosX;\n  DrillVert.nc_YA=-x.YA;\n  DrillVert.nc_TI=x.TI;\n  DrillVert.nc_DU=x.DU;\n\n  DrillVert.nc_BM = x.matrix_BM || \"LS\"\n  DrillVert.nc_WI = x.matrix_WI ?? 0;\n  DrillVert.nc_AB = x.matrix_AB ?? 1;\n  DrillVert.nc_LA = x.matrix_LA ?? 0;\n  DrillVert.nc_MI = x.matrix_MI ?? 0;\n  DrillVert.nc_KO = x.matrix_KO || \"00\";\n  DrillVert.nc_Side = \"Top\";  \n\n  // Add drawing\n  let drilling01 = partSelf.add3DElement('Drilling01', DrillVert, PosX, PosY, PosZ, x.DU, x.TI, x.DU );\n  drilling01.extrude('<svg><circle cx=\"' + 0 + '\" cy=\"' + 0 + '\" r=\"' + x.DU/2 + '\" /></svg>', 'y');\n})",
+      "bomExecuteType": "Touch"
+    },
+    {
+      "id": 388,
+      "part2": "part_DrawerBackwallWood",
+      "touchName": "FromTop",
+      "bomElementTypeId": "ncout_Group",
+      "description": "Connection to drawer backwall wood from top",
+      "valueScript": "// Calcualte quantity of drills\nlet numberOfDrills = Math.floor(partSelf._dimx / 100);\nlet distance = Math.round((partSelf._dimx-140) / (numberOfDrills-1))\nlet actPos = 70;\n\n// Cycle to insert the drills\nfor (let i = 1; i <= numberOfDrills; i++) {\n\n  // Position of the drill\n  let PosX=actPos;\n  actPos+=distance;\n  let PosY=0;\n  let PosZ=posRel.z + part2._dimz/2;\n\n  // Add Vertical Drill\n  let DrillVert = this.addncout_DrillVert();\n  DrillVert.nc_TOOL=\"102\";\n  DrillVert.nc_XA=PosX;\n  DrillVert.nc_YA=partSelf._dimz - PosZ;\n  DrillVert.nc_TI=partSelf._dimy;\n  DrillVert.nc_DU=4;\n\n  DrillVert.nc_BM = \"LS\"\n  DrillVert.nc_WI = 0;\n  DrillVert.nc_AB = 1;\n  DrillVert.nc_LA = 0;\n  DrillVert.nc_MI = 0;\n  DrillVert.nc_KO = \"00\";\n  DrillVert.nc_Side = \"Top\";  \n\n  // Add drawing\n  let drilling02 = partSelf.add3DElement('Drilling01', DrillVert, PosX, PosY, PosZ, 4, partSelf._dimy, 4);\n  drilling02.extrude('<svg><circle cx=\"' + 0 + '\" cy=\"' + 0 + '\" r=\"' + 2 + '\" /></svg>', 'y');\n}",
       "bomExecuteType": "Touch"
     }
   ]

@@ -10,64 +10,88 @@
   "childModules": [],
   "assignedVariants": [
     {
-      "variantId": "mod_UprightColor",
-      "previewValue": "Demoblue",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_UprightFloorProfileColor",
-      "previewValue": "DemoStainlessSteel",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_PlinthAreaHeight",
-      "previewValue": "100",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_UprightThk",
-      "previewValue": "16",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_UprightOverhang",
-      "previewValue": "22",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_UprightSide",
-      "default": "Left",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_Height",
-      "default": "720",
-      "origin": "Default"
-    },
-    {
       "variantId": "mod_Depth",
       "default": "650",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_UprightConstruction",
-      "previewValue": "ToFloor",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_TypeElement",
-      "previewValue": "Upright",
-      "origin": "Derived"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_GrainLogic",
       "previewValue": "Library",
-      "origin": "Derived"
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_Height",
+      "default": "720",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_PlinthAreaHeight",
+      "previewValue": "100",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_TypeElement",
+      "previewValue": "Upright",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_UprightColor",
+      "previewValue": "Demoblue",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_UprightConstruction",
+      "previewValue": "ToFloor",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_UprightFloorProfileColor",
+      "previewValue": "DemoStainlessSteel",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_UprightOverhang",
+      "previewValue": "22",
+      "required": false,
+      "derive": true,
+      "fixed": false
     },
     {
       "variantId": "mod_UprightProgram",
       "previewValue": "ModernNature",
-      "origin": "Derived"
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_UprightSide",
+      "default": "Left",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_UprightThk",
+      "previewValue": "16",
+      "required": false,
+      "derive": true,
+      "fixed": false
     }
   ],
   "assignedParts": [

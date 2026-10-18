@@ -10,125 +10,175 @@
   "childModules": [],
   "assignedVariants": [
     {
-      "variantId": "mod_Depth",
-      "default": "500",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_FrontId",
-      "previewValue": "None",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_FrontType",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_Height",
-      "default": "720",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_Width",
-      "default": "600",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_FrontColor",
-      "previewValue": "Demoblue",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_FrontEdgeColor",
-      "previewValue": "Demoblue",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_FrontEdgeThk",
-      "previewValue": "1",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_FrontProgram",
-      "previewValue": "Nature",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_PartInfo",
-      "default": "part_DoorLeft",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_FrontDesign",
-      "previewValue": "FlatPanel",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_HandleDesign",
-      "previewValue": "10",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_HandlePosType",
-      "previewValue": "50",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_ModuleName",
-      "default": "mc_FrontPanel01",
-      "origin": "Fixed"
+      "variantId": "mod_CarcaseDirection",
+      "default": "Left",
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_CornerunitStraightFillerConstruction",
       "default": "Construction01",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
-      "variantId": "mod_CarcaseDirection",
-      "default": "Left",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_FrontpanelWeightCalculations",
-      "origin": "Default"
+      "variantId": "mod_Depth",
+      "default": "500",
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_DoorDirection",
       "default": "Left",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_FlipliftType",
-      "default": "FHF",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_ParentName",
-      "previewValue": "None",
-      "origin": "Derived"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_FillerHardwareInfo",
       "default": "",
       "previewValue": "",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_FlipliftType",
+      "default": "FHF",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_FrontColor",
+      "previewValue": "Demoblue",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_FrontDesign",
+      "previewValue": "FlatPanel",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_FrontEdgeColor",
+      "previewValue": "Demoblue",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_FrontEdgeThk",
+      "previewValue": "1",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_FrontId",
+      "previewValue": "None",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_FrontProgram",
+      "previewValue": "Nature",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_FrontType",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_FrontpanelWeightCalculations",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_HandleDesign",
+      "previewValue": "10",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_HandlePosType",
+      "previewValue": "50",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_Height",
+      "default": "720",
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_Information",
       "default": "",
       "previewValue": "",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ModuleName",
+      "default": "mc_FrontPanel01",
+      "required": false,
+      "derive": false,
+      "fixed": true
+    },
+    {
+      "variantId": "mod_ParentName",
+      "previewValue": "None",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_PartInfo",
+      "default": "part_DoorLeft",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_Width",
+      "default": "600",
+      "required": false,
+      "derive": false,
+      "fixed": false
     }
   ],
   "assignedParts": [
     {
-      "partCode": "part_Drawer"
+      "partCode": "part_ApplianceFront"
     },
     {
-      "partCode": "part_Fliplift"
+      "partCode": "part_BaseunitFridgePanel"
+    },
+    {
+      "partCode": "part_DishwasherPanel"
     },
     {
       "partCode": "part_Door"
+    },
+    {
+      "partCode": "part_Drawer"
     },
     {
       "partCode": "part_Filler"
@@ -137,19 +187,13 @@
       "partCode": "part_Fixedfront"
     },
     {
-      "partCode": "part_ApplianceFront"
-    },
-    {
-      "partCode": "part_DishwasherPanel"
-    },
-    {
-      "partCode": "part_Pullout"
-    },
-    {
-      "partCode": "part_BaseunitFridgePanel"
+      "partCode": "part_Fliplift"
     },
     {
       "partCode": "part_PantryPullout"
+    },
+    {
+      "partCode": "part_Pullout"
     }
   ],
   "assignedCustomTables": [],

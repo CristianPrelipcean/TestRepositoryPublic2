@@ -11,6 +11,11 @@
   "noNcData": false,
   "partVariants": [
     {
+      "partVarId": "pa_AdditionalInfo1",
+      "valueScript": "'None'",
+      "isWritable": false
+    },
+    {
       "partVarId": "pa_BomId",
       "valueScript": "this.parent.mod_FrontId",
       "isWritable": false
@@ -66,28 +71,18 @@
       "isWritable": false
     },
     {
-      "partVarId": "pa_FrontConstructionInfo",
+      "partVarId": "pa_FrameFillingColor",
+      "valueScript": "this.parent.mod_FrameFillingColor",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_FrameFillingMaterial",
       "valueScript": "",
       "isWritable": false
     },
     {
-      "partVarId": "pa_GrainDirection",
-      "valueScript": "'Neutral'",
-      "isWritable": false
-    },
-    {
-      "partVarId": "pa_Program",
-      "valueScript": "this.parent.mod_FrontProgram",
-      "isWritable": false
-    },
-    {
-      "partVarId": "pa_TopColor",
-      "valueScript": "this.parent.mod_FrontColor",
-      "isWritable": false
-    },
-    {
-      "partVarId": "pa_Weight",
-      "valueScript": "0",
+      "partVarId": "pa_FrameFillingThk",
+      "valueScript": "",
       "isWritable": false
     },
     {
@@ -101,18 +96,28 @@
       "isWritable": false
     },
     {
+      "partVarId": "pa_FrontConstructionInfo",
+      "valueScript": "",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_GrainDirection",
+      "valueScript": "'Neutral'",
+      "isWritable": false
+    },
+    {
       "partVarId": "pa_PanelWoodFrameType",
       "valueScript": "",
       "isWritable": false
     },
     {
-      "partVarId": "pa_FrameFillingThk",
-      "valueScript": "",
+      "partVarId": "pa_Program",
+      "valueScript": "this.parent.mod_FrontProgram",
       "isWritable": false
     },
     {
-      "partVarId": "pa_FrameFillingMaterial",
-      "valueScript": "",
+      "partVarId": "pa_TopColor",
+      "valueScript": "this.parent.mod_FrontColor",
       "isWritable": false
     },
     {
@@ -121,18 +126,14 @@
       "isWritable": false
     },
     {
-      "partVarId": "pa_AdditionalInfo1",
-      "valueScript": "'None'",
-      "isWritable": false
-    },
-    {
-      "partVarId": "pa_FrameFillingColor",
-      "valueScript": "this.parent.mod_FrameFillingColor",
+      "partVarId": "pa_Weight",
+      "valueScript": "0",
       "isWritable": false
     }
   ],
   "bomData": [
     {
+      "id": 198,
       "bomElementTypeId": "bomout_Group",
       "description": "Output Parts / Boards for panel wood frame",
       "conditionScript": "partSelf._g?.basic_CreateBom == 'Library'",
@@ -141,6 +142,7 @@
   ],
   "ncData": [
     {
+      "id": 492,
       "part2": "part_HandleDrill",
       "touchName": "FromFront",
       "bomElementTypeId": "ncout_Group",
@@ -149,6 +151,7 @@
       "bomExecuteType": "Touch"
     },
     {
+      "id": 493,
       "part2": "part_DrawerBoxDrilling",
       "touchName": "FromBack",
       "bomElementTypeId": "ncout_Group",
@@ -157,6 +160,7 @@
       "bomExecuteType": "Touch"
     },
     {
+      "id": 494,
       "part2": "part_DrawerShelfbtmConnectorDrilling",
       "touchName": "FromBack",
       "bomElementTypeId": "ncout_Group",
@@ -165,6 +169,7 @@
       "bomExecuteType": "Touch"
     },
     {
+      "id": 535,
       "touchName": "",
       "bomElementTypeId": "ncout_Group",
       "description": "Show the dowels in the graphics for the frames",

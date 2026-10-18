@@ -11,6 +11,11 @@
   "noNcData": false,
   "partVariants": [
     {
+      "partVarId": "pa_AdditionalInfo1",
+      "valueScript": "'None'",
+      "isWritable": false
+    },
+    {
       "partVarId": "pa_BomId",
       "valueScript": "",
       "isWritable": false
@@ -21,18 +26,8 @@
       "isWritable": false
     },
     {
-      "partVarId": "pa_GrainDirection",
-      "valueScript": "'Neutral'",
-      "isWritable": false
-    },
-    {
-      "partVarId": "pa_Program",
-      "valueScript": "'None'",
-      "isWritable": false
-    },
-    {
-      "partVarId": "pa_TopColor",
-      "valueScript": "this.parent.mod_ToekickColor",
+      "partVarId": "pa_ColorGrainGroup",
+      "valueScript": "this.parent.mod_ToekickColor_matrix.GrainGroupId",
       "isWritable": false
     },
     {
@@ -81,8 +76,8 @@
       "isWritable": false
     },
     {
-      "partVarId": "pa_AdditionalInfo1",
-      "valueScript": "'None'",
+      "partVarId": "pa_GrainDirection",
+      "valueScript": "'Neutral'",
       "isWritable": false
     },
     {
@@ -91,13 +86,18 @@
       "isWritable": false
     },
     {
-      "partVarId": "pa_ColorGrainGroup",
-      "valueScript": "this.parent.mod_ToekickColor_matrix.GrainGroupId",
+      "partVarId": "pa_Program",
+      "valueScript": "'None'",
       "isWritable": false
     },
     {
       "partVarId": "pa_ProgramGrainGroup",
       "valueScript": "this.parent.mod_ToekickProgram_matrix.GrainGroupId",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_TopColor",
+      "valueScript": "this.parent.mod_ToekickColor",
       "isWritable": false
     },
     {
@@ -108,6 +108,7 @@
   ],
   "bomData": [
     {
+      "id": 189,
       "bomElementTypeId": "bomout_Board",
       "conditionScript": "partSelf._g?.basic_CreateBom == 'Library'",
       "valueScript": "// Type of the Bom-Element (will be checked in order output)\nlet elementType='Board';\n\n// ProductionSite Category (to split the orders for different production sites)\nlet elementCategory='';\n\n// Id of the parent to create the hierarchy\nlet parentBomId=part.pa_BomId;\n\n// Call the function to process the Bom-Element\nGlobalFunc.process_BoardBom(this, part, elementType, elementCategory, parentBomId)"

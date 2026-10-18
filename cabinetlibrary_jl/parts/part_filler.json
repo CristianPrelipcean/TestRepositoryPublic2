@@ -11,11 +11,6 @@
   "noNcData": false,
   "partVariants": [
     {
-      "partVarId": "pa_Weight",
-      "valueScript": "0",
-      "isWritable": false
-    },
-    {
       "partVarId": "pa_AdditionalInfo1",
       "valueScript": "'None'",
       "isWritable": false
@@ -86,6 +81,11 @@
       "isWritable": false
     },
     {
+      "partVarId": "pa_HardwareInfo",
+      "valueScript": "''",
+      "isWritable": false
+    },
+    {
       "partVarId": "pa_Program",
       "valueScript": "this.parent.mod_FrontProgram",
       "isWritable": false
@@ -96,13 +96,14 @@
       "isWritable": false
     },
     {
-      "partVarId": "pa_HardwareInfo",
-      "valueScript": "''",
+      "partVarId": "pa_Weight",
+      "valueScript": "0",
       "isWritable": false
     }
   ],
   "bomData": [
     {
+      "id": 215,
       "bomElementTypeId": "bomout_Board",
       "description": "Output Parts / Boards",
       "conditionScript": "partSelf._g?.basic_CreateBom == 'Library'",
@@ -111,6 +112,7 @@
   ],
   "ncData": [
     {
+      "id": 629,
       "part2": "part_FillerHardwareProcessing",
       "touchName": "FromBack",
       "bomElementTypeId": "ncout_Group",
@@ -119,6 +121,7 @@
       "bomExecuteType": "Touch"
     },
     {
+      "id": 635,
       "touchName": "",
       "bomElementTypeId": "ncout_Group",
       "description": "Drillings for Corner filler left hardware",

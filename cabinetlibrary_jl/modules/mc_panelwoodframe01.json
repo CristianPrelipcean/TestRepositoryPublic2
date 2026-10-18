@@ -12,137 +12,177 @@
     {
       "variantId": "mod_Depth",
       "default": "500",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_FrontDesign",
-      "previewValue": "WoodFrame",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_FrontColor",
-      "previewValue": "Demoblue",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_FrontEdgeColor",
-      "previewValue": "Demoblue",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_FrontEdgeThk",
-      "previewValue": "1",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_FrontId",
-      "previewValue": "0",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_FrontpanelWeightCalculations",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_FrontProgram",
-      "previewValue": "Demoprogram1",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_FrontType",
-      "previewValue": "None",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_HandleDesign",
-      "previewValue": "10",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_HandlePosType",
-      "previewValue": "01",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_Height",
-      "default": "720",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_ModuleName",
-      "default": "mc_PanelWoodFrame01",
-      "origin": "Fixed"
-    },
-    {
-      "variantId": "mod_PartInfo",
-      "default": "part_DoorLeftPanelWoodFrame",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_Width",
-      "default": "600",
-      "origin": "Default"
-    },
-    {
-      "variantId": "mod_TypeElement",
-      "previewValue": "BaseUnit",
-      "origin": "Derived"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_DoorDirection",
       "default": "Left",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_FlipliftType",
       "default": "FHF",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_FrameFillingColor",
+      "previewValue": "FloatGlass",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_FrontColor",
+      "previewValue": "Demoblue",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_FrontDesign",
+      "previewValue": "WoodFrame",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_FrontEdgeColor",
+      "previewValue": "Demoblue",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_FrontEdgeThk",
+      "previewValue": "1",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_FrontId",
+      "previewValue": "0",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_FrontProgram",
+      "previewValue": "Demoprogram1",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_FrontType",
+      "previewValue": "None",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_FrontpanelWeightCalculations",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_HandleDesign",
+      "previewValue": "10",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_HandlePosType",
+      "previewValue": "01",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_Height",
+      "default": "720",
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_Information",
       "default": "",
       "previewValue": "",
-      "origin": "Default"
+      "required": false,
+      "derive": false,
+      "fixed": false
     },
     {
-      "variantId": "mod_FrameFillingColor",
-      "previewValue": "FloatGlass",
-      "origin": "Derived"
+      "variantId": "mod_ModuleName",
+      "default": "mc_PanelWoodFrame01",
+      "required": false,
+      "derive": false,
+      "fixed": true
+    },
+    {
+      "variantId": "mod_PartInfo",
+      "default": "part_DoorLeftPanelWoodFrame",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_TypeElement",
+      "previewValue": "BaseUnit",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_Width",
+      "default": "600",
+      "required": false,
+      "derive": false,
+      "fixed": false
     }
   ],
   "assignedParts": [
     {
-      "partCode": "part_PanelWoodFrameTop"
-    },
-    {
-      "partCode": "part_PanelWoodFrameLeft"
-    },
-    {
-      "partCode": "part_PanelWoodFrameBtm"
-    },
-    {
-      "partCode": "part_PanelWoodFrameRight"
-    },
-    {
-      "partCode": "part_PanelWoodFrameFilling"
-    },
-    {
-      "partCode": "part_DrawerPanelWoodFrame"
-    },
-    {
-      "partCode": "part_DoorPanelWoodFrame"
-    },
-    {
-      "partCode": "part_FlipliftPanelWoodFrame"
-    },
-    {
-      "partCode": "part_FixedfrontPanelWoodFrame"
+      "partCode": "part_BaseunitFridgePanelWoodFrame"
     },
     {
       "partCode": "part_DishwasherPanelWoodFrame"
     },
     {
-      "partCode": "part_BaseunitFridgePanelWoodFrame"
+      "partCode": "part_DoorPanelWoodFrame"
+    },
+    {
+      "partCode": "part_DrawerPanelWoodFrame"
+    },
+    {
+      "partCode": "part_FixedfrontPanelWoodFrame"
+    },
+    {
+      "partCode": "part_FlipliftPanelWoodFrame"
+    },
+    {
+      "partCode": "part_PanelWoodFrameBtm"
+    },
+    {
+      "partCode": "part_PanelWoodFrameFilling"
+    },
+    {
+      "partCode": "part_PanelWoodFrameLeft"
+    },
+    {
+      "partCode": "part_PanelWoodFrameRight"
+    },
+    {
+      "partCode": "part_PanelWoodFrameTop"
     }
   ],
   "assignedCustomTables": [],

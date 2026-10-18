@@ -12,30 +12,38 @@
     {
       "variantId": "mod_FingergripColor",
       "previewValue": "DemoBlue",
-      "origin": "Derived"
-    },
-    {
-      "variantId": "mod_FingergripType",
-      "previewValue": "None",
-      "origin": "Derived"
+      "required": false,
+      "derive": true,
+      "fixed": false
     },
     {
       "variantId": "mod_FingergripLength",
       "previewValue": "1000",
-      "origin": "Required"
+      "required": true,
+      "derive": false,
+      "fixed": false
     },
     {
       "variantId": "mod_FingergripPostype",
       "previewValue": "Middle",
-      "origin": "Required"
+      "required": true,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_FingergripType",
+      "previewValue": "None",
+      "required": false,
+      "derive": true,
+      "fixed": false
     }
   ],
   "assignedParts": [
     {
-      "partCode": "part_FingergripTop"
+      "partCode": "part_FingergripMiddle"
     },
     {
-      "partCode": "part_FingergripMiddle"
+      "partCode": "part_FingergripTop"
     }
   ],
   "assignedCustomTables": [],

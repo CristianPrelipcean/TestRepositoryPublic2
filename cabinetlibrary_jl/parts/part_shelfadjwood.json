@@ -11,8 +11,13 @@
   "noNcData": false,
   "partVariants": [
     {
-      "partVarId": "pa_TopColor",
-      "valueScript": "this.parent.mod_ShelfadjColor",
+      "partVarId": "pa_AdditionalInfo1",
+      "valueScript": "'None'",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_BomId",
+      "valueScript": "this.parent.mod_CarcaseId",
       "isWritable": false
     },
     {
@@ -21,13 +26,8 @@
       "isWritable": false
     },
     {
-      "partVarId": "pa_EdgeFrontColor",
-      "valueScript": "this.parent.mod_ShelfadjColor",
-      "isWritable": false
-    },
-    {
-      "partVarId": "pa_EdgeLeftColor",
-      "valueScript": "this.parent.mod_ShelfadjColor",
+      "partVarId": "pa_ColorGrainGroup",
+      "valueScript": "this.parent.mod_ShelfadjColor_matrix.GrainGroupId",
       "isWritable": false
     },
     {
@@ -36,7 +36,11 @@
       "isWritable": false
     },
     {
-      "partVarId": "pa_EdgeRightColor",
+      "partVarId": "pa_EdgeBackType",
+      "valueScript": "'CBE'"
+    },
+    {
+      "partVarId": "pa_EdgeFrontColor",
       "valueScript": "this.parent.mod_ShelfadjColor",
       "isWritable": false
     },
@@ -45,43 +49,30 @@
       "valueScript": "'CFE'"
     },
     {
+      "partVarId": "pa_EdgeJointType",
+      "valueScript": "'VVVV'"
+    },
+    {
+      "partVarId": "pa_EdgeLeftColor",
+      "valueScript": "this.parent.mod_ShelfadjColor",
+      "isWritable": false
+    },
+    {
       "partVarId": "pa_EdgeLeftType",
       "valueScript": "'CBE'"
     },
     {
-      "partVarId": "pa_EdgeBackType",
-      "valueScript": "'CBE'"
+      "partVarId": "pa_EdgeRightColor",
+      "valueScript": "this.parent.mod_ShelfadjColor",
+      "isWritable": false
     },
     {
       "partVarId": "pa_EdgeRightType",
       "valueScript": "'CBE'"
     },
     {
-      "partVarId": "pa_EdgeJointType",
-      "valueScript": "'VVVV'"
-    },
-    {
       "partVarId": "pa_GrainDirection",
       "valueScript": "'Neutral'",
-      "isWritable": false
-    },
-    {
-      "partVarId": "pa_Program",
-      "valueScript": "this.parent.mod_CarcaseProgram"
-    },
-    {
-      "partVarId": "pa_BomId",
-      "valueScript": "this.parent.mod_CarcaseId",
-      "isWritable": false
-    },
-    {
-      "partVarId": "pa_AdditionalInfo1",
-      "valueScript": "'None'",
-      "isWritable": false
-    },
-    {
-      "partVarId": "pa_ColorGrainGroup",
-      "valueScript": "this.parent.mod_ShelfadjColor_matrix.GrainGroupId",
       "isWritable": false
     },
     {
@@ -90,13 +81,23 @@
       "isWritable": false
     },
     {
+      "partVarId": "pa_Program",
+      "valueScript": "this.parent.mod_CarcaseProgram"
+    },
+    {
       "partVarId": "pa_ProgramGrainGroup",
       "valueScript": "this.parent.mod_CarcaseProgram_matrix.GrainGroupId",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_TopColor",
+      "valueScript": "this.parent.mod_ShelfadjColor",
       "isWritable": false
     }
   ],
   "bomData": [
     {
+      "id": 165,
       "bomElementTypeId": "bomout_Board",
       "description": "Output Parts / Boards",
       "conditionScript": "partSelf._g?.basic_CreateBom == 'Library'",

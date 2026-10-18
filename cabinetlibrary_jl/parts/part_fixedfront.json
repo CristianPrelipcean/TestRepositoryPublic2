@@ -81,6 +81,11 @@
       "isWritable": false
     },
     {
+      "partVarId": "pa_HardwareInfo",
+      "valueScript": "''",
+      "isWritable": false
+    },
+    {
       "partVarId": "pa_Program",
       "valueScript": "this.parent.mod_FrontProgram",
       "isWritable": false
@@ -94,15 +99,11 @@
       "partVarId": "pa_Weight",
       "valueScript": "",
       "isWritable": false
-    },
-    {
-      "partVarId": "pa_HardwareInfo",
-      "valueScript": "''",
-      "isWritable": false
     }
   ],
   "bomData": [
     {
+      "id": 207,
       "bomElementTypeId": "bomout_Board",
       "description": "Output Parts / Boards",
       "conditionScript": "partSelf._g?.basic_CreateBom == 'Library'",

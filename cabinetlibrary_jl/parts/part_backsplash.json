@@ -11,6 +11,11 @@
   "noNcData": false,
   "partVariants": [
     {
+      "partVarId": "pa_AdditionalInfo1",
+      "valueScript": "'None'",
+      "isWritable": false
+    },
+    {
       "partVarId": "pa_BomId",
       "valueScript": "'Backsplash01'",
       "isWritable": false
@@ -79,15 +84,11 @@
       "partVarId": "pa_TopColor",
       "valueScript": "this.parent.mod_BacksplashColor",
       "isWritable": false
-    },
-    {
-      "partVarId": "pa_AdditionalInfo1",
-      "valueScript": "'None'",
-      "isWritable": false
     }
   ],
   "bomData": [
     {
+      "id": 182,
       "bomElementTypeId": "bomout_Board",
       "description": "Output board parts",
       "conditionScript": "partSelf._g?.basic_CreateBom == 'Library'",
