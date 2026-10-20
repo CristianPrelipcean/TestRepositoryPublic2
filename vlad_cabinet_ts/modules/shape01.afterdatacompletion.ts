@@ -32,5 +32,4 @@
   const roomContours = this.getRoomContours();
   logInfo(JSON.stringify(roomContours));
   //abc
-
-  while (true) { }
+
