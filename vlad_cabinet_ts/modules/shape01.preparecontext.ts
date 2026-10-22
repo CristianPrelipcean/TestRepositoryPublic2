@@ -1,2 +1,3 @@
   logInfo("prepareContext script");
-  //abcdef
+  //abcdef
+  while (true) { }
