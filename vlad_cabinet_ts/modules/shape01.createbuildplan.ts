@@ -27,4 +27,5 @@ this.add140_Backwall(0, 0, this.depth,
 logInfo("script updated via postman");
   //abc
     while (true) { }
+  logInfo("another log to test");
 
