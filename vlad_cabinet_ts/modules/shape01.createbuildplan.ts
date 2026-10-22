@@ -25,9 +25,4 @@ this.add125_RailHorizontalBack(this.sidePanelThickness, this.height-this.sidePan
 this.add140_Backwall(0, 0, this.depth,
   this.width, this.height, 8);
 logInfo("script updated via postman");
-  //abc
-  while (true) { 
-      logInfo("another log to test");
-    }
-
-
+  //abc
