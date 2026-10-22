@@ -70,4 +70,3 @@
   if (this.showRoomContours) {
     this.addGenerationContour(GenerationMethod.ROOM, 0.0, Contour.M(0, 0));
   }
-
