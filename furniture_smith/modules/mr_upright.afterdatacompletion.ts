@@ -1,4 +1,3 @@
-  //abc
   // Schuler Consulting
   // Create: September 2024
   // By Stefano Cortese
