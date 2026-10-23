@@ -1,4 +1,4 @@
-
+  logError("THIS IS AN ERROR");
   const {
     CONTOUR_ATTRIBUTE_OWNER_TYPE,
     mr_Upright,
