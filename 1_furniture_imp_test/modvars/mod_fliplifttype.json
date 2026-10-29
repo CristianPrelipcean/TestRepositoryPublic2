@@ -1,0 +1,158 @@
+{
+  "variantId": "mod_FlipliftType",
+  "shortName": "Fliplift type",
+  "variantTypeId": "Text",
+  "description": "Type of the flip lift",
+  "restrictionTypeId": "Public",
+  "groupName": "Hardware | Fliplift",
+  "imageId": "6bcab22e-dbbd-4eaf-b65a-bf5addf43bd7:FlipliftType.JPG",
+  "assignedGlobalVarId": "basic_FlipliftType",
+  "isArray": false,
+  "isPosRelevant": true,
+  "mainAttr": true,
+  "userRight": "Advanced",
+  "implicitRelevant": false,
+  "posView": "Dropdown",
+  "matrix": [
+    {
+      "id": "FrontDividingNecessary",
+      "type": "Bool"
+    },
+    {
+      "id": "PartQty",
+      "type": "Integer",
+      "default": 1
+    },
+    {
+      "id": "DirectionType",
+      "type": "Text"
+    },
+    {
+      "id": "NeedsHinges",
+      "type": "Bool",
+      "default": false
+    }
+  ],
+  "selections": [
+    {
+      "value": "FHF",
+      "description": "Folding high flip lift",
+      "shortName": "Folding",
+      "imageId": "95db4c23-36f5-4daa-9716-531dcd6d6fd4:FHF.jpg",
+      "matrix": [
+        {
+          "id": "FrontDividingNecessary",
+          "value": true
+        },
+        {
+          "id": "PartQty",
+          "value": 2
+        },
+        {
+          "id": "DirectionType",
+          "value": "BtmTop"
+        },
+        {
+          "id": "NeedsHinges",
+          "value": false
+        }
+      ]
+    },
+    {
+      "value": "SHF",
+      "description": "Swing high flip lift",
+      "shortName": "Swinging",
+      "imageId": "1883e93e-8266-49c9-9f31-3c7b3be91f9f:SHF.jpg",
+      "matrix": [
+        {
+          "id": "FrontDividingNecessary",
+          "value": false
+        },
+        {
+          "id": "PartQty",
+          "value": 1
+        },
+        {
+          "id": "DirectionType",
+          "value": "BtmTop"
+        },
+        {
+          "id": "NeedsHinges",
+          "value": false
+        }
+      ]
+    },
+    {
+      "value": "LHF",
+      "description": "High flip lift",
+      "shortName": "Lifting",
+      "imageId": "889b3e56-398e-44b2-a392-e1d1313ea35d:LHF.jpg",
+      "matrix": [
+        {
+          "id": "FrontDividingNecessary",
+          "value": false
+        },
+        {
+          "id": "PartQty",
+          "value": 1
+        },
+        {
+          "id": "DirectionType",
+          "value": "BtmTop"
+        },
+        {
+          "id": "NeedsHinges",
+          "value": false
+        }
+      ]
+    },
+    {
+      "value": "UF",
+      "description": "Upwards opening flap",
+      "shortName": "Rotating up",
+      "imageId": "691e74ef-239b-4737-ad90-0ced60351327:UF.jpg",
+      "matrix": [
+        {
+          "id": "FrontDividingNecessary",
+          "value": false
+        },
+        {
+          "id": "PartQty",
+          "value": 1
+        },
+        {
+          "id": "DirectionType",
+          "value": "BtmTop"
+        },
+        {
+          "id": "NeedsHinges",
+          "value": true
+        }
+      ]
+    },
+    {
+      "value": "DF",
+      "description": "Downwards opening flap",
+      "shortName": "Rotating down",
+      "imageId": "2965435a-c581-472e-aba9-674719bbb9a4:DF.jpg",
+      "matrix": [
+        {
+          "id": "FrontDividingNecessary",
+          "value": false
+        },
+        {
+          "id": "PartQty",
+          "value": 1
+        },
+        {
+          "id": "DirectionType",
+          "value": "TopBtm"
+        },
+        {
+          "id": "NeedsHinges",
+          "value": true
+        }
+      ]
+    }
+  ]
+}

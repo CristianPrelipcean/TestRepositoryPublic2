@@ -1,0 +1,90 @@
+{
+  "moduleId": "mr_IslandBackwall",
+  "shortName": "Island backwall",
+  "configurable": true,
+  "isRoot": true,
+  "description": "Module for island backwall",
+  "groupName": "Root",
+  "imageId": "43d7842c-f909-4bfc-b3b9-1114e1dfa4ea:IslandBackwall.jpg",
+  "restrictionTypeId": "Public",
+  "childModules": [
+    {
+      "moduleId": "mc_Panel01"
+    }
+  ],
+  "assignedVariants": [
+    {
+      "variantId": "mod_Color",
+      "default": "240",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_Depth",
+      "previewValue": "350",
+      "required": true,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_Height",
+      "previewValue": "920",
+      "required": true,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_IslandBackwallOverdimension",
+      "default": "10",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_IslandBackwallOverhangFront",
+      "default": "30",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_IslandBackwallWidth",
+      "default": "1000",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_PaneltopColor",
+      "default": "380",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_PaneltopThk",
+      "required": false,
+      "derive": false,
+      "fixed": false,
+      "defaultGlobalVar": true
+    },
+    {
+      "variantId": "mod_Program",
+      "default": "Demoprogram1",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_Thk",
+      "default": "19",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    }
+  ],
+  "assignedParts": [],
+  "assignedCustomTables": [],
+  "assignedFunctions": []
+}

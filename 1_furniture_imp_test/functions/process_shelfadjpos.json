@@ -1,0 +1,8 @@
+{
+  "functionId": "process_ShelfadjPos",
+  "shortName": "process_ShelfadjPos",
+  "description": "Process calculation of adjustable shelves positions\n//########################################################",
+  "funcType": "Function",
+  "restrictionTypeId": "Internal",
+  "funcDef": "process_ShelfadjPos(m: IFuncParents_mc_ShelfadjGroup01): {\n\tIsComplete: boolean;\n\tErrorCode: string;\n\tStartPosY: number[];\n\tStartPosX: number;\n\tStartPosZ: number;\n\tShelfThk: number;\n\tModuleType: string;\n\tColor: string;\n\tGrainGroupId: string;\n\tDrillSettings?: ICT_tab_ShelfadjDrillSettings;\n\tDrillDistance: number;\n\tQtyDrills: number;\n\tWidth: number;\n\tDepth: number;\n\tOffsetFront: number;\n\tOffsetBack: number;\n}"
+}

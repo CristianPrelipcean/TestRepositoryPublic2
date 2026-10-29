@@ -1,0 +1,7 @@
+{
+  "functionId": "process_AnalyzeArticleSurroundings",
+  "description": "Analyzes the space around cabinets, including walls and gaps, to automatically adjust units and insert elements such as fillers.",
+  "funcType": "Function",
+  "restrictionTypeId": "Internal",
+  "funcDef": "process_AnalyzeArticleSurroundings(surroundingContours: any, articlePosition: any, articleDimension: any): {\r\n\tdistanceWallLeft: number;\r\n\tdistanceWallRight: number;\r\n\tdistanceWallBack: number;\r\n\tdistanceCeiling: number;\r\n\tfirstElement: boolean;\r\n\tlastElement: boolean;\r\n\theightPosition: number;\r\n\tslopedCeiling: boolean;\r\n\tslopedCeilingDirection: \"toLeft\" | \"toRight\" | \"toBack\" | null;\r\n\tslopedCeilingAngle: number;\r\n\tslopedCeilingLevel: number;\r\n\tdataComplete: boolean;\r\n}"
+}

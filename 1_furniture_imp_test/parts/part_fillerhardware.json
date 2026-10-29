@@ -1,0 +1,34 @@
+{
+  "partCode": "part_FillerHardware",
+  "shortName": "Filler Hardware",
+  "description": "Hardware for filler (drawing)",
+  "wdt": "XYZ",
+  "groupName": "Hardware",
+  "imageId": "2ad0ac5c-c303-4b56-9d9e-5061362f59f3:FillerHardware.jpg",
+  "model3dImageId": "",
+  "invisible": false,
+  "restrictionTypeId": "Internal",
+  "noNcData": false,
+  "partVariants": [
+    {
+      "partVarId": "pa_HardwareId",
+      "valueScript": "''",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_ParentName",
+      "valueScript": "this.parent.mod_FrontId",
+      "isWritable": false
+    }
+  ],
+  "bomData": [
+    {
+      "id": 219,
+      "bomElementTypeId": "bomout_Group",
+      "description": "BOM for filler Hardware",
+      "conditionScript": "partSelf._g?.basic_CreateHardwareBom == 'Library'",
+      "valueScript": "// Type of the Bom-Element (will be checked in order output)\n  let elementType='Hardware';\n\n  // ProductionSite Category (to split the orders for different production sites)\n  let elementCategory='';\n\n  // Id of the parent to create the hierarchy\n  let parentBomId=part.pa_ParentName;\n\n  // Call the function to process the Bom-Element\n  GlobalFunc.process_HardwareBom(this, part, elementType, elementCategory, parentBomId, part.pa_HardwareId)"
+    }
+  ],
+  "ncData": []
+}

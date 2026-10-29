@@ -1,0 +1,707 @@
+{
+  "moduleId": "mf_Fridge",
+  "shortName": "Fridge",
+  "configurable": true,
+  "isRoot": false,
+  "description": "Fridge",
+  "groupName": "Appliance",
+  "imageId": "f5a8ada3-d04a-4461-9a43-aa7f6fde3d25:Fridge.png",
+  "restrictionTypeId": "Public",
+  "childModules": [
+    {
+      "moduleId": "mc_Door01"
+    },
+    {
+      "moduleId": "mc_Fridge01"
+    }
+  ],
+  "assignedVariants": [
+    {
+      "variantId": "mod_BackwallPos",
+      "previewValue": "0",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_CarcaseBackwallConstruction",
+      "previewValue": "Grooved_LBRT",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_CarcaseDepth",
+      "default": "575",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_CarcaseHeight",
+      "default": "1950",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_CarcaseId",
+      "default": "",
+      "previewValue": "",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_CarcasePartInfo",
+      "default": "",
+      "previewValue": "",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_CarcaseSpaceDimension",
+      "default": "",
+      "previewValue": "",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_CarcaseWidth",
+      "default": "600",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_DoorDirection",
+      "default": "Left",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_DoorDirectionSelection",
+      "previewValue": "Automatic",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_DoorType",
+      "default": "Single",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_DoorTypeSelection",
+      "required": false,
+      "derive": false,
+      "fixed": false,
+      "defaultGlobalVar": true
+    },
+    {
+      "variantId": "mod_FingergripBtmType",
+      "default": "",
+      "previewValue": "",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_FingergripTop",
+      "default": "false",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_FingergripTopType",
+      "default": "",
+      "previewValue": "",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_FirstFront",
+      "default": "false",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_FridgeCarcasePositionType",
+      "default": "Automatic",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_FridgeCarcaseSpaceDescriptor",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_FridgeFrontHeightDescriptor",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_FridgeId",
+      "default": "None",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_FridgeInfo",
+      "default": "None",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_FridgePositionId",
+      "default": "First",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_FridgeSupplier",
+      "default": "None",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_FrontAreaInfoList",
+      "default": "",
+      "previewValue": "",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_FrontColor",
+      "previewValue": "Demoblue",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_FrontDescriptor",
+      "default": "1_1",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_FrontDesign",
+      "previewValue": "FlatPanel",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_FrontEdgeColor",
+      "previewValue": "Demoblue",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_FrontEdgeThk",
+      "previewValue": "1",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_FrontGapCarcase",
+      "previewValue": "0.5",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_FrontGapHor",
+      "previewValue": "0",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_FrontGapHorTop",
+      "previewValue": "0",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_FrontGapVert",
+      "previewValue": "3",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_FrontHeight",
+      "default": "9999",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_FrontHeightSelection",
+      "default": "9999",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_FrontId",
+      "default": "None",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_FrontOversizeBtm",
+      "default": "0",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_FrontOversizeLeft",
+      "default": "0",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_FrontOversizeRight",
+      "default": "0",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_FrontOversizeTop",
+      "default": "0",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_FrontPosStart",
+      "default": "0",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_FrontProgram",
+      "previewValue": "Demoprogram1",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_FrontSegmentColor",
+      "previewValue": "FloatGlass",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_FrontSegmentDescriptor",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_FrontSegmentType",
+      "previewValue": "Automatic",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_FrontSplitHeight1",
+      "default": "0",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_FrontSplitHeight2",
+      "default": "0",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_FrontSplitHeight3",
+      "default": "0",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_FrontSplitType1",
+      "default": "0",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_FrontSplitType2",
+      "default": "0",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_FrontThk",
+      "default": "19",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_FrontWidth",
+      "default": "600",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_HandleActivated",
+      "default": "All",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_HandleColor",
+      "previewValue": "Demoblue",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_HandleDesign",
+      "previewValue": "10",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_HandleDrill",
+      "default": "true",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_HandleLength",
+      "previewValue": "128",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_HandleLine",
+      "previewValue": "1050",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_HandleOffsetX",
+      "default": "0",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_HandleOffsetY",
+      "default": "0",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_HandlePosLogic",
+      "previewValue": "HandleLine",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_HandlePosMatrix",
+      "default": "Center",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_HandlePosMatrixMultiple",
+      "default": "Center_Center",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_HandlePosType",
+      "previewValue": "01",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_HandlestripPos",
+      "default": "4",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_HeightPosInsertion",
+      "previewValue": "0",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_HingeColor",
+      "default": "DemoNickelPlated",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_HingeLogic",
+      "default": "AutoSel_AutoPos",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_HingePos1",
+      "default": "0",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_HingePos2",
+      "default": "0",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_HingePos3",
+      "default": "0",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_HingePos4",
+      "default": "0",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_HingePos5",
+      "default": "0",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_HingePos6",
+      "default": "0",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_HingeType",
+      "default": "110ºSoftClose",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_Information",
+      "default": "",
+      "previewValue": "",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_InteriorEquipmentHinge",
+      "default": "All",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_LastFront",
+      "default": "false",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ModuleName",
+      "default": "mf_Fridge",
+      "required": false,
+      "derive": false,
+      "fixed": true
+    },
+    {
+      "variantId": "mod_MountingPlateType",
+      "default": "Horizontal",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_Originpos",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ParentName",
+      "default": "",
+      "previewValue": "",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_PushtoopenOffset",
+      "default": "0",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_PushtoopenPosition",
+      "default": "Automatic",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ShelfbtmThk",
+      "previewValue": "19",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ShelffixedBtm",
+      "default": "false",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ShelffixedInfoList",
+      "default": "",
+      "previewValue": "",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ShelffixedOffsetFront",
+      "default": "0",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ShelffixedOversizeBack",
+      "default": "0",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ShelffixedOversizeFront",
+      "default": "0",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ShelffixedPos",
+      "default": "GapMiddle",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ShelffixedThk",
+      "previewValue": "19",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ShelffixedType",
+      "default": "ThroughBw",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_SidepanelleftThk",
+      "previewValue": "18",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_SidepanelrightThk",
+      "previewValue": "18",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_TypeElement",
+      "previewValue": "BaseUnit",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_VertDividerType",
+      "default": "NoVertDivider",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    }
+  ],
+  "assignedParts": [],
+  "assignedCustomTables": [],
+  "assignedFunctions": []
+}

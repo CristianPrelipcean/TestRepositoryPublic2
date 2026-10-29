@@ -1,0 +1,73 @@
+{
+  "moduleId": "mf_Sink",
+  "shortName": "Sink",
+  "configurable": true,
+  "isRoot": false,
+  "description": "Sink",
+  "groupName": "Appliance",
+  "imageId": "409653b4-8638-45e0-8d14-e770909b8bf5:Sink.png",
+  "restrictionTypeId": "Public",
+  "childModules": [
+    {
+      "moduleId": "mc_ApplianceGraphic"
+    },
+    {
+      "moduleId": "mc_Sink01"
+    }
+  ],
+  "assignedVariants": [
+    {
+      "variantId": "mod_CountertopInfo",
+      "default": "",
+      "previewValue": "",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_MixerId",
+      "default": "None",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_MixerSupplier",
+      "default": "None",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_SinkId",
+      "default": "None",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_SinkMoveDepth",
+      "default": "50",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_SinkMoveWidth",
+      "default": "0",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_SinkSupplier",
+      "default": "None",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    }
+  ],
+  "assignedParts": [],
+  "assignedCustomTables": [],
+  "assignedFunctions": []
+}

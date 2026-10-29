@@ -1,0 +1,225 @@
+{
+  "moduleId": "mc_FlipliftHardware01",
+  "shortName": "Fliplift hardware",
+  "configurable": false,
+  "isRoot": false,
+  "isConfigDummy": false,
+  "isDropContainer": false,
+  "description": "Management of the hardware for the fliplifts",
+  "groupName": "Hardware",
+  "imageId": "8e1eba7f-7807-496e-b8b1-082a989020ee:fliplift.jpg",
+  "restrictionTypeId": "Internal",
+  "childModules": [],
+  "assignedVariants": [
+    {
+      "variantId": "mod_CarcaseId",
+      "default": "",
+      "previewValue": "",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_CarcasePartInfo",
+      "default": "",
+      "previewValue": "",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_Depth",
+      "default": "350",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_FlipliftFrontHeightList",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_FlipliftFrontNumber",
+      "previewValue": "0",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_FlipliftHardwareColor",
+      "previewValue": "Automatic",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_FlipliftHardwareType",
+      "previewValue": "Automatic",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_FlipliftLogic",
+      "required": false,
+      "derive": false,
+      "fixed": false,
+      "defaultGlobalVar": true
+    },
+    {
+      "variantId": "mod_FlipliftType",
+      "previewValue": "FHF",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_FrontGapCarcase",
+      "previewValue": "2",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_FrontHeight",
+      "previewValue": "600",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_FrontId",
+      "default": "",
+      "previewValue": "",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_FrontOverlayInfo",
+      "default": "",
+      "previewValue": "",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_FrontPosStart",
+      "previewValue": "0",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_FrontThk",
+      "previewValue": "19",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_FrontType",
+      "default": "",
+      "previewValue": "",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_FrontWidth",
+      "previewValue": "600",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_FrontpanelWeightCalculations",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_HandleWeightCalculations",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_HardwareColor",
+      "previewValue": "LightColor",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_HardwareTypeList",
+      "default": "",
+      "previewValue": "",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_Height",
+      "default": "600",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ModuleName",
+      "default": "",
+      "previewValue": "",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_OpeningAngle",
+      "default": "",
+      "previewValue": "",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_OpeningType",
+      "previewValue": "Handle",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_Width",
+      "default": "600",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    }
+  ],
+  "assignedParts": [
+    {
+      "partCode": "part_FlipliftHardwareBom"
+    },
+    {
+      "partCode": "part_FlipliftHardwareFrontpanelDrilling"
+    },
+    {
+      "partCode": "part_FlipliftHardwareGraphic"
+    },
+    {
+      "partCode": "part_FlipliftHardwareSidepanelDrilling"
+    }
+  ],
+  "assignedCustomTables": [],
+  "assignedFunctions": [
+    {
+      "functionId": "process_Fliplift"
+    },
+    {
+      "functionId": "ue_Fliplift"
+    }
+  ]
+}

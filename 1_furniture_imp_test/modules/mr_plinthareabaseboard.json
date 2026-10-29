@@ -1,0 +1,291 @@
+{
+  "moduleId": "mr_PlinthAreaBaseboard",
+  "shortName": "Plinth Area Baseboard",
+  "configurable": false,
+  "isRoot": false,
+  "isConfigDummy": false,
+  "isDropContainer": false,
+  "description": "Plinth Area Baseboard",
+  "groupName": "Root",
+  "imageId": "c7daf681-d217-47e5-aea3-5af79a6e0836:PlinthAreaFront.jpg",
+  "restrictionTypeId": "Public",
+  "generateMethod": "PlinthAreaBaseboard",
+  "childModules": [
+    {
+      "moduleId": "mc_Baseboard01"
+    },
+    {
+      "moduleId": "mc_Leg01"
+    },
+    {
+      "moduleId": "mc_Toekick"
+    }
+  ],
+  "assignedVariants": [
+    {
+      "variantId": "mod_BaseboardColor",
+      "defaultScript": "this.mod_CarcaseColor",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_BaseboardDepthLogic",
+      "default": "FollowsMinDepth",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_BaseboardEdgeBackColor",
+      "defaultScript": "this.mod_CarcaseColor",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_BaseboardEdgeColor",
+      "defaultScript": "this.mod_CarcaseColor",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_BaseboardEdgeFrontColor",
+      "defaultScript": "this.mod_CarcaseColor",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_BaseboardOverdimensionBack",
+      "default": "0",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_BaseboardOverdimensionLeft",
+      "default": "0",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_BaseboardOverdimensionRight",
+      "default": "0",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_BaseboardProgram",
+      "defaultScript": "this.mod_CarcaseProgram",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_BaseboardSplitLogic",
+      "default": "BetweenCabinets",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_BaseboardThk",
+      "default": "19",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_CarcaseColor",
+      "default": "316",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_CarcaseEdgeBackColor",
+      "defaultScript": "this.mod_CarcaseColor",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_CarcaseEdgeColor",
+      "defaultScript": "this.mod_CarcaseColor",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_CarcaseEdgeFrontColor",
+      "defaultScript": "this.mod_CarcaseColor",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_CarcaseProgram",
+      "default": "Classic",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_LengthList",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_PlinthAreaDesign",
+      "default": "90",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_PlinthAreaElementColor",
+      "default": "StainlessSteel",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_PlinthAreaExtraItem",
+      "default": "None",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_PlinthAreaHeight",
+      "default": "100",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_PlinthAreaPosBackMatrix",
+      "default": "BCF",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_PlinthAreaPosFrontMatrix",
+      "default": "FCF",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_PlinthAreaPosLeftMatrix",
+      "default": "LCF",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_PlinthAreaPosLogic",
+      "default": "Library",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_PlinthAreaPosRightMatrix",
+      "default": "RCF",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_PlinthAreaVisLeft",
+      "default": "true",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_PlinthAreaVisRight",
+      "default": "true",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ToekickColor",
+      "default": "316",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ToekickConnectionOverhang",
+      "default": "0",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ToekickConnectionSequence",
+      "default": "0",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ToekickId",
+      "default": "0",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ToekickProgram",
+      "default": "Nature",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ToekickReductionTop",
+      "default": "10",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ToekickSidepanelOverdimensionBtm",
+      "default": "0",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ToekickSidepanelTransitionType",
+      "default": "FrontLong",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ToekickThk",
+      "required": false,
+      "derive": false,
+      "fixed": false,
+      "defaultGlobalVar": true
+    }
+  ],
+  "assignedParts": [
+    {
+      "partCode": "part_BaseboardGroup"
+    }
+  ],
+  "assignedCustomTables": [],
+  "assignedFunctions": []
+}

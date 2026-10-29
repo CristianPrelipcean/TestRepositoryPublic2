@@ -1,0 +1,75 @@
+{
+  "moduleId": "mc_Fridge01",
+  "shortName": "Fridge",
+  "configurable": false,
+  "isRoot": false,
+  "description": "Construction module of fridge",
+  "groupName": "Appliance",
+  "imageId": "f5a8ada3-d04a-4461-9a43-aa7f6fde3d25:Fridge.png",
+  "restrictionTypeId": "Internal",
+  "childModules": [
+    {
+      "moduleId": "mc_ApplianceGraphic"
+    }
+  ],
+  "assignedVariants": [
+    {
+      "variantId": "mod_CarcaseDepth",
+      "previewValue": "550",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_CarcaseHeight",
+      "previewValue": "1000",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_CarcaseWidth",
+      "previewValue": "600",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_FirstFront",
+      "previewValue": "false",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_FridgeGraphicId",
+      "default": "None",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_FrontGapHorTop",
+      "previewValue": "3",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_LastFront",
+      "previewValue": "false",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_Originpos",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    }
+  ],
+  "assignedParts": [],
+  "assignedCustomTables": [],
+  "assignedFunctions": []
+}

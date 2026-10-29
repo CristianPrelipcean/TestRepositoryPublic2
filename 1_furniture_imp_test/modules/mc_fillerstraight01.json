@@ -1,0 +1,294 @@
+{
+  "moduleId": "mc_FillerStraight01",
+  "shortName": "Filler",
+  "configurable": false,
+  "isRoot": false,
+  "isConfigDummy": false,
+  "isDropContainer": false,
+  "description": "Construction module for the filler",
+  "groupName": "Filler",
+  "imageId": "a87b500a-8b4f-4020-9d52-e25f9af0f2d0:Filler.png",
+  "restrictionTypeId": "Internal",
+  "childModules": [
+    {
+      "moduleId": "mc_FillerFront01"
+    },
+    {
+      "moduleId": "mc_FillerSupportPanels01"
+    },
+    {
+      "moduleId": "mc_StorageunitShelfbtm01"
+    },
+    {
+      "moduleId": "mc_StorageunitShelftop01"
+    },
+    {
+      "moduleId": "mc_StorageunitSidepanel01"
+    }
+  ],
+  "assignedVariants": [
+    {
+      "variantId": "mod_CarcaseColor",
+      "previewValue": "316",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_CarcaseDistanceWall",
+      "previewValue": "0",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_CarcaseEdgeColor",
+      "previewValue": "316",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_CarcaseEdgeFrontColor",
+      "previewValue": "316",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_CarcaseFrontConstruction",
+      "previewValue": "FrontOverlayLBRT",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_CarcaseId",
+      "default": "",
+      "previewValue": "",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_CarcaseProgram",
+      "previewValue": "Classic",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_Depth",
+      "previewValue": "600",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_Direction",
+      "previewValue": "Left",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_FillerHardware",
+      "default": "Bracket01",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_FillerType",
+      "previewValue": "LShape",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_FingergripType",
+      "previewValue": "None",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_FrontColor",
+      "previewValue": "316",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_FrontDesign",
+      "previewValue": "Standard",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_FrontEdgeColor",
+      "previewValue": "316",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_FrontEdgeThk",
+      "previewValue": "0",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_FrontGapCarcase",
+      "previewValue": "2",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_FrontGapHor",
+      "previewValue": "0",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_FrontGapHorTop",
+      "previewValue": "0",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_FrontGapVert",
+      "previewValue": "0",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_FrontPosStart",
+      "previewValue": "0",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_FrontProgram",
+      "previewValue": "Classic",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_GlobalFrontOversizeBtm",
+      "previewValue": "0",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_GlobalFrontOversizeLeft",
+      "previewValue": "0",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_GlobalFrontOversizeRight",
+      "previewValue": "0",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_GlobalFrontOversizeTop",
+      "previewValue": "0",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_HardwareColor",
+      "previewValue": "DarkColor",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_Height",
+      "previewValue": "800",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_HeightPosInsertion",
+      "previewValue": "0",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ModuleName",
+      "default": "mc_Filler01",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ParentName",
+      "defaultScript": "this.parent.mod_ModuleName",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ShelfbtmThk",
+      "previewValue": "16",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ShelftopThk",
+      "previewValue": "16",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_SidepanelleftThk",
+      "previewValue": "16",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_SidepanelrightThk",
+      "previewValue": "16",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_TypeElement",
+      "previewValue": "Filler",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_Width",
+      "previewValue": "600",
+      "required": true,
+      "derive": true,
+      "fixed": false
+    }
+  ],
+  "assignedParts": [],
+  "assignedCustomTables": [],
+  "assignedFunctions": []
+}

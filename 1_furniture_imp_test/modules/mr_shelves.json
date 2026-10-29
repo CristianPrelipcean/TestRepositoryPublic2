@@ -1,0 +1,76 @@
+{
+  "moduleId": "mr_Shelves",
+  "shortName": "Wall shelf",
+  "configurable": true,
+  "isRoot": true,
+  "description": "Module for wall shelf",
+  "groupName": "Root",
+  "imageId": "03e8cc7e-4b14-48e9-98f8-ae3dfbb2a35d:WallShelf.jpg",
+  "restrictionTypeId": "Public",
+  "childModules": [
+    {
+      "moduleId": "mc_Bracket01"
+    },
+    {
+      "moduleId": "mc_Shelves01"
+    }
+  ],
+  "assignedVariants": [
+    {
+      "variantId": "mod_Depth",
+      "default": "300",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ModuleName",
+      "default": "mr_Shelves",
+      "required": false,
+      "derive": false,
+      "fixed": true
+    },
+    {
+      "variantId": "mod_ShelvesBrackets",
+      "default": "ARRAS5",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ShelvesBracketsColor",
+      "default": "199",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ShelvesColor",
+      "default": "240",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ShelvesThk",
+      "default": "19",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_Width",
+      "default": "1000",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    }
+  ],
+  "assignedParts": [],
+  "assignedCustomTables": [],
+  "assignedFunctions": [
+    {
+      "functionId": "process_Bracket"
+    }
+  ]
+}

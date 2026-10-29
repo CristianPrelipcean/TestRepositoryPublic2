@@ -1,0 +1,35 @@
+{
+  "moduleId": "mc_Sink01",
+  "shortName": "Sink",
+  "configurable": false,
+  "isRoot": false,
+  "description": "Construction module for sink",
+  "groupName": "Appliance",
+  "imageId": "409653b4-8638-45e0-8d14-e770909b8bf5:Sink.png",
+  "restrictionTypeId": "Internal",
+  "childModules": [
+    {
+      "moduleId": "mc_ApplianceGraphic"
+    }
+  ],
+  "assignedVariants": [
+    {
+      "variantId": "mod_SinkConstructionId",
+      "default": "None",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_SinkGraphicId",
+      "default": "",
+      "previewValue": "",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    }
+  ],
+  "assignedParts": [],
+  "assignedCustomTables": [],
+  "assignedFunctions": []
+}

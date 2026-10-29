@@ -1,0 +1,38 @@
+{
+  "moduleId": "mc_Hob01",
+  "shortName": "Hob Construction",
+  "configurable": false,
+  "isRoot": false,
+  "description": "Hob Construction",
+  "groupName": "Appliance",
+  "imageId": "4722e8c7-8fc1-491c-902a-9d5853523663:Hob.png",
+  "restrictionTypeId": "Internal",
+  "childModules": [
+    {
+      "moduleId": "mc_ApplianceGraphic"
+    }
+  ],
+  "assignedVariants": [
+    {
+      "variantId": "mod_HobConstructionId",
+      "default": "None",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_HobGraphicId",
+      "default": "None",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    }
+  ],
+  "assignedParts": [
+    {
+      "partCode": "part_CountertopCutout"
+    }
+  ],
+  "assignedCustomTables": [],
+  "assignedFunctions": []
+}

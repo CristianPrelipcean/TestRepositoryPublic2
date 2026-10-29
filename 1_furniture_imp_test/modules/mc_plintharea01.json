@@ -1,0 +1,192 @@
+{
+  "moduleId": "mc_PlinthArea01",
+  "shortName": "Plinth area",
+  "configurable": false,
+  "isRoot": false,
+  "description": "Management of the plinth area",
+  "groupName": "Toekick",
+  "imageId": "85e91dd6-a6fe-4350-a06f-1f52e95521f5:PlinthArea.png",
+  "restrictionTypeId": "Internal",
+  "childModules": [
+    {
+      "moduleId": "mc_Leg01"
+    }
+  ],
+  "assignedVariants": [
+    {
+      "variantId": "mod_CarcaseDepth",
+      "previewValue": "500",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_CarcaseId",
+      "previewValue": "None",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_CarcaseSidepanelleftOversizeBtm",
+      "default": "0",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_CarcaseSidepanelrightOversizeBtm",
+      "default": "0",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_CarcaseWidth",
+      "previewValue": "600",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_LegInsertion",
+      "default": "true",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ModuleName",
+      "default": "mc_PlinthArea01",
+      "required": false,
+      "derive": false,
+      "fixed": true
+    },
+    {
+      "variantId": "mod_PlinthAreaDesign",
+      "previewValue": "40",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_PlinthAreaElementColor",
+      "previewValue": "BL",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_PlinthAreaExtraItem",
+      "previewValue": "None",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_PlinthAreaHeight",
+      "previewValue": "100",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_PlinthAreaPosBackMatrix",
+      "previewValue": "BCF",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_PlinthAreaPosFrontMatrix",
+      "previewValue": "FCF",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_PlinthAreaPosLeftMatrix",
+      "previewValue": "LCF",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_PlinthAreaPosLogic",
+      "required": false,
+      "derive": false,
+      "fixed": false,
+      "defaultGlobalVar": true
+    },
+    {
+      "variantId": "mod_PlinthAreaPosRightMatrix",
+      "previewValue": "RCF",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_PlinthAreaPositionInfo",
+      "default": "",
+      "previewValue": "",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ShelfbtmThk",
+      "previewValue": "19",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_SidepanelleftThk",
+      "previewValue": "19",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_SidepanelrightThk",
+      "previewValue": "19",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_TypeElement",
+      "previewValue": "BaseUnit",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_Weight",
+      "default": "50",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    }
+  ],
+  "assignedParts": [],
+  "assignedCustomTables": [
+    {
+      "customTableId": "tab_PlinthAreaConstruction"
+    },
+    {
+      "customTableId": "tab_PlinthAreaSettings"
+    }
+  ],
+  "assignedFunctions": [
+    {
+      "functionId": "process_PlinthAreaLegs"
+    },
+    {
+      "functionId": "ue_PlinthAreaLegs"
+    },
+    {
+      "functionId": "ue_PlinthAreaSingleLeg"
+    }
+  ]
+}

@@ -1,0 +1,155 @@
+{
+  "moduleId": "mr_CeilingFiller",
+  "shortName": "Ceiling filler",
+  "configurable": false,
+  "isRoot": false,
+  "isConfigDummy": false,
+  "isDropContainer": false,
+  "description": "Ceilling filler",
+  "groupName": "Root",
+  "imageId": "26cf187b-ca1a-4d84-b755-2ea43a49c413:CeilingFiller.png",
+  "restrictionTypeId": "Public",
+  "generateMethod": "CeilingFiller",
+  "childModules": [
+    {
+      "moduleId": "mc_CeilingFiller01"
+    }
+  ],
+  "assignedVariants": [
+    {
+      "variantId": "mod_CeilingFillerColor",
+      "default": "240",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_CeilingFillerConstruction",
+      "required": false,
+      "derive": false,
+      "fixed": false,
+      "defaultGlobalVar": true
+    },
+    {
+      "variantId": "mod_CeilingFillerEdgeBackColor",
+      "default": "240",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_CeilingFillerEdgeFrontColor",
+      "defaultScript": "this.mod_CeilingFillerColor",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_CeilingFillerEdgeLeftColor",
+      "default": "240",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_CeilingFillerEdgeRightColor",
+      "default": "240",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_CeilingFillerFittingPanelDepth",
+      "required": false,
+      "derive": false,
+      "fixed": false,
+      "defaultGlobalVar": true
+    },
+    {
+      "variantId": "mod_CeilingFillerFittingPanelThk",
+      "required": false,
+      "derive": false,
+      "fixed": false,
+      "defaultGlobalVar": true
+    },
+    {
+      "variantId": "mod_CeilingFillerHeight",
+      "required": false,
+      "derive": false,
+      "fixed": false,
+      "defaultGlobalVar": true
+    },
+    {
+      "variantId": "mod_CeilingFillerProgram",
+      "default": "Nature",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_CeilingFillerRecess",
+      "required": false,
+      "derive": false,
+      "fixed": false,
+      "defaultGlobalVar": true
+    },
+    {
+      "variantId": "mod_CeilingFillerRecessLeft",
+      "required": false,
+      "derive": false,
+      "fixed": false,
+      "defaultGlobalVar": true
+    },
+    {
+      "variantId": "mod_CeilingFillerRecessRight",
+      "required": false,
+      "derive": false,
+      "fixed": false,
+      "defaultGlobalVar": true
+    },
+    {
+      "variantId": "mod_CeilingFillerThk",
+      "required": false,
+      "derive": false,
+      "fixed": false,
+      "defaultGlobalVar": true
+    },
+    {
+      "variantId": "mod_CeilingFillerTransitionType",
+      "default": "FrontLong",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_FrontGapCarcase",
+      "required": false,
+      "derive": false,
+      "fixed": false,
+      "defaultGlobalVar": true
+    },
+    {
+      "variantId": "mod_FrontGapHor",
+      "required": false,
+      "derive": false,
+      "fixed": false,
+      "defaultGlobalVar": true
+    },
+    {
+      "variantId": "mod_LengthList",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ModuleName",
+      "default": "mr_CeilingFiller",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    }
+  ],
+  "assignedParts": [],
+  "assignedCustomTables": [],
+  "assignedFunctions": []
+}

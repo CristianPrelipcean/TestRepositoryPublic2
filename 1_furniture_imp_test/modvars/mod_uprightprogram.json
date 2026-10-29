@@ -1,0 +1,60 @@
+{
+  "variantId": "mod_UprightProgram",
+  "shortName": "Upright Program",
+  "variantTypeId": "Text",
+  "description": "Upright Program",
+  "restrictionTypeId": "Public",
+  "groupName": "Upright",
+  "imageId": "8b30ac3f-3621-4eba-b5c6-db6841e2981f:upright.jpg",
+  "isArray": false,
+  "isPosRelevant": true,
+  "mainAttr": true,
+  "userRight": "Master",
+  "implicitRelevant": false,
+  "matrix": [
+    {
+      "id": "GrainGroupId",
+      "type": "Text",
+      "shortName": "GrainGroupId",
+      "default": "Neutral"
+    }
+  ],
+  "selections": [
+    {
+      "value": "ModernNature",
+      "description": "Carcase in wooden colors horizontal",
+      "shortName": "ModernNature",
+      "imageId": "5c465d39-a847-4b84-a3c8-14a47994577a:ModernNature.jpg",
+      "matrix": [
+        {
+          "id": "GrainGroupId",
+          "value": "Horizontal"
+        }
+      ]
+    },
+    {
+      "value": "Nature",
+      "description": "Carcase in wooden colors vertical",
+      "shortName": "Nature",
+      "imageId": "ce8ca5e8-181b-4674-a2a1-835a0bf149c4:Nature.jpg",
+      "matrix": [
+        {
+          "id": "GrainGroupId",
+          "value": "Vertical"
+        }
+      ]
+    },
+    {
+      "value": "Classic",
+      "description": "Classic carcase in single colors",
+      "shortName": "Classic",
+      "imageId": "58550c12-2862-44ec-a200-99a78d1cf4ad:Classic.jpg",
+      "matrix": [
+        {
+          "id": "GrainGroupId",
+          "value": "Neutral"
+        }
+      ]
+    }
+  ]
+}

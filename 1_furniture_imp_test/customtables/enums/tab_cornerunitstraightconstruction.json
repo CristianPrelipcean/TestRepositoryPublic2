@@ -1,0 +1,58 @@
+[
+  {
+    "tableName": "tab_CornerunitStraightConstruction",
+    "columnId": "in_ConstructionType",
+    "enumsJson": [
+      {
+        "value": "Construction01",
+        "description": "Construction01"
+      },
+      {
+        "value": "Construction02",
+        "description": "Construction02"
+      },
+      {
+        "value": "Construction03",
+        "description": "Construction03"
+      },
+      {
+        "value": "Construction04",
+        "description": "Construction04"
+      }
+    ]
+  },
+  {
+    "tableName": "tab_CornerunitStraightConstruction",
+    "columnId": "in_Direction",
+    "enumsJson": [
+      {
+        "value": "Left",
+        "description": "Left"
+      },
+      {
+        "value": "Right",
+        "description": "Right"
+      }
+    ]
+  },
+  {
+    "tableName": "tab_CornerunitStraightConstruction",
+    "columnId": "in_Part",
+    "enumsJson": [
+      {
+        "value": "part_Sidepanelmiddle",
+        "description": "Side Panel Middle (Short)"
+      },
+      {
+        "value": "part_Panelblind",
+        "description": "Panel Blind"
+      }
+    ]
+  },
+  {
+    "tableName": "tab_CornerunitStraightConstruction",
+    "columnId": "matrix_EdgeJointType",
+    "refCustomTableName": "tab_EdgeJointSettings",
+    "refColumnId": "in_EdgeJointType"
+  }
+]

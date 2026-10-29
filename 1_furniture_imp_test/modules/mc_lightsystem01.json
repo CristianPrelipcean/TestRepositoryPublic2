@@ -1,0 +1,56 @@
+{
+  "moduleId": "mc_LightSystem01",
+  "shortName": "Lightning system",
+  "configurable": false,
+  "isRoot": false,
+  "description": "Management of the lightning system",
+  "groupName": "Hardware",
+  "imageId": "5d2fb3a7-6a6a-46ad-b58c-d7482e64e326:partlight.jpg",
+  "restrictionTypeId": "Internal",
+  "childModules": [],
+  "assignedVariants": [
+    {
+      "variantId": "mod_Depth",
+      "default": "500",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_Height",
+      "default": "720",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_LightSystem",
+      "previewValue": "Spot",
+      "required": false,
+      "derive": true,
+      "fixed": false,
+      "defaultGlobalVar": false
+    },
+    {
+      "variantId": "mod_ModuleName",
+      "default": "mc_LightSystem01",
+      "required": false,
+      "derive": false,
+      "fixed": true
+    },
+    {
+      "variantId": "mod_Width",
+      "default": "600",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    }
+  ],
+  "assignedParts": [
+    {
+      "partCode": "part_LightSystem"
+    }
+  ],
+  "assignedCustomTables": [],
+  "assignedFunctions": []
+}

@@ -1,0 +1,161 @@
+{
+  "moduleId": "mc_HoodCarcaseParts01",
+  "shortName": "Hood carcase parts01",
+  "configurable": false,
+  "isRoot": false,
+  "isConfigDummy": false,
+  "isDropContainer": false,
+  "description": "Construction module for hood",
+  "groupName": "Hood",
+  "imageId": "1c27097b-fd07-487d-b9b9-6271262994a6:HoodInsert.png",
+  "restrictionTypeId": "Internal",
+  "childModules": [],
+  "assignedVariants": [
+    {
+      "variantId": "mod_CarcaseDepth",
+      "previewValue": "300",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_CarcaseHeight",
+      "previewValue": "500",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_CarcaseSpaceDimension",
+      "default": "",
+      "previewValue": "",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_CarcaseWidth",
+      "previewValue": "500",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_HoodBackwallthk",
+      "default": "8",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_HoodConstructionRailbtmthk",
+      "default": "19",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_HoodConstructionRailbtmwdth",
+      "default": "124",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_HoodConstructionRailtopthk",
+      "default": "19",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_HoodConstructionRailtopwdth",
+      "default": "124",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_HoodGrooveDistance",
+      "default": "15",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_HoodInformation",
+      "default": "",
+      "previewValue": "",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_HoodRailvertfrontbtmthk",
+      "default": "19",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_HoodRailverttopbackthk",
+      "default": "19",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_HoodShelfbtmthk",
+      "default": "19",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_HoodShelftopthk",
+      "default": "19",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_HoodSidepanelthk",
+      "default": "19",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    }
+  ],
+  "assignedParts": [
+    {
+      "partCode": "part_HoodBackwall"
+    },
+    {
+      "partCode": "part_HoodConstructionRail"
+    },
+    {
+      "partCode": "part_HoodRail"
+    },
+    {
+      "partCode": "part_HoodShelfadj"
+    },
+    {
+      "partCode": "part_HoodShelfbtm"
+    },
+    {
+      "partCode": "part_HoodShelftop"
+    },
+    {
+      "partCode": "part_HoodSidepanelleft"
+    },
+    {
+      "partCode": "part_HoodSidepanelright"
+    }
+  ],
+  "assignedCustomTables": [
+    {
+      "customTableId": "tab_HoodAssemblyParts"
+    }
+  ],
+  "assignedFunctions": []
+}

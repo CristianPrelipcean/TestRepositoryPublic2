@@ -1,0 +1,58 @@
+{
+  "globalVarId": "basic_CountertopThk",
+  "shortName": "Thickness",
+  "variantTypeId": "Dim",
+  "description": "Basic setting for the thickness of the Countertop",
+  "value": "25",
+  "groupName": "Countertop",
+  "imageId": "",
+  "restrictionTypeId": "Public",
+  "changed": false,
+  "assignedArticleInfo": "null",
+  "exceptions": [
+    {
+      "globalVarExceptionId": 290,
+      "value": "19",
+      "rootValueScript": "",
+      "data": [
+        {
+          "variantId": "mod_TypeElement",
+          "value": "BaseUnit"
+        },
+        {
+          "variantId": "mod_CountertopProgram"
+        }
+      ]
+    },
+    {
+      "globalVarExceptionId": 291,
+      "value": "25",
+      "rootValueScript": "",
+      "data": [
+        {
+          "variantId": "mod_TypeElement",
+          "value": "BaseUnit"
+        },
+        {
+          "variantId": "mod_CountertopProgram",
+          "value": "Style"
+        }
+      ]
+    },
+    {
+      "globalVarExceptionId": 292,
+      "value": "40",
+      "rootValueScript": "",
+      "data": [
+        {
+          "variantId": "mod_TypeElement",
+          "value": "BaseUnit"
+        },
+        {
+          "variantId": "mod_CountertopProgram",
+          "value": "Cube"
+        }
+      ]
+    }
+  ]
+}

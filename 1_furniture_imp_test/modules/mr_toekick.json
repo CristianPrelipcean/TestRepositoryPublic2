@@ -1,0 +1,91 @@
+{
+  "moduleId": "mr_Toekick",
+  "shortName": "Toekick",
+  "configurable": false,
+  "isRoot": false,
+  "description": "Module for toeckick",
+  "groupName": "Root",
+  "imageId": "5896ad3f-2c33-440f-ac6a-2bd04f7bbd6d:Toekick.png",
+  "restrictionTypeId": "Public",
+  "generateMethod": "Toekick",
+  "childModules": [
+    {
+      "moduleId": "mc_Toekick"
+    }
+  ],
+  "assignedVariants": [
+    {
+      "variantId": "mod_LengthList",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ToekickColor",
+      "default": "326",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ToekickConnectionOverhang",
+      "required": false,
+      "derive": false,
+      "fixed": false,
+      "defaultGlobalVar": true
+    },
+    {
+      "variantId": "mod_ToekickConnectionSequence",
+      "default": "L_L_L",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ToekickId",
+      "default": "",
+      "previewValue": "",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ToekickProgram",
+      "default": "Classic",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ToekickReductionTop",
+      "required": false,
+      "derive": false,
+      "fixed": false,
+      "defaultGlobalVar": true
+    },
+    {
+      "variantId": "mod_ToekickSidepanelOverdimensionBtm",
+      "required": false,
+      "derive": false,
+      "fixed": false,
+      "defaultGlobalVar": true
+    },
+    {
+      "variantId": "mod_ToekickSidepanelTransitionType",
+      "required": false,
+      "derive": false,
+      "fixed": false,
+      "defaultGlobalVar": true
+    },
+    {
+      "variantId": "mod_ToekickThk",
+      "required": false,
+      "derive": false,
+      "fixed": false,
+      "defaultGlobalVar": true
+    }
+  ],
+  "assignedParts": [],
+  "assignedCustomTables": [],
+  "assignedFunctions": []
+}

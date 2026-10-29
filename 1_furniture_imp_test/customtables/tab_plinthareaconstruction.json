@@ -1,0 +1,3375 @@
+{
+  "tableName": "tab_PlinthAreaConstruction",
+  "description": "Construction of plinth area",
+  "restrictionTypeId": "Internal",
+  "groupName": "PlinthArea",
+  "columns": [
+    {
+      "name": "_id",
+      "type": "Integer",
+      "allowNull": false
+    },
+    {
+      "name": "in_BasePoint",
+      "type": "Integer",
+      "allowNull": false
+    },
+    {
+      "name": "in_MatrixPositionType",
+      "type": "Integer",
+      "allowNull": false
+    },
+    {
+      "name": "in_RotationMin",
+      "type": "Integer",
+      "allowNull": false
+    },
+    {
+      "name": "in_RotationMax",
+      "type": "Integer",
+      "allowNull": false
+    },
+    {
+      "name": "PosX",
+      "type": "Text",
+      "allowNull": true,
+      "functionDefinition": "(m:parent,PosXOffset:number,HardwareLength:number,HardwareWidth:number):number"
+    },
+    {
+      "name": "PosY",
+      "type": "Text",
+      "allowNull": true,
+      "functionDefinition": "(m:parent,PosYOffset:number,HardwareLength:number,HardwareWidth:number):number"
+    }
+  ],
+  "rows": [
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "1"
+        },
+        {
+          "columnName": "in_BasePoint",
+          "value": "1"
+        },
+        {
+          "columnName": "in_MatrixPositionType",
+          "value": "11"
+        },
+        {
+          "columnName": "in_RotationMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_RotationMax",
+          "value": "0"
+        },
+        {
+          "columnName": "PosX",
+          "value": "PosXOffset+(HardwareLength/2)"
+        },
+        {
+          "columnName": "PosY",
+          "value": "PosYOffset+(HardwareWidth/2)"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "2"
+        },
+        {
+          "columnName": "in_BasePoint",
+          "value": "1"
+        },
+        {
+          "columnName": "in_MatrixPositionType",
+          "value": "11"
+        },
+        {
+          "columnName": "in_RotationMin",
+          "value": "90"
+        },
+        {
+          "columnName": "in_RotationMax",
+          "value": "90"
+        },
+        {
+          "columnName": "PosX",
+          "value": "PosXOffset+(HardwareWidth/2)"
+        },
+        {
+          "columnName": "PosY",
+          "value": "PosYOffset+(HardwareLength/2)"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "3"
+        },
+        {
+          "columnName": "in_BasePoint",
+          "value": "1"
+        },
+        {
+          "columnName": "in_MatrixPositionType",
+          "value": "11"
+        },
+        {
+          "columnName": "in_RotationMin",
+          "value": "180"
+        },
+        {
+          "columnName": "in_RotationMax",
+          "value": "180"
+        },
+        {
+          "columnName": "PosX",
+          "value": "PosXOffset+(HardwareLength/2)"
+        },
+        {
+          "columnName": "PosY",
+          "value": "PosYOffset+(HardwareWidth/2)"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "4"
+        },
+        {
+          "columnName": "in_BasePoint",
+          "value": "1"
+        },
+        {
+          "columnName": "in_MatrixPositionType",
+          "value": "11"
+        },
+        {
+          "columnName": "in_RotationMin",
+          "value": "270"
+        },
+        {
+          "columnName": "in_RotationMax",
+          "value": "270"
+        },
+        {
+          "columnName": "PosX",
+          "value": "PosXOffset+(HardwareWidth/2)"
+        },
+        {
+          "columnName": "PosY",
+          "value": "PosYOffset+(HardwareLength/2)"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "5"
+        },
+        {
+          "columnName": "in_BasePoint",
+          "value": "1"
+        },
+        {
+          "columnName": "in_MatrixPositionType",
+          "value": "12"
+        },
+        {
+          "columnName": "in_RotationMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_RotationMax",
+          "value": "0"
+        },
+        {
+          "columnName": "PosX",
+          "value": "PosXOffset-(HardwareLength/2)"
+        },
+        {
+          "columnName": "PosY",
+          "value": "PosYOffset+(HardwareWidth/2)"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "6"
+        },
+        {
+          "columnName": "in_BasePoint",
+          "value": "1"
+        },
+        {
+          "columnName": "in_MatrixPositionType",
+          "value": "12"
+        },
+        {
+          "columnName": "in_RotationMin",
+          "value": "90"
+        },
+        {
+          "columnName": "in_RotationMax",
+          "value": "90"
+        },
+        {
+          "columnName": "PosX",
+          "value": "PosXOffset-(HardwareWidth/2)"
+        },
+        {
+          "columnName": "PosY",
+          "value": "PosYOffset+(HardwareLength/2)"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "7"
+        },
+        {
+          "columnName": "in_BasePoint",
+          "value": "1"
+        },
+        {
+          "columnName": "in_MatrixPositionType",
+          "value": "12"
+        },
+        {
+          "columnName": "in_RotationMin",
+          "value": "180"
+        },
+        {
+          "columnName": "in_RotationMax",
+          "value": "180"
+        },
+        {
+          "columnName": "PosX",
+          "value": "PosXOffset-(HardwareWidth/2)"
+        },
+        {
+          "columnName": "PosY",
+          "value": "PosYOffset+(HardwareLength/2)"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "8"
+        },
+        {
+          "columnName": "in_BasePoint",
+          "value": "1"
+        },
+        {
+          "columnName": "in_MatrixPositionType",
+          "value": "12"
+        },
+        {
+          "columnName": "in_RotationMin",
+          "value": "270"
+        },
+        {
+          "columnName": "in_RotationMax",
+          "value": "270"
+        },
+        {
+          "columnName": "PosX",
+          "value": "PosXOffset-(HardwareWidth/2)"
+        },
+        {
+          "columnName": "PosY",
+          "value": "PosYOffset+(HardwareLength/2)"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "9"
+        },
+        {
+          "columnName": "in_BasePoint",
+          "value": "2"
+        },
+        {
+          "columnName": "in_MatrixPositionType",
+          "value": "12"
+        },
+        {
+          "columnName": "in_RotationMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_RotationMax",
+          "value": "0"
+        },
+        {
+          "columnName": "PosX",
+          "value": "PosXOffset"
+        },
+        {
+          "columnName": "PosY",
+          "value": "PosYOffset+(HardwareWidth/2)"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "10"
+        },
+        {
+          "columnName": "in_BasePoint",
+          "value": "2"
+        },
+        {
+          "columnName": "in_MatrixPositionType",
+          "value": "11"
+        },
+        {
+          "columnName": "in_RotationMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_RotationMax",
+          "value": "0"
+        },
+        {
+          "columnName": "PosX",
+          "value": "PosXOffset"
+        },
+        {
+          "columnName": "PosY",
+          "value": "PosYOffset+(HardwareWidth/2)"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "11"
+        },
+        {
+          "columnName": "in_BasePoint",
+          "value": "2"
+        },
+        {
+          "columnName": "in_MatrixPositionType",
+          "value": "11"
+        },
+        {
+          "columnName": "in_RotationMin",
+          "value": "270"
+        },
+        {
+          "columnName": "in_RotationMax",
+          "value": "270"
+        },
+        {
+          "columnName": "PosX",
+          "value": "PosXOffset"
+        },
+        {
+          "columnName": "PosY",
+          "value": "PosYOffset+(HardwareLength/2)"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "12"
+        },
+        {
+          "columnName": "in_BasePoint",
+          "value": "2"
+        },
+        {
+          "columnName": "in_MatrixPositionType",
+          "value": "12"
+        },
+        {
+          "columnName": "in_RotationMin",
+          "value": "90"
+        },
+        {
+          "columnName": "in_RotationMax",
+          "value": "90"
+        },
+        {
+          "columnName": "PosX",
+          "value": "PosXOffset"
+        },
+        {
+          "columnName": "PosY",
+          "value": "PosYOffset+(HardwareLength/2)"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "13"
+        },
+        {
+          "columnName": "in_BasePoint",
+          "value": "2"
+        },
+        {
+          "columnName": "in_MatrixPositionType",
+          "value": "12"
+        },
+        {
+          "columnName": "in_RotationMin",
+          "value": "180"
+        },
+        {
+          "columnName": "in_RotationMax",
+          "value": "180"
+        },
+        {
+          "columnName": "PosX",
+          "value": "PosXOffset"
+        },
+        {
+          "columnName": "PosY",
+          "value": "PosYOffset+(HardwareWidth/2)"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "14"
+        },
+        {
+          "columnName": "in_BasePoint",
+          "value": "2"
+        },
+        {
+          "columnName": "in_MatrixPositionType",
+          "value": "12"
+        },
+        {
+          "columnName": "in_RotationMin",
+          "value": "270"
+        },
+        {
+          "columnName": "in_RotationMax",
+          "value": "270"
+        },
+        {
+          "columnName": "PosX",
+          "value": "PosXOffset"
+        },
+        {
+          "columnName": "PosY",
+          "value": "PosYOffset+(HardwareLength/2)"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "15"
+        },
+        {
+          "columnName": "in_BasePoint",
+          "value": "3"
+        },
+        {
+          "columnName": "in_MatrixPositionType",
+          "value": "12"
+        },
+        {
+          "columnName": "in_RotationMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_RotationMax",
+          "value": "0"
+        },
+        {
+          "columnName": "PosX",
+          "value": "PosXOffset+(HardwareLength/2)"
+        },
+        {
+          "columnName": "PosY",
+          "value": "PosYOffset+(HardwareWidth/2)"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "16"
+        },
+        {
+          "columnName": "in_BasePoint",
+          "value": "3"
+        },
+        {
+          "columnName": "in_MatrixPositionType",
+          "value": "12"
+        },
+        {
+          "columnName": "in_RotationMin",
+          "value": "90"
+        },
+        {
+          "columnName": "in_RotationMax",
+          "value": "90"
+        },
+        {
+          "columnName": "PosX",
+          "value": "PosXOffset+(HardwareWidth/2)"
+        },
+        {
+          "columnName": "PosY",
+          "value": "PosYOffset+(HardwareLength/2)"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "17"
+        },
+        {
+          "columnName": "in_BasePoint",
+          "value": "3"
+        },
+        {
+          "columnName": "in_MatrixPositionType",
+          "value": "12"
+        },
+        {
+          "columnName": "in_RotationMin",
+          "value": "180"
+        },
+        {
+          "columnName": "in_RotationMax",
+          "value": "180"
+        },
+        {
+          "columnName": "PosX",
+          "value": "PosXOffset+(HardwareLength/2)"
+        },
+        {
+          "columnName": "PosY",
+          "value": "PosYOffset+(HardwareWidth/2)"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "18"
+        },
+        {
+          "columnName": "in_BasePoint",
+          "value": "3"
+        },
+        {
+          "columnName": "in_MatrixPositionType",
+          "value": "12"
+        },
+        {
+          "columnName": "in_RotationMin",
+          "value": "270"
+        },
+        {
+          "columnName": "in_RotationMax",
+          "value": "270"
+        },
+        {
+          "columnName": "PosX",
+          "value": "PosXOffset+(HardwareWidth/2)"
+        },
+        {
+          "columnName": "PosY",
+          "value": "PosYOffset+(HardwareLength/2)"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "19"
+        },
+        {
+          "columnName": "in_BasePoint",
+          "value": "3"
+        },
+        {
+          "columnName": "in_MatrixPositionType",
+          "value": "13"
+        },
+        {
+          "columnName": "in_RotationMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_RotationMax",
+          "value": "0"
+        },
+        {
+          "columnName": "PosX",
+          "value": "m.mod_CarcaseWidth-PosXOffset-(HardwareLength/2)"
+        },
+        {
+          "columnName": "PosY",
+          "value": "PosYOffset+(HardwareWidth/2)"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "20"
+        },
+        {
+          "columnName": "in_BasePoint",
+          "value": "3"
+        },
+        {
+          "columnName": "in_MatrixPositionType",
+          "value": "13"
+        },
+        {
+          "columnName": "in_RotationMin",
+          "value": "90"
+        },
+        {
+          "columnName": "in_RotationMax",
+          "value": "90"
+        },
+        {
+          "columnName": "PosX",
+          "value": "m.mod_CarcaseWidth-PosXOffset-(HardwareWidth/2)"
+        },
+        {
+          "columnName": "PosY",
+          "value": "PosYOffset+(HardwareLength/2)"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "21"
+        },
+        {
+          "columnName": "in_BasePoint",
+          "value": "3"
+        },
+        {
+          "columnName": "in_MatrixPositionType",
+          "value": "13"
+        },
+        {
+          "columnName": "in_RotationMin",
+          "value": "180"
+        },
+        {
+          "columnName": "in_RotationMax",
+          "value": "180"
+        },
+        {
+          "columnName": "PosX",
+          "value": "m.mod_CarcaseWidth-PosXOffset-(HardwareLength/2)"
+        },
+        {
+          "columnName": "PosY",
+          "value": "PosYOffset+(HardwareWidth/2)"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "22"
+        },
+        {
+          "columnName": "in_BasePoint",
+          "value": "3"
+        },
+        {
+          "columnName": "in_MatrixPositionType",
+          "value": "13"
+        },
+        {
+          "columnName": "in_RotationMin",
+          "value": "270"
+        },
+        {
+          "columnName": "in_RotationMax",
+          "value": "270"
+        },
+        {
+          "columnName": "PosX",
+          "value": "m.mod_CarcaseWidth-PosXOffset-(HardwareWidth/2)"
+        },
+        {
+          "columnName": "PosY",
+          "value": "PosYOffset+(HardwareLength/2)"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "23"
+        },
+        {
+          "columnName": "in_BasePoint",
+          "value": "1"
+        },
+        {
+          "columnName": "in_MatrixPositionType",
+          "value": "21"
+        },
+        {
+          "columnName": "in_RotationMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_RotationMax",
+          "value": "0"
+        },
+        {
+          "columnName": "PosX",
+          "value": "PosXOffset+(HardwareLength/2)"
+        },
+        {
+          "columnName": "PosY",
+          "value": "PosYOffset-(HardwareWidth/2)"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "24"
+        },
+        {
+          "columnName": "in_BasePoint",
+          "value": "1"
+        },
+        {
+          "columnName": "in_MatrixPositionType",
+          "value": "21"
+        },
+        {
+          "columnName": "in_RotationMin",
+          "value": "90"
+        },
+        {
+          "columnName": "in_RotationMax",
+          "value": "90"
+        },
+        {
+          "columnName": "PosX",
+          "value": "PosXOffset+(HardwareWidth/2)"
+        },
+        {
+          "columnName": "PosY",
+          "value": "PosYOffset-(HardwareLength/2)"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "25"
+        },
+        {
+          "columnName": "in_BasePoint",
+          "value": "1"
+        },
+        {
+          "columnName": "in_MatrixPositionType",
+          "value": "21"
+        },
+        {
+          "columnName": "in_RotationMin",
+          "value": "180"
+        },
+        {
+          "columnName": "in_RotationMax",
+          "value": "180"
+        },
+        {
+          "columnName": "PosX",
+          "value": "PosXOffset+(HardwareLength/2)"
+        },
+        {
+          "columnName": "PosY",
+          "value": "PosYOffset-(HardwareWidth/2)"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "26"
+        },
+        {
+          "columnName": "in_BasePoint",
+          "value": "1"
+        },
+        {
+          "columnName": "in_MatrixPositionType",
+          "value": "21"
+        },
+        {
+          "columnName": "in_RotationMin",
+          "value": "270"
+        },
+        {
+          "columnName": "in_RotationMax",
+          "value": "270"
+        },
+        {
+          "columnName": "PosX",
+          "value": "PosXOffset+(HardwareWidth/2)"
+        },
+        {
+          "columnName": "PosY",
+          "value": "PosYOffset-(HardwareLength/2)"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "27"
+        },
+        {
+          "columnName": "in_BasePoint",
+          "value": "4"
+        },
+        {
+          "columnName": "in_MatrixPositionType",
+          "value": "21"
+        },
+        {
+          "columnName": "in_RotationMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_RotationMax",
+          "value": "0"
+        },
+        {
+          "columnName": "PosX",
+          "value": "PosXOffset+(HardwareLength/2)"
+        },
+        {
+          "columnName": "PosY",
+          "value": "PosYOffset"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "28"
+        },
+        {
+          "columnName": "in_BasePoint",
+          "value": "4"
+        },
+        {
+          "columnName": "in_MatrixPositionType",
+          "value": "21"
+        },
+        {
+          "columnName": "in_RotationMin",
+          "value": "90"
+        },
+        {
+          "columnName": "in_RotationMax",
+          "value": "90"
+        },
+        {
+          "columnName": "PosX",
+          "value": "PosXOffset+(HardwareWidth/2)"
+        },
+        {
+          "columnName": "PosY",
+          "value": "PosYOffset"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "29"
+        },
+        {
+          "columnName": "in_BasePoint",
+          "value": "4"
+        },
+        {
+          "columnName": "in_MatrixPositionType",
+          "value": "21"
+        },
+        {
+          "columnName": "in_RotationMin",
+          "value": "180"
+        },
+        {
+          "columnName": "in_RotationMax",
+          "value": "180"
+        },
+        {
+          "columnName": "PosX",
+          "value": "PosXOffset+(HardwareLength/2)"
+        },
+        {
+          "columnName": "PosY",
+          "value": "PosYOffset"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "30"
+        },
+        {
+          "columnName": "in_BasePoint",
+          "value": "4"
+        },
+        {
+          "columnName": "in_MatrixPositionType",
+          "value": "21"
+        },
+        {
+          "columnName": "in_RotationMin",
+          "value": "270"
+        },
+        {
+          "columnName": "in_RotationMax",
+          "value": "270"
+        },
+        {
+          "columnName": "PosX",
+          "value": "PosXOffset+(HardwareWidth/2)"
+        },
+        {
+          "columnName": "PosY",
+          "value": "PosYOffset"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "31"
+        },
+        {
+          "columnName": "in_BasePoint",
+          "value": "7"
+        },
+        {
+          "columnName": "in_MatrixPositionType",
+          "value": "21"
+        },
+        {
+          "columnName": "in_RotationMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_RotationMax",
+          "value": "0"
+        },
+        {
+          "columnName": "PosX",
+          "value": "PosXOffset+(HardwareLength/2)"
+        },
+        {
+          "columnName": "PosY",
+          "value": "PosYOffset+(HardwareWidth/2)"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "32"
+        },
+        {
+          "columnName": "in_BasePoint",
+          "value": "7"
+        },
+        {
+          "columnName": "in_MatrixPositionType",
+          "value": "21"
+        },
+        {
+          "columnName": "in_RotationMin",
+          "value": "90"
+        },
+        {
+          "columnName": "in_RotationMax",
+          "value": "90"
+        },
+        {
+          "columnName": "PosX",
+          "value": "PosXOffset+(HardwareWidth/2)"
+        },
+        {
+          "columnName": "PosY",
+          "value": "PosYOffset+(HardwareLength/2)"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "33"
+        },
+        {
+          "columnName": "in_BasePoint",
+          "value": "7"
+        },
+        {
+          "columnName": "in_MatrixPositionType",
+          "value": "21"
+        },
+        {
+          "columnName": "in_RotationMin",
+          "value": "180"
+        },
+        {
+          "columnName": "in_RotationMax",
+          "value": "180"
+        },
+        {
+          "columnName": "PosX",
+          "value": "PosXOffset+(HardwareLength/2)"
+        },
+        {
+          "columnName": "PosY",
+          "value": "PosYOffset+(HardwareWidth/2)"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "34"
+        },
+        {
+          "columnName": "in_BasePoint",
+          "value": "7"
+        },
+        {
+          "columnName": "in_MatrixPositionType",
+          "value": "21"
+        },
+        {
+          "columnName": "in_RotationMin",
+          "value": "270"
+        },
+        {
+          "columnName": "in_RotationMax",
+          "value": "270"
+        },
+        {
+          "columnName": "PosX",
+          "value": "PosXOffset+(HardwareWidth/2)"
+        },
+        {
+          "columnName": "PosY",
+          "value": "PosYOffset+(HardwareLength/2)"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "35"
+        },
+        {
+          "columnName": "in_BasePoint",
+          "value": "1"
+        },
+        {
+          "columnName": "in_MatrixPositionType",
+          "value": "22"
+        },
+        {
+          "columnName": "in_RotationMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_RotationMax",
+          "value": "0"
+        },
+        {
+          "columnName": "PosX",
+          "value": "PosXOffset-(HardwareLength/2)"
+        },
+        {
+          "columnName": "PosY",
+          "value": "PosYOffset-(HardwareWidth/2)"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "36"
+        },
+        {
+          "columnName": "in_BasePoint",
+          "value": "1"
+        },
+        {
+          "columnName": "in_MatrixPositionType",
+          "value": "22"
+        },
+        {
+          "columnName": "in_RotationMin",
+          "value": "90"
+        },
+        {
+          "columnName": "in_RotationMax",
+          "value": "90"
+        },
+        {
+          "columnName": "PosX",
+          "value": "PosXOffset-(HardwareWidth/2)"
+        },
+        {
+          "columnName": "PosY",
+          "value": "PosYOffset-(HardwareLength/2)"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "37"
+        },
+        {
+          "columnName": "in_BasePoint",
+          "value": "1"
+        },
+        {
+          "columnName": "in_MatrixPositionType",
+          "value": "22"
+        },
+        {
+          "columnName": "in_RotationMin",
+          "value": "180"
+        },
+        {
+          "columnName": "in_RotationMax",
+          "value": "180"
+        },
+        {
+          "columnName": "PosX",
+          "value": "PosXOffset-(HardwareLength/2)"
+        },
+        {
+          "columnName": "PosY",
+          "value": "PosYOffset-(HardwareWidth/2)"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "38"
+        },
+        {
+          "columnName": "in_BasePoint",
+          "value": "1"
+        },
+        {
+          "columnName": "in_MatrixPositionType",
+          "value": "22"
+        },
+        {
+          "columnName": "in_RotationMin",
+          "value": "270"
+        },
+        {
+          "columnName": "in_RotationMax",
+          "value": "270"
+        },
+        {
+          "columnName": "PosX",
+          "value": "PosXOffset-(HardwareWidth/2)"
+        },
+        {
+          "columnName": "PosY",
+          "value": "PosYOffset-(HardwareLength/2)"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "39"
+        },
+        {
+          "columnName": "in_BasePoint",
+          "value": "2"
+        },
+        {
+          "columnName": "in_MatrixPositionType",
+          "value": "22"
+        },
+        {
+          "columnName": "in_RotationMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_RotationMax",
+          "value": "0"
+        },
+        {
+          "columnName": "PosX",
+          "value": "PosXOffset"
+        },
+        {
+          "columnName": "PosY",
+          "value": "PosYOffset-(HardwareWidth/2)"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "40"
+        },
+        {
+          "columnName": "in_BasePoint",
+          "value": "2"
+        },
+        {
+          "columnName": "in_MatrixPositionType",
+          "value": "22"
+        },
+        {
+          "columnName": "in_RotationMin",
+          "value": "90"
+        },
+        {
+          "columnName": "in_RotationMax",
+          "value": "90"
+        },
+        {
+          "columnName": "PosX",
+          "value": "PosXOffset"
+        },
+        {
+          "columnName": "PosY",
+          "value": "PosYOffset-(HardwareLength/2)"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "41"
+        },
+        {
+          "columnName": "in_BasePoint",
+          "value": "2"
+        },
+        {
+          "columnName": "in_MatrixPositionType",
+          "value": "22"
+        },
+        {
+          "columnName": "in_RotationMin",
+          "value": "180"
+        },
+        {
+          "columnName": "in_RotationMax",
+          "value": "180"
+        },
+        {
+          "columnName": "PosX",
+          "value": "PosXOffset"
+        },
+        {
+          "columnName": "PosY",
+          "value": "PosYOffset-(HardwareWidth/2)"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "42"
+        },
+        {
+          "columnName": "in_BasePoint",
+          "value": "2"
+        },
+        {
+          "columnName": "in_MatrixPositionType",
+          "value": "22"
+        },
+        {
+          "columnName": "in_RotationMin",
+          "value": "270"
+        },
+        {
+          "columnName": "in_RotationMax",
+          "value": "270"
+        },
+        {
+          "columnName": "PosX",
+          "value": "PosXOffset"
+        },
+        {
+          "columnName": "PosY",
+          "value": "PosYOffset-(HardwareLength/2)"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "43"
+        },
+        {
+          "columnName": "in_BasePoint",
+          "value": "3"
+        },
+        {
+          "columnName": "in_MatrixPositionType",
+          "value": "22"
+        },
+        {
+          "columnName": "in_RotationMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_RotationMax",
+          "value": "0"
+        },
+        {
+          "columnName": "PosX",
+          "value": "PosXOffset+(HardwareLength/2)"
+        },
+        {
+          "columnName": "PosY",
+          "value": "PosYOffset-(HardwareWidth/2)"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "44"
+        },
+        {
+          "columnName": "in_BasePoint",
+          "value": "3"
+        },
+        {
+          "columnName": "in_MatrixPositionType",
+          "value": "22"
+        },
+        {
+          "columnName": "in_RotationMin",
+          "value": "90"
+        },
+        {
+          "columnName": "in_RotationMax",
+          "value": "90"
+        },
+        {
+          "columnName": "PosX",
+          "value": "PosXOffset+(HardwareWidth/2)"
+        },
+        {
+          "columnName": "PosY",
+          "value": "PosYOffset-(HardwareLength/2)"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "45"
+        },
+        {
+          "columnName": "in_BasePoint",
+          "value": "3"
+        },
+        {
+          "columnName": "in_MatrixPositionType",
+          "value": "22"
+        },
+        {
+          "columnName": "in_RotationMin",
+          "value": "180"
+        },
+        {
+          "columnName": "in_RotationMax",
+          "value": "180"
+        },
+        {
+          "columnName": "PosX",
+          "value": "PosXOffset+(HardwareLength/2)"
+        },
+        {
+          "columnName": "PosY",
+          "value": "PosYOffset-(HardwareWidth/2)"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "46"
+        },
+        {
+          "columnName": "in_BasePoint",
+          "value": "3"
+        },
+        {
+          "columnName": "in_MatrixPositionType",
+          "value": "22"
+        },
+        {
+          "columnName": "in_RotationMin",
+          "value": "270"
+        },
+        {
+          "columnName": "in_RotationMax",
+          "value": "270"
+        },
+        {
+          "columnName": "PosX",
+          "value": "PosXOffset+(HardwareWidth/2)"
+        },
+        {
+          "columnName": "PosY",
+          "value": "PosYOffset-(HardwareLength/2)"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "47"
+        },
+        {
+          "columnName": "in_BasePoint",
+          "value": "4"
+        },
+        {
+          "columnName": "in_MatrixPositionType",
+          "value": "22"
+        },
+        {
+          "columnName": "in_RotationMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_RotationMax",
+          "value": "0"
+        },
+        {
+          "columnName": "PosX",
+          "value": "PosXOffset-(HardwareLength/2)"
+        },
+        {
+          "columnName": "PosY",
+          "value": "PosYOffset"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "48"
+        },
+        {
+          "columnName": "in_BasePoint",
+          "value": "4"
+        },
+        {
+          "columnName": "in_MatrixPositionType",
+          "value": "22"
+        },
+        {
+          "columnName": "in_RotationMin",
+          "value": "90"
+        },
+        {
+          "columnName": "in_RotationMax",
+          "value": "90"
+        },
+        {
+          "columnName": "PosX",
+          "value": "PosXOffset-(HardwareWidth/2)"
+        },
+        {
+          "columnName": "PosY",
+          "value": "PosYOffset"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "49"
+        },
+        {
+          "columnName": "in_BasePoint",
+          "value": "4"
+        },
+        {
+          "columnName": "in_MatrixPositionType",
+          "value": "22"
+        },
+        {
+          "columnName": "in_RotationMin",
+          "value": "180"
+        },
+        {
+          "columnName": "in_RotationMax",
+          "value": "180"
+        },
+        {
+          "columnName": "PosX",
+          "value": "PosXOffset-(HardwareLength/2)"
+        },
+        {
+          "columnName": "PosY",
+          "value": "PosYOffset"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "50"
+        },
+        {
+          "columnName": "in_BasePoint",
+          "value": "4"
+        },
+        {
+          "columnName": "in_MatrixPositionType",
+          "value": "22"
+        },
+        {
+          "columnName": "in_RotationMin",
+          "value": "270"
+        },
+        {
+          "columnName": "in_RotationMax",
+          "value": "270"
+        },
+        {
+          "columnName": "PosX",
+          "value": "PosXOffset-(HardwareWidth/2)"
+        },
+        {
+          "columnName": "PosY",
+          "value": "PosYOffset"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "51"
+        },
+        {
+          "columnName": "in_BasePoint",
+          "value": "5"
+        },
+        {
+          "columnName": "in_MatrixPositionType",
+          "value": "22"
+        },
+        {
+          "columnName": "in_RotationMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_RotationMax",
+          "value": "0"
+        },
+        {
+          "columnName": "PosX",
+          "value": "PosXOffset"
+        },
+        {
+          "columnName": "PosY",
+          "value": "PosYOffset"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "52"
+        },
+        {
+          "columnName": "in_BasePoint",
+          "value": "5"
+        },
+        {
+          "columnName": "in_MatrixPositionType",
+          "value": "21"
+        },
+        {
+          "columnName": "in_RotationMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_RotationMax",
+          "value": "0"
+        },
+        {
+          "columnName": "PosX",
+          "value": "PosXOffset"
+        },
+        {
+          "columnName": "PosY",
+          "value": "PosYOffset"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "53"
+        },
+        {
+          "columnName": "in_BasePoint",
+          "value": "5"
+        },
+        {
+          "columnName": "in_MatrixPositionType",
+          "value": "22"
+        },
+        {
+          "columnName": "in_RotationMin",
+          "value": "90"
+        },
+        {
+          "columnName": "in_RotationMax",
+          "value": "90"
+        },
+        {
+          "columnName": "PosX",
+          "value": "PosXOffset"
+        },
+        {
+          "columnName": "PosY",
+          "value": "PosYOffset"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "54"
+        },
+        {
+          "columnName": "in_BasePoint",
+          "value": "5"
+        },
+        {
+          "columnName": "in_MatrixPositionType",
+          "value": "22"
+        },
+        {
+          "columnName": "in_RotationMin",
+          "value": "180"
+        },
+        {
+          "columnName": "in_RotationMax",
+          "value": "180"
+        },
+        {
+          "columnName": "PosX",
+          "value": "PosXOffset"
+        },
+        {
+          "columnName": "PosY",
+          "value": "PosYOffset"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "55"
+        },
+        {
+          "columnName": "in_BasePoint",
+          "value": "5"
+        },
+        {
+          "columnName": "in_MatrixPositionType",
+          "value": "22"
+        },
+        {
+          "columnName": "in_RotationMin",
+          "value": "270"
+        },
+        {
+          "columnName": "in_RotationMax",
+          "value": "270"
+        },
+        {
+          "columnName": "PosX",
+          "value": "PosXOffset"
+        },
+        {
+          "columnName": "PosY",
+          "value": "PosYOffset"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "56"
+        },
+        {
+          "columnName": "in_BasePoint",
+          "value": "6"
+        },
+        {
+          "columnName": "in_MatrixPositionType",
+          "value": "22"
+        },
+        {
+          "columnName": "in_RotationMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_RotationMax",
+          "value": "0"
+        },
+        {
+          "columnName": "PosX",
+          "value": "PosXOffset+(HardwareLength/2)"
+        },
+        {
+          "columnName": "PosY",
+          "value": "PosYOffset"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "57"
+        },
+        {
+          "columnName": "in_BasePoint",
+          "value": "6"
+        },
+        {
+          "columnName": "in_MatrixPositionType",
+          "value": "22"
+        },
+        {
+          "columnName": "in_RotationMin",
+          "value": "90"
+        },
+        {
+          "columnName": "in_RotationMax",
+          "value": "90"
+        },
+        {
+          "columnName": "PosX",
+          "value": "PosXOffset+(HardwareWidth/2)"
+        },
+        {
+          "columnName": "PosY",
+          "value": "PosYOffset"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "58"
+        },
+        {
+          "columnName": "in_BasePoint",
+          "value": "6"
+        },
+        {
+          "columnName": "in_MatrixPositionType",
+          "value": "22"
+        },
+        {
+          "columnName": "in_RotationMin",
+          "value": "180"
+        },
+        {
+          "columnName": "in_RotationMax",
+          "value": "180"
+        },
+        {
+          "columnName": "PosX",
+          "value": "PosXOffset+(HardwareLength/2)"
+        },
+        {
+          "columnName": "PosY",
+          "value": "PosYOffset"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "59"
+        },
+        {
+          "columnName": "in_BasePoint",
+          "value": "6"
+        },
+        {
+          "columnName": "in_MatrixPositionType",
+          "value": "22"
+        },
+        {
+          "columnName": "in_RotationMin",
+          "value": "270"
+        },
+        {
+          "columnName": "in_RotationMax",
+          "value": "270"
+        },
+        {
+          "columnName": "PosX",
+          "value": "PosXOffset+(HardwareWidth/2)"
+        },
+        {
+          "columnName": "PosY",
+          "value": "PosYOffset"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "60"
+        },
+        {
+          "columnName": "in_BasePoint",
+          "value": "7"
+        },
+        {
+          "columnName": "in_MatrixPositionType",
+          "value": "22"
+        },
+        {
+          "columnName": "in_RotationMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_RotationMax",
+          "value": "0"
+        },
+        {
+          "columnName": "PosX",
+          "value": "PosXOffset-(HardwareLength/2)"
+        },
+        {
+          "columnName": "PosY",
+          "value": "PosYOffset+(HardwareWidth/2)"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "61"
+        },
+        {
+          "columnName": "in_BasePoint",
+          "value": "7"
+        },
+        {
+          "columnName": "in_MatrixPositionType",
+          "value": "22"
+        },
+        {
+          "columnName": "in_RotationMin",
+          "value": "90"
+        },
+        {
+          "columnName": "in_RotationMax",
+          "value": "90"
+        },
+        {
+          "columnName": "PosX",
+          "value": "PosXOffset-(HardwareWidth/2)"
+        },
+        {
+          "columnName": "PosY",
+          "value": "PosYOffset+(HardwareLength/2)"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "62"
+        },
+        {
+          "columnName": "in_BasePoint",
+          "value": "7"
+        },
+        {
+          "columnName": "in_MatrixPositionType",
+          "value": "22"
+        },
+        {
+          "columnName": "in_RotationMin",
+          "value": "180"
+        },
+        {
+          "columnName": "in_RotationMax",
+          "value": "180"
+        },
+        {
+          "columnName": "PosX",
+          "value": "PosXOffset-(HardwareLength/2)"
+        },
+        {
+          "columnName": "PosY",
+          "value": "PosYOffset+(HardwareWidth/2)"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "63"
+        },
+        {
+          "columnName": "in_BasePoint",
+          "value": "7"
+        },
+        {
+          "columnName": "in_MatrixPositionType",
+          "value": "22"
+        },
+        {
+          "columnName": "in_RotationMin",
+          "value": "270"
+        },
+        {
+          "columnName": "in_RotationMax",
+          "value": "270"
+        },
+        {
+          "columnName": "PosX",
+          "value": "PosXOffset-(HardwareWidth/2)"
+        },
+        {
+          "columnName": "PosY",
+          "value": "PosYOffset+(HardwareLength/2)"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "64"
+        },
+        {
+          "columnName": "in_BasePoint",
+          "value": "8"
+        },
+        {
+          "columnName": "in_MatrixPositionType",
+          "value": "22"
+        },
+        {
+          "columnName": "in_RotationMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_RotationMax",
+          "value": "0"
+        },
+        {
+          "columnName": "PosX",
+          "value": "PosXOffset"
+        },
+        {
+          "columnName": "PosY",
+          "value": "PosYOffset+(HardwareWidth/2)"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "65"
+        },
+        {
+          "columnName": "in_BasePoint",
+          "value": "8"
+        },
+        {
+          "columnName": "in_MatrixPositionType",
+          "value": "22"
+        },
+        {
+          "columnName": "in_RotationMin",
+          "value": "90"
+        },
+        {
+          "columnName": "in_RotationMax",
+          "value": "90"
+        },
+        {
+          "columnName": "PosX",
+          "value": "PosXOffset"
+        },
+        {
+          "columnName": "PosY",
+          "value": "PosYOffset+(HardwareLength/2)"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "66"
+        },
+        {
+          "columnName": "in_BasePoint",
+          "value": "8"
+        },
+        {
+          "columnName": "in_MatrixPositionType",
+          "value": "22"
+        },
+        {
+          "columnName": "in_RotationMin",
+          "value": "180"
+        },
+        {
+          "columnName": "in_RotationMax",
+          "value": "180"
+        },
+        {
+          "columnName": "PosX",
+          "value": "PosXOffset"
+        },
+        {
+          "columnName": "PosY",
+          "value": "PosYOffset+(HardwareWidth/2)"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "67"
+        },
+        {
+          "columnName": "in_BasePoint",
+          "value": "8"
+        },
+        {
+          "columnName": "in_MatrixPositionType",
+          "value": "22"
+        },
+        {
+          "columnName": "in_RotationMin",
+          "value": "270"
+        },
+        {
+          "columnName": "in_RotationMax",
+          "value": "270"
+        },
+        {
+          "columnName": "PosX",
+          "value": "PosXOffset"
+        },
+        {
+          "columnName": "PosY",
+          "value": "PosYOffset+(HardwareLength/2)"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "68"
+        },
+        {
+          "columnName": "in_BasePoint",
+          "value": "9"
+        },
+        {
+          "columnName": "in_MatrixPositionType",
+          "value": "22"
+        },
+        {
+          "columnName": "in_RotationMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_RotationMax",
+          "value": "0"
+        },
+        {
+          "columnName": "PosX",
+          "value": "PosXOffset+(HardwareLength/2)"
+        },
+        {
+          "columnName": "PosY",
+          "value": "PosYOffset+(HardwareWidth/2)"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "69"
+        },
+        {
+          "columnName": "in_BasePoint",
+          "value": "9"
+        },
+        {
+          "columnName": "in_MatrixPositionType",
+          "value": "22"
+        },
+        {
+          "columnName": "in_RotationMin",
+          "value": "90"
+        },
+        {
+          "columnName": "in_RotationMax",
+          "value": "90"
+        },
+        {
+          "columnName": "PosX",
+          "value": "PosXOffset+(HardwareWidth/2)"
+        },
+        {
+          "columnName": "PosY",
+          "value": "PosYOffset+(HardwareLength/2)"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "70"
+        },
+        {
+          "columnName": "in_BasePoint",
+          "value": "9"
+        },
+        {
+          "columnName": "in_MatrixPositionType",
+          "value": "22"
+        },
+        {
+          "columnName": "in_RotationMin",
+          "value": "180"
+        },
+        {
+          "columnName": "in_RotationMax",
+          "value": "180"
+        },
+        {
+          "columnName": "PosX",
+          "value": "PosXOffset+(HardwareLength/2)"
+        },
+        {
+          "columnName": "PosY",
+          "value": "PosYOffset+(HardwareWidth/2)"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "71"
+        },
+        {
+          "columnName": "in_BasePoint",
+          "value": "9"
+        },
+        {
+          "columnName": "in_MatrixPositionType",
+          "value": "22"
+        },
+        {
+          "columnName": "in_RotationMin",
+          "value": "270"
+        },
+        {
+          "columnName": "in_RotationMax",
+          "value": "270"
+        },
+        {
+          "columnName": "PosX",
+          "value": "PosXOffset+(HardwareWidth/2)"
+        },
+        {
+          "columnName": "PosY",
+          "value": "PosYOffset+(HardwareLength/2)"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "72"
+        },
+        {
+          "columnName": "in_BasePoint",
+          "value": "3"
+        },
+        {
+          "columnName": "in_MatrixPositionType",
+          "value": "23"
+        },
+        {
+          "columnName": "in_RotationMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_RotationMax",
+          "value": "0"
+        },
+        {
+          "columnName": "PosX",
+          "value": "m.mod_CarcaseWidth-PosXOffset-(HardwareLength/2)"
+        },
+        {
+          "columnName": "PosY",
+          "value": "PosYOffset-(HardwareWidth/2)"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "73"
+        },
+        {
+          "columnName": "in_BasePoint",
+          "value": "3"
+        },
+        {
+          "columnName": "in_MatrixPositionType",
+          "value": "23"
+        },
+        {
+          "columnName": "in_RotationMin",
+          "value": "90"
+        },
+        {
+          "columnName": "in_RotationMax",
+          "value": "90"
+        },
+        {
+          "columnName": "PosX",
+          "value": "m.mod_CarcaseWidth-PosXOffset-(HardwareWidth/2)"
+        },
+        {
+          "columnName": "PosY",
+          "value": "PosYOffset-(HardwareLength/2)"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "74"
+        },
+        {
+          "columnName": "in_BasePoint",
+          "value": "3"
+        },
+        {
+          "columnName": "in_MatrixPositionType",
+          "value": "23"
+        },
+        {
+          "columnName": "in_RotationMin",
+          "value": "180"
+        },
+        {
+          "columnName": "in_RotationMax",
+          "value": "180"
+        },
+        {
+          "columnName": "PosX",
+          "value": "m.mod_CarcaseWidth-PosXOffset-(HardwareLength/2)"
+        },
+        {
+          "columnName": "PosY",
+          "value": "PosYOffset-(HardwareWidth/2)"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "75"
+        },
+        {
+          "columnName": "in_BasePoint",
+          "value": "3"
+        },
+        {
+          "columnName": "in_MatrixPositionType",
+          "value": "23"
+        },
+        {
+          "columnName": "in_RotationMin",
+          "value": "270"
+        },
+        {
+          "columnName": "in_RotationMax",
+          "value": "270"
+        },
+        {
+          "columnName": "PosX",
+          "value": "m.mod_CarcaseWidth-PosXOffset-(HardwareWidth/2)"
+        },
+        {
+          "columnName": "PosY",
+          "value": "PosYOffset-(HardwareLength/2)"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "76"
+        },
+        {
+          "columnName": "in_BasePoint",
+          "value": "6"
+        },
+        {
+          "columnName": "in_MatrixPositionType",
+          "value": "23"
+        },
+        {
+          "columnName": "in_RotationMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_RotationMax",
+          "value": "0"
+        },
+        {
+          "columnName": "PosX",
+          "value": "m.mod_CarcaseWidth-PosXOffset-(HardwareLength/2)"
+        },
+        {
+          "columnName": "PosY",
+          "value": "PosYOffset"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "77"
+        },
+        {
+          "columnName": "in_BasePoint",
+          "value": "6"
+        },
+        {
+          "columnName": "in_MatrixPositionType",
+          "value": "23"
+        },
+        {
+          "columnName": "in_RotationMin",
+          "value": "90"
+        },
+        {
+          "columnName": "in_RotationMax",
+          "value": "90"
+        },
+        {
+          "columnName": "PosX",
+          "value": "m.mod_CarcaseWidth-PosXOffset-(HardwareWidth/2)"
+        },
+        {
+          "columnName": "PosY",
+          "value": "PosYOffset"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "78"
+        },
+        {
+          "columnName": "in_BasePoint",
+          "value": "6"
+        },
+        {
+          "columnName": "in_MatrixPositionType",
+          "value": "23"
+        },
+        {
+          "columnName": "in_RotationMin",
+          "value": "180"
+        },
+        {
+          "columnName": "in_RotationMax",
+          "value": "180"
+        },
+        {
+          "columnName": "PosX",
+          "value": "m.mod_CarcaseWidth-PosXOffset-(HardwareLength/2)"
+        },
+        {
+          "columnName": "PosY",
+          "value": "PosYOffset"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "79"
+        },
+        {
+          "columnName": "in_BasePoint",
+          "value": "6"
+        },
+        {
+          "columnName": "in_MatrixPositionType",
+          "value": "23"
+        },
+        {
+          "columnName": "in_RotationMin",
+          "value": "270"
+        },
+        {
+          "columnName": "in_RotationMax",
+          "value": "270"
+        },
+        {
+          "columnName": "PosX",
+          "value": "m.mod_CarcaseWidth-PosXOffset-(HardwareWidth/2)"
+        },
+        {
+          "columnName": "PosY",
+          "value": "PosYOffset"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "80"
+        },
+        {
+          "columnName": "in_BasePoint",
+          "value": "9"
+        },
+        {
+          "columnName": "in_MatrixPositionType",
+          "value": "23"
+        },
+        {
+          "columnName": "in_RotationMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_RotationMax",
+          "value": "0"
+        },
+        {
+          "columnName": "PosX",
+          "value": "m.mod_CarcaseWidth-PosXOffset-(HardwareLength/2)"
+        },
+        {
+          "columnName": "PosY",
+          "value": "PosYOffset+(HardwareWidth/2)"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "81"
+        },
+        {
+          "columnName": "in_BasePoint",
+          "value": "9"
+        },
+        {
+          "columnName": "in_MatrixPositionType",
+          "value": "23"
+        },
+        {
+          "columnName": "in_RotationMin",
+          "value": "90"
+        },
+        {
+          "columnName": "in_RotationMax",
+          "value": "90"
+        },
+        {
+          "columnName": "PosX",
+          "value": "m.mod_CarcaseWidth-PosXOffset-(HardwareWidth/2)"
+        },
+        {
+          "columnName": "PosY",
+          "value": "PosYOffset+(HardwareLength/2)"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "82"
+        },
+        {
+          "columnName": "in_BasePoint",
+          "value": "9"
+        },
+        {
+          "columnName": "in_MatrixPositionType",
+          "value": "23"
+        },
+        {
+          "columnName": "in_RotationMin",
+          "value": "180"
+        },
+        {
+          "columnName": "in_RotationMax",
+          "value": "180"
+        },
+        {
+          "columnName": "PosX",
+          "value": "m.mod_CarcaseWidth-PosXOffset-(HardwareLength/2)"
+        },
+        {
+          "columnName": "PosY",
+          "value": "PosYOffset+(HardwareWidth/2)"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "83"
+        },
+        {
+          "columnName": "in_BasePoint",
+          "value": "9"
+        },
+        {
+          "columnName": "in_MatrixPositionType",
+          "value": "23"
+        },
+        {
+          "columnName": "in_RotationMin",
+          "value": "270"
+        },
+        {
+          "columnName": "in_RotationMax",
+          "value": "270"
+        },
+        {
+          "columnName": "PosX",
+          "value": "m.mod_CarcaseWidth-PosXOffset-(HardwareWidth/2)"
+        },
+        {
+          "columnName": "PosY",
+          "value": "PosYOffset+(HardwareLength/2)"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "84"
+        },
+        {
+          "columnName": "in_BasePoint",
+          "value": "7"
+        },
+        {
+          "columnName": "in_MatrixPositionType",
+          "value": "31"
+        },
+        {
+          "columnName": "in_RotationMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_RotationMax",
+          "value": "0"
+        },
+        {
+          "columnName": "PosX",
+          "value": "PosXOffset+(HardwareLength/2)"
+        },
+        {
+          "columnName": "PosY",
+          "value": "m.mod_CarcaseDepth-PosYOffset-(HardwareWidth/2)"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "85"
+        },
+        {
+          "columnName": "in_BasePoint",
+          "value": "7"
+        },
+        {
+          "columnName": "in_MatrixPositionType",
+          "value": "31"
+        },
+        {
+          "columnName": "in_RotationMin",
+          "value": "90"
+        },
+        {
+          "columnName": "in_RotationMax",
+          "value": "90"
+        },
+        {
+          "columnName": "PosX",
+          "value": "PosXOffset+(HardwareWidth/2)"
+        },
+        {
+          "columnName": "PosY",
+          "value": "m.mod_CarcaseDepth-PosYOffset-(HardwareLength/2)"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "86"
+        },
+        {
+          "columnName": "in_BasePoint",
+          "value": "7"
+        },
+        {
+          "columnName": "in_MatrixPositionType",
+          "value": "31"
+        },
+        {
+          "columnName": "in_RotationMin",
+          "value": "180"
+        },
+        {
+          "columnName": "in_RotationMax",
+          "value": "180"
+        },
+        {
+          "columnName": "PosX",
+          "value": "PosXOffset+(HardwareLength/2)"
+        },
+        {
+          "columnName": "PosY",
+          "value": "m.mod_CarcaseDepth-PosYOffset-(HardwareWidth/2)"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "87"
+        },
+        {
+          "columnName": "in_BasePoint",
+          "value": "7"
+        },
+        {
+          "columnName": "in_MatrixPositionType",
+          "value": "31"
+        },
+        {
+          "columnName": "in_RotationMin",
+          "value": "270"
+        },
+        {
+          "columnName": "in_RotationMax",
+          "value": "270"
+        },
+        {
+          "columnName": "PosX",
+          "value": "PosXOffset+(HardwareWidth/2)"
+        },
+        {
+          "columnName": "PosY",
+          "value": "m.mod_CarcaseDepth-PosYOffset-(HardwareLength/2)"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "88"
+        },
+        {
+          "columnName": "in_BasePoint",
+          "value": "7"
+        },
+        {
+          "columnName": "in_MatrixPositionType",
+          "value": "32"
+        },
+        {
+          "columnName": "in_RotationMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_RotationMax",
+          "value": "0"
+        },
+        {
+          "columnName": "PosX",
+          "value": "PosXOffset-(HardwareLength/2)"
+        },
+        {
+          "columnName": "PosY",
+          "value": "m.mod_CarcaseDepth-PosYOffset-(HardwareWidth/2)"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "89"
+        },
+        {
+          "columnName": "in_BasePoint",
+          "value": "7"
+        },
+        {
+          "columnName": "in_MatrixPositionType",
+          "value": "32"
+        },
+        {
+          "columnName": "in_RotationMin",
+          "value": "90"
+        },
+        {
+          "columnName": "in_RotationMax",
+          "value": "90"
+        },
+        {
+          "columnName": "PosX",
+          "value": "PosXOffset-(HardwareWidth/2)"
+        },
+        {
+          "columnName": "PosY",
+          "value": "m.mod_CarcaseDepth-PosYOffset-(HardwareLength/2)"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "90"
+        },
+        {
+          "columnName": "in_BasePoint",
+          "value": "7"
+        },
+        {
+          "columnName": "in_MatrixPositionType",
+          "value": "32"
+        },
+        {
+          "columnName": "in_RotationMin",
+          "value": "180"
+        },
+        {
+          "columnName": "in_RotationMax",
+          "value": "180"
+        },
+        {
+          "columnName": "PosX",
+          "value": "PosXOffset-(HardwareLength/2)"
+        },
+        {
+          "columnName": "PosY",
+          "value": "m.mod_CarcaseDepth-PosYOffset-(HardwareWidth/2)"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "91"
+        },
+        {
+          "columnName": "in_BasePoint",
+          "value": "7"
+        },
+        {
+          "columnName": "in_MatrixPositionType",
+          "value": "32"
+        },
+        {
+          "columnName": "in_RotationMin",
+          "value": "270"
+        },
+        {
+          "columnName": "in_RotationMax",
+          "value": "270"
+        },
+        {
+          "columnName": "PosX",
+          "value": "PosXOffset-(HardwareWidth/2)"
+        },
+        {
+          "columnName": "PosY",
+          "value": "m.mod_CarcaseDepth-PosYOffset-(HardwareLength/2)"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "92"
+        },
+        {
+          "columnName": "in_BasePoint",
+          "value": "8"
+        },
+        {
+          "columnName": "in_MatrixPositionType",
+          "value": "32"
+        },
+        {
+          "columnName": "in_RotationMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_RotationMax",
+          "value": "0"
+        },
+        {
+          "columnName": "PosX",
+          "value": "PosXOffset"
+        },
+        {
+          "columnName": "PosY",
+          "value": "m.mod_CarcaseDepth-PosYOffset-(HardwareWidth/2)"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "93"
+        },
+        {
+          "columnName": "in_BasePoint",
+          "value": "8"
+        },
+        {
+          "columnName": "in_MatrixPositionType",
+          "value": "32"
+        },
+        {
+          "columnName": "in_RotationMin",
+          "value": "90"
+        },
+        {
+          "columnName": "in_RotationMax",
+          "value": "90"
+        },
+        {
+          "columnName": "PosX",
+          "value": "PosXOffset"
+        },
+        {
+          "columnName": "PosY",
+          "value": "m.mod_CarcaseDepth-PosYOffset-(HardwareLength/2)"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "94"
+        },
+        {
+          "columnName": "in_BasePoint",
+          "value": "8"
+        },
+        {
+          "columnName": "in_MatrixPositionType",
+          "value": "32"
+        },
+        {
+          "columnName": "in_RotationMin",
+          "value": "180"
+        },
+        {
+          "columnName": "in_RotationMax",
+          "value": "180"
+        },
+        {
+          "columnName": "PosX",
+          "value": "PosXOffset"
+        },
+        {
+          "columnName": "PosY",
+          "value": "m.mod_CarcaseDepth-PosYOffset-(HardwareWidth/2)"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "95"
+        },
+        {
+          "columnName": "in_BasePoint",
+          "value": "8"
+        },
+        {
+          "columnName": "in_MatrixPositionType",
+          "value": "31"
+        },
+        {
+          "columnName": "in_RotationMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_RotationMax",
+          "value": "0"
+        },
+        {
+          "columnName": "PosX",
+          "value": "PosXOffset"
+        },
+        {
+          "columnName": "PosY",
+          "value": "m.mod_CarcaseDepth-PosYOffset-(HardwareWidth/2)"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "96"
+        },
+        {
+          "columnName": "in_BasePoint",
+          "value": "8"
+        },
+        {
+          "columnName": "in_MatrixPositionType",
+          "value": "32"
+        },
+        {
+          "columnName": "in_RotationMin",
+          "value": "270"
+        },
+        {
+          "columnName": "in_RotationMax",
+          "value": "270"
+        },
+        {
+          "columnName": "PosX",
+          "value": "PosXOffset"
+        },
+        {
+          "columnName": "PosY",
+          "value": "m.mod_CarcaseDepth-PosYOffset-(HardwareLength/2)"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "97"
+        },
+        {
+          "columnName": "in_BasePoint",
+          "value": "9"
+        },
+        {
+          "columnName": "in_MatrixPositionType",
+          "value": "32"
+        },
+        {
+          "columnName": "in_RotationMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_RotationMax",
+          "value": "0"
+        },
+        {
+          "columnName": "PosX",
+          "value": "PosXOffset+(HardwareLength/2)"
+        },
+        {
+          "columnName": "PosY",
+          "value": "m.mod_CarcaseDepth-PosYOffset-(HardwareWidth/2)"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "98"
+        },
+        {
+          "columnName": "in_BasePoint",
+          "value": "9"
+        },
+        {
+          "columnName": "in_MatrixPositionType",
+          "value": "32"
+        },
+        {
+          "columnName": "in_RotationMin",
+          "value": "90"
+        },
+        {
+          "columnName": "in_RotationMax",
+          "value": "90"
+        },
+        {
+          "columnName": "PosX",
+          "value": "PosXOffset+(HardwareWidth/2)"
+        },
+        {
+          "columnName": "PosY",
+          "value": "m.mod_CarcaseDepth-PosYOffset-(HardwareLength/2)"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "99"
+        },
+        {
+          "columnName": "in_BasePoint",
+          "value": "9"
+        },
+        {
+          "columnName": "in_MatrixPositionType",
+          "value": "32"
+        },
+        {
+          "columnName": "in_RotationMin",
+          "value": "180"
+        },
+        {
+          "columnName": "in_RotationMax",
+          "value": "180"
+        },
+        {
+          "columnName": "PosX",
+          "value": "PosXOffset+(HardwareLength/2)"
+        },
+        {
+          "columnName": "PosY",
+          "value": "m.mod_CarcaseDepth-PosYOffset-(HardwareWidth/2)"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "100"
+        },
+        {
+          "columnName": "in_BasePoint",
+          "value": "9"
+        },
+        {
+          "columnName": "in_MatrixPositionType",
+          "value": "32"
+        },
+        {
+          "columnName": "in_RotationMin",
+          "value": "270"
+        },
+        {
+          "columnName": "in_RotationMax",
+          "value": "270"
+        },
+        {
+          "columnName": "PosX",
+          "value": "PosXOffset+(HardwareWidth/2)"
+        },
+        {
+          "columnName": "PosY",
+          "value": "m.mod_CarcaseDepth-PosYOffset-(HardwareLength/2)"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "101"
+        },
+        {
+          "columnName": "in_BasePoint",
+          "value": "9"
+        },
+        {
+          "columnName": "in_MatrixPositionType",
+          "value": "33"
+        },
+        {
+          "columnName": "in_RotationMin",
+          "value": "0"
+        },
+        {
+          "columnName": "in_RotationMax",
+          "value": "0"
+        },
+        {
+          "columnName": "PosX",
+          "value": "m.mod_CarcaseWidth-PosXOffset-(HardwareLength/2)"
+        },
+        {
+          "columnName": "PosY",
+          "value": "m.mod_CarcaseDepth-PosYOffset-(HardwareWidth/2)"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "102"
+        },
+        {
+          "columnName": "in_BasePoint",
+          "value": "9"
+        },
+        {
+          "columnName": "in_MatrixPositionType",
+          "value": "33"
+        },
+        {
+          "columnName": "in_RotationMin",
+          "value": "90"
+        },
+        {
+          "columnName": "in_RotationMax",
+          "value": "90"
+        },
+        {
+          "columnName": "PosX",
+          "value": "m.mod_CarcaseWidth-PosXOffset-(HardwareWidth/2)"
+        },
+        {
+          "columnName": "PosY",
+          "value": "m.mod_CarcaseDepth-PosYOffset-(HardwareLength/2)"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "103"
+        },
+        {
+          "columnName": "in_BasePoint",
+          "value": "9"
+        },
+        {
+          "columnName": "in_MatrixPositionType",
+          "value": "33"
+        },
+        {
+          "columnName": "in_RotationMin",
+          "value": "180"
+        },
+        {
+          "columnName": "in_RotationMax",
+          "value": "180"
+        },
+        {
+          "columnName": "PosX",
+          "value": "m.mod_CarcaseWidth-PosXOffset-(HardwareLength/2)"
+        },
+        {
+          "columnName": "PosY",
+          "value": "m.mod_CarcaseDepth-PosYOffset-(HardwareWidth/2)"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "104"
+        },
+        {
+          "columnName": "in_BasePoint",
+          "value": "9"
+        },
+        {
+          "columnName": "in_MatrixPositionType",
+          "value": "33"
+        },
+        {
+          "columnName": "in_RotationMin",
+          "value": "270"
+        },
+        {
+          "columnName": "in_RotationMax",
+          "value": "270"
+        },
+        {
+          "columnName": "PosX",
+          "value": "m.mod_CarcaseWidth-PosXOffset-(HardwareWidth/2)"
+        },
+        {
+          "columnName": "PosY",
+          "value": "m.mod_CarcaseDepth-PosYOffset-(HardwareLength/2)"
+        }
+      ]
+    }
+  ]
+}

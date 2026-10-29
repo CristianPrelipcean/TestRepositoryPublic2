@@ -1,0 +1,103 @@
+{
+  "moduleId": "mc_Panel01",
+  "shortName": "Panel",
+  "configurable": false,
+  "isRoot": false,
+  "description": "Management of panels",
+  "groupName": "ConstructionParts",
+  "imageId": "6b246a0b-1a83-427d-bfe1-9d9b5a98dfd0:Frontpanel.jpg",
+  "restrictionTypeId": "Internal",
+  "childModules": [],
+  "assignedVariants": [
+    {
+      "variantId": "mod_Color",
+      "previewValue": "240",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_Depth",
+      "default": "350",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_Height",
+      "default": "900",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_IslandBackwallOverhangFront",
+      "previewValue": "30",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ModuleName",
+      "default": "mc_Panel01",
+      "required": false,
+      "derive": false,
+      "fixed": true
+    },
+    {
+      "variantId": "mod_PanelId",
+      "default": "None",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_PaneltopColor",
+      "previewValue": "380",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_PaneltopThk",
+      "previewValue": "25",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_Program",
+      "previewValue": "Demoprogram1",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_Thk",
+      "default": "19",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_Width",
+      "default": "1000",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    }
+  ],
+  "assignedParts": [
+    {
+      "partCode": "part_PanelHor"
+    },
+    {
+      "partCode": "part_PanelUnit"
+    },
+    {
+      "partCode": "part_PanelVert"
+    }
+  ],
+  "assignedCustomTables": [],
+  "assignedFunctions": []
+}

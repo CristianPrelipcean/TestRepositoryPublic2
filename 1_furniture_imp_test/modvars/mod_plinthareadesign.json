@@ -1,0 +1,154 @@
+{
+  "variantId": "mod_PlinthAreaDesign",
+  "shortName": "Design",
+  "variantTypeId": "Text",
+  "description": "Plinth area design",
+  "restrictionTypeId": "Public",
+  "groupName": "PlinthArea",
+  "imageId": "638af6a0-0168-4e33-b8da-c18a656d9d58:PlinthArea.png",
+  "assignedGlobalVarId": "basic_PlinthAreaDesign",
+  "isArray": false,
+  "isPosRelevant": true,
+  "mainAttr": false,
+  "userRight": "Advanced",
+  "implicitRelevant": false,
+  "posView": "Dropdown",
+  "matrix": [
+    {
+      "id": "PlinthAreaElementColor",
+      "type": "Text",
+      "default": "Fixed"
+    },
+    {
+      "id": "PlinthAreaType",
+      "type": "Text",
+      "default": "Leg"
+    },
+    {
+      "id": "PlinthAreaExtraItem",
+      "type": "Text",
+      "default": "None"
+    }
+  ],
+  "selections": [
+    {
+      "value": "10",
+      "description": "No plinth area",
+      "shortName": "No plinth area",
+      "imageId": "ecba78fc-768e-4ba9-83d9-039738103437:None.png",
+      "matrix": [
+        {
+          "id": "PlinthAreaElementColor",
+          "value": "Fixed"
+        },
+        {
+          "id": "PlinthAreaType",
+          "value": "None"
+        },
+        {
+          "id": "PlinthAreaExtraItem",
+          "value": "None"
+        }
+      ]
+    },
+    {
+      "value": "20",
+      "description": "Stainless stell leg",
+      "shortName": "Stainless stell leg",
+      "imageId": "a491adfa-7085-416d-ba83-499bb9ac4b45:fuss.JPG",
+      "matrix": [
+        {
+          "id": "PlinthAreaElementColor",
+          "value": "Fixed"
+        },
+        {
+          "id": "PlinthAreaType",
+          "value": "Leg"
+        },
+        {
+          "id": "PlinthAreaExtraItem",
+          "value": "None"
+        }
+      ]
+    },
+    {
+      "value": "30",
+      "description": "Plinth leg triangular press",
+      "shortName": "Plinth leg triangular press",
+      "imageId": "a0f04393-b137-4c0f-b841-e1f7023f6f65:PlinthAreaDesign200.png",
+      "matrix": [
+        {
+          "id": "PlinthAreaElementColor",
+          "value": "Fixed"
+        },
+        {
+          "id": "PlinthAreaType",
+          "value": "Leg"
+        },
+        {
+          "id": "PlinthAreaExtraItem",
+          "value": "None"
+        }
+      ]
+    },
+    {
+      "value": "40",
+      "description": "Plinth leg  rectangular screw",
+      "shortName": "Plinth leg  rectangular screw",
+      "imageId": "39e80226-b99b-4b81-8b9f-9ee1461e06f8:PlinthAreaDesign210.png",
+      "matrix": [
+        {
+          "id": "PlinthAreaElementColor",
+          "value": "Fixed"
+        },
+        {
+          "id": "PlinthAreaType",
+          "value": "Leg"
+        },
+        {
+          "id": "PlinthAreaExtraItem",
+          "value": "Attribute"
+        }
+      ]
+    },
+    {
+      "value": "50",
+      "description": "DesignLegSlanted",
+      "shortName": "DesignLegSlanted",
+      "imageId": "36a030ba-bcb2-42d5-aa7b-f83df3773e39:Design50.jpg",
+      "matrix": [
+        {
+          "id": "PlinthAreaElementColor",
+          "value": "Attribute"
+        },
+        {
+          "id": "PlinthAreaType",
+          "value": "Leg"
+        },
+        {
+          "id": "PlinthAreaExtraItem",
+          "value": "None"
+        }
+      ]
+    },
+    {
+      "value": "90",
+      "description": "Base board with legs",
+      "shortName": "BaseboardWithLegs",
+      "matrix": [
+        {
+          "id": "PlinthAreaElementColor",
+          "value": "Fixed"
+        },
+        {
+          "id": "PlinthAreaType",
+          "value": "Baseboard+Legs"
+        },
+        {
+          "id": "PlinthAreaExtraItem",
+          "value": "None"
+        }
+      ]
+    }
+  ]
+}

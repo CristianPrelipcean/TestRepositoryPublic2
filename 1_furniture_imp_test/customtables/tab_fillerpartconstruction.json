@@ -1,0 +1,62 @@
+{
+  "tableName": "tab_FillerPartConstruction",
+  "description": "Table to store the part dimension of the filler support panels",
+  "restrictionTypeId": "Public",
+  "groupName": "Filler",
+  "columns": [
+    {
+      "name": "_id",
+      "type": "Integer",
+      "allowNull": false
+    },
+    {
+      "name": "in_ConstructionId",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "PartReference",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "Width",
+      "type": "Text",
+      "allowNull": true,
+      "functionDefinition": "(m:any):number"
+    },
+    {
+      "name": "Depth",
+      "type": "Text",
+      "allowNull": true,
+      "functionDefinition": "(m:any):number"
+    },
+    {
+      "name": "Thickness",
+      "type": "Text",
+      "allowNull": true,
+      "functionDefinition": "(m:any):number"
+    },
+    {
+      "name": "PosWidth",
+      "type": "Text",
+      "allowNull": true,
+      "functionDefinition": "(m:any):number"
+    },
+    {
+      "name": "PosHeight",
+      "type": "Text",
+      "allowNull": true,
+      "functionDefinition": "(m:any):number"
+    },
+    {
+      "name": "PosDepth",
+      "type": "Text",
+      "allowNull": true,
+      "functionDefinition": "(m:any):number"
+    }
+  ],
+  "rows": [],
+  "dataSource": "Default",
+  "changedAt": "2026-04-24T11:09:52.8665606+00:00"
+}

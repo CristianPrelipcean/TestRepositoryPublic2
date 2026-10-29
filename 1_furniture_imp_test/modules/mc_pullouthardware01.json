@@ -1,0 +1,78 @@
+{
+  "moduleId": "mc_PulloutHardware01",
+  "shortName": "Con PulloutHardware",
+  "configurable": false,
+  "isRoot": false,
+  "isConfigDummy": false,
+  "isDropContainer": false,
+  "groupName": "Hardware",
+  "imageId": "f443906b-15bf-4898-9a57-bd136bb214f8:PulloutHardware.png",
+  "restrictionTypeId": "Internal",
+  "childModules": [],
+  "assignedVariants": [
+    {
+      "variantId": "mod_FrontId",
+      "default": "",
+      "previewValue": "",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_HardwareColor",
+      "previewValue": "LightColor",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_OpeningType",
+      "previewValue": "Handle",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_PulloutConnectionPosition",
+      "previewValue": "left",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_PulloutDesign",
+      "previewValue": "arenaClassic",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_PulloutElementColor",
+      "previewValue": "silver",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_PulloutType",
+      "previewValue": "No15",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    }
+  ],
+  "assignedParts": [
+    {
+      "partCode": "part_PulloutHardware"
+    },
+    {
+      "partCode": "part_PulloutHardwareDrillings"
+    }
+  ],
+  "assignedCustomTables": [],
+  "assignedFunctions": [
+    {
+      "functionId": "process_Pullout"
+    }
+  ]
+}
