@@ -1,4 +1,4 @@
-  logError("THIS IS AN ERROR");
+  // logError("THIS IS AN ERROR");
   // abc
   const {
     CONTOUR_ATTRIBUTE_OWNER_TYPE,
