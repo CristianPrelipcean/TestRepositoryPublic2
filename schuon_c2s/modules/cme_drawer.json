@@ -1,0 +1,107 @@
+{
+  "moduleId": "cme_Drawer",
+  "shortName": "Drawer",
+  "configurable": true,
+  "isRoot": false,
+  "isConfigDummy": false,
+  "isGroupOrchestrator": false,
+  "isDropContainer": false,
+  "description": "Equipment module for drawer",
+  "groupName": "Processing",
+  "imageId": "aebdbf67-9e4b-41d2-a281-e7e7049c9651:Drawer.png",
+  "restrictionTypeId": "Custom",
+  "childModules": [
+    {
+      "moduleId": "cmc_Drawer"
+    }
+  ],
+  "assignedVariants": [
+    {
+      "variantId": "cmod_DrawerBoxDesign",
+      "default": "FullExtensionDrawer",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "cmod_DrawerBoxDrillDistBottom",
+      "default": "25",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "cmod_DrawerBoxFrontOverlayLeft",
+      "default": "16",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "cmod_DrawerBoxFrontOverlayRight",
+      "default": "16",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "cmod_DrawerBoxHeight",
+      "default": "C",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "cmod_DrawerBoxMountingType",
+      "default": "Expando",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "cmod_DrawerBoxType",
+      "default": "LegraBox",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_Length",
+      "previewValue": "1000",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_Program",
+      "previewValue": "Melamin_Woodline",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_Thickness",
+      "previewValue": "19",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_TypeElement",
+      "previewValue": "Fronts",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_Width",
+      "previewValue": "500",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    }
+  ],
+  "assignedParts": [],
+  "assignedCustomTables": [],
+  "assignedFunctions": []
+}

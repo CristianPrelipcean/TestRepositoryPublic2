@@ -1,0 +1,179 @@
+{
+  "moduleId": "mr_Part",
+  "shortName": "Part",
+  "configurable": true,
+  "isRoot": true,
+  "isConfigDummy": false,
+  "isDropContainer": false,
+  "description": "Simple flat panel part",
+  "groupName": "Root",
+  "imageId": "a920c686-479f-483d-b3ab-5b58351f4155:mr_Part.jpg",
+  "restrictionTypeId": "Public",
+  "childModules": [
+    {
+      "moduleId": "cmc_DuoEdges"
+    },
+    {
+      "moduleId": "cme_Drawer"
+    },
+    {
+      "moduleId": "mc_FrontPanel01"
+    },
+    {
+      "moduleId": "mc_ShelfPanel01"
+    },
+    {
+      "moduleId": "mc_SidePanel01"
+    },
+    {
+      "moduleId": "me_DrillHor"
+    },
+    {
+      "moduleId": "me_DrillVert"
+    },
+    {
+      "moduleId": "me_Handle"
+    },
+    {
+      "moduleId": "me_Hinge"
+    },
+    {
+      "moduleId": "mp_Part"
+    }
+  ],
+  "assignedVariants": [
+    {
+      "variantId": "mod_BtmColor",
+      "defaultScript": "this.mod_Color",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_Color",
+      "default": "34139_Wildeiche",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_EdgeBackClass",
+      "default": "Thick",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_EdgeBackColor",
+      "defaultScript": "this.mod_Color",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_EdgeFrontClass",
+      "default": "Thick",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_EdgeFrontColor",
+      "defaultScript": "this.mod_Color",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_EdgeJointType",
+      "default": "LSLS",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_EdgeLeftClass",
+      "default": "Thick",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_EdgeLeftColor",
+      "defaultScript": "this.mod_Color",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_EdgeRightClass",
+      "default": "Thick",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_EdgeRightColor",
+      "defaultScript": "this.mod_Color",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_Length",
+      "default": "1000",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_OpeningDirection",
+      "default": "Left",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_PartGrain",
+      "default": "Lengthwise",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_Program",
+      "default": "Melamin_Woodline",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_Thickness",
+      "default": "19",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_TypeElement",
+      "default": "Fronts",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_Width",
+      "default": "1000",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    }
+  ],
+  "assignedParts": [],
+  "assignedCustomTables": [],
+  "assignedFunctions": [
+    {
+      "functionId": "ue_Part"
+    }
+  ]
+}

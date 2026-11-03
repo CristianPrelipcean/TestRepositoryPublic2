@@ -1,0 +1,986 @@
+{
+  "tableName": "tab_EdgeJointTypeMapping",
+  "description": "EdgeJointTypeMapping",
+  "restrictionTypeId": "Public",
+  "groupName": "Edges",
+  "columns": [
+    {
+      "name": "_id",
+      "type": "Integer",
+      "allowNull": false
+    },
+    {
+      "name": "in_TypeElement",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_EdgeFront",
+      "type": "Bool",
+      "allowNull": true
+    },
+    {
+      "name": "in_EdgeLeft",
+      "type": "Bool",
+      "allowNull": true
+    },
+    {
+      "name": "in_EdgeBack",
+      "type": "Bool",
+      "allowNull": true
+    },
+    {
+      "name": "in_EdgeRight",
+      "type": "Bool",
+      "allowNull": true
+    },
+    {
+      "name": "in_IsLengthGreaterEqualWidth",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "EdgeJointType",
+      "type": "Text",
+      "allowNull": true
+    }
+  ],
+  "rows": [
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "27"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeFront",
+          "value": "false"
+        },
+        {
+          "columnName": "in_EdgeLeft",
+          "value": "false"
+        },
+        {
+          "columnName": "in_EdgeBack",
+          "value": "false"
+        },
+        {
+          "columnName": "in_EdgeRight",
+          "value": "false"
+        },
+        {
+          "columnName": "in_IsLengthGreaterEqualWidth",
+          "value": "All"
+        },
+        {
+          "columnName": "EdgeJointType",
+          "value": "EEEE"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "28"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeFront",
+          "value": "false"
+        },
+        {
+          "columnName": "in_EdgeLeft",
+          "value": "false"
+        },
+        {
+          "columnName": "in_EdgeBack",
+          "value": "false"
+        },
+        {
+          "columnName": "in_EdgeRight",
+          "value": "true"
+        },
+        {
+          "columnName": "in_IsLengthGreaterEqualWidth",
+          "value": "All"
+        },
+        {
+          "columnName": "EdgeJointType",
+          "value": "EEES"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "29"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeFront",
+          "value": "false"
+        },
+        {
+          "columnName": "in_EdgeLeft",
+          "value": "false"
+        },
+        {
+          "columnName": "in_EdgeBack",
+          "value": "true"
+        },
+        {
+          "columnName": "in_EdgeRight",
+          "value": "false"
+        },
+        {
+          "columnName": "in_IsLengthGreaterEqualWidth",
+          "value": "All"
+        },
+        {
+          "columnName": "EdgeJointType",
+          "value": "EESE"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "30"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeFront",
+          "value": "false"
+        },
+        {
+          "columnName": "in_EdgeLeft",
+          "value": "true"
+        },
+        {
+          "columnName": "in_EdgeBack",
+          "value": "false"
+        },
+        {
+          "columnName": "in_EdgeRight",
+          "value": "false"
+        },
+        {
+          "columnName": "in_IsLengthGreaterEqualWidth",
+          "value": "All"
+        },
+        {
+          "columnName": "EdgeJointType",
+          "value": "ESEE"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "31"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeFront",
+          "value": "true"
+        },
+        {
+          "columnName": "in_EdgeLeft",
+          "value": "false"
+        },
+        {
+          "columnName": "in_EdgeBack",
+          "value": "false"
+        },
+        {
+          "columnName": "in_EdgeRight",
+          "value": "false"
+        },
+        {
+          "columnName": "in_IsLengthGreaterEqualWidth",
+          "value": "All"
+        },
+        {
+          "columnName": "EdgeJointType",
+          "value": "SEEE"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "32"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeFront",
+          "value": "true"
+        },
+        {
+          "columnName": "in_EdgeLeft",
+          "value": "false"
+        },
+        {
+          "columnName": "in_EdgeBack",
+          "value": "true"
+        },
+        {
+          "columnName": "in_EdgeRight",
+          "value": "false"
+        },
+        {
+          "columnName": "in_IsLengthGreaterEqualWidth",
+          "value": "All"
+        },
+        {
+          "columnName": "EdgeJointType",
+          "value": "SESE"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "33"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeFront",
+          "value": "false"
+        },
+        {
+          "columnName": "in_EdgeLeft",
+          "value": "true"
+        },
+        {
+          "columnName": "in_EdgeBack",
+          "value": "false"
+        },
+        {
+          "columnName": "in_EdgeRight",
+          "value": "true"
+        },
+        {
+          "columnName": "in_IsLengthGreaterEqualWidth",
+          "value": "All"
+        },
+        {
+          "columnName": "EdgeJointType",
+          "value": "ESES"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "34"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeFront",
+          "value": "true"
+        },
+        {
+          "columnName": "in_EdgeLeft",
+          "value": "true"
+        },
+        {
+          "columnName": "in_EdgeBack",
+          "value": "false"
+        },
+        {
+          "columnName": "in_EdgeRight",
+          "value": "false"
+        },
+        {
+          "columnName": "in_IsLengthGreaterEqualWidth",
+          "value": "True"
+        },
+        {
+          "columnName": "EdgeJointType",
+          "value": "LSEE"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "35"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeFront",
+          "value": "true"
+        },
+        {
+          "columnName": "in_EdgeLeft",
+          "value": "true"
+        },
+        {
+          "columnName": "in_EdgeBack",
+          "value": "false"
+        },
+        {
+          "columnName": "in_EdgeRight",
+          "value": "false"
+        },
+        {
+          "columnName": "in_IsLengthGreaterEqualWidth",
+          "value": "False"
+        },
+        {
+          "columnName": "EdgeJointType",
+          "value": "SSEE"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "36"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeFront",
+          "value": "true"
+        },
+        {
+          "columnName": "in_EdgeLeft",
+          "value": "false"
+        },
+        {
+          "columnName": "in_EdgeBack",
+          "value": "false"
+        },
+        {
+          "columnName": "in_EdgeRight",
+          "value": "true"
+        },
+        {
+          "columnName": "in_IsLengthGreaterEqualWidth",
+          "value": "True"
+        },
+        {
+          "columnName": "EdgeJointType",
+          "value": "SEES"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "37"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeFront",
+          "value": "true"
+        },
+        {
+          "columnName": "in_EdgeLeft",
+          "value": "false"
+        },
+        {
+          "columnName": "in_EdgeBack",
+          "value": "false"
+        },
+        {
+          "columnName": "in_EdgeRight",
+          "value": "true"
+        },
+        {
+          "columnName": "in_IsLengthGreaterEqualWidth",
+          "value": "False"
+        },
+        {
+          "columnName": "EdgeJointType",
+          "value": "SEEL"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "38"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeFront",
+          "value": "false"
+        },
+        {
+          "columnName": "in_EdgeLeft",
+          "value": "true"
+        },
+        {
+          "columnName": "in_EdgeBack",
+          "value": "true"
+        },
+        {
+          "columnName": "in_EdgeRight",
+          "value": "false"
+        },
+        {
+          "columnName": "in_IsLengthGreaterEqualWidth",
+          "value": "True"
+        },
+        {
+          "columnName": "EdgeJointType",
+          "value": "ESSE"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "39"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeFront",
+          "value": "false"
+        },
+        {
+          "columnName": "in_EdgeLeft",
+          "value": "true"
+        },
+        {
+          "columnName": "in_EdgeBack",
+          "value": "true"
+        },
+        {
+          "columnName": "in_EdgeRight",
+          "value": "false"
+        },
+        {
+          "columnName": "in_IsLengthGreaterEqualWidth",
+          "value": "False"
+        },
+        {
+          "columnName": "EdgeJointType",
+          "value": "ELSE"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "40"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeFront",
+          "value": "false"
+        },
+        {
+          "columnName": "in_EdgeLeft",
+          "value": "false"
+        },
+        {
+          "columnName": "in_EdgeBack",
+          "value": "true"
+        },
+        {
+          "columnName": "in_EdgeRight",
+          "value": "true"
+        },
+        {
+          "columnName": "in_IsLengthGreaterEqualWidth",
+          "value": "True"
+        },
+        {
+          "columnName": "EdgeJointType",
+          "value": "EELS"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "41"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeFront",
+          "value": "false"
+        },
+        {
+          "columnName": "in_EdgeLeft",
+          "value": "false"
+        },
+        {
+          "columnName": "in_EdgeBack",
+          "value": "true"
+        },
+        {
+          "columnName": "in_EdgeRight",
+          "value": "true"
+        },
+        {
+          "columnName": "in_IsLengthGreaterEqualWidth",
+          "value": "False"
+        },
+        {
+          "columnName": "EdgeJointType",
+          "value": "EESS"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "42"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeFront",
+          "value": "true"
+        },
+        {
+          "columnName": "in_EdgeLeft",
+          "value": "true"
+        },
+        {
+          "columnName": "in_EdgeBack",
+          "value": "true"
+        },
+        {
+          "columnName": "in_EdgeRight",
+          "value": "false"
+        },
+        {
+          "columnName": "in_IsLengthGreaterEqualWidth",
+          "value": "True"
+        },
+        {
+          "columnName": "EdgeJointType",
+          "value": "LSSE"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "43"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeFront",
+          "value": "true"
+        },
+        {
+          "columnName": "in_EdgeLeft",
+          "value": "true"
+        },
+        {
+          "columnName": "in_EdgeBack",
+          "value": "true"
+        },
+        {
+          "columnName": "in_EdgeRight",
+          "value": "false"
+        },
+        {
+          "columnName": "in_IsLengthGreaterEqualWidth",
+          "value": "False"
+        },
+        {
+          "columnName": "EdgeJointType",
+          "value": "SLSE"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "44"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeFront",
+          "value": "true"
+        },
+        {
+          "columnName": "in_EdgeLeft",
+          "value": "true"
+        },
+        {
+          "columnName": "in_EdgeBack",
+          "value": "false"
+        },
+        {
+          "columnName": "in_EdgeRight",
+          "value": "true"
+        },
+        {
+          "columnName": "in_IsLengthGreaterEqualWidth",
+          "value": "True"
+        },
+        {
+          "columnName": "EdgeJointType",
+          "value": "LSES"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "45"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeFront",
+          "value": "true"
+        },
+        {
+          "columnName": "in_EdgeLeft",
+          "value": "true"
+        },
+        {
+          "columnName": "in_EdgeBack",
+          "value": "false"
+        },
+        {
+          "columnName": "in_EdgeRight",
+          "value": "true"
+        },
+        {
+          "columnName": "in_IsLengthGreaterEqualWidth",
+          "value": "False"
+        },
+        {
+          "columnName": "EdgeJointType",
+          "value": "SSEL"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "46"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeFront",
+          "value": "false"
+        },
+        {
+          "columnName": "in_EdgeLeft",
+          "value": "true"
+        },
+        {
+          "columnName": "in_EdgeBack",
+          "value": "true"
+        },
+        {
+          "columnName": "in_EdgeRight",
+          "value": "true"
+        },
+        {
+          "columnName": "in_IsLengthGreaterEqualWidth",
+          "value": "True"
+        },
+        {
+          "columnName": "EdgeJointType",
+          "value": "ESLS"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "47"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeFront",
+          "value": "false"
+        },
+        {
+          "columnName": "in_EdgeLeft",
+          "value": "true"
+        },
+        {
+          "columnName": "in_EdgeBack",
+          "value": "true"
+        },
+        {
+          "columnName": "in_EdgeRight",
+          "value": "true"
+        },
+        {
+          "columnName": "in_IsLengthGreaterEqualWidth",
+          "value": "False"
+        },
+        {
+          "columnName": "EdgeJointType",
+          "value": "ELSS"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "48"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeFront",
+          "value": "true"
+        },
+        {
+          "columnName": "in_EdgeLeft",
+          "value": "false"
+        },
+        {
+          "columnName": "in_EdgeBack",
+          "value": "true"
+        },
+        {
+          "columnName": "in_EdgeRight",
+          "value": "true"
+        },
+        {
+          "columnName": "in_IsLengthGreaterEqualWidth",
+          "value": "True"
+        },
+        {
+          "columnName": "EdgeJointType",
+          "value": "SELS"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "49"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeFront",
+          "value": "true"
+        },
+        {
+          "columnName": "in_EdgeLeft",
+          "value": "false"
+        },
+        {
+          "columnName": "in_EdgeBack",
+          "value": "true"
+        },
+        {
+          "columnName": "in_EdgeRight",
+          "value": "true"
+        },
+        {
+          "columnName": "in_IsLengthGreaterEqualWidth",
+          "value": "False"
+        },
+        {
+          "columnName": "EdgeJointType",
+          "value": "SESL"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "50"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeFront",
+          "value": "true"
+        },
+        {
+          "columnName": "in_EdgeLeft",
+          "value": "true"
+        },
+        {
+          "columnName": "in_EdgeBack",
+          "value": "true"
+        },
+        {
+          "columnName": "in_EdgeRight",
+          "value": "true"
+        },
+        {
+          "columnName": "in_IsLengthGreaterEqualWidth",
+          "value": "True"
+        },
+        {
+          "columnName": "EdgeJointType",
+          "value": "LSLS"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "51"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_EdgeFront",
+          "value": "true"
+        },
+        {
+          "columnName": "in_EdgeLeft",
+          "value": "true"
+        },
+        {
+          "columnName": "in_EdgeBack",
+          "value": "true"
+        },
+        {
+          "columnName": "in_EdgeRight",
+          "value": "true"
+        },
+        {
+          "columnName": "in_IsLengthGreaterEqualWidth",
+          "value": "False"
+        },
+        {
+          "columnName": "EdgeJointType",
+          "value": "SLSL"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "52"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "Backwalls"
+        },
+        {
+          "columnName": "in_EdgeFront",
+          "value": "false"
+        },
+        {
+          "columnName": "in_EdgeLeft",
+          "value": "false"
+        },
+        {
+          "columnName": "in_EdgeBack",
+          "value": "false"
+        },
+        {
+          "columnName": "in_EdgeRight",
+          "value": "false"
+        },
+        {
+          "columnName": "in_IsLengthGreaterEqualWidth",
+          "value": "All"
+        },
+        {
+          "columnName": "EdgeJointType",
+          "value": "EEEE"
+        }
+      ]
+    }
+  ]
+}

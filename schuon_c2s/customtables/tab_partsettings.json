@@ -1,0 +1,203 @@
+{
+  "tableName": "tab_PartSettings",
+  "description": "Settings for parts",
+  "restrictionTypeId": "Public",
+  "groupName": "Bom",
+  "columns": [
+    {
+      "name": "_id",
+      "type": "Integer",
+      "allowNull": false
+    },
+    {
+      "name": "in_Part",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_TypeElement",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "BomPartDescription",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "PartGroup",
+      "type": "Text",
+      "allowNull": true
+    }
+  ],
+  "rows": [
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "9"
+        },
+        {
+          "columnName": "in_Part",
+          "value": "part_Side"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "Sides"
+        },
+        {
+          "columnName": "BomPartDescription",
+          "value": "Side"
+        },
+        {
+          "columnName": "PartGroup",
+          "value": "Sides"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "10"
+        },
+        {
+          "columnName": "in_Part",
+          "value": "part_Shelf"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "Shelves"
+        },
+        {
+          "columnName": "BomPartDescription",
+          "value": "Shelf"
+        },
+        {
+          "columnName": "PartGroup",
+          "value": "Shelves"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "11"
+        },
+        {
+          "columnName": "in_Part",
+          "value": "part_Front"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "Backwalls"
+        },
+        {
+          "columnName": "BomPartDescription",
+          "value": "Backwall"
+        },
+        {
+          "columnName": "PartGroup",
+          "value": "Fronts"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "12"
+        },
+        {
+          "columnName": "in_Part",
+          "value": "part_Front"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "Fronts"
+        },
+        {
+          "columnName": "BomPartDescription",
+          "value": "Front"
+        },
+        {
+          "columnName": "PartGroup",
+          "value": "Fronts"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "13"
+        },
+        {
+          "columnName": "in_Part",
+          "value": "cpart_EndPanelPartLeft"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "EndPanelLeft"
+        },
+        {
+          "columnName": "BomPartDescription",
+          "value": "End panel left"
+        },
+        {
+          "columnName": "PartGroup",
+          "value": "End panel"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "14"
+        },
+        {
+          "columnName": "in_Part",
+          "value": "cpart_EndPanelPartRight"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "EndPanelRight"
+        },
+        {
+          "columnName": "BomPartDescription",
+          "value": "End panel right"
+        },
+        {
+          "columnName": "PartGroup",
+          "value": "End panel"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "15"
+        },
+        {
+          "columnName": "in_Part",
+          "value": "cpart_EndPanelPartFront"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "EndPanelFront"
+        },
+        {
+          "columnName": "BomPartDescription",
+          "value": "End panel front"
+        },
+        {
+          "columnName": "PartGroup",
+          "value": "End panel"
+        }
+      ]
+    }
+  ]
+}

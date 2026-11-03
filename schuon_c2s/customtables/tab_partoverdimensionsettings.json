@@ -1,0 +1,121 @@
+{
+  "tableName": "tab_PartOverdimensionSettings",
+  "description": "Overdimensioning of Parts",
+  "restrictionTypeId": "Public",
+  "groupName": "Edges",
+  "columns": [
+    {
+      "name": "_id",
+      "type": "Integer",
+      "allowNull": false
+    },
+    {
+      "name": "in_EdgeThk",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "Overdimension",
+      "type": "Dim",
+      "allowNull": false
+    }
+  ],
+  "rows": [
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "4"
+        },
+        {
+          "columnName": "in_EdgeThk",
+          "value": "0.8"
+        },
+        {
+          "columnName": "Overdimension",
+          "value": "2"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "5"
+        },
+        {
+          "columnName": "in_EdgeThk",
+          "value": "1"
+        },
+        {
+          "columnName": "Overdimension",
+          "value": "2"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "6"
+        },
+        {
+          "columnName": "in_EdgeThk",
+          "value": "2"
+        },
+        {
+          "columnName": "Overdimension",
+          "value": "2"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "7"
+        },
+        {
+          "columnName": "in_EdgeThk",
+          "value": "1.4"
+        },
+        {
+          "columnName": "Overdimension",
+          "value": "1.4"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "8"
+        },
+        {
+          "columnName": "in_EdgeThk",
+          "value": "1.3"
+        },
+        {
+          "columnName": "Overdimension",
+          "value": "1.3"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "9"
+        },
+        {
+          "columnName": "in_EdgeThk",
+          "value": "1.2"
+        },
+        {
+          "columnName": "Overdimension",
+          "value": "1.2"
+        }
+      ]
+    }
+  ]
+}

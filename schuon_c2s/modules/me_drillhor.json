@@ -1,0 +1,128 @@
+{
+  "moduleId": "me_DrillHor",
+  "shortName": "Horizontal drills",
+  "configurable": true,
+  "isRoot": false,
+  "isConfigDummy": false,
+  "isGroupOrchestrator": false,
+  "isDropContainer": false,
+  "description": "Module for horizontal Drills",
+  "groupName": "Processing",
+  "imageId": "86cde7a7-0fd5-46cd-8c47-5818ef5b47c5:Drillhor.png",
+  "restrictionTypeId": "Public",
+  "childModules": [
+    {
+      "moduleId": "mc_DrillHor"
+    }
+  ],
+  "assignedVariants": [
+    {
+      "variantId": "mod_Diameter",
+      "previewValue": "5",
+      "required": true,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_DrillDepth",
+      "previewValue": "11",
+      "required": true,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_DrillHorLengthDescriptor",
+      "default": "100mm_1_1_100mm",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_DrillHorStartpos",
+      "default": "10",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_DrillHorWidthDescriptor",
+      "default": "1_1",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_DrillQty",
+      "previewValue": "0",
+      "required": true,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_DrillSide",
+      "default": "Left",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_DrillingDistance",
+      "previewValue": "32",
+      "required": true,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_DrillinglineLength",
+      "previewValue": "320",
+      "required": true,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_DrillinglineLogic",
+      "default": "DrillingLength",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_Length",
+      "previewValue": "1000",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ProcessingBasePoint",
+      "default": "LeftBtm",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_Thickness",
+      "previewValue": "19",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_TypeElement",
+      "previewValue": "Shelves",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_Width",
+      "previewValue": "500",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    }
+  ],
+  "assignedParts": [],
+  "assignedCustomTables": [],
+  "assignedFunctions": []
+}

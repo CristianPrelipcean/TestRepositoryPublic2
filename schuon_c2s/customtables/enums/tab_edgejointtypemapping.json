@@ -1,0 +1,50 @@
+[
+  {
+    "tableName": "tab_EdgeJointTypeMapping",
+    "columnId": "EdgeJointType",
+    "refColumnId": "Value"
+  },
+  {
+    "tableName": "tab_EdgeJointTypeMapping",
+    "columnId": "in_IsLengthGreaterEqualWidth",
+    "enumsJson": [
+      {
+        "value": "True",
+        "description": "The length is greater than or equal to the width "
+      },
+      {
+        "value": "False",
+        "description": "The length is less than the width"
+      },
+      {
+        "value": "All"
+      }
+    ]
+  },
+  {
+    "tableName": "tab_EdgeJointTypeMapping",
+    "columnId": "in_TypeElement",
+    "enumsJson": [
+      {
+        "value": "Sides",
+        "description": "Sides"
+      },
+      {
+        "value": "Shelves",
+        "description": "Shelves"
+      },
+      {
+        "value": "Backwalls",
+        "description": "Backwalls"
+      },
+      {
+        "value": "Fronts",
+        "description": "Fronts"
+      },
+      {
+        "value": "All",
+        "description": "Wildcard"
+      }
+    ]
+  }
+]

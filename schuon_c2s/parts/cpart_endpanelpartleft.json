@@ -1,0 +1,109 @@
+{
+  "partCode": "cpart_EndPanelPartLeft",
+  "shortName": "End panel left",
+  "description": "Left part of the end panel",
+  "wdt": "YZX",
+  "groupName": "Panels",
+  "imageId": "4a826872-0b28-4881-9d69-e9382cbb4140:EndPanelPartLeft.jpg",
+  "model3dImageId": "",
+  "invisible": false,
+  "restrictionTypeId": "Custom",
+  "noNcData": false,
+  "partVariants": [
+    {
+      "partVarId": "cpa_EndPanelLegLength",
+      "valueScript": "this.parent.cmod_EndPanelLegLength",
+      "isWritable": false
+    },
+    {
+      "partVarId": "cpa_EndPanelType",
+      "valueScript": "this.parent.cmod_EndPanelType",
+      "isWritable": false
+    },
+    {
+      "partVarId": "cpa_ProgramGroup",
+      "valueScript": "",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_BomId",
+      "valueScript": "\"\"",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_BtmColor",
+      "valueScript": "this.parent.mod_BtmColor",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeBackClass",
+      "valueScript": "this.parent.mod_EdgeBackClass",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeBackColor",
+      "valueScript": "this.parent.mod_EdgeBackColor",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeFrontClass",
+      "valueScript": "this.parent.mod_EdgeFrontClass",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeFrontColor",
+      "valueScript": "this.parent.mod_EdgeFrontColor",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeJointType",
+      "valueScript": "this.parent.mod_EdgeJointType",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeLeftClass",
+      "valueScript": "this.parent.mod_EdgeLeftClass",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeLeftColor",
+      "valueScript": "this.parent.mod_EdgeLeftColor",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeRightClass",
+      "valueScript": "this.parent.mod_EdgeRightClass",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_EdgeRightColor",
+      "valueScript": "this.parent.mod_EdgeRightColor",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_PartGrain",
+      "valueScript": "this.parent.mod_PartGrain",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_Program",
+      "valueScript": "this.parent.mod_Program",
+      "isWritable": false
+    },
+    {
+      "partVarId": "pa_TopColor",
+      "valueScript": "this.parent.mod_Color",
+      "isWritable": false
+    }
+  ],
+  "bomData": [
+    {
+      "id": 173,
+      "bomElementTypeId": "bomout_Group",
+      "description": "Out for end panel left",
+      "conditionScript": "partSelf.cpa_EndPanelType == 'LShapeLeft' || partSelf.cpa_EndPanelType == 'UShape'",
+      "valueScript": "try {\n\n    //====================================================================\n    // 0) Collect the inputs\n    //====================================================================\n\n    const PartTypeElement = \"EndPanelLeft\"\n    const topColor: string = part.pa_TopColor;\n    const bottomColor: string = part.pa_BtmColor //?? part.pa_TopColor;\n    const targetThickness: number = part._thickness;\n    const PartSettings = GlobalFunc.find_PartSettings(part._partId, PartTypeElement);\n    const finalDims = { length: part._width, width: part._depth };\n\n    //------------------------------------\n    // Saw-Min (machine based rule) -> because there is actually no other way to make sure we are not sending too small parts\n    //------------------------------------\n    const sawMin = {\n      length: part.g.basic_SawCuttingDimensionLengthMin,\n      width: part.g.basic_SawCuttingDimensionWidthMin,\n    };\n\n    //------------------------------------\n    // Lot group\n    //------------------------------------\n    //const lotGroup = GlobalFunc.cfind_LotGroupMapping(part.pa_TypeElement, part.pa_Program);\n\n    //------------------------------------\n    // Edge inputs\n    //------------------------------------\n\n    const edgeInput = {\n      front: { klass: part.pa_EdgeFrontClass, color: part.pa_EdgeFrontColor },\n      left: { klass: part.pa_EdgeLeftClass, color: part.pa_EdgeLeftColor },\n      back: { klass: part.pa_EdgeBackClass, color: part.pa_EdgeBackColor },\n      right: { klass: part.pa_EdgeRightClass, color: part.pa_EdgeRightColor },\n    };\n\n    //====================================================================\n    // 1) Collect edge data \n    //====================================================================\n\n    const edges = GlobalFunc.process_EdgesBom({\n      program: part.pa_Program,\n      typeElement: PartTypeElement,\n      finalThickness: targetThickness,\n      dims: finalDims,\n      edges: edgeInput,\n      joint: {\n        selectable: part.g.basic_EdgeJointTypeSelectable === true,\n        selectedId: part.pa_EdgeJointType,\n      },\n      enableProcessing: part.g.basic_EdgeProcessingSettings === true,\n    });\n\n    //====================================================================\n    // 2) Create boardPlan\n    //====================================================================\n\n    interface iBoardPlan {\n      BoardId: string;\n      Thickness: number;\n      IsMaster: boolean;\n      Property: ICT_tab_BoardLibrary[];\n    };\n    let boardPlan: iBoardPlan[] = [];\n\n    //------------------------------------\n    // Programm with 1 material and one color\n    //------------------------------------\n\n    if (part.cpa_ProgramGroup.Custom_Group === \"OneColor\") {\n\n      const board = GlobalFunc.find_BoardMapping(topColor, targetThickness);\n\n      const BoardsProperties = GlobalFunc.find_BoardLibrary(board.BoardId!);\n\n      if (board && board.BoardId) {\n\n        boardPlan.push({\n\n          BoardId: board.BoardId,\n\n          Thickness: targetThickness,\n\n          IsMaster: true,\n\n          Property: BoardsProperties\n\n        });\n      }\n    }\n\n    //------------------------------------\n    // Programm with 1 material and two colors\n    //------------------------------------\n\n    else if (part.cpa_ProgramGroup.Custom_Group === \"TwoColors\") {\n\n      const board = GlobalFunc.cfind_2ColorBoardMapping(topColor, bottomColor, targetThickness);\n\n      const BoardsProperties = GlobalFunc.find_BoardLibrary(board.BoardId!);\n\n      if (board && board.BoardId) {\n\n        boardPlan.push({\n\n          BoardId: board.BoardId,\n\n          Thickness: targetThickness,\n\n          IsMaster: true,\n\n          Property: BoardsProperties\n\n        });\n      }\n    }\n\n    //------------------------------------\n    // Programm with 1 or 2 materials and/or different color on top and bottom\n    //------------------------------------\n\n    else {\n\n      const bottomBoards = GlobalFunc.find_BoardMapping(bottomColor, part.g.cbasic_MasterBoardThk);\n\n      const bottomBoardsProperties = GlobalFunc.find_BoardLibrary(bottomBoards.BoardId!);\n\n      const bottomBoardsThk = bottomBoardsProperties[0].Thickness\n\n      const topBoards = GlobalFunc.find_BoardMapping(topColor, targetThickness - part.g.cbasic_MasterBoardThk - 1);\n\n      const topBoardsProperties = GlobalFunc.find_BoardLibrary(topBoards.BoardId!);\n\n      const topBoardsThk = topBoardsProperties[0].Thickness;\n\n      //Top material\n\n      if (topBoards && topBoards.BoardId) {\n\n        boardPlan.push({\n\n          BoardId: topBoards.BoardId,\n\n          Thickness: topBoardsThk,\n\n          IsMaster: false,\n\n          Property: topBoardsProperties\n\n        });\n      }\n\n      // Bottom material\n\n      if (bottomBoards && bottomBoards.BoardId) {\n\n        boardPlan.push({\n\n          BoardId: bottomBoards.BoardId,\n\n          Thickness: bottomBoardsThk,\n\n          IsMaster: true,\n\n          Property: bottomBoardsProperties\n        })\n\n      }\n    }\n    //====================================================================\n    // 3) Validation\n    //====================================================================\n\n    if (boardPlan.length === 0) {\n      const ErrorMessage =\n        GlobalFunc.find_ErrorList(\"Error 40004\", 1);\n      logError(ErrorMessage.Message(\"\"));\n\n      return;\n    }\n\n    //====================================================================\n    // 4) Create BOM output\n    //====================================================================\n\n    for (const plan of boardPlan) {\n\n      //const Board = this.addbomout_Board();\n\n      //const boardProperties = bottomBoards ? bottomBoardsProperties : topBoardsProperties\n\n      const isMaster = plan.IsMaster;\n\n      // Output not for group \"TwoMaterials\"\" and master board\n      if (part.cpa_ProgramGroup.Custom_Group === \"TwoMaterials\" && isMaster) {\n         continue;\n      }\n\n      const Board = this.addbomout_Board();\n\n      // ---------------- Basic ----------------\n      const bomName = PartSettings ? PartSettings.BomPartDescription : part._partId;\n      const bomArticleGroup = PartSettings?.PartGroup ?? 'None';\n      const lotGroup = //GlobalFunc.cfind_LotGroupMapping(part.pa_TypeElement, part.pa_Program);\n\n        Board.bom_Type = part._partId;\n      Board.bom_Name = bomName;\n      Board.bom_PartId = part._id;\n      Board.bom_ArticleGroup = bomArticleGroup;\n      Board.bom_Route = \"\";\n      Board.bom_ElementCategory = \"\";\n      Board.bom_ElementType = \"Board\";\n      Board.bom_ElementId = part._id;\n      Board.bom_ParentId = part.pa_BomId;\n      Board.bom_ArticleGroup = \"\" //lotGroup.LotGroup;\n      //Board.bom_Route = '';\n\n      // ---------------- Dimensions ----------------\n      Board.bom_Length = part._width;\n      Board.bom_Width = part._depth;\n\n      // final thickness only on master (needs to be checked!)\n      Board.bom_Finalthk = plan.Thickness;\n\n      // ---------------- Material ----------------\n      Board.bom_Material = plan.BoardId!;\n      Board.bom_GrainOrientation = plan.Property[0].Grain == \"None\" ? \"None\" : part.pa_PartGrain;\n\n      // ---------------- Cut dims ----------------\n\n      // Overmeasure only relevant on master\n      //const overL = isMaster ? edges.overmeasure.length : 0;\n      //const overW = isMaster ? edges.overmeasure.width : 0;\n\n      //Board.bom_CutDimLength1 = finalDims.length + (isMaster ? 0 : 3.0);\n      //Board.bom_CutDimWidth1 = finalDims.width + (isMaster ? 0 : 3.0);\n\n      Board.bom_CutDimLength1 = finalDims.length + (part.cpa_ProgramGroup.Custom_Group === \"TwoMaterials\" ? (isMaster ? 0.5 : 3.0) : 0);\n      Board.bom_CutDimWidth1 = finalDims.width + (part.cpa_ProgramGroup.Custom_Group === \"TwoMaterials\" ? (isMaster ? 0.5 : 3.0) : 0);\n\n      Board.bom_CutDimLength2 = 0;\n      Board.bom_CutDimWidth2 = 0;\n\n      // ---------------- Edge data (only master) ----------------\n      if (isMaster) {\n        if (edges.edgeCodes.front != \"NoEdgeband\") {\n          Board.bom_EdgeFront = edges.edgeCodes.front;\n        }\n\n        if (edges.edgeCodes.left != \"NoEdgeband\") {\n          Board.bom_EdgeLeft = edges.edgeCodes.left;\n        }\n\n        if (edges.edgeCodes.back != \"NoEdgeband\") {\n          Board.bom_EdgeBack = edges.edgeCodes.back;\n        }\n\n        if (edges.edgeCodes.right != \"NoEdgeband\") {\n          Board.bom_EdgeRight = edges.edgeCodes.right;\n        }\n\n        Board.bom_EdgeJointFrontLeft = edges.joint.frontLeft;\n        Board.bom_EdgeJointLeftBack = edges.joint.leftBack;\n        Board.bom_EdgeJointBackRight = edges.joint.backRight;\n        Board.bom_EdgeJointRightFront = edges.joint.rightFront;\n        Board.bom_EdgeShape = edges.joint.shape;\n        Board.bom_EdgeTransition = edges.joint.transition;\n\n        if (edges.processing) {\n          Board.bom_CornerProcessingFrontLeft = edges.processing.cornerFrontLeft;\n          Board.bom_CornerProcessingLeftBack = edges.processing.cornerLeftBack;\n          Board.bom_CornerProcessingBackRight = edges.processing.cornerBackRight;\n          Board.bom_CornerProcessingRightFront = edges.processing.cornerRightFront;\n\n          Board.bom_EdgeFrontProcessing = edges.processing.edgeFront;\n          Board.bom_EdgeLeftProcessing = edges.processing.edgeLeft;\n          Board.bom_EdgeBackProcessing = edges.processing.edgeBack;\n          Board.bom_EdgeRightProcessing = edges.processing.edgeRight;\n        }\n      }\n\n      // ---------------- Additional ----------------\n      Board.bom_ExtraInfo1 = \"\";\n      Board.bom_ExtraInfo2 = \"\";\n      Board.bom_ExtraInfo3 = \"\";\n\n    }\n  }\n\n  catch (error: any) {\n    const ErrorMessage = GlobalFunc.find_ErrorList(\"Error 40003\", 1);\n    logError(ErrorMessage.Message(error.message));\n  }"
+    }
+  ],
+  "ncData": []
+}
