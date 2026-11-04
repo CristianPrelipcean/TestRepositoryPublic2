@@ -7,13 +7,18 @@
       "allowNull": false
     },
     {
-      "name": "MyAttributeCol",
+      "name": "TextFeld",
       "type": "Text",
       "allowNull": true
     },
     {
-      "name": "MyTableCol",
-      "type": "Text",
+      "name": "IntegerFeld",
+      "type": "Integer",
+      "allowNull": true
+    },
+    {
+      "name": "RealFeld",
+      "type": "Real",
       "allowNull": true
     }
   ],
@@ -25,10 +30,16 @@
           "value": "1"
         },
         {
-          "columnName": "MyAttributeCol"
+          "columnName": "TextFeld",
+          "value": "Wert 01"
         },
         {
-          "columnName": "MyTableCol"
+          "columnName": "IntegerFeld",
+          "value": "12"
+        },
+        {
+          "columnName": "RealFeld",
+          "value": "4.3"
         }
       ]
     },
@@ -39,10 +50,16 @@
           "value": "2"
         },
         {
-          "columnName": "MyAttributeCol"
+          "columnName": "TextFeld",
+          "value": "Wert 02"
         },
         {
-          "columnName": "MyTableCol"
+          "columnName": "IntegerFeld",
+          "value": "1"
+        },
+        {
+          "columnName": "RealFeld",
+          "value": "3"
         }
       ]
     }
