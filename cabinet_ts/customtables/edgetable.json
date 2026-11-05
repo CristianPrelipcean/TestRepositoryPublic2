@@ -1,0 +1,54 @@
+{
+  "tableName": "EdgeTable",
+  "restrictionTypeId": "Public",
+  "columns": [
+    {
+      "name": "_id",
+      "type": "Integer",
+      "allowNull": false
+    },
+    {
+      "name": "in_EdgeCode",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "Height",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "Thickness",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "Material",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "Manufacturer",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "ProductName",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "DecorName",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "DecorCode",
+      "type": "Text",
+      "allowNull": true
+    }
+  ],
+  "rows": [],
+  "dataSource": "Edgebands",
+  "changedAt": "2026-11-05T08:30:52.8030323+00:00"
+}
