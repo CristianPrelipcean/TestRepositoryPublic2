@@ -1,4 +1,4 @@
- const assign_corpusColorMatrix = (part: IPartBase) => {
+  const assign_corpusColorMatrix = (part: IPartBase) => {
     const matrix = this.corpusColor_matrix;
     if (matrix.FaceDefault) {
       part.addFaceMaterial(matrix.FaceDefault, FaceKey.Default);
@@ -42,6 +42,8 @@
   var corpus = this.add000_Corpus(0, 0, 0, 0, 0, 0);
   this.createPartGroup("corpus", corpus);
 
+  const corpusMatrix = this.corpusColor_matrix;
+
   var spl = this.add101_SidePanelLeft(0, 0, 0, this.sidePanelThickness, this.height, this.depth);
   assign_corpusColorMatrix(spl);
   this.assignPartGroup("corpus", spl);
@@ -60,13 +62,14 @@
   this.add125_RailHorizontalBack(this.sidePanelThickness, this.height - this.sidePanelThickness, this.depth - (this.depth / 8),
     this.width - (2 * this.sidePanelThickness), this.sidePanelThickness, this.depth / 8)
 
-  this.add140_Backwall(0, 0, -this.sidePanelThickness / 2,
+  this.add140_Backwall(0, 0, this.depth,
     this.width, this.height, 8);
 
   if (this.generateWorktop) {
     this.addGenerationContour(GenerationMethod.APL, this.height,
       Contour.M(0, 0).H(CKind.Front, this.width).V(CKind.Left, this.depth).H(CKind.Back, 0).Z(CKind.Right));
   }
+  
   if (this.showRoomContours) {
     this.addGenerationContour(GenerationMethod.ROOM, 0.0, Contour.M(0, 0));
   }
