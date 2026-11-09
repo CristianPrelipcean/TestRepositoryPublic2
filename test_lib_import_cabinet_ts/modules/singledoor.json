@@ -1,0 +1,172 @@
+{
+  "moduleId": "singleDoor",
+  "shortName": "singleDoor",
+  "configurable": true,
+  "isRoot": false,
+  "description": "door module",
+  "restrictionTypeId": "Public",
+  "childModules": [
+    {
+      "moduleId": "boxBehindDoor"
+    },
+    {
+      "moduleId": "containerBoxBehindDoor"
+    },
+    {
+      "moduleId": "internalDrawer"
+    }
+  ],
+  "assignedVariants": [
+    {
+      "variantId": "frontColor",
+      "previewValue": "White",
+      "derive": true
+    },
+    {
+      "variantId": "frontHeight",
+      "previewValue": "600",
+      "required": true
+    },
+    {
+      "variantId": "handle",
+      "previewValue": "knopf01",
+      "derive": true
+    },
+    {
+      "variantId": "handleOffset",
+      "default": "100",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "handleOrientation",
+      "default": "Hor",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "hide3DModelIfOpened",
+      "default": "false",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "hinge",
+      "default": "left",
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "innerDrawer1Depth",
+      "default": "500",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "innerDrawer1Height",
+      "default": "240",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "innerDrawer1Pos",
+      "default": "0",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "innerDrawer2Depth",
+      "default": "500",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "innerDrawer2Height",
+      "default": "120",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "innerDrawer2Pos",
+      "default": "400",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "innerDrawerCount",
+      "default": "0"
+    },
+    {
+      "variantId": "sidePanelThickness",
+      "previewValue": "16",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "startPos",
+      "default": "0",
+      "required": false
+    },
+    {
+      "variantId": "use3DModelForDoorLeft",
+      "default": "false",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "use3DModelOpenForDoorLeft",
+      "default": "false",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "width",
+      "previewValue": "600",
+      "derive": true
+    }
+  ],
+  "assignedParts": [
+    {
+      "partCode": "160_DoorLeft"
+    },
+    {
+      "partCode": "807_DrillingHinge"
+    },
+    {
+      "partCode": "999_GrundplatteL"
+    },
+    {
+      "partCode": "999_GrundplatteR"
+    },
+    {
+      "partCode": "999_InvisiblePart"
+    },
+    {
+      "partCode": "999_ScharnierL"
+    },
+    {
+      "partCode": "999_ScharnierR"
+    },
+    {
+      "partCode": "handle_01"
+    }
+  ],
+  "assignedCustomTables": [],
+  "assignedFunctions": [
+    {
+      "functionId": "UserExit01"
+    }
+  ]
+}
