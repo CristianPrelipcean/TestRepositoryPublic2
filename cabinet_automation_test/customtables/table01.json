@@ -1,0 +1,89 @@
+{
+  "tableName": "table01",
+  "description": "First table of this library",
+  "restrictionTypeId": "Public",
+  "columns": [
+    {
+      "name": "_id",
+      "type": "Integer",
+      "allowNull": false
+    },
+    {
+      "name": "in_input01",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "output01",
+      "type": "Integer",
+      "allowNull": false
+    },
+    {
+      "name": "matrix_custom01",
+      "type": "Bool",
+      "allowNull": true
+    }
+  ],
+  "rows": [
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "1"
+        },
+        {
+          "columnName": "in_input01",
+          "value": "abc"
+        },
+        {
+          "columnName": "output01",
+          "value": "1"
+        },
+        {
+          "columnName": "matrix_custom01",
+          "value": "true"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "2"
+        },
+        {
+          "columnName": "in_input01",
+          "value": "def"
+        },
+        {
+          "columnName": "output01",
+          "value": "2"
+        },
+        {
+          "columnName": "matrix_custom01",
+          "value": "false"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "3"
+        },
+        {
+          "columnName": "in_input01",
+          "value": "ghi"
+        },
+        {
+          "columnName": "output01",
+          "value": "3"
+        },
+        {
+          "columnName": "matrix_custom01",
+          "value": "true"
+        }
+      ]
+    }
+  ]
+}
