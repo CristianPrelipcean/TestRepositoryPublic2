@@ -1,0 +1,54 @@
+{
+  "tableName": "BoardsTable",
+  "restrictionTypeId": "Public",
+  "columns": [
+    {
+      "name": "_id",
+      "type": "Integer",
+      "allowNull": false
+    },
+    {
+      "name": "in_MaterialCode",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "Density",
+      "type": "Real",
+      "allowNull": false
+    },
+    {
+      "name": "Grain",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "Thickness",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "Length",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "Width",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "Category",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "Coating",
+      "type": "Text",
+      "allowNull": true
+    }
+  ],
+  "rows": [],
+  "dataSource": "Boards",
+  "changedAt": "2026-11-10T08:38:26.1419046+00:00"
+}
