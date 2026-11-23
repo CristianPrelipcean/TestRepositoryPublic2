@@ -108,16 +108,8 @@
 		return baseboard;
 	};
 
-	let toekickMaximumLength;
-	try {
-		const boardMapping = GlobalFunc.find_BoardMapping(this.mod_ToekickColor, this.mod_ToekickThk);
-		const boardEntry = GlobalFunc.find_BoardLibrary(boardMapping.BoardId!);
-		toekickMaximumLength = boardEntry!.BoardLength;
-	}
-	catch (e) {
-		toekickMaximumLength = 9999;
-		//logError(`Error while retrieving maximum toekick length. Using fallback value ${maximumLength}. Error: ${e}`);
-	}
+	const boardMapping = GlobalFunc.find_BoardMapping(this.mod_ToekickColor, this.mod_ToekickThk);
+	const toekickMaximumLength = GlobalFunc.find_BoardDimensions(boardMapping.BoardId ?? "").Length;
 
 	// Add the toekick submodule between two points
 	let toekickIndex = 1;
@@ -171,16 +163,8 @@
 	}
 
 	// Get the maximum toekick possible length from the boards properties.
-	let baseboardMaxUnsplitLength;
-	try {
-		const boardMapping = GlobalFunc.find_BoardMapping(this.mod_CarcaseColor, this.mod_BaseboardThk);
-		const boardEntry = GlobalFunc.find_BoardLibrary(boardMapping.BoardId!);
-		baseboardMaxUnsplitLength = boardEntry!.BoardLength;
-	}
-	catch (e) {
-		baseboardMaxUnsplitLength = 9999;
-		logError(`Error while retrieving maximum baseboard length. Using fallback value ${baseboardMaxUnsplitLength}. Error: ${e}`);
-	}
+	const boardMappingB = GlobalFunc.find_BoardMapping(this.mod_CarcaseColor, this.mod_BaseboardThk);
+	const baseboardMaxUnsplitLength = GlobalFunc.find_BoardDimensions(boardMappingB.BoardId ?? "").Length;
 
 	let mod_BaseboardSplitLogic = this.mod_BaseboardSplitLogic;
 	// ===================================================

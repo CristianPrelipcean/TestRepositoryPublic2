@@ -5,10 +5,30 @@
   "isRoot": false,
   "description": "Management of the lightning system",
   "groupName": "Hardware",
-  "imageId": "537b8052-9c01-4793-b764-925275dcb3e2:partlight.jpg",
+  "imageId": "2f952e2c-8f8c-44e0-94f8-7bc32838be08:partlight.jpg",
   "restrictionTypeId": "Internal",
   "childModules": [],
   "assignedVariants": [
+    {
+      "variantId": "mod_ColumnDebug",
+      "default": "true",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnShelfOrigin",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnWrapInfo",
+      "default": "",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
     {
       "variantId": "mod_Depth",
       "default": "500",
@@ -52,5 +72,9 @@
     }
   ],
   "assignedCustomTables": [],
-  "assignedFunctions": []
+  "assignedFunctions": [
+    {
+      "functionId": "process_StorageunitColumnPass"
+    }
+  ]
 }

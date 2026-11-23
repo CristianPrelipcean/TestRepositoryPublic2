@@ -5,7 +5,7 @@
   "isRoot": false,
   "description": "Management of the fixed shelf",
   "groupName": "CarcaseConstructionParts",
-  "imageId": "1232377e-eedc-43a7-bceb-5697c9706d13:Shelf.png",
+  "imageId": "8584026b-2b02-4d39-91ad-f8fd377f3eb4:Shelf.png",
   "restrictionTypeId": "Internal",
   "childModules": [],
   "assignedVariants": [
@@ -78,6 +78,33 @@
       "previewValue": "Nature",
       "required": false,
       "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnDebug",
+      "default": "true",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnShelfOrigin",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnShelfSvgPath",
+      "default": "",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnWrapInfo",
+      "default": "",
+      "required": false,
+      "derive": false,
       "fixed": false
     },
     {
@@ -213,5 +240,9 @@
     }
   ],
   "assignedCustomTables": [],
-  "assignedFunctions": []
+  "assignedFunctions": [
+    {
+      "functionId": "process_StorageunitColumnPass"
+    }
+  ]
 }

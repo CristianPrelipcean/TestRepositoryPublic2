@@ -5,7 +5,7 @@
   "isRoot": false,
   "description": "Backwall for storage unit",
   "groupName": "CarcaseConstructionParts",
-  "imageId": "3f23c109-260b-4e66-907a-8fff20039b91:Backwall.png",
+  "imageId": "cf25a946-eed8-4e68-bd63-e57c5b3b3ebe:Backwall.png",
   "restrictionTypeId": "Internal",
   "childModules": [],
   "assignedVariants": [
@@ -77,6 +77,26 @@
       "previewValue": "false",
       "required": false,
       "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnDebug",
+      "default": "true",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnShelfOrigin",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnWrapInfo",
+      "default": "",
+      "required": false,
+      "derive": false,
       "fixed": false
     },
     {
@@ -170,5 +190,9 @@
     }
   ],
   "assignedCustomTables": [],
-  "assignedFunctions": []
+  "assignedFunctions": [
+    {
+      "functionId": "process_StorageunitColumnPass"
+    }
+  ]
 }

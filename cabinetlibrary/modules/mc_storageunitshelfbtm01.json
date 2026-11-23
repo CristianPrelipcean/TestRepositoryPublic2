@@ -5,7 +5,7 @@
   "isRoot": false,
   "description": "Bottom shelf for storage unit",
   "groupName": "CarcaseConstructionParts",
-  "imageId": "1cc1f928-f198-4a43-bf61-da189c87bc90:Shelfbtm.png",
+  "imageId": "9e911bbe-7db3-4b92-a99f-130f1b170719:Shelfbtm.png",
   "restrictionTypeId": "Internal",
   "childModules": [],
   "assignedVariants": [
@@ -91,6 +91,33 @@
       "previewValue": "false",
       "required": false,
       "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnDebug",
+      "default": "true",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnShelfOrigin",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnShelfSvgPath",
+      "default": "",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnWrapInfo",
+      "default": "",
+      "required": false,
+      "derive": false,
       "fixed": false
     },
     {
@@ -219,5 +246,9 @@
     }
   ],
   "assignedCustomTables": [],
-  "assignedFunctions": []
+  "assignedFunctions": [
+    {
+      "functionId": "process_StorageunitColumnPass"
+    }
+  ]
 }

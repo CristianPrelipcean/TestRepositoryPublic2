@@ -5,7 +5,7 @@
   "isRoot": false,
   "description": "Construction module for the drawer",
   "groupName": "FrontConstruction",
-  "imageId": "4704b07a-94b3-46cb-8c28-2e8b8181984f:Drawer.png",
+  "imageId": "4e7967ac-d1cf-40c4-be60-9e3266cb6fbe:Drawer.png",
   "restrictionTypeId": "Internal",
   "childModules": [
     {
@@ -75,6 +75,26 @@
       "previewValue": "600",
       "required": false,
       "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnDebug",
+      "default": "true",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnShelfOrigin",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnWrapInfo",
+      "default": "",
+      "required": false,
+      "derive": false,
       "fixed": false
     },
     {
@@ -542,6 +562,9 @@
   "assignedFunctions": [
     {
       "functionId": "process_HandlestripPos"
+    },
+    {
+      "functionId": "process_StorageunitColumnPass"
     }
   ]
 }

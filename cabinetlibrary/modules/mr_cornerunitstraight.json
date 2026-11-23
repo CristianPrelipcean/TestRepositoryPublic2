@@ -5,7 +5,7 @@
   "isRoot": true,
   "description": "Module for corner unit straight",
   "groupName": "Root",
-  "imageId": "2a1ff098-a509-4a19-8c83-cdfb44685ee0:mr_CornerunitStraight.jpg",
+  "imageId": "a85ff591-9dc8-4541-8515-106b1240728a:mr_CornerunitStraight.jpg",
   "restrictionTypeId": "Public",
   "childModules": [
     {
@@ -37,6 +37,13 @@
     }
   ],
   "assignedVariants": [
+    {
+      "variantId": "mod_AutomaticHeightAdjustment",
+      "default": "false",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
     {
       "variantId": "mod_BackHeight",
       "default": "600",
@@ -87,6 +94,13 @@
       "fixed": false
     },
     {
+      "variantId": "mod_CarcaseCeilingDistance",
+      "required": false,
+      "derive": false,
+      "fixed": false,
+      "defaultGlobalVar": true
+    },
+    {
       "variantId": "mod_CarcaseColor",
       "default": "178",
       "required": false,
@@ -129,6 +143,13 @@
       "fixed": false
     },
     {
+      "variantId": "mod_CarcaseDirectionSelection",
+      "defaultScript": "this.mod_CarcaseDirection",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
       "variantId": "mod_CarcaseDistanceWall",
       "default": "0",
       "required": false,
@@ -159,6 +180,13 @@
     {
       "variantId": "mod_CarcaseFrontConstruction",
       "default": "FrontOverlayLBRT",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_CarcaseHeight",
+      "default": "0",
       "required": false,
       "derive": false,
       "fixed": false
@@ -354,8 +382,36 @@
       "fixed": false
     },
     {
+      "variantId": "mod_CarcaseVisLeftAutomaticType",
+      "required": false,
+      "derive": false,
+      "fixed": false,
+      "defaultGlobalVar": true
+    },
+    {
+      "variantId": "mod_CarcaseVisLeftSelection",
+      "defaultScript": "this.mod_CarcaseVisLeft ? 'Visible' : this.g.basic_CarcaseVisLeftSelection",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
       "variantId": "mod_CarcaseVisRight",
       "default": "false",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_CarcaseVisRightAutomaticType",
+      "required": false,
+      "derive": false,
+      "fixed": false,
+      "defaultGlobalVar": true
+    },
+    {
+      "variantId": "mod_CarcaseVisRightSelection",
+      "defaultScript": "this.mod_CarcaseVisRight ? 'Visible' : this.g.basic_CarcaseVisRightSelection",
       "required": false,
       "derive": false,
       "fixed": false
@@ -366,6 +422,20 @@
       "required": false,
       "derive": false,
       "fixed": false
+    },
+    {
+      "variantId": "mod_CeilingAreaVisLeftSelection",
+      "required": false,
+      "derive": false,
+      "fixed": false,
+      "defaultGlobalVar": true
+    },
+    {
+      "variantId": "mod_CeilingAreaVisRightSelection",
+      "required": false,
+      "derive": false,
+      "fixed": false,
+      "defaultGlobalVar": true
     },
     {
       "variantId": "mod_CeilingFillerConstruction",
@@ -391,6 +461,26 @@
     {
       "variantId": "mod_CleatWidth",
       "default": "150",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnDebug",
+      "default": "true",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnShelfOrigin",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnWrapInfo",
+      "default": "",
       "required": false,
       "derive": false,
       "fixed": false
@@ -657,28 +747,35 @@
     },
     {
       "variantId": "mod_GlobalFrontOversizeBtm",
-      "default": "0",
       "required": false,
       "derive": false,
-      "fixed": false
+      "fixed": false,
+      "defaultGlobalVar": true
     },
     {
       "variantId": "mod_GlobalFrontOversizeLeft",
-      "default": "0",
       "required": false,
       "derive": false,
-      "fixed": false
+      "fixed": false,
+      "defaultGlobalVar": true
     },
     {
       "variantId": "mod_GlobalFrontOversizeRight",
-      "default": "0",
       "required": false,
       "derive": false,
-      "fixed": false
+      "fixed": false,
+      "defaultGlobalVar": true
     },
     {
       "variantId": "mod_GlobalFrontOversizeTop",
-      "default": "0",
+      "required": false,
+      "derive": false,
+      "fixed": false,
+      "defaultGlobalVar": true
+    },
+    {
+      "variantId": "mod_GroupHeight",
+      "default": "1500",
       "required": false,
       "derive": false,
       "fixed": false
@@ -775,8 +872,23 @@
       "fixed": false
     },
     {
+      "variantId": "mod_HeightInputMode",
+      "required": false,
+      "derive": false,
+      "fixed": false,
+      "defaultGlobalVar": true
+    },
+    {
       "variantId": "mod_HeightPosInsertion",
       "default": "0",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_InformationList",
+      "default": "",
+      "previewValue": "",
       "required": false,
       "derive": false,
       "fixed": false
@@ -852,6 +964,14 @@
       "fixed": false
     },
     {
+      "variantId": "mod_ModuleContextInformationList",
+      "default": "",
+      "previewValue": "",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
       "variantId": "mod_ModuleName",
       "default": "mr_CornerunitStraight",
       "required": false,
@@ -875,6 +995,13 @@
     {
       "variantId": "mod_ParentName",
       "default": "mr_CornerunitStraight",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_PlacementLevels",
+      "defaultScript": "(this.mod_PlinthAreaDesign_matrix?.PlinthAreaType ?? 'None') === 'None' ? 'WallHanging' : 'OnFloor'",
       "required": false,
       "derive": false,
       "fixed": false
@@ -951,8 +1078,22 @@
       "fixed": false
     },
     {
+      "variantId": "mod_PlinthAreaVisLeftSelection",
+      "defaultScript": "this.mod_PlinthAreaVisLeft ? 'Visible' : this.g.basic_PlinthAreaVisLeftSelection",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
       "variantId": "mod_PlinthAreaVisRight",
       "default": "false",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_PlinthAreaVisRightSelection",
+      "defaultScript": "this.mod_PlinthAreaVisRight ? 'Visible' : this.g.basic_PlinthAreaVisRightSelection",
       "required": false,
       "derive": false,
       "fixed": false
@@ -1140,7 +1281,21 @@
       "fixed": false
     },
     {
+      "variantId": "mod_UseGroupHeight",
+      "default": "false",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
       "variantId": "mod_VertDividerType",
+      "required": false,
+      "derive": false,
+      "fixed": false,
+      "defaultGlobalVar": true
+    },
+    {
+      "variantId": "mod_WallHeightLines",
       "required": false,
       "derive": false,
       "fixed": false,
@@ -1170,6 +1325,9 @@
   "assignedFunctions": [
     {
       "functionId": "process_RackAreaOversizeCarcase"
+    },
+    {
+      "functionId": "process_StorageunitColumnPass"
     }
   ]
 }

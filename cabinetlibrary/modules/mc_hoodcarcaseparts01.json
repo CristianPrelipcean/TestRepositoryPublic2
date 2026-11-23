@@ -7,10 +7,63 @@
   "isDropContainer": false,
   "description": "Construction module for hood",
   "groupName": "Hood",
-  "imageId": "774de5b5-d1ee-4d2b-98f4-570b962c4fb7:HoodInsert.png",
+  "imageId": "257d1f58-10ef-4609-bfa7-169a86409556:HoodInsert.png",
   "restrictionTypeId": "Internal",
-  "childModules": [],
+  "childModules": [
+    {
+      "moduleId": "mc_ShelfadjGroup01"
+    }
+  ],
   "assignedVariants": [
+    {
+      "variantId": "mod_CarcaseBackwallColor",
+      "previewValue": "192",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_CarcaseBackwallProgram",
+      "previewValue": "Classic",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_CarcaseColor",
+      "previewValue": "192",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_CarcaseConnectionLeftBtm",
+      "required": false,
+      "derive": false,
+      "fixed": false,
+      "defaultGlobalVar": true
+    },
+    {
+      "variantId": "mod_CarcaseConnectionLeftTop",
+      "required": false,
+      "derive": false,
+      "fixed": false,
+      "defaultGlobalVar": true
+    },
+    {
+      "variantId": "mod_CarcaseConnectionRightBtm",
+      "required": false,
+      "derive": false,
+      "fixed": false,
+      "defaultGlobalVar": true
+    },
+    {
+      "variantId": "mod_CarcaseConnectionRightTop",
+      "required": false,
+      "derive": false,
+      "fixed": false,
+      "defaultGlobalVar": true
+    },
     {
       "variantId": "mod_CarcaseDepth",
       "previewValue": "300",
@@ -19,8 +72,85 @@
       "fixed": false
     },
     {
+      "variantId": "mod_CarcaseEdgeBackColor",
+      "required": false,
+      "derive": false,
+      "fixed": false,
+      "defaultGlobalVar": true
+    },
+    {
+      "variantId": "mod_CarcaseEdgeColor",
+      "required": false,
+      "derive": false,
+      "fixed": false,
+      "defaultGlobalVar": true
+    },
+    {
+      "variantId": "mod_CarcaseEdgeFrontColor",
+      "required": false,
+      "derive": false,
+      "fixed": false,
+      "defaultGlobalVar": true
+    },
+    {
       "variantId": "mod_CarcaseHeight",
       "previewValue": "500",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_CarcaseId",
+      "previewValue": "None",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_CarcaseOutsideColor",
+      "previewValue": "192",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_CarcaseOutsideProgram",
+      "previewValue": "Classic",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_CarcasePartConnectionBtmVert",
+      "previewValue": "ShelfCSide",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_CarcasePartConnectionLeftHor",
+      "previewValue": "SideCShelf",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_CarcasePartConnectionRightHor",
+      "previewValue": "SideCShelf",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_CarcasePartConnectionTopVert",
+      "previewValue": "ShelfCSide",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_CarcaseProgram",
+      "previewValue": "Classic",
       "required": false,
       "derive": true,
       "fixed": false
@@ -34,10 +164,198 @@
       "fixed": false
     },
     {
+      "variantId": "mod_CarcaseVisBtm",
+      "previewValue": "false",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_CarcaseVisLeft",
+      "previewValue": "false",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_CarcaseVisRight",
+      "previewValue": "false",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_CarcaseVisTop",
+      "previewValue": "false",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
       "variantId": "mod_CarcaseWidth",
       "previewValue": "500",
       "required": false,
       "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnDebug",
+      "default": "true",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnShelfOrigin",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnWrapInfo",
+      "default": "",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_EdgeBackType",
+      "default": "CBE",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_EdgeFrontType",
+      "default": "CBE",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_EdgeJointType",
+      "default": "II",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_EdgeLeftType",
+      "default": "CBE",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_EdgeRightType",
+      "default": "CBE",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_FittingConnectionBtmVert",
+      "required": false,
+      "derive": false,
+      "fixed": false,
+      "defaultGlobalVar": true
+    },
+    {
+      "variantId": "mod_FittingConnectionLeftBtm",
+      "required": false,
+      "derive": false,
+      "fixed": false,
+      "defaultGlobalVar": true
+    },
+    {
+      "variantId": "mod_FittingConnectionLeftHor",
+      "required": false,
+      "derive": false,
+      "fixed": false,
+      "defaultGlobalVar": true
+    },
+    {
+      "variantId": "mod_FittingConnectionLeftTop",
+      "required": false,
+      "derive": false,
+      "fixed": false,
+      "defaultGlobalVar": true
+    },
+    {
+      "variantId": "mod_FittingConnectionRightBtm",
+      "required": false,
+      "derive": false,
+      "fixed": false,
+      "defaultGlobalVar": true
+    },
+    {
+      "variantId": "mod_FittingConnectionRightHor",
+      "required": false,
+      "derive": false,
+      "fixed": false,
+      "defaultGlobalVar": true
+    },
+    {
+      "variantId": "mod_FittingConnectionRightTop",
+      "required": false,
+      "derive": false,
+      "fixed": false,
+      "defaultGlobalVar": true
+    },
+    {
+      "variantId": "mod_FittingConnectionTopVert",
+      "required": false,
+      "derive": false,
+      "fixed": false,
+      "defaultGlobalVar": true
+    },
+    {
+      "variantId": "mod_HardwareColor",
+      "required": false,
+      "derive": false,
+      "fixed": false,
+      "defaultGlobalVar": true
+    },
+    {
+      "variantId": "mod_HoodBackwallthk",
+      "default": "8",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_HoodConstructionRailbtmthk",
+      "default": "19",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_HoodConstructionRailbtmwdth",
+      "default": "124",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_HoodConstructionRailtopthk",
+      "default": "19",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_HoodConstructionRailtopwdth",
+      "default": "124",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_HoodGrooveDistance",
+      "default": "15",
+      "required": false,
+      "derive": false,
       "fixed": false
     },
     {
@@ -49,19 +367,109 @@
       "fixed": false
     },
     {
+      "variantId": "mod_HoodMinCarcaseSpaceHor",
+      "default": "10",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_HoodRailvertfrontbtmthk",
+      "default": "19",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
       "variantId": "mod_HoodRailverttopbackthk",
       "default": "19",
       "required": false,
       "derive": false,
       "fixed": false
+    },
+    {
+      "variantId": "mod_HoodShelfadjDesign",
+      "default": "Metal",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_HoodShelfbtmthk",
+      "default": "19",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_HoodShelftopthk",
+      "default": "19",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_HoodSidepanelthk",
+      "default": "19",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ParentName",
+      "default": "",
+      "previewValue": "",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_SidepanelleftThk",
+      "required": false,
+      "derive": false,
+      "fixed": false,
+      "defaultGlobalVar": true
+    },
+    {
+      "variantId": "mod_SidepanelmiddleThk",
+      "required": false,
+      "derive": false,
+      "fixed": false,
+      "defaultGlobalVar": true
+    },
+    {
+      "variantId": "mod_SidepanelrightThk",
+      "required": false,
+      "derive": false,
+      "fixed": false,
+      "defaultGlobalVar": true
+    },
+    {
+      "variantId": "mod_TypeElement",
+      "previewValue": "HoodWallUnit",
+      "required": false,
+      "derive": true,
+      "fixed": false
     }
   ],
   "assignedParts": [
     {
+      "partCode": "part_Backwall"
+    },
+    {
       "partCode": "part_HoodBackwall"
     },
     {
+      "partCode": "part_HoodConstructionRail"
+    },
+    {
+      "partCode": "part_HoodFrontPanelDemontable"
+    },
+    {
       "partCode": "part_HoodRail"
+    },
+    {
+      "partCode": "part_HoodShelfadj"
     },
     {
       "partCode": "part_HoodShelfbtm"
@@ -74,6 +482,30 @@
     },
     {
       "partCode": "part_HoodSidepanelright"
+    },
+    {
+      "partCode": "part_Railhortopback"
+    },
+    {
+      "partCode": "part_Railverttopback"
+    },
+    {
+      "partCode": "part_Railverttopfront"
+    },
+    {
+      "partCode": "part_Shelfbtm"
+    },
+    {
+      "partCode": "part_Shelftop"
+    },
+    {
+      "partCode": "part_Sidepanelleft"
+    },
+    {
+      "partCode": "part_Sidepanelmiddle"
+    },
+    {
+      "partCode": "part_Sidepanelright"
     }
   ],
   "assignedCustomTables": [
@@ -81,5 +513,9 @@
       "customTableId": "tab_HoodAssemblyParts"
     }
   ],
-  "assignedFunctions": []
+  "assignedFunctions": [
+    {
+      "functionId": "process_StorageunitColumnPass"
+    }
+  ]
 }

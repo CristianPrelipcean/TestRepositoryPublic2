@@ -141,16 +141,9 @@
   // ===================================================
   //        Get maximum countertop length
   // ===================================================
-  let maximumLength;
-  try {
-    const boardMapping = GlobalFunc.find_BoardMapping(this.mod_CountertopColor, this.mod_CountertopThk);
-    const boardEntry = GlobalFunc.find_BoardLibrary(boardMapping.BoardId!);
-    maximumLength = boardEntry!.BoardLength;
-  }
-  catch (e) {
-    maximumLength = 9999;
-    logError(`Error while retrieving maximum countertop length. Using fallback value ${maximumLength}. Error: ${e}`);
-  }
+
+  const boardMapping = GlobalFunc.find_BoardMapping(this.mod_CountertopColor, this.mod_CountertopThk);
+  const maximumLength = GlobalFunc.find_BoardDimensions(boardMapping.BoardId ?? "").Length;
 
   // ===================================================
   //        Parse connection sequence

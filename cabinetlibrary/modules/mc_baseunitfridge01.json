@@ -7,7 +7,7 @@
   "isDropContainer": false,
   "description": "Construction module for baseunit fridge",
   "groupName": "Appliance",
-  "imageId": "27f9d6de-3596-487f-9cbd-600fe3b5165c:BaseunitFridge.png",
+  "imageId": "d86b1615-1f14-4900-9559-fa352d26a6ae:BaseunitFridge.png",
   "restrictionTypeId": "Internal",
   "childModules": [
     {
@@ -44,6 +44,26 @@
       "previewValue": "Siemens",
       "required": false,
       "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnDebug",
+      "default": "true",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnShelfOrigin",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnWrapInfo",
+      "default": "",
+      "required": false,
+      "derive": false,
       "fixed": false
     },
     {
@@ -407,5 +427,9 @@
       "customTableId": "tab_FrontConstruction"
     }
   ],
-  "assignedFunctions": []
+  "assignedFunctions": [
+    {
+      "functionId": "process_StorageunitColumnPass"
+    }
+  ]
 }

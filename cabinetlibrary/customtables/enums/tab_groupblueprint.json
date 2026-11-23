@@ -1,0 +1,119 @@
+[
+  {
+    "tableName": "tab_GroupBlueprint",
+    "columnId": "AdjustmentId",
+    "refCustomTableName": "tab_GroupAttributeAdjustment",
+    "refColumnId": "in_AdjustmentId"
+  },
+  {
+    "tableName": "tab_GroupBlueprint",
+    "columnId": "DockingMode",
+    "enumsJson": [
+      {
+        "value": "StartStart",
+        "description": "StartStart"
+      },
+      {
+        "value": "EndEnd",
+        "description": "EndEnd"
+      },
+      {
+        "value": "StartEnd",
+        "description": "StartEnd"
+      },
+      {
+        "value": "EndStart",
+        "description": "EndStart"
+      }
+    ]
+  },
+  {
+    "tableName": "tab_GroupBlueprint",
+    "columnId": "MyDockingVector",
+    "enumsJson": [
+      {
+        "value": "LeftBottom"
+      },
+      {
+        "value": "RightBottom"
+      },
+      {
+        "value": "LeftTop"
+      },
+      {
+        "value": "RightTop"
+      }
+    ]
+  },
+  {
+    "tableName": "tab_GroupBlueprint",
+    "columnId": "NeighbourDockingVector",
+    "enumsJson": [
+      {
+        "value": "LeftBottom"
+      },
+      {
+        "value": "RightBottom"
+      },
+      {
+        "value": "LeftTop"
+      },
+      {
+        "value": "RightTop"
+      }
+    ]
+  },
+  {
+    "tableName": "tab_GroupBlueprint",
+    "columnId": "WidthMode",
+    "enumsJson": [
+      {
+        "value": "Fixed"
+      },
+      {
+        "value": "Adjusted"
+      }
+    ]
+  },
+  {
+    "tableName": "tab_GroupBlueprint",
+    "columnId": "in_GenerationLogic",
+    "refColumnId": "Value"
+  },
+  {
+    "tableName": "tab_GroupBlueprint",
+    "columnId": "in_Variant",
+    "enumsJson": [
+      {
+        "value": "Type01",
+        "description": "Type01",
+        "imageId": ""
+      },
+      {
+        "value": "Type02",
+        "description": "Type02",
+        "imageId": ""
+      },
+      {
+        "value": "Type03",
+        "description": "Type03",
+        "imageId": ""
+      },
+      {
+        "value": "Type04",
+        "description": "Type04",
+        "imageId": ""
+      },
+      {
+        "value": "Type05",
+        "description": "Type05",
+        "imageId": ""
+      },
+      {
+        "value": "Type06",
+        "description": "Type06",
+        "imageId": ""
+      }
+    ]
+  }
+]

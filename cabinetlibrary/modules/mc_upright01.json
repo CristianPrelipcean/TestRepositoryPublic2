@@ -5,10 +5,30 @@
   "isRoot": false,
   "description": "Upright element",
   "groupName": "Upright",
-  "imageId": "c1318970-4568-4912-b028-8e6444828fa0:AdditionalParts.png",
+  "imageId": "e0d51680-badf-4433-ac60-13bb0955d74c:AdditionalParts.png",
   "restrictionTypeId": "Internal",
   "childModules": [],
   "assignedVariants": [
+    {
+      "variantId": "mod_ColumnDebug",
+      "default": "true",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnShelfOrigin",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnWrapInfo",
+      "default": "",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
     {
       "variantId": "mod_Depth",
       "default": "650",
@@ -113,5 +133,9 @@
     }
   ],
   "assignedCustomTables": [],
-  "assignedFunctions": []
+  "assignedFunctions": [
+    {
+      "functionId": "process_StorageunitColumnPass"
+    }
+  ]
 }

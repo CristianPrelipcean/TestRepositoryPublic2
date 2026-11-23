@@ -135,18 +135,11 @@
   const startingSegments = carcaseSegmentsWithBacksplashes.filter(segment => segment.neighbours.get(CKind.Left)?.other === null);
 
   // ===================================================
-  //        Get maximum countertop length
+  //        Get maximum backsplash length
   // ===================================================
-  let maximumLength;
-  try {
-    const boardMapping = GlobalFunc.find_BoardMapping(this.mod_BacksplashColor, this.mod_BacksplashThk);
-    const boardEntry = GlobalFunc.find_BoardLibrary(boardMapping.BoardId!);
-    maximumLength = boardEntry!.BoardLength;
-  }
-  catch (e) {
-    maximumLength = 9999;
-    logError(`Error while retrieving maximum backsplash length. Using fallback value ${maximumLength}. Error: ${e}`);
-  }
+
+  const boardMapping = GlobalFunc.find_BoardMapping(this.mod_BacksplashColor, this.mod_BacksplashThk);
+  const maximumLength = GlobalFunc.find_BoardDimensions(boardMapping.BoardId ?? "").Length;
 
   // ===================================================
   //        Distribute connection sequence indices

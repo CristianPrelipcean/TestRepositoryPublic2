@@ -1,4 +1,4 @@
-find_ClothingOrganizerInstallationDimensions (Design: string): ICT_tab_ClothingOrganizerInstallationDimensions {
+find_ClothingOrganizerInstallationDimensions (Design: string): ICT_tab_ClothingOrganizerInstallationDimensions[] {
 
 	// Wildcard parameters
 	let WildcardParams: any = {	
@@ -12,7 +12,7 @@ find_ClothingOrganizerInstallationDimensions (Design: string): ICT_tab_ClothingO
 	let RangeParams: any = {};
 
 	// Return multiple rows or a single row (UniqueOutput = true returns a single row)
-	let UniqueOutput=true;
+	let UniqueOutput=false;
 
 	// Call the function and retrieve the value
 	let retVal = GlobalFunc.process_BasicTableQuery(ct_tab_ClothingOrganizerInstallationDimensions, WildcardParams, FixedParams, RangeParams, UniqueOutput);

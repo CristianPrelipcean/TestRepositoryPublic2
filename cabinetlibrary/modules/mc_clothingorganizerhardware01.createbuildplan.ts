@@ -10,19 +10,8 @@
   // Add the processings
   //
   // Revisions:
-  // 
+  //
   //===================================================================================
-
-  //===================================================================================
-  // Add the partgroup
-  //===================================================================================
-
-  const bomId = 'ClothingOrganizer01';
-  const partGroup = this.addpart_ClothingOrganizerUnit(0, 0, 0, this.mod_Width, this.mod_Height, this.mod_Depth);
-  this.createPartGroup(bomId, partGroup);
-
-  partGroup.pa_BomId = bomId;
-  partGroup.pa_PartgroupBomId = this.mod_FrontId;
 
   //===================================================================================
   // Retrieve the data for the clothingOrganizer
@@ -67,6 +56,7 @@
 
     if (coInfo.Hardware.BomId) {
       let BomElem = this.addpart_ClothingOrganizerBOM(0, 0, 0, this.mod_Width, this.mod_Height, this.mod_Depth);
+      const bomId = this.mod_ClothingOrganizerId;
       this.assignPartGroup(bomId, BomElem);
 
       // Create an object to store the hardware id's

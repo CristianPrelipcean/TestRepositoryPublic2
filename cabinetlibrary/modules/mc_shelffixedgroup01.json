@@ -5,7 +5,7 @@
   "isRoot": false,
   "description": "Management of the fixed shelf by the front module rack area",
   "groupName": "Equipment",
-  "imageId": "619a6419-4d46-41c2-8d8c-2236ad260f2c:ShelffixedGroup.jpg",
+  "imageId": "802429a2-3199-4fa1-bf5e-ea0cf2ba72e4:ShelffixedGroup.jpg",
   "restrictionTypeId": "Internal",
   "childModules": [],
   "assignedVariants": [
@@ -83,6 +83,26 @@
       "variantId": "mod_CarcaseSpaceDimension",
       "default": "",
       "previewValue": "",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnDebug",
+      "default": "true",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnShelfOrigin",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnWrapInfo",
+      "default": "",
       "required": false,
       "derive": false,
       "fixed": false
@@ -262,5 +282,9 @@
     }
   ],
   "assignedCustomTables": [],
-  "assignedFunctions": []
+  "assignedFunctions": [
+    {
+      "functionId": "process_StorageunitColumnPass"
+    }
+  ]
 }

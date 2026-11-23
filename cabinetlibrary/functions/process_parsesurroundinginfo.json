@@ -3,5 +3,5 @@
   "description": "Validate the object for the SurroundingInfo",
   "funcType": "Function",
   "restrictionTypeId": "Internal",
-  "funcDef": "process_ParseSuroundingInfo(raw: string | undefined): {\r\n\tPlinthAreaVisLeft: 1 | 0;\r\n\tPlinthAreaVisRight: 1 | 0;\r\n\tCeilingAreaVisLeft: 1 | 0;\r\n\tCeilingAreaVisRight: 1 | 0;\r\n\tCarcaseVisLeft: 1 | 0;\r\n\tCarcaseVisRight: 1 | 0;\r\n\tAutoFillerLeft: boolean;\r\n\tAutoFillerRight: boolean;\r\n\tWallDistanceLeft: number;\r\n\tWallDistanceRight: number;\r\n}"
+  "funcDef": "process_ParseSuroundingInfo(raw: string | undefined): {\n    InformationVersion: number;\n    IsComplete: boolean;\n    PlinthAreaVisLeft: 1 | 0;\n    PlinthAreaVisRight: 1 | 0;\n    CeilingAreaVisLeft: 1 | 0;\n    CeilingAreaVisRight: 1 | 0;\n    CarcaseVisLeft: 1 | 0;\n    CarcaseVisRight: 1 | 0;\n    CountertopVisLeft: 1 | 0;\n    CountertopVisRight: 1 | 0;\n    AutoFillerLeft: boolean;\n    AutoFillerRight: boolean;\n    WallDistanceLeft: number;\n    WallDistanceRight: number;\n}"
 }

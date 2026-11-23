@@ -5,8 +5,20 @@
   "description": "Defines one or more height levels used for automatic cabinet placement",
   "value": "OnFloor",
   "groupName": "Carcase | Dimensions",
-  "imageId": "f9347f35-0271-4270-977e-eacb9db950fa:PlacementLevels.png",
+  "imageId": "9b29f2a2-6f8b-4eea-ad1d-f5c14e39c5ef:PlacementLevels.png",
   "restrictionTypeId": "Public",
   "assignedArticleInfo": "null",
-  "exceptions": []
+  "exceptions": [
+    {
+      "globalVarExceptionId": 374,
+      "value": "WallHanging",
+      "rootValueScript": "",
+      "data": [
+        {
+          "variantId": "mod_TypeElement",
+          "value": "WallUnit"
+        }
+      ]
+    }
+  ]
 }

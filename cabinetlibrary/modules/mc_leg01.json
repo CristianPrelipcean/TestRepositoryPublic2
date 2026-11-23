@@ -5,7 +5,7 @@
   "isRoot": false,
   "description": "Management of the leg",
   "groupName": "Toekick",
-  "imageId": "465a46f4-5f8d-4446-8cfc-73ddd5aadefb:Leg.png",
+  "imageId": "e6b5a126-a1c5-4d99-aad9-e0a9e4bf9e24:Leg.png",
   "restrictionTypeId": "Internal",
   "childModules": [],
   "assignedVariants": [
@@ -14,6 +14,26 @@
       "previewValue": "None",
       "required": false,
       "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnDebug",
+      "default": "true",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnShelfOrigin",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnWrapInfo",
+      "default": "",
+      "required": false,
+      "derive": false,
       "fixed": false
     },
     {
@@ -109,5 +129,9 @@
     }
   ],
   "assignedCustomTables": [],
-  "assignedFunctions": []
+  "assignedFunctions": [
+    {
+      "functionId": "process_StorageunitColumnPass"
+    }
+  ]
 }

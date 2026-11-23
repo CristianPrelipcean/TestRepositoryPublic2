@@ -27,9 +27,25 @@
   // Add the module
   const Graphic = this.addOD_M_mc_ApplianceGraphic();
 
+  // Information of the hood
+  const hoodInformation = JSON.parse(this.mod_HoodInformation);
+  const hoodAssInfo = hoodInformation.HoodAssemblyInfo;
+  const hoodCarcaseInfo = hoodInformation.HoodCarcaseAssemblyInfo;
+
+  
+  let hoodDepth = hoodAssInfo.Depth;
+  let hoodPosition = hoodDepth - hoodCarcaseInfo.FrontOffset;
+
+  if (this.mod_CarcaseDepth > 0) {
+    hoodPosition = this.mod_CarcaseDepth + this.mod_FrontThk - hoodCarcaseInfo.FrontOffset;
+  }
+  
+
+
   // Set attributes of the child
   Graphic.mod_GraphicId = this.mod_HoodId;
 
   // SetOrigin
-  Graphic.setOrigin(this.mod_CarcaseWidth/2, 0, this.mod_CarcaseDepth-2);
+  //Graphic.setOrigin(this.mod_CarcaseWidth/2, 0, this.mod_CarcaseDepth-2);
+  Graphic.setOrigin(this.mod_CarcaseWidth/2, 0, hoodPosition);
  

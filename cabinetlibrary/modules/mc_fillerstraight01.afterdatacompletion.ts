@@ -98,14 +98,14 @@
   side.mod_SidepanelType = "Left";
   side.mod_Width = this.mod_SidepanelleftThk;
   side.mod_Height = this.mod_Height;
-  side.mod_Depth = this.mod_Depth - 300;
+  side.mod_Depth = 100;
 
   // setOrigin
   //----------------------------------------------------
 
   if (this.mod_Direction === 'Right') {
-    side.setOrigin(0, this.mod_FrontPosStart, 300);
+    side.setOrigin(0, this.mod_FrontPosStart, this.mod_Depth - 100);
   }
   else {
-    side.setOrigin(this.mod_Width - this.mod_SidepanelleftThk, this.mod_FrontPosStart, 300);
+    side.setOrigin(this.mod_Width - this.mod_SidepanelleftThk, this.mod_FrontPosStart, this.mod_Depth - 100);
   }

@@ -7,7 +7,7 @@
   "isDropContainer": false,
   "description": "Construction module for the filler",
   "groupName": "Filler",
-  "imageId": "e0173dbf-e0e8-49f0-9192-2def2dab8344:Filler.png",
+  "imageId": "0982e017-9659-4162-90b7-976a93f6a9b3:Filler.png",
   "restrictionTypeId": "Internal",
   "childModules": [
     {
@@ -75,6 +75,26 @@
       "previewValue": "Classic",
       "required": false,
       "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnDebug",
+      "default": "true",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnShelfOrigin",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnWrapInfo",
+      "default": "",
+      "required": false,
+      "derive": false,
       "fixed": false
     },
     {
@@ -290,5 +310,9 @@
   ],
   "assignedParts": [],
   "assignedCustomTables": [],
-  "assignedFunctions": []
+  "assignedFunctions": [
+    {
+      "functionId": "process_StorageunitColumnPass"
+    }
+  ]
 }

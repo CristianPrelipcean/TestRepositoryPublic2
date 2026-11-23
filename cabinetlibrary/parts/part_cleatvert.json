@@ -4,7 +4,7 @@
   "description": "Cleat Vertical",
   "wdt": "XYZ",
   "groupName": "Panels",
-  "imageId": "d5c011b1-5b29-40c0-a869-f4251d279626:Cleat.jpg",
+  "imageId": "41e60eb9-0a9d-48b8-9437-950bdf70915b:Cleat.jpg",
   "model3dImageId": "",
   "invisible": false,
   "restrictionTypeId": "Public",
@@ -149,10 +149,10 @@
   "bomData": [
     {
       "id": 190,
-      "bomElementTypeId": "bomout_Board",
-      "description": "Output Parts / Boards",
-      "conditionScript": "partSelf._g?.basic_CreateBom == 'Library'",
-      "valueScript": "// Type of the Bom-Element (will be checked in order output)\nlet elementType='Board';\n\n// ProductionSite Category (to split the orders for different production sites)\nlet elementCategory='';\n\n// Id of the parent to create the hierarchy\nlet parentBomId=part.pa_BomId;\n\n// Call the function to process the Bom-Element\nGlobalFunc.process_BoardBom(this, part, elementType, elementCategory, parentBomId)"
+      "bomElementTypeId": "bomout_Group",
+      "description": "Output parts / edges / stockparts in relation to the basic_CreateBom setting",
+      "conditionScript": "partSelf._g?.basic_CreateBom != null && partSelf._g.basic_CreateBom !== 'Custom'",
+      "valueScript": "// HOMAG Standard Bom-Generation-Method\r\n//=================================================\r\n\r\n// Type of the Bom-Element (will be checked in order output)\r\nconst elementType='Board';\r\n\r\n// ProductionSite Category (to split the orders for different production sites)\r\nconst elementCategory='';\r\n\r\n// Id of the parent to create the hierarchy\r\nconst parentBomId=part.pa_BomId;\r\n\r\n// Mode from basic setting\r\nconst Mode = partSelf._g?.basic_CreateBom  ? partSelf._g.basic_CreateBom : 'SimpleBoard';\r\n\r\n// Call the function to process the Bom-Element\r\nGlobalFunc.process_BomGeneration(this, part, elementType, elementCategory, parentBomId, Mode, 'Carcase');"
     }
   ],
   "ncData": [

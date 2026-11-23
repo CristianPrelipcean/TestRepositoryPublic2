@@ -5,10 +5,30 @@
   "isRoot": false,
   "description": "Management of the handle",
   "groupName": "Handle",
-  "imageId": "257b631e-8a97-40fc-a697-26a3f6f0fa22:Handle_200.jpg",
+  "imageId": "dfa1720f-90ad-49c0-9007-85b7c0b578a1:Handle_200.jpg",
   "restrictionTypeId": "Internal",
   "childModules": [],
   "assignedVariants": [
+    {
+      "variantId": "mod_ColumnDebug",
+      "default": "true",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnShelfOrigin",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnWrapInfo",
+      "default": "",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
     {
       "variantId": "mod_Depth",
       "default": "500",
@@ -261,6 +281,9 @@
   "assignedFunctions": [
     {
       "functionId": "process_Handle"
+    },
+    {
+      "functionId": "process_StorageunitColumnPass"
     },
     {
       "functionId": "ue_Handle"

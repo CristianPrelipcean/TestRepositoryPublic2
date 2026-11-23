@@ -7,7 +7,7 @@
   "isDropContainer": false,
   "description": "Front module for door",
   "groupName": "FrontModule",
-  "imageId": "a5b7afe1-11f1-4736-9ce5-01f91c868b2e:Door.png",
+  "imageId": "7267d902-adfd-48e1-8469-52f3151a8729:Door.png",
   "restrictionTypeId": "Public",
   "childModules": [
     {
@@ -26,7 +26,16 @@
       "moduleId": "me_HoodInsert"
     },
     {
+      "moduleId": "me_InnerDrawerGroup"
+    },
+    {
       "moduleId": "me_ShelfadjMultiple01"
+    },
+    {
+      "moduleId": "me_Shelffixed01"
+    },
+    {
+      "moduleId": "me_Vertdivider01"
     }
   ],
   "assignedVariants": [
@@ -100,6 +109,34 @@
       "previewValue": "600",
       "required": false,
       "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnDebug",
+      "default": "true",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnShelfOrigin",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnWrapInfo",
+      "default": "",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_CompartmentsInformation",
+      "default": "",
+      "previewValue": "",
+      "required": false,
+      "derive": false,
       "fixed": false
     },
     {
@@ -793,6 +830,9 @@
   "assignedFunctions": [
     {
       "functionId": "process_Door"
+    },
+    {
+      "functionId": "process_StorageunitColumnPass"
     }
   ]
 }

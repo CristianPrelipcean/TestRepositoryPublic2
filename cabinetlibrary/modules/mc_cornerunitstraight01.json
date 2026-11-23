@@ -5,7 +5,7 @@
   "isRoot": false,
   "description": "Corner Unit Straight",
   "groupName": "CarcaseConstruction",
-  "imageId": "e9632950-ea8b-48d6-986e-8ddb71fcdbf2:cornerunitstraight.jpg",
+  "imageId": "06d9b136-11d6-4f6e-aceb-fd1d27e477e0:cornerunitstraight.jpg",
   "restrictionTypeId": "Internal",
   "childModules": [
     {
@@ -172,6 +172,26 @@
       "defaultGlobalVar": true
     },
     {
+      "variantId": "mod_ColumnDebug",
+      "default": "true",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnShelfOrigin",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnWrapInfo",
+      "default": "",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
       "variantId": "mod_CornerunitFrontWidth",
       "default": "300",
       "required": false,
@@ -312,5 +332,9 @@
       "customTableId": "tab_CornerunitStraightConstruction"
     }
   ],
-  "assignedFunctions": []
+  "assignedFunctions": [
+    {
+      "functionId": "process_StorageunitColumnPass"
+    }
+  ]
 }

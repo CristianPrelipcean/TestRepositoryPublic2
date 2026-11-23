@@ -5,10 +5,30 @@
   "isRoot": false,
   "description": "Paneltop Construction",
   "groupName": "Paneltop",
-  "imageId": "d8a7117e-3d6f-44cf-a137-fec86900973d:TopPanel.jpg",
+  "imageId": "9656eb84-0a00-4270-a03f-d326e2ceac09:TopPanel.jpg",
   "restrictionTypeId": "Internal",
   "childModules": [],
   "assignedVariants": [
+    {
+      "variantId": "mod_ColumnDebug",
+      "default": "true",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnShelfOrigin",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnWrapInfo",
+      "default": "",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
     {
       "variantId": "mod_Depth",
       "default": "600",
@@ -172,5 +192,9 @@
     }
   ],
   "assignedCustomTables": [],
-  "assignedFunctions": []
+  "assignedFunctions": [
+    {
+      "functionId": "process_StorageunitColumnPass"
+    }
+  ]
 }

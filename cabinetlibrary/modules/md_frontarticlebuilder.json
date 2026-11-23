@@ -7,7 +7,7 @@
   "isDropContainer": false,
   "description": "Root module to build sub articles",
   "groupName": "Root",
-  "imageId": "963209a7-7897-4284-af0c-5fe23a93e0dc:ArticleBuilder.png",
+  "imageId": "f02794ae-9422-4b06-b205-2c5d133eb201:ArticleBuilder.png",
   "restrictionTypeId": "Public",
   "childModules": [
     {
@@ -30,6 +30,26 @@
     }
   ],
   "assignedVariants": [
+    {
+      "variantId": "mod_ColumnDebug",
+      "default": "true",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnShelfOrigin",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnWrapInfo",
+      "default": "",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
     {
       "variantId": "mod_Depth",
       "default": "600",
@@ -58,5 +78,9 @@
     }
   ],
   "assignedCustomTables": [],
-  "assignedFunctions": []
+  "assignedFunctions": [
+    {
+      "functionId": "process_StorageunitColumnPass"
+    }
+  ]
 }

@@ -6,10 +6,30 @@
   "isConfigDummy": false,
   "isDropContainer": false,
   "groupName": "Hardware",
-  "imageId": "ee374b50-c9a4-4417-b2e0-ed3ce4526549:PulloutHardware.png",
+  "imageId": "1700dc59-187a-4757-ac20-4fddc773cdb1:PulloutHardware.png",
   "restrictionTypeId": "Internal",
   "childModules": [],
   "assignedVariants": [
+    {
+      "variantId": "mod_ColumnDebug",
+      "default": "true",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnShelfOrigin",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnWrapInfo",
+      "default": "",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
     {
       "variantId": "mod_FrontId",
       "default": "",
@@ -73,6 +93,9 @@
   "assignedFunctions": [
     {
       "functionId": "process_Pullout"
+    },
+    {
+      "functionId": "process_StorageunitColumnPass"
     }
   ]
 }

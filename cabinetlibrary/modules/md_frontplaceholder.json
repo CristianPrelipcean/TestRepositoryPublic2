@@ -6,7 +6,7 @@
   "isConfigDummy": false,
   "isDropContainer": true,
   "groupName": "Placeholder",
-  "imageId": "f9719770-5c14-4cd5-bbbf-7f5ce3c33783:PlaceHolder.png",
+  "imageId": "c42979c6-e5f7-4e73-80c8-cf710461b9c5:PlaceHolder.png",
   "restrictionTypeId": "Internal",
   "childModules": [
     {
@@ -29,6 +29,26 @@
     }
   ],
   "assignedVariants": [
+    {
+      "variantId": "mod_ColumnDebug",
+      "default": "true",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnShelfOrigin",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnWrapInfo",
+      "default": "",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
     {
       "variantId": "mod_Depth",
       "default": "600",
@@ -57,5 +77,9 @@
     }
   ],
   "assignedCustomTables": [],
-  "assignedFunctions": []
+  "assignedFunctions": [
+    {
+      "functionId": "process_StorageunitColumnPass"
+    }
+  ]
 }

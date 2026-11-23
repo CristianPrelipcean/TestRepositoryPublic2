@@ -7,7 +7,7 @@
   "isDropContainer": false,
   "description": "Board for hanger elements",
   "groupName": "EquipmentConstruction",
-  "imageId": "4fdb1548-4c5c-4c29-a5b3-aa02f7981c20:Coatboard.png",
+  "imageId": "b8dc2a00-556b-4c06-a54b-b36f9f1334ba:Coatboard.png",
   "restrictionTypeId": "Internal",
   "childModules": [],
   "assignedVariants": [
@@ -40,6 +40,26 @@
       "fixed": false
     },
     {
+      "variantId": "mod_ColumnDebug",
+      "default": "true",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnShelfOrigin",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnWrapInfo",
+      "default": "",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
       "variantId": "mod_Height",
       "previewValue": "1000",
       "required": false,
@@ -63,5 +83,9 @@
     }
   ],
   "assignedCustomTables": [],
-  "assignedFunctions": []
+  "assignedFunctions": [
+    {
+      "functionId": "process_StorageunitColumnPass"
+    }
+  ]
 }

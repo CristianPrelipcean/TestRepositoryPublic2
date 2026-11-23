@@ -1,0 +1,57 @@
+{
+  "moduleId": "mc_InnerDrawerSpacer02",
+  "shortName": "Inner Drawer Spacer",
+  "configurable": false,
+  "isRoot": false,
+  "isConfigDummy": false,
+  "isGroupOrchestrator": false,
+  "isDropContainer": false,
+  "description": "Construction module for inner drawer spacer",
+  "imageId": "5adb098a-640c-458d-b9ef-aef371273228:mc_InnerDrawerDistanceBlock.png",
+  "restrictionTypeId": "Internal",
+  "childModules": [],
+  "assignedVariants": [
+    {
+      "variantId": "mod_ColumnDebug",
+      "default": "true",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnShelfOrigin",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnWrapInfo",
+      "default": "",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_Information",
+      "default": "",
+      "previewValue": "",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    }
+  ],
+  "assignedParts": [
+    {
+      "partCode": "part_InnerDrawerDrilling"
+    },
+    {
+      "partCode": "part_InnerDrawerSpacer"
+    }
+  ],
+  "assignedCustomTables": [],
+  "assignedFunctions": [
+    {
+      "functionId": "process_StorageunitColumnPass"
+    }
+  ]
+}

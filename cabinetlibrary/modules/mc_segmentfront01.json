@@ -7,10 +7,30 @@
   "isDropContainer": false,
   "description": "Segmented front elements",
   "groupName": "FrontConstructionParts",
-  "imageId": "6e99703e-78cf-4328-a71c-2d200d19a87f:Segmentglass.png",
+  "imageId": "9f396ae9-4eb7-4263-953b-0d5af0d75b5e:Segmentglass.png",
   "restrictionTypeId": "Internal",
   "childModules": [],
   "assignedVariants": [
+    {
+      "variantId": "mod_ColumnDebug",
+      "default": "true",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnShelfOrigin",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnWrapInfo",
+      "default": "",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
     {
       "variantId": "mod_Depth",
       "default": "500",
@@ -180,8 +200,15 @@
     },
     {
       "partCode": "part_SegmentedFront"
+    },
+    {
+      "partCode": "part_VirtualFront"
     }
   ],
   "assignedCustomTables": [],
-  "assignedFunctions": []
+  "assignedFunctions": [
+    {
+      "functionId": "process_StorageunitColumnPass"
+    }
+  ]
 }

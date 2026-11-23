@@ -5,7 +5,7 @@
   "isRoot": false,
   "description": "Management of the drawer box",
   "groupName": "Hardware",
-  "imageId": "187abf73-acfe-476e-9503-b7994b63b6ab:Legrabox.jpg",
+  "imageId": "ee41fb69-1477-48ed-aab5-531cea4610d4:Legrabox.jpg",
   "restrictionTypeId": "Internal",
   "childModules": [],
   "assignedVariants": [
@@ -14,6 +14,26 @@
       "previewValue": "Classic",
       "required": false,
       "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnDebug",
+      "default": "true",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnShelfOrigin",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnWrapInfo",
+      "default": "",
+      "required": false,
+      "derive": false,
       "fixed": false
     },
     {
@@ -212,6 +232,9 @@
   "assignedFunctions": [
     {
       "functionId": "process_Drawerbox"
+    },
+    {
+      "functionId": "process_StorageunitColumnPass"
     }
   ]
 }

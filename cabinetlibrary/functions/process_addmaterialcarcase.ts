@@ -86,7 +86,7 @@ process_AddMaterialCarcase(
 
       if (InsideDirection == 'right') {
         if (Shape) {
-          const edgeColor = (MainMaterialId === OutsideMaterialId) ? EdgeMaterialId : realFrontEdgeMaterialId;
+          const edgeColor = (MainMaterialId === realOutsideMaterialId) ? EdgeMaterialId : realFrontEdgeMaterialId;
           addShapeColors(MainMaterialId, realOutsideMaterialId, edgeColor, Category);
         }
         else {

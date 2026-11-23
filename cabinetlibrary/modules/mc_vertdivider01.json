@@ -7,7 +7,7 @@
   "isDropContainer": false,
   "description": "Vertical divider",
   "groupName": "CarcaseConstruction",
-  "imageId": "6f4ea98d-acc4-4895-9174-66a2f2c8c74f:VertDivider.png",
+  "imageId": "00b72882-2d1b-4acd-a08c-b2ae27e1e685:VertDivider.png",
   "restrictionTypeId": "Internal",
   "childModules": [
     {
@@ -23,6 +23,26 @@
       "previewValue": "None",
       "required": false,
       "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnDebug",
+      "default": "true",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnShelfOrigin",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnWrapInfo",
+      "default": "",
+      "required": false,
+      "derive": false,
       "fixed": false
     },
     {
@@ -63,5 +83,9 @@
   ],
   "assignedParts": [],
   "assignedCustomTables": [],
-  "assignedFunctions": []
+  "assignedFunctions": [
+    {
+      "functionId": "process_StorageunitColumnPass"
+    }
+  ]
 }

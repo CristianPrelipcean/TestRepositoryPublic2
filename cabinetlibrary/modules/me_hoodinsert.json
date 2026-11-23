@@ -4,10 +4,11 @@
   "configurable": true,
   "isRoot": false,
   "isConfigDummy": false,
+  "isGroupOrchestrator": false,
   "isDropContainer": false,
   "description": "Shelf in the Inside of a Hood Cabinet",
-  "groupName": "Appliance",
-  "imageId": "774de5b5-d1ee-4d2b-98f4-570b962c4fb7:HoodInsert.png",
+  "groupName": "Hood",
+  "imageId": "257d1f58-10ef-4609-bfa7-169a86409556:HoodInsert.png",
   "restrictionTypeId": "Public",
   "childModules": [
     {
@@ -53,6 +54,26 @@
       "fixed": false
     },
     {
+      "variantId": "mod_ColumnDebug",
+      "default": "true",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnShelfOrigin",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnWrapInfo",
+      "default": "",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
       "variantId": "mod_FrontGapHor",
       "previewValue": "4",
       "required": false,
@@ -72,6 +93,13 @@
       "default": "0",
       "required": false,
       "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_FrontThk",
+      "previewValue": "19",
+      "required": false,
+      "derive": true,
       "fixed": false
     },
     {
@@ -99,6 +127,13 @@
     {
       "variantId": "mod_HoodIntegrationType",
       "default": "Automatic",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_HoodMinCarcaseSpaceHor",
+      "default": "10",
       "required": false,
       "derive": false,
       "fixed": false
@@ -178,5 +213,9 @@
   ],
   "assignedParts": [],
   "assignedCustomTables": [],
-  "assignedFunctions": []
+  "assignedFunctions": [
+    {
+      "functionId": "process_StorageunitColumnPass"
+    }
+  ]
 }

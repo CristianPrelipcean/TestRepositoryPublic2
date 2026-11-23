@@ -5,13 +5,33 @@
   "isRoot": false,
   "description": "Front panel for different front elements",
   "groupName": "FrontConstructionParts",
-  "imageId": "d9ffb50a-2bb4-4e2b-be0a-a13894c45972:Frontpanel.jpg",
+  "imageId": "750ff16b-8da5-4504-a481-9eec5f609c3b:Frontpanel.jpg",
   "restrictionTypeId": "Internal",
   "childModules": [],
   "assignedVariants": [
     {
       "variantId": "mod_CarcaseDirection",
       "default": "Left",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnDebug",
+      "default": "true",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnShelfOrigin",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnWrapInfo",
+      "default": "",
       "required": false,
       "derive": false,
       "fixed": false
@@ -83,6 +103,20 @@
     {
       "variantId": "mod_FrontId",
       "previewValue": "None",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_FrontOversizeBtm",
+      "previewValue": "0",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_FrontOversizeLeft",
+      "previewValue": "0",
       "required": false,
       "derive": true,
       "fixed": false
@@ -195,6 +229,9 @@
   ],
   "assignedCustomTables": [],
   "assignedFunctions": [
+    {
+      "functionId": "process_StorageunitColumnPass"
+    },
     {
       "functionId": "ue_FrontpanelWeightCalculations"
     }

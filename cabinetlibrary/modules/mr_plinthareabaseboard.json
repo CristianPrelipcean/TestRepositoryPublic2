@@ -7,7 +7,7 @@
   "isDropContainer": false,
   "description": "Plinth Area Baseboard",
   "groupName": "Root",
-  "imageId": "4134e068-994b-4d9a-8588-0aa0f83b6594:PlinthAreaFront.jpg",
+  "imageId": "0391f2df-5fb1-44aa-a758-1ee5b64044dc:PlinthAreaFront.jpg",
   "restrictionTypeId": "Public",
   "generateMethod": "PlinthAreaBaseboard",
   "childModules": [
@@ -130,6 +130,26 @@
     {
       "variantId": "mod_CarcaseProgram",
       "default": "Classic",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnDebug",
+      "default": "true",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnShelfOrigin",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnWrapInfo",
+      "default": "",
       "required": false,
       "derive": false,
       "fixed": false
@@ -287,5 +307,9 @@
     }
   ],
   "assignedCustomTables": [],
-  "assignedFunctions": []
+  "assignedFunctions": [
+    {
+      "functionId": "process_StorageunitColumnPass"
+    }
+  ]
 }

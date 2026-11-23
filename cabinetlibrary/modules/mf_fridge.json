@@ -5,7 +5,7 @@
   "isRoot": false,
   "description": "Fridge",
   "groupName": "Appliance",
-  "imageId": "498bf149-f506-44e4-b567-f2489d52c80b:Fridge.png",
+  "imageId": "126ecec5-01d9-475c-a5ae-fc6ab018776d:Fridge.png",
   "restrictionTypeId": "Public",
   "childModules": [
     {
@@ -71,6 +71,26 @@
     {
       "variantId": "mod_CarcaseWidth",
       "default": "600",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnDebug",
+      "default": "true",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnShelfOrigin",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnWrapInfo",
+      "default": "",
       "required": false,
       "derive": false,
       "fixed": false
@@ -703,5 +723,9 @@
   ],
   "assignedParts": [],
   "assignedCustomTables": [],
-  "assignedFunctions": []
+  "assignedFunctions": [
+    {
+      "functionId": "process_StorageunitColumnPass"
+    }
+  ]
 }

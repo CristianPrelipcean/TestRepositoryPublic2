@@ -1,9 +1,9 @@
 find_HoodConstruction(Supplier: string, HoodId: string):ICT_tab_HoodConstruction{
 
-  let retEntry = ct_tab_HoodConstruction.find(p => p.in_HoodId)!;
+  let retEntry = ct_tab_HoodConstruction.find(p => p.in_HoodId == HoodId	)!;
 
   if (retEntry == undefined) {
-    let Text = HoodId;
+    let Text = "Can not find hood construction for Id: "+ HoodId;
     let ErrorMessage = GlobalFunc.find_ErrorList('Error 13024', 1);
     logError(ErrorMessage.Message(Text)); 
   }

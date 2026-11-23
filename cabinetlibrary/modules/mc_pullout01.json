@@ -6,7 +6,7 @@
   "isConfigDummy": false,
   "isDropContainer": false,
   "groupName": "FrontConstruction",
-  "imageId": "f85f9796-e624-46bb-8d61-d1faa3efaa90:Pullout.png",
+  "imageId": "1bba96a4-e925-41b2-ac12-2060f2d076ce:Pullout.png",
   "restrictionTypeId": "Internal",
   "childModules": [
     {
@@ -67,6 +67,26 @@
       "previewValue": "600",
       "required": false,
       "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnDebug",
+      "default": "true",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnShelfOrigin",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnWrapInfo",
+      "default": "",
+      "required": false,
+      "derive": false,
       "fixed": false
     },
     {
@@ -489,5 +509,9 @@
       "customTableId": "tab_PulloutHardwareInsertionSettings"
     }
   ],
-  "assignedFunctions": []
+  "assignedFunctions": [
+    {
+      "functionId": "process_StorageunitColumnPass"
+    }
+  ]
 }

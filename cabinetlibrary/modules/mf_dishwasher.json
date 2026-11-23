@@ -5,7 +5,7 @@
   "isRoot": false,
   "description": "Front module for dishwasher",
   "groupName": "Appliance",
-  "imageId": "a6d22585-d2c6-486d-96ec-906b1f678c42:Dishwasher.png",
+  "imageId": "f8d285bf-bc2f-4819-99d3-c7fb31dfe241:Dishwasher.png",
   "restrictionTypeId": "Public",
   "childModules": [
     {
@@ -13,6 +13,26 @@
     }
   ],
   "assignedVariants": [
+    {
+      "variantId": "mod_ColumnDebug",
+      "default": "true",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnShelfOrigin",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnWrapInfo",
+      "default": "",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
     {
       "variantId": "mod_Depth",
       "previewValue": "550",
@@ -401,5 +421,9 @@
   ],
   "assignedParts": [],
   "assignedCustomTables": [],
-  "assignedFunctions": []
+  "assignedFunctions": [
+    {
+      "functionId": "process_StorageunitColumnPass"
+    }
+  ]
 }

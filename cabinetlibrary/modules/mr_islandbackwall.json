@@ -5,7 +5,7 @@
   "isRoot": true,
   "description": "Module for island backwall",
   "groupName": "Root",
-  "imageId": "7e8140de-7bea-4fa6-ab3e-b4c535361468:IslandBackwall.jpg",
+  "imageId": "9fcd170e-4c9f-4e35-8eba-cfb7505b28aa:IslandBackwall.jpg",
   "restrictionTypeId": "Public",
   "childModules": [
     {
@@ -16,6 +16,26 @@
     {
       "variantId": "mod_Color",
       "default": "240",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnDebug",
+      "default": "true",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnShelfOrigin",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnWrapInfo",
+      "default": "",
       "required": false,
       "derive": false,
       "fixed": false
@@ -86,5 +106,9 @@
   ],
   "assignedParts": [],
   "assignedCustomTables": [],
-  "assignedFunctions": []
+  "assignedFunctions": [
+    {
+      "functionId": "process_StorageunitColumnPass"
+    }
+  ]
 }

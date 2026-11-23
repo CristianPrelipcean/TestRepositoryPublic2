@@ -5,7 +5,7 @@
   "isRoot": false,
   "description": "Filler for Corner Straight",
   "groupName": "FrontConstruction",
-  "imageId": "12c2197b-d86c-4af8-b20a-d500d41cf355:CornerunitFiller.jpg",
+  "imageId": "ff129994-d2c5-45ef-802c-1c48ea209a25:CornerunitFiller.jpg",
   "restrictionTypeId": "Internal",
   "childModules": [
     {
@@ -46,6 +46,26 @@
       "variantId": "mod_CarcasePartInfo",
       "default": "",
       "previewValue": "",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnDebug",
+      "default": "true",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnShelfOrigin",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnWrapInfo",
+      "default": "",
       "required": false,
       "derive": false,
       "fixed": false
@@ -325,6 +345,9 @@
     },
     {
       "functionId": "process_HandlestripPos"
+    },
+    {
+      "functionId": "process_StorageunitColumnPass"
     }
   ]
 }

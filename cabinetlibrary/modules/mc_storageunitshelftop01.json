@@ -5,7 +5,7 @@
   "isRoot": false,
   "description": "Top shelf for storage unit",
   "groupName": "CarcaseConstructionParts",
-  "imageId": "4bc0e518-3434-4b25-bdfb-55bf0a3a37ac:Shelftop.png",
+  "imageId": "4f109b3d-6bb6-4c99-ad90-9ba276656e5e:Shelftop.png",
   "restrictionTypeId": "Internal",
   "childModules": [],
   "assignedVariants": [
@@ -91,6 +91,33 @@
       "previewValue": "false",
       "required": false,
       "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnDebug",
+      "default": "true",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnShelfOrigin",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnShelfSvgPath",
+      "default": "",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnWrapInfo",
+      "default": "",
+      "required": false,
+      "derive": false,
       "fixed": false
     },
     {
@@ -238,5 +265,9 @@
     }
   ],
   "assignedCustomTables": [],
-  "assignedFunctions": []
+  "assignedFunctions": [
+    {
+      "functionId": "process_StorageunitColumnPass"
+    }
+  ]
 }

@@ -55,6 +55,16 @@
       "allowNull": true
     },
     {
+      "name": "ConstructionType",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "AddVirtualPartOnBack",
+      "type": "Bool",
+      "allowNull": true
+    },
+    {
       "name": "DescriptorHeight",
       "type": "Text",
       "allowNull": true
@@ -93,6 +103,11 @@
       "name": "SegmentGrainDirection",
       "type": "Text",
       "allowNull": true
+    },
+    {
+      "name": "ProcessingItem",
+      "type": "Text",
+      "allowNull": true
     }
   ],
   "rows": [
@@ -100,7 +115,7 @@
       "data": [
         {
           "columnName": "_id",
-          "value": "49"
+          "value": "1"
         },
         {
           "columnName": "in_PartGroup",
@@ -139,6 +154,14 @@
           "value": "true"
         },
         {
+          "columnName": "ConstructionType",
+          "value": "Standard"
+        },
+        {
+          "columnName": "AddVirtualPartOnBack",
+          "value": "false"
+        },
+        {
           "columnName": "DescriptorHeight",
           "value": "200mm_300mm_1"
         },
@@ -169,6 +192,10 @@
         {
           "columnName": "SegmentGrainDirection",
           "value": "None"
+        },
+        {
+          "columnName": "ProcessingItem",
+          "value": ""
         }
       ]
     },
@@ -176,7 +203,7 @@
       "data": [
         {
           "columnName": "_id",
-          "value": "50"
+          "value": "2"
         },
         {
           "columnName": "in_PartGroup",
@@ -215,6 +242,14 @@
           "value": "true"
         },
         {
+          "columnName": "ConstructionType",
+          "value": "Standard"
+        },
+        {
+          "columnName": "AddVirtualPartOnBack",
+          "value": "false"
+        },
+        {
           "columnName": "DescriptorHeight",
           "value": "1_300mm_200mm"
         },
@@ -245,6 +280,10 @@
         {
           "columnName": "SegmentGrainDirection",
           "value": "None"
+        },
+        {
+          "columnName": "ProcessingItem",
+          "value": ""
         }
       ]
     },
@@ -252,7 +291,7 @@
       "data": [
         {
           "columnName": "_id",
-          "value": "51"
+          "value": "3"
         },
         {
           "columnName": "in_PartGroup",
@@ -291,6 +330,14 @@
           "value": "true"
         },
         {
+          "columnName": "ConstructionType",
+          "value": "Standard"
+        },
+        {
+          "columnName": "AddVirtualPartOnBack",
+          "value": "false"
+        },
+        {
           "columnName": "DescriptorHeight",
           "value": "200mm_300mm_1"
         },
@@ -321,6 +368,10 @@
         {
           "columnName": "SegmentGrainDirection",
           "value": "None"
+        },
+        {
+          "columnName": "ProcessingItem",
+          "value": ""
         }
       ]
     },
@@ -328,7 +379,7 @@
       "data": [
         {
           "columnName": "_id",
-          "value": "52"
+          "value": "4"
         },
         {
           "columnName": "in_PartGroup",
@@ -367,6 +418,14 @@
           "value": "true"
         },
         {
+          "columnName": "ConstructionType",
+          "value": "Standard"
+        },
+        {
+          "columnName": "AddVirtualPartOnBack",
+          "value": "false"
+        },
+        {
           "columnName": "DescriptorHeight",
           "value": "1_300mm_200mm"
         },
@@ -397,6 +456,10 @@
         {
           "columnName": "SegmentGrainDirection",
           "value": "None"
+        },
+        {
+          "columnName": "ProcessingItem",
+          "value": ""
         }
       ]
     },
@@ -404,7 +467,7 @@
       "data": [
         {
           "columnName": "_id",
-          "value": "53"
+          "value": "5"
         },
         {
           "columnName": "in_PartGroup",
@@ -443,6 +506,14 @@
           "value": "true"
         },
         {
+          "columnName": "ConstructionType",
+          "value": "Standard"
+        },
+        {
+          "columnName": "AddVirtualPartOnBack",
+          "value": "false"
+        },
+        {
           "columnName": "DescriptorHeight",
           "value": "200mm_300mm_1"
         },
@@ -473,6 +544,10 @@
         {
           "columnName": "SegmentGrainDirection",
           "value": "None"
+        },
+        {
+          "columnName": "ProcessingItem",
+          "value": ""
         }
       ]
     },
@@ -480,7 +555,7 @@
       "data": [
         {
           "columnName": "_id",
-          "value": "54"
+          "value": "6"
         },
         {
           "columnName": "in_PartGroup",
@@ -519,6 +594,14 @@
           "value": "true"
         },
         {
+          "columnName": "ConstructionType",
+          "value": "Standard"
+        },
+        {
+          "columnName": "AddVirtualPartOnBack",
+          "value": "false"
+        },
+        {
           "columnName": "DescriptorHeight",
           "value": "1_300mm_200mm"
         },
@@ -549,6 +632,10 @@
         {
           "columnName": "SegmentGrainDirection",
           "value": "None"
+        },
+        {
+          "columnName": "ProcessingItem",
+          "value": ""
         }
       ]
     },
@@ -556,7 +643,7 @@
       "data": [
         {
           "columnName": "_id",
-          "value": "55"
+          "value": "7"
         },
         {
           "columnName": "in_PartGroup",
@@ -595,6 +682,14 @@
           "value": "true"
         },
         {
+          "columnName": "ConstructionType",
+          "value": "Standard"
+        },
+        {
+          "columnName": "AddVirtualPartOnBack",
+          "value": "false"
+        },
+        {
           "columnName": "DescriptorHeight",
           "value": "200mm_300mm_1"
         },
@@ -625,6 +720,10 @@
         {
           "columnName": "SegmentGrainDirection",
           "value": "None"
+        },
+        {
+          "columnName": "ProcessingItem",
+          "value": ""
         }
       ]
     },
@@ -632,7 +731,7 @@
       "data": [
         {
           "columnName": "_id",
-          "value": "56"
+          "value": "8"
         },
         {
           "columnName": "in_PartGroup",
@@ -671,6 +770,14 @@
           "value": "true"
         },
         {
+          "columnName": "ConstructionType",
+          "value": "Standard"
+        },
+        {
+          "columnName": "AddVirtualPartOnBack",
+          "value": "false"
+        },
+        {
           "columnName": "DescriptorHeight",
           "value": "1_300mm_200mm"
         },
@@ -701,6 +808,10 @@
         {
           "columnName": "SegmentGrainDirection",
           "value": "None"
+        },
+        {
+          "columnName": "ProcessingItem",
+          "value": ""
         }
       ]
     },
@@ -708,7 +819,7 @@
       "data": [
         {
           "columnName": "_id",
-          "value": "57"
+          "value": "9"
         },
         {
           "columnName": "in_PartGroup",
@@ -747,6 +858,14 @@
           "value": "true"
         },
         {
+          "columnName": "ConstructionType",
+          "value": "Standard"
+        },
+        {
+          "columnName": "AddVirtualPartOnBack",
+          "value": "false"
+        },
+        {
           "columnName": "DescriptorHeight",
           "value": "200mm_300mm_1"
         },
@@ -777,6 +896,10 @@
         {
           "columnName": "SegmentGrainDirection",
           "value": "None"
+        },
+        {
+          "columnName": "ProcessingItem",
+          "value": ""
         }
       ]
     },
@@ -784,7 +907,7 @@
       "data": [
         {
           "columnName": "_id",
-          "value": "58"
+          "value": "10"
         },
         {
           "columnName": "in_PartGroup",
@@ -823,6 +946,14 @@
           "value": "true"
         },
         {
+          "columnName": "ConstructionType",
+          "value": "Standard"
+        },
+        {
+          "columnName": "AddVirtualPartOnBack",
+          "value": "false"
+        },
+        {
           "columnName": "DescriptorHeight",
           "value": "1_300mm_200mm"
         },
@@ -853,6 +984,10 @@
         {
           "columnName": "SegmentGrainDirection",
           "value": "None"
+        },
+        {
+          "columnName": "ProcessingItem",
+          "value": ""
         }
       ]
     },
@@ -860,7 +995,7 @@
       "data": [
         {
           "columnName": "_id",
-          "value": "59"
+          "value": "11"
         },
         {
           "columnName": "in_PartGroup",
@@ -899,6 +1034,14 @@
           "value": "true"
         },
         {
+          "columnName": "ConstructionType",
+          "value": "Standard"
+        },
+        {
+          "columnName": "AddVirtualPartOnBack",
+          "value": "false"
+        },
+        {
           "columnName": "DescriptorHeight",
           "value": "200mm_300mm_1"
         },
@@ -929,6 +1072,10 @@
         {
           "columnName": "SegmentGrainDirection",
           "value": "None"
+        },
+        {
+          "columnName": "ProcessingItem",
+          "value": ""
         }
       ]
     },
@@ -936,7 +1083,7 @@
       "data": [
         {
           "columnName": "_id",
-          "value": "60"
+          "value": "12"
         },
         {
           "columnName": "in_PartGroup",
@@ -975,6 +1122,14 @@
           "value": "true"
         },
         {
+          "columnName": "ConstructionType",
+          "value": "Standard"
+        },
+        {
+          "columnName": "AddVirtualPartOnBack",
+          "value": "false"
+        },
+        {
           "columnName": "DescriptorHeight",
           "value": "1_300mm_200mm"
         },
@@ -1005,6 +1160,10 @@
         {
           "columnName": "SegmentGrainDirection",
           "value": "None"
+        },
+        {
+          "columnName": "ProcessingItem",
+          "value": ""
         }
       ]
     },
@@ -1012,7 +1171,7 @@
       "data": [
         {
           "columnName": "_id",
-          "value": "61"
+          "value": "13"
         },
         {
           "columnName": "in_PartGroup",
@@ -1051,6 +1210,14 @@
           "value": "true"
         },
         {
+          "columnName": "ConstructionType",
+          "value": "Standard"
+        },
+        {
+          "columnName": "AddVirtualPartOnBack",
+          "value": "false"
+        },
+        {
           "columnName": "DescriptorHeight",
           "value": "200mm_300mm_1"
         },
@@ -1081,6 +1248,10 @@
         {
           "columnName": "SegmentGrainDirection",
           "value": "None"
+        },
+        {
+          "columnName": "ProcessingItem",
+          "value": ""
         }
       ]
     },
@@ -1088,7 +1259,7 @@
       "data": [
         {
           "columnName": "_id",
-          "value": "62"
+          "value": "14"
         },
         {
           "columnName": "in_PartGroup",
@@ -1127,6 +1298,14 @@
           "value": "true"
         },
         {
+          "columnName": "ConstructionType",
+          "value": "Standard"
+        },
+        {
+          "columnName": "AddVirtualPartOnBack",
+          "value": "false"
+        },
+        {
           "columnName": "DescriptorHeight",
           "value": "1_300mm_200mm"
         },
@@ -1157,6 +1336,10 @@
         {
           "columnName": "SegmentGrainDirection",
           "value": "None"
+        },
+        {
+          "columnName": "ProcessingItem",
+          "value": ""
         }
       ]
     },
@@ -1164,7 +1347,7 @@
       "data": [
         {
           "columnName": "_id",
-          "value": "63"
+          "value": "15"
         },
         {
           "columnName": "in_PartGroup",
@@ -1203,6 +1386,14 @@
           "value": "true"
         },
         {
+          "columnName": "ConstructionType",
+          "value": "Standard"
+        },
+        {
+          "columnName": "AddVirtualPartOnBack",
+          "value": "false"
+        },
+        {
           "columnName": "DescriptorHeight",
           "value": "200mm_300mm_1"
         },
@@ -1233,6 +1424,10 @@
         {
           "columnName": "SegmentGrainDirection",
           "value": "None"
+        },
+        {
+          "columnName": "ProcessingItem",
+          "value": ""
         }
       ]
     },
@@ -1240,7 +1435,7 @@
       "data": [
         {
           "columnName": "_id",
-          "value": "64"
+          "value": "16"
         },
         {
           "columnName": "in_PartGroup",
@@ -1279,6 +1474,14 @@
           "value": "true"
         },
         {
+          "columnName": "ConstructionType",
+          "value": "Standard"
+        },
+        {
+          "columnName": "AddVirtualPartOnBack",
+          "value": "false"
+        },
+        {
           "columnName": "DescriptorHeight",
           "value": "1_300mm_200mm"
         },
@@ -1309,6 +1512,10 @@
         {
           "columnName": "SegmentGrainDirection",
           "value": "None"
+        },
+        {
+          "columnName": "ProcessingItem",
+          "value": ""
         }
       ]
     },
@@ -1316,7 +1523,7 @@
       "data": [
         {
           "columnName": "_id",
-          "value": "65"
+          "value": "17"
         },
         {
           "columnName": "in_PartGroup",
@@ -1352,6 +1559,1774 @@
         },
         {
           "columnName": "InHouseProduction",
+          "value": "true"
+        },
+        {
+          "columnName": "ConstructionType",
+          "value": "Standard"
+        },
+        {
+          "columnName": "AddVirtualPartOnBack",
+          "value": "false"
+        },
+        {
+          "columnName": "DescriptorHeight",
+          "value": "250mm_300mm_1"
+        },
+        {
+          "columnName": "DescriptorDepth",
+          "value": "1_5mm_1"
+        },
+        {
+          "columnName": "FrontThk",
+          "value": "19"
+        },
+        {
+          "columnName": "SegmentThk",
+          "value": "5"
+        },
+        {
+          "columnName": "Weight",
+          "value": "25"
+        },
+        {
+          "columnName": "SegmentWeight",
+          "value": "12"
+        },
+        {
+          "columnName": "FrontGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "SegmentGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "ProcessingItem",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "18"
+        },
+        {
+          "columnName": "in_PartGroup",
+          "value": "Door"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "SegmentFront01"
+        },
+        {
+          "columnName": "in_FrontColorGrainGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_SegmentColorGrainGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_SegmentType",
+          "value": "Glass"
+        },
+        {
+          "columnName": "in_SegmentColor",
+          "value": "FloatGlass"
+        },
+        {
+          "columnName": "in_FrontStartPos",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontOverlapBtm",
+          "value": "17"
+        },
+        {
+          "columnName": "InHouseProduction",
+          "value": "true"
+        },
+        {
+          "columnName": "ConstructionType",
+          "value": "Standard"
+        },
+        {
+          "columnName": "AddVirtualPartOnBack",
+          "value": "false"
+        },
+        {
+          "columnName": "DescriptorHeight",
+          "value": "1_300mm_250mm"
+        },
+        {
+          "columnName": "DescriptorDepth",
+          "value": "1_5mm_1"
+        },
+        {
+          "columnName": "FrontThk",
+          "value": "19"
+        },
+        {
+          "columnName": "SegmentThk",
+          "value": "5"
+        },
+        {
+          "columnName": "Weight",
+          "value": "25"
+        },
+        {
+          "columnName": "SegmentWeight",
+          "value": "12"
+        },
+        {
+          "columnName": "FrontGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "SegmentGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "ProcessingItem",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "19"
+        },
+        {
+          "columnName": "in_PartGroup",
+          "value": "Door"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "SegmentFront01"
+        },
+        {
+          "columnName": "in_FrontColorGrainGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_SegmentColorGrainGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_SegmentType",
+          "value": "Glass"
+        },
+        {
+          "columnName": "in_SegmentColor",
+          "value": "FloatGlass"
+        },
+        {
+          "columnName": "in_FrontStartPos",
+          "value": "700"
+        },
+        {
+          "columnName": "in_FrontOverlapBtm",
+          "value": "17"
+        },
+        {
+          "columnName": "InHouseProduction",
+          "value": "true"
+        },
+        {
+          "columnName": "ConstructionType",
+          "value": "Standard"
+        },
+        {
+          "columnName": "AddVirtualPartOnBack",
+          "value": "false"
+        },
+        {
+          "columnName": "DescriptorHeight",
+          "value": "250mm_300mm_1"
+        },
+        {
+          "columnName": "DescriptorDepth",
+          "value": "1_5mm_1"
+        },
+        {
+          "columnName": "FrontThk",
+          "value": "19"
+        },
+        {
+          "columnName": "SegmentThk",
+          "value": "5"
+        },
+        {
+          "columnName": "Weight",
+          "value": "25"
+        },
+        {
+          "columnName": "SegmentWeight",
+          "value": "12"
+        },
+        {
+          "columnName": "FrontGrainDirection",
+          "value": "Crosswise"
+        },
+        {
+          "columnName": "SegmentGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "ProcessingItem",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "20"
+        },
+        {
+          "columnName": "in_PartGroup",
+          "value": "Door"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "SegmentFront01"
+        },
+        {
+          "columnName": "in_FrontColorGrainGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_SegmentColorGrainGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_SegmentType",
+          "value": "Glass"
+        },
+        {
+          "columnName": "in_SegmentColor",
+          "value": "FloatGlass"
+        },
+        {
+          "columnName": "in_FrontStartPos",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontOverlapBtm",
+          "value": "17"
+        },
+        {
+          "columnName": "InHouseProduction",
+          "value": "true"
+        },
+        {
+          "columnName": "ConstructionType",
+          "value": "Standard"
+        },
+        {
+          "columnName": "AddVirtualPartOnBack",
+          "value": "false"
+        },
+        {
+          "columnName": "DescriptorHeight",
+          "value": "1_300mm_250mm"
+        },
+        {
+          "columnName": "DescriptorDepth",
+          "value": "1_5mm_1"
+        },
+        {
+          "columnName": "FrontThk",
+          "value": "19"
+        },
+        {
+          "columnName": "SegmentThk",
+          "value": "5"
+        },
+        {
+          "columnName": "Weight",
+          "value": "25"
+        },
+        {
+          "columnName": "SegmentWeight",
+          "value": "12"
+        },
+        {
+          "columnName": "FrontGrainDirection",
+          "value": "Crosswise"
+        },
+        {
+          "columnName": "SegmentGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "ProcessingItem",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "21"
+        },
+        {
+          "columnName": "in_PartGroup",
+          "value": "Door"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "InsetHandle01"
+        },
+        {
+          "columnName": "in_FrontColorGrainGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_SegmentColorGrainGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_SegmentType",
+          "value": "Glass"
+        },
+        {
+          "columnName": "in_SegmentColor",
+          "value": "FloatGlass"
+        },
+        {
+          "columnName": "in_FrontStartPos",
+          "value": "700"
+        },
+        {
+          "columnName": "in_FrontOverlapBtm",
+          "value": "0"
+        },
+        {
+          "columnName": "InHouseProduction",
+          "value": "true"
+        },
+        {
+          "columnName": "ConstructionType",
+          "value": "InsetHandle"
+        },
+        {
+          "columnName": "AddVirtualPartOnBack",
+          "value": "true"
+        },
+        {
+          "columnName": "DescriptorHeight",
+          "value": "200mm_300mm_1"
+        },
+        {
+          "columnName": "DescriptorDepth",
+          "value": "1_5mm_1"
+        },
+        {
+          "columnName": "FrontThk",
+          "value": "19"
+        },
+        {
+          "columnName": "SegmentThk",
+          "value": "5"
+        },
+        {
+          "columnName": "Weight",
+          "value": "25"
+        },
+        {
+          "columnName": "SegmentWeight",
+          "value": "12"
+        },
+        {
+          "columnName": "FrontGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "SegmentGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "ProcessingItem",
+          "value": "Handle_140"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "22"
+        },
+        {
+          "columnName": "in_PartGroup",
+          "value": "Door"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "InsetHandle01"
+        },
+        {
+          "columnName": "in_FrontColorGrainGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_SegmentColorGrainGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_SegmentType",
+          "value": "Glass"
+        },
+        {
+          "columnName": "in_SegmentColor",
+          "value": "FloatGlass"
+        },
+        {
+          "columnName": "in_FrontStartPos",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontOverlapBtm",
+          "value": "0"
+        },
+        {
+          "columnName": "InHouseProduction",
+          "value": "true"
+        },
+        {
+          "columnName": "ConstructionType",
+          "value": "InsetHandle"
+        },
+        {
+          "columnName": "AddVirtualPartOnBack",
+          "value": "true"
+        },
+        {
+          "columnName": "DescriptorHeight",
+          "value": "1_300mm_200mm"
+        },
+        {
+          "columnName": "DescriptorDepth",
+          "value": "1_5mm_1"
+        },
+        {
+          "columnName": "FrontThk",
+          "value": "19"
+        },
+        {
+          "columnName": "SegmentThk",
+          "value": "5"
+        },
+        {
+          "columnName": "Weight",
+          "value": "25"
+        },
+        {
+          "columnName": "SegmentWeight",
+          "value": "12"
+        },
+        {
+          "columnName": "FrontGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "SegmentGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "ProcessingItem",
+          "value": "Handle_140"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "23"
+        },
+        {
+          "columnName": "in_PartGroup",
+          "value": "Door"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "InsetHandle01"
+        },
+        {
+          "columnName": "in_FrontColorGrainGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_SegmentColorGrainGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_SegmentType",
+          "value": "Glass"
+        },
+        {
+          "columnName": "in_SegmentColor",
+          "value": "FloatGlass"
+        },
+        {
+          "columnName": "in_FrontStartPos",
+          "value": "700"
+        },
+        {
+          "columnName": "in_FrontOverlapBtm",
+          "value": "0"
+        },
+        {
+          "columnName": "InHouseProduction",
+          "value": "true"
+        },
+        {
+          "columnName": "ConstructionType",
+          "value": "InsetHandle"
+        },
+        {
+          "columnName": "AddVirtualPartOnBack",
+          "value": "true"
+        },
+        {
+          "columnName": "DescriptorHeight",
+          "value": "200mm_300mm_1"
+        },
+        {
+          "columnName": "DescriptorDepth",
+          "value": "1_5mm_1"
+        },
+        {
+          "columnName": "FrontThk",
+          "value": "19"
+        },
+        {
+          "columnName": "SegmentThk",
+          "value": "5"
+        },
+        {
+          "columnName": "Weight",
+          "value": "25"
+        },
+        {
+          "columnName": "SegmentWeight",
+          "value": "12"
+        },
+        {
+          "columnName": "FrontGrainDirection",
+          "value": "Crosswise"
+        },
+        {
+          "columnName": "SegmentGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "ProcessingItem",
+          "value": "Handle_140"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "24"
+        },
+        {
+          "columnName": "in_PartGroup",
+          "value": "Door"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "InsetHandle01"
+        },
+        {
+          "columnName": "in_FrontColorGrainGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_SegmentColorGrainGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_SegmentType",
+          "value": "Glass"
+        },
+        {
+          "columnName": "in_SegmentColor",
+          "value": "FloatGlass"
+        },
+        {
+          "columnName": "in_FrontStartPos",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontOverlapBtm",
+          "value": "0"
+        },
+        {
+          "columnName": "InHouseProduction",
+          "value": "true"
+        },
+        {
+          "columnName": "ConstructionType",
+          "value": "InsetHandle"
+        },
+        {
+          "columnName": "AddVirtualPartOnBack",
+          "value": "true"
+        },
+        {
+          "columnName": "DescriptorHeight",
+          "value": "1_300mm_200mm"
+        },
+        {
+          "columnName": "DescriptorDepth",
+          "value": "1_5mm_1"
+        },
+        {
+          "columnName": "FrontThk",
+          "value": "19"
+        },
+        {
+          "columnName": "SegmentThk",
+          "value": "5"
+        },
+        {
+          "columnName": "Weight",
+          "value": "25"
+        },
+        {
+          "columnName": "SegmentWeight",
+          "value": "12"
+        },
+        {
+          "columnName": "FrontGrainDirection",
+          "value": "Crosswise"
+        },
+        {
+          "columnName": "SegmentGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "ProcessingItem",
+          "value": "Handle_140"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "25"
+        },
+        {
+          "columnName": "in_PartGroup",
+          "value": "Door"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "InsetHandle01"
+        },
+        {
+          "columnName": "in_FrontColorGrainGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_SegmentColorGrainGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_SegmentType",
+          "value": "Glass"
+        },
+        {
+          "columnName": "in_SegmentColor",
+          "value": "SatinGlass"
+        },
+        {
+          "columnName": "in_FrontStartPos",
+          "value": "700"
+        },
+        {
+          "columnName": "in_FrontOverlapBtm",
+          "value": "0"
+        },
+        {
+          "columnName": "InHouseProduction",
+          "value": "true"
+        },
+        {
+          "columnName": "ConstructionType",
+          "value": "InsetHandle"
+        },
+        {
+          "columnName": "AddVirtualPartOnBack",
+          "value": "true"
+        },
+        {
+          "columnName": "DescriptorHeight",
+          "value": "200mm_300mm_1"
+        },
+        {
+          "columnName": "DescriptorDepth",
+          "value": "1_5mm_1"
+        },
+        {
+          "columnName": "FrontThk",
+          "value": "19"
+        },
+        {
+          "columnName": "SegmentThk",
+          "value": "5"
+        },
+        {
+          "columnName": "Weight",
+          "value": "25"
+        },
+        {
+          "columnName": "SegmentWeight",
+          "value": "12"
+        },
+        {
+          "columnName": "FrontGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "SegmentGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "ProcessingItem",
+          "value": "Handle_140"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "26"
+        },
+        {
+          "columnName": "in_PartGroup",
+          "value": "Door"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "InsetHandle01"
+        },
+        {
+          "columnName": "in_FrontColorGrainGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_SegmentColorGrainGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_SegmentType",
+          "value": "Glass"
+        },
+        {
+          "columnName": "in_SegmentColor",
+          "value": "SatinGlass"
+        },
+        {
+          "columnName": "in_FrontStartPos",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontOverlapBtm",
+          "value": "0"
+        },
+        {
+          "columnName": "InHouseProduction",
+          "value": "true"
+        },
+        {
+          "columnName": "ConstructionType",
+          "value": "InsetHandle"
+        },
+        {
+          "columnName": "AddVirtualPartOnBack",
+          "value": "true"
+        },
+        {
+          "columnName": "DescriptorHeight",
+          "value": "1_300mm_200mm"
+        },
+        {
+          "columnName": "DescriptorDepth",
+          "value": "1_5mm_1"
+        },
+        {
+          "columnName": "FrontThk",
+          "value": "19"
+        },
+        {
+          "columnName": "SegmentThk",
+          "value": "5"
+        },
+        {
+          "columnName": "Weight",
+          "value": "25"
+        },
+        {
+          "columnName": "SegmentWeight",
+          "value": "12"
+        },
+        {
+          "columnName": "FrontGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "SegmentGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "ProcessingItem",
+          "value": "Handle_140"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "27"
+        },
+        {
+          "columnName": "in_PartGroup",
+          "value": "Door"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "InsetHandle01"
+        },
+        {
+          "columnName": "in_FrontColorGrainGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_SegmentColorGrainGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_SegmentType",
+          "value": "Glass"
+        },
+        {
+          "columnName": "in_SegmentColor",
+          "value": "SatinGlass"
+        },
+        {
+          "columnName": "in_FrontStartPos",
+          "value": "700"
+        },
+        {
+          "columnName": "in_FrontOverlapBtm",
+          "value": "0"
+        },
+        {
+          "columnName": "InHouseProduction",
+          "value": "true"
+        },
+        {
+          "columnName": "ConstructionType",
+          "value": "InsetHandle"
+        },
+        {
+          "columnName": "AddVirtualPartOnBack",
+          "value": "true"
+        },
+        {
+          "columnName": "DescriptorHeight",
+          "value": "200mm_300mm_1"
+        },
+        {
+          "columnName": "DescriptorDepth",
+          "value": "1_5mm_1"
+        },
+        {
+          "columnName": "FrontThk",
+          "value": "19"
+        },
+        {
+          "columnName": "SegmentThk",
+          "value": "5"
+        },
+        {
+          "columnName": "Weight",
+          "value": "25"
+        },
+        {
+          "columnName": "SegmentWeight",
+          "value": "12"
+        },
+        {
+          "columnName": "FrontGrainDirection",
+          "value": "Crosswise"
+        },
+        {
+          "columnName": "SegmentGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "ProcessingItem",
+          "value": "Handle_140"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "28"
+        },
+        {
+          "columnName": "in_PartGroup",
+          "value": "Door"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "InsetHandle01"
+        },
+        {
+          "columnName": "in_FrontColorGrainGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_SegmentColorGrainGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_SegmentType",
+          "value": "Glass"
+        },
+        {
+          "columnName": "in_SegmentColor",
+          "value": "SatinGlass"
+        },
+        {
+          "columnName": "in_FrontStartPos",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontOverlapBtm",
+          "value": "0"
+        },
+        {
+          "columnName": "InHouseProduction",
+          "value": "true"
+        },
+        {
+          "columnName": "ConstructionType",
+          "value": "InsetHandle"
+        },
+        {
+          "columnName": "AddVirtualPartOnBack",
+          "value": "true"
+        },
+        {
+          "columnName": "DescriptorHeight",
+          "value": "1_300mm_200mm"
+        },
+        {
+          "columnName": "DescriptorDepth",
+          "value": "1_5mm_1"
+        },
+        {
+          "columnName": "FrontThk",
+          "value": "19"
+        },
+        {
+          "columnName": "SegmentThk",
+          "value": "5"
+        },
+        {
+          "columnName": "Weight",
+          "value": "25"
+        },
+        {
+          "columnName": "SegmentWeight",
+          "value": "12"
+        },
+        {
+          "columnName": "FrontGrainDirection",
+          "value": "Crosswise"
+        },
+        {
+          "columnName": "SegmentGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "ProcessingItem",
+          "value": "Handle_140"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "29"
+        },
+        {
+          "columnName": "in_PartGroup",
+          "value": "Door"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "InsetHandle01"
+        },
+        {
+          "columnName": "in_FrontColorGrainGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_SegmentColorGrainGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_SegmentType",
+          "value": "Glass"
+        },
+        {
+          "columnName": "in_SegmentColor",
+          "value": "GreyGlass"
+        },
+        {
+          "columnName": "in_FrontStartPos",
+          "value": "700"
+        },
+        {
+          "columnName": "in_FrontOverlapBtm",
+          "value": "0"
+        },
+        {
+          "columnName": "InHouseProduction",
+          "value": "true"
+        },
+        {
+          "columnName": "ConstructionType",
+          "value": "InsetHandle"
+        },
+        {
+          "columnName": "AddVirtualPartOnBack",
+          "value": "true"
+        },
+        {
+          "columnName": "DescriptorHeight",
+          "value": "200mm_300mm_1"
+        },
+        {
+          "columnName": "DescriptorDepth",
+          "value": "1_5mm_1"
+        },
+        {
+          "columnName": "FrontThk",
+          "value": "19"
+        },
+        {
+          "columnName": "SegmentThk",
+          "value": "5"
+        },
+        {
+          "columnName": "Weight",
+          "value": "25"
+        },
+        {
+          "columnName": "SegmentWeight",
+          "value": "12"
+        },
+        {
+          "columnName": "FrontGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "SegmentGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "ProcessingItem",
+          "value": "Handle_140"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "30"
+        },
+        {
+          "columnName": "in_PartGroup",
+          "value": "Door"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "InsetHandle01"
+        },
+        {
+          "columnName": "in_FrontColorGrainGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_SegmentColorGrainGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_SegmentType",
+          "value": "Glass"
+        },
+        {
+          "columnName": "in_SegmentColor",
+          "value": "GreyGlass"
+        },
+        {
+          "columnName": "in_FrontStartPos",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontOverlapBtm",
+          "value": "0"
+        },
+        {
+          "columnName": "InHouseProduction",
+          "value": "true"
+        },
+        {
+          "columnName": "ConstructionType",
+          "value": "InsetHandle"
+        },
+        {
+          "columnName": "AddVirtualPartOnBack",
+          "value": "true"
+        },
+        {
+          "columnName": "DescriptorHeight",
+          "value": "1_300mm_200mm"
+        },
+        {
+          "columnName": "DescriptorDepth",
+          "value": "1_5mm_1"
+        },
+        {
+          "columnName": "FrontThk",
+          "value": "19"
+        },
+        {
+          "columnName": "SegmentThk",
+          "value": "5"
+        },
+        {
+          "columnName": "Weight",
+          "value": "25"
+        },
+        {
+          "columnName": "SegmentWeight",
+          "value": "12"
+        },
+        {
+          "columnName": "FrontGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "SegmentGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "ProcessingItem",
+          "value": "Handle_140"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "31"
+        },
+        {
+          "columnName": "in_PartGroup",
+          "value": "Door"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "InsetHandle01"
+        },
+        {
+          "columnName": "in_FrontColorGrainGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_SegmentColorGrainGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_SegmentType",
+          "value": "Glass"
+        },
+        {
+          "columnName": "in_SegmentColor",
+          "value": "GreyGlass"
+        },
+        {
+          "columnName": "in_FrontStartPos",
+          "value": "700"
+        },
+        {
+          "columnName": "in_FrontOverlapBtm",
+          "value": "0"
+        },
+        {
+          "columnName": "InHouseProduction",
+          "value": "true"
+        },
+        {
+          "columnName": "ConstructionType",
+          "value": "InsetHandle"
+        },
+        {
+          "columnName": "AddVirtualPartOnBack",
+          "value": "true"
+        },
+        {
+          "columnName": "DescriptorHeight",
+          "value": "200mm_300mm_1"
+        },
+        {
+          "columnName": "DescriptorDepth",
+          "value": "1_5mm_1"
+        },
+        {
+          "columnName": "FrontThk",
+          "value": "19"
+        },
+        {
+          "columnName": "SegmentThk",
+          "value": "5"
+        },
+        {
+          "columnName": "Weight",
+          "value": "25"
+        },
+        {
+          "columnName": "SegmentWeight",
+          "value": "12"
+        },
+        {
+          "columnName": "FrontGrainDirection",
+          "value": "Crosswise"
+        },
+        {
+          "columnName": "SegmentGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "ProcessingItem",
+          "value": "Handle_140"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "32"
+        },
+        {
+          "columnName": "in_PartGroup",
+          "value": "Door"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "InsetHandle01"
+        },
+        {
+          "columnName": "in_FrontColorGrainGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_SegmentColorGrainGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_SegmentType",
+          "value": "Glass"
+        },
+        {
+          "columnName": "in_SegmentColor",
+          "value": "GreyGlass"
+        },
+        {
+          "columnName": "in_FrontStartPos",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontOverlapBtm",
+          "value": "0"
+        },
+        {
+          "columnName": "InHouseProduction",
+          "value": "true"
+        },
+        {
+          "columnName": "ConstructionType",
+          "value": "InsetHandle"
+        },
+        {
+          "columnName": "AddVirtualPartOnBack",
+          "value": "true"
+        },
+        {
+          "columnName": "DescriptorHeight",
+          "value": "1_300mm_200mm"
+        },
+        {
+          "columnName": "DescriptorDepth",
+          "value": "1_5mm_1"
+        },
+        {
+          "columnName": "FrontThk",
+          "value": "19"
+        },
+        {
+          "columnName": "SegmentThk",
+          "value": "5"
+        },
+        {
+          "columnName": "Weight",
+          "value": "25"
+        },
+        {
+          "columnName": "SegmentWeight",
+          "value": "12"
+        },
+        {
+          "columnName": "FrontGrainDirection",
+          "value": "Crosswise"
+        },
+        {
+          "columnName": "SegmentGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "ProcessingItem",
+          "value": "Handle_140"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "33"
+        },
+        {
+          "columnName": "in_PartGroup",
+          "value": "Door"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "InsetHandle01"
+        },
+        {
+          "columnName": "in_FrontColorGrainGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_SegmentColorGrainGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_SegmentType",
+          "value": "Glass"
+        },
+        {
+          "columnName": "in_SegmentColor",
+          "value": "Mirror"
+        },
+        {
+          "columnName": "in_FrontStartPos",
+          "value": "700"
+        },
+        {
+          "columnName": "in_FrontOverlapBtm",
+          "value": "0"
+        },
+        {
+          "columnName": "InHouseProduction",
+          "value": "true"
+        },
+        {
+          "columnName": "ConstructionType",
+          "value": "InsetHandle"
+        },
+        {
+          "columnName": "AddVirtualPartOnBack",
+          "value": "true"
+        },
+        {
+          "columnName": "DescriptorHeight",
+          "value": "200mm_300mm_1"
+        },
+        {
+          "columnName": "DescriptorDepth",
+          "value": "1_5mm_1"
+        },
+        {
+          "columnName": "FrontThk",
+          "value": "19"
+        },
+        {
+          "columnName": "SegmentThk",
+          "value": "5"
+        },
+        {
+          "columnName": "Weight",
+          "value": "25"
+        },
+        {
+          "columnName": "SegmentWeight",
+          "value": "12"
+        },
+        {
+          "columnName": "FrontGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "SegmentGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "ProcessingItem",
+          "value": "Handle_140"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "34"
+        },
+        {
+          "columnName": "in_PartGroup",
+          "value": "Door"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "InsetHandle01"
+        },
+        {
+          "columnName": "in_FrontColorGrainGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_SegmentColorGrainGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_SegmentType",
+          "value": "Glass"
+        },
+        {
+          "columnName": "in_SegmentColor",
+          "value": "Mirror"
+        },
+        {
+          "columnName": "in_FrontStartPos",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontOverlapBtm",
+          "value": "0"
+        },
+        {
+          "columnName": "InHouseProduction",
+          "value": "true"
+        },
+        {
+          "columnName": "ConstructionType",
+          "value": "InsetHandle"
+        },
+        {
+          "columnName": "AddVirtualPartOnBack",
+          "value": "true"
+        },
+        {
+          "columnName": "DescriptorHeight",
+          "value": "1_300mm_200mm"
+        },
+        {
+          "columnName": "DescriptorDepth",
+          "value": "1_5mm_1"
+        },
+        {
+          "columnName": "FrontThk",
+          "value": "19"
+        },
+        {
+          "columnName": "SegmentThk",
+          "value": "5"
+        },
+        {
+          "columnName": "Weight",
+          "value": "25"
+        },
+        {
+          "columnName": "SegmentWeight",
+          "value": "12"
+        },
+        {
+          "columnName": "FrontGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "SegmentGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "ProcessingItem",
+          "value": "Handle_140"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "35"
+        },
+        {
+          "columnName": "in_PartGroup",
+          "value": "Door"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "InsetHandle01"
+        },
+        {
+          "columnName": "in_FrontColorGrainGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_SegmentColorGrainGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_SegmentType",
+          "value": "Glass"
+        },
+        {
+          "columnName": "in_SegmentColor",
+          "value": "Mirror"
+        },
+        {
+          "columnName": "in_FrontStartPos",
+          "value": "700"
+        },
+        {
+          "columnName": "in_FrontOverlapBtm",
+          "value": "0"
+        },
+        {
+          "columnName": "InHouseProduction",
+          "value": "true"
+        },
+        {
+          "columnName": "ConstructionType",
+          "value": "InsetHandle"
+        },
+        {
+          "columnName": "AddVirtualPartOnBack",
+          "value": "true"
+        },
+        {
+          "columnName": "DescriptorHeight",
+          "value": "200mm_300mm_1"
+        },
+        {
+          "columnName": "DescriptorDepth",
+          "value": "1_5mm_1"
+        },
+        {
+          "columnName": "FrontThk",
+          "value": "19"
+        },
+        {
+          "columnName": "SegmentThk",
+          "value": "5"
+        },
+        {
+          "columnName": "Weight",
+          "value": "25"
+        },
+        {
+          "columnName": "SegmentWeight",
+          "value": "12"
+        },
+        {
+          "columnName": "FrontGrainDirection",
+          "value": "Crosswise"
+        },
+        {
+          "columnName": "SegmentGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "ProcessingItem",
+          "value": "Handle_140"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "36"
+        },
+        {
+          "columnName": "in_PartGroup",
+          "value": "Door"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "InsetHandle01"
+        },
+        {
+          "columnName": "in_FrontColorGrainGroupId",
+          "value": "Grain"
+        },
+        {
+          "columnName": "in_SegmentColorGrainGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_SegmentType",
+          "value": "Glass"
+        },
+        {
+          "columnName": "in_SegmentColor",
+          "value": "Mirror"
+        },
+        {
+          "columnName": "in_FrontStartPos",
+          "value": "0"
+        },
+        {
+          "columnName": "in_FrontOverlapBtm",
+          "value": "0"
+        },
+        {
+          "columnName": "InHouseProduction",
+          "value": "true"
+        },
+        {
+          "columnName": "ConstructionType",
+          "value": "InsetHandle"
+        },
+        {
+          "columnName": "AddVirtualPartOnBack",
+          "value": "true"
+        },
+        {
+          "columnName": "DescriptorHeight",
+          "value": "1_300mm_200mm"
+        },
+        {
+          "columnName": "DescriptorDepth",
+          "value": "1_5mm_1"
+        },
+        {
+          "columnName": "FrontThk",
+          "value": "19"
+        },
+        {
+          "columnName": "SegmentThk",
+          "value": "5"
+        },
+        {
+          "columnName": "Weight",
+          "value": "25"
+        },
+        {
+          "columnName": "SegmentWeight",
+          "value": "12"
+        },
+        {
+          "columnName": "FrontGrainDirection",
+          "value": "Crosswise"
+        },
+        {
+          "columnName": "SegmentGrainDirection",
+          "value": "None"
+        },
+        {
+          "columnName": "ProcessingItem",
+          "value": "Handle_140"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "37"
+        },
+        {
+          "columnName": "in_PartGroup",
+          "value": "Door"
+        },
+        {
+          "columnName": "in_FrontConstructionId",
+          "value": "InsetHandle01"
+        },
+        {
+          "columnName": "in_FrontColorGrainGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_SegmentColorGrainGroupId",
+          "value": "NoGrain"
+        },
+        {
+          "columnName": "in_SegmentType",
+          "value": "Glass"
+        },
+        {
+          "columnName": "in_SegmentColor",
+          "value": "FloatGlass"
+        },
+        {
+          "columnName": "in_FrontStartPos",
+          "value": "700"
+        },
+        {
+          "columnName": "in_FrontOverlapBtm",
+          "value": "17"
+        },
+        {
+          "columnName": "InHouseProduction",
+          "value": "true"
+        },
+        {
+          "columnName": "ConstructionType",
+          "value": "InsetHandle"
+        },
+        {
+          "columnName": "AddVirtualPartOnBack",
           "value": "true"
         },
         {
@@ -1385,6 +3360,10 @@
         {
           "columnName": "SegmentGrainDirection",
           "value": "None"
+        },
+        {
+          "columnName": "ProcessingItem",
+          "value": "Handle_140"
         }
       ]
     },
@@ -1392,7 +3371,7 @@
       "data": [
         {
           "columnName": "_id",
-          "value": "66"
+          "value": "38"
         },
         {
           "columnName": "in_PartGroup",
@@ -1400,7 +3379,7 @@
         },
         {
           "columnName": "in_FrontConstructionId",
-          "value": "SegmentFront01"
+          "value": "InsetHandle01"
         },
         {
           "columnName": "in_FrontColorGrainGroupId",
@@ -1428,6 +3407,14 @@
         },
         {
           "columnName": "InHouseProduction",
+          "value": "true"
+        },
+        {
+          "columnName": "ConstructionType",
+          "value": "InsetHandle"
+        },
+        {
+          "columnName": "AddVirtualPartOnBack",
           "value": "true"
         },
         {
@@ -1461,6 +3448,10 @@
         {
           "columnName": "SegmentGrainDirection",
           "value": "None"
+        },
+        {
+          "columnName": "ProcessingItem",
+          "value": "Handle_140"
         }
       ]
     },
@@ -1468,7 +3459,7 @@
       "data": [
         {
           "columnName": "_id",
-          "value": "67"
+          "value": "39"
         },
         {
           "columnName": "in_PartGroup",
@@ -1476,7 +3467,7 @@
         },
         {
           "columnName": "in_FrontConstructionId",
-          "value": "SegmentFront01"
+          "value": "InsetHandle01"
         },
         {
           "columnName": "in_FrontColorGrainGroupId",
@@ -1504,6 +3495,14 @@
         },
         {
           "columnName": "InHouseProduction",
+          "value": "true"
+        },
+        {
+          "columnName": "ConstructionType",
+          "value": "InsetHandle"
+        },
+        {
+          "columnName": "AddVirtualPartOnBack",
           "value": "true"
         },
         {
@@ -1537,6 +3536,10 @@
         {
           "columnName": "SegmentGrainDirection",
           "value": "None"
+        },
+        {
+          "columnName": "ProcessingItem",
+          "value": "Handle_140"
         }
       ]
     },
@@ -1544,7 +3547,7 @@
       "data": [
         {
           "columnName": "_id",
-          "value": "68"
+          "value": "40"
         },
         {
           "columnName": "in_PartGroup",
@@ -1552,7 +3555,7 @@
         },
         {
           "columnName": "in_FrontConstructionId",
-          "value": "SegmentFront01"
+          "value": "InsetHandle01"
         },
         {
           "columnName": "in_FrontColorGrainGroupId",
@@ -1580,6 +3583,14 @@
         },
         {
           "columnName": "InHouseProduction",
+          "value": "true"
+        },
+        {
+          "columnName": "ConstructionType",
+          "value": "InsetHandle"
+        },
+        {
+          "columnName": "AddVirtualPartOnBack",
           "value": "true"
         },
         {
@@ -1613,6 +3624,10 @@
         {
           "columnName": "SegmentGrainDirection",
           "value": "None"
+        },
+        {
+          "columnName": "ProcessingItem",
+          "value": "Handle_140"
         }
       ]
     }

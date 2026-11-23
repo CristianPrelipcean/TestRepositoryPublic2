@@ -5,7 +5,7 @@
   "isRoot": true,
   "description": "Module for hood",
   "groupName": "Root",
-  "imageId": "304e693a-bbcf-4d6d-be9b-bf1b37e8ec19:DU_Mod.jpg",
+  "imageId": "53e2eddb-d6c3-4a8e-b2f6-0bedc2d94a49:DU_Mod.jpg",
   "restrictionTypeId": "Public",
   "childModules": [
     {
@@ -13,6 +13,34 @@
     }
   ],
   "assignedVariants": [
+    {
+      "variantId": "mod_ColumnDebug",
+      "default": "true",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnShelfOrigin",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnWrapInfo",
+      "default": "",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_GroupGenerationStatus",
+      "default": "",
+      "previewValue": "",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
     {
       "variantId": "mod_HeightPosInsertion",
       "default": "1500",
@@ -37,5 +65,9 @@
   ],
   "assignedParts": [],
   "assignedCustomTables": [],
-  "assignedFunctions": []
+  "assignedFunctions": [
+    {
+      "functionId": "process_StorageunitColumnPass"
+    }
+  ]
 }

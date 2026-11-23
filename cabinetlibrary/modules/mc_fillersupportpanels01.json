@@ -7,10 +7,30 @@
   "isDropContainer": false,
   "description": "Module for the filler support panels",
   "groupName": "Filler",
-  "imageId": "e529015c-7b04-41d5-b647-2c2c5283727c:FillerSupportPanels.jpg",
+  "imageId": "42c10ab4-58e3-4668-8d9f-0174dd6e5a20:FillerSupportPanels.jpg",
   "restrictionTypeId": "Internal",
   "childModules": [],
   "assignedVariants": [
+    {
+      "variantId": "mod_ColumnDebug",
+      "default": "true",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnShelfOrigin",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnWrapInfo",
+      "default": "",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
     {
       "variantId": "mod_Information",
       "required": false,
@@ -20,5 +40,9 @@
   ],
   "assignedParts": [],
   "assignedCustomTables": [],
-  "assignedFunctions": []
+  "assignedFunctions": [
+    {
+      "functionId": "process_StorageunitColumnPass"
+    }
+  ]
 }

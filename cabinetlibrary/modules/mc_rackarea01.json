@@ -5,7 +5,7 @@
   "isRoot": false,
   "description": "Construction module for the rack area",
   "groupName": "FrontConstruction",
-  "imageId": "cd6b613f-4b80-4cbe-bec4-53175a7291de:RackArea.jpg",
+  "imageId": "5e3ee455-1f47-4354-bd36-6c57e7079b8a:RackArea.jpg",
   "restrictionTypeId": "Internal",
   "childModules": [],
   "assignedVariants": [
@@ -49,6 +49,26 @@
       "previewValue": "600",
       "required": false,
       "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnDebug",
+      "default": "true",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnShelfOrigin",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnWrapInfo",
+      "default": "",
+      "required": false,
+      "derive": false,
       "fixed": false
     },
     {
@@ -239,5 +259,9 @@
     }
   ],
   "assignedCustomTables": [],
-  "assignedFunctions": []
+  "assignedFunctions": [
+    {
+      "functionId": "process_StorageunitColumnPass"
+    }
+  ]
 }

@@ -7,15 +7,40 @@
   "isDropContainer": false,
   "description": "Hanger elements for Boards",
   "groupName": "AddonModule",
-  "imageId": "ea6af219-5cb2-42db-803d-d5a2a88071af:BoardHanger.png",
+  "imageId": "1130b1bb-361e-4089-87dc-da5620b57360:BoardHanger.png",
   "restrictionTypeId": "Public",
   "childModules": [
     {
       "moduleId": "mc_BoardHanger"
     }
   ],
-  "assignedVariants": [],
+  "assignedVariants": [
+    {
+      "variantId": "mod_ColumnDebug",
+      "default": "true",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnShelfOrigin",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnWrapInfo",
+      "default": "",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    }
+  ],
   "assignedParts": [],
   "assignedCustomTables": [],
-  "assignedFunctions": []
+  "assignedFunctions": [
+    {
+      "functionId": "process_StorageunitColumnPass"
+    }
+  ]
 }

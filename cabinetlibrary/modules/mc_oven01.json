@@ -5,7 +5,7 @@
   "isRoot": false,
   "description": "Oven",
   "groupName": "Appliance",
-  "imageId": "d494527e-64b9-4976-ae7f-1f271a58261b:Oven.png",
+  "imageId": "4a35fdbc-169f-4d3e-b3d1-adf086745091:Oven.png",
   "restrictionTypeId": "Internal",
   "childModules": [
     {
@@ -35,6 +35,26 @@
       "fixed": false
     },
     {
+      "variantId": "mod_ColumnDebug",
+      "default": "true",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnShelfOrigin",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnWrapInfo",
+      "default": "",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
       "variantId": "mod_Originpos",
       "required": false,
       "derive": false,
@@ -50,5 +70,9 @@
   ],
   "assignedParts": [],
   "assignedCustomTables": [],
-  "assignedFunctions": []
+  "assignedFunctions": [
+    {
+      "functionId": "process_StorageunitColumnPass"
+    }
+  ]
 }

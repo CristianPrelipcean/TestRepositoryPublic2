@@ -5,7 +5,7 @@
   "isRoot": false,
   "description": "Top shelf for storage unit",
   "groupName": "CarcaseConstructionParts",
-  "imageId": "abd509b6-ded0-4625-b2d1-47c6c26fdd48:Hob_Brackets.jpg",
+  "imageId": "b16c69d1-b152-4933-984c-b96dfed21fa3:Hob_Brackets.jpg",
   "restrictionTypeId": "Internal",
   "childModules": [],
   "assignedVariants": [
@@ -91,6 +91,26 @@
       "previewValue": "false",
       "required": false,
       "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnDebug",
+      "default": "true",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnShelfOrigin",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnWrapInfo",
+      "default": "",
+      "required": false,
+      "derive": false,
       "fixed": false
     },
     {
@@ -223,5 +243,9 @@
   ],
   "assignedParts": [],
   "assignedCustomTables": [],
-  "assignedFunctions": []
+  "assignedFunctions": [
+    {
+      "functionId": "process_StorageunitColumnPass"
+    }
+  ]
 }

@@ -5,7 +5,7 @@
   "isRoot": false,
   "description": "Cleat Vertical",
   "groupName": "CarcaseConstructionParts",
-  "imageId": "a3680642-7228-4fbb-a75b-a97109da019e:mc_Cleat.jpg",
+  "imageId": "d7647284-5125-4db1-9b83-6234a789d671:mc_Cleat.jpg",
   "restrictionTypeId": "Internal",
   "childModules": [],
   "assignedVariants": [
@@ -91,6 +91,26 @@
       "previewValue": "Demoprogram1",
       "required": false,
       "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnDebug",
+      "default": "true",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnShelfOrigin",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnWrapInfo",
+      "default": "",
+      "required": false,
+      "derive": false,
       "fixed": false
     },
     {
@@ -205,5 +225,9 @@
     }
   ],
   "assignedCustomTables": [],
-  "assignedFunctions": []
+  "assignedFunctions": [
+    {
+      "functionId": "process_StorageunitColumnPass"
+    }
+  ]
 }

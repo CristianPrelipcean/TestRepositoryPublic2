@@ -5,7 +5,11 @@ process_HoodInsert(HoodSupplier: string, HoodId: string, IntegrationType: string
   CarcaseConstructionId: string;
   RearOffset: number;
   BottomShortening: number; 
-    HoodAssemblyInfo: ICT_tab_HoodConstruction; 
+  AdjShelfDesign: string;
+  AdjShelfDrillType: string;
+  HoodAssemblyInfo: ICT_tab_HoodConstruction; 
+  HoodCarcaseAssemblyInfo: ICT_tab_HoodAssemblyMapping;
+  HoodNicheConstruction: ICT_tab_HoodNicheConfiguration[];
 }
 {
   const result = {
@@ -15,7 +19,11 @@ process_HoodInsert(HoodSupplier: string, HoodId: string, IntegrationType: string
     CarcaseConstructionId: "",
     RearOffset: 0,
     BottomShortening: 0,
-	HoodAssemblyInfo: {in_HoodId: ""} as ICT_tab_HoodConstruction
+   	AdjShelfDesign: "",
+	  AdjShelfDrillType: "",
+    HoodAssemblyInfo: { in_HoodId: "" } as ICT_tab_HoodConstruction,
+    HoodCarcaseAssemblyInfo: { in_ConstructionId: "" } as ICT_tab_HoodAssemblyMapping,
+    HoodNicheConstruction:{ } as ICT_tab_HoodNicheConfiguration[]
   };
 
   // ----------------------------------------
@@ -51,7 +59,7 @@ process_HoodInsert(HoodSupplier: string, HoodId: string, IntegrationType: string
     return result;
   }
 
-  result.ConstructionId = hoodmapping.ConstructionId ? hoodmapping.ConstructionId:"" ;
+  //result.ConstructionId = hoodmapping.ConstructionId ? hoodmapping.ConstructionId:"" ; // sr: 03.07.2026 
   result.GraphicId = hoodmapping.GraphicId ?? "";
 
   // ----------------------------------------
@@ -61,11 +69,34 @@ process_HoodInsert(HoodSupplier: string, HoodId: string, IntegrationType: string
   if (!hoodconstruction) {
     return result;
   }
-  /*
-  let hoodHeight  = hoodconstruction.Height ?? 0;
-  let hoodWidth   = hoodconstruction.Width ?? 0;
-  let hoodDepth   = hoodconstruction.Depth ?? 0;
-  */
+
+
+  // ----------------------------------------
+  // Step 3 Carcase additional construction Infos
+  // ----------------------------------------
+  //const hoodCarcaseAssemblyInfo = GlobalFunc.find_HoodAssemblyMapping(result.ConstructionId, CabinetWidth, CabinetHeight, CabinetDepth, IntegrationType, ConstructionType);
+  const hoodCarcaseAssemblyInfo = GlobalFunc.find_HoodAssemblyMapping(hoodmapping.ConstructionId ? hoodmapping.ConstructionId:"", CabinetWidth, CabinetHeight, CabinetDepth, IntegrationType, ConstructionType);
+  if (!hoodCarcaseAssemblyInfo) {
+    return result;
+  }
+
+  // ----------------------------------------
+  // Step 4 Get the Niche configuration
+  // ----------------------------------------
+
+  let HoodNicheConstruction = GlobalFunc.find_HoodNicheConfiguration(hoodCarcaseAssemblyInfo.CarcaseConstructionId ? hoodCarcaseAssemblyInfo.CarcaseConstructionId : "",HoodId ? HoodId:"");
+  //let HoodNicheConstruction = GlobalFunc.find_HoodNicheConfiguration(hoodCarcaseAssemblyInfo.CarcaseConstructionId ? hoodCarcaseAssemblyInfo.CarcaseConstructionId : "","Default");
+
+  if (!HoodNicheConstruction) {
+      return result;
+  }  
+  result.HoodNicheConstruction= HoodNicheConstruction;
+ 
+
+  result.ConstructionId = hoodCarcaseAssemblyInfo.CarcaseConstructionId ? hoodCarcaseAssemblyInfo.CarcaseConstructionId:"" ; // sr: 03.07.2026 use this one
+  result.HoodCarcaseAssemblyInfo = hoodCarcaseAssemblyInfo;
+
+
   // ToDo from Insertpoint of the hood
   result.RearOffset = 0; //hoodconstruction.Tower2Depth ?? 0;
   // Save the Installation Info from Hood 

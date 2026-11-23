@@ -1,0 +1,379 @@
+{
+  "tableName": "tab_HeightAdjustmentRules",
+  "description": "Defines how a cabinet or group (TypeElement) should behave for different height adjustment modes.",
+  "restrictionTypeId": "Public",
+  "isInputUnique": true,
+  "groupName": "GroupOrchestrator",
+  "columns": [
+    {
+      "name": "_id",
+      "type": "Integer",
+      "allowNull": false
+    },
+    {
+      "name": "in_TypeElement",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_ArticleId",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_HeightAdjustmentMode",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "ActivateHeightAdjustment",
+      "type": "Bool",
+      "allowNull": true
+    },
+    {
+      "name": "AdjustmentId",
+      "type": "Text",
+      "allowNull": true
+    }
+  ],
+  "rows": [
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "49"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "BaseUnit"
+        },
+        {
+          "columnName": "in_ArticleId",
+          "value": "All"
+        },
+        {
+          "columnName": "in_HeightAdjustmentMode",
+          "value": "UseGroupHeight"
+        },
+        {
+          "columnName": "ActivateHeightAdjustment",
+          "value": "false"
+        },
+        {
+          "columnName": "AdjustmentId",
+          "value": "CounterTop"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "50"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "BaseUnit"
+        },
+        {
+          "columnName": "in_ArticleId",
+          "value": "All"
+        },
+        {
+          "columnName": "in_HeightAdjustmentMode",
+          "value": "UseRoomHeight"
+        },
+        {
+          "columnName": "ActivateHeightAdjustment",
+          "value": "false"
+        },
+        {
+          "columnName": "AdjustmentId",
+          "value": "CounterTop"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "51"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "BaseUnitSink"
+        },
+        {
+          "columnName": "in_ArticleId",
+          "value": "All"
+        },
+        {
+          "columnName": "in_HeightAdjustmentMode",
+          "value": "UseGroupHeight"
+        },
+        {
+          "columnName": "ActivateHeightAdjustment",
+          "value": "false"
+        },
+        {
+          "columnName": "AdjustmentId",
+          "value": "CounterTop"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "52"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "BaseUnitSink"
+        },
+        {
+          "columnName": "in_ArticleId",
+          "value": "All"
+        },
+        {
+          "columnName": "in_HeightAdjustmentMode",
+          "value": "UseRoomHeight"
+        },
+        {
+          "columnName": "ActivateHeightAdjustment",
+          "value": "false"
+        },
+        {
+          "columnName": "AdjustmentId",
+          "value": "CounterTop"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "53"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "BaseUnitAppliance"
+        },
+        {
+          "columnName": "in_ArticleId",
+          "value": "All"
+        },
+        {
+          "columnName": "in_HeightAdjustmentMode",
+          "value": "UseGroupHeight"
+        },
+        {
+          "columnName": "ActivateHeightAdjustment",
+          "value": "false"
+        },
+        {
+          "columnName": "AdjustmentId",
+          "value": "CounterTop"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "54"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "BaseUnitAppliance"
+        },
+        {
+          "columnName": "in_ArticleId",
+          "value": "All"
+        },
+        {
+          "columnName": "in_HeightAdjustmentMode",
+          "value": "UseRoomHeight"
+        },
+        {
+          "columnName": "ActivateHeightAdjustment",
+          "value": "false"
+        },
+        {
+          "columnName": "AdjustmentId",
+          "value": "CounterTop"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "55"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "WallUnit"
+        },
+        {
+          "columnName": "in_ArticleId",
+          "value": "All"
+        },
+        {
+          "columnName": "in_HeightAdjustmentMode",
+          "value": "UseGroupHeight"
+        },
+        {
+          "columnName": "ActivateHeightAdjustment",
+          "value": "true"
+        },
+        {
+          "columnName": "AdjustmentId",
+          "value": "None"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "56"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "WallUnit"
+        },
+        {
+          "columnName": "in_ArticleId",
+          "value": "All"
+        },
+        {
+          "columnName": "in_HeightAdjustmentMode",
+          "value": "UseRoomHeight"
+        },
+        {
+          "columnName": "ActivateHeightAdjustment",
+          "value": "true"
+        },
+        {
+          "columnName": "AdjustmentId",
+          "value": "CeilingFiller"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "57"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "TallUnit"
+        },
+        {
+          "columnName": "in_ArticleId",
+          "value": "All"
+        },
+        {
+          "columnName": "in_HeightAdjustmentMode",
+          "value": "UseGroupHeight"
+        },
+        {
+          "columnName": "ActivateHeightAdjustment",
+          "value": "true"
+        },
+        {
+          "columnName": "AdjustmentId",
+          "value": "None"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "58"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "TallUnit"
+        },
+        {
+          "columnName": "in_ArticleId",
+          "value": "All"
+        },
+        {
+          "columnName": "in_HeightAdjustmentMode",
+          "value": "UseRoomHeight"
+        },
+        {
+          "columnName": "ActivateHeightAdjustment",
+          "value": "true"
+        },
+        {
+          "columnName": "AdjustmentId",
+          "value": "CeilingFiller"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "59"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "TallUnitAppliance"
+        },
+        {
+          "columnName": "in_ArticleId",
+          "value": "All"
+        },
+        {
+          "columnName": "in_HeightAdjustmentMode",
+          "value": "UseGroupHeight"
+        },
+        {
+          "columnName": "ActivateHeightAdjustment",
+          "value": "true"
+        },
+        {
+          "columnName": "AdjustmentId",
+          "value": "None"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "60"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "TallUnitAppliance"
+        },
+        {
+          "columnName": "in_ArticleId",
+          "value": "All"
+        },
+        {
+          "columnName": "in_HeightAdjustmentMode",
+          "value": "UseRoomHeight"
+        },
+        {
+          "columnName": "ActivateHeightAdjustment",
+          "value": "true"
+        },
+        {
+          "columnName": "AdjustmentId",
+          "value": "CeilingFiller"
+        }
+      ]
+    }
+  ],
+  "dataSource": "Default",
+  "changedAt": "2026-07-07T13:23:22.2596791+00:00"
+}

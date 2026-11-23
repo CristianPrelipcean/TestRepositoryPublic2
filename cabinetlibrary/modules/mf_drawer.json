@@ -5,7 +5,7 @@
   "isRoot": false,
   "description": "Front module for drawer",
   "groupName": "FrontModule",
-  "imageId": "4704b07a-94b3-46cb-8c28-2e8b8181984f:Drawer.png",
+  "imageId": "4e7967ac-d1cf-40c4-be60-9e3266cb6fbe:Drawer.png",
   "restrictionTypeId": "Public",
   "childModules": [
     {
@@ -61,6 +61,26 @@
       "previewValue": "600",
       "required": false,
       "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnDebug",
+      "default": "true",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnShelfOrigin",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnWrapInfo",
+      "default": "",
+      "required": false,
+      "derive": false,
       "fixed": false
     },
     {
@@ -539,5 +559,9 @@
   ],
   "assignedParts": [],
   "assignedCustomTables": [],
-  "assignedFunctions": []
+  "assignedFunctions": [
+    {
+      "functionId": "process_StorageunitColumnPass"
+    }
+  ]
 }

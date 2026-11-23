@@ -5,10 +5,30 @@
   "isRoot": false,
   "description": "Bracket For shelf",
   "groupName": "Shelves",
-  "imageId": "96c2d5e9-8220-4e4c-ac97-f3f2536be875:WallShelfBracket.jpg",
+  "imageId": "c1f4e597-2781-4b82-859a-49cdc47f7d41:WallShelfBracket.jpg",
   "restrictionTypeId": "Internal",
   "childModules": [],
   "assignedVariants": [
+    {
+      "variantId": "mod_ColumnDebug",
+      "default": "true",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnShelfOrigin",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnWrapInfo",
+      "default": "",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
     {
       "variantId": "mod_Depth",
       "previewValue": "120",
@@ -61,6 +81,9 @@
   "assignedFunctions": [
     {
       "functionId": "process_Bracket"
+    },
+    {
+      "functionId": "process_StorageunitColumnPass"
     }
   ]
 }

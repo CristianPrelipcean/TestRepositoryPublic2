@@ -4,12 +4,16 @@
   "configurable": true,
   "isRoot": false,
   "isConfigDummy": false,
+  "isGroupOrchestrator": false,
   "isDropContainer": false,
-  "description": "Multiple adjustable shelves ",
+  "description": "Multiple adjustable shelves",
   "groupName": "Equipment",
-  "imageId": "fd16b5ff-9a45-4245-bb22-94a7f64be313:Shelfadjustable.png",
+  "imageId": "af5072a1-b758-4fcc-a87c-044bb8355157:Shelfadjustable.png",
   "restrictionTypeId": "Public",
   "childModules": [
+    {
+      "moduleId": "mc_ShelfadjDivers01"
+    },
     {
       "moduleId": "mc_ShelfadjDrill01"
     },
@@ -54,8 +58,42 @@
       "fixed": false
     },
     {
+      "variantId": "mod_ColumnDebug",
+      "default": "true",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnShelfOrigin",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnWrapInfo",
+      "default": "",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
       "variantId": "mod_Depth",
       "default": "522",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_FreeSpaceStartPosY",
+      "default": "0",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_FreeSpaceY",
+      "default": "0",
       "required": false,
       "derive": false,
       "fixed": false
@@ -84,7 +122,7 @@
     },
     {
       "variantId": "mod_Height",
-      "default": "500",
+      "default": "9999",
       "required": false,
       "derive": false,
       "fixed": false
@@ -105,7 +143,6 @@
     },
     {
       "variantId": "mod_ShelfadjDescriptor",
-      "previewValue": "1_1",
       "required": false,
       "derive": true,
       "fixed": false
@@ -140,6 +177,13 @@
     },
     {
       "variantId": "mod_ShelfadjDrillinglineOffsetTop",
+      "default": "0",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ShelfadjGroupPositionX",
       "default": "0",
       "required": false,
       "derive": false,
@@ -182,10 +226,10 @@
     },
     {
       "variantId": "mod_ShelfadjThk",
-      "default": "19",
       "required": false,
       "derive": false,
-      "fixed": false
+      "fixed": false,
+      "defaultGlobalVar": true
     },
     {
       "variantId": "mod_TypeElement",
@@ -218,5 +262,12 @@
   ],
   "assignedParts": [],
   "assignedCustomTables": [],
-  "assignedFunctions": []
+  "assignedFunctions": [
+    {
+      "functionId": "process_StorageunitColumnPass"
+    },
+    {
+      "functionId": "process_StorageunitColumnShelfShape"
+    }
+  ]
 }

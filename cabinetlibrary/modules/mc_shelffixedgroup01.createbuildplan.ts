@@ -24,10 +24,10 @@
   let CarcaseSpaceDimension = JSON.parse(this.mod_CarcaseSpaceDimension[0]);
 
   // Call table tab_ShelfadjQtyPosSettings
-  let retQtyPosSetting = GlobalFunc.find_ShelfadjQtyPosSettings(this.mod_TypeElement, this.mod_ShelffixedPartParentName, this.mod_ShelffixedPartParentType, CarcaseSpaceDimension.HeightFreeSpace);
+  let retQtyPosSetting = GlobalFunc.find_ShelfadjQtyPosSettings(this.mod_TypeElement, this.mod_ShelffixedPartParentName, this.mod_ShelffixedPartParentType, CarcaseSpaceDimension.HeightFreeSpace, CarcaseSpaceDimension.DepthFreeSpace);
 
   // Calculate the FreeSpace for the Positioning the Shelffixed
-
+  if (!retQtyPosSetting) return;
   let QtyShelffixed = retQtyPosSetting.DescriptorPosY!.split('_').length - 1;
   let CalcTotalHeight = QtyShelffixed * Thickness;
 

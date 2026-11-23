@@ -5,7 +5,7 @@
   "isRoot": false,
   "description": "Hob Construction",
   "groupName": "Appliance",
-  "imageId": "f7cd44cc-c7d4-438e-b87c-c626004ea22b:Hob.png",
+  "imageId": "02852662-480b-46c8-8239-7be86542923d:Hob.png",
   "restrictionTypeId": "Internal",
   "childModules": [
     {
@@ -13,6 +13,26 @@
     }
   ],
   "assignedVariants": [
+    {
+      "variantId": "mod_ColumnDebug",
+      "default": "true",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnShelfOrigin",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnWrapInfo",
+      "default": "",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
     {
       "variantId": "mod_HobConstructionId",
       "default": "None",
@@ -34,5 +54,9 @@
     }
   ],
   "assignedCustomTables": [],
-  "assignedFunctions": []
+  "assignedFunctions": [
+    {
+      "functionId": "process_StorageunitColumnPass"
+    }
+  ]
 }

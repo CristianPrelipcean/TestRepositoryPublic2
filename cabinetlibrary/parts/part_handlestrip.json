@@ -4,7 +4,7 @@
   "description": "Handle strip",
   "wdt": "XYZ",
   "groupName": "Hardware",
-  "imageId": "7ba85cbd-5c7e-4614-8a8d-7a0d72dc6ed1:handlestripe.jpg",
+  "imageId": "b9f877f7-c5f4-40f9-bc0a-e280273f7eeb:handlestripe.jpg",
   "invisible": false,
   "restrictionTypeId": "Public",
   "partVariants": [
@@ -34,7 +34,7 @@
       "id": 153,
       "bomElementTypeId": "bomout_Group",
       "description": "Add the handlestrip to BOM",
-      "conditionScript": "partSelf._g?.basic_CreateBom == 'Library'",
+      "conditionScript": "partSelf._g?.basic_CreateHardwareBom == 'Library'",
       "valueScript": "// Type of the Bom-Element (will be checked in order output)\n  let elementType='Hardware';\n\n  // ProductionSite Category (to split the orders for different production sites)\n  let elementCategory='';\n\n  // Id of the parent to create the hierarchy\n  let parentBomId=part.pa_ParentName;\n\n  // Call the function to process the Bom-Element\n  GlobalFunc.process_HardwareBom(this, part, elementType, elementCategory, parentBomId, part.pa_HardwareId)"
     }
   ],

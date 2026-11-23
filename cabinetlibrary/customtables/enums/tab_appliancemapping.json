@@ -1,0 +1,66 @@
+[
+  {
+    "tableName": "tab_ApplianceMapping",
+    "columnId": "GraphicId",
+    "refCustomTableName": "tab_ApplianceGraphicLibrary",
+    "refColumnId": "in_GraphicId"
+  },
+  {
+    "tableName": "tab_ApplianceMapping",
+    "columnId": "PositionDepth",
+    "enumsJson": [
+      {
+        "value": "FrontAligned",
+        "description": "FrontAligned",
+        "imageId": ""
+      },
+      {
+        "value": "BackAligned",
+        "description": "BackAligned",
+        "imageId": ""
+      }
+    ]
+  },
+  {
+    "tableName": "tab_ApplianceMapping",
+    "columnId": "PositionHeight",
+    "enumsJson": [
+      {
+        "value": "BottomAligned",
+        "description": "BottomAligned",
+        "imageId": ""
+      },
+      {
+        "value": "CenterAligned",
+        "description": "CenterAligned",
+        "imageId": ""
+      }
+    ]
+  },
+  {
+    "tableName": "tab_ApplianceMapping",
+    "columnId": "PositionWidth",
+    "enumsJson": [
+      {
+        "value": "LeftAligned",
+        "description": "LeftAligned",
+        "imageId": ""
+      },
+      {
+        "value": "CenterAligned",
+        "description": "CenterAligned",
+        "imageId": ""
+      }
+    ]
+  },
+  {
+    "tableName": "tab_ApplianceMapping",
+    "columnId": "in_ApplianceId",
+    "refColumnId": "Value"
+  },
+  {
+    "tableName": "tab_ApplianceMapping",
+    "columnId": "in_Supplier",
+    "refColumnId": "Value"
+  }
+]

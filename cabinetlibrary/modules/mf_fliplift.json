@@ -5,7 +5,7 @@
   "isRoot": false,
   "description": "Front module for flip lift",
   "groupName": "FrontModule",
-  "imageId": "50024cf8-3539-4f18-8956-bd4b456cbe78:FlipliftType.JPG",
+  "imageId": "f4715187-b69d-488f-8f95-89b504d0366f:FlipliftType.JPG",
   "restrictionTypeId": "Public",
   "childModules": [
     {
@@ -78,6 +78,26 @@
       "previewValue": "600",
       "required": false,
       "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnDebug",
+      "default": "true",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnShelfOrigin",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnWrapInfo",
+      "default": "",
+      "required": false,
+      "derive": false,
       "fixed": false
     },
     {
@@ -654,5 +674,9 @@
   ],
   "assignedParts": [],
   "assignedCustomTables": [],
-  "assignedFunctions": []
+  "assignedFunctions": [
+    {
+      "functionId": "process_StorageunitColumnPass"
+    }
+  ]
 }

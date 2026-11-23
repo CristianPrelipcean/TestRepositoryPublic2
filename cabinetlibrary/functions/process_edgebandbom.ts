@@ -49,8 +49,8 @@ process_EdgebandBom(Elem: any, Part: any, ParentId:string, EdgeName: string){
 
 	const height = edgeLeftData.Height ?? 0;
 	const thickness = edgeLeftData.Thickness ?? 0;
-	const glueType = edgeLeftData.GlueType ?? '';
-	const supplierArticleCode = edgeLeftData.SupplierArticleNumber ?? '';
+	const glueType = '';
+	const supplierArticleCode = edgeLeftData.in_EdgeCode ?? '';
 
 	//========================================================
 	// Output data

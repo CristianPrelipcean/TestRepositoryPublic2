@@ -4,7 +4,7 @@
   "description": "Door panel wood frame",
   "wdt": "XYZ",
   "groupName": "PanelWoodFrame",
-  "imageId": "8b54b22d-f2a2-4bd9-8477-cac023f88e2d:Door.png",
+  "imageId": "bbf7db1c-ea13-4cdf-ae43-7b6b5e81ee67:Door.png",
   "model3dImageId": "",
   "invisible": true,
   "restrictionTypeId": "Public",
@@ -141,7 +141,7 @@
       "id": 204,
       "bomElementTypeId": "bomout_Group",
       "description": "Output Parts / Boards for panel wood frame",
-      "conditionScript": "partSelf._g?.basic_CreateBom == 'Library'",
+      "conditionScript": "partSelf._g?.basic_CreateBom != null && partSelf._g.basic_CreateBom !== 'Custom'",
       "valueScript": "//====================================================================\n  // Call the process functions\n  //====================================================================\n\n  GlobalFunc.process_PanelWoodFrameBom(this, part, part.pa_BomId)"
     }
   ],

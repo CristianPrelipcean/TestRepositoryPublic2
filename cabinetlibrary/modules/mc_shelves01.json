@@ -5,10 +5,30 @@
   "isRoot": false,
   "description": "Shelves construction",
   "groupName": "Shelves",
-  "imageId": "e16db945-25cb-434c-9808-0f1080f57c5e:WallShelf.jpg",
+  "imageId": "1e6bd29d-5c01-4e9c-90cf-8e8ddaeb3cf5:WallShelf.jpg",
   "restrictionTypeId": "Internal",
   "childModules": [],
   "assignedVariants": [
+    {
+      "variantId": "mod_ColumnDebug",
+      "default": "true",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnShelfOrigin",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnWrapInfo",
+      "default": "",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
     {
       "variantId": "mod_Depth",
       "previewValue": "300",
@@ -58,5 +78,9 @@
     }
   ],
   "assignedCustomTables": [],
-  "assignedFunctions": []
+  "assignedFunctions": [
+    {
+      "functionId": "process_StorageunitColumnPass"
+    }
+  ]
 }

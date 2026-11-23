@@ -7,7 +7,7 @@
   "isDropContainer": false,
   "description": "Ceilling filler",
   "groupName": "Root",
-  "imageId": "ab736c10-a022-4729-837e-ce9f2619257a:CeilingFiller.png",
+  "imageId": "69cafb08-a5a5-462d-9e78-c96e9394bf76:CeilingFiller.png",
   "restrictionTypeId": "Public",
   "generateMethod": "CeilingFiller",
   "childModules": [
@@ -39,7 +39,7 @@
     },
     {
       "variantId": "mod_CeilingFillerEdgeFrontColor",
-      "default": "240",
+      "defaultScript": "this.mod_CeilingFillerColor",
       "required": false,
       "derive": false,
       "fixed": false
@@ -122,6 +122,26 @@
       "fixed": false
     },
     {
+      "variantId": "mod_ColumnDebug",
+      "default": "true",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnShelfOrigin",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnWrapInfo",
+      "default": "",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
       "variantId": "mod_FrontGapCarcase",
       "required": false,
       "derive": false,
@@ -151,5 +171,9 @@
   ],
   "assignedParts": [],
   "assignedCustomTables": [],
-  "assignedFunctions": []
+  "assignedFunctions": [
+    {
+      "functionId": "process_StorageunitColumnPass"
+    }
+  ]
 }

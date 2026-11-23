@@ -7,7 +7,7 @@
   "isDropContainer": false,
   "description": "Laundry Machine",
   "groupName": "Appliance",
-  "imageId": "a95c6fab-aed7-46f0-b548-53daecd4035a:LaundryMachine.png",
+  "imageId": "5b6fcc31-2bf2-410c-ae92-8261d210f2f5:LaundryMachine.png",
   "restrictionTypeId": "Public",
   "childModules": [
     {
@@ -19,6 +19,26 @@
       "variantId": "mod_CarcaseSpaceDimension",
       "default": "",
       "previewValue": "",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnDebug",
+      "default": "true",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnShelfOrigin",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnWrapInfo",
+      "default": "",
       "required": false,
       "derive": false,
       "fixed": false
@@ -40,5 +60,9 @@
   ],
   "assignedParts": [],
   "assignedCustomTables": [],
-  "assignedFunctions": []
+  "assignedFunctions": [
+    {
+      "functionId": "process_StorageunitColumnPass"
+    }
+  ]
 }

@@ -7,7 +7,7 @@
   "isDropContainer": false,
   "description": "Baseboard for multiple cabinets",
   "groupName": "",
-  "imageId": "fe676c7e-855e-4ac3-90e2-c307abbf2ffd:Baseboard.png",
+  "imageId": "4b4bb104-41f6-4500-b084-891ebe8a5804:Baseboard.png",
   "restrictionTypeId": "Internal",
   "childModules": [],
   "assignedVariants": [
@@ -74,6 +74,26 @@
       "required": false,
       "derive": true,
       "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnDebug",
+      "default": "true",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnShelfOrigin",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnWrapInfo",
+      "default": "",
+      "required": false,
+      "derive": false,
+      "fixed": false
     }
   ],
   "assignedParts": [
@@ -82,5 +102,9 @@
     }
   ],
   "assignedCustomTables": [],
-  "assignedFunctions": []
+  "assignedFunctions": [
+    {
+      "functionId": "process_StorageunitColumnPass"
+    }
+  ]
 }

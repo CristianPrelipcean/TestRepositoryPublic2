@@ -1,0 +1,106 @@
+{
+  "tableName": "tab_ShelfDiversMapping",
+  "description": "Mapping Divers-Shelf",
+  "restrictionTypeId": "Public",
+  "groupName": "Shelf",
+  "columns": [
+    {
+      "name": "_id",
+      "type": "Integer",
+      "allowNull": false
+    },
+    {
+      "name": "in_ShelfAdjDesign",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_MinWidth",
+      "type": "Integer",
+      "allowNull": false
+    },
+    {
+      "name": "in_MaxWidth",
+      "type": "Integer",
+      "allowNull": false
+    },
+    {
+      "name": "in_MinDepth",
+      "type": "Integer",
+      "allowNull": false
+    },
+    {
+      "name": "in_MaxDepth",
+      "type": "Integer",
+      "allowNull": false
+    },
+    {
+      "name": "in_MinHeight",
+      "type": "Integer",
+      "allowNull": false
+    },
+    {
+      "name": "in_MaxHeight",
+      "type": "Integer",
+      "allowNull": false
+    },
+    {
+      "name": "Supplier",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "SupplierArticleNumber",
+      "type": "Text",
+      "allowNull": true
+    }
+  ],
+  "rows": [
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "1"
+        },
+        {
+          "columnName": "in_ShelfAdjDesign",
+          "value": "Metal"
+        },
+        {
+          "columnName": "in_MinWidth",
+          "value": "0"
+        },
+        {
+          "columnName": "in_MaxWidth",
+          "value": "999"
+        },
+        {
+          "columnName": "in_MinDepth",
+          "value": "0"
+        },
+        {
+          "columnName": "in_MaxDepth",
+          "value": "999"
+        },
+        {
+          "columnName": "in_MinHeight",
+          "value": "0"
+        },
+        {
+          "columnName": "in_MaxHeight",
+          "value": "999"
+        },
+        {
+          "columnName": "Supplier",
+          "value": "Test"
+        },
+        {
+          "columnName": "SupplierArticleNumber",
+          "value": "MetalShelf1234"
+        }
+      ]
+    }
+  ],
+  "dataSource": "Default",
+  "changedAt": "2026-11-02T10:28:45.5472761+00:00"
+}

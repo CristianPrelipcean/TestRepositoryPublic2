@@ -5,7 +5,7 @@
   "isRoot": false,
   "description": "Management of the hanger system ",
   "groupName": "Hardware",
-  "imageId": "a6f0bbe6-5e4b-4168-bcdc-a31f0138abf9:hangersystem.jpg",
+  "imageId": "9369b118-8a2f-455f-abd7-bbb31d085cb7:hangersystem.jpg",
   "restrictionTypeId": "Internal",
   "childModules": [],
   "assignedVariants": [
@@ -21,6 +21,26 @@
       "previewValue": "'None'",
       "required": false,
       "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnDebug",
+      "default": "true",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnShelfOrigin",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnWrapInfo",
+      "default": "",
+      "required": false,
+      "derive": false,
       "fixed": false
     },
     {
@@ -79,5 +99,9 @@
     }
   ],
   "assignedCustomTables": [],
-  "assignedFunctions": []
+  "assignedFunctions": [
+    {
+      "functionId": "process_StorageunitColumnPass"
+    }
+  ]
 }

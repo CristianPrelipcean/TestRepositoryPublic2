@@ -7,7 +7,7 @@
   "isDropContainer": false,
   "description": "Vertical full-height pull-out unit for tall pantry cabinets",
   "groupName": "FrontConstruction",
-  "imageId": "c415e41a-a1e5-4e88-8aa1-7de6eec6fe5d:PantryPullout.png",
+  "imageId": "82d31161-06f1-4c8a-b98d-e40bcde3fbb7:PantryPullout.png",
   "restrictionTypeId": "Internal",
   "childModules": [
     {
@@ -71,6 +71,26 @@
       "previewValue": "600",
       "required": false,
       "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnDebug",
+      "default": "true",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnShelfOrigin",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnWrapInfo",
+      "default": "",
+      "required": false,
+      "derive": false,
       "fixed": false
     },
     {
@@ -272,20 +292,6 @@
     {
       "variantId": "mod_FrontWidth",
       "previewValue": "597",
-      "required": false,
-      "derive": true,
-      "fixed": false
-    },
-    {
-      "variantId": "mod_GlobalFrontOversizeBtm",
-      "previewValue": "0",
-      "required": false,
-      "derive": true,
-      "fixed": false
-    },
-    {
-      "variantId": "mod_GlobalFrontOversizeLeft",
-      "previewValue": "0",
       "required": false,
       "derive": true,
       "fixed": false
@@ -516,5 +522,9 @@
     }
   ],
   "assignedCustomTables": [],
-  "assignedFunctions": []
+  "assignedFunctions": [
+    {
+      "functionId": "process_StorageunitColumnPass"
+    }
+  ]
 }

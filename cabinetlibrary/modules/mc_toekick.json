@@ -5,10 +5,30 @@
   "isRoot": false,
   "description": "Toekick module",
   "groupName": "Toekick",
-  "imageId": "d02638e7-4a97-4cf6-aaf9-fd48ed4a20ea:Toekick.png",
+  "imageId": "337ab738-36de-4380-9469-754ce233115c:Toekick.png",
   "restrictionTypeId": "Internal",
   "childModules": [],
   "assignedVariants": [
+    {
+      "variantId": "mod_ColumnDebug",
+      "default": "true",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnShelfOrigin",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnWrapInfo",
+      "default": "",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
     {
       "variantId": "mod_ToekickColor",
       "previewValue": "Demoblue",
@@ -62,5 +82,9 @@
     }
   ],
   "assignedCustomTables": [],
-  "assignedFunctions": []
+  "assignedFunctions": [
+    {
+      "functionId": "process_StorageunitColumnPass"
+    }
+  ]
 }

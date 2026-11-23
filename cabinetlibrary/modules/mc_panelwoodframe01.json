@@ -5,10 +5,30 @@
   "isRoot": false,
   "description": "Panel wood frame",
   "groupName": "FrontConstructionParts",
-  "imageId": "238acdb3-5dfb-41a8-b229-86622f303025:WoodFrame.jpg",
+  "imageId": "af2d6b29-e93e-4613-b163-b15f4bc37e6d:WoodFrame.jpg",
   "restrictionTypeId": "Internal",
   "childModules": [],
   "assignedVariants": [
+    {
+      "variantId": "mod_ColumnDebug",
+      "default": "true",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnShelfOrigin",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnWrapInfo",
+      "default": "",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
     {
       "variantId": "mod_Depth",
       "default": "500",
@@ -198,6 +218,9 @@
   ],
   "assignedCustomTables": [],
   "assignedFunctions": [
+    {
+      "functionId": "process_StorageunitColumnPass"
+    },
     {
       "functionId": "ue_FrontpanelWeightCalculations"
     }

@@ -5,7 +5,7 @@
   "isRoot": false,
   "description": "Push To Open",
   "groupName": "PushToOpen",
-  "imageId": "550f3580-3718-413f-95f3-54ea266f34b0:PushToOpenType.jpg",
+  "imageId": "9b3d68b4-9a09-4741-9cbf-a1ce0518a990:PushToOpenType.jpg",
   "restrictionTypeId": "Internal",
   "childModules": [],
   "assignedVariants": [
@@ -13,6 +13,26 @@
       "variantId": "mod_CarcasePartInfo",
       "default": "",
       "previewValue": "",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnDebug",
+      "default": "true",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnShelfOrigin",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnWrapInfo",
+      "default": "",
       "required": false,
       "derive": false,
       "fixed": false
@@ -82,5 +102,9 @@
     }
   ],
   "assignedCustomTables": [],
-  "assignedFunctions": []
+  "assignedFunctions": [
+    {
+      "functionId": "process_StorageunitColumnPass"
+    }
+  ]
 }

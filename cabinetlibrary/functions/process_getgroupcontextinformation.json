@@ -1,0 +1,7 @@
+{
+  "functionId": "process_GetGroupContextInformation",
+  "description": "Get the position and spaces of the group inside a room",
+  "funcType": "Function",
+  "restrictionTypeId": "Internal",
+  "funcDef": "process_GetGroupContextInformation(roomData: any, articlePosition: any, groupWidth: number, alignToAssemblyDirection = false): {\r\n  Left: number;\r\n  Right: number;\r\n  DataComplete: boolean;\r\n  WallLength?: number;\r\n  PositionOnWall?: number;\r\n  DirectionX?: number;\r\n  DirectionZ?: number;\r\n}"
+}

@@ -5,7 +5,7 @@
   "isRoot": false,
   "description": "Construction module for the flip lift",
   "groupName": "FrontConstruction",
-  "imageId": "e8a94112-a87b-4afc-8e8f-ac77d03e6413:fliplift.jpg",
+  "imageId": "15f3ac78-427c-428e-a812-601a5cd88c47:fliplift.jpg",
   "restrictionTypeId": "Internal",
   "childModules": [
     {
@@ -82,6 +82,26 @@
       "previewValue": "600",
       "required": false,
       "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnDebug",
+      "default": "true",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnShelfOrigin",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnWrapInfo",
+      "default": "",
+      "required": false,
+      "derive": false,
       "fixed": false
     },
     {
@@ -533,6 +553,9 @@
     },
     {
       "functionId": "process_Pushtoopen"
+    },
+    {
+      "functionId": "process_StorageunitColumnPass"
     }
   ]
 }

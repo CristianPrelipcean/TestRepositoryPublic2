@@ -5,7 +5,7 @@
   "isRoot": true,
   "description": "Module for corner filler",
   "groupName": "Root",
-  "imageId": "e77029c4-ecde-4bb9-92f0-ea188e422f52:CornerFiller.jpg",
+  "imageId": "ff5f6bfa-e622-419c-a15e-3638db26f109:CornerFiller.jpg",
   "restrictionTypeId": "Public",
   "childModules": [
     {
@@ -272,6 +272,26 @@
     {
       "variantId": "mod_CarcaseVisTop",
       "default": "false",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnDebug",
+      "default": "true",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnShelfOrigin",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnWrapInfo",
+      "default": "",
       "required": false,
       "derive": false,
       "fixed": false
@@ -834,6 +854,9 @@
   "assignedFunctions": [
     {
       "functionId": "process_CornerFillerFrontpanelConstruction"
+    },
+    {
+      "functionId": "process_StorageunitColumnPass"
     }
   ]
 }

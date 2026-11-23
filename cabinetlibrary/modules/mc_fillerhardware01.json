@@ -7,10 +7,30 @@
   "isDropContainer": false,
   "description": "Module for the filler fittings",
   "groupName": "Filler",
-  "imageId": "5a4a46b1-89a5-4b98-88d8-d9ffe69452ec:Hardware.png",
+  "imageId": "57771f28-17c1-4fe2-b2c2-9f12f2efaa96:Hardware.png",
   "restrictionTypeId": "Internal",
   "childModules": [],
   "assignedVariants": [
+    {
+      "variantId": "mod_ColumnDebug",
+      "default": "true",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnShelfOrigin",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnWrapInfo",
+      "default": "",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
     {
       "variantId": "mod_Information",
       "required": false,
@@ -20,5 +40,9 @@
   ],
   "assignedParts": [],
   "assignedCustomTables": [],
-  "assignedFunctions": []
+  "assignedFunctions": [
+    {
+      "functionId": "process_StorageunitColumnPass"
+    }
+  ]
 }

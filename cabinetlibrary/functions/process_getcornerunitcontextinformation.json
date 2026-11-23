@@ -1,0 +1,7 @@
+{
+  "functionId": "process_GetCornerunitContextInformation",
+  "description": "Prepare standalone Cornerunit room, docking and direction context",
+  "funcType": "Function",
+  "restrictionTypeId": "Internal",
+  "funcDef": "process_GetCornerunitContextInformation(sourceModule: any): {\n    ContextVersion: number;\n    SideCoverageComplete: boolean;\n    SideCoverageLeft: {\n        HeightFrom: number;\n        HeightTo: number;\n        DepthFrom: number;\n        DepthTo: number;\n    }[];\n    SideCoverageRight: {\n        HeightFrom: number;\n        HeightTo: number;\n        DepthFrom: number;\n        DepthTo: number;\n    }[];\n    NeedsVisibleSideLeft: boolean;\n    NeedsVisibleSideRight: boolean;\n    ReturnPlinthLeft: boolean;\n    ReturnPlinthRight: boolean;\n    ReturnCeilingFillerLeft: boolean;\n    ReturnCeilingFillerRight: boolean;\n    DistanceWallLeft: number;\n    DistanceWallRight: number;\n    DistanceWallBack: number;\n    DistanceCeiling: number;\n    FirstElement: boolean;\n    LastElement: boolean;\n    HasDockingLeft: boolean;\n    HasDockingRight: boolean;\n    HeightPosition: number;\n    SlopedCeiling: boolean;\n    SlopedCeilingDirection: 'toLeft' | 'toRight' | 'toBack' | null;\n    SlopedCeilingAngle: number;\n    SlopedCeilingLevel: number;\n    DataComplete: boolean;\n    SuggestedDirection: 'Left' | 'Right' | null;\n    HasCeilingInformation: boolean;\n}"
+}

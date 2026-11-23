@@ -5,7 +5,7 @@
   "isRoot": false,
   "description": "Top shelf for storage unit",
   "groupName": "CarcaseConstructionParts",
-  "imageId": "e7dbb0bb-aa0f-4851-8f11-055e64a19ba1:Hob_Removable.jpg",
+  "imageId": "e0378dd4-ea36-4f3d-b686-ff25d5a3f51c:Hob_Removable.jpg",
   "restrictionTypeId": "Internal",
   "childModules": [],
   "assignedVariants": [
@@ -91,6 +91,26 @@
       "previewValue": "false",
       "required": false,
       "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnDebug",
+      "default": "true",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnShelfOrigin",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnWrapInfo",
+      "default": "",
+      "required": false,
+      "derive": false,
       "fixed": false
     },
     {
@@ -229,5 +249,9 @@
     }
   ],
   "assignedCustomTables": [],
-  "assignedFunctions": []
+  "assignedFunctions": [
+    {
+      "functionId": "process_StorageunitColumnPass"
+    }
+  ]
 }

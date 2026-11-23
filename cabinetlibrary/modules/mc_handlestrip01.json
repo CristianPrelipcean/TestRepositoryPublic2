@@ -5,7 +5,7 @@
   "isRoot": false,
   "description": "Management of the handle strip",
   "groupName": "Handle",
-  "imageId": "16bf0ad7-44f8-4b0d-9a90-4e5e277c7a77:HandleStrip.jpg",
+  "imageId": "40eef44c-6baa-4b36-ac41-5bc3b20eaf55:HandleStrip.jpg",
   "restrictionTypeId": "Internal",
   "childModules": [],
   "assignedVariants": [
@@ -14,6 +14,26 @@
       "previewValue": "600",
       "required": false,
       "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnDebug",
+      "default": "true",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnShelfOrigin",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnWrapInfo",
+      "default": "",
+      "required": false,
+      "derive": false,
       "fixed": false
     },
     {
@@ -274,6 +294,9 @@
   "assignedFunctions": [
     {
       "functionId": "process_HandlestripPos"
+    },
+    {
+      "functionId": "process_StorageunitColumnPass"
     }
   ]
 }

@@ -7,10 +7,30 @@
   "isDropContainer": false,
   "description": "Hardware for the pantry pull out",
   "groupName": "Hardware",
-  "imageId": "76bfab56-fcf2-4b8b-8f79-499443f2584f:PantryPulloutHardware.png",
+  "imageId": "3493e3c1-92e3-46ef-8656-a186a59a6642:PantryPulloutHardware.png",
   "restrictionTypeId": "Internal",
   "childModules": [],
   "assignedVariants": [
+    {
+      "variantId": "mod_ColumnDebug",
+      "default": "true",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnShelfOrigin",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnWrapInfo",
+      "default": "",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
     {
       "variantId": "mod_Depth",
       "default": "575",
@@ -116,5 +136,9 @@
     }
   ],
   "assignedCustomTables": [],
-  "assignedFunctions": []
+  "assignedFunctions": [
+    {
+      "functionId": "process_StorageunitColumnPass"
+    }
+  ]
 }

@@ -6,7 +6,7 @@
   "isConfigDummy": false,
   "isDropContainer": false,
   "groupName": "Equipment",
-  "imageId": "2a69d020-e22b-4dfe-a3f2-9eaa325086ed:ClothingOrganizer.png",
+  "imageId": "098f8a55-7498-4769-8283-82a31f98fd96:ClothingOrganizer.png",
   "restrictionTypeId": "Internal",
   "childModules": [],
   "assignedVariants": [
@@ -15,6 +15,32 @@
       "previewValue": "LikeCarcaseColor",
       "required": false,
       "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ClothingOrganizerId",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnDebug",
+      "default": "true",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnShelfOrigin",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnWrapInfo",
+      "default": "",
+      "required": false,
+      "derive": false,
       "fixed": false
     },
     {
@@ -45,5 +71,9 @@
     }
   ],
   "assignedCustomTables": [],
-  "assignedFunctions": []
+  "assignedFunctions": [
+    {
+      "functionId": "process_StorageunitColumnPass"
+    }
+  ]
 }

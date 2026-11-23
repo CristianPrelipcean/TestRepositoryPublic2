@@ -5,7 +5,7 @@
   "isRoot": false,
   "description": "Front module for fixed fronts",
   "groupName": "FrontModule",
-  "imageId": "8004656a-994c-43e8-90fb-888160d868cf:FixedPanel.jpg",
+  "imageId": "d8e3bde4-a515-4e4e-95c8-51570c4edb24:FixedPanel.jpg",
   "restrictionTypeId": "Public",
   "childModules": [
     {
@@ -59,6 +59,26 @@
       "previewValue": "600",
       "required": false,
       "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnDebug",
+      "default": "true",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnShelfOrigin",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnWrapInfo",
+      "default": "",
+      "required": false,
+      "derive": false,
       "fixed": false
     },
     {
@@ -357,5 +377,9 @@
   ],
   "assignedParts": [],
   "assignedCustomTables": [],
-  "assignedFunctions": []
+  "assignedFunctions": [
+    {
+      "functionId": "process_StorageunitColumnPass"
+    }
+  ]
 }

@@ -19,7 +19,7 @@ process_StockPanelSelection(Elem: any, Part: any, ElementType: string, ElementCa
 		return false;
 	}
 	const board = GlobalFunc.find_BoardLibrary(boardMapping.BoardId);
-	const boardId = board?.MaterialCode ?? '';
+	const boardId = board?.in_MaterialCode ?? '';
 
 	// Guard: no valid boardId
 	if (!boardId) {

@@ -5,7 +5,7 @@
   "isRoot": false,
   "description": "BackSplash",
   "groupName": "Countertop",
-  "imageId": "db7f6db7-89e0-47d4-b5ba-dcf69ea62735:Backsplash.png",
+  "imageId": "6e40a7c2-e819-42ce-ae7b-17fbe1da1c59:Backsplash.png",
   "restrictionTypeId": "Internal",
   "childModules": [],
   "assignedVariants": [
@@ -43,6 +43,26 @@
       "required": false,
       "derive": true,
       "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnDebug",
+      "default": "true",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnShelfOrigin",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnWrapInfo",
+      "default": "",
+      "required": false,
+      "derive": false,
+      "fixed": false
     }
   ],
   "assignedParts": [
@@ -54,5 +74,9 @@
     }
   ],
   "assignedCustomTables": [],
-  "assignedFunctions": []
+  "assignedFunctions": [
+    {
+      "functionId": "process_StorageunitColumnPass"
+    }
+  ]
 }

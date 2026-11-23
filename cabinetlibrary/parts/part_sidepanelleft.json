@@ -4,7 +4,7 @@
   "description": "Sidepanel left",
   "wdt": "YZX",
   "groupName": "Panels",
-  "imageId": "4c519ab4-e519-4acf-bcb4-a25c7c59a177:Sidepanel_Left.png",
+  "imageId": "e8d80d55-c613-4147-b6f4-49c36b028993:Sidepanel_Left.png",
   "invisible": false,
   "restrictionTypeId": "Public",
   "noNcData": false,
@@ -316,6 +316,15 @@
       "bomElementTypeId": "ncout_Group",
       "description": "Drilling for MountingPlate",
       "valueScript": "//====================================================================\n  // Get data for drillings and rotation\n  //====================================================================\n\n  let drillings: any[] = [];\n  let drills: any[] = [];\n  let processings = GlobalFunc.find_ProcessingMapping(part2.pa_ProcessingId2);\n  let insertPoint = GlobalFunc.process_MachiningInsertionHelper('012',part2.pa_Model3DGroupName2)\n  let dimz=99; // DimZ of part_hingeDrill (Fixed in mc_Hinge)\n\n  processings.forEach((processing) => {\n    drills = GlobalFunc.find_HardwareDrillVertLibrary(processing.ProcessingId!, 'Carcase');\n    drills.forEach((drill) => {\n      drillings.push(drill);\n    });\n  });\n\n  //====================================================================\n  // For each drilling (insert the drillings)\n  //====================================================================\n\n  drillings.forEach(x => \n  {  \n    // Add Vertical Drill\n    let DrillVert = this.addncout_DrillVert();\n    DrillVert.nc_TOOL=\"102\";\n    DrillVert.nc_XA=partSelf._dimy - posRel.y - insertPoint.InsertionPointY - x.YA;\n    DrillVert.nc_YA=insertPoint.InsertionPointX + x.XA - (part2.pa_FrontGapCarcase - part2.pa_HingeGapCarcase);\n    DrillVert.nc_TI=x.TI;\n    DrillVert.nc_DU=x.DU;\n\n    DrillVert.nc_BM = x.matrix_BM || \"LS\"\n    DrillVert.nc_WI = x.matrix_WI ?? 0;\n    DrillVert.nc_AB = x.matrix_AB ?? 1;\n    DrillVert.nc_LA = x.matrix_LA ?? 0;\n    DrillVert.nc_MI = x.matrix_MI ?? 0;\n    DrillVert.nc_KO = x.matrix_KO || \"00\";\n    DrillVert.nc_Side = \"Top\";  \n\n    // Add drawing\n    let drilling01 = partSelf.add3DElement('Drilling01', DrillVert, posRel.x, posRel.y + insertPoint.InsertionPointY + x.YA, partSelf._dimz - insertPoint.InsertionPointX - x.XA + (part2.pa_FrontGapCarcase - part2.pa_HingeGapCarcase), -x.TI, x.DU, x.DU );\n    drilling01.extrude('<svg><circle cx=\"' + 0 + '\" cy=\"' + 0 + '\" r=\"' + x.DU/2 + '\" /></svg>', 'x');\n  });",
+      "bomExecuteType": "Touch"
+    },
+    {
+      "id": 676,
+      "part2": "part_InnerDrawerSpacer",
+      "touchName": "FromRight",
+      "bomElementTypeId": "ncout_Group",
+      "description": "Drills for the Inner Drawer Spacer",
+      "valueScript": "/*\n  //====================================================================\n  // Get data for drillings\n  //====================================================================\n\n  // Variables\n  let drillings: ICT_tab_HardwareDrillVertLibrary[] = [];\n\n  // Find all processings for the drawerbox (to each part)\n  let processings = GlobalFunc.find_ProcessingMapping(part2.pa_ProcessingId);\n\n  // Find the drillings for the sidepanel\n  processings.forEach((processing) => {\n    if(processing.ProcessingLibrary == 'DrillVertical'){\n      let foundDrillings = GlobalFunc.find_HardwareDrillVertLibrary(processing.ProcessingId!, 'Carcase');\n      drillings = drillings.concat(foundDrillings);\n    } \n  });\n\n  //====================================================================\n  // For each drilling (insert the drillings)\n  //====================================================================\n\n  drillings.forEach(x => \n  {  \n    // Position of the drill\n    let PosX=posRel.y + x.YA;\n    let PosY=posRel.z + part2._dimz - x.XA;\n\n    // Add Vertical Drill\n    let DrillVert = this.addncout_DrillVert();\n    DrillVert.nc_TOOL=\"102\";\n    DrillVert.nc_XA=partSelf._dimy - posRel.y - x.YA;\n    DrillVert.nc_YA=partSelf._dimz - PosY;\n    DrillVert.nc_TI=x.TI;\n    DrillVert.nc_DU=x.DU;\n\n    DrillVert.nc_BM = x.matrix_BM || \"LS\"\n    DrillVert.nc_WI = x.matrix_WI ?? 0;\n    DrillVert.nc_AB = x.matrix_AB ?? 1;\n    DrillVert.nc_LA = x.matrix_LA ?? 0;\n    DrillVert.nc_MI = x.matrix_MI ?? 0;\n    DrillVert.nc_KO = x.matrix_KO || \"00\";\n    DrillVert.nc_Side = \"Top\";  \n\n    // Add drawing\n    let drilling01 = partSelf.add3DElement('Drilling01', DrillVert, partSelf._dimx-x.TI, PosX, PosY, x.TI, x.DU, x.DU );\n    drilling01.extrude('<svg><circle cx=\"' + 0 + '\" cy=\"' + 0 + '\" r=\"' + x.DU/2 + '\" /></svg>', 'x');\n  })\n*/",
       "bomExecuteType": "Touch"
     },
     {

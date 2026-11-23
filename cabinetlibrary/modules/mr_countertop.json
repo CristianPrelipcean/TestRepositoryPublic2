@@ -5,7 +5,7 @@
   "isRoot": false,
   "description": "Module for countertop",
   "groupName": "Root",
-  "imageId": "5aee166c-8977-473c-88b7-7f66bd511e0b:Countertop.png",
+  "imageId": "63e5b1c4-2c4d-4d2a-9fbe-c2ffcedc45c6:Countertop.png",
   "restrictionTypeId": "Public",
   "generateMethod": "Countertop",
   "childModules": [
@@ -14,6 +14,26 @@
     }
   ],
   "assignedVariants": [
+    {
+      "variantId": "mod_ColumnDebug",
+      "default": "true",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnShelfOrigin",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnWrapInfo",
+      "default": "",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
     {
       "variantId": "mod_CountertopColor",
       "default": "380",
@@ -128,5 +148,9 @@
   ],
   "assignedParts": [],
   "assignedCustomTables": [],
-  "assignedFunctions": []
+  "assignedFunctions": [
+    {
+      "functionId": "process_StorageunitColumnPass"
+    }
+  ]
 }

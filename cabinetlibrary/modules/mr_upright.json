@@ -5,7 +5,7 @@
   "isRoot": true,
   "description": "Module for upright",
   "groupName": "Root",
-  "imageId": "c1318970-4568-4912-b028-8e6444828fa0:AdditionalParts.png",
+  "imageId": "e0d51680-badf-4433-ac60-13bb0955d74c:AdditionalParts.png",
   "restrictionTypeId": "Public",
   "childModules": [
     {
@@ -13,6 +13,26 @@
     }
   ],
   "assignedVariants": [
+    {
+      "variantId": "mod_ColumnDebug",
+      "default": "true",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnShelfOrigin",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnWrapInfo",
+      "default": "",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
     {
       "variantId": "mod_CountertopThk",
       "required": false,
@@ -142,5 +162,9 @@
   ],
   "assignedParts": [],
   "assignedCustomTables": [],
-  "assignedFunctions": []
+  "assignedFunctions": [
+    {
+      "functionId": "process_StorageunitColumnPass"
+    }
+  ]
 }

@@ -7,7 +7,7 @@
   "isDropContainer": false,
   "description": "Module for filler",
   "groupName": "Waste",
-  "imageId": "19cec974-9918-443d-beb1-7f3be48dce1e:Filler.jpg",
+  "imageId": "bb6207db-a169-4776-bb89-aef141de4bfb:Filler.jpg",
   "restrictionTypeId": "Public",
   "childModules": [
     {
@@ -282,6 +282,26 @@
       "defaultGlobalVar": true
     },
     {
+      "variantId": "mod_ColumnDebug",
+      "default": "true",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnShelfOrigin",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnWrapInfo",
+      "default": "",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
       "variantId": "mod_CountertopInfo",
       "default": "",
       "previewValue": "",
@@ -508,31 +528,31 @@
     },
     {
       "variantId": "mod_GlobalFrontOversizeBtm",
-      "default": "0",
       "required": false,
       "derive": false,
-      "fixed": false
+      "fixed": false,
+      "defaultGlobalVar": true
     },
     {
       "variantId": "mod_GlobalFrontOversizeLeft",
-      "default": "0",
       "required": false,
       "derive": false,
-      "fixed": false
+      "fixed": false,
+      "defaultGlobalVar": true
     },
     {
       "variantId": "mod_GlobalFrontOversizeRight",
-      "default": "0",
       "required": false,
       "derive": false,
-      "fixed": false
+      "fixed": false,
+      "defaultGlobalVar": true
     },
     {
       "variantId": "mod_GlobalFrontOversizeTop",
-      "default": "0",
       "required": false,
       "derive": false,
-      "fixed": false
+      "fixed": false,
+      "defaultGlobalVar": true
     },
     {
       "variantId": "mod_HardwareColor",
@@ -717,5 +737,9 @@
     }
   ],
   "assignedCustomTables": [],
-  "assignedFunctions": []
+  "assignedFunctions": [
+    {
+      "functionId": "process_StorageunitColumnPass"
+    }
+  ]
 }

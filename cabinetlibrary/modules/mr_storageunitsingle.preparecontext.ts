@@ -1,112 +1,144 @@
+// HOMAG Digital
+// Create: May 2026
+// By Ludwig Weber
+// Purpose: CabinetLibrary
 
-  // HOMAG Digital
-	// Create: May 2026
-	// By Ludwig Weber
-	// Purpose: CabinetLibrary
-	//
-	// Description:
-	// PREPARECONTEXT of mr_StorageUnitSingle
-	// Read the dockings and room contours
-	// provide the needed data to the module context information list
-	//
-	// Revisions:
-	//
-	//=============================================================================
+// Description:
+// Prepares room and neighbour information for mr_StorageunitSingle.
+// Provides normalized coverage data and calculates insertion and carcase heights.
 
-	//=============================================================================
-	// Prepare the context of the module
-	//=============================================================================
+// Revisions:
+// 2026-11-04 | Ludwig Weber | Remove inactive debug placeholders; preserve optional column fallback.
+// 2026-11-03 | Ludwig Weber | Integrate r10 column-wrap feature while preserving current live behaviour.
+// 2026-11-02 | Ludwig Weber | Nobilia step 1: decoupled carcase finish from spatial side completion.
+// 2026-11-02 | Ludwig Weber | Standardized script headers, block comments and English wording.
+// 2026-11-02 | Ludwig Weber | Calculate master-data cabinets without requiring room information.
 
-	// Create the array of attributes which are set from this script
-	this._forcedInputAttributes = [];
-	// this._forcedInputAttributes.push(); => push the attributes which are set in this script
+//======================================================================
 
-	// Read the dockings and room contours, create an object with the relevant data
-	const result = GlobalFunc.process_GetModuleContextInformation(this);
-	this.mod_ModuleContextInformationList.push(JSON.stringify(result));
+//======================================================================
+// Read base values
+//======================================================================
+let columnDiagnosticStage: string = 'Start';
+try {
+    const ceilingDistance = this.mod_CarcaseCeilingDistance ?? 0;
+    const plinthHeight = this.mod_PlinthAreaHeight ?? 0;
+    const countertopThk = this.mod_CountertopThk ?? 0;
+    const paneltopThk = this.mod_CountertopThk ?? 0;
 
-	// Height position of the module in the room
-	this.mod_HeightPosInsertion = result.HeightPosition ?? 0;
-	this._forcedInputAttributes.push('mod_HeightPosInsertion');
+    //======================================================================
+    // Prepare module context
+    //======================================================================
+    // Reset all attributes forced by this script.
+    this._forcedInputAttributes = [];
 
-	//=============================================================================
-	// Prepare the needed data for the carcase height calculation
-	//=============================================================================
+    // Read dockings and room contours and store the resulting context information.
+    const result = GlobalFunc.process_GetModuleContextInformation(this);
+    this.mod_ModuleContextInformationList.length = 0;
 
-	// Read base values
-	const ceilingDistance = this.mod_CarcaseCeilingDistance ?? 0;
-	const plinthHeight = this.mod_PlinthAreaHeight ?? 0;
-	const countertopThk = this.mod_CountertopThk ?? 0;
-	const paneltopThk = this.mod_CountertopThk ?? 0;
+    // Replace the current snapshot; repeated preparation must not read stale index 0.
+    this.mod_ModuleContextInformationList[0] = JSON.stringify(result);
+    // Column recognition is optional; unavailable context means standard construction.
+    let columnContext: any = { Version: 1, IsComplete: true, HasIntersection: false, Errors: [] as string[] };
+    try {
+        const detected = GlobalFunc.process_StorageunitColumnContext(this);
+        if (detected?.Version === 1 && detected.IsComplete === true) {
+            columnContext = detected;
+        }
+    } catch {
+        // Keep the neutral context and continue normal height and docking calculations.
+    }
+    this.mod_ColumnContext = JSON.stringify(columnContext);
+    this.mod_ColumnWrapInfo[0] = '';
+    this.mod_ColumnShelfOrigin.length = 0;
 
-	// The insertion height only matters if the carcase is placed on the floor.
-	// If the module is placed on a defined placement level, the insertion height is 0.
-	let insertionHeight = plinthHeight;
-	if (this.mod_PlacementLevels !== 'OnFloor') {
-		insertionHeight = 0;
-	}
+    // Determine the actual insertion height of the module in the room.
+    const moduleInsertionHeight =
+        this.mod_PlacementLevels === 'OnFloor' ? plinthHeight : (result.HeightPosition ?? 0);
+    this.mod_HeightPosInsertion = moduleInsertionHeight;
+    this._forcedInputAttributes.push('mod_HeightPosInsertion');
 
-	// Additional height parts above the carcase.
-	// These are only subtracted in FullHeight mode.
-	let topHeight = 0;
+    //======================================================================
+    // Prepare carcase height calculation
+    //======================================================================
+    // The plinth affects the carcase height only when the module is placed on the floor.
+    const carcaseInsertionHeight = this.mod_PlacementLevels === 'OnFloor' ? plinthHeight : 0;
 
-	if (this.mod_CreateCeilingFiller) {
-		topHeight += ceilingDistance;
-	}
+    // Calculate all additional height parts above the carcase.
+    let topHeight = 0;
+    if (this.mod_CreateCeilingFiller) topHeight += ceilingDistance;
+    if (this.mod_CreateCountertop) topHeight += countertopThk;
+    if (this.mod_CreatePaneltop) topHeight += paneltopThk;
 
-	if (this.mod_CreateCountertop) {
-		topHeight += countertopThk;
-	}
+    // Group height adjustment requires information from the group orchestrator.
+    const hasGroupHeight = this.mod_UseGroupHeight && this.mod_GroupHeight != null;
 
-	if (this.mod_CreatePaneltop) {
-		topHeight += paneltopThk;
-	}
+    // Room height adjustment requires an actual room; master-data previews keep their configured height.
+    const hasRoomHeight =
+        result.DataComplete === true &&
+        this.mod_AutomaticHeightAdjustment &&
+        result.DistanceCeiling != null;
 
-	//=============================================================================
-	// Carcase height calculation
-	//=============================================================================
+    // Any active room or group height adjustment requires a calculated height.
+    const hasHeightAdjustment = hasRoomHeight || hasGroupHeight;
 
-	// Check if the height can be calculated by the automatic height adjustment based on the room height
-	const hasAutomaticHeight = this.mod_AutomaticHeightAdjustment && result?.DistanceCeiling != null;
+    //======================================================================
+    // Calculate carcase height
+    //======================================================================
+    let calculatedCarcaseHeight = this.mod_Height ?? 0;
 
-	// Start with the user input height is the carcase height (might be overridden)
-	let calculatedCarcaseHeight = this.mod_Height ?? 0;
+    // In FullHeight mode, subtract all elements outside the carcase.
+    if (this.mod_HeightInputMode === 'FullHeight' && !hasHeightAdjustment) {
+        calculatedCarcaseHeight = (this.mod_Height ?? 0) - topHeight - carcaseInsertionHeight;
+    }
 
-	// The user enters the full height.
-	// Therefore the carcase height must be calculated by subtracting all additional parts
-	if (this.mod_HeightInputMode === 'FullHeight') {
-		if (!hasAutomaticHeight) {
-			calculatedCarcaseHeight = (this.mod_Height ?? 0) - topHeight - insertionHeight;
-		}
-	}
+    // When room height adjustment is active, calculate the carcase height
+    if (hasRoomHeight) {
+        calculatedCarcaseHeight += result.DistanceCeiling - ceilingDistance - carcaseInsertionHeight;
+    }
 
-	// If automatic height adjustment is active, the carcase height is derived from the room height
-	if (hasAutomaticHeight) {
-		calculatedCarcaseHeight += result.DistanceCeiling - ceilingDistance - insertionHeight;
-	}
+    // When group height adjustment is active, calculate the carcase height
+    if (hasGroupHeight) {
+        const groupHeight = this.mod_GroupHeight ?? 0;
+        calculatedCarcaseHeight = groupHeight - moduleInsertionHeight;
+    }
 
-	//=============================================================================
-	// Force calculated attributes
-	//=============================================================================
+    //======================================================================
+    // Store the calculated carcase height
+    //======================================================================
+    if (hasHeightAdjustment) {
+        // In CarcaseHeight mode, mod_Height displays the calculated carcase height.
+        if (this.mod_HeightInputMode === 'CarcaseHeight') {
+            this.mod_Height = calculatedCarcaseHeight;
+            this._forcedInputAttributes.push('mod_Height');
+        }
 
-	// If automatic height adjustment is active
-	//  the carcase height must be forced as it is calculated based on the room height
-	if (hasAutomaticHeight) {
+        // In FullHeight mode, mod_Height displays the resulting total module height.
+        if (this.mod_HeightInputMode === 'FullHeight') {
+            if (hasGroupHeight) {
+                this.mod_Height = calculatedCarcaseHeight + topHeight + carcaseInsertionHeight;
+            } else {
+                this.mod_Height = calculatedCarcaseHeight + carcaseInsertionHeight + ceilingDistance;
+            }
+            this._forcedInputAttributes.push('mod_Height');
+        }
+    }
 
-		// User expects that mod_Height shows the calculated carcase height
-		if (this.mod_HeightInputMode === 'CarcaseHeight') {
-			this.mod_Height = calculatedCarcaseHeight;
-			this._forcedInputAttributes.push('mod_Height');
-		}
+    // Store the actual calculated carcase height.
+    this.mod_CarcaseHeight = calculatedCarcaseHeight;
 
-		// User expects that mod_Height shows the calculated full height
-		if (this.mod_HeightInputMode === 'FullHeight') {
-			this.mod_Height = calculatedCarcaseHeight + insertionHeight + ceilingDistance;
-			this._forcedInputAttributes.push('mod_Height');
-		}		
-	}
-
-	// Store the real carcase height.
-	this.mod_CarcaseHeight = calculatedCarcaseHeight;
-	this._forcedInputAttributes.push('mod_CarcaseHeight');
+    //======================================================================
+    // Call module UserExit
+    //======================================================================
+    const customExtraContext = GlobalFunc.ue_StorageunitAfterContextScrip(this);
+} catch (columnError: unknown) {
+    logError(
+        'mr_StorageunitSingle.PrepareContextScript | ' +
+            columnDiagnosticStage +
+            ' | ' +
+            (columnError instanceof Error ? columnError.message : String(columnError)),
+    );
+    // Never hide the invalid construction behind an apparently successful standard cabinet.
+    throw columnError;
+}
 

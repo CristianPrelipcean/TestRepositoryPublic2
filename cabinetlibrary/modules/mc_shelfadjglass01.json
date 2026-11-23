@@ -5,7 +5,7 @@
   "isRoot": false,
   "description": "Management of the glass adjustable shelf",
   "groupName": "Equipment",
-  "imageId": "85aced94-2502-4294-b5b8-517ec4057103:AdjShelfGlas.jpg",
+  "imageId": "06abe192-6b1d-4aee-ac30-f960fb89979e:AdjShelfGlas.jpg",
   "restrictionTypeId": "Internal",
   "childModules": [],
   "assignedVariants": [
@@ -41,6 +41,33 @@
       "previewValue": "Nature",
       "required": false,
       "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnDebug",
+      "default": "true",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnShelfOrigin",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnShelfSvgPath",
+      "default": "",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnWrapInfo",
+      "default": "",
+      "required": false,
+      "derive": false,
       "fixed": false
     },
     {
@@ -113,5 +140,9 @@
     }
   ],
   "assignedCustomTables": [],
-  "assignedFunctions": []
+  "assignedFunctions": [
+    {
+      "functionId": "process_StorageunitColumnPass"
+    }
+  ]
 }

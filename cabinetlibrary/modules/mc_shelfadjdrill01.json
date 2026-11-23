@@ -5,10 +5,30 @@
   "isRoot": false,
   "description": "Management of the drills for adjustable shelves",
   "groupName": "Equipment",
-  "imageId": "f7c9ed15-5f61-44cf-b075-64b985062c3d:ShelfadjDrill.jpg",
+  "imageId": "2e748c41-067e-4145-b09e-b01e865b923b:ShelfadjDrill.jpg",
   "restrictionTypeId": "Internal",
   "childModules": [],
   "assignedVariants": [
+    {
+      "variantId": "mod_ColumnDebug",
+      "default": "true",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnShelfOrigin",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnWrapInfo",
+      "default": "",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
     {
       "variantId": "mod_Depth",
       "default": "600",
@@ -128,5 +148,9 @@
     }
   ],
   "assignedCustomTables": [],
-  "assignedFunctions": []
+  "assignedFunctions": [
+    {
+      "functionId": "process_StorageunitColumnPass"
+    }
+  ]
 }

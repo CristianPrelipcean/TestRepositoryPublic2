@@ -1,4 +1,4 @@
-process_HardwareBom(Elem: any, Part: any, ElementType: string, ElementCategory: string, ParentId: string, HardwareId: string, Quantity: number = 1 ) {
+process_HardwareBom(Elem: any, Part: any, ElementType: string, ElementCategory: string, ParentId: string, HardwareId: string, Quantity: number = 1, AdditionalInfo: string = "All" ) {
     try {
         
         //================================================================
@@ -22,7 +22,7 @@ process_HardwareBom(Elem: any, Part: any, ElementType: string, ElementCategory: 
         HardwareElements.forEach(info => {
             let elem = Elem.addbomout_Hardware();
             let BOMInfo = GlobalFunc.find_HardwareLibrary(info.SupplierArticleNumber!, info.Supplier!);
-            let BOMName = GlobalFunc.find_PartSettings(Part._partId);
+            let BOMName = GlobalFunc.find_PartSettings(Part._partId, AdditionalInfo);
 
             elem.bom_ElementType = ElementType;
             elem.bom_ElementCategory = ElementCategory;

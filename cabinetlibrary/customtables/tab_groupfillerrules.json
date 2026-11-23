@@ -1,0 +1,343 @@
+{
+  "tableName": "tab_GroupFillerRules",
+  "description": "Defines the filler rules that are applied to the Group Orchestrator",
+  "restrictionTypeId": "Public",
+  "groupName": "GroupOrchestrator",
+  "columns": [
+    {
+      "name": "_id",
+      "type": "Integer",
+      "allowNull": false
+    },
+    {
+      "name": "in_Coverage",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_Side",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_TypeElement",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_ArticleId",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "in_MinWallGap",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "in_MaxWallGap",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "FillerArticleId",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "AdjustmentId",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "MyDockingVector",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "NeighbourDockingVector",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "DockingMode",
+      "type": "Text",
+      "allowNull": true
+    },
+    {
+      "name": "OffsetRight",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "OffsetUp",
+      "type": "Dim",
+      "allowNull": false
+    },
+    {
+      "name": "OffsetFront",
+      "type": "Dim",
+      "allowNull": false
+    }
+  ],
+  "rows": [
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "5"
+        },
+        {
+          "columnName": "in_Coverage",
+          "value": "SingleCabinet"
+        },
+        {
+          "columnName": "in_Side",
+          "value": "Left"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ArticleId",
+          "value": "All"
+        },
+        {
+          "columnName": "in_MinWallGap",
+          "value": "30"
+        },
+        {
+          "columnName": "in_MaxWallGap",
+          "value": "120"
+        },
+        {
+          "columnName": "FillerArticleId",
+          "value": "JL_FillerLeft"
+        },
+        {
+          "columnName": "AdjustmentId",
+          "value": "None"
+        },
+        {
+          "columnName": "MyDockingVector",
+          "value": "RightBottom"
+        },
+        {
+          "columnName": "NeighbourDockingVector",
+          "value": "LeftBottom"
+        },
+        {
+          "columnName": "DockingMode",
+          "value": "EndEnd"
+        },
+        {
+          "columnName": "OffsetRight",
+          "value": "0"
+        },
+        {
+          "columnName": "OffsetUp",
+          "value": "0"
+        },
+        {
+          "columnName": "OffsetFront",
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "6"
+        },
+        {
+          "columnName": "in_Coverage",
+          "value": "SingleCabinet"
+        },
+        {
+          "columnName": "in_Side",
+          "value": "Right"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ArticleId",
+          "value": "All"
+        },
+        {
+          "columnName": "in_MinWallGap",
+          "value": "30"
+        },
+        {
+          "columnName": "in_MaxWallGap",
+          "value": "120"
+        },
+        {
+          "columnName": "FillerArticleId",
+          "value": "JL_FillerRight"
+        },
+        {
+          "columnName": "AdjustmentId",
+          "value": "None"
+        },
+        {
+          "columnName": "MyDockingVector",
+          "value": "LeftBottom"
+        },
+        {
+          "columnName": "NeighbourDockingVector",
+          "value": "RightBottom"
+        },
+        {
+          "columnName": "DockingMode",
+          "value": "EndEnd"
+        },
+        {
+          "columnName": "OffsetRight",
+          "value": "0"
+        },
+        {
+          "columnName": "OffsetUp",
+          "value": "0"
+        },
+        {
+          "columnName": "OffsetFront",
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "7"
+        },
+        {
+          "columnName": "in_Coverage",
+          "value": "ContinuousStack"
+        },
+        {
+          "columnName": "in_Side",
+          "value": "Left"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ArticleId",
+          "value": "All"
+        },
+        {
+          "columnName": "in_MinWallGap",
+          "value": "30"
+        },
+        {
+          "columnName": "in_MaxWallGap",
+          "value": "120"
+        },
+        {
+          "columnName": "FillerArticleId",
+          "value": "JL_FillerLeft"
+        },
+        {
+          "columnName": "AdjustmentId",
+          "value": "None"
+        },
+        {
+          "columnName": "MyDockingVector",
+          "value": "RightBottom"
+        },
+        {
+          "columnName": "NeighbourDockingVector",
+          "value": "LeftTop"
+        },
+        {
+          "columnName": "DockingMode",
+          "value": "EndEnd"
+        },
+        {
+          "columnName": "OffsetRight",
+          "value": "0"
+        },
+        {
+          "columnName": "OffsetUp",
+          "value": "0"
+        },
+        {
+          "columnName": "OffsetFront",
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "8"
+        },
+        {
+          "columnName": "in_Coverage",
+          "value": "ContinuousStack"
+        },
+        {
+          "columnName": "in_Side",
+          "value": "Right"
+        },
+        {
+          "columnName": "in_TypeElement",
+          "value": "All"
+        },
+        {
+          "columnName": "in_ArticleId",
+          "value": "All"
+        },
+        {
+          "columnName": "in_MinWallGap",
+          "value": "30"
+        },
+        {
+          "columnName": "in_MaxWallGap",
+          "value": "120"
+        },
+        {
+          "columnName": "FillerArticleId",
+          "value": "JL_FillerRight"
+        },
+        {
+          "columnName": "AdjustmentId",
+          "value": "None"
+        },
+        {
+          "columnName": "MyDockingVector",
+          "value": "LeftBottom"
+        },
+        {
+          "columnName": "NeighbourDockingVector",
+          "value": "RightBottom"
+        },
+        {
+          "columnName": "DockingMode",
+          "value": "EndEnd"
+        },
+        {
+          "columnName": "OffsetRight",
+          "value": "0"
+        },
+        {
+          "columnName": "OffsetUp",
+          "value": "0"
+        },
+        {
+          "columnName": "OffsetFront",
+          "value": "0"
+        }
+      ]
+    }
+  ],
+  "dataSource": "Default",
+  "changedAt": "2026-11-03T11:11:04.9128646+00:00"
+}

@@ -5,7 +5,7 @@
   "isRoot": false,
   "description": "Management of the wood adjustable shelf",
   "groupName": "Equipment",
-  "imageId": "eb6b1fec-4739-4125-b888-1b890f5c579d:Shelfadj_Wood.png",
+  "imageId": "bb0ae485-8156-4f93-8cdb-1546092e8645:Shelfadj_Wood.png",
   "restrictionTypeId": "Internal",
   "childModules": [],
   "assignedVariants": [
@@ -42,6 +42,33 @@
       "previewValue": "Nature",
       "required": false,
       "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnDebug",
+      "default": "true",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnShelfOrigin",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnShelfSvgPath",
+      "default": "",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnWrapInfo",
+      "default": "",
+      "required": false,
+      "derive": false,
       "fixed": false
     },
     {
@@ -100,5 +127,9 @@
     }
   ],
   "assignedCustomTables": [],
-  "assignedFunctions": []
+  "assignedFunctions": [
+    {
+      "functionId": "process_StorageunitColumnPass"
+    }
+  ]
 }

@@ -5,7 +5,7 @@
   "isRoot": false,
   "description": "Corner unit",
   "groupName": "CarcaseConstruction",
-  "imageId": "d079dcf5-6ace-4316-bc71-c4818002160b:Cornerunit.jpg",
+  "imageId": "f2726fdc-074c-4631-84e8-a4faa23bb58a:Cornerunit.jpg",
   "restrictionTypeId": "Internal",
   "childModules": [
     {
@@ -288,6 +288,26 @@
       "fixed": false
     },
     {
+      "variantId": "mod_ColumnDebug",
+      "default": "true",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnShelfOrigin",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnWrapInfo",
+      "default": "",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
       "variantId": "mod_DepthLeft",
       "previewValue": "548",
       "required": false,
@@ -513,6 +533,9 @@
   "assignedFunctions": [
     {
       "functionId": "process_CornerunitSidepanelConstruction"
+    },
+    {
+      "functionId": "process_StorageunitColumnPass"
     }
   ]
 }

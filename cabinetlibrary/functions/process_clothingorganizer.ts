@@ -79,6 +79,9 @@ process_ClothingOrganizer(m: any): {
 	
 	//--------------- Early return to exit the function if type or Design are None ---------------
 	if (m.mod_ClothingOrganizerType === "None" || m.mod_ClothingOrganizerDesign === "None") {
+		const err = 'Either the ClothingOrganizer design or type is None, or both are None. ';
+		const errorMessage = GlobalFunc.find_ErrorList('Error 40011', 1);
+		logError(errorMessage.Message(err));
 		return clothingOrganizerInfo;
 	}
 
@@ -88,27 +91,27 @@ process_ClothingOrganizer(m: any): {
 	const carcaseClearDepth = m.mod_Depth;
 	const carcaseClearHeight = m.mod_Height;
 
-	const clothingOrganizerDimensions = GlobalFunc.find_ClothingOrganizerInstallationDimensions(m.mod_ClothingOrganizerDesign);
+	const clothingOrganizerDimensions = GlobalFunc.find_ClothingOrganizerInstallationDimensions(m.mod_ClothingOrganizerDesign); // The function might return multiple results
 
 	if (!clothingOrganizerDimensions) {
 	  return clothingOrganizerInfo;
 	}
 
-	const organizerMinWidth = clothingOrganizerDimensions?.ClothingOrganizerInstallationMinWidth ?? 0;
-	const organizerMaxWidth = clothingOrganizerDimensions?.ClothingOrganizerInstallationMaxWidth ?? 0;
-	const organizerMinDepth = clothingOrganizerDimensions?.ClothingOrganizerInstallationMinDepth ?? 0;
-	const organizerMinHeight = clothingOrganizerDimensions?.ClothingOrganizerInstallationMinHeight ?? 0;
+	// Try to find one result (from the list of results) where the carcaseClear dimensions are valid
+	const matchingDimension = clothingOrganizerDimensions.find(dim =>
+  carcaseClearWidth >= (dim.ClothingOrganizerInstallationMinWidth ?? 0) &&
+  carcaseClearWidth <= (dim.ClothingOrganizerInstallationMaxWidth ?? 0) &&
+  carcaseClearDepth >= (dim.ClothingOrganizerInstallationMinDepth ?? 0) &&
+  carcaseClearHeight >= (dim.ClothingOrganizerInstallationMinHeight ?? 0 + (m.mod_ShelffixedBtm ? (m.mod_ShelffixedBtmDistance ?? 0) + (m.mod_ShelffixedThk ?? 0) : 0))
+	);
 
-
-	if (organizerMinWidth > carcaseClearWidth ||
-		organizerMaxWidth < carcaseClearWidth ||
-		organizerMinDepth > carcaseClearDepth ||
-		organizerMinHeight > carcaseClearHeight) {
+	if (!matchingDimension) {
+		const err = 'The cabinet dimensions do not match the selected clothing organizer';
+		const errorMessage = GlobalFunc.find_ErrorList('Error 40011', 1);
+		logError(errorMessage.Message(err));
 		return clothingOrganizerInfo;
 	}
 
-
-	
   try {
     //--------------- Manage the colors -----------------------------------
     
@@ -122,7 +125,8 @@ process_ClothingOrganizer(m: any): {
     }
 
 	//--------------- Get the positionZ of hardware -----------------------------------
-
+	// NOTE JL: Since we got the descriptor available in Sales Configurator, we set the default position in the Prepare Context script. 
+		// This means the attribute is never empty anymore because the value from the table is set directly to the attribute
 	let positionZ = 0;
 	const descriptorAttribute = m.mod_ClothingOrganizerDepthPosition;
 	const positionSettings = GlobalFunc.find_ClothingOrganizerDepthPosition(m.mod_ClothingOrganizerType, m.mod_ClothingOrganizerDesign);
@@ -134,12 +138,10 @@ process_ClothingOrganizer(m: any): {
 		positionZ = descriptorResult?.[0] ?? 0;
 	}
 
-	
-
   //--------------- 3D data for hardware -----------------------------------
 
 	// Retrieve the hardwareId
-	const hardwareMapping = GlobalFunc.find_ClothingOrganizerMapping(m.mod_ClothingOrganizerType, m.mod_ClothingOrganizerDesign, elementColor, m.mod_ClothingOrganizerConnectionPosition);
+	const hardwareMapping = GlobalFunc.find_ClothingOrganizerMapping(m.mod_ClothingOrganizerType, m.mod_ClothingOrganizerDesign, elementColor, m.mod_ClothingOrganizerConnectionPosition, carcaseClearWidth);
 		if (!hardwareMapping) {
 			throw new Error('No clothing organizer mapping found.');	
 		}
@@ -166,20 +168,18 @@ process_ClothingOrganizer(m: any): {
 			throw new Error('No graphic data found for clothing organizer.');
 		}
 
-		// Check if DimX of 3DModel is bigger then the clearWidthMax, then Downscale the Model
-		let model3DWidth = 0
+		// Calculate correct dimensionX for the graphic
+		let model3DWidth = 0;
 		const model3DGraphicDimensionX = graphicInfo.DimensionX
 
-		if (model3DGraphicDimensionX > m.mod_Width) {
+		if (m.mod_ClothingOrganizerConnectionPosition === 'Left&Right') {
 			model3DWidth = m.mod_Width - ((graphicInfo.PartOffsetX ?? 0) * 2);
-		} else if (model3DGraphicDimensionX < 0){
-			model3DWidth = 0;
-		} else if (model3DGraphicDimensionX >= 0 && model3DGraphicDimensionX <= m.mod_Width){
+		} 
+		else if (model3DGraphicDimensionX >= 0 && model3DGraphicDimensionX <= m.mod_Width){
 			model3DWidth = graphicInfo.DimensionX;
 		}
 
 		// Set Position of 3DModel based on Clothing Organizer Connection Position
-
 		let model3D_XPos = 0;
 
 		if (m.mod_ClothingOrganizerConnectionPosition === 'Right') {
@@ -198,8 +198,8 @@ process_ClothingOrganizer(m: any): {
 			DimY: graphicInfo.DimensionY ?? 0,
 			DimZ: graphicInfo.DimensionZ ?? 0,
 			PosX: model3D_XPos,
-			PosY: m.mod_ClothingOrganizerHeightPosition,
-			PosZ: positionZ,
+			PosY: m.mod_ClothingOrganizerHeightPosition - m.mod_Originpos[1] + (graphicInfo.PartOffsetY ?? 0) + matchingDimension.ReservedSpaceBottom,
+			PosZ: positionZ + (graphicInfo.PartOffsetZ ?? 0),
 			Color: graphicInfo.ColorId ?? '',
 		});
 		
@@ -207,7 +207,7 @@ process_ClothingOrganizer(m: any): {
 		//--------------- Processings and BOM ----------------------------------
 
 		// Add all the needed processings (Call the helper)
-		const processings = createProcessingsForGraphic(m, graphicInfo, objectMapping.ProcessingItem ?? '', m.mod_ClothingOrganizerHeightPosition, positionZ);
+		const processings = createProcessingsForGraphic(m, graphicInfo, objectMapping.ProcessingItem ?? '', m.mod_ClothingOrganizerHeightPosition - m.mod_Originpos[1] + matchingDimension.ReservedSpaceBottom, positionZ);
 		clothingOrganizerInfo.Processing.push(...processings);
 	}
 

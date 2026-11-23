@@ -4,7 +4,7 @@
   "description": "Hinge part on carcase",
   "wdt": "XYZ",
   "groupName": "Hardware",
-  "imageId": "4f71849d-5e1a-429c-936d-acc80785ca61:HingeDoor.jpg",
+  "imageId": "abbbf514-541f-4a26-8b79-4bd3d068f6cf:HingeDoor.jpg",
   "model3dImageId": "",
   "invisible": false,
   "restrictionTypeId": "Public",
@@ -26,7 +26,7 @@
       "id": 159,
       "bomElementTypeId": "bomout_Group",
       "description": "Hinge Carcase BOM",
-      "conditionScript": "partSelf._g?.basic_CreateBom == 'Library'",
+      "conditionScript": "partSelf._g?.basic_CreateHardwareBom == 'Library'",
       "valueScript": "// Type of the Bom-Element (will be checked in order output)\n  let elementType='Hardware';\n\n  // ProductionSite Category (to split the orders for different production sites)\n  let elementCategory='';\n\n  // Id of the parent to create the hierarchy\n  let parentBomId=part.pa_ParentName;\n\n  // Call the function to process the Bom-Element\n  GlobalFunc.process_HardwareBom(this, part, elementType, elementCategory, parentBomId, part.pa_HardwareId)"
     }
   ],

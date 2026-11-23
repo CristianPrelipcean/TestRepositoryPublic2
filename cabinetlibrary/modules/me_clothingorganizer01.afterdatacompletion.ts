@@ -35,3 +35,47 @@
     // SetOrigin
     clothingOrganizer.setOrigin(0, movement, 0);
   }
+
+
+
+  //===================================================================================
+  // Add Fixed shelf on Top
+  //===================================================================================
+
+  if (this.mod_ShelffixedTop) {
+    const clothingOrganizerInstallationDimensions = GlobalFunc.find_ClothingOrganizerInstallationDimensions(this.mod_ClothingOrganizerDesign!);
+    let thicknessClothingOrganizer = clothingOrganizerInstallationDimensions[0].ClothingOrganizerInstallationMinHeight ?? 0
+
+    // Add the module
+    let fixedShelfTop = this.addOD_M_mc_StorageunitShelffixed01();
+
+    // Set the attributes  
+    fixedShelfTop.mod_Width = this.mod_Width;
+    fixedShelfTop.mod_Depth = this.mod_Depth - this.mod_ShelffixedTopOffsetFront;
+
+    // Set origin
+    fixedShelfTop.setOrigin(0, movement + this.mod_ClothingOrganizerHeightPosition - this.mod_Originpos[1] + thicknessClothingOrganizer + this.mod_ShelffixedTopDistance, 0);
+
+  }
+  
+
+  //===================================================================================
+  // Add Fixed shelf on Bottom
+  //===================================================================================
+
+
+  if (this.mod_ShelffixedBtm) {
+    // Add the module
+    let fixedShelfBottom = this.addOD_M_mc_StorageunitShelffixed01();
+
+    // Set the attributes  
+    fixedShelfBottom.mod_Width = this.mod_Width;
+    fixedShelfBottom.mod_Depth = this.mod_Depth - this.mod_ShelffixedBtmOffsetFront;
+
+    // Set origin
+    fixedShelfBottom.setOrigin(0, movement + this.mod_ClothingOrganizerHeightPosition - this.mod_Originpos[1] - this.mod_ShelffixedBtmDistance - this.mod_ShelffixedThk, 0);
+
+  }
+
+
+

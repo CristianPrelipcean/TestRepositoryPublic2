@@ -63,8 +63,8 @@ process_BoardBom(Elem: any, Part: any, ElementType: string, ElementCategory: str
         }
 
         const board = GlobalFunc.find_BoardLibrary(boardMapping.BoardId);
-        const material = board?.MaterialCode ?? '';
-        const boardType = board?.BoardType ?? '';
+        const material = board?.in_MaterialCode ?? '';
+        const boardType = board?.Category ?? '';
         const boardGrain = board?.Grain ?? 'N';
 
 

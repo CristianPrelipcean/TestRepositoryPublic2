@@ -5,7 +5,7 @@
   "isRoot": false,
   "description": "Management of the plinth area",
   "groupName": "Toekick",
-  "imageId": "87bc2d05-82e3-494d-826c-47e78ba8ca01:PlinthArea.png",
+  "imageId": "5fa4fece-2fa0-4932-9ebb-2d52ffd2fe53:PlinthArea.png",
   "restrictionTypeId": "Internal",
   "childModules": [
     {
@@ -46,6 +46,26 @@
       "previewValue": "600",
       "required": false,
       "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnDebug",
+      "default": "true",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnShelfOrigin",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnWrapInfo",
+      "default": "",
+      "required": false,
+      "derive": false,
       "fixed": false
     },
     {
@@ -181,6 +201,9 @@
   "assignedFunctions": [
     {
       "functionId": "process_PlinthAreaLegs"
+    },
+    {
+      "functionId": "process_StorageunitColumnPass"
     },
     {
       "functionId": "ue_PlinthAreaLegs"

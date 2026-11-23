@@ -217,6 +217,8 @@ process_Handle(m: IFuncParents_mc_Handle01) {
 		// Via HandleLine
 		else {
 
+			HandleLength = GraphicInfo?.DimensionX ?? 0;
+
 			//---------------vertical sector
 
 			if (PartGroup == 'Door') {
@@ -247,15 +249,15 @@ process_Handle(m: IFuncParents_mc_Handle01) {
 
 				// Find handle position Up
 				let retHandleUp = GlobalFunc.find_HandleConstruction(PartGroup!, SectorHor!, 'Up', PosType!, retHandleSetting.ReferencePointX!, retHandleSetting.ReferencePointY!)
-				let tmpPosUp = retHandleUp.PosY1(m, retHandleSetting.DistanceY, HardwareInfo!.Length, HardwareInfo!.Thickness, DrillDistance, tmpHandleLine);
+				let tmpPosUp = retHandleUp.PosY1(m, retHandleSetting.DistanceY, HandleLength, HardwareInfo!.Thickness, DrillDistance, tmpHandleLine);
 
 				// Find handle position Center
 				let retHandleCenter = GlobalFunc.find_HandleConstruction(PartGroup!, SectorHor!, 'Center', PosType!, retHandleSetting.ReferencePointX!, retHandleSetting.ReferencePointY!)
-				let tmpPosCenter = retHandleCenter.PosY1(m, retHandleSetting.DistanceY, HardwareInfo!.Length, HardwareInfo!.Thickness, DrillDistance, tmpHandleLine);
+				let tmpPosCenter = retHandleCenter.PosY1(m, retHandleSetting.DistanceY, HandleLength, HardwareInfo!.Thickness, DrillDistance, tmpHandleLine);
 
 				// Find handle position Down
 				let retHandleDown = GlobalFunc.find_HandleConstruction(PartGroup!, SectorHor!, 'Down', PosType!, retHandleSetting.ReferencePointX!, retHandleSetting.ReferencePointY!)
-				let tmpPosDown = retHandleDown.PosY1(m, retHandleSetting.DistanceY, HardwareInfo!.Length, HardwareInfo!.Thickness, DrillDistance, tmpHandleLine);
+				let tmpPosDown = retHandleDown.PosY1(m, retHandleSetting.DistanceY, HandleLength, HardwareInfo!.Thickness, DrillDistance, tmpHandleLine);
 
 				// Compare the positions and decide the sector
 				if (tmpPosCenter < tmpPosDown) { SectorVert = 'Down'; }
@@ -269,8 +271,6 @@ process_Handle(m: IFuncParents_mc_Handle01) {
 		let retHandleConstr = GlobalFunc.find_HandleConstruction(PartGroup!, SectorHor!, SectorVert!, PosType!, retHandleSetting.ReferencePointX!, retHandleSetting.ReferencePointY!);
 
 		//---------------Check if handle length fit to the front dimension----
-
-		HandleLength = GraphicInfo?.DimensionX ?? 0;
 
 		if (HandleRotation == 0 || HandleRotation == 180) {
 			if (m.mod_Width <= HandleLength) {

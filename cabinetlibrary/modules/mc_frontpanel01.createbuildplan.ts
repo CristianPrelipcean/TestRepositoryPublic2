@@ -19,6 +19,7 @@
   // Ludwig Weber March 2025
   // Add the fixed front
   //================================================================================================
+  
 
 
   //================================================================================================
@@ -66,7 +67,7 @@
       // Add part by invoking createPart method
       let element = createPart();
 
-      
+      let svgBasedPart: boolean = false;
 
       //================================================================================================
       // Common assignments
@@ -127,6 +128,7 @@
                       : `0,0 ${this.mod_Width},0 ${this.mod_Width-this.mod_Depth},${this.mod_Depth} 0,${this.mod_Depth}`;
 
         element.extrude(`<svg><polygon points="${points}" /></svg>`, 'y'); 
+        svgBasedPart = true;
       }
 
       // Construction with InSetHandles
@@ -166,24 +168,25 @@
               let handleMillings = GlobalFunc.find_HardwareMilingLibrary(handleProcessing.ProcessingId!, 'Front')
               handleMillings.forEach(handleMilling => {
                 //Add SvgPath for the Pocket (Rotation of Handle affects the SvgPath)
+                const frontOversizeBtm = this.g.basic_HandlePosFrontOversize == "IncludeFrontOversizeBottom" ? this.mod_FrontOversizeBtm : 0;
                 if (retHandle.Rotation == 0) {
                   let posV = retHandle.PosVertical - handleMilling.BR(0, 0, 0, 0)/2;
-                  let posH = retHandle.PosHorizontal - handleMilling.LA(0, 0, 0, 0)/2;              
+                  let posH = retHandle.PosHorizontal - handleMilling.LA(0, 0, 0, 0) / 2 + frontOversizeBtm;              
                   points += `M${posV},${posH} l0,${handleMilling.LA(0, 0, 0, 0)} l${handleMilling.BR(0, 0, 0, 0)},0 l0,-${handleMilling.LA(0, 0, 0, 0)} Z`;
                 }
                 else if (retHandle.Rotation == 90) {
                   let posV = retHandle.PosVertical - handleMilling.LA(0, 0, 0, 0)/2;
-                  let posH = retHandle.PosHorizontal - handleMilling.BR(0, 0, 0, 0)/2;              
+                  let posH = retHandle.PosHorizontal - handleMilling.BR(0, 0, 0, 0) / 2 + frontOversizeBtm;              
                   points += `M${posV},${posH} l0,${handleMilling.BR(0, 0, 0, 0)} l${handleMilling.LA(0, 0, 0, 0)},0 l0,-${handleMilling.BR(0, 0, 0, 0)} Z`;
                 }
                 else if (retHandle.Rotation == 180) {
                   let posV = retHandle.PosVertical - handleMilling.BR(0, 0, 0, 0)/2;
-                  let posH = retHandle.PosHorizontal - handleMilling.LA(0, 0, 0, 0)/2;              
+                  let posH = retHandle.PosHorizontal - handleMilling.LA(0, 0, 0, 0) / 2 + frontOversizeBtm;              
                   points += `M${posV},${posH} l0,${handleMilling.LA(0, 0, 0, 0)} l${handleMilling.BR(0, 0, 0, 0)},0 l0,-${handleMilling.LA(0, 0, 0, 0)} Z`;
                 }
                 else if (retHandle.Rotation == 270) {
                   let posV = retHandle.PosVertical - handleMilling.LA(0, 0, 0, 0)/2;
-                  let posH = retHandle.PosHorizontal - handleMilling.BR(0, 0, 0, 0)/2;              
+                  let posH = retHandle.PosHorizontal - handleMilling.BR(0, 0, 0, 0) / 2 + frontOversizeBtm;              
                   points += `M${posV},${posH} l0,${handleMilling.BR(0, 0, 0, 0)} l${handleMilling.LA(0, 0, 0, 0)},0 l0,-${handleMilling.BR(0, 0, 0, 0)} Z`;
                 }
               })
@@ -192,10 +195,11 @@
         }
         // Extrude element (Door + pocket)
         element.extrude('<svg><path d="' + points + '"></path></svg>', 'z');
+        svgBasedPart = true;
       }
 
       // Add the material to Door
-      GlobalFunc.process_AddMaterialFront(element, this, materialCategory, retFrontConstruction.retSpecificConstruction.GrainDirection, FrontEdgeColor);
+      GlobalFunc.process_AddMaterialFront(element, this, materialCategory, retFrontConstruction.retSpecificConstruction.GrainDirection, FrontEdgeColor, 'None', svgBasedPart);
 
       // Front opening
       if (opening) {
@@ -210,7 +214,7 @@
         let VirtualPartOnBack = this.addpart_VirtualFront(0, 0, 0, this.mod_Width, this.mod_Height, 0.5);
 
         // Add the material
-        GlobalFunc.process_AddMaterialFront(VirtualPartOnBack, this, materialCategory, retFrontConstruction.retSpecificConstruction.GrainDirection, FrontEdgeColor);
+        GlobalFunc.process_AddMaterialFront(VirtualPartOnBack, this, materialCategory, retFrontConstruction.retSpecificConstruction.GrainDirection, FrontEdgeColor, 'None', false);
 
         // Front opening
         if (opening) {

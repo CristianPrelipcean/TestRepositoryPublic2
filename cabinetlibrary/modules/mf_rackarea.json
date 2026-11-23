@@ -5,7 +5,7 @@
   "isRoot": false,
   "description": "Front module for rack area",
   "groupName": "FrontModule",
-  "imageId": "cd6b613f-4b80-4cbe-bec4-53175a7291de:RackArea.jpg",
+  "imageId": "5e3ee455-1f47-4354-bd36-6c57e7079b8a:RackArea.jpg",
   "restrictionTypeId": "Public",
   "childModules": [
     {
@@ -18,13 +18,28 @@
       "moduleId": "mc_ShelffixedGroup01"
     },
     {
+      "moduleId": "md_EquipmentPlaceholder"
+    },
+    {
+      "moduleId": "me_Appliance"
+    },
+    {
       "moduleId": "me_ClothingOrganizer01"
+    },
+    {
+      "moduleId": "me_InnerDrawerGroup"
     },
     {
       "moduleId": "me_LaundryMachine"
     },
     {
       "moduleId": "me_ShelfadjMultiple01"
+    },
+    {
+      "moduleId": "me_Shelffixed01"
+    },
+    {
+      "moduleId": "me_Vertdivider01"
     }
   ],
   "assignedVariants": [
@@ -97,6 +112,34 @@
       "previewValue": "600",
       "required": false,
       "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnDebug",
+      "default": "true",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnShelfOrigin",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnWrapInfo",
+      "default": "",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_CompartmentsInformation",
+      "default": "",
+      "previewValue": "",
+      "required": false,
+      "derive": false,
       "fixed": false
     },
     {
@@ -443,5 +486,9 @@
   ],
   "assignedParts": [],
   "assignedCustomTables": [],
-  "assignedFunctions": []
+  "assignedFunctions": [
+    {
+      "functionId": "process_StorageunitColumnPass"
+    }
+  ]
 }

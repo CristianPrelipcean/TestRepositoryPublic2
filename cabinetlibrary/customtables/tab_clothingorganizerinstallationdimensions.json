@@ -32,6 +32,16 @@
       "name": "ClothingOrganizerInstallationMinDepth",
       "type": "Dim",
       "allowNull": false
+    },
+    {
+      "name": "BlocksSpaceInHeight",
+      "type": "Bool",
+      "allowNull": true
+    },
+    {
+      "name": "ReservedSpaceBottom",
+      "type": "Dim",
+      "allowNull": false
     }
   ],
   "rows": [
@@ -39,7 +49,7 @@
       "data": [
         {
           "columnName": "_id",
-          "value": "15"
+          "value": "29"
         },
         {
           "columnName": "in_ClothingOrganizerDesign",
@@ -51,15 +61,23 @@
         },
         {
           "columnName": "ClothingOrganizerInstallationMaxWidth",
-          "value": "628"
+          "value": "9999"
         },
         {
           "columnName": "ClothingOrganizerInstallationMinHeight",
-          "value": "1314"
+          "value": "800"
         },
         {
           "columnName": "ClothingOrganizerInstallationMinDepth",
           "value": "355"
+        },
+        {
+          "columnName": "BlocksSpaceInHeight",
+          "value": "true"
+        },
+        {
+          "columnName": "ReservedSpaceBottom",
+          "value": "50"
         }
       ]
     },
@@ -67,7 +85,7 @@
       "data": [
         {
           "columnName": "_id",
-          "value": "16"
+          "value": "30"
         },
         {
           "columnName": "in_ClothingOrganizerDesign",
@@ -79,15 +97,23 @@
         },
         {
           "columnName": "ClothingOrganizerInstallationMaxWidth",
-          "value": "628"
+          "value": "9999"
         },
         {
           "columnName": "ClothingOrganizerInstallationMinHeight",
-          "value": "1314"
+          "value": "800"
         },
         {
           "columnName": "ClothingOrganizerInstallationMinDepth",
           "value": "355"
+        },
+        {
+          "columnName": "BlocksSpaceInHeight",
+          "value": "true"
+        },
+        {
+          "columnName": "ReservedSpaceBottom",
+          "value": "50"
         }
       ]
     },
@@ -95,7 +121,7 @@
       "data": [
         {
           "columnName": "_id",
-          "value": "17"
+          "value": "31"
         },
         {
           "columnName": "in_ClothingOrganizerDesign",
@@ -116,6 +142,14 @@
         {
           "columnName": "ClothingOrganizerInstallationMinDepth",
           "value": "482"
+        },
+        {
+          "columnName": "BlocksSpaceInHeight",
+          "value": "true"
+        },
+        {
+          "columnName": "ReservedSpaceBottom",
+          "value": "450"
         }
       ]
     },
@@ -123,7 +157,7 @@
       "data": [
         {
           "columnName": "_id",
-          "value": "18"
+          "value": "32"
         },
         {
           "columnName": "in_ClothingOrganizerDesign",
@@ -144,6 +178,230 @@
         {
           "columnName": "ClothingOrganizerInstallationMinDepth",
           "value": "475"
+        },
+        {
+          "columnName": "BlocksSpaceInHeight",
+          "value": "false"
+        },
+        {
+          "columnName": "ReservedSpaceBottom",
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "33"
+        },
+        {
+          "columnName": "in_ClothingOrganizerDesign",
+          "value": "PulloutMirror_1155mm"
+        },
+        {
+          "columnName": "ClothingOrganizerInstallationMinWidth",
+          "value": "100"
+        },
+        {
+          "columnName": "ClothingOrganizerInstallationMaxWidth",
+          "value": "9999"
+        },
+        {
+          "columnName": "ClothingOrganizerInstallationMinHeight",
+          "value": "1155"
+        },
+        {
+          "columnName": "ClothingOrganizerInstallationMinDepth",
+          "value": "500"
+        },
+        {
+          "columnName": "BlocksSpaceInHeight",
+          "value": "false"
+        },
+        {
+          "columnName": "ReservedSpaceBottom",
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "34"
+        },
+        {
+          "columnName": "in_ClothingOrganizerDesign",
+          "value": "JewelleryDrawer"
+        },
+        {
+          "columnName": "ClothingOrganizerInstallationMinWidth",
+          "value": "560"
+        },
+        {
+          "columnName": "ClothingOrganizerInstallationMaxWidth",
+          "value": "618"
+        },
+        {
+          "columnName": "ClothingOrganizerInstallationMinHeight",
+          "value": "80"
+        },
+        {
+          "columnName": "ClothingOrganizerInstallationMinDepth",
+          "value": "500"
+        },
+        {
+          "columnName": "BlocksSpaceInHeight",
+          "value": "true"
+        },
+        {
+          "columnName": "ReservedSpaceBottom",
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "35"
+        },
+        {
+          "columnName": "in_ClothingOrganizerDesign",
+          "value": "JewelleryDrawer"
+        },
+        {
+          "columnName": "ClothingOrganizerInstallationMinWidth",
+          "value": "660"
+        },
+        {
+          "columnName": "ClothingOrganizerInstallationMaxWidth",
+          "value": "718"
+        },
+        {
+          "columnName": "ClothingOrganizerInstallationMinHeight",
+          "value": "80"
+        },
+        {
+          "columnName": "ClothingOrganizerInstallationMinDepth",
+          "value": "500"
+        },
+        {
+          "columnName": "BlocksSpaceInHeight",
+          "value": "true"
+        },
+        {
+          "columnName": "ReservedSpaceBottom",
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "36"
+        },
+        {
+          "columnName": "in_ClothingOrganizerDesign",
+          "value": "JewelleryDrawer"
+        },
+        {
+          "columnName": "ClothingOrganizerInstallationMinWidth",
+          "value": "760"
+        },
+        {
+          "columnName": "ClothingOrganizerInstallationMaxWidth",
+          "value": "818"
+        },
+        {
+          "columnName": "ClothingOrganizerInstallationMinHeight",
+          "value": "80"
+        },
+        {
+          "columnName": "ClothingOrganizerInstallationMinDepth",
+          "value": "500"
+        },
+        {
+          "columnName": "BlocksSpaceInHeight",
+          "value": "true"
+        },
+        {
+          "columnName": "ReservedSpaceBottom",
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "37"
+        },
+        {
+          "columnName": "in_ClothingOrganizerDesign",
+          "value": "JewelleryDrawer"
+        },
+        {
+          "columnName": "ClothingOrganizerInstallationMinWidth",
+          "value": "860"
+        },
+        {
+          "columnName": "ClothingOrganizerInstallationMaxWidth",
+          "value": "918"
+        },
+        {
+          "columnName": "ClothingOrganizerInstallationMinHeight",
+          "value": "80"
+        },
+        {
+          "columnName": "ClothingOrganizerInstallationMinDepth",
+          "value": "500"
+        },
+        {
+          "columnName": "BlocksSpaceInHeight",
+          "value": "true"
+        },
+        {
+          "columnName": "ReservedSpaceBottom",
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "columnName": "_id",
+          "value": "38"
+        },
+        {
+          "columnName": "in_ClothingOrganizerDesign",
+          "value": "ClothingRail"
+        },
+        {
+          "columnName": "ClothingOrganizerInstallationMinWidth",
+          "value": "100"
+        },
+        {
+          "columnName": "ClothingOrganizerInstallationMaxWidth",
+          "value": "9999"
+        },
+        {
+          "columnName": "ClothingOrganizerInstallationMinHeight",
+          "value": "50"
+        },
+        {
+          "columnName": "ClothingOrganizerInstallationMinDepth",
+          "value": "20"
+        },
+        {
+          "columnName": "BlocksSpaceInHeight",
+          "value": "true"
+        },
+        {
+          "columnName": "ReservedSpaceBottom",
+          "value": "0"
         }
       ]
     }

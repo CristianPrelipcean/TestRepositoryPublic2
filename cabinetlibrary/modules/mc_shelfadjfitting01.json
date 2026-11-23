@@ -5,13 +5,33 @@
   "isRoot": false,
   "description": "Management of the fittings for adjustable shelves",
   "groupName": "Equipment",
-  "imageId": "6cf59972-4ca9-4fa9-8bc1-31c1c5773ea7:ShelfadjFitting.jpg",
+  "imageId": "2a961626-e59f-40f5-aa11-d7b8b9a0a026:ShelfadjFitting.jpg",
   "restrictionTypeId": "Internal",
   "childModules": [],
   "assignedVariants": [
     {
       "variantId": "mod_CarcaseId",
       "default": "None",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnDebug",
+      "default": "true",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnShelfOrigin",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnWrapInfo",
+      "default": "",
       "required": false,
       "derive": false,
       "fixed": false
@@ -127,9 +147,16 @@
       "partCode": "part_HardwareShelfadjDrill"
     },
     {
+      "partCode": "part_ShelfAdjPinDrill"
+    },
+    {
       "partCode": "part_ShelfadjFitting"
     }
   ],
   "assignedCustomTables": [],
-  "assignedFunctions": []
+  "assignedFunctions": [
+    {
+      "functionId": "process_StorageunitColumnPass"
+    }
+  ]
 }

@@ -1,0 +1,45 @@
+{
+  "moduleId": "me_Appliance",
+  "shortName": "Appliance",
+  "configurable": true,
+  "isRoot": false,
+  "isConfigDummy": false,
+  "isGroupOrchestrator": false,
+  "isDropContainer": false,
+  "description": "Appliance",
+  "groupName": "Appliance",
+  "imageId": "a703fa2c-6432-4684-a2b4-2a43103a668b:TV.png",
+  "restrictionTypeId": "Public",
+  "childModules": [
+    {
+      "moduleId": "mc_ApplianceGraphic"
+    }
+  ],
+  "assignedVariants": [
+    {
+      "variantId": "mod_ApplianceId",
+      "default": "TV50",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ApplianceSupplier",
+      "default": "GenericSupplier",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_CarcaseSpaceDimension",
+      "default": "",
+      "previewValue": "",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    }
+  ],
+  "assignedParts": [],
+  "assignedCustomTables": [],
+  "assignedFunctions": []
+}

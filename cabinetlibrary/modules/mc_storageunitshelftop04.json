@@ -5,7 +5,7 @@
   "isRoot": false,
   "description": "Top shelf for storage unit",
   "groupName": "CarcaseConstructionParts",
-  "imageId": "79797139-2290-48c9-9586-ce5b2f3d96bf:SlopedCeiling_TS.png",
+  "imageId": "998665bd-a7ca-4842-a085-3d382a35f911:SlopedCeiling_TS.png",
   "restrictionTypeId": "Internal",
   "childModules": [],
   "assignedVariants": [
@@ -112,6 +112,26 @@
       "previewValue": "false",
       "required": false,
       "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnDebug",
+      "default": "true",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnShelfOrigin",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnWrapInfo",
+      "default": "",
+      "required": false,
+      "derive": false,
       "fixed": false
     },
     {
@@ -265,5 +285,9 @@
     }
   ],
   "assignedCustomTables": [],
-  "assignedFunctions": []
+  "assignedFunctions": [
+    {
+      "functionId": "process_StorageunitColumnPass"
+    }
+  ]
 }

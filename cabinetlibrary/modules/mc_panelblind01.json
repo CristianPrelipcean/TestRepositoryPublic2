@@ -5,7 +5,7 @@
   "isRoot": false,
   "description": "Panel Blind",
   "groupName": "CarcaseConstructionParts",
-  "imageId": "2631ef33-90a9-42d5-90e8-c83dfcf05d0d:PanelBlind.jpg",
+  "imageId": "3304b5d6-44b1-40c7-87fa-730724fa6e47:PanelBlind.jpg",
   "restrictionTypeId": "Internal",
   "childModules": [],
   "assignedVariants": [
@@ -91,6 +91,26 @@
       "previewValue": "Demoprogram1",
       "required": false,
       "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnDebug",
+      "default": "true",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnShelfOrigin",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnWrapInfo",
+      "default": "",
+      "required": false,
+      "derive": false,
       "fixed": false
     },
     {
@@ -205,5 +225,9 @@
     }
   ],
   "assignedCustomTables": [],
-  "assignedFunctions": []
+  "assignedFunctions": [
+    {
+      "functionId": "process_StorageunitColumnPass"
+    }
+  ]
 }

@@ -4,10 +4,11 @@
   "configurable": true,
   "isRoot": false,
   "isConfigDummy": false,
+  "isGroupOrchestrator": false,
   "isDropContainer": false,
   "description": "Front module for corner filler",
   "groupName": "FrontModule",
-  "imageId": "610a88de-d271-465d-9364-94ed8a60aab0:CornerFillerFront.jpg",
+  "imageId": "dc0d661e-82a4-4d74-a551-0b098fab5c98:CornerFillerFront.jpg",
   "restrictionTypeId": "Public",
   "childModules": [
     {
@@ -56,6 +57,26 @@
       "previewValue": "600",
       "required": false,
       "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnDebug",
+      "default": "true",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnShelfOrigin",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnWrapInfo",
+      "default": "",
+      "required": false,
+      "derive": false,
       "fixed": false
     },
     {
@@ -323,6 +344,9 @@
   "assignedFunctions": [
     {
       "functionId": "process_CornerFillerFrontpanelConstruction"
+    },
+    {
+      "functionId": "process_StorageunitColumnPass"
     }
   ]
 }

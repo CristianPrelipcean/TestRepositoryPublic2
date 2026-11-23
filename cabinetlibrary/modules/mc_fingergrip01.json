@@ -5,10 +5,30 @@
   "isRoot": false,
   "description": "Construction module for the fingergrip",
   "groupName": "Fingergrip",
-  "imageId": "f6361ed8-9404-4360-bb6b-53a415d6f2ac:Fingrgrip.jpg",
+  "imageId": "8baa1e0c-8873-4a6e-85b4-22990ba266fd:Fingrgrip.jpg",
   "restrictionTypeId": "Internal",
   "childModules": [],
   "assignedVariants": [
+    {
+      "variantId": "mod_ColumnDebug",
+      "default": "true",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnShelfOrigin",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnWrapInfo",
+      "default": "",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
     {
       "variantId": "mod_FingergripColor",
       "previewValue": "DemoBlue",
@@ -47,5 +67,9 @@
     }
   ],
   "assignedCustomTables": [],
-  "assignedFunctions": []
+  "assignedFunctions": [
+    {
+      "functionId": "process_StorageunitColumnPass"
+    }
+  ]
 }

@@ -7,10 +7,30 @@
   "isDropContainer": false,
   "description": "Mirror for boards or doors",
   "groupName": "EquipmentConstruction",
-  "imageId": "40d4a3f8-e2ca-41c5-ac05-ea89688bfa08:Mirrorboard.png",
+  "imageId": "fd644371-46f6-42a3-b82d-127dccfcaae2:Mirrorboard.png",
   "restrictionTypeId": "Internal",
   "childModules": [],
   "assignedVariants": [
+    {
+      "variantId": "mod_ColumnDebug",
+      "default": "true",
+      "required": false,
+      "derive": true,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnShelfOrigin",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "mod_ColumnWrapInfo",
+      "default": "",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
     {
       "variantId": "mod_FrontId",
       "previewValue": "Mirror01",
@@ -52,5 +72,9 @@
     }
   ],
   "assignedCustomTables": [],
-  "assignedFunctions": []
+  "assignedFunctions": [
+    {
+      "functionId": "process_StorageunitColumnPass"
+    }
+  ]
 }
