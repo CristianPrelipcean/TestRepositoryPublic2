@@ -5,13 +5,20 @@
   // Migration of 'Output_ProductionManager' to the OrderDetails structure.
   // OrderManager calculates the configuration and stores the calculated BOM of each
   // ConfigurationPosition in its additional property '_bom' (serialized CalcBomResult).
-  // For every such position this script
-  //  - creates the BOM items (Component / Part / Resource) like the productionManager XML,
-  //  - creates the MPR files (flags.partProcessings) and part drawings (flags.partDrawings),
-  //  - adds a production 'Position' with 'externalSystemId' = configuration position id,
-  //    which OrderManager uses to merge the production data into the order.
+  // For every such position this script creates the BOM items (Component / Part / Resource)
+  // like the productionManager XML and adds them as production 'Position' with
+  // 'externalSystemId' = configuration position id, which OrderManager uses to merge the
+  // production data into the order. Nothing is created without flags.bom.
+  // flags.partProcessings / flags.partDrawings additionally create the MPR files / part drawings.
+  // Like the productionManager XML, the parts have no barcode: the LIB barcode is only unique
+  // within one configuration and productionManager rejects duplicates, so it assigns the barcodes.
   // Generated files are referenced by AdditionalDataEntity.name; the service uploads them
   // and fills in the download URLs.
+  //
+  // Note: this is an interim solution. A future version will generate everything (BOM,
+  // drawings, processings) directly from the OrderDetails, without the '_bom' property on
+  // the configuration positions, and will use updated methods to create the drawings and
+  // processings.
   //===================================================
 
   const bomPropertyName = "_bom";
@@ -113,25 +120,41 @@
     return [...unique.values()];
   }
 
-  const createProductionPosition = (configPos: any): any => {
-    positionCount++;
-    const bomData = configPos[bomPropertyName];
-    if (bomData === undefined || bomData === null || bomData === "") {
-      return undefined;
-    }
-    positionsWithBom++;
+  interface PositionFiles {
+    positionNumber: string;
+    filePrefix: string;
+    downloadPrefix: string;
+    mprFiles: Map<string, BomOutputFileEntry>;
+    drawingFiles: Map<string, BomOutputFileEntry>;
+  }
 
-    const parts = loadBomParts(bomData);
+  // Create the requested NC-Data (MPR) and drawings of a configuration position
+  const createPositionFiles = (configPos: any, parts: PartBase[]): PositionFiles => {
     const positionNumber: string = String(configPos.positionNumber ?? configPos.name ?? positionCount);
     const filePrefix = "Images/" + configPos.id + "_";
-    const downloadPrefix = positionNumber + "_";
-
-    // NC-Data (MPR) and drawings
     const mprFiles = flags.partProcessings === true ? createBomOutputById(parts, "Create_Mpr") : new Map<string, BomOutputFileEntry>();
     const drawingFiles = flags.partDrawings === true ? createBomOutputById(parts, "Create_Drawing") : new Map<string, BomOutputFileEntry>();
     mprFiles.forEach((value, key) => this.createFileEntry(result, filePrefix + key, value.content, value.contentType));
     drawingFiles.forEach((value, key) => this.createFileEntry(result, filePrefix + key, value.content, "image/svg+xml"));
+    return { positionNumber, filePrefix, downloadPrefix: positionNumber + "_", mprFiles, drawingFiles };
+  };
 
+  // Reference the MPR / drawing of a board on its part
+  function attachPartFiles(part: any, barcode: string, files: PositionFiles): void {
+    const attach = (fileName: string, type: string, category: string) => {
+      part.additionalData.push({ type, category, name: files.filePrefix + fileName, downloadFileName: files.downloadPrefix + fileName });
+    };
+    if (files.mprFiles.has(barcode + ".mpr")) {
+      part.cncProgramName1 = files.downloadPrefix + barcode + ".mpr";
+      attach(barcode + ".mpr", "CNCProgram", "MPR");
+    }
+    if (files.drawingFiles.has(barcode + ".svg")) {
+      attach(barcode + ".svg", "Image", "PartDrawing");
+    }
+  }
+
+  const createProductionPosition = (configPos: any, parts: PartBase[], files: PositionFiles): any => {
+    const { positionNumber } = files;
     const position: any = {
       type: "Position",
       name: positionNumber,
@@ -208,28 +231,7 @@
           additionalData: [],
           items: [],
         };
-
-        // Reference to the MPR
-        if (mprFiles.has(k.barcode + ".mpr")) {
-          part.cncProgramName1 = downloadPrefix + k.barcode + ".mpr";
-          part.additionalData.push({
-            type: "CNCProgram",
-            category: "MPR",
-            name: filePrefix + k.barcode + ".mpr",
-            downloadFileName: downloadPrefix + k.barcode + ".mpr",
-          });
-        }
-
-        // Reference to the SVG
-        if (drawingFiles.has(k.barcode + ".svg")) {
-          part.additionalData.push({
-            type: "Image",
-            category: "PartDrawing",
-            name: filePrefix + k.barcode + ".svg",
-            downloadFileName: downloadPrefix + k.barcode + ".svg",
-          });
-        }
-
+        attachPartFiles(part, k.barcode, files);
         container.items.push(part);
       }
       return container;
@@ -246,11 +248,10 @@
       });
     };
     insertChildren("Root", position);
-
-    // the calculated BOM is now part of the result -> remove the (large) temporary data
-    delete configPos[bomPropertyName];
     return position;
   }
+
+  const bomRequested = flags.bom === true;
 
   // Process all configuration positions; the production positions are added to the enclosing group
   const processItems = (items: any[], group: any): void => {
@@ -264,11 +265,19 @@
         return;
       }
       if (item.type === "ConfigurationPosition") {
-        const position = flags.bom === true ? createProductionPosition(item) : undefined;
-        if (position) {
-          group.items ??= [];
-          group.items.push(position);
+        positionCount++;
+        const bomData = item[bomPropertyName];
+        if (bomData === undefined || bomData === null || bomData === "") {
+          return;
         }
+        positionsWithBom++;
+        // the calculated BOM is only temporary data -> remove it from the (large) result
+        delete item[bomPropertyName];
+
+        const parts = loadBomParts(bomData);
+        const files = createPositionFiles(item, parts);
+        group.items ??= [];
+        group.items.push(createProductionPosition(item, parts, files));
         return;
       }
       if (Array.isArray(item.items)) {
@@ -277,12 +286,11 @@
     });
   };
 
-  if (flags.bom !== true && (flags.partDrawings === true || flags.partProcessings === true)) {
-    logWarning("Part drawings and processings require the BOM flag.");
-  }
-  processItems([...(od.items ?? [])], od);
-  if (flags.bom === true && positionsWithBom === 0) {
-    logWarning("No calculated BOM data ('" + bomPropertyName + "') found on any configuration position.");
+  if (bomRequested) {
+    processItems([...(od.items ?? [])], od);
+    if (positionsWithBom === 0) {
+      logWarning("No calculated BOM data ('" + bomPropertyName + "') found on any configuration position.");
+    }
   }
 
   this.createFileEntry(result, "order-data.json", JSON.stringify(od, null, 2), "application/json");
