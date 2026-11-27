@@ -1,0 +1,51 @@
+{
+  "moduleId": "dropContainer",
+  "shortName": "dropContainer",
+  "configurable": false,
+  "isRoot": false,
+  "isConfigDummy": false,
+  "isDropContainer": true,
+  "restrictionTypeId": "Public",
+  "childModules": [
+    {
+      "moduleId": "singleDrawer"
+    }
+  ],
+  "assignedVariants": [
+    {
+      "variantId": "depth",
+      "default": "550",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "height",
+      "default": "720",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "sidePanelThickness",
+      "default": "18",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    },
+    {
+      "variantId": "width",
+      "default": "600",
+      "required": false,
+      "derive": false,
+      "fixed": false
+    }
+  ],
+  "assignedParts": [
+    {
+      "partCode": "containerPart"
+    }
+  ],
+  "assignedCustomTables": [],
+  "assignedFunctions": []
+}
