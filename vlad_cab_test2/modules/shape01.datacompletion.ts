@@ -1,2 +1,0 @@
-  logInfo("dataCompletion script");
-  //abc

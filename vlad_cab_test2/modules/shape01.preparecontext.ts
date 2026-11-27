@@ -1,2 +1,0 @@
-  logInfo("prepareContext script");
-  //abcdef

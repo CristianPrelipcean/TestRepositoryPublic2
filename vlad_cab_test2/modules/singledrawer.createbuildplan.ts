@@ -1,2 +1,0 @@
-this.setOrigin(this.parent.sidePanelThickness!, this.startPos, this.parent.depth!);
-  this.add214_DrawerBottonShelf(0, 0, 0, this.parent.width! - 2 * this.parent.sidePanelThickness!, this.parent.sidePanelThickness!, -this.parent.depth!);
