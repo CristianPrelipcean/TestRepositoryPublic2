@@ -247,8 +247,9 @@
     };
     insertChildren("Root", position);
 
+    //Since SP has a multi-step process for calculating everything, deleting the data in the first step will cause the checkout step to not work as expected:
     // the calculated BOM is now part of the result -> remove the (large) temporary data
-    delete configPos[bomPropertyName];
+    //delete configPos[bomPropertyName];
     return position;
   }
 
@@ -286,3 +287,4 @@
   }
 
   this.createFileEntry(result, "order-data.json", JSON.stringify(od, null, 2), "application/json");
+
